@@ -1,66 +1,66 @@
-E_GlobalRests = {
-    
+E_GlobalRests = {                                                              %! extern
+
     % [E GlobalRests measure 82 / measure 1]                                   %! _comment_measure_numbers
     R1 * 4                                                                     %! _make_global_rests
-    
+
     % [E GlobalRests measure 83 / measure 2]                                   %! _comment_measure_numbers
     R1 * 5/2                                                                   %! _make_global_rests
-    
+
     % [E GlobalRests measure 84 / measure 3]                                   %! _comment_measure_numbers
     \once \override Score.TimeSignature.stencil = ##f                          %! GlobalFermataCommand(2)
     R1 * 1/4                                                                   %! _make_global_rests
     ^ \baca_short_fermata_markup                                               %! GlobalFermataCommand(1)
-    
+
     % [E GlobalRests measure 85 / measure 4]                                   %! _comment_measure_numbers
     R1 * 3                                                                     %! _make_global_rests
-    
+
     % [E GlobalRests measure 86 / measure 5]                                   %! _comment_measure_numbers
     R1 * 1                                                                     %! _make_global_rests
-    
+
     % [E GlobalRests measure 87 / measure 6]                                   %! _comment_measure_numbers
     R1 * 5/2                                                                   %! _make_global_rests
-    
+
     % [E GlobalRests measure 88 / measure 7]                                   %! _comment_measure_numbers
     \once \override Score.TimeSignature.stencil = ##f                          %! GlobalFermataCommand(2)
     R1 * 1/4                                                                   %! _make_global_rests
     ^ \baca_short_fermata_markup                                               %! GlobalFermataCommand(1)
-    
+
     % [E GlobalRests measure 89 / measure 8]                                   %! _comment_measure_numbers
     R1 * 13/4                                                                  %! _make_global_rests
-    
+
     % [E GlobalRests measure 90 / measure 9]                                   %! _comment_measure_numbers
     \once \override Score.TimeSignature.stencil = ##f                          %! GlobalFermataCommand(2)
     R1 * 1/4                                                                   %! _make_global_rests
     ^ \baca_short_fermata_markup                                               %! GlobalFermataCommand(1)
-    
+
     % [E GlobalRests measure 91 / measure 10]                                  %! _comment_measure_numbers
     R1 * 29/16                                                                 %! _make_global_rests
-    
+
     % [E GlobalRests measure 92 / measure 11]                                  %! _comment_measure_numbers
     R1 * 27/16                                                                 %! _make_global_rests
-    
+
     % [E GlobalRests measure 93 / measure 12]                                  %! _comment_measure_numbers
     R1 * 21/16                                                                 %! _make_global_rests
-    
+
     % [E GlobalRests measure 94 / measure 13]                                  %! _comment_measure_numbers
     R1 * 15/16                                                                 %! _make_global_rests
-    
+
     % [E GlobalRests measure 95 / measure 14]                                  %! _comment_measure_numbers
     R1 * 1                                                                     %! _make_global_rests
-    
+
     % [E GlobalRests measure 96 / measure 15]                                  %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _make_global_rests
-    
+
     % [E GlobalRests measure 97 / measure 16]                                  %! _comment_measure_numbers
     \once \override Score.TimeSignature.stencil = ##f                          %! GlobalFermataCommand(2)
     R1 * 1/4                                                                   %! _make_global_rests
     ^ \baca_fermata_markup                                                     %! GlobalFermataCommand(1)
-    
-}
+
+}                                                                              %! extern
 
 
-E_GlobalSkips = {
-    
+E_GlobalSkips = {                                                              %! extern
+
     % [E GlobalSkips measure 82 / measure 1]                                   %! _comment_measure_numbers
     \time 16/4                                                                 %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \bar ""                                                                    %! _make_global_skips(3):+SEGMENT:EMPTY_START_BAR
@@ -93,7 +93,7 @@ E_GlobalSkips = {
             }                                                                  %! _attach_metronome_marks(3)
         }                                                                      %! _attach_metronome_marks(3)
     \startTextSpan                                                             %! _attach_metronome_marks(3)
-    
+
     % [E GlobalSkips measure 83 / measure 2]                                   %! _comment_measure_numbers
     \time 10/4                                                                 %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \baca_time_signature_color "blue"                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
@@ -126,7 +126,7 @@ E_GlobalSkips = {
             }                                                                  %! _attach_metronome_marks(3)
         }                                                                      %! _attach_metronome_marks(3)
     \startTextSpan                                                             %! _attach_metronome_marks(3)
-    
+
     % [E GlobalSkips measure 84 / measure 3]                                   %! _comment_measure_numbers
     \time 1/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \baca_time_signature_color "blue"                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
@@ -159,7 +159,7 @@ E_GlobalSkips = {
             }                                                                  %! _attach_metronome_marks(3)
         }                                                                      %! _attach_metronome_marks(3)
     \startTextSpan                                                             %! _attach_metronome_marks(3)
-    
+
     % [E GlobalSkips measure 85 / measure 4]                                   %! _comment_measure_numbers
     \time 12/4                                                                 %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \baca_time_signature_color "blue"                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
@@ -169,7 +169,7 @@ E_GlobalSkips = {
 %@% ^ \baca-dark-cyan-markup ((4))                                             %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
 %@% ^ \baca-dark-cyan-markup [E.4]                                             %! _label_stage_numbers:STAGE_NUMBER_MARKUP
 %@% ^ \baca-dark-cyan-markup "[3'28'']"                                        %! CLOCK_TIME_MARKUP:_label_clock_time
-    
+
     % [E GlobalSkips measure 86 / measure 5]                                   %! _comment_measure_numbers
     \time 4/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \baca_time_signature_color "blue"                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
@@ -202,7 +202,7 @@ E_GlobalSkips = {
             }                                                                  %! _attach_metronome_marks(3)
         }                                                                      %! _attach_metronome_marks(3)
     \startTextSpan                                                             %! _attach_metronome_marks(3)
-    
+
     % [E GlobalSkips measure 87 / measure 6]                                   %! _comment_measure_numbers
     \time 10/4                                                                 %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \baca_time_signature_color "blue"                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
@@ -212,7 +212,7 @@ E_GlobalSkips = {
 %@% ^ \baca-dark-cyan-markup ((6))                                             %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
 %@% ^ \baca-dark-cyan-markup [E.6]                                             %! _label_stage_numbers:STAGE_NUMBER_MARKUP
 %@% ^ \baca-dark-cyan-markup "[3'39'']"                                        %! CLOCK_TIME_MARKUP:_label_clock_time
-    
+
     % [E GlobalSkips measure 88 / measure 7]                                   %! _comment_measure_numbers
     \time 1/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \baca_time_signature_color "blue"                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
@@ -245,7 +245,7 @@ E_GlobalSkips = {
             }                                                                  %! _attach_metronome_marks(3)
         }                                                                      %! _attach_metronome_marks(3)
     \startTextSpan                                                             %! _attach_metronome_marks(3)
-    
+
     % [E GlobalSkips measure 89 / measure 8]                                   %! _comment_measure_numbers
     \time 13/4                                                                 %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \baca_time_signature_color "blue"                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
@@ -255,7 +255,7 @@ E_GlobalSkips = {
 %@% ^ \baca-dark-cyan-markup ((8))                                             %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
 %@% ^ \baca-dark-cyan-markup [E.8]                                             %! _label_stage_numbers:STAGE_NUMBER_MARKUP
 %@% ^ \baca-dark-cyan-markup "[3'45'']"                                        %! CLOCK_TIME_MARKUP:_label_clock_time
-    
+
     % [E GlobalSkips measure 90 / measure 9]                                   %! _comment_measure_numbers
     \time 1/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \baca_time_signature_color "blue"                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
@@ -288,7 +288,7 @@ E_GlobalSkips = {
             }                                                                  %! _attach_metronome_marks(3)
         }                                                                      %! _attach_metronome_marks(3)
     \startTextSpan                                                             %! _attach_metronome_marks(3)
-    
+
     % [E GlobalSkips measure 91 / measure 10]                                  %! _comment_measure_numbers
     \time 29/16                                                                %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \baca_time_signature_color "blue"                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
@@ -321,7 +321,7 @@ E_GlobalSkips = {
             }                                                                  %! _attach_metronome_marks(3)
         }                                                                      %! _attach_metronome_marks(3)
     \startTextSpan                                                             %! _attach_metronome_marks(3)
-    
+
     % [E GlobalSkips measure 92 / measure 11]                                  %! _comment_measure_numbers
     \time 27/16                                                                %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \baca_time_signature_color "blue"                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
@@ -331,7 +331,7 @@ E_GlobalSkips = {
 %@% ^ \baca-dark-cyan-markup ((11))                                            %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
 %@% ^ \baca-dark-cyan-markup [E.11]                                            %! _label_stage_numbers:STAGE_NUMBER_MARKUP
 %@% ^ \baca-dark-cyan-markup "[4'00'']"                                        %! CLOCK_TIME_MARKUP:_label_clock_time
-    
+
     % [E GlobalSkips measure 93 / measure 12]                                  %! _comment_measure_numbers
     \time 21/16                                                                %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \baca_time_signature_color "blue"                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
@@ -364,7 +364,7 @@ E_GlobalSkips = {
             }                                                                  %! _attach_metronome_marks(3)
         }                                                                      %! _attach_metronome_marks(3)
     \startTextSpan                                                             %! _attach_metronome_marks(3)
-    
+
     % [E GlobalSkips measure 94 / measure 13]                                  %! _comment_measure_numbers
     \time 15/16                                                                %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \baca_time_signature_color "blue"                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
@@ -374,7 +374,7 @@ E_GlobalSkips = {
 %@% ^ \baca-dark-cyan-markup ((13))                                            %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
 %@% ^ \baca-dark-cyan-markup [E.13]                                            %! _label_stage_numbers:STAGE_NUMBER_MARKUP
 %@% ^ \baca-dark-cyan-markup "[4'07'']"                                        %! CLOCK_TIME_MARKUP:_label_clock_time
-    
+
     % [E GlobalSkips measure 95 / measure 14]                                  %! _comment_measure_numbers
     \time 4/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \baca_time_signature_color "blue"                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
@@ -384,7 +384,7 @@ E_GlobalSkips = {
 %@% ^ \baca-dark-cyan-markup ((14))                                            %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
 %@% ^ \baca-dark-cyan-markup [E.14]                                            %! _label_stage_numbers:STAGE_NUMBER_MARKUP
 %@% ^ \baca-dark-cyan-markup "[4'09'']"                                        %! CLOCK_TIME_MARKUP:_label_clock_time
-    
+
     % [E GlobalSkips measure 96 / measure 15]                                  %! _comment_measure_numbers
     \time 7/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \baca_time_signature_color "blue"                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
@@ -425,7 +425,7 @@ E_GlobalSkips = {
             \abjad-metronome-mark-markup #2 #0 #1 #"84"                        %! _attach_metronome_marks(3)
         }                                                                      %! _attach_metronome_marks(3)
     \startTextSpan                                                             %! _attach_metronome_marks(3)
-    
+
     % [E GlobalSkips measure 97 / measure 16]                                  %! _comment_measure_numbers
     \time 1/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \baca_time_signature_color "blue"                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
@@ -436,12 +436,12 @@ E_GlobalSkips = {
 %@% ^ \baca-dark-cyan-markup [E.16]                                            %! _label_stage_numbers:STAGE_NUMBER_MARKUP
 %@% ^ \baca-dark-cyan-markup "[4'15'']"                                        %! CLOCK_TIME_MARKUP:_label_clock_time
     \stopTextSpan                                                              %! _attach_metronome_marks(4)
-    
-}
+
+}                                                                              %! extern
 
 
-E_RHVoiceI = {
-    
+E_RHVoiceI = {                                                                 %! extern
+
     % [E RHVoiceI measure 82 / measure 1]                                      %! _comment_measure_numbers
     \clef "treble"                                                             %! REAPPLIED_CLEF:_set_status_tag:_reapply_persistent_indicators(3)
     \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'green4)        %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
@@ -451,112 +451,112 @@ E_RHVoiceI = {
     s1 * 4                                                                     %! _call_rhythm_commands
     \f                                                                         %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
     \override PianoMusicRHStaff.Clef.color = #(x11-color 'OliveDrab)           %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
-    
+
     % [E RHVoiceI measure 83 / measure 2]                                      %! _comment_measure_numbers
     s1 * 5/2                                                                   %! _call_rhythm_commands
-    
+
     % [E RHVoiceI measure 84 / measure 3]                                      %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
-    
+
     % [E RHVoiceI measure 85 / measure 4]                                      %! _comment_measure_numbers
     s1 * 3                                                                     %! _call_rhythm_commands
-    
+
     % [E RHVoiceI measure 86 / measure 5]                                      %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
-    
+
     % [E RHVoiceI measure 87 / measure 6]                                      %! _comment_measure_numbers
     s1 * 5/2                                                                   %! _call_rhythm_commands
-    
+
     % [E RHVoiceI measure 88 / measure 7]                                      %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
-    
+
     % [E RHVoiceI measure 89 / measure 8]                                      %! _comment_measure_numbers
     s1 * 13/4                                                                  %! _call_rhythm_commands
-    
+
     % [E RHVoiceI measure 90 / measure 9]                                      %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
-    
+
     % [E RHVoiceI measure 91 / measure 10]                                     %! _comment_measure_numbers
     s1 * 29/16                                                                 %! _call_rhythm_commands
-    
+
     % [E RHVoiceI measure 92 / measure 11]                                     %! _comment_measure_numbers
     s1 * 27/16                                                                 %! _call_rhythm_commands
-    
+
     % [E RHVoiceI measure 93 / measure 12]                                     %! _comment_measure_numbers
     s1 * 21/16                                                                 %! _call_rhythm_commands
-    
+
     % [E RHVoiceI measure 94 / measure 13]                                     %! _comment_measure_numbers
     s1 * 15/16                                                                 %! _call_rhythm_commands
-    
+
     % [E RHVoiceI measure 95 / measure 14]                                     %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
-    
+
     % [E RHVoiceI measure 96 / measure 15]                                     %! _comment_measure_numbers
     s1 * 7/4                                                                   %! _call_rhythm_commands
-    
+
     % [E RHVoiceI measure 97 / measure 16]                                     %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
-    
-}
+
+}                                                                              %! extern
 
 
-E_RHVoiceIInserts = {
-    
+E_RHVoiceIInserts = {                                                          %! extern
+
     % [E RHVoiceIInserts measure 82 / measure 1]                               %! _comment_measure_numbers
     s1 * 4                                                                     %! _call_rhythm_commands
-    
+
     % [E RHVoiceIInserts measure 83 / measure 2]                               %! _comment_measure_numbers
     s1 * 5/2                                                                   %! _call_rhythm_commands
-    
+
     % [E RHVoiceIInserts measure 84 / measure 3]                               %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
-    
+
     % [E RHVoiceIInserts measure 85 / measure 4]                               %! _comment_measure_numbers
     s1 * 3                                                                     %! _call_rhythm_commands
-    
+
     % [E RHVoiceIInserts measure 86 / measure 5]                               %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
-    
+
     % [E RHVoiceIInserts measure 87 / measure 6]                               %! _comment_measure_numbers
     s1 * 5/2                                                                   %! _call_rhythm_commands
-    
+
     % [E RHVoiceIInserts measure 88 / measure 7]                               %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
-    
+
     % [E RHVoiceIInserts measure 89 / measure 8]                               %! _comment_measure_numbers
     s1 * 13/4                                                                  %! _call_rhythm_commands
-    
+
     % [E RHVoiceIInserts measure 90 / measure 9]                               %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
-    
+
     % [E RHVoiceIInserts measure 91 / measure 10]                              %! _comment_measure_numbers
     s1 * 29/16                                                                 %! _call_rhythm_commands
-    
+
     % [E RHVoiceIInserts measure 92 / measure 11]                              %! _comment_measure_numbers
     s1 * 27/16                                                                 %! _call_rhythm_commands
-    
+
     % [E RHVoiceIInserts measure 93 / measure 12]                              %! _comment_measure_numbers
     s1 * 21/16                                                                 %! _call_rhythm_commands
-    
+
     % [E RHVoiceIInserts measure 94 / measure 13]                              %! _comment_measure_numbers
     s1 * 15/16                                                                 %! _call_rhythm_commands
-    
+
     % [E RHVoiceIInserts measure 95 / measure 14]                              %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
-    
+
     % [E RHVoiceIInserts measure 96 / measure 15]                              %! _comment_measure_numbers
     s1 * 7/4                                                                   %! _call_rhythm_commands
-    
+
     % [E RHVoiceIInserts measure 97 / measure 16]                              %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
-    
-}
+
+}                                                                              %! extern
 
 
-E_RHVoiceII = {
+E_RHVoiceII = {                                                                %! extern
     {
         \scaleDurations #'(1 . 1) {
-            
+
             % [E RHVoiceII measure 82 / measure 1]                             %! _comment_measure_numbers
             \override Script.direction = #up                                   %! baca_script_up:OverrideCommand(1)
             \override Stem.direction = #up                                     %! baca_stem_up:OverrideCommand(1)
@@ -584,24 +584,24 @@ E_RHVoiceII = {
         %%%                 ]                                                  %! FIGURE_NAME_MARKUP
         %%%             }                                                      %! FIGURE_NAME_MARKUP
         %%%     }                                                              %! FIGURE_NAME_MARKUP
-            
+
             \override Rest.direction = #up                                     %! baca_rest_up:OverrideCommand(1)
             r2..
-            
+
             d'''8
             - \accent                                                          %! IndicatorCommand
-            
+
             r2..
-            
+
             ef''''!8
             - \accent                                                          %! IndicatorCommand
-            
+
             r2..
-            
+
             f''''8
             - \accent                                                          %! IndicatorCommand
             \revert Stem.direction                                             %! baca_stem_up:OverrideCommand(2)
-            
+
             r2..
             \revert Rest.direction                                             %! baca_rest_up:OverrideCommand(2)
             \revert Script.direction                                           %! baca_script_up:OverrideCommand(2)
@@ -614,59 +614,59 @@ E_RHVoiceII = {
         \times 10/11 {
             \tweak text #tuplet-number::calc-fraction-text
             \times 3/4 {
-                
+
                 % [E RHVoiceII measure 83 / measure 2]                         %! _comment_measure_numbers
                 \override Beam.positions = #'(10.5 . 10.5)                     %! baca_beam_positions:OverrideCommand(1)
                 \override Script.direction = #up                               %! baca_script_up:OverrideCommand(1)
                 s8
                 [                                                              %! _extend_beam
-                
+
                 s8
-                
+
                 s8
-                
+
                 s8
             }
             \tweak text #tuplet-number::calc-fraction-text
             \times 6/7 {
-                
+
                 s8
-                
+
                 s8
-                
+
                 s8
-                
+
                 s8
-                
+
                 s8
-                
+
                 s8
-                
+
                 s8
             }
             \scaleDurations #'(1 . 1) {
-                
+
                 s8
-                
+
                 s8
-                
+
                 s8
-                
+
                 s8
             }
             \tweak text #tuplet-number::calc-fraction-text
             \times 6/7 {
-                
+
                 s8
-                
+
                 s8
-                
+
                 s8
-                
+
                 s8
-                
+
                 s8
-                
+
                 \override Stem.direction = #up                                 %! baca_stem_up:OverrideCommand(1)
                 \set stemLeftBeamCount = 1                                     %! _extend_beam
                 \set stemRightBeamCount = 1                                    %! _extend_beam
@@ -674,7 +674,7 @@ E_RHVoiceII = {
                 af'!8
                 \fff                                                           %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
                 - \accent                                                      %! IndicatorCommand
-                
+
                 \set stemLeftBeamCount = 1                                     %! _extend_beam
                 \set stemRightBeamCount = 1                                    %! _extend_beam
                 fs'!8
@@ -682,20 +682,20 @@ E_RHVoiceII = {
             }
             \tweak text #tuplet-number::calc-fraction-text
             \times 3/4 {
-                
+
                 s8
-                
+
                 s8
-                
+
                 s8
-                
+
                 s8
             }
         }
         \revert TupletBracket.stencil
         \revert TupletNumber.stencil
     }
-    
+
     % [E RHVoiceII measure 84 / measure 3]                                     %! _comment_measure_numbers
     s1 * 1/4
     {
@@ -705,86 +705,86 @@ E_RHVoiceII = {
         \times 12/13 {
             \tweak text #tuplet-number::calc-fraction-text
             \times 6/7 {
-                
+
                 % [E RHVoiceII measure 85 / measure 4]                         %! _comment_measure_numbers
                 s8
-                
+
                 s8
-                
+
                 s8
-                
+
                 s8
-                
+
                 s8
-                
+
                 s8
-                
+
                 s8
             }
             \scaleDurations #'(1 . 1) {
-                
+
                 s8
-                
+
                 s8
-                
+
                 s8
-                
+
                 s8
             }
             \tweak text #tuplet-number::calc-fraction-text
             \times 6/7 {
-                
+
                 s8
-                
+
                 s8
-                
+
                 s8
-                
+
                 s8
-                
+
                 s8
-                
+
                 \set stemLeftBeamCount = 1                                     %! _extend_beam
                 \set stemRightBeamCount = 1                                    %! _extend_beam
                 c''8
                 - \accent                                                      %! IndicatorCommand
-                
+
                 s8
             }
             \tweak text #tuplet-number::calc-fraction-text
             \times 3/4 {
-                
+
                 s8
-                
+
                 s8
-                
+
                 \set stemLeftBeamCount = 1                                     %! _extend_beam
                 \set stemRightBeamCount = 1                                    %! _extend_beam
                 cs''!8
                 - \accent                                                      %! IndicatorCommand
-                
+
                 \set stemLeftBeamCount = 1                                     %! _extend_beam
                 \set stemRightBeamCount = 1                                    %! _extend_beam
                 e''8
                 - \accent                                                      %! IndicatorCommand
             }
             \scaleDurations #'(1 . 1) {
-                
+
                 s8
-                
+
                 s8
-                
+
                 s8
-                
+
                 \set stemLeftBeamCount = 1                                     %! _extend_beam
                 \set stemRightBeamCount = 1                                    %! _extend_beam
                 ef'!8
                 - \accent                                                      %! IndicatorCommand
-                
+
                 s8
-                
+
                 s8
-                
+
                 s8
                 ]                                                              %! _extend_beam
             }
@@ -792,7 +792,7 @@ E_RHVoiceII = {
         \revert TupletBracket.stencil
         \revert TupletNumber.stencil
     }
-    
+
     % [E RHVoiceII measure 86 / measure 5]                                     %! _comment_measure_numbers
     s1 * 1
     {
@@ -801,97 +801,97 @@ E_RHVoiceII = {
         \tweak text #tuplet-number::calc-fraction-text
         \times 20/23 {
             \scaleDurations #'(1 . 1) {
-                
+
                 % [E RHVoiceII measure 87 / measure 6]                         %! _comment_measure_numbers
                 s8
                 [                                                              %! _extend_beam
-                
+
                 s8
-                
+
                 s8
-                
+
                 s8
             }
             \tweak text #tuplet-number::calc-fraction-text
             \times 6/7 {
-                
+
                 s8
-                
+
                 s8
-                
+
                 s8
-                
+
                 \set stemLeftBeamCount = 1                                     %! _extend_beam
                 \set stemRightBeamCount = 1                                    %! _extend_beam
                 \once \override RHVoiceII.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
                 fs''!8
                 \fff                                                           %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
                 - \accent                                                      %! IndicatorCommand
-                
+
                 s8
-                
+
                 s8
-                
+
                 s8
             }
             \tweak text #tuplet-number::calc-fraction-text
             \times 3/4 {
-                
+
                 s8
-                
+
                 \set stemLeftBeamCount = 1                                     %! _extend_beam
                 \set stemRightBeamCount = 1                                    %! _extend_beam
                 ef''!8
                 - \accent                                                      %! IndicatorCommand
-                
+
                 \set stemLeftBeamCount = 1                                     %! _extend_beam
                 \set stemRightBeamCount = 1                                    %! _extend_beam
                 f''8
                 - \accent                                                      %! IndicatorCommand
-                
+
                 s8
             }
             \scaleDurations #'(1 . 1) {
-                
+
                 s8
-                
+
                 \set stemLeftBeamCount = 1                                     %! _extend_beam
                 \set stemRightBeamCount = 1                                    %! _extend_beam
                 e''8
                 - \accent                                                      %! IndicatorCommand
-                
+
                 s8
-                
+
                 s8
-                
+
                 s8
-                
+
                 \set stemLeftBeamCount = 1                                     %! _extend_beam
                 \set stemRightBeamCount = 1                                    %! _extend_beam
                 f'8
                 - \accent                                                      %! IndicatorCommand
-                
+
                 s8
             }
             \tweak text #tuplet-number::calc-fraction-text
             \times 3/4 {
-                
+
                 s8
-                
+
                 s8
-                
+
                 \set stemLeftBeamCount = 1                                     %! _extend_beam
                 \set stemRightBeamCount = 1                                    %! _extend_beam
                 af'!8
                 - \accent                                                      %! IndicatorCommand
-                
+
                 s8
             }
         }
         \revert TupletBracket.stencil
         \revert TupletNumber.stencil
     }
-    
+
     % [E RHVoiceII measure 88 / measure 7]                                     %! _comment_measure_numbers
     s1 * 1/4
     {
@@ -901,76 +901,76 @@ E_RHVoiceII = {
         \times 26/29 {
             \tweak text #tuplet-number::calc-fraction-text
             \times 6/7 {
-                
+
                 % [E RHVoiceII measure 89 / measure 8]                         %! _comment_measure_numbers
                 s8
-                
+
                 s8
-                
+
                 s8
-                
+
                 \set stemLeftBeamCount = 1                                     %! _extend_beam
                 \set stemRightBeamCount = 1                                    %! _extend_beam
                 bf''!8
                 - \accent                                                      %! IndicatorCommand
-                
+
                 s8
-                
+
                 \set stemLeftBeamCount = 1                                     %! _extend_beam
                 \set stemRightBeamCount = 1                                    %! _extend_beam
                 af''!8
                 - \accent                                                      %! IndicatorCommand
-                
+
                 s8
             }
             \tweak text #tuplet-number::calc-fraction-text
             \times 3/4 {
-                
+
                 s8
-                
+
                 \set stemLeftBeamCount = 1                                     %! _extend_beam
                 \set stemRightBeamCount = 1                                    %! _extend_beam
                 g''8
                 - \accent                                                      %! IndicatorCommand
-                
+
                 s8
-                
+
                 s8
             }
             \scaleDurations #'(1 . 1) {
-                
+
                 s8
-                
+
                 \set stemLeftBeamCount = 1                                     %! _extend_beam
                 \set stemRightBeamCount = 1                                    %! _extend_beam
                 fs''!8
                 - \accent                                                      %! IndicatorCommand
-                
+
                 s8
-                
+
                 s8
-                
+
                 s8
-                
+
                 \set stemLeftBeamCount = 1                                     %! _extend_beam
                 \set stemRightBeamCount = 1                                    %! _extend_beam
                 a''8
                 - \accent                                                      %! IndicatorCommand
-                
+
                 s8
             }
             \tweak text #tuplet-number::calc-fraction-text
             \times 3/4 {
-                
+
                 s8
-                
+
                 s8
-                
+
                 \set stemLeftBeamCount = 1                                     %! _extend_beam
                 \set stemRightBeamCount = 1                                    %! _extend_beam
                 c''8
                 - \accent                                                      %! IndicatorCommand
-                
+
                 \set stemLeftBeamCount = 1                                     %! _extend_beam
                 \set stemRightBeamCount = 1                                    %! _extend_beam
                 b'8
@@ -978,33 +978,33 @@ E_RHVoiceII = {
             }
             \tweak text #tuplet-number::calc-fraction-text
             \times 6/7 {
-                
+
                 s8
-                
+
                 s8
-                
+
                 s8
-                
+
                 s8
-                
+
                 \set stemLeftBeamCount = 1                                     %! _extend_beam
                 \set stemRightBeamCount = 1                                    %! _extend_beam
                 ef''!8
                 - \accent                                                      %! IndicatorCommand
                 \revert Stem.direction                                         %! baca_stem_up:OverrideCommand(2)
-                
+
                 s8
-                
+
                 s8
             }
             \scaleDurations #'(1 . 1) {
-                
+
                 s8
-                
+
                 s8
-                
+
                 s8
-                
+
                 s8
                 ]                                                              %! _extend_beam
                 \revert Beam.positions                                         %! baca_beam_positions:OverrideCommand(2)
@@ -1014,14 +1014,14 @@ E_RHVoiceII = {
         \revert TupletBracket.stencil
         \revert TupletNumber.stencil
     }
-    
+
     % [E RHVoiceII measure 90 / measure 9]                                     %! _comment_measure_numbers
     \override Script.direction = #up                                           %! baca_script_up:OverrideCommand(1)
     \override Slur.direction = #up                                             %! baca_slur_up:OverrideCommand(1)
     s1 * 1/4
     {
         \scaleDurations #'(1 . 1) {
-            
+
             % [E RHVoiceII measure 91 / measure 10]                            %! _comment_measure_numbers
             \override Beam.positions = #'(-8 . -8)                             %! baca_beam_positions:OverrideCommand(1)
             \override Stem.direction = #down                                   %! baca_stem_down:OverrideCommand(1)
@@ -1051,22 +1051,22 @@ E_RHVoiceII = {
         %%%     }                                                              %! FIGURE_NAME_MARKUP
             [
             (                                                                  %! SpannerCommand
-            
+
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             c'16
             - \staccato                                                        %! IndicatorCommand
-            
+
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             e'16
             - \staccato                                                        %! IndicatorCommand
-            
+
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             f'16
             - \staccato                                                        %! IndicatorCommand
-            
+
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
             af'!16
@@ -1074,28 +1074,28 @@ E_RHVoiceII = {
             )                                                                  %! SpannerCommand
         }
         \scaleDurations #'(1 . 1) {
-            
+
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
             bf!16
             - \staccato                                                        %! IndicatorCommand
             (                                                                  %! SpannerCommand
-            
+
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             ef'!16
             - \staccato                                                        %! IndicatorCommand
-            
+
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             b'16
             - \staccato                                                        %! IndicatorCommand
-            
+
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             g''16
             - \staccato                                                        %! IndicatorCommand
-            
+
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
             a''16
@@ -1103,33 +1103,33 @@ E_RHVoiceII = {
             )                                                                  %! SpannerCommand
         }
         \scaleDurations #'(1 . 1) {
-            
+
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
             d16
             - \staccato                                                        %! IndicatorCommand
             (                                                                  %! SpannerCommand
-            
+
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             cs'!16
             - \staccato                                                        %! IndicatorCommand
-            
+
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             af'!16
             - \staccato                                                        %! IndicatorCommand
-            
+
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             bf'!16
             - \staccato                                                        %! IndicatorCommand
-            
+
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             ef''!16
             - \staccato                                                        %! IndicatorCommand
-            
+
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
             f''16
@@ -1137,28 +1137,28 @@ E_RHVoiceII = {
             )                                                                  %! SpannerCommand
         }
         \scaleDurations #'(1 . 1) {
-            
+
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
             a16
             - \staccato                                                        %! IndicatorCommand
             (                                                                  %! SpannerCommand
-            
+
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             b16
             - \staccato                                                        %! IndicatorCommand
-            
+
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             g'16
             - \staccato                                                        %! IndicatorCommand
-            
+
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             fs''!16
             - \staccato                                                        %! IndicatorCommand
-            
+
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
             c'''16
@@ -1166,28 +1166,28 @@ E_RHVoiceII = {
             )                                                                  %! SpannerCommand
         }
         \scaleDurations #'(1 . 1) {
-            
+
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
             e16
             - \staccato                                                        %! IndicatorCommand
             (                                                                  %! SpannerCommand
-            
+
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             f16
             - \staccato                                                        %! IndicatorCommand
-            
+
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             af!16
             - \staccato                                                        %! IndicatorCommand
-            
+
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             bf!16
             - \staccato                                                        %! IndicatorCommand
-            
+
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
             ef'!16
@@ -1195,18 +1195,18 @@ E_RHVoiceII = {
             )                                                                  %! SpannerCommand
         }
         \scaleDurations #'(1 . 1) {
-            
+
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
             b16
             - \staccato                                                        %! IndicatorCommand
             (                                                                  %! SpannerCommand
-            
+
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             g'16
             - \staccato                                                        %! IndicatorCommand
-            
+
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 0
             a'16
@@ -1218,7 +1218,7 @@ E_RHVoiceII = {
     }
     {
         \scaleDurations #'(1 . 1) {
-            
+
             % [E RHVoiceII measure 92 / measure 11]                            %! _comment_measure_numbers
             \override Beam.positions = #'(-8 . -8)                             %! baca_beam_positions:OverrideCommand(1)
             \set stemLeftBeamCount = 0
@@ -1244,22 +1244,22 @@ E_RHVoiceII = {
         %%%     }                                                              %! FIGURE_NAME_MARKUP
             [
             (                                                                  %! SpannerCommand
-            
+
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             cs''!16
             - \staccato                                                        %! IndicatorCommand
-            
+
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             af''!16
             - \staccato                                                        %! IndicatorCommand
-            
+
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             bf''!16
             - \staccato                                                        %! IndicatorCommand
-            
+
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
             ef'''!16
@@ -1267,33 +1267,33 @@ E_RHVoiceII = {
             )                                                                  %! SpannerCommand
         }
         \scaleDurations #'(1 . 1) {
-            
+
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
             f'16
             - \staccato                                                        %! IndicatorCommand
             (                                                                  %! SpannerCommand
-            
+
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             a'16
             - \staccato                                                        %! IndicatorCommand
-            
+
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             b'16
             - \staccato                                                        %! IndicatorCommand
-            
+
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             g''16
             - \staccato                                                        %! IndicatorCommand
-            
+
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             fs'''!16
             - \staccato                                                        %! IndicatorCommand
-            
+
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
             c''''16
@@ -1301,33 +1301,33 @@ E_RHVoiceII = {
             )                                                                  %! SpannerCommand
         }
         \scaleDurations #'(1 . 1) {
-            
+
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
             e'16
             - \staccato                                                        %! IndicatorCommand
             (                                                                  %! SpannerCommand
-            
+
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             f'16
             - \staccato                                                        %! IndicatorCommand
-            
+
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             af'!16
             - \staccato                                                        %! IndicatorCommand
-            
+
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             bf'!16
             - \staccato                                                        %! IndicatorCommand
-            
+
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             ef''!16
             - \staccato                                                        %! IndicatorCommand
-            
+
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
             b''16
@@ -1335,28 +1335,28 @@ E_RHVoiceII = {
             )                                                                  %! SpannerCommand
         }
         \scaleDurations #'(1 . 1) {
-            
+
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
             g'16
             - \staccato                                                        %! IndicatorCommand
             (                                                                  %! SpannerCommand
-            
+
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             b'16
             - \staccato                                                        %! IndicatorCommand
-            
+
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             a''16
             - \staccato                                                        %! IndicatorCommand
-            
+
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             d'''16
             - \staccato                                                        %! IndicatorCommand
-            
+
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
             cs''''!16
@@ -1364,28 +1364,28 @@ E_RHVoiceII = {
             )                                                                  %! SpannerCommand
         }
         \scaleDurations #'(1 . 1) {
-            
+
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
             af'!16
             - \staccato                                                        %! IndicatorCommand
             (                                                                  %! SpannerCommand
-            
+
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             bf'!16
             - \staccato                                                        %! IndicatorCommand
-            
+
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             ef''!16
             - \staccato                                                        %! IndicatorCommand
-            
+
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             f''16
             - \staccato                                                        %! IndicatorCommand
-            
+
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 0
             a''16
@@ -1397,7 +1397,7 @@ E_RHVoiceII = {
     }
     {
         \scaleDurations #'(1 . 1) {
-            
+
             % [E RHVoiceII measure 93 / measure 12]                            %! _comment_measure_numbers
             \override Beam.positions = #'(-8 . -8)                             %! baca_beam_positions:OverrideCommand(1)
             \set stemLeftBeamCount = 0
@@ -1423,17 +1423,17 @@ E_RHVoiceII = {
         %%%     }                                                              %! FIGURE_NAME_MARKUP
             [
             (                                                                  %! SpannerCommand
-            
+
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             g''16
             - \staccato                                                        %! IndicatorCommand
-            
+
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             fs'''!16
             - \staccato                                                        %! IndicatorCommand
-            
+
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
             c''''16
@@ -1441,23 +1441,23 @@ E_RHVoiceII = {
             )                                                                  %! SpannerCommand
         }
         \scaleDurations #'(1 . 1) {
-            
+
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
             e'16
             - \staccato                                                        %! IndicatorCommand
             (                                                                  %! SpannerCommand
-            
+
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             f'16
             - \staccato                                                        %! IndicatorCommand
-            
+
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             af'!16
             - \staccato                                                        %! IndicatorCommand
-            
+
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
             bf'!16
@@ -1465,23 +1465,23 @@ E_RHVoiceII = {
             )                                                                  %! SpannerCommand
         }
         \scaleDurations #'(1 . 1) {
-            
+
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
             ef'!16
             - \staccato                                                        %! IndicatorCommand
             (                                                                  %! SpannerCommand
-            
+
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             b'16
             - \staccato                                                        %! IndicatorCommand
-            
+
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             g''16
             - \staccato                                                        %! IndicatorCommand
-            
+
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
             a''16
@@ -1489,28 +1489,28 @@ E_RHVoiceII = {
             )                                                                  %! SpannerCommand
         }
         \scaleDurations #'(1 . 1) {
-            
+
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
             d'16
             - \staccato                                                        %! IndicatorCommand
             (                                                                  %! SpannerCommand
-            
+
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             cs''!16
             - \staccato                                                        %! IndicatorCommand
-            
+
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             af''!16
             - \staccato                                                        %! IndicatorCommand
-            
+
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             bf''!16
             - \staccato                                                        %! IndicatorCommand
-            
+
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
             ef'''!16
@@ -1518,23 +1518,23 @@ E_RHVoiceII = {
             )                                                                  %! SpannerCommand
         }
         \scaleDurations #'(1 . 1) {
-            
+
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
             f'16
             - \staccato                                                        %! IndicatorCommand
             (                                                                  %! SpannerCommand
-            
+
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             a'16
             - \staccato                                                        %! IndicatorCommand
-            
+
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             b'16
             - \staccato                                                        %! IndicatorCommand
-            
+
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 0
             g''16
@@ -1546,7 +1546,7 @@ E_RHVoiceII = {
     }
     {
         \scaleDurations #'(1 . 1) {
-            
+
             % [E RHVoiceII measure 94 / measure 13]                            %! _comment_measure_numbers
             \override Beam.positions = #'(-8 . -8)                             %! baca_beam_positions:OverrideCommand(1)
             \set stemLeftBeamCount = 0
@@ -1572,17 +1572,17 @@ E_RHVoiceII = {
         %%%     }                                                              %! FIGURE_NAME_MARKUP
             [
             (                                                                  %! SpannerCommand
-            
+
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             c'''16
             - \staccato                                                        %! IndicatorCommand
-            
+
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             e'''16
             - \staccato                                                        %! IndicatorCommand
-            
+
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
             f'''16
@@ -1590,18 +1590,18 @@ E_RHVoiceII = {
             )                                                                  %! SpannerCommand
         }
         \scaleDurations #'(1 . 1) {
-            
+
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
             af''!16
             - \staccato                                                        %! IndicatorCommand
             (                                                                  %! SpannerCommand
-            
+
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             bf''!16
             - \staccato                                                        %! IndicatorCommand
-            
+
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
             ef'''!16
@@ -1609,18 +1609,18 @@ E_RHVoiceII = {
             )                                                                  %! SpannerCommand
         }
         \scaleDurations #'(1 . 1) {
-            
+
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
             b''16
             - \staccato                                                        %! IndicatorCommand
             (                                                                  %! SpannerCommand
-            
+
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             g'''16
             - \staccato                                                        %! IndicatorCommand
-            
+
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
             a'''16
@@ -1628,28 +1628,28 @@ E_RHVoiceII = {
             )                                                                  %! SpannerCommand
         }
         \scaleDurations #'(1 . 1) {
-            
+
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
             d''16
             - \staccato                                                        %! IndicatorCommand
             (                                                                  %! SpannerCommand
-            
+
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             cs'''!16
             - \staccato                                                        %! IndicatorCommand
-            
+
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             af'''!16
             - \staccato                                                        %! IndicatorCommand
-            
+
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             bf'''!16
             - \staccato                                                        %! IndicatorCommand
-            
+
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 0
             ef''''!16
@@ -1664,7 +1664,7 @@ E_RHVoiceII = {
     }
     {
         \scaleDurations #'(1 . 1) {
-            
+
             % [E RHVoiceII measure 95 / measure 14]                            %! _comment_measure_numbers
             \override Beam.positions = #'(-8 . -8)                             %! baca_beam_positions:OverrideCommand(1)
             \set stemLeftBeamCount = 0
@@ -1690,22 +1690,22 @@ E_RHVoiceII = {
         %%%     }                                                              %! FIGURE_NAME_MARKUP
             [
             (                                                                  %! SpannerCommand
-            
+
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             a''16
             - \staccato                                                        %! IndicatorCommand
-            
+
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             b''16
             - \staccato                                                        %! IndicatorCommand
-            
+
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             g'''16
             - \staccato                                                        %! IndicatorCommand
-            
+
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
             fs''''!16
@@ -1713,23 +1713,23 @@ E_RHVoiceII = {
             )                                                                  %! SpannerCommand
         }
         \scaleDurations #'(1 . 1) {
-            
+
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
             c''16
             - \staccato                                                        %! IndicatorCommand
             (                                                                  %! SpannerCommand
-            
+
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             e''16
             - \staccato                                                        %! IndicatorCommand
-            
+
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             f''16
             - \staccato                                                        %! IndicatorCommand
-            
+
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
             af''!16
@@ -1737,23 +1737,23 @@ E_RHVoiceII = {
             )                                                                  %! SpannerCommand
         }
         \scaleDurations #'(1 . 1) {
-            
+
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
             bf''!16
             - \staccato                                                        %! IndicatorCommand
             (                                                                  %! SpannerCommand
-            
+
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             ef'''!16
             - \staccato                                                        %! IndicatorCommand
-            
+
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             b'''16
             - \staccato                                                        %! IndicatorCommand
-            
+
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
             g''''16
@@ -1761,18 +1761,18 @@ E_RHVoiceII = {
             )                                                                  %! SpannerCommand
         }
         \scaleDurations #'(1 . 1) {
-            
+
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
             b''16
             - \staccato                                                        %! IndicatorCommand
             (                                                                  %! SpannerCommand
-            
+
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             a'''16
             - \staccato                                                        %! IndicatorCommand
-            
+
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 0
             d''''16
@@ -1789,58 +1789,58 @@ E_RHVoiceII = {
         \times 7/8 {
             \tweak text #tuplet-number::calc-fraction-text
             \times 6/7 {
-                
+
                 % [E RHVoiceII measure 96 / measure 15]                        %! _comment_measure_numbers
                 s8
                 [
-                
+
                 s8
-                
+
                 s8
-                
+
                 s8
-                
+
                 s8
-                
+
                 s8
-                
+
                 s8
             }
             \scaleDurations #'(1 . 1) {
-                
+
                 \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 1
                 \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
                 ef''!8
                 \fff                                                           %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-                
+
                 s8
-                
+
                 s8
-                
+
                 s8
             }
             \tweak text #tuplet-number::calc-fraction-text
             \times 6/7 {
-                
+
                 s8
-                
+
                 \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 1
                 b'8
-                
+
                 s8
-                
+
                 \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 1
                 fs'!8
-                
+
                 \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 1
                 f'8
-                
+
                 s8
-                
+
                 s8
                 ]
             }
@@ -1848,71 +1848,71 @@ E_RHVoiceII = {
         \revert TupletBracket.stencil
         \revert TupletNumber.stencil
     }
-    
+
     % [E RHVoiceII measure 97 / measure 16]                                    %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _make_measure_silences
-    
-}
+
+}                                                                              %! extern
 
 
-E_RHVoiceIIInserts = {
-    
+E_RHVoiceIIInserts = {                                                         %! extern
+
     % [E RHVoiceIIInserts measure 82 / measure 1]                              %! _comment_measure_numbers
     s1 * 4                                                                     %! _call_rhythm_commands
-    
+
     % [E RHVoiceIIInserts measure 83 / measure 2]                              %! _comment_measure_numbers
     s1 * 5/2                                                                   %! _call_rhythm_commands
-    
+
     % [E RHVoiceIIInserts measure 84 / measure 3]                              %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
-    
+
     % [E RHVoiceIIInserts measure 85 / measure 4]                              %! _comment_measure_numbers
     s1 * 3                                                                     %! _call_rhythm_commands
-    
+
     % [E RHVoiceIIInserts measure 86 / measure 5]                              %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
-    
+
     % [E RHVoiceIIInserts measure 87 / measure 6]                              %! _comment_measure_numbers
     s1 * 5/2                                                                   %! _call_rhythm_commands
-    
+
     % [E RHVoiceIIInserts measure 88 / measure 7]                              %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
-    
+
     % [E RHVoiceIIInserts measure 89 / measure 8]                              %! _comment_measure_numbers
     s1 * 13/4                                                                  %! _call_rhythm_commands
-    
+
     % [E RHVoiceIIInserts measure 90 / measure 9]                              %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
-    
+
     % [E RHVoiceIIInserts measure 91 / measure 10]                             %! _comment_measure_numbers
     s1 * 29/16                                                                 %! _call_rhythm_commands
-    
+
     % [E RHVoiceIIInserts measure 92 / measure 11]                             %! _comment_measure_numbers
     s1 * 27/16                                                                 %! _call_rhythm_commands
-    
+
     % [E RHVoiceIIInserts measure 93 / measure 12]                             %! _comment_measure_numbers
     s1 * 21/16                                                                 %! _call_rhythm_commands
-    
+
     % [E RHVoiceIIInserts measure 94 / measure 13]                             %! _comment_measure_numbers
     s1 * 15/16                                                                 %! _call_rhythm_commands
-    
+
     % [E RHVoiceIIInserts measure 95 / measure 14]                             %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
-    
+
     % [E RHVoiceIIInserts measure 96 / measure 15]                             %! _comment_measure_numbers
     s1 * 7/4                                                                   %! _call_rhythm_commands
-    
+
     % [E RHVoiceIIInserts measure 97 / measure 16]                             %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
-    
-}
+
+}                                                                              %! extern
 
 
-E_RHVoiceIII = {
+E_RHVoiceIII = {                                                               %! extern
     {
         \tweak text #tuplet-number::calc-fraction-text
         \times 8/5 {
-            
+
             % [E RHVoiceIII measure 82 / measure 1]                            %! _comment_measure_numbers
             \override Stem.direction = #down                                   %! baca_stem_down:OverrideCommand(1)
             \override TupletBracket.direction = #down                          %! baca_tuplet_bracket_down:OverrideCommand(1)
@@ -1938,30 +1938,30 @@ E_RHVoiceIII = {
         %%%                 ]                                                  %! FIGURE_NAME_MARKUP
         %%%             }                                                      %! FIGURE_NAME_MARKUP
         %%%     }                                                              %! FIGURE_NAME_MARKUP
-            
+
             \override Rest.direction = #down                                   %! baca_rest_down:OverrideCommand(1)
             r4
-            
+
             cs''!4
             - \tenuto                                                          %! IndicatorCommand
-            
+
             r4
-            
+
             b''4
             - \tenuto                                                          %! IndicatorCommand
-            
+
             r4
-            
+
             af''!4
             - \tenuto                                                          %! IndicatorCommand
-            
+
             r4
-            
+
             g'''4
             - \tenuto                                                          %! IndicatorCommand
             \revert Stem.direction                                             %! baca_stem_down:OverrideCommand(2)
             \ottava #0                                                         %! SpannerCommand
-            
+
             r4
             \revert Rest.direction                                             %! baca_rest_down:OverrideCommand(2)
             \revert TupletBracket.direction                                    %! baca_tuplet_bracket_down:OverrideCommand(2)
@@ -1972,7 +1972,7 @@ E_RHVoiceIII = {
         \times 10/11 {
             \tweak text #tuplet-number::calc-fraction-text
             \times 3/4 {
-                
+
                 % [E RHVoiceIII measure 83 / measure 2]                        %! _comment_measure_numbers
                 \override TupletBracket.direction = #down                      %! baca_tuplet_bracket_down:OverrideCommand(1)
                 \once \override RHVoiceIII.DynamicText.color = #(x11-color 'blue) %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
@@ -1997,82 +1997,82 @@ E_RHVoiceIII = {
             %%%     }                                                          %! FIGURE_NAME_MARKUP
                 [
                 (                                                              %! SpannerCommand
-                
+
                 ef'''!8
-                
+
                 f'''8
-                
+
                 c'''8
                 ]
                 )                                                              %! SpannerCommand
             }
             \tweak text #tuplet-number::calc-fraction-text
             \times 6/7 {
-                
+
                 a''8
                 [
                 (                                                              %! SpannerCommand
-                
+
                 bf''!8
-                
+
                 c'''8
-                
+
                 g''8
-                
+
                 e''8
-                
+
                 f''8
-                
+
                 ef''!8
                 ]
                 )                                                              %! SpannerCommand
             }
             \scaleDurations #'(1 . 1) {
-                
+
                 f''8
                 [
                 (                                                              %! SpannerCommand
-                
+
                 fs''!8
-                
+
                 af''!8
-                
+
                 ef''!8
                 ]
                 )                                                              %! SpannerCommand
             }
             \tweak text #tuplet-number::calc-fraction-text
             \times 6/7 {
-                
+
                 c''8
                 [
                 (                                                              %! SpannerCommand
-                
+
                 cs''!8
-                
+
                 ef''!8
-                
+
                 bf'!8
-                
+
                 g'8
                 ]
                 )                                                              %! SpannerCommand
-                
+
                 s8
-                
+
                 s8
             }
             \tweak text #tuplet-number::calc-fraction-text
             \times 3/4 {
-                
+
                 e'8
                 [
                 (                                                              %! SpannerCommand
-                
+
                 g'8
-                
+
                 a'8
-                
+
                 d'8
                 ]
                 )                                                              %! SpannerCommand
@@ -2082,7 +2082,7 @@ E_RHVoiceIII = {
     }
     {
         \scaleDurations #'(1 . 1) {
-            
+
             % [E RHVoiceIII measure 84 / measure 3]                            %! _comment_measure_numbers
             \once \override Rest.transparent = ##t                             %! baca_rest_transparent:OverrideCommand(1)
             r4
@@ -2110,7 +2110,7 @@ E_RHVoiceIII = {
         \times 12/13 {
             \tweak text #tuplet-number::calc-fraction-text
             \times 6/7 {
-                
+
                 % [E RHVoiceIII measure 85 / measure 4]                        %! _comment_measure_numbers
                 \override TupletBracket.direction = #down                      %! baca_tuplet_bracket_down:OverrideCommand(1)
                 cs'''!8
@@ -2133,90 +2133,90 @@ E_RHVoiceIII = {
             %%%     }                                                          %! FIGURE_NAME_MARKUP
                 [
                 (                                                              %! SpannerCommand
-                
+
                 c'''8
-                
+
                 d'''8
-                
+
                 b''8
-                
+
                 fs'''!8
-                
+
                 a''8
-                
+
                 g''8
                 ~                                                              %! SpannerCommand
                 ]
                 )                                                              %! SpannerCommand
             }
             \scaleDurations #'(1 . 1) {
-                
+
                 g''8
                 [
                 (                                                              %! SpannerCommand
-                
+
                 bf''!8
-                
+
                 c'''8
-                
+
                 f''8
                 ]
                 )                                                              %! SpannerCommand
             }
             \tweak text #tuplet-number::calc-fraction-text
             \times 6/7 {
-                
+
                 e''8
                 [
                 (                                                              %! SpannerCommand
-                
+
                 ef''!8
-                
+
                 f''8
-                
+
                 d''8
-                
+
                 a''8
                 ]
-                
+
                 s8
-                
+
                 bf'!8
                 )                                                              %! SpannerCommand
             }
             \tweak text #tuplet-number::calc-fraction-text
             \times 3/4 {
-                
+
                 fs''!8
                 [
                 (                                                              %! SpannerCommand
-                
+
                 b'8
                 ]
                 )                                                              %! SpannerCommand
-                
+
                 s8
-                
+
                 s8
             }
             \scaleDurations #'(1 . 1) {
-                
+
                 f''8
                 [
                 (                                                              %! SpannerCommand
-                
+
                 d''8
-                
+
                 e'8
                 ]
-                
+
                 s8
-                
+
                 af'!8
                 [
-                
+
                 cs'!8
-                
+
                 b'8
                 ]
                 )                                                              %! SpannerCommand
@@ -2224,14 +2224,14 @@ E_RHVoiceIII = {
             }
         }
     }
-    
+
     % [E RHVoiceIII measure 86 / measure 5]                                    %! _comment_measure_numbers
     s1 * 1
     {
         \tweak text #tuplet-number::calc-fraction-text
         \times 20/23 {
             \scaleDurations #'(1 . 1) {
-                
+
                 % [E RHVoiceIII measure 87 / measure 6]                        %! _comment_measure_numbers
                 \override TupletBracket.direction = #down                      %! baca_tuplet_bracket_down:OverrideCommand(1)
                 \once \override RHVoiceIII.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
@@ -2256,83 +2256,83 @@ E_RHVoiceIII = {
             %%%     }                                                          %! FIGURE_NAME_MARKUP
                 [
                 (                                                              %! SpannerCommand
-                
+
                 d'''8
-                
+
                 e'''8
-                
+
                 g'''8
                 ]
                 )                                                              %! SpannerCommand
             }
             \tweak text #tuplet-number::calc-fraction-text
             \times 6/7 {
-                
+
                 af''!8
                 [
                 (                                                              %! SpannerCommand
-                
+
                 f'''8
-                
+
                 g''8
                 ]
-                
+
                 s8
-                
+
                 b''8
                 [
-                
+
                 e''8
-                
+
                 d''8
                 ]
                 )                                                              %! SpannerCommand
             }
             \tweak text #tuplet-number::calc-fraction-text
             \times 3/4 {
-                
+
                 af''!8
                 (                                                              %! SpannerCommand
-                
+
                 s8
-                
+
                 s8
-                
+
                 fs''!8
                 )                                                              %! SpannerCommand
             }
             \scaleDurations #'(1 . 1) {
-                
+
                 a''8
                 (                                                              %! SpannerCommand
-                
+
                 s8
-                
+
                 fs''!8
                 [
-                
+
                 g'8
-                
+
                 bf'!8
                 ]
-                
+
                 s8
-                
+
                 ef''!8
                 )                                                              %! SpannerCommand
             }
             \tweak text #tuplet-number::calc-fraction-text
             \times 3/4 {
-                
+
                 b'8
                 [
                 (                                                              %! SpannerCommand
-                
+
                 fs'!8
                 ]
-                
+
                 s8
-                
+
                 a'8
                 )                                                              %! SpannerCommand
                 \revert TupletBracket.direction                                %! baca_tuplet_bracket_down:OverrideCommand(2)
@@ -2341,7 +2341,7 @@ E_RHVoiceIII = {
     }
     {
         \scaleDurations #'(1 . 1) {
-            
+
             % [E RHVoiceIII measure 88 / measure 7]                            %! _comment_measure_numbers
             \once \override Rest.transparent = ##t                             %! baca_rest_transparent:OverrideCommand(1)
             r4
@@ -2369,7 +2369,7 @@ E_RHVoiceIII = {
         \times 26/29 {
             \tweak text #tuplet-number::calc-fraction-text
             \times 6/7 {
-                
+
                 % [E RHVoiceIII measure 89 / measure 8]                        %! _comment_measure_numbers
                 \override TupletBracket.direction = #down                      %! baca_tuplet_bracket_down:OverrideCommand(1)
                 c'''8
@@ -2392,104 +2392,104 @@ E_RHVoiceIII = {
             %%%     }                                                          %! FIGURE_NAME_MARKUP
                 [
                 (                                                              %! SpannerCommand
-                
+
                 g'''8
-                
+
                 a'''8
                 ]
-                
+
                 s8
-                
+
                 cs'''!8
-                
+
                 s8
-                
+
                 fs'''!8
                 )                                                              %! SpannerCommand
             }
             \tweak text #tuplet-number::calc-fraction-text
             \times 3/4 {
-                
+
                 bf''!8
                 (                                                              %! SpannerCommand
-                
+
                 s8
-                
+
                 a''8
                 [
-                
+
                 af''!8
                 ]
                 )                                                              %! SpannerCommand
             }
             \scaleDurations #'(1 . 1) {
-                
+
                 cs'''!8
                 (                                                              %! SpannerCommand
-                
+
                 s8
-                
+
                 af''!8
                 [
-                
+
                 b''8
-                
+
                 c'''8
                 ]
-                
+
                 s8
-                
+
                 g''8
                 )                                                              %! SpannerCommand
             }
             \tweak text #tuplet-number::calc-fraction-text
             \times 3/4 {
-                
+
                 cs''!8
                 [
                 (                                                              %! SpannerCommand
-                
+
                 bf'!8
                 ]
                 )                                                              %! SpannerCommand
-                
+
                 s8
-                
+
                 s8
             }
             \tweak text #tuplet-number::calc-fraction-text
             \times 6/7 {
-                
+
                 e''8
                 [
                 (                                                              %! SpannerCommand
-                
+
                 a'8
-                
+
                 b'8
-                
+
                 d''8
                 ]
-                
+
                 s8
-                
+
                 c''8
                 [
-                
+
                 bf'!8
                 ]
                 )                                                              %! SpannerCommand
             }
             \scaleDurations #'(1 . 1) {
-                
+
                 c''8
                 [
                 (                                                              %! SpannerCommand
-                
+
                 b'8
-                
+
                 cs'!8
-                
+
                 bf'!8
                 ]
                 )                                                              %! SpannerCommand
@@ -2499,7 +2499,7 @@ E_RHVoiceIII = {
     }
     {
         \scaleDurations #'(1 . 1) {
-            
+
             % [E RHVoiceIII measure 90 / measure 9]                            %! _comment_measure_numbers
             \once \override Rest.transparent = ##t                             %! baca_rest_transparent:OverrideCommand(1)
             r4
@@ -2522,7 +2522,7 @@ E_RHVoiceIII = {
         %%%     }                                                              %! FIGURE_NAME_MARKUP
         }
     }
-    
+
     % [E RHVoiceIII measure 91 / measure 10]                                   %! _comment_measure_numbers
     s1 * 27/4
     {
@@ -2530,7 +2530,7 @@ E_RHVoiceIII = {
         \times 7/8 {
             \tweak text #tuplet-number::calc-fraction-text
             \times 6/7 {
-                
+
                 % [E RHVoiceIII measure 96 / measure 15]                       %! _comment_measure_numbers
                 \override TupletBracket.direction = #down                      %! baca_tuplet_bracket_down:OverrideCommand(1)
                 \override TupletBracket.staff-padding = #3                     %! baca_tuplet_bracket_staff_padding:OverrideCommand(1)
@@ -2556,52 +2556,52 @@ E_RHVoiceIII = {
             %%%     }                                                          %! FIGURE_NAME_MARKUP
                 [
                 (                                                              %! SpannerCommand
-                
+
                 af'''!8
-                
+
                 bf''!8
-                
+
                 ef'''!8
-                
+
                 d'''8
-                
+
                 cs'''!8
-                
+
                 b''8
                 ]
                 )                                                              %! SpannerCommand
             }
             \scaleDurations #'(1 . 1) {
-                
+
                 s8
-                
+
                 d''8
                 [
                 (                                                              %! SpannerCommand
-                
+
                 e''8
-                
+
                 cs''!8
                 ]
                 )                                                              %! SpannerCommand
             }
             \tweak text #tuplet-number::calc-fraction-text
             \times 6/7 {
-                
+
                 af''!8
                 (                                                              %! SpannerCommand
-                
+
                 s8
-                
+
                 cs''!8
-                
+
                 s8
-                
+
                 s8
-                
+
                 e'8
                 [
-                
+
                 d'8
                 ]
                 )                                                              %! SpannerCommand
@@ -2610,334 +2610,334 @@ E_RHVoiceIII = {
             }
         }
     }
-    
+
     % [E RHVoiceIII measure 97 / measure 16]                                   %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _make_measure_silences
-    
-}
+
+}                                                                              %! extern
 
 
-E_RHVoiceIIIInserts = {
-    
+E_RHVoiceIIIInserts = {                                                        %! extern
+
     % [E RHVoiceIIIInserts measure 82 / measure 1]                             %! _comment_measure_numbers
     s1 * 4                                                                     %! _call_rhythm_commands
-    
+
     % [E RHVoiceIIIInserts measure 83 / measure 2]                             %! _comment_measure_numbers
     s1 * 5/2                                                                   %! _call_rhythm_commands
-    
+
     % [E RHVoiceIIIInserts measure 84 / measure 3]                             %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
-    
+
     % [E RHVoiceIIIInserts measure 85 / measure 4]                             %! _comment_measure_numbers
     s1 * 3                                                                     %! _call_rhythm_commands
-    
+
     % [E RHVoiceIIIInserts measure 86 / measure 5]                             %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
-    
+
     % [E RHVoiceIIIInserts measure 87 / measure 6]                             %! _comment_measure_numbers
     s1 * 5/2                                                                   %! _call_rhythm_commands
-    
+
     % [E RHVoiceIIIInserts measure 88 / measure 7]                             %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
-    
+
     % [E RHVoiceIIIInserts measure 89 / measure 8]                             %! _comment_measure_numbers
     s1 * 13/4                                                                  %! _call_rhythm_commands
-    
+
     % [E RHVoiceIIIInserts measure 90 / measure 9]                             %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
-    
+
     % [E RHVoiceIIIInserts measure 91 / measure 10]                            %! _comment_measure_numbers
     s1 * 29/16                                                                 %! _call_rhythm_commands
-    
+
     % [E RHVoiceIIIInserts measure 92 / measure 11]                            %! _comment_measure_numbers
     s1 * 27/16                                                                 %! _call_rhythm_commands
-    
+
     % [E RHVoiceIIIInserts measure 93 / measure 12]                            %! _comment_measure_numbers
     s1 * 21/16                                                                 %! _call_rhythm_commands
-    
+
     % [E RHVoiceIIIInserts measure 94 / measure 13]                            %! _comment_measure_numbers
     s1 * 15/16                                                                 %! _call_rhythm_commands
-    
+
     % [E RHVoiceIIIInserts measure 95 / measure 14]                            %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
-    
+
     % [E RHVoiceIIIInserts measure 96 / measure 15]                            %! _comment_measure_numbers
     s1 * 7/4                                                                   %! _call_rhythm_commands
-    
+
     % [E RHVoiceIIIInserts measure 97 / measure 16]                            %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
-    
-}
+
+}                                                                              %! extern
 
 
-E_RHVoiceIV = {
-    
+E_RHVoiceIV = {                                                                %! extern
+
     % [E RHVoiceIV measure 82 / measure 1]                                     %! _comment_measure_numbers
     \once \override RHVoiceIV.DynamicText.color = #(x11-color 'green4)         %! REAPPLIED_DYNAMIC_COLOR:_attach_color_literal(2)
     s1 * 4                                                                     %! _call_rhythm_commands
     \p                                                                         %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
-    
+
     % [E RHVoiceIV measure 83 / measure 2]                                     %! _comment_measure_numbers
     s1 * 5/2                                                                   %! _call_rhythm_commands
-    
+
     % [E RHVoiceIV measure 84 / measure 3]                                     %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
-    
+
     % [E RHVoiceIV measure 85 / measure 4]                                     %! _comment_measure_numbers
     s1 * 3                                                                     %! _call_rhythm_commands
-    
+
     % [E RHVoiceIV measure 86 / measure 5]                                     %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
-    
+
     % [E RHVoiceIV measure 87 / measure 6]                                     %! _comment_measure_numbers
     s1 * 5/2                                                                   %! _call_rhythm_commands
-    
+
     % [E RHVoiceIV measure 88 / measure 7]                                     %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
-    
+
     % [E RHVoiceIV measure 89 / measure 8]                                     %! _comment_measure_numbers
     s1 * 13/4                                                                  %! _call_rhythm_commands
-    
+
     % [E RHVoiceIV measure 90 / measure 9]                                     %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
-    
+
     % [E RHVoiceIV measure 91 / measure 10]                                    %! _comment_measure_numbers
     s1 * 29/16                                                                 %! _call_rhythm_commands
-    
+
     % [E RHVoiceIV measure 92 / measure 11]                                    %! _comment_measure_numbers
     s1 * 27/16                                                                 %! _call_rhythm_commands
-    
+
     % [E RHVoiceIV measure 93 / measure 12]                                    %! _comment_measure_numbers
     s1 * 21/16                                                                 %! _call_rhythm_commands
-    
+
     % [E RHVoiceIV measure 94 / measure 13]                                    %! _comment_measure_numbers
     s1 * 15/16                                                                 %! _call_rhythm_commands
-    
+
     % [E RHVoiceIV measure 95 / measure 14]                                    %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
-    
+
     % [E RHVoiceIV measure 96 / measure 15]                                    %! _comment_measure_numbers
     s1 * 7/4                                                                   %! _call_rhythm_commands
-    
+
     % [E RHVoiceIV measure 97 / measure 16]                                    %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
-    
-}
+
+}                                                                              %! extern
 
 
-E_RHVoiceIVInserts = {
-    
+E_RHVoiceIVInserts = {                                                         %! extern
+
     % [E RHVoiceIVInserts measure 82 / measure 1]                              %! _comment_measure_numbers
     s1 * 4                                                                     %! _call_rhythm_commands
-    
+
     % [E RHVoiceIVInserts measure 83 / measure 2]                              %! _comment_measure_numbers
     s1 * 5/2                                                                   %! _call_rhythm_commands
-    
+
     % [E RHVoiceIVInserts measure 84 / measure 3]                              %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
-    
+
     % [E RHVoiceIVInserts measure 85 / measure 4]                              %! _comment_measure_numbers
     s1 * 3                                                                     %! _call_rhythm_commands
-    
+
     % [E RHVoiceIVInserts measure 86 / measure 5]                              %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
-    
+
     % [E RHVoiceIVInserts measure 87 / measure 6]                              %! _comment_measure_numbers
     s1 * 5/2                                                                   %! _call_rhythm_commands
-    
+
     % [E RHVoiceIVInserts measure 88 / measure 7]                              %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
-    
+
     % [E RHVoiceIVInserts measure 89 / measure 8]                              %! _comment_measure_numbers
     s1 * 13/4                                                                  %! _call_rhythm_commands
-    
+
     % [E RHVoiceIVInserts measure 90 / measure 9]                              %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
-    
+
     % [E RHVoiceIVInserts measure 91 / measure 10]                             %! _comment_measure_numbers
     s1 * 29/16                                                                 %! _call_rhythm_commands
-    
+
     % [E RHVoiceIVInserts measure 92 / measure 11]                             %! _comment_measure_numbers
     s1 * 27/16                                                                 %! _call_rhythm_commands
-    
+
     % [E RHVoiceIVInserts measure 93 / measure 12]                             %! _comment_measure_numbers
     s1 * 21/16                                                                 %! _call_rhythm_commands
-    
+
     % [E RHVoiceIVInserts measure 94 / measure 13]                             %! _comment_measure_numbers
     s1 * 15/16                                                                 %! _call_rhythm_commands
-    
+
     % [E RHVoiceIVInserts measure 95 / measure 14]                             %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
-    
+
     % [E RHVoiceIVInserts measure 96 / measure 15]                             %! _comment_measure_numbers
     s1 * 7/4                                                                   %! _call_rhythm_commands
-    
+
     % [E RHVoiceIVInserts measure 97 / measure 16]                             %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
-    
-}
+
+}                                                                              %! extern
 
 
-E_RHVoiceV = {
-    
+E_RHVoiceV = {                                                                 %! extern
+
     % [E RHVoiceV measure 82 / measure 1]                                      %! _comment_measure_numbers
     s1 * 4                                                                     %! _call_rhythm_commands
-    
+
     % [E RHVoiceV measure 83 / measure 2]                                      %! _comment_measure_numbers
     s1 * 5/2                                                                   %! _call_rhythm_commands
-    
+
     % [E RHVoiceV measure 84 / measure 3]                                      %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
-    
+
     % [E RHVoiceV measure 85 / measure 4]                                      %! _comment_measure_numbers
     s1 * 3                                                                     %! _call_rhythm_commands
-    
+
     % [E RHVoiceV measure 86 / measure 5]                                      %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
-    
+
     % [E RHVoiceV measure 87 / measure 6]                                      %! _comment_measure_numbers
     s1 * 5/2                                                                   %! _call_rhythm_commands
-    
+
     % [E RHVoiceV measure 88 / measure 7]                                      %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
-    
+
     % [E RHVoiceV measure 89 / measure 8]                                      %! _comment_measure_numbers
     s1 * 13/4                                                                  %! _call_rhythm_commands
-    
+
     % [E RHVoiceV measure 90 / measure 9]                                      %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
-    
+
     % [E RHVoiceV measure 91 / measure 10]                                     %! _comment_measure_numbers
     s1 * 29/16                                                                 %! _call_rhythm_commands
-    
+
     % [E RHVoiceV measure 92 / measure 11]                                     %! _comment_measure_numbers
     s1 * 27/16                                                                 %! _call_rhythm_commands
-    
+
     % [E RHVoiceV measure 93 / measure 12]                                     %! _comment_measure_numbers
     s1 * 21/16                                                                 %! _call_rhythm_commands
-    
+
     % [E RHVoiceV measure 94 / measure 13]                                     %! _comment_measure_numbers
     s1 * 15/16                                                                 %! _call_rhythm_commands
-    
+
     % [E RHVoiceV measure 95 / measure 14]                                     %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
-    
+
     % [E RHVoiceV measure 96 / measure 15]                                     %! _comment_measure_numbers
     s1 * 7/4                                                                   %! _call_rhythm_commands
-    
+
     % [E RHVoiceV measure 97 / measure 16]                                     %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
-    
-}
+
+}                                                                              %! extern
 
 
-E_RHVoiceVI = {
-    
+E_RHVoiceVI = {                                                                %! extern
+
     % [E RHVoiceVI measure 82 / measure 1]                                     %! _comment_measure_numbers
     s1 * 4                                                                     %! _call_rhythm_commands
-    
+
     % [E RHVoiceVI measure 83 / measure 2]                                     %! _comment_measure_numbers
     s1 * 5/2                                                                   %! _call_rhythm_commands
-    
+
     % [E RHVoiceVI measure 84 / measure 3]                                     %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
-    
+
     % [E RHVoiceVI measure 85 / measure 4]                                     %! _comment_measure_numbers
     s1 * 3                                                                     %! _call_rhythm_commands
-    
+
     % [E RHVoiceVI measure 86 / measure 5]                                     %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
-    
+
     % [E RHVoiceVI measure 87 / measure 6]                                     %! _comment_measure_numbers
     s1 * 5/2                                                                   %! _call_rhythm_commands
-    
+
     % [E RHVoiceVI measure 88 / measure 7]                                     %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
-    
+
     % [E RHVoiceVI measure 89 / measure 8]                                     %! _comment_measure_numbers
     s1 * 13/4                                                                  %! _call_rhythm_commands
-    
+
     % [E RHVoiceVI measure 90 / measure 9]                                     %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
-    
+
     % [E RHVoiceVI measure 91 / measure 10]                                    %! _comment_measure_numbers
     s1 * 29/16                                                                 %! _call_rhythm_commands
-    
+
     % [E RHVoiceVI measure 92 / measure 11]                                    %! _comment_measure_numbers
     s1 * 27/16                                                                 %! _call_rhythm_commands
-    
+
     % [E RHVoiceVI measure 93 / measure 12]                                    %! _comment_measure_numbers
     s1 * 21/16                                                                 %! _call_rhythm_commands
-    
+
     % [E RHVoiceVI measure 94 / measure 13]                                    %! _comment_measure_numbers
     s1 * 15/16                                                                 %! _call_rhythm_commands
-    
+
     % [E RHVoiceVI measure 95 / measure 14]                                    %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
-    
+
     % [E RHVoiceVI measure 96 / measure 15]                                    %! _comment_measure_numbers
     s1 * 7/4                                                                   %! _call_rhythm_commands
-    
+
     % [E RHVoiceVI measure 97 / measure 16]                                    %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
-    
-}
+
+}                                                                              %! extern
 
 
-E_RHResonanceVoice = {
-    
+E_RHResonanceVoice = {                                                         %! extern
+
     % [E RHResonanceVoice measure 82 / measure 1]                              %! _comment_measure_numbers
     s1 * 4                                                                     %! _call_rhythm_commands
-    
+
     % [E RHResonanceVoice measure 83 / measure 2]                              %! _comment_measure_numbers
     s1 * 5/2                                                                   %! _call_rhythm_commands
-    
+
     % [E RHResonanceVoice measure 84 / measure 3]                              %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
-    
+
     % [E RHResonanceVoice measure 85 / measure 4]                              %! _comment_measure_numbers
     s1 * 3                                                                     %! _call_rhythm_commands
-    
+
     % [E RHResonanceVoice measure 86 / measure 5]                              %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
-    
+
     % [E RHResonanceVoice measure 87 / measure 6]                              %! _comment_measure_numbers
     s1 * 5/2                                                                   %! _call_rhythm_commands
-    
+
     % [E RHResonanceVoice measure 88 / measure 7]                              %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
-    
+
     % [E RHResonanceVoice measure 89 / measure 8]                              %! _comment_measure_numbers
     s1 * 13/4                                                                  %! _call_rhythm_commands
-    
+
     % [E RHResonanceVoice measure 90 / measure 9]                              %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
-    
+
     % [E RHResonanceVoice measure 91 / measure 10]                             %! _comment_measure_numbers
     s1 * 29/16                                                                 %! _call_rhythm_commands
-    
+
     % [E RHResonanceVoice measure 92 / measure 11]                             %! _comment_measure_numbers
     s1 * 27/16                                                                 %! _call_rhythm_commands
-    
+
     % [E RHResonanceVoice measure 93 / measure 12]                             %! _comment_measure_numbers
     s1 * 21/16                                                                 %! _call_rhythm_commands
-    
+
     % [E RHResonanceVoice measure 94 / measure 13]                             %! _comment_measure_numbers
     s1 * 15/16                                                                 %! _call_rhythm_commands
-    
+
     % [E RHResonanceVoice measure 95 / measure 14]                             %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
-    
+
     % [E RHResonanceVoice measure 96 / measure 15]                             %! _comment_measure_numbers
     s1 * 7/4                                                                   %! _call_rhythm_commands
-    
+
     % [E RHResonanceVoice measure 97 / measure 16]                             %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
-    
-}
+
+}                                                                              %! extern
 
 
-E_PianoMusicRHStaff = <<
+E_PianoMusicRHStaff = <<                                                       %! extern
     \context RHVoiceI = "RHVoiceI"                                             %! ScoreTemplate
     \E_RHVoiceI                                                                %! extern
     \context RHVoiceIInserts = "RHVoiceIInserts"                               %! ScoreTemplate
@@ -2960,170 +2960,170 @@ E_PianoMusicRHStaff = <<
     \E_RHVoiceVI                                                               %! extern
     \context RHResonanceVoice = "RHResonanceVoice"                             %! ScoreTemplate
     \E_RHResonanceVoice                                                        %! extern
->>
+>>                                                                             %! extern
 
 
-E_LHVoiceI = {
-    
+E_LHVoiceI = {                                                                 %! extern
+
     % [E LHVoiceI measure 82 / measure 1]                                      %! _comment_measure_numbers
     s1 * 4                                                                     %! _call_rhythm_commands
-    
+
     % [E LHVoiceI measure 83 / measure 2]                                      %! _comment_measure_numbers
     s1 * 5/2                                                                   %! _call_rhythm_commands
-    
+
     % [E LHVoiceI measure 84 / measure 3]                                      %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
-    
+
     % [E LHVoiceI measure 85 / measure 4]                                      %! _comment_measure_numbers
     s1 * 3                                                                     %! _call_rhythm_commands
-    
+
     % [E LHVoiceI measure 86 / measure 5]                                      %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
-    
+
     % [E LHVoiceI measure 87 / measure 6]                                      %! _comment_measure_numbers
     s1 * 5/2                                                                   %! _call_rhythm_commands
-    
+
     % [E LHVoiceI measure 88 / measure 7]                                      %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
-    
+
     % [E LHVoiceI measure 89 / measure 8]                                      %! _comment_measure_numbers
     s1 * 13/4                                                                  %! _call_rhythm_commands
-    
+
     % [E LHVoiceI measure 90 / measure 9]                                      %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
-    
+
     % [E LHVoiceI measure 91 / measure 10]                                     %! _comment_measure_numbers
     s1 * 29/16                                                                 %! _call_rhythm_commands
-    
+
     % [E LHVoiceI measure 92 / measure 11]                                     %! _comment_measure_numbers
     s1 * 27/16                                                                 %! _call_rhythm_commands
-    
+
     % [E LHVoiceI measure 93 / measure 12]                                     %! _comment_measure_numbers
     s1 * 21/16                                                                 %! _call_rhythm_commands
-    
+
     % [E LHVoiceI measure 94 / measure 13]                                     %! _comment_measure_numbers
     s1 * 15/16                                                                 %! _call_rhythm_commands
-    
+
     % [E LHVoiceI measure 95 / measure 14]                                     %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
-    
+
     % [E LHVoiceI measure 96 / measure 15]                                     %! _comment_measure_numbers
     s1 * 7/4                                                                   %! _call_rhythm_commands
-    
+
     % [E LHVoiceI measure 97 / measure 16]                                     %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
-    
-}
+
+}                                                                              %! extern
 
 
-E_LHVoiceII = {
-    
+E_LHVoiceII = {                                                                %! extern
+
     % [E LHVoiceII measure 82 / measure 1]                                     %! _comment_measure_numbers
     s1 * 4                                                                     %! _call_rhythm_commands
-    
+
     % [E LHVoiceII measure 83 / measure 2]                                     %! _comment_measure_numbers
     s1 * 5/2                                                                   %! _call_rhythm_commands
-    
+
     % [E LHVoiceII measure 84 / measure 3]                                     %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
-    
+
     % [E LHVoiceII measure 85 / measure 4]                                     %! _comment_measure_numbers
     s1 * 3                                                                     %! _call_rhythm_commands
-    
+
     % [E LHVoiceII measure 86 / measure 5]                                     %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
-    
+
     % [E LHVoiceII measure 87 / measure 6]                                     %! _comment_measure_numbers
     s1 * 5/2                                                                   %! _call_rhythm_commands
-    
+
     % [E LHVoiceII measure 88 / measure 7]                                     %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
-    
+
     % [E LHVoiceII measure 89 / measure 8]                                     %! _comment_measure_numbers
     s1 * 13/4                                                                  %! _call_rhythm_commands
-    
+
     % [E LHVoiceII measure 90 / measure 9]                                     %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
-    
+
     % [E LHVoiceII measure 91 / measure 10]                                    %! _comment_measure_numbers
     s1 * 29/16                                                                 %! _call_rhythm_commands
-    
+
     % [E LHVoiceII measure 92 / measure 11]                                    %! _comment_measure_numbers
     s1 * 27/16                                                                 %! _call_rhythm_commands
-    
+
     % [E LHVoiceII measure 93 / measure 12]                                    %! _comment_measure_numbers
     s1 * 21/16                                                                 %! _call_rhythm_commands
-    
+
     % [E LHVoiceII measure 94 / measure 13]                                    %! _comment_measure_numbers
     s1 * 15/16                                                                 %! _call_rhythm_commands
-    
+
     % [E LHVoiceII measure 95 / measure 14]                                    %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
-    
+
     % [E LHVoiceII measure 96 / measure 15]                                    %! _comment_measure_numbers
     s1 * 7/4                                                                   %! _call_rhythm_commands
-    
+
     % [E LHVoiceII measure 97 / measure 16]                                    %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
-    
-}
+
+}                                                                              %! extern
 
 
-E_LHVoiceIII = {
-    
+E_LHVoiceIII = {                                                               %! extern
+
     % [E LHVoiceIII measure 82 / measure 1]                                    %! _comment_measure_numbers
     s1 * 4                                                                     %! _call_rhythm_commands
-    
+
     % [E LHVoiceIII measure 83 / measure 2]                                    %! _comment_measure_numbers
     s1 * 5/2                                                                   %! _call_rhythm_commands
-    
+
     % [E LHVoiceIII measure 84 / measure 3]                                    %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
-    
+
     % [E LHVoiceIII measure 85 / measure 4]                                    %! _comment_measure_numbers
     s1 * 3                                                                     %! _call_rhythm_commands
-    
+
     % [E LHVoiceIII measure 86 / measure 5]                                    %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
-    
+
     % [E LHVoiceIII measure 87 / measure 6]                                    %! _comment_measure_numbers
     s1 * 5/2                                                                   %! _call_rhythm_commands
-    
+
     % [E LHVoiceIII measure 88 / measure 7]                                    %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
-    
+
     % [E LHVoiceIII measure 89 / measure 8]                                    %! _comment_measure_numbers
     s1 * 13/4                                                                  %! _call_rhythm_commands
-    
+
     % [E LHVoiceIII measure 90 / measure 9]                                    %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
-    
+
     % [E LHVoiceIII measure 91 / measure 10]                                   %! _comment_measure_numbers
     s1 * 29/16                                                                 %! _call_rhythm_commands
-    
+
     % [E LHVoiceIII measure 92 / measure 11]                                   %! _comment_measure_numbers
     s1 * 27/16                                                                 %! _call_rhythm_commands
-    
+
     % [E LHVoiceIII measure 93 / measure 12]                                   %! _comment_measure_numbers
     s1 * 21/16                                                                 %! _call_rhythm_commands
-    
+
     % [E LHVoiceIII measure 94 / measure 13]                                   %! _comment_measure_numbers
     s1 * 15/16                                                                 %! _call_rhythm_commands
-    
+
     % [E LHVoiceIII measure 95 / measure 14]                                   %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
-    
+
     % [E LHVoiceIII measure 96 / measure 15]                                   %! _comment_measure_numbers
     s1 * 7/4                                                                   %! _call_rhythm_commands
-    
+
     % [E LHVoiceIII measure 97 / measure 16]                                   %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
-    
-}
+
+}                                                                              %! extern
 
 
-E_LHVoiceIV = {
-    
+E_LHVoiceIV = {                                                                %! extern
+
     % [E LHVoiceIV measure 82 / measure 1]                                     %! _comment_measure_numbers
     \clef "treble"                                                             %! REAPPLIED_CLEF:_set_status_tag:_reapply_persistent_indicators(3)
     \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'green4)        %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
@@ -3135,7 +3135,7 @@ E_LHVoiceIV = {
     \override PianoMusicLHStaff.Clef.color = #(x11-color 'OliveDrab)           %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
     {
         \scaleDurations #'(1 . 1) {
-            
+
             % [E LHVoiceIV measure 85 / measure 4]                             %! _comment_measure_numbers
             \override Slur.direction = #down                                   %! baca_slur_down:OverrideCommand(1)
             \override Script.direction = #up                                   %! baca_script_up:OverrideCommand(1)
@@ -3164,43 +3164,43 @@ E_LHVoiceIV = {
         %%%             }                                                      %! FIGURE_NAME_MARKUP
         %%%     }                                                              %! FIGURE_NAME_MARKUP
             \override PianoMusicLHStaff.Clef.color = #(x11-color 'DeepSkyBlue2) %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
-            
+
             r2
-            
+
             r2
-            
+
             \once \override LHVoiceIV.DynamicText.color = #(x11-color 'blue)   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
             b'8.
             \p                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
             - \staccato                                                        %! IndicatorCommand
             - \tenuto                                                          %! IndicatorCommand
             (                                                                  %! SpannerCommand
-            
+
             r8.
-            
+
             ef'!8.
             - \staccato                                                        %! IndicatorCommand
             - \tenuto                                                          %! IndicatorCommand
-            
+
             r8.
-            
+
             cs!8.
             - \staccato                                                        %! IndicatorCommand
             - \tenuto                                                          %! IndicatorCommand
             )                                                                  %! SpannerCommand
-            
+
             r8.
-            
+
             r4.
             \revert Slur.direction                                             %! baca_slur_down:OverrideCommand(2)
         }
     }
-    
+
     % [E LHVoiceIV measure 86 / measure 5]                                     %! _comment_measure_numbers
     s1 * 1
     {
         \scaleDurations #'(1 . 1) {
-            
+
             % [E LHVoiceIV measure 87 / measure 6]                             %! _comment_measure_numbers
             \override Slur.direction = #down                                   %! baca_slur_down:OverrideCommand(1)
             r2
@@ -3221,42 +3221,42 @@ E_LHVoiceIV = {
         %%%                 ]                                                  %! FIGURE_NAME_MARKUP
         %%%             }                                                      %! FIGURE_NAME_MARKUP
         %%%     }                                                              %! FIGURE_NAME_MARKUP
-            
+
             r2
-            
+
             \once \override LHVoiceIV.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
             af'!8.
             \p                                                                 %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
             - \staccato                                                        %! IndicatorCommand
             - \tenuto                                                          %! IndicatorCommand
             (                                                                  %! SpannerCommand
-            
+
             r16
-            
+
             e'8.
             - \staccato                                                        %! IndicatorCommand
             - \tenuto                                                          %! IndicatorCommand
-            
+
             r16
-            
+
             bf!8.
             - \staccato                                                        %! IndicatorCommand
             - \tenuto                                                          %! IndicatorCommand
-            
+
             r16
-            
+
             cs!8.
             - \staccato                                                        %! IndicatorCommand
             - \tenuto                                                          %! IndicatorCommand
             )                                                                  %! SpannerCommand
-            
+
             r16
             \revert Slur.direction                                             %! baca_slur_down:OverrideCommand(2)
         }
     }
     {
         \scaleDurations #'(1 . 1) {
-            
+
             b'8.
             - \staccato                                                        %! IndicatorCommand
             - \tenuto                                                          %! IndicatorCommand
@@ -3278,23 +3278,23 @@ E_LHVoiceIV = {
         %%%             }                                                      %! FIGURE_NAME_MARKUP
         %%%     }                                                              %! FIGURE_NAME_MARKUP
             (                                                                  %! SpannerCommand
-            
+
             r16
-            
+
             g8.
             - \staccato                                                        %! IndicatorCommand
             - \tenuto                                                          %! IndicatorCommand
             )                                                                  %! SpannerCommand
-            
+
             r16
         }
     }
-    
+
     % [E LHVoiceIV measure 88 / measure 7]                                     %! _comment_measure_numbers
     s1 * 1/4
     {
         \scaleDurations #'(1 . 1) {
-            
+
             % [E LHVoiceIV measure 89 / measure 8]                             %! _comment_measure_numbers
             b'8.
             - \staccato                                                        %! IndicatorCommand
@@ -3317,32 +3317,32 @@ E_LHVoiceIV = {
         %%%             }                                                      %! FIGURE_NAME_MARKUP
         %%%     }                                                              %! FIGURE_NAME_MARKUP
             (                                                                  %! SpannerCommand
-            
+
             r16
-            
+
             ef'!8.
             - \staccato                                                        %! IndicatorCommand
             - \tenuto                                                          %! IndicatorCommand
-            
+
             r16
-            
+
             cs!8.
             - \staccato                                                        %! IndicatorCommand
             - \tenuto                                                          %! IndicatorCommand
-            
+
             r16
-            
+
             af,!8.
             - \staccato                                                        %! IndicatorCommand
             - \tenuto                                                          %! IndicatorCommand
             )                                                                  %! SpannerCommand
-            
+
             r16
         }
     }
     {
         \scaleDurations #'(1 . 1) {
-            
+
             e'8.
             - \staccato                                                        %! IndicatorCommand
             - \tenuto                                                          %! IndicatorCommand
@@ -3365,7 +3365,7 @@ E_LHVoiceIV = {
         %%%     }                                                              %! FIGURE_NAME_MARKUP
             [
             (                                                                  %! SpannerCommand
-            
+
             bf!8.
             - \staccato                                                        %! IndicatorCommand
             - \tenuto                                                          %! IndicatorCommand
@@ -3375,7 +3375,7 @@ E_LHVoiceIV = {
     }
     {
         \scaleDurations #'(1 . 1) {
-            
+
             cs'!8.
             - \staccato                                                        %! IndicatorCommand
             - \tenuto                                                          %! IndicatorCommand
@@ -3398,11 +3398,11 @@ E_LHVoiceIV = {
         %%%     }                                                              %! FIGURE_NAME_MARKUP
             [
             (                                                                  %! SpannerCommand
-            
+
             b8.
             - \staccato                                                        %! IndicatorCommand
             - \tenuto                                                          %! IndicatorCommand
-            
+
             g8.
             - \staccato                                                        %! IndicatorCommand
             - \tenuto                                                          %! IndicatorCommand
@@ -3412,7 +3412,7 @@ E_LHVoiceIV = {
     }
     {
         \scaleDurations #'(1 . 1) {
-            
+
             r8.
         %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                      %! FIGURE_NAME_MARKUP
@@ -3431,32 +3431,32 @@ E_LHVoiceIV = {
         %%%                 ]                                                  %! FIGURE_NAME_MARKUP
         %%%             }                                                      %! FIGURE_NAME_MARKUP
         %%%     }                                                              %! FIGURE_NAME_MARKUP
-            
+
             b8.
             - \staccato                                                        %! IndicatorCommand
             - \tenuto                                                          %! IndicatorCommand
             [
             (                                                                  %! SpannerCommand
-            
+
             ef,!8.
             - \staccato                                                        %! IndicatorCommand
             - \tenuto                                                          %! IndicatorCommand
             ]
             )                                                                  %! SpannerCommand
-            
+
             r4
-            
+
             r4
-            
+
             r4
         }
     }
-    
+
     % [E LHVoiceIV measure 90 / measure 9]                                     %! _comment_measure_numbers
     s1 * 7
     {
         \scaleDurations #'(1 . 1) {
-            
+
             % [E LHVoiceIV measure 96 / measure 15]                            %! _comment_measure_numbers
             r2..
         %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
@@ -3476,7 +3476,7 @@ E_LHVoiceIV = {
         %%%                 ]                                                  %! FIGURE_NAME_MARKUP
         %%%             }                                                      %! FIGURE_NAME_MARKUP
         %%%     }                                                              %! FIGURE_NAME_MARKUP
-            
+
             \once \override LHVoiceIV.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
             cs'!8
             \p                                                                 %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
@@ -3484,11 +3484,11 @@ E_LHVoiceIV = {
             - \tenuto                                                          %! IndicatorCommand
             [
             (                                                                  %! SpannerCommand
-            
+
             af,!8
             - \staccato                                                        %! IndicatorCommand
             - \tenuto                                                          %! IndicatorCommand
-            
+
             e,8
             - \staccato                                                        %! IndicatorCommand
             - \tenuto                                                          %! IndicatorCommand
@@ -3498,7 +3498,7 @@ E_LHVoiceIV = {
     }
     {
         \scaleDurations #'(1 . 1) {
-            
+
             bf!8
             - \staccato                                                        %! IndicatorCommand
             - \tenuto                                                          %! IndicatorCommand
@@ -3521,15 +3521,15 @@ E_LHVoiceIV = {
         %%%     }                                                              %! FIGURE_NAME_MARKUP
             [
             (                                                                  %! SpannerCommand
-            
+
             cs!8
             - \staccato                                                        %! IndicatorCommand
             - \tenuto                                                          %! IndicatorCommand
-            
+
             b,8
             - \staccato                                                        %! IndicatorCommand
             - \tenuto                                                          %! IndicatorCommand
-            
+
             g,8
             - \staccato                                                        %! IndicatorCommand
             - \tenuto                                                          %! IndicatorCommand
@@ -3539,7 +3539,7 @@ E_LHVoiceIV = {
     }
     {
         \scaleDurations #'(1 . 1) {
-            
+
             % [E LHVoiceIV measure 97 / measure 16]                            %! _comment_measure_numbers
             \once \override Rest.transparent = ##t                             %! baca_rest_transparent:OverrideCommand(1)
             \clef "treble"                                                     %! EXPLICIT_CLEF:_set_status_tag:IndicatorCommand
@@ -3566,74 +3566,74 @@ E_LHVoiceIV = {
         %%%     }                                                              %! FIGURE_NAME_MARKUP
             \revert Script.direction                                           %! baca_script_up:OverrideCommand(2)
             \override PianoMusicLHStaff.Clef.color = #(x11-color 'DeepSkyBlue2) %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
-            
+
         }
     }
-}
+}                                                                              %! extern
 
 
-E_LHVoiceIVInserts = {
-    
+E_LHVoiceIVInserts = {                                                         %! extern
+
     % [E LHVoiceIVInserts measure 82 / measure 1]                              %! _comment_measure_numbers
     s1 * 4                                                                     %! _call_rhythm_commands
-    
+
     % [E LHVoiceIVInserts measure 83 / measure 2]                              %! _comment_measure_numbers
     s1 * 5/2                                                                   %! _call_rhythm_commands
-    
+
     % [E LHVoiceIVInserts measure 84 / measure 3]                              %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
-    
+
     % [E LHVoiceIVInserts measure 85 / measure 4]                              %! _comment_measure_numbers
     s1 * 3                                                                     %! _call_rhythm_commands
-    
+
     % [E LHVoiceIVInserts measure 86 / measure 5]                              %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
-    
+
     % [E LHVoiceIVInserts measure 87 / measure 6]                              %! _comment_measure_numbers
     s1 * 5/2                                                                   %! _call_rhythm_commands
-    
+
     % [E LHVoiceIVInserts measure 88 / measure 7]                              %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
-    
+
     % [E LHVoiceIVInserts measure 89 / measure 8]                              %! _comment_measure_numbers
     s1 * 13/4                                                                  %! _call_rhythm_commands
-    
+
     % [E LHVoiceIVInserts measure 90 / measure 9]                              %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
-    
+
     % [E LHVoiceIVInserts measure 91 / measure 10]                             %! _comment_measure_numbers
     s1 * 29/16                                                                 %! _call_rhythm_commands
-    
+
     % [E LHVoiceIVInserts measure 92 / measure 11]                             %! _comment_measure_numbers
     s1 * 27/16                                                                 %! _call_rhythm_commands
-    
+
     % [E LHVoiceIVInserts measure 93 / measure 12]                             %! _comment_measure_numbers
     s1 * 21/16                                                                 %! _call_rhythm_commands
-    
+
     % [E LHVoiceIVInserts measure 94 / measure 13]                             %! _comment_measure_numbers
     s1 * 15/16                                                                 %! _call_rhythm_commands
-    
+
     % [E LHVoiceIVInserts measure 95 / measure 14]                             %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
-    
+
     % [E LHVoiceIVInserts measure 96 / measure 15]                             %! _comment_measure_numbers
     s1 * 7/4                                                                   %! _call_rhythm_commands
-    
+
     % [E LHVoiceIVInserts measure 97 / measure 16]                             %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
-    
-}
+
+}                                                                              %! extern
 
 
-E_LHVoiceV = {
-    
+E_LHVoiceV = {                                                                 %! extern
+
     % [E LHVoiceV measure 82 / measure 1]                                      %! _comment_measure_numbers
     \once \override LHVoiceV.DynamicText.color = #(x11-color 'green4)          %! REAPPLIED_DYNAMIC_COLOR:_attach_color_literal(2)
     s1 * 39/4
     \p                                                                         %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
     {
         \scaleDurations #'(1 . 1) {
-            
+
             % [E LHVoiceV measure 86 / measure 5]                              %! _comment_measure_numbers
             \override Stem.direction = #up                                     %! baca_stem_up:OverrideCommand(1)
             \dynamicUp                                                         %! IndicatorCommand
@@ -3657,119 +3657,119 @@ E_LHVoiceV = {
         %%%                 ]                                                  %! FIGURE_NAME_MARKUP
         %%%             }                                                      %! FIGURE_NAME_MARKUP
         %%%     }                                                              %! FIGURE_NAME_MARKUP
-            
+
             \override Rest.direction = #up                                     %! baca_rest_up:OverrideCommand(1)
             r32
-            
+
             d,8.
-            
+
             r32
-            
+
             c,8.
-            
+
             r32
-            
+
             b,,8.
             \revert Stem.direction                                             %! baca_stem_up:OverrideCommand(2)
-            
+
             r32
-            
+
             r8
             \revert Rest.direction                                             %! baca_rest_up:OverrideCommand(2)
         }
     }
-    
+
     % [E LHVoiceV measure 87 / measure 6]                                      %! _comment_measure_numbers
     s1 * 5/2                                                                   %! _make_measure_silences
-    
+
     % [E LHVoiceV measure 88 / measure 7]                                      %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _make_measure_silences
-    
+
     % [E LHVoiceV measure 89 / measure 8]                                      %! _comment_measure_numbers
     s1 * 13/4                                                                  %! _make_measure_silences
-    
+
     % [E LHVoiceV measure 90 / measure 9]                                      %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _make_measure_silences
-    
+
     % [E LHVoiceV measure 91 / measure 10]                                     %! _comment_measure_numbers
     s1 * 29/16                                                                 %! _make_measure_silences
-    
+
     % [E LHVoiceV measure 92 / measure 11]                                     %! _comment_measure_numbers
     s1 * 27/16                                                                 %! _make_measure_silences
-    
+
     % [E LHVoiceV measure 93 / measure 12]                                     %! _comment_measure_numbers
     s1 * 21/16                                                                 %! _make_measure_silences
-    
+
     % [E LHVoiceV measure 94 / measure 13]                                     %! _comment_measure_numbers
     s1 * 15/16                                                                 %! _make_measure_silences
-    
+
     % [E LHVoiceV measure 95 / measure 14]                                     %! _comment_measure_numbers
     s1 * 1                                                                     %! _make_measure_silences
-    
+
     % [E LHVoiceV measure 96 / measure 15]                                     %! _comment_measure_numbers
     s1 * 7/4                                                                   %! _make_measure_silences
-    
+
     % [E LHVoiceV measure 97 / measure 16]                                     %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _make_measure_silences
-    
-}
+
+}                                                                              %! extern
 
 
-E_LHVoiceVInserts = {
-    
+E_LHVoiceVInserts = {                                                          %! extern
+
     % [E LHVoiceVInserts measure 82 / measure 1]                               %! _comment_measure_numbers
     s1 * 4                                                                     %! _call_rhythm_commands
-    
+
     % [E LHVoiceVInserts measure 83 / measure 2]                               %! _comment_measure_numbers
     s1 * 5/2                                                                   %! _call_rhythm_commands
-    
+
     % [E LHVoiceVInserts measure 84 / measure 3]                               %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
-    
+
     % [E LHVoiceVInserts measure 85 / measure 4]                               %! _comment_measure_numbers
     s1 * 3                                                                     %! _call_rhythm_commands
-    
+
     % [E LHVoiceVInserts measure 86 / measure 5]                               %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
-    
+
     % [E LHVoiceVInserts measure 87 / measure 6]                               %! _comment_measure_numbers
     s1 * 5/2                                                                   %! _call_rhythm_commands
-    
+
     % [E LHVoiceVInserts measure 88 / measure 7]                               %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
-    
+
     % [E LHVoiceVInserts measure 89 / measure 8]                               %! _comment_measure_numbers
     s1 * 13/4                                                                  %! _call_rhythm_commands
-    
+
     % [E LHVoiceVInserts measure 90 / measure 9]                               %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
-    
+
     % [E LHVoiceVInserts measure 91 / measure 10]                              %! _comment_measure_numbers
     s1 * 29/16                                                                 %! _call_rhythm_commands
-    
+
     % [E LHVoiceVInserts measure 92 / measure 11]                              %! _comment_measure_numbers
     s1 * 27/16                                                                 %! _call_rhythm_commands
-    
+
     % [E LHVoiceVInserts measure 93 / measure 12]                              %! _comment_measure_numbers
     s1 * 21/16                                                                 %! _call_rhythm_commands
-    
+
     % [E LHVoiceVInserts measure 94 / measure 13]                              %! _comment_measure_numbers
     s1 * 15/16                                                                 %! _call_rhythm_commands
-    
+
     % [E LHVoiceVInserts measure 95 / measure 14]                              %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
-    
+
     % [E LHVoiceVInserts measure 96 / measure 15]                              %! _comment_measure_numbers
     s1 * 7/4                                                                   %! _call_rhythm_commands
-    
+
     % [E LHVoiceVInserts measure 97 / measure 16]                              %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
-    
-}
+
+}                                                                              %! extern
 
 
-E_LHVoiceVI = {
-    
+E_LHVoiceVI = {                                                                %! extern
+
     % [E LHVoiceVI measure 82 / measure 1]                                     %! _comment_measure_numbers
     \once \override LHVoiceVI.DynamicText.color = #(x11-color 'green4)         %! REAPPLIED_DYNAMIC_COLOR:_attach_color_literal(2)
     s1 * 39/4
@@ -3778,7 +3778,7 @@ E_LHVoiceVI = {
     {
         \tweak text #tuplet-number::calc-fraction-text
         \times 4/3 {
-            
+
             % [E LHVoiceVI measure 86 / measure 5]                             %! _comment_measure_numbers
             \override Stem.direction = #down                                   %! baca_stem_down:OverrideCommand(1)
             \override TupletBracket.direction = #down                          %! baca_tuplet_bracket_down:OverrideCommand(1)
@@ -3804,118 +3804,118 @@ E_LHVoiceVI = {
         %%%                 ]                                                  %! FIGURE_NAME_MARKUP
         %%%             }                                                      %! FIGURE_NAME_MARKUP
         %%%     }                                                              %! FIGURE_NAME_MARKUP
-            
+
             \override Rest.direction = #down                                   %! baca_rest_down:OverrideCommand(1)
             r4
-            
+
             ef,,!8
             \revert Stem.direction                                             %! baca_stem_down:OverrideCommand(2)
             \ottava #0                                                         %! SpannerCommand
-            
+
             r4
             \revert Rest.direction                                             %! baca_rest_down:OverrideCommand(2)
             \revert TupletBracket.direction                                    %! baca_tuplet_bracket_down:OverrideCommand(2)
             \revert TupletBracket.staff-padding                                %! baca_tuplet_bracket_staff_padding:OverrideCommand(2)
         }
     }
-    
+
     % [E LHVoiceVI measure 87 / measure 6]                                     %! _comment_measure_numbers
     s1 * 5/2                                                                   %! _make_measure_silences
-    
+
     % [E LHVoiceVI measure 88 / measure 7]                                     %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _make_measure_silences
-    
+
     % [E LHVoiceVI measure 89 / measure 8]                                     %! _comment_measure_numbers
     s1 * 13/4                                                                  %! _make_measure_silences
-    
+
     % [E LHVoiceVI measure 90 / measure 9]                                     %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _make_measure_silences
-    
+
     % [E LHVoiceVI measure 91 / measure 10]                                    %! _comment_measure_numbers
     s1 * 29/16                                                                 %! _make_measure_silences
-    
+
     % [E LHVoiceVI measure 92 / measure 11]                                    %! _comment_measure_numbers
     s1 * 27/16                                                                 %! _make_measure_silences
-    
+
     % [E LHVoiceVI measure 93 / measure 12]                                    %! _comment_measure_numbers
     s1 * 21/16                                                                 %! _make_measure_silences
-    
+
     % [E LHVoiceVI measure 94 / measure 13]                                    %! _comment_measure_numbers
     s1 * 15/16                                                                 %! _make_measure_silences
-    
+
     % [E LHVoiceVI measure 95 / measure 14]                                    %! _comment_measure_numbers
     s1 * 1                                                                     %! _make_measure_silences
-    
+
     % [E LHVoiceVI measure 96 / measure 15]                                    %! _comment_measure_numbers
     s1 * 7/4                                                                   %! _make_measure_silences
-    
+
     % [E LHVoiceVI measure 97 / measure 16]                                    %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _make_measure_silences
-    
-}
+
+}                                                                              %! extern
 
 
-E_LHVoiceVIInserts = {
-    
+E_LHVoiceVIInserts = {                                                         %! extern
+
     % [E LHVoiceVIInserts measure 82 / measure 1]                              %! _comment_measure_numbers
     s1 * 4                                                                     %! _call_rhythm_commands
-    
+
     % [E LHVoiceVIInserts measure 83 / measure 2]                              %! _comment_measure_numbers
     s1 * 5/2                                                                   %! _call_rhythm_commands
-    
+
     % [E LHVoiceVIInserts measure 84 / measure 3]                              %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
-    
+
     % [E LHVoiceVIInserts measure 85 / measure 4]                              %! _comment_measure_numbers
     s1 * 3                                                                     %! _call_rhythm_commands
-    
+
     % [E LHVoiceVIInserts measure 86 / measure 5]                              %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
-    
+
     % [E LHVoiceVIInserts measure 87 / measure 6]                              %! _comment_measure_numbers
     s1 * 5/2                                                                   %! _call_rhythm_commands
-    
+
     % [E LHVoiceVIInserts measure 88 / measure 7]                              %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
-    
+
     % [E LHVoiceVIInserts measure 89 / measure 8]                              %! _comment_measure_numbers
     s1 * 13/4                                                                  %! _call_rhythm_commands
-    
+
     % [E LHVoiceVIInserts measure 90 / measure 9]                              %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
-    
+
     % [E LHVoiceVIInserts measure 91 / measure 10]                             %! _comment_measure_numbers
     s1 * 29/16                                                                 %! _call_rhythm_commands
-    
+
     % [E LHVoiceVIInserts measure 92 / measure 11]                             %! _comment_measure_numbers
     s1 * 27/16                                                                 %! _call_rhythm_commands
-    
+
     % [E LHVoiceVIInserts measure 93 / measure 12]                             %! _comment_measure_numbers
     s1 * 21/16                                                                 %! _call_rhythm_commands
-    
+
     % [E LHVoiceVIInserts measure 94 / measure 13]                             %! _comment_measure_numbers
     s1 * 15/16                                                                 %! _call_rhythm_commands
-    
+
     % [E LHVoiceVIInserts measure 95 / measure 14]                             %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
-    
+
     % [E LHVoiceVIInserts measure 96 / measure 15]                             %! _comment_measure_numbers
     s1 * 7/4                                                                   %! _call_rhythm_commands
-    
+
     % [E LHVoiceVIInserts measure 97 / measure 16]                             %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
-    
-}
+
+}                                                                              %! extern
 
 
-E_LHResonanceVoice = {
-    
+E_LHResonanceVoice = {                                                         %! extern
+
     % [E LHResonanceVoice measure 82 / measure 1]                              %! _comment_measure_numbers
     \override Dots.transparent = ##t                                           %! baca_dots_transparent:OverrideCommand(1)
     s1 * 17
     {
         \scaleDurations #'(1 . 1) {
-            
+
             % [E LHResonanceVoice measure 91 / measure 10]                     %! _comment_measure_numbers
             <cs,,! cs,!>1..
         %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
@@ -3935,7 +3935,7 @@ E_LHResonanceVoice = {
         %%%                 ]                                                  %! FIGURE_NAME_MARKUP
         %%%             }                                                      %! FIGURE_NAME_MARKUP
         %%%     }                                                              %! FIGURE_NAME_MARKUP
-            
+
             \once \override NoteHead.no-ledgers = ##t                          %! baca_no_ledgers:OverrideCommand(1)
             \once \override Accidental.transparent = ##t                       %! baca_accidental_transparent:OverrideCommand(1)
             \once \override Beam.transparent = ##t                             %! baca_beam_transparent:OverrideCommand(1)
@@ -3949,7 +3949,7 @@ E_LHResonanceVoice = {
     }
     {
         \scaleDurations #'(1 . 1) {
-            
+
             % [E LHResonanceVoice measure 92 / measure 11]                     %! _comment_measure_numbers
             \once \override Accidental.stencil = ##f                           %! baca_accidental_stencil_false:OverrideCommand(1)
             \override Stem.transparent = ##t                                   %! baca_stem_transparent:OverrideCommand(1)
@@ -3973,7 +3973,7 @@ E_LHResonanceVoice = {
         %%%             }                                                      %! FIGURE_NAME_MARKUP
         %%%     }                                                              %! FIGURE_NAME_MARKUP
             \repeatTie                                                         %! SpannerCommand
-            
+
             \once \override NoteHead.no-ledgers = ##t                          %! baca_no_ledgers:OverrideCommand(1)
             \once \override Accidental.transparent = ##t                       %! baca_accidental_transparent:OverrideCommand(1)
             \once \override Beam.transparent = ##t                             %! baca_beam_transparent:OverrideCommand(1)
@@ -3988,7 +3988,7 @@ E_LHResonanceVoice = {
     }
     {
         \scaleDurations #'(1 . 1) {
-            
+
             % [E LHResonanceVoice measure 93 / measure 12]                     %! _comment_measure_numbers
             <ef,,! ef,!>1
         %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
@@ -4008,7 +4008,7 @@ E_LHResonanceVoice = {
         %%%                 ]                                                  %! FIGURE_NAME_MARKUP
         %%%             }                                                      %! FIGURE_NAME_MARKUP
         %%%     }                                                              %! FIGURE_NAME_MARKUP
-            
+
             \override NoteHead.no-ledgers = ##t                                %! baca_no_ledgers:OverrideCommand(1)
             \override Accidental.transparent = ##t                             %! baca_accidental_transparent:OverrideCommand(1)
             \override Beam.transparent = ##t                                   %! baca_beam_transparent:OverrideCommand(1)
@@ -4018,7 +4018,7 @@ E_LHResonanceVoice = {
             \override Stem.transparent = ##t                                   %! baca_stem_transparent:OverrideCommand(1)
             <ef,,! ef,!>4
             \repeatTie                                                         %! SpannerCommand
-            
+
             <ef,,! ef,!>16
             \repeatTie                                                         %! SpannerCommand
             \revert NoteHead.no-ledgers                                        %! baca_no_ledgers:OverrideCommand(2)
@@ -4032,7 +4032,7 @@ E_LHResonanceVoice = {
     }
     {
         \scaleDurations #'(1 . 1) {
-            
+
             % [E LHResonanceVoice measure 94 / measure 13]                     %! _comment_measure_numbers
             \once \override Accidental.stencil = ##f                           %! baca_accidental_stencil_false:OverrideCommand(1)
             \once \override Stem.transparent = ##t                             %! baca_stem_transparent:OverrideCommand(1)
@@ -4060,7 +4060,7 @@ E_LHResonanceVoice = {
     }
     {
         \scaleDurations #'(1 . 1) {
-            
+
             % [E LHResonanceVoice measure 95 / measure 14]                     %! _comment_measure_numbers
             \once \override Accidental.stencil = ##f                           %! baca_accidental_stencil_false:OverrideCommand(1)
             \once \override Stem.transparent = ##t                             %! baca_stem_transparent:OverrideCommand(1)
@@ -4085,18 +4085,18 @@ E_LHResonanceVoice = {
             \repeatTie                                                         %! SpannerCommand
         }
     }
-    
+
     % [E LHResonanceVoice measure 96 / measure 15]                             %! _comment_measure_numbers
     s1 * 7/4                                                                   %! _make_measure_silences
-    
+
     % [E LHResonanceVoice measure 97 / measure 16]                             %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _make_measure_silences
     \revert Dots.transparent                                                   %! baca_dots_transparent:OverrideCommand(2)
-    
-}
+
+}                                                                              %! extern
 
 
-E_PianoMusicLHStaff = <<
+E_PianoMusicLHStaff = <<                                                       %! extern
     \context LHVoiceI = "LHVoiceI"                                             %! ScoreTemplate
     \E_LHVoiceI                                                                %! extern
     \context LHVoiceII = "LHVoiceII"                                           %! ScoreTemplate
@@ -4117,4 +4117,4 @@ E_PianoMusicLHStaff = <<
     \E_LHVoiceVIInserts                                                        %! extern
     \context LHResonanceVoice = "LHResonanceVoice"                             %! ScoreTemplate
     \E_LHResonanceVoice                                                        %! extern
->>
+>>                                                                             %! extern
