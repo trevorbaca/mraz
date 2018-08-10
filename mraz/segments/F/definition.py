@@ -43,9 +43,9 @@ accumulator(
         baca.accent(selector=baca.pheads()),
         extend_beam=True,
         ),
-    baca.map(
-        baca.tuplets(),
+    baca.new(
         baca.slur(),
+        map=baca.tuplets(),
         ),
     baca.register(7, 7+10),
     extend_beam=True,
@@ -76,9 +76,9 @@ accumulator(
         baca.accent(selector=baca.pheads()),
         baca.beam_everything(),
         ),
-    baca.map(
-        baca.tuplets(),
+    baca.new(
         baca.slur(),
+        map=baca.tuplets(),
         ),
     baca.nest('-1/16'),
     baca.register(9, 9+10),
@@ -111,9 +111,9 @@ accumulator(
         baca.beam_everything(),
         extend_beam=True,
         ),
-    baca.map(
-        baca.tuplets(),
+    baca.new(
         baca.slur(),
+        map=baca.tuplets(),
         ),
     baca.register(11, 11+10),
     extend_beam=True,
@@ -144,9 +144,9 @@ accumulator(
         baca.accent(selector=baca.pheads()),
         baca.beam_everything(),
         ),
-    baca.map(
-        baca.tuplets(),
+    baca.new(
         baca.slur(),
+        map=baca.tuplets(),
         ),
     baca.nest('-1/16'),
     baca.register(13, 13+10),
@@ -166,9 +166,9 @@ accumulator(
         baca.beam_everything(),
         extend_beam=True,
         ),
-    baca.map(
-        baca.tuplets(),
+    baca.new(
         baca.slur(),
+        map=baca.tuplets(),
         ),
     baca.register(15, 15+10),
     extend_beam=True,
@@ -200,9 +200,9 @@ accumulator(
         baca.accent(selector=baca.pheads()),
         baca.beam_everything(),
         ),
-    baca.map(
-        baca.tuplets(),
+    baca.new(
         baca.slur(),
+        map=baca.tuplets(),
         ),
     baca.register(17, 17+10),
     figure_name='rh-2 7.1.6',
@@ -246,9 +246,9 @@ accumulator(
         baca.beam_everything(),
         baca.staccato(selector=baca.pheads()),
         ),
-    baca.map(
-        baca.tuplets(),
+    baca.new(
         baca.slur(),
+        map=baca.tuplets(),
         ),
     baca.nest('-2/16'),
     baca.register(0, 0+16),
@@ -291,9 +291,9 @@ accumulator(
         baca.beam_everything(),
         baca.staccato(selector=baca.pheads()),
         ),
-    baca.map(
-        baca.tuplets(),
+    baca.new(
         baca.slur(),
+        map=baca.tuplets(),
         ),
     baca.nest('-2/16'),
     baca.register(4, 4+16),

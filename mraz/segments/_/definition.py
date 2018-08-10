@@ -39,9 +39,9 @@ accumulator(
     baca.hairpin('f < ff'),
     baca.ottava(),
     baca.register(10, 36),
-    baca.map(
-        baca.runs(),
+    baca.new(
         baca.slur(),
+        map=baca.runs(),
         ),
     baca.slur_up(),
     figure_name='b.1.2',
