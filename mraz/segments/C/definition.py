@@ -63,9 +63,9 @@ accumulator(
     collections_5['stage 2']['lh'][0],
     baca.dynamic('p'),
     baca.flags(),
-    baca.map(
-        baca.tuplets().map(baca.tleaves()).nontrivial(),
+    baca.new(
         baca.slur(),
+        map=baca.tuplets().map(baca.tleaves()).nontrivial(),
         ),
     baca.register(6, -24),
     baca.slur_up(),
@@ -365,9 +365,9 @@ accumulator(
 accumulator(
     'lh_v5',
     collections['stage 4']['lh'].next(2),
-    baca.map(
-        baca.ntruns(),
+    baca.new(
         baca.slur(),
+        map=baca.ntruns(),
         ),
     baca.nest(['+2/16']),
     baca.register(-12, 0),
@@ -388,9 +388,9 @@ accumulator(
     'lh_v5',
     collections['stage 4']['lh'].next(),
     baca.flags(),
-    baca.map(
-        baca.ntruns(),
+    baca.new(
         baca.slur(),
+        map=baca.ntruns(),
         ),
     baca.register(-12, 0),
     baca.rests_before([2]),
@@ -410,9 +410,9 @@ accumulator(
     'rh_v3',
     collections_5['stage 2']['rh'][12],
     baca.beam_divisions(),
-    baca.map(
-        baca.tuplets().map(baca.tleaves()).nontrivial(),
+    baca.new(
         baca.slur(),
+        map=baca.tuplets().map(baca.tleaves()).nontrivial(),
         ),
     baca.register(24),
     baca.stem_down(),
@@ -430,9 +430,9 @@ accumulator(
         baca.beam_everything(),
         extend_beam=True,
         ),
-    baca.map(
-        baca.ntruns(),
+    baca.new(
         baca.slur(),
+        map=baca.ntruns(),
         ),
     baca.nest('+2/16'),
     baca.register(0, -12),
@@ -455,9 +455,9 @@ accumulator(
         [-2, 2],
         baca.beam_everything(),
         ),
-    baca.map(
-        baca.ntruns(),
+    baca.new(
         baca.slur(),
+        map=baca.ntruns(),
         ),
     baca.nest('+2/16'),
     baca.register(-12, 0),
@@ -475,9 +475,9 @@ accumulator(
         baca.beam_everything(),
         extend_beam=True,
         ),
-    baca.map(
-        baca.ntruns(),
+    baca.new(
         baca.slur(),
+        map=baca.ntruns(),
         ),
     baca.nest('+2/16'),
     baca.register(0, -12),
@@ -490,9 +490,9 @@ accumulator(
     'lh_v5',
     collections['stage 4']['lh'].next(),
     baca.flags(),
-    baca.map(
-        baca.ntruns(),
+    baca.new(
         baca.slur(),
+        map=baca.ntruns(),
         ),
     baca.register(-12, 0),
     baca.rests_around([2], [6]),
@@ -515,9 +515,9 @@ accumulator(
         baca.beam_everything(),
         extend_beam=True,
         ),
-    baca.map(
-        baca.ntruns(),
+    baca.new(
         baca.slur(),
+        map=baca.ntruns(),
         ),
     baca.nest('+2/16'),
     baca.register(0, -12),
@@ -530,9 +530,9 @@ accumulator(
     'lh_v5',
     collections['stage 4']['lh'].next(),
     baca.flags(),
-    baca.map(
-        baca.ntruns(),
+    baca.new(
         baca.slur(),
+        map=baca.ntruns(),
         ),
     baca.register(-12, 0),
     baca.rests_before([2]),
@@ -549,9 +549,9 @@ accumulator(
         [8],
         baca.beam_everything(),
         ),
-    baca.map(
-        baca.ntruns(),
+    baca.new(
         baca.slur(),
+        map=baca.ntruns(),
         ),
     baca.register(0, -12),
     baca.rests_around([2], [6]),
@@ -577,9 +577,9 @@ accumulator(
         hocket=True,
         by_pitch_class=True,
         ),
-    baca.map(
-        baca.ntruns(),
+    baca.new(
         baca.slur(),
+        map=baca.ntruns(),
         ),
     baca.register(36, 22),
     baca.rests_around([2], [6]),
@@ -612,9 +612,9 @@ accumulator(
         by_pitch_class=True,
         hocket=True,
         ),
-    baca.map(
-        baca.ntruns(),
+    baca.new(
         baca.slur(),
+        map=baca.ntruns(),
         ),
     baca.register(36, 22),
     figure_name='rh-1 4.4.4',
@@ -638,9 +638,9 @@ accumulator(
         by_pitch_class=True,
         hocket=True,
         ),
-    baca.map(
-        baca.ntruns(),
+    baca.new(
         baca.slur(),
+        map=baca.ntruns(),
         ),
     baca.register(36, 22),
     baca.slur_down(selector=baca.leaf(0)), # lilypond error when slur is up
@@ -781,9 +781,9 @@ accumulator(
     baca.anchor_to_figure('rh-1 4.5.3'),
     baca.dls_staff_padding(8),
     baca.hairpin('f < ff', selector=baca.leaves()[:-1]),
-    baca.map(
-        baca.ntruns(),
+    baca.new(
         baca.slur(),
+        map=baca.ntruns(),
         ),
     baca.register(10, 36),
     baca.slur_up(),
@@ -797,9 +797,9 @@ accumulator(
     collections['stage 5']['lh'].next(4),
     baca.dls_staff_padding(8),
     baca.hairpin('f < ff', selector=baca.leaves()[:-1]),
-    baca.map(
-        baca.ntruns(),
+    baca.new(
         baca.slur(),
+        map=baca.ntruns(),
         ),
     baca.register(10, 36),
     baca.slur_up(),
@@ -826,9 +826,9 @@ accumulator(
     collections['stage 5']['lh'].next(4),
     baca.dls_staff_padding(8),
     baca.hairpin('f < ff', selector=baca.leaves()[:-1]),
-    baca.map(
-        baca.ntruns(),
+    baca.new(
         baca.slur(),
+        map=baca.ntruns(),
         ),
     baca.register(10, 36),
     baca.slur_up(),
@@ -843,9 +843,9 @@ accumulator(
     collections['stage 5']['lh'].next(2),
     baca.dls_staff_padding(8),
     baca.hairpin('f < ff', selector=baca.leaves()[:-1]),
-    baca.map(
-        baca.ntruns(),
+    baca.new(
         baca.slur(),
+        map=baca.ntruns(),
         ),
     baca.register(10, 36),
     baca.slur_up(),
@@ -893,9 +893,9 @@ accumulator(
     [abjad.Rest((1, 1)), abjad.Rest((1, 1)), abjad.Rest((1, 1))],
     baca.anchor_to_figure('rh-2 4.6.1'),
     # TODO: debug: figure out why bracket extends indefinitely to right
-    baca.map(
-        baca.lts()[:-1],
+    baca.new(
         baca.sustain_pedal(selector=baca.rleaves()),
+        map=baca.lts()[:-1],
         ),
     baca.sustain_pedal_staff_padding(4),
     baca.rest_transparent(),
@@ -1051,9 +1051,9 @@ maker(
 
 maker(
     'lh_resonance',
-    baca.map(
-        baca.qruns(),
+    baca.new(
         baca.repeat_tie(),
+        map=baca.qruns(),
         ),
     )
 
