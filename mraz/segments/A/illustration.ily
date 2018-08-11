@@ -633,28 +633,40 @@ A_RHResonanceVoice = {                                                         %
 
 
 A_PianoMusicRHStaff = <<                                                       %! extern
+
     \context RHVoiceI = "RHVoiceI"                                             %! ScoreTemplate
     \A_RHVoiceI                                                                %! extern
+
     \context RHVoiceIInserts = "RHVoiceIInserts"                               %! ScoreTemplate
     \A_RHVoiceIInserts                                                         %! extern
+
     \context RHVoiceII = "RHVoiceII"                                           %! ScoreTemplate
     \A_RHVoiceII                                                               %! extern
+
     \context RHVoiceIIInserts = "RHVoiceIIInserts"                             %! ScoreTemplate
     \A_RHVoiceIIInserts                                                        %! extern
+
     \context RHVoiceIII = "RHVoiceIII"                                         %! ScoreTemplate
     \A_RHVoiceIII                                                              %! extern
+
     \context RHVoiceIIIInserts = "RHVoiceIIIInserts"                           %! ScoreTemplate
     \A_RHVoiceIIIInserts                                                       %! extern
+
     \context RHVoiceIV = "RHVoiceIV"                                           %! ScoreTemplate
     \A_RHVoiceIV                                                               %! extern
+
     \context RHVoiceIVInserts = "RHVoiceIVInserts"                             %! ScoreTemplate
     \A_RHVoiceIVInserts                                                        %! extern
+
     \context RHVoiceV = "RHVoiceV"                                             %! ScoreTemplate
     \A_RHVoiceV                                                                %! extern
+
     \context RHVoiceVI = "RHVoiceVI"                                           %! ScoreTemplate
     \A_RHVoiceVI                                                               %! extern
+
     \context RHResonanceVoice = "RHResonanceVoice"                             %! ScoreTemplate
     \A_RHResonanceVoice                                                        %! extern
+
 >>                                                                             %! extern
 
 
@@ -866,7 +878,9 @@ A_LHVoiceIVInserts = {                                                         %
 
 
 A_LHVoiceV = {                                                                 %! extern
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             % [A LHVoiceV measure 10 / measure 1]                              %! _comment_measure_numbers
@@ -901,9 +915,13 @@ A_LHVoiceV = {                                                                 %
             fs,,!8.
 
             r32
+
         }
+
     }
+
     {
+
         \tweak text #tuplet-number::calc-fraction-text
         \times 16/15 {
 
@@ -937,7 +955,9 @@ A_LHVoiceV = {                                                                 %
             cs,,!8
 
             r32
+
         }
+
         \tweak text #tuplet-number::calc-fraction-text
         \times 16/15 {
 
@@ -953,9 +973,13 @@ A_LHVoiceV = {                                                                 %
 
             r32
             \revert Rest.direction                                             %! baca_rest_up:OverrideCommand(2)
+
         }
+
     }
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             % [A LHVoiceV measure 12 / measure 3]                              %! _comment_measure_numbers
@@ -987,9 +1011,13 @@ A_LHVoiceV = {                                                                 %
             af,,!32
 
             r4...
+
         }
+
     }
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             % [A LHVoiceV measure 13 / measure 4]                              %! _comment_measure_numbers
@@ -1027,9 +1055,13 @@ A_LHVoiceV = {                                                                 %
 
             r32
             \revert Rest.direction                                             %! baca_rest_up:OverrideCommand(2)
+
         }
+
     }
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             % [A LHVoiceV measure 14 / measure 5]                              %! _comment_measure_numbers
@@ -1057,9 +1089,13 @@ A_LHVoiceV = {                                                                 %
             bf,,!8
 
             r32
+
         }
+
     }
+
     {
+
         \tweak text #tuplet-number::calc-fraction-text
         \times 16/15 {
 
@@ -1092,9 +1128,13 @@ A_LHVoiceV = {                                                                 %
             f,,8
 
             r32
+
         }
+
     }
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             % [A LHVoiceV measure 16 / measure 7]                              %! _comment_measure_numbers
@@ -1132,9 +1172,13 @@ A_LHVoiceV = {                                                                 %
 
             r4...
             \revert Rest.direction                                             %! baca_rest_up:OverrideCommand(2)
+
         }
+
     }
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             % [A LHVoiceV measure 17 / measure 8]                              %! _comment_measure_numbers
@@ -1162,9 +1206,13 @@ A_LHVoiceV = {                                                                 %
             d,8.
 
             r32
+
         }
+
     }
+
     {
+
         \tweak text #tuplet-number::calc-fraction-text
         \times 16/15 {
 
@@ -1198,7 +1246,9 @@ A_LHVoiceV = {                                                                 %
             ef,,!8
 
             r32
+
         }
+
         \tweak text #tuplet-number::calc-fraction-text
         \times 16/15 {
 
@@ -1214,9 +1264,13 @@ A_LHVoiceV = {                                                                 %
 
             r32
             \revert TupletBracket.staff-padding                                %! baca_tuplet_bracket_staff_padding:OverrideCommand(2)
+
         }
+
     }
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             % [A LHVoiceV measure 19 / measure 10]                             %! _comment_measure_numbers
@@ -1246,9 +1300,13 @@ A_LHVoiceV = {                                                                 %
 
             r4...
             \revert Rest.direction                                             %! baca_rest_up:OverrideCommand(2)
+
         }
+
     }
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             % [A LHVoiceV measure 20 / measure 11]                             %! _comment_measure_numbers
@@ -1284,9 +1342,13 @@ A_LHVoiceV = {                                                                 %
             e,,8.
 
             r32
+
         }
+
     }
+
     {
+
         \tweak text #tuplet-number::calc-fraction-text
         \times 16/15 {
 
@@ -1323,7 +1385,9 @@ A_LHVoiceV = {                                                                 %
             \revert TupletBracket.direction                                    %! baca_tuplet_bracket_up:OverrideCommand(2)
 
         }
+
     }
+
 }                                                                              %! extern
 
 
@@ -1382,7 +1446,9 @@ A_LHVoiceVI = {                                                                %
     \f                                                                         %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
     ^ \baca-reapplied-indicator-markup "(“Piano”)"                             %! REAPPLIED_INSTRUMENT_ALERT:_attach_latent_indicator_alert
     \override PianoMusicLHStaff.Clef.color = #(x11-color 'OliveDrab)           %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
+
     {
+
         \tweak text #tuplet-number::calc-fraction-text
         \times 5/6 {
 
@@ -1421,11 +1487,15 @@ A_LHVoiceVI = {                                                                %
             - \tenuto                                                          %! IndicatorCommand
 
             r4
+
         }
+
     }
 
     s1 * 1
+
     {
+
         \tweak text #tuplet-number::calc-fraction-text
         \times 4/3 {
 
@@ -1458,11 +1528,15 @@ A_LHVoiceVI = {                                                                %
 
             r4
             \revert Rest.direction                                             %! baca_rest_up:OverrideCommand(2)
+
         }
+
     }
 
     s1 * 73/48
+
     {
+
         \tweak text #tuplet-number::calc-fraction-text
         \times 4/3 {
 
@@ -1498,11 +1572,15 @@ A_LHVoiceVI = {                                                                %
             - \tenuto                                                          %! IndicatorCommand
 
             r8.
+
         }
+
     }
 
     s1 * 7/16
+
     {
+
         \tweak text #tuplet-number::calc-fraction-text
         \times 4/3 {
 
@@ -1537,11 +1615,15 @@ A_LHVoiceVI = {                                                                %
             - \tenuto                                                          %! IndicatorCommand
 
             r8.
+
         }
+
     }
 
     s1 * 11/48
+
     {
+
         \tweak text #tuplet-number::calc-fraction-text
         \times 5/4 {
 
@@ -1573,11 +1655,15 @@ A_LHVoiceVI = {                                                                %
 
             fs,,!8
             - \tenuto                                                          %! IndicatorCommand
+
         }
+
     }
 
     s1 * 1/16
+
     {
+
         \tweak text #tuplet-number::calc-fraction-text
         \times 4/6 {
 
@@ -1615,7 +1701,9 @@ A_LHVoiceVI = {                                                                %
 
             r4
             \revert Rest.staff-position                                        %! baca_rest_position:OverrideCommand(2)
+
         }
+
     }
 
     s1 * 3/8                                                                   %! _make_measure_silences
@@ -1711,24 +1799,35 @@ A_LHResonanceVoice = {                                                         %
 
 
 A_PianoMusicLHStaff = <<                                                       %! extern
+
     \context LHVoiceI = "LHVoiceI"                                             %! ScoreTemplate
     \A_LHVoiceI                                                                %! extern
+
     \context LHVoiceII = "LHVoiceII"                                           %! ScoreTemplate
     \A_LHVoiceII                                                               %! extern
+
     \context LHVoiceIII = "LHVoiceIII"                                         %! ScoreTemplate
     \A_LHVoiceIII                                                              %! extern
+
     \context LHVoiceIV = "LHVoiceIV"                                           %! ScoreTemplate
     \A_LHVoiceIV                                                               %! extern
+
     \context LHVoiceIVInserts = "LHVoiceIVInserts"                             %! ScoreTemplate
     \A_LHVoiceIVInserts                                                        %! extern
+
     \context LHVoiceV = "LHVoiceV"                                             %! ScoreTemplate
     \A_LHVoiceV                                                                %! extern
+
     \context LHVoiceVInserts = "LHVoiceVInserts"                               %! ScoreTemplate
     \A_LHVoiceVInserts                                                         %! extern
+
     \context LHVoiceVI = "LHVoiceVI"                                           %! ScoreTemplate
     \A_LHVoiceVI                                                               %! extern
+
     \context LHVoiceVIInserts = "LHVoiceVIInserts"                             %! ScoreTemplate
     \A_LHVoiceVIInserts                                                        %! extern
+
     \context LHResonanceVoice = "LHResonanceVoice"                             %! ScoreTemplate
     \A_LHResonanceVoice                                                        %! extern
+
 >>                                                                             %! extern

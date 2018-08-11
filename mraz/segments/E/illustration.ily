@@ -410,7 +410,9 @@ E_RHVoiceIInserts = {                                                          %
 
 
 E_RHVoiceII = {                                                                %! extern
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             % [E RHVoiceII measure 82 / measure 1]                             %! _comment_measure_numbers
@@ -461,13 +463,18 @@ E_RHVoiceII = {                                                                %
             r2..
             \revert Rest.direction                                             %! baca_rest_up:OverrideCommand(2)
             \revert Script.direction                                           %! baca_script_up:OverrideCommand(2)
+
         }
+
     }
+
     {
         \override TupletBracket.stencil = ##f
         \override TupletNumber.stencil = ##f
+
         \tweak text #tuplet-number::calc-fraction-text
         \times 10/11 {
+
             \tweak text #tuplet-number::calc-fraction-text
             \times 3/4 {
 
@@ -482,7 +489,9 @@ E_RHVoiceII = {                                                                %
                 s8
 
                 s8
+
             }
+
             \tweak text #tuplet-number::calc-fraction-text
             \times 6/7 {
 
@@ -499,7 +508,9 @@ E_RHVoiceII = {                                                                %
                 s8
 
                 s8
+
             }
+
             \scaleDurations #'(1 . 1) {
 
                 s8
@@ -509,7 +520,9 @@ E_RHVoiceII = {                                                                %
                 s8
 
                 s8
+
             }
+
             \tweak text #tuplet-number::calc-fraction-text
             \times 6/7 {
 
@@ -535,7 +548,9 @@ E_RHVoiceII = {                                                                %
                 \set stemRightBeamCount = 1                                    %! _extend_beam
                 fs'!8
                 - \accent                                                      %! IndicatorCommand
+
             }
+
             \tweak text #tuplet-number::calc-fraction-text
             \times 3/4 {
 
@@ -546,19 +561,25 @@ E_RHVoiceII = {                                                                %
                 s8
 
                 s8
+
             }
+
         }
         \revert TupletBracket.stencil
         \revert TupletNumber.stencil
+
     }
 
     % [E RHVoiceII measure 84 / measure 3]                                     %! _comment_measure_numbers
     s1 * 1/4
+
     {
         \override TupletBracket.stencil = ##f
         \override TupletNumber.stencil = ##f
+
         \tweak text #tuplet-number::calc-fraction-text
         \times 12/13 {
+
             \tweak text #tuplet-number::calc-fraction-text
             \times 6/7 {
 
@@ -576,7 +597,9 @@ E_RHVoiceII = {                                                                %
                 s8
 
                 s8
+
             }
+
             \scaleDurations #'(1 . 1) {
 
                 s8
@@ -586,7 +609,9 @@ E_RHVoiceII = {                                                                %
                 s8
 
                 s8
+
             }
+
             \tweak text #tuplet-number::calc-fraction-text
             \times 6/7 {
 
@@ -606,7 +631,9 @@ E_RHVoiceII = {                                                                %
                 - \accent                                                      %! IndicatorCommand
 
                 s8
+
             }
+
             \tweak text #tuplet-number::calc-fraction-text
             \times 3/4 {
 
@@ -623,7 +650,9 @@ E_RHVoiceII = {                                                                %
                 \set stemRightBeamCount = 1                                    %! _extend_beam
                 e''8
                 - \accent                                                      %! IndicatorCommand
+
             }
+
             \scaleDurations #'(1 . 1) {
 
                 s8
@@ -643,19 +672,25 @@ E_RHVoiceII = {                                                                %
 
                 s8
                 ]                                                              %! _extend_beam
+
             }
+
         }
         \revert TupletBracket.stencil
         \revert TupletNumber.stencil
+
     }
 
     % [E RHVoiceII measure 86 / measure 5]                                     %! _comment_measure_numbers
     s1 * 1
+
     {
         \override TupletBracket.stencil = ##f
         \override TupletNumber.stencil = ##f
+
         \tweak text #tuplet-number::calc-fraction-text
         \times 20/23 {
+
             \scaleDurations #'(1 . 1) {
 
                 % [E RHVoiceII measure 87 / measure 6]                         %! _comment_measure_numbers
@@ -667,7 +702,9 @@ E_RHVoiceII = {                                                                %
                 s8
 
                 s8
+
             }
+
             \tweak text #tuplet-number::calc-fraction-text
             \times 6/7 {
 
@@ -689,7 +726,9 @@ E_RHVoiceII = {                                                                %
                 s8
 
                 s8
+
             }
+
             \tweak text #tuplet-number::calc-fraction-text
             \times 3/4 {
 
@@ -706,7 +745,9 @@ E_RHVoiceII = {                                                                %
                 - \accent                                                      %! IndicatorCommand
 
                 s8
+
             }
+
             \scaleDurations #'(1 . 1) {
 
                 s8
@@ -728,7 +769,9 @@ E_RHVoiceII = {                                                                %
                 - \accent                                                      %! IndicatorCommand
 
                 s8
+
             }
+
             \tweak text #tuplet-number::calc-fraction-text
             \times 3/4 {
 
@@ -742,19 +785,25 @@ E_RHVoiceII = {                                                                %
                 - \accent                                                      %! IndicatorCommand
 
                 s8
+
             }
+
         }
         \revert TupletBracket.stencil
         \revert TupletNumber.stencil
+
     }
 
     % [E RHVoiceII measure 88 / measure 7]                                     %! _comment_measure_numbers
     s1 * 1/4
+
     {
         \override TupletBracket.stencil = ##f
         \override TupletNumber.stencil = ##f
+
         \tweak text #tuplet-number::calc-fraction-text
         \times 26/29 {
+
             \tweak text #tuplet-number::calc-fraction-text
             \times 6/7 {
 
@@ -778,7 +827,9 @@ E_RHVoiceII = {                                                                %
                 - \accent                                                      %! IndicatorCommand
 
                 s8
+
             }
+
             \tweak text #tuplet-number::calc-fraction-text
             \times 3/4 {
 
@@ -792,7 +843,9 @@ E_RHVoiceII = {                                                                %
                 s8
 
                 s8
+
             }
+
             \scaleDurations #'(1 . 1) {
 
                 s8
@@ -814,7 +867,9 @@ E_RHVoiceII = {                                                                %
                 - \accent                                                      %! IndicatorCommand
 
                 s8
+
             }
+
             \tweak text #tuplet-number::calc-fraction-text
             \times 3/4 {
 
@@ -831,7 +886,9 @@ E_RHVoiceII = {                                                                %
                 \set stemRightBeamCount = 1                                    %! _extend_beam
                 b'8
                 - \accent                                                      %! IndicatorCommand
+
             }
+
             \tweak text #tuplet-number::calc-fraction-text
             \times 6/7 {
 
@@ -852,7 +909,9 @@ E_RHVoiceII = {                                                                %
                 s8
 
                 s8
+
             }
+
             \scaleDurations #'(1 . 1) {
 
                 s8
@@ -865,17 +924,22 @@ E_RHVoiceII = {                                                                %
                 ]                                                              %! _extend_beam
                 \revert Beam.positions                                         %! baca_beam_positions:OverrideCommand(2)
                 \revert Script.direction                                       %! baca_script_up:OverrideCommand(2)
+
             }
+
         }
         \revert TupletBracket.stencil
         \revert TupletNumber.stencil
+
     }
 
     % [E RHVoiceII measure 90 / measure 9]                                     %! _comment_measure_numbers
     \override Script.direction = #up                                           %! baca_script_up:OverrideCommand(1)
     \override Slur.direction = #up                                             %! baca_slur_up:OverrideCommand(1)
     s1 * 1/4
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             % [E RHVoiceII measure 91 / measure 10]                            %! _comment_measure_numbers
@@ -928,7 +992,9 @@ E_RHVoiceII = {                                                                %
             af'!16
             - \staccato                                                        %! IndicatorCommand
             )                                                                  %! SpannerCommand
+
         }
+
         \scaleDurations #'(1 . 1) {
 
             \set stemLeftBeamCount = 1
@@ -957,7 +1023,9 @@ E_RHVoiceII = {                                                                %
             a''16
             - \staccato                                                        %! IndicatorCommand
             )                                                                  %! SpannerCommand
+
         }
+
         \scaleDurations #'(1 . 1) {
 
             \set stemLeftBeamCount = 1
@@ -991,7 +1059,9 @@ E_RHVoiceII = {                                                                %
             f''16
             - \staccato                                                        %! IndicatorCommand
             )                                                                  %! SpannerCommand
+
         }
+
         \scaleDurations #'(1 . 1) {
 
             \set stemLeftBeamCount = 1
@@ -1020,7 +1090,9 @@ E_RHVoiceII = {                                                                %
             c'''16
             - \staccato                                                        %! IndicatorCommand
             )                                                                  %! SpannerCommand
+
         }
+
         \scaleDurations #'(1 . 1) {
 
             \set stemLeftBeamCount = 1
@@ -1049,7 +1121,9 @@ E_RHVoiceII = {                                                                %
             ef'!16
             - \staccato                                                        %! IndicatorCommand
             )                                                                  %! SpannerCommand
+
         }
+
         \scaleDurations #'(1 . 1) {
 
             \set stemLeftBeamCount = 1
@@ -1070,9 +1144,13 @@ E_RHVoiceII = {                                                                %
             ]
             )                                                                  %! SpannerCommand
             \revert Beam.positions                                             %! baca_beam_positions:OverrideCommand(2)
+
         }
+
     }
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             % [E RHVoiceII measure 92 / measure 11]                            %! _comment_measure_numbers
@@ -1121,7 +1199,9 @@ E_RHVoiceII = {                                                                %
             ef'''!16
             - \staccato                                                        %! IndicatorCommand
             )                                                                  %! SpannerCommand
+
         }
+
         \scaleDurations #'(1 . 1) {
 
             \set stemLeftBeamCount = 1
@@ -1155,7 +1235,9 @@ E_RHVoiceII = {                                                                %
             c''''16
             - \staccato                                                        %! IndicatorCommand
             )                                                                  %! SpannerCommand
+
         }
+
         \scaleDurations #'(1 . 1) {
 
             \set stemLeftBeamCount = 1
@@ -1189,7 +1271,9 @@ E_RHVoiceII = {                                                                %
             b''16
             - \staccato                                                        %! IndicatorCommand
             )                                                                  %! SpannerCommand
+
         }
+
         \scaleDurations #'(1 . 1) {
 
             \set stemLeftBeamCount = 1
@@ -1218,7 +1302,9 @@ E_RHVoiceII = {                                                                %
             cs''''!16
             - \staccato                                                        %! IndicatorCommand
             )                                                                  %! SpannerCommand
+
         }
+
         \scaleDurations #'(1 . 1) {
 
             \set stemLeftBeamCount = 1
@@ -1249,9 +1335,13 @@ E_RHVoiceII = {                                                                %
             ]
             )                                                                  %! SpannerCommand
             \revert Beam.positions                                             %! baca_beam_positions:OverrideCommand(2)
+
         }
+
     }
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             % [E RHVoiceII measure 93 / measure 12]                            %! _comment_measure_numbers
@@ -1295,7 +1385,9 @@ E_RHVoiceII = {                                                                %
             c''''16
             - \staccato                                                        %! IndicatorCommand
             )                                                                  %! SpannerCommand
+
         }
+
         \scaleDurations #'(1 . 1) {
 
             \set stemLeftBeamCount = 1
@@ -1319,7 +1411,9 @@ E_RHVoiceII = {                                                                %
             bf'!16
             - \staccato                                                        %! IndicatorCommand
             )                                                                  %! SpannerCommand
+
         }
+
         \scaleDurations #'(1 . 1) {
 
             \set stemLeftBeamCount = 1
@@ -1343,7 +1437,9 @@ E_RHVoiceII = {                                                                %
             a''16
             - \staccato                                                        %! IndicatorCommand
             )                                                                  %! SpannerCommand
+
         }
+
         \scaleDurations #'(1 . 1) {
 
             \set stemLeftBeamCount = 1
@@ -1372,7 +1468,9 @@ E_RHVoiceII = {                                                                %
             ef'''!16
             - \staccato                                                        %! IndicatorCommand
             )                                                                  %! SpannerCommand
+
         }
+
         \scaleDurations #'(1 . 1) {
 
             \set stemLeftBeamCount = 1
@@ -1398,9 +1496,13 @@ E_RHVoiceII = {                                                                %
             ]
             )                                                                  %! SpannerCommand
             \revert Beam.positions                                             %! baca_beam_positions:OverrideCommand(2)
+
         }
+
     }
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             % [E RHVoiceII measure 94 / measure 13]                            %! _comment_measure_numbers
@@ -1444,7 +1546,9 @@ E_RHVoiceII = {                                                                %
             f'''16
             - \staccato                                                        %! IndicatorCommand
             )                                                                  %! SpannerCommand
+
         }
+
         \scaleDurations #'(1 . 1) {
 
             \set stemLeftBeamCount = 1
@@ -1463,7 +1567,9 @@ E_RHVoiceII = {                                                                %
             ef'''!16
             - \staccato                                                        %! IndicatorCommand
             )                                                                  %! SpannerCommand
+
         }
+
         \scaleDurations #'(1 . 1) {
 
             \set stemLeftBeamCount = 1
@@ -1482,7 +1588,9 @@ E_RHVoiceII = {                                                                %
             a'''16
             - \staccato                                                        %! IndicatorCommand
             )                                                                  %! SpannerCommand
+
         }
+
         \scaleDurations #'(1 . 1) {
 
             \set stemLeftBeamCount = 1
@@ -1516,9 +1624,13 @@ E_RHVoiceII = {                                                                %
             \revert Script.direction                                           %! baca_script_up:OverrideCommand(2)
             \revert Slur.direction                                             %! baca_slur_up:OverrideCommand(2)
             \revert Stem.direction                                             %! baca_stem_down:OverrideCommand(2)
+
         }
+
     }
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             % [E RHVoiceII measure 95 / measure 14]                            %! _comment_measure_numbers
@@ -1567,7 +1679,9 @@ E_RHVoiceII = {                                                                %
             fs''''!16
             - \staccato                                                        %! IndicatorCommand
             )                                                                  %! SpannerCommand
+
         }
+
         \scaleDurations #'(1 . 1) {
 
             \set stemLeftBeamCount = 1
@@ -1591,7 +1705,9 @@ E_RHVoiceII = {                                                                %
             af''!16
             - \staccato                                                        %! IndicatorCommand
             )                                                                  %! SpannerCommand
+
         }
+
         \scaleDurations #'(1 . 1) {
 
             \set stemLeftBeamCount = 1
@@ -1615,7 +1731,9 @@ E_RHVoiceII = {                                                                %
             g''''16
             - \staccato                                                        %! IndicatorCommand
             )                                                                  %! SpannerCommand
+
         }
+
         \scaleDurations #'(1 . 1) {
 
             \set stemLeftBeamCount = 1
@@ -1636,13 +1754,18 @@ E_RHVoiceII = {                                                                %
             ]
             )                                                                  %! SpannerCommand
             \revert Beam.positions                                             %! baca_beam_positions:OverrideCommand(2)
+
         }
+
     }
+
     {
         \override TupletBracket.stencil = ##f
         \override TupletNumber.stencil = ##f
+
         \tweak text #tuplet-number::calc-fraction-text
         \times 7/8 {
+
             \tweak text #tuplet-number::calc-fraction-text
             \times 6/7 {
 
@@ -1661,7 +1784,9 @@ E_RHVoiceII = {                                                                %
                 s8
 
                 s8
+
             }
+
             \scaleDurations #'(1 . 1) {
 
                 \set stemLeftBeamCount = 1
@@ -1675,7 +1800,9 @@ E_RHVoiceII = {                                                                %
                 s8
 
                 s8
+
             }
+
             \tweak text #tuplet-number::calc-fraction-text
             \times 6/7 {
 
@@ -1699,10 +1826,13 @@ E_RHVoiceII = {                                                                %
 
                 s8
                 ]
+
             }
+
         }
         \revert TupletBracket.stencil
         \revert TupletNumber.stencil
+
     }
 
     % [E RHVoiceII measure 97 / measure 16]                                    %! _comment_measure_numbers
@@ -1765,7 +1895,9 @@ E_RHVoiceIIInserts = {                                                         %
 
 
 E_RHVoiceIII = {                                                               %! extern
+
     {
+
         \tweak text #tuplet-number::calc-fraction-text
         \times 8/5 {
 
@@ -1821,11 +1953,16 @@ E_RHVoiceIII = {                                                               %
             r4
             \revert Rest.direction                                             %! baca_rest_down:OverrideCommand(2)
             \revert TupletBracket.direction                                    %! baca_tuplet_bracket_down:OverrideCommand(2)
+
         }
+
     }
+
     {
+
         \tweak text #tuplet-number::calc-fraction-text
         \times 10/11 {
+
             \tweak text #tuplet-number::calc-fraction-text
             \times 3/4 {
 
@@ -1861,7 +1998,9 @@ E_RHVoiceIII = {                                                               %
                 c'''8
                 ]
                 )                                                              %! SpannerCommand
+
             }
+
             \tweak text #tuplet-number::calc-fraction-text
             \times 6/7 {
 
@@ -1882,7 +2021,9 @@ E_RHVoiceIII = {                                                               %
                 ef''!8
                 ]
                 )                                                              %! SpannerCommand
+
             }
+
             \scaleDurations #'(1 . 1) {
 
                 f''8
@@ -1896,7 +2037,9 @@ E_RHVoiceIII = {                                                               %
                 ef''!8
                 ]
                 )                                                              %! SpannerCommand
+
             }
+
             \tweak text #tuplet-number::calc-fraction-text
             \times 6/7 {
 
@@ -1917,7 +2060,9 @@ E_RHVoiceIII = {                                                               %
                 s8
 
                 s8
+
             }
+
             \tweak text #tuplet-number::calc-fraction-text
             \times 3/4 {
 
@@ -1933,10 +2078,15 @@ E_RHVoiceIII = {                                                               %
                 ]
                 )                                                              %! SpannerCommand
                 \revert TupletBracket.direction                                %! baca_tuplet_bracket_down:OverrideCommand(2)
+
             }
+
         }
+
     }
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             % [E RHVoiceIII measure 84 / measure 3]                            %! _comment_measure_numbers
@@ -1959,11 +2109,16 @@ E_RHVoiceIII = {                                                               %
         %%%                 ]                                                  %! FIGURE_NAME_MARKUP
         %%%             }                                                      %! FIGURE_NAME_MARKUP
         %%%     }                                                              %! FIGURE_NAME_MARKUP
+
         }
+
     }
+
     {
+
         \tweak text #tuplet-number::calc-fraction-text
         \times 12/13 {
+
             \tweak text #tuplet-number::calc-fraction-text
             \times 6/7 {
 
@@ -2004,7 +2159,9 @@ E_RHVoiceIII = {                                                               %
                 ~                                                              %! SpannerCommand
                 ]
                 )                                                              %! SpannerCommand
+
             }
+
             \scaleDurations #'(1 . 1) {
 
                 g''8
@@ -2018,7 +2175,9 @@ E_RHVoiceIII = {                                                               %
                 f''8
                 ]
                 )                                                              %! SpannerCommand
+
             }
+
             \tweak text #tuplet-number::calc-fraction-text
             \times 6/7 {
 
@@ -2039,7 +2198,9 @@ E_RHVoiceIII = {                                                               %
 
                 bf'!8
                 )                                                              %! SpannerCommand
+
             }
+
             \tweak text #tuplet-number::calc-fraction-text
             \times 3/4 {
 
@@ -2054,7 +2215,9 @@ E_RHVoiceIII = {                                                               %
                 s8
 
                 s8
+
             }
+
             \scaleDurations #'(1 . 1) {
 
                 f''8
@@ -2077,15 +2240,21 @@ E_RHVoiceIII = {                                                               %
                 ]
                 )                                                              %! SpannerCommand
                 \revert TupletBracket.direction                                %! baca_tuplet_bracket_down:OverrideCommand(2)
+
             }
+
         }
+
     }
 
     % [E RHVoiceIII measure 86 / measure 5]                                    %! _comment_measure_numbers
     s1 * 1
+
     {
+
         \tweak text #tuplet-number::calc-fraction-text
         \times 20/23 {
+
             \scaleDurations #'(1 . 1) {
 
                 % [E RHVoiceIII measure 87 / measure 6]                        %! _comment_measure_numbers
@@ -2120,7 +2289,9 @@ E_RHVoiceIII = {                                                               %
                 g'''8
                 ]
                 )                                                              %! SpannerCommand
+
             }
+
             \tweak text #tuplet-number::calc-fraction-text
             \times 6/7 {
 
@@ -2143,7 +2314,9 @@ E_RHVoiceIII = {                                                               %
                 d''8
                 ]
                 )                                                              %! SpannerCommand
+
             }
+
             \tweak text #tuplet-number::calc-fraction-text
             \times 3/4 {
 
@@ -2156,7 +2329,9 @@ E_RHVoiceIII = {                                                               %
 
                 fs''!8
                 )                                                              %! SpannerCommand
+
             }
+
             \scaleDurations #'(1 . 1) {
 
                 a''8
@@ -2176,7 +2351,9 @@ E_RHVoiceIII = {                                                               %
 
                 ef''!8
                 )                                                              %! SpannerCommand
+
             }
+
             \tweak text #tuplet-number::calc-fraction-text
             \times 3/4 {
 
@@ -2192,10 +2369,15 @@ E_RHVoiceIII = {                                                               %
                 a'8
                 )                                                              %! SpannerCommand
                 \revert TupletBracket.direction                                %! baca_tuplet_bracket_down:OverrideCommand(2)
+
             }
+
         }
+
     }
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             % [E RHVoiceIII measure 88 / measure 7]                            %! _comment_measure_numbers
@@ -2218,11 +2400,16 @@ E_RHVoiceIII = {                                                               %
         %%%                 ]                                                  %! FIGURE_NAME_MARKUP
         %%%             }                                                      %! FIGURE_NAME_MARKUP
         %%%     }                                                              %! FIGURE_NAME_MARKUP
+
         }
+
     }
+
     {
+
         \tweak text #tuplet-number::calc-fraction-text
         \times 26/29 {
+
             \tweak text #tuplet-number::calc-fraction-text
             \times 6/7 {
 
@@ -2262,7 +2449,9 @@ E_RHVoiceIII = {                                                               %
 
                 fs'''!8
                 )                                                              %! SpannerCommand
+
             }
+
             \tweak text #tuplet-number::calc-fraction-text
             \times 3/4 {
 
@@ -2277,7 +2466,9 @@ E_RHVoiceIII = {                                                               %
                 af''!8
                 ]
                 )                                                              %! SpannerCommand
+
             }
+
             \scaleDurations #'(1 . 1) {
 
                 cs'''!8
@@ -2297,7 +2488,9 @@ E_RHVoiceIII = {                                                               %
 
                 g''8
                 )                                                              %! SpannerCommand
+
             }
+
             \tweak text #tuplet-number::calc-fraction-text
             \times 3/4 {
 
@@ -2312,7 +2505,9 @@ E_RHVoiceIII = {                                                               %
                 s8
 
                 s8
+
             }
+
             \tweak text #tuplet-number::calc-fraction-text
             \times 6/7 {
 
@@ -2335,7 +2530,9 @@ E_RHVoiceIII = {                                                               %
                 bf'!8
                 ]
                 )                                                              %! SpannerCommand
+
             }
+
             \scaleDurations #'(1 . 1) {
 
                 c''8
@@ -2350,10 +2547,15 @@ E_RHVoiceIII = {                                                               %
                 ]
                 )                                                              %! SpannerCommand
                 \revert TupletBracket.direction                                %! baca_tuplet_bracket_down:OverrideCommand(2)
+
             }
+
         }
+
     }
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             % [E RHVoiceIII measure 90 / measure 9]                            %! _comment_measure_numbers
@@ -2376,14 +2578,19 @@ E_RHVoiceIII = {                                                               %
         %%%                 ]                                                  %! FIGURE_NAME_MARKUP
         %%%             }                                                      %! FIGURE_NAME_MARKUP
         %%%     }                                                              %! FIGURE_NAME_MARKUP
+
         }
+
     }
 
     % [E RHVoiceIII measure 91 / measure 10]                                   %! _comment_measure_numbers
     s1 * 27/4
+
     {
+
         \tweak text #tuplet-number::calc-fraction-text
         \times 7/8 {
+
             \tweak text #tuplet-number::calc-fraction-text
             \times 6/7 {
 
@@ -2426,7 +2633,9 @@ E_RHVoiceIII = {                                                               %
                 b''8
                 ]
                 )                                                              %! SpannerCommand
+
             }
+
             \scaleDurations #'(1 . 1) {
 
                 s8
@@ -2440,7 +2649,9 @@ E_RHVoiceIII = {                                                               %
                 cs''!8
                 ]
                 )                                                              %! SpannerCommand
+
             }
+
             \tweak text #tuplet-number::calc-fraction-text
             \times 6/7 {
 
@@ -2463,8 +2674,11 @@ E_RHVoiceIII = {                                                               %
                 )                                                              %! SpannerCommand
                 \revert TupletBracket.direction                                %! baca_tuplet_bracket_down:OverrideCommand(2)
                 \revert TupletBracket.staff-padding                            %! baca_tuplet_bracket_staff_padding:OverrideCommand(2)
+
             }
+
         }
+
     }
 
     % [E RHVoiceIII measure 97 / measure 16]                                   %! _comment_measure_numbers
@@ -2794,28 +3008,40 @@ E_RHResonanceVoice = {                                                         %
 
 
 E_PianoMusicRHStaff = <<                                                       %! extern
+
     \context RHVoiceI = "RHVoiceI"                                             %! ScoreTemplate
     \E_RHVoiceI                                                                %! extern
+
     \context RHVoiceIInserts = "RHVoiceIInserts"                               %! ScoreTemplate
     \E_RHVoiceIInserts                                                         %! extern
+
     \context RHVoiceII = "RHVoiceII"                                           %! ScoreTemplate
     \E_RHVoiceII                                                               %! extern
+
     \context RHVoiceIIInserts = "RHVoiceIIInserts"                             %! ScoreTemplate
     \E_RHVoiceIIInserts                                                        %! extern
+
     \context RHVoiceIII = "RHVoiceIII"                                         %! ScoreTemplate
     \E_RHVoiceIII                                                              %! extern
+
     \context RHVoiceIIIInserts = "RHVoiceIIIInserts"                           %! ScoreTemplate
     \E_RHVoiceIIIInserts                                                       %! extern
+
     \context RHVoiceIV = "RHVoiceIV"                                           %! ScoreTemplate
     \E_RHVoiceIV                                                               %! extern
+
     \context RHVoiceIVInserts = "RHVoiceIVInserts"                             %! ScoreTemplate
     \E_RHVoiceIVInserts                                                        %! extern
+
     \context RHVoiceV = "RHVoiceV"                                             %! ScoreTemplate
     \E_RHVoiceV                                                                %! extern
+
     \context RHVoiceVI = "RHVoiceVI"                                           %! ScoreTemplate
     \E_RHVoiceVI                                                               %! extern
+
     \context RHResonanceVoice = "RHResonanceVoice"                             %! ScoreTemplate
     \E_RHResonanceVoice                                                        %! extern
+
 >>                                                                             %! extern
 
 
@@ -2989,7 +3215,9 @@ E_LHVoiceIV = {                                                                %
     s1 * 27/4
     \mp                                                                        %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
     \override PianoMusicLHStaff.Clef.color = #(x11-color 'OliveDrab)           %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             % [E LHVoiceIV measure 85 / measure 4]                             %! _comment_measure_numbers
@@ -3049,12 +3277,16 @@ E_LHVoiceIV = {                                                                %
 
             r4.
             \revert Slur.direction                                             %! baca_slur_down:OverrideCommand(2)
+
         }
+
     }
 
     % [E LHVoiceIV measure 86 / measure 5]                                     %! _comment_measure_numbers
     s1 * 1
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             % [E LHVoiceIV measure 87 / measure 6]                             %! _comment_measure_numbers
@@ -3108,9 +3340,13 @@ E_LHVoiceIV = {                                                                %
 
             r16
             \revert Slur.direction                                             %! baca_slur_down:OverrideCommand(2)
+
         }
+
     }
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             b'8.
@@ -3143,12 +3379,16 @@ E_LHVoiceIV = {                                                                %
             )                                                                  %! SpannerCommand
 
             r16
+
         }
+
     }
 
     % [E LHVoiceIV measure 88 / measure 7]                                     %! _comment_measure_numbers
     s1 * 1/4
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             % [E LHVoiceIV measure 89 / measure 8]                             %! _comment_measure_numbers
@@ -3194,9 +3434,13 @@ E_LHVoiceIV = {                                                                %
             )                                                                  %! SpannerCommand
 
             r16
+
         }
+
     }
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             e'8.
@@ -3227,9 +3471,13 @@ E_LHVoiceIV = {                                                                %
             - \tenuto                                                          %! IndicatorCommand
             ]
             )                                                                  %! SpannerCommand
+
         }
+
     }
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             cs'!8.
@@ -3264,9 +3512,13 @@ E_LHVoiceIV = {                                                                %
             - \tenuto                                                          %! IndicatorCommand
             ]
             )                                                                  %! SpannerCommand
+
         }
+
     }
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             r8.
@@ -3305,12 +3557,16 @@ E_LHVoiceIV = {                                                                %
             r4
 
             r4
+
         }
+
     }
 
     % [E LHVoiceIV measure 90 / measure 9]                                     %! _comment_measure_numbers
     s1 * 7
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             % [E LHVoiceIV measure 96 / measure 15]                            %! _comment_measure_numbers
@@ -3350,9 +3606,13 @@ E_LHVoiceIV = {                                                                %
             - \tenuto                                                          %! IndicatorCommand
             ]
             )                                                                  %! SpannerCommand
+
         }
+
     }
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             bf!8
@@ -3391,9 +3651,13 @@ E_LHVoiceIV = {                                                                %
             - \tenuto                                                          %! IndicatorCommand
             ]
             )                                                                  %! SpannerCommand
+
         }
+
     }
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             % [E LHVoiceIV measure 97 / measure 16]                            %! _comment_measure_numbers
@@ -3424,7 +3688,9 @@ E_LHVoiceIV = {                                                                %
             \override PianoMusicLHStaff.Clef.color = #(x11-color 'DeepSkyBlue2) %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
         }
+
     }
+
 }                                                                              %! extern
 
 
@@ -3487,7 +3753,9 @@ E_LHVoiceV = {                                                                 %
     \once \override LHVoiceV.DynamicText.color = #(x11-color 'green4)          %! REAPPLIED_DYNAMIC_COLOR:_attach_color_literal(2)
     s1 * 39/4
     \p                                                                         %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             % [E LHVoiceV measure 86 / measure 5]                              %! _comment_measure_numbers
@@ -3532,7 +3800,9 @@ E_LHVoiceV = {                                                                 %
 
             r8
             \revert Rest.direction                                             %! baca_rest_up:OverrideCommand(2)
+
         }
+
     }
 
     % [E LHVoiceV measure 87 / measure 6]                                      %! _comment_measure_numbers
@@ -3631,7 +3901,9 @@ E_LHVoiceVI = {                                                                %
     s1 * 39/4
     \f                                                                         %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
     ^ \baca-reapplied-indicator-markup "(“Piano”)"                             %! REAPPLIED_INSTRUMENT_ALERT:_attach_latent_indicator_alert
+
     {
+
         \tweak text #tuplet-number::calc-fraction-text
         \times 4/3 {
 
@@ -3672,7 +3944,9 @@ E_LHVoiceVI = {                                                                %
             \revert Rest.direction                                             %! baca_rest_down:OverrideCommand(2)
             \revert TupletBracket.direction                                    %! baca_tuplet_bracket_down:OverrideCommand(2)
             \revert TupletBracket.staff-padding                                %! baca_tuplet_bracket_staff_padding:OverrideCommand(2)
+
         }
+
     }
 
     % [E LHVoiceVI measure 87 / measure 6]                                     %! _comment_measure_numbers
@@ -3769,7 +4043,9 @@ E_LHResonanceVoice = {                                                         %
     % [E LHResonanceVoice measure 82 / measure 1]                              %! _comment_measure_numbers
     \override Dots.transparent = ##t                                           %! baca_dots_transparent:OverrideCommand(1)
     s1 * 17
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             % [E LHResonanceVoice measure 91 / measure 10]                     %! _comment_measure_numbers
@@ -3801,9 +4077,13 @@ E_LHResonanceVoice = {                                                         %
             \once \override Stem.transparent = ##t                             %! baca_stem_transparent:OverrideCommand(1)
             <cs,,! cs,!>16
             \repeatTie                                                         %! SpannerCommand
+
         }
+
     }
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             % [E LHResonanceVoice measure 92 / measure 11]                     %! _comment_measure_numbers
@@ -3840,9 +4120,13 @@ E_LHResonanceVoice = {                                                         %
             <cs,,! cs,!>8.
             \repeatTie                                                         %! SpannerCommand
             \revert Stem.transparent                                           %! baca_stem_transparent:OverrideCommand(2)
+
         }
+
     }
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             % [E LHResonanceVoice measure 93 / measure 12]                     %! _comment_measure_numbers
@@ -3884,9 +4168,13 @@ E_LHResonanceVoice = {                                                         %
             \revert NoteHead.transparent                                       %! baca_note_head_transparent:OverrideCommand(2)
             \revert RepeatTie.transparent                                      %! baca_repeat_tie_transparent:OverrideCommand(2)
             \revert Stem.transparent                                           %! baca_stem_transparent:OverrideCommand(2)
+
         }
+
     }
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             % [E LHResonanceVoice measure 94 / measure 13]                     %! _comment_measure_numbers
@@ -3912,9 +4200,13 @@ E_LHResonanceVoice = {                                                         %
         %%%             }                                                      %! FIGURE_NAME_MARKUP
         %%%     }                                                              %! FIGURE_NAME_MARKUP
             \repeatTie                                                         %! SpannerCommand
+
         }
+
     }
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             % [E LHResonanceVoice measure 95 / measure 14]                     %! _comment_measure_numbers
@@ -3939,7 +4231,9 @@ E_LHResonanceVoice = {                                                         %
         %%%             }                                                      %! FIGURE_NAME_MARKUP
         %%%     }                                                              %! FIGURE_NAME_MARKUP
             \repeatTie                                                         %! SpannerCommand
+
         }
+
     }
 
     % [E LHResonanceVoice measure 96 / measure 15]                             %! _comment_measure_numbers
@@ -3953,24 +4247,35 @@ E_LHResonanceVoice = {                                                         %
 
 
 E_PianoMusicLHStaff = <<                                                       %! extern
+
     \context LHVoiceI = "LHVoiceI"                                             %! ScoreTemplate
     \E_LHVoiceI                                                                %! extern
+
     \context LHVoiceII = "LHVoiceII"                                           %! ScoreTemplate
     \E_LHVoiceII                                                               %! extern
+
     \context LHVoiceIII = "LHVoiceIII"                                         %! ScoreTemplate
     \E_LHVoiceIII                                                              %! extern
+
     \context LHVoiceIV = "LHVoiceIV"                                           %! ScoreTemplate
     \E_LHVoiceIV                                                               %! extern
+
     \context LHVoiceIVInserts = "LHVoiceIVInserts"                             %! ScoreTemplate
     \E_LHVoiceIVInserts                                                        %! extern
+
     \context LHVoiceV = "LHVoiceV"                                             %! ScoreTemplate
     \E_LHVoiceV                                                                %! extern
+
     \context LHVoiceVInserts = "LHVoiceVInserts"                               %! ScoreTemplate
     \E_LHVoiceVInserts                                                         %! extern
+
     \context LHVoiceVI = "LHVoiceVI"                                           %! ScoreTemplate
     \E_LHVoiceVI                                                               %! extern
+
     \context LHVoiceVIInserts = "LHVoiceVIInserts"                             %! ScoreTemplate
     \E_LHVoiceVIInserts                                                        %! extern
+
     \context LHResonanceVoice = "LHResonanceVoice"                             %! ScoreTemplate
     \E_LHResonanceVoice                                                        %! extern
+
 >>                                                                             %! extern

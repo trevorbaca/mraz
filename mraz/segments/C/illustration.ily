@@ -672,7 +672,9 @@ C_RHVoiceI = {                                                                 %
     s1 * 141/8
     \f                                                                         %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
     \override PianoMusicRHStaff.Clef.color = #(x11-color 'OliveDrab)           %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
+
     {
+
         \tweak text #tuplet-number::calc-fraction-text
         \times 5/4 {
 
@@ -731,9 +733,13 @@ C_RHVoiceI = {                                                                 %
 
             r4.
             \revert TextScript.direction                                       %! baca_text_script_up:OverrideCommand(2)
+
         }
+
     }
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             % [C RHVoiceI measure 53 / measure 20]                             %! _comment_measure_numbers
@@ -755,9 +761,13 @@ C_RHVoiceI = {                                                                 %
         %%%                 ]                                                  %! FIGURE_NAME_MARKUP
         %%%             }                                                      %! FIGURE_NAME_MARKUP
         %%%     }                                                              %! FIGURE_NAME_MARKUP
+
         }
+
     }
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             % [C RHVoiceI measure 54 / measure 21]                             %! _comment_measure_numbers
@@ -780,12 +790,16 @@ C_RHVoiceI = {                                                                 %
         %%%                 ]                                                  %! FIGURE_NAME_MARKUP
         %%%             }                                                      %! FIGURE_NAME_MARKUP
         %%%     }                                                              %! FIGURE_NAME_MARKUP
+
         }
+
     }
 
     % [C RHVoiceI measure 55 / measure 22]                                     %! _comment_measure_numbers
     s1 * 1/2
+
     {
+
         \tweak text #tuplet-number::calc-fraction-text
         \times 6/4 {
 
@@ -826,12 +840,16 @@ C_RHVoiceI = {                                                                 %
             s8
 
             a'''8
+
         }
+
     }
 
     % [C RHVoiceI measure 58 / measure 25]                                     %! _comment_measure_numbers
     s1 * 7/4
+
     {
+
         \tweak text #tuplet-number::calc-fraction-text
         \times 19/14 {
 
@@ -893,12 +911,16 @@ C_RHVoiceI = {                                                                 %
             cs'''!8
             ]
             )                                                                  %! SpannerCommand
+
         }
+
     }
 
     % [C RHVoiceI measure 64 / measure 31]                                     %! _comment_measure_numbers
     s1 * 7/8
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             % [C RHVoiceI measure 66 / measure 33]                             %! _comment_measure_numbers
@@ -923,9 +945,13 @@ C_RHVoiceI = {                                                                 %
         %%%                 ]                                                  %! FIGURE_NAME_MARKUP
         %%%             }                                                      %! FIGURE_NAME_MARKUP
         %%%     }                                                              %! FIGURE_NAME_MARKUP
+
         }
+
     }
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             % [C RHVoiceI measure 67 / measure 34]                             %! _comment_measure_numbers
@@ -948,9 +974,13 @@ C_RHVoiceI = {                                                                 %
         %%%                 ]                                                  %! FIGURE_NAME_MARKUP
         %%%             }                                                      %! FIGURE_NAME_MARKUP
         %%%     }                                                              %! FIGURE_NAME_MARKUP
+
         }
+
     }
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             % [C RHVoiceI measure 68 / measure 35]                             %! _comment_measure_numbers
@@ -973,9 +1003,13 @@ C_RHVoiceI = {                                                                 %
         %%%                 ]                                                  %! FIGURE_NAME_MARKUP
         %%%             }                                                      %! FIGURE_NAME_MARKUP
         %%%     }                                                              %! FIGURE_NAME_MARKUP
+
         }
+
     }
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             % [C RHVoiceI measure 69 / measure 36]                             %! _comment_measure_numbers
@@ -999,12 +1033,16 @@ C_RHVoiceI = {                                                                 %
         %%%             }                                                      %! FIGURE_NAME_MARKUP
         %%%     }                                                              %! FIGURE_NAME_MARKUP
             \ottava #0                                                         %! SpannerCommand
+
         }
+
     }
 
     % [C RHVoiceI measure 70 / measure 37]                                     %! _comment_measure_numbers
     s1 * 3/2
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             % [C RHVoiceI measure 71 / measure 38]                             %! _comment_measure_numbers
@@ -1028,9 +1066,13 @@ C_RHVoiceI = {                                                                 %
         %%%                 ]                                                  %! FIGURE_NAME_MARKUP
         %%%             }                                                      %! FIGURE_NAME_MARKUP
         %%%     }                                                              %! FIGURE_NAME_MARKUP
+
         }
+
     }
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             % [C RHVoiceI measure 72 / measure 39]                             %! _comment_measure_numbers
@@ -1055,7 +1097,9 @@ C_RHVoiceI = {                                                                 %
         %%%     }                                                              %! FIGURE_NAME_MARKUP
             \revert Stem.direction                                             %! baca_stem_up:OverrideCommand(2)
             \ottava #0                                                         %! SpannerCommand
+
         }
+
     }
 
     % [C RHVoiceI measure 73 / measure 40]                                     %! _comment_measure_numbers
@@ -1221,7 +1265,9 @@ C_RHVoiceII = {                                                                %
     \once \override RHVoiceII.DynamicText.color = #(x11-color 'green4)         %! REAPPLIED_DYNAMIC_COLOR:_attach_color_literal(2)
     s1 * 3/2
     \ff                                                                        %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             % [C RHVoiceII measure 35 / measure 2]                             %! _comment_measure_numbers
@@ -1249,14 +1295,18 @@ C_RHVoiceII = {                                                                %
         %%%                 ]                                                  %! FIGURE_NAME_MARKUP
         %%%             }                                                      %! FIGURE_NAME_MARKUP
         %%%     }                                                              %! FIGURE_NAME_MARKUP
+
         }
+
     }
 
     % [C RHVoiceII measure 36 / measure 3]                                     %! _comment_measure_numbers
     s1 * 123/8
+
     {
         \override TupletBracket.stencil = ##f
         \override TupletNumber.stencil = ##f
+
         \tweak text #tuplet-number::calc-fraction-text
         \times 5/4 {
 
@@ -1293,16 +1343,20 @@ C_RHVoiceII = {                                                                %
 
             s4.
             ]
+
         }
         \revert TupletBracket.stencil
         \revert TupletNumber.stencil
+
     }
 
     % [C RHVoiceII measure 53 / measure 20]                                    %! _comment_measure_numbers
     s1 * 5/4
+
     {
         \override TupletBracket.stencil = ##f
         \override TupletNumber.stencil = ##f
+
         \tweak text #tuplet-number::calc-fraction-text
         \times 6/4 {
 
@@ -1333,16 +1387,20 @@ C_RHVoiceII = {                                                                %
 
             s8
             ]
+
         }
         \revert TupletBracket.stencil
         \revert TupletNumber.stencil
+
     }
 
     % [C RHVoiceII measure 58 / measure 25]                                    %! _comment_measure_numbers
     s1 * 7/4
+
     {
         \override TupletBracket.stencil = ##f
         \override TupletNumber.stencil = ##f
+
         \tweak text #tuplet-number::calc-fraction-text
         \times 19/14 {
 
@@ -1391,14 +1449,18 @@ C_RHVoiceII = {                                                                %
 
             s8
             ]
+
         }
         \revert TupletBracket.stencil
         \revert TupletNumber.stencil
+
     }
 
     % [C RHVoiceII measure 64 / measure 31]                                    %! _comment_measure_numbers
     s1 * 33/8
+
     {
+
         \times 4/5 {
 
             % [C RHVoiceII measure 68 / measure 35]                            %! _comment_measure_numbers
@@ -1446,7 +1508,9 @@ C_RHVoiceII = {                                                                %
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
             cs'''!16
+
         }
+
         \times 4/5 {
 
             \set stemLeftBeamCount = 1
@@ -1468,7 +1532,9 @@ C_RHVoiceII = {                                                                %
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
             b''16
+
         }
+
         \times 4/5 {
 
             \set stemLeftBeamCount = 1
@@ -1490,7 +1556,9 @@ C_RHVoiceII = {                                                                %
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
             cs''''!16
+
         }
+
         \scaleDurations #'(1 . 1) {
 
             \set stemLeftBeamCount = 1
@@ -1514,9 +1582,13 @@ C_RHVoiceII = {                                                                %
             )                                                                  %! SpannerCommand
             \revert DynamicLineSpanner.staff-padding                           %! baca_dls_staff_padding:OverrideCommand(2)
             \revert Slur.direction                                             %! baca_slur_up:OverrideCommand(2)
+
         }
+
     }
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             % [C RHVoiceII measure 69 / measure 36]                            %! _comment_measure_numbers
@@ -1561,7 +1633,9 @@ C_RHVoiceII = {                                                                %
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
             d''16
+
         }
+
         \times 4/5 {
 
             \set stemLeftBeamCount = 1
@@ -1583,7 +1657,9 @@ C_RHVoiceII = {                                                                %
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
             e'''16
+
         }
+
         \scaleDurations #'(1 . 1) {
 
             \set stemLeftBeamCount = 1
@@ -1601,7 +1677,9 @@ C_RHVoiceII = {                                                                %
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
             af'''!16
+
         }
+
         \times 4/5 {
 
             \set stemLeftBeamCount = 1
@@ -1630,9 +1708,13 @@ C_RHVoiceII = {                                                                %
             \revert DynamicLineSpanner.staff-padding                           %! baca_dls_staff_padding:OverrideCommand(2)
             \revert Slur.direction                                             %! baca_slur_up:OverrideCommand(2)
             \revert TextScript.direction                                       %! baca_text_script_up:OverrideCommand(2)
+
         }
+
     }
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             % [C RHVoiceII measure 70 / measure 37]                            %! _comment_measure_numbers
@@ -1658,9 +1740,13 @@ C_RHVoiceII = {                                                                %
         %%%                 ]                                                  %! FIGURE_NAME_MARKUP
         %%%             }                                                      %! FIGURE_NAME_MARKUP
         %%%     }                                                              %! FIGURE_NAME_MARKUP
+
         }
+
     }
+
     {
+
         \times 2/3 {
 
             % [C RHVoiceII measure 71 / measure 38]                            %! _comment_measure_numbers
@@ -1713,7 +1799,9 @@ C_RHVoiceII = {                                                                %
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
             c'''16
+
         }
+
         \times 4/5 {
 
             \set stemLeftBeamCount = 1
@@ -1735,7 +1823,9 @@ C_RHVoiceII = {                                                                %
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
             f'''16
+
         }
+
         \times 4/5 {
 
             \set stemLeftBeamCount = 1
@@ -1757,7 +1847,9 @@ C_RHVoiceII = {                                                                %
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
             ef''''!16
+
         }
+
         \times 4/5 {
 
             \set stemLeftBeamCount = 1
@@ -1786,9 +1878,13 @@ C_RHVoiceII = {                                                                %
             \revert DynamicLineSpanner.staff-padding                           %! baca_dls_staff_padding:OverrideCommand(2)
             \revert Slur.direction                                             %! baca_slur_up:OverrideCommand(2)
             \revert TextScript.direction                                       %! baca_text_script_up:OverrideCommand(2)
+
         }
+
     }
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             % [C RHVoiceII measure 72 / measure 39]                            %! _comment_measure_numbers
@@ -1833,7 +1929,9 @@ C_RHVoiceII = {                                                                %
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
             f'''16
+
         }
+
         \scaleDurations #'(1 . 1) {
 
             \set stemLeftBeamCount = 1
@@ -1858,9 +1956,13 @@ C_RHVoiceII = {                                                                %
             \revert DynamicLineSpanner.staff-padding                           %! baca_dls_staff_padding:OverrideCommand(2)
             \revert Slur.direction                                             %! baca_slur_up:OverrideCommand(2)
             \revert TextScript.direction                                       %! baca_text_script_up:OverrideCommand(2)
+
         }
+
     }
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             % [C RHVoiceII measure 73 / measure 40]                            %! _comment_measure_numbers
@@ -1886,9 +1988,13 @@ C_RHVoiceII = {                                                                %
         %%%                 ]                                                  %! FIGURE_NAME_MARKUP
         %%%             }                                                      %! FIGURE_NAME_MARKUP
         %%%     }                                                              %! FIGURE_NAME_MARKUP
+
         }
+
     }
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             % [C RHVoiceII measure 74 / measure 41]                            %! _comment_measure_numbers
@@ -1914,9 +2020,13 @@ C_RHVoiceII = {                                                                %
         %%%                 ]                                                  %! FIGURE_NAME_MARKUP
         %%%             }                                                      %! FIGURE_NAME_MARKUP
         %%%     }                                                              %! FIGURE_NAME_MARKUP
+
         }
+
     }
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             % [C RHVoiceII measure 75 / measure 42]                            %! _comment_measure_numbers
@@ -1942,12 +2052,16 @@ C_RHVoiceII = {                                                                %
         %%%                 ]                                                  %! FIGURE_NAME_MARKUP
         %%%             }                                                      %! FIGURE_NAME_MARKUP
         %%%     }                                                              %! FIGURE_NAME_MARKUP
+
         }
+
     }
 
     % [C RHVoiceII measure 76 / measure 43]                                    %! _comment_measure_numbers
     s1 * 3/2
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             % [C RHVoiceII measure 77 / measure 44]                            %! _comment_measure_numbers
@@ -2000,7 +2114,9 @@ C_RHVoiceII = {                                                                %
             \revert TextScript.direction                                       %! baca_text_script_up:OverrideCommand(2)
 
         }
+
     }
+
 }                                                                              %! extern
 
 
@@ -2142,7 +2258,9 @@ C_RHVoiceIIInserts = {                                                         %
 
 
 C_RHVoiceIII = {                                                               %! extern
+
     {
+
         \tweak text #tuplet-number::calc-fraction-text
         \times 12/11 {
 
@@ -2191,12 +2309,16 @@ C_RHVoiceIII = {                                                               %
             r4
             \revert TextScript.direction                                       %! baca_text_script_up:OverrideCommand(2)
             \revert TupletBracket.direction                                    %! baca_tuplet_bracket_up:OverrideCommand(2)
+
         }
+
     }
 
     % [C RHVoiceIII measure 35 / measure 2]                                    %! _comment_measure_numbers
     s1 * 3/4
+
     {
+
         \tweak text #tuplet-number::calc-fraction-text
         \times 6/7 {
 
@@ -2243,12 +2365,16 @@ C_RHVoiceIII = {                                                               %
             \revert Stem.direction                                             %! baca_stem_up:OverrideCommand(2)
             \revert TupletBracket.direction                                    %! baca_tuplet_bracket_up:OverrideCommand(2)
             \revert TupletBracket.staff-padding                                %! baca_tuplet_bracket_staff_padding:OverrideCommand(2)
+
         }
+
     }
 
     % [C RHVoiceIII measure 37 / measure 4]                                    %! _comment_measure_numbers
     s1 * 9/8
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             % [C RHVoiceIII measure 38 / measure 5]                            %! _comment_measure_numbers
@@ -2270,9 +2396,13 @@ C_RHVoiceIII = {                                                               %
         %%%                 ]                                                  %! FIGURE_NAME_MARKUP
         %%%             }                                                      %! FIGURE_NAME_MARKUP
         %%%     }                                                              %! FIGURE_NAME_MARKUP
+
         }
+
     }
+
     {
+
         \tweak text #tuplet-number::calc-fraction-text
         \times 12/11 {
 
@@ -2315,9 +2445,13 @@ C_RHVoiceIII = {                                                               %
 
             r4
             \revert TupletBracket.direction                                    %! baca_tuplet_bracket_up:OverrideCommand(2)
+
         }
+
     }
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             % [C RHVoiceIII measure 40 / measure 7]                            %! _comment_measure_numbers
@@ -2339,12 +2473,16 @@ C_RHVoiceIII = {                                                               %
         %%%                 ]                                                  %! FIGURE_NAME_MARKUP
         %%%             }                                                      %! FIGURE_NAME_MARKUP
         %%%     }                                                              %! FIGURE_NAME_MARKUP
+
         }
+
     }
 
     % [C RHVoiceIII measure 41 / measure 8]                                    %! _comment_measure_numbers
     s1 * 99/8
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             % [C RHVoiceIII measure 55 / measure 22]                           %! _comment_measure_numbers
@@ -2384,12 +2522,16 @@ C_RHVoiceIII = {                                                               %
             )                                                                  %! SpannerCommand
             \revert Stem.direction                                             %! baca_stem_down:OverrideCommand(2)
             \revert TupletBracket.direction                                    %! baca_tuplet_bracket_down:OverrideCommand(2)
+
         }
+
     }
 
     % [C RHVoiceIII measure 56 / measure 23]                                   %! _comment_measure_numbers
     s1 * 71/4
+
     {
+
         \tweak text #tuplet-number::calc-fraction-text
         \times 6/7 {
 
@@ -2440,9 +2582,13 @@ C_RHVoiceIII = {                                                               %
             \revert TextScript.direction                                       %! baca_text_script_up:OverrideCommand(2)
             \revert TupletBracket.staff-padding                                %! baca_tuplet_bracket_staff_padding:OverrideCommand(2)
             \revert TupletBracket.direction                                    %! baca_tuplet_bracket_up:OverrideCommand(2)
+
         }
+
     }
+
     {
+
         \tweak text #tuplet-number::calc-fraction-text
         \times 8/5 {
 
@@ -2500,7 +2646,9 @@ C_RHVoiceIII = {                                                               %
             \revert TupletBracket.direction                                    %! baca_tuplet_bracket_down:OverrideCommand(2)
 
         }
+
     }
+
 }                                                                              %! extern
 
 
@@ -2921,7 +3069,9 @@ C_RHVoiceV = {                                                                 %
 
     % [C RHVoiceV measure 34 / measure 1]                                      %! _comment_measure_numbers
     s1 * 139/8
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             % [C RHVoiceV measure 50 / measure 17]                             %! _comment_measure_numbers
@@ -2945,7 +3095,9 @@ C_RHVoiceV = {                                                                 %
         %%%     }                                                              %! FIGURE_NAME_MARKUP
 
             r8.
+
         }
+
     }
 
     % [C RHVoiceV measure 51 / measure 18]                                     %! _comment_measure_numbers
@@ -3307,28 +3459,40 @@ C_RHResonanceVoice = {                                                         %
 
 
 C_PianoMusicRHStaff = <<                                                       %! extern
+
     \context RHVoiceI = "RHVoiceI"                                             %! ScoreTemplate
     \C_RHVoiceI                                                                %! extern
+
     \context RHVoiceIInserts = "RHVoiceIInserts"                               %! ScoreTemplate
     \C_RHVoiceIInserts                                                         %! extern
+
     \context RHVoiceII = "RHVoiceII"                                           %! ScoreTemplate
     \C_RHVoiceII                                                               %! extern
+
     \context RHVoiceIIInserts = "RHVoiceIIInserts"                             %! ScoreTemplate
     \C_RHVoiceIIInserts                                                        %! extern
+
     \context RHVoiceIII = "RHVoiceIII"                                         %! ScoreTemplate
     \C_RHVoiceIII                                                              %! extern
+
     \context RHVoiceIIIInserts = "RHVoiceIIIInserts"                           %! ScoreTemplate
     \C_RHVoiceIIIInserts                                                       %! extern
+
     \context RHVoiceIV = "RHVoiceIV"                                           %! ScoreTemplate
     \C_RHVoiceIV                                                               %! extern
+
     \context RHVoiceIVInserts = "RHVoiceIVInserts"                             %! ScoreTemplate
     \C_RHVoiceIVInserts                                                        %! extern
+
     \context RHVoiceV = "RHVoiceV"                                             %! ScoreTemplate
     \C_RHVoiceV                                                                %! extern
+
     \context RHVoiceVI = "RHVoiceVI"                                           %! ScoreTemplate
     \C_RHVoiceVI                                                               %! extern
+
     \context RHResonanceVoice = "RHResonanceVoice"                             %! ScoreTemplate
     \C_RHResonanceVoice                                                        %! extern
+
 >>                                                                             %! extern
 
 
@@ -3473,7 +3637,9 @@ C_LHVoiceII = {                                                                %
 
     % [C LHVoiceII measure 34 / measure 1]                                     %! _comment_measure_numbers
     s1 * 71/2
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             % [C LHVoiceII measure 73 / measure 40]                            %! _comment_measure_numbers
@@ -3511,7 +3677,9 @@ C_LHVoiceII = {                                                                %
             \sustainOff                                                        %! SpannerCommand
             \revert Staff.SustainPedalLineSpanner.staff-padding                %! baca_sustain_pedal_staff_padding:OverrideCommand(2)
             \revert Rest.transparent                                           %! baca_rest_transparent:OverrideCommand(2)
+
         }
+
     }
 
     % [C LHVoiceII measure 76 / measure 43]                                    %! _comment_measure_numbers
@@ -3666,7 +3834,9 @@ C_LHVoiceIV = {                                                                %
     \once \override LHVoiceIV.DynamicText.color = #(x11-color 'green4)         %! REAPPLIED_DYNAMIC_COLOR:_attach_color_literal(2)
     s1 * 15/4
     \ff                                                                        %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             % [C LHVoiceIV measure 37 / measure 4]                             %! _comment_measure_numbers
@@ -3704,7 +3874,9 @@ C_LHVoiceIV = {                                                                %
 
             r8.
             \revert Slur.direction                                             %! baca_slur_up:OverrideCommand(2)
+
         }
+
     }
 
     % [C LHVoiceIV measure 38 / measure 5]                                     %! _comment_measure_numbers
@@ -3968,7 +4140,9 @@ C_LHVoiceIVInserts = {                                                         %
 
 
 C_LHVoiceV = {                                                                 %! extern
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             % [C LHVoiceV measure 34 / measure 1]                              %! _comment_measure_numbers
@@ -4010,9 +4184,13 @@ C_LHVoiceV = {                                                                 %
             - \tenuto                                                          %! IndicatorCommand
 
             r16
+
         }
+
     }
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             % [C LHVoiceV measure 35 / measure 2]                              %! _comment_measure_numbers
@@ -4034,9 +4212,13 @@ C_LHVoiceV = {                                                                 %
         %%%                 ]                                                  %! FIGURE_NAME_MARKUP
         %%%             }                                                      %! FIGURE_NAME_MARKUP
         %%%     }                                                              %! FIGURE_NAME_MARKUP
+
         }
+
     }
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             % [C LHVoiceV measure 36 / measure 3]                              %! _comment_measure_numbers
@@ -4077,12 +4259,16 @@ C_LHVoiceV = {                                                                 %
             r16
 
             r4
+
         }
+
     }
 
     % [C LHVoiceV measure 37 / measure 4]                                      %! _comment_measure_numbers
     s1 * 9/8
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             % [C LHVoiceV measure 38 / measure 5]                              %! _comment_measure_numbers
@@ -4111,9 +4297,13 @@ C_LHVoiceV = {                                                                 %
             - \marcato                                                         %! IndicatorCommand
 
             r2
+
         }
+
     }
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             % [C LHVoiceV measure 39 / measure 6]                              %! _comment_measure_numbers
@@ -4156,9 +4346,13 @@ C_LHVoiceV = {                                                                 %
             - \tenuto                                                          %! IndicatorCommand
 
             r16
+
         }
+
     }
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             % [C LHVoiceV measure 40 / measure 7]                              %! _comment_measure_numbers
@@ -4181,9 +4375,13 @@ C_LHVoiceV = {                                                                 %
         %%%                 ]                                                  %! FIGURE_NAME_MARKUP
         %%%             }                                                      %! FIGURE_NAME_MARKUP
         %%%     }                                                              %! FIGURE_NAME_MARKUP
+
         }
+
     }
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             % [C LHVoiceV measure 41 / measure 8]                              %! _comment_measure_numbers
@@ -4212,9 +4410,13 @@ C_LHVoiceV = {                                                                 %
             - \marcato                                                         %! IndicatorCommand
 
             r2
+
         }
+
     }
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             % [C LHVoiceV measure 42 / measure 9]                              %! _comment_measure_numbers
@@ -4241,11 +4443,16 @@ C_LHVoiceV = {                                                                 %
             r8.
 
             r1
+
         }
+
     }
+
     {
+
         \tweak text #tuplet-number::calc-fraction-text
         \times 4/3 {
+
             \scaleDurations #'(1 . 1) {
 
                 % [C LHVoiceV measure 43 / measure 10]                         %! _comment_measure_numbers
@@ -4274,10 +4481,15 @@ C_LHVoiceV = {                                                                 %
 
                 r2
                 \revert TupletBracket.direction                                %! baca_tuplet_bracket_up:OverrideCommand(2)
+
             }
+
         }
+
     }
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             % [C LHVoiceV measure 44 / measure 11]                             %! _comment_measure_numbers
@@ -4304,9 +4516,13 @@ C_LHVoiceV = {                                                                 %
             r8.
 
             r1
+
         }
+
     }
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             % [C LHVoiceV measure 45 / measure 12]                             %! _comment_measure_numbers
@@ -4333,9 +4549,13 @@ C_LHVoiceV = {                                                                 %
             - \marcato                                                         %! IndicatorCommand
 
             r2
+
         }
+
     }
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             % [C LHVoiceV measure 46 / measure 13]                             %! _comment_measure_numbers
@@ -4362,11 +4582,16 @@ C_LHVoiceV = {                                                                 %
             r8.
 
             r1
+
         }
+
     }
+
     {
+
         \tweak text #tuplet-number::calc-fraction-text
         \times 4/3 {
+
             \scaleDurations #'(1 . 1) {
 
                 % [C LHVoiceV measure 47 / measure 14]                         %! _comment_measure_numbers
@@ -4395,10 +4620,15 @@ C_LHVoiceV = {                                                                 %
 
                 r2
                 \revert TupletBracket.direction                                %! baca_tuplet_bracket_up:OverrideCommand(2)
+
             }
+
         }
+
     }
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             % [C LHVoiceV measure 48 / measure 15]                             %! _comment_measure_numbers
@@ -4425,11 +4655,16 @@ C_LHVoiceV = {                                                                 %
             r8.
 
             r1
+
         }
+
     }
+
     {
+
         \tweak text #tuplet-number::calc-fraction-text
         \times 4/3 {
+
             \scaleDurations #'(1 . 1) {
 
                 % [C LHVoiceV measure 49 / measure 16]                         %! _comment_measure_numbers
@@ -4459,10 +4694,15 @@ C_LHVoiceV = {                                                                 %
                 r2
                 \revert TupletBracket.direction                                %! baca_tuplet_bracket_up:OverrideCommand(2)
                 \revert Rest.direction                                         %! baca_rest_up:OverrideCommand(2)
+
             }
+
         }
+
     }
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             % [C LHVoiceV measure 50 / measure 17]                             %! _comment_measure_numbers
@@ -4490,11 +4730,16 @@ C_LHVoiceV = {                                                                 %
         %%%     }                                                              %! FIGURE_NAME_MARKUP
 
             r8.
+
         }
+
     }
+
     {
+
         \tweak text #tuplet-number::calc-fraction-text
         \times 7/6 {
+
             \scaleDurations #'(1 . 1) {
 
                 % [C LHVoiceV measure 51 / measure 18]                         %! _comment_measure_numbers
@@ -4525,7 +4770,9 @@ C_LHVoiceV = {                                                                 %
                 <c bf!>8
                 [
                 (                                                              %! SpannerCommand
+
             }
+
             \scaleDurations #'(1 . 1) {
 
                 \set stemLeftBeamCount = 1
@@ -4535,10 +4782,15 @@ C_LHVoiceV = {                                                                 %
                 )                                                              %! SpannerCommand
 
                 r4
+
             }
+
         }
+
     }
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             % [C LHVoiceV measure 52 / measure 19]                             %! _comment_measure_numbers
@@ -4560,9 +4812,13 @@ C_LHVoiceV = {                                                                 %
         %%%                 ]                                                  %! FIGURE_NAME_MARKUP
         %%%             }                                                      %! FIGURE_NAME_MARKUP
         %%%     }                                                              %! FIGURE_NAME_MARKUP
+
         }
+
     }
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             % [C LHVoiceV measure 53 / measure 20]                             %! _comment_measure_numbers
@@ -4586,14 +4842,19 @@ C_LHVoiceV = {                                                                 %
         %%%     }                                                              %! FIGURE_NAME_MARKUP
 
             <c e af!>4.
+
         }
+
     }
 
     % [C LHVoiceV measure 54 / measure 21]                                     %! _comment_measure_numbers
     s1 * 3/4
+
     {
+
         \tweak text #tuplet-number::calc-fraction-text
         \times 8/7 {
+
             \scaleDurations #'(1 . 1) {
 
                 % [C LHVoiceV measure 56 / measure 23]                         %! _comment_measure_numbers
@@ -4621,13 +4882,17 @@ C_LHVoiceV = {                                                                 %
                 <bf'!>8
                 [
                 (                                                              %! SpannerCommand
+
             }
+
             \scaleDurations #'(1 . 1) {
 
                 \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 1
                 <d' f'>8
+
             }
+
             \scaleDurations #'(1 . 1) {
 
                 \set stemLeftBeamCount = 1
@@ -4637,10 +4902,15 @@ C_LHVoiceV = {                                                                 %
                 )                                                              %! SpannerCommand
 
                 r4
+
             }
+
         }
+
     }
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             % [C LHVoiceV measure 57 / measure 24]                             %! _comment_measure_numbers
@@ -4662,11 +4932,16 @@ C_LHVoiceV = {                                                                 %
         %%%                 ]                                                  %! FIGURE_NAME_MARKUP
         %%%             }                                                      %! FIGURE_NAME_MARKUP
         %%%     }                                                              %! FIGURE_NAME_MARKUP
+
         }
+
     }
+
     {
+
         \tweak text #tuplet-number::calc-fraction-text
         \times 8/7 {
+
             \scaleDurations #'(1 . 1) {
 
                 % [C LHVoiceV measure 58 / measure 25]                         %! _comment_measure_numbers
@@ -4694,13 +4969,17 @@ C_LHVoiceV = {                                                                 %
                 <c f bf!>8
                 [
                 (                                                              %! SpannerCommand
+
             }
+
             \scaleDurations #'(1 . 1) {
 
                 \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 1
                 <e af! d'>8
+
             }
+
             \scaleDurations #'(1 . 1) {
 
                 \set stemLeftBeamCount = 1
@@ -4710,12 +4989,18 @@ C_LHVoiceV = {                                                                 %
                 )                                                              %! SpannerCommand
 
                 r4
+
             }
+
         }
+
     }
+
     {
+
         \tweak text #tuplet-number::calc-fraction-text
         \times 6/5 {
+
             \scaleDurations #'(1 . 1) {
 
                 % [C LHVoiceV measure 59 / measure 26]                         %! _comment_measure_numbers
@@ -4743,7 +5028,9 @@ C_LHVoiceV = {                                                                 %
                 <d' f'>8
                 [
                 (                                                              %! SpannerCommand
+
             }
+
             \scaleDurations #'(1 . 1) {
 
                 \set stemLeftBeamCount = 1
@@ -4753,10 +5040,15 @@ C_LHVoiceV = {                                                                 %
                 )                                                              %! SpannerCommand
 
                 r8
+
             }
+
         }
+
     }
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             % [C LHVoiceV measure 60 / measure 27]                             %! _comment_measure_numbers
@@ -4782,9 +5074,13 @@ C_LHVoiceV = {                                                                 %
             <bf!>8
 
             r4.
+
         }
+
     }
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             % [C LHVoiceV measure 61 / measure 28]                             %! _comment_measure_numbers
@@ -4806,11 +5102,16 @@ C_LHVoiceV = {                                                                 %
         %%%                 ]                                                  %! FIGURE_NAME_MARKUP
         %%%             }                                                      %! FIGURE_NAME_MARKUP
         %%%     }                                                              %! FIGURE_NAME_MARKUP
+
         }
+
     }
+
     {
+
         \tweak text #tuplet-number::calc-fraction-text
         \times 6/5 {
+
             \scaleDurations #'(1 . 1) {
 
                 % [C LHVoiceV measure 62 / measure 29]                         %! _comment_measure_numbers
@@ -4838,7 +5139,9 @@ C_LHVoiceV = {                                                                 %
                 <d' f'>8
                 [
                 (                                                              %! SpannerCommand
+
             }
+
             \scaleDurations #'(1 . 1) {
 
                 \set stemLeftBeamCount = 1
@@ -4848,10 +5151,15 @@ C_LHVoiceV = {                                                                 %
                 )                                                              %! SpannerCommand
 
                 r8
+
             }
+
         }
+
     }
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             % [C LHVoiceV measure 63 / measure 30]                             %! _comment_measure_numbers
@@ -4875,9 +5183,13 @@ C_LHVoiceV = {                                                                 %
         %%%     }                                                              %! FIGURE_NAME_MARKUP
 
             <c f bf!>4.
+
         }
+
     }
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             % [C LHVoiceV measure 64 / measure 31]                             %! _comment_measure_numbers
@@ -4903,12 +5215,16 @@ C_LHVoiceV = {                                                                 %
             <d' e' af'!>8
 
             r4.
+
         }
+
     }
 
     % [C LHVoiceV measure 65 / measure 32]                                     %! _comment_measure_numbers
     s1 * 23/2
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             % [C LHVoiceV measure 76 / measure 43]                             %! _comment_measure_numbers
@@ -4952,7 +5268,9 @@ C_LHVoiceV = {                                                                 %
             r16
 
             r4
+
         }
+
     }
 
     % [C LHVoiceV measure 77 / measure 44]                                     %! _comment_measure_numbers
@@ -4968,11 +5286,14 @@ C_LHVoiceVInserts = {                                                          %
     % [C LHVoiceVInserts measure 34 / measure 1]                               %! _comment_measure_numbers
     \override Script.direction = #up                                           %! baca_script_up:OverrideCommand(1)
     s1 * 83/4
+
     {
         \override TupletBracket.stencil = ##f
         \override TupletNumber.stencil = ##f
+
         \tweak text #tuplet-number::calc-fraction-text
         \times 8/7 {
+
             \scaleDurations #'(1 . 1) {
 
                 % [C LHVoiceVInserts measure 56 / measure 23]                  %! _comment_measure_numbers
@@ -4984,29 +5305,39 @@ C_LHVoiceVInserts = {                                                          %
                 \set stemRightBeamCount = 1                                    %! _extend_beam
                 bf'!8
                 - \staccato                                                    %! IndicatorCommand
+
             }
+
             \scaleDurations #'(1 . 1) {
 
                 s8
+
             }
+
             \scaleDurations #'(1 . 1) {
 
                 s8
 
                 s4
+
             }
+
         }
         \revert TupletBracket.stencil
         \revert TupletNumber.stencil
+
     }
 
     % [C LHVoiceVInserts measure 57 / measure 24]                              %! _comment_measure_numbers
     s1 * 1/2
+
     {
         \override TupletBracket.stencil = ##f
         \override TupletNumber.stencil = ##f
+
         \tweak text #tuplet-number::calc-fraction-text
         \times 8/7 {
+
             \scaleDurations #'(1 . 1) {
 
                 % [C LHVoiceVInserts measure 58 / measure 25]                  %! _comment_measure_numbers
@@ -5016,30 +5347,40 @@ C_LHVoiceVInserts = {                                                          %
                 \set stemRightBeamCount = 1                                    %! _extend_beam
                 bf!8
                 - \staccato                                                    %! IndicatorCommand
+
             }
+
             \scaleDurations #'(1 . 1) {
 
                 \set stemLeftBeamCount = 1                                     %! _extend_beam
                 \set stemRightBeamCount = 1                                    %! _extend_beam
                 d'8
                 - \staccato                                                    %! IndicatorCommand
+
             }
+
             \scaleDurations #'(1 . 1) {
 
                 s8
 
                 s4
                 ]                                                              %! _extend_beam
+
             }
+
         }
         \revert TupletBracket.stencil
         \revert TupletNumber.stencil
+
     }
+
     {
         \override TupletBracket.stencil = ##f
         \override TupletNumber.stencil = ##f
+
         \tweak text #tuplet-number::calc-fraction-text
         \times 6/5 {
+
             \scaleDurations #'(1 . 1) {
 
                 % [C LHVoiceVInserts measure 59 / measure 26]                  %! _comment_measure_numbers
@@ -5050,25 +5391,33 @@ C_LHVoiceVInserts = {                                                          %
                 \set stemRightBeamCount = 1                                    %! _extend_beam
                 f'8
                 - \staccato                                                    %! IndicatorCommand
+
             }
+
             \scaleDurations #'(1 . 1) {
 
                 s8
 
                 s8
+
             }
+
         }
         \revert TupletBracket.stencil
         \revert TupletNumber.stencil
+
     }
 
     % [C LHVoiceVInserts measure 60 / measure 27]                              %! _comment_measure_numbers
     s1 * 9/8
+
     {
         \override TupletBracket.stencil = ##f
         \override TupletNumber.stencil = ##f
+
         \tweak text #tuplet-number::calc-fraction-text
         \times 6/5 {
+
             \scaleDurations #'(1 . 1) {
 
                 % [C LHVoiceVInserts measure 62 / measure 29]                  %! _comment_measure_numbers
@@ -5078,23 +5427,30 @@ C_LHVoiceVInserts = {                                                          %
                 \set stemRightBeamCount = 1                                    %! _extend_beam
                 f'8
                 - \staccato                                                    %! IndicatorCommand
+
             }
+
             \scaleDurations #'(1 . 1) {
 
                 s8
 
                 s8
+
             }
+
         }
         \revert TupletBracket.stencil
         \revert TupletNumber.stencil
+
     }
 
     % [C LHVoiceVInserts measure 63 / measure 30]                              %! _comment_measure_numbers
     s1 * 1/2
+
     {
         \override TupletBracket.stencil = ##f
         \override TupletNumber.stencil = ##f
+
         \scaleDurations #'(1 . 1) {
 
             % [C LHVoiceVInserts measure 64 / measure 31]                      %! _comment_measure_numbers
@@ -5108,9 +5464,11 @@ C_LHVoiceVInserts = {                                                          %
 
             s4.
             ]                                                                  %! _extend_beam
+
         }
         \revert TupletBracket.stencil
         \revert TupletNumber.stencil
+
     }
 
     % [C LHVoiceVInserts measure 65 / measure 32]                              %! _comment_measure_numbers
@@ -5442,9 +5800,12 @@ C_LHResonanceVoice = {                                                         %
 
     % [C LHResonanceVoice measure 34 / measure 1]                              %! _comment_measure_numbers
     s1 * 79/8
+
     {
+
         \tweak text #tuplet-number::calc-fraction-text
         \times 4/3 {
+
             \scaleDurations #'(1 . 1) {
 
                 % [C LHResonanceVoice measure 43 / measure 10]                 %! _comment_measure_numbers
@@ -5468,10 +5829,15 @@ C_LHResonanceVoice = {                                                         %
             %%%     }                                                          %! FIGURE_NAME_MARKUP
 
                 <cs,,! cs,!>2
+
             }
+
         }
+
     }
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             % [C LHResonanceVoice measure 44 / measure 11]                     %! _comment_measure_numbers
@@ -5497,9 +5863,13 @@ C_LHResonanceVoice = {                                                         %
         %%%             }                                                      %! FIGURE_NAME_MARKUP
         %%%     }                                                              %! FIGURE_NAME_MARKUP
             \repeatTie                                                         %! SpannerCommand
+
         }
+
     }
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             <cs,,! cs,!>1
@@ -5524,14 +5894,19 @@ C_LHResonanceVoice = {                                                         %
             \revert Accidental.stencil                                         %! baca_accidental_stencil_false:OverrideCommand(2)
             \revert Dots.stencil                                               %! baca_dots_stencil_false:OverrideCommand(2)
             \revert Stem.stencil                                               %! baca_stem_stencil_false:OverrideCommand(2)
+
         }
+
     }
 
     % [C LHResonanceVoice measure 45 / measure 12]                             %! _comment_measure_numbers
     s1 * 2
+
     {
+
         \tweak text #tuplet-number::calc-fraction-text
         \times 4/3 {
+
             \scaleDurations #'(1 . 1) {
 
                 % [C LHResonanceVoice measure 47 / measure 14]                 %! _comment_measure_numbers
@@ -5555,10 +5930,15 @@ C_LHResonanceVoice = {                                                         %
             %%%     }                                                          %! FIGURE_NAME_MARKUP
 
                 <ef,,! ef,!>2
+
             }
+
         }
+
     }
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             % [C LHResonanceVoice measure 48 / measure 15]                     %! _comment_measure_numbers
@@ -5584,9 +5964,13 @@ C_LHResonanceVoice = {                                                         %
         %%%             }                                                      %! FIGURE_NAME_MARKUP
         %%%     }                                                              %! FIGURE_NAME_MARKUP
             \repeatTie                                                         %! SpannerCommand
+
         }
+
     }
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             <ef,,! ef,!>1
@@ -5611,12 +5995,16 @@ C_LHResonanceVoice = {                                                         %
             \revert Accidental.stencil                                         %! baca_accidental_stencil_false:OverrideCommand(2)
             \revert Dots.stencil                                               %! baca_dots_stencil_false:OverrideCommand(2)
             \revert Stem.stencil                                               %! baca_stem_stencil_false:OverrideCommand(2)
+
         }
+
     }
 
     % [C LHResonanceVoice measure 49 / measure 16]                             %! _comment_measure_numbers
     s1 * 85/8
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             % [C LHResonanceVoice measure 65 / measure 32]                     %! _comment_measure_numbers
@@ -5639,9 +6027,13 @@ C_LHResonanceVoice = {                                                         %
         %%%                 ]                                                  %! FIGURE_NAME_MARKUP
         %%%             }                                                      %! FIGURE_NAME_MARKUP
         %%%     }                                                              %! FIGURE_NAME_MARKUP
+
         }
+
     }
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             % [C LHResonanceVoice measure 66 / measure 33]                     %! _comment_measure_numbers
@@ -5667,9 +6059,13 @@ C_LHResonanceVoice = {                                                         %
         %%%             }                                                      %! FIGURE_NAME_MARKUP
         %%%     }                                                              %! FIGURE_NAME_MARKUP
             \repeatTie                                                         %! SpannerCommand
+
         }
+
     }
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             % [C LHResonanceVoice measure 67 / measure 34]                     %! _comment_measure_numbers
@@ -5692,9 +6088,13 @@ C_LHResonanceVoice = {                                                         %
         %%%             }                                                      %! FIGURE_NAME_MARKUP
         %%%     }                                                              %! FIGURE_NAME_MARKUP
             \repeatTie                                                         %! SpannerCommand
+
         }
+
     }
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             % [C LHResonanceVoice measure 68 / measure 35]                     %! _comment_measure_numbers
@@ -5717,9 +6117,13 @@ C_LHResonanceVoice = {                                                         %
         %%%             }                                                      %! FIGURE_NAME_MARKUP
         %%%     }                                                              %! FIGURE_NAME_MARKUP
             \repeatTie                                                         %! SpannerCommand
+
         }
+
     }
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             % [C LHResonanceVoice measure 69 / measure 36]                     %! _comment_measure_numbers
@@ -5742,9 +6146,13 @@ C_LHResonanceVoice = {                                                         %
         %%%             }                                                      %! FIGURE_NAME_MARKUP
         %%%     }                                                              %! FIGURE_NAME_MARKUP
             \repeatTie                                                         %! SpannerCommand
+
         }
+
     }
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             % [C LHResonanceVoice measure 70 / measure 37]                     %! _comment_measure_numbers
@@ -5767,9 +6175,13 @@ C_LHResonanceVoice = {                                                         %
         %%%             }                                                      %! FIGURE_NAME_MARKUP
         %%%     }                                                              %! FIGURE_NAME_MARKUP
             \repeatTie                                                         %! SpannerCommand
+
         }
+
     }
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             % [C LHResonanceVoice measure 71 / measure 38]                     %! _comment_measure_numbers
@@ -5792,9 +6204,13 @@ C_LHResonanceVoice = {                                                         %
         %%%             }                                                      %! FIGURE_NAME_MARKUP
         %%%     }                                                              %! FIGURE_NAME_MARKUP
             \repeatTie                                                         %! SpannerCommand
+
         }
+
     }
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             % [C LHResonanceVoice measure 72 / measure 39]                     %! _comment_measure_numbers
@@ -5820,7 +6236,9 @@ C_LHResonanceVoice = {                                                         %
             \revert Accidental.stencil                                         %! baca_accidental_stencil_false:OverrideCommand(2)
             \revert Dots.stencil                                               %! baca_dots_stencil_false:OverrideCommand(2)
             \revert Stem.stencil                                               %! baca_stem_stencil_false:OverrideCommand(2)
+
         }
+
     }
 
     % [C LHResonanceVoice measure 73 / measure 40]                             %! _comment_measure_numbers
@@ -5842,24 +6260,35 @@ C_LHResonanceVoice = {                                                         %
 
 
 C_PianoMusicLHStaff = <<                                                       %! extern
+
     \context LHVoiceI = "LHVoiceI"                                             %! ScoreTemplate
     \C_LHVoiceI                                                                %! extern
+
     \context LHVoiceII = "LHVoiceII"                                           %! ScoreTemplate
     \C_LHVoiceII                                                               %! extern
+
     \context LHVoiceIII = "LHVoiceIII"                                         %! ScoreTemplate
     \C_LHVoiceIII                                                              %! extern
+
     \context LHVoiceIV = "LHVoiceIV"                                           %! ScoreTemplate
     \C_LHVoiceIV                                                               %! extern
+
     \context LHVoiceIVInserts = "LHVoiceIVInserts"                             %! ScoreTemplate
     \C_LHVoiceIVInserts                                                        %! extern
+
     \context LHVoiceV = "LHVoiceV"                                             %! ScoreTemplate
     \C_LHVoiceV                                                                %! extern
+
     \context LHVoiceVInserts = "LHVoiceVInserts"                               %! ScoreTemplate
     \C_LHVoiceVInserts                                                         %! extern
+
     \context LHVoiceVI = "LHVoiceVI"                                           %! ScoreTemplate
     \C_LHVoiceVI                                                               %! extern
+
     \context LHVoiceVIInserts = "LHVoiceVIInserts"                             %! ScoreTemplate
     \C_LHVoiceVIInserts                                                        %! extern
+
     \context LHResonanceVoice = "LHResonanceVoice"                             %! ScoreTemplate
     \C_LHResonanceVoice                                                        %! extern
+
 >>                                                                             %! extern

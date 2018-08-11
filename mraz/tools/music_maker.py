@@ -53,10 +53,13 @@ def music_maker():
         ..  docs::
 
             >>> abjad.f(lilypond_file[abjad.Score], strict=79)
+            <BLANKLINE>
             \context Score = "Score"                                                       %! SingleStaffScoreTemplate
             <<                                                                             %! SingleStaffScoreTemplate
+            <BLANKLINE>
                 \context GlobalContext = "GlobalContext"                                   %! _make_global_context
                 <<                                                                         %! _make_global_context
+            <BLANKLINE>
                     \context GlobalSkips = "GlobalSkips"                                   %! _make_global_context
                     {                                                                      %! _make_global_context
             <BLANKLINE>
@@ -87,20 +90,27 @@ def music_maker():
                         \bar "|"                                                           %! _attach_final_bar_line
             <BLANKLINE>
                     }                                                                      %! _make_global_context
+            <BLANKLINE>
                 >>                                                                         %! _make_global_context
+            <BLANKLINE>
                 \context MusicContext = "MusicContext"                                     %! SingleStaffScoreTemplate
                 <<                                                                         %! SingleStaffScoreTemplate
+            <BLANKLINE>
                     \context Staff = "MusicStaff"                                          %! SingleStaffScoreTemplate
                     {                                                                      %! SingleStaffScoreTemplate
+            <BLANKLINE>
                         \context Voice = "MusicVoice"                                      %! SingleStaffScoreTemplate
                         {                                                                  %! SingleStaffScoreTemplate
+            <BLANKLINE>
                             \scaleDurations #'(1 . 1) {
             <BLANKLINE>
                                 % [MusicVoice measure 1]                                   %! _comment_measure_numbers
                                 e'16
                                 [
                                 ]
+            <BLANKLINE>
                             }
+            <BLANKLINE>
                             \scaleDurations #'(1 . 1) {
             <BLANKLINE>
                                 % [MusicVoice measure 2]                                   %! _comment_measure_numbers
@@ -133,14 +143,18 @@ def music_maker():
                                 \set stemRightBeamCount = 0
                                 c'16
                                 ]
+            <BLANKLINE>
                             }
+            <BLANKLINE>
                             \scaleDurations #'(1 . 1) {
             <BLANKLINE>
                                 % [MusicVoice measure 3]                                   %! _comment_measure_numbers
                                 b'16
                                 [
                                 ]
+            <BLANKLINE>
                             }
+            <BLANKLINE>
                             \scaleDurations #'(1 . 1) {
             <BLANKLINE>
                                 % [MusicVoice measure 4]                                   %! _comment_measure_numbers
@@ -171,9 +185,13 @@ def music_maker():
                                 ]
             <BLANKLINE>
                             }
+            <BLANKLINE>
                         }                                                                  %! SingleStaffScoreTemplate
+            <BLANKLINE>
                     }                                                                      %! SingleStaffScoreTemplate
+            <BLANKLINE>
                 >>                                                                         %! SingleStaffScoreTemplate
+            <BLANKLINE>
             >>                                                                             %! SingleStaffScoreTemplate
 
     ..  container:: example
@@ -235,14 +253,17 @@ def music_maker():
         ..  docs::
 
             >>> abjad.f(lilypond_file[abjad.Score], strict=79)
+            <BLANKLINE>
             \context Score = "Score"                                                       %! SingleStaffScoreTemplate
             \with                                                                          %! SingleStaffScoreTemplate
             {                                                                              %! SingleStaffScoreTemplate
                 \override Beam.positions = #'(5 . 5)                                       %! SingleStaffScoreTemplate
             }                                                                              %! SingleStaffScoreTemplate
             <<                                                                             %! SingleStaffScoreTemplate
+            <BLANKLINE>
                 \context GlobalContext = "GlobalContext"                                   %! _make_global_context
                 <<                                                                         %! _make_global_context
+            <BLANKLINE>
                     \context GlobalSkips = "GlobalSkips"                                   %! _make_global_context
                     {                                                                      %! _make_global_context
             <BLANKLINE>
@@ -267,13 +288,18 @@ def music_maker():
                         \bar "|"                                                           %! _attach_final_bar_line
             <BLANKLINE>
                     }                                                                      %! _make_global_context
+            <BLANKLINE>
                 >>                                                                         %! _make_global_context
+            <BLANKLINE>
                 \context MusicContext = "MusicContext"                                     %! SingleStaffScoreTemplate
                 <<                                                                         %! SingleStaffScoreTemplate
+            <BLANKLINE>
                     \context Staff = "MusicStaff"                                          %! SingleStaffScoreTemplate
                     {                                                                      %! SingleStaffScoreTemplate
+            <BLANKLINE>
                         \context Voice = "MusicVoice"                                      %! SingleStaffScoreTemplate
                         {                                                                  %! SingleStaffScoreTemplate
+            <BLANKLINE>
                             \scaleDurations #'(1 . 1) {
             <BLANKLINE>
                                 % [MusicVoice measure 1]                                   %! _comment_measure_numbers
@@ -281,7 +307,9 @@ def music_maker():
                                 \set stemRightBeamCount = 2
                                 e'16
                                 [
+            <BLANKLINE>
                             }
+            <BLANKLINE>
                             \scaleDurations #'(1 . 1) {
             <BLANKLINE>
                                 \set stemLeftBeamCount = 1
@@ -311,14 +339,18 @@ def music_maker():
                                 \set stemLeftBeamCount = 2
                                 \set stemRightBeamCount = 1
                                 c'16
+            <BLANKLINE>
                             }
+            <BLANKLINE>
                             \scaleDurations #'(1 . 1) {
             <BLANKLINE>
                                 \set stemLeftBeamCount = 2
                                 \set stemRightBeamCount = 0
                                 b'16
                                 ]
+            <BLANKLINE>
                             }
+            <BLANKLINE>
                             \scaleDurations #'(1 . 1) {
             <BLANKLINE>
                                 % [MusicVoice measure 2]                                   %! _comment_measure_numbers
@@ -350,13 +382,17 @@ def music_maker():
                                 \set stemLeftBeamCount = 2
                                 \set stemRightBeamCount = 1
                                 c'16
+            <BLANKLINE>
                             }
+            <BLANKLINE>
                             \scaleDurations #'(1 . 1) {
             <BLANKLINE>
                                 \set stemLeftBeamCount = 2
                                 \set stemRightBeamCount = 1
                                 b'16
+            <BLANKLINE>
                             }
+            <BLANKLINE>
                             \scaleDurations #'(1 . 1) {
             <BLANKLINE>
                                 \set stemLeftBeamCount = 1
@@ -383,7 +419,9 @@ def music_maker():
                                 \set stemRightBeamCount = 0
                                 f'16
                                 ]
+            <BLANKLINE>
                             }
+            <BLANKLINE>
                             \scaleDurations #'(1 . 1) {
             <BLANKLINE>
                                 % [MusicVoice measure 3]                                   %! _comment_measure_numbers
@@ -391,7 +429,9 @@ def music_maker():
                                 \set stemRightBeamCount = 2
                                 b'16
                                 [
+            <BLANKLINE>
                             }
+            <BLANKLINE>
                             \scaleDurations #'(1 . 1) {
             <BLANKLINE>
                                 \set stemLeftBeamCount = 1
@@ -417,7 +457,9 @@ def music_maker():
                                 \set stemLeftBeamCount = 2
                                 \set stemRightBeamCount = 1
                                 f'16
+            <BLANKLINE>
                             }
+            <BLANKLINE>
                             \scaleDurations #'(1 . 1) {
             <BLANKLINE>
                                 \set stemLeftBeamCount = 2
@@ -426,9 +468,13 @@ def music_maker():
                                 ]
             <BLANKLINE>
                             }
+            <BLANKLINE>
                         }                                                                  %! SingleStaffScoreTemplate
+            <BLANKLINE>
                     }                                                                      %! SingleStaffScoreTemplate
+            <BLANKLINE>
                 >>                                                                         %! SingleStaffScoreTemplate
+            <BLANKLINE>
             >>                                                                             %! SingleStaffScoreTemplate
 
     Returns music-maker.
