@@ -223,7 +223,9 @@ B_RHVoiceI = {                                                                 %
     \set PianoMusicRHStaff.forceClef = ##t                                     %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
     s1 * 11/2
     \override PianoMusicRHStaff.Clef.color = #(x11-color 'OliveDrab)           %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             % [B RHVoiceI measure 31 / measure 10]                             %! _comment_measure_numbers
@@ -249,9 +251,13 @@ B_RHVoiceI = {                                                                 %
         %%%                 ]                                                  %! FIGURE_NAME_MARKUP
         %%%             }                                                      %! FIGURE_NAME_MARKUP
         %%%     }                                                              %! FIGURE_NAME_MARKUP
+
         }
+
     }
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             % [B RHVoiceI measure 32 / measure 11]                             %! _comment_measure_numbers
@@ -274,9 +280,13 @@ B_RHVoiceI = {                                                                 %
         %%%                 ]                                                  %! FIGURE_NAME_MARKUP
         %%%             }                                                      %! FIGURE_NAME_MARKUP
         %%%     }                                                              %! FIGURE_NAME_MARKUP
+
         }
+
     }
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             % [B RHVoiceI measure 33 / measure 12]                             %! _comment_measure_numbers
@@ -302,7 +312,9 @@ B_RHVoiceI = {                                                                 %
             \ottava #0                                                         %! SpannerCommand
 
         }
+
     }
+
 }                                                                              %! extern
 
 
@@ -355,7 +367,9 @@ B_RHVoiceII = {                                                                %
     \once \override RHVoiceII.DynamicText.color = #(x11-color 'green4)         %! REAPPLIED_DYNAMIC_COLOR:_attach_color_literal(2)
     s1 * 1/2
     \fff                                                                       %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             % [B RHVoiceII measure 23 / measure 2]                             %! _comment_measure_numbers
@@ -378,9 +392,13 @@ B_RHVoiceII = {                                                                %
         %%%                 ]                                                  %! FIGURE_NAME_MARKUP
         %%%             }                                                      %! FIGURE_NAME_MARKUP
         %%%     }                                                              %! FIGURE_NAME_MARKUP
+
         }
+
     }
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             % [B RHVoiceII measure 24 / measure 3]                             %! _comment_measure_numbers
@@ -435,9 +453,13 @@ B_RHVoiceII = {                                                                %
             ]
             )                                                                  %! SpannerCommand
             \revert Stem.direction                                             %! baca_stem_down:OverrideCommand(2)
+
         }
+
     }
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             % [B RHVoiceII measure 25 / measure 4]                             %! _comment_measure_numbers
@@ -460,12 +482,16 @@ B_RHVoiceII = {                                                                %
         %%%                 ]                                                  %! FIGURE_NAME_MARKUP
         %%%             }                                                      %! FIGURE_NAME_MARKUP
         %%%     }                                                              %! FIGURE_NAME_MARKUP
+
         }
+
     }
 
     % [B RHVoiceII measure 26 / measure 5]                                     %! _comment_measure_numbers
     s1 * 1/2
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             % [B RHVoiceII measure 27 / measure 6]                             %! _comment_measure_numbers
@@ -517,7 +543,9 @@ B_RHVoiceII = {                                                                %
             af'!16
             - \staccato                                                        %! IndicatorCommand
             )                                                                  %! SpannerCommand
+
         }
+
         \scaleDurations #'(1 . 1) {
 
             \set stemLeftBeamCount = 1
@@ -548,9 +576,13 @@ B_RHVoiceII = {                                                                %
             ]
             )                                                                  %! SpannerCommand
             \revert Stem.direction                                             %! baca_stem_down:OverrideCommand(2)
+
         }
+
     }
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             % [B RHVoiceII measure 28 / measure 7]                             %! _comment_measure_numbers
@@ -573,12 +605,16 @@ B_RHVoiceII = {                                                                %
         %%%                 ]                                                  %! FIGURE_NAME_MARKUP
         %%%             }                                                      %! FIGURE_NAME_MARKUP
         %%%     }                                                              %! FIGURE_NAME_MARKUP
+
         }
+
     }
 
     % [B RHVoiceII measure 29 / measure 8]                                     %! _comment_measure_numbers
     s1 * 3/2
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             % [B RHVoiceII measure 30 / measure 9]                             %! _comment_measure_numbers
@@ -630,7 +666,9 @@ B_RHVoiceII = {                                                                %
             af'!16
             - \staccato                                                        %! IndicatorCommand
             )                                                                  %! SpannerCommand
+
         }
+
         \scaleDurations #'(1 . 1) {
 
             \set stemLeftBeamCount = 1
@@ -659,7 +697,9 @@ B_RHVoiceII = {                                                                %
             a''16
             - \staccato                                                        %! IndicatorCommand
             )                                                                  %! SpannerCommand
+
         }
+
         \scaleDurations #'(1 . 1) {
 
             \set stemLeftBeamCount = 1
@@ -693,7 +733,9 @@ B_RHVoiceII = {                                                                %
             f''16
             - \staccato                                                        %! IndicatorCommand
             )                                                                  %! SpannerCommand
+
         }
+
         \scaleDurations #'(1 . 1) {
 
             \set stemLeftBeamCount = 1
@@ -724,12 +766,16 @@ B_RHVoiceII = {                                                                %
             ]
             )                                                                  %! SpannerCommand
             \revert Stem.direction                                             %! baca_stem_down:OverrideCommand(2)
+
         }
+
     }
 
     % [B RHVoiceII measure 31 / measure 10]                                    %! _comment_measure_numbers
     s1 * 13/4
+
     {
+
         \times 4/5 {
 
             % [B RHVoiceII measure 33 / measure 12]                            %! _comment_measure_numbers
@@ -779,7 +825,9 @@ B_RHVoiceII = {                                                                %
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
             cs'''!16
+
         }
+
         \times 4/5 {
 
             \set stemLeftBeamCount = 1
@@ -801,7 +849,9 @@ B_RHVoiceII = {                                                                %
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
             b''16
+
         }
+
         \times 4/5 {
 
             \set stemLeftBeamCount = 1
@@ -823,7 +873,9 @@ B_RHVoiceII = {                                                                %
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
             cs''''!16
+
         }
+
         \scaleDurations #'(1 . 1) {
 
             \set stemLeftBeamCount = 1
@@ -851,7 +903,9 @@ B_RHVoiceII = {                                                                %
             \ottava #0                                                         %! SpannerCommand
 
         }
+
     }
+
 }                                                                              %! extern
 
 
@@ -902,7 +956,9 @@ B_RHVoiceIII = {                                                               %
     \once \override RHVoiceIII.DynamicText.color = #(x11-color 'green4)        %! REAPPLIED_DYNAMIC_COLOR:_attach_color_literal(2)
     s1 * 43/16
     \mf                                                                        %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
+
     {
+
         \tweak text #tuplet-number::calc-fraction-text
         \times 12/11 {
 
@@ -941,7 +997,9 @@ B_RHVoiceIII = {                                                               %
 
             r4
             \revert TupletBracket.direction                                    %! baca_tuplet_bracket_up:OverrideCommand(2)
+
         }
+
     }
 
     % [B RHVoiceIII measure 30 / measure 9]                                    %! _comment_measure_numbers
@@ -1001,7 +1059,9 @@ B_RHVoiceIIIInserts = {                                                        %
 
 
 B_RHVoiceIV = {                                                                %! extern
+
     {
+
         \tweak text #tuplet-number::calc-fraction-text
         \times 8/7 {
 
@@ -1054,12 +1114,16 @@ B_RHVoiceIV = {                                                                %
             \set stemRightBeamCount = 0
             b''16
             ]
+
         }
+
     }
 
     % [B RHVoiceIV measure 23 / measure 2]                                     %! _comment_measure_numbers
     s1 * 13/16
+
     {
+
         \tweak text #tuplet-number::calc-fraction-text
         \times 8/7 {
 
@@ -1112,7 +1176,9 @@ B_RHVoiceIV = {                                                                %
             \set stemRightBeamCount = 0
             b''16
             ]
+
         }
+
     }
 
     % [B RHVoiceIV measure 27 / measure 6]                                     %! _comment_measure_numbers
@@ -1140,9 +1206,11 @@ B_RHVoiceIV = {                                                                %
 
 
 B_RHVoiceIVInserts = {                                                         %! extern
+
     {
         \override TupletBracket.stencil = ##f
         \override TupletNumber.stencil = ##f
+
         \tweak text #tuplet-number::calc-fraction-text
         \times 8/7 {
 
@@ -1160,16 +1228,20 @@ B_RHVoiceIVInserts = {                                                         %
             fs''!16
 
             s16
+
         }
         \revert TupletBracket.stencil
         \revert TupletNumber.stencil
+
     }
 
     % [B RHVoiceIVInserts measure 23 / measure 2]                              %! _comment_measure_numbers
     s1 * 13/16
+
     {
         \override TupletBracket.stencil = ##f
         \override TupletNumber.stencil = ##f
+
         \tweak text #tuplet-number::calc-fraction-text
         \times 8/7 {
 
@@ -1187,9 +1259,11 @@ B_RHVoiceIVInserts = {                                                         %
             fs''!16
 
             s16
+
         }
         \revert TupletBracket.stencil
         \revert TupletNumber.stencil
+
     }
 
     % [B RHVoiceIVInserts measure 27 / measure 6]                              %! _comment_measure_numbers
@@ -1340,28 +1414,40 @@ B_RHResonanceVoice = {                                                         %
 
 
 B_PianoMusicRHStaff = <<                                                       %! extern
+
     \context RHVoiceI = "RHVoiceI"                                             %! ScoreTemplate
     \B_RHVoiceI                                                                %! extern
+
     \context RHVoiceIInserts = "RHVoiceIInserts"                               %! ScoreTemplate
     \B_RHVoiceIInserts                                                         %! extern
+
     \context RHVoiceII = "RHVoiceII"                                           %! ScoreTemplate
     \B_RHVoiceII                                                               %! extern
+
     \context RHVoiceIIInserts = "RHVoiceIIInserts"                             %! ScoreTemplate
     \B_RHVoiceIIInserts                                                        %! extern
+
     \context RHVoiceIII = "RHVoiceIII"                                         %! ScoreTemplate
     \B_RHVoiceIII                                                              %! extern
+
     \context RHVoiceIIIInserts = "RHVoiceIIIInserts"                           %! ScoreTemplate
     \B_RHVoiceIIIInserts                                                       %! extern
+
     \context RHVoiceIV = "RHVoiceIV"                                           %! ScoreTemplate
     \B_RHVoiceIV                                                               %! extern
+
     \context RHVoiceIVInserts = "RHVoiceIVInserts"                             %! ScoreTemplate
     \B_RHVoiceIVInserts                                                        %! extern
+
     \context RHVoiceV = "RHVoiceV"                                             %! ScoreTemplate
     \B_RHVoiceV                                                                %! extern
+
     \context RHVoiceVI = "RHVoiceVI"                                           %! ScoreTemplate
     \B_RHVoiceVI                                                               %! extern
+
     \context RHResonanceVoice = "RHResonanceVoice"                             %! ScoreTemplate
     \B_RHResonanceVoice                                                        %! extern
+
 >>                                                                             %! extern
 
 
@@ -1578,7 +1664,9 @@ B_LHVoiceV = {                                                                 %
     \once \override LHVoiceV.DynamicText.color = #(x11-color 'green4)          %! REAPPLIED_DYNAMIC_COLOR:_attach_color_literal(2)
     s1 * 43/16
     \ppp                                                                       %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             % [B LHVoiceV measure 29 / measure 8]                              %! _comment_measure_numbers
@@ -1620,7 +1708,9 @@ B_LHVoiceV = {                                                                 %
 
             r16
             \revert Rest.direction                                             %! baca_rest_up:OverrideCommand(2)
+
         }
+
     }
 
     % [B LHVoiceV measure 30 / measure 9]                                      %! _comment_measure_numbers
@@ -1770,7 +1860,9 @@ B_LHVoiceVIInserts = {                                                         %
 
 
 B_LHResonanceVoice = {                                                         %! extern
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             % [B LHResonanceVoice measure 22 / measure 1]                      %! _comment_measure_numbers
@@ -1796,9 +1888,13 @@ B_LHResonanceVoice = {                                                         %
         %%%                 ]                                                  %! FIGURE_NAME_MARKUP
         %%%             }                                                      %! FIGURE_NAME_MARKUP
         %%%     }                                                              %! FIGURE_NAME_MARKUP
+
         }
+
     }
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             % [B LHResonanceVoice measure 23 / measure 2]                      %! _comment_measure_numbers
@@ -1829,9 +1925,13 @@ B_LHResonanceVoice = {                                                         %
         %%%             }                                                      %! FIGURE_NAME_MARKUP
         %%%     }                                                              %! FIGURE_NAME_MARKUP
             \repeatTie                                                         %! SpannerCommand
+
         }
+
     }
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             % [B LHResonanceVoice measure 24 / measure 3]                      %! _comment_measure_numbers
@@ -1868,9 +1968,13 @@ B_LHResonanceVoice = {                                                         %
             \repeatTie                                                         %! SpannerCommand
             [
             ]
+
         }
+
     }
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             % [B LHResonanceVoice measure 25 / measure 4]                      %! _comment_measure_numbers
@@ -1901,9 +2005,13 @@ B_LHResonanceVoice = {                                                         %
         %%%             }                                                      %! FIGURE_NAME_MARKUP
         %%%     }                                                              %! FIGURE_NAME_MARKUP
             \repeatTie                                                         %! SpannerCommand
+
         }
+
     }
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             % [B LHResonanceVoice measure 26 / measure 5]                      %! _comment_measure_numbers
@@ -1926,9 +2034,13 @@ B_LHResonanceVoice = {                                                         %
         %%%             }                                                      %! FIGURE_NAME_MARKUP
         %%%     }                                                              %! FIGURE_NAME_MARKUP
             \repeatTie                                                         %! SpannerCommand
+
         }
+
     }
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             % [B LHResonanceVoice measure 27 / measure 6]                      %! _comment_measure_numbers
@@ -1965,13 +2077,17 @@ B_LHResonanceVoice = {                                                         %
             \repeatTie                                                         %! SpannerCommand
             [
             ]
+
         }
+
     }
 
     % [B LHResonanceVoice measure 28 / measure 7]                              %! _comment_measure_numbers
     s1 * 7/4
     \revert Accidental.stencil                                                 %! baca_accidental_stencil_false:OverrideCommand(2)
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             % [B LHResonanceVoice measure 30 / measure 9]                      %! _comment_measure_numbers
@@ -2018,9 +2134,13 @@ B_LHResonanceVoice = {                                                         %
             \revert NoteHead.transparent                                       %! baca_note_head_transparent:OverrideCommand(2)
             \revert RepeatTie.transparent                                      %! baca_repeat_tie_transparent:OverrideCommand(2)
             \revert Stem.transparent                                           %! baca_stem_transparent:OverrideCommand(2)
+
         }
+
     }
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             % [B LHResonanceVoice measure 31 / measure 10]                     %! _comment_measure_numbers
@@ -2045,9 +2165,13 @@ B_LHResonanceVoice = {                                                         %
         %%%             }                                                      %! FIGURE_NAME_MARKUP
         %%%     }                                                              %! FIGURE_NAME_MARKUP
             \repeatTie                                                         %! SpannerCommand
+
         }
+
     }
+
     {
+
         \scaleDurations #'(1 . 1) {
 
             % [B LHResonanceVoice measure 32 / measure 11]                     %! _comment_measure_numbers
@@ -2070,7 +2194,9 @@ B_LHResonanceVoice = {                                                         %
         %%%             }                                                      %! FIGURE_NAME_MARKUP
         %%%     }                                                              %! FIGURE_NAME_MARKUP
             \repeatTie                                                         %! SpannerCommand
+
         }
+
     }
 
     % [B LHResonanceVoice measure 33 / measure 12]                             %! _comment_measure_numbers
@@ -2085,24 +2211,35 @@ B_LHResonanceVoice = {                                                         %
 
 
 B_PianoMusicLHStaff = <<                                                       %! extern
+
     \context LHVoiceI = "LHVoiceI"                                             %! ScoreTemplate
     \B_LHVoiceI                                                                %! extern
+
     \context LHVoiceII = "LHVoiceII"                                           %! ScoreTemplate
     \B_LHVoiceII                                                               %! extern
+
     \context LHVoiceIII = "LHVoiceIII"                                         %! ScoreTemplate
     \B_LHVoiceIII                                                              %! extern
+
     \context LHVoiceIV = "LHVoiceIV"                                           %! ScoreTemplate
     \B_LHVoiceIV                                                               %! extern
+
     \context LHVoiceIVInserts = "LHVoiceIVInserts"                             %! ScoreTemplate
     \B_LHVoiceIVInserts                                                        %! extern
+
     \context LHVoiceV = "LHVoiceV"                                             %! ScoreTemplate
     \B_LHVoiceV                                                                %! extern
+
     \context LHVoiceVInserts = "LHVoiceVInserts"                               %! ScoreTemplate
     \B_LHVoiceVInserts                                                         %! extern
+
     \context LHVoiceVI = "LHVoiceVI"                                           %! ScoreTemplate
     \B_LHVoiceVI                                                               %! extern
+
     \context LHVoiceVIInserts = "LHVoiceVIInserts"                             %! ScoreTemplate
     \B_LHVoiceVIInserts                                                        %! extern
+
     \context LHResonanceVoice = "LHResonanceVoice"                             %! ScoreTemplate
     \B_LHResonanceVoice                                                        %! extern
+
 >>                                                                             %! extern
