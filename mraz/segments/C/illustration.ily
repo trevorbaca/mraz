@@ -668,8 +668,8 @@ C_RHVoiceI = {                                                                 %
     \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'green4)        %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
 %@% \override PianoMusicRHStaff.Clef.color = ##f                               %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
     \set PianoMusicRHStaff.forceClef = ##t                                     %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
-    \once \override RHVoiceI.DynamicText.color = #(x11-color 'green4)          %! REAPPLIED_DYNAMIC_COLOR:_attach_color_literal(2)
     s1 * 141/8
+    - \tweak color #(x11-color 'green4)                                        %! REAPPLIED_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
     \f                                                                         %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
     \override PianoMusicRHStaff.Clef.color = #(x11-color 'OliveDrab)           %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
@@ -705,8 +705,8 @@ C_RHVoiceI = {                                                                 %
             \once \override TextScript.color = #black                          %! baca_text_script_color:OverrideCommand(1)
             \override Stem.direction = #up                                     %! baca_stem_up:OverrideCommand(1)
             \ottava #1                                                         %! SpannerCommand
-            \once \override RHVoiceI.DynamicText.color = #(x11-color 'blue)    %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
             d''''8
+            - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
             \mf                                                                %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
             [
             (                                                                  %! SpannerCommand
@@ -924,8 +924,8 @@ C_RHVoiceI = {                                                                 %
         \scaleDurations #'(1 . 1) {
 
             % [C RHVoiceI measure 66 / measure 33]                             %! _comment_measure_numbers
-            \once \override RHVoiceI.DynamicText.color = #(x11-color 'blue)    %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
             ef''''!1..
+            - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
             \f                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
             - \tenuto                                                          %! IndicatorCommand
         %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
@@ -1262,8 +1262,8 @@ C_RHVoiceIInserts = {                                                          %
 C_RHVoiceII = {                                                                %! extern
 
     % [C RHVoiceII measure 34 / measure 1]                                     %! _comment_measure_numbers
-    \once \override RHVoiceII.DynamicText.color = #(x11-color 'green4)         %! REAPPLIED_DYNAMIC_COLOR:_attach_color_literal(2)
     s1 * 3/2
+    - \tweak color #(x11-color 'green4)                                        %! REAPPLIED_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
     \ff                                                                        %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
 
     {
@@ -1273,8 +1273,8 @@ C_RHVoiceII = {                                                                %
             % [C RHVoiceII measure 35 / measure 2]                             %! _comment_measure_numbers
             \once \override Script.direction = #up                             %! baca_script_up:OverrideCommand(1)
             \arpeggioArrowUp                                                   %! IndicatorCommand
-            \once \override RHVoiceII.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
             <a g' af'! b' cs''! f'' ef'''! c''''>2.
+            - \tweak color #(x11-color 'DeepPink1)                             %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
             \ff                                                                %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
             - \marcato                                                         %! IndicatorCommand
             \arpeggio                                                          %! IndicatorCommand
@@ -1320,8 +1320,8 @@ C_RHVoiceII = {                                                                %
 
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 1
-            \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue)   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
             ef'''!8
+            - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
             \mp                                                                %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
             - \staccato                                                        %! IndicatorCommand
 
@@ -1468,8 +1468,8 @@ C_RHVoiceII = {                                                                %
             \override Slur.direction = #up                                     %! baca_slur_up:OverrideCommand(1)
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
-            \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue)   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
             b'16
+            - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
             \f                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                      %! FIGURE_NAME_MARKUP
@@ -1488,7 +1488,7 @@ C_RHVoiceII = {                                                                %
         %%%                 ]                                                  %! FIGURE_NAME_MARKUP
         %%%             }                                                      %! FIGURE_NAME_MARKUP
         %%%     }                                                              %! FIGURE_NAME_MARKUP
-            - \tweak color #blue                                               %! _treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+            - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
             \<                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
             [
             (                                                                  %! SpannerCommand
@@ -1571,8 +1571,8 @@ C_RHVoiceII = {                                                                %
 
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue)   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
             c''''16
+            - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
             \ff                                                                %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
 
             \set stemLeftBeamCount = 2
@@ -1597,8 +1597,8 @@ C_RHVoiceII = {                                                                %
             \override TextScript.direction = #up                               %! baca_text_script_up:OverrideCommand(1)
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
-            \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue)   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
             ef''!16
+            - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
             \f                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                      %! FIGURE_NAME_MARKUP
@@ -1617,7 +1617,7 @@ C_RHVoiceII = {                                                                %
         %%%                 ]                                                  %! FIGURE_NAME_MARKUP
         %%%             }                                                      %! FIGURE_NAME_MARKUP
         %%%     }                                                              %! FIGURE_NAME_MARKUP
-            - \tweak color #blue                                               %! _treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+            - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
             \<                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
             [
             (                                                                  %! SpannerCommand
@@ -1696,8 +1696,8 @@ C_RHVoiceII = {                                                                %
 
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue)   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
             cs''''!16
+            - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
             \ff                                                                %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
 
             \set stemLeftBeamCount = 2
@@ -1755,8 +1755,8 @@ C_RHVoiceII = {                                                                %
             \override TextScript.direction = #up                               %! baca_text_script_up:OverrideCommand(1)
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
-            \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue)   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
             cs''!16
+            - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
             \f                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                      %! FIGURE_NAME_MARKUP
@@ -1775,7 +1775,7 @@ C_RHVoiceII = {                                                                %
         %%%                 ]                                                  %! FIGURE_NAME_MARKUP
         %%%             }                                                      %! FIGURE_NAME_MARKUP
         %%%     }                                                              %! FIGURE_NAME_MARKUP
-            - \tweak color #blue                                               %! _treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+            - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
             \<                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
             [
             (                                                                  %! SpannerCommand
@@ -1866,8 +1866,8 @@ C_RHVoiceII = {                                                                %
 
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue)   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
             ef''''!16
+            - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
             \ff                                                                %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
 
             \set stemLeftBeamCount = 2
@@ -1893,8 +1893,8 @@ C_RHVoiceII = {                                                                %
             \override TextScript.direction = #up                               %! baca_text_script_up:OverrideCommand(1)
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
-            \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue)   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
             a''16
+            - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
             \f                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                      %! FIGURE_NAME_MARKUP
@@ -1913,7 +1913,7 @@ C_RHVoiceII = {                                                                %
         %%%                 ]                                                  %! FIGURE_NAME_MARKUP
         %%%             }                                                      %! FIGURE_NAME_MARKUP
         %%%     }                                                              %! FIGURE_NAME_MARKUP
-            - \tweak color #blue                                               %! _treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+            - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
             \<                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
             [
             (                                                                  %! SpannerCommand
@@ -1944,8 +1944,8 @@ C_RHVoiceII = {                                                                %
 
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue)   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
             af'''!16
+            - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
             \ff                                                                %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
 
             \set stemLeftBeamCount = 2
@@ -2069,8 +2069,8 @@ C_RHVoiceII = {                                                                %
             \override Stem.direction = #up                                     %! baca_stem_up:OverrideCommand(1)
             \override TextScript.direction = #up                               %! baca_text_script_up:OverrideCommand(1)
             \dynamicUp                                                         %! IndicatorCommand
-            \once \override RHVoiceII.DynamicText.color = #(x11-color 'blue)   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
             c'''8
+            - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
             \fff                                                               %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
             - \accent                                                          %! IndicatorCommand
         %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
@@ -2268,10 +2268,10 @@ C_RHVoiceIII = {                                                               %
             \override Stem.direction = #up                                     %! baca_stem_up:OverrideCommand(1)
             \override TextScript.direction = #up                               %! baca_text_script_up:OverrideCommand(1)
             \override TupletBracket.direction = #up                            %! baca_tuplet_bracket_up:OverrideCommand(1)
-            \once \override RHVoiceIII.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
-            \once \override RHVoiceIII.DynamicText.color = #(x11-color 'blue)  %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
             ef!8
+            - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
             \ff                                                                %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
+            - \tweak color #(x11-color 'DeepPink1)                             %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
             \ff                                                                %! REDUNDANT_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
             - \tenuto                                                          %! IndicatorCommand
         %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
@@ -2559,8 +2559,8 @@ C_RHVoiceIII = {                                                               %
         %%%     }                                                              %! FIGURE_NAME_MARKUP
 
             \override Stem.direction = #up                                     %! baca_stem_up:OverrideCommand(1)
-            \once \override RHVoiceIII.DynamicText.color = #(x11-color 'blue)  %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
             ef''!8
+            - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
             \mp                                                                %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
             - \tenuto                                                          %! IndicatorCommand
 
@@ -2596,8 +2596,8 @@ C_RHVoiceIII = {                                                               %
             \override Stem.direction = #down                                   %! baca_stem_down:OverrideCommand(1)
             \override TupletBracket.direction = #down                          %! baca_tuplet_bracket_down:OverrideCommand(1)
             \ottava #1                                                         %! SpannerCommand
-            \once \override RHVoiceIII.DynamicText.color = #(x11-color 'blue)  %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
             a''4
+            - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
             \mf                                                                %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
             - \tenuto                                                          %! IndicatorCommand
         %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
@@ -2792,8 +2792,8 @@ C_RHVoiceIIIInserts = {                                                        %
 C_RHVoiceIV = {                                                                %! extern
 
     % [C RHVoiceIV measure 34 / measure 1]                                     %! _comment_measure_numbers
-    \once \override RHVoiceIV.DynamicText.color = #(x11-color 'green4)         %! REAPPLIED_DYNAMIC_COLOR:_attach_color_literal(2)
     s1 * 3/2                                                                   %! _call_rhythm_commands
+    - \tweak color #(x11-color 'green4)                                        %! REAPPLIED_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
     \p                                                                         %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
 
     % [C RHVoiceIV measure 35 / measure 2]                                     %! _comment_measure_numbers
@@ -3831,8 +3831,8 @@ C_LHVoiceIII = {                                                               %
 C_LHVoiceIV = {                                                                %! extern
 
     % [C LHVoiceIV measure 34 / measure 1]                                     %! _comment_measure_numbers
-    \once \override LHVoiceIV.DynamicText.color = #(x11-color 'green4)         %! REAPPLIED_DYNAMIC_COLOR:_attach_color_literal(2)
     s1 * 15/4
+    - \tweak color #(x11-color 'green4)                                        %! REAPPLIED_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
     \ff                                                                        %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
 
     {
@@ -3841,8 +3841,8 @@ C_LHVoiceIV = {                                                                %
 
             % [C LHVoiceIV measure 37 / measure 4]                             %! _comment_measure_numbers
             \override Slur.direction = #up                                     %! baca_slur_up:OverrideCommand(1)
-            \once \override LHVoiceIV.DynamicText.color = #(x11-color 'blue)   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
             b'8.
+            - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
             \p                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
         %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                      %! FIGURE_NAME_MARKUP
@@ -4146,9 +4146,9 @@ C_LHVoiceV = {                                                                 %
         \scaleDurations #'(1 . 1) {
 
             % [C LHVoiceV measure 34 / measure 1]                              %! _comment_measure_numbers
-            \once \override LHVoiceV.DynamicText.color = #(x11-color 'green4)  %! REAPPLIED_DYNAMIC_COLOR:_attach_color_literal(2)
             \dynamicDown                                                       %! IndicatorCommand
             r2.
+            - \tweak color #(x11-color 'green4)                                %! REAPPLIED_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
             \f                                                                 %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
         %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                      %! FIGURE_NAME_MARKUP
@@ -4168,8 +4168,8 @@ C_LHVoiceV = {                                                                 %
         %%%             }                                                      %! FIGURE_NAME_MARKUP
         %%%     }                                                              %! FIGURE_NAME_MARKUP
 
-            \once \override LHVoiceV.DynamicText.color = #(x11-color 'DeepPink1) %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
             af!8.
+            - \tweak color #(x11-color 'DeepPink1)                             %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
             \f                                                                 %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
             - \tenuto                                                          %! IndicatorCommand
 
@@ -4291,8 +4291,8 @@ C_LHVoiceV = {                                                                 %
         %%%             }                                                      %! FIGURE_NAME_MARKUP
         %%%     }                                                              %! FIGURE_NAME_MARKUP
 
-            \once \override LHVoiceV.DynamicText.color = #(x11-color 'blue)    %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
             <g b f' fs'! a'>8.
+            - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
             \ff                                                                %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
             - \marcato                                                         %! IndicatorCommand
 
@@ -4328,8 +4328,8 @@ C_LHVoiceV = {                                                                 %
 
             r4
 
-            \once \override LHVoiceV.DynamicText.color = #(x11-color 'blue)    %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
             af!8.
+            - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
             \f                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
             - \tenuto                                                          %! IndicatorCommand
 
@@ -4404,8 +4404,8 @@ C_LHVoiceV = {                                                                 %
         %%%             }                                                      %! FIGURE_NAME_MARKUP
         %%%     }                                                              %! FIGURE_NAME_MARKUP
 
-            \once \override LHVoiceV.DynamicText.color = #(x11-color 'blue)    %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
             <g b f' fs'! a'>8.
+            - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
             \ff                                                                %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
             - \marcato                                                         %! IndicatorCommand
 
@@ -4708,8 +4708,8 @@ C_LHVoiceV = {                                                                 %
             % [C LHVoiceV measure 50 / measure 17]                             %! _comment_measure_numbers
             \once \override Stem.direction = #up                               %! baca_stem_up:OverrideCommand(1)
             \crossStaff                                                        %! IndicatorCommand
-            \once \override LHVoiceV.DynamicText.color = #(x11-color 'blue)    %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
             <g, e f af!>16
+            - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
             \mp                                                                %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
         %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                      %! FIGURE_NAME_MARKUP
@@ -5247,8 +5247,8 @@ C_LHVoiceV = {                                                                 %
         %%%             }                                                      %! FIGURE_NAME_MARKUP
         %%%     }                                                              %! FIGURE_NAME_MARKUP
 
-            \once \override LHVoiceV.DynamicText.color = #(x11-color 'blue)    %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
             af!8.
+            - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
             \p                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
             - \tenuto                                                          %! IndicatorCommand
 
@@ -5521,8 +5521,8 @@ C_LHVoiceVI = {                                                                %
     \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'green4)        %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
 %@% \override PianoMusicLHStaff.Clef.color = ##f                               %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
     \set PianoMusicLHStaff.forceClef = ##t                                     %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
-    \once \override LHVoiceVI.DynamicText.color = #(x11-color 'green4)         %! REAPPLIED_DYNAMIC_COLOR:_attach_color_literal(2)
     s1 * 3/2                                                                   %! _call_rhythm_commands
+    - \tweak color #(x11-color 'green4)                                        %! REAPPLIED_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
     \f                                                                         %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
     ^ \baca-reapplied-indicator-markup "(“Piano”)"                             %! REAPPLIED_INSTRUMENT_ALERT:_attach_latent_indicator_alert
     \override PianoMusicLHStaff.Clef.color = #(x11-color 'OliveDrab)           %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
