@@ -1456,7 +1456,7 @@ A_LHVoiceVI = {                                                                %
             af,,!4
             - \tweak color #(x11-color 'DeepPink1)                             %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
             \f                                                                 %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-            - \tenuto                                                          %! IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
         %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                      %! FIGURE_NAME_MARKUP
         %%%         #2                                                         %! FIGURE_NAME_MARKUP
@@ -1479,12 +1479,12 @@ A_LHVoiceVI = {                                                                %
             r4
 
             c,,4
-            - \tenuto                                                          %! IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
 
             r4
 
             bf,,,!4
-            - \tenuto                                                          %! IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
 
             r4
 
@@ -1501,7 +1501,7 @@ A_LHVoiceVI = {                                                                %
 
             % [A LHVoiceVI measure 13 / measure 4]                             %! _comment_measure_numbers
             b,,,8
-            - \tenuto                                                          %! IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
         %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                      %! FIGURE_NAME_MARKUP
         %%%         #2                                                         %! FIGURE_NAME_MARKUP
@@ -1524,7 +1524,7 @@ A_LHVoiceVI = {                                                                %
             r4
 
             ef,,!8
-            - \tenuto                                                          %! IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
 
             r4
             \revert Rest.direction                                             %! baca_rest_up:OverrideCommand(2)
@@ -1541,7 +1541,7 @@ A_LHVoiceVI = {                                                                %
         \times 4/3 {
 
             bf,,,!16
-            - \tenuto                                                          %! IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
         %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                      %! FIGURE_NAME_MARKUP
         %%%         #2                                                         %! FIGURE_NAME_MARKUP
@@ -1563,13 +1563,13 @@ A_LHVoiceVI = {                                                                %
             r8.
 
             c,,16
-            - \tenuto                                                          %! IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
 
             r8.
 
             \once \override NoteColumn.force-hshift = #-1                      %! baca_note_colun_shift:OverrideCommand(1)
             e,,16
-            - \tenuto                                                          %! IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
 
             r8.
 
@@ -1585,7 +1585,7 @@ A_LHVoiceVI = {                                                                %
         \times 4/3 {
 
             g,,16
-            - \tenuto                                                          %! IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
         %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                      %! FIGURE_NAME_MARKUP
         %%%         #2                                                         %! FIGURE_NAME_MARKUP
@@ -1607,12 +1607,12 @@ A_LHVoiceVI = {                                                                %
             r8.
 
             f,,16
-            - \tenuto                                                          %! IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
 
             r8.
 
             cs,,!16
-            - \tenuto                                                          %! IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
 
             r8.
 
@@ -1628,7 +1628,7 @@ A_LHVoiceVI = {                                                                %
         \times 5/4 {
 
             d,,8
-            - \tenuto                                                          %! IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
         %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                      %! FIGURE_NAME_MARKUP
         %%%         #2                                                         %! FIGURE_NAME_MARKUP
@@ -1648,13 +1648,13 @@ A_LHVoiceVI = {                                                                %
         %%%     }                                                              %! FIGURE_NAME_MARKUP
 
             e,,8
-            - \tenuto                                                          %! IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
 
             af,,!8
-            - \tenuto                                                          %! IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
 
             fs,,!8
-            - \tenuto                                                          %! IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
 
         }
 
@@ -1668,7 +1668,7 @@ A_LHVoiceVI = {                                                                %
         \times 4/6 {
 
             e,,8
-            - \tenuto                                                          %! IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
         %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                      %! FIGURE_NAME_MARKUP
         %%%         #2                                                         %! FIGURE_NAME_MARKUP
@@ -1691,12 +1691,12 @@ A_LHVoiceVI = {                                                                %
 
             % [A LHVoiceVI measure 20 / measure 11]                            %! _comment_measure_numbers
             f,,8
-            - \tenuto                                                          %! IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
 
             r4
 
             g,,8
-            - \tenuto                                                          %! IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
             \revert Stem.direction                                             %! baca_stem_down:OverrideCommand(2)
 
             r4
