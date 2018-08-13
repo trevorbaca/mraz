@@ -185,7 +185,7 @@ i_RHVoiceI = {                                                                 %
         %@% \override PianoMusicRHStaff.Clef.color = ##f                       %! DEFAULT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
             \set PianoMusicRHStaff.forceClef = ##t                             %! DEFAULT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):attach_defaults
             bf''''!1
-            - \tenuto                                                          %! IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
             ^ \markup { "(ottava brackets always govern all voices on staff)" } %! baca_markup:IndicatorCommand
         %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                      %! FIGURE_NAME_MARKUP
@@ -480,7 +480,7 @@ i_RHVoiceII = {                                                                %
             c'''8
             - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
             \fff                                                               %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-            - \accent                                                          %! IndicatorCommand
+            - \accent                                                          %! baca_accent:IndicatorCommand
         %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                      %! FIGURE_NAME_MARKUP
         %%%         #2                                                         %! FIGURE_NAME_MARKUP
@@ -503,17 +503,17 @@ i_RHVoiceII = {                                                                %
             r2..
 
             d'''8
-            - \accent                                                          %! IndicatorCommand
+            - \accent                                                          %! baca_accent:IndicatorCommand
 
             r2..
 
             ef''''!8
-            - \accent                                                          %! IndicatorCommand
+            - \accent                                                          %! baca_accent:IndicatorCommand
 
             r2..
 
             f''''8
-            - \accent                                                          %! IndicatorCommand
+            - \accent                                                          %! baca_accent:IndicatorCommand
             \revert Stem.direction                                             %! baca_stem_up:OverrideCommand(2)
 
             r2..
@@ -605,8 +605,8 @@ i_RHVoiceIII = {                                                               %
             bf'''!8
             - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
             \pp                                                                %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-            - \staccato                                                        %! IndicatorCommand
-            - \tenuto                                                          %! IndicatorCommand
+            - \staccato                                                        %! baca_staccato:IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
         %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                      %! FIGURE_NAME_MARKUP
         %%%         #2                                                         %! FIGURE_NAME_MARKUP
@@ -626,12 +626,12 @@ i_RHVoiceIII = {                                                               %
         %%%     }                                                              %! FIGURE_NAME_MARKUP
 
             cs'''!8
-            - \staccato                                                        %! IndicatorCommand
-            - \tenuto                                                          %! IndicatorCommand
+            - \staccato                                                        %! baca_staccato:IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
 
             ef'''!8
-            - \staccato                                                        %! IndicatorCommand
-            - \tenuto                                                          %! IndicatorCommand
+            - \staccato                                                        %! baca_staccato:IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
             \revert TupletBracket.staff-padding                                %! baca_tuplet_bracket_staff_padding:OverrideCommand(2)
 
         }
@@ -666,24 +666,24 @@ i_RHVoiceIII = {                                                               %
         %%%     }                                                              %! FIGURE_NAME_MARKUP
 
             d'''8
-            - \staccato                                                        %! IndicatorCommand
-            - \tenuto                                                          %! IndicatorCommand
+            - \staccato                                                        %! baca_staccato:IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
 
             e'''8
-            - \staccato                                                        %! IndicatorCommand
-            - \tenuto                                                          %! IndicatorCommand
+            - \staccato                                                        %! baca_staccato:IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
 
             c'''8
-            - \staccato                                                        %! IndicatorCommand
-            - \tenuto                                                          %! IndicatorCommand
+            - \staccato                                                        %! baca_staccato:IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
 
             ef'''!8
-            - \staccato                                                        %! IndicatorCommand
-            - \tenuto                                                          %! IndicatorCommand
+            - \staccato                                                        %! baca_staccato:IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
 
             f''8
-            - \staccato                                                        %! IndicatorCommand
-            - \tenuto                                                          %! IndicatorCommand
+            - \staccato                                                        %! baca_staccato:IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
 
             r8
             \once \override Score.SpanBar.extra-offset = #'(-0.75 . 0)         %! baca_span_bar_extra_offset:OverrideCommand(1)
@@ -705,7 +705,7 @@ i_RHVoiceIII = {                                                               %
             a''4
             - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
             \mf                                                                %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-            - \tenuto                                                          %! IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
         %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                      %! FIGURE_NAME_MARKUP
         %%%         #2                                                         %! FIGURE_NAME_MARKUP
@@ -728,22 +728,22 @@ i_RHVoiceIII = {                                                               %
             r4
 
             cs''!4
-            - \tenuto                                                          %! IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
 
             r4
 
             b''4
-            - \tenuto                                                          %! IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
 
             r4
 
             af''!4
-            - \tenuto                                                          %! IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
 
             r4
 
             g'''4
-            - \tenuto                                                          %! IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
             \revert Stem.direction                                             %! baca_stem_down:OverrideCommand(2)
             \ottava #0                                                         %! baca_ottava:SpannerCommand
 
@@ -994,10 +994,10 @@ i_PianoMusicRHStaff = <<                                                       %
 i_LHVoiceI = {                                                                 %! extern
 
     % [_ LHVoiceI measure 1]                                                   %! _comment_measure_numbers
-    \clef "treble"                                                             %! EXPLICIT_CLEF:_set_status_tag:IndicatorCommand
+    \clef "treble"                                                             %! EXPLICIT_CLEF:_set_status_tag:baca_clef:IndicatorCommand
     \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'blue)          %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
 %@% \override PianoMusicLHStaff.Clef.color = ##f                               %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-    \set PianoMusicLHStaff.forceClef = ##t                                     %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
+    \set PianoMusicLHStaff.forceClef = ##t                                     %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):baca_clef:IndicatorCommand
     s1 * 1                                                                     %! _call_rhythm_commands
     \override PianoMusicLHStaff.Clef.color = #(x11-color 'DeepSkyBlue2)        %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
@@ -1360,10 +1360,10 @@ i_LHVoiceVI = {                                                                %
             \override TupletBracket.direction = #down                          %! baca_tuplet_bracket_down:OverrideCommand(1)
             \override TupletBracket.staff-padding = #6                         %! baca_tuplet_bracket_staff_padding:OverrideCommand(1)
             \ottava #-1                                                        %! baca_ottava_bassa:SpannerCommand
-            \clef "bass"                                                       %! EXPLICIT_CLEF:_set_status_tag:IndicatorCommand
+            \clef "bass"                                                       %! EXPLICIT_CLEF:_set_status_tag:baca_clef:IndicatorCommand
             \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'blue)  %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
         %@% \override PianoMusicLHStaff.Clef.color = ##f                       %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-            \set PianoMusicLHStaff.forceClef = ##t                             %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
+            \set PianoMusicLHStaff.forceClef = ##t                             %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):baca_clef:IndicatorCommand
             b,,,8
             - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
             \f                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand

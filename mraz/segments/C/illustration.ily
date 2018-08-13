@@ -927,7 +927,7 @@ C_RHVoiceI = {                                                                 %
             ef''''!1..
             - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
             \f                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-            - \tenuto                                                          %! IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
         %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                      %! FIGURE_NAME_MARKUP
         %%%         #2                                                         %! FIGURE_NAME_MARKUP
@@ -956,7 +956,7 @@ C_RHVoiceI = {                                                                 %
 
             % [C RHVoiceI measure 67 / measure 34]                             %! _comment_measure_numbers
             f''''1.
-            - \tenuto                                                          %! IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
         %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                      %! FIGURE_NAME_MARKUP
         %%%         #2                                                         %! FIGURE_NAME_MARKUP
@@ -985,7 +985,7 @@ C_RHVoiceI = {                                                                 %
 
             % [C RHVoiceI measure 68 / measure 35]                             %! _comment_measure_numbers
             bf''''!1
-            - \tenuto                                                          %! IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
         %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                      %! FIGURE_NAME_MARKUP
         %%%         #2                                                         %! FIGURE_NAME_MARKUP
@@ -1014,7 +1014,7 @@ C_RHVoiceI = {                                                                 %
 
             % [C RHVoiceI measure 69 / measure 36]                             %! _comment_measure_numbers
             ef''''!1
-            - \tenuto                                                          %! IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
         %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                      %! FIGURE_NAME_MARKUP
         %%%         #2                                                         %! FIGURE_NAME_MARKUP
@@ -1048,7 +1048,7 @@ C_RHVoiceI = {                                                                 %
             % [C RHVoiceI measure 71 / measure 38]                             %! _comment_measure_numbers
             \ottava #1                                                         %! baca_ottava:SpannerCommand
             f''''1
-            - \tenuto                                                          %! IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
         %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                      %! FIGURE_NAME_MARKUP
         %%%         #2                                                         %! FIGURE_NAME_MARKUP
@@ -1077,7 +1077,7 @@ C_RHVoiceI = {                                                                 %
 
             % [C RHVoiceI measure 72 / measure 39]                             %! _comment_measure_numbers
             bf''''!2
-            - \tenuto                                                          %! IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
         %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                      %! FIGURE_NAME_MARKUP
         %%%         #2                                                         %! FIGURE_NAME_MARKUP
@@ -1272,12 +1272,12 @@ C_RHVoiceII = {                                                                %
 
             % [C RHVoiceII measure 35 / measure 2]                             %! _comment_measure_numbers
             \once \override Script.direction = #up                             %! baca_script_up:OverrideCommand(1)
-            \arpeggioArrowUp                                                   %! IndicatorCommand
+            \arpeggioArrowUp                                                   %! baca_up_arpeggio:IndicatorCommand
             <a g' af'! b' cs''! f'' ef'''! c''''>2.
             - \tweak color #(x11-color 'DeepPink1)                             %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
             \ff                                                                %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-            - \marcato                                                         %! IndicatorCommand
-            \arpeggio                                                          %! IndicatorCommand
+            - \marcato                                                         %! baca_marcato:IndicatorCommand
+            \arpeggio                                                          %! baca_up_arpeggio:IndicatorCommand
         %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                      %! FIGURE_NAME_MARKUP
         %%%         #2                                                         %! FIGURE_NAME_MARKUP
@@ -1323,19 +1323,19 @@ C_RHVoiceII = {                                                                %
             ef'''!8
             - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
             \mp                                                                %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-            - \staccato                                                        %! IndicatorCommand
+            - \staccato                                                        %! baca_staccato:IndicatorCommand
 
             s8
 
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 1
             d'''8
-            - \staccato                                                        %! IndicatorCommand
+            - \staccato                                                        %! baca_staccato:IndicatorCommand
 
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 1
             f''''8
-            - \staccato                                                        %! IndicatorCommand
+            - \staccato                                                        %! baca_staccato:IndicatorCommand
 
             s8
 
@@ -1367,12 +1367,12 @@ C_RHVoiceII = {                                                                %
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 1
             f'''8
-            - \staccato                                                        %! IndicatorCommand
+            - \staccato                                                        %! baca_staccato:IndicatorCommand
 
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 1
             fs'''!8
-            - \staccato                                                        %! IndicatorCommand
+            - \staccato                                                        %! baca_staccato:IndicatorCommand
 
             s8
 
@@ -1383,7 +1383,7 @@ C_RHVoiceII = {                                                                %
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 1
             fs''''!8
-            - \staccato                                                        %! IndicatorCommand
+            - \staccato                                                        %! baca_staccato:IndicatorCommand
 
             s8
             ]
@@ -1415,12 +1415,12 @@ C_RHVoiceII = {                                                                %
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 1
             a'''8
-            - \staccato                                                        %! IndicatorCommand
+            - \staccato                                                        %! baca_staccato:IndicatorCommand
 
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 1
             bf'''!8
-            - \staccato                                                        %! IndicatorCommand
+            - \staccato                                                        %! baca_staccato:IndicatorCommand
 
             s8
 
@@ -1431,19 +1431,19 @@ C_RHVoiceII = {                                                                %
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 1
             bf'''!8
-            - \staccato                                                        %! IndicatorCommand
+            - \staccato                                                        %! baca_staccato:IndicatorCommand
 
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 1
             cs''''!8
-            - \staccato                                                        %! IndicatorCommand
+            - \staccato                                                        %! baca_staccato:IndicatorCommand
 
             s8
 
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 1
             c''''8
-            - \staccato                                                        %! IndicatorCommand
+            - \staccato                                                        %! baca_staccato:IndicatorCommand
 
             s8
 
@@ -1719,10 +1719,10 @@ C_RHVoiceII = {                                                                %
 
             % [C RHVoiceII measure 70 / measure 37]                            %! _comment_measure_numbers
             \once \override Script.direction = #up                             %! baca_script_up:OverrideCommand(1)
-            \arpeggioArrowUp                                                   %! IndicatorCommand
+            \arpeggioArrowUp                                                   %! baca_up_arpeggio:IndicatorCommand
             <a g' af'! b' cs''! f'' ef'''! c''''>1.
-            - \marcato                                                         %! IndicatorCommand
-            \arpeggio                                                          %! IndicatorCommand
+            - \marcato                                                         %! baca_marcato:IndicatorCommand
+            \arpeggio                                                          %! baca_up_arpeggio:IndicatorCommand
         %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                      %! FIGURE_NAME_MARKUP
         %%%         #2                                                         %! FIGURE_NAME_MARKUP
@@ -1966,11 +1966,11 @@ C_RHVoiceII = {                                                                %
         \scaleDurations #'(1 . 1) {
 
             % [C RHVoiceII measure 73 / measure 40]                            %! _comment_measure_numbers
-            \arpeggioArrowUp                                                   %! IndicatorCommand
+            \arpeggioArrowUp                                                   %! baca_up_arpeggio:IndicatorCommand
             \once \override Script.direction = #up                             %! baca_script_up:OverrideCommand(1)
             <f'' ef'''! c'''' e'''' fs''''! bf''''!>1
-            \arpeggio                                                          %! IndicatorCommand
-            - \marcato                                                         %! IndicatorCommand
+            \arpeggio                                                          %! baca_up_arpeggio:IndicatorCommand
+            - \marcato                                                         %! baca_marcato:IndicatorCommand
         %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                      %! FIGURE_NAME_MARKUP
         %%%         #2                                                         %! FIGURE_NAME_MARKUP
@@ -1998,11 +1998,11 @@ C_RHVoiceII = {                                                                %
         \scaleDurations #'(1 . 1) {
 
             % [C RHVoiceII measure 74 / measure 41]                            %! _comment_measure_numbers
-            \arpeggioArrowUp                                                   %! IndicatorCommand
+            \arpeggioArrowUp                                                   %! baca_up_arpeggio:IndicatorCommand
             \once \override Script.direction = #up                             %! baca_script_up:OverrideCommand(1)
             <a g' af'! b' cs''! f'' ef'''! c''''>1
-            \arpeggio                                                          %! IndicatorCommand
-            - \marcato                                                         %! IndicatorCommand
+            \arpeggio                                                          %! baca_up_arpeggio:IndicatorCommand
+            - \marcato                                                         %! baca_marcato:IndicatorCommand
         %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                      %! FIGURE_NAME_MARKUP
         %%%         #2                                                         %! FIGURE_NAME_MARKUP
@@ -2030,11 +2030,11 @@ C_RHVoiceII = {                                                                %
         \scaleDurations #'(1 . 1) {
 
             % [C RHVoiceII measure 75 / measure 42]                            %! _comment_measure_numbers
-            \arpeggioArrowUp                                                   %! IndicatorCommand
+            \arpeggioArrowUp                                                   %! baca_up_arpeggio:IndicatorCommand
             \once \override Script.direction = #up                             %! baca_script_up:OverrideCommand(1)
             <e' fs'! bf'! a'' g''' af'''! b''' cs''''!>1
-            \arpeggio                                                          %! IndicatorCommand
-            - \marcato                                                         %! IndicatorCommand
+            \arpeggio                                                          %! baca_up_arpeggio:IndicatorCommand
+            - \marcato                                                         %! baca_marcato:IndicatorCommand
         %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                      %! FIGURE_NAME_MARKUP
         %%%         #2                                                         %! FIGURE_NAME_MARKUP
@@ -2072,7 +2072,7 @@ C_RHVoiceII = {                                                                %
             c'''8
             - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
             \fff                                                               %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-            - \accent                                                          %! IndicatorCommand
+            - \accent                                                          %! baca_accent:IndicatorCommand
         %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                      %! FIGURE_NAME_MARKUP
         %%%         #2                                                         %! FIGURE_NAME_MARKUP
@@ -2095,17 +2095,17 @@ C_RHVoiceII = {                                                                %
             r2..
 
             d'''8
-            - \accent                                                          %! IndicatorCommand
+            - \accent                                                          %! baca_accent:IndicatorCommand
 
             r2..
 
             ef''''!8
-            - \accent                                                          %! IndicatorCommand
+            - \accent                                                          %! baca_accent:IndicatorCommand
 
             r2..
 
             f''''8
-            - \accent                                                          %! IndicatorCommand
+            - \accent                                                          %! baca_accent:IndicatorCommand
             \revert Stem.direction                                             %! baca_stem_up:OverrideCommand(2)
 
             r2..
@@ -2273,7 +2273,7 @@ C_RHVoiceIII = {                                                               %
             \ff                                                                %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
             - \tweak color #(x11-color 'DeepPink1)                             %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
             \ff                                                                %! REDUNDANT_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
-            - \tenuto                                                          %! IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
         %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                      %! FIGURE_NAME_MARKUP
         %%%         #2                                                         %! FIGURE_NAME_MARKUP
@@ -2295,15 +2295,15 @@ C_RHVoiceIII = {                                                               %
             r4
 
             cs'!8
-            - \tenuto                                                          %! IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
 
             r4
 
             c'4
-            - \tenuto                                                          %! IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
 
             bf'!8
-            - \tenuto                                                          %! IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
             \revert Stem.direction                                             %! baca_stem_up:OverrideCommand(2)
 
             r4
@@ -2346,22 +2346,22 @@ C_RHVoiceIII = {                                                               %
 
             \override Stem.direction = #up                                     %! baca_stem_up:OverrideCommand(1)
             ef''!8
-            - \tenuto                                                          %! IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
 
             r4
 
             cs''!4
-            - \tenuto                                                          %! IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
 
             r4
 
             c'8
-            - \tenuto                                                          %! IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
 
             r4
 
             bf!4
-            - \tenuto                                                          %! IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
             \revert Stem.direction                                             %! baca_stem_up:OverrideCommand(2)
             \revert TupletBracket.direction                                    %! baca_tuplet_bracket_up:OverrideCommand(2)
             \revert TupletBracket.staff-padding                                %! baca_tuplet_bracket_staff_padding:OverrideCommand(2)
@@ -2410,7 +2410,7 @@ C_RHVoiceIII = {                                                               %
             \override Stem.direction = #up                                     %! baca_stem_up:OverrideCommand(1)
             \override TupletBracket.direction = #up                            %! baca_tuplet_bracket_up:OverrideCommand(1)
             ef'!8
-            - \tenuto                                                          %! IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
         %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                      %! FIGURE_NAME_MARKUP
         %%%         #2                                                         %! FIGURE_NAME_MARKUP
@@ -2432,15 +2432,15 @@ C_RHVoiceIII = {                                                               %
             r4
 
             cs'!8
-            - \tenuto                                                          %! IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
 
             r4
 
             c'4
-            - \tenuto                                                          %! IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
 
             bf!8
-            - \tenuto                                                          %! IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
             \revert Stem.direction                                             %! baca_stem_up:OverrideCommand(2)
 
             r4
@@ -2489,7 +2489,7 @@ C_RHVoiceIII = {                                                               %
             \override Stem.direction = #down                                   %! baca_stem_down:OverrideCommand(1)
             \override TupletBracket.direction = #down                          %! baca_tuplet_bracket_down:OverrideCommand(1)
             af'''!8
-            - \tenuto                                                          %! IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
         %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                      %! FIGURE_NAME_MARKUP
         %%%         #2                                                         %! FIGURE_NAME_MARKUP
@@ -2511,13 +2511,13 @@ C_RHVoiceIII = {                                                               %
             (                                                                  %! baca_slur:SpannerCommand
 
             ef'''!8
-            - \tenuto                                                          %! IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
 
             f'''8
-            - \tenuto                                                          %! IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
 
             fs'''!8
-            - \tenuto                                                          %! IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
             ]
             )                                                                  %! baca_slur:SpannerCommand
             \revert Stem.direction                                             %! baca_stem_down:OverrideCommand(2)
@@ -2562,22 +2562,22 @@ C_RHVoiceIII = {                                                               %
             ef''!8
             - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
             \mp                                                                %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-            - \tenuto                                                          %! IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
 
             r4
 
             cs''!4
-            - \tenuto                                                          %! IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
 
             r4
 
             c'8
-            - \tenuto                                                          %! IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
 
             r4
 
             bf!4
-            - \tenuto                                                          %! IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
             \revert Stem.direction                                             %! baca_stem_up:OverrideCommand(2)
             \revert TextScript.direction                                       %! baca_text_script_up:OverrideCommand(2)
             \revert TupletBracket.staff-padding                                %! baca_tuplet_bracket_staff_padding:OverrideCommand(2)
@@ -2599,7 +2599,7 @@ C_RHVoiceIII = {                                                               %
             a''4
             - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
             \mf                                                                %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-            - \tenuto                                                          %! IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
         %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                      %! FIGURE_NAME_MARKUP
         %%%         #2                                                         %! FIGURE_NAME_MARKUP
@@ -2622,22 +2622,22 @@ C_RHVoiceIII = {                                                               %
             r4
 
             cs''!4
-            - \tenuto                                                          %! IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
 
             r4
 
             b''4
-            - \tenuto                                                          %! IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
 
             r4
 
             af''!4
-            - \tenuto                                                          %! IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
 
             r4
 
             g'''4
-            - \tenuto                                                          %! IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
             \revert Stem.direction                                             %! baca_stem_down:OverrideCommand(2)
             \ottava #0                                                         %! baca_ottava:SpannerCommand
 
@@ -4171,17 +4171,17 @@ C_LHVoiceV = {                                                                 %
             af!8.
             - \tweak color #(x11-color 'DeepPink1)                             %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
             \f                                                                 %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-            - \tenuto                                                          %! IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
 
             r16
 
             d'8.
-            - \tenuto                                                          %! IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
 
             r16
 
             e'8.
-            - \tenuto                                                          %! IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
 
             r16
 
@@ -4242,19 +4242,19 @@ C_LHVoiceV = {                                                                 %
         %%%     }                                                              %! FIGURE_NAME_MARKUP
 
             af!8.
-            - \tenuto                                                          %! IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
 
             r16
 
             d'8.
-            - \tenuto                                                          %! IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
 
             r16
 
             r4
 
             e'8.
-            - \tenuto                                                          %! IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
 
             r16
 
@@ -4294,7 +4294,7 @@ C_LHVoiceV = {                                                                 %
             <g b f' fs'! a'>8.
             - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
             \ff                                                                %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-            - \marcato                                                         %! IndicatorCommand
+            - \marcato                                                         %! baca_marcato:IndicatorCommand
 
             r2
 
@@ -4331,19 +4331,19 @@ C_LHVoiceV = {                                                                 %
             af!8.
             - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
             \f                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-            - \tenuto                                                          %! IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
 
             r16
 
             r4
 
             d'8.
-            - \tenuto                                                          %! IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
 
             r16
 
             e'8.
-            - \tenuto                                                          %! IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
 
             r16
 
@@ -4407,7 +4407,7 @@ C_LHVoiceV = {                                                                 %
             <g b f' fs'! a'>8.
             - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
             \ff                                                                %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-            - \marcato                                                         %! IndicatorCommand
+            - \marcato                                                         %! baca_marcato:IndicatorCommand
 
             r2
 
@@ -4421,7 +4421,7 @@ C_LHVoiceV = {                                                                 %
 
             % [C LHVoiceV measure 42 / measure 9]                              %! _comment_measure_numbers
             <g b f' fs'! a'>16
-            - \marcato                                                         %! IndicatorCommand
+            - \marcato                                                         %! baca_marcato:IndicatorCommand
         %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                      %! FIGURE_NAME_MARKUP
         %%%         #2                                                         %! FIGURE_NAME_MARKUP
@@ -4477,7 +4477,7 @@ C_LHVoiceV = {                                                                 %
             %%%     }                                                          %! FIGURE_NAME_MARKUP
 
                 <g b f' fs'! a'>8.
-                - \marcato                                                     %! IndicatorCommand
+                - \marcato                                                     %! baca_marcato:IndicatorCommand
 
                 r2
                 \revert TupletBracket.direction                                %! baca_tuplet_bracket_up:OverrideCommand(2)
@@ -4494,7 +4494,7 @@ C_LHVoiceV = {                                                                 %
 
             % [C LHVoiceV measure 44 / measure 11]                             %! _comment_measure_numbers
             <g b f' fs'! a'>16
-            - \marcato                                                         %! IndicatorCommand
+            - \marcato                                                         %! baca_marcato:IndicatorCommand
         %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                      %! FIGURE_NAME_MARKUP
         %%%         #2                                                         %! FIGURE_NAME_MARKUP
@@ -4546,7 +4546,7 @@ C_LHVoiceV = {                                                                 %
         %%%     }                                                              %! FIGURE_NAME_MARKUP
 
             <g b f' fs'! a'>8.
-            - \marcato                                                         %! IndicatorCommand
+            - \marcato                                                         %! baca_marcato:IndicatorCommand
 
             r2
 
@@ -4560,7 +4560,7 @@ C_LHVoiceV = {                                                                 %
 
             % [C LHVoiceV measure 46 / measure 13]                             %! _comment_measure_numbers
             <g b f' fs'! a'>16
-            - \marcato                                                         %! IndicatorCommand
+            - \marcato                                                         %! baca_marcato:IndicatorCommand
         %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                      %! FIGURE_NAME_MARKUP
         %%%         #2                                                         %! FIGURE_NAME_MARKUP
@@ -4616,7 +4616,7 @@ C_LHVoiceV = {                                                                 %
             %%%     }                                                          %! FIGURE_NAME_MARKUP
 
                 <g b f' fs'! a'>8.
-                - \marcato                                                     %! IndicatorCommand
+                - \marcato                                                     %! baca_marcato:IndicatorCommand
 
                 r2
                 \revert TupletBracket.direction                                %! baca_tuplet_bracket_up:OverrideCommand(2)
@@ -4633,7 +4633,7 @@ C_LHVoiceV = {                                                                 %
 
             % [C LHVoiceV measure 48 / measure 15]                             %! _comment_measure_numbers
             <g b f' fs'! a'>16
-            - \marcato                                                         %! IndicatorCommand
+            - \marcato                                                         %! baca_marcato:IndicatorCommand
         %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                      %! FIGURE_NAME_MARKUP
         %%%         #2                                                         %! FIGURE_NAME_MARKUP
@@ -4689,7 +4689,7 @@ C_LHVoiceV = {                                                                 %
             %%%     }                                                          %! FIGURE_NAME_MARKUP
 
                 <g b f' fs'! a'>8.
-                - \marcato                                                     %! IndicatorCommand
+                - \marcato                                                     %! baca_marcato:IndicatorCommand
 
                 r2
                 \revert TupletBracket.direction                                %! baca_tuplet_bracket_up:OverrideCommand(2)
@@ -5250,19 +5250,19 @@ C_LHVoiceV = {                                                                 %
             af!8.
             - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
             \p                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-            - \tenuto                                                          %! IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
 
             r16
 
             d'8.
-            - \tenuto                                                          %! IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
 
             r16
 
             r4
 
             e'8.
-            - \tenuto                                                          %! IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
             \revert Stem.direction                                             %! baca_stem_down:OverrideCommand(2)
 
             r16
@@ -5304,7 +5304,7 @@ C_LHVoiceVInserts = {                                                          %
                 \set stemLeftBeamCount = 1                                     %! _extend_beam
                 \set stemRightBeamCount = 1                                    %! _extend_beam
                 bf'!8
-                - \staccato                                                    %! IndicatorCommand
+                - \staccato                                                    %! baca_staccato:IndicatorCommand
 
             }
 
@@ -5346,7 +5346,7 @@ C_LHVoiceVInserts = {                                                          %
                 \set stemLeftBeamCount = 1                                     %! _extend_beam
                 \set stemRightBeamCount = 1                                    %! _extend_beam
                 bf!8
-                - \staccato                                                    %! IndicatorCommand
+                - \staccato                                                    %! baca_staccato:IndicatorCommand
 
             }
 
@@ -5355,7 +5355,7 @@ C_LHVoiceVInserts = {                                                          %
                 \set stemLeftBeamCount = 1                                     %! _extend_beam
                 \set stemRightBeamCount = 1                                    %! _extend_beam
                 d'8
-                - \staccato                                                    %! IndicatorCommand
+                - \staccato                                                    %! baca_staccato:IndicatorCommand
 
             }
 
@@ -5390,7 +5390,7 @@ C_LHVoiceVInserts = {                                                          %
                 \set stemLeftBeamCount = 1                                     %! _extend_beam
                 \set stemRightBeamCount = 1                                    %! _extend_beam
                 f'8
-                - \staccato                                                    %! IndicatorCommand
+                - \staccato                                                    %! baca_staccato:IndicatorCommand
 
             }
 
@@ -5426,7 +5426,7 @@ C_LHVoiceVInserts = {                                                          %
                 \set stemLeftBeamCount = 1                                     %! _extend_beam
                 \set stemRightBeamCount = 1                                    %! _extend_beam
                 f'8
-                - \staccato                                                    %! IndicatorCommand
+                - \staccato                                                    %! baca_staccato:IndicatorCommand
 
             }
 
@@ -5459,7 +5459,7 @@ C_LHVoiceVInserts = {                                                          %
             \set stemLeftBeamCount = 1                                         %! _extend_beam
             \set stemRightBeamCount = 1                                        %! _extend_beam
             af'!8
-            - \staccato                                                        %! IndicatorCommand
+            - \staccato                                                        %! baca_staccato:IndicatorCommand
             \revert Stem.direction                                             %! baca_stem_up:OverrideCommand(2)
 
             s4.

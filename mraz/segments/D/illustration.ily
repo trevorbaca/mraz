@@ -158,8 +158,8 @@ D_RHVoiceIII = {                                                               %
             fs'''!8
             - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
             \pp                                                                %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-            - \staccato                                                        %! IndicatorCommand
-            - \tenuto                                                          %! IndicatorCommand
+            - \staccato                                                        %! baca_staccato:IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
         %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                      %! FIGURE_NAME_MARKUP
         %%%         #2                                                         %! FIGURE_NAME_MARKUP
@@ -179,32 +179,32 @@ D_RHVoiceIII = {                                                               %
         %%%     }                                                              %! FIGURE_NAME_MARKUP
 
             a'''8
-            - \staccato                                                        %! IndicatorCommand
-            - \tenuto                                                          %! IndicatorCommand
+            - \staccato                                                        %! baca_staccato:IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
 
             b''8
-            - \staccato                                                        %! IndicatorCommand
-            - \tenuto                                                          %! IndicatorCommand
+            - \staccato                                                        %! baca_staccato:IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
 
         }
 
         \scaleDurations #'(1 . 1) {
 
             c'''8
-            - \staccato                                                        %! IndicatorCommand
-            - \tenuto                                                          %! IndicatorCommand
+            - \staccato                                                        %! baca_staccato:IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
 
             af''!8
-            - \staccato                                                        %! IndicatorCommand
-            - \tenuto                                                          %! IndicatorCommand
+            - \staccato                                                        %! baca_staccato:IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
 
             b''8
-            - \staccato                                                        %! IndicatorCommand
-            - \tenuto                                                          %! IndicatorCommand
+            - \staccato                                                        %! baca_staccato:IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
 
             cs''!8
-            - \staccato                                                        %! IndicatorCommand
-            - \tenuto                                                          %! IndicatorCommand
+            - \staccato                                                        %! baca_staccato:IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
 
             r8
             \revert TupletBracket.staff-padding                                %! baca_tuplet_bracket_staff_padding:OverrideCommand(2)
@@ -223,8 +223,8 @@ D_RHVoiceIII = {                                                               %
             \override TupletBracket.staff-padding = #7                         %! baca_tuplet_bracket_staff_padding:OverrideCommand(1)
             \override TupletBracket.direction = #up                            %! baca_tuplet_bracket_up:OverrideCommand(1)
             bf'''!8
-            - \staccato                                                        %! IndicatorCommand
-            - \tenuto                                                          %! IndicatorCommand
+            - \staccato                                                        %! baca_staccato:IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
         %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                      %! FIGURE_NAME_MARKUP
         %%%         #2                                                         %! FIGURE_NAME_MARKUP
@@ -244,12 +244,12 @@ D_RHVoiceIII = {                                                               %
         %%%     }                                                              %! FIGURE_NAME_MARKUP
 
             cs'''!8
-            - \staccato                                                        %! IndicatorCommand
-            - \tenuto                                                          %! IndicatorCommand
+            - \staccato                                                        %! baca_staccato:IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
 
             ef'''!8
-            - \staccato                                                        %! IndicatorCommand
-            - \tenuto                                                          %! IndicatorCommand
+            - \staccato                                                        %! baca_staccato:IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
             \revert TupletBracket.staff-padding                                %! baca_tuplet_bracket_staff_padding:OverrideCommand(2)
             \revert TupletBracket.direction                                    %! baca_tuplet_bracket_up:OverrideCommand(2)
 
@@ -282,24 +282,24 @@ D_RHVoiceIII = {                                                               %
         %%%     }                                                              %! FIGURE_NAME_MARKUP
 
             d'''8
-            - \staccato                                                        %! IndicatorCommand
-            - \tenuto                                                          %! IndicatorCommand
+            - \staccato                                                        %! baca_staccato:IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
 
             e'''8
-            - \staccato                                                        %! IndicatorCommand
-            - \tenuto                                                          %! IndicatorCommand
+            - \staccato                                                        %! baca_staccato:IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
 
             c'''8
-            - \staccato                                                        %! IndicatorCommand
-            - \tenuto                                                          %! IndicatorCommand
+            - \staccato                                                        %! baca_staccato:IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
 
             ef'''!8
-            - \staccato                                                        %! IndicatorCommand
-            - \tenuto                                                          %! IndicatorCommand
+            - \staccato                                                        %! baca_staccato:IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
 
             f''8
-            - \staccato                                                        %! IndicatorCommand
-            - \tenuto                                                          %! IndicatorCommand
+            - \staccato                                                        %! baca_staccato:IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
 
             r8
 
@@ -315,8 +315,8 @@ D_RHVoiceIII = {                                                               %
             % [D RHVoiceIII measure 81 / measure 4]                            %! _comment_measure_numbers
             \override TupletBracket.direction = #up                            %! baca_tuplet_bracket_up:OverrideCommand(1)
             af''!8
-            - \staccato                                                        %! IndicatorCommand
-            - \tenuto                                                          %! IndicatorCommand
+            - \staccato                                                        %! baca_staccato:IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
         %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                      %! FIGURE_NAME_MARKUP
         %%%         #2                                                         %! FIGURE_NAME_MARKUP
@@ -336,16 +336,16 @@ D_RHVoiceIII = {                                                               %
         %%%     }                                                              %! FIGURE_NAME_MARKUP
 
             e''8
-            - \staccato                                                        %! IndicatorCommand
-            - \tenuto                                                          %! IndicatorCommand
+            - \staccato                                                        %! baca_staccato:IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
 
             g''8
-            - \staccato                                                        %! IndicatorCommand
-            - \tenuto                                                          %! IndicatorCommand
+            - \staccato                                                        %! baca_staccato:IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
 
             a''8
-            - \staccato                                                        %! IndicatorCommand
-            - \tenuto                                                          %! IndicatorCommand
+            - \staccato                                                        %! baca_staccato:IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
             \revert TupletBracket.direction                                    %! baca_tuplet_bracket_up:OverrideCommand(2)
 
         }
@@ -551,10 +551,10 @@ D_LHVoiceIII = {                                                               %
 D_LHVoiceIV = {                                                                %! extern
 
     % [D LHVoiceIV measure 78 / measure 1]                                     %! _comment_measure_numbers
-    \clef "treble"                                                             %! EXPLICIT_CLEF:_set_status_tag:IndicatorCommand
+    \clef "treble"                                                             %! EXPLICIT_CLEF:_set_status_tag:baca_clef:IndicatorCommand
     \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'blue)          %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
 %@% \override PianoMusicLHStaff.Clef.color = ##f                               %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-    \set PianoMusicLHStaff.forceClef = ##t                                     %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
+    \set PianoMusicLHStaff.forceClef = ##t                                     %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):baca_clef:IndicatorCommand
     s1 * 7/32
     - \tweak color #(x11-color 'green4)                                        %! REAPPLIED_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
     \p                                                                         %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
@@ -569,7 +569,7 @@ D_LHVoiceIV = {                                                                %
             g'16
             - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
             \mp                                                                %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-            - \tenuto                                                          %! IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
         %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                      %! FIGURE_NAME_MARKUP
         %%%         #2                                                         %! FIGURE_NAME_MARKUP
@@ -591,17 +591,17 @@ D_LHVoiceIV = {                                                                %
             r16
 
             af'!16
-            - \tenuto                                                          %! IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
 
             r16
 
             bf'!16
-            - \tenuto                                                          %! IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
 
             r16
 
             a'16
-            - \tenuto                                                          %! IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
 
             r16
             \revert TupletBracket.staff-padding                                %! baca_tuplet_bracket_staff_padding:OverrideCommand(2)
@@ -619,7 +619,7 @@ D_LHVoiceIV = {                                                                %
 
             \override TupletBracket.staff-padding = #3                         %! baca_tuplet_bracket_staff_padding:OverrideCommand(1)
             b'16
-            - \tenuto                                                          %! IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
         %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                      %! FIGURE_NAME_MARKUP
         %%%         #2                                                         %! FIGURE_NAME_MARKUP
@@ -641,17 +641,17 @@ D_LHVoiceIV = {                                                                %
             r8
 
             c''16
-            - \tenuto                                                          %! IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
 
             r8
 
             d''16
-            - \tenuto                                                          %! IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
 
             r8
 
             cs''!16
-            - \tenuto                                                          %! IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
 
             r8
             \revert TupletBracket.staff-padding                                %! baca_tuplet_bracket_staff_padding:OverrideCommand(2)
@@ -667,7 +667,7 @@ D_LHVoiceIV = {                                                                %
         \scaleDurations #'(1 . 1) {
 
             d'16
-            - \tenuto                                                          %! IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
         %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                      %! FIGURE_NAME_MARKUP
         %%%         #2                                                         %! FIGURE_NAME_MARKUP
@@ -689,22 +689,22 @@ D_LHVoiceIV = {                                                                %
             r32
 
             f'16
-            - \tenuto                                                          %! IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
 
             r32
 
             g'16
-            - \tenuto                                                          %! IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
 
             r32
 
             ef''!16
-            - \tenuto                                                          %! IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
 
             r32
 
             e''16
-            - \tenuto                                                          %! IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
 
             r32
 
@@ -718,7 +718,7 @@ D_LHVoiceIV = {                                                                %
 
             % [D LHVoiceIV measure 81 / measure 4]                             %! _comment_measure_numbers
             fs''!16
-            - \tenuto                                                          %! IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
         %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                      %! FIGURE_NAME_MARKUP
         %%%         #2                                                         %! FIGURE_NAME_MARKUP
@@ -740,7 +740,7 @@ D_LHVoiceIV = {                                                                %
             r32
 
             f''16
-            - \tenuto                                                          %! IndicatorCommand
+            - \tenuto                                                          %! baca_tenuto:IndicatorCommand
 
             r32
 
