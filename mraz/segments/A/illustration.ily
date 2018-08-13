@@ -885,11 +885,11 @@ A_LHVoiceV = {                                                                 %
 
             % [A LHVoiceV measure 10 / measure 1]                              %! _comment_measure_numbers
             \override TupletBracket.direction = #up                            %! baca_tuplet_bracket_up:OverrideCommand(1)
-            \ottava #-1                                                        %! SpannerCommand
-            \dynamicUp                                                         %! IndicatorCommand
+            \ottava #-1                                                        %! baca_ottava_bassa:SpannerCommand
+            \dynamicUp                                                         %! baca_dynamic_down:IndicatorCommand
             g,8.
-            - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-            \ppp                                                               %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
+            - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+            \ppp                                                               %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
             - \tweak color #(x11-color 'DeepPink1)                             %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
             \ppp                                                               %! REDUNDANT_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
         %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
@@ -1379,7 +1379,7 @@ A_LHVoiceV = {                                                                 %
             r32
 
             af,,!8
-            \ottava #0                                                         %! SpannerCommand
+            \ottava #0                                                         %! baca_ottava_bassa:SpannerCommand
 
             r32
             \revert TupletBracket.direction                                    %! baca_tuplet_bracket_up:OverrideCommand(2)
@@ -1454,8 +1454,8 @@ A_LHVoiceVI = {                                                                %
 
             \override Stem.direction = #down                                   %! baca_stem_down:OverrideCommand(1)
             af,,!4
-            - \tweak color #(x11-color 'DeepPink1)                             %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
-            \f                                                                 %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
+            - \tweak color #(x11-color 'DeepPink1)                             %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+            \f                                                                 %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
             - \tenuto                                                          %! IndicatorCommand
         %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                      %! FIGURE_NAME_MARKUP

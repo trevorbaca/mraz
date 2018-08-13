@@ -10,17 +10,17 @@ i_GlobalRests = {                                                              %
     R1 * 1                                                                     %! _make_global_rests
 
     % [_ GlobalRests measure 4]                                                %! _comment_measure_numbers
-    \once \override Score.TimeSignature.stencil = ##f                          %! GlobalFermataCommand(2)
+    \once \override Score.TimeSignature.stencil = ##f                          %! baca_global_fermata:GlobalFermataCommand(2)
     R1 * 1/4                                                                   %! _make_global_rests
-    ^ \baca-short-fermata-markup                                               %! GlobalFermataCommand(1)
+    ^ \baca-short-fermata-markup                                               %! baca_global_fermata:GlobalFermataCommand(1)
 
     % [_ GlobalRests measure 5]                                                %! _comment_measure_numbers
     R1 * 1/2                                                                   %! _make_global_rests
 
     % [_ GlobalRests measure 6]                                                %! _comment_measure_numbers
-    \once \override Score.TimeSignature.stencil = ##f                          %! GlobalFermataCommand(2)
+    \once \override Score.TimeSignature.stencil = ##f                          %! baca_global_fermata:GlobalFermataCommand(2)
     R1 * 1/4                                                                   %! _make_global_rests
-    ^ \baca-fermata-markup                                                     %! GlobalFermataCommand(1)
+    ^ \baca-fermata-markup                                                     %! baca_global_fermata:GlobalFermataCommand(1)
 
     % [_ GlobalRests measure 7]                                                %! _comment_measure_numbers
     R1 * 7/8                                                                   %! _make_global_rests
@@ -29,9 +29,9 @@ i_GlobalRests = {                                                              %
     R1 * 4                                                                     %! _make_global_rests
 
     % [_ GlobalRests measure 9]                                                %! _comment_measure_numbers
-    \once \override Score.TimeSignature.stencil = ##f                          %! GlobalFermataCommand(2)
+    \once \override Score.TimeSignature.stencil = ##f                          %! baca_global_fermata:GlobalFermataCommand(2)
     R1 * 1/4                                                                   %! _make_global_rests
-    ^ \baca-short-fermata-markup                                               %! GlobalFermataCommand(1)
+    ^ \baca-short-fermata-markup                                               %! baca_global_fermata:GlobalFermataCommand(1)
 
 }                                                                              %! extern
 
@@ -280,10 +280,10 @@ i_RHVoiceII = {                                                                %
             \override Slur.direction = #up                                     %! baca_slur_up:OverrideCommand(1)
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
-            \ottava #1                                                         %! SpannerCommand
+            \ottava #1                                                         %! baca_ottava:SpannerCommand
             b'16
-            - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
-            \f                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
+            - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+            \f                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
         %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                      %! FIGURE_NAME_MARKUP
         %%%         #2                                                         %! FIGURE_NAME_MARKUP
@@ -301,10 +301,10 @@ i_RHVoiceII = {                                                                %
         %%%                 ]                                                  %! FIGURE_NAME_MARKUP
         %%%             }                                                      %! FIGURE_NAME_MARKUP
         %%%     }                                                              %! FIGURE_NAME_MARKUP
-            - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
-            \<                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
+            - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+            \<                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
             [
-            (                                                                  %! SpannerCommand
+            (                                                                  %! baca_slur:SpannerCommand
 
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
@@ -389,13 +389,13 @@ i_RHVoiceII = {                                                                %
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 0
             cs''''!16
-            - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
-            \ff                                                                %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
+            - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(2)
+            \ff                                                                %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(2)
             ]
-            )                                                                  %! SpannerCommand
+            )                                                                  %! baca_slur:SpannerCommand
             \revert DynamicLineSpanner.staff-padding                           %! baca_dls_staff_padding:OverrideCommand(2)
             \revert Slur.direction                                             %! baca_slur_up:OverrideCommand(2)
-            \ottava #0                                                         %! SpannerCommand
+            \ottava #0                                                         %! baca_ottava:SpannerCommand
 
         }
 
@@ -476,10 +476,10 @@ i_RHVoiceII = {                                                                %
             \override Script.direction = #up                                   %! baca_script_up:OverrideCommand(1)
             \override Stem.direction = #up                                     %! baca_stem_up:OverrideCommand(1)
             \override TextScript.direction = #up                               %! baca_text_script_up:OverrideCommand(1)
-            \dynamicUp                                                         %! IndicatorCommand
+            \dynamicUp                                                         %! baca_dynamic_down:IndicatorCommand
             c'''8
-            - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-            \fff                                                               %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
+            - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+            \fff                                                               %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
             - \accent                                                          %! IndicatorCommand
         %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                      %! FIGURE_NAME_MARKUP
@@ -603,8 +603,8 @@ i_RHVoiceIII = {                                                               %
             \once \override DynamicText.X-offset = #0.5                        %! baca_dynamic_text_x_offset:OverrideCommand(1)
             \override TupletBracket.staff-padding = #8                         %! baca_tuplet_bracket_staff_padding:OverrideCommand(1)
             bf'''!8
-            - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-            \pp                                                                %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
+            - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+            \pp                                                                %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
             - \staccato                                                        %! IndicatorCommand
             - \tenuto                                                          %! IndicatorCommand
         %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
@@ -701,10 +701,10 @@ i_RHVoiceIII = {                                                               %
             \once \override DynamicText.X-offset = #0.25                       %! baca_dynamic_text_x_offset:OverrideCommand(1)
             \override Stem.direction = #down                                   %! baca_stem_down:OverrideCommand(1)
             \override TupletBracket.direction = #down                          %! baca_tuplet_bracket_down:OverrideCommand(1)
-            \ottava #1                                                         %! SpannerCommand
+            \ottava #1                                                         %! baca_ottava:SpannerCommand
             a''4
-            - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-            \mf                                                                %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
+            - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+            \mf                                                                %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
             - \tenuto                                                          %! IndicatorCommand
         %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                      %! FIGURE_NAME_MARKUP
@@ -745,7 +745,7 @@ i_RHVoiceIII = {                                                               %
             g'''4
             - \tenuto                                                          %! IndicatorCommand
             \revert Stem.direction                                             %! baca_stem_down:OverrideCommand(2)
-            \ottava #0                                                         %! SpannerCommand
+            \ottava #0                                                         %! baca_ottava:SpannerCommand
 
             r4
             \revert Rest.direction                                             %! baca_rest_down:OverrideCommand(2)
@@ -1106,8 +1106,8 @@ i_LHVoiceIV = {                                                                %
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
             d''16
-            - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-            \ff                                                                %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
+            - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+            \ff                                                                %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
         %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                      %! FIGURE_NAME_MARKUP
         %%%         #2                                                         %! FIGURE_NAME_MARKUP
@@ -1248,10 +1248,10 @@ i_LHVoiceV = {                                                                 %
 
             % [_ LHVoiceV measure 3]                                           %! _comment_measure_numbers
             \once \override DynamicText.X-offset = #-0.5                       %! baca_dynamic_text_x_offset:OverrideCommand(1)
-            \dynamicUp                                                         %! IndicatorCommand
+            \dynamicUp                                                         %! baca_dynamic_down:IndicatorCommand
             bf,,!8.
-            - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-            \ppp                                                               %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
+            - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+            \ppp                                                               %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
         %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                      %! FIGURE_NAME_MARKUP
         %%%         #2                                                         %! FIGURE_NAME_MARKUP
@@ -1359,14 +1359,14 @@ i_LHVoiceVI = {                                                                %
             % [_ LHVoiceVI measure 3]                                          %! _comment_measure_numbers
             \override TupletBracket.direction = #down                          %! baca_tuplet_bracket_down:OverrideCommand(1)
             \override TupletBracket.staff-padding = #6                         %! baca_tuplet_bracket_staff_padding:OverrideCommand(1)
-            \ottava #-1                                                        %! SpannerCommand
+            \ottava #-1                                                        %! baca_ottava_bassa:SpannerCommand
             \clef "bass"                                                       %! EXPLICIT_CLEF:_set_status_tag:IndicatorCommand
             \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'blue)  %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
         %@% \override PianoMusicLHStaff.Clef.color = ##f                       %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
             \set PianoMusicLHStaff.forceClef = ##t                             %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
             b,,,8
-            - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-            \f                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
+            - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+            \f                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
         %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                      %! FIGURE_NAME_MARKUP
         %%%         #2                                                         %! FIGURE_NAME_MARKUP
@@ -1390,7 +1390,7 @@ i_LHVoiceVI = {                                                                %
             r4
 
             ef,,!8
-            \ottava #0                                                         %! SpannerCommand
+            \ottava #0                                                         %! baca_ottava_bassa:SpannerCommand
 
             r4
             \revert Rest.direction                                             %! baca_rest_down:OverrideCommand(2)

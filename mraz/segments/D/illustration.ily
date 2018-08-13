@@ -156,8 +156,8 @@ D_RHVoiceIII = {                                                               %
             \override TupletBracket.staff-padding = #7                         %! baca_tuplet_bracket_staff_padding:OverrideCommand(1)
             \override TupletBracket.direction = #up                            %! baca_tuplet_bracket_up:OverrideCommand(1)
             fs'''!8
-            - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-            \pp                                                                %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
+            - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+            \pp                                                                %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
             - \staccato                                                        %! IndicatorCommand
             - \tenuto                                                          %! IndicatorCommand
         %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
@@ -567,8 +567,8 @@ D_LHVoiceIV = {                                                                %
 
             \override TupletBracket.staff-padding = #3                         %! baca_tuplet_bracket_staff_padding:OverrideCommand(1)
             g'16
-            - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-            \mp                                                                %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
+            - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+            \mp                                                                %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
             - \tenuto                                                          %! IndicatorCommand
         %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                      %! FIGURE_NAME_MARKUP
