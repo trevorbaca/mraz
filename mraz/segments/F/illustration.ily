@@ -187,10 +187,10 @@ F_RHVoiceI = {                                                                 %
                 \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
             %@% \override PianoMusicRHStaff.Clef.color = ##f                   %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
                 \set PianoMusicRHStaff.forceClef = ##t                         %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
-                \dynamicUp                                                     %! IndicatorCommand
+                \dynamicUp                                                     %! baca_dynamic_down:IndicatorCommand
                 e''16
-                - \tweak color #(x11-color 'blue)                              %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-                \fff                                                           %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
+                - \tweak color #(x11-color 'blue)                              %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+                \fff                                                           %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
             %%% ^ \markup {                                                    %! FIGURE_NAME_MARKUP
             %%%     \fontsize                                                  %! FIGURE_NAME_MARKUP
             %%%         #2                                                     %! FIGURE_NAME_MARKUP
@@ -816,7 +816,7 @@ F_RHVoiceII = {                                                                %
     % [F RHVoiceII measure 98 / measure 1]                                     %! _comment_measure_numbers
     \override Beam.positions = #'(-4.5 . -4.5)                                 %! baca_beam_positions:OverrideCommand(1)
     \override Slur.direction = #up                                             %! baca_slur_up:OverrideCommand(1)
-    \dynamicDown                                                               %! IndicatorCommand
+    \dynamicDown                                                               %! baca_dynamic_down:IndicatorCommand
     s1 * 3/4
     - \tweak color #(x11-color 'green4)                                        %! REAPPLIED_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
     \fff                                                                       %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
@@ -830,8 +830,8 @@ F_RHVoiceII = {                                                                %
             \set stemLeftBeamCount = 0                                         %! _extend_beam
             \set stemRightBeamCount = 2                                        %! _extend_beam
             c''16
-            - \tweak color #(x11-color 'DeepPink1)                             %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
-            \fff                                                               %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
+            - \tweak color #(x11-color 'DeepPink1)                             %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+            \fff                                                               %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
         %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                      %! FIGURE_NAME_MARKUP
         %%%         #2                                                         %! FIGURE_NAME_MARKUP
@@ -850,7 +850,7 @@ F_RHVoiceII = {                                                                %
         %%%             }                                                      %! FIGURE_NAME_MARKUP
         %%%     }                                                              %! FIGURE_NAME_MARKUP
             [                                                                  %! _extend_beam
-            (                                                                  %! SpannerCommand
+            (                                                                  %! baca_slur:SpannerCommand
 
             \set stemLeftBeamCount = 2                                         %! _extend_beam
             \set stemRightBeamCount = 2                                        %! _extend_beam
@@ -863,7 +863,7 @@ F_RHVoiceII = {                                                                %
             \set stemLeftBeamCount = 2                                         %! _extend_beam
             \set stemRightBeamCount = 1                                        %! _extend_beam
             f''16
-            )                                                                  %! SpannerCommand
+            )                                                                  %! baca_slur:SpannerCommand
 
         }
 
@@ -900,7 +900,7 @@ F_RHVoiceII = {                                                                %
             %%%                 ]                                              %! FIGURE_NAME_MARKUP
             %%%             }                                                  %! FIGURE_NAME_MARKUP
             %%%     }                                                          %! FIGURE_NAME_MARKUP
-                (                                                              %! SpannerCommand
+                (                                                              %! baca_slur:SpannerCommand
 
                 \set stemLeftBeamCount = 2                                     %! _extend_beam
                 \set stemRightBeamCount = 2                                    %! _extend_beam
@@ -909,7 +909,7 @@ F_RHVoiceII = {                                                                %
                 \set stemLeftBeamCount = 2                                     %! _extend_beam
                 \set stemRightBeamCount = 1                                    %! _extend_beam
                 b'16
-                )                                                              %! SpannerCommand
+                )                                                              %! baca_slur:SpannerCommand
 
             }
 
@@ -918,7 +918,7 @@ F_RHVoiceII = {                                                                %
                 \set stemLeftBeamCount = 1                                     %! _extend_beam
                 \set stemRightBeamCount = 2                                    %! _extend_beam
                 cs''!16
-                (                                                              %! SpannerCommand
+                (                                                              %! baca_slur:SpannerCommand
 
                 \set stemLeftBeamCount = 2                                     %! _extend_beam
                 \set stemRightBeamCount = 2                                    %! _extend_beam
@@ -931,7 +931,7 @@ F_RHVoiceII = {                                                                %
                 \set stemLeftBeamCount = 2                                     %! _extend_beam
                 \set stemRightBeamCount = 1                                    %! _extend_beam
                 b''16
-                )                                                              %! SpannerCommand
+                )                                                              %! baca_slur:SpannerCommand
 
             }
 
@@ -940,7 +940,7 @@ F_RHVoiceII = {                                                                %
                 \set stemLeftBeamCount = 1                                     %! _extend_beam
                 \set stemRightBeamCount = 2                                    %! _extend_beam
                 f''16
-                (                                                              %! SpannerCommand
+                (                                                              %! baca_slur:SpannerCommand
 
                 \set stemLeftBeamCount = 2                                     %! _extend_beam
                 \set stemRightBeamCount = 2                                    %! _extend_beam
@@ -950,7 +950,7 @@ F_RHVoiceII = {                                                                %
                 \set stemRightBeamCount = 0                                    %! _extend_beam
                 a''16
                 ]                                                              %! _extend_beam
-                )                                                              %! SpannerCommand
+                )                                                              %! baca_slur:SpannerCommand
 
             }
 
@@ -987,7 +987,7 @@ F_RHVoiceII = {                                                                %
         %%%             }                                                      %! FIGURE_NAME_MARKUP
         %%%     }                                                              %! FIGURE_NAME_MARKUP
             [                                                                  %! _extend_beam
-            (                                                                  %! SpannerCommand
+            (                                                                  %! baca_slur:SpannerCommand
 
             \set stemLeftBeamCount = 2                                         %! _extend_beam
             \set stemRightBeamCount = 2                                        %! _extend_beam
@@ -996,7 +996,7 @@ F_RHVoiceII = {                                                                %
             \set stemLeftBeamCount = 2                                         %! _extend_beam
             \set stemRightBeamCount = 1                                        %! _extend_beam
             e''16
-            )                                                                  %! SpannerCommand
+            )                                                                  %! baca_slur:SpannerCommand
 
         }
 
@@ -1006,7 +1006,7 @@ F_RHVoiceII = {                                                                %
             \set stemLeftBeamCount = 1                                         %! _extend_beam
             \set stemRightBeamCount = 2                                        %! _extend_beam
             cs''!16
-            (                                                                  %! SpannerCommand
+            (                                                                  %! baca_slur:SpannerCommand
 
             \set stemLeftBeamCount = 2                                         %! _extend_beam
             \set stemRightBeamCount = 2                                        %! _extend_beam
@@ -1027,7 +1027,7 @@ F_RHVoiceII = {                                                                %
             \set stemLeftBeamCount = 2                                         %! _extend_beam
             \set stemRightBeamCount = 1                                        %! _extend_beam
             b''16
-            )                                                                  %! SpannerCommand
+            )                                                                  %! baca_slur:SpannerCommand
 
         }
 
@@ -1036,7 +1036,7 @@ F_RHVoiceII = {                                                                %
             \set stemLeftBeamCount = 1                                         %! _extend_beam
             \set stemRightBeamCount = 2                                        %! _extend_beam
             g''16
-            (                                                                  %! SpannerCommand
+            (                                                                  %! baca_slur:SpannerCommand
 
             \set stemLeftBeamCount = 2                                         %! _extend_beam
             \set stemRightBeamCount = 2                                        %! _extend_beam
@@ -1045,7 +1045,7 @@ F_RHVoiceII = {                                                                %
             \set stemLeftBeamCount = 2                                         %! _extend_beam
             \set stemRightBeamCount = 1                                        %! _extend_beam
             b''16
-            )                                                                  %! SpannerCommand
+            )                                                                  %! baca_slur:SpannerCommand
 
         }
 
@@ -1082,7 +1082,7 @@ F_RHVoiceII = {                                                                %
             %%%                 ]                                              %! FIGURE_NAME_MARKUP
             %%%             }                                                  %! FIGURE_NAME_MARKUP
             %%%     }                                                          %! FIGURE_NAME_MARKUP
-                (                                                              %! SpannerCommand
+                (                                                              %! baca_slur:SpannerCommand
 
                 \set stemLeftBeamCount = 2                                     %! _extend_beam
                 \set stemRightBeamCount = 2                                    %! _extend_beam
@@ -1095,7 +1095,7 @@ F_RHVoiceII = {                                                                %
                 \set stemLeftBeamCount = 2                                     %! _extend_beam
                 \set stemRightBeamCount = 1                                    %! _extend_beam
                 d'''16
-                )                                                              %! SpannerCommand
+                )                                                              %! baca_slur:SpannerCommand
 
             }
 
@@ -1104,7 +1104,7 @@ F_RHVoiceII = {                                                                %
                 \set stemLeftBeamCount = 1                                     %! _extend_beam
                 \set stemRightBeamCount = 2                                    %! _extend_beam
                 ef'''!16
-                (                                                              %! SpannerCommand
+                (                                                              %! baca_slur:SpannerCommand
 
                 \set stemLeftBeamCount = 2                                     %! _extend_beam
                 \set stemRightBeamCount = 2                                    %! _extend_beam
@@ -1126,7 +1126,7 @@ F_RHVoiceII = {                                                                %
                 \set stemRightBeamCount = 0                                    %! _extend_beam
                 cs'''!16
                 ]                                                              %! _extend_beam
-                )                                                              %! SpannerCommand
+                )                                                              %! baca_slur:SpannerCommand
 
             }
 
@@ -1160,7 +1160,7 @@ F_RHVoiceII = {                                                                %
         %%%             }                                                      %! FIGURE_NAME_MARKUP
         %%%     }                                                              %! FIGURE_NAME_MARKUP
             [                                                                  %! _extend_beam
-            (                                                                  %! SpannerCommand
+            (                                                                  %! baca_slur:SpannerCommand
 
             \set stemLeftBeamCount = 2                                         %! _extend_beam
             \set stemRightBeamCount = 2                                        %! _extend_beam
@@ -1169,7 +1169,7 @@ F_RHVoiceII = {                                                                %
             \set stemLeftBeamCount = 2                                         %! _extend_beam
             \set stemRightBeamCount = 1                                        %! _extend_beam
             ef'''!16
-            )                                                                  %! SpannerCommand
+            )                                                                  %! baca_slur:SpannerCommand
 
         }
 
@@ -1203,7 +1203,7 @@ F_RHVoiceII = {                                                                %
         %%%                 ]                                                  %! FIGURE_NAME_MARKUP
         %%%             }                                                      %! FIGURE_NAME_MARKUP
         %%%     }                                                              %! FIGURE_NAME_MARKUP
-            (                                                                  %! SpannerCommand
+            (                                                                  %! baca_slur:SpannerCommand
 
             \set stemLeftBeamCount = 2                                         %! _extend_beam
             \set stemRightBeamCount = 2                                        %! _extend_beam
@@ -1213,7 +1213,7 @@ F_RHVoiceII = {                                                                %
             \set stemRightBeamCount = 0                                        %! _extend_beam
             af'''!16
             ]                                                                  %! _extend_beam
-            )                                                                  %! SpannerCommand
+            )                                                                  %! baca_slur:SpannerCommand
             \revert Beam.positions                                             %! baca_beam_positions:OverrideCommand(2)
             \revert Slur.direction                                             %! baca_slur_up:OverrideCommand(2)
             \revert Stem.direction                                             %! baca_stem_down:OverrideCommand(2)
@@ -1947,8 +1947,8 @@ F_LHVoiceIV = {                                                                %
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
             fs'!16
-            - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-            \ff                                                                %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
+            - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+            \ff                                                                %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
         %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                      %! FIGURE_NAME_MARKUP
         %%%         #2                                                         %! FIGURE_NAME_MARKUP
@@ -2026,8 +2026,8 @@ F_LHVoiceIV = {                                                                %
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
             cs''!16
-            - \tweak color #(x11-color 'DeepPink1)                             %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
-            \ff                                                                %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
+            - \tweak color #(x11-color 'DeepPink1)                             %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+            \ff                                                                %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
         %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                      %! FIGURE_NAME_MARKUP
         %%%         #2                                                         %! FIGURE_NAME_MARKUP
@@ -2071,8 +2071,8 @@ F_LHVoiceIV = {                                                                %
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
             d''16
-            - \tweak color #(x11-color 'DeepPink1)                             %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
-            \ff                                                                %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
+            - \tweak color #(x11-color 'DeepPink1)                             %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+            \ff                                                                %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
         %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                      %! FIGURE_NAME_MARKUP
         %%%         #2                                                         %! FIGURE_NAME_MARKUP
@@ -2258,10 +2258,10 @@ F_LHVoiceV = {                                                                 %
                 \override Stem.direction = #down                               %! baca_stem_down:OverrideCommand(1)
                 \set stemLeftBeamCount = 0
                 \set stemRightBeamCount = 2
-                \dynamicDown                                                   %! IndicatorCommand
+                \dynamicDown                                                   %! baca_dynamic_down:IndicatorCommand
                 cs'!16
-                - \tweak color #(x11-color 'blue)                              %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-                \pp                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
+                - \tweak color #(x11-color 'blue)                              %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+                \pp                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
             %%% ^ \markup {                                                    %! FIGURE_NAME_MARKUP
             %%%     \fontsize                                                  %! FIGURE_NAME_MARKUP
             %%%         #2                                                     %! FIGURE_NAME_MARKUP
@@ -2280,7 +2280,7 @@ F_LHVoiceV = {                                                                 %
             %%%             }                                                  %! FIGURE_NAME_MARKUP
             %%%     }                                                          %! FIGURE_NAME_MARKUP
                 [
-                (                                                              %! SpannerCommand
+                (                                                              %! baca_slur:SpannerCommand
 
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 2
@@ -2289,7 +2289,7 @@ F_LHVoiceV = {                                                                 %
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 1
                 cs'!16
-                )                                                              %! SpannerCommand
+                )                                                              %! baca_slur:SpannerCommand
 
             }
 
@@ -2299,7 +2299,7 @@ F_LHVoiceV = {                                                                 %
                 \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 2
                 b'16
-                (                                                              %! SpannerCommand
+                (                                                              %! baca_slur:SpannerCommand
 
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 2
@@ -2324,7 +2324,7 @@ F_LHVoiceV = {                                                                 %
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 1
                 g''16
-                )                                                              %! SpannerCommand
+                )                                                              %! baca_slur:SpannerCommand
 
             }
 
@@ -2333,7 +2333,7 @@ F_LHVoiceV = {                                                                 %
                 \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 2
                 fs''!16
-                (                                                              %! SpannerCommand
+                (                                                              %! baca_slur:SpannerCommand
 
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 2
@@ -2359,7 +2359,7 @@ F_LHVoiceV = {                                                                 %
                 \set stemRightBeamCount = 0
                 d'''16
                 ]
-                )                                                              %! SpannerCommand
+                )                                                              %! baca_slur:SpannerCommand
                 \revert TupletBracket.direction                                %! baca_tuplet_bracket_down:OverrideCommand(2)
 
             }
@@ -2381,8 +2381,8 @@ F_LHVoiceV = {                                                                 %
                 \set stemLeftBeamCount = 0
                 \set stemRightBeamCount = 2
                 ef''!16
-                - \tweak color #(x11-color 'DeepPink1)                         %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
-                \pp                                                            %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
+                - \tweak color #(x11-color 'DeepPink1)                         %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+                \pp                                                            %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
             %%% ^ \markup {                                                    %! FIGURE_NAME_MARKUP
             %%%     \fontsize                                                  %! FIGURE_NAME_MARKUP
             %%%         #2                                                     %! FIGURE_NAME_MARKUP
@@ -2401,7 +2401,7 @@ F_LHVoiceV = {                                                                 %
             %%%             }                                                  %! FIGURE_NAME_MARKUP
             %%%     }                                                          %! FIGURE_NAME_MARKUP
                 [
-                (                                                              %! SpannerCommand
+                (                                                              %! baca_slur:SpannerCommand
 
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 2
@@ -2410,7 +2410,7 @@ F_LHVoiceV = {                                                                 %
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 1
                 cs''!16
-                )                                                              %! SpannerCommand
+                )                                                              %! baca_slur:SpannerCommand
 
             }
 
@@ -2419,7 +2419,7 @@ F_LHVoiceV = {                                                                 %
                 \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 2
                 a'16
-                (                                                              %! SpannerCommand
+                (                                                              %! baca_slur:SpannerCommand
 
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 2
@@ -2444,7 +2444,7 @@ F_LHVoiceV = {                                                                 %
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 1
                 fs''!16
-                )                                                              %! SpannerCommand
+                )                                                              %! baca_slur:SpannerCommand
 
             }
 
@@ -2454,7 +2454,7 @@ F_LHVoiceV = {                                                                 %
                 \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 2
                 e''16
-                (                                                              %! SpannerCommand
+                (                                                              %! baca_slur:SpannerCommand
 
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 2
@@ -2480,7 +2480,7 @@ F_LHVoiceV = {                                                                 %
                 \set stemRightBeamCount = 0
                 cs'''!16
                 ]
-                )                                                              %! SpannerCommand
+                )                                                              %! baca_slur:SpannerCommand
                 \revert Stem.direction                                         %! baca_stem_down:OverrideCommand(2)
 
             }
