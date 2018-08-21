@@ -959,7 +959,6 @@ accumulator(
     baca.register(10, 26),
     baca.rest_down(),
     baca.stem_down(),
-    baca.tenuto(selector=baca.pheads()),
     baca.tuplet_bracket_down(),
     counts=[4, -4],
     figure_name='b.1.11',

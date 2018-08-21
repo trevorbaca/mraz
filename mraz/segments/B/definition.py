@@ -311,7 +311,6 @@ maker(
 maker(
     'rh_v2',
     baca.script_up(),
-    baca.slur_up(),
     )
 
 maker(

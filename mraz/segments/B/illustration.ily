@@ -363,7 +363,6 @@ B_RHVoiceII = {                                                                %
 
     % [B RHVoiceII measure 22 / measure 1]                                     %! _comment_measure_numbers
     \override Script.direction = #up                                           %! baca_script_up:OverrideCommand(1)
-    \override Slur.direction = #up                                             %! baca_slur_up:OverrideCommand(1)
     s1 * 1/2
     - \tweak color #(x11-color 'green4)                                        %! REAPPLIED_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \fff                                                                       %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
@@ -898,8 +897,8 @@ B_RHVoiceII = {                                                                %
             ]
             )                                                                  %! baca_slur:SpannerCommand
             \revert DynamicLineSpanner.staff-padding                           %! baca_dls_staff_padding:OverrideCommand(2)
-            \revert Script.direction                                           %! baca_script_up:OverrideCommand(2)
             \revert Slur.direction                                             %! baca_slur_up:OverrideCommand(2)
+            \revert Script.direction                                           %! baca_script_up:OverrideCommand(2)
             \ottava #0                                                         %! baca_ottava:SpannerCommand
 
         }
