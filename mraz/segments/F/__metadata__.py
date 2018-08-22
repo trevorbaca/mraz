@@ -102,7 +102,7 @@ metadata = abjad.OrderedDict(
                         'Piano_Music_Staff_Group',
                         [
                             abjad.Momento(
-                                context='LH_Voice_VI',
+                                context='RH_Voice_I',
                                 manifest='instruments',
                                 value='Piano',
                                 ),
