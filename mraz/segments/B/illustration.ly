@@ -31,14 +31,14 @@
             \context MusicContext = "MusicContext"                             %! ScoreTemplate
             {                                                                  %! ScoreTemplate
 
-                \context PianoMusicStaffGroup = "PianoMusicStaffGroup"         %! ScoreTemplate
+                \context PianoMusicStaffGroup = "Piano_Music_Staff_Group"      %! ScoreTemplate
                 <<                                                             %! ScoreTemplate
 
-                    \context PianoMusicRHStaff = "PianoMusicRHStaff"           %! ScoreTemplate
-                    \B_PianoMusicRHStaff                                       %! extern
+                    \context PianoMusicRHStaff = "Piano_Music_RH_Staff"        %! ScoreTemplate
+                    \B_Piano_Music_RH_Staff                                    %! extern
 
-                    \context PianoMusicLHStaff = "PianoMusicLHStaff"           %! ScoreTemplate
-                    \B_PianoMusicLHStaff                                       %! extern
+                    \context PianoMusicLHStaff = "Piano_Music_LH_Staff"        %! ScoreTemplate
+                    \B_Piano_Music_LH_Staff                                    %! extern
 
                 >>                                                             %! ScoreTemplate
 

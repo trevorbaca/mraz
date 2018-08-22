@@ -12,14 +12,14 @@ class MusicAccumulator(baca.MusicAccumulator):
         >>> score_template = mraz.ScoreTemplate()
         >>> accumulator = mraz.MusicAccumulator(score_template)
         >>> accumulator(
-        ...     'RHVoiceI',
+        ...     'RH_Voice_I',
         ...     [[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]],
         ...     figure_name='D',
         ...     )
 
-        >>> selection = accumulator.assemble('RHVoiceI')
+        >>> selection = accumulator.assemble('RH_Voice_I')
         >>> lilypond_file = accumulator.show(
-        ...     {'RHVoiceI': selection},
+        ...     {'RH_Voice_I': selection},
         ...     accumulator.time_signatures,
         ...     )
         >>> abjad.show(lilypond_file, strict=79) # doctest: +SKIP
@@ -29,7 +29,7 @@ class MusicAccumulator(baca.MusicAccumulator):
             >>> abjad.f(lilypond_file[abjad.Staff], strict=79)
             \new Staff
             <<
-                \context Voice = "RHVoiceI"
+                \context Voice = "RH_Voice_I"
                 {
                     {
                         \scaleDurations #'(1 . 1) {

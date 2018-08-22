@@ -20,7 +20,7 @@ def music_maker():
         ...     [[10, 7, 9, 8, 0, 5]],
         ...     ]
 
-        >>> voice_name = 'RHVoiceI'
+        >>> voice_name = 'RH_Voice_I'
         >>> music_maker = mraz.music_maker()
         >>> figures, time_signatures = [], []
         >>> for segments in segment_lists:
@@ -218,7 +218,7 @@ def music_maker():
         [[6, 2, 3, 5, 9, 8, 0], [11], [10, 7, 9, 8, 0, 5]]
         [[11], [10, 7, 9, 8, 0, 5], [4]]
 
-        >>> voice_name = 'RHVoiceI'
+        >>> voice_name = 'RH_Voice_I'
         >>> music_maker = mraz.music_maker()
         >>> figures, time_signatures = [], []
         >>> for segments in segment_lists:
