@@ -659,9 +659,9 @@ C_GlobalSkips = {                                                              %
 }                                                                              %! extern
 
 
-C_RHVoiceI = {                                                                 %! extern
+C_RH_Voice_I = {                                                               %! extern
 
-    % [C RHVoiceI measure 34 / measure 1]                                      %! _comment_measure_numbers
+    % [C RH_Voice_I measure 34 / measure 1]                                    %! _comment_measure_numbers
     \override TupletBracket.staff-padding = #8                                 %! baca_tuplet_bracket_staff_padding:OverrideCommand(1)
     \override TupletBracket.direction = #up                                    %! baca_tuplet_bracket_up:OverrideCommand(1)
     \clef "treble"                                                             %! REAPPLIED_CLEF:_set_status_tag:_reapply_persistent_indicators(3)
@@ -678,7 +678,7 @@ C_RHVoiceI = {                                                                 %
         \tweak text #tuplet-number::calc-fraction-text
         \times 5/4 {
 
-            % [C RHVoiceI measure 51 / measure 18]                             %! _comment_measure_numbers
+            % [C RH_Voice_I measure 51 / measure 18]                           %! _comment_measure_numbers
             \override TextScript.direction = #up                               %! baca_text_script_up:OverrideCommand(1)
             \dynamicUp                                                         %! baca_dynamic_down:IndicatorCommand
             r8
@@ -742,7 +742,7 @@ C_RHVoiceI = {                                                                 %
 
         \scaleDurations #'(1 . 1) {
 
-            % [C RHVoiceI measure 53 / measure 20]                             %! _comment_measure_numbers
+            % [C RH_Voice_I measure 53 / measure 20]                           %! _comment_measure_numbers
             r2
         %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                      %! FIGURE_NAME_MARKUP
@@ -770,7 +770,7 @@ C_RHVoiceI = {                                                                 %
 
         \scaleDurations #'(1 . 1) {
 
-            % [C RHVoiceI measure 54 / measure 21]                             %! _comment_measure_numbers
+            % [C RH_Voice_I measure 54 / measure 21]                           %! _comment_measure_numbers
             \once \override Rest.transparent = ##t                             %! baca_rest_transparent:OverrideCommand(1)
             r4
         %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
@@ -795,7 +795,7 @@ C_RHVoiceI = {                                                                 %
 
     }
 
-    % [C RHVoiceI measure 55 / measure 22]                                     %! _comment_measure_numbers
+    % [C RH_Voice_I measure 55 / measure 22]                                   %! _comment_measure_numbers
     s1 * 1/2
 
     {
@@ -803,7 +803,7 @@ C_RHVoiceI = {                                                                 %
         \tweak text #tuplet-number::calc-fraction-text
         \times 6/4 {
 
-            % [C RHVoiceI measure 56 / measure 23]                             %! _comment_measure_numbers
+            % [C RH_Voice_I measure 56 / measure 23]                           %! _comment_measure_numbers
             bf''''!8
         %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                      %! FIGURE_NAME_MARKUP
@@ -845,7 +845,7 @@ C_RHVoiceI = {                                                                 %
 
     }
 
-    % [C RHVoiceI measure 58 / measure 25]                                     %! _comment_measure_numbers
+    % [C RH_Voice_I measure 58 / measure 25]                                   %! _comment_measure_numbers
     s1 * 7/4
 
     {
@@ -853,7 +853,7 @@ C_RHVoiceI = {                                                                 %
         \tweak text #tuplet-number::calc-fraction-text
         \times 19/14 {
 
-            % [C RHVoiceI measure 60 / measure 27]                             %! _comment_measure_numbers
+            % [C RH_Voice_I measure 60 / measure 27]                           %! _comment_measure_numbers
             \once \override Slur.direction = #down                             %! baca_slur_down:OverrideCommand(1)
             ef''''!8
         %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
@@ -916,14 +916,14 @@ C_RHVoiceI = {                                                                 %
 
     }
 
-    % [C RHVoiceI measure 64 / measure 31]                                     %! _comment_measure_numbers
+    % [C RH_Voice_I measure 64 / measure 31]                                   %! _comment_measure_numbers
     s1 * 7/8
 
     {
 
         \scaleDurations #'(1 . 1) {
 
-            % [C RHVoiceI measure 66 / measure 33]                             %! _comment_measure_numbers
+            % [C RH_Voice_I measure 66 / measure 33]                           %! _comment_measure_numbers
             ef''''!1..
             - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
             \f                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
@@ -954,7 +954,7 @@ C_RHVoiceI = {                                                                 %
 
         \scaleDurations #'(1 . 1) {
 
-            % [C RHVoiceI measure 67 / measure 34]                             %! _comment_measure_numbers
+            % [C RH_Voice_I measure 67 / measure 34]                           %! _comment_measure_numbers
             f''''1.
             - \tenuto                                                          %! baca_tenuto:IndicatorCommand
         %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
@@ -983,7 +983,7 @@ C_RHVoiceI = {                                                                 %
 
         \scaleDurations #'(1 . 1) {
 
-            % [C RHVoiceI measure 68 / measure 35]                             %! _comment_measure_numbers
+            % [C RH_Voice_I measure 68 / measure 35]                           %! _comment_measure_numbers
             bf''''!1
             - \tenuto                                                          %! baca_tenuto:IndicatorCommand
         %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
@@ -1012,7 +1012,7 @@ C_RHVoiceI = {                                                                 %
 
         \scaleDurations #'(1 . 1) {
 
-            % [C RHVoiceI measure 69 / measure 36]                             %! _comment_measure_numbers
+            % [C RH_Voice_I measure 69 / measure 36]                           %! _comment_measure_numbers
             ef''''!1
             - \tenuto                                                          %! baca_tenuto:IndicatorCommand
         %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
@@ -1038,14 +1038,14 @@ C_RHVoiceI = {                                                                 %
 
     }
 
-    % [C RHVoiceI measure 70 / measure 37]                                     %! _comment_measure_numbers
+    % [C RH_Voice_I measure 70 / measure 37]                                   %! _comment_measure_numbers
     s1 * 3/2
 
     {
 
         \scaleDurations #'(1 . 1) {
 
-            % [C RHVoiceI measure 71 / measure 38]                             %! _comment_measure_numbers
+            % [C RH_Voice_I measure 71 / measure 38]                           %! _comment_measure_numbers
             \ottava #1                                                         %! baca_ottava:SpannerCommand
             f''''1
             - \tenuto                                                          %! baca_tenuto:IndicatorCommand
@@ -1075,7 +1075,7 @@ C_RHVoiceI = {                                                                 %
 
         \scaleDurations #'(1 . 1) {
 
-            % [C RHVoiceI measure 72 / measure 39]                             %! _comment_measure_numbers
+            % [C RH_Voice_I measure 72 / measure 39]                           %! _comment_measure_numbers
             bf''''!2
             - \tenuto                                                          %! baca_tenuto:IndicatorCommand
         %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
@@ -1102,19 +1102,19 @@ C_RHVoiceI = {                                                                 %
 
     }
 
-    % [C RHVoiceI measure 73 / measure 40]                                     %! _comment_measure_numbers
+    % [C RH_Voice_I measure 73 / measure 40]                                   %! _comment_measure_numbers
     s1 * 1                                                                     %! _make_measure_silences
 
-    % [C RHVoiceI measure 74 / measure 41]                                     %! _comment_measure_numbers
+    % [C RH_Voice_I measure 74 / measure 41]                                   %! _comment_measure_numbers
     s1 * 1                                                                     %! _make_measure_silences
 
-    % [C RHVoiceI measure 75 / measure 42]                                     %! _comment_measure_numbers
+    % [C RH_Voice_I measure 75 / measure 42]                                   %! _comment_measure_numbers
     s1 * 1                                                                     %! _make_measure_silences
 
-    % [C RHVoiceI measure 76 / measure 43]                                     %! _comment_measure_numbers
+    % [C RH_Voice_I measure 76 / measure 43]                                   %! _comment_measure_numbers
     s1 * 3/2                                                                   %! _make_measure_silences
 
-    % [C RHVoiceI measure 77 / measure 44]                                     %! _comment_measure_numbers
+    % [C RH_Voice_I measure 77 / measure 44]                                   %! _comment_measure_numbers
     s1 * 4                                                                     %! _make_measure_silences
     \revert TupletBracket.staff-padding                                        %! baca_tuplet_bracket_staff_padding:OverrideCommand(2)
     \revert TupletBracket.direction                                            %! baca_tuplet_bracket_up:OverrideCommand(2)
@@ -1122,146 +1122,146 @@ C_RHVoiceI = {                                                                 %
 }                                                                              %! extern
 
 
-C_RHVoiceIInserts = {                                                          %! extern
+C_RH_Voice_I_Inserts = {                                                       %! extern
 
-    % [C RHVoiceIInserts measure 34 / measure 1]                               %! _comment_measure_numbers
+    % [C RH_Voice_I_Inserts measure 34 / measure 1]                            %! _comment_measure_numbers
     s1 * 3/2                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIInserts measure 35 / measure 2]                               %! _comment_measure_numbers
+    % [C RH_Voice_I_Inserts measure 35 / measure 2]                            %! _comment_measure_numbers
     s1 * 3/4                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIInserts measure 36 / measure 3]                               %! _comment_measure_numbers
+    % [C RH_Voice_I_Inserts measure 36 / measure 3]                            %! _comment_measure_numbers
     s1 * 3/2                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIInserts measure 37 / measure 4]                               %! _comment_measure_numbers
+    % [C RH_Voice_I_Inserts measure 37 / measure 4]                            %! _comment_measure_numbers
     s1 * 9/8                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIInserts measure 38 / measure 5]                               %! _comment_measure_numbers
+    % [C RH_Voice_I_Inserts measure 38 / measure 5]                            %! _comment_measure_numbers
     s1 * 3/4                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIInserts measure 39 / measure 6]                               %! _comment_measure_numbers
+    % [C RH_Voice_I_Inserts measure 39 / measure 6]                            %! _comment_measure_numbers
     s1 * 3/2                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIInserts measure 40 / measure 7]                               %! _comment_measure_numbers
+    % [C RH_Voice_I_Inserts measure 40 / measure 7]                            %! _comment_measure_numbers
     s1 * 3/4                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIInserts measure 41 / measure 8]                               %! _comment_measure_numbers
+    % [C RH_Voice_I_Inserts measure 41 / measure 8]                            %! _comment_measure_numbers
     s1 * 3/4                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIInserts measure 42 / measure 9]                               %! _comment_measure_numbers
+    % [C RH_Voice_I_Inserts measure 42 / measure 9]                            %! _comment_measure_numbers
     s1 * 5/4                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIInserts measure 43 / measure 10]                              %! _comment_measure_numbers
+    % [C RH_Voice_I_Inserts measure 43 / measure 10]                           %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C RHVoiceIInserts measure 44 / measure 11]                              %! _comment_measure_numbers
+    % [C RH_Voice_I_Inserts measure 44 / measure 11]                           %! _comment_measure_numbers
     s1 * 5/4                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIInserts measure 45 / measure 12]                              %! _comment_measure_numbers
+    % [C RH_Voice_I_Inserts measure 45 / measure 12]                           %! _comment_measure_numbers
     s1 * 3/4                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIInserts measure 46 / measure 13]                              %! _comment_measure_numbers
+    % [C RH_Voice_I_Inserts measure 46 / measure 13]                           %! _comment_measure_numbers
     s1 * 5/4                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIInserts measure 47 / measure 14]                              %! _comment_measure_numbers
+    % [C RH_Voice_I_Inserts measure 47 / measure 14]                           %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C RHVoiceIInserts measure 48 / measure 15]                              %! _comment_measure_numbers
+    % [C RH_Voice_I_Inserts measure 48 / measure 15]                           %! _comment_measure_numbers
     s1 * 5/4                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIInserts measure 49 / measure 16]                              %! _comment_measure_numbers
+    % [C RH_Voice_I_Inserts measure 49 / measure 16]                           %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C RHVoiceIInserts measure 50 / measure 17]                              %! _comment_measure_numbers
+    % [C RH_Voice_I_Inserts measure 50 / measure 17]                           %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIInserts measure 51 / measure 18]                              %! _comment_measure_numbers
+    % [C RH_Voice_I_Inserts measure 51 / measure 18]                           %! _comment_measure_numbers
     s1 * 7/8                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIInserts measure 52 / measure 19]                              %! _comment_measure_numbers
+    % [C RH_Voice_I_Inserts measure 52 / measure 19]                           %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C RHVoiceIInserts measure 53 / measure 20]                              %! _comment_measure_numbers
+    % [C RH_Voice_I_Inserts measure 53 / measure 20]                           %! _comment_measure_numbers
     s1 * 1/2                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIInserts measure 54 / measure 21]                              %! _comment_measure_numbers
+    % [C RH_Voice_I_Inserts measure 54 / measure 21]                           %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIInserts measure 55 / measure 22]                              %! _comment_measure_numbers
+    % [C RH_Voice_I_Inserts measure 55 / measure 22]                           %! _comment_measure_numbers
     s1 * 1/2                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIInserts measure 56 / measure 23]                              %! _comment_measure_numbers
+    % [C RH_Voice_I_Inserts measure 56 / measure 23]                           %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C RHVoiceIInserts measure 57 / measure 24]                              %! _comment_measure_numbers
+    % [C RH_Voice_I_Inserts measure 57 / measure 24]                           %! _comment_measure_numbers
     s1 * 1/2                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIInserts measure 58 / measure 25]                              %! _comment_measure_numbers
+    % [C RH_Voice_I_Inserts measure 58 / measure 25]                           %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C RHVoiceIInserts measure 59 / measure 26]                              %! _comment_measure_numbers
+    % [C RH_Voice_I_Inserts measure 59 / measure 26]                           %! _comment_measure_numbers
     s1 * 3/4                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIInserts measure 60 / measure 27]                              %! _comment_measure_numbers
+    % [C RH_Voice_I_Inserts measure 60 / measure 27]                           %! _comment_measure_numbers
     s1 * 5/8                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIInserts measure 61 / measure 28]                              %! _comment_measure_numbers
+    % [C RH_Voice_I_Inserts measure 61 / measure 28]                           %! _comment_measure_numbers
     s1 * 1/2                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIInserts measure 62 / measure 29]                              %! _comment_measure_numbers
+    % [C RH_Voice_I_Inserts measure 62 / measure 29]                           %! _comment_measure_numbers
     s1 * 3/4                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIInserts measure 63 / measure 30]                              %! _comment_measure_numbers
+    % [C RH_Voice_I_Inserts measure 63 / measure 30]                           %! _comment_measure_numbers
     s1 * 1/2                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIInserts measure 64 / measure 31]                              %! _comment_measure_numbers
+    % [C RH_Voice_I_Inserts measure 64 / measure 31]                           %! _comment_measure_numbers
     s1 * 5/8                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIInserts measure 65 / measure 32]                              %! _comment_measure_numbers
+    % [C RH_Voice_I_Inserts measure 65 / measure 32]                           %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIInserts measure 66 / measure 33]                              %! _comment_measure_numbers
+    % [C RH_Voice_I_Inserts measure 66 / measure 33]                           %! _comment_measure_numbers
     s1 * 7/4                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIInserts measure 67 / measure 34]                              %! _comment_measure_numbers
+    % [C RH_Voice_I_Inserts measure 67 / measure 34]                           %! _comment_measure_numbers
     s1 * 3/2                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIInserts measure 68 / measure 35]                              %! _comment_measure_numbers
+    % [C RH_Voice_I_Inserts measure 68 / measure 35]                           %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C RHVoiceIInserts measure 69 / measure 36]                              %! _comment_measure_numbers
+    % [C RH_Voice_I_Inserts measure 69 / measure 36]                           %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C RHVoiceIInserts measure 70 / measure 37]                              %! _comment_measure_numbers
+    % [C RH_Voice_I_Inserts measure 70 / measure 37]                           %! _comment_measure_numbers
     s1 * 3/2                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIInserts measure 71 / measure 38]                              %! _comment_measure_numbers
+    % [C RH_Voice_I_Inserts measure 71 / measure 38]                           %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C RHVoiceIInserts measure 72 / measure 39]                              %! _comment_measure_numbers
+    % [C RH_Voice_I_Inserts measure 72 / measure 39]                           %! _comment_measure_numbers
     s1 * 1/2                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIInserts measure 73 / measure 40]                              %! _comment_measure_numbers
+    % [C RH_Voice_I_Inserts measure 73 / measure 40]                           %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C RHVoiceIInserts measure 74 / measure 41]                              %! _comment_measure_numbers
+    % [C RH_Voice_I_Inserts measure 74 / measure 41]                           %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C RHVoiceIInserts measure 75 / measure 42]                              %! _comment_measure_numbers
+    % [C RH_Voice_I_Inserts measure 75 / measure 42]                           %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C RHVoiceIInserts measure 76 / measure 43]                              %! _comment_measure_numbers
+    % [C RH_Voice_I_Inserts measure 76 / measure 43]                           %! _comment_measure_numbers
     s1 * 3/2                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIInserts measure 77 / measure 44]                              %! _comment_measure_numbers
+    % [C RH_Voice_I_Inserts measure 77 / measure 44]                           %! _comment_measure_numbers
     s1 * 4                                                                     %! _call_rhythm_commands
 
 }                                                                              %! extern
 
 
-C_RHVoiceII = {                                                                %! extern
+C_RH_Voice_II = {                                                              %! extern
 
-    % [C RHVoiceII measure 34 / measure 1]                                     %! _comment_measure_numbers
+    % [C RH_Voice_II measure 34 / measure 1]                                   %! _comment_measure_numbers
     s1 * 3/2
     - \tweak color #(x11-color 'green4)                                        %! REAPPLIED_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \ff                                                                        %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
@@ -1270,7 +1270,7 @@ C_RHVoiceII = {                                                                %
 
         \scaleDurations #'(1 . 1) {
 
-            % [C RHVoiceII measure 35 / measure 2]                             %! _comment_measure_numbers
+            % [C RH_Voice_II measure 35 / measure 2]                           %! _comment_measure_numbers
             \once \override Script.direction = #up                             %! baca_script_up:OverrideCommand(1)
             \arpeggioArrowUp                                                   %! baca_up_arpeggio:IndicatorCommand
             <a g' af'! b' cs''! f'' ef'''! c''''>2.
@@ -1300,7 +1300,7 @@ C_RHVoiceII = {                                                                %
 
     }
 
-    % [C RHVoiceII measure 36 / measure 3]                                     %! _comment_measure_numbers
+    % [C RH_Voice_II measure 36 / measure 3]                                   %! _comment_measure_numbers
     s1 * 123/8
 
     {
@@ -1310,7 +1310,7 @@ C_RHVoiceII = {                                                                %
         \tweak text #tuplet-number::calc-fraction-text
         \times 5/4 {
 
-            % [C RHVoiceII measure 51 / measure 18]                            %! _comment_measure_numbers
+            % [C RH_Voice_II measure 51 / measure 18]                          %! _comment_measure_numbers
             s8
             [
 
@@ -1350,7 +1350,7 @@ C_RHVoiceII = {                                                                %
 
     }
 
-    % [C RHVoiceII measure 53 / measure 20]                                    %! _comment_measure_numbers
+    % [C RH_Voice_II measure 53 / measure 20]                                  %! _comment_measure_numbers
     s1 * 5/4
 
     {
@@ -1360,7 +1360,7 @@ C_RHVoiceII = {                                                                %
         \tweak text #tuplet-number::calc-fraction-text
         \times 6/4 {
 
-            % [C RHVoiceII measure 56 / measure 23]                            %! _comment_measure_numbers
+            % [C RH_Voice_II measure 56 / measure 23]                          %! _comment_measure_numbers
             s8
             [
 
@@ -1394,7 +1394,7 @@ C_RHVoiceII = {                                                                %
 
     }
 
-    % [C RHVoiceII measure 58 / measure 25]                                    %! _comment_measure_numbers
+    % [C RH_Voice_II measure 58 / measure 25]                                  %! _comment_measure_numbers
     s1 * 7/4
 
     {
@@ -1404,7 +1404,7 @@ C_RHVoiceII = {                                                                %
         \tweak text #tuplet-number::calc-fraction-text
         \times 19/14 {
 
-            % [C RHVoiceII measure 60 / measure 27]                            %! _comment_measure_numbers
+            % [C RH_Voice_II measure 60 / measure 27]                          %! _comment_measure_numbers
             s8
             [
 
@@ -1456,14 +1456,14 @@ C_RHVoiceII = {                                                                %
 
     }
 
-    % [C RHVoiceII measure 64 / measure 31]                                    %! _comment_measure_numbers
+    % [C RH_Voice_II measure 64 / measure 31]                                  %! _comment_measure_numbers
     s1 * 33/8
 
     {
 
         \times 4/5 {
 
-            % [C RHVoiceII measure 68 / measure 35]                            %! _comment_measure_numbers
+            % [C RH_Voice_II measure 68 / measure 35]                          %! _comment_measure_numbers
             \override DynamicLineSpanner.staff-padding = #'8                   %! baca_dls_staff_padding:OverrideCommand(1)
             \override Slur.direction = #up                                     %! baca_slur_up:OverrideCommand(1)
             \set stemLeftBeamCount = 0
@@ -1591,7 +1591,7 @@ C_RHVoiceII = {                                                                %
 
         \scaleDurations #'(1 . 1) {
 
-            % [C RHVoiceII measure 69 / measure 36]                            %! _comment_measure_numbers
+            % [C RH_Voice_II measure 69 / measure 36]                          %! _comment_measure_numbers
             \override DynamicLineSpanner.staff-padding = #'8                   %! baca_dls_staff_padding:OverrideCommand(1)
             \override Slur.direction = #up                                     %! baca_slur_up:OverrideCommand(1)
             \override TextScript.direction = #up                               %! baca_text_script_up:OverrideCommand(1)
@@ -1717,7 +1717,7 @@ C_RHVoiceII = {                                                                %
 
         \scaleDurations #'(1 . 1) {
 
-            % [C RHVoiceII measure 70 / measure 37]                            %! _comment_measure_numbers
+            % [C RH_Voice_II measure 70 / measure 37]                          %! _comment_measure_numbers
             \once \override Script.direction = #up                             %! baca_script_up:OverrideCommand(1)
             \arpeggioArrowUp                                                   %! baca_up_arpeggio:IndicatorCommand
             <a g' af'! b' cs''! f'' ef'''! c''''>1.
@@ -1749,7 +1749,7 @@ C_RHVoiceII = {                                                                %
 
         \times 2/3 {
 
-            % [C RHVoiceII measure 71 / measure 38]                            %! _comment_measure_numbers
+            % [C RH_Voice_II measure 71 / measure 38]                          %! _comment_measure_numbers
             \override DynamicLineSpanner.staff-padding = #'8                   %! baca_dls_staff_padding:OverrideCommand(1)
             \override Slur.direction = #up                                     %! baca_slur_up:OverrideCommand(1)
             \override TextScript.direction = #up                               %! baca_text_script_up:OverrideCommand(1)
@@ -1887,7 +1887,7 @@ C_RHVoiceII = {                                                                %
 
         \scaleDurations #'(1 . 1) {
 
-            % [C RHVoiceII measure 72 / measure 39]                            %! _comment_measure_numbers
+            % [C RH_Voice_II measure 72 / measure 39]                          %! _comment_measure_numbers
             \override DynamicLineSpanner.staff-padding = #'8                   %! baca_dls_staff_padding:OverrideCommand(1)
             \override Slur.direction = #up                                     %! baca_slur_up:OverrideCommand(1)
             \override TextScript.direction = #up                               %! baca_text_script_up:OverrideCommand(1)
@@ -1965,7 +1965,7 @@ C_RHVoiceII = {                                                                %
 
         \scaleDurations #'(1 . 1) {
 
-            % [C RHVoiceII measure 73 / measure 40]                            %! _comment_measure_numbers
+            % [C RH_Voice_II measure 73 / measure 40]                          %! _comment_measure_numbers
             \arpeggioArrowUp                                                   %! baca_up_arpeggio:IndicatorCommand
             \once \override Script.direction = #up                             %! baca_script_up:OverrideCommand(1)
             <f'' ef'''! c'''' e'''' fs''''! bf''''!>1
@@ -1997,7 +1997,7 @@ C_RHVoiceII = {                                                                %
 
         \scaleDurations #'(1 . 1) {
 
-            % [C RHVoiceII measure 74 / measure 41]                            %! _comment_measure_numbers
+            % [C RH_Voice_II measure 74 / measure 41]                          %! _comment_measure_numbers
             \arpeggioArrowUp                                                   %! baca_up_arpeggio:IndicatorCommand
             \once \override Script.direction = #up                             %! baca_script_up:OverrideCommand(1)
             <a g' af'! b' cs''! f'' ef'''! c''''>1
@@ -2029,7 +2029,7 @@ C_RHVoiceII = {                                                                %
 
         \scaleDurations #'(1 . 1) {
 
-            % [C RHVoiceII measure 75 / measure 42]                            %! _comment_measure_numbers
+            % [C RH_Voice_II measure 75 / measure 42]                          %! _comment_measure_numbers
             \arpeggioArrowUp                                                   %! baca_up_arpeggio:IndicatorCommand
             \once \override Script.direction = #up                             %! baca_script_up:OverrideCommand(1)
             <e' fs'! bf'! a'' g''' af'''! b''' cs''''!>1
@@ -2057,14 +2057,14 @@ C_RHVoiceII = {                                                                %
 
     }
 
-    % [C RHVoiceII measure 76 / measure 43]                                    %! _comment_measure_numbers
+    % [C RH_Voice_II measure 76 / measure 43]                                  %! _comment_measure_numbers
     s1 * 3/2
 
     {
 
         \scaleDurations #'(1 . 1) {
 
-            % [C RHVoiceII measure 77 / measure 44]                            %! _comment_measure_numbers
+            % [C RH_Voice_II measure 77 / measure 44]                          %! _comment_measure_numbers
             \override Script.direction = #up                                   %! baca_script_up:OverrideCommand(1)
             \override Stem.direction = #up                                     %! baca_stem_up:OverrideCommand(1)
             \override TextScript.direction = #up                               %! baca_text_script_up:OverrideCommand(1)
@@ -2120,151 +2120,151 @@ C_RHVoiceII = {                                                                %
 }                                                                              %! extern
 
 
-C_RHVoiceIIInserts = {                                                         %! extern
+C_RH_Voice_II_Inserts = {                                                      %! extern
 
-    % [C RHVoiceIIInserts measure 34 / measure 1]                              %! _comment_measure_numbers
+    % [C RH_Voice_II_Inserts measure 34 / measure 1]                           %! _comment_measure_numbers
     s1 * 3/2                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIIInserts measure 35 / measure 2]                              %! _comment_measure_numbers
+    % [C RH_Voice_II_Inserts measure 35 / measure 2]                           %! _comment_measure_numbers
     s1 * 3/4                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIIInserts measure 36 / measure 3]                              %! _comment_measure_numbers
+    % [C RH_Voice_II_Inserts measure 36 / measure 3]                           %! _comment_measure_numbers
     s1 * 3/2                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIIInserts measure 37 / measure 4]                              %! _comment_measure_numbers
+    % [C RH_Voice_II_Inserts measure 37 / measure 4]                           %! _comment_measure_numbers
     s1 * 9/8                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIIInserts measure 38 / measure 5]                              %! _comment_measure_numbers
+    % [C RH_Voice_II_Inserts measure 38 / measure 5]                           %! _comment_measure_numbers
     s1 * 3/4                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIIInserts measure 39 / measure 6]                              %! _comment_measure_numbers
+    % [C RH_Voice_II_Inserts measure 39 / measure 6]                           %! _comment_measure_numbers
     s1 * 3/2                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIIInserts measure 40 / measure 7]                              %! _comment_measure_numbers
+    % [C RH_Voice_II_Inserts measure 40 / measure 7]                           %! _comment_measure_numbers
     s1 * 3/4                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIIInserts measure 41 / measure 8]                              %! _comment_measure_numbers
+    % [C RH_Voice_II_Inserts measure 41 / measure 8]                           %! _comment_measure_numbers
     s1 * 3/4                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIIInserts measure 42 / measure 9]                              %! _comment_measure_numbers
+    % [C RH_Voice_II_Inserts measure 42 / measure 9]                           %! _comment_measure_numbers
     s1 * 5/4                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIIInserts measure 43 / measure 10]                             %! _comment_measure_numbers
+    % [C RH_Voice_II_Inserts measure 43 / measure 10]                          %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C RHVoiceIIInserts measure 44 / measure 11]                             %! _comment_measure_numbers
+    % [C RH_Voice_II_Inserts measure 44 / measure 11]                          %! _comment_measure_numbers
     s1 * 5/4                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIIInserts measure 45 / measure 12]                             %! _comment_measure_numbers
+    % [C RH_Voice_II_Inserts measure 45 / measure 12]                          %! _comment_measure_numbers
     s1 * 3/4                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIIInserts measure 46 / measure 13]                             %! _comment_measure_numbers
+    % [C RH_Voice_II_Inserts measure 46 / measure 13]                          %! _comment_measure_numbers
     s1 * 5/4                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIIInserts measure 47 / measure 14]                             %! _comment_measure_numbers
+    % [C RH_Voice_II_Inserts measure 47 / measure 14]                          %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C RHVoiceIIInserts measure 48 / measure 15]                             %! _comment_measure_numbers
+    % [C RH_Voice_II_Inserts measure 48 / measure 15]                          %! _comment_measure_numbers
     s1 * 5/4                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIIInserts measure 49 / measure 16]                             %! _comment_measure_numbers
+    % [C RH_Voice_II_Inserts measure 49 / measure 16]                          %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C RHVoiceIIInserts measure 50 / measure 17]                             %! _comment_measure_numbers
+    % [C RH_Voice_II_Inserts measure 50 / measure 17]                          %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIIInserts measure 51 / measure 18]                             %! _comment_measure_numbers
+    % [C RH_Voice_II_Inserts measure 51 / measure 18]                          %! _comment_measure_numbers
     s1 * 7/8                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIIInserts measure 52 / measure 19]                             %! _comment_measure_numbers
+    % [C RH_Voice_II_Inserts measure 52 / measure 19]                          %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C RHVoiceIIInserts measure 53 / measure 20]                             %! _comment_measure_numbers
+    % [C RH_Voice_II_Inserts measure 53 / measure 20]                          %! _comment_measure_numbers
     s1 * 1/2                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIIInserts measure 54 / measure 21]                             %! _comment_measure_numbers
+    % [C RH_Voice_II_Inserts measure 54 / measure 21]                          %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIIInserts measure 55 / measure 22]                             %! _comment_measure_numbers
+    % [C RH_Voice_II_Inserts measure 55 / measure 22]                          %! _comment_measure_numbers
     s1 * 1/2                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIIInserts measure 56 / measure 23]                             %! _comment_measure_numbers
+    % [C RH_Voice_II_Inserts measure 56 / measure 23]                          %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C RHVoiceIIInserts measure 57 / measure 24]                             %! _comment_measure_numbers
+    % [C RH_Voice_II_Inserts measure 57 / measure 24]                          %! _comment_measure_numbers
     s1 * 1/2                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIIInserts measure 58 / measure 25]                             %! _comment_measure_numbers
+    % [C RH_Voice_II_Inserts measure 58 / measure 25]                          %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C RHVoiceIIInserts measure 59 / measure 26]                             %! _comment_measure_numbers
+    % [C RH_Voice_II_Inserts measure 59 / measure 26]                          %! _comment_measure_numbers
     s1 * 3/4                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIIInserts measure 60 / measure 27]                             %! _comment_measure_numbers
+    % [C RH_Voice_II_Inserts measure 60 / measure 27]                          %! _comment_measure_numbers
     s1 * 5/8                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIIInserts measure 61 / measure 28]                             %! _comment_measure_numbers
+    % [C RH_Voice_II_Inserts measure 61 / measure 28]                          %! _comment_measure_numbers
     s1 * 1/2                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIIInserts measure 62 / measure 29]                             %! _comment_measure_numbers
+    % [C RH_Voice_II_Inserts measure 62 / measure 29]                          %! _comment_measure_numbers
     s1 * 3/4                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIIInserts measure 63 / measure 30]                             %! _comment_measure_numbers
+    % [C RH_Voice_II_Inserts measure 63 / measure 30]                          %! _comment_measure_numbers
     s1 * 1/2                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIIInserts measure 64 / measure 31]                             %! _comment_measure_numbers
+    % [C RH_Voice_II_Inserts measure 64 / measure 31]                          %! _comment_measure_numbers
     s1 * 5/8                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIIInserts measure 65 / measure 32]                             %! _comment_measure_numbers
+    % [C RH_Voice_II_Inserts measure 65 / measure 32]                          %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIIInserts measure 66 / measure 33]                             %! _comment_measure_numbers
+    % [C RH_Voice_II_Inserts measure 66 / measure 33]                          %! _comment_measure_numbers
     s1 * 7/4                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIIInserts measure 67 / measure 34]                             %! _comment_measure_numbers
+    % [C RH_Voice_II_Inserts measure 67 / measure 34]                          %! _comment_measure_numbers
     s1 * 3/2                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIIInserts measure 68 / measure 35]                             %! _comment_measure_numbers
+    % [C RH_Voice_II_Inserts measure 68 / measure 35]                          %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C RHVoiceIIInserts measure 69 / measure 36]                             %! _comment_measure_numbers
+    % [C RH_Voice_II_Inserts measure 69 / measure 36]                          %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C RHVoiceIIInserts measure 70 / measure 37]                             %! _comment_measure_numbers
+    % [C RH_Voice_II_Inserts measure 70 / measure 37]                          %! _comment_measure_numbers
     s1 * 3/2                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIIInserts measure 71 / measure 38]                             %! _comment_measure_numbers
+    % [C RH_Voice_II_Inserts measure 71 / measure 38]                          %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C RHVoiceIIInserts measure 72 / measure 39]                             %! _comment_measure_numbers
+    % [C RH_Voice_II_Inserts measure 72 / measure 39]                          %! _comment_measure_numbers
     s1 * 1/2                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIIInserts measure 73 / measure 40]                             %! _comment_measure_numbers
+    % [C RH_Voice_II_Inserts measure 73 / measure 40]                          %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C RHVoiceIIInserts measure 74 / measure 41]                             %! _comment_measure_numbers
+    % [C RH_Voice_II_Inserts measure 74 / measure 41]                          %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C RHVoiceIIInserts measure 75 / measure 42]                             %! _comment_measure_numbers
+    % [C RH_Voice_II_Inserts measure 75 / measure 42]                          %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C RHVoiceIIInserts measure 76 / measure 43]                             %! _comment_measure_numbers
+    % [C RH_Voice_II_Inserts measure 76 / measure 43]                          %! _comment_measure_numbers
     s1 * 3/2                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIIInserts measure 77 / measure 44]                             %! _comment_measure_numbers
+    % [C RH_Voice_II_Inserts measure 77 / measure 44]                          %! _comment_measure_numbers
     s1 * 4                                                                     %! _call_rhythm_commands
 
 }                                                                              %! extern
 
 
-C_RHVoiceIII = {                                                               %! extern
+C_RH_Voice_III = {                                                             %! extern
 
     {
 
         \tweak text #tuplet-number::calc-fraction-text
         \times 12/11 {
 
-            % [C RHVoiceIII measure 34 / measure 1]                            %! _comment_measure_numbers
+            % [C RH_Voice_III measure 34 / measure 1]                          %! _comment_measure_numbers
             \override Stem.direction = #up                                     %! baca_stem_up:OverrideCommand(1)
             \override TextScript.direction = #up                               %! baca_text_script_up:OverrideCommand(1)
             \override TupletBracket.direction = #up                            %! baca_tuplet_bracket_up:OverrideCommand(1)
@@ -2312,7 +2312,7 @@ C_RHVoiceIII = {                                                               %
 
     }
 
-    % [C RHVoiceIII measure 35 / measure 2]                                    %! _comment_measure_numbers
+    % [C RH_Voice_III measure 35 / measure 2]                                  %! _comment_measure_numbers
     s1 * 3/4
 
     {
@@ -2320,7 +2320,7 @@ C_RHVoiceIII = {                                                               %
         \tweak text #tuplet-number::calc-fraction-text
         \times 6/7 {
 
-            % [C RHVoiceIII measure 36 / measure 3]                            %! _comment_measure_numbers
+            % [C RH_Voice_III measure 36 / measure 3]                          %! _comment_measure_numbers
             \override TupletBracket.direction = #up                            %! baca_tuplet_bracket_up:OverrideCommand(1)
             \override TupletBracket.staff-padding = #4                         %! baca_tuplet_bracket_staff_padding:OverrideCommand(1)
             r4
@@ -2368,14 +2368,14 @@ C_RHVoiceIII = {                                                               %
 
     }
 
-    % [C RHVoiceIII measure 37 / measure 4]                                    %! _comment_measure_numbers
+    % [C RH_Voice_III measure 37 / measure 4]                                  %! _comment_measure_numbers
     s1 * 9/8
 
     {
 
         \scaleDurations #'(1 . 1) {
 
-            % [C RHVoiceIII measure 38 / measure 5]                            %! _comment_measure_numbers
+            % [C RH_Voice_III measure 38 / measure 5]                          %! _comment_measure_numbers
             r2.
         %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                      %! FIGURE_NAME_MARKUP
@@ -2404,7 +2404,7 @@ C_RHVoiceIII = {                                                               %
         \tweak text #tuplet-number::calc-fraction-text
         \times 12/11 {
 
-            % [C RHVoiceIII measure 39 / measure 6]                            %! _comment_measure_numbers
+            % [C RH_Voice_III measure 39 / measure 6]                          %! _comment_measure_numbers
             \override Stem.direction = #up                                     %! baca_stem_up:OverrideCommand(1)
             \override TupletBracket.direction = #up                            %! baca_tuplet_bracket_up:OverrideCommand(1)
             ef'!8
@@ -2452,7 +2452,7 @@ C_RHVoiceIII = {                                                               %
 
         \scaleDurations #'(1 . 1) {
 
-            % [C RHVoiceIII measure 40 / measure 7]                            %! _comment_measure_numbers
+            % [C RH_Voice_III measure 40 / measure 7]                          %! _comment_measure_numbers
             r2.
         %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                      %! FIGURE_NAME_MARKUP
@@ -2476,14 +2476,14 @@ C_RHVoiceIII = {                                                               %
 
     }
 
-    % [C RHVoiceIII measure 41 / measure 8]                                    %! _comment_measure_numbers
+    % [C RH_Voice_III measure 41 / measure 8]                                  %! _comment_measure_numbers
     s1 * 99/8
 
     {
 
         \scaleDurations #'(1 . 1) {
 
-            % [C RHVoiceIII measure 55 / measure 22]                           %! _comment_measure_numbers
+            % [C RH_Voice_III measure 55 / measure 22]                         %! _comment_measure_numbers
             \override Stem.direction = #down                                   %! baca_stem_down:OverrideCommand(1)
             \override TupletBracket.direction = #down                          %! baca_tuplet_bracket_down:OverrideCommand(1)
             af'''!8
@@ -2525,7 +2525,7 @@ C_RHVoiceIII = {                                                               %
 
     }
 
-    % [C RHVoiceIII measure 56 / measure 23]                                   %! _comment_measure_numbers
+    % [C RH_Voice_III measure 56 / measure 23]                                 %! _comment_measure_numbers
     s1 * 71/4
 
     {
@@ -2533,7 +2533,7 @@ C_RHVoiceIII = {                                                               %
         \tweak text #tuplet-number::calc-fraction-text
         \times 6/7 {
 
-            % [C RHVoiceIII measure 76 / measure 43]                           %! _comment_measure_numbers
+            % [C RH_Voice_III measure 76 / measure 43]                         %! _comment_measure_numbers
             \override TextScript.direction = #up                               %! baca_text_script_up:OverrideCommand(1)
             \override TupletBracket.staff-padding = #4                         %! baca_tuplet_bracket_staff_padding:OverrideCommand(1)
             \override TupletBracket.direction = #up                            %! baca_tuplet_bracket_up:OverrideCommand(1)
@@ -2590,7 +2590,7 @@ C_RHVoiceIII = {                                                               %
         \tweak text #tuplet-number::calc-fraction-text
         \times 8/5 {
 
-            % [C RHVoiceIII measure 77 / measure 44]                           %! _comment_measure_numbers
+            % [C RH_Voice_III measure 77 / measure 44]                         %! _comment_measure_numbers
             \override Stem.direction = #down                                   %! baca_stem_down:OverrideCommand(1)
             \override TupletBracket.direction = #down                          %! baca_tuplet_bracket_down:OverrideCommand(1)
             \ottava #1                                                         %! baca_ottava:SpannerCommand
@@ -2650,429 +2650,429 @@ C_RHVoiceIII = {                                                               %
 }                                                                              %! extern
 
 
-C_RHVoiceIIIInserts = {                                                        %! extern
+C_RH_Voice_III_Inserts = {                                                     %! extern
 
-    % [C RHVoiceIIIInserts measure 34 / measure 1]                             %! _comment_measure_numbers
+    % [C RH_Voice_III_Inserts measure 34 / measure 1]                          %! _comment_measure_numbers
     s1 * 3/2                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIIIInserts measure 35 / measure 2]                             %! _comment_measure_numbers
+    % [C RH_Voice_III_Inserts measure 35 / measure 2]                          %! _comment_measure_numbers
     s1 * 3/4                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIIIInserts measure 36 / measure 3]                             %! _comment_measure_numbers
+    % [C RH_Voice_III_Inserts measure 36 / measure 3]                          %! _comment_measure_numbers
     s1 * 3/2                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIIIInserts measure 37 / measure 4]                             %! _comment_measure_numbers
+    % [C RH_Voice_III_Inserts measure 37 / measure 4]                          %! _comment_measure_numbers
     s1 * 9/8                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIIIInserts measure 38 / measure 5]                             %! _comment_measure_numbers
+    % [C RH_Voice_III_Inserts measure 38 / measure 5]                          %! _comment_measure_numbers
     s1 * 3/4                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIIIInserts measure 39 / measure 6]                             %! _comment_measure_numbers
+    % [C RH_Voice_III_Inserts measure 39 / measure 6]                          %! _comment_measure_numbers
     s1 * 3/2                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIIIInserts measure 40 / measure 7]                             %! _comment_measure_numbers
+    % [C RH_Voice_III_Inserts measure 40 / measure 7]                          %! _comment_measure_numbers
     s1 * 3/4                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIIIInserts measure 41 / measure 8]                             %! _comment_measure_numbers
+    % [C RH_Voice_III_Inserts measure 41 / measure 8]                          %! _comment_measure_numbers
     s1 * 3/4                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIIIInserts measure 42 / measure 9]                             %! _comment_measure_numbers
+    % [C RH_Voice_III_Inserts measure 42 / measure 9]                          %! _comment_measure_numbers
     s1 * 5/4                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIIIInserts measure 43 / measure 10]                            %! _comment_measure_numbers
+    % [C RH_Voice_III_Inserts measure 43 / measure 10]                         %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C RHVoiceIIIInserts measure 44 / measure 11]                            %! _comment_measure_numbers
+    % [C RH_Voice_III_Inserts measure 44 / measure 11]                         %! _comment_measure_numbers
     s1 * 5/4                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIIIInserts measure 45 / measure 12]                            %! _comment_measure_numbers
+    % [C RH_Voice_III_Inserts measure 45 / measure 12]                         %! _comment_measure_numbers
     s1 * 3/4                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIIIInserts measure 46 / measure 13]                            %! _comment_measure_numbers
+    % [C RH_Voice_III_Inserts measure 46 / measure 13]                         %! _comment_measure_numbers
     s1 * 5/4                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIIIInserts measure 47 / measure 14]                            %! _comment_measure_numbers
+    % [C RH_Voice_III_Inserts measure 47 / measure 14]                         %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C RHVoiceIIIInserts measure 48 / measure 15]                            %! _comment_measure_numbers
+    % [C RH_Voice_III_Inserts measure 48 / measure 15]                         %! _comment_measure_numbers
     s1 * 5/4                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIIIInserts measure 49 / measure 16]                            %! _comment_measure_numbers
+    % [C RH_Voice_III_Inserts measure 49 / measure 16]                         %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C RHVoiceIIIInserts measure 50 / measure 17]                            %! _comment_measure_numbers
+    % [C RH_Voice_III_Inserts measure 50 / measure 17]                         %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIIIInserts measure 51 / measure 18]                            %! _comment_measure_numbers
+    % [C RH_Voice_III_Inserts measure 51 / measure 18]                         %! _comment_measure_numbers
     s1 * 7/8                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIIIInserts measure 52 / measure 19]                            %! _comment_measure_numbers
+    % [C RH_Voice_III_Inserts measure 52 / measure 19]                         %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C RHVoiceIIIInserts measure 53 / measure 20]                            %! _comment_measure_numbers
+    % [C RH_Voice_III_Inserts measure 53 / measure 20]                         %! _comment_measure_numbers
     s1 * 1/2                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIIIInserts measure 54 / measure 21]                            %! _comment_measure_numbers
+    % [C RH_Voice_III_Inserts measure 54 / measure 21]                         %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIIIInserts measure 55 / measure 22]                            %! _comment_measure_numbers
+    % [C RH_Voice_III_Inserts measure 55 / measure 22]                         %! _comment_measure_numbers
     s1 * 1/2                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIIIInserts measure 56 / measure 23]                            %! _comment_measure_numbers
+    % [C RH_Voice_III_Inserts measure 56 / measure 23]                         %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C RHVoiceIIIInserts measure 57 / measure 24]                            %! _comment_measure_numbers
+    % [C RH_Voice_III_Inserts measure 57 / measure 24]                         %! _comment_measure_numbers
     s1 * 1/2                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIIIInserts measure 58 / measure 25]                            %! _comment_measure_numbers
+    % [C RH_Voice_III_Inserts measure 58 / measure 25]                         %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C RHVoiceIIIInserts measure 59 / measure 26]                            %! _comment_measure_numbers
+    % [C RH_Voice_III_Inserts measure 59 / measure 26]                         %! _comment_measure_numbers
     s1 * 3/4                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIIIInserts measure 60 / measure 27]                            %! _comment_measure_numbers
+    % [C RH_Voice_III_Inserts measure 60 / measure 27]                         %! _comment_measure_numbers
     s1 * 5/8                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIIIInserts measure 61 / measure 28]                            %! _comment_measure_numbers
+    % [C RH_Voice_III_Inserts measure 61 / measure 28]                         %! _comment_measure_numbers
     s1 * 1/2                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIIIInserts measure 62 / measure 29]                            %! _comment_measure_numbers
+    % [C RH_Voice_III_Inserts measure 62 / measure 29]                         %! _comment_measure_numbers
     s1 * 3/4                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIIIInserts measure 63 / measure 30]                            %! _comment_measure_numbers
+    % [C RH_Voice_III_Inserts measure 63 / measure 30]                         %! _comment_measure_numbers
     s1 * 1/2                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIIIInserts measure 64 / measure 31]                            %! _comment_measure_numbers
+    % [C RH_Voice_III_Inserts measure 64 / measure 31]                         %! _comment_measure_numbers
     s1 * 5/8                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIIIInserts measure 65 / measure 32]                            %! _comment_measure_numbers
+    % [C RH_Voice_III_Inserts measure 65 / measure 32]                         %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIIIInserts measure 66 / measure 33]                            %! _comment_measure_numbers
+    % [C RH_Voice_III_Inserts measure 66 / measure 33]                         %! _comment_measure_numbers
     s1 * 7/4                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIIIInserts measure 67 / measure 34]                            %! _comment_measure_numbers
+    % [C RH_Voice_III_Inserts measure 67 / measure 34]                         %! _comment_measure_numbers
     s1 * 3/2                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIIIInserts measure 68 / measure 35]                            %! _comment_measure_numbers
+    % [C RH_Voice_III_Inserts measure 68 / measure 35]                         %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C RHVoiceIIIInserts measure 69 / measure 36]                            %! _comment_measure_numbers
+    % [C RH_Voice_III_Inserts measure 69 / measure 36]                         %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C RHVoiceIIIInserts measure 70 / measure 37]                            %! _comment_measure_numbers
+    % [C RH_Voice_III_Inserts measure 70 / measure 37]                         %! _comment_measure_numbers
     s1 * 3/2                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIIIInserts measure 71 / measure 38]                            %! _comment_measure_numbers
+    % [C RH_Voice_III_Inserts measure 71 / measure 38]                         %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C RHVoiceIIIInserts measure 72 / measure 39]                            %! _comment_measure_numbers
+    % [C RH_Voice_III_Inserts measure 72 / measure 39]                         %! _comment_measure_numbers
     s1 * 1/2                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIIIInserts measure 73 / measure 40]                            %! _comment_measure_numbers
+    % [C RH_Voice_III_Inserts measure 73 / measure 40]                         %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C RHVoiceIIIInserts measure 74 / measure 41]                            %! _comment_measure_numbers
+    % [C RH_Voice_III_Inserts measure 74 / measure 41]                         %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C RHVoiceIIIInserts measure 75 / measure 42]                            %! _comment_measure_numbers
+    % [C RH_Voice_III_Inserts measure 75 / measure 42]                         %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C RHVoiceIIIInserts measure 76 / measure 43]                            %! _comment_measure_numbers
+    % [C RH_Voice_III_Inserts measure 76 / measure 43]                         %! _comment_measure_numbers
     s1 * 3/2                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIIIInserts measure 77 / measure 44]                            %! _comment_measure_numbers
+    % [C RH_Voice_III_Inserts measure 77 / measure 44]                         %! _comment_measure_numbers
     s1 * 4                                                                     %! _call_rhythm_commands
 
 }                                                                              %! extern
 
 
-C_RHVoiceIV = {                                                                %! extern
+C_RH_Voice_IV = {                                                              %! extern
 
-    % [C RHVoiceIV measure 34 / measure 1]                                     %! _comment_measure_numbers
+    % [C RH_Voice_IV measure 34 / measure 1]                                   %! _comment_measure_numbers
     s1 * 3/2                                                                   %! _call_rhythm_commands
     - \tweak color #(x11-color 'green4)                                        %! REAPPLIED_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \p                                                                         %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
 
-    % [C RHVoiceIV measure 35 / measure 2]                                     %! _comment_measure_numbers
+    % [C RH_Voice_IV measure 35 / measure 2]                                   %! _comment_measure_numbers
     s1 * 3/4                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIV measure 36 / measure 3]                                     %! _comment_measure_numbers
+    % [C RH_Voice_IV measure 36 / measure 3]                                   %! _comment_measure_numbers
     s1 * 3/2                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIV measure 37 / measure 4]                                     %! _comment_measure_numbers
+    % [C RH_Voice_IV measure 37 / measure 4]                                   %! _comment_measure_numbers
     s1 * 9/8                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIV measure 38 / measure 5]                                     %! _comment_measure_numbers
+    % [C RH_Voice_IV measure 38 / measure 5]                                   %! _comment_measure_numbers
     s1 * 3/4                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIV measure 39 / measure 6]                                     %! _comment_measure_numbers
+    % [C RH_Voice_IV measure 39 / measure 6]                                   %! _comment_measure_numbers
     s1 * 3/2                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIV measure 40 / measure 7]                                     %! _comment_measure_numbers
+    % [C RH_Voice_IV measure 40 / measure 7]                                   %! _comment_measure_numbers
     s1 * 3/4                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIV measure 41 / measure 8]                                     %! _comment_measure_numbers
+    % [C RH_Voice_IV measure 41 / measure 8]                                   %! _comment_measure_numbers
     s1 * 3/4                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIV measure 42 / measure 9]                                     %! _comment_measure_numbers
+    % [C RH_Voice_IV measure 42 / measure 9]                                   %! _comment_measure_numbers
     s1 * 5/4                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIV measure 43 / measure 10]                                    %! _comment_measure_numbers
+    % [C RH_Voice_IV measure 43 / measure 10]                                  %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C RHVoiceIV measure 44 / measure 11]                                    %! _comment_measure_numbers
+    % [C RH_Voice_IV measure 44 / measure 11]                                  %! _comment_measure_numbers
     s1 * 5/4                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIV measure 45 / measure 12]                                    %! _comment_measure_numbers
+    % [C RH_Voice_IV measure 45 / measure 12]                                  %! _comment_measure_numbers
     s1 * 3/4                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIV measure 46 / measure 13]                                    %! _comment_measure_numbers
+    % [C RH_Voice_IV measure 46 / measure 13]                                  %! _comment_measure_numbers
     s1 * 5/4                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIV measure 47 / measure 14]                                    %! _comment_measure_numbers
+    % [C RH_Voice_IV measure 47 / measure 14]                                  %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C RHVoiceIV measure 48 / measure 15]                                    %! _comment_measure_numbers
+    % [C RH_Voice_IV measure 48 / measure 15]                                  %! _comment_measure_numbers
     s1 * 5/4                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIV measure 49 / measure 16]                                    %! _comment_measure_numbers
+    % [C RH_Voice_IV measure 49 / measure 16]                                  %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C RHVoiceIV measure 50 / measure 17]                                    %! _comment_measure_numbers
+    % [C RH_Voice_IV measure 50 / measure 17]                                  %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIV measure 51 / measure 18]                                    %! _comment_measure_numbers
+    % [C RH_Voice_IV measure 51 / measure 18]                                  %! _comment_measure_numbers
     s1 * 7/8                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIV measure 52 / measure 19]                                    %! _comment_measure_numbers
+    % [C RH_Voice_IV measure 52 / measure 19]                                  %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C RHVoiceIV measure 53 / measure 20]                                    %! _comment_measure_numbers
+    % [C RH_Voice_IV measure 53 / measure 20]                                  %! _comment_measure_numbers
     s1 * 1/2                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIV measure 54 / measure 21]                                    %! _comment_measure_numbers
+    % [C RH_Voice_IV measure 54 / measure 21]                                  %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIV measure 55 / measure 22]                                    %! _comment_measure_numbers
+    % [C RH_Voice_IV measure 55 / measure 22]                                  %! _comment_measure_numbers
     s1 * 1/2                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIV measure 56 / measure 23]                                    %! _comment_measure_numbers
+    % [C RH_Voice_IV measure 56 / measure 23]                                  %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C RHVoiceIV measure 57 / measure 24]                                    %! _comment_measure_numbers
+    % [C RH_Voice_IV measure 57 / measure 24]                                  %! _comment_measure_numbers
     s1 * 1/2                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIV measure 58 / measure 25]                                    %! _comment_measure_numbers
+    % [C RH_Voice_IV measure 58 / measure 25]                                  %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C RHVoiceIV measure 59 / measure 26]                                    %! _comment_measure_numbers
+    % [C RH_Voice_IV measure 59 / measure 26]                                  %! _comment_measure_numbers
     s1 * 3/4                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIV measure 60 / measure 27]                                    %! _comment_measure_numbers
+    % [C RH_Voice_IV measure 60 / measure 27]                                  %! _comment_measure_numbers
     s1 * 5/8                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIV measure 61 / measure 28]                                    %! _comment_measure_numbers
+    % [C RH_Voice_IV measure 61 / measure 28]                                  %! _comment_measure_numbers
     s1 * 1/2                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIV measure 62 / measure 29]                                    %! _comment_measure_numbers
+    % [C RH_Voice_IV measure 62 / measure 29]                                  %! _comment_measure_numbers
     s1 * 3/4                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIV measure 63 / measure 30]                                    %! _comment_measure_numbers
+    % [C RH_Voice_IV measure 63 / measure 30]                                  %! _comment_measure_numbers
     s1 * 1/2                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIV measure 64 / measure 31]                                    %! _comment_measure_numbers
+    % [C RH_Voice_IV measure 64 / measure 31]                                  %! _comment_measure_numbers
     s1 * 5/8                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIV measure 65 / measure 32]                                    %! _comment_measure_numbers
+    % [C RH_Voice_IV measure 65 / measure 32]                                  %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIV measure 66 / measure 33]                                    %! _comment_measure_numbers
+    % [C RH_Voice_IV measure 66 / measure 33]                                  %! _comment_measure_numbers
     s1 * 7/4                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIV measure 67 / measure 34]                                    %! _comment_measure_numbers
+    % [C RH_Voice_IV measure 67 / measure 34]                                  %! _comment_measure_numbers
     s1 * 3/2                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIV measure 68 / measure 35]                                    %! _comment_measure_numbers
+    % [C RH_Voice_IV measure 68 / measure 35]                                  %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C RHVoiceIV measure 69 / measure 36]                                    %! _comment_measure_numbers
+    % [C RH_Voice_IV measure 69 / measure 36]                                  %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C RHVoiceIV measure 70 / measure 37]                                    %! _comment_measure_numbers
+    % [C RH_Voice_IV measure 70 / measure 37]                                  %! _comment_measure_numbers
     s1 * 3/2                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIV measure 71 / measure 38]                                    %! _comment_measure_numbers
+    % [C RH_Voice_IV measure 71 / measure 38]                                  %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C RHVoiceIV measure 72 / measure 39]                                    %! _comment_measure_numbers
+    % [C RH_Voice_IV measure 72 / measure 39]                                  %! _comment_measure_numbers
     s1 * 1/2                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIV measure 73 / measure 40]                                    %! _comment_measure_numbers
+    % [C RH_Voice_IV measure 73 / measure 40]                                  %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C RHVoiceIV measure 74 / measure 41]                                    %! _comment_measure_numbers
+    % [C RH_Voice_IV measure 74 / measure 41]                                  %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C RHVoiceIV measure 75 / measure 42]                                    %! _comment_measure_numbers
+    % [C RH_Voice_IV measure 75 / measure 42]                                  %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C RHVoiceIV measure 76 / measure 43]                                    %! _comment_measure_numbers
+    % [C RH_Voice_IV measure 76 / measure 43]                                  %! _comment_measure_numbers
     s1 * 3/2                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIV measure 77 / measure 44]                                    %! _comment_measure_numbers
+    % [C RH_Voice_IV measure 77 / measure 44]                                  %! _comment_measure_numbers
     s1 * 4                                                                     %! _call_rhythm_commands
 
 }                                                                              %! extern
 
 
-C_RHVoiceIVInserts = {                                                         %! extern
+C_RH_Voice_IV_Inserts = {                                                      %! extern
 
-    % [C RHVoiceIVInserts measure 34 / measure 1]                              %! _comment_measure_numbers
+    % [C RH_Voice_IV_Inserts measure 34 / measure 1]                           %! _comment_measure_numbers
     s1 * 3/2                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIVInserts measure 35 / measure 2]                              %! _comment_measure_numbers
+    % [C RH_Voice_IV_Inserts measure 35 / measure 2]                           %! _comment_measure_numbers
     s1 * 3/4                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIVInserts measure 36 / measure 3]                              %! _comment_measure_numbers
+    % [C RH_Voice_IV_Inserts measure 36 / measure 3]                           %! _comment_measure_numbers
     s1 * 3/2                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIVInserts measure 37 / measure 4]                              %! _comment_measure_numbers
+    % [C RH_Voice_IV_Inserts measure 37 / measure 4]                           %! _comment_measure_numbers
     s1 * 9/8                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIVInserts measure 38 / measure 5]                              %! _comment_measure_numbers
+    % [C RH_Voice_IV_Inserts measure 38 / measure 5]                           %! _comment_measure_numbers
     s1 * 3/4                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIVInserts measure 39 / measure 6]                              %! _comment_measure_numbers
+    % [C RH_Voice_IV_Inserts measure 39 / measure 6]                           %! _comment_measure_numbers
     s1 * 3/2                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIVInserts measure 40 / measure 7]                              %! _comment_measure_numbers
+    % [C RH_Voice_IV_Inserts measure 40 / measure 7]                           %! _comment_measure_numbers
     s1 * 3/4                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIVInserts measure 41 / measure 8]                              %! _comment_measure_numbers
+    % [C RH_Voice_IV_Inserts measure 41 / measure 8]                           %! _comment_measure_numbers
     s1 * 3/4                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIVInserts measure 42 / measure 9]                              %! _comment_measure_numbers
+    % [C RH_Voice_IV_Inserts measure 42 / measure 9]                           %! _comment_measure_numbers
     s1 * 5/4                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIVInserts measure 43 / measure 10]                             %! _comment_measure_numbers
+    % [C RH_Voice_IV_Inserts measure 43 / measure 10]                          %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C RHVoiceIVInserts measure 44 / measure 11]                             %! _comment_measure_numbers
+    % [C RH_Voice_IV_Inserts measure 44 / measure 11]                          %! _comment_measure_numbers
     s1 * 5/4                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIVInserts measure 45 / measure 12]                             %! _comment_measure_numbers
+    % [C RH_Voice_IV_Inserts measure 45 / measure 12]                          %! _comment_measure_numbers
     s1 * 3/4                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIVInserts measure 46 / measure 13]                             %! _comment_measure_numbers
+    % [C RH_Voice_IV_Inserts measure 46 / measure 13]                          %! _comment_measure_numbers
     s1 * 5/4                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIVInserts measure 47 / measure 14]                             %! _comment_measure_numbers
+    % [C RH_Voice_IV_Inserts measure 47 / measure 14]                          %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C RHVoiceIVInserts measure 48 / measure 15]                             %! _comment_measure_numbers
+    % [C RH_Voice_IV_Inserts measure 48 / measure 15]                          %! _comment_measure_numbers
     s1 * 5/4                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIVInserts measure 49 / measure 16]                             %! _comment_measure_numbers
+    % [C RH_Voice_IV_Inserts measure 49 / measure 16]                          %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C RHVoiceIVInserts measure 50 / measure 17]                             %! _comment_measure_numbers
+    % [C RH_Voice_IV_Inserts measure 50 / measure 17]                          %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIVInserts measure 51 / measure 18]                             %! _comment_measure_numbers
+    % [C RH_Voice_IV_Inserts measure 51 / measure 18]                          %! _comment_measure_numbers
     s1 * 7/8                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIVInserts measure 52 / measure 19]                             %! _comment_measure_numbers
+    % [C RH_Voice_IV_Inserts measure 52 / measure 19]                          %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C RHVoiceIVInserts measure 53 / measure 20]                             %! _comment_measure_numbers
+    % [C RH_Voice_IV_Inserts measure 53 / measure 20]                          %! _comment_measure_numbers
     s1 * 1/2                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIVInserts measure 54 / measure 21]                             %! _comment_measure_numbers
+    % [C RH_Voice_IV_Inserts measure 54 / measure 21]                          %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIVInserts measure 55 / measure 22]                             %! _comment_measure_numbers
+    % [C RH_Voice_IV_Inserts measure 55 / measure 22]                          %! _comment_measure_numbers
     s1 * 1/2                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIVInserts measure 56 / measure 23]                             %! _comment_measure_numbers
+    % [C RH_Voice_IV_Inserts measure 56 / measure 23]                          %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C RHVoiceIVInserts measure 57 / measure 24]                             %! _comment_measure_numbers
+    % [C RH_Voice_IV_Inserts measure 57 / measure 24]                          %! _comment_measure_numbers
     s1 * 1/2                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIVInserts measure 58 / measure 25]                             %! _comment_measure_numbers
+    % [C RH_Voice_IV_Inserts measure 58 / measure 25]                          %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C RHVoiceIVInserts measure 59 / measure 26]                             %! _comment_measure_numbers
+    % [C RH_Voice_IV_Inserts measure 59 / measure 26]                          %! _comment_measure_numbers
     s1 * 3/4                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIVInserts measure 60 / measure 27]                             %! _comment_measure_numbers
+    % [C RH_Voice_IV_Inserts measure 60 / measure 27]                          %! _comment_measure_numbers
     s1 * 5/8                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIVInserts measure 61 / measure 28]                             %! _comment_measure_numbers
+    % [C RH_Voice_IV_Inserts measure 61 / measure 28]                          %! _comment_measure_numbers
     s1 * 1/2                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIVInserts measure 62 / measure 29]                             %! _comment_measure_numbers
+    % [C RH_Voice_IV_Inserts measure 62 / measure 29]                          %! _comment_measure_numbers
     s1 * 3/4                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIVInserts measure 63 / measure 30]                             %! _comment_measure_numbers
+    % [C RH_Voice_IV_Inserts measure 63 / measure 30]                          %! _comment_measure_numbers
     s1 * 1/2                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIVInserts measure 64 / measure 31]                             %! _comment_measure_numbers
+    % [C RH_Voice_IV_Inserts measure 64 / measure 31]                          %! _comment_measure_numbers
     s1 * 5/8                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIVInserts measure 65 / measure 32]                             %! _comment_measure_numbers
+    % [C RH_Voice_IV_Inserts measure 65 / measure 32]                          %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIVInserts measure 66 / measure 33]                             %! _comment_measure_numbers
+    % [C RH_Voice_IV_Inserts measure 66 / measure 33]                          %! _comment_measure_numbers
     s1 * 7/4                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIVInserts measure 67 / measure 34]                             %! _comment_measure_numbers
+    % [C RH_Voice_IV_Inserts measure 67 / measure 34]                          %! _comment_measure_numbers
     s1 * 3/2                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIVInserts measure 68 / measure 35]                             %! _comment_measure_numbers
+    % [C RH_Voice_IV_Inserts measure 68 / measure 35]                          %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C RHVoiceIVInserts measure 69 / measure 36]                             %! _comment_measure_numbers
+    % [C RH_Voice_IV_Inserts measure 69 / measure 36]                          %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C RHVoiceIVInserts measure 70 / measure 37]                             %! _comment_measure_numbers
+    % [C RH_Voice_IV_Inserts measure 70 / measure 37]                          %! _comment_measure_numbers
     s1 * 3/2                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIVInserts measure 71 / measure 38]                             %! _comment_measure_numbers
+    % [C RH_Voice_IV_Inserts measure 71 / measure 38]                          %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C RHVoiceIVInserts measure 72 / measure 39]                             %! _comment_measure_numbers
+    % [C RH_Voice_IV_Inserts measure 72 / measure 39]                          %! _comment_measure_numbers
     s1 * 1/2                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIVInserts measure 73 / measure 40]                             %! _comment_measure_numbers
+    % [C RH_Voice_IV_Inserts measure 73 / measure 40]                          %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C RHVoiceIVInserts measure 74 / measure 41]                             %! _comment_measure_numbers
+    % [C RH_Voice_IV_Inserts measure 74 / measure 41]                          %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C RHVoiceIVInserts measure 75 / measure 42]                             %! _comment_measure_numbers
+    % [C RH_Voice_IV_Inserts measure 75 / measure 42]                          %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C RHVoiceIVInserts measure 76 / measure 43]                             %! _comment_measure_numbers
+    % [C RH_Voice_IV_Inserts measure 76 / measure 43]                          %! _comment_measure_numbers
     s1 * 3/2                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceIVInserts measure 77 / measure 44]                             %! _comment_measure_numbers
+    % [C RH_Voice_IV_Inserts measure 77 / measure 44]                          %! _comment_measure_numbers
     s1 * 4                                                                     %! _call_rhythm_commands
 
 }                                                                              %! extern
 
 
-C_RHVoiceV = {                                                                 %! extern
+C_RH_Voice_V = {                                                               %! extern
 
-    % [C RHVoiceV measure 34 / measure 1]                                      %! _comment_measure_numbers
+    % [C RH_Voice_V measure 34 / measure 1]                                    %! _comment_measure_numbers
     s1 * 139/8
 
     {
 
         \scaleDurations #'(1 . 1) {
 
-            % [C RHVoiceV measure 50 / measure 17]                             %! _comment_measure_numbers
+            % [C RH_Voice_V measure 50 / measure 17]                           %! _comment_measure_numbers
             <b d' fs'! a'>16
         %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                      %! FIGURE_NAME_MARKUP
@@ -3098,549 +3098,549 @@ C_RHVoiceV = {                                                                 %
 
     }
 
-    % [C RHVoiceV measure 51 / measure 18]                                     %! _comment_measure_numbers
+    % [C RH_Voice_V measure 51 / measure 18]                                   %! _comment_measure_numbers
     s1 * 7/8                                                                   %! _make_measure_silences
 
-    % [C RHVoiceV measure 52 / measure 19]                                     %! _comment_measure_numbers
+    % [C RH_Voice_V measure 52 / measure 19]                                   %! _comment_measure_numbers
     s1 * 1                                                                     %! _make_measure_silences
 
-    % [C RHVoiceV measure 53 / measure 20]                                     %! _comment_measure_numbers
+    % [C RH_Voice_V measure 53 / measure 20]                                   %! _comment_measure_numbers
     s1 * 1/2                                                                   %! _make_measure_silences
 
-    % [C RHVoiceV measure 54 / measure 21]                                     %! _comment_measure_numbers
+    % [C RH_Voice_V measure 54 / measure 21]                                   %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _make_measure_silences
 
-    % [C RHVoiceV measure 55 / measure 22]                                     %! _comment_measure_numbers
+    % [C RH_Voice_V measure 55 / measure 22]                                   %! _comment_measure_numbers
     s1 * 1/2                                                                   %! _make_measure_silences
 
-    % [C RHVoiceV measure 56 / measure 23]                                     %! _comment_measure_numbers
+    % [C RH_Voice_V measure 56 / measure 23]                                   %! _comment_measure_numbers
     s1 * 1                                                                     %! _make_measure_silences
 
-    % [C RHVoiceV measure 57 / measure 24]                                     %! _comment_measure_numbers
+    % [C RH_Voice_V measure 57 / measure 24]                                   %! _comment_measure_numbers
     s1 * 1/2                                                                   %! _make_measure_silences
 
-    % [C RHVoiceV measure 58 / measure 25]                                     %! _comment_measure_numbers
+    % [C RH_Voice_V measure 58 / measure 25]                                   %! _comment_measure_numbers
     s1 * 1                                                                     %! _make_measure_silences
 
-    % [C RHVoiceV measure 59 / measure 26]                                     %! _comment_measure_numbers
+    % [C RH_Voice_V measure 59 / measure 26]                                   %! _comment_measure_numbers
     s1 * 3/4                                                                   %! _make_measure_silences
 
-    % [C RHVoiceV measure 60 / measure 27]                                     %! _comment_measure_numbers
+    % [C RH_Voice_V measure 60 / measure 27]                                   %! _comment_measure_numbers
     s1 * 5/8                                                                   %! _make_measure_silences
 
-    % [C RHVoiceV measure 61 / measure 28]                                     %! _comment_measure_numbers
+    % [C RH_Voice_V measure 61 / measure 28]                                   %! _comment_measure_numbers
     s1 * 1/2                                                                   %! _make_measure_silences
 
-    % [C RHVoiceV measure 62 / measure 29]                                     %! _comment_measure_numbers
+    % [C RH_Voice_V measure 62 / measure 29]                                   %! _comment_measure_numbers
     s1 * 3/4                                                                   %! _make_measure_silences
 
-    % [C RHVoiceV measure 63 / measure 30]                                     %! _comment_measure_numbers
+    % [C RH_Voice_V measure 63 / measure 30]                                   %! _comment_measure_numbers
     s1 * 1/2                                                                   %! _make_measure_silences
 
-    % [C RHVoiceV measure 64 / measure 31]                                     %! _comment_measure_numbers
+    % [C RH_Voice_V measure 64 / measure 31]                                   %! _comment_measure_numbers
     s1 * 5/8                                                                   %! _make_measure_silences
 
-    % [C RHVoiceV measure 65 / measure 32]                                     %! _comment_measure_numbers
+    % [C RH_Voice_V measure 65 / measure 32]                                   %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _make_measure_silences
 
-    % [C RHVoiceV measure 66 / measure 33]                                     %! _comment_measure_numbers
+    % [C RH_Voice_V measure 66 / measure 33]                                   %! _comment_measure_numbers
     s1 * 7/4                                                                   %! _make_measure_silences
 
-    % [C RHVoiceV measure 67 / measure 34]                                     %! _comment_measure_numbers
+    % [C RH_Voice_V measure 67 / measure 34]                                   %! _comment_measure_numbers
     s1 * 3/2                                                                   %! _make_measure_silences
 
-    % [C RHVoiceV measure 68 / measure 35]                                     %! _comment_measure_numbers
+    % [C RH_Voice_V measure 68 / measure 35]                                   %! _comment_measure_numbers
     s1 * 1                                                                     %! _make_measure_silences
 
-    % [C RHVoiceV measure 69 / measure 36]                                     %! _comment_measure_numbers
+    % [C RH_Voice_V measure 69 / measure 36]                                   %! _comment_measure_numbers
     s1 * 1                                                                     %! _make_measure_silences
 
-    % [C RHVoiceV measure 70 / measure 37]                                     %! _comment_measure_numbers
+    % [C RH_Voice_V measure 70 / measure 37]                                   %! _comment_measure_numbers
     s1 * 3/2                                                                   %! _make_measure_silences
 
-    % [C RHVoiceV measure 71 / measure 38]                                     %! _comment_measure_numbers
+    % [C RH_Voice_V measure 71 / measure 38]                                   %! _comment_measure_numbers
     s1 * 1                                                                     %! _make_measure_silences
 
-    % [C RHVoiceV measure 72 / measure 39]                                     %! _comment_measure_numbers
+    % [C RH_Voice_V measure 72 / measure 39]                                   %! _comment_measure_numbers
     s1 * 1/2                                                                   %! _make_measure_silences
 
-    % [C RHVoiceV measure 73 / measure 40]                                     %! _comment_measure_numbers
+    % [C RH_Voice_V measure 73 / measure 40]                                   %! _comment_measure_numbers
     s1 * 1                                                                     %! _make_measure_silences
 
-    % [C RHVoiceV measure 74 / measure 41]                                     %! _comment_measure_numbers
+    % [C RH_Voice_V measure 74 / measure 41]                                   %! _comment_measure_numbers
     s1 * 1                                                                     %! _make_measure_silences
 
-    % [C RHVoiceV measure 75 / measure 42]                                     %! _comment_measure_numbers
+    % [C RH_Voice_V measure 75 / measure 42]                                   %! _comment_measure_numbers
     s1 * 1                                                                     %! _make_measure_silences
 
-    % [C RHVoiceV measure 76 / measure 43]                                     %! _comment_measure_numbers
+    % [C RH_Voice_V measure 76 / measure 43]                                   %! _comment_measure_numbers
     s1 * 3/2                                                                   %! _make_measure_silences
 
-    % [C RHVoiceV measure 77 / measure 44]                                     %! _comment_measure_numbers
+    % [C RH_Voice_V measure 77 / measure 44]                                   %! _comment_measure_numbers
     s1 * 4                                                                     %! _make_measure_silences
 
 }                                                                              %! extern
 
 
-C_RHVoiceVI = {                                                                %! extern
+C_RH_Voice_VI = {                                                              %! extern
 
-    % [C RHVoiceVI measure 34 / measure 1]                                     %! _comment_measure_numbers
+    % [C RH_Voice_VI measure 34 / measure 1]                                   %! _comment_measure_numbers
     s1 * 3/2                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceVI measure 35 / measure 2]                                     %! _comment_measure_numbers
+    % [C RH_Voice_VI measure 35 / measure 2]                                   %! _comment_measure_numbers
     s1 * 3/4                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceVI measure 36 / measure 3]                                     %! _comment_measure_numbers
+    % [C RH_Voice_VI measure 36 / measure 3]                                   %! _comment_measure_numbers
     s1 * 3/2                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceVI measure 37 / measure 4]                                     %! _comment_measure_numbers
+    % [C RH_Voice_VI measure 37 / measure 4]                                   %! _comment_measure_numbers
     s1 * 9/8                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceVI measure 38 / measure 5]                                     %! _comment_measure_numbers
+    % [C RH_Voice_VI measure 38 / measure 5]                                   %! _comment_measure_numbers
     s1 * 3/4                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceVI measure 39 / measure 6]                                     %! _comment_measure_numbers
+    % [C RH_Voice_VI measure 39 / measure 6]                                   %! _comment_measure_numbers
     s1 * 3/2                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceVI measure 40 / measure 7]                                     %! _comment_measure_numbers
+    % [C RH_Voice_VI measure 40 / measure 7]                                   %! _comment_measure_numbers
     s1 * 3/4                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceVI measure 41 / measure 8]                                     %! _comment_measure_numbers
+    % [C RH_Voice_VI measure 41 / measure 8]                                   %! _comment_measure_numbers
     s1 * 3/4                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceVI measure 42 / measure 9]                                     %! _comment_measure_numbers
+    % [C RH_Voice_VI measure 42 / measure 9]                                   %! _comment_measure_numbers
     s1 * 5/4                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceVI measure 43 / measure 10]                                    %! _comment_measure_numbers
+    % [C RH_Voice_VI measure 43 / measure 10]                                  %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C RHVoiceVI measure 44 / measure 11]                                    %! _comment_measure_numbers
+    % [C RH_Voice_VI measure 44 / measure 11]                                  %! _comment_measure_numbers
     s1 * 5/4                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceVI measure 45 / measure 12]                                    %! _comment_measure_numbers
+    % [C RH_Voice_VI measure 45 / measure 12]                                  %! _comment_measure_numbers
     s1 * 3/4                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceVI measure 46 / measure 13]                                    %! _comment_measure_numbers
+    % [C RH_Voice_VI measure 46 / measure 13]                                  %! _comment_measure_numbers
     s1 * 5/4                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceVI measure 47 / measure 14]                                    %! _comment_measure_numbers
+    % [C RH_Voice_VI measure 47 / measure 14]                                  %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C RHVoiceVI measure 48 / measure 15]                                    %! _comment_measure_numbers
+    % [C RH_Voice_VI measure 48 / measure 15]                                  %! _comment_measure_numbers
     s1 * 5/4                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceVI measure 49 / measure 16]                                    %! _comment_measure_numbers
+    % [C RH_Voice_VI measure 49 / measure 16]                                  %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C RHVoiceVI measure 50 / measure 17]                                    %! _comment_measure_numbers
+    % [C RH_Voice_VI measure 50 / measure 17]                                  %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceVI measure 51 / measure 18]                                    %! _comment_measure_numbers
+    % [C RH_Voice_VI measure 51 / measure 18]                                  %! _comment_measure_numbers
     s1 * 7/8                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceVI measure 52 / measure 19]                                    %! _comment_measure_numbers
+    % [C RH_Voice_VI measure 52 / measure 19]                                  %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C RHVoiceVI measure 53 / measure 20]                                    %! _comment_measure_numbers
+    % [C RH_Voice_VI measure 53 / measure 20]                                  %! _comment_measure_numbers
     s1 * 1/2                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceVI measure 54 / measure 21]                                    %! _comment_measure_numbers
+    % [C RH_Voice_VI measure 54 / measure 21]                                  %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceVI measure 55 / measure 22]                                    %! _comment_measure_numbers
+    % [C RH_Voice_VI measure 55 / measure 22]                                  %! _comment_measure_numbers
     s1 * 1/2                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceVI measure 56 / measure 23]                                    %! _comment_measure_numbers
+    % [C RH_Voice_VI measure 56 / measure 23]                                  %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C RHVoiceVI measure 57 / measure 24]                                    %! _comment_measure_numbers
+    % [C RH_Voice_VI measure 57 / measure 24]                                  %! _comment_measure_numbers
     s1 * 1/2                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceVI measure 58 / measure 25]                                    %! _comment_measure_numbers
+    % [C RH_Voice_VI measure 58 / measure 25]                                  %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C RHVoiceVI measure 59 / measure 26]                                    %! _comment_measure_numbers
+    % [C RH_Voice_VI measure 59 / measure 26]                                  %! _comment_measure_numbers
     s1 * 3/4                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceVI measure 60 / measure 27]                                    %! _comment_measure_numbers
+    % [C RH_Voice_VI measure 60 / measure 27]                                  %! _comment_measure_numbers
     s1 * 5/8                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceVI measure 61 / measure 28]                                    %! _comment_measure_numbers
+    % [C RH_Voice_VI measure 61 / measure 28]                                  %! _comment_measure_numbers
     s1 * 1/2                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceVI measure 62 / measure 29]                                    %! _comment_measure_numbers
+    % [C RH_Voice_VI measure 62 / measure 29]                                  %! _comment_measure_numbers
     s1 * 3/4                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceVI measure 63 / measure 30]                                    %! _comment_measure_numbers
+    % [C RH_Voice_VI measure 63 / measure 30]                                  %! _comment_measure_numbers
     s1 * 1/2                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceVI measure 64 / measure 31]                                    %! _comment_measure_numbers
+    % [C RH_Voice_VI measure 64 / measure 31]                                  %! _comment_measure_numbers
     s1 * 5/8                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceVI measure 65 / measure 32]                                    %! _comment_measure_numbers
+    % [C RH_Voice_VI measure 65 / measure 32]                                  %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceVI measure 66 / measure 33]                                    %! _comment_measure_numbers
+    % [C RH_Voice_VI measure 66 / measure 33]                                  %! _comment_measure_numbers
     s1 * 7/4                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceVI measure 67 / measure 34]                                    %! _comment_measure_numbers
+    % [C RH_Voice_VI measure 67 / measure 34]                                  %! _comment_measure_numbers
     s1 * 3/2                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceVI measure 68 / measure 35]                                    %! _comment_measure_numbers
+    % [C RH_Voice_VI measure 68 / measure 35]                                  %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C RHVoiceVI measure 69 / measure 36]                                    %! _comment_measure_numbers
+    % [C RH_Voice_VI measure 69 / measure 36]                                  %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C RHVoiceVI measure 70 / measure 37]                                    %! _comment_measure_numbers
+    % [C RH_Voice_VI measure 70 / measure 37]                                  %! _comment_measure_numbers
     s1 * 3/2                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceVI measure 71 / measure 38]                                    %! _comment_measure_numbers
+    % [C RH_Voice_VI measure 71 / measure 38]                                  %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C RHVoiceVI measure 72 / measure 39]                                    %! _comment_measure_numbers
+    % [C RH_Voice_VI measure 72 / measure 39]                                  %! _comment_measure_numbers
     s1 * 1/2                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceVI measure 73 / measure 40]                                    %! _comment_measure_numbers
+    % [C RH_Voice_VI measure 73 / measure 40]                                  %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C RHVoiceVI measure 74 / measure 41]                                    %! _comment_measure_numbers
+    % [C RH_Voice_VI measure 74 / measure 41]                                  %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C RHVoiceVI measure 75 / measure 42]                                    %! _comment_measure_numbers
+    % [C RH_Voice_VI measure 75 / measure 42]                                  %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C RHVoiceVI measure 76 / measure 43]                                    %! _comment_measure_numbers
+    % [C RH_Voice_VI measure 76 / measure 43]                                  %! _comment_measure_numbers
     s1 * 3/2                                                                   %! _call_rhythm_commands
 
-    % [C RHVoiceVI measure 77 / measure 44]                                    %! _comment_measure_numbers
+    % [C RH_Voice_VI measure 77 / measure 44]                                  %! _comment_measure_numbers
     s1 * 4                                                                     %! _call_rhythm_commands
 
 }                                                                              %! extern
 
 
-C_RHResonanceVoice = {                                                         %! extern
+C_RH_Resonance_Voice = {                                                       %! extern
 
-    % [C RHResonanceVoice measure 34 / measure 1]                              %! _comment_measure_numbers
+    % [C RH_Resonance_Voice measure 34 / measure 1]                            %! _comment_measure_numbers
     s1 * 3/2                                                                   %! _call_rhythm_commands
 
-    % [C RHResonanceVoice measure 35 / measure 2]                              %! _comment_measure_numbers
+    % [C RH_Resonance_Voice measure 35 / measure 2]                            %! _comment_measure_numbers
     s1 * 3/4                                                                   %! _call_rhythm_commands
 
-    % [C RHResonanceVoice measure 36 / measure 3]                              %! _comment_measure_numbers
+    % [C RH_Resonance_Voice measure 36 / measure 3]                            %! _comment_measure_numbers
     s1 * 3/2                                                                   %! _call_rhythm_commands
 
-    % [C RHResonanceVoice measure 37 / measure 4]                              %! _comment_measure_numbers
+    % [C RH_Resonance_Voice measure 37 / measure 4]                            %! _comment_measure_numbers
     s1 * 9/8                                                                   %! _call_rhythm_commands
 
-    % [C RHResonanceVoice measure 38 / measure 5]                              %! _comment_measure_numbers
+    % [C RH_Resonance_Voice measure 38 / measure 5]                            %! _comment_measure_numbers
     s1 * 3/4                                                                   %! _call_rhythm_commands
 
-    % [C RHResonanceVoice measure 39 / measure 6]                              %! _comment_measure_numbers
+    % [C RH_Resonance_Voice measure 39 / measure 6]                            %! _comment_measure_numbers
     s1 * 3/2                                                                   %! _call_rhythm_commands
 
-    % [C RHResonanceVoice measure 40 / measure 7]                              %! _comment_measure_numbers
+    % [C RH_Resonance_Voice measure 40 / measure 7]                            %! _comment_measure_numbers
     s1 * 3/4                                                                   %! _call_rhythm_commands
 
-    % [C RHResonanceVoice measure 41 / measure 8]                              %! _comment_measure_numbers
+    % [C RH_Resonance_Voice measure 41 / measure 8]                            %! _comment_measure_numbers
     s1 * 3/4                                                                   %! _call_rhythm_commands
 
-    % [C RHResonanceVoice measure 42 / measure 9]                              %! _comment_measure_numbers
+    % [C RH_Resonance_Voice measure 42 / measure 9]                            %! _comment_measure_numbers
     s1 * 5/4                                                                   %! _call_rhythm_commands
 
-    % [C RHResonanceVoice measure 43 / measure 10]                             %! _comment_measure_numbers
+    % [C RH_Resonance_Voice measure 43 / measure 10]                           %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C RHResonanceVoice measure 44 / measure 11]                             %! _comment_measure_numbers
+    % [C RH_Resonance_Voice measure 44 / measure 11]                           %! _comment_measure_numbers
     s1 * 5/4                                                                   %! _call_rhythm_commands
 
-    % [C RHResonanceVoice measure 45 / measure 12]                             %! _comment_measure_numbers
+    % [C RH_Resonance_Voice measure 45 / measure 12]                           %! _comment_measure_numbers
     s1 * 3/4                                                                   %! _call_rhythm_commands
 
-    % [C RHResonanceVoice measure 46 / measure 13]                             %! _comment_measure_numbers
+    % [C RH_Resonance_Voice measure 46 / measure 13]                           %! _comment_measure_numbers
     s1 * 5/4                                                                   %! _call_rhythm_commands
 
-    % [C RHResonanceVoice measure 47 / measure 14]                             %! _comment_measure_numbers
+    % [C RH_Resonance_Voice measure 47 / measure 14]                           %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C RHResonanceVoice measure 48 / measure 15]                             %! _comment_measure_numbers
+    % [C RH_Resonance_Voice measure 48 / measure 15]                           %! _comment_measure_numbers
     s1 * 5/4                                                                   %! _call_rhythm_commands
 
-    % [C RHResonanceVoice measure 49 / measure 16]                             %! _comment_measure_numbers
+    % [C RH_Resonance_Voice measure 49 / measure 16]                           %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C RHResonanceVoice measure 50 / measure 17]                             %! _comment_measure_numbers
+    % [C RH_Resonance_Voice measure 50 / measure 17]                           %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
 
-    % [C RHResonanceVoice measure 51 / measure 18]                             %! _comment_measure_numbers
+    % [C RH_Resonance_Voice measure 51 / measure 18]                           %! _comment_measure_numbers
     s1 * 7/8                                                                   %! _call_rhythm_commands
 
-    % [C RHResonanceVoice measure 52 / measure 19]                             %! _comment_measure_numbers
+    % [C RH_Resonance_Voice measure 52 / measure 19]                           %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C RHResonanceVoice measure 53 / measure 20]                             %! _comment_measure_numbers
+    % [C RH_Resonance_Voice measure 53 / measure 20]                           %! _comment_measure_numbers
     s1 * 1/2                                                                   %! _call_rhythm_commands
 
-    % [C RHResonanceVoice measure 54 / measure 21]                             %! _comment_measure_numbers
+    % [C RH_Resonance_Voice measure 54 / measure 21]                           %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
 
-    % [C RHResonanceVoice measure 55 / measure 22]                             %! _comment_measure_numbers
+    % [C RH_Resonance_Voice measure 55 / measure 22]                           %! _comment_measure_numbers
     s1 * 1/2                                                                   %! _call_rhythm_commands
 
-    % [C RHResonanceVoice measure 56 / measure 23]                             %! _comment_measure_numbers
+    % [C RH_Resonance_Voice measure 56 / measure 23]                           %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C RHResonanceVoice measure 57 / measure 24]                             %! _comment_measure_numbers
+    % [C RH_Resonance_Voice measure 57 / measure 24]                           %! _comment_measure_numbers
     s1 * 1/2                                                                   %! _call_rhythm_commands
 
-    % [C RHResonanceVoice measure 58 / measure 25]                             %! _comment_measure_numbers
+    % [C RH_Resonance_Voice measure 58 / measure 25]                           %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C RHResonanceVoice measure 59 / measure 26]                             %! _comment_measure_numbers
+    % [C RH_Resonance_Voice measure 59 / measure 26]                           %! _comment_measure_numbers
     s1 * 3/4                                                                   %! _call_rhythm_commands
 
-    % [C RHResonanceVoice measure 60 / measure 27]                             %! _comment_measure_numbers
+    % [C RH_Resonance_Voice measure 60 / measure 27]                           %! _comment_measure_numbers
     s1 * 5/8                                                                   %! _call_rhythm_commands
 
-    % [C RHResonanceVoice measure 61 / measure 28]                             %! _comment_measure_numbers
+    % [C RH_Resonance_Voice measure 61 / measure 28]                           %! _comment_measure_numbers
     s1 * 1/2                                                                   %! _call_rhythm_commands
 
-    % [C RHResonanceVoice measure 62 / measure 29]                             %! _comment_measure_numbers
+    % [C RH_Resonance_Voice measure 62 / measure 29]                           %! _comment_measure_numbers
     s1 * 3/4                                                                   %! _call_rhythm_commands
 
-    % [C RHResonanceVoice measure 63 / measure 30]                             %! _comment_measure_numbers
+    % [C RH_Resonance_Voice measure 63 / measure 30]                           %! _comment_measure_numbers
     s1 * 1/2                                                                   %! _call_rhythm_commands
 
-    % [C RHResonanceVoice measure 64 / measure 31]                             %! _comment_measure_numbers
+    % [C RH_Resonance_Voice measure 64 / measure 31]                           %! _comment_measure_numbers
     s1 * 5/8                                                                   %! _call_rhythm_commands
 
-    % [C RHResonanceVoice measure 65 / measure 32]                             %! _comment_measure_numbers
+    % [C RH_Resonance_Voice measure 65 / measure 32]                           %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
 
-    % [C RHResonanceVoice measure 66 / measure 33]                             %! _comment_measure_numbers
+    % [C RH_Resonance_Voice measure 66 / measure 33]                           %! _comment_measure_numbers
     s1 * 7/4                                                                   %! _call_rhythm_commands
 
-    % [C RHResonanceVoice measure 67 / measure 34]                             %! _comment_measure_numbers
+    % [C RH_Resonance_Voice measure 67 / measure 34]                           %! _comment_measure_numbers
     s1 * 3/2                                                                   %! _call_rhythm_commands
 
-    % [C RHResonanceVoice measure 68 / measure 35]                             %! _comment_measure_numbers
+    % [C RH_Resonance_Voice measure 68 / measure 35]                           %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C RHResonanceVoice measure 69 / measure 36]                             %! _comment_measure_numbers
+    % [C RH_Resonance_Voice measure 69 / measure 36]                           %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C RHResonanceVoice measure 70 / measure 37]                             %! _comment_measure_numbers
+    % [C RH_Resonance_Voice measure 70 / measure 37]                           %! _comment_measure_numbers
     s1 * 3/2                                                                   %! _call_rhythm_commands
 
-    % [C RHResonanceVoice measure 71 / measure 38]                             %! _comment_measure_numbers
+    % [C RH_Resonance_Voice measure 71 / measure 38]                           %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C RHResonanceVoice measure 72 / measure 39]                             %! _comment_measure_numbers
+    % [C RH_Resonance_Voice measure 72 / measure 39]                           %! _comment_measure_numbers
     s1 * 1/2                                                                   %! _call_rhythm_commands
 
-    % [C RHResonanceVoice measure 73 / measure 40]                             %! _comment_measure_numbers
+    % [C RH_Resonance_Voice measure 73 / measure 40]                           %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C RHResonanceVoice measure 74 / measure 41]                             %! _comment_measure_numbers
+    % [C RH_Resonance_Voice measure 74 / measure 41]                           %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C RHResonanceVoice measure 75 / measure 42]                             %! _comment_measure_numbers
+    % [C RH_Resonance_Voice measure 75 / measure 42]                           %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C RHResonanceVoice measure 76 / measure 43]                             %! _comment_measure_numbers
+    % [C RH_Resonance_Voice measure 76 / measure 43]                           %! _comment_measure_numbers
     s1 * 3/2                                                                   %! _call_rhythm_commands
 
-    % [C RHResonanceVoice measure 77 / measure 44]                             %! _comment_measure_numbers
+    % [C RH_Resonance_Voice measure 77 / measure 44]                           %! _comment_measure_numbers
     s1 * 4                                                                     %! _call_rhythm_commands
 
 }                                                                              %! extern
 
 
-C_PianoMusicRHStaff = <<                                                       %! extern
+C_Piano_Music_RH_Staff = <<                                                    %! extern
 
-    \context RHVoiceI = "RHVoiceI"                                             %! ScoreTemplate
-    \C_RHVoiceI                                                                %! extern
+    \context RHVoiceI = "RH_Voice_I"                                           %! ScoreTemplate
+    \C_RH_Voice_I                                                              %! extern
 
-    \context RHVoiceIInserts = "RHVoiceIInserts"                               %! ScoreTemplate
-    \C_RHVoiceIInserts                                                         %! extern
+    \context RHVoiceIInserts = "RH_Voice_I_Inserts"                            %! ScoreTemplate
+    \C_RH_Voice_I_Inserts                                                      %! extern
 
-    \context RHVoiceII = "RHVoiceII"                                           %! ScoreTemplate
-    \C_RHVoiceII                                                               %! extern
+    \context RHVoiceII = "RH_Voice_II"                                         %! ScoreTemplate
+    \C_RH_Voice_II                                                             %! extern
 
-    \context RHVoiceIIInserts = "RHVoiceIIInserts"                             %! ScoreTemplate
-    \C_RHVoiceIIInserts                                                        %! extern
+    \context RHVoiceIIInserts = "RH_Voice_II_Inserts"                          %! ScoreTemplate
+    \C_RH_Voice_II_Inserts                                                     %! extern
 
-    \context RHVoiceIII = "RHVoiceIII"                                         %! ScoreTemplate
-    \C_RHVoiceIII                                                              %! extern
+    \context RHVoiceIII = "RH_Voice_III"                                       %! ScoreTemplate
+    \C_RH_Voice_III                                                            %! extern
 
-    \context RHVoiceIIIInserts = "RHVoiceIIIInserts"                           %! ScoreTemplate
-    \C_RHVoiceIIIInserts                                                       %! extern
+    \context RHVoiceIIIInserts = "RH_Voice_III_Inserts"                        %! ScoreTemplate
+    \C_RH_Voice_III_Inserts                                                    %! extern
 
-    \context RHVoiceIV = "RHVoiceIV"                                           %! ScoreTemplate
-    \C_RHVoiceIV                                                               %! extern
+    \context RHVoiceIV = "RH_Voice_IV"                                         %! ScoreTemplate
+    \C_RH_Voice_IV                                                             %! extern
 
-    \context RHVoiceIVInserts = "RHVoiceIVInserts"                             %! ScoreTemplate
-    \C_RHVoiceIVInserts                                                        %! extern
+    \context RHVoiceIVInserts = "RH_Voice_IV_Inserts"                          %! ScoreTemplate
+    \C_RH_Voice_IV_Inserts                                                     %! extern
 
-    \context RHVoiceV = "RHVoiceV"                                             %! ScoreTemplate
-    \C_RHVoiceV                                                                %! extern
+    \context RHVoiceV = "RH_Voice_V"                                           %! ScoreTemplate
+    \C_RH_Voice_V                                                              %! extern
 
-    \context RHVoiceVI = "RHVoiceVI"                                           %! ScoreTemplate
-    \C_RHVoiceVI                                                               %! extern
+    \context RHVoiceVI = "RH_Voice_VI"                                         %! ScoreTemplate
+    \C_RH_Voice_VI                                                             %! extern
 
-    \context RHResonanceVoice = "RHResonanceVoice"                             %! ScoreTemplate
-    \C_RHResonanceVoice                                                        %! extern
+    \context RHResonanceVoice = "RH_Resonance_Voice"                           %! ScoreTemplate
+    \C_RH_Resonance_Voice                                                      %! extern
 
 >>                                                                             %! extern
 
 
-C_LHVoiceI = {                                                                 %! extern
+C_LH_Voice_I = {                                                               %! extern
 
-    % [C LHVoiceI measure 34 / measure 1]                                      %! _comment_measure_numbers
+    % [C LH_Voice_I measure 34 / measure 1]                                    %! _comment_measure_numbers
     s1 * 3/2                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceI measure 35 / measure 2]                                      %! _comment_measure_numbers
+    % [C LH_Voice_I measure 35 / measure 2]                                    %! _comment_measure_numbers
     s1 * 3/4                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceI measure 36 / measure 3]                                      %! _comment_measure_numbers
+    % [C LH_Voice_I measure 36 / measure 3]                                    %! _comment_measure_numbers
     s1 * 3/2                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceI measure 37 / measure 4]                                      %! _comment_measure_numbers
+    % [C LH_Voice_I measure 37 / measure 4]                                    %! _comment_measure_numbers
     s1 * 9/8                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceI measure 38 / measure 5]                                      %! _comment_measure_numbers
+    % [C LH_Voice_I measure 38 / measure 5]                                    %! _comment_measure_numbers
     s1 * 3/4                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceI measure 39 / measure 6]                                      %! _comment_measure_numbers
+    % [C LH_Voice_I measure 39 / measure 6]                                    %! _comment_measure_numbers
     s1 * 3/2                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceI measure 40 / measure 7]                                      %! _comment_measure_numbers
+    % [C LH_Voice_I measure 40 / measure 7]                                    %! _comment_measure_numbers
     s1 * 3/4                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceI measure 41 / measure 8]                                      %! _comment_measure_numbers
+    % [C LH_Voice_I measure 41 / measure 8]                                    %! _comment_measure_numbers
     s1 * 3/4                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceI measure 42 / measure 9]                                      %! _comment_measure_numbers
+    % [C LH_Voice_I measure 42 / measure 9]                                    %! _comment_measure_numbers
     s1 * 5/4                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceI measure 43 / measure 10]                                     %! _comment_measure_numbers
+    % [C LH_Voice_I measure 43 / measure 10]                                   %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C LHVoiceI measure 44 / measure 11]                                     %! _comment_measure_numbers
+    % [C LH_Voice_I measure 44 / measure 11]                                   %! _comment_measure_numbers
     s1 * 5/4                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceI measure 45 / measure 12]                                     %! _comment_measure_numbers
+    % [C LH_Voice_I measure 45 / measure 12]                                   %! _comment_measure_numbers
     s1 * 3/4                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceI measure 46 / measure 13]                                     %! _comment_measure_numbers
+    % [C LH_Voice_I measure 46 / measure 13]                                   %! _comment_measure_numbers
     s1 * 5/4                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceI measure 47 / measure 14]                                     %! _comment_measure_numbers
+    % [C LH_Voice_I measure 47 / measure 14]                                   %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C LHVoiceI measure 48 / measure 15]                                     %! _comment_measure_numbers
+    % [C LH_Voice_I measure 48 / measure 15]                                   %! _comment_measure_numbers
     s1 * 5/4                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceI measure 49 / measure 16]                                     %! _comment_measure_numbers
+    % [C LH_Voice_I measure 49 / measure 16]                                   %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C LHVoiceI measure 50 / measure 17]                                     %! _comment_measure_numbers
+    % [C LH_Voice_I measure 50 / measure 17]                                   %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceI measure 51 / measure 18]                                     %! _comment_measure_numbers
+    % [C LH_Voice_I measure 51 / measure 18]                                   %! _comment_measure_numbers
     s1 * 7/8                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceI measure 52 / measure 19]                                     %! _comment_measure_numbers
+    % [C LH_Voice_I measure 52 / measure 19]                                   %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C LHVoiceI measure 53 / measure 20]                                     %! _comment_measure_numbers
+    % [C LH_Voice_I measure 53 / measure 20]                                   %! _comment_measure_numbers
     s1 * 1/2                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceI measure 54 / measure 21]                                     %! _comment_measure_numbers
+    % [C LH_Voice_I measure 54 / measure 21]                                   %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceI measure 55 / measure 22]                                     %! _comment_measure_numbers
+    % [C LH_Voice_I measure 55 / measure 22]                                   %! _comment_measure_numbers
     s1 * 1/2                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceI measure 56 / measure 23]                                     %! _comment_measure_numbers
+    % [C LH_Voice_I measure 56 / measure 23]                                   %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C LHVoiceI measure 57 / measure 24]                                     %! _comment_measure_numbers
+    % [C LH_Voice_I measure 57 / measure 24]                                   %! _comment_measure_numbers
     s1 * 1/2                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceI measure 58 / measure 25]                                     %! _comment_measure_numbers
+    % [C LH_Voice_I measure 58 / measure 25]                                   %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C LHVoiceI measure 59 / measure 26]                                     %! _comment_measure_numbers
+    % [C LH_Voice_I measure 59 / measure 26]                                   %! _comment_measure_numbers
     s1 * 3/4                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceI measure 60 / measure 27]                                     %! _comment_measure_numbers
+    % [C LH_Voice_I measure 60 / measure 27]                                   %! _comment_measure_numbers
     s1 * 5/8                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceI measure 61 / measure 28]                                     %! _comment_measure_numbers
+    % [C LH_Voice_I measure 61 / measure 28]                                   %! _comment_measure_numbers
     s1 * 1/2                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceI measure 62 / measure 29]                                     %! _comment_measure_numbers
+    % [C LH_Voice_I measure 62 / measure 29]                                   %! _comment_measure_numbers
     s1 * 3/4                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceI measure 63 / measure 30]                                     %! _comment_measure_numbers
+    % [C LH_Voice_I measure 63 / measure 30]                                   %! _comment_measure_numbers
     s1 * 1/2                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceI measure 64 / measure 31]                                     %! _comment_measure_numbers
+    % [C LH_Voice_I measure 64 / measure 31]                                   %! _comment_measure_numbers
     s1 * 5/8                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceI measure 65 / measure 32]                                     %! _comment_measure_numbers
+    % [C LH_Voice_I measure 65 / measure 32]                                   %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceI measure 66 / measure 33]                                     %! _comment_measure_numbers
+    % [C LH_Voice_I measure 66 / measure 33]                                   %! _comment_measure_numbers
     s1 * 7/4                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceI measure 67 / measure 34]                                     %! _comment_measure_numbers
+    % [C LH_Voice_I measure 67 / measure 34]                                   %! _comment_measure_numbers
     s1 * 3/2                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceI measure 68 / measure 35]                                     %! _comment_measure_numbers
+    % [C LH_Voice_I measure 68 / measure 35]                                   %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C LHVoiceI measure 69 / measure 36]                                     %! _comment_measure_numbers
+    % [C LH_Voice_I measure 69 / measure 36]                                   %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C LHVoiceI measure 70 / measure 37]                                     %! _comment_measure_numbers
+    % [C LH_Voice_I measure 70 / measure 37]                                   %! _comment_measure_numbers
     s1 * 3/2                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceI measure 71 / measure 38]                                     %! _comment_measure_numbers
+    % [C LH_Voice_I measure 71 / measure 38]                                   %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C LHVoiceI measure 72 / measure 39]                                     %! _comment_measure_numbers
+    % [C LH_Voice_I measure 72 / measure 39]                                   %! _comment_measure_numbers
     s1 * 1/2                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceI measure 73 / measure 40]                                     %! _comment_measure_numbers
+    % [C LH_Voice_I measure 73 / measure 40]                                   %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C LHVoiceI measure 74 / measure 41]                                     %! _comment_measure_numbers
+    % [C LH_Voice_I measure 74 / measure 41]                                   %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C LHVoiceI measure 75 / measure 42]                                     %! _comment_measure_numbers
+    % [C LH_Voice_I measure 75 / measure 42]                                   %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C LHVoiceI measure 76 / measure 43]                                     %! _comment_measure_numbers
+    % [C LH_Voice_I measure 76 / measure 43]                                   %! _comment_measure_numbers
     s1 * 3/2                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceI measure 77 / measure 44]                                     %! _comment_measure_numbers
+    % [C LH_Voice_I measure 77 / measure 44]                                   %! _comment_measure_numbers
     s1 * 4                                                                     %! _call_rhythm_commands
 
 }                                                                              %! extern
 
 
-C_LHVoiceII = {                                                                %! extern
+C_LH_Voice_II = {                                                              %! extern
 
-    % [C LHVoiceII measure 34 / measure 1]                                     %! _comment_measure_numbers
+    % [C LH_Voice_II measure 34 / measure 1]                                   %! _comment_measure_numbers
     s1 * 71/2
 
     {
 
         \scaleDurations #'(1 . 1) {
 
-            % [C LHVoiceII measure 73 / measure 40]                            %! _comment_measure_numbers
+            % [C LH_Voice_II measure 73 / measure 40]                          %! _comment_measure_numbers
             \override Staff.SustainPedalLineSpanner.staff-padding = #4         %! baca_sustain_pedal_staff_padding:OverrideCommand(1)
             \override Rest.transparent = ##t                                   %! baca_rest_transparent:OverrideCommand(1)
             \set Staff.pedalSustainStyle = #'bracket                           %! baca_sustain_pedal:SpannerCommand
@@ -3664,13 +3664,13 @@ C_LHVoiceII = {                                                                %
         %%%     }                                                              %! FIGURE_NAME_MARKUP
             \sustainOn                                                         %! baca_sustain_pedal:SpannerCommand
 
-            % [C LHVoiceII measure 74 / measure 41]                            %! _comment_measure_numbers
+            % [C LH_Voice_II measure 74 / measure 41]                          %! _comment_measure_numbers
             \set Staff.pedalSustainStyle = #'bracket                           %! baca_sustain_pedal:SpannerCommand
             r1
             \sustainOff                                                        %! baca_sustain_pedal:SpannerCommand
             \sustainOn                                                         %! baca_sustain_pedal:SpannerCommand
 
-            % [C LHVoiceII measure 75 / measure 42]                            %! _comment_measure_numbers
+            % [C LH_Voice_II measure 75 / measure 42]                          %! _comment_measure_numbers
             r1
             \sustainOff                                                        %! baca_sustain_pedal:SpannerCommand
             \revert Staff.SustainPedalLineSpanner.staff-padding                %! baca_sustain_pedal_staff_padding:OverrideCommand(2)
@@ -3680,155 +3680,155 @@ C_LHVoiceII = {                                                                %
 
     }
 
-    % [C LHVoiceII measure 76 / measure 43]                                    %! _comment_measure_numbers
+    % [C LH_Voice_II measure 76 / measure 43]                                  %! _comment_measure_numbers
     s1 * 3/2                                                                   %! _make_measure_silences
 
-    % [C LHVoiceII measure 77 / measure 44]                                    %! _comment_measure_numbers
+    % [C LH_Voice_II measure 77 / measure 44]                                  %! _comment_measure_numbers
     s1 * 4                                                                     %! _make_measure_silences
 
 }                                                                              %! extern
 
 
-C_LHVoiceIII = {                                                               %! extern
+C_LH_Voice_III = {                                                             %! extern
 
-    % [C LHVoiceIII measure 34 / measure 1]                                    %! _comment_measure_numbers
+    % [C LH_Voice_III measure 34 / measure 1]                                  %! _comment_measure_numbers
     s1 * 3/2                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceIII measure 35 / measure 2]                                    %! _comment_measure_numbers
+    % [C LH_Voice_III measure 35 / measure 2]                                  %! _comment_measure_numbers
     s1 * 3/4                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceIII measure 36 / measure 3]                                    %! _comment_measure_numbers
+    % [C LH_Voice_III measure 36 / measure 3]                                  %! _comment_measure_numbers
     s1 * 3/2                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceIII measure 37 / measure 4]                                    %! _comment_measure_numbers
+    % [C LH_Voice_III measure 37 / measure 4]                                  %! _comment_measure_numbers
     s1 * 9/8                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceIII measure 38 / measure 5]                                    %! _comment_measure_numbers
+    % [C LH_Voice_III measure 38 / measure 5]                                  %! _comment_measure_numbers
     s1 * 3/4                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceIII measure 39 / measure 6]                                    %! _comment_measure_numbers
+    % [C LH_Voice_III measure 39 / measure 6]                                  %! _comment_measure_numbers
     s1 * 3/2                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceIII measure 40 / measure 7]                                    %! _comment_measure_numbers
+    % [C LH_Voice_III measure 40 / measure 7]                                  %! _comment_measure_numbers
     s1 * 3/4                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceIII measure 41 / measure 8]                                    %! _comment_measure_numbers
+    % [C LH_Voice_III measure 41 / measure 8]                                  %! _comment_measure_numbers
     s1 * 3/4                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceIII measure 42 / measure 9]                                    %! _comment_measure_numbers
+    % [C LH_Voice_III measure 42 / measure 9]                                  %! _comment_measure_numbers
     s1 * 5/4                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceIII measure 43 / measure 10]                                   %! _comment_measure_numbers
+    % [C LH_Voice_III measure 43 / measure 10]                                 %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C LHVoiceIII measure 44 / measure 11]                                   %! _comment_measure_numbers
+    % [C LH_Voice_III measure 44 / measure 11]                                 %! _comment_measure_numbers
     s1 * 5/4                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceIII measure 45 / measure 12]                                   %! _comment_measure_numbers
+    % [C LH_Voice_III measure 45 / measure 12]                                 %! _comment_measure_numbers
     s1 * 3/4                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceIII measure 46 / measure 13]                                   %! _comment_measure_numbers
+    % [C LH_Voice_III measure 46 / measure 13]                                 %! _comment_measure_numbers
     s1 * 5/4                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceIII measure 47 / measure 14]                                   %! _comment_measure_numbers
+    % [C LH_Voice_III measure 47 / measure 14]                                 %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C LHVoiceIII measure 48 / measure 15]                                   %! _comment_measure_numbers
+    % [C LH_Voice_III measure 48 / measure 15]                                 %! _comment_measure_numbers
     s1 * 5/4                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceIII measure 49 / measure 16]                                   %! _comment_measure_numbers
+    % [C LH_Voice_III measure 49 / measure 16]                                 %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C LHVoiceIII measure 50 / measure 17]                                   %! _comment_measure_numbers
+    % [C LH_Voice_III measure 50 / measure 17]                                 %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceIII measure 51 / measure 18]                                   %! _comment_measure_numbers
+    % [C LH_Voice_III measure 51 / measure 18]                                 %! _comment_measure_numbers
     s1 * 7/8                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceIII measure 52 / measure 19]                                   %! _comment_measure_numbers
+    % [C LH_Voice_III measure 52 / measure 19]                                 %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C LHVoiceIII measure 53 / measure 20]                                   %! _comment_measure_numbers
+    % [C LH_Voice_III measure 53 / measure 20]                                 %! _comment_measure_numbers
     s1 * 1/2                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceIII measure 54 / measure 21]                                   %! _comment_measure_numbers
+    % [C LH_Voice_III measure 54 / measure 21]                                 %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceIII measure 55 / measure 22]                                   %! _comment_measure_numbers
+    % [C LH_Voice_III measure 55 / measure 22]                                 %! _comment_measure_numbers
     s1 * 1/2                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceIII measure 56 / measure 23]                                   %! _comment_measure_numbers
+    % [C LH_Voice_III measure 56 / measure 23]                                 %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C LHVoiceIII measure 57 / measure 24]                                   %! _comment_measure_numbers
+    % [C LH_Voice_III measure 57 / measure 24]                                 %! _comment_measure_numbers
     s1 * 1/2                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceIII measure 58 / measure 25]                                   %! _comment_measure_numbers
+    % [C LH_Voice_III measure 58 / measure 25]                                 %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C LHVoiceIII measure 59 / measure 26]                                   %! _comment_measure_numbers
+    % [C LH_Voice_III measure 59 / measure 26]                                 %! _comment_measure_numbers
     s1 * 3/4                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceIII measure 60 / measure 27]                                   %! _comment_measure_numbers
+    % [C LH_Voice_III measure 60 / measure 27]                                 %! _comment_measure_numbers
     s1 * 5/8                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceIII measure 61 / measure 28]                                   %! _comment_measure_numbers
+    % [C LH_Voice_III measure 61 / measure 28]                                 %! _comment_measure_numbers
     s1 * 1/2                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceIII measure 62 / measure 29]                                   %! _comment_measure_numbers
+    % [C LH_Voice_III measure 62 / measure 29]                                 %! _comment_measure_numbers
     s1 * 3/4                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceIII measure 63 / measure 30]                                   %! _comment_measure_numbers
+    % [C LH_Voice_III measure 63 / measure 30]                                 %! _comment_measure_numbers
     s1 * 1/2                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceIII measure 64 / measure 31]                                   %! _comment_measure_numbers
+    % [C LH_Voice_III measure 64 / measure 31]                                 %! _comment_measure_numbers
     s1 * 5/8                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceIII measure 65 / measure 32]                                   %! _comment_measure_numbers
+    % [C LH_Voice_III measure 65 / measure 32]                                 %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceIII measure 66 / measure 33]                                   %! _comment_measure_numbers
+    % [C LH_Voice_III measure 66 / measure 33]                                 %! _comment_measure_numbers
     s1 * 7/4                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceIII measure 67 / measure 34]                                   %! _comment_measure_numbers
+    % [C LH_Voice_III measure 67 / measure 34]                                 %! _comment_measure_numbers
     s1 * 3/2                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceIII measure 68 / measure 35]                                   %! _comment_measure_numbers
+    % [C LH_Voice_III measure 68 / measure 35]                                 %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C LHVoiceIII measure 69 / measure 36]                                   %! _comment_measure_numbers
+    % [C LH_Voice_III measure 69 / measure 36]                                 %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C LHVoiceIII measure 70 / measure 37]                                   %! _comment_measure_numbers
+    % [C LH_Voice_III measure 70 / measure 37]                                 %! _comment_measure_numbers
     s1 * 3/2                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceIII measure 71 / measure 38]                                   %! _comment_measure_numbers
+    % [C LH_Voice_III measure 71 / measure 38]                                 %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C LHVoiceIII measure 72 / measure 39]                                   %! _comment_measure_numbers
+    % [C LH_Voice_III measure 72 / measure 39]                                 %! _comment_measure_numbers
     s1 * 1/2                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceIII measure 73 / measure 40]                                   %! _comment_measure_numbers
+    % [C LH_Voice_III measure 73 / measure 40]                                 %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C LHVoiceIII measure 74 / measure 41]                                   %! _comment_measure_numbers
+    % [C LH_Voice_III measure 74 / measure 41]                                 %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C LHVoiceIII measure 75 / measure 42]                                   %! _comment_measure_numbers
+    % [C LH_Voice_III measure 75 / measure 42]                                 %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C LHVoiceIII measure 76 / measure 43]                                   %! _comment_measure_numbers
+    % [C LH_Voice_III measure 76 / measure 43]                                 %! _comment_measure_numbers
     s1 * 3/2                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceIII measure 77 / measure 44]                                   %! _comment_measure_numbers
+    % [C LH_Voice_III measure 77 / measure 44]                                 %! _comment_measure_numbers
     s1 * 4                                                                     %! _call_rhythm_commands
 
 }                                                                              %! extern
 
 
-C_LHVoiceIV = {                                                                %! extern
+C_LH_Voice_IV = {                                                              %! extern
 
-    % [C LHVoiceIV measure 34 / measure 1]                                     %! _comment_measure_numbers
+    % [C LH_Voice_IV measure 34 / measure 1]                                   %! _comment_measure_numbers
     s1 * 15/4
     - \tweak color #(x11-color 'green4)                                        %! REAPPLIED_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \ff                                                                        %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
@@ -3837,7 +3837,7 @@ C_LHVoiceIV = {                                                                %
 
         \scaleDurations #'(1 . 1) {
 
-            % [C LHVoiceIV measure 37 / measure 4]                             %! _comment_measure_numbers
+            % [C LH_Voice_IV measure 37 / measure 4]                           %! _comment_measure_numbers
             \override Slur.direction = #up                                     %! baca_slur_up:OverrideCommand(1)
             b'8.
             - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
@@ -3877,273 +3877,273 @@ C_LHVoiceIV = {                                                                %
 
     }
 
-    % [C LHVoiceIV measure 38 / measure 5]                                     %! _comment_measure_numbers
+    % [C LH_Voice_IV measure 38 / measure 5]                                   %! _comment_measure_numbers
     s1 * 3/4                                                                   %! _make_measure_silences
 
-    % [C LHVoiceIV measure 39 / measure 6]                                     %! _comment_measure_numbers
+    % [C LH_Voice_IV measure 39 / measure 6]                                   %! _comment_measure_numbers
     s1 * 3/2                                                                   %! _make_measure_silences
 
-    % [C LHVoiceIV measure 40 / measure 7]                                     %! _comment_measure_numbers
+    % [C LH_Voice_IV measure 40 / measure 7]                                   %! _comment_measure_numbers
     s1 * 3/4                                                                   %! _make_measure_silences
 
-    % [C LHVoiceIV measure 41 / measure 8]                                     %! _comment_measure_numbers
+    % [C LH_Voice_IV measure 41 / measure 8]                                   %! _comment_measure_numbers
     s1 * 3/4                                                                   %! _make_measure_silences
 
-    % [C LHVoiceIV measure 42 / measure 9]                                     %! _comment_measure_numbers
+    % [C LH_Voice_IV measure 42 / measure 9]                                   %! _comment_measure_numbers
     s1 * 5/4                                                                   %! _make_measure_silences
 
-    % [C LHVoiceIV measure 43 / measure 10]                                    %! _comment_measure_numbers
+    % [C LH_Voice_IV measure 43 / measure 10]                                  %! _comment_measure_numbers
     s1 * 1                                                                     %! _make_measure_silences
 
-    % [C LHVoiceIV measure 44 / measure 11]                                    %! _comment_measure_numbers
+    % [C LH_Voice_IV measure 44 / measure 11]                                  %! _comment_measure_numbers
     s1 * 5/4                                                                   %! _make_measure_silences
 
-    % [C LHVoiceIV measure 45 / measure 12]                                    %! _comment_measure_numbers
+    % [C LH_Voice_IV measure 45 / measure 12]                                  %! _comment_measure_numbers
     s1 * 3/4                                                                   %! _make_measure_silences
 
-    % [C LHVoiceIV measure 46 / measure 13]                                    %! _comment_measure_numbers
+    % [C LH_Voice_IV measure 46 / measure 13]                                  %! _comment_measure_numbers
     s1 * 5/4                                                                   %! _make_measure_silences
 
-    % [C LHVoiceIV measure 47 / measure 14]                                    %! _comment_measure_numbers
+    % [C LH_Voice_IV measure 47 / measure 14]                                  %! _comment_measure_numbers
     s1 * 1                                                                     %! _make_measure_silences
 
-    % [C LHVoiceIV measure 48 / measure 15]                                    %! _comment_measure_numbers
+    % [C LH_Voice_IV measure 48 / measure 15]                                  %! _comment_measure_numbers
     s1 * 5/4                                                                   %! _make_measure_silences
 
-    % [C LHVoiceIV measure 49 / measure 16]                                    %! _comment_measure_numbers
+    % [C LH_Voice_IV measure 49 / measure 16]                                  %! _comment_measure_numbers
     s1 * 1                                                                     %! _make_measure_silences
 
-    % [C LHVoiceIV measure 50 / measure 17]                                    %! _comment_measure_numbers
+    % [C LH_Voice_IV measure 50 / measure 17]                                  %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _make_measure_silences
 
-    % [C LHVoiceIV measure 51 / measure 18]                                    %! _comment_measure_numbers
+    % [C LH_Voice_IV measure 51 / measure 18]                                  %! _comment_measure_numbers
     s1 * 7/8                                                                   %! _make_measure_silences
 
-    % [C LHVoiceIV measure 52 / measure 19]                                    %! _comment_measure_numbers
+    % [C LH_Voice_IV measure 52 / measure 19]                                  %! _comment_measure_numbers
     s1 * 1                                                                     %! _make_measure_silences
 
-    % [C LHVoiceIV measure 53 / measure 20]                                    %! _comment_measure_numbers
+    % [C LH_Voice_IV measure 53 / measure 20]                                  %! _comment_measure_numbers
     s1 * 1/2                                                                   %! _make_measure_silences
 
-    % [C LHVoiceIV measure 54 / measure 21]                                    %! _comment_measure_numbers
+    % [C LH_Voice_IV measure 54 / measure 21]                                  %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _make_measure_silences
 
-    % [C LHVoiceIV measure 55 / measure 22]                                    %! _comment_measure_numbers
+    % [C LH_Voice_IV measure 55 / measure 22]                                  %! _comment_measure_numbers
     s1 * 1/2                                                                   %! _make_measure_silences
 
-    % [C LHVoiceIV measure 56 / measure 23]                                    %! _comment_measure_numbers
+    % [C LH_Voice_IV measure 56 / measure 23]                                  %! _comment_measure_numbers
     s1 * 1                                                                     %! _make_measure_silences
 
-    % [C LHVoiceIV measure 57 / measure 24]                                    %! _comment_measure_numbers
+    % [C LH_Voice_IV measure 57 / measure 24]                                  %! _comment_measure_numbers
     s1 * 1/2                                                                   %! _make_measure_silences
 
-    % [C LHVoiceIV measure 58 / measure 25]                                    %! _comment_measure_numbers
+    % [C LH_Voice_IV measure 58 / measure 25]                                  %! _comment_measure_numbers
     s1 * 1                                                                     %! _make_measure_silences
 
-    % [C LHVoiceIV measure 59 / measure 26]                                    %! _comment_measure_numbers
+    % [C LH_Voice_IV measure 59 / measure 26]                                  %! _comment_measure_numbers
     s1 * 3/4                                                                   %! _make_measure_silences
 
-    % [C LHVoiceIV measure 60 / measure 27]                                    %! _comment_measure_numbers
+    % [C LH_Voice_IV measure 60 / measure 27]                                  %! _comment_measure_numbers
     s1 * 5/8                                                                   %! _make_measure_silences
 
-    % [C LHVoiceIV measure 61 / measure 28]                                    %! _comment_measure_numbers
+    % [C LH_Voice_IV measure 61 / measure 28]                                  %! _comment_measure_numbers
     s1 * 1/2                                                                   %! _make_measure_silences
 
-    % [C LHVoiceIV measure 62 / measure 29]                                    %! _comment_measure_numbers
+    % [C LH_Voice_IV measure 62 / measure 29]                                  %! _comment_measure_numbers
     s1 * 3/4                                                                   %! _make_measure_silences
 
-    % [C LHVoiceIV measure 63 / measure 30]                                    %! _comment_measure_numbers
+    % [C LH_Voice_IV measure 63 / measure 30]                                  %! _comment_measure_numbers
     s1 * 1/2                                                                   %! _make_measure_silences
 
-    % [C LHVoiceIV measure 64 / measure 31]                                    %! _comment_measure_numbers
+    % [C LH_Voice_IV measure 64 / measure 31]                                  %! _comment_measure_numbers
     s1 * 5/8                                                                   %! _make_measure_silences
 
-    % [C LHVoiceIV measure 65 / measure 32]                                    %! _comment_measure_numbers
+    % [C LH_Voice_IV measure 65 / measure 32]                                  %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _make_measure_silences
 
-    % [C LHVoiceIV measure 66 / measure 33]                                    %! _comment_measure_numbers
+    % [C LH_Voice_IV measure 66 / measure 33]                                  %! _comment_measure_numbers
     s1 * 7/4                                                                   %! _make_measure_silences
 
-    % [C LHVoiceIV measure 67 / measure 34]                                    %! _comment_measure_numbers
+    % [C LH_Voice_IV measure 67 / measure 34]                                  %! _comment_measure_numbers
     s1 * 3/2                                                                   %! _make_measure_silences
 
-    % [C LHVoiceIV measure 68 / measure 35]                                    %! _comment_measure_numbers
+    % [C LH_Voice_IV measure 68 / measure 35]                                  %! _comment_measure_numbers
     s1 * 1                                                                     %! _make_measure_silences
 
-    % [C LHVoiceIV measure 69 / measure 36]                                    %! _comment_measure_numbers
+    % [C LH_Voice_IV measure 69 / measure 36]                                  %! _comment_measure_numbers
     s1 * 1                                                                     %! _make_measure_silences
 
-    % [C LHVoiceIV measure 70 / measure 37]                                    %! _comment_measure_numbers
+    % [C LH_Voice_IV measure 70 / measure 37]                                  %! _comment_measure_numbers
     s1 * 3/2                                                                   %! _make_measure_silences
 
-    % [C LHVoiceIV measure 71 / measure 38]                                    %! _comment_measure_numbers
+    % [C LH_Voice_IV measure 71 / measure 38]                                  %! _comment_measure_numbers
     s1 * 1                                                                     %! _make_measure_silences
 
-    % [C LHVoiceIV measure 72 / measure 39]                                    %! _comment_measure_numbers
+    % [C LH_Voice_IV measure 72 / measure 39]                                  %! _comment_measure_numbers
     s1 * 1/2                                                                   %! _make_measure_silences
 
-    % [C LHVoiceIV measure 73 / measure 40]                                    %! _comment_measure_numbers
+    % [C LH_Voice_IV measure 73 / measure 40]                                  %! _comment_measure_numbers
     s1 * 1                                                                     %! _make_measure_silences
 
-    % [C LHVoiceIV measure 74 / measure 41]                                    %! _comment_measure_numbers
+    % [C LH_Voice_IV measure 74 / measure 41]                                  %! _comment_measure_numbers
     s1 * 1                                                                     %! _make_measure_silences
 
-    % [C LHVoiceIV measure 75 / measure 42]                                    %! _comment_measure_numbers
+    % [C LH_Voice_IV measure 75 / measure 42]                                  %! _comment_measure_numbers
     s1 * 1                                                                     %! _make_measure_silences
 
-    % [C LHVoiceIV measure 76 / measure 43]                                    %! _comment_measure_numbers
+    % [C LH_Voice_IV measure 76 / measure 43]                                  %! _comment_measure_numbers
     s1 * 3/2                                                                   %! _make_measure_silences
 
-    % [C LHVoiceIV measure 77 / measure 44]                                    %! _comment_measure_numbers
+    % [C LH_Voice_IV measure 77 / measure 44]                                  %! _comment_measure_numbers
     s1 * 4                                                                     %! _make_measure_silences
 
 }                                                                              %! extern
 
 
-C_LHVoiceIVInserts = {                                                         %! extern
+C_LH_Voice_IV_Inserts = {                                                      %! extern
 
-    % [C LHVoiceIVInserts measure 34 / measure 1]                              %! _comment_measure_numbers
+    % [C LH_Voice_IV_Inserts measure 34 / measure 1]                           %! _comment_measure_numbers
     s1 * 3/2                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceIVInserts measure 35 / measure 2]                              %! _comment_measure_numbers
+    % [C LH_Voice_IV_Inserts measure 35 / measure 2]                           %! _comment_measure_numbers
     s1 * 3/4                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceIVInserts measure 36 / measure 3]                              %! _comment_measure_numbers
+    % [C LH_Voice_IV_Inserts measure 36 / measure 3]                           %! _comment_measure_numbers
     s1 * 3/2                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceIVInserts measure 37 / measure 4]                              %! _comment_measure_numbers
+    % [C LH_Voice_IV_Inserts measure 37 / measure 4]                           %! _comment_measure_numbers
     s1 * 9/8                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceIVInserts measure 38 / measure 5]                              %! _comment_measure_numbers
+    % [C LH_Voice_IV_Inserts measure 38 / measure 5]                           %! _comment_measure_numbers
     s1 * 3/4                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceIVInserts measure 39 / measure 6]                              %! _comment_measure_numbers
+    % [C LH_Voice_IV_Inserts measure 39 / measure 6]                           %! _comment_measure_numbers
     s1 * 3/2                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceIVInserts measure 40 / measure 7]                              %! _comment_measure_numbers
+    % [C LH_Voice_IV_Inserts measure 40 / measure 7]                           %! _comment_measure_numbers
     s1 * 3/4                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceIVInserts measure 41 / measure 8]                              %! _comment_measure_numbers
+    % [C LH_Voice_IV_Inserts measure 41 / measure 8]                           %! _comment_measure_numbers
     s1 * 3/4                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceIVInserts measure 42 / measure 9]                              %! _comment_measure_numbers
+    % [C LH_Voice_IV_Inserts measure 42 / measure 9]                           %! _comment_measure_numbers
     s1 * 5/4                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceIVInserts measure 43 / measure 10]                             %! _comment_measure_numbers
+    % [C LH_Voice_IV_Inserts measure 43 / measure 10]                          %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C LHVoiceIVInserts measure 44 / measure 11]                             %! _comment_measure_numbers
+    % [C LH_Voice_IV_Inserts measure 44 / measure 11]                          %! _comment_measure_numbers
     s1 * 5/4                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceIVInserts measure 45 / measure 12]                             %! _comment_measure_numbers
+    % [C LH_Voice_IV_Inserts measure 45 / measure 12]                          %! _comment_measure_numbers
     s1 * 3/4                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceIVInserts measure 46 / measure 13]                             %! _comment_measure_numbers
+    % [C LH_Voice_IV_Inserts measure 46 / measure 13]                          %! _comment_measure_numbers
     s1 * 5/4                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceIVInserts measure 47 / measure 14]                             %! _comment_measure_numbers
+    % [C LH_Voice_IV_Inserts measure 47 / measure 14]                          %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C LHVoiceIVInserts measure 48 / measure 15]                             %! _comment_measure_numbers
+    % [C LH_Voice_IV_Inserts measure 48 / measure 15]                          %! _comment_measure_numbers
     s1 * 5/4                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceIVInserts measure 49 / measure 16]                             %! _comment_measure_numbers
+    % [C LH_Voice_IV_Inserts measure 49 / measure 16]                          %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C LHVoiceIVInserts measure 50 / measure 17]                             %! _comment_measure_numbers
+    % [C LH_Voice_IV_Inserts measure 50 / measure 17]                          %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceIVInserts measure 51 / measure 18]                             %! _comment_measure_numbers
+    % [C LH_Voice_IV_Inserts measure 51 / measure 18]                          %! _comment_measure_numbers
     s1 * 7/8                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceIVInserts measure 52 / measure 19]                             %! _comment_measure_numbers
+    % [C LH_Voice_IV_Inserts measure 52 / measure 19]                          %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C LHVoiceIVInserts measure 53 / measure 20]                             %! _comment_measure_numbers
+    % [C LH_Voice_IV_Inserts measure 53 / measure 20]                          %! _comment_measure_numbers
     s1 * 1/2                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceIVInserts measure 54 / measure 21]                             %! _comment_measure_numbers
+    % [C LH_Voice_IV_Inserts measure 54 / measure 21]                          %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceIVInserts measure 55 / measure 22]                             %! _comment_measure_numbers
+    % [C LH_Voice_IV_Inserts measure 55 / measure 22]                          %! _comment_measure_numbers
     s1 * 1/2                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceIVInserts measure 56 / measure 23]                             %! _comment_measure_numbers
+    % [C LH_Voice_IV_Inserts measure 56 / measure 23]                          %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C LHVoiceIVInserts measure 57 / measure 24]                             %! _comment_measure_numbers
+    % [C LH_Voice_IV_Inserts measure 57 / measure 24]                          %! _comment_measure_numbers
     s1 * 1/2                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceIVInserts measure 58 / measure 25]                             %! _comment_measure_numbers
+    % [C LH_Voice_IV_Inserts measure 58 / measure 25]                          %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C LHVoiceIVInserts measure 59 / measure 26]                             %! _comment_measure_numbers
+    % [C LH_Voice_IV_Inserts measure 59 / measure 26]                          %! _comment_measure_numbers
     s1 * 3/4                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceIVInserts measure 60 / measure 27]                             %! _comment_measure_numbers
+    % [C LH_Voice_IV_Inserts measure 60 / measure 27]                          %! _comment_measure_numbers
     s1 * 5/8                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceIVInserts measure 61 / measure 28]                             %! _comment_measure_numbers
+    % [C LH_Voice_IV_Inserts measure 61 / measure 28]                          %! _comment_measure_numbers
     s1 * 1/2                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceIVInserts measure 62 / measure 29]                             %! _comment_measure_numbers
+    % [C LH_Voice_IV_Inserts measure 62 / measure 29]                          %! _comment_measure_numbers
     s1 * 3/4                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceIVInserts measure 63 / measure 30]                             %! _comment_measure_numbers
+    % [C LH_Voice_IV_Inserts measure 63 / measure 30]                          %! _comment_measure_numbers
     s1 * 1/2                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceIVInserts measure 64 / measure 31]                             %! _comment_measure_numbers
+    % [C LH_Voice_IV_Inserts measure 64 / measure 31]                          %! _comment_measure_numbers
     s1 * 5/8                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceIVInserts measure 65 / measure 32]                             %! _comment_measure_numbers
+    % [C LH_Voice_IV_Inserts measure 65 / measure 32]                          %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceIVInserts measure 66 / measure 33]                             %! _comment_measure_numbers
+    % [C LH_Voice_IV_Inserts measure 66 / measure 33]                          %! _comment_measure_numbers
     s1 * 7/4                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceIVInserts measure 67 / measure 34]                             %! _comment_measure_numbers
+    % [C LH_Voice_IV_Inserts measure 67 / measure 34]                          %! _comment_measure_numbers
     s1 * 3/2                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceIVInserts measure 68 / measure 35]                             %! _comment_measure_numbers
+    % [C LH_Voice_IV_Inserts measure 68 / measure 35]                          %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C LHVoiceIVInserts measure 69 / measure 36]                             %! _comment_measure_numbers
+    % [C LH_Voice_IV_Inserts measure 69 / measure 36]                          %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C LHVoiceIVInserts measure 70 / measure 37]                             %! _comment_measure_numbers
+    % [C LH_Voice_IV_Inserts measure 70 / measure 37]                          %! _comment_measure_numbers
     s1 * 3/2                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceIVInserts measure 71 / measure 38]                             %! _comment_measure_numbers
+    % [C LH_Voice_IV_Inserts measure 71 / measure 38]                          %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C LHVoiceIVInserts measure 72 / measure 39]                             %! _comment_measure_numbers
+    % [C LH_Voice_IV_Inserts measure 72 / measure 39]                          %! _comment_measure_numbers
     s1 * 1/2                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceIVInserts measure 73 / measure 40]                             %! _comment_measure_numbers
+    % [C LH_Voice_IV_Inserts measure 73 / measure 40]                          %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C LHVoiceIVInserts measure 74 / measure 41]                             %! _comment_measure_numbers
+    % [C LH_Voice_IV_Inserts measure 74 / measure 41]                          %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C LHVoiceIVInserts measure 75 / measure 42]                             %! _comment_measure_numbers
+    % [C LH_Voice_IV_Inserts measure 75 / measure 42]                          %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C LHVoiceIVInserts measure 76 / measure 43]                             %! _comment_measure_numbers
+    % [C LH_Voice_IV_Inserts measure 76 / measure 43]                          %! _comment_measure_numbers
     s1 * 3/2                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceIVInserts measure 77 / measure 44]                             %! _comment_measure_numbers
+    % [C LH_Voice_IV_Inserts measure 77 / measure 44]                          %! _comment_measure_numbers
     s1 * 4                                                                     %! _call_rhythm_commands
 
 }                                                                              %! extern
 
 
-C_LHVoiceV = {                                                                 %! extern
+C_LH_Voice_V = {                                                               %! extern
 
     {
 
         \scaleDurations #'(1 . 1) {
 
-            % [C LHVoiceV measure 34 / measure 1]                              %! _comment_measure_numbers
+            % [C LH_Voice_V measure 34 / measure 1]                            %! _comment_measure_numbers
             \dynamicDown                                                       %! baca_dynamic_down:IndicatorCommand
             r2.
             - \tweak color #(x11-color 'green4)                                %! REAPPLIED_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
@@ -4191,7 +4191,7 @@ C_LHVoiceV = {                                                                 %
 
         \scaleDurations #'(1 . 1) {
 
-            % [C LHVoiceV measure 35 / measure 2]                              %! _comment_measure_numbers
+            % [C LH_Voice_V measure 35 / measure 2]                            %! _comment_measure_numbers
             r2.
         %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                      %! FIGURE_NAME_MARKUP
@@ -4219,7 +4219,7 @@ C_LHVoiceV = {                                                                 %
 
         \scaleDurations #'(1 . 1) {
 
-            % [C LHVoiceV measure 36 / measure 3]                              %! _comment_measure_numbers
+            % [C LH_Voice_V measure 36 / measure 3]                            %! _comment_measure_numbers
             r4
         %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                      %! FIGURE_NAME_MARKUP
@@ -4262,14 +4262,14 @@ C_LHVoiceV = {                                                                 %
 
     }
 
-    % [C LHVoiceV measure 37 / measure 4]                                      %! _comment_measure_numbers
+    % [C LH_Voice_V measure 37 / measure 4]                                    %! _comment_measure_numbers
     s1 * 9/8
 
     {
 
         \scaleDurations #'(1 . 1) {
 
-            % [C LHVoiceV measure 38 / measure 5]                              %! _comment_measure_numbers
+            % [C LH_Voice_V measure 38 / measure 5]                            %! _comment_measure_numbers
             r16
         %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                      %! FIGURE_NAME_MARKUP
@@ -4304,7 +4304,7 @@ C_LHVoiceV = {                                                                 %
 
         \scaleDurations #'(1 . 1) {
 
-            % [C LHVoiceV measure 39 / measure 6]                              %! _comment_measure_numbers
+            % [C LH_Voice_V measure 39 / measure 6]                            %! _comment_measure_numbers
             r4
         %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                      %! FIGURE_NAME_MARKUP
@@ -4353,7 +4353,7 @@ C_LHVoiceV = {                                                                 %
 
         \scaleDurations #'(1 . 1) {
 
-            % [C LHVoiceV measure 40 / measure 7]                              %! _comment_measure_numbers
+            % [C LH_Voice_V measure 40 / measure 7]                            %! _comment_measure_numbers
             \override Rest.direction = #up                                     %! baca_rest_up:OverrideCommand(1)
             r2.
         %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
@@ -4382,7 +4382,7 @@ C_LHVoiceV = {                                                                 %
 
         \scaleDurations #'(1 . 1) {
 
-            % [C LHVoiceV measure 41 / measure 8]                              %! _comment_measure_numbers
+            % [C LH_Voice_V measure 41 / measure 8]                            %! _comment_measure_numbers
             r16
         %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                      %! FIGURE_NAME_MARKUP
@@ -4417,7 +4417,7 @@ C_LHVoiceV = {                                                                 %
 
         \scaleDurations #'(1 . 1) {
 
-            % [C LHVoiceV measure 42 / measure 9]                              %! _comment_measure_numbers
+            % [C LH_Voice_V measure 42 / measure 9]                            %! _comment_measure_numbers
             <g b f' fs'! a'>16
             - \marcato                                                         %! baca_marcato:IndicatorCommand
         %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
@@ -4453,7 +4453,7 @@ C_LHVoiceV = {                                                                 %
 
             \scaleDurations #'(1 . 1) {
 
-                % [C LHVoiceV measure 43 / measure 10]                         %! _comment_measure_numbers
+                % [C LH_Voice_V measure 43 / measure 10]                       %! _comment_measure_numbers
                 \override TupletBracket.direction = #up                        %! baca_tuplet_bracket_up:OverrideCommand(1)
                 r16
             %%% ^ \markup {                                                    %! FIGURE_NAME_MARKUP
@@ -4490,7 +4490,7 @@ C_LHVoiceV = {                                                                 %
 
         \scaleDurations #'(1 . 1) {
 
-            % [C LHVoiceV measure 44 / measure 11]                             %! _comment_measure_numbers
+            % [C LH_Voice_V measure 44 / measure 11]                           %! _comment_measure_numbers
             <g b f' fs'! a'>16
             - \marcato                                                         %! baca_marcato:IndicatorCommand
         %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
@@ -4523,7 +4523,7 @@ C_LHVoiceV = {                                                                 %
 
         \scaleDurations #'(1 . 1) {
 
-            % [C LHVoiceV measure 45 / measure 12]                             %! _comment_measure_numbers
+            % [C LH_Voice_V measure 45 / measure 12]                           %! _comment_measure_numbers
             r16
         %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                      %! FIGURE_NAME_MARKUP
@@ -4556,7 +4556,7 @@ C_LHVoiceV = {                                                                 %
 
         \scaleDurations #'(1 . 1) {
 
-            % [C LHVoiceV measure 46 / measure 13]                             %! _comment_measure_numbers
+            % [C LH_Voice_V measure 46 / measure 13]                           %! _comment_measure_numbers
             <g b f' fs'! a'>16
             - \marcato                                                         %! baca_marcato:IndicatorCommand
         %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
@@ -4592,7 +4592,7 @@ C_LHVoiceV = {                                                                 %
 
             \scaleDurations #'(1 . 1) {
 
-                % [C LHVoiceV measure 47 / measure 14]                         %! _comment_measure_numbers
+                % [C LH_Voice_V measure 47 / measure 14]                       %! _comment_measure_numbers
                 \override TupletBracket.direction = #up                        %! baca_tuplet_bracket_up:OverrideCommand(1)
                 r16
             %%% ^ \markup {                                                    %! FIGURE_NAME_MARKUP
@@ -4629,7 +4629,7 @@ C_LHVoiceV = {                                                                 %
 
         \scaleDurations #'(1 . 1) {
 
-            % [C LHVoiceV measure 48 / measure 15]                             %! _comment_measure_numbers
+            % [C LH_Voice_V measure 48 / measure 15]                           %! _comment_measure_numbers
             <g b f' fs'! a'>16
             - \marcato                                                         %! baca_marcato:IndicatorCommand
         %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
@@ -4665,7 +4665,7 @@ C_LHVoiceV = {                                                                 %
 
             \scaleDurations #'(1 . 1) {
 
-                % [C LHVoiceV measure 49 / measure 16]                         %! _comment_measure_numbers
+                % [C LH_Voice_V measure 49 / measure 16]                       %! _comment_measure_numbers
                 \override TupletBracket.direction = #up                        %! baca_tuplet_bracket_up:OverrideCommand(1)
                 r16
             %%% ^ \markup {                                                    %! FIGURE_NAME_MARKUP
@@ -4703,7 +4703,7 @@ C_LHVoiceV = {                                                                 %
 
         \scaleDurations #'(1 . 1) {
 
-            % [C LHVoiceV measure 50 / measure 17]                             %! _comment_measure_numbers
+            % [C LH_Voice_V measure 50 / measure 17]                           %! _comment_measure_numbers
             \once \override Stem.direction = #up                               %! baca_stem_up:OverrideCommand(1)
             \crossStaff                                                        %! baca_cross_staff:IndicatorCommand
             <g, e f af!>16
@@ -4740,7 +4740,7 @@ C_LHVoiceV = {                                                                 %
 
             \scaleDurations #'(1 . 1) {
 
-                % [C LHVoiceV measure 51 / measure 18]                         %! _comment_measure_numbers
+                % [C LH_Voice_V measure 51 / measure 18]                       %! _comment_measure_numbers
                 \override TupletBracket.staff-padding = #2                     %! baca_tuplet_bracket_staff_padding:OverrideCommand(1)
                 \override TupletBracket.direction = #down                      %! baca_tuplet_bracket_down:OverrideCommand(1)
                 r4
@@ -4791,7 +4791,7 @@ C_LHVoiceV = {                                                                 %
 
         \scaleDurations #'(1 . 1) {
 
-            % [C LHVoiceV measure 52 / measure 19]                             %! _comment_measure_numbers
+            % [C LH_Voice_V measure 52 / measure 19]                           %! _comment_measure_numbers
             r1
         %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                      %! FIGURE_NAME_MARKUP
@@ -4819,7 +4819,7 @@ C_LHVoiceV = {                                                                 %
 
         \scaleDurations #'(1 . 1) {
 
-            % [C LHVoiceV measure 53 / measure 20]                             %! _comment_measure_numbers
+            % [C LH_Voice_V measure 53 / measure 20]                           %! _comment_measure_numbers
             r8
         %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                      %! FIGURE_NAME_MARKUP
@@ -4845,7 +4845,7 @@ C_LHVoiceV = {                                                                 %
 
     }
 
-    % [C LHVoiceV measure 54 / measure 21]                                     %! _comment_measure_numbers
+    % [C LH_Voice_V measure 54 / measure 21]                                   %! _comment_measure_numbers
     s1 * 3/4
 
     {
@@ -4855,7 +4855,7 @@ C_LHVoiceV = {                                                                 %
 
             \scaleDurations #'(1 . 1) {
 
-                % [C LHVoiceV measure 56 / measure 23]                         %! _comment_measure_numbers
+                % [C LH_Voice_V measure 56 / measure 23]                       %! _comment_measure_numbers
                 r4
             %%% ^ \markup {                                                    %! FIGURE_NAME_MARKUP
             %%%     \fontsize                                                  %! FIGURE_NAME_MARKUP
@@ -4911,7 +4911,7 @@ C_LHVoiceV = {                                                                 %
 
         \scaleDurations #'(1 . 1) {
 
-            % [C LHVoiceV measure 57 / measure 24]                             %! _comment_measure_numbers
+            % [C LH_Voice_V measure 57 / measure 24]                           %! _comment_measure_numbers
             r2
         %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                      %! FIGURE_NAME_MARKUP
@@ -4942,7 +4942,7 @@ C_LHVoiceV = {                                                                 %
 
             \scaleDurations #'(1 . 1) {
 
-                % [C LHVoiceV measure 58 / measure 25]                         %! _comment_measure_numbers
+                % [C LH_Voice_V measure 58 / measure 25]                       %! _comment_measure_numbers
                 r4
             %%% ^ \markup {                                                    %! FIGURE_NAME_MARKUP
             %%%     \fontsize                                                  %! FIGURE_NAME_MARKUP
@@ -5001,7 +5001,7 @@ C_LHVoiceV = {                                                                 %
 
             \scaleDurations #'(1 . 1) {
 
-                % [C LHVoiceV measure 59 / measure 26]                         %! _comment_measure_numbers
+                % [C LH_Voice_V measure 59 / measure 26]                       %! _comment_measure_numbers
                 r4
             %%% ^ \markup {                                                    %! FIGURE_NAME_MARKUP
             %%%     \fontsize                                                  %! FIGURE_NAME_MARKUP
@@ -5049,7 +5049,7 @@ C_LHVoiceV = {                                                                 %
 
         \scaleDurations #'(1 . 1) {
 
-            % [C LHVoiceV measure 60 / measure 27]                             %! _comment_measure_numbers
+            % [C LH_Voice_V measure 60 / measure 27]                           %! _comment_measure_numbers
             r8
         %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                      %! FIGURE_NAME_MARKUP
@@ -5081,7 +5081,7 @@ C_LHVoiceV = {                                                                 %
 
         \scaleDurations #'(1 . 1) {
 
-            % [C LHVoiceV measure 61 / measure 28]                             %! _comment_measure_numbers
+            % [C LH_Voice_V measure 61 / measure 28]                           %! _comment_measure_numbers
             r2
         %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                      %! FIGURE_NAME_MARKUP
@@ -5112,7 +5112,7 @@ C_LHVoiceV = {                                                                 %
 
             \scaleDurations #'(1 . 1) {
 
-                % [C LHVoiceV measure 62 / measure 29]                         %! _comment_measure_numbers
+                % [C LH_Voice_V measure 62 / measure 29]                       %! _comment_measure_numbers
                 r4
             %%% ^ \markup {                                                    %! FIGURE_NAME_MARKUP
             %%%     \fontsize                                                  %! FIGURE_NAME_MARKUP
@@ -5160,7 +5160,7 @@ C_LHVoiceV = {                                                                 %
 
         \scaleDurations #'(1 . 1) {
 
-            % [C LHVoiceV measure 63 / measure 30]                             %! _comment_measure_numbers
+            % [C LH_Voice_V measure 63 / measure 30]                           %! _comment_measure_numbers
             r8
         %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                      %! FIGURE_NAME_MARKUP
@@ -5190,7 +5190,7 @@ C_LHVoiceV = {                                                                 %
 
         \scaleDurations #'(1 . 1) {
 
-            % [C LHVoiceV measure 64 / measure 31]                             %! _comment_measure_numbers
+            % [C LH_Voice_V measure 64 / measure 31]                           %! _comment_measure_numbers
             r8
         %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                      %! FIGURE_NAME_MARKUP
@@ -5218,14 +5218,14 @@ C_LHVoiceV = {                                                                 %
 
     }
 
-    % [C LHVoiceV measure 65 / measure 32]                                     %! _comment_measure_numbers
+    % [C LH_Voice_V measure 65 / measure 32]                                   %! _comment_measure_numbers
     s1 * 23/2
 
     {
 
         \scaleDurations #'(1 . 1) {
 
-            % [C LHVoiceV measure 76 / measure 43]                             %! _comment_measure_numbers
+            % [C LH_Voice_V measure 76 / measure 43]                           %! _comment_measure_numbers
             r4
         %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                      %! FIGURE_NAME_MARKUP
@@ -5271,7 +5271,7 @@ C_LHVoiceV = {                                                                 %
 
     }
 
-    % [C LHVoiceV measure 77 / measure 44]                                     %! _comment_measure_numbers
+    % [C LH_Voice_V measure 77 / measure 44]                                   %! _comment_measure_numbers
     s1 * 4                                                                     %! _make_measure_silences
     \revert TupletBracket.staff-padding                                        %! baca_tuplet_bracket_staff_padding:OverrideCommand(2)
     \revert TupletBracket.direction                                            %! baca_tuplet_bracket_down:OverrideCommand(2)
@@ -5279,9 +5279,9 @@ C_LHVoiceV = {                                                                 %
 }                                                                              %! extern
 
 
-C_LHVoiceVInserts = {                                                          %! extern
+C_LH_Voice_V_Inserts = {                                                       %! extern
 
-    % [C LHVoiceVInserts measure 34 / measure 1]                               %! _comment_measure_numbers
+    % [C LH_Voice_V_Inserts measure 34 / measure 1]                            %! _comment_measure_numbers
     \override Script.direction = #up                                           %! baca_script_up:OverrideCommand(1)
     s1 * 83/4
 
@@ -5294,7 +5294,7 @@ C_LHVoiceVInserts = {                                                          %
 
             \scaleDurations #'(1 . 1) {
 
-                % [C LHVoiceVInserts measure 56 / measure 23]                  %! _comment_measure_numbers
+                % [C LH_Voice_V_Inserts measure 56 / measure 23]               %! _comment_measure_numbers
                 s4
                 [                                                              %! _extend_beam
 
@@ -5326,7 +5326,7 @@ C_LHVoiceVInserts = {                                                          %
 
     }
 
-    % [C LHVoiceVInserts measure 57 / measure 24]                              %! _comment_measure_numbers
+    % [C LH_Voice_V_Inserts measure 57 / measure 24]                           %! _comment_measure_numbers
     s1 * 1/2
 
     {
@@ -5338,7 +5338,7 @@ C_LHVoiceVInserts = {                                                          %
 
             \scaleDurations #'(1 . 1) {
 
-                % [C LHVoiceVInserts measure 58 / measure 25]                  %! _comment_measure_numbers
+                % [C LH_Voice_V_Inserts measure 58 / measure 25]               %! _comment_measure_numbers
                 s4
 
                 \set stemLeftBeamCount = 1                                     %! _extend_beam
@@ -5381,7 +5381,7 @@ C_LHVoiceVInserts = {                                                          %
 
             \scaleDurations #'(1 . 1) {
 
-                % [C LHVoiceVInserts measure 59 / measure 26]                  %! _comment_measure_numbers
+                % [C LH_Voice_V_Inserts measure 59 / measure 26]               %! _comment_measure_numbers
                 s4
                 [                                                              %! _extend_beam
 
@@ -5406,7 +5406,7 @@ C_LHVoiceVInserts = {                                                          %
 
     }
 
-    % [C LHVoiceVInserts measure 60 / measure 27]                              %! _comment_measure_numbers
+    % [C LH_Voice_V_Inserts measure 60 / measure 27]                           %! _comment_measure_numbers
     s1 * 9/8
 
     {
@@ -5418,7 +5418,7 @@ C_LHVoiceVInserts = {                                                          %
 
             \scaleDurations #'(1 . 1) {
 
-                % [C LHVoiceVInserts measure 62 / measure 29]                  %! _comment_measure_numbers
+                % [C LH_Voice_V_Inserts measure 62 / measure 29]               %! _comment_measure_numbers
                 s4
 
                 \set stemLeftBeamCount = 1                                     %! _extend_beam
@@ -5442,7 +5442,7 @@ C_LHVoiceVInserts = {                                                          %
 
     }
 
-    % [C LHVoiceVInserts measure 63 / measure 30]                              %! _comment_measure_numbers
+    % [C LH_Voice_V_Inserts measure 63 / measure 30]                           %! _comment_measure_numbers
     s1 * 1/2
 
     {
@@ -5451,7 +5451,7 @@ C_LHVoiceVInserts = {                                                          %
 
         \scaleDurations #'(1 . 1) {
 
-            % [C LHVoiceVInserts measure 64 / measure 31]                      %! _comment_measure_numbers
+            % [C LH_Voice_V_Inserts measure 64 / measure 31]                   %! _comment_measure_numbers
             s8
 
             \set stemLeftBeamCount = 1                                         %! _extend_beam
@@ -5469,52 +5469,52 @@ C_LHVoiceVInserts = {                                                          %
 
     }
 
-    % [C LHVoiceVInserts measure 65 / measure 32]                              %! _comment_measure_numbers
+    % [C LH_Voice_V_Inserts measure 65 / measure 32]                           %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _make_measure_silences
 
-    % [C LHVoiceVInserts measure 66 / measure 33]                              %! _comment_measure_numbers
+    % [C LH_Voice_V_Inserts measure 66 / measure 33]                           %! _comment_measure_numbers
     s1 * 7/4                                                                   %! _make_measure_silences
 
-    % [C LHVoiceVInserts measure 67 / measure 34]                              %! _comment_measure_numbers
+    % [C LH_Voice_V_Inserts measure 67 / measure 34]                           %! _comment_measure_numbers
     s1 * 3/2                                                                   %! _make_measure_silences
 
-    % [C LHVoiceVInserts measure 68 / measure 35]                              %! _comment_measure_numbers
+    % [C LH_Voice_V_Inserts measure 68 / measure 35]                           %! _comment_measure_numbers
     s1 * 1                                                                     %! _make_measure_silences
 
-    % [C LHVoiceVInserts measure 69 / measure 36]                              %! _comment_measure_numbers
+    % [C LH_Voice_V_Inserts measure 69 / measure 36]                           %! _comment_measure_numbers
     s1 * 1                                                                     %! _make_measure_silences
 
-    % [C LHVoiceVInserts measure 70 / measure 37]                              %! _comment_measure_numbers
+    % [C LH_Voice_V_Inserts measure 70 / measure 37]                           %! _comment_measure_numbers
     s1 * 3/2                                                                   %! _make_measure_silences
 
-    % [C LHVoiceVInserts measure 71 / measure 38]                              %! _comment_measure_numbers
+    % [C LH_Voice_V_Inserts measure 71 / measure 38]                           %! _comment_measure_numbers
     s1 * 1                                                                     %! _make_measure_silences
 
-    % [C LHVoiceVInserts measure 72 / measure 39]                              %! _comment_measure_numbers
+    % [C LH_Voice_V_Inserts measure 72 / measure 39]                           %! _comment_measure_numbers
     s1 * 1/2                                                                   %! _make_measure_silences
 
-    % [C LHVoiceVInserts measure 73 / measure 40]                              %! _comment_measure_numbers
+    % [C LH_Voice_V_Inserts measure 73 / measure 40]                           %! _comment_measure_numbers
     s1 * 1                                                                     %! _make_measure_silences
 
-    % [C LHVoiceVInserts measure 74 / measure 41]                              %! _comment_measure_numbers
+    % [C LH_Voice_V_Inserts measure 74 / measure 41]                           %! _comment_measure_numbers
     s1 * 1                                                                     %! _make_measure_silences
 
-    % [C LHVoiceVInserts measure 75 / measure 42]                              %! _comment_measure_numbers
+    % [C LH_Voice_V_Inserts measure 75 / measure 42]                           %! _comment_measure_numbers
     s1 * 1                                                                     %! _make_measure_silences
 
-    % [C LHVoiceVInserts measure 76 / measure 43]                              %! _comment_measure_numbers
+    % [C LH_Voice_V_Inserts measure 76 / measure 43]                           %! _comment_measure_numbers
     s1 * 3/2                                                                   %! _make_measure_silences
 
-    % [C LHVoiceVInserts measure 77 / measure 44]                              %! _comment_measure_numbers
+    % [C LH_Voice_V_Inserts measure 77 / measure 44]                           %! _comment_measure_numbers
     s1 * 4                                                                     %! _make_measure_silences
     \revert Script.direction                                                   %! baca_script_up:OverrideCommand(2)
 
 }                                                                              %! extern
 
 
-C_LHVoiceVI = {                                                                %! extern
+C_LH_Voice_VI = {                                                              %! extern
 
-    % [C LHVoiceVI measure 34 / measure 1]                                     %! _comment_measure_numbers
+    % [C LH_Voice_VI measure 34 / measure 1]                                   %! _comment_measure_numbers
     \clef "bass"                                                               %! REAPPLIED_CLEF:_set_status_tag:_reapply_persistent_indicators(3)
     \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'green4)        %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
 %@% \override PianoMusicLHStaff.Clef.color = ##f                               %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
@@ -5525,278 +5525,278 @@ C_LHVoiceVI = {                                                                %
     ^ \baca-reapplied-indicator-markup "(“Piano”)"                             %! REAPPLIED_INSTRUMENT_ALERT:_attach_latent_indicator_alert
     \override PianoMusicLHStaff.Clef.color = #(x11-color 'OliveDrab)           %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
-    % [C LHVoiceVI measure 35 / measure 2]                                     %! _comment_measure_numbers
+    % [C LH_Voice_VI measure 35 / measure 2]                                   %! _comment_measure_numbers
     s1 * 3/4                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceVI measure 36 / measure 3]                                     %! _comment_measure_numbers
+    % [C LH_Voice_VI measure 36 / measure 3]                                   %! _comment_measure_numbers
     s1 * 3/2                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceVI measure 37 / measure 4]                                     %! _comment_measure_numbers
+    % [C LH_Voice_VI measure 37 / measure 4]                                   %! _comment_measure_numbers
     s1 * 9/8                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceVI measure 38 / measure 5]                                     %! _comment_measure_numbers
+    % [C LH_Voice_VI measure 38 / measure 5]                                   %! _comment_measure_numbers
     s1 * 3/4                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceVI measure 39 / measure 6]                                     %! _comment_measure_numbers
+    % [C LH_Voice_VI measure 39 / measure 6]                                   %! _comment_measure_numbers
     s1 * 3/2                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceVI measure 40 / measure 7]                                     %! _comment_measure_numbers
+    % [C LH_Voice_VI measure 40 / measure 7]                                   %! _comment_measure_numbers
     s1 * 3/4                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceVI measure 41 / measure 8]                                     %! _comment_measure_numbers
+    % [C LH_Voice_VI measure 41 / measure 8]                                   %! _comment_measure_numbers
     s1 * 3/4                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceVI measure 42 / measure 9]                                     %! _comment_measure_numbers
+    % [C LH_Voice_VI measure 42 / measure 9]                                   %! _comment_measure_numbers
     s1 * 5/4                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceVI measure 43 / measure 10]                                    %! _comment_measure_numbers
+    % [C LH_Voice_VI measure 43 / measure 10]                                  %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C LHVoiceVI measure 44 / measure 11]                                    %! _comment_measure_numbers
+    % [C LH_Voice_VI measure 44 / measure 11]                                  %! _comment_measure_numbers
     s1 * 5/4                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceVI measure 45 / measure 12]                                    %! _comment_measure_numbers
+    % [C LH_Voice_VI measure 45 / measure 12]                                  %! _comment_measure_numbers
     s1 * 3/4                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceVI measure 46 / measure 13]                                    %! _comment_measure_numbers
+    % [C LH_Voice_VI measure 46 / measure 13]                                  %! _comment_measure_numbers
     s1 * 5/4                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceVI measure 47 / measure 14]                                    %! _comment_measure_numbers
+    % [C LH_Voice_VI measure 47 / measure 14]                                  %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C LHVoiceVI measure 48 / measure 15]                                    %! _comment_measure_numbers
+    % [C LH_Voice_VI measure 48 / measure 15]                                  %! _comment_measure_numbers
     s1 * 5/4                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceVI measure 49 / measure 16]                                    %! _comment_measure_numbers
+    % [C LH_Voice_VI measure 49 / measure 16]                                  %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C LHVoiceVI measure 50 / measure 17]                                    %! _comment_measure_numbers
+    % [C LH_Voice_VI measure 50 / measure 17]                                  %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceVI measure 51 / measure 18]                                    %! _comment_measure_numbers
+    % [C LH_Voice_VI measure 51 / measure 18]                                  %! _comment_measure_numbers
     s1 * 7/8                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceVI measure 52 / measure 19]                                    %! _comment_measure_numbers
+    % [C LH_Voice_VI measure 52 / measure 19]                                  %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C LHVoiceVI measure 53 / measure 20]                                    %! _comment_measure_numbers
+    % [C LH_Voice_VI measure 53 / measure 20]                                  %! _comment_measure_numbers
     s1 * 1/2                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceVI measure 54 / measure 21]                                    %! _comment_measure_numbers
+    % [C LH_Voice_VI measure 54 / measure 21]                                  %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceVI measure 55 / measure 22]                                    %! _comment_measure_numbers
+    % [C LH_Voice_VI measure 55 / measure 22]                                  %! _comment_measure_numbers
     s1 * 1/2                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceVI measure 56 / measure 23]                                    %! _comment_measure_numbers
+    % [C LH_Voice_VI measure 56 / measure 23]                                  %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C LHVoiceVI measure 57 / measure 24]                                    %! _comment_measure_numbers
+    % [C LH_Voice_VI measure 57 / measure 24]                                  %! _comment_measure_numbers
     s1 * 1/2                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceVI measure 58 / measure 25]                                    %! _comment_measure_numbers
+    % [C LH_Voice_VI measure 58 / measure 25]                                  %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C LHVoiceVI measure 59 / measure 26]                                    %! _comment_measure_numbers
+    % [C LH_Voice_VI measure 59 / measure 26]                                  %! _comment_measure_numbers
     s1 * 3/4                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceVI measure 60 / measure 27]                                    %! _comment_measure_numbers
+    % [C LH_Voice_VI measure 60 / measure 27]                                  %! _comment_measure_numbers
     s1 * 5/8                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceVI measure 61 / measure 28]                                    %! _comment_measure_numbers
+    % [C LH_Voice_VI measure 61 / measure 28]                                  %! _comment_measure_numbers
     s1 * 1/2                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceVI measure 62 / measure 29]                                    %! _comment_measure_numbers
+    % [C LH_Voice_VI measure 62 / measure 29]                                  %! _comment_measure_numbers
     s1 * 3/4                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceVI measure 63 / measure 30]                                    %! _comment_measure_numbers
+    % [C LH_Voice_VI measure 63 / measure 30]                                  %! _comment_measure_numbers
     s1 * 1/2                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceVI measure 64 / measure 31]                                    %! _comment_measure_numbers
+    % [C LH_Voice_VI measure 64 / measure 31]                                  %! _comment_measure_numbers
     s1 * 5/8                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceVI measure 65 / measure 32]                                    %! _comment_measure_numbers
+    % [C LH_Voice_VI measure 65 / measure 32]                                  %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceVI measure 66 / measure 33]                                    %! _comment_measure_numbers
+    % [C LH_Voice_VI measure 66 / measure 33]                                  %! _comment_measure_numbers
     s1 * 7/4                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceVI measure 67 / measure 34]                                    %! _comment_measure_numbers
+    % [C LH_Voice_VI measure 67 / measure 34]                                  %! _comment_measure_numbers
     s1 * 3/2                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceVI measure 68 / measure 35]                                    %! _comment_measure_numbers
+    % [C LH_Voice_VI measure 68 / measure 35]                                  %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C LHVoiceVI measure 69 / measure 36]                                    %! _comment_measure_numbers
+    % [C LH_Voice_VI measure 69 / measure 36]                                  %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C LHVoiceVI measure 70 / measure 37]                                    %! _comment_measure_numbers
+    % [C LH_Voice_VI measure 70 / measure 37]                                  %! _comment_measure_numbers
     s1 * 3/2                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceVI measure 71 / measure 38]                                    %! _comment_measure_numbers
+    % [C LH_Voice_VI measure 71 / measure 38]                                  %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C LHVoiceVI measure 72 / measure 39]                                    %! _comment_measure_numbers
+    % [C LH_Voice_VI measure 72 / measure 39]                                  %! _comment_measure_numbers
     s1 * 1/2                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceVI measure 73 / measure 40]                                    %! _comment_measure_numbers
+    % [C LH_Voice_VI measure 73 / measure 40]                                  %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C LHVoiceVI measure 74 / measure 41]                                    %! _comment_measure_numbers
+    % [C LH_Voice_VI measure 74 / measure 41]                                  %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C LHVoiceVI measure 75 / measure 42]                                    %! _comment_measure_numbers
+    % [C LH_Voice_VI measure 75 / measure 42]                                  %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C LHVoiceVI measure 76 / measure 43]                                    %! _comment_measure_numbers
+    % [C LH_Voice_VI measure 76 / measure 43]                                  %! _comment_measure_numbers
     s1 * 3/2                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceVI measure 77 / measure 44]                                    %! _comment_measure_numbers
+    % [C LH_Voice_VI measure 77 / measure 44]                                  %! _comment_measure_numbers
     s1 * 4                                                                     %! _call_rhythm_commands
 
 }                                                                              %! extern
 
 
-C_LHVoiceVIInserts = {                                                         %! extern
+C_LH_Voice_VI_Inserts = {                                                      %! extern
 
-    % [C LHVoiceVIInserts measure 34 / measure 1]                              %! _comment_measure_numbers
+    % [C LH_Voice_VI_Inserts measure 34 / measure 1]                           %! _comment_measure_numbers
     s1 * 3/2                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceVIInserts measure 35 / measure 2]                              %! _comment_measure_numbers
+    % [C LH_Voice_VI_Inserts measure 35 / measure 2]                           %! _comment_measure_numbers
     s1 * 3/4                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceVIInserts measure 36 / measure 3]                              %! _comment_measure_numbers
+    % [C LH_Voice_VI_Inserts measure 36 / measure 3]                           %! _comment_measure_numbers
     s1 * 3/2                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceVIInserts measure 37 / measure 4]                              %! _comment_measure_numbers
+    % [C LH_Voice_VI_Inserts measure 37 / measure 4]                           %! _comment_measure_numbers
     s1 * 9/8                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceVIInserts measure 38 / measure 5]                              %! _comment_measure_numbers
+    % [C LH_Voice_VI_Inserts measure 38 / measure 5]                           %! _comment_measure_numbers
     s1 * 3/4                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceVIInserts measure 39 / measure 6]                              %! _comment_measure_numbers
+    % [C LH_Voice_VI_Inserts measure 39 / measure 6]                           %! _comment_measure_numbers
     s1 * 3/2                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceVIInserts measure 40 / measure 7]                              %! _comment_measure_numbers
+    % [C LH_Voice_VI_Inserts measure 40 / measure 7]                           %! _comment_measure_numbers
     s1 * 3/4                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceVIInserts measure 41 / measure 8]                              %! _comment_measure_numbers
+    % [C LH_Voice_VI_Inserts measure 41 / measure 8]                           %! _comment_measure_numbers
     s1 * 3/4                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceVIInserts measure 42 / measure 9]                              %! _comment_measure_numbers
+    % [C LH_Voice_VI_Inserts measure 42 / measure 9]                           %! _comment_measure_numbers
     s1 * 5/4                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceVIInserts measure 43 / measure 10]                             %! _comment_measure_numbers
+    % [C LH_Voice_VI_Inserts measure 43 / measure 10]                          %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C LHVoiceVIInserts measure 44 / measure 11]                             %! _comment_measure_numbers
+    % [C LH_Voice_VI_Inserts measure 44 / measure 11]                          %! _comment_measure_numbers
     s1 * 5/4                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceVIInserts measure 45 / measure 12]                             %! _comment_measure_numbers
+    % [C LH_Voice_VI_Inserts measure 45 / measure 12]                          %! _comment_measure_numbers
     s1 * 3/4                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceVIInserts measure 46 / measure 13]                             %! _comment_measure_numbers
+    % [C LH_Voice_VI_Inserts measure 46 / measure 13]                          %! _comment_measure_numbers
     s1 * 5/4                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceVIInserts measure 47 / measure 14]                             %! _comment_measure_numbers
+    % [C LH_Voice_VI_Inserts measure 47 / measure 14]                          %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C LHVoiceVIInserts measure 48 / measure 15]                             %! _comment_measure_numbers
+    % [C LH_Voice_VI_Inserts measure 48 / measure 15]                          %! _comment_measure_numbers
     s1 * 5/4                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceVIInserts measure 49 / measure 16]                             %! _comment_measure_numbers
+    % [C LH_Voice_VI_Inserts measure 49 / measure 16]                          %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C LHVoiceVIInserts measure 50 / measure 17]                             %! _comment_measure_numbers
+    % [C LH_Voice_VI_Inserts measure 50 / measure 17]                          %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceVIInserts measure 51 / measure 18]                             %! _comment_measure_numbers
+    % [C LH_Voice_VI_Inserts measure 51 / measure 18]                          %! _comment_measure_numbers
     s1 * 7/8                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceVIInserts measure 52 / measure 19]                             %! _comment_measure_numbers
+    % [C LH_Voice_VI_Inserts measure 52 / measure 19]                          %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C LHVoiceVIInserts measure 53 / measure 20]                             %! _comment_measure_numbers
+    % [C LH_Voice_VI_Inserts measure 53 / measure 20]                          %! _comment_measure_numbers
     s1 * 1/2                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceVIInserts measure 54 / measure 21]                             %! _comment_measure_numbers
+    % [C LH_Voice_VI_Inserts measure 54 / measure 21]                          %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceVIInserts measure 55 / measure 22]                             %! _comment_measure_numbers
+    % [C LH_Voice_VI_Inserts measure 55 / measure 22]                          %! _comment_measure_numbers
     s1 * 1/2                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceVIInserts measure 56 / measure 23]                             %! _comment_measure_numbers
+    % [C LH_Voice_VI_Inserts measure 56 / measure 23]                          %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C LHVoiceVIInserts measure 57 / measure 24]                             %! _comment_measure_numbers
+    % [C LH_Voice_VI_Inserts measure 57 / measure 24]                          %! _comment_measure_numbers
     s1 * 1/2                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceVIInserts measure 58 / measure 25]                             %! _comment_measure_numbers
+    % [C LH_Voice_VI_Inserts measure 58 / measure 25]                          %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C LHVoiceVIInserts measure 59 / measure 26]                             %! _comment_measure_numbers
+    % [C LH_Voice_VI_Inserts measure 59 / measure 26]                          %! _comment_measure_numbers
     s1 * 3/4                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceVIInserts measure 60 / measure 27]                             %! _comment_measure_numbers
+    % [C LH_Voice_VI_Inserts measure 60 / measure 27]                          %! _comment_measure_numbers
     s1 * 5/8                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceVIInserts measure 61 / measure 28]                             %! _comment_measure_numbers
+    % [C LH_Voice_VI_Inserts measure 61 / measure 28]                          %! _comment_measure_numbers
     s1 * 1/2                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceVIInserts measure 62 / measure 29]                             %! _comment_measure_numbers
+    % [C LH_Voice_VI_Inserts measure 62 / measure 29]                          %! _comment_measure_numbers
     s1 * 3/4                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceVIInserts measure 63 / measure 30]                             %! _comment_measure_numbers
+    % [C LH_Voice_VI_Inserts measure 63 / measure 30]                          %! _comment_measure_numbers
     s1 * 1/2                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceVIInserts measure 64 / measure 31]                             %! _comment_measure_numbers
+    % [C LH_Voice_VI_Inserts measure 64 / measure 31]                          %! _comment_measure_numbers
     s1 * 5/8                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceVIInserts measure 65 / measure 32]                             %! _comment_measure_numbers
+    % [C LH_Voice_VI_Inserts measure 65 / measure 32]                          %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceVIInserts measure 66 / measure 33]                             %! _comment_measure_numbers
+    % [C LH_Voice_VI_Inserts measure 66 / measure 33]                          %! _comment_measure_numbers
     s1 * 7/4                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceVIInserts measure 67 / measure 34]                             %! _comment_measure_numbers
+    % [C LH_Voice_VI_Inserts measure 67 / measure 34]                          %! _comment_measure_numbers
     s1 * 3/2                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceVIInserts measure 68 / measure 35]                             %! _comment_measure_numbers
+    % [C LH_Voice_VI_Inserts measure 68 / measure 35]                          %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C LHVoiceVIInserts measure 69 / measure 36]                             %! _comment_measure_numbers
+    % [C LH_Voice_VI_Inserts measure 69 / measure 36]                          %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C LHVoiceVIInserts measure 70 / measure 37]                             %! _comment_measure_numbers
+    % [C LH_Voice_VI_Inserts measure 70 / measure 37]                          %! _comment_measure_numbers
     s1 * 3/2                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceVIInserts measure 71 / measure 38]                             %! _comment_measure_numbers
+    % [C LH_Voice_VI_Inserts measure 71 / measure 38]                          %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C LHVoiceVIInserts measure 72 / measure 39]                             %! _comment_measure_numbers
+    % [C LH_Voice_VI_Inserts measure 72 / measure 39]                          %! _comment_measure_numbers
     s1 * 1/2                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceVIInserts measure 73 / measure 40]                             %! _comment_measure_numbers
+    % [C LH_Voice_VI_Inserts measure 73 / measure 40]                          %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C LHVoiceVIInserts measure 74 / measure 41]                             %! _comment_measure_numbers
+    % [C LH_Voice_VI_Inserts measure 74 / measure 41]                          %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C LHVoiceVIInserts measure 75 / measure 42]                             %! _comment_measure_numbers
+    % [C LH_Voice_VI_Inserts measure 75 / measure 42]                          %! _comment_measure_numbers
     s1 * 1                                                                     %! _call_rhythm_commands
 
-    % [C LHVoiceVIInserts measure 76 / measure 43]                             %! _comment_measure_numbers
+    % [C LH_Voice_VI_Inserts measure 76 / measure 43]                          %! _comment_measure_numbers
     s1 * 3/2                                                                   %! _call_rhythm_commands
 
-    % [C LHVoiceVIInserts measure 77 / measure 44]                             %! _comment_measure_numbers
+    % [C LH_Voice_VI_Inserts measure 77 / measure 44]                          %! _comment_measure_numbers
     s1 * 4                                                                     %! _call_rhythm_commands
 
 }                                                                              %! extern
 
 
-C_LHResonanceVoice = {                                                         %! extern
+C_LH_Resonance_Voice = {                                                       %! extern
 
-    % [C LHResonanceVoice measure 34 / measure 1]                              %! _comment_measure_numbers
+    % [C LH_Resonance_Voice measure 34 / measure 1]                            %! _comment_measure_numbers
     s1 * 79/8
 
     {
@@ -5806,7 +5806,7 @@ C_LHResonanceVoice = {                                                         %
 
             \scaleDurations #'(1 . 1) {
 
-                % [C LHResonanceVoice measure 43 / measure 10]                 %! _comment_measure_numbers
+                % [C LH_Resonance_Voice measure 43 / measure 10]               %! _comment_measure_numbers
                 s4
             %%% ^ \markup {                                                    %! FIGURE_NAME_MARKUP
             %%%     \fontsize                                                  %! FIGURE_NAME_MARKUP
@@ -5838,7 +5838,7 @@ C_LHResonanceVoice = {                                                         %
 
         \scaleDurations #'(1 . 1) {
 
-            % [C LHResonanceVoice measure 44 / measure 11]                     %! _comment_measure_numbers
+            % [C LH_Resonance_Voice measure 44 / measure 11]                   %! _comment_measure_numbers
             \override Accidental.stencil = ##f                                 %! baca_accidental_stencil_false:OverrideCommand(1)
             \override Dots.stencil = ##f                                       %! baca_dots_stencil_false:OverrideCommand(1)
             \override Stem.stencil = ##f                                       %! baca_stem_stencil_false:OverrideCommand(1)
@@ -5897,7 +5897,7 @@ C_LHResonanceVoice = {                                                         %
 
     }
 
-    % [C LHResonanceVoice measure 45 / measure 12]                             %! _comment_measure_numbers
+    % [C LH_Resonance_Voice measure 45 / measure 12]                           %! _comment_measure_numbers
     s1 * 2
 
     {
@@ -5907,7 +5907,7 @@ C_LHResonanceVoice = {                                                         %
 
             \scaleDurations #'(1 . 1) {
 
-                % [C LHResonanceVoice measure 47 / measure 14]                 %! _comment_measure_numbers
+                % [C LH_Resonance_Voice measure 47 / measure 14]               %! _comment_measure_numbers
                 s4
             %%% ^ \markup {                                                    %! FIGURE_NAME_MARKUP
             %%%     \fontsize                                                  %! FIGURE_NAME_MARKUP
@@ -5939,7 +5939,7 @@ C_LHResonanceVoice = {                                                         %
 
         \scaleDurations #'(1 . 1) {
 
-            % [C LHResonanceVoice measure 48 / measure 15]                     %! _comment_measure_numbers
+            % [C LH_Resonance_Voice measure 48 / measure 15]                   %! _comment_measure_numbers
             \override Accidental.stencil = ##f                                 %! baca_accidental_stencil_false:OverrideCommand(1)
             \override Dots.stencil = ##f                                       %! baca_dots_stencil_false:OverrideCommand(1)
             \override Stem.stencil = ##f                                       %! baca_stem_stencil_false:OverrideCommand(1)
@@ -5998,14 +5998,14 @@ C_LHResonanceVoice = {                                                         %
 
     }
 
-    % [C LHResonanceVoice measure 49 / measure 16]                             %! _comment_measure_numbers
+    % [C LH_Resonance_Voice measure 49 / measure 16]                           %! _comment_measure_numbers
     s1 * 85/8
 
     {
 
         \scaleDurations #'(1 . 1) {
 
-            % [C LHResonanceVoice measure 65 / measure 32]                     %! _comment_measure_numbers
+            % [C LH_Resonance_Voice measure 65 / measure 32]                   %! _comment_measure_numbers
             \once \override Accidental.X-extent = ##f                          %! baca_accidental_x_extent_false:OverrideCommand(1)
             <e, fs,! gs,! as,! b,>4
         %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
@@ -6034,7 +6034,7 @@ C_LHResonanceVoice = {                                                         %
 
         \scaleDurations #'(1 . 1) {
 
-            % [C LHResonanceVoice measure 66 / measure 33]                     %! _comment_measure_numbers
+            % [C LH_Resonance_Voice measure 66 / measure 33]                   %! _comment_measure_numbers
             \override Accidental.stencil = ##f                                 %! baca_accidental_stencil_false:OverrideCommand(1)
             \override Dots.stencil = ##f                                       %! baca_dots_stencil_false:OverrideCommand(1)
             \override Stem.stencil = ##f                                       %! baca_stem_stencil_false:OverrideCommand(1)
@@ -6066,7 +6066,7 @@ C_LHResonanceVoice = {                                                         %
 
         \scaleDurations #'(1 . 1) {
 
-            % [C LHResonanceVoice measure 67 / measure 34]                     %! _comment_measure_numbers
+            % [C LH_Resonance_Voice measure 67 / measure 34]                   %! _comment_measure_numbers
             <e, fs,! gs,! as,! b,>1.
         %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                      %! FIGURE_NAME_MARKUP
@@ -6095,7 +6095,7 @@ C_LHResonanceVoice = {                                                         %
 
         \scaleDurations #'(1 . 1) {
 
-            % [C LHResonanceVoice measure 68 / measure 35]                     %! _comment_measure_numbers
+            % [C LH_Resonance_Voice measure 68 / measure 35]                   %! _comment_measure_numbers
             <e, fs,! gs,! as,! b,>1
         %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                      %! FIGURE_NAME_MARKUP
@@ -6124,7 +6124,7 @@ C_LHResonanceVoice = {                                                         %
 
         \scaleDurations #'(1 . 1) {
 
-            % [C LHResonanceVoice measure 69 / measure 36]                     %! _comment_measure_numbers
+            % [C LH_Resonance_Voice measure 69 / measure 36]                   %! _comment_measure_numbers
             <e, fs,! gs,! as,! b,>1
         %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                      %! FIGURE_NAME_MARKUP
@@ -6153,7 +6153,7 @@ C_LHResonanceVoice = {                                                         %
 
         \scaleDurations #'(1 . 1) {
 
-            % [C LHResonanceVoice measure 70 / measure 37]                     %! _comment_measure_numbers
+            % [C LH_Resonance_Voice measure 70 / measure 37]                   %! _comment_measure_numbers
             <e, fs,! gs,! as,! b,>1.
         %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                      %! FIGURE_NAME_MARKUP
@@ -6182,7 +6182,7 @@ C_LHResonanceVoice = {                                                         %
 
         \scaleDurations #'(1 . 1) {
 
-            % [C LHResonanceVoice measure 71 / measure 38]                     %! _comment_measure_numbers
+            % [C LH_Resonance_Voice measure 71 / measure 38]                   %! _comment_measure_numbers
             <e, fs,! gs,! as,! b,>1
         %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                      %! FIGURE_NAME_MARKUP
@@ -6211,7 +6211,7 @@ C_LHResonanceVoice = {                                                         %
 
         \scaleDurations #'(1 . 1) {
 
-            % [C LHResonanceVoice measure 72 / measure 39]                     %! _comment_measure_numbers
+            % [C LH_Resonance_Voice measure 72 / measure 39]                   %! _comment_measure_numbers
             <e, fs,! gs,! as,! b,>2
         %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
         %%%     \fontsize                                                      %! FIGURE_NAME_MARKUP
@@ -6239,54 +6239,54 @@ C_LHResonanceVoice = {                                                         %
 
     }
 
-    % [C LHResonanceVoice measure 73 / measure 40]                             %! _comment_measure_numbers
+    % [C LH_Resonance_Voice measure 73 / measure 40]                           %! _comment_measure_numbers
     s1 * 1                                                                     %! _make_measure_silences
 
-    % [C LHResonanceVoice measure 74 / measure 41]                             %! _comment_measure_numbers
+    % [C LH_Resonance_Voice measure 74 / measure 41]                           %! _comment_measure_numbers
     s1 * 1                                                                     %! _make_measure_silences
 
-    % [C LHResonanceVoice measure 75 / measure 42]                             %! _comment_measure_numbers
+    % [C LH_Resonance_Voice measure 75 / measure 42]                           %! _comment_measure_numbers
     s1 * 1                                                                     %! _make_measure_silences
 
-    % [C LHResonanceVoice measure 76 / measure 43]                             %! _comment_measure_numbers
+    % [C LH_Resonance_Voice measure 76 / measure 43]                           %! _comment_measure_numbers
     s1 * 3/2                                                                   %! _make_measure_silences
 
-    % [C LHResonanceVoice measure 77 / measure 44]                             %! _comment_measure_numbers
+    % [C LH_Resonance_Voice measure 77 / measure 44]                           %! _comment_measure_numbers
     s1 * 4                                                                     %! _make_measure_silences
 
 }                                                                              %! extern
 
 
-C_PianoMusicLHStaff = <<                                                       %! extern
+C_Piano_Music_LH_Staff = <<                                                    %! extern
 
-    \context LHVoiceI = "LHVoiceI"                                             %! ScoreTemplate
-    \C_LHVoiceI                                                                %! extern
+    \context LHVoiceI = "LH_Voice_I"                                           %! ScoreTemplate
+    \C_LH_Voice_I                                                              %! extern
 
-    \context LHVoiceII = "LHVoiceII"                                           %! ScoreTemplate
-    \C_LHVoiceII                                                               %! extern
+    \context LHVoiceII = "LH_Voice_II"                                         %! ScoreTemplate
+    \C_LH_Voice_II                                                             %! extern
 
-    \context LHVoiceIII = "LHVoiceIII"                                         %! ScoreTemplate
-    \C_LHVoiceIII                                                              %! extern
+    \context LHVoiceIII = "LH_Voice_III"                                       %! ScoreTemplate
+    \C_LH_Voice_III                                                            %! extern
 
-    \context LHVoiceIV = "LHVoiceIV"                                           %! ScoreTemplate
-    \C_LHVoiceIV                                                               %! extern
+    \context LHVoiceIV = "LH_Voice_IV"                                         %! ScoreTemplate
+    \C_LH_Voice_IV                                                             %! extern
 
-    \context LHVoiceIVInserts = "LHVoiceIVInserts"                             %! ScoreTemplate
-    \C_LHVoiceIVInserts                                                        %! extern
+    \context LHVoiceIVInserts = "LH_Voice_IV_Inserts"                          %! ScoreTemplate
+    \C_LH_Voice_IV_Inserts                                                     %! extern
 
-    \context LHVoiceV = "LHVoiceV"                                             %! ScoreTemplate
-    \C_LHVoiceV                                                                %! extern
+    \context LHVoiceV = "LH_Voice_V"                                           %! ScoreTemplate
+    \C_LH_Voice_V                                                              %! extern
 
-    \context LHVoiceVInserts = "LHVoiceVInserts"                               %! ScoreTemplate
-    \C_LHVoiceVInserts                                                         %! extern
+    \context LHVoiceVInserts = "LH_Voice_V_Inserts"                            %! ScoreTemplate
+    \C_LH_Voice_V_Inserts                                                      %! extern
 
-    \context LHVoiceVI = "LHVoiceVI"                                           %! ScoreTemplate
-    \C_LHVoiceVI                                                               %! extern
+    \context LHVoiceVI = "LH_Voice_VI"                                         %! ScoreTemplate
+    \C_LH_Voice_VI                                                             %! extern
 
-    \context LHVoiceVIInserts = "LHVoiceVIInserts"                             %! ScoreTemplate
-    \C_LHVoiceVIInserts                                                        %! extern
+    \context LHVoiceVIInserts = "LH_Voice_VI_Inserts"                          %! ScoreTemplate
+    \C_LH_Voice_VI_Inserts                                                     %! extern
 
-    \context LHResonanceVoice = "LHResonanceVoice"                             %! ScoreTemplate
-    \C_LHResonanceVoice                                                        %! extern
+    \context LHResonanceVoice = "LH_Resonance_Voice"                           %! ScoreTemplate
+    \C_LH_Resonance_Voice                                                      %! extern
 
 >>                                                                             %! extern
