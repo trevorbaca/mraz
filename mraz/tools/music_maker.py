@@ -41,7 +41,7 @@ def music_maker():
         ...     time_signatures=time_signatures,
         ...     )
         >>> maker(
-        ...     ('MusicVoice', 1),
+        ...     ('Music_Voice', 1),
         ...     baca.rhythm(
         ...         rhythm_maker=figures,
         ...         ),
@@ -57,31 +57,31 @@ def music_maker():
             \context Score = "Score"                                                       %! SingleStaffScoreTemplate
             <<                                                                             %! SingleStaffScoreTemplate
             <BLANKLINE>
-                \context GlobalContext = "GlobalContext"                                   %! _make_global_context
+                \context GlobalContext = "Global_Context"                                  %! _make_global_context
                 <<                                                                         %! _make_global_context
             <BLANKLINE>
-                    \context GlobalSkips = "GlobalSkips"                                   %! _make_global_context
+                    \context GlobalSkips = "Global_Skips"                                  %! _make_global_context
                     {                                                                      %! _make_global_context
             <BLANKLINE>
-                        % [GlobalSkips measure 1]                                          %! _comment_measure_numbers
+                        % [Global_Skips measure 1]                                         %! _comment_measure_numbers
                         \baca-new-spacing-section #1 #24                                   %! HorizontalSpacingSpecifier(1):SPACING
                         \time 1/16                                                         %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
                         \baca-time-signature-color #'blue                                  %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
                         s1 * 1/16                                                          %! _make_global_skips(1)
             <BLANKLINE>
-                        % [GlobalSkips measure 2]                                          %! _comment_measure_numbers
+                        % [Global_Skips measure 2]                                         %! _comment_measure_numbers
                         \baca-new-spacing-section #1 #24                                   %! HorizontalSpacingSpecifier(1):SPACING
                         \time 7/16                                                         %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
                         \baca-time-signature-color #'blue                                  %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
                         s1 * 7/16                                                          %! _make_global_skips(1)
             <BLANKLINE>
-                        % [GlobalSkips measure 3]                                          %! _comment_measure_numbers
+                        % [Global_Skips measure 3]                                         %! _comment_measure_numbers
                         \baca-new-spacing-section #1 #24                                   %! HorizontalSpacingSpecifier(1):SPACING
                         \time 1/16                                                         %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
                         \baca-time-signature-color #'blue                                  %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
                         s1 * 1/16                                                          %! _make_global_skips(1)
             <BLANKLINE>
-                        % [GlobalSkips measure 4]                                          %! _comment_measure_numbers
+                        % [Global_Skips measure 4]                                         %! _comment_measure_numbers
                         \baca-new-spacing-section #1 #24                                   %! HorizontalSpacingSpecifier(1):SPACING
                         \time 6/16                                                         %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
                         \baca-time-signature-color #'blue                                  %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
@@ -93,18 +93,18 @@ def music_maker():
             <BLANKLINE>
                 >>                                                                         %! _make_global_context
             <BLANKLINE>
-                \context MusicContext = "MusicContext"                                     %! SingleStaffScoreTemplate
+                \context MusicContext = "Music_Context"                                    %! SingleStaffScoreTemplate
                 <<                                                                         %! SingleStaffScoreTemplate
             <BLANKLINE>
-                    \context Staff = "MusicStaff"                                          %! SingleStaffScoreTemplate
+                    \context Staff = "Music_Staff"                                         %! SingleStaffScoreTemplate
                     {                                                                      %! SingleStaffScoreTemplate
             <BLANKLINE>
-                        \context Voice = "MusicVoice"                                      %! SingleStaffScoreTemplate
+                        \context Voice = "Music_Voice"                                     %! SingleStaffScoreTemplate
                         {                                                                  %! SingleStaffScoreTemplate
             <BLANKLINE>
                             \scaleDurations #'(1 . 1) {
             <BLANKLINE>
-                                % [MusicVoice measure 1]                                   %! _comment_measure_numbers
+                                % [Music_Voice measure 1]                                  %! _comment_measure_numbers
                                 e'16
                                 [
                                 ]
@@ -113,7 +113,7 @@ def music_maker():
             <BLANKLINE>
                             \scaleDurations #'(1 . 1) {
             <BLANKLINE>
-                                % [MusicVoice measure 2]                                   %! _comment_measure_numbers
+                                % [Music_Voice measure 2]                                  %! _comment_measure_numbers
                                 \set stemLeftBeamCount = 0
                                 \set stemRightBeamCount = 2
                                 fs'!16
@@ -148,7 +148,7 @@ def music_maker():
             <BLANKLINE>
                             \scaleDurations #'(1 . 1) {
             <BLANKLINE>
-                                % [MusicVoice measure 3]                                   %! _comment_measure_numbers
+                                % [Music_Voice measure 3]                                  %! _comment_measure_numbers
                                 b'16
                                 [
                                 ]
@@ -157,7 +157,7 @@ def music_maker():
             <BLANKLINE>
                             \scaleDurations #'(1 . 1) {
             <BLANKLINE>
-                                % [MusicVoice measure 4]                                   %! _comment_measure_numbers
+                                % [Music_Voice measure 4]                                  %! _comment_measure_numbers
                                 \set stemLeftBeamCount = 0
                                 \set stemRightBeamCount = 2
                                 bf'!16
@@ -239,7 +239,7 @@ def music_maker():
         ...     time_signatures=time_signatures,
         ...     )
         >>> maker(
-        ...     ('MusicVoice', 1),
+        ...     ('Music_Voice', 1),
         ...     baca.rhythm(
         ...         rhythm_maker=figures,
         ...         ),
@@ -261,25 +261,25 @@ def music_maker():
             }                                                                              %! SingleStaffScoreTemplate
             <<                                                                             %! SingleStaffScoreTemplate
             <BLANKLINE>
-                \context GlobalContext = "GlobalContext"                                   %! _make_global_context
+                \context GlobalContext = "Global_Context"                                  %! _make_global_context
                 <<                                                                         %! _make_global_context
             <BLANKLINE>
-                    \context GlobalSkips = "GlobalSkips"                                   %! _make_global_context
+                    \context GlobalSkips = "Global_Skips"                                  %! _make_global_context
                     {                                                                      %! _make_global_context
             <BLANKLINE>
-                        % [GlobalSkips measure 1]                                          %! _comment_measure_numbers
+                        % [Global_Skips measure 1]                                         %! _comment_measure_numbers
                         \baca-new-spacing-section #1 #24                                   %! HorizontalSpacingSpecifier(1):SPACING
                         \time 9/16                                                         %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
                         \baca-time-signature-color #'blue                                  %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
                         s1 * 9/16                                                          %! _make_global_skips(1)
             <BLANKLINE>
-                        % [GlobalSkips measure 2]                                          %! _comment_measure_numbers
+                        % [Global_Skips measure 2]                                         %! _comment_measure_numbers
                         \baca-new-spacing-section #1 #24                                   %! HorizontalSpacingSpecifier(1):SPACING
                         \time 14/16                                                        %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
                         \baca-time-signature-color #'blue                                  %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
                         s1 * 7/8                                                           %! _make_global_skips(1)
             <BLANKLINE>
-                        % [GlobalSkips measure 3]                                          %! _comment_measure_numbers
+                        % [Global_Skips measure 3]                                         %! _comment_measure_numbers
                         \baca-new-spacing-section #1 #24                                   %! HorizontalSpacingSpecifier(1):SPACING
                         \time 8/16                                                         %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
                         \baca-time-signature-color #'blue                                  %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
@@ -291,18 +291,18 @@ def music_maker():
             <BLANKLINE>
                 >>                                                                         %! _make_global_context
             <BLANKLINE>
-                \context MusicContext = "MusicContext"                                     %! SingleStaffScoreTemplate
+                \context MusicContext = "Music_Context"                                    %! SingleStaffScoreTemplate
                 <<                                                                         %! SingleStaffScoreTemplate
             <BLANKLINE>
-                    \context Staff = "MusicStaff"                                          %! SingleStaffScoreTemplate
+                    \context Staff = "Music_Staff"                                         %! SingleStaffScoreTemplate
                     {                                                                      %! SingleStaffScoreTemplate
             <BLANKLINE>
-                        \context Voice = "MusicVoice"                                      %! SingleStaffScoreTemplate
+                        \context Voice = "Music_Voice"                                     %! SingleStaffScoreTemplate
                         {                                                                  %! SingleStaffScoreTemplate
             <BLANKLINE>
                             \scaleDurations #'(1 . 1) {
             <BLANKLINE>
-                                % [MusicVoice measure 1]                                   %! _comment_measure_numbers
+                                % [Music_Voice measure 1]                                  %! _comment_measure_numbers
                                 \set stemLeftBeamCount = 0
                                 \set stemRightBeamCount = 2
                                 e'16
@@ -353,7 +353,7 @@ def music_maker():
             <BLANKLINE>
                             \scaleDurations #'(1 . 1) {
             <BLANKLINE>
-                                % [MusicVoice measure 2]                                   %! _comment_measure_numbers
+                                % [Music_Voice measure 2]                                  %! _comment_measure_numbers
                                 \set stemLeftBeamCount = 0
                                 \set stemRightBeamCount = 2
                                 fs'!16
@@ -424,7 +424,7 @@ def music_maker():
             <BLANKLINE>
                             \scaleDurations #'(1 . 1) {
             <BLANKLINE>
-                                % [MusicVoice measure 3]                                   %! _comment_measure_numbers
+                                % [Music_Voice measure 3]                                  %! _comment_measure_numbers
                                 \set stemLeftBeamCount = 0
                                 \set stemRightBeamCount = 2
                                 b'16
