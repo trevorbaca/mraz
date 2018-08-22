@@ -204,6 +204,7 @@ i_RH_Voice_I = {                                                               %
         %%%                 ]                                                  %! FIGURE_NAME_MARKUP
         %%%             }                                                      %! FIGURE_NAME_MARKUP
         %%%     }                                                              %! FIGURE_NAME_MARKUP
+            ^ \baca-default-indicator-markup "(“Piano”)"                       %! DEFAULT_INSTRUMENT_ALERT:_attach_latent_indicator_alert
             \override PianoMusicRHStaff.Clef.color = #(x11-color 'violet)      %! DEFAULT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
         }
@@ -1349,7 +1350,6 @@ i_LH_Voice_VI = {                                                              %
 
     % [_ LH_Voice_VI measure 1]                                                %! _comment_measure_numbers
     s1 * 3/2
-    ^ \baca-default-indicator-markup "(“Piano”)"                               %! DEFAULT_INSTRUMENT_ALERT:_attach_latent_indicator_alert
 
     {
 
