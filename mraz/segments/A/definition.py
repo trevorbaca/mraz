@@ -266,8 +266,12 @@ maker(
 maker(
     'lh_v6',
     baca.script_down(),
-    baca.stem_down(),
-    baca.tenuto(selector=baca.pheads()),
+    baca.stem_down(
+        selector=baca.tleaves(exclude=baca.enums.HIDDEN),
+        ),
+    baca.tenuto(
+        selector=baca.pheads(exclude=baca.enums.HIDDEN),
+        ),
     baca.tuplet_bracket_staff_padding(6),
     baca.rest_position(-10),
     )

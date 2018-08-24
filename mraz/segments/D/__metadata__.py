@@ -29,6 +29,7 @@ metadata = abjad.OrderedDict(
                 'LH_Voice_II',
                 'LH_Voice_III',
                 'LH_Voice_IV',
+                'LH_Rest_Voice_IV',
                 'LH_Voice_IV_Inserts',
                 'LH_Voice_V',
                 'LH_Voice_V_Inserts',
@@ -173,6 +174,7 @@ metadata = abjad.OrderedDict(
             abjad.OrderedDict(
                 [
                     ('LH_Resonance_Voice', False),
+                    ('LH_Rest_Voice_IV', False),
                     ('LH_Voice_I', False),
                     ('LH_Voice_II', False),
                     ('LH_Voice_III', False),

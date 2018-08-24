@@ -538,7 +538,6 @@ F_RH_Voice_I = {                                                               %
                 bf'''!16
                 ]
                 \revert Beam.positions                                         %! baca_beam_positions:OverrideCommand(2)
-                \revert Stem.direction                                         %! baca_stem_up:OverrideCommand(2)
 
             }
 
@@ -546,9 +545,28 @@ F_RH_Voice_I = {                                                               %
 
     }
 
-    % [F RH_Voice_I measure 108 / measure 11]                                  %! _comment_measure_numbers
-    s1 * 1/8                                                                   %! _make_measure_silences
-    \revert Beam.positions                                                     %! baca_beam_positions:OverrideCommand(2)
+    <<                                                                         %! _make_multimeasure_rest_container
+
+        \context Voice = "RH_Voice_I"                                          %! _make_multimeasure_rest_container
+        {                                                                      %! _make_multimeasure_rest_container
+
+            % [F RH_Voice_I measure 108 / measure 11]                          %! _comment_measure_numbers
+            \baca-invisible-music                                              %! _make_multimeasure_rest_container
+            c'1 * 1/8                                                          %! _make_multimeasure_rest_container
+            \revert Beam.positions                                             %! baca_beam_positions:OverrideCommand(2)
+            \revert Stem.direction                                             %! baca_stem_up:OverrideCommand(2)
+
+        }                                                                      %! _make_multimeasure_rest_container
+
+        \context Voice = "RH_Rest_Voice_I"                                     %! _make_multimeasure_rest_container
+        {                                                                      %! _make_multimeasure_rest_container
+
+            % [F RH_Rest_Voice_I measure 108 / measure 11]                     %! _comment_measure_numbers
+            s1 * 1/8                                                           %! _make_multimeasure_rest_container
+
+        }                                                                      %! _make_multimeasure_rest_container
+
+    >>                                                                         %! _make_multimeasure_rest_container
 
 }                                                                              %! extern
 
@@ -805,9 +823,27 @@ F_RH_Voice_I_Inserts = {                                                       %
 
     }
 
-    % [F RH_Voice_I_Inserts measure 108 / measure 11]                          %! _comment_measure_numbers
-    s1 * 1/8                                                                   %! _make_measure_silences
-    \revert Script.direction                                                   %! baca_script_down:OverrideCommand(2)
+    <<                                                                         %! _make_multimeasure_rest_container
+
+        \context Voice = "RH_Voice_I_Inserts"                                  %! _make_multimeasure_rest_container
+        {                                                                      %! _make_multimeasure_rest_container
+
+            % [F RH_Voice_I_Inserts measure 108 / measure 11]                  %! _comment_measure_numbers
+            \baca-invisible-music                                              %! _make_multimeasure_rest_container
+            c'1 * 1/8                                                          %! _make_multimeasure_rest_container
+            \revert Script.direction                                           %! baca_script_down:OverrideCommand(2)
+
+        }                                                                      %! _make_multimeasure_rest_container
+
+        \context Voice = "RH_Rest_Voice_I_Inserts"                             %! _make_multimeasure_rest_container
+        {                                                                      %! _make_multimeasure_rest_container
+
+            % [F RH_Rest_Voice_I_Inserts measure 108 / measure 11]             %! _comment_measure_numbers
+            s1 * 1/8                                                           %! _make_multimeasure_rest_container
+
+        }                                                                      %! _make_multimeasure_rest_container
+
+    >>                                                                         %! _make_multimeasure_rest_container
 
 }                                                                              %! extern
 
@@ -2117,13 +2153,30 @@ F_LH_Voice_IV = {                                                              %
             \set stemRightBeamCount = 0
             b''16
             ]
-            \revert Stem.direction                                             %! baca_stem_down:OverrideCommand(2)
 
         }
 
     }
 
-    s1 * 5/16                                                                  %! _make_measure_silences
+    <<                                                                         %! _make_multimeasure_rest_container
+
+        \context Voice = "LH_Voice_IV"                                         %! _make_multimeasure_rest_container
+        {                                                                      %! _make_multimeasure_rest_container
+
+            \baca-invisible-music                                              %! _make_multimeasure_rest_container
+            c'1 * 5/16                                                         %! _make_multimeasure_rest_container
+            \revert Stem.direction                                             %! baca_stem_down:OverrideCommand(2)
+
+        }                                                                      %! _make_multimeasure_rest_container
+
+        \context Voice = "LH_Rest_Voice_IV"                                    %! _make_multimeasure_rest_container
+        {                                                                      %! _make_multimeasure_rest_container
+
+            s1 * 5/16                                                          %! _make_multimeasure_rest_container
+
+        }                                                                      %! _make_multimeasure_rest_container
+
+    >>                                                                         %! _make_multimeasure_rest_container
 
     % [F LH_Voice_IV measure 108 / measure 11]                                 %! _comment_measure_numbers
     s1 * 1/8                                                                   %! _make_measure_silences
@@ -2220,7 +2273,6 @@ F_LH_Voice_IV_Inserts = {                                                      %
             s16
 
             fs''!16
-            \revert Stem.direction                                             %! baca_stem_up:OverrideCommand(2)
 
             s16
 
@@ -2230,7 +2282,25 @@ F_LH_Voice_IV_Inserts = {                                                      %
 
     }
 
-    s1 * 5/16                                                                  %! _make_measure_silences
+    <<                                                                         %! _make_multimeasure_rest_container
+
+        \context Voice = "LH_Voice_IV_Inserts"                                 %! _make_multimeasure_rest_container
+        {                                                                      %! _make_multimeasure_rest_container
+
+            \baca-invisible-music                                              %! _make_multimeasure_rest_container
+            c'1 * 5/16                                                         %! _make_multimeasure_rest_container
+            \revert Stem.direction                                             %! baca_stem_up:OverrideCommand(2)
+
+        }                                                                      %! _make_multimeasure_rest_container
+
+        \context Voice = "LH_Rest_Voice_IV_Inserts"                            %! _make_multimeasure_rest_container
+        {                                                                      %! _make_multimeasure_rest_container
+
+            s1 * 5/16                                                          %! _make_multimeasure_rest_container
+
+        }                                                                      %! _make_multimeasure_rest_container
+
+    >>                                                                         %! _make_multimeasure_rest_container
 
     % [F LH_Voice_IV_Inserts measure 108 / measure 11]                         %! _comment_measure_numbers
     s1 * 1/8                                                                   %! _make_measure_silences
@@ -2482,7 +2552,6 @@ F_LH_Voice_V = {                                                               %
                 cs'''!16
                 ]
                 )                                                              %! baca_slur:SpannerCommand
-                \revert Stem.direction                                         %! baca_stem_down:OverrideCommand(2)
 
             }
 
@@ -2490,7 +2559,25 @@ F_LH_Voice_V = {                                                               %
 
     }
 
-    s1 * 3/17                                                                  %! _make_measure_silences
+    <<                                                                         %! _make_multimeasure_rest_container
+
+        \context Voice = "LH_Voice_V"                                          %! _make_multimeasure_rest_container
+        {                                                                      %! _make_multimeasure_rest_container
+
+            \baca-invisible-music                                              %! _make_multimeasure_rest_container
+            c'1 * 3/17                                                         %! _make_multimeasure_rest_container
+            \revert Stem.direction                                             %! baca_stem_down:OverrideCommand(2)
+
+        }                                                                      %! _make_multimeasure_rest_container
+
+        \context Voice = "LH_Rest_Voice_V"                                     %! _make_multimeasure_rest_container
+        {                                                                      %! _make_multimeasure_rest_container
+
+            s1 * 3/17                                                          %! _make_multimeasure_rest_container
+
+        }                                                                      %! _make_multimeasure_rest_container
+
+    >>                                                                         %! _make_multimeasure_rest_container
 
     % [F LH_Voice_V measure 106 / measure 9]                                   %! _comment_measure_numbers
     s1 * 3/16                                                                  %! _make_measure_silences
@@ -2654,7 +2741,6 @@ F_LH_Voice_V_Inserts = {                                                       %
                 cs'''!16
                 - \staccato                                                    %! baca_staccato:IndicatorCommand
                 ]
-                \revert Stem.direction                                         %! baca_stem_up:OverrideCommand(2)
 
             }
 
@@ -2664,7 +2750,25 @@ F_LH_Voice_V_Inserts = {                                                       %
 
     }
 
-    s1 * 3/17                                                                  %! _make_measure_silences
+    <<                                                                         %! _make_multimeasure_rest_container
+
+        \context Voice = "LH_Voice_V_Inserts"                                  %! _make_multimeasure_rest_container
+        {                                                                      %! _make_multimeasure_rest_container
+
+            \baca-invisible-music                                              %! _make_multimeasure_rest_container
+            c'1 * 3/17                                                         %! _make_multimeasure_rest_container
+            \revert Stem.direction                                             %! baca_stem_up:OverrideCommand(2)
+
+        }                                                                      %! _make_multimeasure_rest_container
+
+        \context Voice = "LH_Rest_Voice_V_Inserts"                             %! _make_multimeasure_rest_container
+        {                                                                      %! _make_multimeasure_rest_container
+
+            s1 * 3/17                                                          %! _make_multimeasure_rest_container
+
+        }                                                                      %! _make_multimeasure_rest_container
+
+    >>                                                                         %! _make_multimeasure_rest_container
 
     % [F LH_Voice_V_Inserts measure 106 / measure 9]                           %! _comment_measure_numbers
     s1 * 3/16                                                                  %! _make_measure_silences
