@@ -1096,15 +1096,33 @@ C_RH_Voice_I = {                                                               %
         %%%                 ]                                                  %! FIGURE_NAME_MARKUP
         %%%             }                                                      %! FIGURE_NAME_MARKUP
         %%%     }                                                              %! FIGURE_NAME_MARKUP
-            \revert Stem.direction                                             %! baca_stem_up:OverrideCommand(2)
             \ottava #0                                                         %! baca_ottava:SpannerCommand
 
         }
 
     }
 
-    % [C RH_Voice_I measure 73 / measure 40]                                   %! _comment_measure_numbers
-    s1 * 1                                                                     %! _make_measure_silences
+    <<                                                                         %! _make_multimeasure_rest_container
+
+        \context Voice = "RH_Voice_I"                                          %! _make_multimeasure_rest_container
+        {                                                                      %! _make_multimeasure_rest_container
+
+            % [C RH_Voice_I measure 73 / measure 40]                           %! _comment_measure_numbers
+            \baca-invisible-music                                              %! _make_multimeasure_rest_container
+            c'1 * 1                                                            %! _make_multimeasure_rest_container
+            \revert Stem.direction                                             %! baca_stem_up:OverrideCommand(2)
+
+        }                                                                      %! _make_multimeasure_rest_container
+
+        \context Voice = "RH_Rest_Voice_I"                                     %! _make_multimeasure_rest_container
+        {                                                                      %! _make_multimeasure_rest_container
+
+            % [C RH_Rest_Voice_I measure 73 / measure 40]                      %! _comment_measure_numbers
+            s1 * 1                                                             %! _make_multimeasure_rest_container
+
+        }                                                                      %! _make_multimeasure_rest_container
+
+    >>                                                                         %! _make_multimeasure_rest_container
 
     % [C RH_Voice_I measure 74 / measure 41]                                   %! _comment_measure_numbers
     s1 * 1                                                                     %! _make_measure_silences
@@ -3099,8 +3117,26 @@ C_RH_Voice_V = {                                                               %
 
     }
 
-    % [C RH_Voice_V measure 51 / measure 18]                                   %! _comment_measure_numbers
-    s1 * 7/8                                                                   %! _make_measure_silences
+    <<                                                                         %! _make_multimeasure_rest_container
+
+        \context Voice = "RH_Voice_V"                                          %! _make_multimeasure_rest_container
+        {                                                                      %! _make_multimeasure_rest_container
+
+            % [C RH_Voice_V measure 51 / measure 18]                           %! _comment_measure_numbers
+            \baca-invisible-music                                              %! _make_multimeasure_rest_container
+            c'1 * 7/8                                                          %! _make_multimeasure_rest_container
+
+        }                                                                      %! _make_multimeasure_rest_container
+
+        \context Voice = "RH_Rest_Voice_V"                                     %! _make_multimeasure_rest_container
+        {                                                                      %! _make_multimeasure_rest_container
+
+            % [C RH_Rest_Voice_V measure 51 / measure 18]                      %! _comment_measure_numbers
+            s1 * 7/8                                                           %! _make_multimeasure_rest_container
+
+        }                                                                      %! _make_multimeasure_rest_container
+
+    >>                                                                         %! _make_multimeasure_rest_container
 
     % [C RH_Voice_V measure 52 / measure 19]                                   %! _comment_measure_numbers
     s1 * 1                                                                     %! _make_measure_silences
@@ -3681,8 +3717,26 @@ C_LH_Voice_II = {                                                              %
 
     }
 
-    % [C LH_Voice_II measure 76 / measure 43]                                  %! _comment_measure_numbers
-    s1 * 3/2                                                                   %! _make_measure_silences
+    <<                                                                         %! _make_multimeasure_rest_container
+
+        \context Voice = "LH_Voice_II"                                         %! _make_multimeasure_rest_container
+        {                                                                      %! _make_multimeasure_rest_container
+
+            % [C LH_Voice_II measure 76 / measure 43]                          %! _comment_measure_numbers
+            \baca-invisible-music                                              %! _make_multimeasure_rest_container
+            c'1 * 3/2                                                          %! _make_multimeasure_rest_container
+
+        }                                                                      %! _make_multimeasure_rest_container
+
+        \context Voice = "LH_Rest_Voice_II"                                    %! _make_multimeasure_rest_container
+        {                                                                      %! _make_multimeasure_rest_container
+
+            % [C LH_Rest_Voice_II measure 76 / measure 43]                     %! _comment_measure_numbers
+            s1 * 3/2                                                           %! _make_multimeasure_rest_container
+
+        }                                                                      %! _make_multimeasure_rest_container
+
+    >>                                                                         %! _make_multimeasure_rest_container
 
     % [C LH_Voice_II measure 77 / measure 44]                                  %! _comment_measure_numbers
     s1 * 4                                                                     %! _make_measure_silences
@@ -3878,8 +3932,26 @@ C_LH_Voice_IV = {                                                              %
 
     }
 
-    % [C LH_Voice_IV measure 38 / measure 5]                                   %! _comment_measure_numbers
-    s1 * 3/4                                                                   %! _make_measure_silences
+    <<                                                                         %! _make_multimeasure_rest_container
+
+        \context Voice = "LH_Voice_IV"                                         %! _make_multimeasure_rest_container
+        {                                                                      %! _make_multimeasure_rest_container
+
+            % [C LH_Voice_IV measure 38 / measure 5]                           %! _comment_measure_numbers
+            \baca-invisible-music                                              %! _make_multimeasure_rest_container
+            c'1 * 3/4                                                          %! _make_multimeasure_rest_container
+
+        }                                                                      %! _make_multimeasure_rest_container
+
+        \context Voice = "LH_Rest_Voice_IV"                                    %! _make_multimeasure_rest_container
+        {                                                                      %! _make_multimeasure_rest_container
+
+            % [C LH_Rest_Voice_IV measure 38 / measure 5]                      %! _comment_measure_numbers
+            s1 * 3/4                                                           %! _make_multimeasure_rest_container
+
+        }                                                                      %! _make_multimeasure_rest_container
+
+    >>                                                                         %! _make_multimeasure_rest_container
 
     % [C LH_Voice_IV measure 39 / measure 6]                                   %! _comment_measure_numbers
     s1 * 3/2                                                                   %! _make_measure_silences
@@ -5262,7 +5334,6 @@ C_LH_Voice_V = {                                                               %
 
             e'8.
             - \tenuto                                                          %! baca_tenuto:IndicatorCommand
-            \revert Stem.direction                                             %! baca_stem_down:OverrideCommand(2)
 
             r16
 
@@ -5272,10 +5343,29 @@ C_LH_Voice_V = {                                                               %
 
     }
 
-    % [C LH_Voice_V measure 77 / measure 44]                                   %! _comment_measure_numbers
-    s1 * 4                                                                     %! _make_measure_silences
-    \revert TupletBracket.staff-padding                                        %! baca_tuplet_bracket_staff_padding:OverrideCommand(2)
-    \revert TupletBracket.direction                                            %! baca_tuplet_bracket_down:OverrideCommand(2)
+    <<                                                                         %! _make_multimeasure_rest_container
+
+        \context Voice = "LH_Voice_V"                                          %! _make_multimeasure_rest_container
+        {                                                                      %! _make_multimeasure_rest_container
+
+            % [C LH_Voice_V measure 77 / measure 44]                           %! _comment_measure_numbers
+            \baca-invisible-music                                              %! _make_multimeasure_rest_container
+            c'1 * 4                                                            %! _make_multimeasure_rest_container
+            \revert Stem.direction                                             %! baca_stem_down:OverrideCommand(2)
+            \revert TupletBracket.staff-padding                                %! baca_tuplet_bracket_staff_padding:OverrideCommand(2)
+            \revert TupletBracket.direction                                    %! baca_tuplet_bracket_down:OverrideCommand(2)
+
+        }                                                                      %! _make_multimeasure_rest_container
+
+        \context Voice = "LH_Rest_Voice_V"                                     %! _make_multimeasure_rest_container
+        {                                                                      %! _make_multimeasure_rest_container
+
+            % [C LH_Rest_Voice_V measure 77 / measure 44]                      %! _comment_measure_numbers
+            s1 * 4                                                             %! _make_multimeasure_rest_container
+
+        }                                                                      %! _make_multimeasure_rest_container
+
+    >>                                                                         %! _make_multimeasure_rest_container
 
 }                                                                              %! extern
 
@@ -5459,7 +5549,6 @@ C_LH_Voice_V_Inserts = {                                                       %
             \set stemRightBeamCount = 1                                        %! _extend_beam
             af'!8
             - \staccato                                                        %! baca_staccato:IndicatorCommand
-            \revert Stem.direction                                             %! baca_stem_up:OverrideCommand(2)
 
             s4.
             ]                                                                  %! _extend_beam
@@ -5470,8 +5559,28 @@ C_LH_Voice_V_Inserts = {                                                       %
 
     }
 
-    % [C LH_Voice_V_Inserts measure 65 / measure 32]                           %! _comment_measure_numbers
-    s1 * 1/4                                                                   %! _make_measure_silences
+    <<                                                                         %! _make_multimeasure_rest_container
+
+        \context Voice = "LH_Voice_V_Inserts"                                  %! _make_multimeasure_rest_container
+        {                                                                      %! _make_multimeasure_rest_container
+
+            % [C LH_Voice_V_Inserts measure 65 / measure 32]                   %! _comment_measure_numbers
+            \baca-invisible-music                                              %! _make_multimeasure_rest_container
+            c'1 * 1/4                                                          %! _make_multimeasure_rest_container
+            - \staccato                                                        %! baca_staccato:IndicatorCommand
+            \revert Stem.direction                                             %! baca_stem_up:OverrideCommand(2)
+
+        }                                                                      %! _make_multimeasure_rest_container
+
+        \context Voice = "LH_Rest_Voice_V_Inserts"                             %! _make_multimeasure_rest_container
+        {                                                                      %! _make_multimeasure_rest_container
+
+            % [C LH_Rest_Voice_V_Inserts measure 65 / measure 32]              %! _comment_measure_numbers
+            s1 * 1/4                                                           %! _make_multimeasure_rest_container
+
+        }                                                                      %! _make_multimeasure_rest_container
+
+    >>                                                                         %! _make_multimeasure_rest_container
 
     % [C LH_Voice_V_Inserts measure 66 / measure 33]                           %! _comment_measure_numbers
     s1 * 7/4                                                                   %! _make_measure_silences
@@ -6239,8 +6348,26 @@ C_LH_Resonance_Voice = {                                                       %
 
     }
 
-    % [C LH_Resonance_Voice measure 73 / measure 40]                           %! _comment_measure_numbers
-    s1 * 1                                                                     %! _make_measure_silences
+    <<                                                                         %! _make_multimeasure_rest_container
+
+        \context Voice = "LH_Resonance_Voice"                                  %! _make_multimeasure_rest_container
+        {                                                                      %! _make_multimeasure_rest_container
+
+            % [C LH_Resonance_Voice measure 73 / measure 40]                   %! _comment_measure_numbers
+            \baca-invisible-music                                              %! _make_multimeasure_rest_container
+            c'1 * 1                                                            %! _make_multimeasure_rest_container
+
+        }                                                                      %! _make_multimeasure_rest_container
+
+        \context Voice = "LH_Resonance_Rest_Voice"                             %! _make_multimeasure_rest_container
+        {                                                                      %! _make_multimeasure_rest_container
+
+            % [C LH_Resonance_Rest_Voice measure 73 / measure 40]              %! _comment_measure_numbers
+            s1 * 1                                                             %! _make_multimeasure_rest_container
+
+        }                                                                      %! _make_multimeasure_rest_container
+
+    >>                                                                         %! _make_multimeasure_rest_container
 
     % [C LH_Resonance_Voice measure 74 / measure 41]                           %! _comment_measure_numbers
     s1 * 1                                                                     %! _make_measure_silences

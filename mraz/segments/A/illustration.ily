@@ -1704,7 +1704,24 @@ A_LH_Voice_VI = {                                                              %
 
     }
 
-    s1 * 3/8                                                                   %! _make_measure_silences
+    <<                                                                         %! _make_multimeasure_rest_container
+
+        \context Voice = "LH_Voice_VI"                                         %! _make_multimeasure_rest_container
+        {                                                                      %! _make_multimeasure_rest_container
+
+            \baca-invisible-music                                              %! _make_multimeasure_rest_container
+            c'1 * 3/8                                                          %! _make_multimeasure_rest_container
+
+        }                                                                      %! _make_multimeasure_rest_container
+
+        \context Voice = "LH_Rest_Voice_VI"                                    %! _make_multimeasure_rest_container
+        {                                                                      %! _make_multimeasure_rest_container
+
+            s1 * 3/8                                                           %! _make_multimeasure_rest_container
+
+        }                                                                      %! _make_multimeasure_rest_container
+
+    >>                                                                         %! _make_multimeasure_rest_container
 
     % [A LH_Voice_VI measure 21 / measure 12]                                  %! _comment_measure_numbers
     s1 * 1/2                                                                   %! _make_measure_silences

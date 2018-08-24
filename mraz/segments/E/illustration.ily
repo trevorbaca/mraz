@@ -1834,8 +1834,26 @@ E_RH_Voice_II = {                                                              %
 
     }
 
-    % [E RH_Voice_II measure 97 / measure 16]                                  %! _comment_measure_numbers
-    s1 * 1/4                                                                   %! _make_measure_silences
+    <<                                                                         %! _make_multimeasure_rest_container
+
+        \context Voice = "RH_Voice_II"                                         %! _make_multimeasure_rest_container
+        {                                                                      %! _make_multimeasure_rest_container
+
+            % [E RH_Voice_II measure 97 / measure 16]                          %! _comment_measure_numbers
+            \baca-invisible-music                                              %! _make_multimeasure_rest_container
+            c'1 * 1/4                                                          %! _make_multimeasure_rest_container
+
+        }                                                                      %! _make_multimeasure_rest_container
+
+        \context Voice = "RH_Rest_Voice_II"                                    %! _make_multimeasure_rest_container
+        {                                                                      %! _make_multimeasure_rest_container
+
+            % [E RH_Rest_Voice_II measure 97 / measure 16]                     %! _comment_measure_numbers
+            s1 * 1/4                                                           %! _make_multimeasure_rest_container
+
+        }                                                                      %! _make_multimeasure_rest_container
+
+    >>                                                                         %! _make_multimeasure_rest_container
 
 }                                                                              %! extern
 
@@ -2680,8 +2698,26 @@ E_RH_Voice_III = {                                                             %
 
     }
 
-    % [E RH_Voice_III measure 97 / measure 16]                                 %! _comment_measure_numbers
-    s1 * 1/4                                                                   %! _make_measure_silences
+    <<                                                                         %! _make_multimeasure_rest_container
+
+        \context Voice = "RH_Voice_III"                                        %! _make_multimeasure_rest_container
+        {                                                                      %! _make_multimeasure_rest_container
+
+            % [E RH_Voice_III measure 97 / measure 16]                         %! _comment_measure_numbers
+            \baca-invisible-music                                              %! _make_multimeasure_rest_container
+            c'1 * 1/4                                                          %! _make_multimeasure_rest_container
+
+        }                                                                      %! _make_multimeasure_rest_container
+
+        \context Voice = "RH_Rest_Voice_III"                                   %! _make_multimeasure_rest_container
+        {                                                                      %! _make_multimeasure_rest_container
+
+            % [E RH_Rest_Voice_III measure 97 / measure 16]                    %! _comment_measure_numbers
+            s1 * 1/4                                                           %! _make_multimeasure_rest_container
+
+        }                                                                      %! _make_multimeasure_rest_container
+
+    >>                                                                         %! _make_multimeasure_rest_container
 
 }                                                                              %! extern
 
@@ -3804,8 +3840,26 @@ E_LH_Voice_V = {                                                               %
 
     }
 
-    % [E LH_Voice_V measure 87 / measure 6]                                    %! _comment_measure_numbers
-    s1 * 5/2                                                                   %! _make_measure_silences
+    <<                                                                         %! _make_multimeasure_rest_container
+
+        \context Voice = "LH_Voice_V"                                          %! _make_multimeasure_rest_container
+        {                                                                      %! _make_multimeasure_rest_container
+
+            % [E LH_Voice_V measure 87 / measure 6]                            %! _comment_measure_numbers
+            \baca-invisible-music                                              %! _make_multimeasure_rest_container
+            c'1 * 5/2                                                          %! _make_multimeasure_rest_container
+
+        }                                                                      %! _make_multimeasure_rest_container
+
+        \context Voice = "LH_Rest_Voice_V"                                     %! _make_multimeasure_rest_container
+        {                                                                      %! _make_multimeasure_rest_container
+
+            % [E LH_Rest_Voice_V measure 87 / measure 6]                       %! _comment_measure_numbers
+            s1 * 5/2                                                           %! _make_multimeasure_rest_container
+
+        }                                                                      %! _make_multimeasure_rest_container
+
+    >>                                                                         %! _make_multimeasure_rest_container
 
     % [E LH_Voice_V measure 88 / measure 7]                                    %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _make_measure_silences
@@ -3947,8 +4001,26 @@ E_LH_Voice_VI = {                                                              %
 
     }
 
-    % [E LH_Voice_VI measure 87 / measure 6]                                   %! _comment_measure_numbers
-    s1 * 5/2                                                                   %! _make_measure_silences
+    <<                                                                         %! _make_multimeasure_rest_container
+
+        \context Voice = "LH_Voice_VI"                                         %! _make_multimeasure_rest_container
+        {                                                                      %! _make_multimeasure_rest_container
+
+            % [E LH_Voice_VI measure 87 / measure 6]                           %! _comment_measure_numbers
+            \baca-invisible-music                                              %! _make_multimeasure_rest_container
+            c'1 * 5/2                                                          %! _make_multimeasure_rest_container
+
+        }                                                                      %! _make_multimeasure_rest_container
+
+        \context Voice = "LH_Rest_Voice_VI"                                    %! _make_multimeasure_rest_container
+        {                                                                      %! _make_multimeasure_rest_container
+
+            % [E LH_Rest_Voice_VI measure 87 / measure 6]                      %! _comment_measure_numbers
+            s1 * 5/2                                                           %! _make_multimeasure_rest_container
+
+        }                                                                      %! _make_multimeasure_rest_container
+
+    >>                                                                         %! _make_multimeasure_rest_container
 
     % [E LH_Voice_VI measure 88 / measure 7]                                   %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _make_measure_silences
@@ -4234,8 +4306,26 @@ E_LH_Resonance_Voice = {                                                       %
 
     }
 
-    % [E LH_Resonance_Voice measure 96 / measure 15]                           %! _comment_measure_numbers
-    s1 * 7/4                                                                   %! _make_measure_silences
+    <<                                                                         %! _make_multimeasure_rest_container
+
+        \context Voice = "LH_Resonance_Voice"                                  %! _make_multimeasure_rest_container
+        {                                                                      %! _make_multimeasure_rest_container
+
+            % [E LH_Resonance_Voice measure 96 / measure 15]                   %! _comment_measure_numbers
+            \baca-invisible-music                                              %! _make_multimeasure_rest_container
+            c'1 * 7/4                                                          %! _make_multimeasure_rest_container
+
+        }                                                                      %! _make_multimeasure_rest_container
+
+        \context Voice = "LH_Resonance_Rest_Voice"                             %! _make_multimeasure_rest_container
+        {                                                                      %! _make_multimeasure_rest_container
+
+            % [E LH_Resonance_Rest_Voice measure 96 / measure 15]              %! _comment_measure_numbers
+            s1 * 7/4                                                           %! _make_multimeasure_rest_container
+
+        }                                                                      %! _make_multimeasure_rest_container
+
+    >>                                                                         %! _make_multimeasure_rest_container
 
     % [E LH_Resonance_Voice measure 97 / measure 16]                           %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _make_measure_silences

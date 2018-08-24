@@ -749,7 +749,24 @@ D_LH_Voice_IV = {                                                              %
 
     }
 
-    s1 * 7/16                                                                  %! _make_measure_silences
+    <<                                                                         %! _make_multimeasure_rest_container
+
+        \context Voice = "LH_Voice_IV"                                         %! _make_multimeasure_rest_container
+        {                                                                      %! _make_multimeasure_rest_container
+
+            \baca-invisible-music                                              %! _make_multimeasure_rest_container
+            c'1 * 7/16                                                         %! _make_multimeasure_rest_container
+
+        }                                                                      %! _make_multimeasure_rest_container
+
+        \context Voice = "LH_Rest_Voice_IV"                                    %! _make_multimeasure_rest_container
+        {                                                                      %! _make_multimeasure_rest_container
+
+            s1 * 7/16                                                          %! _make_multimeasure_rest_container
+
+        }                                                                      %! _make_multimeasure_rest_container
+
+    >>                                                                         %! _make_multimeasure_rest_container
 
 }                                                                              %! extern
 

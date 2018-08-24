@@ -211,8 +211,26 @@ i_RH_Voice_I = {                                                               %
 
     }
 
-    % [_ RH_Voice_I measure 2]                                                 %! _comment_measure_numbers
-    s1 * 1/2                                                                   %! _make_measure_silences
+    <<                                                                         %! _make_multimeasure_rest_container
+
+        \context Voice = "RH_Voice_I"                                          %! _make_multimeasure_rest_container
+        {                                                                      %! _make_multimeasure_rest_container
+
+            % [_ RH_Voice_I measure 2]                                         %! _comment_measure_numbers
+            \baca-invisible-music                                              %! _make_multimeasure_rest_container
+            c'1 * 1/2                                                          %! _make_multimeasure_rest_container
+
+        }                                                                      %! _make_multimeasure_rest_container
+
+        \context Voice = "RH_Rest_Voice_I"                                     %! _make_multimeasure_rest_container
+        {                                                                      %! _make_multimeasure_rest_container
+
+            % [_ RH_Rest_Voice_I measure 2]                                    %! _comment_measure_numbers
+            s1 * 1/2                                                           %! _make_multimeasure_rest_container
+
+        }                                                                      %! _make_multimeasure_rest_container
+
+    >>                                                                         %! _make_multimeasure_rest_container
 
     % [_ RH_Voice_I measure 3]                                                 %! _comment_measure_numbers
     s1 * 1                                                                     %! _make_measure_silences
@@ -756,8 +774,26 @@ i_RH_Voice_III = {                                                             %
 
     }
 
-    % [_ RH_Voice_III measure 9]                                               %! _comment_measure_numbers
-    s1 * 1/4                                                                   %! _make_measure_silences
+    <<                                                                         %! _make_multimeasure_rest_container
+
+        \context Voice = "RH_Voice_III"                                        %! _make_multimeasure_rest_container
+        {                                                                      %! _make_multimeasure_rest_container
+
+            % [_ RH_Voice_III measure 9]                                       %! _comment_measure_numbers
+            \baca-invisible-music                                              %! _make_multimeasure_rest_container
+            c'1 * 1/4                                                          %! _make_multimeasure_rest_container
+
+        }                                                                      %! _make_multimeasure_rest_container
+
+        \context Voice = "RH_Rest_Voice_III"                                   %! _make_multimeasure_rest_container
+        {                                                                      %! _make_multimeasure_rest_container
+
+            % [_ RH_Rest_Voice_III measure 9]                                  %! _comment_measure_numbers
+            s1 * 1/4                                                           %! _make_multimeasure_rest_container
+
+        }                                                                      %! _make_multimeasure_rest_container
+
+    >>                                                                         %! _make_multimeasure_rest_container
 
 }                                                                              %! extern
 
@@ -1157,8 +1193,26 @@ i_LH_Voice_IV = {                                                              %
 
     }
 
-    % [_ LH_Voice_IV measure 3]                                                %! _comment_measure_numbers
-    s1 * 1                                                                     %! _make_measure_silences
+    <<                                                                         %! _make_multimeasure_rest_container
+
+        \context Voice = "LH_Voice_IV"                                         %! _make_multimeasure_rest_container
+        {                                                                      %! _make_multimeasure_rest_container
+
+            % [_ LH_Voice_IV measure 3]                                        %! _comment_measure_numbers
+            \baca-invisible-music                                              %! _make_multimeasure_rest_container
+            c'1 * 1                                                            %! _make_multimeasure_rest_container
+
+        }                                                                      %! _make_multimeasure_rest_container
+
+        \context Voice = "LH_Rest_Voice_IV"                                    %! _make_multimeasure_rest_container
+        {                                                                      %! _make_multimeasure_rest_container
+
+            % [_ LH_Rest_Voice_IV measure 3]                                   %! _comment_measure_numbers
+            s1 * 1                                                             %! _make_multimeasure_rest_container
+
+        }                                                                      %! _make_multimeasure_rest_container
+
+    >>                                                                         %! _make_multimeasure_rest_container
 
     % [_ LH_Voice_IV measure 4]                                                %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _make_measure_silences
@@ -1214,8 +1268,26 @@ i_LH_Voice_IV_Inserts = {                                                      %
 
     }
 
-    % [_ LH_Voice_IV_Inserts measure 3]                                        %! _comment_measure_numbers
-    s1 * 1                                                                     %! _make_measure_silences
+    <<                                                                         %! _make_multimeasure_rest_container
+
+        \context Voice = "LH_Voice_IV_Inserts"                                 %! _make_multimeasure_rest_container
+        {                                                                      %! _make_multimeasure_rest_container
+
+            % [_ LH_Voice_IV_Inserts measure 3]                                %! _comment_measure_numbers
+            \baca-invisible-music                                              %! _make_multimeasure_rest_container
+            c'1 * 1                                                            %! _make_multimeasure_rest_container
+
+        }                                                                      %! _make_multimeasure_rest_container
+
+        \context Voice = "LH_Rest_Voice_IV_Inserts"                            %! _make_multimeasure_rest_container
+        {                                                                      %! _make_multimeasure_rest_container
+
+            % [_ LH_Rest_Voice_IV_Inserts measure 3]                           %! _comment_measure_numbers
+            s1 * 1                                                             %! _make_multimeasure_rest_container
+
+        }                                                                      %! _make_multimeasure_rest_container
+
+    >>                                                                         %! _make_multimeasure_rest_container
 
     % [_ LH_Voice_IV_Inserts measure 4]                                        %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _make_measure_silences
@@ -1293,8 +1365,26 @@ i_LH_Voice_V = {                                                               %
 
     }
 
-    % [_ LH_Voice_V measure 4]                                                 %! _comment_measure_numbers
-    s1 * 1/4                                                                   %! _make_measure_silences
+    <<                                                                         %! _make_multimeasure_rest_container
+
+        \context Voice = "LH_Voice_V"                                          %! _make_multimeasure_rest_container
+        {                                                                      %! _make_multimeasure_rest_container
+
+            % [_ LH_Voice_V measure 4]                                         %! _comment_measure_numbers
+            \baca-invisible-music                                              %! _make_multimeasure_rest_container
+            c'1 * 1/4                                                          %! _make_multimeasure_rest_container
+
+        }                                                                      %! _make_multimeasure_rest_container
+
+        \context Voice = "LH_Rest_Voice_V"                                     %! _make_multimeasure_rest_container
+        {                                                                      %! _make_multimeasure_rest_container
+
+            % [_ LH_Rest_Voice_V measure 4]                                    %! _comment_measure_numbers
+            s1 * 1/4                                                           %! _make_multimeasure_rest_container
+
+        }                                                                      %! _make_multimeasure_rest_container
+
+    >>                                                                         %! _make_multimeasure_rest_container
 
     % [_ LH_Voice_V measure 5]                                                 %! _comment_measure_numbers
     s1 * 1/2                                                                   %! _make_measure_silences
@@ -1401,8 +1491,26 @@ i_LH_Voice_VI = {                                                              %
 
     }
 
-    % [_ LH_Voice_VI measure 4]                                                %! _comment_measure_numbers
-    s1 * 1/4                                                                   %! _make_measure_silences
+    <<                                                                         %! _make_multimeasure_rest_container
+
+        \context Voice = "LH_Voice_VI"                                         %! _make_multimeasure_rest_container
+        {                                                                      %! _make_multimeasure_rest_container
+
+            % [_ LH_Voice_VI measure 4]                                        %! _comment_measure_numbers
+            \baca-invisible-music                                              %! _make_multimeasure_rest_container
+            c'1 * 1/4                                                          %! _make_multimeasure_rest_container
+
+        }                                                                      %! _make_multimeasure_rest_container
+
+        \context Voice = "LH_Rest_Voice_VI"                                    %! _make_multimeasure_rest_container
+        {                                                                      %! _make_multimeasure_rest_container
+
+            % [_ LH_Rest_Voice_VI measure 4]                                   %! _comment_measure_numbers
+            s1 * 1/4                                                           %! _make_multimeasure_rest_container
+
+        }                                                                      %! _make_multimeasure_rest_container
+
+    >>                                                                         %! _make_multimeasure_rest_container
 
     % [_ LH_Voice_VI measure 5]                                                %! _comment_measure_numbers
     s1 * 1/2                                                                   %! _make_measure_silences
