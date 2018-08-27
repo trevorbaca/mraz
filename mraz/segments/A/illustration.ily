@@ -963,23 +963,23 @@ A_LH_Voice_V = {                                                               %
             g,8.
             - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
             \ppp                                                               %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-        %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
-        %%%     \fontsize                                                      %! FIGURE_NAME_MARKUP
-        %%%         #2                                                         %! FIGURE_NAME_MARKUP
-        %%%         \concat                                                    %! FIGURE_NAME_MARKUP
-        %%%             {                                                      %! FIGURE_NAME_MARKUP
-        %%%                 [                                                  %! FIGURE_NAME_MARKUP
-        %%%                 "lh-5 8.3.1"                                       %! FIGURE_NAME_MARKUP
-        %%%                 \hspace                                            %! FIGURE_NAME_MARKUP
-        %%%                     #1                                             %! FIGURE_NAME_MARKUP
-        %%%                 \raise                                             %! FIGURE_NAME_MARKUP
-        %%%                     #0.25                                          %! FIGURE_NAME_MARKUP
-        %%%                     \fontsize                                      %! FIGURE_NAME_MARKUP
-        %%%                         #-2                                        %! FIGURE_NAME_MARKUP
-        %%%                         (0)                                        %! FIGURE_NAME_MARKUP
-        %%%                 ]                                                  %! FIGURE_NAME_MARKUP
-        %%%             }                                                      %! FIGURE_NAME_MARKUP
-        %%%     }                                                              %! FIGURE_NAME_MARKUP
+        %@% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
+        %@%     \fontsize                                                      %! FIGURE_NAME_MARKUP
+        %@%         #2                                                         %! FIGURE_NAME_MARKUP
+        %@%         \concat                                                    %! FIGURE_NAME_MARKUP
+        %@%             {                                                      %! FIGURE_NAME_MARKUP
+        %@%                 [                                                  %! FIGURE_NAME_MARKUP
+        %@%                 "lh-5 8.3.1"                                       %! FIGURE_NAME_MARKUP
+        %@%                 \hspace                                            %! FIGURE_NAME_MARKUP
+        %@%                     #1                                             %! FIGURE_NAME_MARKUP
+        %@%                 \raise                                             %! FIGURE_NAME_MARKUP
+        %@%                     #0.25                                          %! FIGURE_NAME_MARKUP
+        %@%                     \fontsize                                      %! FIGURE_NAME_MARKUP
+        %@%                         #-2                                        %! FIGURE_NAME_MARKUP
+        %@%                         (0)                                        %! FIGURE_NAME_MARKUP
+        %@%                 ]                                                  %! FIGURE_NAME_MARKUP
+        %@%             }                                                      %! FIGURE_NAME_MARKUP
+        %@%     }                                                              %! FIGURE_NAME_MARKUP
 
             r32
 
@@ -998,23 +998,23 @@ A_LH_Voice_V = {                                                               %
 
             % [A LH_Voice_V measure 11 / measure 2]                            %! _comment_measure_numbers
             g,,8
-        %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
-        %%%     \fontsize                                                      %! FIGURE_NAME_MARKUP
-        %%%         #2                                                         %! FIGURE_NAME_MARKUP
-        %%%         \concat                                                    %! FIGURE_NAME_MARKUP
-        %%%             {                                                      %! FIGURE_NAME_MARKUP
-        %%%                 [                                                  %! FIGURE_NAME_MARKUP
-        %%%                 "lh-5 8.3.2"                                       %! FIGURE_NAME_MARKUP
-        %%%                 \hspace                                            %! FIGURE_NAME_MARKUP
-        %%%                     #1                                             %! FIGURE_NAME_MARKUP
-        %%%                 \raise                                             %! FIGURE_NAME_MARKUP
-        %%%                     #0.25                                          %! FIGURE_NAME_MARKUP
-        %%%                     \fontsize                                      %! FIGURE_NAME_MARKUP
-        %%%                         #-2                                        %! FIGURE_NAME_MARKUP
-        %%%                         (1)                                        %! FIGURE_NAME_MARKUP
-        %%%                 ]                                                  %! FIGURE_NAME_MARKUP
-        %%%             }                                                      %! FIGURE_NAME_MARKUP
-        %%%     }                                                              %! FIGURE_NAME_MARKUP
+        %@% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
+        %@%     \fontsize                                                      %! FIGURE_NAME_MARKUP
+        %@%         #2                                                         %! FIGURE_NAME_MARKUP
+        %@%         \concat                                                    %! FIGURE_NAME_MARKUP
+        %@%             {                                                      %! FIGURE_NAME_MARKUP
+        %@%                 [                                                  %! FIGURE_NAME_MARKUP
+        %@%                 "lh-5 8.3.2"                                       %! FIGURE_NAME_MARKUP
+        %@%                 \hspace                                            %! FIGURE_NAME_MARKUP
+        %@%                     #1                                             %! FIGURE_NAME_MARKUP
+        %@%                 \raise                                             %! FIGURE_NAME_MARKUP
+        %@%                     #0.25                                          %! FIGURE_NAME_MARKUP
+        %@%                     \fontsize                                      %! FIGURE_NAME_MARKUP
+        %@%                         #-2                                        %! FIGURE_NAME_MARKUP
+        %@%                         (1)                                        %! FIGURE_NAME_MARKUP
+        %@%                 ]                                                  %! FIGURE_NAME_MARKUP
+        %@%             }                                                      %! FIGURE_NAME_MARKUP
+        %@%     }                                                              %! FIGURE_NAME_MARKUP
 
             \override Rest.direction = #up                                     %! baca_rest_up:OverrideCommand(1)
             r32
@@ -1055,23 +1055,23 @@ A_LH_Voice_V = {                                                               %
 
             % [A LH_Voice_V measure 12 / measure 3]                            %! _comment_measure_numbers
             cs,,!32
-        %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
-        %%%     \fontsize                                                      %! FIGURE_NAME_MARKUP
-        %%%         #2                                                         %! FIGURE_NAME_MARKUP
-        %%%         \concat                                                    %! FIGURE_NAME_MARKUP
-        %%%             {                                                      %! FIGURE_NAME_MARKUP
-        %%%                 [                                                  %! FIGURE_NAME_MARKUP
-        %%%                 "lh-5 8.3.3"                                       %! FIGURE_NAME_MARKUP
-        %%%                 \hspace                                            %! FIGURE_NAME_MARKUP
-        %%%                     #1                                             %! FIGURE_NAME_MARKUP
-        %%%                 \raise                                             %! FIGURE_NAME_MARKUP
-        %%%                     #0.25                                          %! FIGURE_NAME_MARKUP
-        %%%                     \fontsize                                      %! FIGURE_NAME_MARKUP
-        %%%                         #-2                                        %! FIGURE_NAME_MARKUP
-        %%%                         (2)                                        %! FIGURE_NAME_MARKUP
-        %%%                 ]                                                  %! FIGURE_NAME_MARKUP
-        %%%             }                                                      %! FIGURE_NAME_MARKUP
-        %%%     }                                                              %! FIGURE_NAME_MARKUP
+        %@% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
+        %@%     \fontsize                                                      %! FIGURE_NAME_MARKUP
+        %@%         #2                                                         %! FIGURE_NAME_MARKUP
+        %@%         \concat                                                    %! FIGURE_NAME_MARKUP
+        %@%             {                                                      %! FIGURE_NAME_MARKUP
+        %@%                 [                                                  %! FIGURE_NAME_MARKUP
+        %@%                 "lh-5 8.3.3"                                       %! FIGURE_NAME_MARKUP
+        %@%                 \hspace                                            %! FIGURE_NAME_MARKUP
+        %@%                     #1                                             %! FIGURE_NAME_MARKUP
+        %@%                 \raise                                             %! FIGURE_NAME_MARKUP
+        %@%                     #0.25                                          %! FIGURE_NAME_MARKUP
+        %@%                     \fontsize                                      %! FIGURE_NAME_MARKUP
+        %@%                         #-2                                        %! FIGURE_NAME_MARKUP
+        %@%                         (2)                                        %! FIGURE_NAME_MARKUP
+        %@%                 ]                                                  %! FIGURE_NAME_MARKUP
+        %@%             }                                                      %! FIGURE_NAME_MARKUP
+        %@%     }                                                              %! FIGURE_NAME_MARKUP
 
             r4...
 
@@ -1093,23 +1093,23 @@ A_LH_Voice_V = {                                                               %
 
             % [A LH_Voice_V measure 13 / measure 4]                            %! _comment_measure_numbers
             bf,,!8.
-        %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
-        %%%     \fontsize                                                      %! FIGURE_NAME_MARKUP
-        %%%         #2                                                         %! FIGURE_NAME_MARKUP
-        %%%         \concat                                                    %! FIGURE_NAME_MARKUP
-        %%%             {                                                      %! FIGURE_NAME_MARKUP
-        %%%                 [                                                  %! FIGURE_NAME_MARKUP
-        %%%                 "lh-5 8.3.4"                                       %! FIGURE_NAME_MARKUP
-        %%%                 \hspace                                            %! FIGURE_NAME_MARKUP
-        %%%                     #1                                             %! FIGURE_NAME_MARKUP
-        %%%                 \raise                                             %! FIGURE_NAME_MARKUP
-        %%%                     #0.25                                          %! FIGURE_NAME_MARKUP
-        %%%                     \fontsize                                      %! FIGURE_NAME_MARKUP
-        %%%                         #-2                                        %! FIGURE_NAME_MARKUP
-        %%%                         (3)                                        %! FIGURE_NAME_MARKUP
-        %%%                 ]                                                  %! FIGURE_NAME_MARKUP
-        %%%             }                                                      %! FIGURE_NAME_MARKUP
-        %%%     }                                                              %! FIGURE_NAME_MARKUP
+        %@% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
+        %@%     \fontsize                                                      %! FIGURE_NAME_MARKUP
+        %@%         #2                                                         %! FIGURE_NAME_MARKUP
+        %@%         \concat                                                    %! FIGURE_NAME_MARKUP
+        %@%             {                                                      %! FIGURE_NAME_MARKUP
+        %@%                 [                                                  %! FIGURE_NAME_MARKUP
+        %@%                 "lh-5 8.3.4"                                       %! FIGURE_NAME_MARKUP
+        %@%                 \hspace                                            %! FIGURE_NAME_MARKUP
+        %@%                     #1                                             %! FIGURE_NAME_MARKUP
+        %@%                 \raise                                             %! FIGURE_NAME_MARKUP
+        %@%                     #0.25                                          %! FIGURE_NAME_MARKUP
+        %@%                     \fontsize                                      %! FIGURE_NAME_MARKUP
+        %@%                         #-2                                        %! FIGURE_NAME_MARKUP
+        %@%                         (3)                                        %! FIGURE_NAME_MARKUP
+        %@%                 ]                                                  %! FIGURE_NAME_MARKUP
+        %@%             }                                                      %! FIGURE_NAME_MARKUP
+        %@%     }                                                              %! FIGURE_NAME_MARKUP
 
             \override Rest.direction = #up                                     %! baca_rest_up:OverrideCommand(1)
             r32
@@ -1137,23 +1137,23 @@ A_LH_Voice_V = {                                                               %
 
             % [A LH_Voice_V measure 14 / measure 5]                            %! _comment_measure_numbers
             d,,8
-        %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
-        %%%     \fontsize                                                      %! FIGURE_NAME_MARKUP
-        %%%         #2                                                         %! FIGURE_NAME_MARKUP
-        %%%         \concat                                                    %! FIGURE_NAME_MARKUP
-        %%%             {                                                      %! FIGURE_NAME_MARKUP
-        %%%                 [                                                  %! FIGURE_NAME_MARKUP
-        %%%                 "lh-5 8.3.5"                                       %! FIGURE_NAME_MARKUP
-        %%%                 \hspace                                            %! FIGURE_NAME_MARKUP
-        %%%                     #1                                             %! FIGURE_NAME_MARKUP
-        %%%                 \raise                                             %! FIGURE_NAME_MARKUP
-        %%%                     #0.25                                          %! FIGURE_NAME_MARKUP
-        %%%                     \fontsize                                      %! FIGURE_NAME_MARKUP
-        %%%                         #-2                                        %! FIGURE_NAME_MARKUP
-        %%%                         (4)                                        %! FIGURE_NAME_MARKUP
-        %%%                 ]                                                  %! FIGURE_NAME_MARKUP
-        %%%             }                                                      %! FIGURE_NAME_MARKUP
-        %%%     }                                                              %! FIGURE_NAME_MARKUP
+        %@% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
+        %@%     \fontsize                                                      %! FIGURE_NAME_MARKUP
+        %@%         #2                                                         %! FIGURE_NAME_MARKUP
+        %@%         \concat                                                    %! FIGURE_NAME_MARKUP
+        %@%             {                                                      %! FIGURE_NAME_MARKUP
+        %@%                 [                                                  %! FIGURE_NAME_MARKUP
+        %@%                 "lh-5 8.3.5"                                       %! FIGURE_NAME_MARKUP
+        %@%                 \hspace                                            %! FIGURE_NAME_MARKUP
+        %@%                     #1                                             %! FIGURE_NAME_MARKUP
+        %@%                 \raise                                             %! FIGURE_NAME_MARKUP
+        %@%                     #0.25                                          %! FIGURE_NAME_MARKUP
+        %@%                     \fontsize                                      %! FIGURE_NAME_MARKUP
+        %@%                         #-2                                        %! FIGURE_NAME_MARKUP
+        %@%                         (4)                                        %! FIGURE_NAME_MARKUP
+        %@%                 ]                                                  %! FIGURE_NAME_MARKUP
+        %@%             }                                                      %! FIGURE_NAME_MARKUP
+        %@%     }                                                              %! FIGURE_NAME_MARKUP
 
             r32
 
@@ -1172,23 +1172,23 @@ A_LH_Voice_V = {                                                               %
 
             % [A LH_Voice_V measure 15 / measure 6]                            %! _comment_measure_numbers
             b,,,8
-        %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
-        %%%     \fontsize                                                      %! FIGURE_NAME_MARKUP
-        %%%         #2                                                         %! FIGURE_NAME_MARKUP
-        %%%         \concat                                                    %! FIGURE_NAME_MARKUP
-        %%%             {                                                      %! FIGURE_NAME_MARKUP
-        %%%                 [                                                  %! FIGURE_NAME_MARKUP
-        %%%                 "lh-5 8.3.6"                                       %! FIGURE_NAME_MARKUP
-        %%%                 \hspace                                            %! FIGURE_NAME_MARKUP
-        %%%                     #1                                             %! FIGURE_NAME_MARKUP
-        %%%                 \raise                                             %! FIGURE_NAME_MARKUP
-        %%%                     #0.25                                          %! FIGURE_NAME_MARKUP
-        %%%                     \fontsize                                      %! FIGURE_NAME_MARKUP
-        %%%                         #-2                                        %! FIGURE_NAME_MARKUP
-        %%%                         (5)                                        %! FIGURE_NAME_MARKUP
-        %%%                 ]                                                  %! FIGURE_NAME_MARKUP
-        %%%             }                                                      %! FIGURE_NAME_MARKUP
-        %%%     }                                                              %! FIGURE_NAME_MARKUP
+        %@% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
+        %@%     \fontsize                                                      %! FIGURE_NAME_MARKUP
+        %@%         #2                                                         %! FIGURE_NAME_MARKUP
+        %@%         \concat                                                    %! FIGURE_NAME_MARKUP
+        %@%             {                                                      %! FIGURE_NAME_MARKUP
+        %@%                 [                                                  %! FIGURE_NAME_MARKUP
+        %@%                 "lh-5 8.3.6"                                       %! FIGURE_NAME_MARKUP
+        %@%                 \hspace                                            %! FIGURE_NAME_MARKUP
+        %@%                     #1                                             %! FIGURE_NAME_MARKUP
+        %@%                 \raise                                             %! FIGURE_NAME_MARKUP
+        %@%                     #0.25                                          %! FIGURE_NAME_MARKUP
+        %@%                     \fontsize                                      %! FIGURE_NAME_MARKUP
+        %@%                         #-2                                        %! FIGURE_NAME_MARKUP
+        %@%                         (5)                                        %! FIGURE_NAME_MARKUP
+        %@%                 ]                                                  %! FIGURE_NAME_MARKUP
+        %@%             }                                                      %! FIGURE_NAME_MARKUP
+        %@%     }                                                              %! FIGURE_NAME_MARKUP
 
             r32
 
@@ -1210,23 +1210,23 @@ A_LH_Voice_V = {                                                               %
 
             % [A LH_Voice_V measure 16 / measure 7]                            %! _comment_measure_numbers
             ef,,!32
-        %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
-        %%%     \fontsize                                                      %! FIGURE_NAME_MARKUP
-        %%%         #2                                                         %! FIGURE_NAME_MARKUP
-        %%%         \concat                                                    %! FIGURE_NAME_MARKUP
-        %%%             {                                                      %! FIGURE_NAME_MARKUP
-        %%%                 [                                                  %! FIGURE_NAME_MARKUP
-        %%%                 "lh-5 8.3.7"                                       %! FIGURE_NAME_MARKUP
-        %%%                 \hspace                                            %! FIGURE_NAME_MARKUP
-        %%%                     #1                                             %! FIGURE_NAME_MARKUP
-        %%%                 \raise                                             %! FIGURE_NAME_MARKUP
-        %%%                     #0.25                                          %! FIGURE_NAME_MARKUP
-        %%%                     \fontsize                                      %! FIGURE_NAME_MARKUP
-        %%%                         #-2                                        %! FIGURE_NAME_MARKUP
-        %%%                         (6)                                        %! FIGURE_NAME_MARKUP
-        %%%                 ]                                                  %! FIGURE_NAME_MARKUP
-        %%%             }                                                      %! FIGURE_NAME_MARKUP
-        %%%     }                                                              %! FIGURE_NAME_MARKUP
+        %@% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
+        %@%     \fontsize                                                      %! FIGURE_NAME_MARKUP
+        %@%         #2                                                         %! FIGURE_NAME_MARKUP
+        %@%         \concat                                                    %! FIGURE_NAME_MARKUP
+        %@%             {                                                      %! FIGURE_NAME_MARKUP
+        %@%                 [                                                  %! FIGURE_NAME_MARKUP
+        %@%                 "lh-5 8.3.7"                                       %! FIGURE_NAME_MARKUP
+        %@%                 \hspace                                            %! FIGURE_NAME_MARKUP
+        %@%                     #1                                             %! FIGURE_NAME_MARKUP
+        %@%                 \raise                                             %! FIGURE_NAME_MARKUP
+        %@%                     #0.25                                          %! FIGURE_NAME_MARKUP
+        %@%                     \fontsize                                      %! FIGURE_NAME_MARKUP
+        %@%                         #-2                                        %! FIGURE_NAME_MARKUP
+        %@%                         (6)                                        %! FIGURE_NAME_MARKUP
+        %@%                 ]                                                  %! FIGURE_NAME_MARKUP
+        %@%             }                                                      %! FIGURE_NAME_MARKUP
+        %@%     }                                                              %! FIGURE_NAME_MARKUP
 
             \override Rest.direction = #up                                     %! baca_rest_up:OverrideCommand(1)
             r4...
@@ -1254,23 +1254,23 @@ A_LH_Voice_V = {                                                               %
 
             % [A LH_Voice_V measure 17 / measure 8]                            %! _comment_measure_numbers
             c,8.
-        %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
-        %%%     \fontsize                                                      %! FIGURE_NAME_MARKUP
-        %%%         #2                                                         %! FIGURE_NAME_MARKUP
-        %%%         \concat                                                    %! FIGURE_NAME_MARKUP
-        %%%             {                                                      %! FIGURE_NAME_MARKUP
-        %%%                 [                                                  %! FIGURE_NAME_MARKUP
-        %%%                 "lh-5 8.3.8"                                       %! FIGURE_NAME_MARKUP
-        %%%                 \hspace                                            %! FIGURE_NAME_MARKUP
-        %%%                     #1                                             %! FIGURE_NAME_MARKUP
-        %%%                 \raise                                             %! FIGURE_NAME_MARKUP
-        %%%                     #0.25                                          %! FIGURE_NAME_MARKUP
-        %%%                     \fontsize                                      %! FIGURE_NAME_MARKUP
-        %%%                         #-2                                        %! FIGURE_NAME_MARKUP
-        %%%                         (7)                                        %! FIGURE_NAME_MARKUP
-        %%%                 ]                                                  %! FIGURE_NAME_MARKUP
-        %%%             }                                                      %! FIGURE_NAME_MARKUP
-        %%%     }                                                              %! FIGURE_NAME_MARKUP
+        %@% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
+        %@%     \fontsize                                                      %! FIGURE_NAME_MARKUP
+        %@%         #2                                                         %! FIGURE_NAME_MARKUP
+        %@%         \concat                                                    %! FIGURE_NAME_MARKUP
+        %@%             {                                                      %! FIGURE_NAME_MARKUP
+        %@%                 [                                                  %! FIGURE_NAME_MARKUP
+        %@%                 "lh-5 8.3.8"                                       %! FIGURE_NAME_MARKUP
+        %@%                 \hspace                                            %! FIGURE_NAME_MARKUP
+        %@%                     #1                                             %! FIGURE_NAME_MARKUP
+        %@%                 \raise                                             %! FIGURE_NAME_MARKUP
+        %@%                     #0.25                                          %! FIGURE_NAME_MARKUP
+        %@%                     \fontsize                                      %! FIGURE_NAME_MARKUP
+        %@%                         #-2                                        %! FIGURE_NAME_MARKUP
+        %@%                         (7)                                        %! FIGURE_NAME_MARKUP
+        %@%                 ]                                                  %! FIGURE_NAME_MARKUP
+        %@%             }                                                      %! FIGURE_NAME_MARKUP
+        %@%     }                                                              %! FIGURE_NAME_MARKUP
 
             r32
 
@@ -1290,23 +1290,23 @@ A_LH_Voice_V = {                                                               %
             % [A LH_Voice_V measure 18 / measure 9]                            %! _comment_measure_numbers
             \override TupletBracket.staff-padding = #3                         %! baca_tuplet_bracket_staff_padding:OverrideCommand(1)
             fs,,!8
-        %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
-        %%%     \fontsize                                                      %! FIGURE_NAME_MARKUP
-        %%%         #2                                                         %! FIGURE_NAME_MARKUP
-        %%%         \concat                                                    %! FIGURE_NAME_MARKUP
-        %%%             {                                                      %! FIGURE_NAME_MARKUP
-        %%%                 [                                                  %! FIGURE_NAME_MARKUP
-        %%%                 "lh-5 8.3.9"                                       %! FIGURE_NAME_MARKUP
-        %%%                 \hspace                                            %! FIGURE_NAME_MARKUP
-        %%%                     #1                                             %! FIGURE_NAME_MARKUP
-        %%%                 \raise                                             %! FIGURE_NAME_MARKUP
-        %%%                     #0.25                                          %! FIGURE_NAME_MARKUP
-        %%%                     \fontsize                                      %! FIGURE_NAME_MARKUP
-        %%%                         #-2                                        %! FIGURE_NAME_MARKUP
-        %%%                         (8)                                        %! FIGURE_NAME_MARKUP
-        %%%                 ]                                                  %! FIGURE_NAME_MARKUP
-        %%%             }                                                      %! FIGURE_NAME_MARKUP
-        %%%     }                                                              %! FIGURE_NAME_MARKUP
+        %@% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
+        %@%     \fontsize                                                      %! FIGURE_NAME_MARKUP
+        %@%         #2                                                         %! FIGURE_NAME_MARKUP
+        %@%         \concat                                                    %! FIGURE_NAME_MARKUP
+        %@%             {                                                      %! FIGURE_NAME_MARKUP
+        %@%                 [                                                  %! FIGURE_NAME_MARKUP
+        %@%                 "lh-5 8.3.9"                                       %! FIGURE_NAME_MARKUP
+        %@%                 \hspace                                            %! FIGURE_NAME_MARKUP
+        %@%                     #1                                             %! FIGURE_NAME_MARKUP
+        %@%                 \raise                                             %! FIGURE_NAME_MARKUP
+        %@%                     #0.25                                          %! FIGURE_NAME_MARKUP
+        %@%                     \fontsize                                      %! FIGURE_NAME_MARKUP
+        %@%                         #-2                                        %! FIGURE_NAME_MARKUP
+        %@%                         (8)                                        %! FIGURE_NAME_MARKUP
+        %@%                 ]                                                  %! FIGURE_NAME_MARKUP
+        %@%             }                                                      %! FIGURE_NAME_MARKUP
+        %@%     }                                                              %! FIGURE_NAME_MARKUP
 
             r32
 
@@ -1346,23 +1346,23 @@ A_LH_Voice_V = {                                                               %
 
             % [A LH_Voice_V measure 19 / measure 10]                           %! _comment_measure_numbers
             a,,,32
-        %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
-        %%%     \fontsize                                                      %! FIGURE_NAME_MARKUP
-        %%%         #2                                                         %! FIGURE_NAME_MARKUP
-        %%%         \concat                                                    %! FIGURE_NAME_MARKUP
-        %%%             {                                                      %! FIGURE_NAME_MARKUP
-        %%%                 [                                                  %! FIGURE_NAME_MARKUP
-        %%%                 "lh-5 8.3.10"                                      %! FIGURE_NAME_MARKUP
-        %%%                 \hspace                                            %! FIGURE_NAME_MARKUP
-        %%%                     #1                                             %! FIGURE_NAME_MARKUP
-        %%%                 \raise                                             %! FIGURE_NAME_MARKUP
-        %%%                     #0.25                                          %! FIGURE_NAME_MARKUP
-        %%%                     \fontsize                                      %! FIGURE_NAME_MARKUP
-        %%%                         #-2                                        %! FIGURE_NAME_MARKUP
-        %%%                         (9)                                        %! FIGURE_NAME_MARKUP
-        %%%                 ]                                                  %! FIGURE_NAME_MARKUP
-        %%%             }                                                      %! FIGURE_NAME_MARKUP
-        %%%     }                                                              %! FIGURE_NAME_MARKUP
+        %@% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
+        %@%     \fontsize                                                      %! FIGURE_NAME_MARKUP
+        %@%         #2                                                         %! FIGURE_NAME_MARKUP
+        %@%         \concat                                                    %! FIGURE_NAME_MARKUP
+        %@%             {                                                      %! FIGURE_NAME_MARKUP
+        %@%                 [                                                  %! FIGURE_NAME_MARKUP
+        %@%                 "lh-5 8.3.10"                                      %! FIGURE_NAME_MARKUP
+        %@%                 \hspace                                            %! FIGURE_NAME_MARKUP
+        %@%                     #1                                             %! FIGURE_NAME_MARKUP
+        %@%                 \raise                                             %! FIGURE_NAME_MARKUP
+        %@%                     #0.25                                          %! FIGURE_NAME_MARKUP
+        %@%                     \fontsize                                      %! FIGURE_NAME_MARKUP
+        %@%                         #-2                                        %! FIGURE_NAME_MARKUP
+        %@%                         (9)                                        %! FIGURE_NAME_MARKUP
+        %@%                 ]                                                  %! FIGURE_NAME_MARKUP
+        %@%             }                                                      %! FIGURE_NAME_MARKUP
+        %@%     }                                                              %! FIGURE_NAME_MARKUP
 
             \override Rest.direction = #up                                     %! baca_rest_up:OverrideCommand(1)
             r4...
@@ -1382,23 +1382,23 @@ A_LH_Voice_V = {                                                               %
 
             % [A LH_Voice_V measure 20 / measure 11]                           %! _comment_measure_numbers
             b,,8.
-        %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
-        %%%     \fontsize                                                      %! FIGURE_NAME_MARKUP
-        %%%         #2                                                         %! FIGURE_NAME_MARKUP
-        %%%         \concat                                                    %! FIGURE_NAME_MARKUP
-        %%%             {                                                      %! FIGURE_NAME_MARKUP
-        %%%                 [                                                  %! FIGURE_NAME_MARKUP
-        %%%                 "lh-5 8.3.11"                                      %! FIGURE_NAME_MARKUP
-        %%%                 \hspace                                            %! FIGURE_NAME_MARKUP
-        %%%                     #1                                             %! FIGURE_NAME_MARKUP
-        %%%                 \raise                                             %! FIGURE_NAME_MARKUP
-        %%%                     #0.25                                          %! FIGURE_NAME_MARKUP
-        %%%                     \fontsize                                      %! FIGURE_NAME_MARKUP
-        %%%                         #-2                                        %! FIGURE_NAME_MARKUP
-        %%%                         (10)                                       %! FIGURE_NAME_MARKUP
-        %%%                 ]                                                  %! FIGURE_NAME_MARKUP
-        %%%             }                                                      %! FIGURE_NAME_MARKUP
-        %%%     }                                                              %! FIGURE_NAME_MARKUP
+        %@% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
+        %@%     \fontsize                                                      %! FIGURE_NAME_MARKUP
+        %@%         #2                                                         %! FIGURE_NAME_MARKUP
+        %@%         \concat                                                    %! FIGURE_NAME_MARKUP
+        %@%             {                                                      %! FIGURE_NAME_MARKUP
+        %@%                 [                                                  %! FIGURE_NAME_MARKUP
+        %@%                 "lh-5 8.3.11"                                      %! FIGURE_NAME_MARKUP
+        %@%                 \hspace                                            %! FIGURE_NAME_MARKUP
+        %@%                     #1                                             %! FIGURE_NAME_MARKUP
+        %@%                 \raise                                             %! FIGURE_NAME_MARKUP
+        %@%                     #0.25                                          %! FIGURE_NAME_MARKUP
+        %@%                     \fontsize                                      %! FIGURE_NAME_MARKUP
+        %@%                         #-2                                        %! FIGURE_NAME_MARKUP
+        %@%                         (10)                                       %! FIGURE_NAME_MARKUP
+        %@%                 ]                                                  %! FIGURE_NAME_MARKUP
+        %@%             }                                                      %! FIGURE_NAME_MARKUP
+        %@%     }                                                              %! FIGURE_NAME_MARKUP
 
             r32
 
@@ -1425,23 +1425,23 @@ A_LH_Voice_V = {                                                               %
 
             % [A LH_Voice_V measure 21 / measure 12]                           %! _comment_measure_numbers
             fs,,!8
-        %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
-        %%%     \fontsize                                                      %! FIGURE_NAME_MARKUP
-        %%%         #2                                                         %! FIGURE_NAME_MARKUP
-        %%%         \concat                                                    %! FIGURE_NAME_MARKUP
-        %%%             {                                                      %! FIGURE_NAME_MARKUP
-        %%%                 [                                                  %! FIGURE_NAME_MARKUP
-        %%%                 "lh-5 8.3.12"                                      %! FIGURE_NAME_MARKUP
-        %%%                 \hspace                                            %! FIGURE_NAME_MARKUP
-        %%%                     #1                                             %! FIGURE_NAME_MARKUP
-        %%%                 \raise                                             %! FIGURE_NAME_MARKUP
-        %%%                     #0.25                                          %! FIGURE_NAME_MARKUP
-        %%%                     \fontsize                                      %! FIGURE_NAME_MARKUP
-        %%%                         #-2                                        %! FIGURE_NAME_MARKUP
-        %%%                         (11)                                       %! FIGURE_NAME_MARKUP
-        %%%                 ]                                                  %! FIGURE_NAME_MARKUP
-        %%%             }                                                      %! FIGURE_NAME_MARKUP
-        %%%     }                                                              %! FIGURE_NAME_MARKUP
+        %@% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
+        %@%     \fontsize                                                      %! FIGURE_NAME_MARKUP
+        %@%         #2                                                         %! FIGURE_NAME_MARKUP
+        %@%         \concat                                                    %! FIGURE_NAME_MARKUP
+        %@%             {                                                      %! FIGURE_NAME_MARKUP
+        %@%                 [                                                  %! FIGURE_NAME_MARKUP
+        %@%                 "lh-5 8.3.12"                                      %! FIGURE_NAME_MARKUP
+        %@%                 \hspace                                            %! FIGURE_NAME_MARKUP
+        %@%                     #1                                             %! FIGURE_NAME_MARKUP
+        %@%                 \raise                                             %! FIGURE_NAME_MARKUP
+        %@%                     #0.25                                          %! FIGURE_NAME_MARKUP
+        %@%                     \fontsize                                      %! FIGURE_NAME_MARKUP
+        %@%                         #-2                                        %! FIGURE_NAME_MARKUP
+        %@%                         (11)                                       %! FIGURE_NAME_MARKUP
+        %@%                 ]                                                  %! FIGURE_NAME_MARKUP
+        %@%             }                                                      %! FIGURE_NAME_MARKUP
+        %@%     }                                                              %! FIGURE_NAME_MARKUP
 
             r32
 
@@ -1527,23 +1527,23 @@ A_LH_Voice_VI = {                                                              %
             - \tweak color #(x11-color 'DeepPink1)                             %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
             \f                                                                 %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
             - \tenuto                                                          %! baca_tenuto:IndicatorCommand
-        %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
-        %%%     \fontsize                                                      %! FIGURE_NAME_MARKUP
-        %%%         #2                                                         %! FIGURE_NAME_MARKUP
-        %%%         \concat                                                    %! FIGURE_NAME_MARKUP
-        %%%             {                                                      %! FIGURE_NAME_MARKUP
-        %%%                 [                                                  %! FIGURE_NAME_MARKUP
-        %%%                 "lh-6 8.3.1"                                       %! FIGURE_NAME_MARKUP
-        %%%                 \hspace                                            %! FIGURE_NAME_MARKUP
-        %%%                     #1                                             %! FIGURE_NAME_MARKUP
-        %%%                 \raise                                             %! FIGURE_NAME_MARKUP
-        %%%                     #0.25                                          %! FIGURE_NAME_MARKUP
-        %%%                     \fontsize                                      %! FIGURE_NAME_MARKUP
-        %%%                         #-2                                        %! FIGURE_NAME_MARKUP
-        %%%                         (12)                                       %! FIGURE_NAME_MARKUP
-        %%%                 ]                                                  %! FIGURE_NAME_MARKUP
-        %%%             }                                                      %! FIGURE_NAME_MARKUP
-        %%%     }                                                              %! FIGURE_NAME_MARKUP
+        %@% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
+        %@%     \fontsize                                                      %! FIGURE_NAME_MARKUP
+        %@%         #2                                                         %! FIGURE_NAME_MARKUP
+        %@%         \concat                                                    %! FIGURE_NAME_MARKUP
+        %@%             {                                                      %! FIGURE_NAME_MARKUP
+        %@%                 [                                                  %! FIGURE_NAME_MARKUP
+        %@%                 "lh-6 8.3.1"                                       %! FIGURE_NAME_MARKUP
+        %@%                 \hspace                                            %! FIGURE_NAME_MARKUP
+        %@%                     #1                                             %! FIGURE_NAME_MARKUP
+        %@%                 \raise                                             %! FIGURE_NAME_MARKUP
+        %@%                     #0.25                                          %! FIGURE_NAME_MARKUP
+        %@%                     \fontsize                                      %! FIGURE_NAME_MARKUP
+        %@%                         #-2                                        %! FIGURE_NAME_MARKUP
+        %@%                         (12)                                       %! FIGURE_NAME_MARKUP
+        %@%                 ]                                                  %! FIGURE_NAME_MARKUP
+        %@%             }                                                      %! FIGURE_NAME_MARKUP
+        %@%     }                                                              %! FIGURE_NAME_MARKUP
 
             \override Rest.staff-position = #-10                               %! baca_rest_position:OverrideCommand(1)
             r4
@@ -1572,23 +1572,23 @@ A_LH_Voice_VI = {                                                              %
             % [A LH_Voice_VI measure 13 / measure 4]                           %! _comment_measure_numbers
             b,,,8
             - \tenuto                                                          %! baca_tenuto:IndicatorCommand
-        %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
-        %%%     \fontsize                                                      %! FIGURE_NAME_MARKUP
-        %%%         #2                                                         %! FIGURE_NAME_MARKUP
-        %%%         \concat                                                    %! FIGURE_NAME_MARKUP
-        %%%             {                                                      %! FIGURE_NAME_MARKUP
-        %%%                 [                                                  %! FIGURE_NAME_MARKUP
-        %%%                 "lh-6 8.3.2"                                       %! FIGURE_NAME_MARKUP
-        %%%                 \hspace                                            %! FIGURE_NAME_MARKUP
-        %%%                     #1                                             %! FIGURE_NAME_MARKUP
-        %%%                 \raise                                             %! FIGURE_NAME_MARKUP
-        %%%                     #0.25                                          %! FIGURE_NAME_MARKUP
-        %%%                     \fontsize                                      %! FIGURE_NAME_MARKUP
-        %%%                         #-2                                        %! FIGURE_NAME_MARKUP
-        %%%                         (13)                                       %! FIGURE_NAME_MARKUP
-        %%%                 ]                                                  %! FIGURE_NAME_MARKUP
-        %%%             }                                                      %! FIGURE_NAME_MARKUP
-        %%%     }                                                              %! FIGURE_NAME_MARKUP
+        %@% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
+        %@%     \fontsize                                                      %! FIGURE_NAME_MARKUP
+        %@%         #2                                                         %! FIGURE_NAME_MARKUP
+        %@%         \concat                                                    %! FIGURE_NAME_MARKUP
+        %@%             {                                                      %! FIGURE_NAME_MARKUP
+        %@%                 [                                                  %! FIGURE_NAME_MARKUP
+        %@%                 "lh-6 8.3.2"                                       %! FIGURE_NAME_MARKUP
+        %@%                 \hspace                                            %! FIGURE_NAME_MARKUP
+        %@%                     #1                                             %! FIGURE_NAME_MARKUP
+        %@%                 \raise                                             %! FIGURE_NAME_MARKUP
+        %@%                     #0.25                                          %! FIGURE_NAME_MARKUP
+        %@%                     \fontsize                                      %! FIGURE_NAME_MARKUP
+        %@%                         #-2                                        %! FIGURE_NAME_MARKUP
+        %@%                         (13)                                       %! FIGURE_NAME_MARKUP
+        %@%                 ]                                                  %! FIGURE_NAME_MARKUP
+        %@%             }                                                      %! FIGURE_NAME_MARKUP
+        %@%     }                                                              %! FIGURE_NAME_MARKUP
 
             \override Rest.direction = #up                                     %! baca_rest_up:OverrideCommand(1)
             r4
@@ -1612,23 +1612,23 @@ A_LH_Voice_VI = {                                                              %
 
             bf,,,!16
             - \tenuto                                                          %! baca_tenuto:IndicatorCommand
-        %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
-        %%%     \fontsize                                                      %! FIGURE_NAME_MARKUP
-        %%%         #2                                                         %! FIGURE_NAME_MARKUP
-        %%%         \concat                                                    %! FIGURE_NAME_MARKUP
-        %%%             {                                                      %! FIGURE_NAME_MARKUP
-        %%%                 [                                                  %! FIGURE_NAME_MARKUP
-        %%%                 "lh-6 8.3.3"                                       %! FIGURE_NAME_MARKUP
-        %%%                 \hspace                                            %! FIGURE_NAME_MARKUP
-        %%%                     #1                                             %! FIGURE_NAME_MARKUP
-        %%%                 \raise                                             %! FIGURE_NAME_MARKUP
-        %%%                     #0.25                                          %! FIGURE_NAME_MARKUP
-        %%%                     \fontsize                                      %! FIGURE_NAME_MARKUP
-        %%%                         #-2                                        %! FIGURE_NAME_MARKUP
-        %%%                         (14)                                       %! FIGURE_NAME_MARKUP
-        %%%                 ]                                                  %! FIGURE_NAME_MARKUP
-        %%%             }                                                      %! FIGURE_NAME_MARKUP
-        %%%     }                                                              %! FIGURE_NAME_MARKUP
+        %@% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
+        %@%     \fontsize                                                      %! FIGURE_NAME_MARKUP
+        %@%         #2                                                         %! FIGURE_NAME_MARKUP
+        %@%         \concat                                                    %! FIGURE_NAME_MARKUP
+        %@%             {                                                      %! FIGURE_NAME_MARKUP
+        %@%                 [                                                  %! FIGURE_NAME_MARKUP
+        %@%                 "lh-6 8.3.3"                                       %! FIGURE_NAME_MARKUP
+        %@%                 \hspace                                            %! FIGURE_NAME_MARKUP
+        %@%                     #1                                             %! FIGURE_NAME_MARKUP
+        %@%                 \raise                                             %! FIGURE_NAME_MARKUP
+        %@%                     #0.25                                          %! FIGURE_NAME_MARKUP
+        %@%                     \fontsize                                      %! FIGURE_NAME_MARKUP
+        %@%                         #-2                                        %! FIGURE_NAME_MARKUP
+        %@%                         (14)                                       %! FIGURE_NAME_MARKUP
+        %@%                 ]                                                  %! FIGURE_NAME_MARKUP
+        %@%             }                                                      %! FIGURE_NAME_MARKUP
+        %@%     }                                                              %! FIGURE_NAME_MARKUP
 
             r8.
 
@@ -1656,23 +1656,23 @@ A_LH_Voice_VI = {                                                              %
 
             g,,16
             - \tenuto                                                          %! baca_tenuto:IndicatorCommand
-        %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
-        %%%     \fontsize                                                      %! FIGURE_NAME_MARKUP
-        %%%         #2                                                         %! FIGURE_NAME_MARKUP
-        %%%         \concat                                                    %! FIGURE_NAME_MARKUP
-        %%%             {                                                      %! FIGURE_NAME_MARKUP
-        %%%                 [                                                  %! FIGURE_NAME_MARKUP
-        %%%                 "lh-6 8.3.4"                                       %! FIGURE_NAME_MARKUP
-        %%%                 \hspace                                            %! FIGURE_NAME_MARKUP
-        %%%                     #1                                             %! FIGURE_NAME_MARKUP
-        %%%                 \raise                                             %! FIGURE_NAME_MARKUP
-        %%%                     #0.25                                          %! FIGURE_NAME_MARKUP
-        %%%                     \fontsize                                      %! FIGURE_NAME_MARKUP
-        %%%                         #-2                                        %! FIGURE_NAME_MARKUP
-        %%%                         (15)                                       %! FIGURE_NAME_MARKUP
-        %%%                 ]                                                  %! FIGURE_NAME_MARKUP
-        %%%             }                                                      %! FIGURE_NAME_MARKUP
-        %%%     }                                                              %! FIGURE_NAME_MARKUP
+        %@% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
+        %@%     \fontsize                                                      %! FIGURE_NAME_MARKUP
+        %@%         #2                                                         %! FIGURE_NAME_MARKUP
+        %@%         \concat                                                    %! FIGURE_NAME_MARKUP
+        %@%             {                                                      %! FIGURE_NAME_MARKUP
+        %@%                 [                                                  %! FIGURE_NAME_MARKUP
+        %@%                 "lh-6 8.3.4"                                       %! FIGURE_NAME_MARKUP
+        %@%                 \hspace                                            %! FIGURE_NAME_MARKUP
+        %@%                     #1                                             %! FIGURE_NAME_MARKUP
+        %@%                 \raise                                             %! FIGURE_NAME_MARKUP
+        %@%                     #0.25                                          %! FIGURE_NAME_MARKUP
+        %@%                     \fontsize                                      %! FIGURE_NAME_MARKUP
+        %@%                         #-2                                        %! FIGURE_NAME_MARKUP
+        %@%                         (15)                                       %! FIGURE_NAME_MARKUP
+        %@%                 ]                                                  %! FIGURE_NAME_MARKUP
+        %@%             }                                                      %! FIGURE_NAME_MARKUP
+        %@%     }                                                              %! FIGURE_NAME_MARKUP
 
             r8.
 
@@ -1699,23 +1699,23 @@ A_LH_Voice_VI = {                                                              %
 
             d,,8
             - \tenuto                                                          %! baca_tenuto:IndicatorCommand
-        %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
-        %%%     \fontsize                                                      %! FIGURE_NAME_MARKUP
-        %%%         #2                                                         %! FIGURE_NAME_MARKUP
-        %%%         \concat                                                    %! FIGURE_NAME_MARKUP
-        %%%             {                                                      %! FIGURE_NAME_MARKUP
-        %%%                 [                                                  %! FIGURE_NAME_MARKUP
-        %%%                 "lh-6 8.3.5"                                       %! FIGURE_NAME_MARKUP
-        %%%                 \hspace                                            %! FIGURE_NAME_MARKUP
-        %%%                     #1                                             %! FIGURE_NAME_MARKUP
-        %%%                 \raise                                             %! FIGURE_NAME_MARKUP
-        %%%                     #0.25                                          %! FIGURE_NAME_MARKUP
-        %%%                     \fontsize                                      %! FIGURE_NAME_MARKUP
-        %%%                         #-2                                        %! FIGURE_NAME_MARKUP
-        %%%                         (16)                                       %! FIGURE_NAME_MARKUP
-        %%%                 ]                                                  %! FIGURE_NAME_MARKUP
-        %%%             }                                                      %! FIGURE_NAME_MARKUP
-        %%%     }                                                              %! FIGURE_NAME_MARKUP
+        %@% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
+        %@%     \fontsize                                                      %! FIGURE_NAME_MARKUP
+        %@%         #2                                                         %! FIGURE_NAME_MARKUP
+        %@%         \concat                                                    %! FIGURE_NAME_MARKUP
+        %@%             {                                                      %! FIGURE_NAME_MARKUP
+        %@%                 [                                                  %! FIGURE_NAME_MARKUP
+        %@%                 "lh-6 8.3.5"                                       %! FIGURE_NAME_MARKUP
+        %@%                 \hspace                                            %! FIGURE_NAME_MARKUP
+        %@%                     #1                                             %! FIGURE_NAME_MARKUP
+        %@%                 \raise                                             %! FIGURE_NAME_MARKUP
+        %@%                     #0.25                                          %! FIGURE_NAME_MARKUP
+        %@%                     \fontsize                                      %! FIGURE_NAME_MARKUP
+        %@%                         #-2                                        %! FIGURE_NAME_MARKUP
+        %@%                         (16)                                       %! FIGURE_NAME_MARKUP
+        %@%                 ]                                                  %! FIGURE_NAME_MARKUP
+        %@%             }                                                      %! FIGURE_NAME_MARKUP
+        %@%     }                                                              %! FIGURE_NAME_MARKUP
 
             e,,8
             - \tenuto                                                          %! baca_tenuto:IndicatorCommand
@@ -1739,23 +1739,23 @@ A_LH_Voice_VI = {                                                              %
 
             e,,8
             - \tenuto                                                          %! baca_tenuto:IndicatorCommand
-        %%% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
-        %%%     \fontsize                                                      %! FIGURE_NAME_MARKUP
-        %%%         #2                                                         %! FIGURE_NAME_MARKUP
-        %%%         \concat                                                    %! FIGURE_NAME_MARKUP
-        %%%             {                                                      %! FIGURE_NAME_MARKUP
-        %%%                 [                                                  %! FIGURE_NAME_MARKUP
-        %%%                 "lh-6 8.3.6"                                       %! FIGURE_NAME_MARKUP
-        %%%                 \hspace                                            %! FIGURE_NAME_MARKUP
-        %%%                     #1                                             %! FIGURE_NAME_MARKUP
-        %%%                 \raise                                             %! FIGURE_NAME_MARKUP
-        %%%                     #0.25                                          %! FIGURE_NAME_MARKUP
-        %%%                     \fontsize                                      %! FIGURE_NAME_MARKUP
-        %%%                         #-2                                        %! FIGURE_NAME_MARKUP
-        %%%                         (17)                                       %! FIGURE_NAME_MARKUP
-        %%%                 ]                                                  %! FIGURE_NAME_MARKUP
-        %%%             }                                                      %! FIGURE_NAME_MARKUP
-        %%%     }                                                              %! FIGURE_NAME_MARKUP
+        %@% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
+        %@%     \fontsize                                                      %! FIGURE_NAME_MARKUP
+        %@%         #2                                                         %! FIGURE_NAME_MARKUP
+        %@%         \concat                                                    %! FIGURE_NAME_MARKUP
+        %@%             {                                                      %! FIGURE_NAME_MARKUP
+        %@%                 [                                                  %! FIGURE_NAME_MARKUP
+        %@%                 "lh-6 8.3.6"                                       %! FIGURE_NAME_MARKUP
+        %@%                 \hspace                                            %! FIGURE_NAME_MARKUP
+        %@%                     #1                                             %! FIGURE_NAME_MARKUP
+        %@%                 \raise                                             %! FIGURE_NAME_MARKUP
+        %@%                     #0.25                                          %! FIGURE_NAME_MARKUP
+        %@%                     \fontsize                                      %! FIGURE_NAME_MARKUP
+        %@%                         #-2                                        %! FIGURE_NAME_MARKUP
+        %@%                         (17)                                       %! FIGURE_NAME_MARKUP
+        %@%                 ]                                                  %! FIGURE_NAME_MARKUP
+        %@%             }                                                      %! FIGURE_NAME_MARKUP
+        %@%     }                                                              %! FIGURE_NAME_MARKUP
 
             r4
 
