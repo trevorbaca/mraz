@@ -7,21 +7,13 @@
     \context {
         \name GlobalSkips
         \type Engraver_group
-        \consists Staff_symbol_engraver
         \consists Script_engraver
         \consists Text_engraver
-        \consists Text_spanner_engraver
-
-        \override StaffSymbol.stencil = ##f
+        \consists \alternateTextSpannerEngraver
 
         \override TextScript.font-size = 6
-        \override TextScript.outside-staff-priority = 600
-        \override TextScript.staff-padding = 3
 
-        \override TextSpanner.bound-details.right.attach-dir = #LEFT
         \override TextSpanner.font-size = 6
-        \override TextSpanner.padding = 8
-        %\override TextSpanner.staff-padding = 4
         }
 
     % GLOBAL RESTS
@@ -43,7 +35,9 @@
         \name PageLayout
         \type Engraver_group
         \consists Text_engraver
-        \consists Text_spanner_engraver
+        \consists \alternateTextSpannerEngraver
+
+        \override TextSpanner.font-size = 6
         }
 
     % GLOBAL CONTEXT
@@ -52,8 +46,6 @@
         \type Engraver_group
         \consists Axis_group_engraver
         \consists Bar_number_engraver
-        \consists Mark_engraver
-        \consists Metronome_mark_engraver
         % prevents LilyPond cyclic chain in pure-Y-offset callbacks warning:
         \consists Staff_collecting_engraver
         \consists Time_signature_engraver
@@ -61,24 +53,10 @@
         \accepts GlobalRests
         \accepts PageLayout
 
-        \override BarNumber.X-offset = -7
-        \override BarNumber.Y-offset = -0.75
+        \override BarNumber.Y-extent = ##f
+        %%%\override BarNumber.X-offset = -7
+        %%%\override BarNumber.Y-offset = -0.75
         \override BarNumber.font-size = 1
-
-        \override MetronomeMark.X-extent = #'(0 . 0)
-        \override MetronomeMark.Y-extent = #'(0 . 0)
-        \override MetronomeMark.break-align-symbols = #'(left-edge)
-        \override MetronomeMark.extra-offset = #'(0 . 4)
-        \override MetronomeMark.font-size = 3
-
-        \override RehearsalMark.X-extent = #'(0 . 0)
-        \override RehearsalMark.Y-extent = #'(0 . 0)
-        \override RehearsalMark.break-align-symbols = #'(time-signature)
-        \override RehearsalMark.break-visibility = #end-of-line-invisible
-        \override RehearsalMark.font-name = "Didot"
-        \override RehearsalMark.font-size = 10
-        \override RehearsalMark.outside-staff-priority = 200
-        \override RehearsalMark.self-alignment-X = #center
 
         % prevents StaffSymbol from starting too early after cut-away measures:
         \override TimeSignature.X-extent = ##f
@@ -191,9 +169,12 @@
         \name RHResonanceVoice
         \type Engraver_group
         \alias Voice
+
         \override NoteHead.style = #'harmonic
+
         \override TupletBracket.stencil = ##f
         \override TupletNumber.stencil = ##f
+
         \voiceTwo
     }
 
@@ -274,9 +255,12 @@
         \name LHResonanceVoice
         \type Engraver_group
         \alias Voice
+
         \override NoteHead.style = #'harmonic
+
         \override TupletBracket.stencil = ##f
         \override TupletNumber.stencil = ##f
+
         \voiceTwo
     }
 
@@ -336,6 +320,7 @@
         \type Engraver_group
         \alias ChoirStaff
         \accepts PianoMusicStaffGroup
+
         systemStartDelimiter = #'SystemStartBar
     }
 
@@ -360,6 +345,7 @@
             (right-edge extra-space . 0.0)
             )
         \override BarLine.transparent = ##t
+        \override BarLine.X-extent = #'(0 . 0)
 
         \override Beam.breakable = ##t
         \override Beam.damping = 99
@@ -368,6 +354,8 @@
 
         \override Glissando.breakable = ##t
         \override Glissando.thickness = 3
+
+        \override Hairpin.to-barline = ##f
 
         \override NoteCollision.merge-differently-dotted = ##t
 
@@ -383,18 +371,11 @@
         \override StemTremolo.slope = 0.5
 
         \override TextScript.font-name = #"Palatino"
-        \override TextScript.padding = 1
         \override TextScript.X-extent = ##f
-        \override TextScript.Y-extent = #'(-1.5 . 1.5)
-
-        \override TextSpanner.staff-padding = 2
-
-        \override TrillSpanner.bound-details.right.padding = 2
 
         \override TupletBracket.breakable = ##t
         \override TupletBracket.full-length-to-extent = ##f
         \override TupletBracket.padding = 1.5
-        \override TupletBracket.staff-padding = 1.5
 
         \override TupletNumber.font-size = 0
 
