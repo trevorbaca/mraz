@@ -1,7 +1,7 @@
 import abjad
 
 
-class Gallery(abjad.AbjadObject):
+class Gallery(object):
     """
     Gallery.
 
