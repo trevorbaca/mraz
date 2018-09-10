@@ -951,8 +951,8 @@ F_RH_Voice_II = {                                                              %
         %@%                 ]                                                  %! FIGURE_NAME_MARKUP
         %@%             }                                                      %! FIGURE_NAME_MARKUP
         %@%     }                                                              %! FIGURE_NAME_MARKUP
+            (                                                                  %! baca_slur:SpannerIndicatorCommand(1)
             [                                                                  %! _extend_beam
-            (                                                                  %! baca_slur:SpannerCommand
 
             \set stemLeftBeamCount = 2                                         %! _extend_beam
             \set stemRightBeamCount = 2                                        %! _extend_beam
@@ -965,7 +965,7 @@ F_RH_Voice_II = {                                                              %
             \set stemLeftBeamCount = 2                                         %! _extend_beam
             \set stemRightBeamCount = 1                                        %! _extend_beam
             f''16
-            )                                                                  %! baca_slur:SpannerCommand
+            )                                                                  %! baca_slur:SpannerIndicatorCommand(2)
 
         }
 
@@ -1002,7 +1002,7 @@ F_RH_Voice_II = {                                                              %
             %@%                 ]                                              %! FIGURE_NAME_MARKUP
             %@%             }                                                  %! FIGURE_NAME_MARKUP
             %@%     }                                                          %! FIGURE_NAME_MARKUP
-                (                                                              %! baca_slur:SpannerCommand
+                (                                                              %! baca_slur:SpannerIndicatorCommand(1)
 
                 \set stemLeftBeamCount = 2                                     %! _extend_beam
                 \set stemRightBeamCount = 2                                    %! _extend_beam
@@ -1011,7 +1011,7 @@ F_RH_Voice_II = {                                                              %
                 \set stemLeftBeamCount = 2                                     %! _extend_beam
                 \set stemRightBeamCount = 1                                    %! _extend_beam
                 b'16
-                )                                                              %! baca_slur:SpannerCommand
+                )                                                              %! baca_slur:SpannerIndicatorCommand(2)
 
             }
 
@@ -1020,7 +1020,7 @@ F_RH_Voice_II = {                                                              %
                 \set stemLeftBeamCount = 1                                     %! _extend_beam
                 \set stemRightBeamCount = 2                                    %! _extend_beam
                 cs''!16
-                (                                                              %! baca_slur:SpannerCommand
+                (                                                              %! baca_slur:SpannerIndicatorCommand(1)
 
                 \set stemLeftBeamCount = 2                                     %! _extend_beam
                 \set stemRightBeamCount = 2                                    %! _extend_beam
@@ -1033,7 +1033,7 @@ F_RH_Voice_II = {                                                              %
                 \set stemLeftBeamCount = 2                                     %! _extend_beam
                 \set stemRightBeamCount = 1                                    %! _extend_beam
                 b''16
-                )                                                              %! baca_slur:SpannerCommand
+                )                                                              %! baca_slur:SpannerIndicatorCommand(2)
 
             }
 
@@ -1042,7 +1042,7 @@ F_RH_Voice_II = {                                                              %
                 \set stemLeftBeamCount = 1                                     %! _extend_beam
                 \set stemRightBeamCount = 2                                    %! _extend_beam
                 f''16
-                (                                                              %! baca_slur:SpannerCommand
+                (                                                              %! baca_slur:SpannerIndicatorCommand(1)
 
                 \set stemLeftBeamCount = 2                                     %! _extend_beam
                 \set stemRightBeamCount = 2                                    %! _extend_beam
@@ -1051,8 +1051,8 @@ F_RH_Voice_II = {                                                              %
                 \set stemLeftBeamCount = 2                                     %! _extend_beam
                 \set stemRightBeamCount = 0                                    %! _extend_beam
                 a''16
+                )                                                              %! baca_slur:SpannerIndicatorCommand(2)
                 ]                                                              %! _extend_beam
-                )                                                              %! baca_slur:SpannerCommand
 
             }
 
@@ -1088,8 +1088,8 @@ F_RH_Voice_II = {                                                              %
         %@%                 ]                                                  %! FIGURE_NAME_MARKUP
         %@%             }                                                      %! FIGURE_NAME_MARKUP
         %@%     }                                                              %! FIGURE_NAME_MARKUP
+            (                                                                  %! baca_slur:SpannerIndicatorCommand(1)
             [                                                                  %! _extend_beam
-            (                                                                  %! baca_slur:SpannerCommand
 
             \set stemLeftBeamCount = 2                                         %! _extend_beam
             \set stemRightBeamCount = 2                                        %! _extend_beam
@@ -1098,7 +1098,7 @@ F_RH_Voice_II = {                                                              %
             \set stemLeftBeamCount = 2                                         %! _extend_beam
             \set stemRightBeamCount = 1                                        %! _extend_beam
             e''16
-            )                                                                  %! baca_slur:SpannerCommand
+            )                                                                  %! baca_slur:SpannerIndicatorCommand(2)
 
         }
 
@@ -1108,7 +1108,7 @@ F_RH_Voice_II = {                                                              %
             \set stemLeftBeamCount = 1                                         %! _extend_beam
             \set stemRightBeamCount = 2                                        %! _extend_beam
             cs''!16
-            (                                                                  %! baca_slur:SpannerCommand
+            (                                                                  %! baca_slur:SpannerIndicatorCommand(1)
 
             \set stemLeftBeamCount = 2                                         %! _extend_beam
             \set stemRightBeamCount = 2                                        %! _extend_beam
@@ -1129,7 +1129,7 @@ F_RH_Voice_II = {                                                              %
             \set stemLeftBeamCount = 2                                         %! _extend_beam
             \set stemRightBeamCount = 1                                        %! _extend_beam
             b''16
-            )                                                                  %! baca_slur:SpannerCommand
+            )                                                                  %! baca_slur:SpannerIndicatorCommand(2)
 
         }
 
@@ -1138,7 +1138,7 @@ F_RH_Voice_II = {                                                              %
             \set stemLeftBeamCount = 1                                         %! _extend_beam
             \set stemRightBeamCount = 2                                        %! _extend_beam
             g''16
-            (                                                                  %! baca_slur:SpannerCommand
+            (                                                                  %! baca_slur:SpannerIndicatorCommand(1)
 
             \set stemLeftBeamCount = 2                                         %! _extend_beam
             \set stemRightBeamCount = 2                                        %! _extend_beam
@@ -1147,7 +1147,7 @@ F_RH_Voice_II = {                                                              %
             \set stemLeftBeamCount = 2                                         %! _extend_beam
             \set stemRightBeamCount = 1                                        %! _extend_beam
             b''16
-            )                                                                  %! baca_slur:SpannerCommand
+            )                                                                  %! baca_slur:SpannerIndicatorCommand(2)
 
         }
 
@@ -1184,7 +1184,7 @@ F_RH_Voice_II = {                                                              %
             %@%                 ]                                              %! FIGURE_NAME_MARKUP
             %@%             }                                                  %! FIGURE_NAME_MARKUP
             %@%     }                                                          %! FIGURE_NAME_MARKUP
-                (                                                              %! baca_slur:SpannerCommand
+                (                                                              %! baca_slur:SpannerIndicatorCommand(1)
 
                 \set stemLeftBeamCount = 2                                     %! _extend_beam
                 \set stemRightBeamCount = 2                                    %! _extend_beam
@@ -1197,7 +1197,7 @@ F_RH_Voice_II = {                                                              %
                 \set stemLeftBeamCount = 2                                     %! _extend_beam
                 \set stemRightBeamCount = 1                                    %! _extend_beam
                 d'''16
-                )                                                              %! baca_slur:SpannerCommand
+                )                                                              %! baca_slur:SpannerIndicatorCommand(2)
 
             }
 
@@ -1206,7 +1206,7 @@ F_RH_Voice_II = {                                                              %
                 \set stemLeftBeamCount = 1                                     %! _extend_beam
                 \set stemRightBeamCount = 2                                    %! _extend_beam
                 ef'''!16
-                (                                                              %! baca_slur:SpannerCommand
+                (                                                              %! baca_slur:SpannerIndicatorCommand(1)
 
                 \set stemLeftBeamCount = 2                                     %! _extend_beam
                 \set stemRightBeamCount = 2                                    %! _extend_beam
@@ -1227,8 +1227,8 @@ F_RH_Voice_II = {                                                              %
                 \set stemLeftBeamCount = 2                                     %! _extend_beam
                 \set stemRightBeamCount = 0                                    %! _extend_beam
                 cs'''!16
+                )                                                              %! baca_slur:SpannerIndicatorCommand(2)
                 ]                                                              %! _extend_beam
-                )                                                              %! baca_slur:SpannerCommand
 
             }
 
@@ -1261,8 +1261,8 @@ F_RH_Voice_II = {                                                              %
         %@%                 ]                                                  %! FIGURE_NAME_MARKUP
         %@%             }                                                      %! FIGURE_NAME_MARKUP
         %@%     }                                                              %! FIGURE_NAME_MARKUP
+            (                                                                  %! baca_slur:SpannerIndicatorCommand(1)
             [                                                                  %! _extend_beam
-            (                                                                  %! baca_slur:SpannerCommand
 
             \set stemLeftBeamCount = 2                                         %! _extend_beam
             \set stemRightBeamCount = 2                                        %! _extend_beam
@@ -1271,7 +1271,7 @@ F_RH_Voice_II = {                                                              %
             \set stemLeftBeamCount = 2                                         %! _extend_beam
             \set stemRightBeamCount = 1                                        %! _extend_beam
             ef'''!16
-            )                                                                  %! baca_slur:SpannerCommand
+            )                                                                  %! baca_slur:SpannerIndicatorCommand(2)
 
         }
 
@@ -1305,7 +1305,7 @@ F_RH_Voice_II = {                                                              %
         %@%                 ]                                                  %! FIGURE_NAME_MARKUP
         %@%             }                                                      %! FIGURE_NAME_MARKUP
         %@%     }                                                              %! FIGURE_NAME_MARKUP
-            (                                                                  %! baca_slur:SpannerCommand
+            (                                                                  %! baca_slur:SpannerIndicatorCommand(1)
 
             \set stemLeftBeamCount = 2                                         %! _extend_beam
             \set stemRightBeamCount = 2                                        %! _extend_beam
@@ -1314,8 +1314,8 @@ F_RH_Voice_II = {                                                              %
             \set stemLeftBeamCount = 2                                         %! _extend_beam
             \set stemRightBeamCount = 0                                        %! _extend_beam
             af'''!16
+            )                                                                  %! baca_slur:SpannerIndicatorCommand(2)
             ]                                                                  %! _extend_beam
-            )                                                                  %! baca_slur:SpannerCommand
             \revert Beam.positions                                             %! baca_beam_positions:OverrideCommand(2)
             \revert Slur.direction                                             %! baca_slur_up:OverrideCommand(2)
             \revert Stem.direction                                             %! baca_stem_down:OverrideCommand(2)
@@ -2415,8 +2415,8 @@ F_LH_Voice_V = {                                                               %
             %@%                 ]                                              %! FIGURE_NAME_MARKUP
             %@%             }                                                  %! FIGURE_NAME_MARKUP
             %@%     }                                                          %! FIGURE_NAME_MARKUP
+                (                                                              %! baca_slur:SpannerIndicatorCommand(1)
                 [
-                (                                                              %! baca_slur:SpannerCommand
 
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 2
@@ -2425,7 +2425,7 @@ F_LH_Voice_V = {                                                               %
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 1
                 cs'!16
-                )                                                              %! baca_slur:SpannerCommand
+                )                                                              %! baca_slur:SpannerIndicatorCommand(2)
 
             }
 
@@ -2435,7 +2435,7 @@ F_LH_Voice_V = {                                                               %
                 \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 2
                 b'16
-                (                                                              %! baca_slur:SpannerCommand
+                (                                                              %! baca_slur:SpannerIndicatorCommand(1)
 
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 2
@@ -2460,7 +2460,7 @@ F_LH_Voice_V = {                                                               %
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 1
                 g''16
-                )                                                              %! baca_slur:SpannerCommand
+                )                                                              %! baca_slur:SpannerIndicatorCommand(2)
 
             }
 
@@ -2469,7 +2469,7 @@ F_LH_Voice_V = {                                                               %
                 \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 2
                 fs''!16
-                (                                                              %! baca_slur:SpannerCommand
+                (                                                              %! baca_slur:SpannerIndicatorCommand(1)
 
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 2
@@ -2494,8 +2494,8 @@ F_LH_Voice_V = {                                                               %
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 0
                 d'''16
+                )                                                              %! baca_slur:SpannerIndicatorCommand(2)
                 ]
-                )                                                              %! baca_slur:SpannerCommand
                 \revert TupletBracket.direction                                %! baca_tuplet_bracket_down:OverrideCommand(2)
 
             }
@@ -2536,8 +2536,8 @@ F_LH_Voice_V = {                                                               %
             %@%                 ]                                              %! FIGURE_NAME_MARKUP
             %@%             }                                                  %! FIGURE_NAME_MARKUP
             %@%     }                                                          %! FIGURE_NAME_MARKUP
+                (                                                              %! baca_slur:SpannerIndicatorCommand(1)
                 [
-                (                                                              %! baca_slur:SpannerCommand
 
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 2
@@ -2546,7 +2546,7 @@ F_LH_Voice_V = {                                                               %
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 1
                 cs''!16
-                )                                                              %! baca_slur:SpannerCommand
+                )                                                              %! baca_slur:SpannerIndicatorCommand(2)
 
             }
 
@@ -2555,7 +2555,7 @@ F_LH_Voice_V = {                                                               %
                 \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 2
                 a'16
-                (                                                              %! baca_slur:SpannerCommand
+                (                                                              %! baca_slur:SpannerIndicatorCommand(1)
 
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 2
@@ -2580,7 +2580,7 @@ F_LH_Voice_V = {                                                               %
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 1
                 fs''!16
-                )                                                              %! baca_slur:SpannerCommand
+                )                                                              %! baca_slur:SpannerIndicatorCommand(2)
 
             }
 
@@ -2590,7 +2590,7 @@ F_LH_Voice_V = {                                                               %
                 \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 2
                 e''16
-                (                                                              %! baca_slur:SpannerCommand
+                (                                                              %! baca_slur:SpannerIndicatorCommand(1)
 
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 2
@@ -2615,8 +2615,8 @@ F_LH_Voice_V = {                                                               %
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 0
                 cs'''!16
+                )                                                              %! baca_slur:SpannerIndicatorCommand(2)
                 ]
-                )                                                              %! baca_slur:SpannerCommand
 
             }
 

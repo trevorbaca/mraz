@@ -1005,12 +1005,12 @@ C_RH_Voice_I = {                                                               %
             d''''8
             - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
             \mf                                                                %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+            (                                                                  %! baca_slur:SpannerIndicatorCommand(1)
             [
-            (                                                                  %! baca_slur:SpannerCommand
 
             af''''!8
+            )                                                                  %! baca_slur:SpannerIndicatorCommand(2)
             ]
-            )                                                                  %! baca_slur:SpannerCommand
 
             s8
 
@@ -1021,12 +1021,12 @@ C_RH_Voice_I = {                                                               %
             s8
 
             b'''8
+            (                                                                  %! baca_slur:SpannerIndicatorCommand(1)
             [
-            (                                                                  %! baca_slur:SpannerCommand
 
             e'''8
+            )                                                                  %! baca_slur:SpannerIndicatorCommand(2)
             ]
-            )                                                                  %! baca_slur:SpannerCommand
 
             r4.
             \revert TextScript.direction                                       %! baca_text_script_up:OverrideCommand(2)
@@ -1125,14 +1125,14 @@ C_RH_Voice_I = {                                                               %
             s8
 
             c''''8
+            (                                                                  %! baca_slur:SpannerIndicatorCommand(1)
             [
-            (                                                                  %! baca_slur:SpannerCommand
 
             g'''8
 
             cs''''!8
+            )                                                                  %! baca_slur:SpannerIndicatorCommand(2)
             ]
-            )                                                                  %! baca_slur:SpannerCommand
 
             s8
 
@@ -1170,28 +1170,28 @@ C_RH_Voice_I = {                                                               %
         %@%                 ]                                                  %! FIGURE_NAME_MARKUP
         %@%             }                                                      %! FIGURE_NAME_MARKUP
         %@%     }                                                              %! FIGURE_NAME_MARKUP
+            (                                                                  %! baca_slur:SpannerIndicatorCommand(1)
             [
-            (                                                                  %! baca_slur:SpannerCommand
 
             af''''!8
 
             d''''8
+            )                                                                  %! baca_slur:SpannerIndicatorCommand(2)
             ]
-            )                                                                  %! baca_slur:SpannerCommand
 
             s8
 
             s8
 
             e''''8
+            (                                                                  %! baca_slur:SpannerIndicatorCommand(1)
             [
-            (                                                                  %! baca_slur:SpannerCommand
 
             b'''8
 
             f'''8
+            )                                                                  %! baca_slur:SpannerIndicatorCommand(2)
             ]
-            )                                                                  %! baca_slur:SpannerCommand
 
             s8
 
@@ -1202,12 +1202,12 @@ C_RH_Voice_I = {                                                               %
             s8
 
             fs'''!8
+            (                                                                  %! baca_slur:SpannerIndicatorCommand(1)
             [
-            (                                                                  %! baca_slur:SpannerCommand
 
             cs'''!8
+            )                                                                  %! baca_slur:SpannerIndicatorCommand(2)
             ]
-            )                                                                  %! baca_slur:SpannerCommand
 
         }
 
@@ -1805,8 +1805,8 @@ C_RH_Voice_II = {                                                              %
         %@%     }                                                              %! FIGURE_NAME_MARKUP
             - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
             \<                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+            (                                                                  %! baca_slur:SpannerIndicatorCommand(1)
             [
-            (                                                                  %! baca_slur:SpannerCommand
 
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
@@ -1893,8 +1893,8 @@ C_RH_Voice_II = {                                                              %
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 0
             cs''''!16
+            )                                                                  %! baca_slur:SpannerIndicatorCommand(2)
             ]
-            )                                                                  %! baca_slur:SpannerCommand
             \revert DynamicLineSpanner.staff-padding                           %! baca_dls_staff_padding:OverrideCommand(2)
             \revert Slur.direction                                             %! baca_slur_up:OverrideCommand(2)
 
@@ -1934,8 +1934,8 @@ C_RH_Voice_II = {                                                              %
         %@%     }                                                              %! FIGURE_NAME_MARKUP
             - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
             \<                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+            (                                                                  %! baca_slur:SpannerIndicatorCommand(1)
             [
-            (                                                                  %! baca_slur:SpannerCommand
 
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
@@ -2018,8 +2018,8 @@ C_RH_Voice_II = {                                                              %
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 0
             bf'''!16
+            )                                                                  %! baca_slur:SpannerIndicatorCommand(2)
             ]
-            )                                                                  %! baca_slur:SpannerCommand
             \revert DynamicLineSpanner.staff-padding                           %! baca_dls_staff_padding:OverrideCommand(2)
             \revert Slur.direction                                             %! baca_slur_up:OverrideCommand(2)
             \revert TextScript.direction                                       %! baca_text_script_up:OverrideCommand(2)
@@ -2092,8 +2092,8 @@ C_RH_Voice_II = {                                                              %
         %@%     }                                                              %! FIGURE_NAME_MARKUP
             - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
             \<                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+            (                                                                  %! baca_slur:SpannerIndicatorCommand(1)
             [
-            (                                                                  %! baca_slur:SpannerCommand
 
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
@@ -2188,8 +2188,8 @@ C_RH_Voice_II = {                                                              %
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 0
             f''''16
+            )                                                                  %! baca_slur:SpannerIndicatorCommand(2)
             ]
-            )                                                                  %! baca_slur:SpannerCommand
             \revert DynamicLineSpanner.staff-padding                           %! baca_dls_staff_padding:OverrideCommand(2)
             \revert Slur.direction                                             %! baca_slur_up:OverrideCommand(2)
             \revert TextScript.direction                                       %! baca_text_script_up:OverrideCommand(2)
@@ -2230,8 +2230,8 @@ C_RH_Voice_II = {                                                              %
         %@%     }                                                              %! FIGURE_NAME_MARKUP
             - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
             \<                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+            (                                                                  %! baca_slur:SpannerIndicatorCommand(1)
             [
-            (                                                                  %! baca_slur:SpannerCommand
 
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
@@ -2266,8 +2266,8 @@ C_RH_Voice_II = {                                                              %
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 0
             fs''''!16
+            )                                                                  %! baca_slur:SpannerIndicatorCommand(2)
             ]
-            )                                                                  %! baca_slur:SpannerCommand
             \revert DynamicLineSpanner.staff-padding                           %! baca_dls_staff_padding:OverrideCommand(2)
             \revert Slur.direction                                             %! baca_slur_up:OverrideCommand(2)
             \revert TextScript.direction                                       %! baca_text_script_up:OverrideCommand(2)
@@ -2820,8 +2820,8 @@ C_RH_Voice_III = {                                                             %
         %@%                 ]                                                  %! FIGURE_NAME_MARKUP
         %@%             }                                                      %! FIGURE_NAME_MARKUP
         %@%     }                                                              %! FIGURE_NAME_MARKUP
+            (                                                                  %! baca_slur:SpannerIndicatorCommand(1)
             [
-            (                                                                  %! baca_slur:SpannerCommand
 
             ef'''!8
             - \tenuto                                                          %! baca_tenuto:IndicatorCommand
@@ -2831,8 +2831,8 @@ C_RH_Voice_III = {                                                             %
 
             fs'''!8
             - \tenuto                                                          %! baca_tenuto:IndicatorCommand
+            )                                                                  %! baca_slur:SpannerIndicatorCommand(2)
             ]
-            )                                                                  %! baca_slur:SpannerCommand
             \revert Stem.direction                                             %! baca_stem_down:OverrideCommand(2)
             \revert TupletBracket.direction                                    %! baca_tuplet_bracket_down:OverrideCommand(2)
 
@@ -4210,7 +4210,7 @@ C_LH_Voice_IV = {                                                              %
         %@%                 ]                                                  %! FIGURE_NAME_MARKUP
         %@%             }                                                      %! FIGURE_NAME_MARKUP
         %@%     }                                                              %! FIGURE_NAME_MARKUP
-            (                                                                  %! baca_slur:SpannerCommand
+            (                                                                  %! baca_slur:SpannerIndicatorCommand(1)
 
             r8.
 
@@ -4219,7 +4219,7 @@ C_LH_Voice_IV = {                                                              %
             r8.
 
             cs!8.
-            )                                                                  %! baca_slur:SpannerCommand
+            )                                                                  %! baca_slur:SpannerIndicatorCommand(2)
 
             r8.
             \revert Slur.direction                                             %! baca_slur_up:OverrideCommand(2)
@@ -5135,8 +5135,8 @@ C_LH_Voice_V = {                                                               %
                 \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 1
                 <c bf!>8
+                (                                                              %! baca_slur:SpannerIndicatorCommand(1)
                 [
-                (                                                              %! baca_slur:SpannerCommand
 
             }
 
@@ -5145,8 +5145,8 @@ C_LH_Voice_V = {                                                               %
                 \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 1
                 <d' f'>8
+                )                                                              %! baca_slur:SpannerIndicatorCommand(2)
                 ]
-                )                                                              %! baca_slur:SpannerCommand
 
                 r4
 
@@ -5247,8 +5247,8 @@ C_LH_Voice_V = {                                                               %
                 \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 1
                 <bf'!>8
+                (                                                              %! baca_slur:SpannerIndicatorCommand(1)
                 [
-                (                                                              %! baca_slur:SpannerCommand
 
             }
 
@@ -5265,8 +5265,8 @@ C_LH_Voice_V = {                                                               %
                 \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 1
                 <e af!>8
+                )                                                              %! baca_slur:SpannerIndicatorCommand(2)
                 ]
-                )                                                              %! baca_slur:SpannerCommand
 
                 r4
 
@@ -5334,8 +5334,8 @@ C_LH_Voice_V = {                                                               %
                 \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 1
                 <c f bf!>8
+                (                                                              %! baca_slur:SpannerIndicatorCommand(1)
                 [
-                (                                                              %! baca_slur:SpannerCommand
 
             }
 
@@ -5352,8 +5352,8 @@ C_LH_Voice_V = {                                                               %
                 \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 1
                 <bf! c'>8
+                )                                                              %! baca_slur:SpannerIndicatorCommand(2)
                 ]
-                )                                                              %! baca_slur:SpannerCommand
 
                 r4
 
@@ -5393,8 +5393,8 @@ C_LH_Voice_V = {                                                               %
                 \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 1
                 <d' f'>8
+                (                                                              %! baca_slur:SpannerIndicatorCommand(1)
                 [
-                (                                                              %! baca_slur:SpannerCommand
 
             }
 
@@ -5403,8 +5403,8 @@ C_LH_Voice_V = {                                                               %
                 \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 1
                 <af! c' e'>8
+                )                                                              %! baca_slur:SpannerIndicatorCommand(2)
                 ]
-                )                                                              %! baca_slur:SpannerCommand
 
                 r8
 
@@ -5504,8 +5504,8 @@ C_LH_Voice_V = {                                                               %
                 \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 1
                 <d' f'>8
+                (                                                              %! baca_slur:SpannerIndicatorCommand(1)
                 [
-                (                                                              %! baca_slur:SpannerCommand
 
             }
 
@@ -5514,8 +5514,8 @@ C_LH_Voice_V = {                                                               %
                 \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 1
                 <af! e'>8
+                )                                                              %! baca_slur:SpannerIndicatorCommand(2)
                 ]
-                )                                                              %! baca_slur:SpannerCommand
 
                 r8
 

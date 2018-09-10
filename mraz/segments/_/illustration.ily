@@ -366,8 +366,8 @@ i_RH_Voice_II = {                                                              %
         %@%     }                                                              %! FIGURE_NAME_MARKUP
             - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
             \<                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+            (                                                                  %! baca_slur:SpannerIndicatorCommand(1)
             [
-            (                                                                  %! baca_slur:SpannerCommand
 
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
@@ -454,8 +454,8 @@ i_RH_Voice_II = {                                                              %
             cs''''!16
             - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
             \ff                                                                %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(2)
+            )                                                                  %! baca_slur:SpannerIndicatorCommand(2)
             ]
-            )                                                                  %! baca_slur:SpannerCommand
             \revert DynamicLineSpanner.staff-padding                           %! baca_dls_staff_padding:OverrideCommand(2)
             \revert Slur.direction                                             %! baca_slur_up:OverrideCommand(2)
             \ottava #0                                                         %! baca_ottava:SpannerCommand
