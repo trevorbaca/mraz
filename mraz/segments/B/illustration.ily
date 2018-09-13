@@ -474,10 +474,10 @@ B_RH_Voice_II = {                                                              %
         \scaleDurations #'(1 . 1) {
 
             % [B RH_Voice_II measure 24 / measure 3]                           %! _comment_measure_numbers
-            \once \override DynamicText.X-offset = #0                          %! baca_dynamic_text_x_offset:OverrideCommand(1)
-            \override Stem.direction = #down                                   %! baca_stem_down:OverrideCommand(1)
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
+            \once \override DynamicText.X-offset = #0                          %! baca_dynamic_text_x_offset:OverrideCommand(1)
+            \override Stem.direction = #down                                   %! baca_stem_down:OverrideCommand(1)
             \dynamicDown                                                       %! baca_dynamic_down:IndicatorCommand
             fs!16
             - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
@@ -500,8 +500,8 @@ B_RH_Voice_II = {                                                              %
         %@%                 ]                                                  %! FIGURE_NAME_MARKUP
         %@%             }                                                      %! FIGURE_NAME_MARKUP
         %@%     }                                                              %! FIGURE_NAME_MARKUP
-            (                                                                  %! baca_slur:SpannerIndicatorCommand(1)
             [
+            (                                                                  %! baca_slur:SpannerIndicatorCommand(1)
 
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
@@ -567,10 +567,10 @@ B_RH_Voice_II = {                                                              %
         \scaleDurations #'(1 . 1) {
 
             % [B RH_Voice_II measure 27 / measure 6]                           %! _comment_measure_numbers
-            \once \override DynamicText.X-offset = #0                          %! baca_dynamic_text_x_offset:OverrideCommand(1)
-            \override Stem.direction = #down                                   %! baca_stem_down:OverrideCommand(1)
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
+            \once \override DynamicText.X-offset = #0                          %! baca_dynamic_text_x_offset:OverrideCommand(1)
+            \override Stem.direction = #down                                   %! baca_stem_down:OverrideCommand(1)
             fs!16
             - \tweak color #(x11-color 'DeepPink1)                             %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
             \ppp                                                               %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
@@ -592,8 +592,8 @@ B_RH_Voice_II = {                                                              %
         %@%                 ]                                                  %! FIGURE_NAME_MARKUP
         %@%             }                                                      %! FIGURE_NAME_MARKUP
         %@%     }                                                              %! FIGURE_NAME_MARKUP
-            (                                                                  %! baca_slur:SpannerIndicatorCommand(1)
             [
+            (                                                                  %! baca_slur:SpannerIndicatorCommand(1)
 
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
@@ -690,10 +690,10 @@ B_RH_Voice_II = {                                                              %
         \scaleDurations #'(1 . 1) {
 
             % [B RH_Voice_II measure 30 / measure 9]                           %! _comment_measure_numbers
-            \once \override DynamicText.X-offset = #0                          %! baca_dynamic_text_x_offset:OverrideCommand(1)
-            \override Stem.direction = #down                                   %! baca_stem_down:OverrideCommand(1)
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
+            \once \override DynamicText.X-offset = #0                          %! baca_dynamic_text_x_offset:OverrideCommand(1)
+            \override Stem.direction = #down                                   %! baca_stem_down:OverrideCommand(1)
             fs!16
             - \tweak color #(x11-color 'DeepPink1)                             %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
             \ppp                                                               %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
@@ -715,8 +715,8 @@ B_RH_Voice_II = {                                                              %
         %@%                 ]                                                  %! FIGURE_NAME_MARKUP
         %@%             }                                                      %! FIGURE_NAME_MARKUP
         %@%     }                                                              %! FIGURE_NAME_MARKUP
-            (                                                                  %! baca_slur:SpannerIndicatorCommand(1)
             [
+            (                                                                  %! baca_slur:SpannerIndicatorCommand(1)
 
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
@@ -851,11 +851,11 @@ B_RH_Voice_II = {                                                              %
         \times 4/5 {
 
             % [B RH_Voice_II measure 33 / measure 12]                          %! _comment_measure_numbers
+            \set stemLeftBeamCount = 0
+            \set stemRightBeamCount = 2
             \override DynamicLineSpanner.staff-padding = #'8                   %! baca_dls_staff_padding:OverrideCommand(1)
             \once \override Score.SpanBar.extra-offset = #'(-0.75 . 0)         %! +SEGMENT:baca_span_bar_extra_offset:OverrideCommand(1)
             \override Slur.direction = #up                                     %! baca_slur_up:OverrideCommand(1)
-            \set stemLeftBeamCount = 0
-            \set stemRightBeamCount = 2
             \ottava #1                                                         %! baca_ottava:SpannerCommand
             b'16
             - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
@@ -879,8 +879,8 @@ B_RH_Voice_II = {                                                              %
         %@%     }                                                              %! FIGURE_NAME_MARKUP
             - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
             \<                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
-            (                                                                  %! baca_slur:SpannerIndicatorCommand(1)
             [
+            (                                                                  %! baca_slur:SpannerIndicatorCommand(1)
 
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
@@ -2098,6 +2098,8 @@ B_LH_Resonance_Voice = {                                                       %
         %@%     }                                                              %! FIGURE_NAME_MARKUP
             \repeatTie                                                         %! baca_repeat_tie:SpannerCommand
 
+            \set stemLeftBeamCount = 2
+            \set stemRightBeamCount = 0
             \once \override NoteHead.no-ledgers = ##t                          %! baca_no_ledgers:OverrideCommand(1)
             \once \override Accidental.transparent = ##t                       %! baca_accidental_transparent:OverrideCommand(1)
             \once \override Beam.transparent = ##t                             %! baca_beam_transparent:OverrideCommand(1)
@@ -2105,12 +2107,8 @@ B_LH_Resonance_Voice = {                                                       %
             \once \override NoteHead.transparent = ##t                         %! baca_note_head_transparent:OverrideCommand(1)
             \once \override RepeatTie.transparent = ##t                        %! baca_repeat_tie_transparent:OverrideCommand(1)
             \once \override Stem.transparent = ##t                             %! baca_stem_transparent:OverrideCommand(1)
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 0
             <e, fs,! gs,! as,! b,>16
             \repeatTie                                                         %! baca_repeat_tie:SpannerCommand
-            [
-            ]
 
         }
 
@@ -2207,6 +2205,8 @@ B_LH_Resonance_Voice = {                                                       %
         %@%     }                                                              %! FIGURE_NAME_MARKUP
             \repeatTie                                                         %! baca_repeat_tie:SpannerCommand
 
+            \set stemLeftBeamCount = 1
+            \set stemRightBeamCount = 0
             \once \override NoteHead.no-ledgers = ##t                          %! baca_no_ledgers:OverrideCommand(1)
             \once \override Accidental.transparent = ##t                       %! baca_accidental_transparent:OverrideCommand(1)
             \once \override Beam.transparent = ##t                             %! baca_beam_transparent:OverrideCommand(1)
@@ -2214,12 +2214,8 @@ B_LH_Resonance_Voice = {                                                       %
             \once \override NoteHead.transparent = ##t                         %! baca_note_head_transparent:OverrideCommand(1)
             \once \override RepeatTie.transparent = ##t                        %! baca_repeat_tie_transparent:OverrideCommand(1)
             \once \override Stem.transparent = ##t                             %! baca_stem_transparent:OverrideCommand(1)
-            \set stemLeftBeamCount = 1
-            \set stemRightBeamCount = 0
             <e, fs,! gs,! as,! b,>8
             \repeatTie                                                         %! baca_repeat_tie:SpannerCommand
-            [
-            ]
 
         }
 
@@ -2268,8 +2264,6 @@ B_LH_Resonance_Voice = {                                                       %
             \set stemRightBeamCount = 0
             <e, fs,! gs,! as,! b,>16
             \repeatTie                                                         %! baca_repeat_tie:SpannerCommand
-            [
-            ]
             \revert NoteHead.no-ledgers                                        %! baca_no_ledgers:OverrideCommand(2)
             \revert Accidental.transparent                                     %! baca_accidental_transparent:OverrideCommand(2)
             \revert Beam.transparent                                           %! baca_beam_transparent:OverrideCommand(2)

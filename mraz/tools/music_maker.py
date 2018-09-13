@@ -106,8 +106,6 @@ def music_maker():
             <BLANKLINE>
                                 % [Music_Voice measure 1]                                  %! _comment_measure_numbers
                                 e'16
-                                [
-                                ]
             <BLANKLINE>
                             }
             <BLANKLINE>
@@ -150,8 +148,6 @@ def music_maker():
             <BLANKLINE>
                                 % [Music_Voice measure 3]                                  %! _comment_measure_numbers
                                 b'16
-                                [
-                                ]
             <BLANKLINE>
                             }
             <BLANKLINE>
@@ -303,7 +299,7 @@ def music_maker():
                             \scaleDurations #'(1 . 1) {
             <BLANKLINE>
                                 % [Music_Voice measure 1]                                  %! _comment_measure_numbers
-                                \set stemLeftBeamCount = 0
+                                \set stemLeftBeamCount = 2
                                 \set stemRightBeamCount = 2
                                 e'16
                                 [
@@ -345,7 +341,7 @@ def music_maker():
                             \scaleDurations #'(1 . 1) {
             <BLANKLINE>
                                 \set stemLeftBeamCount = 2
-                                \set stemRightBeamCount = 0
+                                \set stemRightBeamCount = 2
                                 b'16
                                 ]
             <BLANKLINE>
@@ -388,7 +384,7 @@ def music_maker():
                             \scaleDurations #'(1 . 1) {
             <BLANKLINE>
                                 \set stemLeftBeamCount = 2
-                                \set stemRightBeamCount = 1
+                                \set stemRightBeamCount = 2
                                 b'16
             <BLANKLINE>
                             }
@@ -425,7 +421,7 @@ def music_maker():
                             \scaleDurations #'(1 . 1) {
             <BLANKLINE>
                                 % [Music_Voice measure 3]                                  %! _comment_measure_numbers
-                                \set stemLeftBeamCount = 0
+                                \set stemLeftBeamCount = 2
                                 \set stemRightBeamCount = 2
                                 b'16
                                 [
@@ -463,7 +459,7 @@ def music_maker():
                             \scaleDurations #'(1 . 1) {
             <BLANKLINE>
                                 \set stemLeftBeamCount = 2
-                                \set stemRightBeamCount = 0
+                                \set stemRightBeamCount = 2
                                 e'16
                                 ]
             <BLANKLINE>
