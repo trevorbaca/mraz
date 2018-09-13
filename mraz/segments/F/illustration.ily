@@ -244,10 +244,10 @@ F_RH_Voice_I = {                                                               %
             \times 5/6 {
 
                 % [F RH_Voice_I measure 98 / measure 1]                        %! _comment_measure_numbers
+                \set stemLeftBeamCount = 0
+                \set stemRightBeamCount = 2
                 \override Beam.positions = #'(10 . 10)                         %! baca_beam_positions:OverrideCommand(1)
                 \override Stem.direction = #up                                 %! baca_stem_up:OverrideCommand(1)
-                \set stemLeftBeamCount = 0                                     %! _extend_beam
-                \set stemRightBeamCount = 2                                    %! _extend_beam
                 \clef "treble"                                                 %! REAPPLIED_CLEF:_set_status_tag:_reapply_persistent_indicators(3)
                 \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
             %@% \override PianoMusicRHStaff.Clef.color = ##f                   %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
@@ -274,27 +274,27 @@ F_RH_Voice_I = {                                                               %
             %@%             }                                                  %! FIGURE_NAME_MARKUP
             %@%     }                                                          %! FIGURE_NAME_MARKUP
                 ^ \baca-reapplied-indicator-markup "(“Piano”)"                 %! REAPPLIED_INSTRUMENT_ALERT:_attach_latent_indicator_alert
-                [                                                              %! _extend_beam
+                [
                 \override PianoMusicRHStaff.Clef.color = #(x11-color 'OliveDrab) %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
-                \set stemLeftBeamCount = 2                                     %! _extend_beam
-                \set stemRightBeamCount = 2                                    %! _extend_beam
+                \set stemLeftBeamCount = 2
+                \set stemRightBeamCount = 2
                 cs''!16
 
-                \set stemLeftBeamCount = 2                                     %! _extend_beam
-                \set stemRightBeamCount = 2                                    %! _extend_beam
+                \set stemLeftBeamCount = 2
+                \set stemRightBeamCount = 2
                 c'''16
 
-                \set stemLeftBeamCount = 2                                     %! _extend_beam
-                \set stemRightBeamCount = 2                                    %! _extend_beam
+                \set stemLeftBeamCount = 2
+                \set stemRightBeamCount = 2
                 d'''16
 
-                \set stemLeftBeamCount = 2                                     %! _extend_beam
-                \set stemRightBeamCount = 2                                    %! _extend_beam
+                \set stemLeftBeamCount = 2
+                \set stemRightBeamCount = 2
                 fs''!16
 
-                \set stemLeftBeamCount = 2                                     %! _extend_beam
-                \set stemRightBeamCount = 1                                    %! _extend_beam
+                \set stemLeftBeamCount = 2
+                \set stemRightBeamCount = 1
                 d'''16
 
             }
@@ -302,36 +302,36 @@ F_RH_Voice_I = {                                                               %
             \tweak text #tuplet-number::calc-fraction-text
             \times 3/4 {
 
-                \set stemLeftBeamCount = 1                                     %! _extend_beam
-                \set stemRightBeamCount = 2                                    %! _extend_beam
+                \set stemLeftBeamCount = 1
+                \set stemRightBeamCount = 2
                 f''16
 
-                \set stemLeftBeamCount = 2                                     %! _extend_beam
-                \set stemRightBeamCount = 2                                    %! _extend_beam
+                \set stemLeftBeamCount = 2
+                \set stemRightBeamCount = 2
                 g''16
 
-                \set stemLeftBeamCount = 2                                     %! _extend_beam
-                \set stemRightBeamCount = 2                                    %! _extend_beam
+                \set stemLeftBeamCount = 2
+                \set stemRightBeamCount = 2
                 af''!16
 
-                \set stemLeftBeamCount = 2                                     %! _extend_beam
-                \set stemRightBeamCount = 1                                    %! _extend_beam
+                \set stemLeftBeamCount = 2
+                \set stemRightBeamCount = 1
                 bf''!16
 
             }
 
             \times 2/3 {
 
-                \set stemLeftBeamCount = 1                                     %! _extend_beam
-                \set stemRightBeamCount = 2                                    %! _extend_beam
+                \set stemLeftBeamCount = 1
+                \set stemRightBeamCount = 2
                 b''16
 
-                \set stemLeftBeamCount = 2                                     %! _extend_beam
-                \set stemRightBeamCount = 2                                    %! _extend_beam
+                \set stemLeftBeamCount = 2
+                \set stemRightBeamCount = 2
                 ef'''!16
 
-                \set stemLeftBeamCount = 2                                     %! _extend_beam
-                \set stemRightBeamCount = 1                                    %! _extend_beam
+                \set stemLeftBeamCount = 2
+                \set stemRightBeamCount = 1
                 a'''16
 
             }
@@ -351,8 +351,8 @@ F_RH_Voice_I = {                                                               %
             \times 2/3 {
 
                 % [F RH_Voice_I measure 100 / measure 3]                       %! _comment_measure_numbers
-                \set stemLeftBeamCount = 1                                     %! _extend_beam
-                \set stemRightBeamCount = 2                                    %! _extend_beam
+                \set stemLeftBeamCount = 1
+                \set stemRightBeamCount = 2
                 fs''!16
             %@% ^ \markup {                                                    %! FIGURE_NAME_MARKUP
             %@%     \fontsize                                                  %! FIGURE_NAME_MARKUP
@@ -372,12 +372,12 @@ F_RH_Voice_I = {                                                               %
             %@%             }                                                  %! FIGURE_NAME_MARKUP
             %@%     }                                                          %! FIGURE_NAME_MARKUP
 
-                \set stemLeftBeamCount = 2                                     %! _extend_beam
-                \set stemRightBeamCount = 2                                    %! _extend_beam
+                \set stemLeftBeamCount = 2
+                \set stemRightBeamCount = 2
                 bf''!16
 
-                \set stemLeftBeamCount = 2                                     %! _extend_beam
-                \set stemRightBeamCount = 1                                    %! _extend_beam
+                \set stemLeftBeamCount = 2
+                \set stemRightBeamCount = 1
                 e'''16
 
             }
@@ -385,22 +385,22 @@ F_RH_Voice_I = {                                                               %
             \tweak text #tuplet-number::calc-fraction-text
             \times 3/4 {
 
-                \set stemLeftBeamCount = 1                                     %! _extend_beam
-                \set stemRightBeamCount = 2                                    %! _extend_beam
+                \set stemLeftBeamCount = 1
+                \set stemRightBeamCount = 2
                 fs'''!16
 
-                \set stemLeftBeamCount = 2                                     %! _extend_beam
-                \set stemRightBeamCount = 2                                    %! _extend_beam
+                \set stemLeftBeamCount = 2
+                \set stemRightBeamCount = 2
                 g'''16
 
-                \set stemLeftBeamCount = 2                                     %! _extend_beam
-                \set stemRightBeamCount = 2                                    %! _extend_beam
+                \set stemLeftBeamCount = 2
+                \set stemRightBeamCount = 2
                 a'''16
 
-                \set stemLeftBeamCount = 2                                     %! _extend_beam
-                \set stemRightBeamCount = 0                                    %! _extend_beam
+                \set stemLeftBeamCount = 2
+                \set stemRightBeamCount = 0
                 e'''16
-                ]                                                              %! _extend_beam
+                ]
 
             }
 
@@ -419,8 +419,8 @@ F_RH_Voice_I = {                                                               %
             \scaleDurations #'(1 . 1) {
 
                 % [F RH_Voice_I measure 102 / measure 5]                       %! _comment_measure_numbers
-                \set stemLeftBeamCount = 0                                     %! _extend_beam
-                \set stemRightBeamCount = 2                                    %! _extend_beam
+                \set stemLeftBeamCount = 0
+                \set stemRightBeamCount = 2
                 af''!16
             %@% ^ \markup {                                                    %! FIGURE_NAME_MARKUP
             %@%     \fontsize                                                  %! FIGURE_NAME_MARKUP
@@ -439,18 +439,18 @@ F_RH_Voice_I = {                                                               %
             %@%                 ]                                              %! FIGURE_NAME_MARKUP
             %@%             }                                                  %! FIGURE_NAME_MARKUP
             %@%     }                                                          %! FIGURE_NAME_MARKUP
-                [                                                              %! _extend_beam
+                [
 
-                \set stemLeftBeamCount = 2                                     %! _extend_beam
-                \set stemRightBeamCount = 2                                    %! _extend_beam
+                \set stemLeftBeamCount = 2
+                \set stemRightBeamCount = 2
                 a''16
 
-                \set stemLeftBeamCount = 2                                     %! _extend_beam
-                \set stemRightBeamCount = 2                                    %! _extend_beam
+                \set stemLeftBeamCount = 2
+                \set stemRightBeamCount = 2
                 b''16
 
-                \set stemLeftBeamCount = 2                                     %! _extend_beam
-                \set stemRightBeamCount = 1                                    %! _extend_beam
+                \set stemLeftBeamCount = 2
+                \set stemRightBeamCount = 1
                 fs'''!16
 
             }
@@ -470,8 +470,8 @@ F_RH_Voice_I = {                                                               %
             \scaleDurations #'(1 . 1) {
 
                 % [F RH_Voice_I measure 104 / measure 7]                       %! _comment_measure_numbers
-                \set stemLeftBeamCount = 1                                     %! _extend_beam
-                \set stemRightBeamCount = 2                                    %! _extend_beam
+                \set stemLeftBeamCount = 1
+                \set stemRightBeamCount = 2
                 af''!16
             %@% ^ \markup {                                                    %! FIGURE_NAME_MARKUP
             %@%     \fontsize                                                  %! FIGURE_NAME_MARKUP
@@ -491,26 +491,26 @@ F_RH_Voice_I = {                                                               %
             %@%             }                                                  %! FIGURE_NAME_MARKUP
             %@%     }                                                          %! FIGURE_NAME_MARKUP
 
-                \set stemLeftBeamCount = 2                                     %! _extend_beam
-                \set stemRightBeamCount = 2                                    %! _extend_beam
+                \set stemLeftBeamCount = 2
+                \set stemRightBeamCount = 2
                 f'''16
 
-                \set stemLeftBeamCount = 2                                     %! _extend_beam
-                \set stemRightBeamCount = 2                                    %! _extend_beam
+                \set stemLeftBeamCount = 2
+                \set stemRightBeamCount = 2
                 e'''16
 
-                \set stemLeftBeamCount = 2                                     %! _extend_beam
-                \set stemRightBeamCount = 2                                    %! _extend_beam
+                \set stemLeftBeamCount = 2
+                \set stemRightBeamCount = 2
                 fs'''!16
 
-                \set stemLeftBeamCount = 2                                     %! _extend_beam
-                \set stemRightBeamCount = 2                                    %! _extend_beam
+                \set stemLeftBeamCount = 2
+                \set stemRightBeamCount = 2
                 bf'''!16
 
-                \set stemLeftBeamCount = 2                                     %! _extend_beam
-                \set stemRightBeamCount = 0                                    %! _extend_beam
+                \set stemLeftBeamCount = 2
+                \set stemRightBeamCount = 0
                 fs'''!16
-                ]                                                              %! _extend_beam
+                ]
 
             }
 
@@ -530,9 +530,9 @@ F_RH_Voice_I = {                                                               %
             \times 3/4 {
 
                 % [F RH_Voice_I measure 107 / measure 10]                      %! _comment_measure_numbers
-                \override Beam.positions = #'(12 . 12)                         %! baca_beam_positions:OverrideCommand(1)
                 \set stemLeftBeamCount = 0
                 \set stemRightBeamCount = 2
+                \override Beam.positions = #'(12 . 12)                         %! baca_beam_positions:OverrideCommand(1)
                 f'''16
             %@% ^ \markup {                                                    %! FIGURE_NAME_MARKUP
             %@%     \fontsize                                                  %! FIGURE_NAME_MARKUP
@@ -652,7 +652,7 @@ F_RH_Voice_I_Inserts = {                                                       %
                 \override Beam.positions = #'(-6.5 . -6.5)                     %! baca_beam_positions:OverrideCommand(1)
                 \override Script.direction = #down                             %! baca_script_down:OverrideCommand(1)
                 s16
-                [                                                              %! _extend_beam
+                [
 
                 s16
 
@@ -669,8 +669,8 @@ F_RH_Voice_I_Inserts = {                                                       %
             \tweak text #tuplet-number::calc-fraction-text
             \times 3/4 {
 
-                \set stemLeftBeamCount = 2                                     %! _extend_beam
-                \set stemRightBeamCount = 2                                    %! _extend_beam
+                \set stemLeftBeamCount = 2
+                \set stemRightBeamCount = 2
                 f''16
                 - \marcato                                                     %! baca_marcato:IndicatorCommand
 
@@ -684,13 +684,15 @@ F_RH_Voice_I_Inserts = {                                                       %
 
             \times 2/3 {
 
-                \set stemLeftBeamCount = 2                                     %! _extend_beam
-                \set stemRightBeamCount = 2                                    %! _extend_beam
+                \set stemLeftBeamCount = 2
+                \set stemRightBeamCount = 2
                 b''16
                 - \marcato                                                     %! baca_marcato:IndicatorCommand
 
                 s16
 
+                \set stemLeftBeamCount = 2
+                \set stemRightBeamCount = 1
                 s16
 
             }
@@ -714,6 +716,8 @@ F_RH_Voice_I_Inserts = {                                                       %
             \times 2/3 {
 
                 % [F RH_Voice_I_Inserts measure 100 / measure 3]               %! _comment_measure_numbers
+                \set stemLeftBeamCount = 1
+                \set stemRightBeamCount = 2
                 s16
 
                 s16
@@ -725,20 +729,20 @@ F_RH_Voice_I_Inserts = {                                                       %
             \tweak text #tuplet-number::calc-fraction-text
             \times 3/4 {
 
-                \set stemLeftBeamCount = 2                                     %! _extend_beam
-                \set stemRightBeamCount = 2                                    %! _extend_beam
+                \set stemLeftBeamCount = 2
+                \set stemRightBeamCount = 2
                 fs'''!16
                 - \marcato                                                     %! baca_marcato:IndicatorCommand
 
-                \set stemLeftBeamCount = 2                                     %! _extend_beam
-                \set stemRightBeamCount = 2                                    %! _extend_beam
+                \set stemLeftBeamCount = 2
+                \set stemRightBeamCount = 2
                 g'''16
                 - \marcato                                                     %! baca_marcato:IndicatorCommand
 
                 s16
 
                 s16
-                ]                                                              %! _extend_beam
+                ]
 
             }
 
@@ -763,15 +767,17 @@ F_RH_Voice_I_Inserts = {                                                       %
                 % [F RH_Voice_I_Inserts measure 102 / measure 5]               %! _comment_measure_numbers
                 \override Beam.positions = #'(-8.5 . -8.5)                     %! baca_beam_positions:OverrideCommand(1)
                 s16
-                [                                                              %! _extend_beam
+                [
 
-                \set stemLeftBeamCount = 2                                     %! _extend_beam
-                \set stemRightBeamCount = 2                                    %! _extend_beam
+                \set stemLeftBeamCount = 2
+                \set stemRightBeamCount = 2
                 a''16
                 - \marcato                                                     %! baca_marcato:IndicatorCommand
 
                 s16
 
+                \set stemLeftBeamCount = 2
+                \set stemRightBeamCount = 1
                 s16
                 \revert Beam.positions                                         %! baca_beam_positions:OverrideCommand(2)
 
@@ -796,13 +802,13 @@ F_RH_Voice_I_Inserts = {                                                       %
             \scaleDurations #'(1 . 1) {
 
                 % [F RH_Voice_I_Inserts measure 104 / measure 7]               %! _comment_measure_numbers
-                \set stemLeftBeamCount = 1                                     %! _extend_beam
-                \set stemRightBeamCount = 2                                    %! _extend_beam
+                \set stemLeftBeamCount = 1
+                \set stemRightBeamCount = 2
                 af''!16
                 - \marcato                                                     %! baca_marcato:IndicatorCommand
 
-                \set stemLeftBeamCount = 2                                     %! _extend_beam
-                \set stemRightBeamCount = 2                                    %! _extend_beam
+                \set stemLeftBeamCount = 2
+                \set stemRightBeamCount = 2
                 f'''16
                 - \marcato                                                     %! baca_marcato:IndicatorCommand
 
@@ -813,7 +819,7 @@ F_RH_Voice_I_Inserts = {                                                       %
                 s16
 
                 s16
-                ]                                                              %! _extend_beam
+                ]
 
             }
 
@@ -928,9 +934,9 @@ F_RH_Voice_II = {                                                              %
         \scaleDurations #'(1 . 1) {
 
             % [F RH_Voice_II measure 99 / measure 2]                           %! _comment_measure_numbers
+            \set stemLeftBeamCount = 0
+            \set stemRightBeamCount = 2
             \override Stem.direction = #down                                   %! baca_stem_down:OverrideCommand(1)
-            \set stemLeftBeamCount = 0                                         %! _extend_beam
-            \set stemRightBeamCount = 2                                        %! _extend_beam
             c''16
             - \tweak color #(x11-color 'DeepPink1)                             %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
             \fff                                                               %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
@@ -951,19 +957,19 @@ F_RH_Voice_II = {                                                              %
         %@%                 ]                                                  %! FIGURE_NAME_MARKUP
         %@%             }                                                      %! FIGURE_NAME_MARKUP
         %@%     }                                                              %! FIGURE_NAME_MARKUP
+            [
             (                                                                  %! baca_slur:SpannerIndicatorCommand(1)
-            [                                                                  %! _extend_beam
 
-            \set stemLeftBeamCount = 2                                         %! _extend_beam
-            \set stemRightBeamCount = 2                                        %! _extend_beam
+            \set stemLeftBeamCount = 2
+            \set stemRightBeamCount = 2
             d''16
 
-            \set stemLeftBeamCount = 2                                         %! _extend_beam
-            \set stemRightBeamCount = 2                                        %! _extend_beam
+            \set stemLeftBeamCount = 2
+            \set stemRightBeamCount = 2
             ef''!16
 
-            \set stemLeftBeamCount = 2                                         %! _extend_beam
-            \set stemRightBeamCount = 1                                        %! _extend_beam
+            \set stemLeftBeamCount = 2
+            \set stemRightBeamCount = 1
             f''16
             )                                                                  %! baca_slur:SpannerIndicatorCommand(2)
 
@@ -982,8 +988,8 @@ F_RH_Voice_II = {                                                              %
             \scaleDurations #'(1 . 1) {
 
                 % [F RH_Voice_II measure 101 / measure 4]                      %! _comment_measure_numbers
-                \set stemLeftBeamCount = 1                                     %! _extend_beam
-                \set stemRightBeamCount = 2                                    %! _extend_beam
+                \set stemLeftBeamCount = 1
+                \set stemRightBeamCount = 2
                 cs''!16
             %@% ^ \markup {                                                    %! FIGURE_NAME_MARKUP
             %@%     \fontsize                                                  %! FIGURE_NAME_MARKUP
@@ -1004,12 +1010,12 @@ F_RH_Voice_II = {                                                              %
             %@%     }                                                          %! FIGURE_NAME_MARKUP
                 (                                                              %! baca_slur:SpannerIndicatorCommand(1)
 
-                \set stemLeftBeamCount = 2                                     %! _extend_beam
-                \set stemRightBeamCount = 2                                    %! _extend_beam
+                \set stemLeftBeamCount = 2
+                \set stemRightBeamCount = 2
                 f''16
 
-                \set stemLeftBeamCount = 2                                     %! _extend_beam
-                \set stemRightBeamCount = 1                                    %! _extend_beam
+                \set stemLeftBeamCount = 2
+                \set stemRightBeamCount = 1
                 b'16
                 )                                                              %! baca_slur:SpannerIndicatorCommand(2)
 
@@ -1017,21 +1023,21 @@ F_RH_Voice_II = {                                                              %
 
             \scaleDurations #'(1 . 1) {
 
-                \set stemLeftBeamCount = 1                                     %! _extend_beam
-                \set stemRightBeamCount = 2                                    %! _extend_beam
+                \set stemLeftBeamCount = 1
+                \set stemRightBeamCount = 2
                 cs''!16
                 (                                                              %! baca_slur:SpannerIndicatorCommand(1)
 
-                \set stemLeftBeamCount = 2                                     %! _extend_beam
-                \set stemRightBeamCount = 2                                    %! _extend_beam
+                \set stemLeftBeamCount = 2
+                \set stemRightBeamCount = 2
                 d''16
 
-                \set stemLeftBeamCount = 2                                     %! _extend_beam
-                \set stemRightBeamCount = 2                                    %! _extend_beam
+                \set stemLeftBeamCount = 2
+                \set stemRightBeamCount = 2
                 e''16
 
-                \set stemLeftBeamCount = 2                                     %! _extend_beam
-                \set stemRightBeamCount = 1                                    %! _extend_beam
+                \set stemLeftBeamCount = 2
+                \set stemRightBeamCount = 1
                 b''16
                 )                                                              %! baca_slur:SpannerIndicatorCommand(2)
 
@@ -1039,20 +1045,20 @@ F_RH_Voice_II = {                                                              %
 
             \scaleDurations #'(1 . 1) {
 
-                \set stemLeftBeamCount = 1                                     %! _extend_beam
-                \set stemRightBeamCount = 2                                    %! _extend_beam
+                \set stemLeftBeamCount = 1
+                \set stemRightBeamCount = 2
                 f''16
                 (                                                              %! baca_slur:SpannerIndicatorCommand(1)
 
-                \set stemLeftBeamCount = 2                                     %! _extend_beam
-                \set stemRightBeamCount = 2                                    %! _extend_beam
+                \set stemLeftBeamCount = 2
+                \set stemRightBeamCount = 2
                 ef'''!16
 
-                \set stemLeftBeamCount = 2                                     %! _extend_beam
-                \set stemRightBeamCount = 0                                    %! _extend_beam
+                \set stemLeftBeamCount = 2
+                \set stemRightBeamCount = 0
                 a''16
                 )                                                              %! baca_slur:SpannerIndicatorCommand(2)
-                ]                                                              %! _extend_beam
+                ]
 
             }
 
@@ -1068,8 +1074,8 @@ F_RH_Voice_II = {                                                              %
         \times 2/3 {
 
             % [F RH_Voice_II measure 103 / measure 6]                          %! _comment_measure_numbers
-            \set stemLeftBeamCount = 0                                         %! _extend_beam
-            \set stemRightBeamCount = 2                                        %! _extend_beam
+            \set stemLeftBeamCount = 0
+            \set stemRightBeamCount = 2
             c''16
         %@% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
         %@%     \fontsize                                                      %! FIGURE_NAME_MARKUP
@@ -1088,15 +1094,15 @@ F_RH_Voice_II = {                                                              %
         %@%                 ]                                                  %! FIGURE_NAME_MARKUP
         %@%             }                                                      %! FIGURE_NAME_MARKUP
         %@%     }                                                              %! FIGURE_NAME_MARKUP
+            [
             (                                                                  %! baca_slur:SpannerIndicatorCommand(1)
-            [                                                                  %! _extend_beam
 
-            \set stemLeftBeamCount = 2                                         %! _extend_beam
-            \set stemRightBeamCount = 2                                        %! _extend_beam
+            \set stemLeftBeamCount = 2
+            \set stemRightBeamCount = 2
             bf''!16
 
-            \set stemLeftBeamCount = 2                                         %! _extend_beam
-            \set stemRightBeamCount = 1                                        %! _extend_beam
+            \set stemLeftBeamCount = 2
+            \set stemRightBeamCount = 1
             e''16
             )                                                                  %! baca_slur:SpannerIndicatorCommand(2)
 
@@ -1105,29 +1111,29 @@ F_RH_Voice_II = {                                                              %
         \tweak text #tuplet-number::calc-fraction-text
         \times 5/6 {
 
-            \set stemLeftBeamCount = 1                                         %! _extend_beam
-            \set stemRightBeamCount = 2                                        %! _extend_beam
+            \set stemLeftBeamCount = 1
+            \set stemRightBeamCount = 2
             cs''!16
             (                                                                  %! baca_slur:SpannerIndicatorCommand(1)
 
-            \set stemLeftBeamCount = 2                                         %! _extend_beam
-            \set stemRightBeamCount = 2                                        %! _extend_beam
+            \set stemLeftBeamCount = 2
+            \set stemRightBeamCount = 2
             bf''!16
 
-            \set stemLeftBeamCount = 2                                         %! _extend_beam
-            \set stemRightBeamCount = 2                                        %! _extend_beam
+            \set stemLeftBeamCount = 2
+            \set stemRightBeamCount = 2
             a''16
 
-            \set stemLeftBeamCount = 2                                         %! _extend_beam
-            \set stemRightBeamCount = 2                                        %! _extend_beam
+            \set stemLeftBeamCount = 2
+            \set stemRightBeamCount = 2
             b''16
 
-            \set stemLeftBeamCount = 2                                         %! _extend_beam
-            \set stemRightBeamCount = 2                                        %! _extend_beam
+            \set stemLeftBeamCount = 2
+            \set stemRightBeamCount = 2
             ef'''!16
 
-            \set stemLeftBeamCount = 2                                         %! _extend_beam
-            \set stemRightBeamCount = 1                                        %! _extend_beam
+            \set stemLeftBeamCount = 2
+            \set stemRightBeamCount = 1
             b''16
             )                                                                  %! baca_slur:SpannerIndicatorCommand(2)
 
@@ -1135,17 +1141,17 @@ F_RH_Voice_II = {                                                              %
 
         \times 2/3 {
 
-            \set stemLeftBeamCount = 1                                         %! _extend_beam
-            \set stemRightBeamCount = 2                                        %! _extend_beam
+            \set stemLeftBeamCount = 1
+            \set stemRightBeamCount = 2
             g''16
             (                                                                  %! baca_slur:SpannerIndicatorCommand(1)
 
-            \set stemLeftBeamCount = 2                                         %! _extend_beam
-            \set stemRightBeamCount = 2                                        %! _extend_beam
+            \set stemLeftBeamCount = 2
+            \set stemRightBeamCount = 2
             f'''16
 
-            \set stemLeftBeamCount = 2                                         %! _extend_beam
-            \set stemRightBeamCount = 1                                        %! _extend_beam
+            \set stemLeftBeamCount = 2
+            \set stemRightBeamCount = 1
             b''16
             )                                                                  %! baca_slur:SpannerIndicatorCommand(2)
 
@@ -1164,8 +1170,8 @@ F_RH_Voice_II = {                                                              %
             \scaleDurations #'(1 . 1) {
 
                 % [F RH_Voice_II measure 105 / measure 8]                      %! _comment_measure_numbers
-                \set stemLeftBeamCount = 1                                     %! _extend_beam
-                \set stemRightBeamCount = 2                                    %! _extend_beam
+                \set stemLeftBeamCount = 1
+                \set stemRightBeamCount = 2
                 a''16
             %@% ^ \markup {                                                    %! FIGURE_NAME_MARKUP
             %@%     \fontsize                                                  %! FIGURE_NAME_MARKUP
@@ -1186,16 +1192,16 @@ F_RH_Voice_II = {                                                              %
             %@%     }                                                          %! FIGURE_NAME_MARKUP
                 (                                                              %! baca_slur:SpannerIndicatorCommand(1)
 
-                \set stemLeftBeamCount = 2                                     %! _extend_beam
-                \set stemRightBeamCount = 2                                    %! _extend_beam
+                \set stemLeftBeamCount = 2
+                \set stemRightBeamCount = 2
                 b''16
 
-                \set stemLeftBeamCount = 2                                     %! _extend_beam
-                \set stemRightBeamCount = 2                                    %! _extend_beam
+                \set stemLeftBeamCount = 2
+                \set stemRightBeamCount = 2
                 c'''16
 
-                \set stemLeftBeamCount = 2                                     %! _extend_beam
-                \set stemRightBeamCount = 1                                    %! _extend_beam
+                \set stemLeftBeamCount = 2
+                \set stemRightBeamCount = 1
                 d'''16
                 )                                                              %! baca_slur:SpannerIndicatorCommand(2)
 
@@ -1203,32 +1209,32 @@ F_RH_Voice_II = {                                                              %
 
             \scaleDurations #'(1 . 1) {
 
-                \set stemLeftBeamCount = 1                                     %! _extend_beam
-                \set stemRightBeamCount = 2                                    %! _extend_beam
+                \set stemLeftBeamCount = 1
+                \set stemRightBeamCount = 2
                 ef'''!16
                 (                                                              %! baca_slur:SpannerIndicatorCommand(1)
 
-                \set stemLeftBeamCount = 2                                     %! _extend_beam
-                \set stemRightBeamCount = 2                                    %! _extend_beam
+                \set stemLeftBeamCount = 2
+                \set stemRightBeamCount = 2
                 c'''16
 
-                \set stemLeftBeamCount = 2                                     %! _extend_beam
-                \set stemRightBeamCount = 2                                    %! _extend_beam
+                \set stemLeftBeamCount = 2
+                \set stemRightBeamCount = 2
                 b''16
 
-                \set stemLeftBeamCount = 2                                     %! _extend_beam
-                \set stemRightBeamCount = 2                                    %! _extend_beam
+                \set stemLeftBeamCount = 2
+                \set stemRightBeamCount = 2
                 cs'''!16
 
-                \set stemLeftBeamCount = 2                                     %! _extend_beam
-                \set stemRightBeamCount = 2                                    %! _extend_beam
+                \set stemLeftBeamCount = 2
+                \set stemRightBeamCount = 2
                 f'''16
 
-                \set stemLeftBeamCount = 2                                     %! _extend_beam
-                \set stemRightBeamCount = 0                                    %! _extend_beam
+                \set stemLeftBeamCount = 2
+                \set stemRightBeamCount = 0
                 cs'''!16
                 )                                                              %! baca_slur:SpannerIndicatorCommand(2)
-                ]                                                              %! _extend_beam
+                ]
 
             }
 
@@ -1241,8 +1247,8 @@ F_RH_Voice_II = {                                                              %
         \scaleDurations #'(1 . 1) {
 
             % [F RH_Voice_II measure 106 / measure 9]                          %! _comment_measure_numbers
-            \set stemLeftBeamCount = 0                                         %! _extend_beam
-            \set stemRightBeamCount = 2                                        %! _extend_beam
+            \set stemLeftBeamCount = 0
+            \set stemRightBeamCount = 2
             f''16
         %@% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
         %@%     \fontsize                                                      %! FIGURE_NAME_MARKUP
@@ -1261,15 +1267,15 @@ F_RH_Voice_II = {                                                              %
         %@%                 ]                                                  %! FIGURE_NAME_MARKUP
         %@%             }                                                      %! FIGURE_NAME_MARKUP
         %@%     }                                                              %! FIGURE_NAME_MARKUP
+            [
             (                                                                  %! baca_slur:SpannerIndicatorCommand(1)
-            [                                                                  %! _extend_beam
 
-            \set stemLeftBeamCount = 2                                         %! _extend_beam
-            \set stemRightBeamCount = 2                                        %! _extend_beam
+            \set stemLeftBeamCount = 2
+            \set stemRightBeamCount = 2
             a''16
 
-            \set stemLeftBeamCount = 2                                         %! _extend_beam
-            \set stemRightBeamCount = 1                                        %! _extend_beam
+            \set stemLeftBeamCount = 2
+            \set stemRightBeamCount = 1
             ef'''!16
             )                                                                  %! baca_slur:SpannerIndicatorCommand(2)
 
@@ -1285,8 +1291,8 @@ F_RH_Voice_II = {                                                              %
         \times 2/3 {
 
             % [F RH_Voice_II measure 108 / measure 11]                         %! _comment_measure_numbers
-            \set stemLeftBeamCount = 1                                         %! _extend_beam
-            \set stemRightBeamCount = 2                                        %! _extend_beam
+            \set stemLeftBeamCount = 1
+            \set stemRightBeamCount = 2
             e'''16
         %@% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
         %@%     \fontsize                                                      %! FIGURE_NAME_MARKUP
@@ -1307,15 +1313,15 @@ F_RH_Voice_II = {                                                              %
         %@%     }                                                              %! FIGURE_NAME_MARKUP
             (                                                                  %! baca_slur:SpannerIndicatorCommand(1)
 
-            \set stemLeftBeamCount = 2                                         %! _extend_beam
-            \set stemRightBeamCount = 2                                        %! _extend_beam
+            \set stemLeftBeamCount = 2
+            \set stemRightBeamCount = 2
             d'''16
 
-            \set stemLeftBeamCount = 2                                         %! _extend_beam
-            \set stemRightBeamCount = 0                                        %! _extend_beam
+            \set stemLeftBeamCount = 2
+            \set stemRightBeamCount = 0
             af'''!16
             )                                                                  %! baca_slur:SpannerIndicatorCommand(2)
-            ]                                                                  %! _extend_beam
+            ]
             \revert Beam.positions                                             %! baca_beam_positions:OverrideCommand(2)
             \revert Slur.direction                                             %! baca_slur_up:OverrideCommand(2)
             \revert Stem.direction                                             %! baca_stem_down:OverrideCommand(2)
@@ -1341,20 +1347,22 @@ F_RH_Voice_II_Inserts = {                                                      %
         \scaleDurations #'(1 . 1) {
 
             % [F RH_Voice_II_Inserts measure 99 / measure 2]                   %! _comment_measure_numbers
+            \set stemLeftBeamCount = 0
+            \set stemRightBeamCount = 2
             \override Stem.direction = #up                                     %! baca_stem_up:OverrideCommand(1)
-            \set stemLeftBeamCount = 0                                         %! _extend_beam
-            \set stemRightBeamCount = 2                                        %! _extend_beam
             c''16
             - \accent                                                          %! baca_accent:IndicatorCommand
-            [                                                                  %! _extend_beam
+            [
 
-            \set stemLeftBeamCount = 2                                         %! _extend_beam
-            \set stemRightBeamCount = 2                                        %! _extend_beam
+            \set stemLeftBeamCount = 2
+            \set stemRightBeamCount = 2
             d''16
             - \accent                                                          %! baca_accent:IndicatorCommand
 
             s16
 
+            \set stemLeftBeamCount = 2
+            \set stemRightBeamCount = 1
             s16
 
         }
@@ -1376,13 +1384,13 @@ F_RH_Voice_II_Inserts = {                                                      %
             \scaleDurations #'(1 . 1) {
 
                 % [F RH_Voice_II_Inserts measure 101 / measure 4]              %! _comment_measure_numbers
-                \set stemLeftBeamCount = 1                                     %! _extend_beam
-                \set stemRightBeamCount = 2                                    %! _extend_beam
+                \set stemLeftBeamCount = 1
+                \set stemRightBeamCount = 2
                 cs''!16
                 - \accent                                                      %! baca_accent:IndicatorCommand
 
-                \set stemLeftBeamCount = 2                                     %! _extend_beam
-                \set stemRightBeamCount = 2                                    %! _extend_beam
+                \set stemLeftBeamCount = 2
+                \set stemRightBeamCount = 2
                 f''16
                 - \accent                                                      %! baca_accent:IndicatorCommand
 
@@ -1404,18 +1412,18 @@ F_RH_Voice_II_Inserts = {                                                      %
 
             \scaleDurations #'(1 . 1) {
 
-                \set stemLeftBeamCount = 2                                     %! _extend_beam
-                \set stemRightBeamCount = 2                                    %! _extend_beam
+                \set stemLeftBeamCount = 2
+                \set stemRightBeamCount = 2
                 f''16
                 - \accent                                                      %! baca_accent:IndicatorCommand
 
-                \set stemLeftBeamCount = 2                                     %! _extend_beam
-                \set stemRightBeamCount = 2                                    %! _extend_beam
+                \set stemLeftBeamCount = 2
+                \set stemRightBeamCount = 2
                 ef'''!16
                 - \accent                                                      %! baca_accent:IndicatorCommand
 
                 s16
-                ]                                                              %! _extend_beam
+                ]
                 \revert Beam.positions                                         %! baca_beam_positions:OverrideCommand(2)
 
             }
@@ -1436,15 +1444,15 @@ F_RH_Voice_II_Inserts = {                                                      %
         \times 2/3 {
 
             % [F RH_Voice_II_Inserts measure 103 / measure 6]                  %! _comment_measure_numbers
+            \set stemLeftBeamCount = 0
+            \set stemRightBeamCount = 2
             \override Beam.positions = #'(13.5 . 13.5)                         %! baca_beam_positions:OverrideCommand(1)
-            \set stemLeftBeamCount = 0                                         %! _extend_beam
-            \set stemRightBeamCount = 2                                        %! _extend_beam
             c''16
             - \accent                                                          %! baca_accent:IndicatorCommand
-            [                                                                  %! _extend_beam
+            [
 
-            \set stemLeftBeamCount = 2                                         %! _extend_beam
-            \set stemRightBeamCount = 2                                        %! _extend_beam
+            \set stemLeftBeamCount = 2
+            \set stemRightBeamCount = 2
             bf''!16
             - \accent                                                          %! baca_accent:IndicatorCommand
 
@@ -1471,16 +1479,18 @@ F_RH_Voice_II_Inserts = {                                                      %
 
         \times 2/3 {
 
-            \set stemLeftBeamCount = 1                                         %! _extend_beam
-            \set stemRightBeamCount = 2                                        %! _extend_beam
+            \set stemLeftBeamCount = 1
+            \set stemRightBeamCount = 2
             g''16
             - \accent                                                          %! baca_accent:IndicatorCommand
 
-            \set stemLeftBeamCount = 2                                         %! _extend_beam
-            \set stemRightBeamCount = 2                                        %! _extend_beam
+            \set stemLeftBeamCount = 2
+            \set stemRightBeamCount = 2
             f'''16
             - \accent                                                          %! baca_accent:IndicatorCommand
 
+            \set stemLeftBeamCount = 2
+            \set stemRightBeamCount = 1
             s16
 
         }
@@ -1502,8 +1512,8 @@ F_RH_Voice_II_Inserts = {                                                      %
             \scaleDurations #'(1 . 1) {
 
                 % [F RH_Voice_II_Inserts measure 105 / measure 8]              %! _comment_measure_numbers
-                \set stemLeftBeamCount = 1                                     %! _extend_beam
-                \set stemRightBeamCount = 2                                    %! _extend_beam
+                \set stemLeftBeamCount = 1
+                \set stemRightBeamCount = 2
                 a''16
                 - \accent                                                      %! baca_accent:IndicatorCommand
 
@@ -1517,13 +1527,13 @@ F_RH_Voice_II_Inserts = {                                                      %
 
             \scaleDurations #'(1 . 1) {
 
-                \set stemLeftBeamCount = 2                                     %! _extend_beam
-                \set stemRightBeamCount = 2                                    %! _extend_beam
+                \set stemLeftBeamCount = 2
+                \set stemRightBeamCount = 2
                 ef'''!16
                 - \accent                                                      %! baca_accent:IndicatorCommand
 
-                \set stemLeftBeamCount = 2                                     %! _extend_beam
-                \set stemRightBeamCount = 2                                    %! _extend_beam
+                \set stemLeftBeamCount = 2
+                \set stemRightBeamCount = 2
                 c'''16
                 - \accent                                                      %! baca_accent:IndicatorCommand
 
@@ -1534,7 +1544,7 @@ F_RH_Voice_II_Inserts = {                                                      %
                 s16
 
                 s16
-                ]                                                              %! _extend_beam
+                ]
                 \revert Beam.positions                                         %! baca_beam_positions:OverrideCommand(2)
 
             }
@@ -1552,15 +1562,17 @@ F_RH_Voice_II_Inserts = {                                                      %
         \scaleDurations #'(1 . 1) {
 
             % [F RH_Voice_II_Inserts measure 106 / measure 9]                  %! _comment_measure_numbers
+            \set stemLeftBeamCount = 0
+            \set stemRightBeamCount = 2
             \override Beam.positions = #'(18.5 . 18.5)                         %! baca_beam_positions:OverrideCommand(1)
-            \set stemLeftBeamCount = 0                                         %! _extend_beam
-            \set stemRightBeamCount = 2                                        %! _extend_beam
             f''16
             - \accent                                                          %! baca_accent:IndicatorCommand
-            [                                                                  %! _extend_beam
+            [
 
             s16
 
+            \set stemLeftBeamCount = 2
+            \set stemRightBeamCount = 1
             s16
 
         }
@@ -1579,18 +1591,20 @@ F_RH_Voice_II_Inserts = {                                                      %
         \times 2/3 {
 
             % [F RH_Voice_II_Inserts measure 108 / measure 11]                 %! _comment_measure_numbers
+            \set stemLeftBeamCount = 1
+            \set stemRightBeamCount = 2
             s16
 
-            \set stemLeftBeamCount = 2                                         %! _extend_beam
-            \set stemRightBeamCount = 2                                        %! _extend_beam
+            \set stemLeftBeamCount = 2
+            \set stemRightBeamCount = 2
             d'''16
             - \accent                                                          %! baca_accent:IndicatorCommand
 
-            \set stemLeftBeamCount = 2                                         %! _extend_beam
-            \set stemRightBeamCount = 0                                        %! _extend_beam
+            \set stemLeftBeamCount = 2
+            \set stemRightBeamCount = 0
             af'''!16
             - \accent                                                          %! baca_accent:IndicatorCommand
-            ]                                                                  %! _extend_beam
+            ]
             \revert Beam.positions                                             %! baca_beam_positions:OverrideCommand(2)
             \revert Script.direction                                           %! baca_script_up:OverrideCommand(2)
             \revert Stem.direction                                             %! baca_stem_up:OverrideCommand(2)
@@ -2045,9 +2059,9 @@ F_LH_Voice_IV = {                                                              %
         \tweak text #tuplet-number::calc-fraction-text
         \times 6/7 {
 
-            \override Stem.direction = #down                                   %! baca_stem_down:OverrideCommand(1)
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
+            \override Stem.direction = #down                                   %! baca_stem_down:OverrideCommand(1)
             fs'!16
             - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
             \ff                                                                %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
@@ -2124,9 +2138,9 @@ F_LH_Voice_IV = {                                                              %
         \scaleDurations #'(1 . 1) {
 
             % [F LH_Voice_IV measure 103 / measure 6]                          %! _comment_measure_numbers
-            \override Beam.positions = #'(-4.5 . -4.5)                         %! baca_beam_positions:OverrideCommand(1)
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
+            \override Beam.positions = #'(-4.5 . -4.5)                         %! baca_beam_positions:OverrideCommand(1)
             cs''!16
             - \tweak color #(x11-color 'DeepPink1)                             %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
             \ff                                                                %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
@@ -2390,10 +2404,10 @@ F_LH_Voice_V = {                                                               %
 
             \scaleDurations #'(1 . 1) {
 
-                \override TupletBracket.direction = #down                      %! baca_tuplet_bracket_down:OverrideCommand(1)
-                \override Stem.direction = #down                               %! baca_stem_down:OverrideCommand(1)
                 \set stemLeftBeamCount = 0
                 \set stemRightBeamCount = 2
+                \override TupletBracket.direction = #down                      %! baca_tuplet_bracket_down:OverrideCommand(1)
+                \override Stem.direction = #down                               %! baca_stem_down:OverrideCommand(1)
                 \dynamicDown                                                   %! baca_dynamic_down:IndicatorCommand
                 cs'!16
                 - \tweak color #(x11-color 'blue)                              %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
@@ -2415,8 +2429,8 @@ F_LH_Voice_V = {                                                               %
             %@%                 ]                                              %! FIGURE_NAME_MARKUP
             %@%             }                                                  %! FIGURE_NAME_MARKUP
             %@%     }                                                          %! FIGURE_NAME_MARKUP
-                (                                                              %! baca_slur:SpannerIndicatorCommand(1)
                 [
+                (                                                              %! baca_slur:SpannerIndicatorCommand(1)
 
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 2
@@ -2536,8 +2550,8 @@ F_LH_Voice_V = {                                                               %
             %@%                 ]                                              %! FIGURE_NAME_MARKUP
             %@%             }                                                  %! FIGURE_NAME_MARKUP
             %@%     }                                                          %! FIGURE_NAME_MARKUP
-                (                                                              %! baca_slur:SpannerIndicatorCommand(1)
                 [
+                (                                                              %! baca_slur:SpannerIndicatorCommand(1)
 
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 2
@@ -2685,9 +2699,9 @@ F_LH_Voice_V_Inserts = {                                                       %
             \scaleDurations #'(1 . 1) {
 
                 % [F LH_Voice_V_Inserts measure 101 / measure 4]               %! _comment_measure_numbers
-                \override Stem.direction = #up                                 %! baca_stem_up:OverrideCommand(1)
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 2
+                \override Stem.direction = #up                                 %! baca_stem_up:OverrideCommand(1)
                 b'16
                 - \staccato                                                    %! baca_staccato:IndicatorCommand
 

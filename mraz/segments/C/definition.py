@@ -562,7 +562,8 @@ accumulator(
 accumulator(
     'rh_v1',
     collections['stage 4']['rh'].next(),
-    baca.beam_runs(hide_nibs=True),
+    #baca.beam_runs(hide_nibs=True),
+    baca.beam_runs(),
     baca.dynamic('mf'),
     baca.dynamic_text_x_offset(-4),
     baca.dynamic_text_extra_offset((0, -8)),
@@ -602,7 +603,8 @@ accumulator(
     'rh_v1',
     collections['stage 4']['rh'].next(),
     baca.anchor_to_figure('lh-5 4.4.4'),
-    baca.beam_runs(hide_nibs=True),
+    #baca.beam_runs(hide_nibs=True),
+    baca.beam_runs(),
     baca.imbricate(
         'rh_v2',
         [5, 6, 6],
@@ -628,7 +630,8 @@ accumulator(
     'rh_v1',
     collections['stage 4']['rh'].next(exhausted=True),
     baca.anchor('lh_v5', baca.rest(-8)),
-    baca.beam_runs(hide_nibs=True),
+    #baca.beam_runs(hide_nibs=True),
+    baca.beam_runs(),
     baca.imbricate(
         'rh_v2',
         [9, 10, 10, 1, 0],
