@@ -957,8 +957,8 @@ A_LH_Voice_V = {                                                               %
         \scaleDurations #'(1 . 1) {
 
             % [A LH_Voice_V measure 10 / measure 1]                            %! _comment_measure_numbers
+            \ottava -1                                                         %! baca_ottava_bassa:SpannerIndicatorCommand(1)
             \override TupletBracket.direction = #up                            %! baca_tuplet_bracket_up:OverrideCommand(1)
-            \ottava #-1                                                        %! baca_ottava_bassa:SpannerCommand
             \dynamicUp                                                         %! baca_dynamic_down:IndicatorCommand
             g,8.
             - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
@@ -1450,7 +1450,7 @@ A_LH_Voice_V = {                                                               %
             r32
 
             af,,!8
-            \ottava #0                                                         %! baca_ottava_bassa:SpannerCommand
+            \ottava 0                                                          %! baca_ottava_bassa:SpannerIndicatorCommand(2)
 
             r32
             \revert TupletBracket.direction                                    %! baca_tuplet_bracket_up:OverrideCommand(2)
