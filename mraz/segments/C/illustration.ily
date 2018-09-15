@@ -4014,7 +4014,6 @@ C_LH_Voice_II = {                                                              %
             % [C LH_Voice_II measure 73 / measure 40]                          %! _comment_measure_numbers
             \override Staff.SustainPedalLineSpanner.staff-padding = #4         %! baca_sustain_pedal_staff_padding:OverrideCommand(1)
             \override Rest.transparent = ##t                                   %! baca_rest_transparent:OverrideCommand(1)
-            \set Staff.pedalSustainStyle = #'bracket                           %! baca_sustain_pedal:SpannerCommand
             r1
         %@% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
         %@%     \fontsize                                                      %! FIGURE_NAME_MARKUP
@@ -4033,17 +4032,16 @@ C_LH_Voice_II = {                                                              %
         %@%                 ]                                                  %! FIGURE_NAME_MARKUP
         %@%             }                                                      %! FIGURE_NAME_MARKUP
         %@%     }                                                              %! FIGURE_NAME_MARKUP
-            \sustainOn                                                         %! baca_sustain_pedal:SpannerCommand
+            \sustainOn                                                         %! baca_sustain_pedal:SpannerIndicatorCommand(1)
 
             % [C LH_Voice_II measure 74 / measure 41]                          %! _comment_measure_numbers
-            \set Staff.pedalSustainStyle = #'bracket                           %! baca_sustain_pedal:SpannerCommand
             r1
-            \sustainOff                                                        %! baca_sustain_pedal:SpannerCommand
-            \sustainOn                                                         %! baca_sustain_pedal:SpannerCommand
+            \sustainOff                                                        %! baca_sustain_pedal:SpannerIndicatorCommand(2)
+            \sustainOn                                                         %! baca_sustain_pedal:SpannerIndicatorCommand(1)
 
             % [C LH_Voice_II measure 75 / measure 42]                          %! _comment_measure_numbers
             r1
-            \sustainOff                                                        %! baca_sustain_pedal:SpannerCommand
+            \sustainOff                                                        %! baca_sustain_pedal:SpannerIndicatorCommand(2)
             \revert Staff.SustainPedalLineSpanner.staff-padding                %! baca_sustain_pedal_staff_padding:OverrideCommand(2)
             \revert Rest.transparent                                           %! baca_rest_transparent:OverrideCommand(2)
 
