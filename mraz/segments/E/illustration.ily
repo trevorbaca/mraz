@@ -2027,9 +2027,9 @@ E_RH_Voice_III = {                                                             %
         \times 8/5 {
 
             % [E RH_Voice_III measure 82 / measure 1]                          %! _comment_measure_numbers
+            \ottava 1                                                          %! baca_ottava:SpannerIndicatorCommand(1)
             \override Stem.direction = #down                                   %! baca_stem_down:OverrideCommand(1)
             \override TupletBracket.direction = #down                          %! baca_tuplet_bracket_down:OverrideCommand(1)
-            \ottava #1                                                         %! baca_ottava:SpannerCommand
             a''4
             - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
             \mf                                                                %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
@@ -2072,8 +2072,8 @@ E_RH_Voice_III = {                                                             %
 
             g'''4
             - \tenuto                                                          %! baca_tenuto:IndicatorCommand
+            \ottava 0                                                          %! baca_ottava:SpannerIndicatorCommand(2)
             \revert Stem.direction                                             %! baca_stem_down:OverrideCommand(2)
-            \ottava #0                                                         %! baca_ottava:SpannerCommand
 
             r4
             \revert Rest.direction                                             %! baca_rest_down:OverrideCommand(2)
@@ -4068,10 +4068,10 @@ E_LH_Voice_VI = {                                                              %
         \times 4/3 {
 
             % [E LH_Voice_VI measure 86 / measure 5]                           %! _comment_measure_numbers
+            \ottava -1                                                         %! baca_ottava_bassa:SpannerIndicatorCommand(1)
             \override Stem.direction = #down                                   %! baca_stem_down:OverrideCommand(1)
             \override TupletBracket.direction = #down                          %! baca_tuplet_bracket_down:OverrideCommand(1)
             \override TupletBracket.staff-padding = #6                         %! baca_tuplet_bracket_staff_padding:OverrideCommand(1)
-            \ottava #-1                                                        %! baca_ottava_bassa:SpannerCommand
             b,,,8
             - \tweak color #(x11-color 'DeepPink1)                             %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
             \f                                                                 %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
@@ -4097,8 +4097,8 @@ E_LH_Voice_VI = {                                                              %
             r4
 
             ef,,!8
+            \ottava 0                                                          %! baca_ottava_bassa:SpannerIndicatorCommand(2)
             \revert Stem.direction                                             %! baca_stem_down:OverrideCommand(2)
-            \ottava #0                                                         %! baca_ottava_bassa:SpannerCommand
 
             r4
             \revert Rest.direction                                             %! baca_rest_down:OverrideCommand(2)

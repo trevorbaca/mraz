@@ -1003,7 +1003,7 @@ C_RH_Voice_I = {                                                               %
             \once \override DynamicText.extra-offset = #'(0 . -8)              %! baca_dynamic_text_extra_offset:OverrideCommand(1)
             \once \override TextScript.color = #black                          %! baca_text_script_color:OverrideCommand(1)
             \override Stem.direction = #up                                     %! baca_stem_up:OverrideCommand(1)
-            \ottava #1                                                         %! baca_ottava:SpannerCommand
+            \ottava 1                                                          %! baca_ottava:SpannerIndicatorCommand(1)
             d''''8
             - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
             \mf                                                                %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
@@ -1367,7 +1367,7 @@ C_RH_Voice_I = {                                                               %
         %@%                 ]                                                  %! FIGURE_NAME_MARKUP
         %@%             }                                                      %! FIGURE_NAME_MARKUP
         %@%     }                                                              %! FIGURE_NAME_MARKUP
-            \ottava #0                                                         %! baca_ottava:SpannerCommand
+            \ottava 0                                                          %! baca_ottava:SpannerIndicatorCommand(2)
 
         }
 
@@ -1381,7 +1381,7 @@ C_RH_Voice_I = {                                                               %
         \scaleDurations #'(1 . 1) {
 
             % [C RH_Voice_I measure 71 / measure 38]                           %! _comment_measure_numbers
-            \ottava #1                                                         %! baca_ottava:SpannerCommand
+            \ottava 1                                                          %! baca_ottava:SpannerIndicatorCommand(1)
             f''''1
             - \tenuto                                                          %! baca_tenuto:IndicatorCommand
         %@% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
@@ -1430,7 +1430,7 @@ C_RH_Voice_I = {                                                               %
         %@%                 ]                                                  %! FIGURE_NAME_MARKUP
         %@%             }                                                      %! FIGURE_NAME_MARKUP
         %@%     }                                                              %! FIGURE_NAME_MARKUP
-            \ottava #0                                                         %! baca_ottava:SpannerCommand
+            \ottava 0                                                          %! baca_ottava:SpannerIndicatorCommand(2)
 
         }
 
@@ -2944,9 +2944,9 @@ C_RH_Voice_III = {                                                             %
         \times 8/5 {
 
             % [C RH_Voice_III measure 77 / measure 44]                         %! _comment_measure_numbers
+            \ottava 1                                                          %! baca_ottava:SpannerIndicatorCommand(1)
             \override Stem.direction = #down                                   %! baca_stem_down:OverrideCommand(1)
             \override TupletBracket.direction = #down                          %! baca_tuplet_bracket_down:OverrideCommand(1)
-            \ottava #1                                                         %! baca_ottava:SpannerCommand
             a''4
             - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
             \mf                                                                %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
@@ -2989,8 +2989,8 @@ C_RH_Voice_III = {                                                             %
 
             g'''4
             - \tenuto                                                          %! baca_tenuto:IndicatorCommand
+            \ottava 0                                                          %! baca_ottava:SpannerIndicatorCommand(2)
             \revert Stem.direction                                             %! baca_stem_down:OverrideCommand(2)
-            \ottava #0                                                         %! baca_ottava:SpannerCommand
 
             r4
             \revert Rest.direction                                             %! baca_rest_down:OverrideCommand(2)

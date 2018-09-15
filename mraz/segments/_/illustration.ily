@@ -342,8 +342,8 @@ i_RH_Voice_II = {                                                              %
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
             \override DynamicLineSpanner.staff-padding = #'8                   %! baca_dls_staff_padding:OverrideCommand(1)
+            \ottava 1                                                          %! baca_ottava:SpannerIndicatorCommand(1)
             \override Slur.direction = #up                                     %! baca_slur_up:OverrideCommand(1)
-            \ottava #1                                                         %! baca_ottava:SpannerCommand
             b'16
             - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
             \f                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
@@ -457,8 +457,8 @@ i_RH_Voice_II = {                                                              %
             )                                                                  %! baca_slur:SpannerIndicatorCommand(2)
             ]
             \revert DynamicLineSpanner.staff-padding                           %! baca_dls_staff_padding:OverrideCommand(2)
+            \ottava 0                                                          %! baca_ottava:SpannerIndicatorCommand(2)
             \revert Slur.direction                                             %! baca_slur_up:OverrideCommand(2)
-            \ottava #0                                                         %! baca_ottava:SpannerCommand
 
         }
 
@@ -762,9 +762,9 @@ i_RH_Voice_III = {                                                             %
 
             % [_ RH_Voice_III measure 8]                                       %! _comment_measure_numbers
             \once \override DynamicText.X-offset = #0.25                       %! baca_dynamic_text_x_offset:OverrideCommand(1)
+            \ottava 1                                                          %! baca_ottava:SpannerIndicatorCommand(1)
             \override Stem.direction = #down                                   %! baca_stem_down:OverrideCommand(1)
             \override TupletBracket.direction = #down                          %! baca_tuplet_bracket_down:OverrideCommand(1)
-            \ottava #1                                                         %! baca_ottava:SpannerCommand
             a''4
             - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
             \mf                                                                %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
@@ -807,8 +807,8 @@ i_RH_Voice_III = {                                                             %
 
             g'''4
             - \tenuto                                                          %! baca_tenuto:IndicatorCommand
+            \ottava 0                                                          %! baca_ottava:SpannerIndicatorCommand(2)
             \revert Stem.direction                                             %! baca_stem_down:OverrideCommand(2)
-            \ottava #0                                                         %! baca_ottava:SpannerCommand
 
             r4
             \revert Rest.direction                                             %! baca_rest_down:OverrideCommand(2)
@@ -1491,9 +1491,9 @@ i_LH_Voice_VI = {                                                              %
         \times 4/3 {
 
             % [_ LH_Voice_VI measure 3]                                        %! _comment_measure_numbers
+            \ottava -1                                                         %! baca_ottava_bassa:SpannerIndicatorCommand(1)
             \override TupletBracket.direction = #down                          %! baca_tuplet_bracket_down:OverrideCommand(1)
             \override TupletBracket.staff-padding = #6                         %! baca_tuplet_bracket_staff_padding:OverrideCommand(1)
-            \ottava #-1                                                        %! baca_ottava_bassa:SpannerCommand
             \clef "bass"                                                       %! EXPLICIT_CLEF:_set_status_tag:baca_clef:IndicatorCommand
             \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'blue)  %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
         %@% \override PianoMusicLHStaff.Clef.color = ##f                       %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
@@ -1524,7 +1524,7 @@ i_LH_Voice_VI = {                                                              %
             r4
 
             ef,,!8
-            \ottava #0                                                         %! baca_ottava_bassa:SpannerCommand
+            \ottava 0                                                          %! baca_ottava_bassa:SpannerIndicatorCommand(2)
 
             r4
             \revert Rest.direction                                             %! baca_rest_down:OverrideCommand(2)

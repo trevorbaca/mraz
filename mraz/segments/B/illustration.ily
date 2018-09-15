@@ -302,7 +302,7 @@ B_RH_Voice_I = {                                                               %
         \scaleDurations #'(1 . 1) {
 
             % [B RH_Voice_I measure 31 / measure 10]                           %! _comment_measure_numbers
-            \ottava #1                                                         %! baca_ottava:SpannerCommand
+            \ottava 1                                                          %! baca_ottava:SpannerIndicatorCommand(1)
             ef''''!1..
             - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
             \f                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
@@ -382,7 +382,7 @@ B_RH_Voice_I = {                                                               %
         %@%                 ]                                                  %! FIGURE_NAME_MARKUP
         %@%             }                                                      %! FIGURE_NAME_MARKUP
         %@%     }                                                              %! FIGURE_NAME_MARKUP
-            \ottava #0                                                         %! baca_ottava:SpannerCommand
+            \ottava 0                                                          %! baca_ottava:SpannerIndicatorCommand(2)
 
         }
 
@@ -855,8 +855,8 @@ B_RH_Voice_II = {                                                              %
             \set stemRightBeamCount = 2
             \override DynamicLineSpanner.staff-padding = #'8                   %! baca_dls_staff_padding:OverrideCommand(1)
             \once \override Score.SpanBar.extra-offset = #'(-0.75 . 0)         %! +SEGMENT:baca_span_bar_extra_offset:OverrideCommand(1)
+            \ottava 1                                                          %! baca_ottava:SpannerIndicatorCommand(1)
             \override Slur.direction = #up                                     %! baca_slur_up:OverrideCommand(1)
-            \ottava #1                                                         %! baca_ottava:SpannerCommand
             b'16
             - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
             \f                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
@@ -970,9 +970,9 @@ B_RH_Voice_II = {                                                              %
             )                                                                  %! baca_slur:SpannerIndicatorCommand(2)
             ]
             \revert DynamicLineSpanner.staff-padding                           %! baca_dls_staff_padding:OverrideCommand(2)
+            \ottava 0                                                          %! baca_ottava:SpannerIndicatorCommand(2)
             \revert Slur.direction                                             %! baca_slur_up:OverrideCommand(2)
             \revert Script.direction                                           %! baca_script_up:OverrideCommand(2)
-            \ottava #0                                                         %! baca_ottava:SpannerCommand
 
         }
 
