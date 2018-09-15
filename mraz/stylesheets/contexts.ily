@@ -384,6 +384,7 @@
         explicitClefVisibility = #end-of-line-invisible
         forceClef = ##t
         markFormatter = #format-mark-box-alphabet
+        pedalSustainStyle = #'bracket
         proportionalNotationDuration = #(ly:make-moment 1 24)
         tupletFullLength = ##t
     }
