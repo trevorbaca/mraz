@@ -2067,7 +2067,7 @@ B_LH_Resonance_Voice = {                                                       %
         %@%                 ]                                                  %! FIGURE_NAME_MARKUP
         %@%             }                                                      %! FIGURE_NAME_MARKUP
         %@%     }                                                              %! FIGURE_NAME_MARKUP
-            \repeatTie                                                         %! baca_repeat_tie:SpannerCommand
+            \repeatTie                                                         %! baca_repeat_tie
 
         }
 
@@ -2096,7 +2096,7 @@ B_LH_Resonance_Voice = {                                                       %
         %@%                 ]                                                  %! FIGURE_NAME_MARKUP
         %@%             }                                                      %! FIGURE_NAME_MARKUP
         %@%     }                                                              %! FIGURE_NAME_MARKUP
-            \repeatTie                                                         %! baca_repeat_tie:SpannerCommand
+            \repeatTie                                                         %! baca_repeat_tie
 
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 0
@@ -2108,7 +2108,7 @@ B_LH_Resonance_Voice = {                                                       %
             \once \override RepeatTie.transparent = ##t                        %! baca_repeat_tie_transparent:OverrideCommand(1)
             \once \override Stem.transparent = ##t                             %! baca_stem_transparent:OverrideCommand(1)
             <e, fs,! gs,! as,! b,>16
-            \repeatTie                                                         %! baca_repeat_tie:SpannerCommand
+            \repeatTie                                                         %! baca_repeat_tie
 
         }
 
@@ -2126,7 +2126,6 @@ B_LH_Resonance_Voice = {                                                       %
             \once \override NoteHead.transparent = ##t                         %! baca_note_head_transparent:OverrideCommand(1)
             \once \override RepeatTie.transparent = ##t                        %! baca_repeat_tie_transparent:OverrideCommand(1)
             \once \override Stem.transparent = ##t                             %! baca_stem_transparent:OverrideCommand(1)
-            \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie             %! _shorten_long_repeat_ties
             <e, fs,! gs,! as,! b,>4
         %@% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
         %@%     \fontsize                                                      %! FIGURE_NAME_MARKUP
@@ -2145,7 +2144,7 @@ B_LH_Resonance_Voice = {                                                       %
         %@%                 ]                                                  %! FIGURE_NAME_MARKUP
         %@%             }                                                      %! FIGURE_NAME_MARKUP
         %@%     }                                                              %! FIGURE_NAME_MARKUP
-            \repeatTie                                                         %! baca_repeat_tie:SpannerCommand
+            \repeatTie                                                         %! baca_repeat_tie
 
         }
 
@@ -2174,7 +2173,7 @@ B_LH_Resonance_Voice = {                                                       %
         %@%                 ]                                                  %! FIGURE_NAME_MARKUP
         %@%             }                                                      %! FIGURE_NAME_MARKUP
         %@%     }                                                              %! FIGURE_NAME_MARKUP
-            \repeatTie                                                         %! baca_repeat_tie:SpannerCommand
+            \repeatTie                                                         %! baca_repeat_tie
 
         }
 
@@ -2203,7 +2202,7 @@ B_LH_Resonance_Voice = {                                                       %
         %@%                 ]                                                  %! FIGURE_NAME_MARKUP
         %@%             }                                                      %! FIGURE_NAME_MARKUP
         %@%     }                                                              %! FIGURE_NAME_MARKUP
-            \repeatTie                                                         %! baca_repeat_tie:SpannerCommand
+            \repeatTie                                                         %! baca_repeat_tie
 
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 0
@@ -2215,7 +2214,7 @@ B_LH_Resonance_Voice = {                                                       %
             \once \override RepeatTie.transparent = ##t                        %! baca_repeat_tie_transparent:OverrideCommand(1)
             \once \override Stem.transparent = ##t                             %! baca_stem_transparent:OverrideCommand(1)
             <e, fs,! gs,! as,! b,>8
-            \repeatTie                                                         %! baca_repeat_tie:SpannerCommand
+            \repeatTie                                                         %! baca_repeat_tie
 
         }
 
@@ -2258,12 +2257,12 @@ B_LH_Resonance_Voice = {                                                       %
             \override RepeatTie.transparent = ##t                              %! baca_repeat_tie_transparent:OverrideCommand(1)
             \override Stem.transparent = ##t                                   %! baca_stem_transparent:OverrideCommand(1)
             <e, fs,! gs,! as,! b,>4
-            \repeatTie                                                         %! baca_repeat_tie:SpannerCommand
+            \repeatTie                                                         %! baca_repeat_tie
 
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 0
             <e, fs,! gs,! as,! b,>16
-            \repeatTie                                                         %! baca_repeat_tie:SpannerCommand
+            \repeatTie                                                         %! baca_repeat_tie
             \revert NoteHead.no-ledgers                                        %! baca_no_ledgers:OverrideCommand(2)
             \revert Accidental.transparent                                     %! baca_accidental_transparent:OverrideCommand(2)
             \revert Beam.transparent                                           %! baca_beam_transparent:OverrideCommand(2)
@@ -2282,7 +2281,6 @@ B_LH_Resonance_Voice = {                                                       %
 
             % [B LH_Resonance_Voice measure 31 / measure 10]                   %! _comment_measure_numbers
             \override Accidental.stencil = ##f                                 %! baca_accidental_stencil_false:OverrideCommand(1)
-            \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie             %! _shorten_long_repeat_ties
             <e, fs,! gs,! as,! b,>1..
         %@% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
         %@%     \fontsize                                                      %! FIGURE_NAME_MARKUP
@@ -2301,7 +2299,7 @@ B_LH_Resonance_Voice = {                                                       %
         %@%                 ]                                                  %! FIGURE_NAME_MARKUP
         %@%             }                                                      %! FIGURE_NAME_MARKUP
         %@%     }                                                              %! FIGURE_NAME_MARKUP
-            \repeatTie                                                         %! baca_repeat_tie:SpannerCommand
+            \repeatTie                                                         %! baca_repeat_tie
 
         }
 
@@ -2330,7 +2328,7 @@ B_LH_Resonance_Voice = {                                                       %
         %@%                 ]                                                  %! FIGURE_NAME_MARKUP
         %@%             }                                                      %! FIGURE_NAME_MARKUP
         %@%     }                                                              %! FIGURE_NAME_MARKUP
-            \repeatTie                                                         %! baca_repeat_tie:SpannerCommand
+            \repeatTie                                                         %! baca_repeat_tie
 
         }
 
