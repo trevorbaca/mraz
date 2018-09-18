@@ -2281,9 +2281,9 @@ E_RH_Voice_III = {                                                             %
                 a''8
 
                 g''8
-                ~                                                              %! baca_tie_repeat_pitches:SpannerCommand
                 )                                                              %! baca_slur:SpannerIndicatorCommand(2)
                 ]
+                ~                                                              %! baca_tie_repeat_pitches
 
             }
 
@@ -2345,7 +2345,7 @@ E_RH_Voice_III = {                                                             %
 
             \scaleDurations #'(1 . 1) {
 
-                f''8
+                f'8
                 [
                 (                                                              %! baca_slur:SpannerIndicatorCommand(1)
 
@@ -4254,7 +4254,7 @@ E_LH_Resonance_Voice = {                                                       %
             \once \override RepeatTie.transparent = ##t                        %! baca_repeat_tie_transparent:OverrideCommand(1)
             \once \override Stem.transparent = ##t                             %! baca_stem_transparent:OverrideCommand(1)
             <cs,,! cs,!>16
-            \repeatTie                                                         %! baca_repeat_tie:SpannerCommand
+            \repeatTie                                                         %! baca_repeat_tie
 
         }
 
@@ -4267,7 +4267,6 @@ E_LH_Resonance_Voice = {                                                       %
             % [E LH_Resonance_Voice measure 92 / measure 11]                   %! _comment_measure_numbers
             \once \override Accidental.stencil = ##f                           %! baca_accidental_stencil_false:OverrideCommand(1)
             \override Stem.transparent = ##t                                   %! baca_stem_transparent:OverrideCommand(1)
-            \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie             %! _shorten_long_repeat_ties
             <cs,,! cs,!>1.
         %@% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
         %@%     \fontsize                                                      %! FIGURE_NAME_MARKUP
@@ -4286,7 +4285,7 @@ E_LH_Resonance_Voice = {                                                       %
         %@%                 ]                                                  %! FIGURE_NAME_MARKUP
         %@%             }                                                      %! FIGURE_NAME_MARKUP
         %@%     }                                                              %! FIGURE_NAME_MARKUP
-            \repeatTie                                                         %! baca_repeat_tie:SpannerCommand
+            \repeatTie                                                         %! baca_repeat_tie
 
             \once \override NoteHead.no-ledgers = ##t                          %! baca_no_ledgers:OverrideCommand(1)
             \once \override Accidental.transparent = ##t                       %! baca_accidental_transparent:OverrideCommand(1)
@@ -4296,7 +4295,7 @@ E_LH_Resonance_Voice = {                                                       %
             \once \override RepeatTie.transparent = ##t                        %! baca_repeat_tie_transparent:OverrideCommand(1)
             \once \override Stem.transparent = ##t                             %! baca_stem_transparent:OverrideCommand(1)
             <cs,,! cs,!>8.
-            \repeatTie                                                         %! baca_repeat_tie:SpannerCommand
+            \repeatTie                                                         %! baca_repeat_tie
             \revert Stem.transparent                                           %! baca_stem_transparent:OverrideCommand(2)
 
         }
@@ -4335,10 +4334,10 @@ E_LH_Resonance_Voice = {                                                       %
             \override RepeatTie.transparent = ##t                              %! baca_repeat_tie_transparent:OverrideCommand(1)
             \override Stem.transparent = ##t                                   %! baca_stem_transparent:OverrideCommand(1)
             <ef,,! ef,!>4
-            \repeatTie                                                         %! baca_repeat_tie:SpannerCommand
+            \repeatTie                                                         %! baca_repeat_tie
 
             <ef,,! ef,!>16
-            \repeatTie                                                         %! baca_repeat_tie:SpannerCommand
+            \repeatTie                                                         %! baca_repeat_tie
             \revert NoteHead.no-ledgers                                        %! baca_no_ledgers:OverrideCommand(2)
             \revert Accidental.transparent                                     %! baca_accidental_transparent:OverrideCommand(2)
             \revert Beam.transparent                                           %! baca_beam_transparent:OverrideCommand(2)
@@ -4358,7 +4357,6 @@ E_LH_Resonance_Voice = {                                                       %
             % [E LH_Resonance_Voice measure 94 / measure 13]                   %! _comment_measure_numbers
             \once \override Accidental.stencil = ##f                           %! baca_accidental_stencil_false:OverrideCommand(1)
             \once \override Stem.transparent = ##t                             %! baca_stem_transparent:OverrideCommand(1)
-            \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie             %! _shorten_long_repeat_ties
             <ef,,! ef,!>2...
         %@% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
         %@%     \fontsize                                                      %! FIGURE_NAME_MARKUP
@@ -4377,7 +4375,7 @@ E_LH_Resonance_Voice = {                                                       %
         %@%                 ]                                                  %! FIGURE_NAME_MARKUP
         %@%             }                                                      %! FIGURE_NAME_MARKUP
         %@%     }                                                              %! FIGURE_NAME_MARKUP
-            \repeatTie                                                         %! baca_repeat_tie:SpannerCommand
+            \repeatTie                                                         %! baca_repeat_tie
 
         }
 
@@ -4408,7 +4406,7 @@ E_LH_Resonance_Voice = {                                                       %
         %@%                 ]                                                  %! FIGURE_NAME_MARKUP
         %@%             }                                                      %! FIGURE_NAME_MARKUP
         %@%     }                                                              %! FIGURE_NAME_MARKUP
-            \repeatTie                                                         %! baca_repeat_tie:SpannerCommand
+            \repeatTie                                                         %! baca_repeat_tie
 
         }
 

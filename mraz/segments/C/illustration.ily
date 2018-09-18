@@ -6313,7 +6313,7 @@ C_LH_Resonance_Voice = {                                                       %
         %@%                 ]                                                  %! FIGURE_NAME_MARKUP
         %@%             }                                                      %! FIGURE_NAME_MARKUP
         %@%     }                                                              %! FIGURE_NAME_MARKUP
-            \repeatTie                                                         %! baca_repeat_tie:SpannerCommand
+            \repeatTie                                                         %! baca_repeat_tie
 
         }
 
@@ -6341,7 +6341,7 @@ C_LH_Resonance_Voice = {                                                       %
         %@%                 ]                                                  %! FIGURE_NAME_MARKUP
         %@%             }                                                      %! FIGURE_NAME_MARKUP
         %@%     }                                                              %! FIGURE_NAME_MARKUP
-            \repeatTie                                                         %! baca_repeat_tie:SpannerCommand
+            \repeatTie                                                         %! baca_repeat_tie
             \revert Accidental.stencil                                         %! baca_accidental_stencil_false:OverrideCommand(2)
             \revert Dots.stencil                                               %! baca_dots_stencil_false:OverrideCommand(2)
             \revert Stem.stencil                                               %! baca_stem_stencil_false:OverrideCommand(2)
@@ -6414,7 +6414,7 @@ C_LH_Resonance_Voice = {                                                       %
         %@%                 ]                                                  %! FIGURE_NAME_MARKUP
         %@%             }                                                      %! FIGURE_NAME_MARKUP
         %@%     }                                                              %! FIGURE_NAME_MARKUP
-            \repeatTie                                                         %! baca_repeat_tie:SpannerCommand
+            \repeatTie                                                         %! baca_repeat_tie
 
         }
 
@@ -6442,7 +6442,7 @@ C_LH_Resonance_Voice = {                                                       %
         %@%                 ]                                                  %! FIGURE_NAME_MARKUP
         %@%             }                                                      %! FIGURE_NAME_MARKUP
         %@%     }                                                              %! FIGURE_NAME_MARKUP
-            \repeatTie                                                         %! baca_repeat_tie:SpannerCommand
+            \repeatTie                                                         %! baca_repeat_tie
             \revert Accidental.stencil                                         %! baca_accidental_stencil_false:OverrideCommand(2)
             \revert Dots.stencil                                               %! baca_dots_stencil_false:OverrideCommand(2)
             \revert Stem.stencil                                               %! baca_stem_stencil_false:OverrideCommand(2)
@@ -6509,7 +6509,7 @@ C_LH_Resonance_Voice = {                                                       %
         %@%                 ]                                                  %! FIGURE_NAME_MARKUP
         %@%             }                                                      %! FIGURE_NAME_MARKUP
         %@%     }                                                              %! FIGURE_NAME_MARKUP
-            \repeatTie                                                         %! baca_repeat_tie:SpannerCommand
+            \repeatTie                                                         %! baca_repeat_tie
 
         }
 
@@ -6538,7 +6538,7 @@ C_LH_Resonance_Voice = {                                                       %
         %@%                 ]                                                  %! FIGURE_NAME_MARKUP
         %@%             }                                                      %! FIGURE_NAME_MARKUP
         %@%     }                                                              %! FIGURE_NAME_MARKUP
-            \repeatTie                                                         %! baca_repeat_tie:SpannerCommand
+            \repeatTie                                                         %! baca_repeat_tie
 
         }
 
@@ -6567,7 +6567,7 @@ C_LH_Resonance_Voice = {                                                       %
         %@%                 ]                                                  %! FIGURE_NAME_MARKUP
         %@%             }                                                      %! FIGURE_NAME_MARKUP
         %@%     }                                                              %! FIGURE_NAME_MARKUP
-            \repeatTie                                                         %! baca_repeat_tie:SpannerCommand
+            \repeatTie                                                         %! baca_repeat_tie
 
         }
 
@@ -6596,7 +6596,7 @@ C_LH_Resonance_Voice = {                                                       %
         %@%                 ]                                                  %! FIGURE_NAME_MARKUP
         %@%             }                                                      %! FIGURE_NAME_MARKUP
         %@%     }                                                              %! FIGURE_NAME_MARKUP
-            \repeatTie                                                         %! baca_repeat_tie:SpannerCommand
+            \repeatTie                                                         %! baca_repeat_tie
 
         }
 
@@ -6625,7 +6625,7 @@ C_LH_Resonance_Voice = {                                                       %
         %@%                 ]                                                  %! FIGURE_NAME_MARKUP
         %@%             }                                                      %! FIGURE_NAME_MARKUP
         %@%     }                                                              %! FIGURE_NAME_MARKUP
-            \repeatTie                                                         %! baca_repeat_tie:SpannerCommand
+            \repeatTie                                                         %! baca_repeat_tie
 
         }
 
@@ -6654,7 +6654,7 @@ C_LH_Resonance_Voice = {                                                       %
         %@%                 ]                                                  %! FIGURE_NAME_MARKUP
         %@%             }                                                      %! FIGURE_NAME_MARKUP
         %@%     }                                                              %! FIGURE_NAME_MARKUP
-            \repeatTie                                                         %! baca_repeat_tie:SpannerCommand
+            \repeatTie                                                         %! baca_repeat_tie
 
         }
 
@@ -6683,7 +6683,7 @@ C_LH_Resonance_Voice = {                                                       %
         %@%                 ]                                                  %! FIGURE_NAME_MARKUP
         %@%             }                                                      %! FIGURE_NAME_MARKUP
         %@%     }                                                              %! FIGURE_NAME_MARKUP
-            \repeatTie                                                         %! baca_repeat_tie:SpannerCommand
+            \repeatTie                                                         %! baca_repeat_tie
             \revert Accidental.stencil                                         %! baca_accidental_stencil_false:OverrideCommand(2)
             \revert Dots.stencil                                               %! baca_dots_stencil_false:OverrideCommand(2)
             \revert Stem.stencil                                               %! baca_stem_stencil_false:OverrideCommand(2)
