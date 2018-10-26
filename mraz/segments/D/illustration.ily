@@ -1,16 +1,16 @@
 D_Global_Rests = {                                                             %! extern
 
     % [D Global_Rests measure 78 / measure 1]                                  %! _comment_measure_numbers
-    R1 * 9/8                                                                   %! _make_global_rests
+    R1 * 9/8                                                                   %! _make_global_rests(1)
 
     % [D Global_Rests measure 79 / measure 2]                                  %! _comment_measure_numbers
-    R1 * 1/2                                                                   %! _make_global_rests
+    R1 * 1/2                                                                   %! _make_global_rests(1)
 
     % [D Global_Rests measure 80 / measure 3]                                  %! _comment_measure_numbers
-    R1 * 7/8                                                                   %! _make_global_rests
+    R1 * 7/8                                                                   %! _make_global_rests(1)
 
     % [D Global_Rests measure 81 / measure 4]                                  %! _comment_measure_numbers
-    R1 * 5/8                                                                   %! _make_global_rests
+    R1 * 5/8                                                                   %! _make_global_rests(1)
 
 }                                                                              %! extern
 
