@@ -341,7 +341,7 @@ i_RH_Voice_II = {                                                              %
             % [_ RH_Voice_II measure 1]                                        %! _comment_measure_numbers
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
-            \override DynamicLineSpanner.staff-padding = #'8                   %! baca_dls_staff_padding:OverrideCommand(1)
+            \override DynamicLineSpanner.staff-padding = #8                    %! baca_dls_staff_padding:OverrideCommand(1)
             \ottava 1                                                          %! baca_ottava:SpannerIndicatorCommand(1)
             \override Slur.direction = #up                                     %! baca_slur_up:OverrideCommand(1)
             b'16
