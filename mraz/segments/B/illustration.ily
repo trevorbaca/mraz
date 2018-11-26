@@ -853,7 +853,7 @@ B_RH_Voice_II = {                                                              %
             % [B RH_Voice_II measure 33 / measure 12]                          %! _comment_measure_numbers
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
-            \override DynamicLineSpanner.staff-padding = #'8                   %! baca_dls_staff_padding:OverrideCommand(1)
+            \override DynamicLineSpanner.staff-padding = #8                    %! baca_dls_staff_padding:OverrideCommand(1)
             \once \override Score.SpanBar.extra-offset = #'(-0.75 . 0)         %! +SEGMENT:baca_span_bar_extra_offset:OverrideCommand(1)
             \ottava 1                                                          %! baca_ottava:SpannerIndicatorCommand(1)
             \override Slur.direction = #up                                     %! baca_slur_up:OverrideCommand(1)
