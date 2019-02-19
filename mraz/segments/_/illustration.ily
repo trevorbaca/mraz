@@ -224,10 +224,10 @@ i_RH_Voice_I = {                                                               %
                     #12                                                        %! baca_start_markup:-PARTS:IndicatorCommand
                     PIANO                                                      %! baca_start_markup:-PARTS:IndicatorCommand
                 }                                                              %! baca_start_markup:-PARTS:IndicatorCommand
-            \clef "treble"                                                     %! DEFAULT_CLEF:_set_status_tag:attach_defaults
+            \clef "treble"                                                     %! DEFAULT_CLEF:_set_status_tag:abjad.ScoreTemplate.attach_defaults
             \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'DarkViolet) %! DEFAULT_CLEF_COLOR:_attach_color_literal(2)
         %@% \override PianoMusicRHStaff.Clef.color = ##f                       %! DEFAULT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-            \set PianoMusicRHStaff.forceClef = ##t                             %! DEFAULT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):attach_defaults
+            \set PianoMusicRHStaff.forceClef = ##t                             %! DEFAULT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):abjad.ScoreTemplate.attach_defaults
             bf''''!1
             - \tenuto                                                          %! baca_tenuto:IndicatorCommand
             ^ \markup { "(ottava brackets always govern all voices on staff)" } %! baca_markup:IndicatorCommand
