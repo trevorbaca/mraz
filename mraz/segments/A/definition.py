@@ -267,10 +267,10 @@ maker(
     'lh_v6',
     baca.script_down(),
     baca.stem_down(
-        selector=baca.tleaves(exclude=baca.const.HIDDEN),
+        selector=baca.tleaves(exclude=abjad.const.HIDDEN),
         ),
     baca.tenuto(
-        selector=baca.pheads(exclude=baca.const.HIDDEN),
+        selector=baca.pheads(exclude=abjad.const.HIDDEN),
         ),
     baca.tuplet_bracket_staff_padding(6),
     baca.rest_position(-10),
