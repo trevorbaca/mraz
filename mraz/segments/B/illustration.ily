@@ -52,193 +52,193 @@ B_Global_Skips = {                                                             %
     \bar ""                                                                    %! _make_global_skips(3):+SEGMENT:EMPTY_START_BAR
     \baca-time-signature-color #'green4                                        %! REAPPLIED_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 1/2                                                                   %! _make_global_skips(1)
-%@% - \baca-start-lmi-left-only "0"                                            %! LOCAL_MEASURE_INDEX_MARKUP
-%@% \bacaStartTextSpanLMI                                                      %! LOCAL_MEASURE_INDEX_MARKUP
-%@% - \baca-start-lmn-left-only "1"                                            %! LOCAL_MEASURE_NUMBER_MARKUP
-%@% \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER_MARKUP
-%@% - \baca-start-mn-left-only "22"                                            %! MEASURE_NUMBER_MARKUP
-%@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER_MARKUP
+%@% - \baca-start-lmi-left-only "0"                                            %! LOCAL_MEASURE_INDEX
+%@% \bacaStartTextSpanLMI                                                      %! LOCAL_MEASURE_INDEX
+%@% - \baca-start-lmn-left-only "1"                                            %! LOCAL_MEASURE_NUMBER
+%@% \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER
+%@% - \baca-start-mn-left-only "22"                                            %! MEASURE_NUMBER
+%@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER
 %@% - \abjad-invisible-line                                                    %! REAPPLIED_METRONOME_MARK:_set_status_tag:_reapply_persistent_indicators(2):_attach_metronome_marks(2)
 %@% - \baca-metronome-mark-spanner-left-text 2 0 1 "112"                       %! REAPPLIED_METRONOME_MARK:_set_status_tag:_reapply_persistent_indicators(2):_attach_metronome_marks(2)
 %@% \bacaStartTextSpanMM                                                       %! REAPPLIED_METRONOME_MARK:_set_status_tag:_reapply_persistent_indicators(2):_attach_metronome_marks(2)
     - \abjad-invisible-line                                                    %! REAPPLIED_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
     - \baca-metronome-mark-spanner-colored-left-text 2 0 1 "112" #'green4      %! REAPPLIED_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
     \bacaStartTextSpanMM                                                       %! REAPPLIED_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
-%@% - \baca-start-ct-left-only "[0'45'']"                                      %! CLOCK_TIME_MARKUP
-%@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME_MARKUP
+%@% - \baca-start-ct-left-only "[0'45'']"                                      %! CLOCK_TIME
+%@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME
 
     % [B Global_Skips measure 23 / measure 2]                                  %! _comment_measure_numbers
     \time 1/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 1/4                                                                   %! _make_global_skips(1)
-%@% \bacaStopTextSpanLMI                                                       %! LOCAL_MEASURE_INDEX_MARKUP
-%@% \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER_MARKUP
-%@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER_MARKUP
-%@% \bacaStopTextSpanCT                                                        %! CLOCK_TIME_MARKUP
-%@% - \baca-start-lmi-left-only "1"                                            %! LOCAL_MEASURE_INDEX_MARKUP
-%@% \bacaStartTextSpanLMI                                                      %! LOCAL_MEASURE_INDEX_MARKUP
-%@% - \baca-start-lmn-left-only "2"                                            %! LOCAL_MEASURE_NUMBER_MARKUP
-%@% \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER_MARKUP
-%@% - \baca-start-mn-left-only "23"                                            %! MEASURE_NUMBER_MARKUP
-%@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER_MARKUP
-%@% - \baca-start-ct-left-only "[0'46'']"                                      %! CLOCK_TIME_MARKUP
-%@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME_MARKUP
+%@% \bacaStopTextSpanLMI                                                       %! LOCAL_MEASURE_INDEX
+%@% \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER
+%@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER
+%@% \bacaStopTextSpanCT                                                        %! CLOCK_TIME
+%@% - \baca-start-lmi-left-only "1"                                            %! LOCAL_MEASURE_INDEX
+%@% \bacaStartTextSpanLMI                                                      %! LOCAL_MEASURE_INDEX
+%@% - \baca-start-lmn-left-only "2"                                            %! LOCAL_MEASURE_NUMBER
+%@% \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER
+%@% - \baca-start-mn-left-only "23"                                            %! MEASURE_NUMBER
+%@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER
+%@% - \baca-start-ct-left-only "[0'46'']"                                      %! CLOCK_TIME
+%@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME
 
     % [B Global_Skips measure 24 / measure 3]                                  %! _comment_measure_numbers
     \time 5/16                                                                 %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 5/16                                                                  %! _make_global_skips(1)
-%@% \bacaStopTextSpanLMI                                                       %! LOCAL_MEASURE_INDEX_MARKUP
-%@% \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER_MARKUP
-%@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanLMI                                                       %! LOCAL_MEASURE_INDEX
+%@% \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER
+%@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER
     \bacaStopTextSpanMM                                                        %! _attach_metronome_marks(1)
-%@% \bacaStopTextSpanCT                                                        %! CLOCK_TIME_MARKUP
-%@% - \baca-start-lmi-left-only "2"                                            %! LOCAL_MEASURE_INDEX_MARKUP
-%@% \bacaStartTextSpanLMI                                                      %! LOCAL_MEASURE_INDEX_MARKUP
-%@% - \baca-start-lmn-left-only "3"                                            %! LOCAL_MEASURE_NUMBER_MARKUP
-%@% \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER_MARKUP
-%@% - \baca-start-mn-left-only "24"                                            %! MEASURE_NUMBER_MARKUP
-%@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanCT                                                        %! CLOCK_TIME
+%@% - \baca-start-lmi-left-only "2"                                            %! LOCAL_MEASURE_INDEX
+%@% \bacaStartTextSpanLMI                                                      %! LOCAL_MEASURE_INDEX
+%@% - \baca-start-lmn-left-only "3"                                            %! LOCAL_MEASURE_NUMBER
+%@% \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER
+%@% - \baca-start-mn-left-only "24"                                            %! MEASURE_NUMBER
+%@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER
 %@% - \abjad-invisible-line                                                    %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
 %@% - \baca-metronome-mark-spanner-left-text 2 0 1 "84"                        %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
 %@% \bacaStartTextSpanMM                                                       %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
     - \abjad-invisible-line                                                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
     - \baca-metronome-mark-spanner-colored-left-text 2 0 1 "84" #'blue         %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
     \bacaStartTextSpanMM                                                       %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
-%@% - \baca-start-ct-left-only "[0'46'']"                                      %! CLOCK_TIME_MARKUP
-%@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME_MARKUP
+%@% - \baca-start-ct-left-only "[0'46'']"                                      %! CLOCK_TIME
+%@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME
 
     % [B Global_Skips measure 25 / measure 4]                                  %! _comment_measure_numbers
     \time 1/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 1/4                                                                   %! _make_global_skips(1)
-%@% \bacaStopTextSpanLMI                                                       %! LOCAL_MEASURE_INDEX_MARKUP
-%@% \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER_MARKUP
-%@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER_MARKUP
-%@% \bacaStopTextSpanCT                                                        %! CLOCK_TIME_MARKUP
-%@% - \baca-start-lmi-left-only "3"                                            %! LOCAL_MEASURE_INDEX_MARKUP
-%@% \bacaStartTextSpanLMI                                                      %! LOCAL_MEASURE_INDEX_MARKUP
-%@% - \baca-start-lmn-left-only "4"                                            %! LOCAL_MEASURE_NUMBER_MARKUP
-%@% \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER_MARKUP
-%@% - \baca-start-mn-left-only "25"                                            %! MEASURE_NUMBER_MARKUP
-%@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER_MARKUP
-%@% - \baca-start-ct-left-only "[0'47'']"                                      %! CLOCK_TIME_MARKUP
-%@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME_MARKUP
+%@% \bacaStopTextSpanLMI                                                       %! LOCAL_MEASURE_INDEX
+%@% \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER
+%@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER
+%@% \bacaStopTextSpanCT                                                        %! CLOCK_TIME
+%@% - \baca-start-lmi-left-only "3"                                            %! LOCAL_MEASURE_INDEX
+%@% \bacaStartTextSpanLMI                                                      %! LOCAL_MEASURE_INDEX
+%@% - \baca-start-lmn-left-only "4"                                            %! LOCAL_MEASURE_NUMBER
+%@% \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER
+%@% - \baca-start-mn-left-only "25"                                            %! MEASURE_NUMBER
+%@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER
+%@% - \baca-start-ct-left-only "[0'47'']"                                      %! CLOCK_TIME
+%@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME
 
     % [B Global_Skips measure 26 / measure 5]                                  %! _comment_measure_numbers
     \time 2/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 1/2                                                                   %! _make_global_skips(1)
-%@% \bacaStopTextSpanLMI                                                       %! LOCAL_MEASURE_INDEX_MARKUP
-%@% \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER_MARKUP
-%@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanLMI                                                       %! LOCAL_MEASURE_INDEX
+%@% \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER
+%@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER
     \bacaStopTextSpanMM                                                        %! _attach_metronome_marks(1)
-%@% \bacaStopTextSpanCT                                                        %! CLOCK_TIME_MARKUP
-%@% - \baca-start-lmi-left-only "4"                                            %! LOCAL_MEASURE_INDEX_MARKUP
-%@% \bacaStartTextSpanLMI                                                      %! LOCAL_MEASURE_INDEX_MARKUP
-%@% - \baca-start-lmn-left-only "5"                                            %! LOCAL_MEASURE_NUMBER_MARKUP
-%@% \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER_MARKUP
-%@% - \baca-start-mn-left-only "26"                                            %! MEASURE_NUMBER_MARKUP
-%@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanCT                                                        %! CLOCK_TIME
+%@% - \baca-start-lmi-left-only "4"                                            %! LOCAL_MEASURE_INDEX
+%@% \bacaStartTextSpanLMI                                                      %! LOCAL_MEASURE_INDEX
+%@% - \baca-start-lmn-left-only "5"                                            %! LOCAL_MEASURE_NUMBER
+%@% \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER
+%@% - \baca-start-mn-left-only "26"                                            %! MEASURE_NUMBER
+%@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER
 %@% - \abjad-invisible-line                                                    %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
 %@% - \baca-metronome-mark-spanner-left-text 2 0 1 "112"                       %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
 %@% \bacaStartTextSpanMM                                                       %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
     - \abjad-invisible-line                                                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
     - \baca-metronome-mark-spanner-colored-left-text 2 0 1 "112" #'blue        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
     \bacaStartTextSpanMM                                                       %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
-%@% - \baca-start-ct-left-only "[0'48'']"                                      %! CLOCK_TIME_MARKUP
-%@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME_MARKUP
+%@% - \baca-start-ct-left-only "[0'48'']"                                      %! CLOCK_TIME
+%@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME
 
     % [B Global_Skips measure 27 / measure 6]                                  %! _comment_measure_numbers
     \time 5/8                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 5/8                                                                   %! _make_global_skips(1)
-%@% \bacaStopTextSpanLMI                                                       %! LOCAL_MEASURE_INDEX_MARKUP
-%@% \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER_MARKUP
-%@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanLMI                                                       %! LOCAL_MEASURE_INDEX
+%@% \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER
+%@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER
     \bacaStopTextSpanMM                                                        %! _attach_metronome_marks(1)
-%@% \bacaStopTextSpanCT                                                        %! CLOCK_TIME_MARKUP
-%@% - \baca-start-lmi-left-only "5"                                            %! LOCAL_MEASURE_INDEX_MARKUP
-%@% \bacaStartTextSpanLMI                                                      %! LOCAL_MEASURE_INDEX_MARKUP
-%@% - \baca-start-lmn-left-only "6"                                            %! LOCAL_MEASURE_NUMBER_MARKUP
-%@% \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER_MARKUP
-%@% - \baca-start-mn-left-only "27"                                            %! MEASURE_NUMBER_MARKUP
-%@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanCT                                                        %! CLOCK_TIME
+%@% - \baca-start-lmi-left-only "5"                                            %! LOCAL_MEASURE_INDEX
+%@% \bacaStartTextSpanLMI                                                      %! LOCAL_MEASURE_INDEX
+%@% - \baca-start-lmn-left-only "6"                                            %! LOCAL_MEASURE_NUMBER
+%@% \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER
+%@% - \baca-start-mn-left-only "27"                                            %! MEASURE_NUMBER
+%@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER
 %@% - \abjad-invisible-line                                                    %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
 %@% - \baca-metronome-mark-spanner-left-text 2 0 1 "84"                        %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
 %@% \bacaStartTextSpanMM                                                       %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
     - \abjad-invisible-line                                                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
     - \baca-metronome-mark-spanner-colored-left-text 2 0 1 "84" #'blue         %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
     \bacaStartTextSpanMM                                                       %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
-%@% - \baca-start-ct-left-only "[0'49'']"                                      %! CLOCK_TIME_MARKUP
-%@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME_MARKUP
+%@% - \baca-start-ct-left-only "[0'49'']"                                      %! CLOCK_TIME
+%@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME
 
     % [B Global_Skips measure 28 / measure 7]                                  %! _comment_measure_numbers
     \time 1/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 1/4                                                                   %! _make_global_skips(1)
-%@% \bacaStopTextSpanLMI                                                       %! LOCAL_MEASURE_INDEX_MARKUP
-%@% \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER_MARKUP
-%@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER_MARKUP
-%@% \bacaStopTextSpanCT                                                        %! CLOCK_TIME_MARKUP
-%@% - \baca-start-lmi-left-only "6"                                            %! LOCAL_MEASURE_INDEX_MARKUP
-%@% \bacaStartTextSpanLMI                                                      %! LOCAL_MEASURE_INDEX_MARKUP
-%@% - \baca-start-lmn-left-only "7"                                            %! LOCAL_MEASURE_NUMBER_MARKUP
-%@% \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER_MARKUP
-%@% - \baca-start-mn-left-only "28"                                            %! MEASURE_NUMBER_MARKUP
-%@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER_MARKUP
-%@% - \baca-start-ct-left-only "[0'51'']"                                      %! CLOCK_TIME_MARKUP
-%@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME_MARKUP
+%@% \bacaStopTextSpanLMI                                                       %! LOCAL_MEASURE_INDEX
+%@% \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER
+%@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER
+%@% \bacaStopTextSpanCT                                                        %! CLOCK_TIME
+%@% - \baca-start-lmi-left-only "6"                                            %! LOCAL_MEASURE_INDEX
+%@% \bacaStartTextSpanLMI                                                      %! LOCAL_MEASURE_INDEX
+%@% - \baca-start-lmn-left-only "7"                                            %! LOCAL_MEASURE_NUMBER
+%@% \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER
+%@% - \baca-start-mn-left-only "28"                                            %! MEASURE_NUMBER
+%@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER
+%@% - \baca-start-ct-left-only "[0'51'']"                                      %! CLOCK_TIME
+%@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME
 
     % [B Global_Skips measure 29 / measure 8]                                  %! _comment_measure_numbers
     \time 6/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 3/2                                                                   %! _make_global_skips(1)
-%@% \bacaStopTextSpanLMI                                                       %! LOCAL_MEASURE_INDEX_MARKUP
-%@% \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER_MARKUP
-%@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER_MARKUP
-%@% \bacaStopTextSpanCT                                                        %! CLOCK_TIME_MARKUP
-%@% - \baca-start-lmi-left-only "7"                                            %! LOCAL_MEASURE_INDEX_MARKUP
-%@% \bacaStartTextSpanLMI                                                      %! LOCAL_MEASURE_INDEX_MARKUP
-%@% - \baca-start-lmn-left-only "8"                                            %! LOCAL_MEASURE_NUMBER_MARKUP
-%@% \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER_MARKUP
-%@% - \baca-start-mn-left-only "29"                                            %! MEASURE_NUMBER_MARKUP
-%@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER_MARKUP
-%@% - \baca-start-ct-left-only "[0'51'']"                                      %! CLOCK_TIME_MARKUP
-%@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME_MARKUP
+%@% \bacaStopTextSpanLMI                                                       %! LOCAL_MEASURE_INDEX
+%@% \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER
+%@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER
+%@% \bacaStopTextSpanCT                                                        %! CLOCK_TIME
+%@% - \baca-start-lmi-left-only "7"                                            %! LOCAL_MEASURE_INDEX
+%@% \bacaStartTextSpanLMI                                                      %! LOCAL_MEASURE_INDEX
+%@% - \baca-start-lmn-left-only "8"                                            %! LOCAL_MEASURE_NUMBER
+%@% \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER
+%@% - \baca-start-mn-left-only "29"                                            %! MEASURE_NUMBER
+%@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER
+%@% - \baca-start-ct-left-only "[0'51'']"                                      %! CLOCK_TIME
+%@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME
 
     % [B Global_Skips measure 30 / measure 9]                                  %! _comment_measure_numbers
     \time 21/16                                                                %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 21/16                                                                 %! _make_global_skips(1)
-%@% \bacaStopTextSpanLMI                                                       %! LOCAL_MEASURE_INDEX_MARKUP
-%@% \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER_MARKUP
-%@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER_MARKUP
-%@% \bacaStopTextSpanCT                                                        %! CLOCK_TIME_MARKUP
-%@% - \baca-start-lmi-left-only "8"                                            %! LOCAL_MEASURE_INDEX_MARKUP
-%@% \bacaStartTextSpanLMI                                                      %! LOCAL_MEASURE_INDEX_MARKUP
-%@% - \baca-start-lmn-left-only "9"                                            %! LOCAL_MEASURE_NUMBER_MARKUP
-%@% \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER_MARKUP
-%@% - \baca-start-mn-left-only "30"                                            %! MEASURE_NUMBER_MARKUP
-%@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER_MARKUP
-%@% - \baca-start-ct-left-only "[0'56'']"                                      %! CLOCK_TIME_MARKUP
-%@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME_MARKUP
+%@% \bacaStopTextSpanLMI                                                       %! LOCAL_MEASURE_INDEX
+%@% \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER
+%@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER
+%@% \bacaStopTextSpanCT                                                        %! CLOCK_TIME
+%@% - \baca-start-lmi-left-only "8"                                            %! LOCAL_MEASURE_INDEX
+%@% \bacaStartTextSpanLMI                                                      %! LOCAL_MEASURE_INDEX
+%@% - \baca-start-lmn-left-only "9"                                            %! LOCAL_MEASURE_NUMBER
+%@% \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER
+%@% - \baca-start-mn-left-only "30"                                            %! MEASURE_NUMBER
+%@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER
+%@% - \baca-start-ct-left-only "[0'56'']"                                      %! CLOCK_TIME
+%@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME
 
     % [B Global_Skips measure 31 / measure 10]                                 %! _comment_measure_numbers
     \time 7/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 7/4                                                                   %! _make_global_skips(1)
-%@% \bacaStopTextSpanLMI                                                       %! LOCAL_MEASURE_INDEX_MARKUP
-%@% \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER_MARKUP
-%@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanLMI                                                       %! LOCAL_MEASURE_INDEX
+%@% \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER
+%@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER
     \bacaStopTextSpanMM                                                        %! _attach_metronome_marks(1)
-%@% \bacaStopTextSpanCT                                                        %! CLOCK_TIME_MARKUP
-%@% - \baca-start-lmi-left-only "9"                                            %! LOCAL_MEASURE_INDEX_MARKUP
-%@% \bacaStartTextSpanLMI                                                      %! LOCAL_MEASURE_INDEX_MARKUP
-%@% - \baca-start-lmn-left-only "10"                                           %! LOCAL_MEASURE_NUMBER_MARKUP
-%@% \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER_MARKUP
-%@% - \baca-start-mn-left-only "31"                                            %! MEASURE_NUMBER_MARKUP
-%@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanCT                                                        %! CLOCK_TIME
+%@% - \baca-start-lmi-left-only "9"                                            %! LOCAL_MEASURE_INDEX
+%@% \bacaStartTextSpanLMI                                                      %! LOCAL_MEASURE_INDEX
+%@% - \baca-start-lmn-left-only "10"                                           %! LOCAL_MEASURE_NUMBER
+%@% \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER
+%@% - \baca-start-mn-left-only "31"                                            %! MEASURE_NUMBER
+%@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER
 %@% - \abjad-dashed-line-with-arrow                                            %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
 %@% - \baca-metronome-mark-spanner-left-text 2 0 1 "112"                       %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
 %@% - \tweak bound-details.right.text \markup {                                %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
@@ -253,35 +253,35 @@ B_Global_Skips = {                                                             %
             \abjad-metronome-mark-markup #2 #0 #1 #"84"                        %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(3)
         }                                                                      %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(3)
     \bacaStartTextSpanMM                                                       %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(3)
-%@% - \baca-start-ct-left-only "[0'59'']"                                      %! CLOCK_TIME_MARKUP
-%@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME_MARKUP
+%@% - \baca-start-ct-left-only "[0'59'']"                                      %! CLOCK_TIME
+%@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME
 
     % [B Global_Skips measure 32 / measure 11]                                 %! _comment_measure_numbers
     \time 6/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 3/2                                                                   %! _make_global_skips(1)
-%@% \bacaStopTextSpanLMI                                                       %! LOCAL_MEASURE_INDEX_MARKUP
-%@% \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER_MARKUP
-%@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER_MARKUP
-%@% \bacaStopTextSpanCT                                                        %! CLOCK_TIME_MARKUP
-%@% - \baca-start-lmi-both "10" "11"                                           %! LOCAL_MEASURE_INDEX_MARKUP
-%@% \bacaStartTextSpanLMI                                                      %! LOCAL_MEASURE_INDEX_MARKUP
-%@% - \baca-start-lmn-both "11" "12"                                           %! LOCAL_MEASURE_NUMBER_MARKUP
-%@% \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER_MARKUP
-%@% - \baca-start-mn-both "32" "33"                                            %! MEASURE_NUMBER_MARKUP
-%@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER_MARKUP
-%@% - \baca-start-ct-both "[1'03'']" "[1'06'']"                                %! CLOCK_TIME_MARKUP
-%@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME_MARKUP
+%@% \bacaStopTextSpanLMI                                                       %! LOCAL_MEASURE_INDEX
+%@% \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER
+%@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER
+%@% \bacaStopTextSpanCT                                                        %! CLOCK_TIME
+%@% - \baca-start-lmi-both "10" "11"                                           %! LOCAL_MEASURE_INDEX
+%@% \bacaStartTextSpanLMI                                                      %! LOCAL_MEASURE_INDEX
+%@% - \baca-start-lmn-both "11" "12"                                           %! LOCAL_MEASURE_NUMBER
+%@% \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER
+%@% - \baca-start-mn-both "32" "33"                                            %! MEASURE_NUMBER
+%@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER
+%@% - \baca-start-ct-both "[1'03'']" "[1'06'']"                                %! CLOCK_TIME
+%@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME
 
     % [B Global_Skips measure 33 / measure 12]                                 %! _comment_measure_numbers
     \time 4/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 1                                                                     %! _make_global_skips(1)
-%@% \bacaStopTextSpanLMI                                                       %! LOCAL_MEASURE_INDEX_MARKUP
-%@% \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER_MARKUP
-%@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER_MARKUP
+%@% \bacaStopTextSpanLMI                                                       %! LOCAL_MEASURE_INDEX
+%@% \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER
+%@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER
     \bacaStopTextSpanMM                                                        %! SEGMENT_FINAL_STOP_MM_SPANNER:_attach_metronome_marks(4)
-%@% \bacaStopTextSpanCT                                                        %! CLOCK_TIME_MARKUP
+%@% \bacaStopTextSpanCT                                                        %! CLOCK_TIME
 
 }                                                                              %! extern
 
@@ -307,23 +307,23 @@ B_RH_Voice_I = {                                                               %
             - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
             \f                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
             - \tenuto                                                          %! baca_tenuto:IndicatorCommand
-        %@% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
-        %@%     \fontsize                                                      %! FIGURE_NAME_MARKUP
-        %@%         #2                                                         %! FIGURE_NAME_MARKUP
-        %@%         \concat                                                    %! FIGURE_NAME_MARKUP
-        %@%             {                                                      %! FIGURE_NAME_MARKUP
-        %@%                 [                                                  %! FIGURE_NAME_MARKUP
-        %@%                 b.2.11                                             %! FIGURE_NAME_MARKUP
-        %@%                 \hspace                                            %! FIGURE_NAME_MARKUP
-        %@%                     #1                                             %! FIGURE_NAME_MARKUP
-        %@%                 \raise                                             %! FIGURE_NAME_MARKUP
-        %@%                     #0.25                                          %! FIGURE_NAME_MARKUP
-        %@%                     \fontsize                                      %! FIGURE_NAME_MARKUP
-        %@%                         #-2                                        %! FIGURE_NAME_MARKUP
-        %@%                         (10)                                       %! FIGURE_NAME_MARKUP
-        %@%                 ]                                                  %! FIGURE_NAME_MARKUP
-        %@%             }                                                      %! FIGURE_NAME_MARKUP
-        %@%     }                                                              %! FIGURE_NAME_MARKUP
+        %@% ^ \markup {                                                        %! FIGURE_NAME
+        %@%     \fontsize                                                      %! FIGURE_NAME
+        %@%         #2                                                         %! FIGURE_NAME
+        %@%         \concat                                                    %! FIGURE_NAME
+        %@%             {                                                      %! FIGURE_NAME
+        %@%                 [                                                  %! FIGURE_NAME
+        %@%                 b.2.11                                             %! FIGURE_NAME
+        %@%                 \hspace                                            %! FIGURE_NAME
+        %@%                     #1                                             %! FIGURE_NAME
+        %@%                 \raise                                             %! FIGURE_NAME
+        %@%                     #0.25                                          %! FIGURE_NAME
+        %@%                     \fontsize                                      %! FIGURE_NAME
+        %@%                         #-2                                        %! FIGURE_NAME
+        %@%                         (10)                                       %! FIGURE_NAME
+        %@%                 ]                                                  %! FIGURE_NAME
+        %@%             }                                                      %! FIGURE_NAME
+        %@%     }                                                              %! FIGURE_NAME
 
         }
 
@@ -336,23 +336,23 @@ B_RH_Voice_I = {                                                               %
             % [B RH_Voice_I measure 32 / measure 11]                           %! _comment_measure_numbers
             f''''1.
             - \tenuto                                                          %! baca_tenuto:IndicatorCommand
-        %@% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
-        %@%     \fontsize                                                      %! FIGURE_NAME_MARKUP
-        %@%         #2                                                         %! FIGURE_NAME_MARKUP
-        %@%         \concat                                                    %! FIGURE_NAME_MARKUP
-        %@%             {                                                      %! FIGURE_NAME_MARKUP
-        %@%                 [                                                  %! FIGURE_NAME_MARKUP
-        %@%                 b.2.12                                             %! FIGURE_NAME_MARKUP
-        %@%                 \hspace                                            %! FIGURE_NAME_MARKUP
-        %@%                     #1                                             %! FIGURE_NAME_MARKUP
-        %@%                 \raise                                             %! FIGURE_NAME_MARKUP
-        %@%                     #0.25                                          %! FIGURE_NAME_MARKUP
-        %@%                     \fontsize                                      %! FIGURE_NAME_MARKUP
-        %@%                         #-2                                        %! FIGURE_NAME_MARKUP
-        %@%                         (11)                                       %! FIGURE_NAME_MARKUP
-        %@%                 ]                                                  %! FIGURE_NAME_MARKUP
-        %@%             }                                                      %! FIGURE_NAME_MARKUP
-        %@%     }                                                              %! FIGURE_NAME_MARKUP
+        %@% ^ \markup {                                                        %! FIGURE_NAME
+        %@%     \fontsize                                                      %! FIGURE_NAME
+        %@%         #2                                                         %! FIGURE_NAME
+        %@%         \concat                                                    %! FIGURE_NAME
+        %@%             {                                                      %! FIGURE_NAME
+        %@%                 [                                                  %! FIGURE_NAME
+        %@%                 b.2.12                                             %! FIGURE_NAME
+        %@%                 \hspace                                            %! FIGURE_NAME
+        %@%                     #1                                             %! FIGURE_NAME
+        %@%                 \raise                                             %! FIGURE_NAME
+        %@%                     #0.25                                          %! FIGURE_NAME
+        %@%                     \fontsize                                      %! FIGURE_NAME
+        %@%                         #-2                                        %! FIGURE_NAME
+        %@%                         (11)                                       %! FIGURE_NAME
+        %@%                 ]                                                  %! FIGURE_NAME
+        %@%             }                                                      %! FIGURE_NAME
+        %@%     }                                                              %! FIGURE_NAME
 
         }
 
@@ -365,23 +365,23 @@ B_RH_Voice_I = {                                                               %
             % [B RH_Voice_I measure 33 / measure 12]                           %! _comment_measure_numbers
             bf''''!1
             - \tenuto                                                          %! baca_tenuto:IndicatorCommand
-        %@% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
-        %@%     \fontsize                                                      %! FIGURE_NAME_MARKUP
-        %@%         #2                                                         %! FIGURE_NAME_MARKUP
-        %@%         \concat                                                    %! FIGURE_NAME_MARKUP
-        %@%             {                                                      %! FIGURE_NAME_MARKUP
-        %@%                 [                                                  %! FIGURE_NAME_MARKUP
-        %@%                 b.2.13                                             %! FIGURE_NAME_MARKUP
-        %@%                 \hspace                                            %! FIGURE_NAME_MARKUP
-        %@%                     #1                                             %! FIGURE_NAME_MARKUP
-        %@%                 \raise                                             %! FIGURE_NAME_MARKUP
-        %@%                     #0.25                                          %! FIGURE_NAME_MARKUP
-        %@%                     \fontsize                                      %! FIGURE_NAME_MARKUP
-        %@%                         #-2                                        %! FIGURE_NAME_MARKUP
-        %@%                         (12)                                       %! FIGURE_NAME_MARKUP
-        %@%                 ]                                                  %! FIGURE_NAME_MARKUP
-        %@%             }                                                      %! FIGURE_NAME_MARKUP
-        %@%     }                                                              %! FIGURE_NAME_MARKUP
+        %@% ^ \markup {                                                        %! FIGURE_NAME
+        %@%     \fontsize                                                      %! FIGURE_NAME
+        %@%         #2                                                         %! FIGURE_NAME
+        %@%         \concat                                                    %! FIGURE_NAME
+        %@%             {                                                      %! FIGURE_NAME
+        %@%                 [                                                  %! FIGURE_NAME
+        %@%                 b.2.13                                             %! FIGURE_NAME
+        %@%                 \hspace                                            %! FIGURE_NAME
+        %@%                     #1                                             %! FIGURE_NAME
+        %@%                 \raise                                             %! FIGURE_NAME
+        %@%                     #0.25                                          %! FIGURE_NAME
+        %@%                     \fontsize                                      %! FIGURE_NAME
+        %@%                         #-2                                        %! FIGURE_NAME
+        %@%                         (12)                                       %! FIGURE_NAME
+        %@%                 ]                                                  %! FIGURE_NAME
+        %@%             }                                                      %! FIGURE_NAME
+        %@%     }                                                              %! FIGURE_NAME
             \ottava 0                                                          %! baca_ottava:SpannerIndicatorCommand(2)
 
         }
@@ -447,23 +447,23 @@ B_RH_Voice_II = {                                                              %
             % [B RH_Voice_II measure 23 / measure 2]                           %! _comment_measure_numbers
             \once \override Rest.transparent = ##t                             %! baca_rest_transparent:OverrideCommand(1)
             r4
-        %@% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
-        %@%     \fontsize                                                      %! FIGURE_NAME_MARKUP
-        %@%         #2                                                         %! FIGURE_NAME_MARKUP
-        %@%         \concat                                                    %! FIGURE_NAME_MARKUP
-        %@%             {                                                      %! FIGURE_NAME_MARKUP
-        %@%                 [                                                  %! FIGURE_NAME_MARKUP
-        %@%                 b.2.2                                              %! FIGURE_NAME_MARKUP
-        %@%                 \hspace                                            %! FIGURE_NAME_MARKUP
-        %@%                     #1                                             %! FIGURE_NAME_MARKUP
-        %@%                 \raise                                             %! FIGURE_NAME_MARKUP
-        %@%                     #0.25                                          %! FIGURE_NAME_MARKUP
-        %@%                     \fontsize                                      %! FIGURE_NAME_MARKUP
-        %@%                         #-2                                        %! FIGURE_NAME_MARKUP
-        %@%                         (1)                                        %! FIGURE_NAME_MARKUP
-        %@%                 ]                                                  %! FIGURE_NAME_MARKUP
-        %@%             }                                                      %! FIGURE_NAME_MARKUP
-        %@%     }                                                              %! FIGURE_NAME_MARKUP
+        %@% ^ \markup {                                                        %! FIGURE_NAME
+        %@%     \fontsize                                                      %! FIGURE_NAME
+        %@%         #2                                                         %! FIGURE_NAME
+        %@%         \concat                                                    %! FIGURE_NAME
+        %@%             {                                                      %! FIGURE_NAME
+        %@%                 [                                                  %! FIGURE_NAME
+        %@%                 b.2.2                                              %! FIGURE_NAME
+        %@%                 \hspace                                            %! FIGURE_NAME
+        %@%                     #1                                             %! FIGURE_NAME
+        %@%                 \raise                                             %! FIGURE_NAME
+        %@%                     #0.25                                          %! FIGURE_NAME
+        %@%                     \fontsize                                      %! FIGURE_NAME
+        %@%                         #-2                                        %! FIGURE_NAME
+        %@%                         (1)                                        %! FIGURE_NAME
+        %@%                 ]                                                  %! FIGURE_NAME
+        %@%             }                                                      %! FIGURE_NAME
+        %@%     }                                                              %! FIGURE_NAME
 
         }
 
@@ -483,23 +483,23 @@ B_RH_Voice_II = {                                                              %
             - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
             \ppp                                                               %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
             - \staccato                                                        %! baca_staccato:IndicatorCommand
-        %@% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
-        %@%     \fontsize                                                      %! FIGURE_NAME_MARKUP
-        %@%         #2                                                         %! FIGURE_NAME_MARKUP
-        %@%         \concat                                                    %! FIGURE_NAME_MARKUP
-        %@%             {                                                      %! FIGURE_NAME_MARKUP
-        %@%                 [                                                  %! FIGURE_NAME_MARKUP
-        %@%                 b.2.3                                              %! FIGURE_NAME_MARKUP
-        %@%                 \hspace                                            %! FIGURE_NAME_MARKUP
-        %@%                     #1                                             %! FIGURE_NAME_MARKUP
-        %@%                 \raise                                             %! FIGURE_NAME_MARKUP
-        %@%                     #0.25                                          %! FIGURE_NAME_MARKUP
-        %@%                     \fontsize                                      %! FIGURE_NAME_MARKUP
-        %@%                         #-2                                        %! FIGURE_NAME_MARKUP
-        %@%                         (2)                                        %! FIGURE_NAME_MARKUP
-        %@%                 ]                                                  %! FIGURE_NAME_MARKUP
-        %@%             }                                                      %! FIGURE_NAME_MARKUP
-        %@%     }                                                              %! FIGURE_NAME_MARKUP
+        %@% ^ \markup {                                                        %! FIGURE_NAME
+        %@%     \fontsize                                                      %! FIGURE_NAME
+        %@%         #2                                                         %! FIGURE_NAME
+        %@%         \concat                                                    %! FIGURE_NAME
+        %@%             {                                                      %! FIGURE_NAME
+        %@%                 [                                                  %! FIGURE_NAME
+        %@%                 b.2.3                                              %! FIGURE_NAME
+        %@%                 \hspace                                            %! FIGURE_NAME
+        %@%                     #1                                             %! FIGURE_NAME
+        %@%                 \raise                                             %! FIGURE_NAME
+        %@%                     #0.25                                          %! FIGURE_NAME
+        %@%                     \fontsize                                      %! FIGURE_NAME
+        %@%                         #-2                                        %! FIGURE_NAME
+        %@%                         (2)                                        %! FIGURE_NAME
+        %@%                 ]                                                  %! FIGURE_NAME
+        %@%             }                                                      %! FIGURE_NAME
+        %@%     }                                                              %! FIGURE_NAME
             [
             (                                                                  %! baca_slur:SpannerIndicatorCommand(1)
 
@@ -537,23 +537,23 @@ B_RH_Voice_II = {                                                              %
             % [B RH_Voice_II measure 25 / measure 4]                           %! _comment_measure_numbers
             \once \override Rest.transparent = ##t                             %! baca_rest_transparent:OverrideCommand(1)
             r4
-        %@% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
-        %@%     \fontsize                                                      %! FIGURE_NAME_MARKUP
-        %@%         #2                                                         %! FIGURE_NAME_MARKUP
-        %@%         \concat                                                    %! FIGURE_NAME_MARKUP
-        %@%             {                                                      %! FIGURE_NAME_MARKUP
-        %@%                 [                                                  %! FIGURE_NAME_MARKUP
-        %@%                 b.2.4                                              %! FIGURE_NAME_MARKUP
-        %@%                 \hspace                                            %! FIGURE_NAME_MARKUP
-        %@%                     #1                                             %! FIGURE_NAME_MARKUP
-        %@%                 \raise                                             %! FIGURE_NAME_MARKUP
-        %@%                     #0.25                                          %! FIGURE_NAME_MARKUP
-        %@%                     \fontsize                                      %! FIGURE_NAME_MARKUP
-        %@%                         #-2                                        %! FIGURE_NAME_MARKUP
-        %@%                         (3)                                        %! FIGURE_NAME_MARKUP
-        %@%                 ]                                                  %! FIGURE_NAME_MARKUP
-        %@%             }                                                      %! FIGURE_NAME_MARKUP
-        %@%     }                                                              %! FIGURE_NAME_MARKUP
+        %@% ^ \markup {                                                        %! FIGURE_NAME
+        %@%     \fontsize                                                      %! FIGURE_NAME
+        %@%         #2                                                         %! FIGURE_NAME
+        %@%         \concat                                                    %! FIGURE_NAME
+        %@%             {                                                      %! FIGURE_NAME
+        %@%                 [                                                  %! FIGURE_NAME
+        %@%                 b.2.4                                              %! FIGURE_NAME
+        %@%                 \hspace                                            %! FIGURE_NAME
+        %@%                     #1                                             %! FIGURE_NAME
+        %@%                 \raise                                             %! FIGURE_NAME
+        %@%                     #0.25                                          %! FIGURE_NAME
+        %@%                     \fontsize                                      %! FIGURE_NAME
+        %@%                         #-2                                        %! FIGURE_NAME
+        %@%                         (3)                                        %! FIGURE_NAME
+        %@%                 ]                                                  %! FIGURE_NAME
+        %@%             }                                                      %! FIGURE_NAME
+        %@%     }                                                              %! FIGURE_NAME
 
         }
 
@@ -575,23 +575,23 @@ B_RH_Voice_II = {                                                              %
             - \tweak color #(x11-color 'DeepPink1)                             %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
             \ppp                                                               %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
             - \staccato                                                        %! baca_staccato:IndicatorCommand
-        %@% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
-        %@%     \fontsize                                                      %! FIGURE_NAME_MARKUP
-        %@%         #2                                                         %! FIGURE_NAME_MARKUP
-        %@%         \concat                                                    %! FIGURE_NAME_MARKUP
-        %@%             {                                                      %! FIGURE_NAME_MARKUP
-        %@%                 [                                                  %! FIGURE_NAME_MARKUP
-        %@%                 b.2.6                                              %! FIGURE_NAME_MARKUP
-        %@%                 \hspace                                            %! FIGURE_NAME_MARKUP
-        %@%                     #1                                             %! FIGURE_NAME_MARKUP
-        %@%                 \raise                                             %! FIGURE_NAME_MARKUP
-        %@%                     #0.25                                          %! FIGURE_NAME_MARKUP
-        %@%                     \fontsize                                      %! FIGURE_NAME_MARKUP
-        %@%                         #-2                                        %! FIGURE_NAME_MARKUP
-        %@%                         (5)                                        %! FIGURE_NAME_MARKUP
-        %@%                 ]                                                  %! FIGURE_NAME_MARKUP
-        %@%             }                                                      %! FIGURE_NAME_MARKUP
-        %@%     }                                                              %! FIGURE_NAME_MARKUP
+        %@% ^ \markup {                                                        %! FIGURE_NAME
+        %@%     \fontsize                                                      %! FIGURE_NAME
+        %@%         #2                                                         %! FIGURE_NAME
+        %@%         \concat                                                    %! FIGURE_NAME
+        %@%             {                                                      %! FIGURE_NAME
+        %@%                 [                                                  %! FIGURE_NAME
+        %@%                 b.2.6                                              %! FIGURE_NAME
+        %@%                 \hspace                                            %! FIGURE_NAME
+        %@%                     #1                                             %! FIGURE_NAME
+        %@%                 \raise                                             %! FIGURE_NAME
+        %@%                     #0.25                                          %! FIGURE_NAME
+        %@%                     \fontsize                                      %! FIGURE_NAME
+        %@%                         #-2                                        %! FIGURE_NAME
+        %@%                         (5)                                        %! FIGURE_NAME
+        %@%                 ]                                                  %! FIGURE_NAME
+        %@%             }                                                      %! FIGURE_NAME
+        %@%     }                                                              %! FIGURE_NAME
             [
             (                                                                  %! baca_slur:SpannerIndicatorCommand(1)
 
@@ -660,23 +660,23 @@ B_RH_Voice_II = {                                                              %
             % [B RH_Voice_II measure 28 / measure 7]                           %! _comment_measure_numbers
             \once \override Rest.transparent = ##t                             %! baca_rest_transparent:OverrideCommand(1)
             r4
-        %@% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
-        %@%     \fontsize                                                      %! FIGURE_NAME_MARKUP
-        %@%         #2                                                         %! FIGURE_NAME_MARKUP
-        %@%         \concat                                                    %! FIGURE_NAME_MARKUP
-        %@%             {                                                      %! FIGURE_NAME_MARKUP
-        %@%                 [                                                  %! FIGURE_NAME_MARKUP
-        %@%                 b.2.7                                              %! FIGURE_NAME_MARKUP
-        %@%                 \hspace                                            %! FIGURE_NAME_MARKUP
-        %@%                     #1                                             %! FIGURE_NAME_MARKUP
-        %@%                 \raise                                             %! FIGURE_NAME_MARKUP
-        %@%                     #0.25                                          %! FIGURE_NAME_MARKUP
-        %@%                     \fontsize                                      %! FIGURE_NAME_MARKUP
-        %@%                         #-2                                        %! FIGURE_NAME_MARKUP
-        %@%                         (6)                                        %! FIGURE_NAME_MARKUP
-        %@%                 ]                                                  %! FIGURE_NAME_MARKUP
-        %@%             }                                                      %! FIGURE_NAME_MARKUP
-        %@%     }                                                              %! FIGURE_NAME_MARKUP
+        %@% ^ \markup {                                                        %! FIGURE_NAME
+        %@%     \fontsize                                                      %! FIGURE_NAME
+        %@%         #2                                                         %! FIGURE_NAME
+        %@%         \concat                                                    %! FIGURE_NAME
+        %@%             {                                                      %! FIGURE_NAME
+        %@%                 [                                                  %! FIGURE_NAME
+        %@%                 b.2.7                                              %! FIGURE_NAME
+        %@%                 \hspace                                            %! FIGURE_NAME
+        %@%                     #1                                             %! FIGURE_NAME
+        %@%                 \raise                                             %! FIGURE_NAME
+        %@%                     #0.25                                          %! FIGURE_NAME
+        %@%                     \fontsize                                      %! FIGURE_NAME
+        %@%                         #-2                                        %! FIGURE_NAME
+        %@%                         (6)                                        %! FIGURE_NAME
+        %@%                 ]                                                  %! FIGURE_NAME
+        %@%             }                                                      %! FIGURE_NAME
+        %@%     }                                                              %! FIGURE_NAME
 
         }
 
@@ -698,23 +698,23 @@ B_RH_Voice_II = {                                                              %
             - \tweak color #(x11-color 'DeepPink1)                             %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
             \ppp                                                               %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
             - \staccato                                                        %! baca_staccato:IndicatorCommand
-        %@% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
-        %@%     \fontsize                                                      %! FIGURE_NAME_MARKUP
-        %@%         #2                                                         %! FIGURE_NAME_MARKUP
-        %@%         \concat                                                    %! FIGURE_NAME_MARKUP
-        %@%             {                                                      %! FIGURE_NAME_MARKUP
-        %@%                 [                                                  %! FIGURE_NAME_MARKUP
-        %@%                 b.2.10                                             %! FIGURE_NAME_MARKUP
-        %@%                 \hspace                                            %! FIGURE_NAME_MARKUP
-        %@%                     #1                                             %! FIGURE_NAME_MARKUP
-        %@%                 \raise                                             %! FIGURE_NAME_MARKUP
-        %@%                     #0.25                                          %! FIGURE_NAME_MARKUP
-        %@%                     \fontsize                                      %! FIGURE_NAME_MARKUP
-        %@%                         #-2                                        %! FIGURE_NAME_MARKUP
-        %@%                         (9)                                        %! FIGURE_NAME_MARKUP
-        %@%                 ]                                                  %! FIGURE_NAME_MARKUP
-        %@%             }                                                      %! FIGURE_NAME_MARKUP
-        %@%     }                                                              %! FIGURE_NAME_MARKUP
+        %@% ^ \markup {                                                        %! FIGURE_NAME
+        %@%     \fontsize                                                      %! FIGURE_NAME
+        %@%         #2                                                         %! FIGURE_NAME
+        %@%         \concat                                                    %! FIGURE_NAME
+        %@%             {                                                      %! FIGURE_NAME
+        %@%                 [                                                  %! FIGURE_NAME
+        %@%                 b.2.10                                             %! FIGURE_NAME
+        %@%                 \hspace                                            %! FIGURE_NAME
+        %@%                     #1                                             %! FIGURE_NAME
+        %@%                 \raise                                             %! FIGURE_NAME
+        %@%                     #0.25                                          %! FIGURE_NAME
+        %@%                     \fontsize                                      %! FIGURE_NAME
+        %@%                         #-2                                        %! FIGURE_NAME
+        %@%                         (9)                                        %! FIGURE_NAME
+        %@%                 ]                                                  %! FIGURE_NAME
+        %@%             }                                                      %! FIGURE_NAME
+        %@%     }                                                              %! FIGURE_NAME
             [
             (                                                                  %! baca_slur:SpannerIndicatorCommand(1)
 
@@ -860,23 +860,23 @@ B_RH_Voice_II = {                                                              %
             b'16
             - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
             \f                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
-        %@% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
-        %@%     \fontsize                                                      %! FIGURE_NAME_MARKUP
-        %@%         #2                                                         %! FIGURE_NAME_MARKUP
-        %@%         \concat                                                    %! FIGURE_NAME_MARKUP
-        %@%             {                                                      %! FIGURE_NAME_MARKUP
-        %@%                 [                                                  %! FIGURE_NAME_MARKUP
-        %@%                 b.2.14                                             %! FIGURE_NAME_MARKUP
-        %@%                 \hspace                                            %! FIGURE_NAME_MARKUP
-        %@%                     #1                                             %! FIGURE_NAME_MARKUP
-        %@%                 \raise                                             %! FIGURE_NAME_MARKUP
-        %@%                     #0.25                                          %! FIGURE_NAME_MARKUP
-        %@%                     \fontsize                                      %! FIGURE_NAME_MARKUP
-        %@%                         #-2                                        %! FIGURE_NAME_MARKUP
-        %@%                         (13)                                       %! FIGURE_NAME_MARKUP
-        %@%                 ]                                                  %! FIGURE_NAME_MARKUP
-        %@%             }                                                      %! FIGURE_NAME_MARKUP
-        %@%     }                                                              %! FIGURE_NAME_MARKUP
+        %@% ^ \markup {                                                        %! FIGURE_NAME
+        %@%     \fontsize                                                      %! FIGURE_NAME
+        %@%         #2                                                         %! FIGURE_NAME
+        %@%         \concat                                                    %! FIGURE_NAME
+        %@%             {                                                      %! FIGURE_NAME
+        %@%                 [                                                  %! FIGURE_NAME
+        %@%                 b.2.14                                             %! FIGURE_NAME
+        %@%                 \hspace                                            %! FIGURE_NAME
+        %@%                     #1                                             %! FIGURE_NAME
+        %@%                 \raise                                             %! FIGURE_NAME
+        %@%                     #0.25                                          %! FIGURE_NAME
+        %@%                     \fontsize                                      %! FIGURE_NAME
+        %@%                         #-2                                        %! FIGURE_NAME
+        %@%                         (13)                                       %! FIGURE_NAME
+        %@%                 ]                                                  %! FIGURE_NAME
+        %@%             }                                                      %! FIGURE_NAME
+        %@%     }                                                              %! FIGURE_NAME
             - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
             \<                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
             [
@@ -1039,23 +1039,23 @@ B_RH_Voice_III = {                                                             %
             ef!8
             - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
             \ff                                                                %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-        %@% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
-        %@%     \fontsize                                                      %! FIGURE_NAME_MARKUP
-        %@%         #2                                                         %! FIGURE_NAME_MARKUP
-        %@%         \concat                                                    %! FIGURE_NAME_MARKUP
-        %@%             {                                                      %! FIGURE_NAME_MARKUP
-        %@%                 [                                                  %! FIGURE_NAME_MARKUP
-        %@%                 b.2.8                                              %! FIGURE_NAME_MARKUP
-        %@%                 \hspace                                            %! FIGURE_NAME_MARKUP
-        %@%                     #1                                             %! FIGURE_NAME_MARKUP
-        %@%                 \raise                                             %! FIGURE_NAME_MARKUP
-        %@%                     #0.25                                          %! FIGURE_NAME_MARKUP
-        %@%                     \fontsize                                      %! FIGURE_NAME_MARKUP
-        %@%                         #-2                                        %! FIGURE_NAME_MARKUP
-        %@%                         (7)                                        %! FIGURE_NAME_MARKUP
-        %@%                 ]                                                  %! FIGURE_NAME_MARKUP
-        %@%             }                                                      %! FIGURE_NAME_MARKUP
-        %@%     }                                                              %! FIGURE_NAME_MARKUP
+        %@% ^ \markup {                                                        %! FIGURE_NAME
+        %@%     \fontsize                                                      %! FIGURE_NAME
+        %@%         #2                                                         %! FIGURE_NAME
+        %@%         \concat                                                    %! FIGURE_NAME
+        %@%             {                                                      %! FIGURE_NAME
+        %@%                 [                                                  %! FIGURE_NAME
+        %@%                 b.2.8                                              %! FIGURE_NAME
+        %@%                 \hspace                                            %! FIGURE_NAME
+        %@%                     #1                                             %! FIGURE_NAME
+        %@%                 \raise                                             %! FIGURE_NAME
+        %@%                     #0.25                                          %! FIGURE_NAME
+        %@%                     \fontsize                                      %! FIGURE_NAME
+        %@%                         #-2                                        %! FIGURE_NAME
+        %@%                         (7)                                        %! FIGURE_NAME
+        %@%                 ]                                                  %! FIGURE_NAME
+        %@%             }                                                      %! FIGURE_NAME
+        %@%     }                                                              %! FIGURE_NAME
 
             r4
 
@@ -1161,23 +1161,23 @@ B_RH_Voice_IV = {                                                              %
             d''16
             - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
             \ff                                                                %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-        %@% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
-        %@%     \fontsize                                                      %! FIGURE_NAME_MARKUP
-        %@%         #2                                                         %! FIGURE_NAME_MARKUP
-        %@%         \concat                                                    %! FIGURE_NAME_MARKUP
-        %@%             {                                                      %! FIGURE_NAME_MARKUP
-        %@%                 [                                                  %! FIGURE_NAME_MARKUP
-        %@%                 b.2.1                                              %! FIGURE_NAME_MARKUP
-        %@%                 \hspace                                            %! FIGURE_NAME_MARKUP
-        %@%                     #1                                             %! FIGURE_NAME_MARKUP
-        %@%                 \raise                                             %! FIGURE_NAME_MARKUP
-        %@%                     #0.25                                          %! FIGURE_NAME_MARKUP
-        %@%                     \fontsize                                      %! FIGURE_NAME_MARKUP
-        %@%                         #-2                                        %! FIGURE_NAME_MARKUP
-        %@%                         (0)                                        %! FIGURE_NAME_MARKUP
-        %@%                 ]                                                  %! FIGURE_NAME_MARKUP
-        %@%             }                                                      %! FIGURE_NAME_MARKUP
-        %@%     }                                                              %! FIGURE_NAME_MARKUP
+        %@% ^ \markup {                                                        %! FIGURE_NAME
+        %@%     \fontsize                                                      %! FIGURE_NAME
+        %@%         #2                                                         %! FIGURE_NAME
+        %@%         \concat                                                    %! FIGURE_NAME
+        %@%             {                                                      %! FIGURE_NAME
+        %@%                 [                                                  %! FIGURE_NAME
+        %@%                 b.2.1                                              %! FIGURE_NAME
+        %@%                 \hspace                                            %! FIGURE_NAME
+        %@%                     #1                                             %! FIGURE_NAME
+        %@%                 \raise                                             %! FIGURE_NAME
+        %@%                     #0.25                                          %! FIGURE_NAME
+        %@%                     \fontsize                                      %! FIGURE_NAME
+        %@%                         #-2                                        %! FIGURE_NAME
+        %@%                         (0)                                        %! FIGURE_NAME
+        %@%                 ]                                                  %! FIGURE_NAME
+        %@%             }                                                      %! FIGURE_NAME
+        %@%     }                                                              %! FIGURE_NAME
             [
 
             \set stemLeftBeamCount = 2
@@ -1223,23 +1223,23 @@ B_RH_Voice_IV = {                                                              %
             d''16
             - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
             \p                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-        %@% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
-        %@%     \fontsize                                                      %! FIGURE_NAME_MARKUP
-        %@%         #2                                                         %! FIGURE_NAME_MARKUP
-        %@%         \concat                                                    %! FIGURE_NAME_MARKUP
-        %@%             {                                                      %! FIGURE_NAME_MARKUP
-        %@%                 [                                                  %! FIGURE_NAME_MARKUP
-        %@%                 b.2.5                                              %! FIGURE_NAME_MARKUP
-        %@%                 \hspace                                            %! FIGURE_NAME_MARKUP
-        %@%                     #1                                             %! FIGURE_NAME_MARKUP
-        %@%                 \raise                                             %! FIGURE_NAME_MARKUP
-        %@%                     #0.25                                          %! FIGURE_NAME_MARKUP
-        %@%                     \fontsize                                      %! FIGURE_NAME_MARKUP
-        %@%                         #-2                                        %! FIGURE_NAME_MARKUP
-        %@%                         (4)                                        %! FIGURE_NAME_MARKUP
-        %@%                 ]                                                  %! FIGURE_NAME_MARKUP
-        %@%             }                                                      %! FIGURE_NAME_MARKUP
-        %@%     }                                                              %! FIGURE_NAME_MARKUP
+        %@% ^ \markup {                                                        %! FIGURE_NAME
+        %@%     \fontsize                                                      %! FIGURE_NAME
+        %@%         #2                                                         %! FIGURE_NAME
+        %@%         \concat                                                    %! FIGURE_NAME
+        %@%             {                                                      %! FIGURE_NAME
+        %@%                 [                                                  %! FIGURE_NAME
+        %@%                 b.2.5                                              %! FIGURE_NAME
+        %@%                 \hspace                                            %! FIGURE_NAME
+        %@%                     #1                                             %! FIGURE_NAME
+        %@%                 \raise                                             %! FIGURE_NAME
+        %@%                     #0.25                                          %! FIGURE_NAME
+        %@%                     \fontsize                                      %! FIGURE_NAME
+        %@%                         #-2                                        %! FIGURE_NAME
+        %@%                         (4)                                        %! FIGURE_NAME
+        %@%                 ]                                                  %! FIGURE_NAME
+        %@%             }                                                      %! FIGURE_NAME
+        %@%     }                                                              %! FIGURE_NAME
             [
 
             \set stemLeftBeamCount = 2
@@ -1799,23 +1799,23 @@ B_LH_Voice_V = {                                                               %
             \override Rest.direction = #up                                     %! baca_rest_up:OverrideCommand(1)
             \dynamicDown                                                       %! baca_dynamic_down:IndicatorCommand
             r2.
-        %@% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
-        %@%     \fontsize                                                      %! FIGURE_NAME_MARKUP
-        %@%         #2                                                         %! FIGURE_NAME_MARKUP
-        %@%         \concat                                                    %! FIGURE_NAME_MARKUP
-        %@%             {                                                      %! FIGURE_NAME_MARKUP
-        %@%                 [                                                  %! FIGURE_NAME_MARKUP
-        %@%                 b.2.9                                              %! FIGURE_NAME_MARKUP
-        %@%                 \hspace                                            %! FIGURE_NAME_MARKUP
-        %@%                     #1                                             %! FIGURE_NAME_MARKUP
-        %@%                 \raise                                             %! FIGURE_NAME_MARKUP
-        %@%                     #0.25                                          %! FIGURE_NAME_MARKUP
-        %@%                     \fontsize                                      %! FIGURE_NAME_MARKUP
-        %@%                         #-2                                        %! FIGURE_NAME_MARKUP
-        %@%                         (8)                                        %! FIGURE_NAME_MARKUP
-        %@%                 ]                                                  %! FIGURE_NAME_MARKUP
-        %@%             }                                                      %! FIGURE_NAME_MARKUP
-        %@%     }                                                              %! FIGURE_NAME_MARKUP
+        %@% ^ \markup {                                                        %! FIGURE_NAME
+        %@%     \fontsize                                                      %! FIGURE_NAME
+        %@%         #2                                                         %! FIGURE_NAME
+        %@%         \concat                                                    %! FIGURE_NAME
+        %@%             {                                                      %! FIGURE_NAME
+        %@%                 [                                                  %! FIGURE_NAME
+        %@%                 b.2.9                                              %! FIGURE_NAME
+        %@%                 \hspace                                            %! FIGURE_NAME
+        %@%                     #1                                             %! FIGURE_NAME
+        %@%                 \raise                                             %! FIGURE_NAME
+        %@%                     #0.25                                          %! FIGURE_NAME
+        %@%                     \fontsize                                      %! FIGURE_NAME
+        %@%                         #-2                                        %! FIGURE_NAME
+        %@%                         (8)                                        %! FIGURE_NAME
+        %@%                 ]                                                  %! FIGURE_NAME
+        %@%             }                                                      %! FIGURE_NAME
+        %@%     }                                                              %! FIGURE_NAME
 
             af!8.
             - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
@@ -2014,23 +2014,23 @@ B_LH_Resonance_Voice = {                                                       %
             \override Flag.stencil = ##f                                       %! baca_flag_stencil_false:OverrideCommand(1)
             \override Stem.stencil = ##f                                       %! baca_stem_stencil_false:OverrideCommand(1)
             <e, fs,! gs,! as,! b,>2
-        %@% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
-        %@%     \fontsize                                                      %! FIGURE_NAME_MARKUP
-        %@%         #2                                                         %! FIGURE_NAME_MARKUP
-        %@%         \concat                                                    %! FIGURE_NAME_MARKUP
-        %@%             {                                                      %! FIGURE_NAME_MARKUP
-        %@%                 [                                                  %! FIGURE_NAME_MARKUP
-        %@%                 b.2.r.1                                            %! FIGURE_NAME_MARKUP
-        %@%                 \hspace                                            %! FIGURE_NAME_MARKUP
-        %@%                     #1                                             %! FIGURE_NAME_MARKUP
-        %@%                 \raise                                             %! FIGURE_NAME_MARKUP
-        %@%                     #0.25                                          %! FIGURE_NAME_MARKUP
-        %@%                     \fontsize                                      %! FIGURE_NAME_MARKUP
-        %@%                         #-2                                        %! FIGURE_NAME_MARKUP
-        %@%                         (14)                                       %! FIGURE_NAME_MARKUP
-        %@%                 ]                                                  %! FIGURE_NAME_MARKUP
-        %@%             }                                                      %! FIGURE_NAME_MARKUP
-        %@%     }                                                              %! FIGURE_NAME_MARKUP
+        %@% ^ \markup {                                                        %! FIGURE_NAME
+        %@%     \fontsize                                                      %! FIGURE_NAME
+        %@%         #2                                                         %! FIGURE_NAME
+        %@%         \concat                                                    %! FIGURE_NAME
+        %@%             {                                                      %! FIGURE_NAME
+        %@%                 [                                                  %! FIGURE_NAME
+        %@%                 b.2.r.1                                            %! FIGURE_NAME
+        %@%                 \hspace                                            %! FIGURE_NAME
+        %@%                     #1                                             %! FIGURE_NAME
+        %@%                 \raise                                             %! FIGURE_NAME
+        %@%                     #0.25                                          %! FIGURE_NAME
+        %@%                     \fontsize                                      %! FIGURE_NAME
+        %@%                         #-2                                        %! FIGURE_NAME
+        %@%                         (14)                                       %! FIGURE_NAME
+        %@%                 ]                                                  %! FIGURE_NAME
+        %@%             }                                                      %! FIGURE_NAME
+        %@%     }                                                              %! FIGURE_NAME
 
         }
 
@@ -2050,23 +2050,23 @@ B_LH_Resonance_Voice = {                                                       %
             \once \override RepeatTie.transparent = ##t                        %! baca_repeat_tie_transparent:OverrideCommand(1)
             \once \override Stem.transparent = ##t                             %! baca_stem_transparent:OverrideCommand(1)
             <e, fs,! gs,! as,! b,>4
-        %@% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
-        %@%     \fontsize                                                      %! FIGURE_NAME_MARKUP
-        %@%         #2                                                         %! FIGURE_NAME_MARKUP
-        %@%         \concat                                                    %! FIGURE_NAME_MARKUP
-        %@%             {                                                      %! FIGURE_NAME_MARKUP
-        %@%                 [                                                  %! FIGURE_NAME_MARKUP
-        %@%                 b.2.r.2                                            %! FIGURE_NAME_MARKUP
-        %@%                 \hspace                                            %! FIGURE_NAME_MARKUP
-        %@%                     #1                                             %! FIGURE_NAME_MARKUP
-        %@%                 \raise                                             %! FIGURE_NAME_MARKUP
-        %@%                     #0.25                                          %! FIGURE_NAME_MARKUP
-        %@%                     \fontsize                                      %! FIGURE_NAME_MARKUP
-        %@%                         #-2                                        %! FIGURE_NAME_MARKUP
-        %@%                         (15)                                       %! FIGURE_NAME_MARKUP
-        %@%                 ]                                                  %! FIGURE_NAME_MARKUP
-        %@%             }                                                      %! FIGURE_NAME_MARKUP
-        %@%     }                                                              %! FIGURE_NAME_MARKUP
+        %@% ^ \markup {                                                        %! FIGURE_NAME
+        %@%     \fontsize                                                      %! FIGURE_NAME
+        %@%         #2                                                         %! FIGURE_NAME
+        %@%         \concat                                                    %! FIGURE_NAME
+        %@%             {                                                      %! FIGURE_NAME
+        %@%                 [                                                  %! FIGURE_NAME
+        %@%                 b.2.r.2                                            %! FIGURE_NAME
+        %@%                 \hspace                                            %! FIGURE_NAME
+        %@%                     #1                                             %! FIGURE_NAME
+        %@%                 \raise                                             %! FIGURE_NAME
+        %@%                     #0.25                                          %! FIGURE_NAME
+        %@%                     \fontsize                                      %! FIGURE_NAME
+        %@%                         #-2                                        %! FIGURE_NAME
+        %@%                         (15)                                       %! FIGURE_NAME
+        %@%                 ]                                                  %! FIGURE_NAME
+        %@%             }                                                      %! FIGURE_NAME
+        %@%     }                                                              %! FIGURE_NAME
             \repeatTie                                                         %! baca_repeat_tie
 
         }
@@ -2079,23 +2079,23 @@ B_LH_Resonance_Voice = {                                                       %
 
             % [B LH_Resonance_Voice measure 24 / measure 3]                    %! _comment_measure_numbers
             <e, fs,! gs,! as,! b,>4
-        %@% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
-        %@%     \fontsize                                                      %! FIGURE_NAME_MARKUP
-        %@%         #2                                                         %! FIGURE_NAME_MARKUP
-        %@%         \concat                                                    %! FIGURE_NAME_MARKUP
-        %@%             {                                                      %! FIGURE_NAME_MARKUP
-        %@%                 [                                                  %! FIGURE_NAME_MARKUP
-        %@%                 b.2.r.3                                            %! FIGURE_NAME_MARKUP
-        %@%                 \hspace                                            %! FIGURE_NAME_MARKUP
-        %@%                     #1                                             %! FIGURE_NAME_MARKUP
-        %@%                 \raise                                             %! FIGURE_NAME_MARKUP
-        %@%                     #0.25                                          %! FIGURE_NAME_MARKUP
-        %@%                     \fontsize                                      %! FIGURE_NAME_MARKUP
-        %@%                         #-2                                        %! FIGURE_NAME_MARKUP
-        %@%                         (16)                                       %! FIGURE_NAME_MARKUP
-        %@%                 ]                                                  %! FIGURE_NAME_MARKUP
-        %@%             }                                                      %! FIGURE_NAME_MARKUP
-        %@%     }                                                              %! FIGURE_NAME_MARKUP
+        %@% ^ \markup {                                                        %! FIGURE_NAME
+        %@%     \fontsize                                                      %! FIGURE_NAME
+        %@%         #2                                                         %! FIGURE_NAME
+        %@%         \concat                                                    %! FIGURE_NAME
+        %@%             {                                                      %! FIGURE_NAME
+        %@%                 [                                                  %! FIGURE_NAME
+        %@%                 b.2.r.3                                            %! FIGURE_NAME
+        %@%                 \hspace                                            %! FIGURE_NAME
+        %@%                     #1                                             %! FIGURE_NAME
+        %@%                 \raise                                             %! FIGURE_NAME
+        %@%                     #0.25                                          %! FIGURE_NAME
+        %@%                     \fontsize                                      %! FIGURE_NAME
+        %@%                         #-2                                        %! FIGURE_NAME
+        %@%                         (16)                                       %! FIGURE_NAME
+        %@%                 ]                                                  %! FIGURE_NAME
+        %@%             }                                                      %! FIGURE_NAME
+        %@%     }                                                              %! FIGURE_NAME
             \repeatTie                                                         %! baca_repeat_tie
 
             \set stemLeftBeamCount = 2
@@ -2127,23 +2127,23 @@ B_LH_Resonance_Voice = {                                                       %
             \once \override RepeatTie.transparent = ##t                        %! baca_repeat_tie_transparent:OverrideCommand(1)
             \once \override Stem.transparent = ##t                             %! baca_stem_transparent:OverrideCommand(1)
             <e, fs,! gs,! as,! b,>4
-        %@% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
-        %@%     \fontsize                                                      %! FIGURE_NAME_MARKUP
-        %@%         #2                                                         %! FIGURE_NAME_MARKUP
-        %@%         \concat                                                    %! FIGURE_NAME_MARKUP
-        %@%             {                                                      %! FIGURE_NAME_MARKUP
-        %@%                 [                                                  %! FIGURE_NAME_MARKUP
-        %@%                 b.2.r.4                                            %! FIGURE_NAME_MARKUP
-        %@%                 \hspace                                            %! FIGURE_NAME_MARKUP
-        %@%                     #1                                             %! FIGURE_NAME_MARKUP
-        %@%                 \raise                                             %! FIGURE_NAME_MARKUP
-        %@%                     #0.25                                          %! FIGURE_NAME_MARKUP
-        %@%                     \fontsize                                      %! FIGURE_NAME_MARKUP
-        %@%                         #-2                                        %! FIGURE_NAME_MARKUP
-        %@%                         (17)                                       %! FIGURE_NAME_MARKUP
-        %@%                 ]                                                  %! FIGURE_NAME_MARKUP
-        %@%             }                                                      %! FIGURE_NAME_MARKUP
-        %@%     }                                                              %! FIGURE_NAME_MARKUP
+        %@% ^ \markup {                                                        %! FIGURE_NAME
+        %@%     \fontsize                                                      %! FIGURE_NAME
+        %@%         #2                                                         %! FIGURE_NAME
+        %@%         \concat                                                    %! FIGURE_NAME
+        %@%             {                                                      %! FIGURE_NAME
+        %@%                 [                                                  %! FIGURE_NAME
+        %@%                 b.2.r.4                                            %! FIGURE_NAME
+        %@%                 \hspace                                            %! FIGURE_NAME
+        %@%                     #1                                             %! FIGURE_NAME
+        %@%                 \raise                                             %! FIGURE_NAME
+        %@%                     #0.25                                          %! FIGURE_NAME
+        %@%                     \fontsize                                      %! FIGURE_NAME
+        %@%                         #-2                                        %! FIGURE_NAME
+        %@%                         (17)                                       %! FIGURE_NAME
+        %@%                 ]                                                  %! FIGURE_NAME
+        %@%             }                                                      %! FIGURE_NAME
+        %@%     }                                                              %! FIGURE_NAME
             \repeatTie                                                         %! baca_repeat_tie
 
         }
@@ -2156,23 +2156,23 @@ B_LH_Resonance_Voice = {                                                       %
 
             % [B LH_Resonance_Voice measure 26 / measure 5]                    %! _comment_measure_numbers
             <e, fs,! gs,! as,! b,>2
-        %@% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
-        %@%     \fontsize                                                      %! FIGURE_NAME_MARKUP
-        %@%         #2                                                         %! FIGURE_NAME_MARKUP
-        %@%         \concat                                                    %! FIGURE_NAME_MARKUP
-        %@%             {                                                      %! FIGURE_NAME_MARKUP
-        %@%                 [                                                  %! FIGURE_NAME_MARKUP
-        %@%                 b.2.r.5                                            %! FIGURE_NAME_MARKUP
-        %@%                 \hspace                                            %! FIGURE_NAME_MARKUP
-        %@%                     #1                                             %! FIGURE_NAME_MARKUP
-        %@%                 \raise                                             %! FIGURE_NAME_MARKUP
-        %@%                     #0.25                                          %! FIGURE_NAME_MARKUP
-        %@%                     \fontsize                                      %! FIGURE_NAME_MARKUP
-        %@%                         #-2                                        %! FIGURE_NAME_MARKUP
-        %@%                         (18)                                       %! FIGURE_NAME_MARKUP
-        %@%                 ]                                                  %! FIGURE_NAME_MARKUP
-        %@%             }                                                      %! FIGURE_NAME_MARKUP
-        %@%     }                                                              %! FIGURE_NAME_MARKUP
+        %@% ^ \markup {                                                        %! FIGURE_NAME
+        %@%     \fontsize                                                      %! FIGURE_NAME
+        %@%         #2                                                         %! FIGURE_NAME
+        %@%         \concat                                                    %! FIGURE_NAME
+        %@%             {                                                      %! FIGURE_NAME
+        %@%                 [                                                  %! FIGURE_NAME
+        %@%                 b.2.r.5                                            %! FIGURE_NAME
+        %@%                 \hspace                                            %! FIGURE_NAME
+        %@%                     #1                                             %! FIGURE_NAME
+        %@%                 \raise                                             %! FIGURE_NAME
+        %@%                     #0.25                                          %! FIGURE_NAME
+        %@%                     \fontsize                                      %! FIGURE_NAME
+        %@%                         #-2                                        %! FIGURE_NAME
+        %@%                         (18)                                       %! FIGURE_NAME
+        %@%                 ]                                                  %! FIGURE_NAME
+        %@%             }                                                      %! FIGURE_NAME
+        %@%     }                                                              %! FIGURE_NAME
             \repeatTie                                                         %! baca_repeat_tie
 
         }
@@ -2185,23 +2185,23 @@ B_LH_Resonance_Voice = {                                                       %
 
             % [B LH_Resonance_Voice measure 27 / measure 6]                    %! _comment_measure_numbers
             <e, fs,! gs,! as,! b,>2
-        %@% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
-        %@%     \fontsize                                                      %! FIGURE_NAME_MARKUP
-        %@%         #2                                                         %! FIGURE_NAME_MARKUP
-        %@%         \concat                                                    %! FIGURE_NAME_MARKUP
-        %@%             {                                                      %! FIGURE_NAME_MARKUP
-        %@%                 [                                                  %! FIGURE_NAME_MARKUP
-        %@%                 b.2.r.6                                            %! FIGURE_NAME_MARKUP
-        %@%                 \hspace                                            %! FIGURE_NAME_MARKUP
-        %@%                     #1                                             %! FIGURE_NAME_MARKUP
-        %@%                 \raise                                             %! FIGURE_NAME_MARKUP
-        %@%                     #0.25                                          %! FIGURE_NAME_MARKUP
-        %@%                     \fontsize                                      %! FIGURE_NAME_MARKUP
-        %@%                         #-2                                        %! FIGURE_NAME_MARKUP
-        %@%                         (19)                                       %! FIGURE_NAME_MARKUP
-        %@%                 ]                                                  %! FIGURE_NAME_MARKUP
-        %@%             }                                                      %! FIGURE_NAME_MARKUP
-        %@%     }                                                              %! FIGURE_NAME_MARKUP
+        %@% ^ \markup {                                                        %! FIGURE_NAME
+        %@%     \fontsize                                                      %! FIGURE_NAME
+        %@%         #2                                                         %! FIGURE_NAME
+        %@%         \concat                                                    %! FIGURE_NAME
+        %@%             {                                                      %! FIGURE_NAME
+        %@%                 [                                                  %! FIGURE_NAME
+        %@%                 b.2.r.6                                            %! FIGURE_NAME
+        %@%                 \hspace                                            %! FIGURE_NAME
+        %@%                     #1                                             %! FIGURE_NAME
+        %@%                 \raise                                             %! FIGURE_NAME
+        %@%                     #0.25                                          %! FIGURE_NAME
+        %@%                     \fontsize                                      %! FIGURE_NAME
+        %@%                         #-2                                        %! FIGURE_NAME
+        %@%                         (19)                                       %! FIGURE_NAME
+        %@%                 ]                                                  %! FIGURE_NAME
+        %@%             }                                                      %! FIGURE_NAME
+        %@%     }                                                              %! FIGURE_NAME
             \repeatTie                                                         %! baca_repeat_tie
 
             \set stemLeftBeamCount = 1
@@ -2231,23 +2231,23 @@ B_LH_Resonance_Voice = {                                                       %
             % [B LH_Resonance_Voice measure 30 / measure 9]                    %! _comment_measure_numbers
             \once \override Accidental.X-extent = ##f                          %! baca_accidental_x_extent_false:OverrideCommand(1)
             <e, fs,! gs,! as,! b,>1
-        %@% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
-        %@%     \fontsize                                                      %! FIGURE_NAME_MARKUP
-        %@%         #2                                                         %! FIGURE_NAME_MARKUP
-        %@%         \concat                                                    %! FIGURE_NAME_MARKUP
-        %@%             {                                                      %! FIGURE_NAME_MARKUP
-        %@%                 [                                                  %! FIGURE_NAME_MARKUP
-        %@%                 b.2.r.7                                            %! FIGURE_NAME_MARKUP
-        %@%                 \hspace                                            %! FIGURE_NAME_MARKUP
-        %@%                     #1                                             %! FIGURE_NAME_MARKUP
-        %@%                 \raise                                             %! FIGURE_NAME_MARKUP
-        %@%                     #0.25                                          %! FIGURE_NAME_MARKUP
-        %@%                     \fontsize                                      %! FIGURE_NAME_MARKUP
-        %@%                         #-2                                        %! FIGURE_NAME_MARKUP
-        %@%                         (20)                                       %! FIGURE_NAME_MARKUP
-        %@%                 ]                                                  %! FIGURE_NAME_MARKUP
-        %@%             }                                                      %! FIGURE_NAME_MARKUP
-        %@%     }                                                              %! FIGURE_NAME_MARKUP
+        %@% ^ \markup {                                                        %! FIGURE_NAME
+        %@%     \fontsize                                                      %! FIGURE_NAME
+        %@%         #2                                                         %! FIGURE_NAME
+        %@%         \concat                                                    %! FIGURE_NAME
+        %@%             {                                                      %! FIGURE_NAME
+        %@%                 [                                                  %! FIGURE_NAME
+        %@%                 b.2.r.7                                            %! FIGURE_NAME
+        %@%                 \hspace                                            %! FIGURE_NAME
+        %@%                     #1                                             %! FIGURE_NAME
+        %@%                 \raise                                             %! FIGURE_NAME
+        %@%                     #0.25                                          %! FIGURE_NAME
+        %@%                     \fontsize                                      %! FIGURE_NAME
+        %@%                         #-2                                        %! FIGURE_NAME
+        %@%                         (20)                                       %! FIGURE_NAME
+        %@%                 ]                                                  %! FIGURE_NAME
+        %@%             }                                                      %! FIGURE_NAME
+        %@%     }                                                              %! FIGURE_NAME
 
             \override NoteHead.no-ledgers = ##t                                %! baca_no_ledgers:OverrideCommand(1)
             \override Accidental.transparent = ##t                             %! baca_accidental_transparent:OverrideCommand(1)
@@ -2282,23 +2282,23 @@ B_LH_Resonance_Voice = {                                                       %
             % [B LH_Resonance_Voice measure 31 / measure 10]                   %! _comment_measure_numbers
             \override Accidental.stencil = ##f                                 %! baca_accidental_stencil_false:OverrideCommand(1)
             <e, fs,! gs,! as,! b,>1..
-        %@% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
-        %@%     \fontsize                                                      %! FIGURE_NAME_MARKUP
-        %@%         #2                                                         %! FIGURE_NAME_MARKUP
-        %@%         \concat                                                    %! FIGURE_NAME_MARKUP
-        %@%             {                                                      %! FIGURE_NAME_MARKUP
-        %@%                 [                                                  %! FIGURE_NAME_MARKUP
-        %@%                 b.2.r.8                                            %! FIGURE_NAME_MARKUP
-        %@%                 \hspace                                            %! FIGURE_NAME_MARKUP
-        %@%                     #1                                             %! FIGURE_NAME_MARKUP
-        %@%                 \raise                                             %! FIGURE_NAME_MARKUP
-        %@%                     #0.25                                          %! FIGURE_NAME_MARKUP
-        %@%                     \fontsize                                      %! FIGURE_NAME_MARKUP
-        %@%                         #-2                                        %! FIGURE_NAME_MARKUP
-        %@%                         (21)                                       %! FIGURE_NAME_MARKUP
-        %@%                 ]                                                  %! FIGURE_NAME_MARKUP
-        %@%             }                                                      %! FIGURE_NAME_MARKUP
-        %@%     }                                                              %! FIGURE_NAME_MARKUP
+        %@% ^ \markup {                                                        %! FIGURE_NAME
+        %@%     \fontsize                                                      %! FIGURE_NAME
+        %@%         #2                                                         %! FIGURE_NAME
+        %@%         \concat                                                    %! FIGURE_NAME
+        %@%             {                                                      %! FIGURE_NAME
+        %@%                 [                                                  %! FIGURE_NAME
+        %@%                 b.2.r.8                                            %! FIGURE_NAME
+        %@%                 \hspace                                            %! FIGURE_NAME
+        %@%                     #1                                             %! FIGURE_NAME
+        %@%                 \raise                                             %! FIGURE_NAME
+        %@%                     #0.25                                          %! FIGURE_NAME
+        %@%                     \fontsize                                      %! FIGURE_NAME
+        %@%                         #-2                                        %! FIGURE_NAME
+        %@%                         (21)                                       %! FIGURE_NAME
+        %@%                 ]                                                  %! FIGURE_NAME
+        %@%             }                                                      %! FIGURE_NAME
+        %@%     }                                                              %! FIGURE_NAME
             \repeatTie                                                         %! baca_repeat_tie
 
         }
@@ -2311,23 +2311,23 @@ B_LH_Resonance_Voice = {                                                       %
 
             % [B LH_Resonance_Voice measure 32 / measure 11]                   %! _comment_measure_numbers
             <e, fs,! gs,! as,! b,>1.
-        %@% ^ \markup {                                                        %! FIGURE_NAME_MARKUP
-        %@%     \fontsize                                                      %! FIGURE_NAME_MARKUP
-        %@%         #2                                                         %! FIGURE_NAME_MARKUP
-        %@%         \concat                                                    %! FIGURE_NAME_MARKUP
-        %@%             {                                                      %! FIGURE_NAME_MARKUP
-        %@%                 [                                                  %! FIGURE_NAME_MARKUP
-        %@%                 b.2.r.9                                            %! FIGURE_NAME_MARKUP
-        %@%                 \hspace                                            %! FIGURE_NAME_MARKUP
-        %@%                     #1                                             %! FIGURE_NAME_MARKUP
-        %@%                 \raise                                             %! FIGURE_NAME_MARKUP
-        %@%                     #0.25                                          %! FIGURE_NAME_MARKUP
-        %@%                     \fontsize                                      %! FIGURE_NAME_MARKUP
-        %@%                         #-2                                        %! FIGURE_NAME_MARKUP
-        %@%                         (22)                                       %! FIGURE_NAME_MARKUP
-        %@%                 ]                                                  %! FIGURE_NAME_MARKUP
-        %@%             }                                                      %! FIGURE_NAME_MARKUP
-        %@%     }                                                              %! FIGURE_NAME_MARKUP
+        %@% ^ \markup {                                                        %! FIGURE_NAME
+        %@%     \fontsize                                                      %! FIGURE_NAME
+        %@%         #2                                                         %! FIGURE_NAME
+        %@%         \concat                                                    %! FIGURE_NAME
+        %@%             {                                                      %! FIGURE_NAME
+        %@%                 [                                                  %! FIGURE_NAME
+        %@%                 b.2.r.9                                            %! FIGURE_NAME
+        %@%                 \hspace                                            %! FIGURE_NAME
+        %@%                     #1                                             %! FIGURE_NAME
+        %@%                 \raise                                             %! FIGURE_NAME
+        %@%                     #0.25                                          %! FIGURE_NAME
+        %@%                     \fontsize                                      %! FIGURE_NAME
+        %@%                         #-2                                        %! FIGURE_NAME
+        %@%                         (22)                                       %! FIGURE_NAME
+        %@%                 ]                                                  %! FIGURE_NAME
+        %@%             }                                                      %! FIGURE_NAME
+        %@%     }                                                              %! FIGURE_NAME
             \repeatTie                                                         %! baca_repeat_tie
 
         }
