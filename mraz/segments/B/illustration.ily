@@ -1541,37 +1541,37 @@ B_RH_Resonance_Voice = {                                                       %
 
 B_Piano_Music_RH_Staff = <<                                                    %! abjad.Path.extern
 
-    \context RHVoiceI = "RH_Voice_I"                                           %! ScoreTemplate
+    \context RHVoiceI = "RH_Voice_I"                                           %! mraz.ScoreTemplate.__call__
     \B_RH_Voice_I                                                              %! abjad.Path.extern
 
-    \context RHVoiceIInserts = "RH_Voice_I_Inserts"                            %! ScoreTemplate
+    \context RHVoiceIInserts = "RH_Voice_I_Inserts"                            %! mraz.ScoreTemplate.__call__
     \B_RH_Voice_I_Inserts                                                      %! abjad.Path.extern
 
-    \context RHVoiceII = "RH_Voice_II"                                         %! ScoreTemplate
+    \context RHVoiceII = "RH_Voice_II"                                         %! mraz.ScoreTemplate.__call__
     \B_RH_Voice_II                                                             %! abjad.Path.extern
 
-    \context RHVoiceIIInserts = "RH_Voice_II_Inserts"                          %! ScoreTemplate
+    \context RHVoiceIIInserts = "RH_Voice_II_Inserts"                          %! mraz.ScoreTemplate.__call__
     \B_RH_Voice_II_Inserts                                                     %! abjad.Path.extern
 
-    \context RHVoiceIII = "RH_Voice_III"                                       %! ScoreTemplate
+    \context RHVoiceIII = "RH_Voice_III"                                       %! mraz.ScoreTemplate.__call__
     \B_RH_Voice_III                                                            %! abjad.Path.extern
 
-    \context RHVoiceIIIInserts = "RH_Voice_III_Inserts"                        %! ScoreTemplate
+    \context RHVoiceIIIInserts = "RH_Voice_III_Inserts"                        %! mraz.ScoreTemplate.__call__
     \B_RH_Voice_III_Inserts                                                    %! abjad.Path.extern
 
-    \context RHVoiceIV = "RH_Voice_IV"                                         %! ScoreTemplate
+    \context RHVoiceIV = "RH_Voice_IV"                                         %! mraz.ScoreTemplate.__call__
     \B_RH_Voice_IV                                                             %! abjad.Path.extern
 
-    \context RHVoiceIVInserts = "RH_Voice_IV_Inserts"                          %! ScoreTemplate
+    \context RHVoiceIVInserts = "RH_Voice_IV_Inserts"                          %! mraz.ScoreTemplate.__call__
     \B_RH_Voice_IV_Inserts                                                     %! abjad.Path.extern
 
-    \context RHVoiceV = "RH_Voice_V"                                           %! ScoreTemplate
+    \context RHVoiceV = "RH_Voice_V"                                           %! mraz.ScoreTemplate.__call__
     \B_RH_Voice_V                                                              %! abjad.Path.extern
 
-    \context RHVoiceVI = "RH_Voice_VI"                                         %! ScoreTemplate
+    \context RHVoiceVI = "RH_Voice_VI"                                         %! mraz.ScoreTemplate.__call__
     \B_RH_Voice_VI                                                             %! abjad.Path.extern
 
-    \context RHResonanceVoice = "RH_Resonance_Voice"                           %! ScoreTemplate
+    \context RHResonanceVoice = "RH_Resonance_Voice"                           %! mraz.ScoreTemplate.__call__
     \B_RH_Resonance_Voice                                                      %! abjad.Path.extern
 
 >>                                                                             %! abjad.Path.extern
@@ -2365,34 +2365,34 @@ B_LH_Resonance_Voice = {                                                       %
 
 B_Piano_Music_LH_Staff = <<                                                    %! abjad.Path.extern
 
-    \context LHVoiceI = "LH_Voice_I"                                           %! ScoreTemplate
+    \context LHVoiceI = "LH_Voice_I"                                           %! mraz.ScoreTemplate.__call__
     \B_LH_Voice_I                                                              %! abjad.Path.extern
 
-    \context LHVoiceII = "LH_Voice_II"                                         %! ScoreTemplate
+    \context LHVoiceII = "LH_Voice_II"                                         %! mraz.ScoreTemplate.__call__
     \B_LH_Voice_II                                                             %! abjad.Path.extern
 
-    \context LHVoiceIII = "LH_Voice_III"                                       %! ScoreTemplate
+    \context LHVoiceIII = "LH_Voice_III"                                       %! mraz.ScoreTemplate.__call__
     \B_LH_Voice_III                                                            %! abjad.Path.extern
 
-    \context LHVoiceIV = "LH_Voice_IV"                                         %! ScoreTemplate
+    \context LHVoiceIV = "LH_Voice_IV"                                         %! mraz.ScoreTemplate.__call__
     \B_LH_Voice_IV                                                             %! abjad.Path.extern
 
-    \context LHVoiceIVInserts = "LH_Voice_IV_Inserts"                          %! ScoreTemplate
+    \context LHVoiceIVInserts = "LH_Voice_IV_Inserts"                          %! mraz.ScoreTemplate.__call__
     \B_LH_Voice_IV_Inserts                                                     %! abjad.Path.extern
 
-    \context LHVoiceV = "LH_Voice_V"                                           %! ScoreTemplate
+    \context LHVoiceV = "LH_Voice_V"                                           %! mraz.ScoreTemplate.__call__
     \B_LH_Voice_V                                                              %! abjad.Path.extern
 
-    \context LHVoiceVInserts = "LH_Voice_V_Inserts"                            %! ScoreTemplate
+    \context LHVoiceVInserts = "LH_Voice_V_Inserts"                            %! mraz.ScoreTemplate.__call__
     \B_LH_Voice_V_Inserts                                                      %! abjad.Path.extern
 
-    \context LHVoiceVI = "LH_Voice_VI"                                         %! ScoreTemplate
+    \context LHVoiceVI = "LH_Voice_VI"                                         %! mraz.ScoreTemplate.__call__
     \B_LH_Voice_VI                                                             %! abjad.Path.extern
 
-    \context LHVoiceVIInserts = "LH_Voice_VI_Inserts"                          %! ScoreTemplate
+    \context LHVoiceVIInserts = "LH_Voice_VI_Inserts"                          %! mraz.ScoreTemplate.__call__
     \B_LH_Voice_VI_Inserts                                                     %! abjad.Path.extern
 
-    \context LHResonanceVoice = "LH_Resonance_Voice"                           %! ScoreTemplate
+    \context LHResonanceVoice = "LH_Resonance_Voice"                           %! mraz.ScoreTemplate.__call__
     \B_LH_Resonance_Voice                                                      %! abjad.Path.extern
 
 >>                                                                             %! abjad.Path.extern
