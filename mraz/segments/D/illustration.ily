@@ -1,4 +1,4 @@
-D_Global_Rests = {                                                             %! extern
+D_Global_Rests = {                                                             %! abjad.Path.extern
 
     % [D Global_Rests measure 78 / measure 1]                                  %! _comment_measure_numbers
     R1 * 9/8                                                                   %! _make_global_rests(1)
@@ -12,10 +12,10 @@ D_Global_Rests = {                                                             %
     % [D Global_Rests measure 81 / measure 4]                                  %! _comment_measure_numbers
     R1 * 5/8                                                                   %! _make_global_rests(1)
 
-}                                                                              %! extern
+}                                                                              %! abjad.Path.extern
 
 
-D_Global_Skips = {                                                             %! extern
+D_Global_Skips = {                                                             %! abjad.Path.extern
 
     % [D Global_Skips measure 78 / measure 1]                                  %! _comment_measure_numbers
     \time 9/8                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
@@ -81,10 +81,10 @@ D_Global_Skips = {                                                             %
     \bacaStopTextSpanMM                                                        %! SEGMENT_FINAL_STOP_MM_SPANNER:_attach_metronome_marks(4)
 %@% \bacaStopTextSpanCT                                                        %! CLOCK_TIME
 
-}                                                                              %! extern
+}                                                                              %! abjad.Path.extern
 
 
-D_RH_Voice_I = {                                                               %! extern
+D_RH_Voice_I = {                                                               %! abjad.Path.extern
 
     % [D RH_Voice_I measure 78 / measure 1]                                    %! _comment_measure_numbers
     \clef "treble"                                                             %! REAPPLIED_CLEF:_set_status_tag:_reapply_persistent_indicators(3)
@@ -106,10 +106,10 @@ D_RH_Voice_I = {                                                               %
     % [D RH_Voice_I measure 81 / measure 4]                                    %! _comment_measure_numbers
     s1 * 5/8                                                                   %! _call_rhythm_commands
 
-}                                                                              %! extern
+}                                                                              %! abjad.Path.extern
 
 
-D_RH_Voice_I_Inserts = {                                                       %! extern
+D_RH_Voice_I_Inserts = {                                                       %! abjad.Path.extern
 
     % [D RH_Voice_I_Inserts measure 78 / measure 1]                            %! _comment_measure_numbers
     s1 * 9/8                                                                   %! _call_rhythm_commands
@@ -123,10 +123,10 @@ D_RH_Voice_I_Inserts = {                                                       %
     % [D RH_Voice_I_Inserts measure 81 / measure 4]                            %! _comment_measure_numbers
     s1 * 5/8                                                                   %! _call_rhythm_commands
 
-}                                                                              %! extern
+}                                                                              %! abjad.Path.extern
 
 
-D_RH_Voice_II = {                                                              %! extern
+D_RH_Voice_II = {                                                              %! abjad.Path.extern
 
     % [D RH_Voice_II measure 78 / measure 1]                                   %! _comment_measure_numbers
     s1 * 9/8                                                                   %! _call_rhythm_commands
@@ -142,10 +142,10 @@ D_RH_Voice_II = {                                                              %
     % [D RH_Voice_II measure 81 / measure 4]                                   %! _comment_measure_numbers
     s1 * 5/8                                                                   %! _call_rhythm_commands
 
-}                                                                              %! extern
+}                                                                              %! abjad.Path.extern
 
 
-D_RH_Voice_II_Inserts = {                                                      %! extern
+D_RH_Voice_II_Inserts = {                                                      %! abjad.Path.extern
 
     % [D RH_Voice_II_Inserts measure 78 / measure 1]                           %! _comment_measure_numbers
     s1 * 9/8                                                                   %! _call_rhythm_commands
@@ -159,10 +159,10 @@ D_RH_Voice_II_Inserts = {                                                      %
     % [D RH_Voice_II_Inserts measure 81 / measure 4]                           %! _comment_measure_numbers
     s1 * 5/8                                                                   %! _call_rhythm_commands
 
-}                                                                              %! extern
+}                                                                              %! abjad.Path.extern
 
 
-D_RH_Voice_III = {                                                             %! extern
+D_RH_Voice_III = {                                                             %! abjad.Path.extern
 
     {
 
@@ -369,10 +369,10 @@ D_RH_Voice_III = {                                                             %
 
     }
 
-}                                                                              %! extern
+}                                                                              %! abjad.Path.extern
 
 
-D_RH_Voice_III_Inserts = {                                                     %! extern
+D_RH_Voice_III_Inserts = {                                                     %! abjad.Path.extern
 
     % [D RH_Voice_III_Inserts measure 78 / measure 1]                          %! _comment_measure_numbers
     s1 * 9/8                                                                   %! _call_rhythm_commands
@@ -386,10 +386,10 @@ D_RH_Voice_III_Inserts = {                                                     %
     % [D RH_Voice_III_Inserts measure 81 / measure 4]                          %! _comment_measure_numbers
     s1 * 5/8                                                                   %! _call_rhythm_commands
 
-}                                                                              %! extern
+}                                                                              %! abjad.Path.extern
 
 
-D_RH_Voice_IV = {                                                              %! extern
+D_RH_Voice_IV = {                                                              %! abjad.Path.extern
 
     % [D RH_Voice_IV measure 78 / measure 1]                                   %! _comment_measure_numbers
     s1 * 9/8                                                                   %! _call_rhythm_commands
@@ -405,10 +405,10 @@ D_RH_Voice_IV = {                                                              %
     % [D RH_Voice_IV measure 81 / measure 4]                                   %! _comment_measure_numbers
     s1 * 5/8                                                                   %! _call_rhythm_commands
 
-}                                                                              %! extern
+}                                                                              %! abjad.Path.extern
 
 
-D_RH_Voice_IV_Inserts = {                                                      %! extern
+D_RH_Voice_IV_Inserts = {                                                      %! abjad.Path.extern
 
     % [D RH_Voice_IV_Inserts measure 78 / measure 1]                           %! _comment_measure_numbers
     s1 * 9/8                                                                   %! _call_rhythm_commands
@@ -422,10 +422,10 @@ D_RH_Voice_IV_Inserts = {                                                      %
     % [D RH_Voice_IV_Inserts measure 81 / measure 4]                           %! _comment_measure_numbers
     s1 * 5/8                                                                   %! _call_rhythm_commands
 
-}                                                                              %! extern
+}                                                                              %! abjad.Path.extern
 
 
-D_RH_Voice_V = {                                                               %! extern
+D_RH_Voice_V = {                                                               %! abjad.Path.extern
 
     % [D RH_Voice_V measure 78 / measure 1]                                    %! _comment_measure_numbers
     s1 * 9/8                                                                   %! _call_rhythm_commands
@@ -439,10 +439,10 @@ D_RH_Voice_V = {                                                               %
     % [D RH_Voice_V measure 81 / measure 4]                                    %! _comment_measure_numbers
     s1 * 5/8                                                                   %! _call_rhythm_commands
 
-}                                                                              %! extern
+}                                                                              %! abjad.Path.extern
 
 
-D_RH_Voice_VI = {                                                              %! extern
+D_RH_Voice_VI = {                                                              %! abjad.Path.extern
 
     % [D RH_Voice_VI measure 78 / measure 1]                                   %! _comment_measure_numbers
     s1 * 9/8                                                                   %! _call_rhythm_commands
@@ -456,10 +456,10 @@ D_RH_Voice_VI = {                                                              %
     % [D RH_Voice_VI measure 81 / measure 4]                                   %! _comment_measure_numbers
     s1 * 5/8                                                                   %! _call_rhythm_commands
 
-}                                                                              %! extern
+}                                                                              %! abjad.Path.extern
 
 
-D_RH_Resonance_Voice = {                                                       %! extern
+D_RH_Resonance_Voice = {                                                       %! abjad.Path.extern
 
     % [D RH_Resonance_Voice measure 78 / measure 1]                            %! _comment_measure_numbers
     s1 * 9/8                                                                   %! _call_rhythm_commands
@@ -473,48 +473,48 @@ D_RH_Resonance_Voice = {                                                       %
     % [D RH_Resonance_Voice measure 81 / measure 4]                            %! _comment_measure_numbers
     s1 * 5/8                                                                   %! _call_rhythm_commands
 
-}                                                                              %! extern
+}                                                                              %! abjad.Path.extern
 
 
-D_Piano_Music_RH_Staff = <<                                                    %! extern
+D_Piano_Music_RH_Staff = <<                                                    %! abjad.Path.extern
 
     \context RHVoiceI = "RH_Voice_I"                                           %! ScoreTemplate
-    \D_RH_Voice_I                                                              %! extern
+    \D_RH_Voice_I                                                              %! abjad.Path.extern
 
     \context RHVoiceIInserts = "RH_Voice_I_Inserts"                            %! ScoreTemplate
-    \D_RH_Voice_I_Inserts                                                      %! extern
+    \D_RH_Voice_I_Inserts                                                      %! abjad.Path.extern
 
     \context RHVoiceII = "RH_Voice_II"                                         %! ScoreTemplate
-    \D_RH_Voice_II                                                             %! extern
+    \D_RH_Voice_II                                                             %! abjad.Path.extern
 
     \context RHVoiceIIInserts = "RH_Voice_II_Inserts"                          %! ScoreTemplate
-    \D_RH_Voice_II_Inserts                                                     %! extern
+    \D_RH_Voice_II_Inserts                                                     %! abjad.Path.extern
 
     \context RHVoiceIII = "RH_Voice_III"                                       %! ScoreTemplate
-    \D_RH_Voice_III                                                            %! extern
+    \D_RH_Voice_III                                                            %! abjad.Path.extern
 
     \context RHVoiceIIIInserts = "RH_Voice_III_Inserts"                        %! ScoreTemplate
-    \D_RH_Voice_III_Inserts                                                    %! extern
+    \D_RH_Voice_III_Inserts                                                    %! abjad.Path.extern
 
     \context RHVoiceIV = "RH_Voice_IV"                                         %! ScoreTemplate
-    \D_RH_Voice_IV                                                             %! extern
+    \D_RH_Voice_IV                                                             %! abjad.Path.extern
 
     \context RHVoiceIVInserts = "RH_Voice_IV_Inserts"                          %! ScoreTemplate
-    \D_RH_Voice_IV_Inserts                                                     %! extern
+    \D_RH_Voice_IV_Inserts                                                     %! abjad.Path.extern
 
     \context RHVoiceV = "RH_Voice_V"                                           %! ScoreTemplate
-    \D_RH_Voice_V                                                              %! extern
+    \D_RH_Voice_V                                                              %! abjad.Path.extern
 
     \context RHVoiceVI = "RH_Voice_VI"                                         %! ScoreTemplate
-    \D_RH_Voice_VI                                                             %! extern
+    \D_RH_Voice_VI                                                             %! abjad.Path.extern
 
     \context RHResonanceVoice = "RH_Resonance_Voice"                           %! ScoreTemplate
-    \D_RH_Resonance_Voice                                                      %! extern
+    \D_RH_Resonance_Voice                                                      %! abjad.Path.extern
 
->>                                                                             %! extern
+>>                                                                             %! abjad.Path.extern
 
 
-D_LH_Voice_I = {                                                               %! extern
+D_LH_Voice_I = {                                                               %! abjad.Path.extern
 
     % [D LH_Voice_I measure 78 / measure 1]                                    %! _comment_measure_numbers
     s1 * 9/8                                                                   %! _call_rhythm_commands
@@ -528,10 +528,10 @@ D_LH_Voice_I = {                                                               %
     % [D LH_Voice_I measure 81 / measure 4]                                    %! _comment_measure_numbers
     s1 * 5/8                                                                   %! _call_rhythm_commands
 
-}                                                                              %! extern
+}                                                                              %! abjad.Path.extern
 
 
-D_LH_Voice_II = {                                                              %! extern
+D_LH_Voice_II = {                                                              %! abjad.Path.extern
 
     % [D LH_Voice_II measure 78 / measure 1]                                   %! _comment_measure_numbers
     s1 * 9/8                                                                   %! _call_rhythm_commands
@@ -545,10 +545,10 @@ D_LH_Voice_II = {                                                              %
     % [D LH_Voice_II measure 81 / measure 4]                                   %! _comment_measure_numbers
     s1 * 5/8                                                                   %! _call_rhythm_commands
 
-}                                                                              %! extern
+}                                                                              %! abjad.Path.extern
 
 
-D_LH_Voice_III = {                                                             %! extern
+D_LH_Voice_III = {                                                             %! abjad.Path.extern
 
     % [D LH_Voice_III measure 78 / measure 1]                                  %! _comment_measure_numbers
     s1 * 9/8                                                                   %! _call_rhythm_commands
@@ -562,10 +562,10 @@ D_LH_Voice_III = {                                                             %
     % [D LH_Voice_III measure 81 / measure 4]                                  %! _comment_measure_numbers
     s1 * 5/8                                                                   %! _call_rhythm_commands
 
-}                                                                              %! extern
+}                                                                              %! abjad.Path.extern
 
 
-D_LH_Voice_IV = {                                                              %! extern
+D_LH_Voice_IV = {                                                              %! abjad.Path.extern
 
     % [D LH_Voice_IV measure 78 / measure 1]                                   %! _comment_measure_numbers
     \clef "treble"                                                             %! EXPLICIT_CLEF:_set_status_tag:baca_clef:IndicatorCommand
@@ -784,10 +784,10 @@ D_LH_Voice_IV = {                                                              %
 
     >>                                                                         %! _make_multimeasure_rest_container
 
-}                                                                              %! extern
+}                                                                              %! abjad.Path.extern
 
 
-D_LH_Voice_IV_Inserts = {                                                      %! extern
+D_LH_Voice_IV_Inserts = {                                                      %! abjad.Path.extern
 
     % [D LH_Voice_IV_Inserts measure 78 / measure 1]                           %! _comment_measure_numbers
     s1 * 9/8                                                                   %! _call_rhythm_commands
@@ -801,10 +801,10 @@ D_LH_Voice_IV_Inserts = {                                                      %
     % [D LH_Voice_IV_Inserts measure 81 / measure 4]                           %! _comment_measure_numbers
     s1 * 5/8                                                                   %! _call_rhythm_commands
 
-}                                                                              %! extern
+}                                                                              %! abjad.Path.extern
 
 
-D_LH_Voice_V = {                                                               %! extern
+D_LH_Voice_V = {                                                               %! abjad.Path.extern
 
     % [D LH_Voice_V measure 78 / measure 1]                                    %! _comment_measure_numbers
     s1 * 9/8                                                                   %! _call_rhythm_commands
@@ -820,10 +820,10 @@ D_LH_Voice_V = {                                                               %
     % [D LH_Voice_V measure 81 / measure 4]                                    %! _comment_measure_numbers
     s1 * 5/8                                                                   %! _call_rhythm_commands
 
-}                                                                              %! extern
+}                                                                              %! abjad.Path.extern
 
 
-D_LH_Voice_V_Inserts = {                                                       %! extern
+D_LH_Voice_V_Inserts = {                                                       %! abjad.Path.extern
 
     % [D LH_Voice_V_Inserts measure 78 / measure 1]                            %! _comment_measure_numbers
     s1 * 9/8                                                                   %! _call_rhythm_commands
@@ -837,10 +837,10 @@ D_LH_Voice_V_Inserts = {                                                       %
     % [D LH_Voice_V_Inserts measure 81 / measure 4]                            %! _comment_measure_numbers
     s1 * 5/8                                                                   %! _call_rhythm_commands
 
-}                                                                              %! extern
+}                                                                              %! abjad.Path.extern
 
 
-D_LH_Voice_VI = {                                                              %! extern
+D_LH_Voice_VI = {                                                              %! abjad.Path.extern
 
     % [D LH_Voice_VI measure 78 / measure 1]                                   %! _comment_measure_numbers
     s1 * 9/8                                                                   %! _call_rhythm_commands
@@ -856,10 +856,10 @@ D_LH_Voice_VI = {                                                              %
     % [D LH_Voice_VI measure 81 / measure 4]                                   %! _comment_measure_numbers
     s1 * 5/8                                                                   %! _call_rhythm_commands
 
-}                                                                              %! extern
+}                                                                              %! abjad.Path.extern
 
 
-D_LH_Voice_VI_Inserts = {                                                      %! extern
+D_LH_Voice_VI_Inserts = {                                                      %! abjad.Path.extern
 
     % [D LH_Voice_VI_Inserts measure 78 / measure 1]                           %! _comment_measure_numbers
     s1 * 9/8                                                                   %! _call_rhythm_commands
@@ -873,10 +873,10 @@ D_LH_Voice_VI_Inserts = {                                                      %
     % [D LH_Voice_VI_Inserts measure 81 / measure 4]                           %! _comment_measure_numbers
     s1 * 5/8                                                                   %! _call_rhythm_commands
 
-}                                                                              %! extern
+}                                                                              %! abjad.Path.extern
 
 
-D_LH_Resonance_Voice = {                                                       %! extern
+D_LH_Resonance_Voice = {                                                       %! abjad.Path.extern
 
     % [D LH_Resonance_Voice measure 78 / measure 1]                            %! _comment_measure_numbers
     s1 * 9/8                                                                   %! _call_rhythm_commands
@@ -890,39 +890,39 @@ D_LH_Resonance_Voice = {                                                       %
     % [D LH_Resonance_Voice measure 81 / measure 4]                            %! _comment_measure_numbers
     s1 * 5/8                                                                   %! _call_rhythm_commands
 
-}                                                                              %! extern
+}                                                                              %! abjad.Path.extern
 
 
-D_Piano_Music_LH_Staff = <<                                                    %! extern
+D_Piano_Music_LH_Staff = <<                                                    %! abjad.Path.extern
 
     \context LHVoiceI = "LH_Voice_I"                                           %! ScoreTemplate
-    \D_LH_Voice_I                                                              %! extern
+    \D_LH_Voice_I                                                              %! abjad.Path.extern
 
     \context LHVoiceII = "LH_Voice_II"                                         %! ScoreTemplate
-    \D_LH_Voice_II                                                             %! extern
+    \D_LH_Voice_II                                                             %! abjad.Path.extern
 
     \context LHVoiceIII = "LH_Voice_III"                                       %! ScoreTemplate
-    \D_LH_Voice_III                                                            %! extern
+    \D_LH_Voice_III                                                            %! abjad.Path.extern
 
     \context LHVoiceIV = "LH_Voice_IV"                                         %! ScoreTemplate
-    \D_LH_Voice_IV                                                             %! extern
+    \D_LH_Voice_IV                                                             %! abjad.Path.extern
 
     \context LHVoiceIVInserts = "LH_Voice_IV_Inserts"                          %! ScoreTemplate
-    \D_LH_Voice_IV_Inserts                                                     %! extern
+    \D_LH_Voice_IV_Inserts                                                     %! abjad.Path.extern
 
     \context LHVoiceV = "LH_Voice_V"                                           %! ScoreTemplate
-    \D_LH_Voice_V                                                              %! extern
+    \D_LH_Voice_V                                                              %! abjad.Path.extern
 
     \context LHVoiceVInserts = "LH_Voice_V_Inserts"                            %! ScoreTemplate
-    \D_LH_Voice_V_Inserts                                                      %! extern
+    \D_LH_Voice_V_Inserts                                                      %! abjad.Path.extern
 
     \context LHVoiceVI = "LH_Voice_VI"                                         %! ScoreTemplate
-    \D_LH_Voice_VI                                                             %! extern
+    \D_LH_Voice_VI                                                             %! abjad.Path.extern
 
     \context LHVoiceVIInserts = "LH_Voice_VI_Inserts"                          %! ScoreTemplate
-    \D_LH_Voice_VI_Inserts                                                     %! extern
+    \D_LH_Voice_VI_Inserts                                                     %! abjad.Path.extern
 
     \context LHResonanceVoice = "LH_Resonance_Voice"                           %! ScoreTemplate
-    \D_LH_Resonance_Voice                                                      %! extern
+    \D_LH_Resonance_Voice                                                      %! abjad.Path.extern
 
->>                                                                             %! extern
+>>                                                                             %! abjad.Path.extern
