@@ -600,8 +600,7 @@ class SilverDesignMaker(object):
 
     ### CLASS VARIABLES ###
 
-    __slots__ = (
-        )
+    __slots__ = ()
 
     ### SPECIAL METHODS ###
 
@@ -693,9 +692,8 @@ class SilverDesignMaker(object):
         L = baca.PitchClassSegment([0, 2, 3, 5])
         cells = [J, K, L]
         cells = baca.PitchTree(
-            item_class=abjad.NumberedPitchClass,
-            items=cells,
-            )
+            item_class=abjad.NumberedPitchClass, items=cells
+        )
         return cells
 
     def make_stage_01(self):
@@ -1326,9 +1324,8 @@ class SilverDesignMaker(object):
         segments = baca.sequence(segments)
         segments = segments.helianthate(-1, -1)
         tree = baca.PitchTree(
-            item_class=abjad.NumberedPitchClass,
-            items=segments,
-            )
+            item_class=abjad.NumberedPitchClass, items=segments
+        )
         return tree
 
     def make_stage_02(self):
@@ -1739,15 +1736,13 @@ class SilverDesignMaker(object):
         for tree in trees:
             pitch_classes = tree.get_payload()
             segment = baca.PitchClassSegment(items=pitch_classes)
-            #segment._tracked_expression = tree._tracked_expression
+            # segment._tracked_expression = tree._tracked_expression
             segments.append(segment)
         segments = abjad.sequence(segments)
         parts = segments.partition_by_counts(
-            [5, 7],
-            cyclic=True,
-            overhang=True,
-            )
-        #fused_segment_names = baca.Cursor(['Q', 'R', 'S'])
+            [5, 7], cyclic=True, overhang=True
+        )
+        # fused_segment_names = baca.Cursor(['Q', 'R', 'S'])
         segments = []
         for i, part in enumerate(parts):
             if i % 2 == 0:
@@ -1757,13 +1752,12 @@ class SilverDesignMaker(object):
                 segment = part[0]
                 for segment_ in part[1:]:
                     segment += segment_
-                #name = fused_segment_names.next()[0]
-                #segment = abjad.Expression.establish_equivalence(segment, name)
+                # name = fused_segment_names.next()[0]
+                # segment = abjad.Expression.establish_equivalence(segment, name)
                 segments.append(segment)
         tree = baca.PitchTree(
-            item_class=abjad.NumberedPitchClass,
-            items=segments,
-            )
+            item_class=abjad.NumberedPitchClass, items=segments
+        )
         return tree
 
     def make_stage_03(self):
@@ -2174,15 +2168,14 @@ class SilverDesignMaker(object):
         for tree in trees:
             pitch_classes = tree.get_payload()
             segment = baca.PitchClassSegment(items=pitch_classes)
-            #segment._tracked_expression = tree._tracked_expression
+            # segment._tracked_expression = tree._tracked_expression
             segments.append(segment)
         for i, segment in enumerate(segments[:]):
             if 6 < len(segment):
                 segments[i] = segment.retrograde()
         tree = baca.PitchTree(
-            item_class=abjad.NumberedPitchClass,
-            items=segments,
-            )
+            item_class=abjad.NumberedPitchClass, items=segments
+        )
         return tree
 
     def make_stage_04(self):
@@ -2593,7 +2586,7 @@ class SilverDesignMaker(object):
         for tree in trees:
             pitch_classes = tree.get_payload()
             segment = baca.PitchClassSegment(items=pitch_classes)
-            #segment._tracked_expression = tree._tracked_expression
+            # segment._tracked_expression = tree._tracked_expression
             segments.append(segment)
         j = 0
         for i, segment in enumerate(segments[:]):
@@ -2604,16 +2597,15 @@ class SilverDesignMaker(object):
                     segment = segment.invert().alpha()
                 elif j % 3 == 2:
                     segment = segment.invert().alpha().invert()
-                #segment = abjad.Expression.establish_equivalence(
+                # segment = abjad.Expression.establish_equivalence(
                 #    segment,
                 #    segment._name,
                 #    )
                 segments[i] = segment
                 j += 1
         tree = baca.PitchTree(
-            item_class=abjad.NumberedPitchClass,
-            items=segments,
-            )
+            item_class=abjad.NumberedPitchClass, items=segments
+        )
         return tree
 
     def make_stage_05(self):
@@ -2984,22 +2976,20 @@ class SilverDesignMaker(object):
         for tree in trees:
             pitch_classes = tree.get_payload()
             segment = baca.PitchClassSegment(items=pitch_classes)
-            #segment._tracked_expression = tree._tracked_expression
+            # segment._tracked_expression = tree._tracked_expression
             segments.append(segment)
         new_segments = []
         for segment in segments:
             if 6 < len(segment):
                 segment = abjad.sequence(segment)
-                #source = segment._name
-                source = '?'
+                # source = segment._name
+                source = "?"
                 parts = segment.partition_by_counts(
-                    [7, 3],
-                    cyclic=True,
-                    overhang=True,
-                    )
+                    [7, 3], cyclic=True, overhang=True
+                )
                 part_segments = []
                 for i, part in enumerate(parts):
-                    #name = f'{source}_{}'
+                    # name = f'{source}_{}'
                     markup = [abjad.Markup(source)]
                     markup.append(abjad.Markup(i).sub())
                     markup = abjad.Markup.concat(markup)
@@ -3009,9 +2999,8 @@ class SilverDesignMaker(object):
             else:
                 new_segments.append(segment)
         tree = baca.PitchTree(
-            item_class=abjad.NumberedPitchClass,
-            items=new_segments,
-            )
+            item_class=abjad.NumberedPitchClass, items=new_segments
+        )
         return tree
 
     def make_stage_06(self):
@@ -3615,10 +3604,10 @@ class SilverDesignMaker(object):
             pitch_classes = tree.get_payload()
             segment = baca.PitchClassSegment(
                 items=pitch_classes,
-                #name=tree._name,
-                #markup=tree._name_markup
-                )
-            #segment._tracked_expression = tree._tracked_expression
+                # name=tree._name,
+                # markup=tree._name_markup
+            )
+            # segment._tracked_expression = tree._tracked_expression
             segments.append(segment)
         new_segments = []
         segments = abjad.sequence(segments)
@@ -3631,9 +3620,8 @@ class SilverDesignMaker(object):
                     segment = segment.transpose(n=index)
                 new_segments.append(segment)
         tree = baca.PitchTree(
-            item_class=abjad.NumberedPitchClass,
-            items=new_segments,
-            )
+            item_class=abjad.NumberedPitchClass, items=new_segments
+        )
         return tree
 
     def make_stage_07(self):
@@ -4236,10 +4224,10 @@ class SilverDesignMaker(object):
             pitch_classes = tree.get_payload()
             segment = baca.PitchClassSegment(
                 items=pitch_classes,
-                #name=tree._name,
-                #markup=tree._name_markup
-                )
-            #segment._tracked_expression = tree._tracked_expression
+                # name=tree._name,
+                # markup=tree._name_markup
+            )
+            # segment._tracked_expression = tree._tracked_expression
             segments.append(segment)
         new_segments = []
         for i, segment in enumerate(segments):
@@ -4247,7 +4235,6 @@ class SilverDesignMaker(object):
                 segment = segment.retrograde()
             new_segments.append(segment)
         tree = baca.PitchTree(
-            item_class=abjad.NumberedPitchClass,
-            items=new_segments,
-            )
+            item_class=abjad.NumberedPitchClass, items=new_segments
+        )
         return tree

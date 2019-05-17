@@ -544,6 +544,7 @@ def music_maker():
     Returns music-maker.
     """
     import mraz
+
     voice_names = []
     score_template = mraz.ScoreTemplate()
     dummy_score = score_template()
@@ -551,19 +552,14 @@ def music_maker():
         voice_name = voice.name
         voice_names.append(voice_name)
     music_maker = baca.MusicMaker(
-        rmakers.BeamSpecifier(
-            beam_divisions_together=True,
-            ),
+        rmakers.BeamSpecifier(beam_divisions_together=True),
         baca.PitchFirstRhythmCommand(
             rhythm_maker=baca.PitchFirstRhythmMaker(
-                talea=rmakers.Talea(
-                    counts=[1],
-                    denominator=16,
-                    ),
-                ),
-            ),
+                talea=rmakers.Talea(counts=[1], denominator=16)
+            )
+        ),
         color_unregistered_pitches=True,
         denominator=16,
         voice_names=voice_names,
-        )
+    )
     return music_maker
