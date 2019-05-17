@@ -13,4 +13,4 @@ def transparent_music(selector):
         baca.note_head_transparent(selector=selector),
         baca.repeat_tie_transparent(selector=selector),
         baca.stem_transparent(selector=selector),
-        ]
+    ]
