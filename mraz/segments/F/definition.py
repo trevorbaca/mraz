@@ -224,7 +224,7 @@ accumulator(
     baca.imbricate(
         'lh_v4_i',
         [0, 19, 23],
-        baca.flags(),
+        baca.do_not_beam(),
         ),
     figure_name='lh-4 7.1.1',
     time_treatments=[-1],
@@ -270,7 +270,7 @@ accumulator(
     baca.imbricate(
         'lh_v4_i',
         [13],
-        baca.flags(),
+        baca.do_not_beam(),
         ),
     figure_name='lh-4 7.1.2',
     hide_time_signature=True,
@@ -314,7 +314,7 @@ accumulator(
     baca.imbricate(
         'lh_v4_i',
         [14, 18],
-        baca.flags(),
+        baca.do_not_beam(),
         ),
     figure_name='lh-4 7.1.3',
     hide_time_signature=True,
