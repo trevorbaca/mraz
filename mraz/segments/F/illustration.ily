@@ -235,16 +235,16 @@ F_RH_Voice_I = {                                                               %
                 % [F RH_Voice_I measure 98 / measure 1]                        %! _comment_measure_numbers
                 \set stemLeftBeamCount = 0
                 \set stemRightBeamCount = 2
-                \override Beam.positions = #'(10 . 10)                         %! baca_beam_positions:OverrideCommand(1)
-                \override Stem.direction = #up                                 %! baca_stem_up:OverrideCommand(1)
+                \override Beam.positions = #'(10 . 10)                         %! baca.beam_positions:OverrideCommand(1)
+                \override Stem.direction = #up                                 %! baca.stem_up:OverrideCommand(1)
                 \clef "treble"                                                 %! REAPPLIED_CLEF:_set_status_tag:_reapply_persistent_indicators(3)
                 \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
             %@% \override PianoMusicRHStaff.Clef.color = ##f                   %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
                 \set PianoMusicRHStaff.forceClef = ##t                         %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
-                \dynamicUp                                                     %! baca_dynamic_down:IndicatorCommand
+                \dynamicUp                                                     %! baca.dynamic_down:IndicatorCommand
                 e''16
                 - \tweak color #(x11-color 'blue)                              %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-                \fff                                                           %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+                \fff                                                           %! EXPLICIT_DYNAMIC:_set_status_tag:baca.dynamic:IndicatorCommand
             %@% ^ \markup {                                                    %! FIGURE_NAME
             %@%     \fontsize                                                  %! FIGURE_NAME
             %@%         #2                                                     %! FIGURE_NAME
@@ -521,7 +521,7 @@ F_RH_Voice_I = {                                                               %
                 % [F RH_Voice_I measure 107 / measure 10]                      %! _comment_measure_numbers
                 \set stemLeftBeamCount = 0
                 \set stemRightBeamCount = 2
-                \override Beam.positions = #'(12 . 12)                         %! baca_beam_positions:OverrideCommand(1)
+                \override Beam.positions = #'(12 . 12)                         %! baca.beam_positions:OverrideCommand(1)
                 f'''16
             %@% ^ \markup {                                                    %! FIGURE_NAME
             %@%     \fontsize                                                  %! FIGURE_NAME
@@ -591,7 +591,7 @@ F_RH_Voice_I = {                                                               %
                 \set stemRightBeamCount = 0
                 bf'''!16
                 ]
-                \revert Beam.positions                                         %! baca_beam_positions:OverrideCommand(2)
+                \revert Beam.positions                                         %! baca.beam_positions:OverrideCommand(2)
 
             }
 
@@ -607,8 +607,8 @@ F_RH_Voice_I = {                                                               %
             % [F RH_Voice_I measure 108 / measure 11]                          %! _comment_measure_numbers
             \baca-invisible-music                                              %! _make_multimeasure_rest_container
             c'1 * 1/8                                                          %! _make_multimeasure_rest_container
-            \revert Beam.positions                                             %! baca_beam_positions:OverrideCommand(2)
-            \revert Stem.direction                                             %! baca_stem_up:OverrideCommand(2)
+            \revert Beam.positions                                             %! baca.beam_positions:OverrideCommand(2)
+            \revert Stem.direction                                             %! baca.stem_up:OverrideCommand(2)
 
         }                                                                      %! _make_multimeasure_rest_container
 
@@ -659,8 +659,8 @@ F_RH_Voice_I_Inserts = {                                                       %
             \times 5/6 {
 
                 % [F RH_Voice_I_Inserts measure 98 / measure 1]                %! _comment_measure_numbers
-                \override Beam.positions = #'(-6.5 . -6.5)                     %! baca_beam_positions:OverrideCommand(1)
-                \override Script.direction = #down                             %! baca_script_down:OverrideCommand(1)
+                \override Beam.positions = #'(-6.5 . -6.5)                     %! baca.beam_positions:OverrideCommand(1)
+                \override Script.direction = #down                             %! baca.script_down:OverrideCommand(1)
                 s16
                 [
 
@@ -682,7 +682,7 @@ F_RH_Voice_I_Inserts = {                                                       %
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 2
                 f''16
-                - \marcato                                                     %! baca_marcato:IndicatorCommand
+                - \marcato                                                     %! baca.marcato:IndicatorCommand
 
                 s16
 
@@ -697,7 +697,7 @@ F_RH_Voice_I_Inserts = {                                                       %
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 2
                 b''16
-                - \marcato                                                     %! baca_marcato:IndicatorCommand
+                - \marcato                                                     %! baca.marcato:IndicatorCommand
 
                 s16
 
@@ -742,12 +742,12 @@ F_RH_Voice_I_Inserts = {                                                       %
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 2
                 fs'''!16
-                - \marcato                                                     %! baca_marcato:IndicatorCommand
+                - \marcato                                                     %! baca.marcato:IndicatorCommand
 
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 2
                 g'''16
-                - \marcato                                                     %! baca_marcato:IndicatorCommand
+                - \marcato                                                     %! baca.marcato:IndicatorCommand
 
                 s16
 
@@ -775,21 +775,21 @@ F_RH_Voice_I_Inserts = {                                                       %
             \scaleDurations #'(1 . 1) {
 
                 % [F RH_Voice_I_Inserts measure 102 / measure 5]               %! _comment_measure_numbers
-                \override Beam.positions = #'(-8.5 . -8.5)                     %! baca_beam_positions:OverrideCommand(1)
+                \override Beam.positions = #'(-8.5 . -8.5)                     %! baca.beam_positions:OverrideCommand(1)
                 s16
                 [
 
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 2
                 a''16
-                - \marcato                                                     %! baca_marcato:IndicatorCommand
+                - \marcato                                                     %! baca.marcato:IndicatorCommand
 
                 s16
 
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 1
                 s16
-                \revert Beam.positions                                         %! baca_beam_positions:OverrideCommand(2)
+                \revert Beam.positions                                         %! baca.beam_positions:OverrideCommand(2)
 
             }
 
@@ -815,12 +815,12 @@ F_RH_Voice_I_Inserts = {                                                       %
                 \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 2
                 af''!16
-                - \marcato                                                     %! baca_marcato:IndicatorCommand
+                - \marcato                                                     %! baca.marcato:IndicatorCommand
 
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 2
                 f'''16
-                - \marcato                                                     %! baca_marcato:IndicatorCommand
+                - \marcato                                                     %! baca.marcato:IndicatorCommand
 
                 s16
 
@@ -859,7 +859,7 @@ F_RH_Voice_I_Inserts = {                                                       %
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 2
                 fs'''!16
-                - \marcato                                                     %! baca_marcato:IndicatorCommand
+                - \marcato                                                     %! baca.marcato:IndicatorCommand
 
                 s16
 
@@ -876,7 +876,7 @@ F_RH_Voice_I_Inserts = {                                                       %
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 2
                 bf'''!16
-                - \marcato                                                     %! baca_marcato:IndicatorCommand
+                - \marcato                                                     %! baca.marcato:IndicatorCommand
 
             }
 
@@ -888,13 +888,13 @@ F_RH_Voice_I_Inserts = {                                                       %
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 2
                 cs''''!16
-                - \marcato                                                     %! baca_marcato:IndicatorCommand
+                - \marcato                                                     %! baca.marcato:IndicatorCommand
 
                 s16
 
                 s16
                 ]
-                \revert Beam.positions                                         %! baca_beam_positions:OverrideCommand(2)
+                \revert Beam.positions                                         %! baca.beam_positions:OverrideCommand(2)
 
             }
 
@@ -912,7 +912,7 @@ F_RH_Voice_I_Inserts = {                                                       %
             % [F RH_Voice_I_Inserts measure 108 / measure 11]                  %! _comment_measure_numbers
             \baca-invisible-music                                              %! _make_multimeasure_rest_container
             c'1 * 1/8                                                          %! _make_multimeasure_rest_container
-            \revert Script.direction                                           %! baca_script_down:OverrideCommand(2)
+            \revert Script.direction                                           %! baca.script_down:OverrideCommand(2)
 
         }                                                                      %! _make_multimeasure_rest_container
 
@@ -953,9 +953,9 @@ F_RH_Voice_I_Inserts = {                                                       %
 F_RH_Voice_II = {                                                              %! abjad.Path.extern
 
     % [F RH_Voice_II measure 98 / measure 1]                                   %! _comment_measure_numbers
-    \override Beam.positions = #'(-4.5 . -4.5)                                 %! baca_beam_positions:OverrideCommand(1)
-    \override Slur.direction = #up                                             %! baca_slur_up:OverrideCommand(1)
-    \dynamicDown                                                               %! baca_dynamic_down:IndicatorCommand
+    \override Beam.positions = #'(-4.5 . -4.5)                                 %! baca.beam_positions:OverrideCommand(1)
+    \override Slur.direction = #up                                             %! baca.slur_up:OverrideCommand(1)
+    \dynamicDown                                                               %! baca.dynamic_down:IndicatorCommand
     s1 * 3/4
     - \tweak color #(x11-color 'green4)                                        %! REAPPLIED_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \fff                                                                       %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
@@ -967,10 +967,10 @@ F_RH_Voice_II = {                                                              %
             % [F RH_Voice_II measure 99 / measure 2]                           %! _comment_measure_numbers
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
-            \override Stem.direction = #down                                   %! baca_stem_down:OverrideCommand(1)
+            \override Stem.direction = #down                                   %! baca.stem_down:OverrideCommand(1)
             c''16
             - \tweak color #(x11-color 'DeepPink1)                             %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-            \fff                                                               %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+            \fff                                                               %! REDUNDANT_DYNAMIC:_set_status_tag:baca.dynamic:IndicatorCommand
         %@% ^ \markup {                                                        %! FIGURE_NAME
         %@%     \fontsize                                                      %! FIGURE_NAME
         %@%         #2                                                         %! FIGURE_NAME
@@ -989,7 +989,7 @@ F_RH_Voice_II = {                                                              %
         %@%             }                                                      %! FIGURE_NAME
         %@%     }                                                              %! FIGURE_NAME
             [
-            (                                                                  %! baca_slur:SpannerIndicatorCommand(1)
+            (                                                                  %! baca.slur:SpannerIndicatorCommand(1)
 
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
@@ -1002,7 +1002,7 @@ F_RH_Voice_II = {                                                              %
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
             f''16
-            )                                                                  %! baca_slur:SpannerIndicatorCommand(2)
+            )                                                                  %! baca.slur:SpannerIndicatorCommand(2)
 
         }
 
@@ -1039,7 +1039,7 @@ F_RH_Voice_II = {                                                              %
             %@%                 ]                                              %! FIGURE_NAME
             %@%             }                                                  %! FIGURE_NAME
             %@%     }                                                          %! FIGURE_NAME
-                (                                                              %! baca_slur:SpannerIndicatorCommand(1)
+                (                                                              %! baca.slur:SpannerIndicatorCommand(1)
 
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 2
@@ -1048,7 +1048,7 @@ F_RH_Voice_II = {                                                              %
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 1
                 b'16
-                )                                                              %! baca_slur:SpannerIndicatorCommand(2)
+                )                                                              %! baca.slur:SpannerIndicatorCommand(2)
 
             }
 
@@ -1057,7 +1057,7 @@ F_RH_Voice_II = {                                                              %
                 \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 2
                 cs''!16
-                (                                                              %! baca_slur:SpannerIndicatorCommand(1)
+                (                                                              %! baca.slur:SpannerIndicatorCommand(1)
 
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 2
@@ -1070,7 +1070,7 @@ F_RH_Voice_II = {                                                              %
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 1
                 b''16
-                )                                                              %! baca_slur:SpannerIndicatorCommand(2)
+                )                                                              %! baca.slur:SpannerIndicatorCommand(2)
 
             }
 
@@ -1079,7 +1079,7 @@ F_RH_Voice_II = {                                                              %
                 \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 2
                 f''16
-                (                                                              %! baca_slur:SpannerIndicatorCommand(1)
+                (                                                              %! baca.slur:SpannerIndicatorCommand(1)
 
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 2
@@ -1088,7 +1088,7 @@ F_RH_Voice_II = {                                                              %
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 0
                 a''16
-                )                                                              %! baca_slur:SpannerIndicatorCommand(2)
+                )                                                              %! baca.slur:SpannerIndicatorCommand(2)
                 ]
 
             }
@@ -1126,7 +1126,7 @@ F_RH_Voice_II = {                                                              %
         %@%             }                                                      %! FIGURE_NAME
         %@%     }                                                              %! FIGURE_NAME
             [
-            (                                                                  %! baca_slur:SpannerIndicatorCommand(1)
+            (                                                                  %! baca.slur:SpannerIndicatorCommand(1)
 
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
@@ -1135,7 +1135,7 @@ F_RH_Voice_II = {                                                              %
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
             e''16
-            )                                                                  %! baca_slur:SpannerIndicatorCommand(2)
+            )                                                                  %! baca.slur:SpannerIndicatorCommand(2)
 
         }
 
@@ -1145,7 +1145,7 @@ F_RH_Voice_II = {                                                              %
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
             cs''!16
-            (                                                                  %! baca_slur:SpannerIndicatorCommand(1)
+            (                                                                  %! baca.slur:SpannerIndicatorCommand(1)
 
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
@@ -1166,7 +1166,7 @@ F_RH_Voice_II = {                                                              %
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
             b''16
-            )                                                                  %! baca_slur:SpannerIndicatorCommand(2)
+            )                                                                  %! baca.slur:SpannerIndicatorCommand(2)
 
         }
 
@@ -1175,7 +1175,7 @@ F_RH_Voice_II = {                                                              %
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
             g''16
-            (                                                                  %! baca_slur:SpannerIndicatorCommand(1)
+            (                                                                  %! baca.slur:SpannerIndicatorCommand(1)
 
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
@@ -1184,7 +1184,7 @@ F_RH_Voice_II = {                                                              %
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
             b''16
-            )                                                                  %! baca_slur:SpannerIndicatorCommand(2)
+            )                                                                  %! baca.slur:SpannerIndicatorCommand(2)
 
         }
 
@@ -1221,7 +1221,7 @@ F_RH_Voice_II = {                                                              %
             %@%                 ]                                              %! FIGURE_NAME
             %@%             }                                                  %! FIGURE_NAME
             %@%     }                                                          %! FIGURE_NAME
-                (                                                              %! baca_slur:SpannerIndicatorCommand(1)
+                (                                                              %! baca.slur:SpannerIndicatorCommand(1)
 
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 2
@@ -1234,7 +1234,7 @@ F_RH_Voice_II = {                                                              %
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 1
                 d'''16
-                )                                                              %! baca_slur:SpannerIndicatorCommand(2)
+                )                                                              %! baca.slur:SpannerIndicatorCommand(2)
 
             }
 
@@ -1243,7 +1243,7 @@ F_RH_Voice_II = {                                                              %
                 \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 2
                 ef'''!16
-                (                                                              %! baca_slur:SpannerIndicatorCommand(1)
+                (                                                              %! baca.slur:SpannerIndicatorCommand(1)
 
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 2
@@ -1264,7 +1264,7 @@ F_RH_Voice_II = {                                                              %
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 0
                 cs'''!16
-                )                                                              %! baca_slur:SpannerIndicatorCommand(2)
+                )                                                              %! baca.slur:SpannerIndicatorCommand(2)
                 ]
 
             }
@@ -1299,7 +1299,7 @@ F_RH_Voice_II = {                                                              %
         %@%             }                                                      %! FIGURE_NAME
         %@%     }                                                              %! FIGURE_NAME
             [
-            (                                                                  %! baca_slur:SpannerIndicatorCommand(1)
+            (                                                                  %! baca.slur:SpannerIndicatorCommand(1)
 
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
@@ -1308,7 +1308,7 @@ F_RH_Voice_II = {                                                              %
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
             ef'''!16
-            )                                                                  %! baca_slur:SpannerIndicatorCommand(2)
+            )                                                                  %! baca.slur:SpannerIndicatorCommand(2)
 
         }
 
@@ -1342,7 +1342,7 @@ F_RH_Voice_II = {                                                              %
         %@%                 ]                                                  %! FIGURE_NAME
         %@%             }                                                      %! FIGURE_NAME
         %@%     }                                                              %! FIGURE_NAME
-            (                                                                  %! baca_slur:SpannerIndicatorCommand(1)
+            (                                                                  %! baca.slur:SpannerIndicatorCommand(1)
 
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
@@ -1351,11 +1351,11 @@ F_RH_Voice_II = {                                                              %
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 0
             af'''!16
-            )                                                                  %! baca_slur:SpannerIndicatorCommand(2)
+            )                                                                  %! baca.slur:SpannerIndicatorCommand(2)
             ]
-            \revert Beam.positions                                             %! baca_beam_positions:OverrideCommand(2)
-            \revert Slur.direction                                             %! baca_slur_up:OverrideCommand(2)
-            \revert Stem.direction                                             %! baca_stem_down:OverrideCommand(2)
+            \revert Beam.positions                                             %! baca.beam_positions:OverrideCommand(2)
+            \revert Slur.direction                                             %! baca.slur_up:OverrideCommand(2)
+            \revert Stem.direction                                             %! baca.stem_down:OverrideCommand(2)
 
         }
 
@@ -1388,8 +1388,8 @@ F_RH_Voice_II = {                                                              %
 F_RH_Voice_II_Inserts = {                                                      %! abjad.Path.extern
 
     % [F RH_Voice_II_Inserts measure 98 / measure 1]                           %! _comment_measure_numbers
-    \override Beam.positions = #'(15.5 . 15.5)                                 %! baca_beam_positions:OverrideCommand(1)
-    \override Script.direction = #up                                           %! baca_script_up:OverrideCommand(1)
+    \override Beam.positions = #'(15.5 . 15.5)                                 %! baca.beam_positions:OverrideCommand(1)
+    \override Script.direction = #up                                           %! baca.script_up:OverrideCommand(1)
     s1 * 3/4
 
     {
@@ -1401,15 +1401,15 @@ F_RH_Voice_II_Inserts = {                                                      %
             % [F RH_Voice_II_Inserts measure 99 / measure 2]                   %! _comment_measure_numbers
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
-            \override Stem.direction = #up                                     %! baca_stem_up:OverrideCommand(1)
+            \override Stem.direction = #up                                     %! baca.stem_up:OverrideCommand(1)
             c''16
-            - \accent                                                          %! baca_accent:IndicatorCommand
+            - \accent                                                          %! baca.accent:IndicatorCommand
             [
 
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             d''16
-            - \accent                                                          %! baca_accent:IndicatorCommand
+            - \accent                                                          %! baca.accent:IndicatorCommand
 
             s16
 
@@ -1439,12 +1439,12 @@ F_RH_Voice_II_Inserts = {                                                      %
                 \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 2
                 cs''!16
-                - \accent                                                      %! baca_accent:IndicatorCommand
+                - \accent                                                      %! baca.accent:IndicatorCommand
 
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 2
                 f''16
-                - \accent                                                      %! baca_accent:IndicatorCommand
+                - \accent                                                      %! baca.accent:IndicatorCommand
 
                 s16
 
@@ -1467,16 +1467,16 @@ F_RH_Voice_II_Inserts = {                                                      %
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 2
                 f''16
-                - \accent                                                      %! baca_accent:IndicatorCommand
+                - \accent                                                      %! baca.accent:IndicatorCommand
 
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 2
                 ef'''!16
-                - \accent                                                      %! baca_accent:IndicatorCommand
+                - \accent                                                      %! baca.accent:IndicatorCommand
 
                 s16
                 ]
-                \revert Beam.positions                                         %! baca_beam_positions:OverrideCommand(2)
+                \revert Beam.positions                                         %! baca.beam_positions:OverrideCommand(2)
 
             }
 
@@ -1498,15 +1498,15 @@ F_RH_Voice_II_Inserts = {                                                      %
             % [F RH_Voice_II_Inserts measure 103 / measure 6]                  %! _comment_measure_numbers
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
-            \override Beam.positions = #'(13.5 . 13.5)                         %! baca_beam_positions:OverrideCommand(1)
+            \override Beam.positions = #'(13.5 . 13.5)                         %! baca.beam_positions:OverrideCommand(1)
             c''16
-            - \accent                                                          %! baca_accent:IndicatorCommand
+            - \accent                                                          %! baca.accent:IndicatorCommand
             [
 
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             bf''!16
-            - \accent                                                          %! baca_accent:IndicatorCommand
+            - \accent                                                          %! baca.accent:IndicatorCommand
 
             s16
 
@@ -1534,12 +1534,12 @@ F_RH_Voice_II_Inserts = {                                                      %
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
             g''16
-            - \accent                                                          %! baca_accent:IndicatorCommand
+            - \accent                                                          %! baca.accent:IndicatorCommand
 
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             f'''16
-            - \accent                                                          %! baca_accent:IndicatorCommand
+            - \accent                                                          %! baca.accent:IndicatorCommand
 
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
@@ -1567,7 +1567,7 @@ F_RH_Voice_II_Inserts = {                                                      %
                 \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 2
                 a''16
-                - \accent                                                      %! baca_accent:IndicatorCommand
+                - \accent                                                      %! baca.accent:IndicatorCommand
 
                 s16
 
@@ -1582,12 +1582,12 @@ F_RH_Voice_II_Inserts = {                                                      %
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 2
                 ef'''!16
-                - \accent                                                      %! baca_accent:IndicatorCommand
+                - \accent                                                      %! baca.accent:IndicatorCommand
 
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 2
                 c'''16
-                - \accent                                                      %! baca_accent:IndicatorCommand
+                - \accent                                                      %! baca.accent:IndicatorCommand
 
                 s16
 
@@ -1597,7 +1597,7 @@ F_RH_Voice_II_Inserts = {                                                      %
 
                 s16
                 ]
-                \revert Beam.positions                                         %! baca_beam_positions:OverrideCommand(2)
+                \revert Beam.positions                                         %! baca.beam_positions:OverrideCommand(2)
 
             }
 
@@ -1616,9 +1616,9 @@ F_RH_Voice_II_Inserts = {                                                      %
             % [F RH_Voice_II_Inserts measure 106 / measure 9]                  %! _comment_measure_numbers
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
-            \override Beam.positions = #'(18.5 . 18.5)                         %! baca_beam_positions:OverrideCommand(1)
+            \override Beam.positions = #'(18.5 . 18.5)                         %! baca.beam_positions:OverrideCommand(1)
             f''16
-            - \accent                                                          %! baca_accent:IndicatorCommand
+            - \accent                                                          %! baca.accent:IndicatorCommand
             [
 
             s16
@@ -1650,16 +1650,16 @@ F_RH_Voice_II_Inserts = {                                                      %
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
             d'''16
-            - \accent                                                          %! baca_accent:IndicatorCommand
+            - \accent                                                          %! baca.accent:IndicatorCommand
 
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 0
             af'''!16
-            - \accent                                                          %! baca_accent:IndicatorCommand
+            - \accent                                                          %! baca.accent:IndicatorCommand
             ]
-            \revert Beam.positions                                             %! baca_beam_positions:OverrideCommand(2)
-            \revert Script.direction                                           %! baca_script_up:OverrideCommand(2)
-            \revert Stem.direction                                             %! baca_stem_up:OverrideCommand(2)
+            \revert Beam.positions                                             %! baca.beam_positions:OverrideCommand(2)
+            \revert Script.direction                                           %! baca.script_up:OverrideCommand(2)
+            \revert Stem.direction                                             %! baca.stem_up:OverrideCommand(2)
 
         }
         \revert TupletBracket.stencil
@@ -2326,8 +2326,8 @@ F_LH_Voice_III = {                                                             %
 F_LH_Voice_IV = {                                                              %! abjad.Path.extern
 
     % [F LH_Voice_IV measure 98 / measure 1]                                   %! _comment_measure_numbers
-    \override Beam.positions = #'(-5.5 . -5.5)                                 %! baca_beam_positions:OverrideCommand(1)
-    \override Script.direction = #down                                         %! baca_script_down:OverrideCommand(1)
+    \override Beam.positions = #'(-5.5 . -5.5)                                 %! baca.beam_positions:OverrideCommand(1)
+    \override Script.direction = #down                                         %! baca.script_down:OverrideCommand(1)
     \clef "treble"                                                             %! REAPPLIED_CLEF:_set_status_tag:_reapply_persistent_indicators(3)
     \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'green4)        %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
 %@% \override PianoMusicLHStaff.Clef.color = ##f                               %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
@@ -2344,10 +2344,10 @@ F_LH_Voice_IV = {                                                              %
 
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
-            \override Stem.direction = #down                                   %! baca_stem_down:OverrideCommand(1)
+            \override Stem.direction = #down                                   %! baca.stem_down:OverrideCommand(1)
             fs'!16
             - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-            \ff                                                                %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+            \ff                                                                %! EXPLICIT_DYNAMIC:_set_status_tag:baca.dynamic:IndicatorCommand
         %@% ^ \markup {                                                        %! FIGURE_NAME
         %@%     \fontsize                                                      %! FIGURE_NAME
         %@%         #2                                                         %! FIGURE_NAME
@@ -2414,7 +2414,7 @@ F_LH_Voice_IV = {                                                              %
     }
 
     s1 * 11/8
-    \revert Beam.positions                                                     %! baca_beam_positions:OverrideCommand(2)
+    \revert Beam.positions                                                     %! baca.beam_positions:OverrideCommand(2)
 
     {
 
@@ -2423,10 +2423,10 @@ F_LH_Voice_IV = {                                                              %
             % [F LH_Voice_IV measure 103 / measure 6]                          %! _comment_measure_numbers
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
-            \override Beam.positions = #'(-4.5 . -4.5)                         %! baca_beam_positions:OverrideCommand(1)
+            \override Beam.positions = #'(-4.5 . -4.5)                         %! baca.beam_positions:OverrideCommand(1)
             cs''!16
             - \tweak color #(x11-color 'DeepPink1)                             %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-            \ff                                                                %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+            \ff                                                                %! REDUNDANT_DYNAMIC:_set_status_tag:baca.dynamic:IndicatorCommand
         %@% ^ \markup {                                                        %! FIGURE_NAME
         %@%     \fontsize                                                      %! FIGURE_NAME
         %@%         #2                                                         %! FIGURE_NAME
@@ -2471,7 +2471,7 @@ F_LH_Voice_IV = {                                                              %
             \set stemRightBeamCount = 2
             d''16
             - \tweak color #(x11-color 'DeepPink1)                             %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-            \ff                                                                %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+            \ff                                                                %! REDUNDANT_DYNAMIC:_set_status_tag:baca.dynamic:IndicatorCommand
         %@% ^ \markup {                                                        %! FIGURE_NAME
         %@%     \fontsize                                                      %! FIGURE_NAME
         %@%         #2                                                         %! FIGURE_NAME
@@ -2527,7 +2527,7 @@ F_LH_Voice_IV = {                                                              %
 
             \baca-invisible-music                                              %! _make_multimeasure_rest_container
             c'1 * 5/16                                                         %! _make_multimeasure_rest_container
-            \revert Stem.direction                                             %! baca_stem_down:OverrideCommand(2)
+            \revert Stem.direction                                             %! baca.stem_down:OverrideCommand(2)
 
         }                                                                      %! _make_multimeasure_rest_container
 
@@ -2542,8 +2542,8 @@ F_LH_Voice_IV = {                                                              %
 
     % [F LH_Voice_IV measure 108 / measure 11]                                 %! _comment_measure_numbers
     s1 * 1/8                                                                   %! _make_measure_silences
-    \revert Beam.positions                                                     %! baca_beam_positions:OverrideCommand(2)
-    \revert Script.direction                                                   %! baca_script_down:OverrideCommand(2)
+    \revert Beam.positions                                                     %! baca.beam_positions:OverrideCommand(2)
+    \revert Script.direction                                                   %! baca.script_down:OverrideCommand(2)
 
     <<                                                                         %! PHANTOM:_make_multimeasure_rest_container
 
@@ -2572,7 +2572,7 @@ F_LH_Voice_IV = {                                                              %
 F_LH_Voice_IV_Inserts = {                                                      %! abjad.Path.extern
 
     % [F LH_Voice_IV_Inserts measure 98 / measure 1]                           %! _comment_measure_numbers
-    \override Script.direction = #up                                           %! baca_script_up:OverrideCommand(1)
+    \override Script.direction = #up                                           %! baca.script_up:OverrideCommand(1)
     s1 * 3/8
 
     {
@@ -2584,7 +2584,7 @@ F_LH_Voice_IV_Inserts = {                                                      %
 
             s16
 
-            \override Stem.direction = #up                                     %! baca_stem_up:OverrideCommand(1)
+            \override Stem.direction = #up                                     %! baca.stem_up:OverrideCommand(1)
             c'16
 
             s16
@@ -2672,7 +2672,7 @@ F_LH_Voice_IV_Inserts = {                                                      %
 
             \baca-invisible-music                                              %! _make_multimeasure_rest_container
             c'1 * 5/16                                                         %! _make_multimeasure_rest_container
-            \revert Stem.direction                                             %! baca_stem_up:OverrideCommand(2)
+            \revert Stem.direction                                             %! baca.stem_up:OverrideCommand(2)
 
         }                                                                      %! _make_multimeasure_rest_container
 
@@ -2687,7 +2687,7 @@ F_LH_Voice_IV_Inserts = {                                                      %
 
     % [F LH_Voice_IV_Inserts measure 108 / measure 11]                         %! _comment_measure_numbers
     s1 * 1/8                                                                   %! _make_measure_silences
-    \revert Script.direction                                                   %! baca_script_up:OverrideCommand(2)
+    \revert Script.direction                                                   %! baca.script_up:OverrideCommand(2)
 
     <<                                                                         %! PHANTOM:_make_multimeasure_rest_container
 
@@ -2716,8 +2716,8 @@ F_LH_Voice_IV_Inserts = {                                                      %
 F_LH_Voice_V = {                                                               %! abjad.Path.extern
 
     % [F LH_Voice_V measure 98 / measure 1]                                    %! _comment_measure_numbers
-    \override Beam.positions = #'(-6 . -6)                                     %! baca_beam_positions:OverrideCommand(1)
-    \override Script.direction = #down                                         %! baca_script_down:OverrideCommand(1)
+    \override Beam.positions = #'(-6 . -6)                                     %! baca.beam_positions:OverrideCommand(1)
+    \override Script.direction = #down                                         %! baca.script_down:OverrideCommand(1)
     s1 * 329/272
     - \tweak color #(x11-color 'green4)                                        %! REAPPLIED_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \ppp                                                                       %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
@@ -2731,12 +2731,12 @@ F_LH_Voice_V = {                                                               %
 
                 \set stemLeftBeamCount = 0
                 \set stemRightBeamCount = 2
-                \override TupletBracket.direction = #down                      %! baca_tuplet_bracket_down:OverrideCommand(1)
-                \override Stem.direction = #down                               %! baca_stem_down:OverrideCommand(1)
-                \dynamicDown                                                   %! baca_dynamic_down:IndicatorCommand
+                \override TupletBracket.direction = #down                      %! baca.tuplet_bracket_down:OverrideCommand(1)
+                \override Stem.direction = #down                               %! baca.stem_down:OverrideCommand(1)
+                \dynamicDown                                                   %! baca.dynamic_down:IndicatorCommand
                 cs'!16
                 - \tweak color #(x11-color 'blue)                              %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-                \pp                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+                \pp                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:baca.dynamic:IndicatorCommand
             %@% ^ \markup {                                                    %! FIGURE_NAME
             %@%     \fontsize                                                  %! FIGURE_NAME
             %@%         #2                                                     %! FIGURE_NAME
@@ -2755,7 +2755,7 @@ F_LH_Voice_V = {                                                               %
             %@%             }                                                  %! FIGURE_NAME
             %@%     }                                                          %! FIGURE_NAME
                 [
-                (                                                              %! baca_slur:SpannerIndicatorCommand(1)
+                (                                                              %! baca.slur:SpannerIndicatorCommand(1)
 
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 2
@@ -2764,7 +2764,7 @@ F_LH_Voice_V = {                                                               %
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 1
                 cs'!16
-                )                                                              %! baca_slur:SpannerIndicatorCommand(2)
+                )                                                              %! baca.slur:SpannerIndicatorCommand(2)
 
             }
 
@@ -2774,7 +2774,7 @@ F_LH_Voice_V = {                                                               %
                 \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 2
                 b'16
-                (                                                              %! baca_slur:SpannerIndicatorCommand(1)
+                (                                                              %! baca.slur:SpannerIndicatorCommand(1)
 
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 2
@@ -2799,7 +2799,7 @@ F_LH_Voice_V = {                                                               %
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 1
                 g''16
-                )                                                              %! baca_slur:SpannerIndicatorCommand(2)
+                )                                                              %! baca.slur:SpannerIndicatorCommand(2)
 
             }
 
@@ -2808,7 +2808,7 @@ F_LH_Voice_V = {                                                               %
                 \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 2
                 fs''!16
-                (                                                              %! baca_slur:SpannerIndicatorCommand(1)
+                (                                                              %! baca.slur:SpannerIndicatorCommand(1)
 
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 2
@@ -2833,9 +2833,9 @@ F_LH_Voice_V = {                                                               %
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 0
                 d'''16
-                )                                                              %! baca_slur:SpannerIndicatorCommand(2)
+                )                                                              %! baca.slur:SpannerIndicatorCommand(2)
                 ]
-                \revert TupletBracket.direction                                %! baca_tuplet_bracket_down:OverrideCommand(2)
+                \revert TupletBracket.direction                                %! baca.tuplet_bracket_down:OverrideCommand(2)
 
             }
 
@@ -2844,7 +2844,7 @@ F_LH_Voice_V = {                                                               %
     }
 
     s1 * 75/136
-    \revert Beam.positions                                                     %! baca_beam_positions:OverrideCommand(2)
+    \revert Beam.positions                                                     %! baca.beam_positions:OverrideCommand(2)
 
     {
 
@@ -2857,7 +2857,7 @@ F_LH_Voice_V = {                                                               %
                 \set stemRightBeamCount = 2
                 ef''!16
                 - \tweak color #(x11-color 'DeepPink1)                         %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-                \pp                                                            %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+                \pp                                                            %! REDUNDANT_DYNAMIC:_set_status_tag:baca.dynamic:IndicatorCommand
             %@% ^ \markup {                                                    %! FIGURE_NAME
             %@%     \fontsize                                                  %! FIGURE_NAME
             %@%         #2                                                     %! FIGURE_NAME
@@ -2876,7 +2876,7 @@ F_LH_Voice_V = {                                                               %
             %@%             }                                                  %! FIGURE_NAME
             %@%     }                                                          %! FIGURE_NAME
                 [
-                (                                                              %! baca_slur:SpannerIndicatorCommand(1)
+                (                                                              %! baca.slur:SpannerIndicatorCommand(1)
 
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 2
@@ -2885,7 +2885,7 @@ F_LH_Voice_V = {                                                               %
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 1
                 cs''!16
-                )                                                              %! baca_slur:SpannerIndicatorCommand(2)
+                )                                                              %! baca.slur:SpannerIndicatorCommand(2)
 
             }
 
@@ -2894,7 +2894,7 @@ F_LH_Voice_V = {                                                               %
                 \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 2
                 a'16
-                (                                                              %! baca_slur:SpannerIndicatorCommand(1)
+                (                                                              %! baca.slur:SpannerIndicatorCommand(1)
 
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 2
@@ -2919,7 +2919,7 @@ F_LH_Voice_V = {                                                               %
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 1
                 fs''!16
-                )                                                              %! baca_slur:SpannerIndicatorCommand(2)
+                )                                                              %! baca.slur:SpannerIndicatorCommand(2)
 
             }
 
@@ -2929,7 +2929,7 @@ F_LH_Voice_V = {                                                               %
                 \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 2
                 e''16
-                (                                                              %! baca_slur:SpannerIndicatorCommand(1)
+                (                                                              %! baca.slur:SpannerIndicatorCommand(1)
 
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 2
@@ -2954,7 +2954,7 @@ F_LH_Voice_V = {                                                               %
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 0
                 cs'''!16
-                )                                                              %! baca_slur:SpannerIndicatorCommand(2)
+                )                                                              %! baca.slur:SpannerIndicatorCommand(2)
                 ]
 
             }
@@ -2970,7 +2970,7 @@ F_LH_Voice_V = {                                                               %
 
             \baca-invisible-music                                              %! _make_multimeasure_rest_container
             c'1 * 3/17                                                         %! _make_multimeasure_rest_container
-            \revert Stem.direction                                             %! baca_stem_down:OverrideCommand(2)
+            \revert Stem.direction                                             %! baca.stem_down:OverrideCommand(2)
 
         }                                                                      %! _make_multimeasure_rest_container
 
@@ -2991,7 +2991,7 @@ F_LH_Voice_V = {                                                               %
 
     % [F LH_Voice_V measure 108 / measure 11]                                  %! _comment_measure_numbers
     s1 * 1/8                                                                   %! _make_measure_silences
-    \revert Script.direction                                                   %! baca_script_down:OverrideCommand(2)
+    \revert Script.direction                                                   %! baca.script_down:OverrideCommand(2)
 
     <<                                                                         %! PHANTOM:_make_multimeasure_rest_container
 
@@ -3020,8 +3020,8 @@ F_LH_Voice_V = {                                                               %
 F_LH_Voice_V_Inserts = {                                                       %! abjad.Path.extern
 
     % [F LH_Voice_V_Inserts measure 98 / measure 1]                            %! _comment_measure_numbers
-    \override Script.direction = #up                                           %! baca_script_up:OverrideCommand(1)
-    \override Beam.positions = #'(9 . 9)                                       %! baca_beam_positions:OverrideCommand(1)
+    \override Script.direction = #up                                           %! baca.script_up:OverrideCommand(1)
+    \override Beam.positions = #'(9 . 9)                                       %! baca.beam_positions:OverrideCommand(1)
     s1 * 329/272
 
     {
@@ -3047,9 +3047,9 @@ F_LH_Voice_V_Inserts = {                                                       %
                 % [F LH_Voice_V_Inserts measure 101 / measure 4]               %! _comment_measure_numbers
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 2
-                \override Stem.direction = #up                                 %! baca_stem_up:OverrideCommand(1)
+                \override Stem.direction = #up                                 %! baca.stem_up:OverrideCommand(1)
                 b'16
-                - \staccato                                                    %! baca_staccato:IndicatorCommand
+                - \staccato                                                    %! baca.staccato:IndicatorCommand
 
                 s16
 
@@ -3070,7 +3070,7 @@ F_LH_Voice_V_Inserts = {                                                       %
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 2
                 fs''!16
-                - \staccato                                                    %! baca_staccato:IndicatorCommand
+                - \staccato                                                    %! baca.staccato:IndicatorCommand
 
                 s16
 
@@ -3083,12 +3083,12 @@ F_LH_Voice_V_Inserts = {                                                       %
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 2
                 c'''16
-                - \staccato                                                    %! baca_staccato:IndicatorCommand
+                - \staccato                                                    %! baca.staccato:IndicatorCommand
 
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 0
                 d'''16
-                - \staccato                                                    %! baca_staccato:IndicatorCommand
+                - \staccato                                                    %! baca.staccato:IndicatorCommand
                 ]
 
             }
@@ -3124,7 +3124,7 @@ F_LH_Voice_V_Inserts = {                                                       %
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 2
                 a'16
-                - \staccato                                                    %! baca_staccato:IndicatorCommand
+                - \staccato                                                    %! baca.staccato:IndicatorCommand
 
                 s16
 
@@ -3146,7 +3146,7 @@ F_LH_Voice_V_Inserts = {                                                       %
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 2
                 e''16
-                - \staccato                                                    %! baca_staccato:IndicatorCommand
+                - \staccato                                                    %! baca.staccato:IndicatorCommand
 
                 s16
 
@@ -3159,12 +3159,12 @@ F_LH_Voice_V_Inserts = {                                                       %
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 2
                 af''!16
-                - \staccato                                                    %! baca_staccato:IndicatorCommand
+                - \staccato                                                    %! baca.staccato:IndicatorCommand
 
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 0
                 cs'''!16
-                - \staccato                                                    %! baca_staccato:IndicatorCommand
+                - \staccato                                                    %! baca.staccato:IndicatorCommand
                 ]
 
             }
@@ -3182,7 +3182,7 @@ F_LH_Voice_V_Inserts = {                                                       %
 
             \baca-invisible-music                                              %! _make_multimeasure_rest_container
             c'1 * 3/17                                                         %! _make_multimeasure_rest_container
-            \revert Stem.direction                                             %! baca_stem_up:OverrideCommand(2)
+            \revert Stem.direction                                             %! baca.stem_up:OverrideCommand(2)
 
         }                                                                      %! _make_multimeasure_rest_container
 
@@ -3203,8 +3203,8 @@ F_LH_Voice_V_Inserts = {                                                       %
 
     % [F LH_Voice_V_Inserts measure 108 / measure 11]                          %! _comment_measure_numbers
     s1 * 1/8                                                                   %! _make_measure_silences
-    \revert Script.direction                                                   %! baca_script_up:OverrideCommand(2)
-    \revert Beam.positions                                                     %! baca_beam_positions:OverrideCommand(2)
+    \revert Script.direction                                                   %! baca.script_up:OverrideCommand(2)
+    \revert Beam.positions                                                     %! baca.beam_positions:OverrideCommand(2)
 
     <<                                                                         %! PHANTOM:_make_multimeasure_rest_container
 
