@@ -1,5 +1,4 @@
 from .CollectionMaker import CollectionMaker
-from .Gallery import Gallery
 from .MusicAccumulator import MusicAccumulator
 from .ScoreTemplate import ScoreTemplate
 from .SilverDesignMaker import SilverDesignMaker
