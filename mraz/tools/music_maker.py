@@ -31,6 +31,7 @@ def music_maker():
         >>> figures_ = []
         >>> for figure in figures:
         ...     figures_.extend(figure)
+        ...     figure[:] = []
         ...
         >>> figures = abjad.select(figures_)
 
@@ -259,6 +260,7 @@ def music_maker():
         >>> figures_ = []
         >>> for figure in figures:
         ...     figures_.extend(figure)
+        ...     figure[:] = []
         ...
         >>> figures = abjad.select(figures_)
 
