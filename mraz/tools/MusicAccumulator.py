@@ -114,7 +114,6 @@ class MusicAccumulator(baca.MusicAccumulator):
         color_unregistered_pitches=None,
         counts=None,
         denominator=4,
-        division_masks=None,
         exhaustive=None,
         extend_beam=None,
         figure_name=None,
@@ -133,7 +132,6 @@ class MusicAccumulator(baca.MusicAccumulator):
         keywords = {
             "allow_repeats": allow_repeats,
             "color_unregistered_pitches": color_unregistered_pitches,
-            "division_masks": division_masks,
             "exhaustive": exhaustive,
             "extend_beam": extend_beam,
             "figure_name": figure_name,
