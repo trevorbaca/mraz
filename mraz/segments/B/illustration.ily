@@ -433,7 +433,7 @@ B_RH_Voice_I_Inserts = {                                                       %
     s1 * 3/2                                                                   %! _call_rhythm_commands
 
     % [B RH_Voice_I_Inserts measure 33 / measure 12]                           %! _comment_measure_numbers
-    s1 * 1                                                                     %! _call_rhythm_commands
+    s1 * 1/1                                                                   %! _call_rhythm_commands
 
     <<                                                                         %! PHANTOM:_make_multimeasure_rest_container
 
@@ -1065,7 +1065,7 @@ B_RH_Voice_II_Inserts = {                                                      %
     s1 * 3/2                                                                   %! _call_rhythm_commands
 
     % [B RH_Voice_II_Inserts measure 33 / measure 12]                          %! _comment_measure_numbers
-    s1 * 1                                                                     %! _call_rhythm_commands
+    s1 * 1/1                                                                   %! _call_rhythm_commands
 
     <<                                                                         %! PHANTOM:_make_multimeasure_rest_container
 
@@ -1233,7 +1233,7 @@ B_RH_Voice_III_Inserts = {                                                     %
     s1 * 3/2                                                                   %! _call_rhythm_commands
 
     % [B RH_Voice_III_Inserts measure 33 / measure 12]                         %! _comment_measure_numbers
-    s1 * 1                                                                     %! _call_rhythm_commands
+    s1 * 1/1                                                                   %! _call_rhythm_commands
 
     <<                                                                         %! PHANTOM:_make_multimeasure_rest_container
 
@@ -1605,7 +1605,7 @@ B_RH_Voice_V = {                                                               %
     s1 * 3/2                                                                   %! _call_rhythm_commands
 
     % [B RH_Voice_V measure 33 / measure 12]                                   %! _comment_measure_numbers
-    s1 * 1                                                                     %! _call_rhythm_commands
+    s1 * 1/1                                                                   %! _call_rhythm_commands
 
     <<                                                                         %! PHANTOM:_make_multimeasure_rest_container
 
@@ -1667,7 +1667,7 @@ B_RH_Voice_VI = {                                                              %
     s1 * 3/2                                                                   %! _call_rhythm_commands
 
     % [B RH_Voice_VI measure 33 / measure 12]                                  %! _comment_measure_numbers
-    s1 * 1                                                                     %! _call_rhythm_commands
+    s1 * 1/1                                                                   %! _call_rhythm_commands
 
     <<                                                                         %! PHANTOM:_make_multimeasure_rest_container
 
@@ -1729,7 +1729,7 @@ B_RH_Resonance_Voice = {                                                       %
     s1 * 3/2                                                                   %! _call_rhythm_commands
 
     % [B RH_Resonance_Voice measure 33 / measure 12]                           %! _comment_measure_numbers
-    s1 * 1                                                                     %! _call_rhythm_commands
+    s1 * 1/1                                                                   %! _call_rhythm_commands
 
     <<                                                                         %! PHANTOM:_make_multimeasure_rest_container
 
@@ -1829,7 +1829,7 @@ B_LH_Voice_I = {                                                               %
     s1 * 3/2                                                                   %! _call_rhythm_commands
 
     % [B LH_Voice_I measure 33 / measure 12]                                   %! _comment_measure_numbers
-    s1 * 1                                                                     %! _call_rhythm_commands
+    s1 * 1/1                                                                   %! _call_rhythm_commands
 
     <<                                                                         %! PHANTOM:_make_multimeasure_rest_container
 
@@ -1891,7 +1891,7 @@ B_LH_Voice_II = {                                                              %
     s1 * 3/2                                                                   %! _call_rhythm_commands
 
     % [B LH_Voice_II measure 33 / measure 12]                                  %! _comment_measure_numbers
-    s1 * 1                                                                     %! _call_rhythm_commands
+    s1 * 1/1                                                                   %! _call_rhythm_commands
 
     <<                                                                         %! PHANTOM:_make_multimeasure_rest_container
 
@@ -1953,7 +1953,7 @@ B_LH_Voice_III = {                                                             %
     s1 * 3/2                                                                   %! _call_rhythm_commands
 
     % [B LH_Voice_III measure 33 / measure 12]                                 %! _comment_measure_numbers
-    s1 * 1                                                                     %! _call_rhythm_commands
+    s1 * 1/1                                                                   %! _call_rhythm_commands
 
     <<                                                                         %! PHANTOM:_make_multimeasure_rest_container
 
@@ -2017,7 +2017,7 @@ B_LH_Voice_IV = {                                                              %
     s1 * 3/2                                                                   %! _call_rhythm_commands
 
     % [B LH_Voice_IV measure 33 / measure 12]                                  %! _comment_measure_numbers
-    s1 * 1                                                                     %! _call_rhythm_commands
+    s1 * 1/1                                                                   %! _call_rhythm_commands
 
     <<                                                                         %! PHANTOM:_make_multimeasure_rest_container
 
@@ -2079,7 +2079,7 @@ B_LH_Voice_IV_Inserts = {                                                      %
     s1 * 3/2                                                                   %! _call_rhythm_commands
 
     % [B LH_Voice_IV_Inserts measure 33 / measure 12]                          %! _comment_measure_numbers
-    s1 * 1                                                                     %! _call_rhythm_commands
+    s1 * 1/1                                                                   %! _call_rhythm_commands
 
     <<                                                                         %! PHANTOM:_make_multimeasure_rest_container
 
@@ -2250,7 +2250,7 @@ B_LH_Voice_V_Inserts = {                                                       %
     s1 * 3/2                                                                   %! _call_rhythm_commands
 
     % [B LH_Voice_V_Inserts measure 33 / measure 12]                           %! _comment_measure_numbers
-    s1 * 1                                                                     %! _call_rhythm_commands
+    s1 * 1/1                                                                   %! _call_rhythm_commands
 
     <<                                                                         %! PHANTOM:_make_multimeasure_rest_container
 
@@ -2319,7 +2319,7 @@ B_LH_Voice_VI = {                                                              %
     s1 * 3/2                                                                   %! _call_rhythm_commands
 
     % [B LH_Voice_VI measure 33 / measure 12]                                  %! _comment_measure_numbers
-    s1 * 1                                                                     %! _call_rhythm_commands
+    s1 * 1/1                                                                   %! _call_rhythm_commands
 
     <<                                                                         %! PHANTOM:_make_multimeasure_rest_container
 
@@ -2381,7 +2381,7 @@ B_LH_Voice_VI_Inserts = {                                                      %
     s1 * 3/2                                                                   %! _call_rhythm_commands
 
     % [B LH_Voice_VI_Inserts measure 33 / measure 12]                          %! _comment_measure_numbers
-    s1 * 1                                                                     %! _call_rhythm_commands
+    s1 * 1/1                                                                   %! _call_rhythm_commands
 
     <<                                                                         %! PHANTOM:_make_multimeasure_rest_container
 
