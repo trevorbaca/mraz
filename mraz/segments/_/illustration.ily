@@ -324,19 +324,19 @@ i_RH_Voice_I = {                                                               %
 i_RH_Voice_I_Inserts = {                                                       %! abjad.Path.extern
 
     % [_ RH_Voice_I_Inserts measure 1]                                         %! _comment_measure_numbers
-    s1 * 1/1                                                                   %! _call_rhythm_commands
+    s1 * 4/4                                                                   %! _call_rhythm_commands
 
     % [_ RH_Voice_I_Inserts measure 2]                                         %! _comment_measure_numbers
-    s1 * 1/2                                                                   %! _call_rhythm_commands
+    s1 * 2/4                                                                   %! _call_rhythm_commands
 
     % [_ RH_Voice_I_Inserts measure 3]                                         %! _comment_measure_numbers
-    s1 * 1/1                                                                   %! _call_rhythm_commands
+    s1 * 4/4                                                                   %! _call_rhythm_commands
 
     % [_ RH_Voice_I_Inserts measure 4]                                         %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
 
     % [_ RH_Voice_I_Inserts measure 5]                                         %! _comment_measure_numbers
-    s1 * 1/2                                                                   %! _call_rhythm_commands
+    s1 * 4/8                                                                   %! _call_rhythm_commands
 
     % [_ RH_Voice_I_Inserts measure 6]                                         %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
@@ -345,7 +345,7 @@ i_RH_Voice_I_Inserts = {                                                       %
     s1 * 7/8                                                                   %! _call_rhythm_commands
 
     % [_ RH_Voice_I_Inserts measure 8]                                         %! _comment_measure_numbers
-    s1 * 4/1                                                                   %! _call_rhythm_commands
+    s1 * 16/4                                                                  %! _call_rhythm_commands
 
     % [_ RH_Voice_I_Inserts measure 9]                                         %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
@@ -686,19 +686,19 @@ i_RH_Voice_II = {                                                              %
 i_RH_Voice_II_Inserts = {                                                      %! abjad.Path.extern
 
     % [_ RH_Voice_II_Inserts measure 1]                                        %! _comment_measure_numbers
-    s1 * 1/1                                                                   %! _call_rhythm_commands
+    s1 * 4/4                                                                   %! _call_rhythm_commands
 
     % [_ RH_Voice_II_Inserts measure 2]                                        %! _comment_measure_numbers
-    s1 * 1/2                                                                   %! _call_rhythm_commands
+    s1 * 2/4                                                                   %! _call_rhythm_commands
 
     % [_ RH_Voice_II_Inserts measure 3]                                        %! _comment_measure_numbers
-    s1 * 1/1                                                                   %! _call_rhythm_commands
+    s1 * 4/4                                                                   %! _call_rhythm_commands
 
     % [_ RH_Voice_II_Inserts measure 4]                                        %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
 
     % [_ RH_Voice_II_Inserts measure 5]                                        %! _comment_measure_numbers
-    s1 * 1/2                                                                   %! _call_rhythm_commands
+    s1 * 4/8                                                                   %! _call_rhythm_commands
 
     % [_ RH_Voice_II_Inserts measure 6]                                        %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
@@ -707,7 +707,7 @@ i_RH_Voice_II_Inserts = {                                                      %
     s1 * 7/8                                                                   %! _call_rhythm_commands
 
     % [_ RH_Voice_II_Inserts measure 8]                                        %! _comment_measure_numbers
-    s1 * 4/1                                                                   %! _call_rhythm_commands
+    s1 * 16/4                                                                  %! _call_rhythm_commands
 
     % [_ RH_Voice_II_Inserts measure 9]                                        %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
@@ -950,19 +950,19 @@ i_RH_Voice_III = {                                                             %
 i_RH_Voice_III_Inserts = {                                                     %! abjad.Path.extern
 
     % [_ RH_Voice_III_Inserts measure 1]                                       %! _comment_measure_numbers
-    s1 * 1/1                                                                   %! _call_rhythm_commands
+    s1 * 4/4                                                                   %! _call_rhythm_commands
 
     % [_ RH_Voice_III_Inserts measure 2]                                       %! _comment_measure_numbers
-    s1 * 1/2                                                                   %! _call_rhythm_commands
+    s1 * 2/4                                                                   %! _call_rhythm_commands
 
     % [_ RH_Voice_III_Inserts measure 3]                                       %! _comment_measure_numbers
-    s1 * 1/1                                                                   %! _call_rhythm_commands
+    s1 * 4/4                                                                   %! _call_rhythm_commands
 
     % [_ RH_Voice_III_Inserts measure 4]                                       %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
 
     % [_ RH_Voice_III_Inserts measure 5]                                       %! _comment_measure_numbers
-    s1 * 1/2                                                                   %! _call_rhythm_commands
+    s1 * 4/8                                                                   %! _call_rhythm_commands
 
     % [_ RH_Voice_III_Inserts measure 6]                                       %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
@@ -971,7 +971,7 @@ i_RH_Voice_III_Inserts = {                                                     %
     s1 * 7/8                                                                   %! _call_rhythm_commands
 
     % [_ RH_Voice_III_Inserts measure 8]                                       %! _comment_measure_numbers
-    s1 * 4/1                                                                   %! _call_rhythm_commands
+    s1 * 16/4                                                                  %! _call_rhythm_commands
 
     % [_ RH_Voice_III_Inserts measure 9]                                       %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
@@ -1003,19 +1003,19 @@ i_RH_Voice_III_Inserts = {                                                     %
 i_RH_Voice_IV = {                                                              %! abjad.Path.extern
 
     % [_ RH_Voice_IV measure 1]                                                %! _comment_measure_numbers
-    s1 * 1/1                                                                   %! _call_rhythm_commands
+    s1 * 4/4                                                                   %! _call_rhythm_commands
 
     % [_ RH_Voice_IV measure 2]                                                %! _comment_measure_numbers
-    s1 * 1/2                                                                   %! _call_rhythm_commands
+    s1 * 2/4                                                                   %! _call_rhythm_commands
 
     % [_ RH_Voice_IV measure 3]                                                %! _comment_measure_numbers
-    s1 * 1/1                                                                   %! _call_rhythm_commands
+    s1 * 4/4                                                                   %! _call_rhythm_commands
 
     % [_ RH_Voice_IV measure 4]                                                %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
 
     % [_ RH_Voice_IV measure 5]                                                %! _comment_measure_numbers
-    s1 * 1/2                                                                   %! _call_rhythm_commands
+    s1 * 4/8                                                                   %! _call_rhythm_commands
 
     % [_ RH_Voice_IV measure 6]                                                %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
@@ -1024,7 +1024,7 @@ i_RH_Voice_IV = {                                                              %
     s1 * 7/8                                                                   %! _call_rhythm_commands
 
     % [_ RH_Voice_IV measure 8]                                                %! _comment_measure_numbers
-    s1 * 4/1                                                                   %! _call_rhythm_commands
+    s1 * 16/4                                                                  %! _call_rhythm_commands
 
     % [_ RH_Voice_IV measure 9]                                                %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
@@ -1056,19 +1056,19 @@ i_RH_Voice_IV = {                                                              %
 i_RH_Voice_IV_Inserts = {                                                      %! abjad.Path.extern
 
     % [_ RH_Voice_IV_Inserts measure 1]                                        %! _comment_measure_numbers
-    s1 * 1/1                                                                   %! _call_rhythm_commands
+    s1 * 4/4                                                                   %! _call_rhythm_commands
 
     % [_ RH_Voice_IV_Inserts measure 2]                                        %! _comment_measure_numbers
-    s1 * 1/2                                                                   %! _call_rhythm_commands
+    s1 * 2/4                                                                   %! _call_rhythm_commands
 
     % [_ RH_Voice_IV_Inserts measure 3]                                        %! _comment_measure_numbers
-    s1 * 1/1                                                                   %! _call_rhythm_commands
+    s1 * 4/4                                                                   %! _call_rhythm_commands
 
     % [_ RH_Voice_IV_Inserts measure 4]                                        %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
 
     % [_ RH_Voice_IV_Inserts measure 5]                                        %! _comment_measure_numbers
-    s1 * 1/2                                                                   %! _call_rhythm_commands
+    s1 * 4/8                                                                   %! _call_rhythm_commands
 
     % [_ RH_Voice_IV_Inserts measure 6]                                        %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
@@ -1077,7 +1077,7 @@ i_RH_Voice_IV_Inserts = {                                                      %
     s1 * 7/8                                                                   %! _call_rhythm_commands
 
     % [_ RH_Voice_IV_Inserts measure 8]                                        %! _comment_measure_numbers
-    s1 * 4/1                                                                   %! _call_rhythm_commands
+    s1 * 16/4                                                                  %! _call_rhythm_commands
 
     % [_ RH_Voice_IV_Inserts measure 9]                                        %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
@@ -1109,19 +1109,19 @@ i_RH_Voice_IV_Inserts = {                                                      %
 i_RH_Voice_V = {                                                               %! abjad.Path.extern
 
     % [_ RH_Voice_V measure 1]                                                 %! _comment_measure_numbers
-    s1 * 1/1                                                                   %! _call_rhythm_commands
+    s1 * 4/4                                                                   %! _call_rhythm_commands
 
     % [_ RH_Voice_V measure 2]                                                 %! _comment_measure_numbers
-    s1 * 1/2                                                                   %! _call_rhythm_commands
+    s1 * 2/4                                                                   %! _call_rhythm_commands
 
     % [_ RH_Voice_V measure 3]                                                 %! _comment_measure_numbers
-    s1 * 1/1                                                                   %! _call_rhythm_commands
+    s1 * 4/4                                                                   %! _call_rhythm_commands
 
     % [_ RH_Voice_V measure 4]                                                 %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
 
     % [_ RH_Voice_V measure 5]                                                 %! _comment_measure_numbers
-    s1 * 1/2                                                                   %! _call_rhythm_commands
+    s1 * 4/8                                                                   %! _call_rhythm_commands
 
     % [_ RH_Voice_V measure 6]                                                 %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
@@ -1130,7 +1130,7 @@ i_RH_Voice_V = {                                                               %
     s1 * 7/8                                                                   %! _call_rhythm_commands
 
     % [_ RH_Voice_V measure 8]                                                 %! _comment_measure_numbers
-    s1 * 4/1                                                                   %! _call_rhythm_commands
+    s1 * 16/4                                                                  %! _call_rhythm_commands
 
     % [_ RH_Voice_V measure 9]                                                 %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
@@ -1162,19 +1162,19 @@ i_RH_Voice_V = {                                                               %
 i_RH_Voice_VI = {                                                              %! abjad.Path.extern
 
     % [_ RH_Voice_VI measure 1]                                                %! _comment_measure_numbers
-    s1 * 1/1                                                                   %! _call_rhythm_commands
+    s1 * 4/4                                                                   %! _call_rhythm_commands
 
     % [_ RH_Voice_VI measure 2]                                                %! _comment_measure_numbers
-    s1 * 1/2                                                                   %! _call_rhythm_commands
+    s1 * 2/4                                                                   %! _call_rhythm_commands
 
     % [_ RH_Voice_VI measure 3]                                                %! _comment_measure_numbers
-    s1 * 1/1                                                                   %! _call_rhythm_commands
+    s1 * 4/4                                                                   %! _call_rhythm_commands
 
     % [_ RH_Voice_VI measure 4]                                                %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
 
     % [_ RH_Voice_VI measure 5]                                                %! _comment_measure_numbers
-    s1 * 1/2                                                                   %! _call_rhythm_commands
+    s1 * 4/8                                                                   %! _call_rhythm_commands
 
     % [_ RH_Voice_VI measure 6]                                                %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
@@ -1183,7 +1183,7 @@ i_RH_Voice_VI = {                                                              %
     s1 * 7/8                                                                   %! _call_rhythm_commands
 
     % [_ RH_Voice_VI measure 8]                                                %! _comment_measure_numbers
-    s1 * 4/1                                                                   %! _call_rhythm_commands
+    s1 * 16/4                                                                  %! _call_rhythm_commands
 
     % [_ RH_Voice_VI measure 9]                                                %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
@@ -1215,19 +1215,19 @@ i_RH_Voice_VI = {                                                              %
 i_RH_Resonance_Voice = {                                                       %! abjad.Path.extern
 
     % [_ RH_Resonance_Voice measure 1]                                         %! _comment_measure_numbers
-    s1 * 1/1                                                                   %! _call_rhythm_commands
+    s1 * 4/4                                                                   %! _call_rhythm_commands
 
     % [_ RH_Resonance_Voice measure 2]                                         %! _comment_measure_numbers
-    s1 * 1/2                                                                   %! _call_rhythm_commands
+    s1 * 2/4                                                                   %! _call_rhythm_commands
 
     % [_ RH_Resonance_Voice measure 3]                                         %! _comment_measure_numbers
-    s1 * 1/1                                                                   %! _call_rhythm_commands
+    s1 * 4/4                                                                   %! _call_rhythm_commands
 
     % [_ RH_Resonance_Voice measure 4]                                         %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
 
     % [_ RH_Resonance_Voice measure 5]                                         %! _comment_measure_numbers
-    s1 * 1/2                                                                   %! _call_rhythm_commands
+    s1 * 4/8                                                                   %! _call_rhythm_commands
 
     % [_ RH_Resonance_Voice measure 6]                                         %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
@@ -1236,7 +1236,7 @@ i_RH_Resonance_Voice = {                                                       %
     s1 * 7/8                                                                   %! _call_rhythm_commands
 
     % [_ RH_Resonance_Voice measure 8]                                         %! _comment_measure_numbers
-    s1 * 4/1                                                                   %! _call_rhythm_commands
+    s1 * 16/4                                                                  %! _call_rhythm_commands
 
     % [_ RH_Resonance_Voice measure 9]                                         %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
@@ -1310,20 +1310,20 @@ i_LH_Voice_I = {                                                               %
     \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'blue)          %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
 %@% \override PianoMusicLHStaff.Clef.color = ##f                               %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
     \set PianoMusicLHStaff.forceClef = ##t                                     %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):baca.clef:IndicatorCommand
-    s1 * 1/1                                                                   %! _call_rhythm_commands
+    s1 * 4/4                                                                   %! _call_rhythm_commands
     \override PianoMusicLHStaff.Clef.color = #(x11-color 'DeepSkyBlue2)        %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
     % [_ LH_Voice_I measure 2]                                                 %! _comment_measure_numbers
-    s1 * 1/2                                                                   %! _call_rhythm_commands
+    s1 * 2/4                                                                   %! _call_rhythm_commands
 
     % [_ LH_Voice_I measure 3]                                                 %! _comment_measure_numbers
-    s1 * 1/1                                                                   %! _call_rhythm_commands
+    s1 * 4/4                                                                   %! _call_rhythm_commands
 
     % [_ LH_Voice_I measure 4]                                                 %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
 
     % [_ LH_Voice_I measure 5]                                                 %! _comment_measure_numbers
-    s1 * 1/2                                                                   %! _call_rhythm_commands
+    s1 * 4/8                                                                   %! _call_rhythm_commands
 
     % [_ LH_Voice_I measure 6]                                                 %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
@@ -1332,7 +1332,7 @@ i_LH_Voice_I = {                                                               %
     s1 * 7/8                                                                   %! _call_rhythm_commands
 
     % [_ LH_Voice_I measure 8]                                                 %! _comment_measure_numbers
-    s1 * 4/1                                                                   %! _call_rhythm_commands
+    s1 * 16/4                                                                  %! _call_rhythm_commands
 
     % [_ LH_Voice_I measure 9]                                                 %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
@@ -1364,19 +1364,19 @@ i_LH_Voice_I = {                                                               %
 i_LH_Voice_II = {                                                              %! abjad.Path.extern
 
     % [_ LH_Voice_II measure 1]                                                %! _comment_measure_numbers
-    s1 * 1/1                                                                   %! _call_rhythm_commands
+    s1 * 4/4                                                                   %! _call_rhythm_commands
 
     % [_ LH_Voice_II measure 2]                                                %! _comment_measure_numbers
-    s1 * 1/2                                                                   %! _call_rhythm_commands
+    s1 * 2/4                                                                   %! _call_rhythm_commands
 
     % [_ LH_Voice_II measure 3]                                                %! _comment_measure_numbers
-    s1 * 1/1                                                                   %! _call_rhythm_commands
+    s1 * 4/4                                                                   %! _call_rhythm_commands
 
     % [_ LH_Voice_II measure 4]                                                %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
 
     % [_ LH_Voice_II measure 5]                                                %! _comment_measure_numbers
-    s1 * 1/2                                                                   %! _call_rhythm_commands
+    s1 * 4/8                                                                   %! _call_rhythm_commands
 
     % [_ LH_Voice_II measure 6]                                                %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
@@ -1385,7 +1385,7 @@ i_LH_Voice_II = {                                                              %
     s1 * 7/8                                                                   %! _call_rhythm_commands
 
     % [_ LH_Voice_II measure 8]                                                %! _comment_measure_numbers
-    s1 * 4/1                                                                   %! _call_rhythm_commands
+    s1 * 16/4                                                                  %! _call_rhythm_commands
 
     % [_ LH_Voice_II measure 9]                                                %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
@@ -1417,19 +1417,19 @@ i_LH_Voice_II = {                                                              %
 i_LH_Voice_III = {                                                             %! abjad.Path.extern
 
     % [_ LH_Voice_III measure 1]                                               %! _comment_measure_numbers
-    s1 * 1/1                                                                   %! _call_rhythm_commands
+    s1 * 4/4                                                                   %! _call_rhythm_commands
 
     % [_ LH_Voice_III measure 2]                                               %! _comment_measure_numbers
-    s1 * 1/2                                                                   %! _call_rhythm_commands
+    s1 * 2/4                                                                   %! _call_rhythm_commands
 
     % [_ LH_Voice_III measure 3]                                               %! _comment_measure_numbers
-    s1 * 1/1                                                                   %! _call_rhythm_commands
+    s1 * 4/4                                                                   %! _call_rhythm_commands
 
     % [_ LH_Voice_III measure 4]                                               %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
 
     % [_ LH_Voice_III measure 5]                                               %! _comment_measure_numbers
-    s1 * 1/2                                                                   %! _call_rhythm_commands
+    s1 * 4/8                                                                   %! _call_rhythm_commands
 
     % [_ LH_Voice_III measure 6]                                               %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
@@ -1438,7 +1438,7 @@ i_LH_Voice_III = {                                                             %
     s1 * 7/8                                                                   %! _call_rhythm_commands
 
     % [_ LH_Voice_III measure 8]                                               %! _comment_measure_numbers
-    s1 * 4/1                                                                   %! _call_rhythm_commands
+    s1 * 16/4                                                                  %! _call_rhythm_commands
 
     % [_ LH_Voice_III measure 9]                                               %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
@@ -1808,19 +1808,19 @@ i_LH_Voice_V = {                                                               %
 i_LH_Voice_V_Inserts = {                                                       %! abjad.Path.extern
 
     % [_ LH_Voice_V_Inserts measure 1]                                         %! _comment_measure_numbers
-    s1 * 1/1                                                                   %! _call_rhythm_commands
+    s1 * 4/4                                                                   %! _call_rhythm_commands
 
     % [_ LH_Voice_V_Inserts measure 2]                                         %! _comment_measure_numbers
-    s1 * 1/2                                                                   %! _call_rhythm_commands
+    s1 * 2/4                                                                   %! _call_rhythm_commands
 
     % [_ LH_Voice_V_Inserts measure 3]                                         %! _comment_measure_numbers
-    s1 * 1/1                                                                   %! _call_rhythm_commands
+    s1 * 4/4                                                                   %! _call_rhythm_commands
 
     % [_ LH_Voice_V_Inserts measure 4]                                         %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
 
     % [_ LH_Voice_V_Inserts measure 5]                                         %! _comment_measure_numbers
-    s1 * 1/2                                                                   %! _call_rhythm_commands
+    s1 * 4/8                                                                   %! _call_rhythm_commands
 
     % [_ LH_Voice_V_Inserts measure 6]                                         %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
@@ -1829,7 +1829,7 @@ i_LH_Voice_V_Inserts = {                                                       %
     s1 * 7/8                                                                   %! _call_rhythm_commands
 
     % [_ LH_Voice_V_Inserts measure 8]                                         %! _comment_measure_numbers
-    s1 * 4/1                                                                   %! _call_rhythm_commands
+    s1 * 16/4                                                                  %! _call_rhythm_commands
 
     % [_ LH_Voice_V_Inserts measure 9]                                         %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
@@ -1976,19 +1976,19 @@ i_LH_Voice_VI = {                                                              %
 i_LH_Voice_VI_Inserts = {                                                      %! abjad.Path.extern
 
     % [_ LH_Voice_VI_Inserts measure 1]                                        %! _comment_measure_numbers
-    s1 * 1/1                                                                   %! _call_rhythm_commands
+    s1 * 4/4                                                                   %! _call_rhythm_commands
 
     % [_ LH_Voice_VI_Inserts measure 2]                                        %! _comment_measure_numbers
-    s1 * 1/2                                                                   %! _call_rhythm_commands
+    s1 * 2/4                                                                   %! _call_rhythm_commands
 
     % [_ LH_Voice_VI_Inserts measure 3]                                        %! _comment_measure_numbers
-    s1 * 1/1                                                                   %! _call_rhythm_commands
+    s1 * 4/4                                                                   %! _call_rhythm_commands
 
     % [_ LH_Voice_VI_Inserts measure 4]                                        %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
 
     % [_ LH_Voice_VI_Inserts measure 5]                                        %! _comment_measure_numbers
-    s1 * 1/2                                                                   %! _call_rhythm_commands
+    s1 * 4/8                                                                   %! _call_rhythm_commands
 
     % [_ LH_Voice_VI_Inserts measure 6]                                        %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
@@ -1997,7 +1997,7 @@ i_LH_Voice_VI_Inserts = {                                                      %
     s1 * 7/8                                                                   %! _call_rhythm_commands
 
     % [_ LH_Voice_VI_Inserts measure 8]                                        %! _comment_measure_numbers
-    s1 * 4/1                                                                   %! _call_rhythm_commands
+    s1 * 16/4                                                                  %! _call_rhythm_commands
 
     % [_ LH_Voice_VI_Inserts measure 9]                                        %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
@@ -2029,19 +2029,19 @@ i_LH_Voice_VI_Inserts = {                                                      %
 i_LH_Resonance_Voice = {                                                       %! abjad.Path.extern
 
     % [_ LH_Resonance_Voice measure 1]                                         %! _comment_measure_numbers
-    s1 * 1/1                                                                   %! _call_rhythm_commands
+    s1 * 4/4                                                                   %! _call_rhythm_commands
 
     % [_ LH_Resonance_Voice measure 2]                                         %! _comment_measure_numbers
-    s1 * 1/2                                                                   %! _call_rhythm_commands
+    s1 * 2/4                                                                   %! _call_rhythm_commands
 
     % [_ LH_Resonance_Voice measure 3]                                         %! _comment_measure_numbers
-    s1 * 1/1                                                                   %! _call_rhythm_commands
+    s1 * 4/4                                                                   %! _call_rhythm_commands
 
     % [_ LH_Resonance_Voice measure 4]                                         %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
 
     % [_ LH_Resonance_Voice measure 5]                                         %! _comment_measure_numbers
-    s1 * 1/2                                                                   %! _call_rhythm_commands
+    s1 * 4/8                                                                   %! _call_rhythm_commands
 
     % [_ LH_Resonance_Voice measure 6]                                         %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
@@ -2050,7 +2050,7 @@ i_LH_Resonance_Voice = {                                                       %
     s1 * 7/8                                                                   %! _call_rhythm_commands
 
     % [_ LH_Resonance_Voice measure 8]                                         %! _comment_measure_numbers
-    s1 * 4/1                                                                   %! _call_rhythm_commands
+    s1 * 16/4                                                                  %! _call_rhythm_commands
 
     % [_ LH_Resonance_Voice measure 9]                                         %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
