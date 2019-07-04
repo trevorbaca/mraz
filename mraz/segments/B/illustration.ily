@@ -400,7 +400,7 @@ B_RH_Voice_I = {                                                               %
 B_RH_Voice_I_Inserts = {                                                       %! abjad.Path.extern
 
     % [B RH_Voice_I_Inserts measure 22 / measure 1]                            %! _comment_measure_numbers
-    s1 * 1/2                                                                   %! _call_rhythm_commands
+    s1 * 2/4                                                                   %! _call_rhythm_commands
 
     % [B RH_Voice_I_Inserts measure 23 / measure 2]                            %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
@@ -412,7 +412,7 @@ B_RH_Voice_I_Inserts = {                                                       %
     s1 * 1/4                                                                   %! _call_rhythm_commands
 
     % [B RH_Voice_I_Inserts measure 26 / measure 5]                            %! _comment_measure_numbers
-    s1 * 1/2                                                                   %! _call_rhythm_commands
+    s1 * 2/4                                                                   %! _call_rhythm_commands
 
     % [B RH_Voice_I_Inserts measure 27 / measure 6]                            %! _comment_measure_numbers
     s1 * 5/8                                                                   %! _call_rhythm_commands
@@ -421,7 +421,7 @@ B_RH_Voice_I_Inserts = {                                                       %
     s1 * 1/4                                                                   %! _call_rhythm_commands
 
     % [B RH_Voice_I_Inserts measure 29 / measure 8]                            %! _comment_measure_numbers
-    s1 * 3/2                                                                   %! _call_rhythm_commands
+    s1 * 6/4                                                                   %! _call_rhythm_commands
 
     % [B RH_Voice_I_Inserts measure 30 / measure 9]                            %! _comment_measure_numbers
     s1 * 21/16                                                                 %! _call_rhythm_commands
@@ -430,10 +430,10 @@ B_RH_Voice_I_Inserts = {                                                       %
     s1 * 7/4                                                                   %! _call_rhythm_commands
 
     % [B RH_Voice_I_Inserts measure 32 / measure 11]                           %! _comment_measure_numbers
-    s1 * 3/2                                                                   %! _call_rhythm_commands
+    s1 * 6/4                                                                   %! _call_rhythm_commands
 
     % [B RH_Voice_I_Inserts measure 33 / measure 12]                           %! _comment_measure_numbers
-    s1 * 1/1                                                                   %! _call_rhythm_commands
+    s1 * 4/4                                                                   %! _call_rhythm_commands
 
     <<                                                                         %! PHANTOM:_make_multimeasure_rest_container
 
@@ -1032,7 +1032,7 @@ B_RH_Voice_II = {                                                              %
 B_RH_Voice_II_Inserts = {                                                      %! abjad.Path.extern
 
     % [B RH_Voice_II_Inserts measure 22 / measure 1]                           %! _comment_measure_numbers
-    s1 * 1/2                                                                   %! _call_rhythm_commands
+    s1 * 2/4                                                                   %! _call_rhythm_commands
 
     % [B RH_Voice_II_Inserts measure 23 / measure 2]                           %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
@@ -1044,7 +1044,7 @@ B_RH_Voice_II_Inserts = {                                                      %
     s1 * 1/4                                                                   %! _call_rhythm_commands
 
     % [B RH_Voice_II_Inserts measure 26 / measure 5]                           %! _comment_measure_numbers
-    s1 * 1/2                                                                   %! _call_rhythm_commands
+    s1 * 2/4                                                                   %! _call_rhythm_commands
 
     % [B RH_Voice_II_Inserts measure 27 / measure 6]                           %! _comment_measure_numbers
     s1 * 5/8                                                                   %! _call_rhythm_commands
@@ -1053,7 +1053,7 @@ B_RH_Voice_II_Inserts = {                                                      %
     s1 * 1/4                                                                   %! _call_rhythm_commands
 
     % [B RH_Voice_II_Inserts measure 29 / measure 8]                           %! _comment_measure_numbers
-    s1 * 3/2                                                                   %! _call_rhythm_commands
+    s1 * 6/4                                                                   %! _call_rhythm_commands
 
     % [B RH_Voice_II_Inserts measure 30 / measure 9]                           %! _comment_measure_numbers
     s1 * 21/16                                                                 %! _call_rhythm_commands
@@ -1062,10 +1062,10 @@ B_RH_Voice_II_Inserts = {                                                      %
     s1 * 7/4                                                                   %! _call_rhythm_commands
 
     % [B RH_Voice_II_Inserts measure 32 / measure 11]                          %! _comment_measure_numbers
-    s1 * 3/2                                                                   %! _call_rhythm_commands
+    s1 * 6/4                                                                   %! _call_rhythm_commands
 
     % [B RH_Voice_II_Inserts measure 33 / measure 12]                          %! _comment_measure_numbers
-    s1 * 1/1                                                                   %! _call_rhythm_commands
+    s1 * 4/4                                                                   %! _call_rhythm_commands
 
     <<                                                                         %! PHANTOM:_make_multimeasure_rest_container
 
@@ -1200,7 +1200,7 @@ B_RH_Voice_III = {                                                             %
 B_RH_Voice_III_Inserts = {                                                     %! abjad.Path.extern
 
     % [B RH_Voice_III_Inserts measure 22 / measure 1]                          %! _comment_measure_numbers
-    s1 * 1/2                                                                   %! _call_rhythm_commands
+    s1 * 2/4                                                                   %! _call_rhythm_commands
 
     % [B RH_Voice_III_Inserts measure 23 / measure 2]                          %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
@@ -1212,7 +1212,7 @@ B_RH_Voice_III_Inserts = {                                                     %
     s1 * 1/4                                                                   %! _call_rhythm_commands
 
     % [B RH_Voice_III_Inserts measure 26 / measure 5]                          %! _comment_measure_numbers
-    s1 * 1/2                                                                   %! _call_rhythm_commands
+    s1 * 2/4                                                                   %! _call_rhythm_commands
 
     % [B RH_Voice_III_Inserts measure 27 / measure 6]                          %! _comment_measure_numbers
     s1 * 5/8                                                                   %! _call_rhythm_commands
@@ -1221,7 +1221,7 @@ B_RH_Voice_III_Inserts = {                                                     %
     s1 * 1/4                                                                   %! _call_rhythm_commands
 
     % [B RH_Voice_III_Inserts measure 29 / measure 8]                          %! _comment_measure_numbers
-    s1 * 3/2                                                                   %! _call_rhythm_commands
+    s1 * 6/4                                                                   %! _call_rhythm_commands
 
     % [B RH_Voice_III_Inserts measure 30 / measure 9]                          %! _comment_measure_numbers
     s1 * 21/16                                                                 %! _call_rhythm_commands
@@ -1230,10 +1230,10 @@ B_RH_Voice_III_Inserts = {                                                     %
     s1 * 7/4                                                                   %! _call_rhythm_commands
 
     % [B RH_Voice_III_Inserts measure 32 / measure 11]                         %! _comment_measure_numbers
-    s1 * 3/2                                                                   %! _call_rhythm_commands
+    s1 * 6/4                                                                   %! _call_rhythm_commands
 
     % [B RH_Voice_III_Inserts measure 33 / measure 12]                         %! _comment_measure_numbers
-    s1 * 1/1                                                                   %! _call_rhythm_commands
+    s1 * 4/4                                                                   %! _call_rhythm_commands
 
     <<                                                                         %! PHANTOM:_make_multimeasure_rest_container
 
@@ -1572,7 +1572,7 @@ B_RH_Voice_IV_Inserts = {                                                      %
 B_RH_Voice_V = {                                                               %! abjad.Path.extern
 
     % [B RH_Voice_V measure 22 / measure 1]                                    %! _comment_measure_numbers
-    s1 * 1/2                                                                   %! _call_rhythm_commands
+    s1 * 2/4                                                                   %! _call_rhythm_commands
 
     % [B RH_Voice_V measure 23 / measure 2]                                    %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
@@ -1584,7 +1584,7 @@ B_RH_Voice_V = {                                                               %
     s1 * 1/4                                                                   %! _call_rhythm_commands
 
     % [B RH_Voice_V measure 26 / measure 5]                                    %! _comment_measure_numbers
-    s1 * 1/2                                                                   %! _call_rhythm_commands
+    s1 * 2/4                                                                   %! _call_rhythm_commands
 
     % [B RH_Voice_V measure 27 / measure 6]                                    %! _comment_measure_numbers
     s1 * 5/8                                                                   %! _call_rhythm_commands
@@ -1593,7 +1593,7 @@ B_RH_Voice_V = {                                                               %
     s1 * 1/4                                                                   %! _call_rhythm_commands
 
     % [B RH_Voice_V measure 29 / measure 8]                                    %! _comment_measure_numbers
-    s1 * 3/2                                                                   %! _call_rhythm_commands
+    s1 * 6/4                                                                   %! _call_rhythm_commands
 
     % [B RH_Voice_V measure 30 / measure 9]                                    %! _comment_measure_numbers
     s1 * 21/16                                                                 %! _call_rhythm_commands
@@ -1602,10 +1602,10 @@ B_RH_Voice_V = {                                                               %
     s1 * 7/4                                                                   %! _call_rhythm_commands
 
     % [B RH_Voice_V measure 32 / measure 11]                                   %! _comment_measure_numbers
-    s1 * 3/2                                                                   %! _call_rhythm_commands
+    s1 * 6/4                                                                   %! _call_rhythm_commands
 
     % [B RH_Voice_V measure 33 / measure 12]                                   %! _comment_measure_numbers
-    s1 * 1/1                                                                   %! _call_rhythm_commands
+    s1 * 4/4                                                                   %! _call_rhythm_commands
 
     <<                                                                         %! PHANTOM:_make_multimeasure_rest_container
 
@@ -1634,7 +1634,7 @@ B_RH_Voice_V = {                                                               %
 B_RH_Voice_VI = {                                                              %! abjad.Path.extern
 
     % [B RH_Voice_VI measure 22 / measure 1]                                   %! _comment_measure_numbers
-    s1 * 1/2                                                                   %! _call_rhythm_commands
+    s1 * 2/4                                                                   %! _call_rhythm_commands
 
     % [B RH_Voice_VI measure 23 / measure 2]                                   %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
@@ -1646,7 +1646,7 @@ B_RH_Voice_VI = {                                                              %
     s1 * 1/4                                                                   %! _call_rhythm_commands
 
     % [B RH_Voice_VI measure 26 / measure 5]                                   %! _comment_measure_numbers
-    s1 * 1/2                                                                   %! _call_rhythm_commands
+    s1 * 2/4                                                                   %! _call_rhythm_commands
 
     % [B RH_Voice_VI measure 27 / measure 6]                                   %! _comment_measure_numbers
     s1 * 5/8                                                                   %! _call_rhythm_commands
@@ -1655,7 +1655,7 @@ B_RH_Voice_VI = {                                                              %
     s1 * 1/4                                                                   %! _call_rhythm_commands
 
     % [B RH_Voice_VI measure 29 / measure 8]                                   %! _comment_measure_numbers
-    s1 * 3/2                                                                   %! _call_rhythm_commands
+    s1 * 6/4                                                                   %! _call_rhythm_commands
 
     % [B RH_Voice_VI measure 30 / measure 9]                                   %! _comment_measure_numbers
     s1 * 21/16                                                                 %! _call_rhythm_commands
@@ -1664,10 +1664,10 @@ B_RH_Voice_VI = {                                                              %
     s1 * 7/4                                                                   %! _call_rhythm_commands
 
     % [B RH_Voice_VI measure 32 / measure 11]                                  %! _comment_measure_numbers
-    s1 * 3/2                                                                   %! _call_rhythm_commands
+    s1 * 6/4                                                                   %! _call_rhythm_commands
 
     % [B RH_Voice_VI measure 33 / measure 12]                                  %! _comment_measure_numbers
-    s1 * 1/1                                                                   %! _call_rhythm_commands
+    s1 * 4/4                                                                   %! _call_rhythm_commands
 
     <<                                                                         %! PHANTOM:_make_multimeasure_rest_container
 
@@ -1696,7 +1696,7 @@ B_RH_Voice_VI = {                                                              %
 B_RH_Resonance_Voice = {                                                       %! abjad.Path.extern
 
     % [B RH_Resonance_Voice measure 22 / measure 1]                            %! _comment_measure_numbers
-    s1 * 1/2                                                                   %! _call_rhythm_commands
+    s1 * 2/4                                                                   %! _call_rhythm_commands
 
     % [B RH_Resonance_Voice measure 23 / measure 2]                            %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
@@ -1708,7 +1708,7 @@ B_RH_Resonance_Voice = {                                                       %
     s1 * 1/4                                                                   %! _call_rhythm_commands
 
     % [B RH_Resonance_Voice measure 26 / measure 5]                            %! _comment_measure_numbers
-    s1 * 1/2                                                                   %! _call_rhythm_commands
+    s1 * 2/4                                                                   %! _call_rhythm_commands
 
     % [B RH_Resonance_Voice measure 27 / measure 6]                            %! _comment_measure_numbers
     s1 * 5/8                                                                   %! _call_rhythm_commands
@@ -1717,7 +1717,7 @@ B_RH_Resonance_Voice = {                                                       %
     s1 * 1/4                                                                   %! _call_rhythm_commands
 
     % [B RH_Resonance_Voice measure 29 / measure 8]                            %! _comment_measure_numbers
-    s1 * 3/2                                                                   %! _call_rhythm_commands
+    s1 * 6/4                                                                   %! _call_rhythm_commands
 
     % [B RH_Resonance_Voice measure 30 / measure 9]                            %! _comment_measure_numbers
     s1 * 21/16                                                                 %! _call_rhythm_commands
@@ -1726,10 +1726,10 @@ B_RH_Resonance_Voice = {                                                       %
     s1 * 7/4                                                                   %! _call_rhythm_commands
 
     % [B RH_Resonance_Voice measure 32 / measure 11]                           %! _comment_measure_numbers
-    s1 * 3/2                                                                   %! _call_rhythm_commands
+    s1 * 6/4                                                                   %! _call_rhythm_commands
 
     % [B RH_Resonance_Voice measure 33 / measure 12]                           %! _comment_measure_numbers
-    s1 * 1/1                                                                   %! _call_rhythm_commands
+    s1 * 4/4                                                                   %! _call_rhythm_commands
 
     <<                                                                         %! PHANTOM:_make_multimeasure_rest_container
 
@@ -1796,7 +1796,7 @@ B_Piano_Music_RH_Staff = <<                                                    %
 B_LH_Voice_I = {                                                               %! abjad.Path.extern
 
     % [B LH_Voice_I measure 22 / measure 1]                                    %! _comment_measure_numbers
-    s1 * 1/2                                                                   %! _call_rhythm_commands
+    s1 * 2/4                                                                   %! _call_rhythm_commands
 
     % [B LH_Voice_I measure 23 / measure 2]                                    %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
@@ -1808,7 +1808,7 @@ B_LH_Voice_I = {                                                               %
     s1 * 1/4                                                                   %! _call_rhythm_commands
 
     % [B LH_Voice_I measure 26 / measure 5]                                    %! _comment_measure_numbers
-    s1 * 1/2                                                                   %! _call_rhythm_commands
+    s1 * 2/4                                                                   %! _call_rhythm_commands
 
     % [B LH_Voice_I measure 27 / measure 6]                                    %! _comment_measure_numbers
     s1 * 5/8                                                                   %! _call_rhythm_commands
@@ -1817,7 +1817,7 @@ B_LH_Voice_I = {                                                               %
     s1 * 1/4                                                                   %! _call_rhythm_commands
 
     % [B LH_Voice_I measure 29 / measure 8]                                    %! _comment_measure_numbers
-    s1 * 3/2                                                                   %! _call_rhythm_commands
+    s1 * 6/4                                                                   %! _call_rhythm_commands
 
     % [B LH_Voice_I measure 30 / measure 9]                                    %! _comment_measure_numbers
     s1 * 21/16                                                                 %! _call_rhythm_commands
@@ -1826,10 +1826,10 @@ B_LH_Voice_I = {                                                               %
     s1 * 7/4                                                                   %! _call_rhythm_commands
 
     % [B LH_Voice_I measure 32 / measure 11]                                   %! _comment_measure_numbers
-    s1 * 3/2                                                                   %! _call_rhythm_commands
+    s1 * 6/4                                                                   %! _call_rhythm_commands
 
     % [B LH_Voice_I measure 33 / measure 12]                                   %! _comment_measure_numbers
-    s1 * 1/1                                                                   %! _call_rhythm_commands
+    s1 * 4/4                                                                   %! _call_rhythm_commands
 
     <<                                                                         %! PHANTOM:_make_multimeasure_rest_container
 
@@ -1858,7 +1858,7 @@ B_LH_Voice_I = {                                                               %
 B_LH_Voice_II = {                                                              %! abjad.Path.extern
 
     % [B LH_Voice_II measure 22 / measure 1]                                   %! _comment_measure_numbers
-    s1 * 1/2                                                                   %! _call_rhythm_commands
+    s1 * 2/4                                                                   %! _call_rhythm_commands
 
     % [B LH_Voice_II measure 23 / measure 2]                                   %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
@@ -1870,7 +1870,7 @@ B_LH_Voice_II = {                                                              %
     s1 * 1/4                                                                   %! _call_rhythm_commands
 
     % [B LH_Voice_II measure 26 / measure 5]                                   %! _comment_measure_numbers
-    s1 * 1/2                                                                   %! _call_rhythm_commands
+    s1 * 2/4                                                                   %! _call_rhythm_commands
 
     % [B LH_Voice_II measure 27 / measure 6]                                   %! _comment_measure_numbers
     s1 * 5/8                                                                   %! _call_rhythm_commands
@@ -1879,7 +1879,7 @@ B_LH_Voice_II = {                                                              %
     s1 * 1/4                                                                   %! _call_rhythm_commands
 
     % [B LH_Voice_II measure 29 / measure 8]                                   %! _comment_measure_numbers
-    s1 * 3/2                                                                   %! _call_rhythm_commands
+    s1 * 6/4                                                                   %! _call_rhythm_commands
 
     % [B LH_Voice_II measure 30 / measure 9]                                   %! _comment_measure_numbers
     s1 * 21/16                                                                 %! _call_rhythm_commands
@@ -1888,10 +1888,10 @@ B_LH_Voice_II = {                                                              %
     s1 * 7/4                                                                   %! _call_rhythm_commands
 
     % [B LH_Voice_II measure 32 / measure 11]                                  %! _comment_measure_numbers
-    s1 * 3/2                                                                   %! _call_rhythm_commands
+    s1 * 6/4                                                                   %! _call_rhythm_commands
 
     % [B LH_Voice_II measure 33 / measure 12]                                  %! _comment_measure_numbers
-    s1 * 1/1                                                                   %! _call_rhythm_commands
+    s1 * 4/4                                                                   %! _call_rhythm_commands
 
     <<                                                                         %! PHANTOM:_make_multimeasure_rest_container
 
@@ -1920,7 +1920,7 @@ B_LH_Voice_II = {                                                              %
 B_LH_Voice_III = {                                                             %! abjad.Path.extern
 
     % [B LH_Voice_III measure 22 / measure 1]                                  %! _comment_measure_numbers
-    s1 * 1/2                                                                   %! _call_rhythm_commands
+    s1 * 2/4                                                                   %! _call_rhythm_commands
 
     % [B LH_Voice_III measure 23 / measure 2]                                  %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
@@ -1932,7 +1932,7 @@ B_LH_Voice_III = {                                                             %
     s1 * 1/4                                                                   %! _call_rhythm_commands
 
     % [B LH_Voice_III measure 26 / measure 5]                                  %! _comment_measure_numbers
-    s1 * 1/2                                                                   %! _call_rhythm_commands
+    s1 * 2/4                                                                   %! _call_rhythm_commands
 
     % [B LH_Voice_III measure 27 / measure 6]                                  %! _comment_measure_numbers
     s1 * 5/8                                                                   %! _call_rhythm_commands
@@ -1941,7 +1941,7 @@ B_LH_Voice_III = {                                                             %
     s1 * 1/4                                                                   %! _call_rhythm_commands
 
     % [B LH_Voice_III measure 29 / measure 8]                                  %! _comment_measure_numbers
-    s1 * 3/2                                                                   %! _call_rhythm_commands
+    s1 * 6/4                                                                   %! _call_rhythm_commands
 
     % [B LH_Voice_III measure 30 / measure 9]                                  %! _comment_measure_numbers
     s1 * 21/16                                                                 %! _call_rhythm_commands
@@ -1950,10 +1950,10 @@ B_LH_Voice_III = {                                                             %
     s1 * 7/4                                                                   %! _call_rhythm_commands
 
     % [B LH_Voice_III measure 32 / measure 11]                                 %! _comment_measure_numbers
-    s1 * 3/2                                                                   %! _call_rhythm_commands
+    s1 * 6/4                                                                   %! _call_rhythm_commands
 
     % [B LH_Voice_III measure 33 / measure 12]                                 %! _comment_measure_numbers
-    s1 * 1/1                                                                   %! _call_rhythm_commands
+    s1 * 4/4                                                                   %! _call_rhythm_commands
 
     <<                                                                         %! PHANTOM:_make_multimeasure_rest_container
 
@@ -1982,7 +1982,7 @@ B_LH_Voice_III = {                                                             %
 B_LH_Voice_IV = {                                                              %! abjad.Path.extern
 
     % [B LH_Voice_IV measure 22 / measure 1]                                   %! _comment_measure_numbers
-    s1 * 1/2                                                                   %! _call_rhythm_commands
+    s1 * 2/4                                                                   %! _call_rhythm_commands
     - \tweak color #(x11-color 'green4)                                        %! REAPPLIED_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \ff                                                                        %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
 
@@ -1996,7 +1996,7 @@ B_LH_Voice_IV = {                                                              %
     s1 * 1/4                                                                   %! _call_rhythm_commands
 
     % [B LH_Voice_IV measure 26 / measure 5]                                   %! _comment_measure_numbers
-    s1 * 1/2                                                                   %! _call_rhythm_commands
+    s1 * 2/4                                                                   %! _call_rhythm_commands
 
     % [B LH_Voice_IV measure 27 / measure 6]                                   %! _comment_measure_numbers
     s1 * 5/8                                                                   %! _call_rhythm_commands
@@ -2005,7 +2005,7 @@ B_LH_Voice_IV = {                                                              %
     s1 * 1/4                                                                   %! _call_rhythm_commands
 
     % [B LH_Voice_IV measure 29 / measure 8]                                   %! _comment_measure_numbers
-    s1 * 3/2                                                                   %! _call_rhythm_commands
+    s1 * 6/4                                                                   %! _call_rhythm_commands
 
     % [B LH_Voice_IV measure 30 / measure 9]                                   %! _comment_measure_numbers
     s1 * 21/16                                                                 %! _call_rhythm_commands
@@ -2014,10 +2014,10 @@ B_LH_Voice_IV = {                                                              %
     s1 * 7/4                                                                   %! _call_rhythm_commands
 
     % [B LH_Voice_IV measure 32 / measure 11]                                  %! _comment_measure_numbers
-    s1 * 3/2                                                                   %! _call_rhythm_commands
+    s1 * 6/4                                                                   %! _call_rhythm_commands
 
     % [B LH_Voice_IV measure 33 / measure 12]                                  %! _comment_measure_numbers
-    s1 * 1/1                                                                   %! _call_rhythm_commands
+    s1 * 4/4                                                                   %! _call_rhythm_commands
 
     <<                                                                         %! PHANTOM:_make_multimeasure_rest_container
 
@@ -2046,7 +2046,7 @@ B_LH_Voice_IV = {                                                              %
 B_LH_Voice_IV_Inserts = {                                                      %! abjad.Path.extern
 
     % [B LH_Voice_IV_Inserts measure 22 / measure 1]                           %! _comment_measure_numbers
-    s1 * 1/2                                                                   %! _call_rhythm_commands
+    s1 * 2/4                                                                   %! _call_rhythm_commands
 
     % [B LH_Voice_IV_Inserts measure 23 / measure 2]                           %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
@@ -2058,7 +2058,7 @@ B_LH_Voice_IV_Inserts = {                                                      %
     s1 * 1/4                                                                   %! _call_rhythm_commands
 
     % [B LH_Voice_IV_Inserts measure 26 / measure 5]                           %! _comment_measure_numbers
-    s1 * 1/2                                                                   %! _call_rhythm_commands
+    s1 * 2/4                                                                   %! _call_rhythm_commands
 
     % [B LH_Voice_IV_Inserts measure 27 / measure 6]                           %! _comment_measure_numbers
     s1 * 5/8                                                                   %! _call_rhythm_commands
@@ -2067,7 +2067,7 @@ B_LH_Voice_IV_Inserts = {                                                      %
     s1 * 1/4                                                                   %! _call_rhythm_commands
 
     % [B LH_Voice_IV_Inserts measure 29 / measure 8]                           %! _comment_measure_numbers
-    s1 * 3/2                                                                   %! _call_rhythm_commands
+    s1 * 6/4                                                                   %! _call_rhythm_commands
 
     % [B LH_Voice_IV_Inserts measure 30 / measure 9]                           %! _comment_measure_numbers
     s1 * 21/16                                                                 %! _call_rhythm_commands
@@ -2076,10 +2076,10 @@ B_LH_Voice_IV_Inserts = {                                                      %
     s1 * 7/4                                                                   %! _call_rhythm_commands
 
     % [B LH_Voice_IV_Inserts measure 32 / measure 11]                          %! _comment_measure_numbers
-    s1 * 3/2                                                                   %! _call_rhythm_commands
+    s1 * 6/4                                                                   %! _call_rhythm_commands
 
     % [B LH_Voice_IV_Inserts measure 33 / measure 12]                          %! _comment_measure_numbers
-    s1 * 1/1                                                                   %! _call_rhythm_commands
+    s1 * 4/4                                                                   %! _call_rhythm_commands
 
     <<                                                                         %! PHANTOM:_make_multimeasure_rest_container
 
@@ -2217,7 +2217,7 @@ B_LH_Voice_V = {                                                               %
 B_LH_Voice_V_Inserts = {                                                       %! abjad.Path.extern
 
     % [B LH_Voice_V_Inserts measure 22 / measure 1]                            %! _comment_measure_numbers
-    s1 * 1/2                                                                   %! _call_rhythm_commands
+    s1 * 2/4                                                                   %! _call_rhythm_commands
 
     % [B LH_Voice_V_Inserts measure 23 / measure 2]                            %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
@@ -2229,7 +2229,7 @@ B_LH_Voice_V_Inserts = {                                                       %
     s1 * 1/4                                                                   %! _call_rhythm_commands
 
     % [B LH_Voice_V_Inserts measure 26 / measure 5]                            %! _comment_measure_numbers
-    s1 * 1/2                                                                   %! _call_rhythm_commands
+    s1 * 2/4                                                                   %! _call_rhythm_commands
 
     % [B LH_Voice_V_Inserts measure 27 / measure 6]                            %! _comment_measure_numbers
     s1 * 5/8                                                                   %! _call_rhythm_commands
@@ -2238,7 +2238,7 @@ B_LH_Voice_V_Inserts = {                                                       %
     s1 * 1/4                                                                   %! _call_rhythm_commands
 
     % [B LH_Voice_V_Inserts measure 29 / measure 8]                            %! _comment_measure_numbers
-    s1 * 3/2                                                                   %! _call_rhythm_commands
+    s1 * 6/4                                                                   %! _call_rhythm_commands
 
     % [B LH_Voice_V_Inserts measure 30 / measure 9]                            %! _comment_measure_numbers
     s1 * 21/16                                                                 %! _call_rhythm_commands
@@ -2247,10 +2247,10 @@ B_LH_Voice_V_Inserts = {                                                       %
     s1 * 7/4                                                                   %! _call_rhythm_commands
 
     % [B LH_Voice_V_Inserts measure 32 / measure 11]                           %! _comment_measure_numbers
-    s1 * 3/2                                                                   %! _call_rhythm_commands
+    s1 * 6/4                                                                   %! _call_rhythm_commands
 
     % [B LH_Voice_V_Inserts measure 33 / measure 12]                           %! _comment_measure_numbers
-    s1 * 1/1                                                                   %! _call_rhythm_commands
+    s1 * 4/4                                                                   %! _call_rhythm_commands
 
     <<                                                                         %! PHANTOM:_make_multimeasure_rest_container
 
@@ -2283,7 +2283,7 @@ B_LH_Voice_VI = {                                                              %
     \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'green4)        %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
 %@% \override PianoMusicLHStaff.Clef.color = ##f                               %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
     \set PianoMusicLHStaff.forceClef = ##t                                     %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
-    s1 * 1/2                                                                   %! _call_rhythm_commands
+    s1 * 2/4                                                                   %! _call_rhythm_commands
     - \tweak color #(x11-color 'green4)                                        %! REAPPLIED_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \f                                                                         %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
     \override PianoMusicLHStaff.Clef.color = #(x11-color 'OliveDrab)           %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
@@ -2298,7 +2298,7 @@ B_LH_Voice_VI = {                                                              %
     s1 * 1/4                                                                   %! _call_rhythm_commands
 
     % [B LH_Voice_VI measure 26 / measure 5]                                   %! _comment_measure_numbers
-    s1 * 1/2                                                                   %! _call_rhythm_commands
+    s1 * 2/4                                                                   %! _call_rhythm_commands
 
     % [B LH_Voice_VI measure 27 / measure 6]                                   %! _comment_measure_numbers
     s1 * 5/8                                                                   %! _call_rhythm_commands
@@ -2307,7 +2307,7 @@ B_LH_Voice_VI = {                                                              %
     s1 * 1/4                                                                   %! _call_rhythm_commands
 
     % [B LH_Voice_VI measure 29 / measure 8]                                   %! _comment_measure_numbers
-    s1 * 3/2                                                                   %! _call_rhythm_commands
+    s1 * 6/4                                                                   %! _call_rhythm_commands
 
     % [B LH_Voice_VI measure 30 / measure 9]                                   %! _comment_measure_numbers
     s1 * 21/16                                                                 %! _call_rhythm_commands
@@ -2316,10 +2316,10 @@ B_LH_Voice_VI = {                                                              %
     s1 * 7/4                                                                   %! _call_rhythm_commands
 
     % [B LH_Voice_VI measure 32 / measure 11]                                  %! _comment_measure_numbers
-    s1 * 3/2                                                                   %! _call_rhythm_commands
+    s1 * 6/4                                                                   %! _call_rhythm_commands
 
     % [B LH_Voice_VI measure 33 / measure 12]                                  %! _comment_measure_numbers
-    s1 * 1/1                                                                   %! _call_rhythm_commands
+    s1 * 4/4                                                                   %! _call_rhythm_commands
 
     <<                                                                         %! PHANTOM:_make_multimeasure_rest_container
 
@@ -2348,7 +2348,7 @@ B_LH_Voice_VI = {                                                              %
 B_LH_Voice_VI_Inserts = {                                                      %! abjad.Path.extern
 
     % [B LH_Voice_VI_Inserts measure 22 / measure 1]                           %! _comment_measure_numbers
-    s1 * 1/2                                                                   %! _call_rhythm_commands
+    s1 * 2/4                                                                   %! _call_rhythm_commands
 
     % [B LH_Voice_VI_Inserts measure 23 / measure 2]                           %! _comment_measure_numbers
     s1 * 1/4                                                                   %! _call_rhythm_commands
@@ -2360,7 +2360,7 @@ B_LH_Voice_VI_Inserts = {                                                      %
     s1 * 1/4                                                                   %! _call_rhythm_commands
 
     % [B LH_Voice_VI_Inserts measure 26 / measure 5]                           %! _comment_measure_numbers
-    s1 * 1/2                                                                   %! _call_rhythm_commands
+    s1 * 2/4                                                                   %! _call_rhythm_commands
 
     % [B LH_Voice_VI_Inserts measure 27 / measure 6]                           %! _comment_measure_numbers
     s1 * 5/8                                                                   %! _call_rhythm_commands
@@ -2369,7 +2369,7 @@ B_LH_Voice_VI_Inserts = {                                                      %
     s1 * 1/4                                                                   %! _call_rhythm_commands
 
     % [B LH_Voice_VI_Inserts measure 29 / measure 8]                           %! _comment_measure_numbers
-    s1 * 3/2                                                                   %! _call_rhythm_commands
+    s1 * 6/4                                                                   %! _call_rhythm_commands
 
     % [B LH_Voice_VI_Inserts measure 30 / measure 9]                           %! _comment_measure_numbers
     s1 * 21/16                                                                 %! _call_rhythm_commands
@@ -2378,10 +2378,10 @@ B_LH_Voice_VI_Inserts = {                                                      %
     s1 * 7/4                                                                   %! _call_rhythm_commands
 
     % [B LH_Voice_VI_Inserts measure 32 / measure 11]                          %! _comment_measure_numbers
-    s1 * 3/2                                                                   %! _call_rhythm_commands
+    s1 * 6/4                                                                   %! _call_rhythm_commands
 
     % [B LH_Voice_VI_Inserts measure 33 / measure 12]                          %! _comment_measure_numbers
-    s1 * 1/1                                                                   %! _call_rhythm_commands
+    s1 * 4/4                                                                   %! _call_rhythm_commands
 
     <<                                                                         %! PHANTOM:_make_multimeasure_rest_container
 
