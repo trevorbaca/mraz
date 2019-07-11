@@ -6623,7 +6623,7 @@ C_LH_Resonance_Voice = {                                                       %
         %@%                 ]                                                  %! FIGURE_NAME
         %@%             }                                                      %! FIGURE_NAME
         %@%     }                                                              %! FIGURE_NAME
-            \repeatTie                                                         %! baca.repeat_tie
+            \repeatTie                                                         %! baca.repeat_tie:IndicatorCommand
 
         }
 
@@ -6651,7 +6651,7 @@ C_LH_Resonance_Voice = {                                                       %
         %@%                 ]                                                  %! FIGURE_NAME
         %@%             }                                                      %! FIGURE_NAME
         %@%     }                                                              %! FIGURE_NAME
-            \repeatTie                                                         %! baca.repeat_tie
+            \repeatTie                                                         %! baca.repeat_tie:IndicatorCommand
             \revert Accidental.stencil                                         %! baca.accidental_stencil_false:OverrideCommand(2)
             \revert Dots.stencil                                               %! baca.dots_stencil_false:OverrideCommand(2)
             \revert Stem.stencil                                               %! baca.stem_stencil_false:OverrideCommand(2)
@@ -6724,7 +6724,7 @@ C_LH_Resonance_Voice = {                                                       %
         %@%                 ]                                                  %! FIGURE_NAME
         %@%             }                                                      %! FIGURE_NAME
         %@%     }                                                              %! FIGURE_NAME
-            \repeatTie                                                         %! baca.repeat_tie
+            \repeatTie                                                         %! baca.repeat_tie:IndicatorCommand
 
         }
 
@@ -6752,7 +6752,7 @@ C_LH_Resonance_Voice = {                                                       %
         %@%                 ]                                                  %! FIGURE_NAME
         %@%             }                                                      %! FIGURE_NAME
         %@%     }                                                              %! FIGURE_NAME
-            \repeatTie                                                         %! baca.repeat_tie
+            \repeatTie                                                         %! baca.repeat_tie:IndicatorCommand
             \revert Accidental.stencil                                         %! baca.accidental_stencil_false:OverrideCommand(2)
             \revert Dots.stencil                                               %! baca.dots_stencil_false:OverrideCommand(2)
             \revert Stem.stencil                                               %! baca.stem_stencil_false:OverrideCommand(2)
@@ -6819,7 +6819,7 @@ C_LH_Resonance_Voice = {                                                       %
         %@%                 ]                                                  %! FIGURE_NAME
         %@%             }                                                      %! FIGURE_NAME
         %@%     }                                                              %! FIGURE_NAME
-            \repeatTie                                                         %! baca.repeat_tie
+            \repeatTie                                                         %! baca.repeat_tie:IndicatorCommand
 
         }
 
@@ -6848,7 +6848,7 @@ C_LH_Resonance_Voice = {                                                       %
         %@%                 ]                                                  %! FIGURE_NAME
         %@%             }                                                      %! FIGURE_NAME
         %@%     }                                                              %! FIGURE_NAME
-            \repeatTie                                                         %! baca.repeat_tie
+            \repeatTie                                                         %! baca.repeat_tie:IndicatorCommand
 
         }
 
@@ -6877,7 +6877,7 @@ C_LH_Resonance_Voice = {                                                       %
         %@%                 ]                                                  %! FIGURE_NAME
         %@%             }                                                      %! FIGURE_NAME
         %@%     }                                                              %! FIGURE_NAME
-            \repeatTie                                                         %! baca.repeat_tie
+            \repeatTie                                                         %! baca.repeat_tie:IndicatorCommand
 
         }
 
@@ -6906,7 +6906,7 @@ C_LH_Resonance_Voice = {                                                       %
         %@%                 ]                                                  %! FIGURE_NAME
         %@%             }                                                      %! FIGURE_NAME
         %@%     }                                                              %! FIGURE_NAME
-            \repeatTie                                                         %! baca.repeat_tie
+            \repeatTie                                                         %! baca.repeat_tie:IndicatorCommand
 
         }
 
@@ -6935,7 +6935,7 @@ C_LH_Resonance_Voice = {                                                       %
         %@%                 ]                                                  %! FIGURE_NAME
         %@%             }                                                      %! FIGURE_NAME
         %@%     }                                                              %! FIGURE_NAME
-            \repeatTie                                                         %! baca.repeat_tie
+            \repeatTie                                                         %! baca.repeat_tie:IndicatorCommand
 
         }
 
@@ -6964,7 +6964,7 @@ C_LH_Resonance_Voice = {                                                       %
         %@%                 ]                                                  %! FIGURE_NAME
         %@%             }                                                      %! FIGURE_NAME
         %@%     }                                                              %! FIGURE_NAME
-            \repeatTie                                                         %! baca.repeat_tie
+            \repeatTie                                                         %! baca.repeat_tie:IndicatorCommand
 
         }
 
@@ -6993,7 +6993,7 @@ C_LH_Resonance_Voice = {                                                       %
         %@%                 ]                                                  %! FIGURE_NAME
         %@%             }                                                      %! FIGURE_NAME
         %@%     }                                                              %! FIGURE_NAME
-            \repeatTie                                                         %! baca.repeat_tie
+            \repeatTie                                                         %! baca.repeat_tie:IndicatorCommand
             \revert Accidental.stencil                                         %! baca.accidental_stencil_false:OverrideCommand(2)
             \revert Dots.stencil                                               %! baca.dots_stencil_false:OverrideCommand(2)
             \revert Stem.stencil                                               %! baca.stem_stencil_false:OverrideCommand(2)
