@@ -1055,7 +1055,7 @@ maker(
     'lh_resonance',
     baca.untie(baca.leaves()),
     baca.new(
-        baca.repeat_tie(selector=baca.pleaves()[1:]),
+        baca.repeat_tie(baca.pleaves()[1:]),
         map=baca.qruns(),
         ),
     )

@@ -106,7 +106,7 @@ accumulator(
     baca.register(24, 0),
     # 2018-07-10: F4 flipped to F5 because of command interpretation order
     baca.new(
-        baca.tie(selector=baca.ptails()[:-1]),
+        baca.tie(baca.ptails()[:-1]),
         map=baca.qruns(),
     ),
     baca.tuplet_bracket_down(),
@@ -571,7 +571,7 @@ maker(
     'lh_resonance',
     baca.untie(baca.leaves()),
     baca.new(
-        baca.repeat_tie(selector=baca.pleaves()[1:]),
+        baca.repeat_tie(baca.pleaves()[1:]),
         map=baca.qruns(),
         ),
     baca.dots_transparent(),
