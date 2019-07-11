@@ -315,9 +315,7 @@ maker(
 
 maker(
     'lh_resonance',
-    baca.untie_to(
-        selector=baca.pleaves(),
-    ),
+    baca.untie(baca.leaves()),
     baca.new(
         baca.repeat_tie(selector=baca.pleaves()[1:]),
         map=baca.qruns(),
