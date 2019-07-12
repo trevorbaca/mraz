@@ -31,11 +31,11 @@ class MusicAccumulator(baca.MusicAccumulator):
             <<
                 \context Voice = "RH_Voice_I"
                 {
-                    {
-                        \scaleDurations #'(1 . 1) {
+                    {                                                                      %! baca.MusicMaker.__call__
+                        \scaleDurations #'(1 . 1) {                                        %! baca.MusicMaker.__call__
                             \set stemLeftBeamCount = 0
                             \set stemRightBeamCount = 2
-                            c'16
+                            c'16                                                           %! baca.MusicMaker.__call__
                         %@% ^ \markup {                                                    %! FIGURE_NAME
                         %@%     \fontsize                                                  %! FIGURE_NAME
                         %@%         #2                                                     %! FIGURE_NAME
@@ -56,34 +56,34 @@ class MusicAccumulator(baca.MusicAccumulator):
                             [
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            cs'16
+                            cs'16                                                          %! baca.MusicMaker.__call__
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            d'16
+                            d'16                                                           %! baca.MusicMaker.__call__
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            ef'16
+                            ef'16                                                          %! baca.MusicMaker.__call__
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            e'16
+                            e'16                                                           %! baca.MusicMaker.__call__
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            f'16
+                            f'16                                                           %! baca.MusicMaker.__call__
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            fs'16
+                            fs'16                                                          %! baca.MusicMaker.__call__
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            g'16
+                            g'16                                                           %! baca.MusicMaker.__call__
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 2
-                            af'16
+                            af'16                                                          %! baca.MusicMaker.__call__
                             \set stemLeftBeamCount = 2
                             \set stemRightBeamCount = 0
-                            a'16
+                            a'16                                                           %! baca.MusicMaker.__call__
                             ]
-                        }
-                    }
+                        }                                                                  %! baca.MusicMaker.__call__
+                    }                                                                      %! baca.MusicMaker.__call__
                 }
             >>
 
