@@ -213,9 +213,9 @@ i_Global_Skips = {                                                             %
 
 i_RH_Voice_I = {                                                               %! abjad.Path.extern
 
-    {
+    {                                                                          %! baca.MusicMaker.__call__
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1) {                                            %! baca.MusicMaker.__call__
 
             % [_ RH_Voice_I measure 1]                                         %! _comment_measure_numbers
             \set PianoStaff.instrumentName =                                   %! baca.start_markup:baca_start_markup:-PARTS:IndicatorCommand
@@ -228,7 +228,7 @@ i_RH_Voice_I = {                                                               %
             \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'DarkViolet) %! DEFAULT_CLEF_COLOR:_attach_color_literal(2)
         %@% \override PianoMusicRHStaff.Clef.color = ##f                       %! DEFAULT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
             \set PianoMusicRHStaff.forceClef = ##t                             %! DEFAULT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):abjad.ScoreTemplate.attach_defaults
-            bf''''!1
+            bf''''!1                                                           %! baca.MusicMaker.__call__
             - \tenuto                                                          %! baca.tenuto:IndicatorCommand
             ^ \markup { "(ottava brackets always govern all voices on staff)" } %! baca.markup:IndicatorCommand
         %@% ^ \markup {                                                        %! FIGURE_NAME
@@ -251,9 +251,9 @@ i_RH_Voice_I = {                                                               %
             ^ \baca-default-indicator-markup "(“Piano”)"                       %! DEFAULT_INSTRUMENT_ALERT:_attach_latent_indicator_alert
             \override PianoMusicRHStaff.Clef.color = #(x11-color 'violet)      %! DEFAULT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
-        }
+        }                                                                      %! baca.MusicMaker.__call__
 
-    }
+    }                                                                          %! baca.MusicMaker.__call__
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -376,9 +376,9 @@ i_RH_Voice_I_Inserts = {                                                       %
 
 i_RH_Voice_II = {                                                              %! abjad.Path.extern
 
-    {
+    {                                                                          %! baca.MusicMaker.__call__
 
-        \times 4/5 {
+        \times 4/5 {                                                           %! baca.MusicMaker.__call__
 
             % [_ RH_Voice_II measure 1]                                        %! _comment_measure_numbers
             \set stemLeftBeamCount = 0
@@ -386,7 +386,7 @@ i_RH_Voice_II = {                                                              %
             \override DynamicLineSpanner.staff-padding = #8                    %! baca.dls_staff_padding:OverrideCommand(1)
             \ottava 1                                                          %! baca.ottava:SpannerIndicatorCommand(1)
             \override Slur.direction = #up                                     %! baca.slur_up:OverrideCommand(1)
-            b'16
+            b'16                                                               %! baca.MusicMaker.__call__
             - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
             \f                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
         %@% ^ \markup {                                                        %! FIGURE_NAME
@@ -413,87 +413,87 @@ i_RH_Voice_II = {                                                              %
 
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            fs''!16
+            fs''!16                                                            %! baca.MusicMaker.__call__
 
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            g''16
+            g''16                                                              %! baca.MusicMaker.__call__
 
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            a''16
-
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 1
-            cs'''!16
-
-        }
-
-        \times 4/5 {
-
-            \set stemLeftBeamCount = 1
-            \set stemRightBeamCount = 2
-            bf''!16
-
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 2
-            cs'''!16
-
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 2
-            af''!16
-
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 2
-            a''16
+            a''16                                                              %! baca.MusicMaker.__call__
 
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
-            b''16
+            cs'''!16                                                           %! baca.MusicMaker.__call__
 
-        }
+        }                                                                      %! baca.MusicMaker.__call__
 
-        \times 4/5 {
+        \times 4/5 {                                                           %! baca.MusicMaker.__call__
 
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
-            ef'''!16
+            bf''!16                                                            %! baca.MusicMaker.__call__
 
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            c''''16
+            cs'''!16                                                           %! baca.MusicMaker.__call__
 
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            bf'''!16
+            af''!16                                                            %! baca.MusicMaker.__call__
 
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            b'''16
+            a''16                                                              %! baca.MusicMaker.__call__
 
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
-            cs''''!16
+            b''16                                                              %! baca.MusicMaker.__call__
 
-        }
+        }                                                                      %! baca.MusicMaker.__call__
 
-        \scaleDurations #'(1 . 1) {
+        \times 4/5 {                                                           %! baca.MusicMaker.__call__
 
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
-            f''''16
+            ef'''!16                                                           %! baca.MusicMaker.__call__
 
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            d''''16
+            c''''16                                                            %! baca.MusicMaker.__call__
 
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            c''''16
+            bf'''!16                                                           %! baca.MusicMaker.__call__
+
+            \set stemLeftBeamCount = 2
+            \set stemRightBeamCount = 2
+            b'''16                                                             %! baca.MusicMaker.__call__
+
+            \set stemLeftBeamCount = 2
+            \set stemRightBeamCount = 1
+            cs''''!16                                                          %! baca.MusicMaker.__call__
+
+        }                                                                      %! baca.MusicMaker.__call__
+
+        \scaleDurations #'(1 . 1) {                                            %! baca.MusicMaker.__call__
+
+            \set stemLeftBeamCount = 1
+            \set stemRightBeamCount = 2
+            f''''16                                                            %! baca.MusicMaker.__call__
+
+            \set stemLeftBeamCount = 2
+            \set stemRightBeamCount = 2
+            d''''16                                                            %! baca.MusicMaker.__call__
+
+            \set stemLeftBeamCount = 2
+            \set stemRightBeamCount = 2
+            c''''16                                                            %! baca.MusicMaker.__call__
 
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 0
-            cs''''!16
+            cs''''!16                                                          %! baca.MusicMaker.__call__
             - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
             \ff                                                                %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(2)
             )                                                                  %! baca.slur:SpannerIndicatorCommand(2)
@@ -502,20 +502,20 @@ i_RH_Voice_II = {                                                              %
             \ottava 0                                                          %! baca.ottava:SpannerIndicatorCommand(2)
             \revert Slur.direction                                             %! baca.slur_up:OverrideCommand(2)
 
-        }
+        }                                                                      %! baca.MusicMaker.__call__
 
-    }
+    }                                                                          %! baca.MusicMaker.__call__
 
     % [_ RH_Voice_II measure 2]                                                %! _comment_measure_numbers
     s1 * 3/2
 
-    {
+    {                                                                          %! baca.MusicMaker.__call__
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1) {                                            %! baca.MusicMaker.__call__
 
             % [_ RH_Voice_II measure 4]                                        %! _comment_measure_numbers
             \once \override Rest.transparent = ##t                             %! baca.rest_transparent:OverrideCommand(1)
-            r4
+            r4                                                                 %! baca.MusicMaker.__call__
         %@% ^ \markup {                                                        %! FIGURE_NAME
         %@%     \fontsize                                                      %! FIGURE_NAME
         %@%         #2                                                         %! FIGURE_NAME
@@ -534,20 +534,20 @@ i_RH_Voice_II = {                                                              %
         %@%             }                                                      %! FIGURE_NAME
         %@%     }                                                              %! FIGURE_NAME
 
-        }
+        }                                                                      %! baca.MusicMaker.__call__
 
-    }
+    }                                                                          %! baca.MusicMaker.__call__
 
     % [_ RH_Voice_II measure 5]                                                %! _comment_measure_numbers
     s1 * 1/2
 
-    {
+    {                                                                          %! baca.MusicMaker.__call__
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1) {                                            %! baca.MusicMaker.__call__
 
             % [_ RH_Voice_II measure 6]                                        %! _comment_measure_numbers
             \once \override Rest.transparent = ##t                             %! baca.rest_transparent:OverrideCommand(1)
-            r4
+            r4                                                                 %! baca.MusicMaker.__call__
         %@% ^ \markup {                                                        %! FIGURE_NAME
         %@%     \fontsize                                                      %! FIGURE_NAME
         %@%         #2                                                         %! FIGURE_NAME
@@ -566,23 +566,23 @@ i_RH_Voice_II = {                                                              %
         %@%             }                                                      %! FIGURE_NAME
         %@%     }                                                              %! FIGURE_NAME
 
-        }
+        }                                                                      %! baca.MusicMaker.__call__
 
-    }
+    }                                                                          %! baca.MusicMaker.__call__
 
     % [_ RH_Voice_II measure 7]                                                %! _comment_measure_numbers
     s1 * 7/8
 
-    {
+    {                                                                          %! baca.MusicMaker.__call__
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1) {                                            %! baca.MusicMaker.__call__
 
             % [_ RH_Voice_II measure 8]                                        %! _comment_measure_numbers
             \override Script.direction = #up                                   %! baca.script_up:OverrideCommand(1)
             \override Stem.direction = #up                                     %! baca.stem_up:OverrideCommand(1)
             \override TextScript.direction = #up                               %! baca.text_script_up:OverrideCommand(1)
             \dynamicUp                                                         %! baca.dynamic_down:IndicatorCommand
-            c'''8
+            c'''8                                                              %! baca.MusicMaker.__call__
             - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
             \fff                                                               %! EXPLICIT_DYNAMIC:_set_status_tag:baca.dynamic:IndicatorCommand
             - \accent                                                          %! baca.accent:IndicatorCommand
@@ -605,38 +605,38 @@ i_RH_Voice_II = {                                                              %
         %@%     }                                                              %! FIGURE_NAME
 
             \override Rest.direction = #up                                     %! baca.rest_up:OverrideCommand(1)
-            r2..
+            r2..                                                               %! baca.MusicMaker.__call__
 
-            d'''8
+            d'''8                                                              %! baca.MusicMaker.__call__
             - \accent                                                          %! baca.accent:IndicatorCommand
 
-            r2..
+            r2..                                                               %! baca.MusicMaker.__call__
 
-            ef''''!8
+            ef''''!8                                                           %! baca.MusicMaker.__call__
             - \accent                                                          %! baca.accent:IndicatorCommand
 
-            r2..
+            r2..                                                               %! baca.MusicMaker.__call__
 
-            f''''8
+            f''''8                                                             %! baca.MusicMaker.__call__
             - \accent                                                          %! baca.accent:IndicatorCommand
             \revert Stem.direction                                             %! baca.stem_up:OverrideCommand(2)
 
-            r2..
+            r2..                                                               %! baca.MusicMaker.__call__
             \revert Rest.direction                                             %! baca.rest_up:OverrideCommand(2)
             \revert Script.direction                                           %! baca.script_up:OverrideCommand(2)
             \revert TextScript.direction                                       %! baca.text_script_up:OverrideCommand(2)
 
-        }
+        }                                                                      %! baca.MusicMaker.__call__
 
-    }
+    }                                                                          %! baca.MusicMaker.__call__
 
-    {
+    {                                                                          %! baca.MusicMaker.__call__
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1) {                                            %! baca.MusicMaker.__call__
 
             % [_ RH_Voice_II measure 9]                                        %! _comment_measure_numbers
             \once \override Script.direction = #up                             %! baca.script_up:OverrideCommand(1)
-            r4
+            r4                                                                 %! baca.MusicMaker.__call__
         %@% ^ \markup {                                                        %! FIGURE_NAME
         %@%     \fontsize                                                      %! FIGURE_NAME
         %@%         #2                                                         %! FIGURE_NAME
@@ -655,9 +655,9 @@ i_RH_Voice_II = {                                                              %
         %@%             }                                                      %! FIGURE_NAME
         %@%     }                                                              %! FIGURE_NAME
 
-        }
+        }                                                                      %! baca.MusicMaker.__call__
 
-    }
+    }                                                                          %! baca.MusicMaker.__call__
 
     <<                                                                         %! PHANTOM:_make_multimeasure_rest_container
 
@@ -741,15 +741,15 @@ i_RH_Voice_III = {                                                             %
     % [_ RH_Voice_III measure 1]                                               %! _comment_measure_numbers
     s1 * 11/4
 
-    {
+    {                                                                          %! baca.MusicMaker.__call__
 
-        \tweak text #tuplet-number::calc-fraction-text
-        \times 4/3 {
+        \tweak text #tuplet-number::calc-fraction-text                         %! baca.MusicMaker.__call__
+        \times 4/3 {                                                           %! baca.MusicMaker.__call__
 
             % [_ RH_Voice_III measure 5]                                       %! _comment_measure_numbers
             \once \override DynamicText.X-offset = #0.5                        %! baca.dynamic_text_x_offset:OverrideCommand(1)
             \override TupletBracket.staff-padding = #8                         %! baca.tuplet_bracket_staff_padding:OverrideCommand(1)
-            bf'''!8
+            bf'''!8                                                            %! baca.MusicMaker.__call__
             - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
             \pp                                                                %! EXPLICIT_DYNAMIC:_set_status_tag:baca.dynamic:IndicatorCommand
             - \staccato                                                        %! baca.staccato:IndicatorCommand
@@ -772,28 +772,28 @@ i_RH_Voice_III = {                                                             %
         %@%             }                                                      %! FIGURE_NAME
         %@%     }                                                              %! FIGURE_NAME
 
-            cs'''!8
+            cs'''!8                                                            %! baca.MusicMaker.__call__
             - \staccato                                                        %! baca.staccato:IndicatorCommand
             - \tenuto                                                          %! baca.tenuto:IndicatorCommand
 
-            ef'''!8
+            ef'''!8                                                            %! baca.MusicMaker.__call__
             - \staccato                                                        %! baca.staccato:IndicatorCommand
             - \tenuto                                                          %! baca.tenuto:IndicatorCommand
             \revert TupletBracket.staff-padding                                %! baca.tuplet_bracket_staff_padding:OverrideCommand(2)
 
-        }
+        }                                                                      %! baca.MusicMaker.__call__
 
-    }
+    }                                                                          %! baca.MusicMaker.__call__
 
     % [_ RH_Voice_III measure 6]                                               %! _comment_measure_numbers
     s1 * 1/4
 
-    {
+    {                                                                          %! baca.MusicMaker.__call__
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1) {                                            %! baca.MusicMaker.__call__
 
             % [_ RH_Voice_III measure 7]                                       %! _comment_measure_numbers
-            r8
+            r8                                                                 %! baca.MusicMaker.__call__
         %@% ^ \markup {                                                        %! FIGURE_NAME
         %@%     \fontsize                                                      %! FIGURE_NAME
         %@%         #2                                                         %! FIGURE_NAME
@@ -812,44 +812,44 @@ i_RH_Voice_III = {                                                             %
         %@%             }                                                      %! FIGURE_NAME
         %@%     }                                                              %! FIGURE_NAME
 
-            d'''8
+            d'''8                                                              %! baca.MusicMaker.__call__
             - \staccato                                                        %! baca.staccato:IndicatorCommand
             - \tenuto                                                          %! baca.tenuto:IndicatorCommand
 
-            e'''8
+            e'''8                                                              %! baca.MusicMaker.__call__
             - \staccato                                                        %! baca.staccato:IndicatorCommand
             - \tenuto                                                          %! baca.tenuto:IndicatorCommand
 
-            c'''8
+            c'''8                                                              %! baca.MusicMaker.__call__
             - \staccato                                                        %! baca.staccato:IndicatorCommand
             - \tenuto                                                          %! baca.tenuto:IndicatorCommand
 
-            ef'''!8
+            ef'''!8                                                            %! baca.MusicMaker.__call__
             - \staccato                                                        %! baca.staccato:IndicatorCommand
             - \tenuto                                                          %! baca.tenuto:IndicatorCommand
 
-            f''8
+            f''8                                                               %! baca.MusicMaker.__call__
             - \staccato                                                        %! baca.staccato:IndicatorCommand
             - \tenuto                                                          %! baca.tenuto:IndicatorCommand
 
-            r8
+            r8                                                                 %! baca.MusicMaker.__call__
             \once \override Score.SpanBar.extra-offset = #'(-0.75 . 0)         %! baca.span_bar_extra_offset:OverrideCommand(1)
 
-        }
+        }                                                                      %! baca.MusicMaker.__call__
 
-    }
+    }                                                                          %! baca.MusicMaker.__call__
 
-    {
+    {                                                                          %! baca.MusicMaker.__call__
 
-        \tweak text #tuplet-number::calc-fraction-text
-        \times 8/5 {
+        \tweak text #tuplet-number::calc-fraction-text                         %! baca.MusicMaker.__call__
+        \times 8/5 {                                                           %! baca.MusicMaker.__call__
 
             % [_ RH_Voice_III measure 8]                                       %! _comment_measure_numbers
             \once \override DynamicText.X-offset = #0.25                       %! baca.dynamic_text_x_offset:OverrideCommand(1)
             \ottava 1                                                          %! baca.ottava:SpannerIndicatorCommand(1)
             \override Stem.direction = #down                                   %! baca.stem_down:OverrideCommand(1)
             \override TupletBracket.direction = #down                          %! baca.tuplet_bracket_down:OverrideCommand(1)
-            a''4
+            a''4                                                               %! baca.MusicMaker.__call__
             - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
             \mf                                                                %! EXPLICIT_DYNAMIC:_set_status_tag:baca.dynamic:IndicatorCommand
             - \tenuto                                                          %! baca.tenuto:IndicatorCommand
@@ -872,35 +872,35 @@ i_RH_Voice_III = {                                                             %
         %@%     }                                                              %! FIGURE_NAME
 
             \override Rest.direction = #down                                   %! baca.rest_down:OverrideCommand(1)
-            r4
+            r4                                                                 %! baca.MusicMaker.__call__
 
-            cs''!4
+            cs''!4                                                             %! baca.MusicMaker.__call__
             - \tenuto                                                          %! baca.tenuto:IndicatorCommand
 
-            r4
+            r4                                                                 %! baca.MusicMaker.__call__
 
-            b''4
+            b''4                                                               %! baca.MusicMaker.__call__
             - \tenuto                                                          %! baca.tenuto:IndicatorCommand
 
-            r4
+            r4                                                                 %! baca.MusicMaker.__call__
 
-            af''!4
+            af''!4                                                             %! baca.MusicMaker.__call__
             - \tenuto                                                          %! baca.tenuto:IndicatorCommand
 
-            r4
+            r4                                                                 %! baca.MusicMaker.__call__
 
-            g'''4
+            g'''4                                                              %! baca.MusicMaker.__call__
             - \tenuto                                                          %! baca.tenuto:IndicatorCommand
             \ottava 0                                                          %! baca.ottava:SpannerIndicatorCommand(2)
             \revert Stem.direction                                             %! baca.stem_down:OverrideCommand(2)
 
-            r4
+            r4                                                                 %! baca.MusicMaker.__call__
             \revert Rest.direction                                             %! baca.rest_down:OverrideCommand(2)
             \revert TupletBracket.direction                                    %! baca.tuplet_bracket_down:OverrideCommand(2)
 
-        }
+        }                                                                      %! baca.MusicMaker.__call__
 
-    }
+    }                                                                          %! baca.MusicMaker.__call__
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -1472,15 +1472,15 @@ i_LH_Voice_IV = {                                                              %
     % [_ LH_Voice_IV measure 1]                                                %! _comment_measure_numbers
     s1 * 1
 
-    {
+    {                                                                          %! baca.MusicMaker.__call__
 
-        \tweak text #tuplet-number::calc-fraction-text
-        \times 8/7 {
+        \tweak text #tuplet-number::calc-fraction-text                         %! baca.MusicMaker.__call__
+        \times 8/7 {                                                           %! baca.MusicMaker.__call__
 
             % [_ LH_Voice_IV measure 2]                                        %! _comment_measure_numbers
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
-            d''16
+            d''16                                                              %! baca.MusicMaker.__call__
             - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
             \ff                                                                %! EXPLICIT_DYNAMIC:_set_status_tag:baca.dynamic:IndicatorCommand
         %@% ^ \markup {                                                        %! FIGURE_NAME
@@ -1504,32 +1504,32 @@ i_LH_Voice_IV = {                                                              %
 
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            af'!16
+            af'!16                                                             %! baca.MusicMaker.__call__
 
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            c''16
+            c''16                                                              %! baca.MusicMaker.__call__
 
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            cs''!16
+            cs''!16                                                            %! baca.MusicMaker.__call__
 
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            e''16
+            e''16                                                              %! baca.MusicMaker.__call__
 
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
-            fs''!16
+            fs''!16                                                            %! baca.MusicMaker.__call__
 
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 0
-            b''16
+            b''16                                                              %! baca.MusicMaker.__call__
             ]
 
-        }
+        }                                                                      %! baca.MusicMaker.__call__
 
-    }
+    }                                                                          %! baca.MusicMaker.__call__
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -1599,33 +1599,33 @@ i_LH_Voice_IV_Inserts = {                                                      %
     % [_ LH_Voice_IV_Inserts measure 1]                                        %! _comment_measure_numbers
     s1 * 1
 
-    {
+    {                                                                          %! baca.MusicMaker.__call__
         \override TupletBracket.stencil = ##f
         \override TupletNumber.stencil = ##f
 
-        \tweak text #tuplet-number::calc-fraction-text
-        \times 8/7 {
+        \tweak text #tuplet-number::calc-fraction-text                         %! baca.MusicMaker.__call__
+        \times 8/7 {                                                           %! baca.MusicMaker.__call__
 
             % [_ LH_Voice_IV_Inserts measure 2]                                %! _comment_measure_numbers
-            d''16
+            d''16                                                              %! baca.MusicMaker.__call__
 
-            s16
+            s16                                                                %! baca.MusicMaker.__call__
 
-            s16
+            s16                                                                %! baca.MusicMaker.__call__
 
-            s16
+            s16                                                                %! baca.MusicMaker.__call__
 
-            s16
+            s16                                                                %! baca.MusicMaker.__call__
 
-            fs''!16
+            fs''!16                                                            %! baca.MusicMaker.__call__
 
-            s16
+            s16                                                                %! baca.MusicMaker.__call__
 
-        }
+        }                                                                      %! baca.MusicMaker.__call__
         \revert TupletBracket.stencil
         \revert TupletNumber.stencil
 
-    }
+    }                                                                          %! baca.MusicMaker.__call__
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -1695,14 +1695,14 @@ i_LH_Voice_V = {                                                               %
     % [_ LH_Voice_V measure 1]                                                 %! _comment_measure_numbers
     s1 * 3/2
 
-    {
+    {                                                                          %! baca.MusicMaker.__call__
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1) {                                            %! baca.MusicMaker.__call__
 
             % [_ LH_Voice_V measure 3]                                         %! _comment_measure_numbers
             \once \override DynamicText.X-offset = #-0.5                       %! baca.dynamic_text_x_offset:OverrideCommand(1)
             \dynamicUp                                                         %! baca.dynamic_down:IndicatorCommand
-            bf,,!8.
+            bf,,!8.                                                            %! baca.MusicMaker.__call__
             - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
             \ppp                                                               %! EXPLICIT_DYNAMIC:_set_status_tag:baca.dynamic:IndicatorCommand
         %@% ^ \markup {                                                        %! FIGURE_NAME
@@ -1724,26 +1724,26 @@ i_LH_Voice_V = {                                                               %
         %@%     }                                                              %! FIGURE_NAME
 
             \override Rest.direction = #up                                     %! baca.rest_up:OverrideCommand(1)
-            r32
+            r32                                                                %! baca.MusicMaker.__call__
 
-            d,8.
+            d,8.                                                               %! baca.MusicMaker.__call__
 
-            r32
+            r32                                                                %! baca.MusicMaker.__call__
 
-            c,8.
+            c,8.                                                               %! baca.MusicMaker.__call__
 
-            r32
+            r32                                                                %! baca.MusicMaker.__call__
 
-            b,,8.
+            b,,8.                                                              %! baca.MusicMaker.__call__
 
-            r32
+            r32                                                                %! baca.MusicMaker.__call__
 
-            r8
+            r8                                                                 %! baca.MusicMaker.__call__
             \revert Rest.direction                                             %! baca.rest_up:OverrideCommand(2)
 
-        }
+        }                                                                      %! baca.MusicMaker.__call__
 
-    }
+    }                                                                          %! baca.MusicMaker.__call__
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -1863,10 +1863,10 @@ i_LH_Voice_VI = {                                                              %
     % [_ LH_Voice_VI measure 1]                                                %! _comment_measure_numbers
     s1 * 3/2
 
-    {
+    {                                                                          %! baca.MusicMaker.__call__
 
-        \tweak text #tuplet-number::calc-fraction-text
-        \times 4/3 {
+        \tweak text #tuplet-number::calc-fraction-text                         %! baca.MusicMaker.__call__
+        \times 4/3 {                                                           %! baca.MusicMaker.__call__
 
             % [_ LH_Voice_VI measure 3]                                        %! _comment_measure_numbers
             \ottava -1                                                         %! baca.ottava_bassa:SpannerIndicatorCommand(1)
@@ -1876,7 +1876,7 @@ i_LH_Voice_VI = {                                                              %
             \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'blue)  %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
         %@% \override PianoMusicLHStaff.Clef.color = ##f                       %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
             \set PianoMusicLHStaff.forceClef = ##t                             %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):baca.clef:IndicatorCommand
-            b,,,8
+            b,,,8                                                              %! baca.MusicMaker.__call__
             - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
             \f                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:baca.dynamic:IndicatorCommand
         %@% ^ \markup {                                                        %! FIGURE_NAME
@@ -1899,19 +1899,19 @@ i_LH_Voice_VI = {                                                              %
             \override PianoMusicLHStaff.Clef.color = #(x11-color 'DeepSkyBlue2) %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
             \override Rest.direction = #down                                   %! baca.rest_down:OverrideCommand(1)
-            r4
+            r4                                                                 %! baca.MusicMaker.__call__
 
-            ef,,!8
+            ef,,!8                                                             %! baca.MusicMaker.__call__
             \ottava 0                                                          %! baca.ottava_bassa:SpannerIndicatorCommand(2)
 
-            r4
+            r4                                                                 %! baca.MusicMaker.__call__
             \revert Rest.direction                                             %! baca.rest_down:OverrideCommand(2)
             \revert TupletBracket.direction                                    %! baca.tuplet_bracket_down:OverrideCommand(2)
             \revert TupletBracket.staff-padding                                %! baca.tuplet_bracket_staff_padding:OverrideCommand(2)
 
-        }
+        }                                                                      %! baca.MusicMaker.__call__
 
-    }
+    }                                                                          %! baca.MusicMaker.__call__
 
     <<                                                                         %! _make_multimeasure_rest_container
 
