@@ -410,7 +410,7 @@ accumulator(
 accumulator(
     'rh_v3',
     collections_5['stage 2']['rh'][12],
-    rmakers.simple_beam(),
+    rmakers.beam(),
     baca.new(
         baca.slur(),
         map=baca.tuplets().map(baca.tleaves()).nontrivial(),
