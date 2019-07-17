@@ -2,6 +2,7 @@ import abjad
 import baca
 import mraz
 import os
+from abjadext import rmakers
 
 
 ###############################################################################
@@ -26,7 +27,7 @@ accumulator(
     baca.accent(selector=baca.pheads()),
     baca.dynamic('fff'),
     baca.dynamic_up(),
-    baca.do_not_beam(),
+    rmakers.unbeam(),
     baca.register(20, 36),
     baca.rest_up(),
     baca.script_up(),
@@ -40,7 +41,7 @@ accumulator(
     collections['stage 1']['lh'].next(exhausted=True),
     baca.anchor('rh_v2'),
     baca.dynamic('mf'),
-    baca.do_not_beam(),
+    rmakers.unbeam(),
     baca.ottava(),
     baca.register(10, 26),
     baca.rest_down(),
@@ -58,12 +59,12 @@ accumulator(
 accumulator(
     'rh_v3',
     collections['stage 2']['rh'].next(5),
-    baca.beam_divisions(),
+    rmakers.simple_beam(),
     baca.dynamic('mp'),
     baca.imbricate(
         'rh_v2',
         [8, 6],
-        baca.beam_everything(),
+        rmakers.beam_groups(beam_rests=True),
         baca.dynamic('fff'),
         extend_beam=True,
         hocket=True,
@@ -91,11 +92,11 @@ accumulator(
 accumulator(
     'rh_v3',
     collections['stage 2']['rh'].next(5),
-    baca.beam_divisions(),
+    rmakers.simple_beam(),
     baca.imbricate(
         'rh_v2',
         [12, 13, 16, 3],
-        baca.beam_everything(),
+        rmakers.beam_groups(beam_rests=True),
         hocket=True,
         ),
     baca.new(
@@ -120,7 +121,7 @@ accumulator(
     'lh_v6',
     collections_8['stage 3']['lh'][1],
     baca.dynamic('f'),
-    baca.do_not_beam(),
+    rmakers.unbeam(),
     baca.ottava_bassa(),
     baca.register(-39),
     baca.rest_down(),
@@ -138,7 +139,7 @@ accumulator(
     baca.anchor_to_figure('b.1.4'),
     baca.dynamic('ppp'),
     baca.dynamic_up(),
-    baca.do_not_beam(),
+    rmakers.unbeam(),
     baca.register(-27, -39),
     baca.rests_after([4]),
     baca.rest_up(),
@@ -152,12 +153,12 @@ accumulator(
 accumulator(
     'rh_v3',
     collections['stage 2']['rh'].next(5),
-    baca.beam_divisions(),
+    rmakers.simple_beam(),
     baca.dynamic('mp'),
     baca.imbricate(
         'rh_v2',
         [18, 15, 17, 16, 5, 8],
-        baca.beam_everything(),
+        rmakers.beam_groups(beam_rests=True),
         baca.dynamic('fff'),
         extend_beam=True,
         hocket=True,
@@ -185,11 +186,11 @@ accumulator(
 accumulator(
     'rh_v3',
     collections['stage 2']['rh'].next(6),
-    baca.beam_divisions(),
+    rmakers.simple_beam(),
     baca.imbricate(
         'rh_v2',
         [22, 20, 19, 18, 21, 12, 11, 15],
-        baca.beam_everything(),
+        rmakers.beam_groups(beam_rests=True),
         hocket=True,
         ),
     baca.new(
@@ -285,7 +286,7 @@ accumulator(
     'lh_resonance',
     [{-35, -23}],
     baca.anchor_to_figure('rh-2 2.2.1'),
-    baca.do_not_beam(),
+    rmakers.unbeam(),
     color_unregistered_pitches=False,
     counts=[29],
     figure_name='lhr 2.2.1',
@@ -295,7 +296,7 @@ accumulator(
 accumulator(
     'lh_resonance',
     [{-35, -23}],
-    baca.do_not_beam(),
+    rmakers.unbeam(),
     color_unregistered_pitches=False,
     counts=[27],
     figure_name='lhr 2.2.2a',
@@ -305,7 +306,7 @@ accumulator(
 accumulator(
     'lh_resonance',
     [{-33, -21}],
-    baca.do_not_beam(),
+    rmakers.unbeam(),
     color_unregistered_pitches=False,
     counts=[21],
     figure_name='lhr 2.2.3a',
@@ -315,7 +316,7 @@ accumulator(
 accumulator(
     'lh_resonance',
     [{-33, -21}],
-    baca.do_not_beam(),
+    rmakers.unbeam(),
     color_unregistered_pitches=False,
     counts=[15],
     figure_name='lhr 2.2.4',
@@ -325,7 +326,7 @@ accumulator(
 accumulator(
     'lh_resonance',
     [{-33, -21}],
-    baca.do_not_beam(),
+    rmakers.unbeam(),
     color_unregistered_pitches=False,
     counts=[16],
     figure_name='lhr 2.2.5',
@@ -335,12 +336,12 @@ accumulator(
 accumulator(
     'rh_v3',
     collections['stage 2']['rh'].next(3, exhausted=True),
-    baca.beam_divisions(),
+    rmakers.simple_beam(),
     baca.dynamic('mp'),
     baca.imbricate(
         'rh_v2',
         [15, 11, 6, 5],
-        baca.beam_everything(),
+        rmakers.beam_groups(beam_rests=True),
         baca.dynamic('fff'),
         hocket=True,
         ),
@@ -364,7 +365,7 @@ accumulator(
     baca.anchor_to_figure('rh-3 5.2.3'),
     baca.clef('bass'),
     baca.dynamic('p'),
-    baca.do_not_beam(),
+    rmakers.unbeam(),
     baca.new(
         baca.slur(),
         map=baca.tuplets(),
@@ -382,7 +383,7 @@ accumulator(
     collections['stage 2']['lh'].next(),
     baca.anchor_to_figure('rh-3 5.2.5'),
     baca.dynamic('p'),
-    baca.do_not_beam(),
+    rmakers.unbeam(),
     baca.new(
         baca.slur(),
         map=baca.tuplets(),
@@ -398,7 +399,7 @@ accumulator(
 accumulator(
     'lh_v4',
     collections['stage 2']['lh'].next(),
-    baca.do_not_beam(),
+    rmakers.unbeam(),
     baca.new(
         baca.slur(),
         map=baca.tuplets(),
@@ -413,7 +414,7 @@ accumulator(
     'lh_v4',
     collections['stage 2']['lh'].next(),
     baca.anchor_to_figure('rh-3 5.2.7'),
-    baca.do_not_beam(),
+    rmakers.unbeam(),
     baca.new(
         baca.slur(),
         map=baca.tuplets(),
@@ -427,7 +428,7 @@ accumulator(
 accumulator(
     'lh_v4',
     collections['stage 2']['lh'].next(),
-    baca.beam_divisions(),
+    rmakers.simple_beam(),
     baca.new(
         baca.slur(),
         map=baca.tuplets(),
@@ -441,7 +442,7 @@ accumulator(
 accumulator(
     'lh_v4',
     collections['stage 2']['lh'].next(),
-    baca.beam_divisions(),
+    rmakers.simple_beam(),
     baca.new(
         baca.slur(),
         map=baca.tuplets(),
@@ -455,7 +456,7 @@ accumulator(
 accumulator(
     'lh_v4',
     collections['stage 2']['lh'].next(),
-    baca.beam_divisions(),
+    rmakers.simple_beam(),
     baca.new(
         baca.slur(),
         map=baca.tuplets(),
@@ -471,7 +472,7 @@ accumulator(
     'lh_v4',
     collections['stage 2']['lh'].next(),
     baca.anchor_to_figure('rh-3 5.2.9'),
-    baca.beam_divisions(),
+    rmakers.simple_beam(),
     baca.dynamic('p'),
     baca.new(
         baca.slur(),
@@ -487,7 +488,7 @@ accumulator(
 accumulator(
     'lh_v4',
     collections['stage 2']['lh'].next(exhausted=True),
-    baca.beam_divisions(),
+    rmakers.simple_beam(),
     baca.new(
         baca.slur(),
         map=baca.tuplets(),

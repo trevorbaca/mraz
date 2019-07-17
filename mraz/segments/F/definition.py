@@ -2,6 +2,7 @@ import abjad
 import baca
 import mraz
 import os
+from abjadext import rmakers
 
 
 ###############################################################################
@@ -21,7 +22,7 @@ accumulator(
     baca.imbricate(
         'rh_v1_i',
         [17, 23],
-        baca.beam_everything(),
+        rmakers.beam_groups(beam_rests=True),
         baca.marcato(selector=baca.pheads()),
         extend_beam=True,
         ),
@@ -39,7 +40,7 @@ accumulator(
     baca.imbricate(
         'rh_v2_i',
         [12, 14],
-        baca.beam_everything(),
+        rmakers.beam_groups(beam_rests=True),
         baca.accent(selector=baca.pheads()),
         extend_beam=True,
         ),
@@ -58,7 +59,7 @@ accumulator(
     baca.imbricate(
         'rh_v1_i',
         [30, 31],
-        baca.beam_everything(),
+        rmakers.beam_groups(beam_rests=True),
         baca.marcato(selector=baca.pheads()),
         ),
     baca.nest('1/16'),
@@ -74,7 +75,7 @@ accumulator(
         'rh_v2_i',
         [13, 17, 17, 27],
         baca.accent(selector=baca.pheads()),
-        baca.beam_everything(),
+        rmakers.beam_groups(beam_rests=True),
         ),
     baca.new(
         baca.slur(),
@@ -91,7 +92,7 @@ accumulator(
     baca.imbricate(
         'rh_v1_i',
         [21],
-        baca.beam_everything(),
+        rmakers.beam_groups(beam_rests=True),
         baca.marcato(selector=baca.pheads()),
         extend_beam=True,
         ),
@@ -108,7 +109,7 @@ accumulator(
         'rh_v2_i',
         [12, 22, 19, 29],
         baca.accent(selector=baca.pheads()),
-        baca.beam_everything(),
+        rmakers.beam_groups(beam_rests=True),
         extend_beam=True,
         ),
     baca.new(
@@ -127,7 +128,7 @@ accumulator(
     baca.imbricate(
         'rh_v1_i',
         [20, 29],
-        baca.beam_everything(),
+        rmakers.beam_groups(beam_rests=True),
         baca.marcato(selector=baca.pheads()),
         ),
     baca.nest('1/16'),
@@ -142,7 +143,7 @@ accumulator(
         'rh_v2_i',
         [21, 27, 24],
         baca.accent(selector=baca.pheads()),
-        baca.beam_everything(),
+        rmakers.beam_groups(beam_rests=True),
         ),
     baca.new(
         baca.slur(),
@@ -163,7 +164,7 @@ accumulator(
         'rh_v2_i',
         [17],
         baca.accent(selector=baca.pheads()),
-        baca.beam_everything(),
+        rmakers.beam_groups(beam_rests=True),
         extend_beam=True,
         ),
     baca.new(
@@ -182,7 +183,7 @@ accumulator(
     baca.imbricate(
         'rh_v1_i',
         [30, 34, 37],
-        baca.beam_everything(),
+        rmakers.beam_groups(beam_rests=True),
         baca.marcato(selector=baca.pheads()),
         ),
     baca.nest('2/16'),
@@ -198,7 +199,7 @@ accumulator(
         'rh_v2_i',
         [26, 32],
         baca.accent(selector=baca.pheads()),
-        baca.beam_everything(),
+        rmakers.beam_groups(beam_rests=True),
         ),
     baca.new(
         baca.slur(),
@@ -224,7 +225,7 @@ accumulator(
     baca.imbricate(
         'lh_v4_i',
         [0, 19, 23],
-        baca.do_not_beam(),
+        rmakers.unbeam(),
         ),
     figure_name='lh-4 7.1.1',
     time_treatments=[-1],
@@ -243,7 +244,7 @@ accumulator(
     baca.imbricate(
         'lh_v5_i',
         [11, 18, 24, 26],
-        baca.beam_everything(),
+        rmakers.beam_groups(beam_rests=True),
         baca.staccato(selector=baca.pheads()),
         ),
     baca.new(
@@ -270,7 +271,7 @@ accumulator(
     baca.imbricate(
         'lh_v4_i',
         [13],
-        baca.do_not_beam(),
+        rmakers.unbeam(),
         ),
     figure_name='lh-4 7.1.2',
     hide_time_signature=True,
@@ -288,7 +289,7 @@ accumulator(
     baca.imbricate(
         'lh_v5_i',
         [9, 16, 20, 25],
-        baca.beam_everything(),
+        rmakers.beam_groups(beam_rests=True),
         baca.staccato(selector=baca.pheads()),
         ),
     baca.new(
@@ -314,7 +315,7 @@ accumulator(
     baca.imbricate(
         'lh_v4_i',
         [14, 18],
-        baca.do_not_beam(),
+        rmakers.unbeam(),
         ),
     figure_name='lh-4 7.1.3',
     hide_time_signature=True,

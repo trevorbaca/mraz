@@ -2,6 +2,7 @@ import abjad
 import baca
 import mraz
 import os
+from abjadext import rmakers
 
 
 ###############################################################################
@@ -18,7 +19,7 @@ accumulator(
     'rh_v3',
     collections['stage 1']['rh'].next(2),
     baca.dynamic('pp'),
-    baca.do_not_beam(),
+    rmakers.unbeam(),
     baca.register(24, 12),
     baca.rests_after([1]),
     baca.staccato(selector=baca.pheads()),
@@ -35,7 +36,7 @@ accumulator(
 accumulator(
     'rh_v3',
     collections['stage 1']['rh'].next(),
-    baca.do_not_beam(),
+    rmakers.unbeam(),
     baca.register(24, 12),
     baca.staccato(selector=baca.pheads()),
     baca.tenuto(selector=baca.pheads()),
@@ -51,7 +52,7 @@ accumulator(
 accumulator(
     'rh_v3',
     collections['stage 1']['rh'].next(),
-    baca.do_not_beam(),
+    rmakers.unbeam(),
     baca.register(24, 12),
     baca.rests_around([1], [1]),
     baca.staccato(selector=baca.pheads()),
@@ -64,7 +65,7 @@ accumulator(
 accumulator(
     'rh_v3',
     collections['stage 1']['rh'].next(exhausted=True),
-    baca.do_not_beam(),
+    rmakers.unbeam(),
     baca.register(12, 24),
     baca.staccato(selector=baca.pheads()),
     baca.tenuto(selector=baca.pheads()),
@@ -84,7 +85,7 @@ accumulator(
         baca.note(2),
         ),
     baca.dynamic('mp'),
-    baca.do_not_beam(),
+    rmakers.unbeam(),
     baca.register(0, 12),
     baca.tenuto(selector=baca.pheads()),
     baca.tuplet_bracket_staff_padding(3),
@@ -101,7 +102,7 @@ accumulator(
         baca.note(9),
         baca.note(2),
         ),
-    baca.do_not_beam(),
+    rmakers.unbeam(),
     baca.register(0, 12),
     baca.tenuto(selector=baca.pheads()),
     baca.tuplet_bracket_staff_padding(3),
@@ -118,7 +119,7 @@ accumulator(
         baca.note(13),
         baca.note(1),
         ),
-    baca.do_not_beam(),
+    rmakers.unbeam(),
     baca.register(0, 12),
     baca.tenuto(selector=baca.pheads()),
     counts=[2, -1],
@@ -130,7 +131,7 @@ accumulator(
 accumulator(
     'lh_v4',
     collections['stage 1']['lh'].next(exhausted=True),
-    baca.do_not_beam(),
+    rmakers.unbeam(),
     baca.register(12, 0),
     baca.tenuto(selector=baca.pheads()),
     counts=[2, -1],

@@ -2,6 +2,7 @@ import abjad
 import baca
 import mraz
 import os
+from abjadext import rmakers
 
 
 ###############################################################################
@@ -56,7 +57,7 @@ accumulator(
     baca.imbricate(
         'lh_v4_i',
         [14, 18],
-        baca.do_not_beam(),
+        rmakers.unbeam(),
         ),
     figure_name='b.1.3',
     time_treatments=[1],
@@ -67,7 +68,7 @@ accumulator(
     collections_8['stage 3']['lh'][1],
     baca.clef('bass'),
     baca.dynamic('f'),
-    baca.do_not_beam(),
+    rmakers.unbeam(),
     baca.ottava_bassa(),
     baca.register(-39),
     baca.rest_down(),
@@ -85,7 +86,7 @@ accumulator(
     baca.dynamic('ppp'),
     baca.dynamic_text_x_offset(-0.5),
     baca.dynamic_up(),
-    baca.do_not_beam(),
+    rmakers.unbeam(),
     baca.register(-27, -39),
     baca.rests_after([4]),
     baca.rest_up(),
@@ -107,7 +108,7 @@ accumulator(
     collections_6['stage 1']['rh'][2],
     baca.dynamic('pp'),
     baca.dynamic_text_x_offset(0.5),
-    baca.do_not_beam(),
+    rmakers.unbeam(),
     baca.register(24, 12),
     baca.staccato(selector=baca.pheads()),
     baca.tenuto(selector=baca.pheads()),
@@ -129,7 +130,7 @@ accumulator(
 accumulator(
     'rh_v3',
     collections_6['stage 1']['rh'][3],
-    baca.do_not_beam(),
+    rmakers.unbeam(),
     baca.register(24, 12),
     baca.rests_around([1], [1]),
     baca.span_bar_extra_offset((-0.75, 0), after=True, selector=baca.leaf(-1)),
@@ -146,7 +147,7 @@ accumulator(
     baca.accent(selector=baca.pheads()),
     baca.dynamic('fff'),
     baca.dynamic_up(),
-    baca.do_not_beam(),
+    rmakers.unbeam(),
     baca.register(20, 36),
     baca.rest_up(),
     baca.script_up(),
@@ -162,7 +163,7 @@ accumulator(
     baca.anchor_to_figure('b.1.10'),
     baca.dynamic('mf'),
     baca.dynamic_text_x_offset(0.25),
-    baca.do_not_beam(),
+    rmakers.unbeam(),
     baca.ottava(),
     baca.register(10, 26),
     baca.rest_down(),

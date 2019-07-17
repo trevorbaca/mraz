@@ -2,6 +2,7 @@ import abjad
 import baca
 import mraz
 import os
+from abjadext import rmakers
 
 
 ###############################################################################
@@ -19,7 +20,7 @@ accumulator(
     collections['stage 3']['rh'].next(),
     baca.dynamic('ppp'),
     baca.dynamic_up(),
-    baca.do_not_beam(),
+    rmakers.unbeam(),
     baca.register(-27, -39),
     counts=[6, -1],
     figure_name='lh-5 8.3.1',
@@ -29,7 +30,7 @@ accumulator(
 accumulator(
     'lh_v5',
     collections['stage 3']['rh'].next(2),
-    baca.do_not_beam(),
+    rmakers.unbeam(),
     baca.register(-39, -27),
     baca.rest_up(),
     counts=[4, -1],
@@ -41,7 +42,7 @@ accumulator(
 accumulator(
     'lh_v5',
     collections['stage 3']['rh'].next(),
-    baca.do_not_beam(),
+    rmakers.unbeam(),
     baca.register(-39),
     counts=[1, -15],
     denominator=2,
@@ -52,7 +53,7 @@ accumulator(
 accumulator(
     'lh_v5',
     collections['stage 3']['rh'].next(),
-    baca.do_not_beam(),
+    rmakers.unbeam(),
     baca.register(-27, -39),
     baca.rest_up(),
     counts=[6, -1],
@@ -63,7 +64,7 @@ accumulator(
 accumulator(
     'lh_v5',
     collections['stage 3']['rh'].next(),
-    baca.do_not_beam(),
+    rmakers.unbeam(),
     baca.register(-39, -27),
     counts=[4, -1],
     figure_name='lh-5 8.3.5',
@@ -73,7 +74,7 @@ accumulator(
 accumulator(
     'lh_v5',
     collections['stage 3']['rh'].next(),
-    baca.do_not_beam(),
+    rmakers.unbeam(),
     baca.register(-39, -27),
     counts=[4, -1],
     figure_name='lh-5 8.3.6',
@@ -84,7 +85,7 @@ accumulator(
 accumulator(
     'lh_v5',
     collections['stage 3']['rh'].next(),
-    baca.do_not_beam(),
+    rmakers.unbeam(),
     baca.register(-39),
     baca.rest_up(),
     counts=[1, -15],
@@ -96,7 +97,7 @@ accumulator(
 accumulator(
     'lh_v5',
     collections['stage 3']['rh'].next(),
-    baca.do_not_beam(),
+    rmakers.unbeam(),
     baca.register(-27, -39),
     counts=[6, -1],
     figure_name='lh-5 8.3.8',
@@ -106,7 +107,7 @@ accumulator(
 accumulator(
     'lh_v5',
     collections['stage 3']['rh'].next(2),
-    baca.do_not_beam(),
+    rmakers.unbeam(),
     baca.register(-39, -27),
     baca.tuplet_bracket_staff_padding(3),
     counts=[4, -1],
@@ -118,7 +119,7 @@ accumulator(
 accumulator(
     'lh_v5',
     collections['stage 3']['rh'].next(),
-    baca.do_not_beam(),
+    rmakers.unbeam(),
     baca.register(-39),
     baca.rest_up(),
     counts=[1, -15],
@@ -130,7 +131,7 @@ accumulator(
 accumulator(
     'lh_v5',
     collections['stage 3']['rh'].next(),
-    baca.do_not_beam(),
+    rmakers.unbeam(),
     baca.register(-27, -39),
     counts=[6, -1],
     figure_name='lh-5 8.3.11',
@@ -140,7 +141,7 @@ accumulator(
 accumulator(
     'lh_v5',
     collections['stage 3']['rh'].next(exhausted=True),
-    baca.do_not_beam(),
+    rmakers.unbeam(),
     baca.register(-39, -27),
     counts=[4, -1],
     figure_name='lh-5 8.3.12',
@@ -157,7 +158,7 @@ accumulator(
         baca.note(1),
         ),
     baca.dynamic('f'),
-    baca.do_not_beam(),
+    rmakers.unbeam(),
     baca.register(-39),
     counts=[4, -4],
     figure_name='lh-6 8.3.1',
@@ -172,7 +173,7 @@ accumulator(
         'lh_v5',
         baca.note(11),
         ),
-    baca.do_not_beam(),
+    rmakers.unbeam(),
     baca.register(-39),
     baca.rest_up(),
     counts=[2, -4],
@@ -189,7 +190,7 @@ accumulator(
         baca.note(23),
         baca.note(-1),
         ),
-    baca.do_not_beam(),
+    rmakers.unbeam(),
     baca.note_column_shift(-1, selector=baca.pleaf(-1)),
     baca.register(-39),
     counts=[1, -3],
@@ -206,7 +207,7 @@ accumulator(
         baca.note(27),
         baca.note(1),
         ),
-    baca.do_not_beam(),
+    rmakers.unbeam(),
     baca.register(-39),
     counts=[1, -3],
     figure_name='lh-6 8.3.4',
@@ -222,7 +223,7 @@ accumulator(
         baca.rest(33),
         baca.note(-1),
         ),
-    baca.do_not_beam(),
+    rmakers.unbeam(),
     baca.register(-39),
     counts=[2],
     figure_name='lh-6 8.3.5',
@@ -238,7 +239,7 @@ accumulator(
         baca.note(34),
         baca.note(1),
         ),
-    baca.do_not_beam(),
+    rmakers.unbeam(),
     baca.register(-39),
     counts=[2, -4],
     figure_name='lh-6 8.3.6',
