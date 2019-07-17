@@ -59,7 +59,7 @@ accumulator(
 accumulator(
     'rh_v3',
     collections['stage 2']['rh'].next(5),
-    rmakers.simple_beam(),
+    rmakers.beam(),
     baca.dynamic('mp'),
     baca.imbricate(
         'rh_v2',
@@ -92,7 +92,7 @@ accumulator(
 accumulator(
     'rh_v3',
     collections['stage 2']['rh'].next(5),
-    rmakers.simple_beam(),
+    rmakers.beam(),
     baca.imbricate(
         'rh_v2',
         [12, 13, 16, 3],
@@ -153,7 +153,7 @@ accumulator(
 accumulator(
     'rh_v3',
     collections['stage 2']['rh'].next(5),
-    rmakers.simple_beam(),
+    rmakers.beam(),
     baca.dynamic('mp'),
     baca.imbricate(
         'rh_v2',
@@ -186,7 +186,7 @@ accumulator(
 accumulator(
     'rh_v3',
     collections['stage 2']['rh'].next(6),
-    rmakers.simple_beam(),
+    rmakers.beam(),
     baca.imbricate(
         'rh_v2',
         [22, 20, 19, 18, 21, 12, 11, 15],
@@ -336,7 +336,7 @@ accumulator(
 accumulator(
     'rh_v3',
     collections['stage 2']['rh'].next(3, exhausted=True),
-    rmakers.simple_beam(),
+    rmakers.beam(),
     baca.dynamic('mp'),
     baca.imbricate(
         'rh_v2',
@@ -428,7 +428,7 @@ accumulator(
 accumulator(
     'lh_v4',
     collections['stage 2']['lh'].next(),
-    rmakers.simple_beam(),
+    rmakers.beam(),
     baca.new(
         baca.slur(),
         map=baca.tuplets(),
@@ -442,7 +442,7 @@ accumulator(
 accumulator(
     'lh_v4',
     collections['stage 2']['lh'].next(),
-    rmakers.simple_beam(),
+    rmakers.beam(),
     baca.new(
         baca.slur(),
         map=baca.tuplets(),
@@ -456,7 +456,7 @@ accumulator(
 accumulator(
     'lh_v4',
     collections['stage 2']['lh'].next(),
-    rmakers.simple_beam(),
+    rmakers.beam(),
     baca.new(
         baca.slur(),
         map=baca.tuplets(),
@@ -472,7 +472,7 @@ accumulator(
     'lh_v4',
     collections['stage 2']['lh'].next(),
     baca.anchor_to_figure('rh-3 5.2.9'),
-    rmakers.simple_beam(),
+    rmakers.beam(),
     baca.dynamic('p'),
     baca.new(
         baca.slur(),
@@ -488,7 +488,7 @@ accumulator(
 accumulator(
     'lh_v4',
     collections['stage 2']['lh'].next(exhausted=True),
-    rmakers.simple_beam(),
+    rmakers.beam(),
     baca.new(
         baca.slur(),
         map=baca.tuplets(),
