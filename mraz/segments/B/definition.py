@@ -2,6 +2,7 @@ import abjad
 import baca
 import mraz
 import os
+from abjadext import rmakers
 
 
 ###############################################################################
@@ -28,7 +29,7 @@ accumulator(
     baca.imbricate(
         'rh_v4_i',
         [14, 18],
-        baca.do_not_beam(),
+        rmakers.unbeam(),
         ),
     figure_name='b.2.1',
     time_treatments=[1],
@@ -72,7 +73,7 @@ accumulator(
     baca.imbricate(
         'rh_v4_i',
         [14, 18],
-        baca.do_not_beam(),
+        rmakers.unbeam(),
         ),
     figure_name='b.2.5',
     time_treatments=[1],
@@ -104,7 +105,7 @@ accumulator(
     'rh_v3',
     collections_4['stage 1']['rh'][0],
     baca.dynamic('ff'),
-    baca.do_not_beam(),
+    rmakers.unbeam(),
     baca.register(-12, 12),
     baca.tuplet_bracket_up(),
     counts=[2, -4, 2, -4, 4],
@@ -118,7 +119,7 @@ accumulator(
     baca.anchor_to_figure('b.2.8'),
     baca.dynamic('f'),
     baca.dynamic_down(),
-    baca.do_not_beam(),
+    rmakers.unbeam(),
     baca.register(-6, 6),
     baca.rests_before([12]),
     baca.rest_up(),
