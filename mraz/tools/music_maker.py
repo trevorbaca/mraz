@@ -550,7 +550,7 @@ def music_maker():
         voice_name = voice.name
         voice_names.append(voice_name)
     music_maker = baca.MusicMaker(
-        rmakers.beam_divisions_together(),
+        rmakers.beam_groups(),
         baca.PitchFirstRhythmCommand(
             rhythm_maker=baca.PitchFirstRhythmMaker(
                 talea=rmakers.Talea(counts=[1], denominator=16)
