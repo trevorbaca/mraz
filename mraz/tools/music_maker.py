@@ -1,6 +1,7 @@
 import abjad
 import baca
 from abjadext import rmakers
+from .ScoreTemplate import ScoreTemplate
 
 
 def music_maker():
@@ -541,21 +542,19 @@ def music_maker():
 
     Returns music-maker.
     """
-    import mraz
-
     voice_names = []
-    score_template = mraz.ScoreTemplate()
+    score_template = ScoreTemplate()
     dummy_score = score_template()
     for voice in abjad.iterate(dummy_score).components(abjad.Voice):
         voice_name = voice.name
         voice_names.append(voice_name)
     music_maker = baca.MusicMaker(
-        rmakers.beam_groups(),
         baca.PitchFirstRhythmCommand(
             rhythm_maker=baca.PitchFirstRhythmMaker(
                 rmakers.Talea(counts=[1], denominator=16)
             )
         ),
+        rmakers.beam_groups(),
         color_unregistered_pitches=True,
         denominator=16,
         voice_names=voice_names,
