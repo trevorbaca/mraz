@@ -36,6 +36,8 @@ class MusicAccumulator(baca.MusicAccumulator):
         keywords = {
             "allow_repeats": allow_repeats,
             "color_unregistered_pitches": color_unregistered_pitches,
+            "counts": counts,
+            "denominator": denominator,
             "exhaustive": exhaustive,
             "extend_beam": extend_beam,
             "figure_name": figure_name,
@@ -44,8 +46,6 @@ class MusicAccumulator(baca.MusicAccumulator):
             "is_foreshadow": is_foreshadow,
             "is_incomplete": is_incomplete,
             "is_recollection": is_recollection,
-            "denominator": denominator,
-            "counts": counts,
             "talea_denominator": talea_denominator,
             "thread": thread,
             "time_treatments": time_treatments,
