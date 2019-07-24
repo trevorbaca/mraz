@@ -9,7 +9,7 @@ from abjadext import rmakers
 ##################################### [G] #####################################
 ###############################################################################
 
-accumulator = mraz.MusicAccumulator(mraz.ScoreTemplate())
+accumulator = baca.MusicAccumulator(mraz.ScoreTemplate())
 collection_maker = mraz.CollectionMaker()
 collections = collection_maker.make_segment_7_collections()
 
