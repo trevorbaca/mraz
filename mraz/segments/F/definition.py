@@ -24,6 +24,7 @@ collections_8 = collection_maker.make_segment_8_collections()
 accumulator(
     'rh_v2',
     collections['stage 1']['rh'].next(exhausted=True),
+    mraz.music_maker(),
     baca.accent(selector=baca.pheads()),
     baca.dynamic('fff'),
     baca.dynamic_up(),
@@ -39,6 +40,7 @@ accumulator(
 accumulator(
     'rh_v3',
     collections['stage 1']['lh'].next(exhausted=True),
+    mraz.music_maker(),
     baca.anchor('rh_v2'),
     baca.dynamic('mf'),
     rmakers.unbeam(),
@@ -59,6 +61,7 @@ accumulator(
 accumulator(
     'rh_v3',
     collections['stage 2']['rh'].next(5),
+    mraz.music_maker(),
     rmakers.beam(),
     baca.dynamic('mp'),
     baca.imbricate(
@@ -69,10 +72,7 @@ accumulator(
         extend_beam=True,
         hocket=True,
         ),
-    baca.new(
-        baca.slur(),
-        map=baca.tuplets(),
-        ),
+    baca.slur(map=baca.tuplets()),
     baca.nest('-1/4'),
     baca.register(24, 0),
     baca.tuplet_bracket_down(),
@@ -85,6 +85,7 @@ accumulator(
 accumulator(
     'rh_v3',
     [abjad.Rest((1, 4))],
+    mraz.music_maker(),
     baca.rest_transparent(),
     figure_name='rh-3 5.2.2',
     )
@@ -92,6 +93,7 @@ accumulator(
 accumulator(
     'rh_v3',
     collections['stage 2']['rh'].next(5),
+    mraz.music_maker(),
     rmakers.beam(),
     baca.imbricate(
         'rh_v2',
@@ -99,10 +101,7 @@ accumulator(
         rmakers.beam_groups(beam_rests=True),
         hocket=True,
         ),
-    baca.new(
-        baca.slur(),
-        map=baca.tuplets(),
-        ),
+    baca.slur(map=baca.tuplets()),
     baca.nest('-1/4'),
     baca.register(24, 0),
     # 2018-07-10: F4 flipped to F5 because of command interpretation order
@@ -120,6 +119,7 @@ accumulator(
 accumulator(
     'lh_v6',
     collections_8['stage 3']['lh'][1],
+    mraz.music_maker(),
     baca.dynamic('f'),
     rmakers.unbeam(),
     baca.ottava_bassa(),
@@ -136,6 +136,7 @@ accumulator(
 accumulator(
     'lh_v5',
     collections_8['stage 3']['rh'][4],
+    mraz.music_maker(),
     baca.anchor_to_figure('b.1.4'),
     baca.dynamic('ppp'),
     baca.dynamic_up(),
@@ -153,6 +154,7 @@ accumulator(
 accumulator(
     'rh_v3',
     collections['stage 2']['rh'].next(5),
+    mraz.music_maker(),
     rmakers.beam(),
     baca.dynamic('mp'),
     baca.imbricate(
@@ -163,10 +165,7 @@ accumulator(
         extend_beam=True,
         hocket=True,
         ),
-    baca.new(
-        baca.slur(),
-        map=baca.tuplets(),
-        ),
+    baca.slur(map=baca.tuplets()),
     baca.nest('-3/8'),
     baca.register(24, 0),
     baca.tuplet_bracket_down(),
@@ -179,6 +178,7 @@ accumulator(
 accumulator(
     'rh_v3',
     [abjad.Rest((1, 4))],
+    mraz.music_maker(),
     baca.rest_transparent(),
     figure_name='rh-3 5.2.6',
     )
@@ -186,6 +186,7 @@ accumulator(
 accumulator(
     'rh_v3',
     collections['stage 2']['rh'].next(6),
+    mraz.music_maker(),
     rmakers.beam(),
     baca.imbricate(
         'rh_v2',
@@ -193,10 +194,7 @@ accumulator(
         rmakers.beam_groups(beam_rests=True),
         hocket=True,
         ),
-    baca.new(
-        baca.slur(),
-        map=baca.tuplets(),
-        ),
+    baca.slur(map=baca.tuplets()),
     baca.nest('-3/8'),
     baca.register(24, 0),
     baca.tuplet_bracket_down(),
@@ -209,6 +207,7 @@ accumulator(
 accumulator(
     'rh_v3',
     [abjad.Rest((1, 4))],
+    mraz.music_maker(),
     baca.rest_transparent(),
     figure_name='rh-3 5.2.8',
     )
@@ -216,14 +215,12 @@ accumulator(
 accumulator(
     'rh_v2',
     collections_2['stage 2']['rh'].next(),
+    mraz.music_maker(),
     baca.bass_to_octave(3),
     baca.beam_positions(-8),
     baca.dynamic('ppp'),
     baca.dynamic_down(),
-    baca.new(
-        baca.slur(),
-        map=baca.tuplets(),
-        ),
+    baca.slur(map=baca.tuplets()),
     baca.staccato(selector=baca.pheads()),
     figure_name='rh-2 2.2.1',
     )
@@ -231,12 +228,10 @@ accumulator(
 accumulator(
     'rh_v2',
     collections_2['stage 2']['rh'].next(),
+    mraz.music_maker(),
     baca.bass_to_octave(4),
     baca.beam_positions(-8),
-    baca.new(
-        baca.slur(),
-        map=baca.tuplets(),
-        ),
+    baca.slur(map=baca.tuplets()),
     baca.staccato(selector=baca.pheads()),
     figure_name='rh-2 2.2.2',
     )
@@ -244,12 +239,10 @@ accumulator(
 accumulator(
     'rh_v2',
     collections_2['stage 2']['rh'].next(),
+    mraz.music_maker(),
     baca.bass_to_octave(4),
     baca.beam_positions(-8),
-    baca.new(
-        baca.slur(),
-        map=baca.tuplets(),
-        ),
+    baca.slur(map=baca.tuplets()),
     baca.staccato(selector=baca.pheads()),
     figure_name='rh-2 2.2.3',
     )
@@ -257,12 +250,10 @@ accumulator(
 accumulator(
     'rh_v2',
     collections_2['stage 2']['rh'].next(),
+    mraz.music_maker(),
     baca.bass_to_octave(5),
     baca.beam_positions(-8),
-    baca.new(
-        baca.slur(),
-        map=baca.tuplets(),
-        ),
+    baca.slur(map=baca.tuplets()),
     baca.staccato(selector=baca.pheads()),
     figure_name='rh-2 2.2.4',
     )
@@ -270,12 +261,10 @@ accumulator(
 accumulator(
     'rh_v2',
     collections_2['stage 2']['rh'].next(exhausted=True),
+    mraz.music_maker(),
     baca.bass_to_octave(5),
     baca.beam_positions(-8),
-    baca.new(
-        baca.slur(),
-        map=baca.tuplets(),
-        ),
+    baca.slur(map=baca.tuplets()),
     baca.staccato(selector=baca.pheads()),
     figure_name='rh-2 2.2.5',
     )
@@ -285,6 +274,7 @@ accumulator(
 accumulator(
     'lh_resonance',
     [{-35, -23}],
+    mraz.music_maker(),
     baca.anchor_to_figure('rh-2 2.2.1'),
     rmakers.unbeam(),
     color_unregistered_pitches=False,
@@ -296,6 +286,7 @@ accumulator(
 accumulator(
     'lh_resonance',
     [{-35, -23}],
+    mraz.music_maker(),
     rmakers.unbeam(),
     color_unregistered_pitches=False,
     counts=[27],
@@ -306,6 +297,7 @@ accumulator(
 accumulator(
     'lh_resonance',
     [{-33, -21}],
+    mraz.music_maker(),
     rmakers.unbeam(),
     color_unregistered_pitches=False,
     counts=[21],
@@ -316,6 +308,7 @@ accumulator(
 accumulator(
     'lh_resonance',
     [{-33, -21}],
+    mraz.music_maker(),
     rmakers.unbeam(),
     color_unregistered_pitches=False,
     counts=[15],
@@ -326,6 +319,7 @@ accumulator(
 accumulator(
     'lh_resonance',
     [{-33, -21}],
+    mraz.music_maker(),
     rmakers.unbeam(),
     color_unregistered_pitches=False,
     counts=[16],
@@ -336,6 +330,7 @@ accumulator(
 accumulator(
     'rh_v3',
     collections['stage 2']['rh'].next(3, exhausted=True),
+    mraz.music_maker(),
     rmakers.beam(),
     baca.dynamic('mp'),
     baca.imbricate(
@@ -345,10 +340,7 @@ accumulator(
         baca.dynamic('fff'),
         hocket=True,
         ),
-    baca.new(
-        baca.slur(),
-        map=baca.tuplets(),
-        ),
+    baca.slur(map=baca.tuplets()),
     baca.nest('-1/4'),
     baca.register(24, 0),
     baca.tuplet_bracket_down(),
@@ -362,14 +354,12 @@ accumulator(
 accumulator(
     'lh_v4',
     collections['stage 2']['lh'].next(),
+    mraz.music_maker(),
     baca.anchor_to_figure('rh-3 5.2.3'),
     baca.clef('bass'),
     baca.dynamic('p'),
     rmakers.unbeam(),
-    baca.new(
-        baca.slur(),
-        map=baca.tuplets(),
-        ),
+    baca.slur(map=baca.tuplets()),
     baca.register(6, -24),
     baca.rests_around([8, 8, 8], [6]),
     baca.slur_down(),
@@ -381,13 +371,11 @@ accumulator(
 accumulator(
     'lh_v4',
     collections['stage 2']['lh'].next(),
+    mraz.music_maker(),
     baca.anchor_to_figure('rh-3 5.2.5'),
     baca.dynamic('p'),
     rmakers.unbeam(),
-    baca.new(
-        baca.slur(),
-        map=baca.tuplets(),
-        ),
+    baca.slur(map=baca.tuplets()),
     baca.register(6, -24),
     baca.rests_before([8, 8]),
     baca.slur_down(),
@@ -399,11 +387,9 @@ accumulator(
 accumulator(
     'lh_v4',
     collections['stage 2']['lh'].next(),
+    mraz.music_maker(),
     rmakers.unbeam(),
-    baca.new(
-        baca.slur(),
-        map=baca.tuplets(),
-        ),
+    baca.slur(map=baca.tuplets()),
     baca.register(6, -24),
     counts=[3, -1],
     figure_name='lh-4 5.2.3',
@@ -413,12 +399,10 @@ accumulator(
 accumulator(
     'lh_v4',
     collections['stage 2']['lh'].next(),
+    mraz.music_maker(),
     baca.anchor_to_figure('rh-3 5.2.7'),
     rmakers.unbeam(),
-    baca.new(
-        baca.slur(),
-        map=baca.tuplets(),
-        ),
+    baca.slur(map=baca.tuplets()),
     baca.register(0, -24),
     counts=[3, -1],
     figure_name='lh-4 5.2.4',
@@ -428,11 +412,9 @@ accumulator(
 accumulator(
     'lh_v4',
     collections['stage 2']['lh'].next(),
+    mraz.music_maker(),
     rmakers.beam(),
-    baca.new(
-        baca.slur(),
-        map=baca.tuplets(),
-        ),
+    baca.slur(map=baca.tuplets()),
     baca.register(0, -24),
     counts=[3],
     figure_name='lh-4 5.2.5',
@@ -442,11 +424,9 @@ accumulator(
 accumulator(
     'lh_v4',
     collections['stage 2']['lh'].next(),
+    mraz.music_maker(),
     rmakers.beam(),
-    baca.new(
-        baca.slur(),
-        map=baca.tuplets(),
-        ),
+    baca.slur(map=baca.tuplets()),
     baca.register(0, -24),
     counts=[3],
     figure_name='lh-4 5.2.6',
@@ -456,11 +436,9 @@ accumulator(
 accumulator(
     'lh_v4',
     collections['stage 2']['lh'].next(),
+    mraz.music_maker(),
     rmakers.beam(),
-    baca.new(
-        baca.slur(),
-        map=baca.tuplets(),
-        ),
+    baca.slur(map=baca.tuplets()),
     baca.register(-6, -48),
     baca.rests_around([3], [4, 4, 4]),
     counts=[3],
@@ -471,13 +449,11 @@ accumulator(
 accumulator(
     'lh_v4',
     collections['stage 2']['lh'].next(),
+    mraz.music_maker(),
     baca.anchor_to_figure('rh-3 5.2.9'),
     rmakers.beam(),
     baca.dynamic('p'),
-    baca.new(
-        baca.slur(),
-        map=baca.tuplets(),
-        ),
+    baca.slur(map=baca.tuplets()),
     baca.register(-6, -36),
     baca.rests_before([14]),
     counts=[2],
@@ -488,11 +464,9 @@ accumulator(
 accumulator(
     'lh_v4',
     collections['stage 2']['lh'].next(exhausted=True),
+    mraz.music_maker(),
     rmakers.beam(),
-    baca.new(
-        baca.slur(),
-        map=baca.tuplets(),
-        ),
+    baca.slur(map=baca.tuplets()),
     baca.register(-6, -36),
     counts=[2],
     figure_name='lh-4 5.2.9',
@@ -502,6 +476,7 @@ accumulator(
 accumulator(
     'lh_v4',
     [abjad.Rest((1, 4))],
+    mraz.music_maker(),
     baca.clef('treble'),
     baca.rest_transparent(),
     figure_name='lh-4 final',

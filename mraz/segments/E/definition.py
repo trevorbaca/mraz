@@ -18,6 +18,7 @@ collections = collection_maker.make_segment_6_collections()
 accumulator(
     'rh_v3',
     collections['stage 1']['rh'].next(2),
+    mraz.music_maker(),
     baca.dynamic('pp'),
     rmakers.unbeam(),
     baca.register(24, 12),
@@ -36,6 +37,7 @@ accumulator(
 accumulator(
     'rh_v3',
     collections['stage 1']['rh'].next(),
+    mraz.music_maker(),
     rmakers.unbeam(),
     baca.register(24, 12),
     baca.staccato(selector=baca.pheads()),
@@ -52,6 +54,7 @@ accumulator(
 accumulator(
     'rh_v3',
     collections['stage 1']['rh'].next(),
+    mraz.music_maker(),
     rmakers.unbeam(),
     baca.register(24, 12),
     baca.rests_around([1], [1]),
@@ -65,6 +68,7 @@ accumulator(
 accumulator(
     'rh_v3',
     collections['stage 1']['rh'].next(exhausted=True),
+    mraz.music_maker(),
     rmakers.unbeam(),
     baca.register(12, 24),
     baca.staccato(selector=baca.pheads()),
@@ -79,6 +83,7 @@ accumulator(
 accumulator(
     'lh_v4',
     collections['stage 1']['lh'].next(),
+    mraz.music_maker(),
     baca.anchor(
         'rh_v3',
         baca.note(3),
@@ -97,6 +102,7 @@ accumulator(
 accumulator(
     'lh_v4',
     collections['stage 1']['lh'].next(),
+    mraz.music_maker(),
     baca.anchor(
         'rh_v3',
         baca.note(9),
@@ -114,6 +120,7 @@ accumulator(
 accumulator(
     'lh_v4',
     collections['stage 1']['lh'].next(),
+    mraz.music_maker(),
     baca.anchor(
         'rh_v3',
         baca.note(13),
@@ -131,6 +138,7 @@ accumulator(
 accumulator(
     'lh_v4',
     collections['stage 1']['lh'].next(exhausted=True),
+    mraz.music_maker(),
     rmakers.unbeam(),
     baca.register(12, 0),
     baca.tenuto(selector=baca.pheads()),
