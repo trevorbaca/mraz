@@ -1,5 +1,4 @@
 from .CollectionMaker import CollectionMaker
-from .MusicAccumulator import MusicAccumulator
 from .ScoreTemplate import ScoreTemplate
 from .SilverDesignMaker import SilverDesignMaker
 from .clean_up_repeat_ties import clean_up_repeat_ties
