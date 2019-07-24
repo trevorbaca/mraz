@@ -1,4 +1,5 @@
 import baca
+from .music_maker import music_maker
 
 
 class MusicAccumulator(baca.MusicAccumulator):
@@ -98,10 +99,8 @@ class MusicAccumulator(baca.MusicAccumulator):
     ### INITIALIZER ###
 
     def __init__(self, score_template):
-        import mraz
-
         super(MusicAccumulator, self).__init__(score_template)
-        self._music_maker = mraz.music_maker()
+        self._music_maker = music_maker()
 
     ### SPECIAL METHODS ###
 
