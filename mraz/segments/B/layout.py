@@ -4,19 +4,24 @@ import baca
 breaks = baca.breaks(
     baca.page(
         baca.system(
-            15, 15,
-            measure=22,
+            10, 15,
+            measure=10,
             y_offset=0,
             ),
         baca.system(
-            15, 15,
-            measure=29,
+            10, 15,
+            measure=13,
             y_offset=60,
             ),
         baca.system(
-            15, 15,
-            measure=31,
+            10, 15,
+            measure=17,
             y_offset=120,
+            ),
+        baca.system(
+            10, 15,
+            measure=21,
+            y_offset=180,
             ),
         ),
     )
@@ -24,8 +29,5 @@ breaks = baca.breaks(
 spacing = baca.scorewide_spacing(
     __file__,
     breaks=breaks,
-    fallback_duration=(1, 40),
+    fallback_duration=(1, 32),
     )
-spacing.override([23, 25, 28], (1, 4))
-spacing.override(29, (1, 32))
-spacing.override([31, 32], (1, 4))

@@ -78,7 +78,7 @@ persist = abjad.OrderedDict(
                             abjad.Momento(
                                 context='LH_Voice_V',
                                 prototype='abjad.Dynamic',
-                                value='f',
+                                value='ppp',
                                 ),
                             ],
                         ),
@@ -123,22 +123,12 @@ persist = abjad.OrderedDict(
                             ],
                         ),
                     (
-                        'RH_Voice_I',
-                        [
-                            abjad.Momento(
-                                context='RH_Voice_I',
-                                prototype='abjad.Dynamic',
-                                value='f',
-                                ),
-                            ],
-                        ),
-                    (
                         'RH_Voice_II',
                         [
                             abjad.Momento(
                                 context='RH_Voice_II',
                                 prototype='abjad.Dynamic',
-                                value='ff',
+                                value='fff',
                                 ),
                             ],
                         ),
@@ -148,17 +138,7 @@ persist = abjad.OrderedDict(
                             abjad.Momento(
                                 context='RH_Voice_III',
                                 prototype='abjad.Dynamic',
-                                value='ff',
-                                ),
-                            ],
-                        ),
-                    (
-                        'RH_Voice_IV',
-                        [
-                            abjad.Momento(
-                                context='RH_Voice_IV',
-                                prototype='abjad.Dynamic',
-                                value='p',
+                                value='mf',
                                 ),
                             ],
                         ),
@@ -168,12 +148,12 @@ persist = abjad.OrderedDict(
                             abjad.Momento(
                                 context='Global_Skips',
                                 manifest='metronome_marks',
-                                value='84',
+                                value='112',
                                 ),
                             abjad.Momento(
                                 context='Global_Skips',
                                 prototype='abjad.TimeSignature',
-                                value='4/4',
+                                value='2/4',
                                 ),
                             ],
                         ),
