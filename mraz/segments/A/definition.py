@@ -29,6 +29,7 @@ accumulator(
     baca.register(36),
     baca.tenuto(selector=baca.pheads()),
     counts=[16],
+    denominator=4,
     figure_name='b.1.1',
     hide_time_signature=True,
     )
@@ -45,6 +46,7 @@ accumulator(
     baca.slur(map=baca.runs()),
     baca.slur_up(),
     rmakers.beam_groups(),
+    denominator=4,
     figure_name='b.1.2',
     time_treatments=[abjad.Duration(1, 4)],
     )
@@ -61,6 +63,7 @@ accumulator(
         rmakers.unbeam(),
         ),
     rmakers.beam_groups(),
+    denominator=4,
     figure_name='b.1.3',
     time_treatments=[1],
     )
@@ -78,6 +81,7 @@ accumulator(
     baca.tuplet_bracket_down(),
     baca.tuplet_bracket_staff_padding(6),
     counts=[2, -4],
+    denominator=4,
     figure_name='b.1.4',
     time_treatments=[4],
     )
@@ -105,6 +109,7 @@ accumulator(
     [abjad.Rest((1, 4))],
     mraz.music_maker(),
     baca.rest_transparent(),
+    denominator=4,
     figure_name='b.1.6',
     )
 
@@ -131,6 +136,7 @@ accumulator(
     [abjad.Rest((1, 4))],
     mraz.music_maker(),
     baca.rest_transparent(),
+    denominator=4,
     figure_name='b.1.8',
     )
 
@@ -163,6 +169,7 @@ accumulator(
     baca.stem_up(),
     baca.text_script_up(),
     counts=[2, -14],
+    denominator=4,
     figure_name='b.1.10',
     )
 
@@ -192,6 +199,7 @@ accumulator(
     [abjad.Rest((1, 4))],
     mraz.music_maker(),
     baca.script_up(),
+    denominator=4,
     figure_name='b.1.12',
     )
 

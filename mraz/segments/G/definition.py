@@ -30,6 +30,7 @@ accumulator(
     baca.nest('2/16'),
     baca.register(13, 13+10),
     extend_beam=True,
+    denominator=4,
     figure_name='rh-1 7.1.1',
     time_treatments=[-1],
     )
@@ -48,6 +49,7 @@ accumulator(
         ),
     baca.slur(map=baca.tuplets()),
     baca.register(7, 7+10),
+    denominator=4,
     extend_beam=True,
     figure_name='rh-2 7.1.1',
     )
@@ -64,6 +66,7 @@ accumulator(
         ),
     baca.nest('1/16'),
     baca.register(15, 15+10),
+    denominator=4,
     figure_name='rh-1 7.1.2',
     time_treatments=[-1],
     )
@@ -81,6 +84,7 @@ accumulator(
     baca.slur(map=baca.tuplets()),
     baca.nest('-1/16'),
     baca.register(9, 9+10),
+    denominator=4,
     figure_name='rh-2 7.1.2',
     )
 
@@ -97,6 +101,7 @@ accumulator(
         ),
     baca.nest('1/16'),
     baca.register(17, 17+10),
+    denominator=4,
     extend_beam=True,
     figure_name='rh-1 7.1.3',
     )
@@ -115,6 +120,7 @@ accumulator(
     baca.slur(map=baca.tuplets()),
     baca.register(11, 11+10),
     extend_beam=True,
+    denominator=4,
     figure_name='rh-2 7.1.3',
     time_treatments=[-1],
     )
@@ -131,6 +137,7 @@ accumulator(
         ),
     baca.nest('1/16'),
     baca.register(19, 19+10),
+    denominator=4,
     figure_name='rh-1 7.1.4',
     )
 
@@ -147,6 +154,7 @@ accumulator(
     baca.slur(map=baca.tuplets()),
     baca.nest('-1/16'),
     baca.register(13, 13+10),
+    denominator=4,
     figure_name='rh-2 7.1.4',
     )
 
@@ -166,6 +174,7 @@ accumulator(
         ),
     baca.slur(map=baca.tuplets()),
     baca.register(15, 15+10),
+    denominator=4,
     extend_beam=True,
     figure_name='rh-2 7.1.5',
     )
@@ -183,6 +192,7 @@ accumulator(
         ),
     baca.nest('2/16'),
     baca.register(23, 23+10),
+    denominator=4,
     figure_name='rh-1 7.1.5',
     time_treatments=[-1],
     )
@@ -199,6 +209,7 @@ accumulator(
         ),
     baca.slur(map=baca.tuplets()),
     baca.register(17, 17+10),
+    denominator=4,
     figure_name='rh-2 7.1.6',
     time_treatments=[-1],
     )

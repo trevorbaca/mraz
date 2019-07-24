@@ -34,6 +34,7 @@ accumulator(
     baca.script_up(),
     baca.stem_up(),
     counts=[2, -14],
+    denominator=4,
     figure_name='rh-2 5.1.1',
     )
 
@@ -51,6 +52,7 @@ accumulator(
     baca.tenuto(selector=baca.pheads()),
     baca.tuplet_bracket_down(),
     counts=[4, -4],
+    denominator=4,
     figure_name='rh-3 5.1.1',
     time_treatments=[abjad.Duration(16, 4)],
     tuplet_denominator=abjad.Duration(1, 1),
@@ -77,6 +79,7 @@ accumulator(
     baca.register(24, 0),
     baca.tuplet_bracket_down(),
     counts=[2],
+    denominator=4,
     figure_name='rh-3 5.2.1',
     thread=True,
     time_treatments=[-2, -2, 0],
@@ -87,6 +90,7 @@ accumulator(
     [abjad.Rest((1, 4))],
     mraz.music_maker(),
     baca.rest_transparent(),
+    denominator=4,
     figure_name='rh-3 5.2.2',
     )
 
@@ -111,6 +115,7 @@ accumulator(
     ),
     baca.tuplet_bracket_down(),
     counts=[2],
+    denominator=4,
     figure_name='rh-3 5.2.3',
     thread=True,
     time_treatments=[-2, 0, -2],
@@ -129,6 +134,7 @@ accumulator(
     baca.tuplet_bracket_down(),
     baca.tuplet_bracket_staff_padding(6),
     counts=[2, -4],
+    denominator=4,
     figure_name='b.1.4',
     time_treatments=[4],
     )
@@ -146,6 +152,7 @@ accumulator(
     baca.rest_up(),
     baca.stem_up(),
     counts=[6, -1],
+    denominator=4,
     figure_name='b.1.5',
     hide_time_signature=True,
     talea_denominator=32,
@@ -170,6 +177,7 @@ accumulator(
     baca.register(24, 0),
     baca.tuplet_bracket_down(),
     counts=[2],
+    denominator=4,
     figure_name='rh-3 5.2.5',
     thread=True,
     time_treatments=[0, -2, -2],
@@ -180,6 +188,7 @@ accumulator(
     [abjad.Rest((1, 4))],
     mraz.music_maker(),
     baca.rest_transparent(),
+    denominator=4,
     figure_name='rh-3 5.2.6',
     )
 
@@ -199,6 +208,7 @@ accumulator(
     baca.register(24, 0),
     baca.tuplet_bracket_down(),
     counts=[2],
+    denominator=4,
     figure_name='rh-3 5.2.7',
     thread=True,
     time_treatments=[-2, -2, 0],
@@ -209,6 +219,7 @@ accumulator(
     [abjad.Rest((1, 4))],
     mraz.music_maker(),
     baca.rest_transparent(),
+    denominator=4,
     figure_name='rh-3 5.2.8',
     )
 
@@ -222,6 +233,7 @@ accumulator(
     baca.dynamic_down(),
     baca.slur(map=baca.tuplets()),
     baca.staccato(selector=baca.pheads()),
+    denominator=4,
     figure_name='rh-2 2.2.1',
     )
 
@@ -233,6 +245,7 @@ accumulator(
     baca.beam_positions(-8),
     baca.slur(map=baca.tuplets()),
     baca.staccato(selector=baca.pheads()),
+    denominator=4,
     figure_name='rh-2 2.2.2',
     )
 
@@ -244,6 +257,7 @@ accumulator(
     baca.beam_positions(-8),
     baca.slur(map=baca.tuplets()),
     baca.staccato(selector=baca.pheads()),
+    denominator=4,
     figure_name='rh-2 2.2.3',
     )
 
@@ -255,6 +269,7 @@ accumulator(
     baca.beam_positions(-8),
     baca.slur(map=baca.tuplets()),
     baca.staccato(selector=baca.pheads()),
+    denominator=4,
     figure_name='rh-2 2.2.4',
     )
 
@@ -266,6 +281,7 @@ accumulator(
     baca.beam_positions(-8),
     baca.slur(map=baca.tuplets()),
     baca.staccato(selector=baca.pheads()),
+    denominator=4,
     figure_name='rh-2 2.2.5',
     )
 
@@ -279,6 +295,7 @@ accumulator(
     rmakers.unbeam(),
     color_unregistered_pitches=False,
     counts=[29],
+    denominator=4,
     figure_name='lhr 2.2.1',
     hide_time_signature=True,
     )
@@ -290,6 +307,7 @@ accumulator(
     rmakers.unbeam(),
     color_unregistered_pitches=False,
     counts=[27],
+    denominator=4,
     figure_name='lhr 2.2.2a',
     hide_time_signature=True,
     )
@@ -301,6 +319,7 @@ accumulator(
     rmakers.unbeam(),
     color_unregistered_pitches=False,
     counts=[21],
+    denominator=4,
     figure_name='lhr 2.2.3a',
     hide_time_signature=True,
     )
@@ -312,6 +331,7 @@ accumulator(
     rmakers.unbeam(),
     color_unregistered_pitches=False,
     counts=[15],
+    denominator=4,
     figure_name='lhr 2.2.4',
     hide_time_signature=True,
     )
@@ -323,6 +343,7 @@ accumulator(
     rmakers.unbeam(),
     color_unregistered_pitches=False,
     counts=[16],
+    denominator=4,
     figure_name='lhr 2.2.5',
     hide_time_signature=True,
     )
@@ -346,6 +367,7 @@ accumulator(
     baca.tuplet_bracket_down(),
     baca.tuplet_bracket_staff_padding(3),
     counts=[2],
+    denominator=4,
     figure_name='rh-3 5.2.9',
     thread=True,
     time_treatments=[-2, 0, -2],
@@ -364,6 +386,7 @@ accumulator(
     baca.rests_around([8, 8, 8], [6]),
     baca.slur_down(),
     counts=[3, -3],
+    denominator=4,
     figure_name='lh-4 5.2.1',
     hide_time_signature=True,
     )
@@ -380,6 +403,7 @@ accumulator(
     baca.rests_before([8, 8]),
     baca.slur_down(),
     counts=[3, -1],
+    denominator=4,
     figure_name='lh-4 5.2.2',
     hide_time_signature=True,
     )
@@ -392,6 +416,7 @@ accumulator(
     baca.slur(map=baca.tuplets()),
     baca.register(6, -24),
     counts=[3, -1],
+    denominator=4,
     figure_name='lh-4 5.2.3',
     hide_time_signature=True,
     )
@@ -405,6 +430,7 @@ accumulator(
     baca.slur(map=baca.tuplets()),
     baca.register(0, -24),
     counts=[3, -1],
+    denominator=4,
     figure_name='lh-4 5.2.4',
     hide_time_signature=True,
     )
@@ -417,6 +443,7 @@ accumulator(
     baca.slur(map=baca.tuplets()),
     baca.register(0, -24),
     counts=[3],
+    denominator=4,
     figure_name='lh-4 5.2.5',
     hide_time_signature=True,
     )
@@ -429,6 +456,7 @@ accumulator(
     baca.slur(map=baca.tuplets()),
     baca.register(0, -24),
     counts=[3],
+    denominator=4,
     figure_name='lh-4 5.2.6',
     hide_time_signature=True,
     )
@@ -442,6 +470,7 @@ accumulator(
     baca.register(-6, -48),
     baca.rests_around([3], [4, 4, 4]),
     counts=[3],
+    denominator=4,
     figure_name='lh-4 5.2.7',
     hide_time_signature=True,
     )
@@ -457,6 +486,7 @@ accumulator(
     baca.register(-6, -36),
     baca.rests_before([14]),
     counts=[2],
+    denominator=4,
     figure_name='lh-4 5.2.8',
     hide_time_signature=True,
     )
@@ -469,6 +499,7 @@ accumulator(
     baca.slur(map=baca.tuplets()),
     baca.register(-6, -36),
     counts=[2],
+    denominator=4,
     figure_name='lh-4 5.2.9',
     hide_time_signature=True,
     )
@@ -479,6 +510,7 @@ accumulator(
     mraz.music_maker(),
     baca.clef('treble'),
     baca.rest_transparent(),
+    denominator=4,
     figure_name='lh-4 final',
     )
 
