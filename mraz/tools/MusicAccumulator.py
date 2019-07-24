@@ -17,7 +17,7 @@ class MusicAccumulator(baca.MusicAccumulator):
         allow_repeats=None,
         color_unregistered_pitches=None,
         counts=None,
-        denominator=4,
+        denominator=None,
         exhaustive=None,
         extend_beam=None,
         figure_name=None,

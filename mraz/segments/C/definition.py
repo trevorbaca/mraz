@@ -32,6 +32,7 @@ accumulator(
         [14, 18],
         rmakers.unbeam(),
         ),
+    denominator=4,
     figure_name='b.2.1',
     time_treatments=[1],
     )
@@ -41,6 +42,7 @@ accumulator(
     [abjad.Rest((1, 4))],
     mraz.music_maker(),
     baca.rest_transparent(),
+    denominator=4,
     figure_name='b.2.2',
     )
 
@@ -55,6 +57,7 @@ accumulator(
     baca.slur(map=baca.tuplets()),
     baca.staccato(selector=baca.pheads()),
     baca.stem_down(),
+    denominator=4,
     figure_name='b.2.3',
     )
 
@@ -63,6 +66,7 @@ accumulator(
     [abjad.Rest((1, 4))],
     mraz.music_maker(),
     baca.rest_transparent(),
+    denominator=4,
     figure_name='b.2.4',
     )
 
@@ -77,6 +81,7 @@ accumulator(
         [14, 18],
         rmakers.unbeam(),
         ),
+    denominator=4,
     figure_name='b.2.5',
     time_treatments=[1],
     )
@@ -91,6 +96,7 @@ accumulator(
     baca.slur(map=baca.tuplets()),
     baca.staccato(selector=baca.pheads()),
     baca.stem_down(),
+    denominator=4,
     figure_name='b.2.6',
     )
 
@@ -99,6 +105,7 @@ accumulator(
     [abjad.Rest((1, 4))],
     mraz.music_maker(),
     baca.rest_transparent(),
+    denominator=4,
     figure_name='b.2.7',
     )
 
@@ -111,6 +118,7 @@ accumulator(
     baca.register(-12, 12),
     baca.tuplet_bracket_up(),
     counts=[2, -4, 2, -4, 4],
+    denominator=4,
     figure_name='b.2.8',
     time_treatments=[2],
     )
@@ -128,6 +136,7 @@ accumulator(
     baca.rest_up(),
     baca.tenuto(selector=baca.pheads()),
     counts=[3, -1],
+    denominator=4,
     figure_name='b.2.9',
     hide_time_signature=True,
     )
@@ -142,6 +151,7 @@ accumulator(
     baca.slur(map=baca.tuplets()),
     baca.staccato(selector=baca.pheads()),
     baca.stem_down(),
+    denominator=4,
     figure_name='b.2.10',
     )
 
@@ -153,6 +163,7 @@ accumulator(
     baca.register(36),
     baca.tenuto(selector=baca.pheads()),
     counts=[28],
+    denominator=4,
     figure_name='b.2.11',
     )
 
@@ -163,6 +174,7 @@ accumulator(
     baca.register(36),
     baca.tenuto(selector=baca.pheads()),
     counts=[24],
+    denominator=4,
     figure_name='b.2.12',
     )
 
@@ -174,6 +186,7 @@ accumulator(
     baca.register(36),
     baca.tenuto(selector=baca.pheads()),
     counts=[16],
+    denominator=4,
     figure_name='b.2.13',
     hide_time_signature=True,
     )
@@ -192,6 +205,7 @@ accumulator(
     baca.ottava(),
     baca.register(10, 36),
     baca.slur_up(),
+    denominator=4,
     figure_name='b.2.14',
     time_treatments=[abjad.Duration(1, 4)],
     )
@@ -203,6 +217,7 @@ accumulator(
     baca.allow_octaves(),
     baca.anchor_to_figure('b.2.1'),
     counts=[8],
+    denominator=4,
     figure_name='b.2.r.1',
     hide_time_signature=True,
     )
@@ -213,6 +228,7 @@ accumulator(
     mraz.music_maker(),
     baca.allow_octaves(),
     counts=[4],
+    denominator=4,
     figure_name='b.2.r.2',
     hide_time_signature=True,
     )
@@ -223,6 +239,7 @@ accumulator(
     mraz.music_maker(),
     baca.allow_octaves(),
     counts=[5],
+    denominator=4,
     figure_name='b.2.r.3',
     hide_time_signature=True,
     )
@@ -233,6 +250,7 @@ accumulator(
     mraz.music_maker(),
     baca.allow_octaves(),
     counts=[4],
+    denominator=4,
     figure_name='b.2.r.4',
     hide_time_signature=True,
     )
@@ -243,6 +261,7 @@ accumulator(
     mraz.music_maker(),
     baca.allow_octaves(),
     counts=[8],
+    denominator=4,
     figure_name='b.2.r.5',
     hide_time_signature=True,
     )
@@ -253,6 +272,7 @@ accumulator(
     mraz.music_maker(),
     baca.allow_octaves(),
     counts=[10],
+    denominator=4,
     figure_name='b.2.r.6',
     hide_time_signature=True,
     )
@@ -265,6 +285,7 @@ accumulator(
     baca.allow_octaves(),
     baca.anchor_to_figure('b.2.10'),
     counts=[21],
+    denominator=4,
     figure_name='b.2.r.7',
     hide_time_signature=True,
     )
@@ -275,6 +296,7 @@ accumulator(
     mraz.music_maker(),
     baca.allow_octaves(),
     counts=[28],
+    denominator=4,
     figure_name='b.2.r.8',
     hide_time_signature=True,
     )
@@ -285,6 +307,7 @@ accumulator(
     mraz.music_maker(),
     baca.allow_octaves(),
     counts=[24],
+    denominator=4,
     figure_name='b.2.r.9',
     hide_time_signature=True,
     )
