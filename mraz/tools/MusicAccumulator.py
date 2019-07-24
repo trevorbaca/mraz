@@ -1,5 +1,4 @@
 import baca
-from .music_maker import music_maker
 
 
 class MusicAccumulator(baca.MusicAccumulator):
@@ -7,18 +6,13 @@ class MusicAccumulator(baca.MusicAccumulator):
     Music-accumulator.
     """
 
-    ### INITIALIZER ###
-
-    def __init__(self, score_template):
-        super(MusicAccumulator, self).__init__(score_template)
-        self._music_maker = music_maker()
-
     ### SPECIAL METHODS ###
 
     def __call__(
         self,
         voice_name,
         collections,
+        music_maker,
         *specifiers,
         allow_repeats=None,
         color_unregistered_pitches=None,
@@ -38,6 +32,7 @@ class MusicAccumulator(baca.MusicAccumulator):
         tuplet_denominator=None,
         tuplet_force_fraction=None,
     ):
+        assert isinstance(music_maker, baca.MusicMaker), repr(music_maker)
         keywords = {
             "allow_repeats": allow_repeats,
             "color_unregistered_pitches": color_unregistered_pitches,
@@ -77,6 +72,6 @@ class MusicAccumulator(baca.MusicAccumulator):
                 assert not hasattr(specifier, "remote_voice_name"), repr(
                     specifier
                 )
-        return super(MusicAccumulator, self).__call__(
-            self.music_maker(voice_name, collections, *specifiers, **keywords)
+        return super().__call__(
+            music_maker(voice_name, collections, *specifiers, **keywords)
         )
