@@ -40,11 +40,9 @@ accumulator(
     baca.hairpin('f < ff'),
     baca.ottava(),
     baca.register(10, 36),
-    baca.new(
-        baca.slur(),
-        map=baca.runs(),
-        ),
+    baca.slur(map=baca.runs()),
     baca.slur_up(),
+    rmakers.beam_groups(),
     figure_name='b.1.2',
     time_treatments=[abjad.Duration(1, 4)],
     )
@@ -59,6 +57,7 @@ accumulator(
         [14, 18],
         rmakers.unbeam(),
         ),
+    rmakers.beam_groups(),
     figure_name='b.1.3',
     time_treatments=[1],
     )

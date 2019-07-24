@@ -3,98 +3,9 @@ from .music_maker import music_maker
 
 
 class MusicAccumulator(baca.MusicAccumulator):
-    r"""
-    Music-accumulator.
-
-    >>> import mraz
-
-    ..  container:: example
-
-        >>> score_template = mraz.ScoreTemplate()
-        >>> accumulator = mraz.MusicAccumulator(score_template)
-        >>> accumulator(
-        ...     'RH_Voice_I',
-        ...     [[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]],
-        ...     figure_name='D',
-        ...     )
-
-        >>> selection = accumulator.assemble('RH_Voice_I')
-        >>> lilypond_file = accumulator.show(
-        ...     {'RH_Voice_I': selection},
-        ...     accumulator.time_signatures,
-        ...     )
-        >>> abjad.show(lilypond_file, strict=79) # doctest: +SKIP
-
-        ..  docs::
-
-            >>> abjad.f(lilypond_file[abjad.Staff], strict=79)
-            \new Staff
-            <<
-                \context Voice = "RH_Voice_I"
-                {
-                    {                                                                      %! baca.MusicMaker.__call__
-                        \scaleDurations #'(1 . 1) {                                        %! baca.MusicMaker.__call__
-                            \set stemLeftBeamCount = 0
-                            \set stemRightBeamCount = 2
-                            c'16                                                           %! baca.MusicMaker.__call__
-                        %@% ^ \markup {                                                    %! FIGURE_NAME
-                        %@%     \fontsize                                                  %! FIGURE_NAME
-                        %@%         #2                                                     %! FIGURE_NAME
-                        %@%         \concat                                                %! FIGURE_NAME
-                        %@%             {                                                  %! FIGURE_NAME
-                        %@%                 [                                              %! FIGURE_NAME
-                        %@%                 D                                              %! FIGURE_NAME
-                        %@%                 \hspace                                        %! FIGURE_NAME
-                        %@%                     #1                                         %! FIGURE_NAME
-                        %@%                 \raise                                         %! FIGURE_NAME
-                        %@%                     #0.25                                      %! FIGURE_NAME
-                        %@%                     \fontsize                                  %! FIGURE_NAME
-                        %@%                         #-2                                    %! FIGURE_NAME
-                        %@%                         (0)                                    %! FIGURE_NAME
-                        %@%                 ]                                              %! FIGURE_NAME
-                        %@%             }                                                  %! FIGURE_NAME
-                        %@%     }                                                          %! FIGURE_NAME
-                            [
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            cs'16                                                          %! baca.MusicMaker.__call__
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            d'16                                                           %! baca.MusicMaker.__call__
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            ef'16                                                          %! baca.MusicMaker.__call__
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            e'16                                                           %! baca.MusicMaker.__call__
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            f'16                                                           %! baca.MusicMaker.__call__
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            fs'16                                                          %! baca.MusicMaker.__call__
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            g'16                                                           %! baca.MusicMaker.__call__
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 2
-                            af'16                                                          %! baca.MusicMaker.__call__
-                            \set stemLeftBeamCount = 2
-                            \set stemRightBeamCount = 0
-                            a'16                                                           %! baca.MusicMaker.__call__
-                            ]
-                        }                                                                  %! baca.MusicMaker.__call__
-                    }                                                                      %! baca.MusicMaker.__call__
-                }
-            >>
-
     """
-
-    ### CLASS VARIABLES ###
-
-    __documentation_section__ = None
-
-    __slots__ = ("_music_maker",)
+    Music-accumulator.
+    """
 
     ### INITIALIZER ###
 
@@ -169,12 +80,3 @@ class MusicAccumulator(baca.MusicAccumulator):
         return super(MusicAccumulator, self).__call__(
             self.music_maker(voice_name, collections, *specifiers, **keywords)
         )
-
-    ### PUBLIC PROPERTIES ###
-
-    @property
-    def music_maker(self):
-        """
-        Gets music-maker.
-        """
-        return self._music_maker

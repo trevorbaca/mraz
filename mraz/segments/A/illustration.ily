@@ -381,11 +381,11 @@ A_RH_Voice_II = {                                                              %
         \times 4/5 {                                                           %! baca.MusicMaker.__call__
 
             % [A RH_Voice_II measure 1]                                        %! _comment_measure_numbers
-            \set stemLeftBeamCount = 0
-            \set stemRightBeamCount = 2
             \override DynamicLineSpanner.staff-padding = #8                    %! baca.dls_staff_padding:OverrideCommand(1)
             \ottava 1                                                          %! baca.ottava:SpannerIndicatorCommand(1)
             \override Slur.direction = #up                                     %! baca.slur_up:OverrideCommand(1)
+            \set stemLeftBeamCount = 0
+            \set stemRightBeamCount = 2
             b'16                                                               %! baca.MusicMaker.__call__
             - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
             \f                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
@@ -408,8 +408,8 @@ A_RH_Voice_II = {                                                              %
         %@%     }                                                              %! FIGURE_NAME
             - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
             \<                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
-            [
             (                                                                  %! baca.slur:SpannerIndicatorCommand(1)
+            [
 
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
