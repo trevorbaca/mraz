@@ -81,8 +81,7 @@ accumulator(
 
 accumulator(
     'rh_v3',
-    [abjad.Rest((3, 4))],
-    mraz.music_maker(),
+    "r2.",
     denominator=4,
     figure_name='rh-3 4.1.4',
     )
@@ -103,8 +102,7 @@ accumulator(
 
 accumulator(
     'rh_v3',
-    [abjad.Rest((3, 4))],
-    mraz.music_maker(),
+    "r2.",
     denominator=4,
     figure_name='rh-3 4.1.6',
     )
@@ -127,8 +125,7 @@ accumulator(
 
 accumulator(
     'lh_v5',
-    [abjad.Rest((3, 4))],
-    mraz.music_maker(),
+    "r2.",
     baca.anchor_to_figure('rh-2 4.1.1'),
     # TODO: teach PianoPedalBracket to attach for a single leaf
 #    baca.sustain_pedal()
@@ -184,8 +181,7 @@ accumulator(
 
 accumulator(
     'lh_v5',
-    [abjad.Rest((3, 4))],
-    mraz.music_maker(),
+    "r2.",
     denominator=4,
     figure_name='lh-5 4.1.6',
     hide_time_signature=True,
@@ -437,8 +433,7 @@ accumulator(
 
 accumulator(
     'lh_v5',
-    [abjad.Rest((4, 4))],
-    mraz.music_maker(),
+    "r1",
     denominator=4,
     figure_name='lh-5 4.4.2',
     )
@@ -458,8 +453,7 @@ accumulator(
 
 accumulator(
     'rh_v1',
-    [abjad.Rest((1, 4))],
-    mraz.music_maker(),
+    "r4",
     baca.rest_transparent(),
     counts=[4],
     denominator=4,
@@ -501,8 +495,7 @@ accumulator(
 
 accumulator(
     'lh_v5',
-    [abjad.Rest((2, 4))],
-    mraz.music_maker(),
+    "r2",
     denominator=4,
     figure_name='lh-5 4.4.5',
     )
@@ -559,8 +552,7 @@ accumulator(
 
 accumulator(
     'lh_v5',
-    [abjad.Rest((2, 4))],
-    mraz.music_maker(),
+    "r2",
     denominator=4,
     figure_name='lh-5 4.4.9',
     )
@@ -648,8 +640,7 @@ accumulator(
 
 accumulator(
     'rh_v1',
-    [abjad.Rest((2, 4))],
-    mraz.music_maker(),
+    "r2",
     denominator=4,
     figure_name='rh-1 4.4.2',
     hide_time_signature=True,
@@ -977,8 +968,7 @@ accumulator(
 
 accumulator(
     'lh_v2',
-    [abjad.Rest((1, 1)), abjad.Rest((1, 1)), abjad.Rest((1, 1))],
-    mraz.music_maker(),
+    "r1 r1 r1",
     baca.anchor_to_figure('rh-2 4.6.1'),
     # TODO: debug: figure out why bracket extends indefinitely to right
     baca.new(

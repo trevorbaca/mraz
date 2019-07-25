@@ -108,8 +108,7 @@ accumulator(
 
 accumulator(
     'rh_v2',
-    [abjad.Rest((1, 4))],
-    mraz.music_maker(),
+    "r4",
     baca.rest_transparent(),
     denominator=4,
     figure_name='b.1.6',
@@ -135,8 +134,7 @@ accumulator(
 
 accumulator(
     'rh_v2',
-    [abjad.Rest((1, 4))],
-    mraz.music_maker(),
+    "r4",
     baca.rest_transparent(),
     denominator=4,
     figure_name='b.1.8',
@@ -198,8 +196,7 @@ accumulator(
 
 accumulator(
     'rh_v2',
-    [abjad.Rest((1, 4))],
-    mraz.music_maker(),
+    "r4",
     baca.script_up(),
     denominator=4,
     figure_name='b.1.12',
