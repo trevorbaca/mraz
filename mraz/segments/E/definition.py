@@ -18,7 +18,7 @@ collections = collection_maker.make_segment_6_collections()
 accumulator(
     'rh_v3',
     collections['stage 1']['rh'].next(2),
-    baca.pitch_first([1], 8),
+    baca.pitch_first([1], 8, time_treatments=[1, 0]),
     rmakers.beam_groups(),
     baca.dynamic('pp'),
     rmakers.unbeam(),
@@ -31,13 +31,12 @@ accumulator(
     denominator=8,
     figure_name='rh-3 6.1.1',
     thread=True,
-    time_treatments=[1, 0],
     )
 
 accumulator(
     'rh_v3',
     collections['stage 1']['rh'].next(),
-    baca.pitch_first([1], 8),
+    baca.pitch_first([1], 8, time_treatments=[1, 0]),
     rmakers.beam_groups(),
     rmakers.unbeam(),
     baca.register(24, 12),
@@ -48,7 +47,6 @@ accumulator(
     denominator=8,
     figure_name='rh-3 6.1.2',
     thread=True,
-    time_treatments=[1, 0],
     )
 
 accumulator(
@@ -68,7 +66,7 @@ accumulator(
 accumulator(
     'rh_v3',
     collections['stage 1']['rh'].next(exhausted=True),
-    baca.pitch_first([1], 8),
+    baca.pitch_first([1], 8, time_treatments=[1]),
     rmakers.beam_groups(),
     rmakers.unbeam(),
     baca.register(12, 24),
@@ -77,13 +75,12 @@ accumulator(
     baca.tuplet_bracket_up(),
     denominator=8,
     figure_name='rh-3 6.1.4',
-    time_treatments=[1],
     )
 
 accumulator(
     'lh_v4',
     collections['stage 1']['lh'].next(),
-    baca.pitch_first([1, -1], 16),
+    baca.pitch_first([1, -1], 16, time_treatments=[1]),
     rmakers.beam_groups(),
     baca.anchor(
         'rh_v3',
@@ -96,13 +93,12 @@ accumulator(
     baca.tenuto(selector=baca.pheads()),
     baca.tuplet_bracket_staff_padding(3),
     figure_name='lh-4 6.1.1',
-    time_treatments=[1],
     )
 
 accumulator(
     'lh_v4',
     collections['stage 1']['lh'].next(),
-    baca.pitch_first([1, -2], 16),
+    baca.pitch_first([1, -2], 16, time_treatments=[2]),
     rmakers.beam_groups(),
     baca.anchor(
         'rh_v3',
@@ -114,7 +110,6 @@ accumulator(
     baca.tenuto(selector=baca.pheads()),
     baca.tuplet_bracket_staff_padding(3),
     figure_name='lh-4 6.1.2',
-    time_treatments=[2],
     )
 
 accumulator(

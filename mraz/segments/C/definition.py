@@ -24,7 +24,7 @@ resonance = baca.PitchSet("e, fs, gs, as, b,", item_class=abjad.NamedPitch)
 accumulator(
     'rh_v4',
     collections_7['stage 1']['lh'][-1].transpose(4*7),
-    baca.pitch_first([1], 16),
+    baca.pitch_first([1], 16, time_treatments=[1]),
     rmakers.beam_groups(),
     baca.dynamic('ff'),
     baca.register(6, 6+10),
@@ -35,7 +35,6 @@ accumulator(
         ),
     denominator=4,
     figure_name='b.2.1',
-    time_treatments=[1],
     )
 
 accumulator(
@@ -73,7 +72,7 @@ accumulator(
 accumulator(
     'rh_v4',
     collections_7['stage 1']['lh'][-1].transpose(4*7),
-    baca.pitch_first([1], 16),
+    baca.pitch_first([1], 16, time_treatments=[1]),
     rmakers.beam_groups(),
     baca.dynamic('p'),
     baca.register(6, 6+10),
@@ -84,7 +83,6 @@ accumulator(
         ),
     denominator=4,
     figure_name='b.2.5',
-    time_treatments=[1],
     )
 
 accumulator(
@@ -113,7 +111,7 @@ accumulator(
 accumulator(
     'rh_v3',
     collections_4['stage 1']['rh'][0],
-    baca.pitch_first([2, -4, 2, -4, 4], 16),
+    baca.pitch_first([2, -4, 2, -4, 4], 16, time_treatments=[2]),
     rmakers.beam_groups(),
     baca.dynamic('ff'),
     rmakers.unbeam(),
@@ -121,7 +119,6 @@ accumulator(
     baca.tuplet_bracket_up(),
     denominator=4,
     figure_name='b.2.8',
-    time_treatments=[2],
     )
 
 accumulator(
@@ -196,7 +193,7 @@ accumulator(
 accumulator(
     'rh_v2',
     collections_4['stage 5']['lh'][:4],
-    baca.pitch_first([1], 16),
+    baca.pitch_first([1], 16, time_treatments=[abjad.Duration(1, 4)]),
     rmakers.beam_groups(),
     baca.anchor_to_figure('b.2.13'),
     baca.dls_staff_padding(8),
@@ -210,7 +207,6 @@ accumulator(
     baca.slur_up(),
     denominator=4,
     figure_name='b.2.14',
-    time_treatments=[abjad.Duration(1, 4)],
     )
 
 accumulator(

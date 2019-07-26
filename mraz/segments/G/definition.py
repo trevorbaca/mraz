@@ -18,7 +18,7 @@ collections = collection_maker.make_segment_7_collections()
 accumulator(
     'rh_v1',
     collections['stage 1']['rh'].next(),
-    baca.pitch_first([1], 16),
+    baca.pitch_first([1], 16, time_treatments=[-1]),
     rmakers.beam_groups(),
     baca.dynamic('fff'),
     baca.imbricate(
@@ -33,7 +33,6 @@ accumulator(
     extend_beam=True,
     denominator=4,
     figure_name='rh-1 7.1.1',
-    time_treatments=[-1],
     )
 
 accumulator(
@@ -59,7 +58,7 @@ accumulator(
 accumulator(
     'rh_v1',
     collections['stage 1']['rh'].next(),
-    baca.pitch_first([1], 16),
+    baca.pitch_first([1], 16, time_treatments=[-1]),
     rmakers.beam_groups(),
     baca.imbricate(
         'rh_v1_i',
@@ -71,7 +70,6 @@ accumulator(
     baca.register(15, 15+10),
     denominator=4,
     figure_name='rh-1 7.1.2',
-    time_treatments=[-1],
     )
 
 accumulator(
@@ -114,7 +112,7 @@ accumulator(
 accumulator(
     'rh_v2',
     collections['stage 1']['rh'].next(),
-    baca.pitch_first([1], 16),
+    baca.pitch_first([1], 16, time_treatments=[-1]),
     rmakers.beam_groups(),
     baca.imbricate(
         'rh_v2_i',
@@ -128,7 +126,6 @@ accumulator(
     extend_beam=True,
     denominator=4,
     figure_name='rh-2 7.1.3',
-    time_treatments=[-1],
     )
 
 accumulator(
@@ -191,7 +188,7 @@ accumulator(
 accumulator(
     'rh_v1',
     collections['stage 1']['rh'].next(),
-    baca.pitch_first([1], 16),
+    baca.pitch_first([1], 16, time_treatments=[-1]),
     rmakers.beam_groups(),
     baca.beam_positions(12),
     baca.imbricate(
@@ -204,13 +201,12 @@ accumulator(
     baca.register(23, 23+10),
     denominator=4,
     figure_name='rh-1 7.1.5',
-    time_treatments=[-1],
     )
 
 accumulator(
     'rh_v2',
     collections['stage 1']['rh'].next(exhausted=True),
-    baca.pitch_first([1], 16),
+    baca.pitch_first([1], 16, time_treatments=[-1]),
     rmakers.beam_groups(),
     baca.imbricate(
         'rh_v2_i',
@@ -222,7 +218,6 @@ accumulator(
     baca.register(17, 17+10),
     denominator=4,
     figure_name='rh-2 7.1.6',
-    time_treatments=[-1],
     )
 
 ###################################### LH #####################################
@@ -230,7 +225,7 @@ accumulator(
 accumulator(
     'lh_v4',
     collections['stage 1']['lh'].next().transpose(0*7),
-    baca.pitch_first([1], 16),
+    baca.pitch_first([1], 16, time_treatments=[-1]),
     rmakers.beam_groups(),
     baca.anchor(
         'rh_v2',
@@ -245,7 +240,6 @@ accumulator(
         rmakers.unbeam(),
         ),
     figure_name='lh-4 7.1.1',
-    time_treatments=[-1],
     )
 
 accumulator(
@@ -322,7 +316,7 @@ accumulator(
 accumulator(
     'lh_v4',
     collections['stage 1']['lh'].next(exhausted=True).transpose(4*7),
-    baca.pitch_first([1], 16),
+    baca.pitch_first([1], 16, time_treatments=[1]),
     rmakers.beam_groups(),
     baca.anchor(
         'rh_v2',
@@ -338,7 +332,6 @@ accumulator(
         ),
     figure_name='lh-4 7.1.3',
     hide_time_signature=True,
-    time_treatments=[1],
     )
 
 maker = baca.SegmentMaker(
