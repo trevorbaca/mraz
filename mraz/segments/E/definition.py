@@ -87,7 +87,7 @@ accumulator(
 accumulator(
     'lh_v4',
     collections['stage 1']['lh'].next(),
-    baca.pitch_first_assn([1], 16),
+    baca.pitch_first_assn([1, -1], 16),
     rmakers.beam_groups(),
     baca.anchor(
         'rh_v3',
@@ -99,7 +99,6 @@ accumulator(
     baca.register(0, 12),
     baca.tenuto(selector=baca.pheads()),
     baca.tuplet_bracket_staff_padding(3),
-    counts=[1, -1],
     figure_name='lh-4 6.1.1',
     time_treatments=[1],
     )
@@ -107,7 +106,7 @@ accumulator(
 accumulator(
     'lh_v4',
     collections['stage 1']['lh'].next(),
-    baca.pitch_first_assn([1], 16),
+    baca.pitch_first_assn([1, -2], 16),
     rmakers.beam_groups(),
     baca.anchor(
         'rh_v3',
@@ -118,7 +117,6 @@ accumulator(
     baca.register(0, 12),
     baca.tenuto(selector=baca.pheads()),
     baca.tuplet_bracket_staff_padding(3),
-    counts=[1, -2],
     figure_name='lh-4 6.1.2',
     time_treatments=[2],
     )
@@ -126,7 +124,7 @@ accumulator(
 accumulator(
     'lh_v4',
     collections['stage 1']['lh'].next(),
-    baca.pitch_first_assn([1], 16),
+    baca.pitch_first_assn([2, -1], 16),
     rmakers.beam_groups(),
     baca.anchor(
         'rh_v3',
@@ -136,7 +134,6 @@ accumulator(
     rmakers.unbeam(),
     baca.register(0, 12),
     baca.tenuto(selector=baca.pheads()),
-    counts=[2, -1],
     figure_name='lh-4 6.1.3',
     hide_time_signature=True,
     talea_denominator=32,
@@ -145,12 +142,11 @@ accumulator(
 accumulator(
     'lh_v4',
     collections['stage 1']['lh'].next(exhausted=True),
-    baca.pitch_first_assn([1], 16),
+    baca.pitch_first_assn([2, -1], 16),
     rmakers.beam_groups(),
     rmakers.unbeam(),
     baca.register(12, 0),
     baca.tenuto(selector=baca.pheads()),
-    counts=[2, -1],
     figure_name='lh-4 6.1.4',
     hide_time_signature=True,
     talea_denominator=32,

@@ -23,7 +23,7 @@ collections_8 = collection_maker.make_segment_8_collections()
 accumulator(
     'rh_v1',
     collections_4['stage 5']['rh'][2],
-    baca.pitch_first_assn([1], 16),
+    baca.pitch_first_assn([16], 16),
     rmakers.beam_groups(),
     ordered_commands=[
         baca.allow_octaves(),
@@ -31,7 +31,6 @@ accumulator(
         baca.register(36),
         baca.tenuto(selector=baca.pheads()),
     ],
-    counts=[16],
     denominator=4,
     figure_name='b.1.1',
     hide_time_signature=True,
@@ -73,7 +72,7 @@ accumulator(
 accumulator(
     'lh_v6',
     collections_8['stage 3']['lh'][1],
-    baca.pitch_first_assn([1], 16),
+    baca.pitch_first_assn([2, -4], 16),
     baca.clef('bass'),
     baca.dynamic('f'),
     baca.ottava_bassa(),
@@ -81,7 +80,6 @@ accumulator(
     baca.rest_down(),
     baca.tuplet_bracket_down(),
     baca.tuplet_bracket_staff_padding(6),
-    counts=[2, -4],
     denominator=4,
     figure_name='b.1.4',
     time_treatments=[4],
@@ -90,7 +88,7 @@ accumulator(
 accumulator(
     'lh_v5',
     collections_8['stage 3']['rh'][4],
-    baca.pitch_first_assn([1], 16),
+    baca.pitch_first_assn([6, -1], 16),
     baca.anchor_to_figure('b.1.4'),
     baca.dynamic('ppp'),
     baca.dynamic_text_x_offset(-0.5),
@@ -98,7 +96,6 @@ accumulator(
     baca.register(-27, -39),
     baca.rests_after([4]),
     baca.rest_up(),
-    counts=[6, -1],
     figure_name='b.1.5',
     hide_time_signature=True,
     talea_denominator=32,
@@ -154,7 +151,7 @@ accumulator(
 accumulator(
     'rh_v2',
     collections_5['stage 1']['rh'].next(exhausted=True),
-    baca.pitch_first_assn([1], 16),
+    baca.pitch_first_assn([2, -14], 16),
     baca.accent(selector=baca.pheads()),
     baca.dynamic('fff'),
     baca.dynamic_up(),
@@ -163,7 +160,6 @@ accumulator(
     baca.script_up(),
     baca.stem_up(),
     baca.text_script_up(),
-    counts=[2, -14],
     denominator=4,
     figure_name='b.1.10',
     )
@@ -171,7 +167,7 @@ accumulator(
 accumulator(
     'rh_v3',
     collections_5['stage 1']['lh'].next(exhausted=True),
-    baca.pitch_first_assn([1], 16),
+    baca.pitch_first_assn([4, -4], 16),
     baca.anchor_to_figure('b.1.10'),
     baca.dynamic('mf'),
     baca.dynamic_text_x_offset(0.25),
@@ -181,7 +177,6 @@ accumulator(
     baca.stem_down(),
     baca.tenuto(selector=baca.pheads()),
     baca.tuplet_bracket_down(),
-    counts=[4, -4],
     figure_name='b.1.11',
     hide_time_signature=True,
     time_treatments=[abjad.Duration(16, 4)],
