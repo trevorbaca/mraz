@@ -8,7 +8,6 @@ def music_maker() -> baca.MusicMaker:
     Music-maker.
     """
     return baca.MusicMaker(
-        baca.PitchFirstAssignment(baca.pitch_first([1], 16)),
+        baca.pitch_first_assn([1], 16),
         rmakers.beam_groups(),
-        denominator=16,
     )
