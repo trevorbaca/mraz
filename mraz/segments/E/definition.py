@@ -18,7 +18,7 @@ collections = collection_maker.make_segment_6_collections()
 accumulator(
     'rh_v3',
     collections['stage 1']['rh'].next(2),
-    baca.pitch_first_assn([1], 16),
+    baca.pitch_first_assn([1], 8),
     rmakers.beam_groups(),
     baca.dynamic('pp'),
     rmakers.unbeam(),
@@ -30,7 +30,6 @@ accumulator(
     baca.tuplet_bracket_up(),
     denominator=8,
     figure_name='rh-3 6.1.1',
-    talea_denominator=8,
     thread=True,
     time_treatments=[1, 0],
     )
@@ -38,7 +37,7 @@ accumulator(
 accumulator(
     'rh_v3',
     collections['stage 1']['rh'].next(),
-    baca.pitch_first_assn([1], 16),
+    baca.pitch_first_assn([1], 8),
     rmakers.beam_groups(),
     rmakers.unbeam(),
     baca.register(24, 12),
@@ -48,7 +47,6 @@ accumulator(
     baca.tuplet_bracket_up(),
     denominator=8,
     figure_name='rh-3 6.1.2',
-    talea_denominator=8,
     thread=True,
     time_treatments=[1, 0],
     )
@@ -56,7 +54,7 @@ accumulator(
 accumulator(
     'rh_v3',
     collections['stage 1']['rh'].next(),
-    baca.pitch_first_assn([1], 16),
+    baca.pitch_first_assn([1], 8),
     rmakers.beam_groups(),
     rmakers.unbeam(),
     baca.register(24, 12),
@@ -65,13 +63,12 @@ accumulator(
     baca.tenuto(selector=baca.pheads()),
     denominator=8,
     figure_name='rh-3 6.1.3',
-    talea_denominator=8,
     )
 
 accumulator(
     'rh_v3',
     collections['stage 1']['rh'].next(exhausted=True),
-    baca.pitch_first_assn([1], 16),
+    baca.pitch_first_assn([1], 8),
     rmakers.beam_groups(),
     rmakers.unbeam(),
     baca.register(12, 24),
@@ -80,7 +77,6 @@ accumulator(
     baca.tuplet_bracket_up(),
     denominator=8,
     figure_name='rh-3 6.1.4',
-    talea_denominator=8,
     time_treatments=[1],
     )
 
@@ -124,7 +120,7 @@ accumulator(
 accumulator(
     'lh_v4',
     collections['stage 1']['lh'].next(),
-    baca.pitch_first_assn([2, -1], 16),
+    baca.pitch_first_assn([2, -1], 32),
     rmakers.beam_groups(),
     baca.anchor(
         'rh_v3',
@@ -136,20 +132,18 @@ accumulator(
     baca.tenuto(selector=baca.pheads()),
     figure_name='lh-4 6.1.3',
     hide_time_signature=True,
-    talea_denominator=32,
     )
 
 accumulator(
     'lh_v4',
     collections['stage 1']['lh'].next(exhausted=True),
-    baca.pitch_first_assn([2, -1], 16),
+    baca.pitch_first_assn([2, -1], 32),
     rmakers.beam_groups(),
     rmakers.unbeam(),
     baca.register(12, 0),
     baca.tenuto(selector=baca.pheads()),
     figure_name='lh-4 6.1.4',
     hide_time_signature=True,
-    talea_denominator=32,
     )
 
 maker = baca.SegmentMaker(
