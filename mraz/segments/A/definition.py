@@ -88,7 +88,7 @@ accumulator(
 accumulator(
     'lh_v5',
     collections_8['stage 3']['rh'][4],
-    baca.pitch_first_assn([6, -1], 16),
+    baca.pitch_first_assn([6, -1], 32),
     baca.anchor_to_figure('b.1.4'),
     baca.dynamic('ppp'),
     baca.dynamic_text_x_offset(-0.5),
@@ -98,7 +98,6 @@ accumulator(
     baca.rest_up(),
     figure_name='b.1.5',
     hide_time_signature=True,
-    talea_denominator=32,
     )
 
 accumulator(
@@ -112,7 +111,7 @@ accumulator(
 accumulator(
     'rh_v3',
     collections_6['stage 1']['rh'][2],
-    baca.pitch_first_assn([1], 16),
+    baca.pitch_first_assn([1], 8),
     baca.dynamic('pp'),
     baca.dynamic_text_x_offset(0.5),
     baca.register(24, 12),
@@ -121,7 +120,6 @@ accumulator(
     baca.tuplet_bracket_staff_padding(8),
     denominator=8,
     figure_name='b.1.7',
-    talea_denominator=8,
     thread=True,
     time_treatments=[1, 0],
     )
@@ -137,7 +135,7 @@ accumulator(
 accumulator(
     'rh_v3',
     collections_6['stage 1']['rh'][3],
-    baca.pitch_first_assn([1], 16),
+    baca.pitch_first_assn([1], 8),
     baca.register(24, 12),
     baca.rests_around([1], [1]),
     baca.span_bar_extra_offset((-0.75, 0), after=True, selector=baca.leaf(-1)),
@@ -145,7 +143,6 @@ accumulator(
     baca.tenuto(selector=baca.pheads()),
     denominator=8,
     figure_name='b.1.9',
-    talea_denominator=8,
     )
 
 accumulator(

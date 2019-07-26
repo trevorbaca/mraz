@@ -141,7 +141,7 @@ accumulator(
 accumulator(
     'lh_v5',
     collections_8['stage 3']['rh'][4],
-    baca.pitch_first_assn([6, -1], 16),
+    baca.pitch_first_assn([6, -1], 32),
     rmakers.beam_groups(),
     baca.anchor_to_figure('b.1.4'),
     baca.dynamic('ppp'),
@@ -154,7 +154,6 @@ accumulator(
     denominator=4,
     figure_name='b.1.5',
     hide_time_signature=True,
-    talea_denominator=32,
     )
 
 accumulator(

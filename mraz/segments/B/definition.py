@@ -18,7 +18,7 @@ collections = collection_maker.make_segment_8_collections()
 accumulator(
     'lh_v5',
     collections['stage 3']['rh'].next(),
-    baca.pitch_first_assn([6, -1], 16),
+    baca.pitch_first_assn([6, -1], 32),
     rmakers.beam_groups(),
     baca.dynamic('ppp'),
     baca.dynamic_up(),
@@ -26,147 +26,135 @@ accumulator(
     baca.register(-27, -39),
     denominator=4,
     figure_name='lh-5 8.3.1',
-    talea_denominator=32,
     )
 
 accumulator(
     'lh_v5',
     collections['stage 3']['rh'].next(2),
-    baca.pitch_first_assn([4, -1], 16),
+    baca.pitch_first_assn([4, -1], 32),
     rmakers.beam_groups(),
     rmakers.unbeam(),
     baca.register(-39, -27),
     baca.rest_up(),
     denominator=4,
     figure_name='lh-5 8.3.2',
-    talea_denominator=32,
     time_treatments=[1],
     )
 
 accumulator(
     'lh_v5',
     collections['stage 3']['rh'].next(),
-    baca.pitch_first_assn([1, -15], 16),
+    baca.pitch_first_assn([1, -15], 32),
     rmakers.beam_groups(),
     rmakers.unbeam(),
     baca.register(-39),
     denominator=2,
     figure_name='lh-5 8.3.3',
-    talea_denominator=32,
     )
 
 accumulator(
     'lh_v5',
     collections['stage 3']['rh'].next(),
-    baca.pitch_first_assn([6, -1], 16),
+    baca.pitch_first_assn([6, -1], 32),
     rmakers.beam_groups(),
     rmakers.unbeam(),
     baca.register(-27, -39),
     baca.rest_up(),
     denominator=4,
     figure_name='lh-5 8.3.4',
-    talea_denominator=32,
     )
 
 accumulator(
     'lh_v5',
     collections['stage 3']['rh'].next(),
-    baca.pitch_first_assn([4, -1], 16),
+    baca.pitch_first_assn([4, -1], 32),
     rmakers.beam_groups(),
     rmakers.unbeam(),
     baca.register(-39, -27),
     denominator=4,
     figure_name='lh-5 8.3.5',
-    talea_denominator=32,
     )
 
 accumulator(
     'lh_v5',
     collections['stage 3']['rh'].next(),
-    baca.pitch_first_assn([4, -1], 16),
+    baca.pitch_first_assn([4, -1], 32),
     rmakers.beam_groups(),
     rmakers.unbeam(),
     baca.register(-39, -27),
     denominator=4,
     figure_name='lh-5 8.3.6',
-    talea_denominator=32,
     time_treatments=[1],
     )
 
 accumulator(
     'lh_v5',
     collections['stage 3']['rh'].next(),
-    baca.pitch_first_assn([1, -15], 16),
+    baca.pitch_first_assn([1, -15], 32),
     rmakers.beam_groups(),
     rmakers.unbeam(),
     baca.register(-39),
     baca.rest_up(),
     denominator=2,
     figure_name='lh-5 8.3.7',
-    talea_denominator=32,
     )
 
 accumulator(
     'lh_v5',
     collections['stage 3']['rh'].next(),
-    baca.pitch_first_assn([6, -1], 16),
+    baca.pitch_first_assn([6, -1], 32),
     rmakers.beam_groups(),
     rmakers.unbeam(),
     baca.register(-27, -39),
     denominator=4,
     figure_name='lh-5 8.3.8',
-    talea_denominator=32,
     )
 
 accumulator(
     'lh_v5',
     collections['stage 3']['rh'].next(2),
-    baca.pitch_first_assn([4, -1], 16),
+    baca.pitch_first_assn([4, -1], 32),
     rmakers.beam_groups(),
     rmakers.unbeam(),
     baca.register(-39, -27),
     baca.tuplet_bracket_staff_padding(3),
     denominator=4,
     figure_name='lh-5 8.3.9',
-    talea_denominator=32,
     time_treatments=[1],
     )
 
 accumulator(
     'lh_v5',
     collections['stage 3']['rh'].next(),
-    baca.pitch_first_assn([1, -15], 16),
+    baca.pitch_first_assn([1, -15], 32),
     rmakers.beam_groups(),
     rmakers.unbeam(),
     baca.register(-39),
     baca.rest_up(),
     denominator=2,
     figure_name='lh-5 8.3.10',
-    talea_denominator=32,
     )
 
 accumulator(
     'lh_v5',
     collections['stage 3']['rh'].next(),
-    baca.pitch_first_assn([6, -1], 16),
+    baca.pitch_first_assn([6, -1], 32),
     rmakers.beam_groups(),
     rmakers.unbeam(),
     baca.register(-27, -39),
     denominator=4,
     figure_name='lh-5 8.3.11',
-    talea_denominator=32,
     )
 
 accumulator(
     'lh_v5',
     collections['stage 3']['rh'].next(exhausted=True),
-    baca.pitch_first_assn([4, -1], 16),
+    baca.pitch_first_assn([4, -1], 32),
     rmakers.beam_groups(),
     rmakers.unbeam(),
     baca.register(-39, -27),
     denominator=4,
     figure_name='lh-5 8.3.12',
-    talea_denominator=32,
     time_treatments=[1],
     )
 
