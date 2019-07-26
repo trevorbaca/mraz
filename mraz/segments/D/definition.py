@@ -24,7 +24,8 @@ collections_8 = collection_maker.make_segment_8_collections()
 accumulator(
     'rh_v3',
     collections['stage 1']['rh'].next(),
-    mraz.music_maker(),
+    baca.pitch_first_assn([1], 16),
+    rmakers.beam_groups(),
     baca.dynamic('ff'),
     rmakers.unbeam(),
     baca.register(-12, 12),
@@ -40,7 +41,8 @@ accumulator(
 accumulator(
     'rh_v2',
     collections['stage 6']['rh'][1],
-    mraz.music_maker(),
+    baca.pitch_first_assn([1], 16),
+    rmakers.beam_groups(),
     baca.dynamic('ff'),
     baca.marcato(selector=baca.pheads()),
     baca.script_up(),
@@ -53,7 +55,8 @@ accumulator(
 accumulator(
     'rh_v3',
     collections['stage 1']['rh'].next(),
-    mraz.music_maker(),
+    baca.pitch_first_assn([1], 16),
+    rmakers.beam_groups(),
     rmakers.unbeam(),
     baca.register(12, -12),
     baca.stem_up(),
@@ -68,7 +71,8 @@ accumulator(
 accumulator(
     'lh_v4',
     collections_5['stage 2']['lh'][0],
-    mraz.music_maker(),
+    baca.pitch_first_assn([1], 16),
+    rmakers.beam_groups(),
     baca.dynamic('p'),
     rmakers.unbeam(),
     baca.slur(map=baca.tuplets().map(baca.tleaves()).nontrivial()),
@@ -89,7 +93,8 @@ accumulator(
 accumulator(
     'rh_v3',
     collections['stage 1']['rh'].next(exhausted=True),
-    mraz.music_maker(),
+    baca.pitch_first_assn([1], 16),
+    rmakers.beam_groups(),
     rmakers.unbeam(),
     baca.register(-6),
     baca.stem_up(),
@@ -110,7 +115,8 @@ accumulator(
 accumulator(
     'lh_v5',
     collections['stage 1']['lh'].next(),
-    mraz.music_maker(),
+    baca.pitch_first_assn([1], 16),
+    rmakers.beam_groups(),
     baca.anchor_to_figure('rh-3 4.1.1'),
     baca.dynamic('f'),
     rmakers.unbeam(),
@@ -137,7 +143,8 @@ accumulator(
 accumulator(
     'lh_v5',
     collections['stage 1']['lh'].next(),
-    mraz.music_maker(),
+    baca.pitch_first_assn([1], 16),
+    rmakers.beam_groups(),
     rmakers.unbeam(),
     baca.register(-6, 6),
     baca.rests_around([4], [4]),
@@ -151,7 +158,8 @@ accumulator(
 accumulator(
     'lh_v5',
     collections['stage 2']['lh'].next(),
-    mraz.music_maker(),
+    baca.pitch_first_assn([1], 16),
+    rmakers.beam_groups(),
     baca.anchor_to_figure('rh-3 4.1.4'),
     baca.bass_to_octave(3),
     baca.dynamic('ff'),
@@ -167,7 +175,8 @@ accumulator(
 accumulator(
     'lh_v5',
     collections['stage 1']['lh'].next(),
-    mraz.music_maker(),
+    baca.pitch_first_assn([1], 16),
+    rmakers.beam_groups(),
     baca.dynamic('f'),
     rmakers.unbeam(),
     baca.register(-6, 6),
@@ -192,7 +201,8 @@ accumulator(
 accumulator(
     'lh_v5',
     collections['stage 2']['lh'].next(),
-    mraz.music_maker(),
+    baca.pitch_first_assn([1], 16),
+    rmakers.beam_groups(),
     baca.bass_to_octave(3),
     baca.dynamic('ff'),
     rmakers.unbeam(),
@@ -206,7 +216,8 @@ accumulator(
 accumulator(
     'lh_v5',
     collections['stage 2']['lh'].next(),
-    mraz.music_maker(),
+    baca.pitch_first_assn([1], 16),
+    rmakers.beam_groups(),
     baca.bass_to_octave(3),
     rmakers.unbeam(),
     baca.rests_after([3, 16]),
@@ -218,7 +229,8 @@ accumulator(
 accumulator(
     'lh_v5',
     collections['stage 2']['lh'].next(),
-    mraz.music_maker(),
+    baca.pitch_first_assn([1], 16),
+    rmakers.beam_groups(),
     baca.bass_to_octave(3),
     rmakers.unbeam(),
     baca.nest('+1/4'),
@@ -232,7 +244,8 @@ accumulator(
 accumulator(
     'lh_v5',
     collections['stage 2']['lh'].next(),
-    mraz.music_maker(),
+    baca.pitch_first_assn([1], 16),
+    rmakers.beam_groups(),
     baca.bass_to_octave(3),
     rmakers.unbeam(),
     baca.rests_after([3, 16]),
@@ -244,7 +257,8 @@ accumulator(
 accumulator(
     'lh_v5',
     collections['stage 2']['lh'].next(),
-    mraz.music_maker(),
+    baca.pitch_first_assn([1], 16),
+    rmakers.beam_groups(),
     baca.bass_to_octave(3),
     rmakers.unbeam(),
     baca.rests_around([1], [8]),
@@ -256,7 +270,8 @@ accumulator(
 accumulator(
     'lh_v5',
     collections['stage 2']['lh'].next(),
-    mraz.music_maker(),
+    baca.pitch_first_assn([1], 16),
+    rmakers.beam_groups(),
     baca.bass_to_octave(3),
     rmakers.unbeam(),
     baca.rests_after([3, 16]),
@@ -268,7 +283,8 @@ accumulator(
 accumulator(
     'lh_v5',
     collections['stage 2']['lh'].next(),
-    mraz.music_maker(),
+    baca.pitch_first_assn([1], 16),
+    rmakers.beam_groups(),
     baca.bass_to_octave(3),
     rmakers.unbeam(),
     baca.nest('+1/4'),
@@ -282,7 +298,8 @@ accumulator(
 accumulator(
     'lh_v5',
     collections['stage 2']['lh'].next(),
-    mraz.music_maker(),
+    baca.pitch_first_assn([1], 16),
+    rmakers.beam_groups(),
     baca.bass_to_octave(3),
     rmakers.unbeam(),
     baca.rests_after([3, 16]),
@@ -294,7 +311,8 @@ accumulator(
 accumulator(
     'lh_v5',
     collections['stage 2']['lh'].next(),
-    mraz.music_maker(),
+    baca.pitch_first_assn([1], 16),
+    rmakers.beam_groups(),
     baca.bass_to_octave(3),
     rmakers.unbeam(),
     baca.nest('+1/4'),
@@ -313,7 +331,8 @@ chord_1_upper, chord_1_lower = segment.split(pitch=-1)
 accumulator(
     'lh_v5',
     [chord_1_lower.chord()],
-    mraz.music_maker(),
+    baca.pitch_first_assn([1], 16),
+    rmakers.beam_groups(),
     baca.cross_staff(),
     baca.dynamic('mp'),
     rmakers.unbeam(),
@@ -329,7 +348,8 @@ accumulator(
 accumulator(
     'rh_v5',
     [chord_1_upper.chord()],
-    mraz.music_maker(),
+    baca.pitch_first_assn([1], 16),
+    rmakers.beam_groups(),
     baca.anchor('lh_v5', baca.chord(-1)),
     rmakers.unbeam(),
     baca.rests_after([3]),
@@ -341,7 +361,8 @@ accumulator(
 accumulator(
     'lh_resonance',
     [{-35, -23}],
-    mraz.music_maker(),
+    baca.pitch_first_assn([1], 16),
+    rmakers.beam_groups(),
     baca.anchor('lh_v5', baca.rest(24)),
     rmakers.unbeam(),
     baca.nest('+1/4'),
@@ -354,7 +375,8 @@ accumulator(
 accumulator(
     'lh_resonance',
     [{-35, -23}],
-    mraz.music_maker(),
+    baca.pitch_first_assn([1], 16),
+    rmakers.beam_groups(),
     rmakers.unbeam(),
     counts=[4],
     denominator=4,
@@ -365,7 +387,8 @@ accumulator(
 accumulator(
     'lh_resonance',
     [{-35, -23}],
-    mraz.music_maker(),
+    baca.pitch_first_assn([1], 16),
+    rmakers.beam_groups(),
     rmakers.unbeam(),
     counts=[16],
     denominator=4,
@@ -376,7 +399,8 @@ accumulator(
 accumulator(
     'lh_resonance',
     [{-33, -21}],
-    mraz.music_maker(),
+    baca.pitch_first_assn([1], 16),
+    rmakers.beam_groups(),
     baca.anchor('lh_v5', baca.rest(32)),
     rmakers.unbeam(),
     baca.nest('+1/4'),
@@ -389,7 +413,8 @@ accumulator(
 accumulator(
     'lh_resonance',
     [{-33, -21}],
-    mraz.music_maker(),
+    baca.pitch_first_assn([1], 16),
+    rmakers.beam_groups(),
     rmakers.unbeam(),
     counts=[4],
     denominator=4,
@@ -400,7 +425,8 @@ accumulator(
 accumulator(
     'lh_resonance',
     [{-33, -21}],
-    mraz.music_maker(),
+    baca.pitch_first_assn([1], 16),
+    rmakers.beam_groups(),
     rmakers.unbeam(),
     counts=[16],
     denominator=4,
@@ -413,7 +439,8 @@ accumulator(
 accumulator(
     'lh_v5',
     collections['stage 4']['lh'].next(2),
-    mraz.music_maker(),
+    baca.pitch_first_assn([1], 16),
+    rmakers.beam_groups(),
     baca.slur(map=baca.ntruns()),
     baca.nest(['+2/16']),
     baca.register(-12, 0),
@@ -435,7 +462,8 @@ accumulator(
 accumulator(
     'lh_v5',
     collections['stage 4']['lh'].next(),
-    mraz.music_maker(),
+    baca.pitch_first_assn([1], 16),
+    rmakers.beam_groups(),
     rmakers.unbeam(),
     baca.slur(map=baca.ntruns()),
     baca.register(-12, 0),
@@ -457,7 +485,8 @@ accumulator(
 accumulator(
     'rh_v3',
     collections_5['stage 2']['rh'][12],
-    mraz.music_maker(),
+    baca.pitch_first_assn([1], 16),
+    rmakers.beam_groups(),
     rmakers.beam(),
     baca.slur(map=baca.tuplets().map(baca.tleaves()).nontrivial()),
     baca.register(24),
@@ -471,7 +500,8 @@ accumulator(
 accumulator(
     'lh_v5',
     collections['stage 4']['lh'].next(3),
-    mraz.music_maker(),
+    baca.pitch_first_assn([1], 16),
+    rmakers.beam_groups(),
     baca.imbricate(
         'lh_v5_i',
         [10],
@@ -497,7 +527,8 @@ accumulator(
 accumulator(
     'lh_v5',
     collections['stage 4']['lh'].next(3),
-    mraz.music_maker(),
+    baca.pitch_first_assn([1], 16),
+    rmakers.beam_groups(),
     baca.imbricate(
         'lh_v5_i',
         [-2, 2],
@@ -515,7 +546,8 @@ accumulator(
 accumulator(
     'lh_v5',
     collections['stage 4']['lh'].next(2),
-    mraz.music_maker(),
+    baca.pitch_first_assn([1], 16),
+    rmakers.beam_groups(),
     baca.imbricate(
         'lh_v5_i',
         [5],
@@ -534,7 +566,8 @@ accumulator(
 accumulator(
     'lh_v5',
     collections['stage 4']['lh'].next(),
-    mraz.music_maker(),
+    baca.pitch_first_assn([1], 16),
+    rmakers.beam_groups(),
     rmakers.unbeam(),
     baca.slur(map=baca.ntruns()),
     baca.register(-12, 0),
@@ -554,7 +587,8 @@ accumulator(
 accumulator(
     'lh_v5',
     collections['stage 4']['lh'].next(2),
-    mraz.music_maker(),
+    baca.pitch_first_assn([1], 16),
+    rmakers.beam_groups(),
     baca.imbricate(
         'lh_v5_i',
         [5],
@@ -573,7 +607,8 @@ accumulator(
 accumulator(
     'lh_v5',
     collections['stage 4']['lh'].next(),
-    mraz.music_maker(),
+    baca.pitch_first_assn([1], 16),
+    rmakers.beam_groups(),
     rmakers.unbeam(),
     baca.slur(map=baca.ntruns()),
     baca.register(-12, 0),
@@ -586,7 +621,8 @@ accumulator(
 accumulator(
     'lh_v5',
     collections['stage 4']['lh'].next(),
-    mraz.music_maker(),
+    baca.pitch_first_assn([1], 16),
+    rmakers.beam_groups(),
     rmakers.unbeam(),
     baca.imbricate(
         'lh_v5_i',
@@ -604,7 +640,8 @@ accumulator(
 accumulator(
     'rh_v1',
     collections['stage 4']['rh'].next(),
-    mraz.music_maker(),
+    baca.pitch_first_assn([1], 16),
+    rmakers.beam_groups(),
     rmakers.beam_groups(),
     baca.dynamic('mf'),
     baca.dynamic_text_x_offset(-4),
@@ -643,7 +680,8 @@ accumulator(
 accumulator(
     'rh_v1',
     collections['stage 4']['rh'].next(),
-    mraz.music_maker(),
+    baca.pitch_first_assn([1], 16),
+    rmakers.beam_groups(),
     baca.anchor_to_figure('lh-5 4.4.4'),
     rmakers.beam_groups(),
     baca.imbricate(
@@ -668,7 +706,8 @@ accumulator(
 accumulator(
     'rh_v1',
     collections['stage 4']['rh'].next(exhausted=True),
-    mraz.music_maker(),
+    baca.pitch_first_assn([1], 16),
+    rmakers.beam_groups(),
     baca.anchor('lh_v5', baca.rest(-8)),
     rmakers.beam_groups(),
     baca.imbricate(
@@ -697,7 +736,8 @@ resonance = baca.PitchSet("e, fs, gs, as, b,", item_class=abjad.NamedPitch)
 accumulator(
     'lh_resonance',
     [resonance],
-    mraz.music_maker(),
+    baca.pitch_first_assn([1], 16),
+    rmakers.beam_groups(),
     baca.resume(),
     counts=[4],
     denominator=4,
@@ -708,7 +748,8 @@ accumulator(
 accumulator(
     'lh_resonance',
     [resonance],
-    mraz.music_maker(),
+    baca.pitch_first_assn([1], 16),
+    rmakers.beam_groups(),
     counts=[28],
     denominator=4,
     figure_name='lh-r 4.5.2',
@@ -717,7 +758,8 @@ accumulator(
 accumulator(
     'lh_resonance',
     [resonance],
-    mraz.music_maker(),
+    baca.pitch_first_assn([1], 16),
+    rmakers.beam_groups(),
     counts=[24],
     denominator=4,
     figure_name='lh-r 4.5.3',
@@ -726,7 +768,8 @@ accumulator(
 accumulator(
     'lh_resonance',
     [resonance],
-    mraz.music_maker(),
+    baca.pitch_first_assn([1], 16),
+    rmakers.beam_groups(),
     counts=[16],
     denominator=4,
     figure_name='lh-r 4.5.4',
@@ -735,7 +778,8 @@ accumulator(
 accumulator(
     'lh_resonance',
     [resonance],
-    mraz.music_maker(),
+    baca.pitch_first_assn([1], 16),
+    rmakers.beam_groups(),
     counts=[16],
     denominator=4,
     figure_name='lh-r 4.5.5',
@@ -744,7 +788,8 @@ accumulator(
 accumulator(
     'lh_resonance',
     [resonance],
-    mraz.music_maker(),
+    baca.pitch_first_assn([1], 16),
+    rmakers.beam_groups(),
     counts=[24],
     denominator=4,
     figure_name='lh-r 4.5.6',
@@ -753,7 +798,8 @@ accumulator(
 accumulator(
     'lh_resonance',
     [resonance],
-    mraz.music_maker(),
+    baca.pitch_first_assn([1], 16),
+    rmakers.beam_groups(),
     counts=[16],
     denominator=4,
     figure_name='lh-r 4.5.7',
@@ -762,7 +808,8 @@ accumulator(
 accumulator(
     'lh_resonance',
     [resonance],
-    mraz.music_maker(),
+    baca.pitch_first_assn([1], 16),
+    rmakers.beam_groups(),
     counts=[8],
     denominator=4,
     figure_name='lh-r 4.5.8',
@@ -771,7 +818,8 @@ accumulator(
 accumulator(
     'rh_v1',
     collections['stage 5']['rh'].next(),
-    mraz.music_maker(),
+    baca.pitch_first_assn([1], 16),
+    rmakers.beam_groups(),
     baca.anchor_to_figure('lh-r 4.5.2'),
     baca.dynamic('f'),
     baca.register(36),
@@ -785,7 +833,8 @@ accumulator(
 accumulator(
     'rh_v1',
     collections['stage 5']['rh'].next(),
-    mraz.music_maker(),
+    baca.pitch_first_assn([1], 16),
+    rmakers.beam_groups(),
     baca.register(36),
     baca.tenuto(selector=baca.pheads()),
     counts=[24],
@@ -797,7 +846,8 @@ accumulator(
 accumulator(
     'rh_v1',
     collections['stage 5']['rh'].next(),
-    mraz.music_maker(),
+    baca.pitch_first_assn([1], 16),
+    rmakers.beam_groups(),
     baca.register(36),
     baca.tenuto(selector=baca.pheads()),
     counts=[16],
@@ -809,7 +859,8 @@ accumulator(
 accumulator(
     'rh_v1',
     collections['stage 5']['rh'].next(),
-    mraz.music_maker(),
+    baca.pitch_first_assn([1], 16),
+    rmakers.beam_groups(),
     baca.register(36),
     baca.tenuto(selector=baca.pheads()),
     counts=[16],
@@ -821,7 +872,8 @@ accumulator(
 accumulator(
     'rh_v1',
     collections['stage 5']['rh'].next(),
-    mraz.music_maker(),
+    baca.pitch_first_assn([1], 16),
+    rmakers.beam_groups(),
     baca.anchor_to_figure('lh-r 4.5.7'),
     baca.register(36),
     baca.tenuto(selector=baca.pheads()),
@@ -834,7 +886,8 @@ accumulator(
 accumulator(
     'rh_v1',
     collections['stage 5']['rh'].next(exhausted=True),
-    mraz.music_maker(),
+    baca.pitch_first_assn([1], 16),
+    rmakers.beam_groups(),
     baca.register(36),
     baca.tenuto(selector=baca.pheads()),
     counts=[8],
@@ -846,7 +899,8 @@ accumulator(
 accumulator(
     'rh_v2',
     collections['stage 5']['lh'].next(4),
-    mraz.music_maker(),
+    baca.pitch_first_assn([1], 16),
+    rmakers.beam_groups(),
     baca.anchor_to_figure('rh-1 4.5.3'),
     baca.dls_staff_padding(8),
     baca.hairpin('f < ff', selector=baca.leaves()[:-1]),
@@ -862,7 +916,8 @@ accumulator(
 accumulator(
     'rh_v2',
     collections['stage 5']['lh'].next(4),
-    mraz.music_maker(),
+    baca.pitch_first_assn([1], 16),
+    rmakers.beam_groups(),
     baca.dls_staff_padding(8),
     baca.hairpin('f < ff', selector=baca.leaves()[:-1]),
     baca.slur(map=baca.ntruns()),
@@ -878,7 +933,8 @@ accumulator(
 accumulator(
     'rh_v2',
     collections['stage 6']['rh'][1],
-    mraz.music_maker(),
+    baca.pitch_first_assn([1], 16),
+    rmakers.beam_groups(),
     baca.anchor_to_figure('lh-r 4.5.6'),
     baca.marcato(selector=baca.pheads()),
     baca.script_up(),
@@ -892,7 +948,8 @@ accumulator(
 accumulator(
     'rh_v2',
     collections['stage 5']['lh'].next(4),
-    mraz.music_maker(),
+    baca.pitch_first_assn([1], 16),
+    rmakers.beam_groups(),
     baca.dls_staff_padding(8),
     baca.hairpin('f < ff', selector=baca.leaves()[:-1]),
     baca.slur(map=baca.ntruns()),
@@ -908,7 +965,8 @@ accumulator(
 accumulator(
     'rh_v2',
     collections['stage 5']['lh'].next(2),
-    mraz.music_maker(),
+    baca.pitch_first_assn([1], 16),
+    rmakers.beam_groups(),
     baca.dls_staff_padding(8),
     baca.hairpin('f < ff', selector=baca.leaves()[:-1]),
     baca.slur(map=baca.ntruns()),
@@ -926,7 +984,8 @@ accumulator(
 accumulator(
     'rh_v2',
     collections['stage 6']['rh'].next(),
-    mraz.music_maker(),
+    baca.pitch_first_assn([1], 16),
+    rmakers.beam_groups(),
     baca.up_arpeggio(selector=baca.pheads()),
     baca.marcato(selector=baca.pheads()),
     baca.resume(),
@@ -939,7 +998,8 @@ accumulator(
 accumulator(
     'rh_v2',
     collections['stage 6']['rh'].next(),
-    mraz.music_maker(),
+    baca.pitch_first_assn([1], 16),
+    rmakers.beam_groups(),
     baca.up_arpeggio(selector=baca.pheads()),
     baca.marcato(selector=baca.pheads()),
     baca.script_up(),
@@ -951,7 +1011,8 @@ accumulator(
 accumulator(
     'rh_v2',
     collections['stage 6']['rh'].next(exhausted=True),
-    mraz.music_maker(),
+    baca.pitch_first_assn([1], 16),
+    rmakers.beam_groups(),
     baca.up_arpeggio(selector=baca.pheads()),
     baca.marcato(selector=baca.pheads()),
     baca.script_up(),
@@ -979,7 +1040,8 @@ accumulator(
 accumulator(
     'rh_v3',
     collections['stage 1']['rh'][1],
-    mraz.music_maker(),
+    baca.pitch_first_assn([1], 16),
+    rmakers.beam_groups(),
     baca.dynamic('mp'),
     rmakers.unbeam(),
     baca.register(12, -12),
@@ -997,7 +1059,8 @@ accumulator(
 accumulator(
     'lh_v5',
     collections['stage 1']['lh'][1],
-    mraz.music_maker(),
+    baca.pitch_first_assn([1], 16),
+    rmakers.beam_groups(),
     baca.anchor_to_figure('rh-3 4.6.1'),
     baca.dynamic('p'),
     rmakers.unbeam(),
@@ -1013,7 +1076,8 @@ accumulator(
 accumulator(
     'rh_v2',
     collections_5['stage 1']['rh'].next(exhausted=True),
-    mraz.music_maker(),
+    baca.pitch_first_assn([1], 16),
+    rmakers.beam_groups(),
     baca.accent(selector=baca.pheads()),
     baca.dynamic('fff'),
     baca.dynamic_up(),
@@ -1031,7 +1095,8 @@ accumulator(
 accumulator(
     'rh_v3',
     collections_5['stage 1']['lh'].next(exhausted=True),
-    mraz.music_maker(),
+    baca.pitch_first_assn([1], 16),
+    rmakers.beam_groups(),
     baca.anchor_to_figure('b.1.10'),
     baca.dynamic('mf'),
     rmakers.unbeam(),
