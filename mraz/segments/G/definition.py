@@ -18,7 +18,7 @@ collections = collection_maker.make_segment_7_collections()
 accumulator(
     'rh_v1',
     collections['stage 1']['rh'].next(),
-    baca.pitch_first_assn([1], 16),
+    baca.pitch_first([1], 16),
     rmakers.beam_groups(),
     baca.dynamic('fff'),
     baca.imbricate(
@@ -39,7 +39,7 @@ accumulator(
 accumulator(
     'rh_v2',
     collections['stage 1']['rh'].next(),
-    baca.pitch_first_assn([1], 16),
+    baca.pitch_first([1], 16),
     rmakers.beam_groups(),
     baca.dynamic('fff'),
     baca.imbricate(
@@ -59,7 +59,7 @@ accumulator(
 accumulator(
     'rh_v1',
     collections['stage 1']['rh'].next(),
-    baca.pitch_first_assn([1], 16),
+    baca.pitch_first([1], 16),
     rmakers.beam_groups(),
     baca.imbricate(
         'rh_v1_i',
@@ -77,7 +77,7 @@ accumulator(
 accumulator(
     'rh_v2',
     collections['stage 1']['rh'].next(),
-    baca.pitch_first_assn([1], 16),
+    baca.pitch_first([1], 16),
     rmakers.beam_groups(),
     baca.imbricate(
         'rh_v2_i',
@@ -95,7 +95,7 @@ accumulator(
 accumulator(
     'rh_v1',
     collections['stage 1']['rh'].next(),
-    baca.pitch_first_assn([1], 16),
+    baca.pitch_first([1], 16),
     rmakers.beam_groups(),
     baca.imbricate(
         'rh_v1_i',
@@ -114,7 +114,7 @@ accumulator(
 accumulator(
     'rh_v2',
     collections['stage 1']['rh'].next(),
-    baca.pitch_first_assn([1], 16),
+    baca.pitch_first([1], 16),
     rmakers.beam_groups(),
     baca.imbricate(
         'rh_v2_i',
@@ -134,7 +134,7 @@ accumulator(
 accumulator(
     'rh_v1',
     collections['stage 1']['rh'].next(),
-    baca.pitch_first_assn([1], 16),
+    baca.pitch_first([1], 16),
     rmakers.beam_groups(),
     baca.imbricate(
         'rh_v1_i',
@@ -151,7 +151,7 @@ accumulator(
 accumulator(
     'rh_v2',
     collections['stage 1']['rh'].next(),
-    baca.pitch_first_assn([1], 16),
+    baca.pitch_first([1], 16),
     rmakers.beam_groups(),
     baca.imbricate(
         'rh_v2_i',
@@ -172,7 +172,7 @@ collections['stage 1']['rh'].next()
 accumulator(
     'rh_v2',
     collections['stage 1']['rh'].next(),
-    baca.pitch_first_assn([1], 16),
+    baca.pitch_first([1], 16),
     rmakers.beam_groups(),
     baca.imbricate(
         'rh_v2_i',
@@ -191,7 +191,7 @@ accumulator(
 accumulator(
     'rh_v1',
     collections['stage 1']['rh'].next(),
-    baca.pitch_first_assn([1], 16),
+    baca.pitch_first([1], 16),
     rmakers.beam_groups(),
     baca.beam_positions(12),
     baca.imbricate(
@@ -210,7 +210,7 @@ accumulator(
 accumulator(
     'rh_v2',
     collections['stage 1']['rh'].next(exhausted=True),
-    baca.pitch_first_assn([1], 16),
+    baca.pitch_first([1], 16),
     rmakers.beam_groups(),
     baca.imbricate(
         'rh_v2_i',
@@ -230,7 +230,7 @@ accumulator(
 accumulator(
     'lh_v4',
     collections['stage 1']['lh'].next().transpose(0*7),
-    baca.pitch_first_assn([1], 16),
+    baca.pitch_first([1], 16),
     rmakers.beam_groups(),
     baca.anchor(
         'rh_v2',
@@ -251,7 +251,7 @@ accumulator(
 accumulator(
     'lh_v5',
     collections['stage 1']['lh'].next().transpose(1*7),
-    baca.pitch_first_assn([1], 16),
+    baca.pitch_first([1], 16),
     rmakers.beam_groups(),
     baca.anchor(
         'rh_v2',
@@ -277,7 +277,7 @@ accumulator(
 accumulator(
     'lh_v4',
     collections['stage 1']['lh'].next().transpose(2*7),
-    baca.pitch_first_assn([1], 16),
+    baca.pitch_first([1], 16),
     rmakers.beam_groups(),
     baca.anchor(
         'rh_v2',
@@ -298,7 +298,7 @@ accumulator(
 accumulator(
     'lh_v5',
     collections['stage 1']['lh'].next().transpose(3*7),
-    baca.pitch_first_assn([1], 16),
+    baca.pitch_first([1], 16),
     rmakers.beam_groups(),
     baca.anchor(
         'rh_v2',
@@ -322,7 +322,7 @@ accumulator(
 accumulator(
     'lh_v4',
     collections['stage 1']['lh'].next(exhausted=True).transpose(4*7),
-    baca.pitch_first_assn([1], 16),
+    baca.pitch_first([1], 16),
     rmakers.beam_groups(),
     baca.anchor(
         'rh_v2',
