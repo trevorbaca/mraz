@@ -41,7 +41,7 @@ accumulator(
 accumulator(
     'rh_v3',
     collections['stage 1']['lh'].next(exhausted=True),
-    baca.pitch_first([4, -4], 16),
+    baca.pitch_first([4, -4], 16, time_treatments=[abjad.Duration(16, 4)]),
     rmakers.beam_groups(),
     baca.anchor('rh_v2'),
     baca.dynamic('mf'),
@@ -54,7 +54,6 @@ accumulator(
     baca.tuplet_bracket_down(),
     denominator=4,
     figure_name='rh-3 5.1.1',
-    time_treatments=[abjad.Duration(16, 4)],
     tuplet_denominator=abjad.Duration(1, 1),
     )
 
@@ -63,7 +62,7 @@ accumulator(
 accumulator(
     'rh_v3',
     collections['stage 2']['rh'].next(5),
-    baca.pitch_first([2], 16),
+    baca.pitch_first([2], 16, time_treatments=[-2, -2, 0]),
     rmakers.beam_groups(),
     rmakers.beam(),
     baca.dynamic('mp'),
@@ -82,7 +81,6 @@ accumulator(
     denominator=4,
     figure_name='rh-3 5.2.1',
     thread=True,
-    time_treatments=[-2, -2, 0],
     )
 
 accumulator(
@@ -96,7 +94,7 @@ accumulator(
 accumulator(
     'rh_v3',
     collections['stage 2']['rh'].next(5),
-    baca.pitch_first([2], 16),
+    baca.pitch_first([2], 16, time_treatments=[-2, 0, -2]),
     rmakers.beam_groups(),
     rmakers.beam(),
     baca.imbricate(
@@ -117,13 +115,12 @@ accumulator(
     denominator=4,
     figure_name='rh-3 5.2.3',
     thread=True,
-    time_treatments=[-2, 0, -2],
     )
 
 accumulator(
     'lh_v6',
     collections_8['stage 3']['lh'][1],
-    baca.pitch_first([2, -4], 16),
+    baca.pitch_first([2, -4], 16, time_treatments=[4]),
     rmakers.beam_groups(),
     baca.dynamic('f'),
     rmakers.unbeam(),
@@ -135,7 +132,6 @@ accumulator(
     baca.tuplet_bracket_staff_padding(6),
     denominator=4,
     figure_name='b.1.4',
-    time_treatments=[4],
     )
 
 accumulator(
@@ -159,7 +155,7 @@ accumulator(
 accumulator(
     'rh_v3',
     collections['stage 2']['rh'].next(5),
-    baca.pitch_first([2], 16),
+    baca.pitch_first([2], 16, time_treatments=[0, -2, -2]),
     rmakers.beam_groups(),
     rmakers.beam(),
     baca.dynamic('mp'),
@@ -178,7 +174,6 @@ accumulator(
     denominator=4,
     figure_name='rh-3 5.2.5',
     thread=True,
-    time_treatments=[0, -2, -2],
     )
 
 accumulator(
@@ -192,7 +187,7 @@ accumulator(
 accumulator(
     'rh_v3',
     collections['stage 2']['rh'].next(6),
-    baca.pitch_first([2], 16),
+    baca.pitch_first([2], 16, time_treatments=[-2, -2, 0]),
     rmakers.beam_groups(),
     rmakers.beam(),
     baca.imbricate(
@@ -208,7 +203,6 @@ accumulator(
     denominator=4,
     figure_name='rh-3 5.2.7',
     thread=True,
-    time_treatments=[-2, -2, 0],
     )
 
 accumulator(
@@ -347,7 +341,7 @@ accumulator(
 accumulator(
     'rh_v3',
     collections['stage 2']['rh'].next(3, exhausted=True),
-    baca.pitch_first([2], 16),
+    baca.pitch_first([2], 16, time_treatments=[-2, 0, -2]),
     rmakers.beam_groups(),
     rmakers.beam(),
     baca.dynamic('mp'),
@@ -366,7 +360,6 @@ accumulator(
     denominator=4,
     figure_name='rh-3 5.2.9',
     thread=True,
-    time_treatments=[-2, 0, -2],
     )
 
 accumulator(
