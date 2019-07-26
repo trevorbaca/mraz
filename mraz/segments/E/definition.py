@@ -18,7 +18,7 @@ collections = collection_maker.make_segment_6_collections()
 accumulator(
     'rh_v3',
     collections['stage 1']['rh'].next(2),
-    baca.pitch_first_assn([1], 8),
+    baca.pitch_first([1], 8),
     rmakers.beam_groups(),
     baca.dynamic('pp'),
     rmakers.unbeam(),
@@ -37,7 +37,7 @@ accumulator(
 accumulator(
     'rh_v3',
     collections['stage 1']['rh'].next(),
-    baca.pitch_first_assn([1], 8),
+    baca.pitch_first([1], 8),
     rmakers.beam_groups(),
     rmakers.unbeam(),
     baca.register(24, 12),
@@ -54,7 +54,7 @@ accumulator(
 accumulator(
     'rh_v3',
     collections['stage 1']['rh'].next(),
-    baca.pitch_first_assn([1], 8),
+    baca.pitch_first([1], 8),
     rmakers.beam_groups(),
     rmakers.unbeam(),
     baca.register(24, 12),
@@ -68,7 +68,7 @@ accumulator(
 accumulator(
     'rh_v3',
     collections['stage 1']['rh'].next(exhausted=True),
-    baca.pitch_first_assn([1], 8),
+    baca.pitch_first([1], 8),
     rmakers.beam_groups(),
     rmakers.unbeam(),
     baca.register(12, 24),
@@ -83,7 +83,7 @@ accumulator(
 accumulator(
     'lh_v4',
     collections['stage 1']['lh'].next(),
-    baca.pitch_first_assn([1, -1], 16),
+    baca.pitch_first([1, -1], 16),
     rmakers.beam_groups(),
     baca.anchor(
         'rh_v3',
@@ -102,7 +102,7 @@ accumulator(
 accumulator(
     'lh_v4',
     collections['stage 1']['lh'].next(),
-    baca.pitch_first_assn([1, -2], 16),
+    baca.pitch_first([1, -2], 16),
     rmakers.beam_groups(),
     baca.anchor(
         'rh_v3',
@@ -120,7 +120,7 @@ accumulator(
 accumulator(
     'lh_v4',
     collections['stage 1']['lh'].next(),
-    baca.pitch_first_assn([2, -1], 32),
+    baca.pitch_first([2, -1], 32),
     rmakers.beam_groups(),
     baca.anchor(
         'rh_v3',
@@ -137,7 +137,7 @@ accumulator(
 accumulator(
     'lh_v4',
     collections['stage 1']['lh'].next(exhausted=True),
-    baca.pitch_first_assn([2, -1], 32),
+    baca.pitch_first([2, -1], 32),
     rmakers.beam_groups(),
     rmakers.unbeam(),
     baca.register(12, 0),

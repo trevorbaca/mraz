@@ -23,7 +23,7 @@ collections_8 = collection_maker.make_segment_8_collections()
 accumulator(
     'rh_v1',
     collections_4['stage 5']['rh'][2],
-    baca.pitch_first_assn([16], 16),
+    baca.pitch_first([16], 16),
     rmakers.beam_groups(),
     ordered_commands=[
         baca.allow_octaves(),
@@ -39,7 +39,7 @@ accumulator(
 accumulator(
     'rh_v2',
     collections_4['stage 5']['lh'][:4],
-    baca.pitch_first_assn([1], 16),
+    baca.pitch_first([1], 16),
     baca.anchor_to_figure('b.1.1'),
     baca.dls_staff_padding(8),
     baca.hairpin('f < ff'),
@@ -56,7 +56,7 @@ accumulator(
 accumulator(
     'lh_v4',
     collections_7['stage 1']['lh'][-1].transpose(4*7),
-    baca.pitch_first_assn([1], 16),
+    baca.pitch_first([1], 16),
     baca.dynamic('ff'),
     baca.register(6, 6+10),
     baca.imbricate(
@@ -72,7 +72,7 @@ accumulator(
 accumulator(
     'lh_v6',
     collections_8['stage 3']['lh'][1],
-    baca.pitch_first_assn([2, -4], 16),
+    baca.pitch_first([2, -4], 16),
     baca.clef('bass'),
     baca.dynamic('f'),
     baca.ottava_bassa(),
@@ -88,7 +88,7 @@ accumulator(
 accumulator(
     'lh_v5',
     collections_8['stage 3']['rh'][4],
-    baca.pitch_first_assn([6, -1], 32),
+    baca.pitch_first([6, -1], 32),
     baca.anchor_to_figure('b.1.4'),
     baca.dynamic('ppp'),
     baca.dynamic_text_x_offset(-0.5),
@@ -111,7 +111,7 @@ accumulator(
 accumulator(
     'rh_v3',
     collections_6['stage 1']['rh'][2],
-    baca.pitch_first_assn([1], 8),
+    baca.pitch_first([1], 8),
     baca.dynamic('pp'),
     baca.dynamic_text_x_offset(0.5),
     baca.register(24, 12),
@@ -135,7 +135,7 @@ accumulator(
 accumulator(
     'rh_v3',
     collections_6['stage 1']['rh'][3],
-    baca.pitch_first_assn([1], 8),
+    baca.pitch_first([1], 8),
     baca.register(24, 12),
     baca.rests_around([1], [1]),
     baca.span_bar_extra_offset((-0.75, 0), after=True, selector=baca.leaf(-1)),
@@ -148,7 +148,7 @@ accumulator(
 accumulator(
     'rh_v2',
     collections_5['stage 1']['rh'].next(exhausted=True),
-    baca.pitch_first_assn([2, -14], 16),
+    baca.pitch_first([2, -14], 16),
     baca.accent(selector=baca.pheads()),
     baca.dynamic('fff'),
     baca.dynamic_up(),
@@ -164,7 +164,7 @@ accumulator(
 accumulator(
     'rh_v3',
     collections_5['stage 1']['lh'].next(exhausted=True),
-    baca.pitch_first_assn([4, -4], 16),
+    baca.pitch_first([4, -4], 16),
     baca.anchor_to_figure('b.1.10'),
     baca.dynamic('mf'),
     baca.dynamic_text_x_offset(0.25),
