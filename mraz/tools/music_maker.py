@@ -10,6 +10,5 @@ def music_maker() -> baca.MusicMaker:
     return baca.MusicMaker(
         baca.PitchFirstAssignment(baca.pitch_first([1], 16)),
         rmakers.beam_groups(),
-        color_unregistered_pitches=True,
         denominator=16,
     )
