@@ -24,7 +24,8 @@ resonance = baca.PitchSet("e, fs, gs, as, b,", item_class=abjad.NamedPitch)
 accumulator(
     'rh_v4',
     collections_7['stage 1']['lh'][-1].transpose(4*7),
-    mraz.music_maker(),
+    baca.pitch_first_assn([1], 16),
+    rmakers.beam_groups(),
     baca.dynamic('ff'),
     baca.register(6, 6+10),
     baca.imbricate(
@@ -48,7 +49,8 @@ accumulator(
 accumulator(
     'rh_v2',
     collections_2['stage 2']['rh'][0][:1],
-    mraz.music_maker(),
+    baca.pitch_first_assn([1], 16),
+    rmakers.beam_groups(),
     baca.bass_to_octave(3),
     baca.dynamic('ppp'),
     baca.dynamic_text_x_offset(0),
@@ -71,7 +73,8 @@ accumulator(
 accumulator(
     'rh_v4',
     collections_7['stage 1']['lh'][-1].transpose(4*7),
-    mraz.music_maker(),
+    baca.pitch_first_assn([1], 16),
+    rmakers.beam_groups(),
     baca.dynamic('p'),
     baca.register(6, 6+10),
     baca.imbricate(
@@ -87,7 +90,8 @@ accumulator(
 accumulator(
     'rh_v2',
     collections_2['stage 2']['rh'][0][:2],
-    mraz.music_maker(),
+    baca.pitch_first_assn([1], 16),
+    rmakers.beam_groups(),
     baca.bass_to_octave(3),
     baca.dynamic('ppp'),
     baca.dynamic_text_x_offset(0),
@@ -109,7 +113,8 @@ accumulator(
 accumulator(
     'rh_v3',
     collections_4['stage 1']['rh'][0],
-    mraz.music_maker(),
+    baca.pitch_first_assn([1], 16),
+    rmakers.beam_groups(),
     baca.dynamic('ff'),
     rmakers.unbeam(),
     baca.register(-12, 12),
@@ -123,7 +128,8 @@ accumulator(
 accumulator(
     'lh_v5',
     collections_4['stage 1']['lh'].next(),
-    mraz.music_maker(),
+    baca.pitch_first_assn([1], 16),
+    rmakers.beam_groups(),
     baca.anchor_to_figure('b.2.8'),
     baca.dynamic('f'),
     baca.dynamic_down(),
@@ -141,7 +147,8 @@ accumulator(
 accumulator(
     'rh_v2',
     collections_2['stage 2']['rh'][0][:4],
-    mraz.music_maker(),
+    baca.pitch_first_assn([1], 16),
+    rmakers.beam_groups(),
     baca.bass_to_octave(3),
     baca.dynamic('ppp'),
     baca.dynamic_text_x_offset(0),
@@ -155,7 +162,8 @@ accumulator(
 accumulator(
     'rh_v1',
     collections_4['stage 5']['rh'][0],
-    mraz.music_maker(),
+    baca.pitch_first_assn([1], 16),
+    rmakers.beam_groups(),
     baca.dynamic('f'),
     baca.register(36),
     baca.tenuto(selector=baca.pheads()),
@@ -167,7 +175,8 @@ accumulator(
 accumulator(
     'rh_v1',
     collections_4['stage 5']['rh'][1],
-    mraz.music_maker(),
+    baca.pitch_first_assn([1], 16),
+    rmakers.beam_groups(),
     baca.register(36),
     baca.tenuto(selector=baca.pheads()),
     counts=[24],
@@ -178,7 +187,8 @@ accumulator(
 accumulator(
     'rh_v1',
     collections_4['stage 5']['rh'][2],
-    mraz.music_maker(),
+    baca.pitch_first_assn([1], 16),
+    rmakers.beam_groups(),
     baca.allow_octaves(),
     baca.register(36),
     baca.tenuto(selector=baca.pheads()),
@@ -191,7 +201,8 @@ accumulator(
 accumulator(
     'rh_v2',
     collections_4['stage 5']['lh'][:4],
-    mraz.music_maker(),
+    baca.pitch_first_assn([1], 16),
+    rmakers.beam_groups(),
     baca.anchor_to_figure('b.2.13'),
     baca.dls_staff_padding(8),
     baca.hairpin('f < ff'),
@@ -210,7 +221,8 @@ accumulator(
 accumulator(
     'lh_resonance',
     [resonance],
-    mraz.music_maker(),
+    baca.pitch_first_assn([1], 16),
+    rmakers.beam_groups(),
     baca.allow_octaves(),
     baca.anchor_to_figure('b.2.1'),
     counts=[8],
@@ -222,7 +234,8 @@ accumulator(
 accumulator(
     'lh_resonance',
     [resonance],
-    mraz.music_maker(),
+    baca.pitch_first_assn([1], 16),
+    rmakers.beam_groups(),
     baca.allow_octaves(),
     counts=[4],
     denominator=4,
@@ -233,7 +246,8 @@ accumulator(
 accumulator(
     'lh_resonance',
     [resonance],
-    mraz.music_maker(),
+    baca.pitch_first_assn([1], 16),
+    rmakers.beam_groups(),
     baca.allow_octaves(),
     counts=[5],
     denominator=4,
@@ -244,7 +258,8 @@ accumulator(
 accumulator(
     'lh_resonance',
     [resonance],
-    mraz.music_maker(),
+    baca.pitch_first_assn([1], 16),
+    rmakers.beam_groups(),
     baca.allow_octaves(),
     counts=[4],
     denominator=4,
@@ -255,7 +270,8 @@ accumulator(
 accumulator(
     'lh_resonance',
     [resonance],
-    mraz.music_maker(),
+    baca.pitch_first_assn([1], 16),
+    rmakers.beam_groups(),
     baca.allow_octaves(),
     counts=[8],
     denominator=4,
@@ -266,7 +282,8 @@ accumulator(
 accumulator(
     'lh_resonance',
     [resonance],
-    mraz.music_maker(),
+    baca.pitch_first_assn([1], 16),
+    rmakers.beam_groups(),
     baca.allow_octaves(),
     counts=[10],
     denominator=4,
@@ -277,7 +294,8 @@ accumulator(
 accumulator(
     'lh_resonance',
     [resonance],
-    mraz.music_maker(),
+    baca.pitch_first_assn([1], 16),
+    rmakers.beam_groups(),
     baca.accidental_x_extent_false(),
     baca.allow_octaves(),
     baca.anchor_to_figure('b.2.10'),
@@ -290,7 +308,8 @@ accumulator(
 accumulator(
     'lh_resonance',
     [resonance],
-    mraz.music_maker(),
+    baca.pitch_first_assn([1], 16),
+    rmakers.beam_groups(),
     baca.allow_octaves(),
     counts=[28],
     denominator=4,
@@ -301,7 +320,8 @@ accumulator(
 accumulator(
     'lh_resonance',
     [resonance],
-    mraz.music_maker(),
+    baca.pitch_first_assn([1], 16),
+    rmakers.beam_groups(),
     baca.allow_octaves(),
     counts=[24],
     denominator=4,

@@ -23,7 +23,8 @@ collections_8 = collection_maker.make_segment_8_collections()
 accumulator(
     'rh_v1',
     collections_4['stage 5']['rh'][2],
-    mraz.music_maker(),
+    baca.pitch_first_assn([1], 16),
+    rmakers.beam_groups(),
     ordered_commands=[
         baca.allow_octaves(),
         baca.markup('(ottava brackets always govern all voices on staff)'),
@@ -39,7 +40,8 @@ accumulator(
 accumulator(
     'rh_v2',
     collections_4['stage 5']['lh'][:4],
-    mraz.music_maker(),
+    baca.pitch_first_assn([1], 16),
+    rmakers.beam_groups(),
     baca.anchor_to_figure('b.1.1'),
     baca.dls_staff_padding(8),
     baca.hairpin('f < ff'),
@@ -56,7 +58,8 @@ accumulator(
 accumulator(
     'lh_v4',
     collections_7['stage 1']['lh'][-1].transpose(4*7),
-    mraz.music_maker(),
+    baca.pitch_first_assn([1], 16),
+    rmakers.beam_groups(),
     baca.dynamic('ff'),
     baca.register(6, 6+10),
     baca.imbricate(
@@ -73,7 +76,8 @@ accumulator(
 accumulator(
     'lh_v6',
     collections_8['stage 3']['lh'][1],
-    mraz.music_maker(),
+    baca.pitch_first_assn([1], 16),
+    rmakers.beam_groups(),
     baca.clef('bass'),
     baca.dynamic('f'),
     rmakers.unbeam(),
@@ -91,7 +95,8 @@ accumulator(
 accumulator(
     'lh_v5',
     collections_8['stage 3']['rh'][4],
-    mraz.music_maker(),
+    baca.pitch_first_assn([1], 16),
+    rmakers.beam_groups(),
     baca.anchor_to_figure('b.1.4'),
     baca.dynamic('ppp'),
     baca.dynamic_text_x_offset(-0.5),
@@ -117,7 +122,8 @@ accumulator(
 accumulator(
     'rh_v3',
     collections_6['stage 1']['rh'][2],
-    mraz.music_maker(),
+    baca.pitch_first_assn([1], 16),
+    rmakers.beam_groups(),
     baca.dynamic('pp'),
     baca.dynamic_text_x_offset(0.5),
     rmakers.unbeam(),
@@ -143,7 +149,8 @@ accumulator(
 accumulator(
     'rh_v3',
     collections_6['stage 1']['rh'][3],
-    mraz.music_maker(),
+    baca.pitch_first_assn([1], 16),
+    rmakers.beam_groups(),
     rmakers.unbeam(),
     baca.register(24, 12),
     baca.rests_around([1], [1]),
@@ -158,7 +165,8 @@ accumulator(
 accumulator(
     'rh_v2',
     collections_5['stage 1']['rh'].next(exhausted=True),
-    mraz.music_maker(),
+    baca.pitch_first_assn([1], 16),
+    rmakers.beam_groups(),
     baca.accent(selector=baca.pheads()),
     baca.dynamic('fff'),
     baca.dynamic_up(),
@@ -176,7 +184,8 @@ accumulator(
 accumulator(
     'rh_v3',
     collections_5['stage 1']['lh'].next(exhausted=True),
-    mraz.music_maker(),
+    baca.pitch_first_assn([1], 16),
+    rmakers.beam_groups(),
     baca.anchor_to_figure('b.1.10'),
     baca.dynamic('mf'),
     baca.dynamic_text_x_offset(0.25),
