@@ -2338,8 +2338,8 @@ F_RH_Voice_III = {                                                             %
 
                 g''8                                                           %! baca.MusicMaker.__call__
                 )                                                              %! baca.slur:SpannerIndicatorCommand(2)
-                ]
                 ~                                                              %! baca.tie:IndicatorCommand
+                ]
 
             }                                                                  %! baca.MusicMaker.__call__
 
@@ -2401,7 +2401,7 @@ F_RH_Voice_III = {                                                             %
 
             \scaleDurations #'(1 . 1) {                                        %! baca.MusicMaker.__call__
 
-                f'8                                                            %! baca.MusicMaker.__call__
+                f''8                                                           %! baca.MusicMaker.__call__
                 [
                 (                                                              %! baca.slur:SpannerIndicatorCommand(1)
 
