@@ -108,7 +108,7 @@ accumulator(
 accumulator(
     'rh_v3',
     collections_6['stage 1']['rh'][2],
-    baca.pitch_first([1], 8, time_treatments=[1, 0]),
+    baca.pitch_first([1], 8, thread=True, time_treatments=[1, 0]),
     baca.dynamic('pp'),
     baca.dynamic_text_x_offset(0.5),
     baca.register(24, 12),
@@ -117,7 +117,6 @@ accumulator(
     baca.tuplet_bracket_staff_padding(8),
     denominator=8,
     figure_name='b.1.7',
-    thread=True,
     )
 
 accumulator(

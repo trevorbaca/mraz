@@ -18,7 +18,7 @@ collections = collection_maker.make_segment_6_collections()
 accumulator(
     'rh_v3',
     collections['stage 1']['rh'].next(2),
-    baca.pitch_first([1], 8, time_treatments=[1, 0]),
+    baca.pitch_first([1], 8, thread=True, time_treatments=[1, 0]),
     rmakers.beam_groups(),
     baca.dynamic('pp'),
     rmakers.unbeam(),
@@ -30,13 +30,12 @@ accumulator(
     baca.tuplet_bracket_up(),
     denominator=8,
     figure_name='rh-3 6.1.1',
-    thread=True,
     )
 
 accumulator(
     'rh_v3',
     collections['stage 1']['rh'].next(),
-    baca.pitch_first([1], 8, time_treatments=[1, 0]),
+    baca.pitch_first([1], 8, thread=True, time_treatments=[1, 0]),
     rmakers.beam_groups(),
     rmakers.unbeam(),
     baca.register(24, 12),
@@ -46,7 +45,6 @@ accumulator(
     baca.tuplet_bracket_up(),
     denominator=8,
     figure_name='rh-3 6.1.2',
-    thread=True,
     )
 
 accumulator(
