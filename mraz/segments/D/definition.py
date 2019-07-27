@@ -639,6 +639,7 @@ accumulator(
     'rh_v1',
     collections['stage 4']['rh'].next(),
     baca.pitch_first([2], 16, time_treatments=[8]),
+    ###rmakers.denominator(4),
     rmakers.beam_groups(),
     baca.anchor_to_figure('lh-5 4.4.4'),
     rmakers.beam_groups(),
@@ -656,8 +657,10 @@ accumulator(
     denominator=4,
     figure_name='rh-1 4.4.4',
     hide_time_signature=True,
-    tuplet_denominator=(1, 4),
-    )
+    ordered_commands=[
+        rmakers.denominator((1, 4)),
+    ],
+)
 
 accumulator(
     'rh_v1',
@@ -1025,6 +1028,7 @@ accumulator(
     'rh_v3',
     collections_5['stage 1']['lh'].next(exhausted=True),
     baca.pitch_first([4, -4], 16, time_treatments=[abjad.Duration(16, 4)]),
+    rmakers.denominator(abjad.Duration(1, 1)),
     rmakers.beam_groups(),
     baca.anchor_to_figure('b.1.10'),
     baca.dynamic('mf'),
@@ -1037,7 +1041,6 @@ accumulator(
     denominator=4,
     figure_name='b.1.11',
     hide_time_signature=True,
-    tuplet_denominator=abjad.Duration(1, 1),
     )
 
 maker = baca.SegmentMaker(

@@ -160,6 +160,7 @@ accumulator(
     'rh_v3',
     collections_5['stage 1']['lh'].next(exhausted=True),
     baca.pitch_first([4, -4], 16, time_treatments=[abjad.Duration(16, 4)]),
+    rmakers.denominator(abjad.Duration(1, 1)),
     baca.anchor_to_figure('b.1.10'),
     baca.dynamic('mf'),
     baca.dynamic_text_x_offset(0.25),
@@ -171,7 +172,6 @@ accumulator(
     baca.tuplet_bracket_down(),
     figure_name='b.1.11',
     hide_time_signature=True,
-    tuplet_denominator=abjad.Duration(1, 1),
     )
 
 accumulator(

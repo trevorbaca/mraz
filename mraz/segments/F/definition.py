@@ -42,6 +42,7 @@ accumulator(
     'rh_v3',
     collections['stage 1']['lh'].next(exhausted=True),
     baca.pitch_first([4, -4], 16, time_treatments=[abjad.Duration(16, 4)]),
+    rmakers.denominator(abjad.Duration(1, 1)),
     rmakers.beam_groups(),
     baca.anchor('rh_v2'),
     baca.dynamic('mf'),
@@ -54,7 +55,6 @@ accumulator(
     baca.tuplet_bracket_down(),
     denominator=4,
     figure_name='rh-3 5.1.1',
-    tuplet_denominator=abjad.Duration(1, 1),
     )
 
 #################################### [5.2] ####################################
