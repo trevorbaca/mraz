@@ -31,7 +31,7 @@ accumulator(
     baca.tenuto(selector=baca.pheads()),
     baca.tuplet_bracket_staff_padding(7),
     baca.tuplet_bracket_up(),
-    denominator=8,
+    signature=8,
     figure_name="rh-3 6.1.1",
 )
 
@@ -44,7 +44,7 @@ accumulator(
     baca.tenuto(selector=baca.pheads()),
     baca.tuplet_bracket_staff_padding(7),
     baca.tuplet_bracket_up(),
-    denominator=8,
+    signature=8,
     figure_name="rh-3 6.1.2",
 )
 
@@ -55,7 +55,7 @@ accumulator(
     baca.register(24, 12),
     baca.staccato(selector=baca.pheads()),
     baca.tenuto(selector=baca.pheads()),
-    denominator=8,
+    signature=8,
     figure_name="rh-3 6.1.3",
 )
 
@@ -67,7 +67,7 @@ accumulator(
     baca.staccato(selector=baca.pheads()),
     baca.tenuto(selector=baca.pheads()),
     baca.tuplet_bracket_up(),
-    denominator=8,
+    signature=8,
     figure_name="rh-3 6.1.4",
 )
 

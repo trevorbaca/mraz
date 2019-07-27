@@ -22,7 +22,7 @@ accumulator(
     baca.dynamic("ppp"),
     baca.dynamic_up(),
     baca.register(-27, -39),
-    denominator=4,
+    signature=4,
     figure_name="lh-5 8.3.1",
 )
 
@@ -32,7 +32,7 @@ accumulator(
     baca.pitch_first([4, -1], 32, time_treatments=[1]),
     baca.register(-39, -27),
     baca.rest_up(),
-    denominator=4,
+    signature=4,
     figure_name="lh-5 8.3.2",
 )
 
@@ -41,7 +41,7 @@ accumulator(
     collections["stage 3"]["rh"].next(),
     baca.pitch_first([1, -15], 32),
     baca.register(-39),
-    denominator=2,
+    signature=2,
     figure_name="lh-5 8.3.3",
 )
 
@@ -51,7 +51,7 @@ accumulator(
     baca.pitch_first([6, -1], 32),
     baca.register(-27, -39),
     baca.rest_up(),
-    denominator=4,
+    signature=4,
     figure_name="lh-5 8.3.4",
 )
 
@@ -60,7 +60,7 @@ accumulator(
     collections["stage 3"]["rh"].next(),
     baca.pitch_first([4, -1], 32),
     baca.register(-39, -27),
-    denominator=4,
+    signature=4,
     figure_name="lh-5 8.3.5",
 )
 
@@ -69,7 +69,7 @@ accumulator(
     collections["stage 3"]["rh"].next(),
     baca.pitch_first([4, -1], 32, time_treatments=[1]),
     baca.register(-39, -27),
-    denominator=4,
+    signature=4,
     figure_name="lh-5 8.3.6",
 )
 
@@ -79,7 +79,7 @@ accumulator(
     baca.pitch_first([1, -15], 32),
     baca.register(-39),
     baca.rest_up(),
-    denominator=2,
+    signature=2,
     figure_name="lh-5 8.3.7",
 )
 
@@ -88,7 +88,7 @@ accumulator(
     collections["stage 3"]["rh"].next(),
     baca.pitch_first([6, -1], 32),
     baca.register(-27, -39),
-    denominator=4,
+    signature=4,
     figure_name="lh-5 8.3.8",
 )
 
@@ -98,7 +98,7 @@ accumulator(
     baca.pitch_first([4, -1], 32, time_treatments=[1]),
     baca.register(-39, -27),
     baca.tuplet_bracket_staff_padding(3),
-    denominator=4,
+    signature=4,
     figure_name="lh-5 8.3.9",
 )
 
@@ -108,7 +108,7 @@ accumulator(
     baca.pitch_first([1, -15], 32),
     baca.register(-39),
     baca.rest_up(),
-    denominator=2,
+    signature=2,
     figure_name="lh-5 8.3.10",
 )
 
@@ -117,7 +117,7 @@ accumulator(
     collections["stage 3"]["rh"].next(),
     baca.pitch_first([6, -1], 32),
     baca.register(-27, -39),
-    denominator=4,
+    signature=4,
     figure_name="lh-5 8.3.11",
 )
 
@@ -126,7 +126,7 @@ accumulator(
     collections["stage 3"]["rh"].next(exhausted=True),
     baca.pitch_first([4, -1], 32, time_treatments=[1]),
     baca.register(-39, -27),
-    denominator=4,
+    signature=4,
     figure_name="lh-5 8.3.12",
 )
 
@@ -141,7 +141,7 @@ accumulator(
         baca.note(6),
         baca.note(1),
     ),
-    denominator=4,
+    signature=4,
     figure_name="lh-6 8.3.1",
     hide_time_signature=True,
 )
@@ -156,7 +156,7 @@ accumulator(
         "lh_v5",
         baca.note(11),
     ),
-    denominator=4,
+    signature=4,
     figure_name="lh-6 8.3.2",
     hide_time_signature=True,
 )
@@ -172,7 +172,7 @@ accumulator(
         baca.note(23),
         baca.note(-1),
     ),
-    denominator=4,
+    signature=4,
     figure_name="lh-6 8.3.3",
     hide_time_signature=True,
 )
@@ -187,7 +187,7 @@ accumulator(
         baca.note(27),
         baca.note(1),
     ),
-    denominator=4,
+    signature=4,
     figure_name="lh-6 8.3.4",
     hide_time_signature=True,
 )
@@ -202,7 +202,7 @@ accumulator(
         baca.rest(33),
         baca.note(-1),
     ),
-    denominator=4,
+    signature=4,
     figure_name="lh-6 8.3.5",
     hide_time_signature=True,
 )
@@ -219,7 +219,7 @@ accumulator(
         baca.note(34),
         baca.note(1),
     ),
-    denominator=4,
+    signature=4,
     figure_name="lh-6 8.3.6",
     hide_time_signature=True,
 )

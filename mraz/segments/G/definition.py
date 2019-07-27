@@ -31,7 +31,7 @@ accumulator(
     ),
     baca.dynamic("fff"),
     extend_beam=True,
-    denominator=4,
+    signature=4,
     figure_name="rh-1 7.1.1",
 )
 
@@ -50,7 +50,7 @@ accumulator(
     ),
     baca.dynamic("fff"),
     baca.slur(map=baca.tuplets()),
-    denominator=4,
+    signature=4,
     extend_beam=True,
     figure_name="rh-2 7.1.1",
 )
@@ -68,7 +68,7 @@ accumulator(
         rmakers.beam_groups(beam_rests=True),
         baca.marcato(selector=baca.pheads()),
     ),
-    denominator=4,
+    signature=4,
     figure_name="rh-1 7.1.2",
 )
 
@@ -86,7 +86,7 @@ accumulator(
         rmakers.beam_groups(beam_rests=True),
     ),
     baca.slur(map=baca.tuplets()),
-    denominator=4,
+    signature=4,
     figure_name="rh-2 7.1.2",
 )
 
@@ -104,7 +104,7 @@ accumulator(
         baca.marcato(selector=baca.pheads()),
         extend_beam=True,
     ),
-    denominator=4,
+    signature=4,
     extend_beam=True,
     figure_name="rh-1 7.1.3",
 )
@@ -124,7 +124,7 @@ accumulator(
     ),
     baca.slur(map=baca.tuplets()),
     extend_beam=True,
-    denominator=4,
+    signature=4,
     figure_name="rh-2 7.1.3",
 )
 
@@ -141,7 +141,7 @@ accumulator(
         rmakers.beam_groups(beam_rests=True),
         baca.marcato(selector=baca.pheads()),
     ),
-    denominator=4,
+    signature=4,
     figure_name="rh-1 7.1.4",
 )
 
@@ -159,7 +159,7 @@ accumulator(
         rmakers.beam_groups(beam_rests=True),
     ),
     baca.slur(map=baca.tuplets()),
-    denominator=4,
+    signature=4,
     figure_name="rh-2 7.1.4",
 )
 
@@ -180,7 +180,7 @@ accumulator(
         extend_beam=True,
     ),
     baca.slur(map=baca.tuplets()),
-    denominator=4,
+    signature=4,
     extend_beam=True,
     figure_name="rh-2 7.1.5",
 )
@@ -199,7 +199,7 @@ accumulator(
         baca.marcato(selector=baca.pheads()),
     ),
     baca.beam_positions(12),
-    denominator=4,
+    signature=4,
     figure_name="rh-1 7.1.5",
 )
 
@@ -216,7 +216,7 @@ accumulator(
         rmakers.beam_groups(beam_rests=True),
     ),
     baca.slur(map=baca.tuplets()),
-    denominator=4,
+    signature=4,
     figure_name="rh-2 7.1.6",
 )
 

@@ -24,12 +24,11 @@ accumulator(
     "rh_v1",
     collections_4["stage 5"]["rh"][2],
     baca.pitch_first([16], 16),
-    rmakers.beam_groups(),
-    baca.allow_octaves(),
-    baca.markup("(ottava brackets always govern all voices on staff)"),
     baca.register(36),
+    rmakers.beam_groups(),
     baca.tenuto(selector=baca.pheads()),
-    denominator=4,
+    baca.markup("(ottava brackets always govern all voices on staff)"),
+    signature=4,
     figure_name="b.1.1",
     hide_time_signature=True,
 )
@@ -46,7 +45,7 @@ accumulator(
     baca.slur_up(),
     rmakers.beam_groups(),
     anchor=baca.anchor_to_figure("b.1.1"),
-    denominator=4,
+    signature=4,
     figure_name="b.1.2",
 )
 
@@ -61,7 +60,7 @@ accumulator(
     ),
     baca.dynamic("ff"),
     rmakers.beam_groups(),
-    denominator=4,
+    signature=4,
     figure_name="b.1.3",
 )
 
@@ -76,7 +75,7 @@ accumulator(
     baca.rest_down(),
     baca.tuplet_bracket_down(),
     baca.tuplet_bracket_staff_padding(6),
-    denominator=4,
+    signature=4,
     figure_name="b.1.4",
 )
 
@@ -98,7 +97,7 @@ accumulator(
     "rh_v2",
     "r4",
     baca.rest_transparent(),
-    denominator=4,
+    signature=4,
     figure_name="b.1.6",
 )
 
@@ -112,7 +111,7 @@ accumulator(
     baca.staccato(selector=baca.pheads()),
     baca.tenuto(selector=baca.pheads()),
     baca.tuplet_bracket_staff_padding(8),
-    denominator=8,
+    signature=8,
     figure_name="b.1.7",
 )
 
@@ -120,7 +119,7 @@ accumulator(
     "rh_v2",
     "r4",
     baca.rest_transparent(),
-    denominator=4,
+    signature=4,
     figure_name="b.1.8",
 )
 
@@ -132,7 +131,7 @@ accumulator(
     baca.span_bar_extra_offset((-0.75, 0), after=True, selector=baca.leaf(-1)),
     baca.staccato(selector=baca.pheads()),
     baca.tenuto(selector=baca.pheads()),
-    denominator=8,
+    signature=8,
     figure_name="b.1.9",
 )
 
@@ -148,7 +147,7 @@ accumulator(
     baca.script_up(),
     baca.stem_up(),
     baca.text_script_up(),
-    denominator=4,
+    signature=4,
     figure_name="b.1.10",
 )
 
@@ -174,7 +173,7 @@ accumulator(
     "rh_v2",
     "r4",
     baca.script_up(),
-    denominator=4,
+    signature=4,
     figure_name="b.1.12",
 )
 
