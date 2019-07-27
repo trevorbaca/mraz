@@ -245,6 +245,7 @@ accumulator(
     'lh_v6',
     collections['stage 3']['lh'].next(exhausted=True),
     baca.pitch_first([2, -4], 16, time_treatments=[-6]),
+    rmakers.force_fraction(),
     rmakers.denominator(4),
     rmakers.beam_groups(),
     baca.anchor(
@@ -257,7 +258,6 @@ accumulator(
     denominator=4,
     figure_name='lh-6 8.3.6',
     hide_time_signature=True,
-    tuplet_force_fraction=True,
     )
 
 maker = baca.SegmentMaker(
