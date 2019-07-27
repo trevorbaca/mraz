@@ -26,11 +26,11 @@ accumulator(
     baca.pitch_first([16], 16),
     baca.register(36),
     rmakers.beam_groups(),
-    baca.tenuto(selector=baca.pheads()),
+    baca.tenuto(baca.pheads()),
     baca.markup("(ottava brackets always govern all voices on staff)"),
-    signature=4,
     figure_name="b.1.1",
     hide_time_signature=True,
+    signature=4,
 )
 
 accumulator(
@@ -108,8 +108,8 @@ accumulator(
     baca.dynamic("pp"),
     baca.dynamic_text_x_offset(0.5),
     baca.register(24, 12),
-    baca.staccato(selector=baca.pheads()),
-    baca.tenuto(selector=baca.pheads()),
+    baca.staccato(baca.pheads()),
+    baca.tenuto(baca.pheads()),
     baca.tuplet_bracket_staff_padding(8),
     signature=8,
     figure_name="b.1.7",
@@ -128,9 +128,9 @@ accumulator(
     collections_6["stage 1"]["rh"][3],
     baca.pitch_first([1], 8, affix=baca.rests_around([1], [1])),
     baca.register(24, 12),
-    baca.span_bar_extra_offset((-0.75, 0), after=True, selector=baca.leaf(-1)),
-    baca.staccato(selector=baca.pheads()),
-    baca.tenuto(selector=baca.pheads()),
+    baca.span_bar_extra_offset((-0.75, 0), baca.leaf(-1), after=True),
+    baca.staccato(baca.pheads()),
+    baca.tenuto(baca.pheads()),
     signature=8,
     figure_name="b.1.9",
 )
@@ -139,7 +139,7 @@ accumulator(
     "rh_v2",
     collections_5["stage 1"]["rh"].next(exhausted=True),
     baca.pitch_first([2, -14], 16),
-    baca.accent(selector=baca.pheads()),
+    baca.accent(baca.pheads()),
     baca.dynamic("fff"),
     baca.dynamic_up(),
     baca.register(20, 36),
@@ -162,7 +162,7 @@ accumulator(
     baca.register(10, 26),
     baca.rest_down(),
     baca.stem_down(),
-    baca.tenuto(selector=baca.pheads()),
+    baca.tenuto(baca.pheads()),
     baca.tuplet_bracket_down(),
     anchor=baca.anchor_to_figure("b.1.10"),
     figure_name="b.1.11",
@@ -188,19 +188,19 @@ accumulator.populate_segment_maker(maker)
 
 maker(
     "Global_Skips",
-    baca.metronome_mark("84", selector=baca.leaf(0)),
-    baca.metronome_mark("112", selector=baca.leaf(1)),
-    baca.metronome_mark("84", selector=baca.leaf(4)),
-    baca.metronome_mark("84", selector=baca.leaf(-2)),
-    baca.metronome_mark(baca.Accelerando(), selector=baca.leaf(-2)),
-    baca.metronome_mark("112", selector=baca.leaf(-1)),
+    baca.metronome_mark("84", baca.leaf(0)),
+    baca.metronome_mark("112", baca.leaf(1)),
+    baca.metronome_mark("84", baca.leaf(4)),
+    baca.metronome_mark("84", baca.leaf(-2)),
+    baca.metronome_mark(baca.Accelerando(), baca.leaf(-2)),
+    baca.metronome_mark("112", baca.leaf(-1)),
 )
 
 maker(
     "Global_Rests",
-    baca.global_fermata("short", selector=baca.leaf(3)),
-    baca.global_fermata("fermata", selector=baca.leaf(5)),
-    baca.global_fermata("short", selector=baca.leaf(8)),
+    baca.global_fermata("short", baca.leaf(3)),
+    baca.global_fermata("fermata", baca.leaf(5)),
+    baca.global_fermata("short", baca.leaf(8)),
 )
 
 maker(
