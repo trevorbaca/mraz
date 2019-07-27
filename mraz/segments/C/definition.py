@@ -25,7 +25,6 @@ accumulator(
     'rh_v4',
     collections_7['stage 1']['lh'][-1].transpose(4*7),
     baca.pitch_first([1], 16, time_treatments=[1]),
-    ordered_commands=[
     rmakers.beam_groups(),
     baca.register(6, 6+10),
     baca.imbricate(
@@ -34,7 +33,6 @@ accumulator(
         rmakers.unbeam(),
         ),
     baca.dynamic('ff'),
-    ],
     denominator=4,
     figure_name='b.2.1',
     )
@@ -42,9 +40,7 @@ accumulator(
 accumulator(
     'rh_v2',
     "r4",
-    ordered_commands=[
     baca.rest_transparent(),
-    ],
     denominator=4,
     figure_name='b.2.2',
     )
@@ -53,7 +49,6 @@ accumulator(
     'rh_v2',
     collections_2['stage 2']['rh'][0][:1],
     baca.pitch_first([1], 16),
-    ordered_commands=[
     rmakers.beam_groups(),
     baca.bass_to_octave(3),
     baca.dynamic('ppp'),
@@ -62,7 +57,6 @@ accumulator(
     baca.slur(map=baca.tuplets()),
     baca.staccato(selector=baca.pheads()),
     baca.stem_down(),
-    ],
     denominator=4,
     figure_name='b.2.3',
     )
@@ -70,9 +64,7 @@ accumulator(
 accumulator(
     'rh_v2',
     "r4",
-    ordered_commands=[
     baca.rest_transparent(),
-    ],
     denominator=4,
     figure_name='b.2.4',
     )
@@ -81,7 +73,6 @@ accumulator(
     'rh_v4',
     collections_7['stage 1']['lh'][-1].transpose(4*7),
     baca.pitch_first([1], 16, time_treatments=[1]),
-    ordered_commands=[
     rmakers.beam_groups(),
     baca.register(6, 6+10),
     baca.imbricate(
@@ -90,7 +81,6 @@ accumulator(
         rmakers.unbeam(),
         ),
     baca.dynamic('p'),
-    ],
     denominator=4,
     figure_name='b.2.5',
     )
@@ -99,7 +89,6 @@ accumulator(
     'rh_v2',
     collections_2['stage 2']['rh'][0][:2],
     baca.pitch_first([1], 16),
-    ordered_commands=[
     rmakers.beam_groups(),
     baca.bass_to_octave(3),
     baca.dynamic('ppp'),
@@ -107,7 +96,6 @@ accumulator(
     baca.slur(map=baca.tuplets()),
     baca.staccato(selector=baca.pheads()),
     baca.stem_down(),
-    ],
     denominator=4,
     figure_name='b.2.6',
     )
@@ -115,9 +103,7 @@ accumulator(
 accumulator(
     'rh_v2',
     "r4",
-    ordered_commands=[
     baca.rest_transparent(),
-    ],
     denominator=4,
     figure_name='b.2.7',
     )
@@ -126,13 +112,11 @@ accumulator(
     'rh_v3',
     collections_4['stage 1']['rh'][0],
     baca.pitch_first([2, -4, 2, -4, 4], 16, time_treatments=[2]),
-    ordered_commands=[
     rmakers.beam_groups(),
     baca.dynamic('ff'),
     rmakers.unbeam(),
     baca.register(-12, 12),
     baca.tuplet_bracket_up(),
-    ],
     denominator=4,
     figure_name='b.2.8',
     )
@@ -141,7 +125,6 @@ accumulator(
     'lh_v5',
     collections_4['stage 1']['lh'].next(),
     baca.pitch_first([3, -1], 16, affix=baca.rests_before([12])),
-    ordered_commands=[
     rmakers.beam_groups(),
     baca.dynamic('f'),
     baca.dynamic_down(),
@@ -149,7 +132,6 @@ accumulator(
     baca.register(-6, 6),
     baca.rest_up(),
     baca.tenuto(selector=baca.pheads()),
-    ],
     anchor=baca.anchor_to_figure('b.2.8'),
     denominator=4,
     figure_name='b.2.9',
@@ -160,7 +142,6 @@ accumulator(
     'rh_v2',
     collections_2['stage 2']['rh'][0][:4],
     baca.pitch_first([1], 16),
-    ordered_commands=[
     rmakers.beam_groups(),
     baca.bass_to_octave(3),
     baca.dynamic('ppp'),
@@ -168,7 +149,6 @@ accumulator(
     baca.slur(map=baca.tuplets()),
     baca.staccato(selector=baca.pheads()),
     baca.stem_down(),
-    ],
     denominator=4,
     figure_name='b.2.10',
     )
@@ -177,12 +157,10 @@ accumulator(
     'rh_v1',
     collections_4['stage 5']['rh'][0],
     baca.pitch_first([28], 16),
-    ordered_commands=[
     rmakers.beam_groups(),
     baca.dynamic('f'),
     baca.register(36),
     baca.tenuto(selector=baca.pheads()),
-    ],
     denominator=4,
     figure_name='b.2.11',
     )
@@ -191,11 +169,9 @@ accumulator(
     'rh_v1',
     collections_4['stage 5']['rh'][1],
     baca.pitch_first([24], 16),
-    ordered_commands=[
     rmakers.beam_groups(),
     baca.register(36),
     baca.tenuto(selector=baca.pheads()),
-    ],
     denominator=4,
     figure_name='b.2.12',
     )
@@ -204,12 +180,10 @@ accumulator(
     'rh_v1',
     collections_4['stage 5']['rh'][2],
     baca.pitch_first([16], 16),
-    ordered_commands=[
     rmakers.beam_groups(),
     baca.allow_octaves(),
     baca.register(36),
     baca.tenuto(selector=baca.pheads()),
-    ],
     denominator=4,
     figure_name='b.2.13',
     hide_time_signature=True,
@@ -219,7 +193,6 @@ accumulator(
     'rh_v2',
     collections_4['stage 5']['lh'][:4],
     baca.pitch_first([1], 16, time_treatments=[abjad.Duration(1, 4)]),
-    ordered_commands=[
     rmakers.beam_groups(),
     baca.dls_staff_padding(8),
     baca.hairpin('f < ff'),
@@ -230,7 +203,6 @@ accumulator(
     baca.ottava(),
     baca.register(10, 36),
     baca.slur_up(),
-    ],
     anchor=baca.anchor_to_figure('b.2.13'),
     denominator=4,
     figure_name='b.2.14',
@@ -240,10 +212,8 @@ accumulator(
     'lh_resonance',
     [resonance],
     baca.pitch_first([8], 16),
-    ordered_commands=[
     rmakers.beam_groups(),
     baca.allow_octaves(),
-    ],
     anchor=baca.anchor_to_figure('b.2.1'),
     denominator=4,
     figure_name='b.2.r.1',
@@ -254,10 +224,8 @@ accumulator(
     'lh_resonance',
     [resonance],
     baca.pitch_first([4], 16),
-    ordered_commands=[
     rmakers.beam_groups(),
     baca.allow_octaves(),
-    ],
     denominator=4,
     figure_name='b.2.r.2',
     hide_time_signature=True,
@@ -267,10 +235,8 @@ accumulator(
     'lh_resonance',
     [resonance],
     baca.pitch_first([5], 16),
-    ordered_commands=[
     rmakers.beam_groups(),
     baca.allow_octaves(),
-    ],
     denominator=4,
     figure_name='b.2.r.3',
     hide_time_signature=True,
@@ -280,10 +246,8 @@ accumulator(
     'lh_resonance',
     [resonance],
     baca.pitch_first([4], 16),
-    ordered_commands=[
     rmakers.beam_groups(),
     baca.allow_octaves(),
-    ],
     denominator=4,
     figure_name='b.2.r.4',
     hide_time_signature=True,
@@ -293,10 +257,8 @@ accumulator(
     'lh_resonance',
     [resonance],
     baca.pitch_first([8], 16),
-    ordered_commands=[
     rmakers.beam_groups(),
     baca.allow_octaves(),
-    ],
     denominator=4,
     figure_name='b.2.r.5',
     hide_time_signature=True,
@@ -306,10 +268,8 @@ accumulator(
     'lh_resonance',
     [resonance],
     baca.pitch_first([10], 16),
-    ordered_commands=[
     rmakers.beam_groups(),
     baca.allow_octaves(),
-    ],
     denominator=4,
     figure_name='b.2.r.6',
     hide_time_signature=True,
@@ -319,11 +279,9 @@ accumulator(
     'lh_resonance',
     [resonance],
     baca.pitch_first([21], 16),
-    ordered_commands=[
     rmakers.beam_groups(),
     baca.accidental_x_extent_false(),
     baca.allow_octaves(),
-    ],
     anchor=baca.anchor_to_figure('b.2.10'),
     denominator=4,
     figure_name='b.2.r.7',
@@ -334,10 +292,8 @@ accumulator(
     'lh_resonance',
     [resonance],
     baca.pitch_first([28], 16),
-    ordered_commands=[
     rmakers.beam_groups(),
     baca.allow_octaves(),
-    ],
     denominator=4,
     figure_name='b.2.r.8',
     hide_time_signature=True,
@@ -347,10 +303,8 @@ accumulator(
     'lh_resonance',
     [resonance],
     baca.pitch_first([24], 16),
-    ordered_commands=[
     rmakers.beam_groups(),
     baca.allow_octaves(),
-    ],
     denominator=4,
     figure_name='b.2.r.9',
     hide_time_signature=True,
