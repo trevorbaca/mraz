@@ -107,13 +107,12 @@ accumulator(
 accumulator(
     'lh_v5',
     collections['stage 1']['lh'].next(),
-    baca.pitch_first([3, -1], 16),
+    baca.pitch_first([3, -1], 16, affix=baca.rests_before([12])),
     rmakers.beam_groups(),
     baca.anchor_to_figure('rh-3 4.1.1'),
     baca.dynamic('f'),
     rmakers.unbeam(),
     baca.register(-6, 6),
-    baca.rests_before([12]),
     baca.tenuto(selector=baca.pheads()),
     denominator=4,
     figure_name='lh-5 4.1.1',
@@ -134,11 +133,14 @@ accumulator(
 accumulator(
     'lh_v5',
     collections['stage 1']['lh'].next(),
-    baca.pitch_first([3, -1, 3, -1, -4, 3, -1], 16),
+    baca.pitch_first(
+        [3, -1, 3, -1, -4, 3, -1],
+        16,
+        affix=baca.rests_around([4], [4]),
+    ),
     rmakers.beam_groups(),
     rmakers.unbeam(),
     baca.register(-6, 6),
-    baca.rests_around([4], [4]),
     baca.tenuto(selector=baca.pheads()),
     denominator=4,
     figure_name='lh-5 4.1.3',
@@ -148,14 +150,13 @@ accumulator(
 accumulator(
     'lh_v5',
     collections['stage 2']['lh'].next(),
-    baca.pitch_first([3], 16),
+    baca.pitch_first([3], 16, affix=baca.rests_around([1], [8])),
     rmakers.beam_groups(),
     baca.anchor_to_figure('rh-3 4.1.4'),
     baca.bass_to_octave(3),
     baca.dynamic('ff'),
     rmakers.unbeam(),
     baca.marcato(selector=baca.pheads()),
-    baca.rests_around([1], [8]),
     denominator=4,
     figure_name='lh-5 4.1.4',
     hide_time_signature=True,
@@ -164,12 +165,15 @@ accumulator(
 accumulator(
     'lh_v5',
     collections['stage 1']['lh'].next(),
-    baca.pitch_first([3, -1, -4, 3, -1, 3, -1], 16),
+    baca.pitch_first(
+        [3, -1, -4, 3, -1, 3, -1],
+        16,
+        affix=baca.rests_before([4, 4]),
+    ),
     rmakers.beam_groups(),
     baca.dynamic('f'),
     rmakers.unbeam(),
     baca.register(-6, 6),
-    baca.rests_before([4, 4]),
     baca.tenuto(selector=baca.pheads()),
     denominator=4,
     figure_name='lh-5 4.1.5',
@@ -189,12 +193,11 @@ accumulator(
 accumulator(
     'lh_v5',
     collections['stage 2']['lh'].next(),
-    baca.pitch_first([3], 16),
+    baca.pitch_first([3], 16, affix=baca.rests_around([1], [8])),
     rmakers.beam_groups(),
     baca.bass_to_octave(3),
     baca.dynamic('ff'),
     rmakers.unbeam(),
-    baca.rests_around([1], [8]),
     denominator=4,
     figure_name='lh-5 4.2.1',
     hide_time_signature=False,
@@ -203,11 +206,10 @@ accumulator(
 accumulator(
     'lh_v5',
     collections['stage 2']['lh'].next(),
-    baca.pitch_first([1], 16),
+    baca.pitch_first([1], 16, affix=baca.rests_after([3, 16])),
     rmakers.beam_groups(),
     baca.bass_to_octave(3),
     rmakers.unbeam(),
-    baca.rests_after([3, 16]),
     denominator=4,
     figure_name='lh-5 4.2.2',
     )
@@ -215,12 +217,11 @@ accumulator(
 accumulator(
     'lh_v5',
     collections['stage 2']['lh'].next(),
-    baca.pitch_first([3], 16),
+    baca.pitch_first([3], 16, affix=baca.rests_around([1], [8])),
     rmakers.beam_groups(),
     baca.bass_to_octave(3),
     rmakers.unbeam(),
     baca.nest('+1/4'),
-    baca.rests_around([1], [8]),
     baca.tuplet_bracket_up(),
     denominator=4,
     figure_name='lh-5 4.2.3',
@@ -229,11 +230,10 @@ accumulator(
 accumulator(
     'lh_v5',
     collections['stage 2']['lh'].next(),
-    baca.pitch_first([1], 16),
+    baca.pitch_first([1], 16, affix=baca.rests_after([3, 16])),
     rmakers.beam_groups(),
     baca.bass_to_octave(3),
     rmakers.unbeam(),
-    baca.rests_after([3, 16]),
     denominator=4,
     figure_name='lh-5 4.2.4',
     )
@@ -241,11 +241,10 @@ accumulator(
 accumulator(
     'lh_v5',
     collections['stage 2']['lh'].next(),
-    baca.pitch_first([3], 16),
+    baca.pitch_first([3], 16, affix=baca.rests_around([1], [8])),
     rmakers.beam_groups(),
     baca.bass_to_octave(3),
     rmakers.unbeam(),
-    baca.rests_around([1], [8]),
     denominator=4,
     figure_name='lh-5 4.2.5',
     )
@@ -253,11 +252,10 @@ accumulator(
 accumulator(
     'lh_v5',
     collections['stage 2']['lh'].next(),
-    baca.pitch_first([1], 16),
+    baca.pitch_first([1], 16, affix=baca.rests_after([3, 16])),
     rmakers.beam_groups(),
     baca.bass_to_octave(3),
     rmakers.unbeam(),
-    baca.rests_after([3, 16]),
     denominator=4,
     figure_name='lh-5 4.2.6',
     )
@@ -265,12 +263,11 @@ accumulator(
 accumulator(
     'lh_v5',
     collections['stage 2']['lh'].next(),
-    baca.pitch_first([3], 16),
+    baca.pitch_first([3], 16, affix=baca.rests_around([1], [8])),
     rmakers.beam_groups(),
     baca.bass_to_octave(3),
     rmakers.unbeam(),
     baca.nest('+1/4'),
-    baca.rests_around([1], [8]),
     baca.tuplet_bracket_up(),
     denominator=4,
     figure_name='lh-5 4.2.7',
@@ -279,11 +276,10 @@ accumulator(
 accumulator(
     'lh_v5',
     collections['stage 2']['lh'].next(),
-    baca.pitch_first([1], 16),
+    baca.pitch_first([1], 16, affix=baca.rests_after([3, 16])),
     rmakers.beam_groups(),
     baca.bass_to_octave(3),
     rmakers.unbeam(),
-    baca.rests_after([3, 16]),
     denominator=4,
     figure_name='lh-5 4.2.8',
     )
@@ -291,12 +287,11 @@ accumulator(
 accumulator(
     'lh_v5',
     collections['stage 2']['lh'].next(),
-    baca.pitch_first([3], 16),
+    baca.pitch_first([3], 16, affix=baca.rests_around([1], [8])),
     rmakers.beam_groups(),
     baca.bass_to_octave(3),
     rmakers.unbeam(),
     baca.nest('+1/4'),
-    baca.rests_around([1], [8]),
     baca.tuplet_bracket_up(),
     denominator=4,
     figure_name='lh-5 4.2.9',
@@ -310,12 +305,11 @@ chord_1_upper, chord_1_lower = segment.split(pitch=-1)
 accumulator(
     'lh_v5',
     [chord_1_lower.chord()],
-    baca.pitch_first([1], 16),
+    baca.pitch_first([1], 16, affix=baca.rests_after([3])),
     rmakers.beam_groups(),
     baca.cross_staff(),
     baca.dynamic('mp'),
     rmakers.unbeam(),
-    baca.rests_after([3]),
     # TODO: tag colored score only:
     #baca.stem_color('darkmagenta', context='PianoStaff'),
     baca.stem_up(),
@@ -326,11 +320,10 @@ accumulator(
 accumulator(
     'rh_v5',
     [chord_1_upper.chord()],
-    baca.pitch_first([1], 16),
+    baca.pitch_first([1], 16, affix=baca.rests_after([3])),
     rmakers.beam_groups(),
     baca.anchor('lh_v5', baca.chord(-1)),
     rmakers.unbeam(),
-    baca.rests_after([3]),
     denominator=4,
     figure_name='rh-5 4.2.1',
     )
@@ -410,12 +403,11 @@ accumulator(
 accumulator(
     'lh_v5',
     collections['stage 4']['lh'].next(2),
-    baca.pitch_first([2], 16),
+    baca.pitch_first([2], 16, affix=baca.rests_around([4], [4])),
     rmakers.beam_groups(),
     baca.slur(map=baca.ntruns()),
     baca.nest(['+2/16']),
     baca.register(-12, 0),
-    baca.rests_around([4], [4]),
     baca.resume_after('lh_v5'),
     denominator=4,
     figure_name='lh-5 4.4.1',
@@ -432,12 +424,11 @@ accumulator(
 accumulator(
     'lh_v5',
     collections['stage 4']['lh'].next(),
-    baca.pitch_first([6], 16),
+    baca.pitch_first([6], 16, affix=baca.rests_before([2])),
     rmakers.beam_groups(),
     rmakers.unbeam(),
     baca.slur(map=baca.ntruns()),
     baca.register(-12, 0),
-    baca.rests_before([2]),
     denominator=4,
     figure_name='lh-5 4.4.3',
     )
@@ -467,7 +458,7 @@ accumulator(
 accumulator(
     'lh_v5',
     collections['stage 4']['lh'].next(3),
-    baca.pitch_first([2], 16),
+    baca.pitch_first([2], 16, affix=baca.rests_around([4], [4])),
     rmakers.beam_groups(),
     baca.imbricate(
         'lh_v5_i',
@@ -478,7 +469,6 @@ accumulator(
     baca.slur(map=baca.ntruns()),
     baca.nest('+2/16'),
     baca.register(0, -12),
-    baca.rests_around([4], [4]),
     denominator=4,
     figure_name='lh-5 4.4.4',
     )
@@ -493,7 +483,7 @@ accumulator(
 accumulator(
     'lh_v5',
     collections['stage 4']['lh'].next(3),
-    baca.pitch_first([2], 16),
+    baca.pitch_first([2], 16, affix=baca.rests_around([4], [4])),
     rmakers.beam_groups(),
     baca.imbricate(
         'lh_v5_i',
@@ -503,7 +493,6 @@ accumulator(
     baca.slur(map=baca.ntruns()),
     baca.nest('+2/16'),
     baca.register(-12, 0),
-    baca.rests_around([4], [4]),
     denominator=4,
     figure_name='lh-5 4.4.6',
     )
@@ -511,7 +500,7 @@ accumulator(
 accumulator(
     'lh_v5',
     collections['stage 4']['lh'].next(2),
-    baca.pitch_first([2], 16),
+    baca.pitch_first([2], 16, affix=baca.rests_around([4], [2])),
     rmakers.beam_groups(),
     baca.imbricate(
         'lh_v5_i',
@@ -522,7 +511,6 @@ accumulator(
     baca.slur(map=baca.ntruns()),
     baca.nest('+2/16'),
     baca.register(0, -12),
-    baca.rests_around([4], [2]),
     denominator=4,
     figure_name='lh-5 4.4.7',
     )
@@ -530,12 +518,11 @@ accumulator(
 accumulator(
     'lh_v5',
     collections['stage 4']['lh'].next(),
-    baca.pitch_first([2], 16),
+    baca.pitch_first([2], 16, affix=baca.rests_around([2], [6])),
     rmakers.beam_groups(),
     rmakers.unbeam(),
     baca.slur(map=baca.ntruns()),
     baca.register(-12, 0),
-    baca.rests_around([2], [6]),
     denominator=4,
     figure_name='lh-5 4.4.8',
     )
@@ -550,7 +537,7 @@ accumulator(
 accumulator(
     'lh_v5',
     collections['stage 4']['lh'].next(2),
-    baca.pitch_first([2], 16),
+    baca.pitch_first([2], 16, affix=baca.rests_around([4], [2])),
     rmakers.beam_groups(),
     baca.imbricate(
         'lh_v5_i',
@@ -561,7 +548,6 @@ accumulator(
     baca.slur(map=baca.ntruns()),
     baca.nest('+2/16'),
     baca.register(0, -12),
-    baca.rests_around([4], [2]),
     denominator=4,
     figure_name='lh-5 4.4.10',
     )
@@ -569,12 +555,11 @@ accumulator(
 accumulator(
     'lh_v5',
     collections['stage 4']['lh'].next(),
-    baca.pitch_first([6], 16),
+    baca.pitch_first([6], 16, affix=baca.rests_before([2])),
     rmakers.beam_groups(),
     rmakers.unbeam(),
     baca.slur(map=baca.ntruns()),
     baca.register(-12, 0),
-    baca.rests_before([2]),
     denominator=4,
     figure_name='lh-5 4.4.11',
     )
@@ -582,7 +567,7 @@ accumulator(
 accumulator(
     'lh_v5',
     collections['stage 4']['lh'].next(),
-    baca.pitch_first([2], 16),
+    baca.pitch_first([2], 16, affix=baca.rests_around([2], [6])),
     rmakers.beam_groups(),
     rmakers.unbeam(),
     baca.imbricate(
@@ -592,7 +577,6 @@ accumulator(
         ),
     baca.slur(map=baca.ntruns()),
     baca.register(0, -12),
-    baca.rests_around([2], [6]),
     denominator=4,
     figure_name='lh-5 4.4.12',
     )
@@ -600,7 +584,12 @@ accumulator(
 accumulator(
     'rh_v1',
     collections['stage 4']['rh'].next(),
-    baca.pitch_first([2], 16, time_treatments=[6]),
+    baca.pitch_first(
+        [2],
+        16,
+        affix=baca.rests_around([2], [6]),
+        time_treatments=[6],
+    ),
     rmakers.beam_groups(),
     rmakers.beam_groups(),
     baca.dynamic('mf'),
@@ -619,7 +608,6 @@ accumulator(
         ),
     baca.slur(map=baca.ntruns()),
     baca.register(36, 22),
-    baca.rests_around([2], [6]),
     baca.resume_after('rh_v5'),
     baca.text_script_color('black', selector=baca.pleaf(0)),
     baca.text_script_up(),
@@ -993,13 +981,16 @@ accumulator(
 accumulator(
     'lh_v5',
     collections['stage 1']['lh'][1],
-    baca.pitch_first([3, -1, 3, -1, -4, 3, -1], 16),
+    baca.pitch_first(
+        [3, -1, 3, -1, -4, 3, -1],
+        16,
+        affix=baca.rests_around([4], [4]),
+    ),
     rmakers.beam_groups(),
     baca.anchor_to_figure('rh-3 4.6.1'),
     baca.dynamic('p'),
     rmakers.unbeam(),
     baca.register(-6, 6),
-    baca.rests_around([4], [4]),
     baca.tenuto(selector=baca.pheads()),
     denominator=4,
     figure_name='lh-5 4.6.1',
