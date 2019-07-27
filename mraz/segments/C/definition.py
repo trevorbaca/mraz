@@ -31,11 +31,11 @@ accumulator(
         "rh_v4_i",
         [14, 18],
         rmakers.unbeam(),
-        ),
+    ),
     baca.dynamic("ff"),
     denominator=4,
     figure_name="b.2.1",
-    )
+)
 
 accumulator(
     "rh_v2",
@@ -43,7 +43,7 @@ accumulator(
     baca.rest_transparent(),
     denominator=4,
     figure_name="b.2.2",
-    )
+)
 
 accumulator(
     "rh_v2",
@@ -59,7 +59,7 @@ accumulator(
     baca.stem_down(),
     denominator=4,
     figure_name="b.2.3",
-    )
+)
 
 accumulator(
     "rh_v2",
@@ -67,7 +67,7 @@ accumulator(
     baca.rest_transparent(),
     denominator=4,
     figure_name="b.2.4",
-    )
+)
 
 accumulator(
     "rh_v4",
@@ -79,11 +79,11 @@ accumulator(
         "rh_v4_i",
         [14, 18],
         rmakers.unbeam(),
-        ),
+    ),
     baca.dynamic("p"),
     denominator=4,
     figure_name="b.2.5",
-    )
+)
 
 accumulator(
     "rh_v2",
@@ -98,7 +98,7 @@ accumulator(
     baca.stem_down(),
     denominator=4,
     figure_name="b.2.6",
-    )
+)
 
 accumulator(
     "rh_v2",
@@ -106,7 +106,7 @@ accumulator(
     baca.rest_transparent(),
     denominator=4,
     figure_name="b.2.7",
-    )
+)
 
 accumulator(
     "rh_v3",
@@ -117,7 +117,7 @@ accumulator(
     baca.tuplet_bracket_up(),
     denominator=4,
     figure_name="b.2.8",
-    )
+)
 
 accumulator(
     "lh_v5",
@@ -132,7 +132,7 @@ accumulator(
     denominator=4,
     figure_name="b.2.9",
     hide_time_signature=True,
-    )
+)
 
 accumulator(
     "rh_v2",
@@ -147,7 +147,7 @@ accumulator(
     baca.stem_down(),
     denominator=4,
     figure_name="b.2.10",
-    )
+)
 
 accumulator(
     "rh_v1",
@@ -159,7 +159,7 @@ accumulator(
     baca.tenuto(selector=baca.pheads()),
     denominator=4,
     figure_name="b.2.11",
-    )
+)
 
 accumulator(
     "rh_v1",
@@ -170,7 +170,7 @@ accumulator(
     baca.tenuto(selector=baca.pheads()),
     denominator=4,
     figure_name="b.2.12",
-    )
+)
 
 accumulator(
     "rh_v1",
@@ -183,7 +183,7 @@ accumulator(
     denominator=4,
     figure_name="b.2.13",
     hide_time_signature=True,
-    )
+)
 
 accumulator(
     "rh_v2",
@@ -195,14 +195,14 @@ accumulator(
     baca.slur(map=baca.runs()),
     baca.only_segment(
         baca.span_bar_extra_offset((-0.75, 0)),
-        ),
+    ),
     baca.ottava(),
     baca.register(10, 36),
     baca.slur_up(),
     anchor=baca.anchor_to_figure("b.2.13"),
     denominator=4,
     figure_name="b.2.14",
-    )
+)
 
 accumulator(
     "lh_resonance",
@@ -214,7 +214,7 @@ accumulator(
     denominator=4,
     figure_name="b.2.r.1",
     hide_time_signature=True,
-    )
+)
 
 accumulator(
     "lh_resonance",
@@ -225,7 +225,7 @@ accumulator(
     denominator=4,
     figure_name="b.2.r.2",
     hide_time_signature=True,
-    )
+)
 
 accumulator(
     "lh_resonance",
@@ -236,7 +236,7 @@ accumulator(
     denominator=4,
     figure_name="b.2.r.3",
     hide_time_signature=True,
-    )
+)
 
 accumulator(
     "lh_resonance",
@@ -247,7 +247,7 @@ accumulator(
     denominator=4,
     figure_name="b.2.r.4",
     hide_time_signature=True,
-    )
+)
 
 accumulator(
     "lh_resonance",
@@ -258,7 +258,7 @@ accumulator(
     denominator=4,
     figure_name="b.2.r.5",
     hide_time_signature=True,
-    )
+)
 
 accumulator(
     "lh_resonance",
@@ -269,7 +269,7 @@ accumulator(
     denominator=4,
     figure_name="b.2.r.6",
     hide_time_signature=True,
-    )
+)
 
 accumulator(
     "lh_resonance",
@@ -282,7 +282,7 @@ accumulator(
     denominator=4,
     figure_name="b.2.r.7",
     hide_time_signature=True,
-    )
+)
 
 accumulator(
     "lh_resonance",
@@ -293,7 +293,7 @@ accumulator(
     denominator=4,
     figure_name="b.2.r.8",
     hide_time_signature=True,
-    )
+)
 
 accumulator(
     "lh_resonance",
@@ -304,14 +304,14 @@ accumulator(
     denominator=4,
     figure_name="b.2.r.9",
     hide_time_signature=True,
-    )
+)
 
 maker = baca.SegmentMaker(
     final_bar_line=False,
     segment_directory=abjad.Path(os.path.realpath(__file__)).parent,
     skips_instead_of_rests=True,
     time_signatures=accumulator.time_signatures,
-    )
+)
 
 accumulator.populate_segment_maker(maker)
 
@@ -323,24 +323,24 @@ maker(
     baca.metronome_mark("112", selector=baca.leaf(-3)),
     baca.metronome_mark(baca.Ritardando(), selector=baca.leaf(-3)),
     baca.metronome_mark("84", selector=baca.leaf(-1)),
-    )
+)
 
 maker(
     "Global_Rests",
     baca.global_fermata("short", selector=baca.leaf(1)),
     baca.global_fermata("fermata", selector=baca.leaf(3)),
     baca.global_fermata("short", selector=baca.leaf(6)),
-    )
+)
 
 maker(
     "rh_v1",
     baca.ottava(),
-    )
+)
 
 maker(
     "rh_v2",
     baca.script_up(),
-    )
+)
 
 maker(
     "lh_resonance",
@@ -348,21 +348,21 @@ maker(
     baca.new(
         baca.repeat_tie(baca.pleaves()[1:]),
         map=baca.qruns(),
-        ),
+    ),
     *mraz.clean_up_repeat_ties(),
-    )
+)
 
 maker(
     ("lh_resonance", [(2, 7), (10, -1)]),
     baca.accidental_stencil_false(selector=baca.leaves()),
-    )
+)
 
 maker(
     ("lh_resonance", [2, 4]),
     *mraz.transparent_music(selector=baca.leaf(0)),
-    )
+)
 
 maker(
     ("lh_resonance", [3, 6, 9]),
     *mraz.transparent_music(selector=baca.leaves()[1:]),
-    )
+)

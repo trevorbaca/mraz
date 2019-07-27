@@ -33,7 +33,7 @@ accumulator(
     baca.tuplet_bracket_up(),
     denominator=8,
     figure_name="rh-3 6.1.1",
-    )
+)
 
 accumulator(
     "rh_v3",
@@ -46,7 +46,7 @@ accumulator(
     baca.tuplet_bracket_up(),
     denominator=8,
     figure_name="rh-3 6.1.2",
-    )
+)
 
 accumulator(
     "rh_v3",
@@ -57,7 +57,7 @@ accumulator(
     baca.tenuto(selector=baca.pheads()),
     denominator=8,
     figure_name="rh-3 6.1.3",
-    )
+)
 
 accumulator(
     "rh_v3",
@@ -69,7 +69,7 @@ accumulator(
     baca.tuplet_bracket_up(),
     denominator=8,
     figure_name="rh-3 6.1.4",
-    )
+)
 
 accumulator(
     "lh_v4",
@@ -83,9 +83,9 @@ accumulator(
         "rh_v3",
         baca.note(3),
         baca.note(2),
-        ),
+    ),
     figure_name="lh-4 6.1.1",
-    )
+)
 
 accumulator(
     "lh_v4",
@@ -98,9 +98,9 @@ accumulator(
         "rh_v3",
         baca.note(9),
         baca.note(2),
-        ),
+    ),
     figure_name="lh-4 6.1.2",
-    )
+)
 
 accumulator(
     "lh_v4",
@@ -112,10 +112,10 @@ accumulator(
         "rh_v3",
         baca.note(13),
         baca.note(1),
-        ),
+    ),
     figure_name="lh-4 6.1.3",
     hide_time_signature=True,
-    )
+)
 
 accumulator(
     "lh_v4",
@@ -125,7 +125,7 @@ accumulator(
     baca.tenuto(selector=baca.pheads()),
     figure_name="lh-4 6.1.4",
     hide_time_signature=True,
-    )
+)
 
 maker = baca.SegmentMaker(
     final_bar_line=False,
@@ -133,11 +133,11 @@ maker = baca.SegmentMaker(
     segment_directory=abjad.Path(os.path.realpath(__file__)).parent,
     skips_instead_of_rests=True,
     time_signatures=accumulator.time_signatures,
-    )
+)
 
 accumulator.populate_segment_maker(maker)
 
 maker(
     "lh_v4",
     baca.clef("treble"),
-    )
+)
