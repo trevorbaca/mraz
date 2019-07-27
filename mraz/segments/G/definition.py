@@ -227,17 +227,17 @@ accumulator(
     collections['stage 1']['lh'].next().transpose(0*7),
     baca.pitch_first([1], 16, time_treatments=[-1]),
     rmakers.beam_groups(),
-    baca.anchor(
-        'rh_v2',
-        baca.note(0),
-        baca.lt(7),
-        ),
     baca.dynamic('ff'),
     baca.register(-2, -2+16),
     baca.imbricate(
         'lh_v4_i',
         [0, 19, 23],
         rmakers.unbeam(),
+        ),
+    anchor=baca.anchor(
+        'rh_v2',
+        baca.note(0),
+        baca.lt(7),
         ),
     figure_name='lh-4 7.1.1',
     )
@@ -247,11 +247,6 @@ accumulator(
     collections['stage 1']['lh'].next().transpose(1*7),
     baca.pitch_first([1], 16),
     rmakers.beam_groups(),
-    baca.anchor(
-        'rh_v2',
-        baca.note(4),
-        baca.lt(3),
-        ),
     baca.dynamic('pp'),
     baca.dynamic_down(),
     baca.imbricate(
@@ -264,6 +259,11 @@ accumulator(
     baca.nest('-2/16'),
     baca.register(0, 0+16),
     baca.tuplet_bracket_down(),
+    anchor=baca.anchor(
+        'rh_v2',
+        baca.note(4),
+        baca.lt(3),
+        ),
     figure_name='lh-5 7.1.1',
     hide_time_signature=True,
     )
@@ -273,17 +273,17 @@ accumulator(
     collections['stage 1']['lh'].next().transpose(2*7),
     baca.pitch_first([1], 16),
     rmakers.beam_groups(),
-    baca.anchor(
-        'rh_v2',
-        baca.note(14),
-        baca.lt(0),
-        ),
     baca.dynamic('ff'),
     baca.register(2, 2+16),
     baca.imbricate(
         'lh_v4_i',
         [13],
         rmakers.unbeam(),
+        ),
+    anchor=baca.anchor(
+        'rh_v2',
+        baca.note(14),
+        baca.lt(0),
         ),
     figure_name='lh-4 7.1.2',
     hide_time_signature=True,
@@ -294,11 +294,6 @@ accumulator(
     collections['stage 1']['lh'].next().transpose(3*7),
     baca.pitch_first([1], 16),
     rmakers.beam_groups(),
-    baca.anchor(
-        'rh_v2',
-        baca.note(26),
-        baca.lt(10),
-        ),
     baca.dynamic('pp'),
     baca.imbricate(
         'lh_v5_i',
@@ -309,6 +304,11 @@ accumulator(
     baca.slur(map=baca.tuplets()),
     baca.nest('-2/16'),
     baca.register(4, 4+16),
+    anchor=baca.anchor(
+        'rh_v2',
+        baca.note(26),
+        baca.lt(10),
+        ),
     figure_name='lh-5 7.1.2',
     hide_time_signature=True,
     )
@@ -318,17 +318,17 @@ accumulator(
     collections['stage 1']['lh'].next(exhausted=True).transpose(4*7),
     baca.pitch_first([1], 16, time_treatments=[1]),
     rmakers.beam_groups(),
-    baca.anchor(
-        'rh_v2',
-        baca.note(-6),
-        baca.lt(0),
-        ),
     baca.dynamic('ff'),
     baca.register(6, 6+10),
     baca.imbricate(
         'lh_v4_i',
         [14, 18],
         rmakers.unbeam(),
+        ),
+    anchor=baca.anchor(
+        'rh_v2',
+        baca.note(-6),
+        baca.lt(0),
         ),
     figure_name='lh-4 7.1.3',
     hide_time_signature=True,

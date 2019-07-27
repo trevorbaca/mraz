@@ -84,16 +84,16 @@ accumulator(
     collections['stage 1']['lh'].next(),
     baca.pitch_first([1, -1], 16, time_treatments=[1]),
     rmakers.beam_groups(),
-    baca.anchor(
-        'rh_v3',
-        baca.note(3),
-        baca.note(2),
-        ),
     baca.dynamic('mp'),
     rmakers.unbeam(),
     baca.register(0, 12),
     baca.tenuto(selector=baca.pheads()),
     baca.tuplet_bracket_staff_padding(3),
+    anchor=baca.anchor(
+        'rh_v3',
+        baca.note(3),
+        baca.note(2),
+        ),
     figure_name='lh-4 6.1.1',
     )
 
@@ -102,15 +102,15 @@ accumulator(
     collections['stage 1']['lh'].next(),
     baca.pitch_first([1, -2], 16, time_treatments=[2]),
     rmakers.beam_groups(),
-    baca.anchor(
-        'rh_v3',
-        baca.note(9),
-        baca.note(2),
-        ),
     rmakers.unbeam(),
     baca.register(0, 12),
     baca.tenuto(selector=baca.pheads()),
     baca.tuplet_bracket_staff_padding(3),
+    anchor=baca.anchor(
+        'rh_v3',
+        baca.note(9),
+        baca.note(2),
+        ),
     figure_name='lh-4 6.1.2',
     )
 
@@ -119,14 +119,14 @@ accumulator(
     collections['stage 1']['lh'].next(),
     baca.pitch_first([2, -1], 32),
     rmakers.beam_groups(),
-    baca.anchor(
+    rmakers.unbeam(),
+    baca.register(0, 12),
+    baca.tenuto(selector=baca.pheads()),
+    anchor=baca.anchor(
         'rh_v3',
         baca.note(13),
         baca.note(1),
         ),
-    rmakers.unbeam(),
-    baca.register(0, 12),
-    baca.tenuto(selector=baca.pheads()),
     figure_name='lh-4 6.1.3',
     hide_time_signature=True,
     )
