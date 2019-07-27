@@ -58,13 +58,15 @@ accumulator(
     'lh_v4',
     collections_7['stage 1']['lh'][-1].transpose(4*7),
     baca.pitch_first([1], 16, time_treatments=[1]),
-    baca.dynamic('ff'),
-    baca.register(6, 6+10),
-    baca.imbricate(
-        'lh_v4_i',
-        [14, 18],
-        ),
-    rmakers.beam_groups(),
+    ordered_commands=[
+        baca.register(6, 6+10),
+        baca.imbricate(
+            'lh_v4_i',
+            [14, 18],
+            ),
+        baca.dynamic('ff'),
+        rmakers.beam_groups(),
+    ],
     denominator=4,
     figure_name='b.1.3',
     )
