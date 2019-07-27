@@ -165,7 +165,7 @@ accumulator(
     "lh_v6",
     collections["stage 3"]["lh"].next(),
     baca.pitch_first([1, -3], 16, time_treatments=[4]),
-    baca.note_column_shift(-1, selector=baca.pleaf(-1)),
+    baca.note_column_shift(-1, baca.pleaf(-1)),
     baca.register(-39),
     anchor=baca.anchor(
         "lh_v5",
@@ -242,12 +242,8 @@ maker(
 maker(
     "lh_v6",
     baca.script_down(),
-    baca.stem_down(
-        selector=baca.tleaves(exclude=abjad.const.HIDDEN),
-    ),
-    baca.tenuto(
-        selector=baca.pheads(exclude=abjad.const.HIDDEN),
-    ),
+    baca.stem_down(baca.tleaves(exclude=abjad.const.HIDDEN)),
+    baca.tenuto(baca.pheads(exclude=abjad.const.HIDDEN)),
     baca.tuplet_bracket_staff_padding(6),
     baca.rest_position(-10),
 )
