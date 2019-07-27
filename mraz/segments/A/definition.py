@@ -32,7 +32,7 @@ accumulator(
     denominator=4,
     figure_name="b.1.1",
     hide_time_signature=True,
-    )
+)
 
 accumulator(
     "rh_v2",
@@ -48,7 +48,7 @@ accumulator(
     anchor=baca.anchor_to_figure("b.1.1"),
     denominator=4,
     figure_name="b.1.2",
-    )
+)
 
 accumulator(
     "lh_v4",
@@ -58,12 +58,12 @@ accumulator(
     baca.imbricate(
         "lh_v4_i",
         [14, 18],
-        ),
+    ),
     baca.dynamic("ff"),
     rmakers.beam_groups(),
     denominator=4,
     figure_name="b.1.3",
-    )
+)
 
 accumulator(
     "lh_v6",
@@ -78,7 +78,7 @@ accumulator(
     baca.tuplet_bracket_staff_padding(6),
     denominator=4,
     figure_name="b.1.4",
-    )
+)
 
 accumulator(
     "lh_v5",
@@ -92,7 +92,7 @@ accumulator(
     anchor=baca.anchor_to_figure("b.1.4"),
     figure_name="b.1.5",
     hide_time_signature=True,
-    )
+)
 
 accumulator(
     "rh_v2",
@@ -100,7 +100,7 @@ accumulator(
     baca.rest_transparent(),
     denominator=4,
     figure_name="b.1.6",
-    )
+)
 
 accumulator(
     "rh_v3",
@@ -114,7 +114,7 @@ accumulator(
     baca.tuplet_bracket_staff_padding(8),
     denominator=8,
     figure_name="b.1.7",
-    )
+)
 
 accumulator(
     "rh_v2",
@@ -122,7 +122,7 @@ accumulator(
     baca.rest_transparent(),
     denominator=4,
     figure_name="b.1.8",
-    )
+)
 
 accumulator(
     "rh_v3",
@@ -134,7 +134,7 @@ accumulator(
     baca.tenuto(selector=baca.pheads()),
     denominator=8,
     figure_name="b.1.9",
-    )
+)
 
 accumulator(
     "rh_v2",
@@ -150,7 +150,7 @@ accumulator(
     baca.text_script_up(),
     denominator=4,
     figure_name="b.1.10",
-    )
+)
 
 accumulator(
     "rh_v3",
@@ -168,7 +168,7 @@ accumulator(
     anchor=baca.anchor_to_figure("b.1.10"),
     figure_name="b.1.11",
     hide_time_signature=True,
-    )
+)
 
 accumulator(
     "rh_v2",
@@ -176,14 +176,14 @@ accumulator(
     baca.script_up(),
     denominator=4,
     figure_name="b.1.12",
-    )
+)
 
 maker = baca.SegmentMaker(
     final_bar_line=False,
     segment_directory=abjad.Path(os.path.realpath(__file__)).parent,
     skips_instead_of_rests=True,
     time_signatures=accumulator.time_signatures,
-    )
+)
 
 accumulator.populate_segment_maker(maker)
 
@@ -195,21 +195,21 @@ maker(
     baca.metronome_mark("84", selector=baca.leaf(-2)),
     baca.metronome_mark(baca.Accelerando(), selector=baca.leaf(-2)),
     baca.metronome_mark("112", selector=baca.leaf(-1)),
-    )
+)
 
 maker(
     "Global_Rests",
     baca.global_fermata("short", selector=baca.leaf(3)),
     baca.global_fermata("fermata", selector=baca.leaf(5)),
     baca.global_fermata("short", selector=baca.leaf(8)),
-    )
+)
 
 maker(
     "rh_v1",
     baca.start_markup("PIANO", context="PianoStaff", hcenter_in=12),
-    )
+)
 
 maker(
     "lh_v1",
     baca.clef("treble"),
-    )
+)

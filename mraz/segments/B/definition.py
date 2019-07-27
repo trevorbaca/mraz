@@ -24,7 +24,7 @@ accumulator(
     baca.register(-27, -39),
     denominator=4,
     figure_name="lh-5 8.3.1",
-    )
+)
 
 accumulator(
     "lh_v5",
@@ -34,7 +34,7 @@ accumulator(
     baca.rest_up(),
     denominator=4,
     figure_name="lh-5 8.3.2",
-    )
+)
 
 accumulator(
     "lh_v5",
@@ -43,7 +43,7 @@ accumulator(
     baca.register(-39),
     denominator=2,
     figure_name="lh-5 8.3.3",
-    )
+)
 
 accumulator(
     "lh_v5",
@@ -53,7 +53,7 @@ accumulator(
     baca.rest_up(),
     denominator=4,
     figure_name="lh-5 8.3.4",
-    )
+)
 
 accumulator(
     "lh_v5",
@@ -62,7 +62,7 @@ accumulator(
     baca.register(-39, -27),
     denominator=4,
     figure_name="lh-5 8.3.5",
-    )
+)
 
 accumulator(
     "lh_v5",
@@ -71,7 +71,7 @@ accumulator(
     baca.register(-39, -27),
     denominator=4,
     figure_name="lh-5 8.3.6",
-    )
+)
 
 accumulator(
     "lh_v5",
@@ -81,7 +81,7 @@ accumulator(
     baca.rest_up(),
     denominator=2,
     figure_name="lh-5 8.3.7",
-    )
+)
 
 accumulator(
     "lh_v5",
@@ -90,7 +90,7 @@ accumulator(
     baca.register(-27, -39),
     denominator=4,
     figure_name="lh-5 8.3.8",
-    )
+)
 
 accumulator(
     "lh_v5",
@@ -100,7 +100,7 @@ accumulator(
     baca.tuplet_bracket_staff_padding(3),
     denominator=4,
     figure_name="lh-5 8.3.9",
-    )
+)
 
 accumulator(
     "lh_v5",
@@ -110,7 +110,7 @@ accumulator(
     baca.rest_up(),
     denominator=2,
     figure_name="lh-5 8.3.10",
-    )
+)
 
 accumulator(
     "lh_v5",
@@ -119,7 +119,7 @@ accumulator(
     baca.register(-27, -39),
     denominator=4,
     figure_name="lh-5 8.3.11",
-    )
+)
 
 accumulator(
     "lh_v5",
@@ -128,7 +128,7 @@ accumulator(
     baca.register(-39, -27),
     denominator=4,
     figure_name="lh-5 8.3.12",
-    )
+)
 
 accumulator(
     "lh_v6",
@@ -140,11 +140,11 @@ accumulator(
         "lh_v5",
         baca.note(6),
         baca.note(1),
-        ),
+    ),
     denominator=4,
     figure_name="lh-6 8.3.1",
     hide_time_signature=True,
-    )
+)
 
 accumulator(
     "lh_v6",
@@ -155,11 +155,11 @@ accumulator(
     anchor=baca.anchor(
         "lh_v5",
         baca.note(11),
-        ),
+    ),
     denominator=4,
     figure_name="lh-6 8.3.2",
     hide_time_signature=True,
-    )
+)
 
 accumulator(
     "lh_v6",
@@ -171,11 +171,11 @@ accumulator(
         "lh_v5",
         baca.note(23),
         baca.note(-1),
-        ),
+    ),
     denominator=4,
     figure_name="lh-6 8.3.3",
     hide_time_signature=True,
-    )
+)
 
 accumulator(
     "lh_v6",
@@ -186,11 +186,11 @@ accumulator(
         "lh_v5",
         baca.note(27),
         baca.note(1),
-        ),
+    ),
     denominator=4,
     figure_name="lh-6 8.3.4",
     hide_time_signature=True,
-    )
+)
 
 accumulator(
     "lh_v6",
@@ -201,11 +201,11 @@ accumulator(
         "lh_v5",
         baca.rest(33),
         baca.note(-1),
-        ),
+    ),
     denominator=4,
     figure_name="lh-6 8.3.5",
     hide_time_signature=True,
-    )
+)
 
 accumulator(
     "lh_v6",
@@ -218,18 +218,18 @@ accumulator(
         "lh_v5",
         baca.note(34),
         baca.note(1),
-        ),
+    ),
     denominator=4,
     figure_name="lh-6 8.3.6",
     hide_time_signature=True,
-    )
+)
 
 maker = baca.SegmentMaker(
     final_bar_line=False,
     segment_directory=abjad.Path(os.path.realpath(__file__)).parent,
     skips_instead_of_rests=True,
     time_signatures=accumulator.time_signatures,
-    )
+)
 
 accumulator.populate_segment_maker(maker)
 
@@ -237,17 +237,17 @@ maker(
     "lh_v5",
     baca.ottava_bassa(),
     baca.tuplet_bracket_up(),
-    )
+)
 
 maker(
     "lh_v6",
     baca.script_down(),
     baca.stem_down(
         selector=baca.tleaves(exclude=abjad.const.HIDDEN),
-        ),
+    ),
     baca.tenuto(
         selector=baca.pheads(exclude=abjad.const.HIDDEN),
-        ),
+    ),
     baca.tuplet_bracket_staff_padding(6),
     baca.rest_position(-10),
-    )
+)
