@@ -32,7 +32,7 @@ accumulator(
     baca.rest_up(),
     baca.script_up(),
     baca.stem_up(),
-    denominator=4,
+    signature=4,
     figure_name="rh-2 5.1.1",
 )
 
@@ -49,7 +49,7 @@ accumulator(
     baca.tenuto(selector=baca.pheads()),
     baca.tuplet_bracket_down(),
     anchor=baca.anchor("rh_v2"),
-    denominator=4,
+    signature=4,
     figure_name="rh-3 5.1.1",
 )
 
@@ -73,7 +73,7 @@ accumulator(
     baca.dynamic("mp"),
     baca.slur(map=baca.tuplets()),
     baca.tuplet_bracket_down(),
-    denominator=4,
+    signature=4,
     figure_name="rh-3 5.2.1",
 )
 
@@ -81,7 +81,7 @@ accumulator(
     "rh_v3",
     "r4",
     baca.rest_transparent(),
-    denominator=4,
+    signature=4,
     figure_name="rh-3 5.2.2",
 )
 
@@ -106,7 +106,7 @@ accumulator(
     rmakers.beam(),
     baca.slur(map=baca.tuplets()),
     baca.tuplet_bracket_down(),
-    denominator=4,
+    signature=4,
     figure_name="rh-3 5.2.3",
 )
 
@@ -121,7 +121,7 @@ accumulator(
     baca.stem_down(),
     baca.tuplet_bracket_down(),
     baca.tuplet_bracket_staff_padding(6),
-    denominator=4,
+    signature=4,
     figure_name="b.1.4",
 )
 
@@ -135,7 +135,7 @@ accumulator(
     baca.rest_up(),
     baca.stem_up(),
     anchor=baca.anchor_to_figure("b.1.4"),
-    denominator=4,
+    signature=4,
     figure_name="b.1.5",
     hide_time_signature=True,
 )
@@ -158,7 +158,7 @@ accumulator(
     baca.dynamic("mp"),
     baca.slur(map=baca.tuplets()),
     baca.tuplet_bracket_down(),
-    denominator=4,
+    signature=4,
     figure_name="rh-3 5.2.5",
 )
 
@@ -166,7 +166,7 @@ accumulator(
     "rh_v3",
     "r4",
     baca.rest_transparent(),
-    denominator=4,
+    signature=4,
     figure_name="rh-3 5.2.6",
 )
 
@@ -185,7 +185,7 @@ accumulator(
     rmakers.beam(),
     baca.slur(map=baca.tuplets()),
     baca.tuplet_bracket_down(),
-    denominator=4,
+    signature=4,
     figure_name="rh-3 5.2.7",
 )
 
@@ -193,7 +193,7 @@ accumulator(
     "rh_v3",
     "r4",
     baca.rest_transparent(),
-    denominator=4,
+    signature=4,
     figure_name="rh-3 5.2.8",
 )
 
@@ -208,7 +208,7 @@ accumulator(
     baca.dynamic_down(),
     baca.slur(map=baca.tuplets()),
     baca.staccato(selector=baca.pheads()),
-    denominator=4,
+    signature=4,
     figure_name="rh-2 2.2.1",
 )
 
@@ -221,7 +221,7 @@ accumulator(
     baca.beam_positions(-8),
     baca.slur(map=baca.tuplets()),
     baca.staccato(selector=baca.pheads()),
-    denominator=4,
+    signature=4,
     figure_name="rh-2 2.2.2",
 )
 
@@ -234,7 +234,7 @@ accumulator(
     baca.beam_positions(-8),
     baca.slur(map=baca.tuplets()),
     baca.staccato(selector=baca.pheads()),
-    denominator=4,
+    signature=4,
     figure_name="rh-2 2.2.3",
 )
 
@@ -247,7 +247,7 @@ accumulator(
     baca.beam_positions(-8),
     baca.slur(map=baca.tuplets()),
     baca.staccato(selector=baca.pheads()),
-    denominator=4,
+    signature=4,
     figure_name="rh-2 2.2.4",
 )
 
@@ -260,7 +260,7 @@ accumulator(
     baca.beam_positions(-8),
     baca.slur(map=baca.tuplets()),
     baca.staccato(selector=baca.pheads()),
-    denominator=4,
+    signature=4,
     figure_name="rh-2 2.2.5",
 )
 
@@ -271,7 +271,7 @@ accumulator(
     [{-35, -23}],
     baca.pitch_first([29], 16),
     anchor=baca.anchor_to_figure("rh-2 2.2.1"),
-    denominator=4,
+    signature=4,
     figure_name="lhr 2.2.1",
     hide_time_signature=True,
 )
@@ -280,7 +280,7 @@ accumulator(
     "lh_resonance",
     [{-35, -23}],
     baca.pitch_first([27], 16),
-    denominator=4,
+    signature=4,
     figure_name="lhr 2.2.2a",
     hide_time_signature=True,
 )
@@ -289,7 +289,7 @@ accumulator(
     "lh_resonance",
     [{-33, -21}],
     baca.pitch_first([21], 16),
-    denominator=4,
+    signature=4,
     figure_name="lhr 2.2.3a",
     hide_time_signature=True,
 )
@@ -298,7 +298,7 @@ accumulator(
     "lh_resonance",
     [{-33, -21}],
     baca.pitch_first([15], 16),
-    denominator=4,
+    signature=4,
     figure_name="lhr 2.2.4",
     hide_time_signature=True,
 )
@@ -307,7 +307,7 @@ accumulator(
     "lh_resonance",
     [{-33, -21}],
     baca.pitch_first([16], 16),
-    denominator=4,
+    signature=4,
     figure_name="lhr 2.2.5",
     hide_time_signature=True,
 )
@@ -330,7 +330,7 @@ accumulator(
     baca.slur(map=baca.tuplets()),
     baca.tuplet_bracket_down(),
     baca.tuplet_bracket_staff_padding(3),
-    denominator=4,
+    signature=4,
     figure_name="rh-3 5.2.9",
 )
 
@@ -344,7 +344,7 @@ accumulator(
     baca.register(6, -24),
     baca.slur_down(),
     anchor=baca.anchor_to_figure("rh-3 5.2.3"),
-    denominator=4,
+    signature=4,
     figure_name="lh-4 5.2.1",
     hide_time_signature=True,
 )
@@ -358,7 +358,7 @@ accumulator(
     baca.register(6, -24),
     baca.slur_down(),
     anchor=baca.anchor_to_figure("rh-3 5.2.5"),
-    denominator=4,
+    signature=4,
     figure_name="lh-4 5.2.2",
     hide_time_signature=True,
 )
@@ -369,7 +369,7 @@ accumulator(
     baca.pitch_first([3, -1], 16),
     baca.slur(map=baca.tuplets()),
     baca.register(6, -24),
-    denominator=4,
+    signature=4,
     figure_name="lh-4 5.2.3",
     hide_time_signature=True,
 )
@@ -381,7 +381,7 @@ accumulator(
     baca.slur(map=baca.tuplets()),
     baca.register(0, -24),
     anchor=baca.anchor_to_figure("rh-3 5.2.7"),
-    denominator=4,
+    signature=4,
     figure_name="lh-4 5.2.4",
     hide_time_signature=True,
 )
@@ -394,7 +394,7 @@ accumulator(
     rmakers.beam(),
     baca.slur(map=baca.tuplets()),
     baca.register(0, -24),
-    denominator=4,
+    signature=4,
     figure_name="lh-4 5.2.5",
     hide_time_signature=True,
 )
@@ -407,7 +407,7 @@ accumulator(
     rmakers.beam(),
     baca.slur(map=baca.tuplets()),
     baca.register(0, -24),
-    denominator=4,
+    signature=4,
     figure_name="lh-4 5.2.6",
     hide_time_signature=True,
 )
@@ -420,7 +420,7 @@ accumulator(
     rmakers.beam(),
     baca.slur(map=baca.tuplets()),
     baca.register(-6, -48),
-    denominator=4,
+    signature=4,
     figure_name="lh-4 5.2.7",
     hide_time_signature=True,
 )
@@ -435,7 +435,7 @@ accumulator(
     baca.slur(map=baca.tuplets()),
     baca.register(-6, -36),
     anchor=baca.anchor_to_figure("rh-3 5.2.9"),
-    denominator=4,
+    signature=4,
     figure_name="lh-4 5.2.8",
     hide_time_signature=True,
 )
@@ -448,7 +448,7 @@ accumulator(
     rmakers.beam(),
     baca.slur(map=baca.tuplets()),
     baca.register(-6, -36),
-    denominator=4,
+    signature=4,
     figure_name="lh-4 5.2.9",
     hide_time_signature=True,
 )
@@ -458,7 +458,7 @@ accumulator(
     "r4",
     baca.clef("treble"),
     baca.rest_transparent(),
-    denominator=4,
+    signature=4,
     figure_name="lh-4 final",
 )
 
