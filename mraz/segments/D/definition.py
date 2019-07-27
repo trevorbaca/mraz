@@ -331,12 +331,11 @@ accumulator(
 accumulator(
     'lh_resonance',
     [{-35, -23}],
-    baca.pitch_first([8], 16),
+    baca.pitch_first([8], 16, affix=baca.skips_before([4])),
     rmakers.beam_groups(),
     baca.anchor('lh_v5', baca.rest(24)),
     rmakers.unbeam(),
     baca.nest('+1/4'),
-    baca.skips_before([4]),
     denominator=4,
     figure_name='lh-r 4.2.1',
     )
@@ -366,12 +365,11 @@ accumulator(
 accumulator(
     'lh_resonance',
     [{-33, -21}],
-    baca.pitch_first([8], 16),
+    baca.pitch_first([8], 16, affix=baca.skips_before([4])),
     rmakers.beam_groups(),
     baca.anchor('lh_v5', baca.rest(32)),
     rmakers.unbeam(),
     baca.nest('+1/4'),
-    baca.skips_before([4]),
     denominator=4,
     figure_name='lh-r 4.2.4',
     )
