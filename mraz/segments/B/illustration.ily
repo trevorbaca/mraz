@@ -1274,15 +1274,15 @@ B_LH_Voice_IV_Inserts = {                                                      %
 
 B_LH_Voice_V = {                                                               %! abjad.Path.extern
 
-    {                                                                          %! baca.MusicMaker.__call__
+    {
 
-        \scaleDurations #'(1 . 1) {                                            %! baca.MusicMaker.__call__
+        \scaleDurations #'(1 . 1) {
 
             % [B LH_Voice_V measure 10 / measure 1]                            %! _comment_measure_numbers
             \ottava -1                                                         %! baca.ottava_bassa:SpannerIndicatorCommand(1)
             \override TupletBracket.direction = #up                            %! baca.tuplet_bracket_up:OverrideCommand(1)
             \dynamicUp                                                         %! baca.dynamic_down:IndicatorCommand
-            g,8.                                                               %! baca.MusicMaker.__call__
+            g,8.
             - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
             \ppp                                                               %! EXPLICIT_DYNAMIC:_set_status_tag:baca.dynamic:IndicatorCommand
         %@% ^ \markup {                                                        %! FIGURE_NAME
@@ -1303,23 +1303,23 @@ B_LH_Voice_V = {                                                               %
         %@%             }                                                      %! FIGURE_NAME
         %@%     }                                                              %! FIGURE_NAME
 
-            r32                                                                %! baca.MusicMaker.__call__
+            r32
 
-            fs,,!8.                                                            %! baca.MusicMaker.__call__
+            fs,,!8.
 
-            r32                                                                %! baca.MusicMaker.__call__
+            r32
 
-        }                                                                      %! baca.MusicMaker.__call__
+        }
 
-    }                                                                          %! baca.MusicMaker.__call__
+    }
 
-    {                                                                          %! baca.MusicMaker.__call__
+    {
 
-        \tweak text #tuplet-number::calc-fraction-text                         %! baca.MusicMaker.__call__
-        \times 16/15 {                                                         %! baca.MusicMaker.__call__
+        \tweak text #tuplet-number::calc-fraction-text
+        \times 16/15 {
 
             % [B LH_Voice_V measure 11 / measure 2]                            %! _comment_measure_numbers
-            g,,8                                                               %! baca.MusicMaker.__call__
+            g,,8
         %@% ^ \markup {                                                        %! FIGURE_NAME
         %@%     \fontsize                                                      %! FIGURE_NAME
         %@%         #2                                                         %! FIGURE_NAME
@@ -1339,44 +1339,44 @@ B_LH_Voice_V = {                                                               %
         %@%     }                                                              %! FIGURE_NAME
 
             \override Rest.direction = #up                                     %! baca.rest_up:OverrideCommand(1)
-            r32                                                                %! baca.MusicMaker.__call__
+            r32
 
-            a,,8                                                               %! baca.MusicMaker.__call__
+            a,,8
 
-            r32                                                                %! baca.MusicMaker.__call__
+            r32
 
-            cs,,!8                                                             %! baca.MusicMaker.__call__
+            cs,,!8
 
-            r32                                                                %! baca.MusicMaker.__call__
+            r32
 
-        }                                                                      %! baca.MusicMaker.__call__
+        }
 
-        \tweak text #tuplet-number::calc-fraction-text                         %! baca.MusicMaker.__call__
-        \times 16/15 {                                                         %! baca.MusicMaker.__call__
+        \tweak text #tuplet-number::calc-fraction-text
+        \times 16/15 {
 
-            b,,8                                                               %! baca.MusicMaker.__call__
+            b,,8
 
-            r32                                                                %! baca.MusicMaker.__call__
+            r32
 
-            af,,!8                                                             %! baca.MusicMaker.__call__
+            af,,!8
 
-            r32                                                                %! baca.MusicMaker.__call__
+            r32
 
-            a,,8                                                               %! baca.MusicMaker.__call__
+            a,,8
 
-            r32                                                                %! baca.MusicMaker.__call__
+            r32
             \revert Rest.direction                                             %! baca.rest_up:OverrideCommand(2)
 
-        }                                                                      %! baca.MusicMaker.__call__
+        }
 
-    }                                                                          %! baca.MusicMaker.__call__
+    }
 
-    {                                                                          %! baca.MusicMaker.__call__
+    {
 
-        \scaleDurations #'(1 . 1) {                                            %! baca.MusicMaker.__call__
+        \scaleDurations #'(1 . 1) {
 
             % [B LH_Voice_V measure 12 / measure 3]                            %! _comment_measure_numbers
-            cs,,!32                                                            %! baca.MusicMaker.__call__
+            cs,,!32
         %@% ^ \markup {                                                        %! FIGURE_NAME
         %@%     \fontsize                                                      %! FIGURE_NAME
         %@%         #2                                                         %! FIGURE_NAME
@@ -1395,26 +1395,26 @@ B_LH_Voice_V = {                                                               %
         %@%             }                                                      %! FIGURE_NAME
         %@%     }                                                              %! FIGURE_NAME
 
-            r4...                                                              %! baca.MusicMaker.__call__
+            r4...
 
-            a,,,32                                                             %! baca.MusicMaker.__call__
+            a,,,32
 
-            r4...                                                              %! baca.MusicMaker.__call__
+            r4...
 
-            af,,!32                                                            %! baca.MusicMaker.__call__
+            af,,!32
 
-            r4...                                                              %! baca.MusicMaker.__call__
+            r4...
 
-        }                                                                      %! baca.MusicMaker.__call__
+        }
 
-    }                                                                          %! baca.MusicMaker.__call__
+    }
 
-    {                                                                          %! baca.MusicMaker.__call__
+    {
 
-        \scaleDurations #'(1 . 1) {                                            %! baca.MusicMaker.__call__
+        \scaleDurations #'(1 . 1) {
 
             % [B LH_Voice_V measure 13 / measure 4]                            %! _comment_measure_numbers
-            bf,,!8.                                                            %! baca.MusicMaker.__call__
+            bf,,!8.
         %@% ^ \markup {                                                        %! FIGURE_NAME
         %@%     \fontsize                                                      %! FIGURE_NAME
         %@%         #2                                                         %! FIGURE_NAME
@@ -1434,31 +1434,31 @@ B_LH_Voice_V = {                                                               %
         %@%     }                                                              %! FIGURE_NAME
 
             \override Rest.direction = #up                                     %! baca.rest_up:OverrideCommand(1)
-            r32                                                                %! baca.MusicMaker.__call__
+            r32
 
-            d,8.                                                               %! baca.MusicMaker.__call__
+            d,8.
 
-            r32                                                                %! baca.MusicMaker.__call__
+            r32
 
-            c,8.                                                               %! baca.MusicMaker.__call__
+            c,8.
 
-            r32                                                                %! baca.MusicMaker.__call__
+            r32
 
-            b,,8.                                                              %! baca.MusicMaker.__call__
+            b,,8.
 
-            r32                                                                %! baca.MusicMaker.__call__
+            r32
             \revert Rest.direction                                             %! baca.rest_up:OverrideCommand(2)
 
-        }                                                                      %! baca.MusicMaker.__call__
+        }
 
-    }                                                                          %! baca.MusicMaker.__call__
+    }
 
-    {                                                                          %! baca.MusicMaker.__call__
+    {
 
-        \scaleDurations #'(1 . 1) {                                            %! baca.MusicMaker.__call__
+        \scaleDurations #'(1 . 1) {
 
             % [B LH_Voice_V measure 14 / measure 5]                            %! _comment_measure_numbers
-            d,,8                                                               %! baca.MusicMaker.__call__
+            d,,8
         %@% ^ \markup {                                                        %! FIGURE_NAME
         %@%     \fontsize                                                      %! FIGURE_NAME
         %@%         #2                                                         %! FIGURE_NAME
@@ -1477,23 +1477,23 @@ B_LH_Voice_V = {                                                               %
         %@%             }                                                      %! FIGURE_NAME
         %@%     }                                                              %! FIGURE_NAME
 
-            r32                                                                %! baca.MusicMaker.__call__
+            r32
 
-            bf,,!8                                                             %! baca.MusicMaker.__call__
+            bf,,!8
 
-            r32                                                                %! baca.MusicMaker.__call__
+            r32
 
-        }                                                                      %! baca.MusicMaker.__call__
+        }
 
-    }                                                                          %! baca.MusicMaker.__call__
+    }
 
-    {                                                                          %! baca.MusicMaker.__call__
+    {
 
-        \tweak text #tuplet-number::calc-fraction-text                         %! baca.MusicMaker.__call__
-        \times 16/15 {                                                         %! baca.MusicMaker.__call__
+        \tweak text #tuplet-number::calc-fraction-text
+        \times 16/15 {
 
             % [B LH_Voice_V measure 15 / measure 6]                            %! _comment_measure_numbers
-            b,,,8                                                              %! baca.MusicMaker.__call__
+            b,,,8
         %@% ^ \markup {                                                        %! FIGURE_NAME
         %@%     \fontsize                                                      %! FIGURE_NAME
         %@%         #2                                                         %! FIGURE_NAME
@@ -1512,26 +1512,26 @@ B_LH_Voice_V = {                                                               %
         %@%             }                                                      %! FIGURE_NAME
         %@%     }                                                              %! FIGURE_NAME
 
-            r32                                                                %! baca.MusicMaker.__call__
+            r32
 
-            cs,,!8                                                             %! baca.MusicMaker.__call__
+            cs,,!8
 
-            r32                                                                %! baca.MusicMaker.__call__
+            r32
 
-            f,,8                                                               %! baca.MusicMaker.__call__
+            f,,8
 
-            r32                                                                %! baca.MusicMaker.__call__
+            r32
 
-        }                                                                      %! baca.MusicMaker.__call__
+        }
 
-    }                                                                          %! baca.MusicMaker.__call__
+    }
 
-    {                                                                          %! baca.MusicMaker.__call__
+    {
 
-        \scaleDurations #'(1 . 1) {                                            %! baca.MusicMaker.__call__
+        \scaleDurations #'(1 . 1) {
 
             % [B LH_Voice_V measure 16 / measure 7]                            %! _comment_measure_numbers
-            ef,,!32                                                            %! baca.MusicMaker.__call__
+            ef,,!32
         %@% ^ \markup {                                                        %! FIGURE_NAME
         %@%     \fontsize                                                      %! FIGURE_NAME
         %@%         #2                                                         %! FIGURE_NAME
@@ -1551,31 +1551,31 @@ B_LH_Voice_V = {                                                               %
         %@%     }                                                              %! FIGURE_NAME
 
             \override Rest.direction = #up                                     %! baca.rest_up:OverrideCommand(1)
-            r4...                                                              %! baca.MusicMaker.__call__
+            r4...
 
-            c,,32                                                              %! baca.MusicMaker.__call__
+            c,,32
 
-            r4...                                                              %! baca.MusicMaker.__call__
+            r4...
 
-            cs,,!32                                                            %! baca.MusicMaker.__call__
+            cs,,!32
 
-            r4...                                                              %! baca.MusicMaker.__call__
+            r4...
 
-            ef,,!32                                                            %! baca.MusicMaker.__call__
+            ef,,!32
 
-            r4...                                                              %! baca.MusicMaker.__call__
+            r4...
             \revert Rest.direction                                             %! baca.rest_up:OverrideCommand(2)
 
-        }                                                                      %! baca.MusicMaker.__call__
+        }
 
-    }                                                                          %! baca.MusicMaker.__call__
+    }
 
-    {                                                                          %! baca.MusicMaker.__call__
+    {
 
-        \scaleDurations #'(1 . 1) {                                            %! baca.MusicMaker.__call__
+        \scaleDurations #'(1 . 1) {
 
             % [B LH_Voice_V measure 17 / measure 8]                            %! _comment_measure_numbers
-            c,8.                                                               %! baca.MusicMaker.__call__
+            c,8.
         %@% ^ \markup {                                                        %! FIGURE_NAME
         %@%     \fontsize                                                      %! FIGURE_NAME
         %@%         #2                                                         %! FIGURE_NAME
@@ -1594,24 +1594,24 @@ B_LH_Voice_V = {                                                               %
         %@%             }                                                      %! FIGURE_NAME
         %@%     }                                                              %! FIGURE_NAME
 
-            r32                                                                %! baca.MusicMaker.__call__
+            r32
 
-            d,8.                                                               %! baca.MusicMaker.__call__
+            d,8.
 
-            r32                                                                %! baca.MusicMaker.__call__
+            r32
 
-        }                                                                      %! baca.MusicMaker.__call__
+        }
 
-    }                                                                          %! baca.MusicMaker.__call__
+    }
 
-    {                                                                          %! baca.MusicMaker.__call__
+    {
 
-        \tweak text #tuplet-number::calc-fraction-text                         %! baca.MusicMaker.__call__
-        \times 16/15 {                                                         %! baca.MusicMaker.__call__
+        \tweak text #tuplet-number::calc-fraction-text
+        \times 16/15 {
 
             % [B LH_Voice_V measure 18 / measure 9]                            %! _comment_measure_numbers
             \override TupletBracket.staff-padding = #3                         %! baca.tuplet_bracket_staff_padding:OverrideCommand(1)
-            fs,,!8                                                             %! baca.MusicMaker.__call__
+            fs,,!8
         %@% ^ \markup {                                                        %! FIGURE_NAME
         %@%     \fontsize                                                      %! FIGURE_NAME
         %@%         #2                                                         %! FIGURE_NAME
@@ -1630,44 +1630,44 @@ B_LH_Voice_V = {                                                               %
         %@%             }                                                      %! FIGURE_NAME
         %@%     }                                                              %! FIGURE_NAME
 
-            r32                                                                %! baca.MusicMaker.__call__
+            r32
 
-            e,,8                                                               %! baca.MusicMaker.__call__
+            e,,8
 
-            r32                                                                %! baca.MusicMaker.__call__
+            r32
 
-            ef,,!8                                                             %! baca.MusicMaker.__call__
+            ef,,!8
 
-            r32                                                                %! baca.MusicMaker.__call__
+            r32
 
-        }                                                                      %! baca.MusicMaker.__call__
+        }
 
-        \tweak text #tuplet-number::calc-fraction-text                         %! baca.MusicMaker.__call__
-        \times 16/15 {                                                         %! baca.MusicMaker.__call__
+        \tweak text #tuplet-number::calc-fraction-text
+        \times 16/15 {
 
-            d,8                                                                %! baca.MusicMaker.__call__
+            d,8
 
-            r32                                                                %! baca.MusicMaker.__call__
+            r32
 
-            ef,!8                                                              %! baca.MusicMaker.__call__
+            ef,!8
 
-            r32                                                                %! baca.MusicMaker.__call__
+            r32
 
-            f,8                                                                %! baca.MusicMaker.__call__
+            f,8
 
-            r32                                                                %! baca.MusicMaker.__call__
+            r32
             \revert TupletBracket.staff-padding                                %! baca.tuplet_bracket_staff_padding:OverrideCommand(2)
 
-        }                                                                      %! baca.MusicMaker.__call__
+        }
 
-    }                                                                          %! baca.MusicMaker.__call__
+    }
 
-    {                                                                          %! baca.MusicMaker.__call__
+    {
 
-        \scaleDurations #'(1 . 1) {                                            %! baca.MusicMaker.__call__
+        \scaleDurations #'(1 . 1) {
 
             % [B LH_Voice_V measure 19 / measure 10]                           %! _comment_measure_numbers
-            a,,,32                                                             %! baca.MusicMaker.__call__
+            a,,,32
         %@% ^ \markup {                                                        %! FIGURE_NAME
         %@%     \fontsize                                                      %! FIGURE_NAME
         %@%         #2                                                         %! FIGURE_NAME
@@ -1687,23 +1687,23 @@ B_LH_Voice_V = {                                                               %
         %@%     }                                                              %! FIGURE_NAME
 
             \override Rest.direction = #up                                     %! baca.rest_up:OverrideCommand(1)
-            r4...                                                              %! baca.MusicMaker.__call__
+            r4...
 
-            g,,32                                                              %! baca.MusicMaker.__call__
+            g,,32
 
-            r4...                                                              %! baca.MusicMaker.__call__
+            r4...
             \revert Rest.direction                                             %! baca.rest_up:OverrideCommand(2)
 
-        }                                                                      %! baca.MusicMaker.__call__
+        }
 
-    }                                                                          %! baca.MusicMaker.__call__
+    }
 
-    {                                                                          %! baca.MusicMaker.__call__
+    {
 
-        \scaleDurations #'(1 . 1) {                                            %! baca.MusicMaker.__call__
+        \scaleDurations #'(1 . 1) {
 
             % [B LH_Voice_V measure 20 / measure 11]                           %! _comment_measure_numbers
-            b,,8.                                                              %! baca.MusicMaker.__call__
+            b,,8.
         %@% ^ \markup {                                                        %! FIGURE_NAME
         %@%     \fontsize                                                      %! FIGURE_NAME
         %@%         #2                                                         %! FIGURE_NAME
@@ -1722,31 +1722,31 @@ B_LH_Voice_V = {                                                               %
         %@%             }                                                      %! FIGURE_NAME
         %@%     }                                                              %! FIGURE_NAME
 
-            r32                                                                %! baca.MusicMaker.__call__
+            r32
 
-            a,,8.                                                              %! baca.MusicMaker.__call__
+            a,,8.
 
-            r32                                                                %! baca.MusicMaker.__call__
+            r32
 
-            f,,8.                                                              %! baca.MusicMaker.__call__
+            f,,8.
 
-            r32                                                                %! baca.MusicMaker.__call__
+            r32
 
-            e,,8.                                                              %! baca.MusicMaker.__call__
+            e,,8.
 
-            r32                                                                %! baca.MusicMaker.__call__
+            r32
 
-        }                                                                      %! baca.MusicMaker.__call__
+        }
 
-    }                                                                          %! baca.MusicMaker.__call__
+    }
 
-    {                                                                          %! baca.MusicMaker.__call__
+    {
 
-        \tweak text #tuplet-number::calc-fraction-text                         %! baca.MusicMaker.__call__
-        \times 16/15 {                                                         %! baca.MusicMaker.__call__
+        \tweak text #tuplet-number::calc-fraction-text
+        \times 16/15 {
 
             % [B LH_Voice_V measure 21 / measure 12]                           %! _comment_measure_numbers
-            fs,,!8                                                             %! baca.MusicMaker.__call__
+            fs,,!8
         %@% ^ \markup {                                                        %! FIGURE_NAME
         %@%     \fontsize                                                      %! FIGURE_NAME
         %@%         #2                                                         %! FIGURE_NAME
@@ -1765,21 +1765,21 @@ B_LH_Voice_V = {                                                               %
         %@%             }                                                      %! FIGURE_NAME
         %@%     }                                                              %! FIGURE_NAME
 
-            r32                                                                %! baca.MusicMaker.__call__
+            r32
 
-            bf,,!8                                                             %! baca.MusicMaker.__call__
+            bf,,!8
 
-            r32                                                                %! baca.MusicMaker.__call__
+            r32
 
-            af,,!8                                                             %! baca.MusicMaker.__call__
+            af,,!8
             \ottava 0                                                          %! baca.ottava_bassa:SpannerIndicatorCommand(2)
 
-            r32                                                                %! baca.MusicMaker.__call__
+            r32
             \revert TupletBracket.direction                                    %! baca.tuplet_bracket_up:OverrideCommand(2)
 
-        }                                                                      %! baca.MusicMaker.__call__
+        }
 
-    }                                                                          %! baca.MusicMaker.__call__
+    }
 
     <<                                                                         %! PHANTOM:_make_multimeasure_rest_container
 
@@ -1881,13 +1881,13 @@ B_LH_Voice_VI = {                                                              %
     \f                                                                         %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
     \override PianoMusicLHStaff.Clef.color = #(x11-color 'OliveDrab)           %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
-    {                                                                          %! baca.MusicMaker.__call__
+    {
 
-        \tweak text #tuplet-number::calc-fraction-text                         %! baca.MusicMaker.__call__
-        \times 5/6 {                                                           %! baca.MusicMaker.__call__
+        \tweak text #tuplet-number::calc-fraction-text
+        \times 5/6 {
 
             \override Stem.direction = #down                                   %! baca.stem_down:OverrideCommand(1)
-            af,,!4                                                             %! baca.MusicMaker.__call__
+            af,,!4
             - \tweak color #(x11-color 'DeepPink1)                             %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
             \f                                                                 %! REDUNDANT_DYNAMIC:_set_status_tag:baca.dynamic:IndicatorCommand
             - \tenuto                                                          %! baca.tenuto:IndicatorCommand
@@ -1910,31 +1910,31 @@ B_LH_Voice_VI = {                                                              %
         %@%     }                                                              %! FIGURE_NAME
 
             \override Rest.staff-position = #-10                               %! baca.rest_position:OverrideCommand(1)
-            r4                                                                 %! baca.MusicMaker.__call__
+            r4
 
-            c,,4                                                               %! baca.MusicMaker.__call__
+            c,,4
             - \tenuto                                                          %! baca.tenuto:IndicatorCommand
 
-            r4                                                                 %! baca.MusicMaker.__call__
+            r4
 
-            bf,,,!4                                                            %! baca.MusicMaker.__call__
+            bf,,,!4
             - \tenuto                                                          %! baca.tenuto:IndicatorCommand
 
-            r4                                                                 %! baca.MusicMaker.__call__
+            r4
 
-        }                                                                      %! baca.MusicMaker.__call__
+        }
 
-    }                                                                          %! baca.MusicMaker.__call__
+    }
 
     s1 * 1
 
-    {                                                                          %! baca.MusicMaker.__call__
+    {
 
-        \tweak text #tuplet-number::calc-fraction-text                         %! baca.MusicMaker.__call__
-        \times 4/3 {                                                           %! baca.MusicMaker.__call__
+        \tweak text #tuplet-number::calc-fraction-text
+        \times 4/3 {
 
             % [B LH_Voice_VI measure 13 / measure 4]                           %! _comment_measure_numbers
-            b,,,8                                                              %! baca.MusicMaker.__call__
+            b,,,8
             - \tenuto                                                          %! baca.tenuto:IndicatorCommand
         %@% ^ \markup {                                                        %! FIGURE_NAME
         %@%     \fontsize                                                      %! FIGURE_NAME
@@ -1955,26 +1955,26 @@ B_LH_Voice_VI = {                                                              %
         %@%     }                                                              %! FIGURE_NAME
 
             \override Rest.direction = #up                                     %! baca.rest_up:OverrideCommand(1)
-            r4                                                                 %! baca.MusicMaker.__call__
+            r4
 
-            ef,,!8                                                             %! baca.MusicMaker.__call__
+            ef,,!8
             - \tenuto                                                          %! baca.tenuto:IndicatorCommand
 
-            r4                                                                 %! baca.MusicMaker.__call__
+            r4
             \revert Rest.direction                                             %! baca.rest_up:OverrideCommand(2)
 
-        }                                                                      %! baca.MusicMaker.__call__
+        }
 
-    }                                                                          %! baca.MusicMaker.__call__
+    }
 
     s1 * 73/48
 
-    {                                                                          %! baca.MusicMaker.__call__
+    {
 
-        \tweak text #tuplet-number::calc-fraction-text                         %! baca.MusicMaker.__call__
-        \times 4/3 {                                                           %! baca.MusicMaker.__call__
+        \tweak text #tuplet-number::calc-fraction-text
+        \times 4/3 {
 
-            bf,,,!16                                                           %! baca.MusicMaker.__call__
+            bf,,,!16
             - \tenuto                                                          %! baca.tenuto:IndicatorCommand
         %@% ^ \markup {                                                        %! FIGURE_NAME
         %@%     \fontsize                                                      %! FIGURE_NAME
@@ -1994,31 +1994,31 @@ B_LH_Voice_VI = {                                                              %
         %@%             }                                                      %! FIGURE_NAME
         %@%     }                                                              %! FIGURE_NAME
 
-            r8.                                                                %! baca.MusicMaker.__call__
+            r8.
 
-            c,,16                                                              %! baca.MusicMaker.__call__
+            c,,16
             - \tenuto                                                          %! baca.tenuto:IndicatorCommand
 
-            r8.                                                                %! baca.MusicMaker.__call__
+            r8.
 
             \once \override NoteColumn.force-hshift = #-1                      %! baca.note_colun_shift:OverrideCommand(1)
-            e,,16                                                              %! baca.MusicMaker.__call__
+            e,,16
             - \tenuto                                                          %! baca.tenuto:IndicatorCommand
 
-            r8.                                                                %! baca.MusicMaker.__call__
+            r8.
 
-        }                                                                      %! baca.MusicMaker.__call__
+        }
 
-    }                                                                          %! baca.MusicMaker.__call__
+    }
 
     s1 * 7/16
 
-    {                                                                          %! baca.MusicMaker.__call__
+    {
 
-        \tweak text #tuplet-number::calc-fraction-text                         %! baca.MusicMaker.__call__
-        \times 4/3 {                                                           %! baca.MusicMaker.__call__
+        \tweak text #tuplet-number::calc-fraction-text
+        \times 4/3 {
 
-            g,,16                                                              %! baca.MusicMaker.__call__
+            g,,16
             - \tenuto                                                          %! baca.tenuto:IndicatorCommand
         %@% ^ \markup {                                                        %! FIGURE_NAME
         %@%     \fontsize                                                      %! FIGURE_NAME
@@ -2038,30 +2038,30 @@ B_LH_Voice_VI = {                                                              %
         %@%             }                                                      %! FIGURE_NAME
         %@%     }                                                              %! FIGURE_NAME
 
-            r8.                                                                %! baca.MusicMaker.__call__
+            r8.
 
-            f,,16                                                              %! baca.MusicMaker.__call__
+            f,,16
             - \tenuto                                                          %! baca.tenuto:IndicatorCommand
 
-            r8.                                                                %! baca.MusicMaker.__call__
+            r8.
 
-            cs,,!16                                                            %! baca.MusicMaker.__call__
+            cs,,!16
             - \tenuto                                                          %! baca.tenuto:IndicatorCommand
 
-            r8.                                                                %! baca.MusicMaker.__call__
+            r8.
 
-        }                                                                      %! baca.MusicMaker.__call__
+        }
 
-    }                                                                          %! baca.MusicMaker.__call__
+    }
 
     s1 * 11/48
 
-    {                                                                          %! baca.MusicMaker.__call__
+    {
 
-        \tweak text #tuplet-number::calc-fraction-text                         %! baca.MusicMaker.__call__
-        \times 5/4 {                                                           %! baca.MusicMaker.__call__
+        \tweak text #tuplet-number::calc-fraction-text
+        \times 5/4 {
 
-            d,,8                                                               %! baca.MusicMaker.__call__
+            d,,8
             - \tenuto                                                          %! baca.tenuto:IndicatorCommand
         %@% ^ \markup {                                                        %! FIGURE_NAME
         %@%     \fontsize                                                      %! FIGURE_NAME
@@ -2081,27 +2081,27 @@ B_LH_Voice_VI = {                                                              %
         %@%             }                                                      %! FIGURE_NAME
         %@%     }                                                              %! FIGURE_NAME
 
-            e,,8                                                               %! baca.MusicMaker.__call__
+            e,,8
             - \tenuto                                                          %! baca.tenuto:IndicatorCommand
 
-            af,,!8                                                             %! baca.MusicMaker.__call__
+            af,,!8
             - \tenuto                                                          %! baca.tenuto:IndicatorCommand
 
-            fs,,!8                                                             %! baca.MusicMaker.__call__
+            fs,,!8
             - \tenuto                                                          %! baca.tenuto:IndicatorCommand
 
-        }                                                                      %! baca.MusicMaker.__call__
+        }
 
-    }                                                                          %! baca.MusicMaker.__call__
+    }
 
     s1 * 1/16
 
-    {                                                                          %! baca.MusicMaker.__call__
+    {
 
-        \tweak text #tuplet-number::calc-fraction-text                         %! baca.MusicMaker.__call__
-        \times 4/6 {                                                           %! baca.MusicMaker.__call__
+        \tweak text #tuplet-number::calc-fraction-text
+        \times 4/6 {
 
-            e,,8                                                               %! baca.MusicMaker.__call__
+            e,,8
             - \tenuto                                                          %! baca.tenuto:IndicatorCommand
         %@% ^ \markup {                                                        %! FIGURE_NAME
         %@%     \fontsize                                                      %! FIGURE_NAME
@@ -2121,24 +2121,24 @@ B_LH_Voice_VI = {                                                              %
         %@%             }                                                      %! FIGURE_NAME
         %@%     }                                                              %! FIGURE_NAME
 
-            r4                                                                 %! baca.MusicMaker.__call__
+            r4
 
             % [B LH_Voice_VI measure 20 / measure 11]                          %! _comment_measure_numbers
-            f,,8                                                               %! baca.MusicMaker.__call__
+            f,,8
             - \tenuto                                                          %! baca.tenuto:IndicatorCommand
 
-            r4                                                                 %! baca.MusicMaker.__call__
+            r4
 
-            g,,8                                                               %! baca.MusicMaker.__call__
+            g,,8
             - \tenuto                                                          %! baca.tenuto:IndicatorCommand
             \revert Stem.direction                                             %! baca.stem_down:OverrideCommand(2)
 
-            r4                                                                 %! baca.MusicMaker.__call__
+            r4
             \revert Rest.staff-position                                        %! baca.rest_position:OverrideCommand(2)
 
-        }                                                                      %! baca.MusicMaker.__call__
+        }
 
-    }                                                                          %! baca.MusicMaker.__call__
+    }
 
     <<                                                                         %! _make_multimeasure_rest_container
 
