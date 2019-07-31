@@ -24,7 +24,7 @@ resonance = baca.PitchSet("e, fs, gs, as, b,", item_class=abjad.NamedPitch)
 accumulator(
     "rh_v4",
     collections_7["stage 1"]["lh"][-1].transpose(4*7),
-    baca.pitch_first([1], 16, time_treatments=[1]),
+    baca.pitch_first_assignment([1], 16, time_treatments=[1]),
     rmakers.beam_groups(),
     baca.register(6, 6+10),
     baca.imbricate(
@@ -48,7 +48,7 @@ accumulator(
 accumulator(
     "rh_v2",
     collections_2["stage 2"]["rh"][0][:1],
-    baca.pitch_first([1], 16),
+    baca.pitch_first_assignment([1], 16),
     rmakers.beam_groups(),
     baca.bass_to_octave(3),
     baca.dynamic("ppp"),
@@ -72,7 +72,7 @@ accumulator(
 accumulator(
     "rh_v4",
     collections_7["stage 1"]["lh"][-1].transpose(4*7),
-    baca.pitch_first([1], 16, time_treatments=[1]),
+    baca.pitch_first_assignment([1], 16, time_treatments=[1]),
     rmakers.beam_groups(),
     baca.register(6, 6+10),
     baca.imbricate(
@@ -88,7 +88,7 @@ accumulator(
 accumulator(
     "rh_v2",
     collections_2["stage 2"]["rh"][0][:2],
-    baca.pitch_first([1], 16),
+    baca.pitch_first_assignment([1], 16),
     rmakers.beam_groups(),
     baca.bass_to_octave(3),
     baca.dynamic("ppp"),
@@ -111,7 +111,7 @@ accumulator(
 accumulator(
     "rh_v3",
     collections_4["stage 1"]["rh"][0],
-    baca.pitch_first([2, -4, 2, -4, 4], 16, time_treatments=[2]),
+    baca.pitch_first_assignment([2, -4, 2, -4, 4], 16, time_treatments=[2]),
     baca.dynamic("ff"),
     baca.register(-12, 12),
     baca.tuplet_bracket_up(),
@@ -122,7 +122,7 @@ accumulator(
 accumulator(
     "lh_v5",
     collections_4["stage 1"]["lh"].next(),
-    baca.pitch_first([3, -1], 16, affix=baca.rests_before([12])),
+    baca.pitch_first_assignment([3, -1], 16, affix=baca.rests_before([12])),
     baca.dynamic("f"),
     baca.dynamic_down(),
     baca.register(-6, 6),
@@ -137,7 +137,7 @@ accumulator(
 accumulator(
     "rh_v2",
     collections_2["stage 2"]["rh"][0][:4],
-    baca.pitch_first([1], 16),
+    baca.pitch_first_assignment([1], 16),
     rmakers.beam_groups(),
     baca.bass_to_octave(3),
     baca.dynamic("ppp"),
@@ -152,7 +152,7 @@ accumulator(
 accumulator(
     "rh_v1",
     collections_4["stage 5"]["rh"][0],
-    baca.pitch_first([28], 16),
+    baca.pitch_first_assignment([28], 16),
     rmakers.beam_groups(),
     baca.dynamic("f"),
     baca.register(36),
@@ -164,7 +164,7 @@ accumulator(
 accumulator(
     "rh_v1",
     collections_4["stage 5"]["rh"][1],
-    baca.pitch_first([24], 16),
+    baca.pitch_first_assignment([24], 16),
     rmakers.beam_groups(),
     baca.register(36),
     baca.tenuto(baca.pheads()),
@@ -175,7 +175,7 @@ accumulator(
 accumulator(
     "rh_v1",
     collections_4["stage 5"]["rh"][2],
-    baca.pitch_first([16], 16),
+    baca.pitch_first_assignment([16], 16),
     rmakers.beam_groups(),
     baca.register(36),
     baca.tenuto(baca.pheads()),
@@ -187,7 +187,7 @@ accumulator(
 accumulator(
     "rh_v2",
     collections_4["stage 5"]["lh"][:4],
-    baca.pitch_first([1], 16, time_treatments=[abjad.Duration(1, 4)]),
+    baca.pitch_first_assignment([1], 16, time_treatments=[abjad.Duration(1, 4)]),
     rmakers.beam_groups(),
     baca.dls_staff_padding(8),
     baca.hairpin("f < ff"),
@@ -206,7 +206,7 @@ accumulator(
 accumulator(
     "lh_resonance",
     [resonance],
-    baca.pitch_first([8], 16),
+    baca.pitch_first_assignment([8], 16),
     rmakers.beam_groups(),
     anchor=baca.anchor_to_figure("b.2.1"),
     signature=4,
@@ -217,7 +217,7 @@ accumulator(
 accumulator(
     "lh_resonance",
     [resonance],
-    baca.pitch_first([4], 16),
+    baca.pitch_first_assignment([4], 16),
     rmakers.beam_groups(),
     signature=4,
     figure_name="b.2.r.2",
@@ -227,7 +227,7 @@ accumulator(
 accumulator(
     "lh_resonance",
     [resonance],
-    baca.pitch_first([5], 16),
+    baca.pitch_first_assignment([5], 16),
     rmakers.beam_groups(),
     signature=4,
     figure_name="b.2.r.3",
@@ -237,7 +237,7 @@ accumulator(
 accumulator(
     "lh_resonance",
     [resonance],
-    baca.pitch_first([4], 16),
+    baca.pitch_first_assignment([4], 16),
     rmakers.beam_groups(),
     signature=4,
     figure_name="b.2.r.4",
@@ -247,7 +247,7 @@ accumulator(
 accumulator(
     "lh_resonance",
     [resonance],
-    baca.pitch_first([8], 16),
+    baca.pitch_first_assignment([8], 16),
     rmakers.beam_groups(),
     signature=4,
     figure_name="b.2.r.5",
@@ -257,7 +257,7 @@ accumulator(
 accumulator(
     "lh_resonance",
     [resonance],
-    baca.pitch_first([10], 16),
+    baca.pitch_first_assignment([10], 16),
     rmakers.beam_groups(),
     signature=4,
     figure_name="b.2.r.6",
@@ -267,7 +267,7 @@ accumulator(
 accumulator(
     "lh_resonance",
     [resonance],
-    baca.pitch_first([21], 16),
+    baca.pitch_first_assignment([21], 16),
     rmakers.beam_groups(),
     baca.accidental_x_extent_false(),
     anchor=baca.anchor_to_figure("b.2.10"),
@@ -279,7 +279,7 @@ accumulator(
 accumulator(
     "lh_resonance",
     [resonance],
-    baca.pitch_first([28], 16),
+    baca.pitch_first_assignment([28], 16),
     rmakers.beam_groups(),
     signature=4,
     figure_name="b.2.r.8",
@@ -289,7 +289,7 @@ accumulator(
 accumulator(
     "lh_resonance",
     [resonance],
-    baca.pitch_first([24], 16),
+    baca.pitch_first_assignment([24], 16),
     rmakers.beam_groups(),
     signature=4,
     figure_name="b.2.r.9",
