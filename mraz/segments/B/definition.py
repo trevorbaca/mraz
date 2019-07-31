@@ -18,7 +18,7 @@ collections = collection_maker.make_segment_8_collections()
 accumulator(
     "lh_v5",
     collections["stage 3"]["rh"].next(),
-    baca.pitch_first([6, -1], 32),
+    baca.pitch_first_assignment([6, -1], 32),
     baca.dynamic("ppp"),
     baca.dynamic_up(),
     baca.register(-27, -39),
@@ -29,7 +29,7 @@ accumulator(
 accumulator(
     "lh_v5",
     collections["stage 3"]["rh"].next(2),
-    baca.pitch_first([4, -1], 32, time_treatments=[1]),
+    baca.pitch_first_assignment([4, -1], 32, time_treatments=[1]),
     baca.register(-39, -27),
     baca.rest_up(),
     signature=4,
@@ -39,7 +39,7 @@ accumulator(
 accumulator(
     "lh_v5",
     collections["stage 3"]["rh"].next(),
-    baca.pitch_first([1, -15], 32),
+    baca.pitch_first_assignment([1, -15], 32),
     baca.register(-39),
     signature=2,
     figure_name="lh-5 8.3.3",
@@ -48,7 +48,7 @@ accumulator(
 accumulator(
     "lh_v5",
     collections["stage 3"]["rh"].next(),
-    baca.pitch_first([6, -1], 32),
+    baca.pitch_first_assignment([6, -1], 32),
     baca.register(-27, -39),
     baca.rest_up(),
     signature=4,
@@ -58,7 +58,7 @@ accumulator(
 accumulator(
     "lh_v5",
     collections["stage 3"]["rh"].next(),
-    baca.pitch_first([4, -1], 32),
+    baca.pitch_first_assignment([4, -1], 32),
     baca.register(-39, -27),
     signature=4,
     figure_name="lh-5 8.3.5",
@@ -67,7 +67,7 @@ accumulator(
 accumulator(
     "lh_v5",
     collections["stage 3"]["rh"].next(),
-    baca.pitch_first([4, -1], 32, time_treatments=[1]),
+    baca.pitch_first_assignment([4, -1], 32, time_treatments=[1]),
     baca.register(-39, -27),
     signature=4,
     figure_name="lh-5 8.3.6",
@@ -76,7 +76,7 @@ accumulator(
 accumulator(
     "lh_v5",
     collections["stage 3"]["rh"].next(),
-    baca.pitch_first([1, -15], 32),
+    baca.pitch_first_assignment([1, -15], 32),
     baca.register(-39),
     baca.rest_up(),
     signature=2,
@@ -86,7 +86,7 @@ accumulator(
 accumulator(
     "lh_v5",
     collections["stage 3"]["rh"].next(),
-    baca.pitch_first([6, -1], 32),
+    baca.pitch_first_assignment([6, -1], 32),
     baca.register(-27, -39),
     signature=4,
     figure_name="lh-5 8.3.8",
@@ -95,7 +95,7 @@ accumulator(
 accumulator(
     "lh_v5",
     collections["stage 3"]["rh"].next(2),
-    baca.pitch_first([4, -1], 32, time_treatments=[1]),
+    baca.pitch_first_assignment([4, -1], 32, time_treatments=[1]),
     baca.register(-39, -27),
     baca.tuplet_bracket_staff_padding(3),
     signature=4,
@@ -105,7 +105,7 @@ accumulator(
 accumulator(
     "lh_v5",
     collections["stage 3"]["rh"].next(),
-    baca.pitch_first([1, -15], 32),
+    baca.pitch_first_assignment([1, -15], 32),
     baca.register(-39),
     baca.rest_up(),
     signature=2,
@@ -115,7 +115,7 @@ accumulator(
 accumulator(
     "lh_v5",
     collections["stage 3"]["rh"].next(),
-    baca.pitch_first([6, -1], 32),
+    baca.pitch_first_assignment([6, -1], 32),
     baca.register(-27, -39),
     signature=4,
     figure_name="lh-5 8.3.11",
@@ -124,7 +124,7 @@ accumulator(
 accumulator(
     "lh_v5",
     collections["stage 3"]["rh"].next(exhausted=True),
-    baca.pitch_first([4, -1], 32, time_treatments=[1]),
+    baca.pitch_first_assignment([4, -1], 32, time_treatments=[1]),
     baca.register(-39, -27),
     signature=4,
     figure_name="lh-5 8.3.12",
@@ -133,7 +133,7 @@ accumulator(
 accumulator(
     "lh_v6",
     collections["stage 3"]["lh"].next(),
-    baca.pitch_first([4, -4], 16, time_treatments=[-4]),
+    baca.pitch_first_assignment([4, -4], 16, time_treatments=[-4]),
     baca.dynamic("f"),
     baca.register(-39),
     anchor=baca.anchor(
@@ -149,7 +149,7 @@ accumulator(
 accumulator(
     "lh_v6",
     collections["stage 3"]["lh"].next(),
-    baca.pitch_first([2, -4], 16, time_treatments=[4]),
+    baca.pitch_first_assignment([2, -4], 16, time_treatments=[4]),
     baca.register(-39),
     baca.rest_up(),
     anchor=baca.anchor(
@@ -164,7 +164,7 @@ accumulator(
 accumulator(
     "lh_v6",
     collections["stage 3"]["lh"].next(),
-    baca.pitch_first([1, -3], 16, time_treatments=[4]),
+    baca.pitch_first_assignment([1, -3], 16, time_treatments=[4]),
     baca.note_column_shift(-1, baca.pleaf(-1)),
     baca.register(-39),
     anchor=baca.anchor(
@@ -180,7 +180,7 @@ accumulator(
 accumulator(
     "lh_v6",
     collections["stage 3"]["lh"].next(),
-    baca.pitch_first([1, -3], 16, time_treatments=[4]),
+    baca.pitch_first_assignment([1, -3], 16, time_treatments=[4]),
     baca.register(-39),
     anchor=baca.anchor(
         "lh_v5",
@@ -195,7 +195,7 @@ accumulator(
 accumulator(
     "lh_v6",
     collections["stage 3"]["lh"].next(),
-    baca.pitch_first([2], 16, time_treatments=[2]),
+    baca.pitch_first_assignment([2], 16, time_treatments=[2]),
     baca.register(-39),
     anchor=baca.anchor(
         "lh_v5",
@@ -210,7 +210,7 @@ accumulator(
 accumulator(
     "lh_v6",
     collections["stage 3"]["lh"].next(exhausted=True),
-    baca.pitch_first([2, -4], 16, time_treatments=[-6]),
+    baca.pitch_first_assignment([2, -4], 16, time_treatments=[-6]),
     rmakers.force_fraction(),
     rmakers.denominator(4),
     baca.register(-39),
