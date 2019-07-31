@@ -24,7 +24,7 @@ collections_8 = collection_maker.make_segment_8_collections()
 accumulator(
     "rh_v3",
     collections["stage 1"]["rh"].next(),
-    baca.pitch_first_assignment([2, -4, 2, -4, 4], 16, treatments=[2]),
+    baca.pitch_first_assignment_command([2, -4, 2, -4, 4], 16, treatments=[2]),
     baca.dynamic("ff"),
     baca.register(-12, 12),
     baca.stem_up(),
