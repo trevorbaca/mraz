@@ -38,7 +38,7 @@ accumulator(
 accumulator(
     "rh_v3",
     collections["stage 1"]["rh"].next(),
-    baca.pitch_first_assignment([1], 8, treatments=[1, 0]),
+    baca.pitch_first_assignment([1], 8, treatments=[1]),
     baca.register(24, 12),
     baca.staccato(baca.pheads()),
     baca.tenuto(baca.pheads()),
