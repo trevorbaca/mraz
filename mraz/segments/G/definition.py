@@ -27,10 +27,10 @@ accumulator(
         [17, 23],
         rmakers.beam_groups(beam_rests=True),
         baca.marcato(baca.pheads()),
-        extend_beam=True,
+        baca.extend_beam(),
     ),
     baca.dynamic("fff"),
-    extend_beam=True,
+    baca.extend_beam(),
     signature=4,
     figure_name="rh-1 7.1.1",
 )
@@ -46,12 +46,12 @@ accumulator(
         [12, 14],
         rmakers.beam_groups(beam_rests=True),
         baca.accent(baca.pheads()),
-        extend_beam=True,
+        baca.extend_beam(),
     ),
     baca.dynamic("fff"),
     baca.slur(map=baca.tuplets()),
+    baca.extend_beam(),
     signature=4,
-    extend_beam=True,
     figure_name="rh-2 7.1.1",
 )
 
@@ -102,10 +102,10 @@ accumulator(
         [21],
         rmakers.beam_groups(beam_rests=True),
         baca.marcato(baca.pheads()),
-        extend_beam=True,
+        baca.extend_beam(),
     ),
+    baca.extend_beam(),
     signature=4,
-    extend_beam=True,
     figure_name="rh-1 7.1.3",
 )
 
@@ -120,10 +120,10 @@ accumulator(
         [12, 22, 19, 29],
         baca.accent(baca.pheads()),
         rmakers.beam_groups(beam_rests=True),
-        extend_beam=True,
+        baca.extend_beam(),
     ),
     baca.slur(map=baca.tuplets()),
-    extend_beam=True,
+    baca.extend_beam(),
     signature=4,
     figure_name="rh-2 7.1.3",
 )
@@ -177,11 +177,11 @@ accumulator(
         [17],
         baca.accent(baca.pheads()),
         rmakers.beam_groups(beam_rests=True),
-        extend_beam=True,
+        baca.extend_beam(),
     ),
     baca.slur(map=baca.tuplets()),
+    baca.extend_beam(),
     signature=4,
-    extend_beam=True,
     figure_name="rh-2 7.1.5",
 )
 
