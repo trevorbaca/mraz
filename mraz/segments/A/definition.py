@@ -104,7 +104,7 @@ accumulator(
 accumulator(
     "rh_v3",
     collections_6["stage 1"]["rh"][2],
-    baca.pitch_first_assignment([1], 8, treatments=[1, 0]),
+    baca.pitch_first_assignment([1], 8, treatments=[1]),
     baca.dynamic("pp"),
     baca.dynamic_text_x_offset(0.5),
     baca.register(24, 12),
