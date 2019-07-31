@@ -36,7 +36,7 @@ accumulator(
 accumulator(
     "rh_v2",
     collections_4["stage 5"]["lh"][:4],
-    baca.pitch_first_assignment([1], 16, treatments=[abjad.Duration(1, 4)]),
+    baca.pitch_first_assignment([1], 16, treatments=[(1, 4)]),
     baca.dls_staff_padding(8),
     baca.hairpin("f < ff"),
     baca.ottava(),
@@ -154,7 +154,7 @@ accumulator(
 accumulator(
     "rh_v3",
     collections_5["stage 1"]["lh"].next(exhausted=True),
-    baca.pitch_first_assignment([4, -4], 16, treatments=[abjad.Duration(16, 4)]),
+    baca.pitch_first_assignment([4, -4], 16, treatments=[(16, 4)]),
     rmakers.denominator(abjad.Duration(1, 1)),
     baca.dynamic("mf"),
     baca.dynamic_text_x_offset(0.25),

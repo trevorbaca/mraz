@@ -187,7 +187,7 @@ accumulator(
 accumulator(
     "rh_v2",
     collections_4["stage 5"]["lh"][:4],
-    baca.pitch_first_assignment([1], 16, treatments=[abjad.Duration(1, 4)]),
+    baca.pitch_first_assignment([1], 16, treatments=[(1, 4)]),
     rmakers.beam_groups(),
     baca.dls_staff_padding(8),
     baca.hairpin("f < ff"),

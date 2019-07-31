@@ -764,7 +764,7 @@ accumulator(
 accumulator(
     "rh_v2",
     collections["stage 5"]["lh"].next(4),
-    baca.pitch_first_assignment([1], 16, treatments=[abjad.Duration(1, 4)]),
+    baca.pitch_first_assignment([1], 16, treatments=[(1, 4)]),
     rmakers.beam_groups(),
     baca.dls_staff_padding(8),
     baca.hairpin("f < ff", selector=baca.leaves()[:-1]),
@@ -780,7 +780,7 @@ accumulator(
 accumulator(
     "rh_v2",
     collections["stage 5"]["lh"].next(4),
-    baca.pitch_first_assignment([1], 16, treatments=[abjad.Duration(1, 4)]),
+    baca.pitch_first_assignment([1], 16, treatments=[(1, 4)]),
     rmakers.beam_groups(),
     baca.dls_staff_padding(8),
     baca.hairpin("f < ff", selector=baca.leaves()[:-1]),
@@ -810,7 +810,7 @@ accumulator(
 accumulator(
     "rh_v2",
     collections["stage 5"]["lh"].next(4),
-    baca.pitch_first_assignment([1], 16, treatments=[abjad.Duration(1, 4)]),
+    baca.pitch_first_assignment([1], 16, treatments=[(1, 4)]),
     rmakers.beam_groups(),
     baca.dls_staff_padding(8),
     baca.hairpin("f < ff", selector=baca.leaves()[:-1]),
@@ -826,7 +826,7 @@ accumulator(
 accumulator(
     "rh_v2",
     collections["stage 5"]["lh"].next(2),
-    baca.pitch_first_assignment([1], 16, treatments=[abjad.Duration(1, 4)]),
+    baca.pitch_first_assignment([1], 16, treatments=[(1, 4)]),
     rmakers.beam_groups(),
     baca.dls_staff_padding(8),
     baca.hairpin("f < ff", selector=baca.leaves()[:-1]),
@@ -946,7 +946,7 @@ accumulator(
 accumulator(
     "rh_v3",
     collections_5["stage 1"]["lh"].next(exhausted=True),
-    baca.pitch_first_assignment([4, -4], 16, treatments=[abjad.Duration(16, 4)]),
+    baca.pitch_first_assignment([4, -4], 16, treatments=[(16, 4)]),
     rmakers.denominator(abjad.Duration(1, 1)),
     baca.dynamic("mf"),
     baca.ottava(),
