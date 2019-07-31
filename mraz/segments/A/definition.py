@@ -36,7 +36,7 @@ accumulator(
 accumulator(
     "rh_v2",
     collections_4["stage 5"]["lh"][:4],
-    baca.pitch_first_assignment([1], 16, time_treatments=[abjad.Duration(1, 4)]),
+    baca.pitch_first_assignment([1], 16, treatments=[abjad.Duration(1, 4)]),
     baca.dls_staff_padding(8),
     baca.hairpin("f < ff"),
     baca.ottava(),
@@ -52,7 +52,7 @@ accumulator(
 accumulator(
     "lh_v4",
     collections_7["stage 1"]["lh"][-1].transpose(4*7),
-    baca.pitch_first_assignment([1], 16, time_treatments=[1]),
+    baca.pitch_first_assignment([1], 16, treatments=[1]),
     baca.register(6, 6+10),
     baca.imbricate(
         "lh_v4_i",
@@ -67,7 +67,7 @@ accumulator(
 accumulator(
     "lh_v6",
     collections_8["stage 3"]["lh"][1],
-    baca.pitch_first_assignment([2, -4], 16, time_treatments=[4]),
+    baca.pitch_first_assignment([2, -4], 16, treatments=[4]),
     baca.clef("bass"),
     baca.dynamic("f"),
     baca.ottava_bassa(),
@@ -104,7 +104,7 @@ accumulator(
 accumulator(
     "rh_v3",
     collections_6["stage 1"]["rh"][2],
-    baca.pitch_first_assignment([1], 8, thread=True, time_treatments=[1, 0]),
+    baca.pitch_first_assignment([1], 8, treatments=[1, 0]),
     baca.dynamic("pp"),
     baca.dynamic_text_x_offset(0.5),
     baca.register(24, 12),
@@ -154,7 +154,7 @@ accumulator(
 accumulator(
     "rh_v3",
     collections_5["stage 1"]["lh"].next(exhausted=True),
-    baca.pitch_first_assignment([4, -4], 16, time_treatments=[abjad.Duration(16, 4)]),
+    baca.pitch_first_assignment([4, -4], 16, treatments=[abjad.Duration(16, 4)]),
     rmakers.denominator(abjad.Duration(1, 1)),
     baca.dynamic("mf"),
     baca.dynamic_text_x_offset(0.25),
