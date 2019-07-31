@@ -24,7 +24,7 @@ collections_8 = collection_maker.make_segment_8_collections()
 accumulator(
     "rh_v3",
     collections["stage 1"]["rh"].next(),
-    baca.pitch_first_assignment([2, -4, 2, -4, 4], 16, time_treatments=[2]),
+    baca.pitch_first_assignment([2, -4, 2, -4, 4], 16, treatments=[2]),
     baca.dynamic("ff"),
     baca.register(-12, 12),
     baca.stem_up(),
@@ -50,7 +50,7 @@ accumulator(
 accumulator(
     "rh_v3",
     collections["stage 1"]["rh"].next(),
-    baca.pitch_first_assignment([-4, 2, -4, 4], 16, time_treatments=[-4]),
+    baca.pitch_first_assignment([-4, 2, -4, 4], 16, treatments=[-4]),
     baca.register(12, -12),
     baca.stem_up(),
     baca.tuplet_bracket_up(),
@@ -81,7 +81,7 @@ accumulator(
 accumulator(
     "rh_v3",
     collections["stage 1"]["rh"].next(exhausted=True),
-    baca.pitch_first_assignment([2, -4, 2, -4, 4], 16, time_treatments=[2]),
+    baca.pitch_first_assignment([2, -4, 2, -4, 4], 16, treatments=[2]),
     baca.register(-6),
     baca.stem_up(),
     baca.tuplet_bracket_up(),
@@ -528,7 +528,7 @@ accumulator(
         [2],
         16,
         affix=baca.rests_around([2], [6]),
-        time_treatments=[6],
+        treatments=[6],
     ),
     baca.register(36, 22),
     baca.imbricate(
@@ -565,7 +565,7 @@ accumulator(
 accumulator(
     "rh_v1",
     collections["stage 4"]["rh"].next(),
-    baca.pitch_first_assignment([2], 16, time_treatments=[8]),
+    baca.pitch_first_assignment([2], 16, treatments=[8]),
     rmakers.denominator((1, 4)),
     baca.register(36, 22),
     baca.imbricate(
@@ -588,7 +588,7 @@ accumulator(
 accumulator(
     "rh_v1",
     collections["stage 4"]["rh"].next(exhausted=True),
-    baca.pitch_first_assignment([2], 16, time_treatments=[10]),
+    baca.pitch_first_assignment([2], 16, treatments=[10]),
     baca.register(36, 22),
     baca.imbricate(
         "rh_v2",
@@ -764,7 +764,7 @@ accumulator(
 accumulator(
     "rh_v2",
     collections["stage 5"]["lh"].next(4),
-    baca.pitch_first_assignment([1], 16, time_treatments=[abjad.Duration(1, 4)]),
+    baca.pitch_first_assignment([1], 16, treatments=[abjad.Duration(1, 4)]),
     rmakers.beam_groups(),
     baca.dls_staff_padding(8),
     baca.hairpin("f < ff", selector=baca.leaves()[:-1]),
@@ -780,7 +780,7 @@ accumulator(
 accumulator(
     "rh_v2",
     collections["stage 5"]["lh"].next(4),
-    baca.pitch_first_assignment([1], 16, time_treatments=[abjad.Duration(1, 4)]),
+    baca.pitch_first_assignment([1], 16, treatments=[abjad.Duration(1, 4)]),
     rmakers.beam_groups(),
     baca.dls_staff_padding(8),
     baca.hairpin("f < ff", selector=baca.leaves()[:-1]),
@@ -810,7 +810,7 @@ accumulator(
 accumulator(
     "rh_v2",
     collections["stage 5"]["lh"].next(4),
-    baca.pitch_first_assignment([1], 16, time_treatments=[abjad.Duration(1, 4)]),
+    baca.pitch_first_assignment([1], 16, treatments=[abjad.Duration(1, 4)]),
     rmakers.beam_groups(),
     baca.dls_staff_padding(8),
     baca.hairpin("f < ff", selector=baca.leaves()[:-1]),
@@ -826,7 +826,7 @@ accumulator(
 accumulator(
     "rh_v2",
     collections["stage 5"]["lh"].next(2),
-    baca.pitch_first_assignment([1], 16, time_treatments=[abjad.Duration(1, 4)]),
+    baca.pitch_first_assignment([1], 16, treatments=[abjad.Duration(1, 4)]),
     rmakers.beam_groups(),
     baca.dls_staff_padding(8),
     baca.hairpin("f < ff", selector=baca.leaves()[:-1]),
@@ -897,7 +897,7 @@ accumulator(
 accumulator(
     "rh_v3",
     collections["stage 1"]["rh"][1],
-    baca.pitch_first_assignment([-4, 2, -4, 4], 16, time_treatments=[-4]),
+    baca.pitch_first_assignment([-4, 2, -4, 4], 16, treatments=[-4]),
     baca.dynamic("mp"),
     baca.register(12, -12),
     baca.stem_up(),
@@ -946,7 +946,7 @@ accumulator(
 accumulator(
     "rh_v3",
     collections_5["stage 1"]["lh"].next(exhausted=True),
-    baca.pitch_first_assignment([4, -4], 16, time_treatments=[abjad.Duration(16, 4)]),
+    baca.pitch_first_assignment([4, -4], 16, treatments=[abjad.Duration(16, 4)]),
     rmakers.denominator(abjad.Duration(1, 1)),
     baca.dynamic("mf"),
     baca.ottava(),

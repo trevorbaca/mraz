@@ -39,7 +39,7 @@ accumulator(
 accumulator(
     "rh_v3",
     collections["stage 1"]["lh"].next(exhausted=True),
-    baca.pitch_first_assignment([4, -4], 16, time_treatments=[abjad.Duration(16, 4)]),
+    baca.pitch_first_assignment([4, -4], 16, treatments=[abjad.Duration(16, 4)]),
     rmakers.denominator(abjad.Duration(1, 1)),
     baca.dynamic("mf"),
     baca.ottava(),
@@ -58,7 +58,7 @@ accumulator(
 accumulator(
     "rh_v3",
     collections["stage 2"]["rh"].next(5),
-    baca.pitch_first_assignment([2], 16, thread=True, time_treatments=[-2, -2, 0]),
+    baca.pitch_first_assignment([2], 16, thread=True, treatments=[-2, -2, 0]),
     baca.register(24, 0),
     baca.nest("-1/4"),
     baca.imbricate(
@@ -88,7 +88,7 @@ accumulator(
 accumulator(
     "rh_v3",
     collections["stage 2"]["rh"].next(5),
-    baca.pitch_first_assignment([2], 16, thread=True, time_treatments=[-2, 0, -2]),
+    baca.pitch_first_assignment([2], 16, thread=True, treatments=[-2, 0, -2]),
     # 2018-07-10: F5 flipped to F4 because of command interpretation order
     # 2019-07-27: F5 restored by command stack
     baca.new(
@@ -113,7 +113,7 @@ accumulator(
 accumulator(
     "lh_v6",
     collections_8["stage 3"]["lh"][1],
-    baca.pitch_first_assignment([2, -4], 16, time_treatments=[4]),
+    baca.pitch_first_assignment([2, -4], 16, treatments=[4]),
     baca.dynamic("f"),
     baca.ottava_bassa(),
     baca.register(-39),
@@ -143,7 +143,7 @@ accumulator(
 accumulator(
     "rh_v3",
     collections["stage 2"]["rh"].next(5),
-    baca.pitch_first_assignment([2], 16, thread=True, time_treatments=[0, -2, -2]),
+    baca.pitch_first_assignment([2], 16, thread=True, treatments=[0, -2, -2]),
     baca.register(24, 0),
     baca.nest("-3/8"),
     baca.imbricate(
@@ -173,7 +173,7 @@ accumulator(
 accumulator(
     "rh_v3",
     collections["stage 2"]["rh"].next(6),
-    baca.pitch_first_assignment([2], 16, thread=True, time_treatments=[-2, -2, 0]),
+    baca.pitch_first_assignment([2], 16, thread=True, treatments=[-2, -2, 0]),
     baca.register(24, 0),
     baca.nest("-3/8"),
     baca.imbricate(
@@ -315,7 +315,7 @@ accumulator(
 accumulator(
     "rh_v3",
     collections["stage 2"]["rh"].next(3, exhausted=True),
-    baca.pitch_first_assignment([2], 16, thread=True, time_treatments=[-2, 0, -2]),
+    baca.pitch_first_assignment([2], 16, thread=True, treatments=[-2, 0, -2]),
     baca.register(24, 0),
     baca.nest("-1/4"),
     baca.imbricate(

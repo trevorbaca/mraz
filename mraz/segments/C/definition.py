@@ -24,7 +24,7 @@ resonance = baca.PitchSet("e, fs, gs, as, b,", item_class=abjad.NamedPitch)
 accumulator(
     "rh_v4",
     collections_7["stage 1"]["lh"][-1].transpose(4*7),
-    baca.pitch_first_assignment([1], 16, time_treatments=[1]),
+    baca.pitch_first_assignment([1], 16, treatments=[1]),
     rmakers.beam_groups(),
     baca.register(6, 6+10),
     baca.imbricate(
@@ -72,7 +72,7 @@ accumulator(
 accumulator(
     "rh_v4",
     collections_7["stage 1"]["lh"][-1].transpose(4*7),
-    baca.pitch_first_assignment([1], 16, time_treatments=[1]),
+    baca.pitch_first_assignment([1], 16, treatments=[1]),
     rmakers.beam_groups(),
     baca.register(6, 6+10),
     baca.imbricate(
@@ -111,7 +111,7 @@ accumulator(
 accumulator(
     "rh_v3",
     collections_4["stage 1"]["rh"][0],
-    baca.pitch_first_assignment([2, -4, 2, -4, 4], 16, time_treatments=[2]),
+    baca.pitch_first_assignment([2, -4, 2, -4, 4], 16, treatments=[2]),
     baca.dynamic("ff"),
     baca.register(-12, 12),
     baca.tuplet_bracket_up(),
@@ -187,7 +187,7 @@ accumulator(
 accumulator(
     "rh_v2",
     collections_4["stage 5"]["lh"][:4],
-    baca.pitch_first_assignment([1], 16, time_treatments=[abjad.Duration(1, 4)]),
+    baca.pitch_first_assignment([1], 16, treatments=[abjad.Duration(1, 4)]),
     rmakers.beam_groups(),
     baca.dls_staff_padding(8),
     baca.hairpin("f < ff"),
