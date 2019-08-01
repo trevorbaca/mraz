@@ -24,7 +24,7 @@ collections_8 = collection_maker.make_segment_8_collections()
 accumulator(
     "rh_v2",
     collections["stage 1"]["rh"].next(exhausted=True),
-    baca.pitch_first_assignment([2, -14], 16),
+    baca.pitch_first_assignment_command([2, -14], 16),
     baca.accent(baca.pheads()),
     baca.dynamic("fff"),
     baca.dynamic_up(),
@@ -39,7 +39,7 @@ accumulator(
 accumulator(
     "rh_v3",
     collections["stage 1"]["lh"].next(exhausted=True),
-    baca.pitch_first_assignment([4, -4], 16, treatments=[(16, 4)]),
+    baca.pitch_first_assignment_command([4, -4], 16, treatments=[(16, 4)]),
     rmakers.denominator(abjad.Duration(1, 1)),
     baca.dynamic("mf"),
     baca.ottava(),
@@ -58,7 +58,7 @@ accumulator(
 accumulator(
     "rh_v3",
     collections["stage 2"]["rh"].next(5),
-    baca.pitch_first_assignment([2], 16, thread=True, treatments=[-2, -2, 0]),
+    baca.pitch_first_assignment_command([2], 16, thread=True, treatments=[-2, -2, 0]),
     baca.register(24, 0),
     baca.nest("-1/4"),
     baca.imbricate(
@@ -88,7 +88,7 @@ accumulator(
 accumulator(
     "rh_v3",
     collections["stage 2"]["rh"].next(5),
-    baca.pitch_first_assignment([2], 16, thread=True, treatments=[-2, 0, -2]),
+    baca.pitch_first_assignment_command([2], 16, thread=True, treatments=[-2, 0, -2]),
     # 2018-07-10: F5 flipped to F4 because of command interpretation order
     # 2019-07-27: F5 restored by command stack
     baca.new(
@@ -113,7 +113,7 @@ accumulator(
 accumulator(
     "lh_v6",
     collections_8["stage 3"]["lh"][1],
-    baca.pitch_first_assignment([2, -4], 16, treatments=[4]),
+    baca.pitch_first_assignment_command([2, -4], 16, treatments=[4]),
     baca.dynamic("f"),
     baca.ottava_bassa(),
     baca.register(-39),
@@ -128,7 +128,7 @@ accumulator(
 accumulator(
     "lh_v5",
     collections_8["stage 3"]["rh"][4],
-    baca.pitch_first_assignment([6, -1], 32, affix=baca.rests_after([4])),
+    baca.pitch_first_assignment_command([6, -1], 32, affix=baca.rests_after([4])),
     baca.dynamic("ppp"),
     baca.dynamic_up(),
     baca.register(-27, -39),
@@ -143,7 +143,7 @@ accumulator(
 accumulator(
     "rh_v3",
     collections["stage 2"]["rh"].next(5),
-    baca.pitch_first_assignment([2], 16, thread=True, treatments=[0, -2, -2]),
+    baca.pitch_first_assignment_command([2], 16, thread=True, treatments=[0, -2, -2]),
     baca.register(24, 0),
     baca.nest("-3/8"),
     baca.imbricate(
@@ -173,7 +173,7 @@ accumulator(
 accumulator(
     "rh_v3",
     collections["stage 2"]["rh"].next(6),
-    baca.pitch_first_assignment([2], 16, thread=True, treatments=[-2, -2, 0]),
+    baca.pitch_first_assignment_command([2], 16, thread=True, treatments=[-2, -2, 0]),
     baca.register(24, 0),
     baca.nest("-3/8"),
     baca.imbricate(
@@ -200,7 +200,7 @@ accumulator(
 accumulator(
     "rh_v2",
     collections_2["stage 2"]["rh"].next(),
-    baca.pitch_first_assignment([1], 16),
+    baca.pitch_first_assignment_command([1], 16),
     rmakers.beam_groups(),
     baca.bass_to_octave(3),
     baca.beam_positions(-8),
@@ -215,7 +215,7 @@ accumulator(
 accumulator(
     "rh_v2",
     collections_2["stage 2"]["rh"].next(),
-    baca.pitch_first_assignment([1], 16),
+    baca.pitch_first_assignment_command([1], 16),
     rmakers.beam_groups(),
     baca.bass_to_octave(4),
     baca.beam_positions(-8),
@@ -228,7 +228,7 @@ accumulator(
 accumulator(
     "rh_v2",
     collections_2["stage 2"]["rh"].next(),
-    baca.pitch_first_assignment([1], 16),
+    baca.pitch_first_assignment_command([1], 16),
     rmakers.beam_groups(),
     baca.bass_to_octave(4),
     baca.beam_positions(-8),
@@ -241,7 +241,7 @@ accumulator(
 accumulator(
     "rh_v2",
     collections_2["stage 2"]["rh"].next(),
-    baca.pitch_first_assignment([1], 16),
+    baca.pitch_first_assignment_command([1], 16),
     rmakers.beam_groups(),
     baca.bass_to_octave(5),
     baca.beam_positions(-8),
@@ -254,7 +254,7 @@ accumulator(
 accumulator(
     "rh_v2",
     collections_2["stage 2"]["rh"].next(exhausted=True),
-    baca.pitch_first_assignment([1], 16),
+    baca.pitch_first_assignment_command([1], 16),
     rmakers.beam_groups(),
     baca.bass_to_octave(5),
     baca.beam_positions(-8),
@@ -269,7 +269,7 @@ accumulator(
 accumulator(
     "lh_resonance",
     [{-35, -23}],
-    baca.pitch_first_assignment([29], 16),
+    baca.pitch_first_assignment_command([29], 16),
     anchor=baca.anchor_to_figure("rh-2 2.2.1"),
     signature=4,
     figure_name="lhr 2.2.1",
@@ -279,7 +279,7 @@ accumulator(
 accumulator(
     "lh_resonance",
     [{-35, -23}],
-    baca.pitch_first_assignment([27], 16),
+    baca.pitch_first_assignment_command([27], 16),
     signature=4,
     figure_name="lhr 2.2.2a",
     hide_time_signature=True,
@@ -288,7 +288,7 @@ accumulator(
 accumulator(
     "lh_resonance",
     [{-33, -21}],
-    baca.pitch_first_assignment([21], 16),
+    baca.pitch_first_assignment_command([21], 16),
     signature=4,
     figure_name="lhr 2.2.3a",
     hide_time_signature=True,
@@ -297,7 +297,7 @@ accumulator(
 accumulator(
     "lh_resonance",
     [{-33, -21}],
-    baca.pitch_first_assignment([15], 16),
+    baca.pitch_first_assignment_command([15], 16),
     signature=4,
     figure_name="lhr 2.2.4",
     hide_time_signature=True,
@@ -306,7 +306,7 @@ accumulator(
 accumulator(
     "lh_resonance",
     [{-33, -21}],
-    baca.pitch_first_assignment([16], 16),
+    baca.pitch_first_assignment_command([16], 16),
     signature=4,
     figure_name="lhr 2.2.5",
     hide_time_signature=True,
@@ -315,7 +315,7 @@ accumulator(
 accumulator(
     "rh_v3",
     collections["stage 2"]["rh"].next(3, exhausted=True),
-    baca.pitch_first_assignment([2], 16, thread=True, treatments=[-2, 0, -2]),
+    baca.pitch_first_assignment_command([2], 16, thread=True, treatments=[-2, 0, -2]),
     baca.register(24, 0),
     baca.nest("-1/4"),
     baca.imbricate(
@@ -337,7 +337,7 @@ accumulator(
 accumulator(
     "lh_v4",
     collections["stage 2"]["lh"].next(),
-    baca.pitch_first_assignment([3, -3], 16, affix=baca.rests_around([8, 8, 8], [6])),
+    baca.pitch_first_assignment_command([3, -3], 16, affix=baca.rests_around([8, 8, 8], [6])),
     baca.clef("bass"),
     baca.dynamic("p"),
     baca.slur(map=baca.tuplets()),
@@ -352,7 +352,7 @@ accumulator(
 accumulator(
     "lh_v4",
     collections["stage 2"]["lh"].next(),
-    baca.pitch_first_assignment([3, -1], 16, affix=baca.rests_before([8, 8])),
+    baca.pitch_first_assignment_command([3, -1], 16, affix=baca.rests_before([8, 8])),
     baca.dynamic("p"),
     baca.slur(map=baca.tuplets()),
     baca.register(6, -24),
@@ -366,7 +366,7 @@ accumulator(
 accumulator(
     "lh_v4",
     collections["stage 2"]["lh"].next(),
-    baca.pitch_first_assignment([3, -1], 16),
+    baca.pitch_first_assignment_command([3, -1], 16),
     baca.slur(map=baca.tuplets()),
     baca.register(6, -24),
     signature=4,
@@ -377,7 +377,7 @@ accumulator(
 accumulator(
     "lh_v4",
     collections["stage 2"]["lh"].next(),
-    baca.pitch_first_assignment([3, -1], 16),
+    baca.pitch_first_assignment_command([3, -1], 16),
     baca.slur(map=baca.tuplets()),
     baca.register(0, -24),
     anchor=baca.anchor_to_figure("rh-3 5.2.7"),
@@ -389,7 +389,7 @@ accumulator(
 accumulator(
     "lh_v4",
     collections["stage 2"]["lh"].next(),
-    baca.pitch_first_assignment([3], 16),
+    baca.pitch_first_assignment_command([3], 16),
     rmakers.beam_groups(),
     rmakers.beam(),
     baca.slur(map=baca.tuplets()),
@@ -402,7 +402,7 @@ accumulator(
 accumulator(
     "lh_v4",
     collections["stage 2"]["lh"].next(),
-    baca.pitch_first_assignment([3], 16),
+    baca.pitch_first_assignment_command([3], 16),
     rmakers.beam_groups(),
     rmakers.beam(),
     baca.slur(map=baca.tuplets()),
@@ -415,7 +415,7 @@ accumulator(
 accumulator(
     "lh_v4",
     collections["stage 2"]["lh"].next(),
-    baca.pitch_first_assignment([3], 16, affix=baca.rests_around([3], [4, 4, 4])),
+    baca.pitch_first_assignment_command([3], 16, affix=baca.rests_around([3], [4, 4, 4])),
     rmakers.beam_groups(),
     rmakers.beam(),
     baca.slur(map=baca.tuplets()),
@@ -428,7 +428,7 @@ accumulator(
 accumulator(
     "lh_v4",
     collections["stage 2"]["lh"].next(),
-    baca.pitch_first_assignment([2], 16, affix=baca.rests_before([14])),
+    baca.pitch_first_assignment_command([2], 16, affix=baca.rests_before([14])),
     rmakers.beam_groups(),
     rmakers.beam(),
     baca.dynamic("p"),
@@ -443,7 +443,7 @@ accumulator(
 accumulator(
     "lh_v4",
     collections["stage 2"]["lh"].next(exhausted=True),
-    baca.pitch_first_assignment([2], 16),
+    baca.pitch_first_assignment_command([2], 16),
     rmakers.beam_groups(),
     rmakers.beam(),
     baca.slur(map=baca.tuplets()),
