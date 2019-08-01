@@ -18,7 +18,7 @@ collections = collection_maker.make_segment_6_collections()
 accumulator(
     "rh_v3",
     collections["stage 1"]["rh"].next(2),
-    baca.pitch_first_assignment(
+    baca.pitch_first_assignment_command(
         [1],
         8,
         affix=baca.rests_after([1]),
@@ -38,7 +38,7 @@ accumulator(
 accumulator(
     "rh_v3",
     collections["stage 1"]["rh"].next(),
-    baca.pitch_first_assignment([1], 8, treatments=[1]),
+    baca.pitch_first_assignment_command([1], 8, treatments=[1]),
     baca.register(24, 12),
     baca.staccato(baca.pheads()),
     baca.tenuto(baca.pheads()),
@@ -51,7 +51,7 @@ accumulator(
 accumulator(
     "rh_v3",
     collections["stage 1"]["rh"].next(),
-    baca.pitch_first_assignment([1], 8, affix=baca.rests_around([1], [1])),
+    baca.pitch_first_assignment_command([1], 8, affix=baca.rests_around([1], [1])),
     baca.register(24, 12),
     baca.staccato(baca.pheads()),
     baca.tenuto(baca.pheads()),
@@ -62,7 +62,7 @@ accumulator(
 accumulator(
     "rh_v3",
     collections["stage 1"]["rh"].next(exhausted=True),
-    baca.pitch_first_assignment([1], 8, treatments=[1]),
+    baca.pitch_first_assignment_command([1], 8, treatments=[1]),
     baca.register(12, 24),
     baca.staccato(baca.pheads()),
     baca.tenuto(baca.pheads()),
@@ -74,7 +74,7 @@ accumulator(
 accumulator(
     "lh_v4",
     collections["stage 1"]["lh"].next(),
-    baca.pitch_first_assignment([1, -1], 16, treatments=[1]),
+    baca.pitch_first_assignment_command([1, -1], 16, treatments=[1]),
     baca.dynamic("mp"),
     baca.register(0, 12),
     baca.tenuto(baca.pheads()),
@@ -90,7 +90,7 @@ accumulator(
 accumulator(
     "lh_v4",
     collections["stage 1"]["lh"].next(),
-    baca.pitch_first_assignment([1, -2], 16, treatments=[2]),
+    baca.pitch_first_assignment_command([1, -2], 16, treatments=[2]),
     baca.register(0, 12),
     baca.tenuto(baca.pheads()),
     baca.tuplet_bracket_staff_padding(3),
@@ -105,7 +105,7 @@ accumulator(
 accumulator(
     "lh_v4",
     collections["stage 1"]["lh"].next(),
-    baca.pitch_first_assignment([2, -1], 32),
+    baca.pitch_first_assignment_command([2, -1], 32),
     baca.register(0, 12),
     baca.tenuto(baca.pheads()),
     anchor=baca.anchor(
@@ -120,7 +120,7 @@ accumulator(
 accumulator(
     "lh_v4",
     collections["stage 1"]["lh"].next(exhausted=True),
-    baca.pitch_first_assignment([2, -1], 32),
+    baca.pitch_first_assignment_command([2, -1], 32),
     baca.register(12, 0),
     baca.tenuto(baca.pheads()),
     figure_name="lh-4 6.1.4",
