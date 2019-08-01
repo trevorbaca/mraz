@@ -37,7 +37,7 @@ accumulator(
 accumulator(
     "rh_v2",
     collections["stage 6"]["rh"][1],
-    baca.pitch_first_assignment([12], 16),
+    baca.pitch_first_assignment_command([12], 16),
     rmakers.beam_groups(),
     baca.dynamic("ff"),
     baca.marcato(baca.pheads()),
@@ -50,7 +50,7 @@ accumulator(
 accumulator(
     "rh_v3",
     collections["stage 1"]["rh"].next(),
-    baca.pitch_first_assignment([-4, 2, -4, 4], 16, treatments=[-4]),
+    baca.pitch_first_assignment_command([-4, 2, -4, 4], 16, treatments=[-4]),
     baca.register(12, -12),
     baca.stem_up(),
     baca.tuplet_bracket_up(),
@@ -62,7 +62,7 @@ accumulator(
 accumulator(
     "lh_v4",
     collections_5["stage 2"]["lh"][0],
-    baca.pitch_first_assignment([3, -3], 16),
+    baca.pitch_first_assignment_command([3, -3], 16),
     baca.dynamic("p"),
     baca.slur(map=baca.tuplets().map(baca.tleaves()).nontrivial()),
     baca.register(6, -24),
@@ -81,7 +81,7 @@ accumulator(
 accumulator(
     "rh_v3",
     collections["stage 1"]["rh"].next(exhausted=True),
-    baca.pitch_first_assignment([2, -4, 2, -4, 4], 16, treatments=[2]),
+    baca.pitch_first_assignment_command([2, -4, 2, -4, 4], 16, treatments=[2]),
     baca.register(-6),
     baca.stem_up(),
     baca.tuplet_bracket_up(),
@@ -99,7 +99,7 @@ accumulator(
 accumulator(
     "lh_v5",
     collections["stage 1"]["lh"].next(),
-    baca.pitch_first_assignment([3, -1], 16, affix=baca.rests_before([12])),
+    baca.pitch_first_assignment_command([3, -1], 16, affix=baca.rests_before([12])),
     baca.dynamic("f"),
     baca.register(-6, 6),
     baca.tenuto(baca.pheads()),

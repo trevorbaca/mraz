@@ -206,7 +206,7 @@ accumulator(
 accumulator(
     "lh_resonance",
     [resonance],
-    baca.pitch_first_assignment([8], 16),
+    baca.pitch_first_assignment_command([8], 16),
     rmakers.beam_groups(),
     anchor=baca.anchor_to_figure("b.2.1"),
     signature=4,
@@ -217,7 +217,7 @@ accumulator(
 accumulator(
     "lh_resonance",
     [resonance],
-    baca.pitch_first_assignment([4], 16),
+    baca.pitch_first_assignment_command([4], 16),
     rmakers.beam_groups(),
     signature=4,
     figure_name="b.2.r.2",
@@ -227,7 +227,7 @@ accumulator(
 accumulator(
     "lh_resonance",
     [resonance],
-    baca.pitch_first_assignment([5], 16),
+    baca.pitch_first_assignment_command([5], 16),
     rmakers.beam_groups(),
     signature=4,
     figure_name="b.2.r.3",
@@ -237,7 +237,7 @@ accumulator(
 accumulator(
     "lh_resonance",
     [resonance],
-    baca.pitch_first_assignment([4], 16),
+    baca.pitch_first_assignment_command([4], 16),
     rmakers.beam_groups(),
     signature=4,
     figure_name="b.2.r.4",
@@ -247,7 +247,7 @@ accumulator(
 accumulator(
     "lh_resonance",
     [resonance],
-    baca.pitch_first_assignment([8], 16),
+    baca.pitch_first_assignment_command([8], 16),
     rmakers.beam_groups(),
     signature=4,
     figure_name="b.2.r.5",
@@ -257,7 +257,7 @@ accumulator(
 accumulator(
     "lh_resonance",
     [resonance],
-    baca.pitch_first_assignment([10], 16),
+    baca.pitch_first_assignment_command([10], 16),
     rmakers.beam_groups(),
     signature=4,
     figure_name="b.2.r.6",
@@ -267,7 +267,7 @@ accumulator(
 accumulator(
     "lh_resonance",
     [resonance],
-    baca.pitch_first_assignment([21], 16),
+    baca.pitch_first_assignment_command([21], 16),
     rmakers.beam_groups(),
     baca.accidental_x_extent_false(),
     anchor=baca.anchor_to_figure("b.2.10"),
@@ -279,7 +279,7 @@ accumulator(
 accumulator(
     "lh_resonance",
     [resonance],
-    baca.pitch_first_assignment([28], 16),
+    baca.pitch_first_assignment_command([28], 16),
     rmakers.beam_groups(),
     signature=4,
     figure_name="b.2.r.8",
@@ -289,7 +289,7 @@ accumulator(
 accumulator(
     "lh_resonance",
     [resonance],
-    baca.pitch_first_assignment([24], 16),
+    baca.pitch_first_assignment_command([24], 16),
     rmakers.beam_groups(),
     signature=4,
     figure_name="b.2.r.9",
