@@ -23,7 +23,7 @@ collections_8 = collection_maker.make_segment_8_collections()
 accumulator(
     "rh_v1",
     collections_4["stage 5"]["rh"][2],
-    baca.pfmaker([16], 16),
+    baca.figure([16], 16),
     baca.register(36),
     rmakers.beam_groups(),
     baca.tenuto(baca.pheads()),
@@ -36,7 +36,7 @@ accumulator(
 accumulator(
     "rh_v2",
     collections_4["stage 5"]["lh"][:4],
-    baca.pfmaker([1], 16, treatments=[(1, 4)]),
+    baca.figure([1], 16, treatments=[(1, 4)]),
     baca.dls_staff_padding(8),
     baca.hairpin("f < ff"),
     baca.ottava(),
@@ -52,7 +52,7 @@ accumulator(
 accumulator(
     "lh_v4",
     collections_7["stage 1"]["lh"][-1].transpose(4*7),
-    baca.pfmaker([1], 16, treatments=[1]),
+    baca.figure([1], 16, treatments=[1]),
     baca.register(6, 6+10),
     baca.imbricate(
         "lh_v4_i",
@@ -67,7 +67,7 @@ accumulator(
 accumulator(
     "lh_v6",
     collections_8["stage 3"]["lh"][1],
-    baca.pfmaker([2, -4], 16, treatments=[4]),
+    baca.figure([2, -4], 16, treatments=[4]),
     baca.clef("bass"),
     baca.dynamic("f"),
     baca.ottava_bassa(),
@@ -82,7 +82,7 @@ accumulator(
 accumulator(
     "lh_v5",
     collections_8["stage 3"]["rh"][4],
-    baca.pfmaker([6, -1], 32, affix=baca.rests_after([4])),
+    baca.figure([6, -1], 32, affix=baca.rests_after([4])),
     baca.dynamic("ppp"),
     baca.dynamic_text_x_offset(-0.5),
     baca.dynamic_up(),
@@ -104,7 +104,7 @@ accumulator(
 accumulator(
     "rh_v3",
     collections_6["stage 1"]["rh"][2],
-    baca.pfmaker([1], 8, treatments=[1]),
+    baca.figure([1], 8, treatments=[1]),
     baca.dynamic("pp"),
     baca.dynamic_text_x_offset(0.5),
     baca.register(24, 12),
@@ -126,7 +126,7 @@ accumulator(
 accumulator(
     "rh_v3",
     collections_6["stage 1"]["rh"][3],
-    baca.pfmaker([1], 8, affix=baca.rests_around([1], [1])),
+    baca.figure([1], 8, affix=baca.rests_around([1], [1])),
     baca.register(24, 12),
     baca.span_bar_extra_offset((-0.75, 0), baca.leaf(-1), after=True),
     baca.staccato(baca.pheads()),
@@ -138,7 +138,7 @@ accumulator(
 accumulator(
     "rh_v2",
     collections_5["stage 1"]["rh"].next(exhausted=True),
-    baca.pfmaker([2, -14], 16),
+    baca.figure([2, -14], 16),
     baca.accent(baca.pheads()),
     baca.dynamic("fff"),
     baca.dynamic_up(),
@@ -154,7 +154,7 @@ accumulator(
 accumulator(
     "rh_v3",
     collections_5["stage 1"]["lh"].next(exhausted=True),
-    baca.pfmaker([4, -4], 16, treatments=[(16, 4)]),
+    baca.figure([4, -4], 16, treatments=[(16, 4)]),
     rmakers.denominator(abjad.Duration(1, 1)),
     baca.dynamic("mf"),
     baca.dynamic_text_x_offset(0.25),
