@@ -308,7 +308,7 @@ class ScoreTemplate(baca.ScoreTemplate):
                 rh_resonance_voice,
             ],
             lilypond_type="PianoMusicRHStaff",
-            is_simultaneous=True,
+            simultaneous=True,
             name="Piano_Music_RH_Staff",
             tag=tag,
         )
@@ -331,7 +331,7 @@ class ScoreTemplate(baca.ScoreTemplate):
                 lh_resonance_voice,
             ],
             lilypond_type="PianoMusicLHStaff",
-            is_simultaneous=True,
+            simultaneous=True,
             name="Piano_Music_LH_Staff",
             tag=tag,
         )
