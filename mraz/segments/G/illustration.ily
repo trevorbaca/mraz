@@ -679,7 +679,7 @@ G_RH_Voice_I_Inserts = {                                                       %
             \tweak text #tuplet-number::calc-fraction-text
             \times 3/4 {
 
-                \set stemLeftBeamCount = 2
+                \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 2
                 f''16
                 - \marcato                                                     %! baca.marcato:IndicatorCommand
@@ -694,7 +694,7 @@ G_RH_Voice_I_Inserts = {                                                       %
 
             \times 2/3 {
 
-                \set stemLeftBeamCount = 2
+                \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 2
                 b''16
                 - \marcato                                                     %! baca.marcato:IndicatorCommand
@@ -739,7 +739,7 @@ G_RH_Voice_I_Inserts = {                                                       %
             \tweak text #tuplet-number::calc-fraction-text
             \times 3/4 {
 
-                \set stemLeftBeamCount = 2
+                \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 2
                 fs'''!16
                 - \marcato                                                     %! baca.marcato:IndicatorCommand
@@ -874,7 +874,7 @@ G_RH_Voice_I_Inserts = {                                                       %
                 s16
 
                 \set stemLeftBeamCount = 2
-                \set stemRightBeamCount = 2
+                \set stemRightBeamCount = 1
                 bf'''!16
                 - \marcato                                                     %! baca.marcato:IndicatorCommand
 
@@ -1464,7 +1464,7 @@ G_RH_Voice_II_Inserts = {                                                      %
 
             \scaleDurations #'(1 . 1) {
 
-                \set stemLeftBeamCount = 2
+                \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 2
                 f''16
                 - \accent                                                      %! baca.accent:IndicatorCommand
@@ -1579,7 +1579,7 @@ G_RH_Voice_II_Inserts = {                                                      %
 
             \scaleDurations #'(1 . 1) {
 
-                \set stemLeftBeamCount = 2
+                \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 2
                 ef'''!16
                 - \accent                                                      %! baca.accent:IndicatorCommand
@@ -3045,7 +3045,7 @@ G_LH_Voice_V_Inserts = {                                                       %
             \scaleDurations #'(1 . 1) {
 
                 % [G LH_Voice_V_Inserts measure 101 / measure 4]               %! _comment_measure_numbers
-                \set stemLeftBeamCount = 2
+                \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 2
                 \override Stem.direction = #up                                 %! baca.stem_up:OverrideCommand(1)
                 b'16
@@ -3067,7 +3067,7 @@ G_LH_Voice_V_Inserts = {                                                       %
 
             \scaleDurations #'(1 . 1) {
 
-                \set stemLeftBeamCount = 2
+                \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 2
                 fs''!16
                 - \staccato                                                    %! baca.staccato:IndicatorCommand
@@ -3121,7 +3121,7 @@ G_LH_Voice_V_Inserts = {                                                       %
 
             \scaleDurations #'(1 . 1) {
 
-                \set stemLeftBeamCount = 2
+                \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 2
                 a'16
                 - \staccato                                                    %! baca.staccato:IndicatorCommand
@@ -3143,7 +3143,7 @@ G_LH_Voice_V_Inserts = {                                                       %
             \scaleDurations #'(1 . 1) {
 
                 % [G LH_Voice_V_Inserts measure 105 / measure 8]               %! _comment_measure_numbers
-                \set stemLeftBeamCount = 2
+                \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 2
                 e''16
                 - \staccato                                                    %! baca.staccato:IndicatorCommand
