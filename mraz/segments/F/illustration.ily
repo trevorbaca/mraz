@@ -4071,6 +4071,8 @@ F_LH_Voice_IV = {                                                              %
 
             % [F LH_Voice_IV measure 97 / measure 16]                          %! _comment_measure_numbers
             \once \override Rest.transparent = ##t                             %! baca.rest_transparent:OverrideCommand(1)
+            \once \override PianoMusicLHStaff.Clef.X-extent = ##f              %! MEASURE_97:SHIFTED_CLEF:baca.clef_shift:OverrideCommand(1)
+            \once \override PianoMusicLHStaff.Clef.extra-offset = #'(-2.5 . 0) %! MEASURE_97:SHIFTED_CLEF:baca.clef_shift:OverrideCommand(1)
             \clef "treble"                                                     %! EXPLICIT_CLEF:_set_status_tag:baca.clef:IndicatorCommand
             \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'blue)  %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
         %@% \override PianoMusicLHStaff.Clef.color = ##f                       %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)

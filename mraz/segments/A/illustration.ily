@@ -1306,6 +1306,8 @@ A_Piano_Music_RH_Staff = <<                                                    %
 A_LH_Voice_I = {                                                               %! abjad.Path.extern
 
     % [A LH_Voice_I measure 1]                                                 %! _comment_measure_numbers
+%%% \once \override PianoMusicLHStaff.Clef.X-extent = ##f                      %! MEASURE_1:SHIFTED_CLEF:baca.clef_shift:OverrideCommand(1)
+%%% \once \override PianoMusicLHStaff.Clef.extra-offset = #'(-2.5 . 0)         %! MEASURE_1:SHIFTED_CLEF:baca.clef_shift:OverrideCommand(1)
     \clef "treble"                                                             %! EXPLICIT_CLEF:_set_status_tag:baca.clef:IndicatorCommand
     \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'blue)          %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
 %@% \override PianoMusicLHStaff.Clef.color = ##f                               %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
@@ -1872,6 +1874,8 @@ A_LH_Voice_VI = {                                                              %
             \ottava -1                                                         %! baca.ottava_bassa:SpannerIndicatorCommand(1)
             \override TupletBracket.direction = #down                          %! baca.tuplet_bracket_down:OverrideCommand(1)
             \override TupletBracket.staff-padding = #6                         %! baca.tuplet_bracket_staff_padding:OverrideCommand(1)
+            \once \override PianoMusicLHStaff.Clef.X-extent = ##f              %! MEASURE_3:SHIFTED_CLEF:baca.clef_shift:OverrideCommand(1)
+            \once \override PianoMusicLHStaff.Clef.extra-offset = #'(-2.75 . 0) %! MEASURE_3:SHIFTED_CLEF:baca.clef_shift:OverrideCommand(1)
             \clef "bass"                                                       %! EXPLICIT_CLEF:_set_status_tag:baca.clef:IndicatorCommand
             \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'blue)  %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
         %@% \override PianoMusicLHStaff.Clef.color = ##f                       %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)

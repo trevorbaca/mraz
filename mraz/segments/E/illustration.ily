@@ -872,6 +872,8 @@ E_LH_Voice_III = {                                                             %
 E_LH_Voice_IV = {                                                              %! abjad.Path.extern
 
     % [E LH_Voice_IV measure 78 / measure 1]                                   %! _comment_measure_numbers
+%%% \once \override PianoMusicLHStaff.Clef.X-extent = ##f                      %! MEASURE_78:SHIFTED_CLEF:baca.clef_shift:OverrideCommand(1)
+%%% \once \override PianoMusicLHStaff.Clef.extra-offset = #'(-2.5 . 0)         %! MEASURE_78:SHIFTED_CLEF:baca.clef_shift:OverrideCommand(1)
     \clef "treble"                                                             %! EXPLICIT_CLEF:_set_status_tag:baca.clef:IndicatorCommand
     \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'blue)          %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
 %@% \override PianoMusicLHStaff.Clef.color = ##f                               %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
