@@ -235,8 +235,8 @@ G_RH_Voice_I = {                                                               %
                 % [G RH_Voice_I measure 98 / measure 1]                        %! baca.SegmentMaker._comment_measure_numbers()
                 \set stemLeftBeamCount = 0
                 \set stemRightBeamCount = 2
-                \override Beam.positions = #'(10 . 10)                         %! baca.beam_positions:OverrideCommand(1)
-                \override Stem.direction = #up                                 %! baca.stem_up:OverrideCommand(1)
+                \override Beam.positions = #'(10 . 10)                         %! baca.beam_positions():OverrideCommand(1)
+                \override Stem.direction = #up                                 %! baca.stem_up():OverrideCommand(1)
                 \clef "treble"                                                 %! REAPPLIED_CLEF:_set_status_tag:baca.SegmentMaker._reapply_persistent_indicators(3)
                 \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'green4) %! REAPPLIED_CLEF_COLOR:baca.SegmentMaker._attach_color_literal(2)
             %@% \override PianoMusicRHStaff.Clef.color = ##f                   %! REAPPLIED_CLEF_COLOR_CANCELLATION:baca.SegmentMaker._attach_color_literal(1)
@@ -521,7 +521,7 @@ G_RH_Voice_I = {                                                               %
                 % [G RH_Voice_I measure 107 / measure 10]                      %! baca.SegmentMaker._comment_measure_numbers()
                 \set stemLeftBeamCount = 0
                 \set stemRightBeamCount = 2
-                \override Beam.positions = #'(12 . 12)                         %! baca.beam_positions:OverrideCommand(1)
+                \override Beam.positions = #'(12 . 12)                         %! baca.beam_positions():OverrideCommand(1)
                 f'''16
             %@% ^ \markup {                                                    %! FIGURE_NAME
             %@%     \fontsize                                                  %! FIGURE_NAME
@@ -591,7 +591,7 @@ G_RH_Voice_I = {                                                               %
                 \set stemRightBeamCount = 0
                 bf'''!16
                 ]
-                \revert Beam.positions                                         %! baca.beam_positions:OverrideCommand(2)
+                \revert Beam.positions                                         %! baca.beam_positions():OverrideCommand(2)
 
             }
 
@@ -607,8 +607,8 @@ G_RH_Voice_I = {                                                               %
             % [G RH_Voice_I measure 108 / measure 11]                          %! baca.SegmentMaker._comment_measure_numbers()
             \baca-invisible-music                                              %! baca.SegmentMaker._make_multimeasure_rest_container()
             c'1 * 1/8                                                          %! baca.SegmentMaker._make_multimeasure_rest_container()
-            \revert Beam.positions                                             %! baca.beam_positions:OverrideCommand(2)
-            \revert Stem.direction                                             %! baca.stem_up:OverrideCommand(2)
+            \revert Beam.positions                                             %! baca.beam_positions():OverrideCommand(2)
+            \revert Stem.direction                                             %! baca.stem_up():OverrideCommand(2)
 
         }                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container()
 
@@ -659,8 +659,8 @@ G_RH_Voice_I_Inserts = {                                                       %
             \times 5/6 {
 
                 % [G RH_Voice_I_Inserts measure 98 / measure 1]                %! baca.SegmentMaker._comment_measure_numbers()
-                \override Beam.positions = #'(-6.5 . -6.5)                     %! baca.beam_positions:OverrideCommand(1)
-                \override Script.direction = #down                             %! baca.script_down:OverrideCommand(1)
+                \override Beam.positions = #'(-6.5 . -6.5)                     %! baca.beam_positions():OverrideCommand(1)
+                \override Script.direction = #down                             %! baca.script_down():OverrideCommand(1)
                 s16
                 [
 
@@ -775,7 +775,7 @@ G_RH_Voice_I_Inserts = {                                                       %
             \scaleDurations #'(1 . 1) {
 
                 % [G RH_Voice_I_Inserts measure 102 / measure 5]               %! baca.SegmentMaker._comment_measure_numbers()
-                \override Beam.positions = #'(-8.5 . -8.5)                     %! baca.beam_positions:OverrideCommand(1)
+                \override Beam.positions = #'(-8.5 . -8.5)                     %! baca.beam_positions():OverrideCommand(1)
                 s16
                 [
 
@@ -789,7 +789,7 @@ G_RH_Voice_I_Inserts = {                                                       %
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 1
                 s16
-                \revert Beam.positions                                         %! baca.beam_positions:OverrideCommand(2)
+                \revert Beam.positions                                         %! baca.beam_positions():OverrideCommand(2)
 
             }
 
@@ -894,7 +894,7 @@ G_RH_Voice_I_Inserts = {                                                       %
 
                 s16
                 ]
-                \revert Beam.positions                                         %! baca.beam_positions:OverrideCommand(2)
+                \revert Beam.positions                                         %! baca.beam_positions():OverrideCommand(2)
 
             }
 
@@ -912,7 +912,7 @@ G_RH_Voice_I_Inserts = {                                                       %
             % [G RH_Voice_I_Inserts measure 108 / measure 11]                  %! baca.SegmentMaker._comment_measure_numbers()
             \baca-invisible-music                                              %! baca.SegmentMaker._make_multimeasure_rest_container()
             c'1 * 1/8                                                          %! baca.SegmentMaker._make_multimeasure_rest_container()
-            \revert Script.direction                                           %! baca.script_down:OverrideCommand(2)
+            \revert Script.direction                                           %! baca.script_down():OverrideCommand(2)
 
         }                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container()
 
@@ -953,8 +953,8 @@ G_RH_Voice_I_Inserts = {                                                       %
 G_RH_Voice_II = {                                                              %! abjad.Path.extern
 
     % [G RH_Voice_II measure 98 / measure 1]                                   %! baca.SegmentMaker._comment_measure_numbers()
-    \override Beam.positions = #'(-4.5 . -4.5)                                 %! baca.beam_positions:OverrideCommand(1)
-    \override Slur.direction = #up                                             %! baca.slur_up:OverrideCommand(1)
+    \override Beam.positions = #'(-4.5 . -4.5)                                 %! baca.beam_positions():OverrideCommand(1)
+    \override Slur.direction = #up                                             %! baca.slur_up():OverrideCommand(1)
     \dynamicDown                                                               %! baca.dynamic_down:IndicatorCommand
     s1 * 3/4
     - \tweak color #(x11-color 'green4)                                        %! REAPPLIED_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
@@ -967,7 +967,7 @@ G_RH_Voice_II = {                                                              %
             % [G RH_Voice_II measure 99 / measure 2]                           %! baca.SegmentMaker._comment_measure_numbers()
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
-            \override Stem.direction = #down                                   %! baca.stem_down:OverrideCommand(1)
+            \override Stem.direction = #down                                   %! baca.stem_down():OverrideCommand(1)
             c''16
             - \tweak color #(x11-color 'DeepPink1)                             %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
             \fff                                                               %! REDUNDANT_DYNAMIC:_set_status_tag:baca.dynamic:IndicatorCommand
@@ -1353,9 +1353,9 @@ G_RH_Voice_II = {                                                              %
             af'''!16
             )                                                                  %! SPANNER_STOP:baca.slur:SpannerIndicatorCommand(2)
             ]
-            \revert Beam.positions                                             %! baca.beam_positions:OverrideCommand(2)
-            \revert Slur.direction                                             %! baca.slur_up:OverrideCommand(2)
-            \revert Stem.direction                                             %! baca.stem_down:OverrideCommand(2)
+            \revert Beam.positions                                             %! baca.beam_positions():OverrideCommand(2)
+            \revert Slur.direction                                             %! baca.slur_up():OverrideCommand(2)
+            \revert Stem.direction                                             %! baca.stem_down():OverrideCommand(2)
 
         }
 
@@ -1388,8 +1388,8 @@ G_RH_Voice_II = {                                                              %
 G_RH_Voice_II_Inserts = {                                                      %! abjad.Path.extern
 
     % [G RH_Voice_II_Inserts measure 98 / measure 1]                           %! baca.SegmentMaker._comment_measure_numbers()
-    \override Beam.positions = #'(15.5 . 15.5)                                 %! baca.beam_positions:OverrideCommand(1)
-    \override Script.direction = #up                                           %! baca.script_up:OverrideCommand(1)
+    \override Beam.positions = #'(15.5 . 15.5)                                 %! baca.beam_positions():OverrideCommand(1)
+    \override Script.direction = #up                                           %! baca.script_up():OverrideCommand(1)
     s1 * 3/4
 
     {
@@ -1401,7 +1401,7 @@ G_RH_Voice_II_Inserts = {                                                      %
             % [G RH_Voice_II_Inserts measure 99 / measure 2]                   %! baca.SegmentMaker._comment_measure_numbers()
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
-            \override Stem.direction = #up                                     %! baca.stem_up:OverrideCommand(1)
+            \override Stem.direction = #up                                     %! baca.stem_up():OverrideCommand(1)
             c''16
             - \accent                                                          %! baca.accent:IndicatorCommand
             [
@@ -1476,7 +1476,7 @@ G_RH_Voice_II_Inserts = {                                                      %
 
                 s16
                 ]
-                \revert Beam.positions                                         %! baca.beam_positions:OverrideCommand(2)
+                \revert Beam.positions                                         %! baca.beam_positions():OverrideCommand(2)
 
             }
 
@@ -1498,7 +1498,7 @@ G_RH_Voice_II_Inserts = {                                                      %
             % [G RH_Voice_II_Inserts measure 103 / measure 6]                  %! baca.SegmentMaker._comment_measure_numbers()
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
-            \override Beam.positions = #'(13.5 . 13.5)                         %! baca.beam_positions:OverrideCommand(1)
+            \override Beam.positions = #'(13.5 . 13.5)                         %! baca.beam_positions():OverrideCommand(1)
             c''16
             - \accent                                                          %! baca.accent:IndicatorCommand
             [
@@ -1597,7 +1597,7 @@ G_RH_Voice_II_Inserts = {                                                      %
 
                 s16
                 ]
-                \revert Beam.positions                                         %! baca.beam_positions:OverrideCommand(2)
+                \revert Beam.positions                                         %! baca.beam_positions():OverrideCommand(2)
 
             }
 
@@ -1616,7 +1616,7 @@ G_RH_Voice_II_Inserts = {                                                      %
             % [G RH_Voice_II_Inserts measure 106 / measure 9]                  %! baca.SegmentMaker._comment_measure_numbers()
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
-            \override Beam.positions = #'(18.5 . 18.5)                         %! baca.beam_positions:OverrideCommand(1)
+            \override Beam.positions = #'(18.5 . 18.5)                         %! baca.beam_positions():OverrideCommand(1)
             f''16
             - \accent                                                          %! baca.accent:IndicatorCommand
             [
@@ -1657,9 +1657,9 @@ G_RH_Voice_II_Inserts = {                                                      %
             af'''!16
             - \accent                                                          %! baca.accent:IndicatorCommand
             ]
-            \revert Beam.positions                                             %! baca.beam_positions:OverrideCommand(2)
-            \revert Script.direction                                           %! baca.script_up:OverrideCommand(2)
-            \revert Stem.direction                                             %! baca.stem_up:OverrideCommand(2)
+            \revert Beam.positions                                             %! baca.beam_positions():OverrideCommand(2)
+            \revert Script.direction                                           %! baca.script_up():OverrideCommand(2)
+            \revert Stem.direction                                             %! baca.stem_up():OverrideCommand(2)
 
         }
         \revert TupletBracket.stencil
@@ -2326,8 +2326,8 @@ G_LH_Voice_III = {                                                             %
 G_LH_Voice_IV = {                                                              %! abjad.Path.extern
 
     % [G LH_Voice_IV measure 98 / measure 1]                                   %! baca.SegmentMaker._comment_measure_numbers()
-    \override Beam.positions = #'(-5.5 . -5.5)                                 %! baca.beam_positions:OverrideCommand(1)
-    \override Script.direction = #down                                         %! baca.script_down:OverrideCommand(1)
+    \override Beam.positions = #'(-5.5 . -5.5)                                 %! baca.beam_positions():OverrideCommand(1)
+    \override Script.direction = #down                                         %! baca.script_down():OverrideCommand(1)
     \clef "treble"                                                             %! REAPPLIED_CLEF:_set_status_tag:baca.SegmentMaker._reapply_persistent_indicators(3)
     \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'green4)        %! REAPPLIED_CLEF_COLOR:baca.SegmentMaker._attach_color_literal(2)
 %@% \override PianoMusicLHStaff.Clef.color = ##f                               %! REAPPLIED_CLEF_COLOR_CANCELLATION:baca.SegmentMaker._attach_color_literal(1)
@@ -2344,7 +2344,7 @@ G_LH_Voice_IV = {                                                              %
 
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
-            \override Stem.direction = #down                                   %! baca.stem_down:OverrideCommand(1)
+            \override Stem.direction = #down                                   %! baca.stem_down():OverrideCommand(1)
             fs'!16
             - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
             \ff                                                                %! EXPLICIT_DYNAMIC:_set_status_tag:baca.dynamic:IndicatorCommand
@@ -2414,7 +2414,7 @@ G_LH_Voice_IV = {                                                              %
     }
 
     s1 * 11/8
-    \revert Beam.positions                                                     %! baca.beam_positions:OverrideCommand(2)
+    \revert Beam.positions                                                     %! baca.beam_positions():OverrideCommand(2)
 
     {
 
@@ -2423,7 +2423,7 @@ G_LH_Voice_IV = {                                                              %
             % [G LH_Voice_IV measure 103 / measure 6]                          %! baca.SegmentMaker._comment_measure_numbers()
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
-            \override Beam.positions = #'(-4.5 . -4.5)                         %! baca.beam_positions:OverrideCommand(1)
+            \override Beam.positions = #'(-4.5 . -4.5)                         %! baca.beam_positions():OverrideCommand(1)
             cs''!16
             - \tweak color #(x11-color 'DeepPink1)                             %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
             \ff                                                                %! REDUNDANT_DYNAMIC:_set_status_tag:baca.dynamic:IndicatorCommand
@@ -2527,7 +2527,7 @@ G_LH_Voice_IV = {                                                              %
 
             \baca-invisible-music                                              %! baca.SegmentMaker._make_multimeasure_rest_container()
             c'1 * 5/16                                                         %! baca.SegmentMaker._make_multimeasure_rest_container()
-            \revert Stem.direction                                             %! baca.stem_down:OverrideCommand(2)
+            \revert Stem.direction                                             %! baca.stem_down():OverrideCommand(2)
 
         }                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container()
 
@@ -2542,8 +2542,8 @@ G_LH_Voice_IV = {                                                              %
 
     % [G LH_Voice_IV measure 108 / measure 11]                                 %! baca.SegmentMaker._comment_measure_numbers()
     s1 * 1/8                                                                   %! baca.SegmentMaker._make_measure_silences()
-    \revert Beam.positions                                                     %! baca.beam_positions:OverrideCommand(2)
-    \revert Script.direction                                                   %! baca.script_down:OverrideCommand(2)
+    \revert Beam.positions                                                     %! baca.beam_positions():OverrideCommand(2)
+    \revert Script.direction                                                   %! baca.script_down():OverrideCommand(2)
 
     <<                                                                         %! PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container()
 
@@ -2572,7 +2572,7 @@ G_LH_Voice_IV = {                                                              %
 G_LH_Voice_IV_Inserts = {                                                      %! abjad.Path.extern
 
     % [G LH_Voice_IV_Inserts measure 98 / measure 1]                           %! baca.SegmentMaker._comment_measure_numbers()
-    \override Script.direction = #up                                           %! baca.script_up:OverrideCommand(1)
+    \override Script.direction = #up                                           %! baca.script_up():OverrideCommand(1)
     s1 * 3/8
 
     {
@@ -2584,7 +2584,7 @@ G_LH_Voice_IV_Inserts = {                                                      %
 
             s16
 
-            \override Stem.direction = #up                                     %! baca.stem_up:OverrideCommand(1)
+            \override Stem.direction = #up                                     %! baca.stem_up():OverrideCommand(1)
             c'16
 
             s16
@@ -2672,7 +2672,7 @@ G_LH_Voice_IV_Inserts = {                                                      %
 
             \baca-invisible-music                                              %! baca.SegmentMaker._make_multimeasure_rest_container()
             c'1 * 5/16                                                         %! baca.SegmentMaker._make_multimeasure_rest_container()
-            \revert Stem.direction                                             %! baca.stem_up:OverrideCommand(2)
+            \revert Stem.direction                                             %! baca.stem_up():OverrideCommand(2)
 
         }                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container()
 
@@ -2687,7 +2687,7 @@ G_LH_Voice_IV_Inserts = {                                                      %
 
     % [G LH_Voice_IV_Inserts measure 108 / measure 11]                         %! baca.SegmentMaker._comment_measure_numbers()
     s1 * 1/8                                                                   %! baca.SegmentMaker._make_measure_silences()
-    \revert Script.direction                                                   %! baca.script_up:OverrideCommand(2)
+    \revert Script.direction                                                   %! baca.script_up():OverrideCommand(2)
 
     <<                                                                         %! PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container()
 
@@ -2716,8 +2716,8 @@ G_LH_Voice_IV_Inserts = {                                                      %
 G_LH_Voice_V = {                                                               %! abjad.Path.extern
 
     % [G LH_Voice_V measure 98 / measure 1]                                    %! baca.SegmentMaker._comment_measure_numbers()
-    \override Beam.positions = #'(-6 . -6)                                     %! baca.beam_positions:OverrideCommand(1)
-    \override Script.direction = #down                                         %! baca.script_down:OverrideCommand(1)
+    \override Beam.positions = #'(-6 . -6)                                     %! baca.beam_positions():OverrideCommand(1)
+    \override Script.direction = #down                                         %! baca.script_down():OverrideCommand(1)
     s1 * 329/272
     - \tweak color #(x11-color 'green4)                                        %! REAPPLIED_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \ppp                                                                       %! REAPPLIED_DYNAMIC:_set_status_tag:baca.SegmentMaker._reapply_persistent_indicators(3)
@@ -2731,8 +2731,8 @@ G_LH_Voice_V = {                                                               %
 
                 \set stemLeftBeamCount = 0
                 \set stemRightBeamCount = 2
-                \override TupletBracket.direction = #down                      %! baca.tuplet_bracket_down:OverrideCommand(1)
-                \override Stem.direction = #down                               %! baca.stem_down:OverrideCommand(1)
+                \override TupletBracket.direction = #down                      %! baca.tuplet_bracket_down():OverrideCommand(1)
+                \override Stem.direction = #down                               %! baca.stem_down():OverrideCommand(1)
                 \dynamicDown                                                   %! baca.dynamic_down:IndicatorCommand
                 cs'!16
                 - \tweak color #(x11-color 'blue)                              %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
@@ -2835,7 +2835,7 @@ G_LH_Voice_V = {                                                               %
                 d'''16
                 )                                                              %! SPANNER_STOP:baca.slur:SpannerIndicatorCommand(2)
                 ]
-                \revert TupletBracket.direction                                %! baca.tuplet_bracket_down:OverrideCommand(2)
+                \revert TupletBracket.direction                                %! baca.tuplet_bracket_down():OverrideCommand(2)
 
             }
 
@@ -2844,7 +2844,7 @@ G_LH_Voice_V = {                                                               %
     }
 
     s1 * 75/136
-    \revert Beam.positions                                                     %! baca.beam_positions:OverrideCommand(2)
+    \revert Beam.positions                                                     %! baca.beam_positions():OverrideCommand(2)
 
     {
 
@@ -2970,7 +2970,7 @@ G_LH_Voice_V = {                                                               %
 
             \baca-invisible-music                                              %! baca.SegmentMaker._make_multimeasure_rest_container()
             c'1 * 3/17                                                         %! baca.SegmentMaker._make_multimeasure_rest_container()
-            \revert Stem.direction                                             %! baca.stem_down:OverrideCommand(2)
+            \revert Stem.direction                                             %! baca.stem_down():OverrideCommand(2)
 
         }                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container()
 
@@ -2991,7 +2991,7 @@ G_LH_Voice_V = {                                                               %
 
     % [G LH_Voice_V measure 108 / measure 11]                                  %! baca.SegmentMaker._comment_measure_numbers()
     s1 * 1/8                                                                   %! baca.SegmentMaker._make_measure_silences()
-    \revert Script.direction                                                   %! baca.script_down:OverrideCommand(2)
+    \revert Script.direction                                                   %! baca.script_down():OverrideCommand(2)
 
     <<                                                                         %! PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container()
 
@@ -3020,8 +3020,8 @@ G_LH_Voice_V = {                                                               %
 G_LH_Voice_V_Inserts = {                                                       %! abjad.Path.extern
 
     % [G LH_Voice_V_Inserts measure 98 / measure 1]                            %! baca.SegmentMaker._comment_measure_numbers()
-    \override Script.direction = #up                                           %! baca.script_up:OverrideCommand(1)
-    \override Beam.positions = #'(9 . 9)                                       %! baca.beam_positions:OverrideCommand(1)
+    \override Script.direction = #up                                           %! baca.script_up():OverrideCommand(1)
+    \override Beam.positions = #'(9 . 9)                                       %! baca.beam_positions():OverrideCommand(1)
     s1 * 329/272
 
     {
@@ -3047,7 +3047,7 @@ G_LH_Voice_V_Inserts = {                                                       %
                 % [G LH_Voice_V_Inserts measure 101 / measure 4]               %! baca.SegmentMaker._comment_measure_numbers()
                 \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 2
-                \override Stem.direction = #up                                 %! baca.stem_up:OverrideCommand(1)
+                \override Stem.direction = #up                                 %! baca.stem_up():OverrideCommand(1)
                 b'16
                 - \staccato                                                    %! baca.staccato:IndicatorCommand
 
@@ -3182,7 +3182,7 @@ G_LH_Voice_V_Inserts = {                                                       %
 
             \baca-invisible-music                                              %! baca.SegmentMaker._make_multimeasure_rest_container()
             c'1 * 3/17                                                         %! baca.SegmentMaker._make_multimeasure_rest_container()
-            \revert Stem.direction                                             %! baca.stem_up:OverrideCommand(2)
+            \revert Stem.direction                                             %! baca.stem_up():OverrideCommand(2)
 
         }                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container()
 
@@ -3203,8 +3203,8 @@ G_LH_Voice_V_Inserts = {                                                       %
 
     % [G LH_Voice_V_Inserts measure 108 / measure 11]                          %! baca.SegmentMaker._comment_measure_numbers()
     s1 * 1/8                                                                   %! baca.SegmentMaker._make_measure_silences()
-    \revert Script.direction                                                   %! baca.script_up:OverrideCommand(2)
-    \revert Beam.positions                                                     %! baca.beam_positions:OverrideCommand(2)
+    \revert Script.direction                                                   %! baca.script_up():OverrideCommand(2)
+    \revert Beam.positions                                                     %! baca.beam_positions():OverrideCommand(2)
 
     <<                                                                         %! PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container()
 

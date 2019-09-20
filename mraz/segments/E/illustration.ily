@@ -264,8 +264,8 @@ E_RH_Voice_III = {                                                             %
         \times 4/3 {
 
             % [E RH_Voice_III measure 78 / measure 1]                          %! baca.SegmentMaker._comment_measure_numbers()
-            \override TupletBracket.staff-padding = #7                         %! baca.tuplet_bracket_staff_padding:OverrideCommand(1)
-            \override TupletBracket.direction = #up                            %! baca.tuplet_bracket_up:OverrideCommand(1)
+            \override TupletBracket.staff-padding = #7                         %! baca.tuplet_bracket_staff_padding():OverrideCommand(1)
+            \override TupletBracket.direction = #up                            %! baca.tuplet_bracket_up():OverrideCommand(1)
             fs'''!8
             - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
             \pp                                                                %! EXPLICIT_DYNAMIC:_set_status_tag:baca.dynamic:IndicatorCommand
@@ -318,8 +318,8 @@ E_RH_Voice_III = {                                                             %
             - \tenuto                                                          %! baca.tenuto:IndicatorCommand
 
             r8
-            \revert TupletBracket.staff-padding                                %! baca.tuplet_bracket_staff_padding:OverrideCommand(2)
-            \revert TupletBracket.direction                                    %! baca.tuplet_bracket_up:OverrideCommand(2)
+            \revert TupletBracket.staff-padding                                %! baca.tuplet_bracket_staff_padding():OverrideCommand(2)
+            \revert TupletBracket.direction                                    %! baca.tuplet_bracket_up():OverrideCommand(2)
 
         }
 
@@ -331,8 +331,8 @@ E_RH_Voice_III = {                                                             %
         \times 4/3 {
 
             % [E RH_Voice_III measure 79 / measure 2]                          %! baca.SegmentMaker._comment_measure_numbers()
-            \override TupletBracket.staff-padding = #7                         %! baca.tuplet_bracket_staff_padding:OverrideCommand(1)
-            \override TupletBracket.direction = #up                            %! baca.tuplet_bracket_up:OverrideCommand(1)
+            \override TupletBracket.staff-padding = #7                         %! baca.tuplet_bracket_staff_padding():OverrideCommand(1)
+            \override TupletBracket.direction = #up                            %! baca.tuplet_bracket_up():OverrideCommand(1)
             bf'''!8
             - \staccato                                                        %! baca.staccato:IndicatorCommand
             - \tenuto                                                          %! baca.tenuto:IndicatorCommand
@@ -361,8 +361,8 @@ E_RH_Voice_III = {                                                             %
             ef'''!8
             - \staccato                                                        %! baca.staccato:IndicatorCommand
             - \tenuto                                                          %! baca.tenuto:IndicatorCommand
-            \revert TupletBracket.staff-padding                                %! baca.tuplet_bracket_staff_padding:OverrideCommand(2)
-            \revert TupletBracket.direction                                    %! baca.tuplet_bracket_up:OverrideCommand(2)
+            \revert TupletBracket.staff-padding                                %! baca.tuplet_bracket_staff_padding():OverrideCommand(2)
+            \revert TupletBracket.direction                                    %! baca.tuplet_bracket_up():OverrideCommand(2)
 
         }
 
@@ -424,7 +424,7 @@ E_RH_Voice_III = {                                                             %
         \times 5/4 {
 
             % [E RH_Voice_III measure 81 / measure 4]                          %! baca.SegmentMaker._comment_measure_numbers()
-            \override TupletBracket.direction = #up                            %! baca.tuplet_bracket_up:OverrideCommand(1)
+            \override TupletBracket.direction = #up                            %! baca.tuplet_bracket_up():OverrideCommand(1)
             af''!8
             - \staccato                                                        %! baca.staccato:IndicatorCommand
             - \tenuto                                                          %! baca.tenuto:IndicatorCommand
@@ -457,7 +457,7 @@ E_RH_Voice_III = {                                                             %
             a''8
             - \staccato                                                        %! baca.staccato:IndicatorCommand
             - \tenuto                                                          %! baca.tenuto:IndicatorCommand
-            \revert TupletBracket.direction                                    %! baca.tuplet_bracket_up:OverrideCommand(2)
+            \revert TupletBracket.direction                                    %! baca.tuplet_bracket_up():OverrideCommand(2)
 
         }
 
@@ -872,8 +872,8 @@ E_LH_Voice_III = {                                                             %
 E_LH_Voice_IV = {                                                              %! abjad.Path.extern
 
     % [E LH_Voice_IV measure 78 / measure 1]                                   %! baca.SegmentMaker._comment_measure_numbers()
-%%% \once \override PianoMusicLHStaff.Clef.X-extent = ##f                      %! MEASURE_78:SHIFTED_CLEF:baca.clef_shift:OverrideCommand(1)
-%%% \once \override PianoMusicLHStaff.Clef.extra-offset = #'(-2.5 . 0)         %! MEASURE_78:SHIFTED_CLEF:baca.clef_shift:OverrideCommand(1)
+%%% \once \override PianoMusicLHStaff.Clef.X-extent = ##f                      %! MEASURE_78:SHIFTED_CLEF:baca.clef_shift():baca.clef_x_extent_false():OverrideCommand(1)
+%%% \once \override PianoMusicLHStaff.Clef.extra-offset = #'(-2.5 . 0)         %! MEASURE_78:SHIFTED_CLEF:baca.clef_extra_offset():baca.clef_shift():OverrideCommand(1)
     \clef "treble"                                                             %! EXPLICIT_CLEF:_set_status_tag:baca.clef:IndicatorCommand
     \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'blue)          %! EXPLICIT_CLEF_COLOR:baca.SegmentMaker._attach_color_literal(2)
 %@% \override PianoMusicLHStaff.Clef.color = ##f                               %! EXPLICIT_CLEF_COLOR_CANCELLATION:baca.SegmentMaker._attach_color_literal(1)
@@ -888,7 +888,7 @@ E_LH_Voice_IV = {                                                              %
         \tweak text #tuplet-number::calc-fraction-text
         \times 9/8 {
 
-            \override TupletBracket.staff-padding = #3                         %! baca.tuplet_bracket_staff_padding:OverrideCommand(1)
+            \override TupletBracket.staff-padding = #3                         %! baca.tuplet_bracket_staff_padding():OverrideCommand(1)
             g'16
             - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
             \mp                                                                %! EXPLICIT_DYNAMIC:_set_status_tag:baca.dynamic:IndicatorCommand
@@ -927,7 +927,7 @@ E_LH_Voice_IV = {                                                              %
             - \tenuto                                                          %! baca.tenuto:IndicatorCommand
 
             r16
-            \revert TupletBracket.staff-padding                                %! baca.tuplet_bracket_staff_padding:OverrideCommand(2)
+            \revert TupletBracket.staff-padding                                %! baca.tuplet_bracket_staff_padding():OverrideCommand(2)
 
         }
 
@@ -940,7 +940,7 @@ E_LH_Voice_IV = {                                                              %
         \tweak text #tuplet-number::calc-fraction-text
         \times 7/6 {
 
-            \override TupletBracket.staff-padding = #3                         %! baca.tuplet_bracket_staff_padding:OverrideCommand(1)
+            \override TupletBracket.staff-padding = #3                         %! baca.tuplet_bracket_staff_padding():OverrideCommand(1)
             b'16
             - \tenuto                                                          %! baca.tenuto:IndicatorCommand
         %@% ^ \markup {                                                        %! FIGURE_NAME
@@ -977,7 +977,7 @@ E_LH_Voice_IV = {                                                              %
             - \tenuto                                                          %! baca.tenuto:IndicatorCommand
 
             r8
-            \revert TupletBracket.staff-padding                                %! baca.tuplet_bracket_staff_padding:OverrideCommand(2)
+            \revert TupletBracket.staff-padding                                %! baca.tuplet_bracket_staff_padding():OverrideCommand(2)
 
         }
 
