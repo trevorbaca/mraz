@@ -463,6 +463,7 @@ accumulator(
 )
 
 maker = baca.SegmentMaker(
+    check_all_are_pitched=True,
     color_octaves=False,
     final_bar_line=False,
     segment_directory=abjad.Path(os.path.realpath(__file__)).parent,
