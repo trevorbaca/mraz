@@ -335,6 +335,7 @@ accumulator(
 )
 
 maker = baca.SegmentMaker(
+    check_all_are_pitched=True,
     color_octaves=False,
     final_bar_line="|.",
     final_markup=(
