@@ -2005,6 +2005,7 @@ D_RH_Voice_II = {                                                              %
             % [D RH_Voice_II measure 70 / measure 37]                          %! baca.SegmentMaker._comment_measure_numbers()
             \once \override Script.direction = #up                             %! baca.script_up():OverrideCommand(1)
             \arpeggioArrowUp                                                   %! baca.up_arpeggio:IndicatorCommand
+        %@% \baca-repeat-pitch-class-coloring                                  %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
             <a g' af'! b' cs''! f'' ef'''! c''''>1.
             - \marcato                                                         %! baca.marcato:IndicatorCommand
             \arpeggio                                                          %! baca.up_arpeggio:IndicatorCommand
@@ -2040,6 +2041,7 @@ D_RH_Voice_II = {                                                              %
             \override DynamicLineSpanner.staff-padding = #8                    %! baca.dls_staff_padding():OverrideCommand(1)
             \override Slur.direction = #up                                     %! baca.slur_up():OverrideCommand(1)
             \override TextScript.direction = #up                               %! baca.text_script_up():OverrideCommand(1)
+        %@% \baca-repeat-pitch-class-coloring                                  %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
             cs''!16
             - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
             \f                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(1)
@@ -2235,6 +2237,7 @@ D_RH_Voice_II = {                                                              %
 
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 0
+        %@% \baca-repeat-pitch-class-coloring                                  %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
             fs''''!16
             )                                                                  %! SPANNER_STOP:baca.slur:SpannerIndicatorCommand(2)
             ]
@@ -2253,6 +2256,7 @@ D_RH_Voice_II = {                                                              %
             % [D RH_Voice_II measure 73 / measure 40]                          %! baca.SegmentMaker._comment_measure_numbers()
             \arpeggioArrowUp                                                   %! baca.up_arpeggio:IndicatorCommand
             \once \override Script.direction = #up                             %! baca.script_up():OverrideCommand(1)
+        %@% \baca-repeat-pitch-class-coloring                                  %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
             <f'' ef'''! c'''' e'''' fs''''! bf''''!>1
             \arpeggio                                                          %! baca.up_arpeggio:IndicatorCommand
             - \marcato                                                         %! baca.marcato:IndicatorCommand
@@ -2285,6 +2289,7 @@ D_RH_Voice_II = {                                                              %
             % [D RH_Voice_II measure 74 / measure 41]                          %! baca.SegmentMaker._comment_measure_numbers()
             \arpeggioArrowUp                                                   %! baca.up_arpeggio:IndicatorCommand
             \once \override Script.direction = #up                             %! baca.script_up():OverrideCommand(1)
+        %@% \baca-repeat-pitch-class-coloring                                  %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
             <a g' af'! b' cs''! f'' ef'''! c''''>1
             \arpeggio                                                          %! baca.up_arpeggio:IndicatorCommand
             - \marcato                                                         %! baca.marcato:IndicatorCommand
@@ -2317,6 +2322,7 @@ D_RH_Voice_II = {                                                              %
             % [D RH_Voice_II measure 75 / measure 42]                          %! baca.SegmentMaker._comment_measure_numbers()
             \arpeggioArrowUp                                                   %! baca.up_arpeggio:IndicatorCommand
             \once \override Script.direction = #up                             %! baca.script_up():OverrideCommand(1)
+        %@% \baca-repeat-pitch-class-coloring                                  %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
             <e' fs'! bf'! a'' g''' af'''! b''' cs''''!>1
             \arpeggio                                                          %! baca.up_arpeggio:IndicatorCommand
             - \marcato                                                         %! baca.marcato:IndicatorCommand

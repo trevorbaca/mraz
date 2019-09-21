@@ -963,7 +963,9 @@ accumulator(
 maker = baca.SegmentMaker(
     color_octaves=False,
     check_all_are_pitched=True,
-    do_not_color_repeat_pitch_classes=True,
+    deactivate=[
+        abjad.tags.REPEAT_PITCH_CLASS,
+    ],
     final_bar_line=False,
     ignore_repeat_pitch_classes=True,
     segment_directory=abjad.Path(os.path.realpath(__file__)).parent,
