@@ -1279,9 +1279,9 @@ B_LH_Voice_V = {                                                               %
         \scaleDurations #'(1 . 1) {
 
             % [B LH_Voice_V measure 10 / measure 1]                            %! baca.SegmentMaker._comment_measure_numbers()
-            \ottava -1                                                         %! baca.ottava_bassa:SpannerIndicatorCommand(1)
+            \ottava -1                                                         %! baca.ottava_bassa():SpannerIndicatorCommand(1)
             \override TupletBracket.direction = #up                            %! baca.tuplet_bracket_up():OverrideCommand(1)
-            \dynamicUp                                                         %! baca.dynamic_down:IndicatorCommand
+            \dynamicUp                                                         %! baca.dynamic_up():IndicatorCommand
             g,8.
             - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
             \ppp                                                               %! EXPLICIT_DYNAMIC:_set_status_tag:baca.dynamic:IndicatorCommand
@@ -1772,7 +1772,7 @@ B_LH_Voice_V = {                                                               %
             r32
 
             af,,!8
-            \ottava 0                                                          %! baca.ottava_bassa:SpannerIndicatorCommand(2)
+            \ottava 0                                                          %! baca.ottava_bassa():SpannerIndicatorCommand(2)
 
             r32
             \revert TupletBracket.direction                                    %! baca.tuplet_bracket_up():OverrideCommand(2)
@@ -1890,7 +1890,7 @@ B_LH_Voice_VI = {                                                              %
             af,,!4
             - \tweak color #(x11-color 'DeepPink1)                             %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
             \f                                                                 %! REDUNDANT_DYNAMIC:_set_status_tag:baca.dynamic:IndicatorCommand
-            - \tenuto                                                          %! baca.tenuto:IndicatorCommand
+            - \tenuto                                                          %! baca.tenuto():IndicatorCommand
         %@% ^ \markup {                                                        %! FIGURE_NAME
         %@%     \fontsize                                                      %! FIGURE_NAME
         %@%         #2                                                         %! FIGURE_NAME
@@ -1913,12 +1913,12 @@ B_LH_Voice_VI = {                                                              %
             r4
 
             c,,4
-            - \tenuto                                                          %! baca.tenuto:IndicatorCommand
+            - \tenuto                                                          %! baca.tenuto():IndicatorCommand
 
             r4
 
             bf,,,!4
-            - \tenuto                                                          %! baca.tenuto:IndicatorCommand
+            - \tenuto                                                          %! baca.tenuto():IndicatorCommand
 
             r4
 
@@ -1935,7 +1935,7 @@ B_LH_Voice_VI = {                                                              %
 
             % [B LH_Voice_VI measure 13 / measure 4]                           %! baca.SegmentMaker._comment_measure_numbers()
             b,,,8
-            - \tenuto                                                          %! baca.tenuto:IndicatorCommand
+            - \tenuto                                                          %! baca.tenuto():IndicatorCommand
         %@% ^ \markup {                                                        %! FIGURE_NAME
         %@%     \fontsize                                                      %! FIGURE_NAME
         %@%         #2                                                         %! FIGURE_NAME
@@ -1958,7 +1958,7 @@ B_LH_Voice_VI = {                                                              %
             r4
 
             ef,,!8
-            - \tenuto                                                          %! baca.tenuto:IndicatorCommand
+            - \tenuto                                                          %! baca.tenuto():IndicatorCommand
 
             r4
             \revert Rest.direction                                             %! baca.rest_up():OverrideCommand(2)
@@ -1975,7 +1975,7 @@ B_LH_Voice_VI = {                                                              %
         \times 4/3 {
 
             bf,,,!16
-            - \tenuto                                                          %! baca.tenuto:IndicatorCommand
+            - \tenuto                                                          %! baca.tenuto():IndicatorCommand
         %@% ^ \markup {                                                        %! FIGURE_NAME
         %@%     \fontsize                                                      %! FIGURE_NAME
         %@%         #2                                                         %! FIGURE_NAME
@@ -1997,13 +1997,13 @@ B_LH_Voice_VI = {                                                              %
             r8.
 
             c,,16
-            - \tenuto                                                          %! baca.tenuto:IndicatorCommand
+            - \tenuto                                                          %! baca.tenuto():IndicatorCommand
 
             r8.
 
             \once \override NoteColumn.force-hshift = #-1                      %! baca.note_column_shift():OverrideCommand(1)
             e,,16
-            - \tenuto                                                          %! baca.tenuto:IndicatorCommand
+            - \tenuto                                                          %! baca.tenuto():IndicatorCommand
 
             r8.
 
@@ -2019,7 +2019,7 @@ B_LH_Voice_VI = {                                                              %
         \times 4/3 {
 
             g,,16
-            - \tenuto                                                          %! baca.tenuto:IndicatorCommand
+            - \tenuto                                                          %! baca.tenuto():IndicatorCommand
         %@% ^ \markup {                                                        %! FIGURE_NAME
         %@%     \fontsize                                                      %! FIGURE_NAME
         %@%         #2                                                         %! FIGURE_NAME
@@ -2041,12 +2041,12 @@ B_LH_Voice_VI = {                                                              %
             r8.
 
             f,,16
-            - \tenuto                                                          %! baca.tenuto:IndicatorCommand
+            - \tenuto                                                          %! baca.tenuto():IndicatorCommand
 
             r8.
 
             cs,,!16
-            - \tenuto                                                          %! baca.tenuto:IndicatorCommand
+            - \tenuto                                                          %! baca.tenuto():IndicatorCommand
 
             r8.
 
@@ -2062,7 +2062,7 @@ B_LH_Voice_VI = {                                                              %
         \times 5/4 {
 
             d,,8
-            - \tenuto                                                          %! baca.tenuto:IndicatorCommand
+            - \tenuto                                                          %! baca.tenuto():IndicatorCommand
         %@% ^ \markup {                                                        %! FIGURE_NAME
         %@%     \fontsize                                                      %! FIGURE_NAME
         %@%         #2                                                         %! FIGURE_NAME
@@ -2082,13 +2082,13 @@ B_LH_Voice_VI = {                                                              %
         %@%     }                                                              %! FIGURE_NAME
 
             e,,8
-            - \tenuto                                                          %! baca.tenuto:IndicatorCommand
+            - \tenuto                                                          %! baca.tenuto():IndicatorCommand
 
             af,,!8
-            - \tenuto                                                          %! baca.tenuto:IndicatorCommand
+            - \tenuto                                                          %! baca.tenuto():IndicatorCommand
 
             fs,,!8
-            - \tenuto                                                          %! baca.tenuto:IndicatorCommand
+            - \tenuto                                                          %! baca.tenuto():IndicatorCommand
 
         }
 
@@ -2102,7 +2102,7 @@ B_LH_Voice_VI = {                                                              %
         \times 4/6 {
 
             e,,8
-            - \tenuto                                                          %! baca.tenuto:IndicatorCommand
+            - \tenuto                                                          %! baca.tenuto():IndicatorCommand
         %@% ^ \markup {                                                        %! FIGURE_NAME
         %@%     \fontsize                                                      %! FIGURE_NAME
         %@%         #2                                                         %! FIGURE_NAME
@@ -2125,12 +2125,12 @@ B_LH_Voice_VI = {                                                              %
 
             % [B LH_Voice_VI measure 20 / measure 11]                          %! baca.SegmentMaker._comment_measure_numbers()
             f,,8
-            - \tenuto                                                          %! baca.tenuto:IndicatorCommand
+            - \tenuto                                                          %! baca.tenuto():IndicatorCommand
 
             r4
 
             g,,8
-            - \tenuto                                                          %! baca.tenuto:IndicatorCommand
+            - \tenuto                                                          %! baca.tenuto():IndicatorCommand
             \revert Stem.direction                                             %! baca.stem_down():OverrideCommand(2)
 
             r4
