@@ -20,8 +20,8 @@ class ScoreTemplate(baca.ScoreTemplate):
         >>> abjad.show(lilypond_file, strict=79) # doctest: +SKIP
 
         >>> abjad.f(lilypond_file[abjad.Score], strict=79)
-        \context Score = "Score"                                                       %! mraz.ScoreTemplate.__call__
-        <<                                                                             %! mraz.ScoreTemplate.__call__
+        \context Score = "Score"                                                       %! mraz.ScoreTemplate.__call__()
+        <<                                                                             %! mraz.ScoreTemplate.__call__()
             \context GlobalContext = "Global_Context"                                  %! abjad.ScoreTemplate._make_global_context()
             <<                                                                         %! abjad.ScoreTemplate._make_global_context()
                 \context GlobalRests = "Global_Rests"                                  %! abjad.ScoreTemplate._make_global_context()
@@ -31,105 +31,105 @@ class ScoreTemplate(baca.ScoreTemplate):
                 {                                                                      %! abjad.ScoreTemplate._make_global_context()
                 }                                                                      %! abjad.ScoreTemplate._make_global_context()
             >>                                                                         %! abjad.ScoreTemplate._make_global_context()
-            \context MusicContext = "Music_Context"                                    %! mraz.ScoreTemplate.__call__
-            {                                                                          %! mraz.ScoreTemplate.__call__
-                \context PianoMusicStaffGroup = "Piano_Music_Staff_Group"              %! mraz.ScoreTemplate.__call__
-                <<                                                                     %! mraz.ScoreTemplate.__call__
-                    \context PianoMusicRHStaff = "Piano_Music_RH_Staff"                %! mraz.ScoreTemplate.__call__
-                    <<                                                                 %! mraz.ScoreTemplate.__call__
-                        \context RHVoiceI = "RH_Voice_I"                               %! mraz.ScoreTemplate.__call__
-                        {                                                              %! mraz.ScoreTemplate.__call__
+            \context MusicContext = "Music_Context"                                    %! mraz.ScoreTemplate.__call__()
+            {                                                                          %! mraz.ScoreTemplate.__call__()
+                \context PianoMusicStaffGroup = "Piano_Music_Staff_Group"              %! mraz.ScoreTemplate.__call__()
+                <<                                                                     %! mraz.ScoreTemplate.__call__()
+                    \context PianoMusicRHStaff = "Piano_Music_RH_Staff"                %! mraz.ScoreTemplate.__call__()
+                    <<                                                                 %! mraz.ScoreTemplate.__call__()
+                        \context RHVoiceI = "RH_Voice_I"                               %! mraz.ScoreTemplate.__call__()
+                        {                                                              %! mraz.ScoreTemplate.__call__()
                             \clef "treble"                                             %! abjad.ScoreTemplate.attach_defaults(3)
                             s1                                                         %! abjad.ScoreTemplate.__illustrate__()
-                        }                                                              %! mraz.ScoreTemplate.__call__
-                        \context RHVoiceIInserts = "RH_Voice_I_Inserts"                %! mraz.ScoreTemplate.__call__
-                        {                                                              %! mraz.ScoreTemplate.__call__
+                        }                                                              %! mraz.ScoreTemplate.__call__()
+                        \context RHVoiceIInserts = "RH_Voice_I_Inserts"                %! mraz.ScoreTemplate.__call__()
+                        {                                                              %! mraz.ScoreTemplate.__call__()
                             s1                                                         %! abjad.ScoreTemplate.__illustrate__()
-                        }                                                              %! mraz.ScoreTemplate.__call__
-                        \context RHVoiceII = "RH_Voice_II"                             %! mraz.ScoreTemplate.__call__
-                        {                                                              %! mraz.ScoreTemplate.__call__
+                        }                                                              %! mraz.ScoreTemplate.__call__()
+                        \context RHVoiceII = "RH_Voice_II"                             %! mraz.ScoreTemplate.__call__()
+                        {                                                              %! mraz.ScoreTemplate.__call__()
                             s1                                                         %! abjad.ScoreTemplate.__illustrate__()
-                        }                                                              %! mraz.ScoreTemplate.__call__
-                        \context RHVoiceIIInserts = "RH_Voice_II_Inserts"              %! mraz.ScoreTemplate.__call__
-                        {                                                              %! mraz.ScoreTemplate.__call__
+                        }                                                              %! mraz.ScoreTemplate.__call__()
+                        \context RHVoiceIIInserts = "RH_Voice_II_Inserts"              %! mraz.ScoreTemplate.__call__()
+                        {                                                              %! mraz.ScoreTemplate.__call__()
                             s1                                                         %! abjad.ScoreTemplate.__illustrate__()
-                        }                                                              %! mraz.ScoreTemplate.__call__
-                        \context RHVoiceIII = "RH_Voice_III"                           %! mraz.ScoreTemplate.__call__
-                        {                                                              %! mraz.ScoreTemplate.__call__
+                        }                                                              %! mraz.ScoreTemplate.__call__()
+                        \context RHVoiceIII = "RH_Voice_III"                           %! mraz.ScoreTemplate.__call__()
+                        {                                                              %! mraz.ScoreTemplate.__call__()
                             s1                                                         %! abjad.ScoreTemplate.__illustrate__()
-                        }                                                              %! mraz.ScoreTemplate.__call__
-                        \context RHVoiceIIIInserts = "RH_Voice_III_Inserts"            %! mraz.ScoreTemplate.__call__
-                        {                                                              %! mraz.ScoreTemplate.__call__
+                        }                                                              %! mraz.ScoreTemplate.__call__()
+                        \context RHVoiceIIIInserts = "RH_Voice_III_Inserts"            %! mraz.ScoreTemplate.__call__()
+                        {                                                              %! mraz.ScoreTemplate.__call__()
                             s1                                                         %! abjad.ScoreTemplate.__illustrate__()
-                        }                                                              %! mraz.ScoreTemplate.__call__
-                        \context RHVoiceIV = "RH_Voice_IV"                             %! mraz.ScoreTemplate.__call__
-                        {                                                              %! mraz.ScoreTemplate.__call__
+                        }                                                              %! mraz.ScoreTemplate.__call__()
+                        \context RHVoiceIV = "RH_Voice_IV"                             %! mraz.ScoreTemplate.__call__()
+                        {                                                              %! mraz.ScoreTemplate.__call__()
                             s1                                                         %! abjad.ScoreTemplate.__illustrate__()
-                        }                                                              %! mraz.ScoreTemplate.__call__
-                        \context RHVoiceIVInserts = "RH_Voice_IV_Inserts"              %! mraz.ScoreTemplate.__call__
-                        {                                                              %! mraz.ScoreTemplate.__call__
+                        }                                                              %! mraz.ScoreTemplate.__call__()
+                        \context RHVoiceIVInserts = "RH_Voice_IV_Inserts"              %! mraz.ScoreTemplate.__call__()
+                        {                                                              %! mraz.ScoreTemplate.__call__()
                             s1                                                         %! abjad.ScoreTemplate.__illustrate__()
-                        }                                                              %! mraz.ScoreTemplate.__call__
-                        \context RHVoiceV = "RH_Voice_V"                               %! mraz.ScoreTemplate.__call__
-                        {                                                              %! mraz.ScoreTemplate.__call__
+                        }                                                              %! mraz.ScoreTemplate.__call__()
+                        \context RHVoiceV = "RH_Voice_V"                               %! mraz.ScoreTemplate.__call__()
+                        {                                                              %! mraz.ScoreTemplate.__call__()
                             s1                                                         %! abjad.ScoreTemplate.__illustrate__()
-                        }                                                              %! mraz.ScoreTemplate.__call__
-                        \context RHVoiceVI = "RH_Voice_VI"                             %! mraz.ScoreTemplate.__call__
-                        {                                                              %! mraz.ScoreTemplate.__call__
+                        }                                                              %! mraz.ScoreTemplate.__call__()
+                        \context RHVoiceVI = "RH_Voice_VI"                             %! mraz.ScoreTemplate.__call__()
+                        {                                                              %! mraz.ScoreTemplate.__call__()
                             s1                                                         %! abjad.ScoreTemplate.__illustrate__()
-                        }                                                              %! mraz.ScoreTemplate.__call__
-                        \context RHResonanceVoice = "RH_Resonance_Voice"               %! mraz.ScoreTemplate.__call__
-                        {                                                              %! mraz.ScoreTemplate.__call__
+                        }                                                              %! mraz.ScoreTemplate.__call__()
+                        \context RHResonanceVoice = "RH_Resonance_Voice"               %! mraz.ScoreTemplate.__call__()
+                        {                                                              %! mraz.ScoreTemplate.__call__()
                             s1                                                         %! abjad.ScoreTemplate.__illustrate__()
-                        }                                                              %! mraz.ScoreTemplate.__call__
-                    >>                                                                 %! mraz.ScoreTemplate.__call__
-                    \context PianoMusicLHStaff = "Piano_Music_LH_Staff"                %! mraz.ScoreTemplate.__call__
-                    <<                                                                 %! mraz.ScoreTemplate.__call__
-                        \context LHVoiceI = "LH_Voice_I"                               %! mraz.ScoreTemplate.__call__
-                        {                                                              %! mraz.ScoreTemplate.__call__
+                        }                                                              %! mraz.ScoreTemplate.__call__()
+                    >>                                                                 %! mraz.ScoreTemplate.__call__()
+                    \context PianoMusicLHStaff = "Piano_Music_LH_Staff"                %! mraz.ScoreTemplate.__call__()
+                    <<                                                                 %! mraz.ScoreTemplate.__call__()
+                        \context LHVoiceI = "LH_Voice_I"                               %! mraz.ScoreTemplate.__call__()
+                        {                                                              %! mraz.ScoreTemplate.__call__()
                             \clef "bass"                                               %! abjad.ScoreTemplate.attach_defaults(3)
                             s1                                                         %! abjad.ScoreTemplate.__illustrate__()
-                        }                                                              %! mraz.ScoreTemplate.__call__
-                        \context LHVoiceII = "LH_Voice_II"                             %! mraz.ScoreTemplate.__call__
-                        {                                                              %! mraz.ScoreTemplate.__call__
+                        }                                                              %! mraz.ScoreTemplate.__call__()
+                        \context LHVoiceII = "LH_Voice_II"                             %! mraz.ScoreTemplate.__call__()
+                        {                                                              %! mraz.ScoreTemplate.__call__()
                             s1                                                         %! abjad.ScoreTemplate.__illustrate__()
-                        }                                                              %! mraz.ScoreTemplate.__call__
-                        \context LHVoiceIII = "LH_Voice_III"                           %! mraz.ScoreTemplate.__call__
-                        {                                                              %! mraz.ScoreTemplate.__call__
+                        }                                                              %! mraz.ScoreTemplate.__call__()
+                        \context LHVoiceIII = "LH_Voice_III"                           %! mraz.ScoreTemplate.__call__()
+                        {                                                              %! mraz.ScoreTemplate.__call__()
                             s1                                                         %! abjad.ScoreTemplate.__illustrate__()
-                        }                                                              %! mraz.ScoreTemplate.__call__
-                        \context LHVoiceIV = "LH_Voice_IV"                             %! mraz.ScoreTemplate.__call__
-                        {                                                              %! mraz.ScoreTemplate.__call__
+                        }                                                              %! mraz.ScoreTemplate.__call__()
+                        \context LHVoiceIV = "LH_Voice_IV"                             %! mraz.ScoreTemplate.__call__()
+                        {                                                              %! mraz.ScoreTemplate.__call__()
                             s1                                                         %! abjad.ScoreTemplate.__illustrate__()
-                        }                                                              %! mraz.ScoreTemplate.__call__
-                        \context LHVoiceIVInserts = "LH_Voice_IV_Inserts"              %! mraz.ScoreTemplate.__call__
-                        {                                                              %! mraz.ScoreTemplate.__call__
+                        }                                                              %! mraz.ScoreTemplate.__call__()
+                        \context LHVoiceIVInserts = "LH_Voice_IV_Inserts"              %! mraz.ScoreTemplate.__call__()
+                        {                                                              %! mraz.ScoreTemplate.__call__()
                             s1                                                         %! abjad.ScoreTemplate.__illustrate__()
-                        }                                                              %! mraz.ScoreTemplate.__call__
-                        \context LHVoiceV = "LH_Voice_V"                               %! mraz.ScoreTemplate.__call__
-                        {                                                              %! mraz.ScoreTemplate.__call__
+                        }                                                              %! mraz.ScoreTemplate.__call__()
+                        \context LHVoiceV = "LH_Voice_V"                               %! mraz.ScoreTemplate.__call__()
+                        {                                                              %! mraz.ScoreTemplate.__call__()
                             s1                                                         %! abjad.ScoreTemplate.__illustrate__()
-                        }                                                              %! mraz.ScoreTemplate.__call__
-                        \context LHVoiceVInserts = "LH_Voice_V_Inserts"                %! mraz.ScoreTemplate.__call__
-                        {                                                              %! mraz.ScoreTemplate.__call__
+                        }                                                              %! mraz.ScoreTemplate.__call__()
+                        \context LHVoiceVInserts = "LH_Voice_V_Inserts"                %! mraz.ScoreTemplate.__call__()
+                        {                                                              %! mraz.ScoreTemplate.__call__()
                             s1                                                         %! abjad.ScoreTemplate.__illustrate__()
-                        }                                                              %! mraz.ScoreTemplate.__call__
-                        \context LHVoiceVI = "LH_Voice_VI"                             %! mraz.ScoreTemplate.__call__
-                        {                                                              %! mraz.ScoreTemplate.__call__
+                        }                                                              %! mraz.ScoreTemplate.__call__()
+                        \context LHVoiceVI = "LH_Voice_VI"                             %! mraz.ScoreTemplate.__call__()
+                        {                                                              %! mraz.ScoreTemplate.__call__()
                             s1                                                         %! abjad.ScoreTemplate.__illustrate__()
-                        }                                                              %! mraz.ScoreTemplate.__call__
-                        \context LHVoiceVIInserts = "LH_Voice_VI_Inserts"              %! mraz.ScoreTemplate.__call__
-                        {                                                              %! mraz.ScoreTemplate.__call__
+                        }                                                              %! mraz.ScoreTemplate.__call__()
+                        \context LHVoiceVIInserts = "LH_Voice_VI_Inserts"              %! mraz.ScoreTemplate.__call__()
+                        {                                                              %! mraz.ScoreTemplate.__call__()
                             s1                                                         %! abjad.ScoreTemplate.__illustrate__()
-                        }                                                              %! mraz.ScoreTemplate.__call__
-                        \context LHResonanceVoice = "LH_Resonance_Voice"               %! mraz.ScoreTemplate.__call__
-                        {                                                              %! mraz.ScoreTemplate.__call__
+                        }                                                              %! mraz.ScoreTemplate.__call__()
+                        \context LHResonanceVoice = "LH_Resonance_Voice"               %! mraz.ScoreTemplate.__call__()
+                        {                                                              %! mraz.ScoreTemplate.__call__()
                             s1                                                         %! abjad.ScoreTemplate.__illustrate__()
-                        }                                                              %! mraz.ScoreTemplate.__call__
-                    >>                                                                 %! mraz.ScoreTemplate.__call__
-                >>                                                                     %! mraz.ScoreTemplate.__call__
-            }                                                                          %! mraz.ScoreTemplate.__call__
-        >>                                                                             %! mraz.ScoreTemplate.__call__
+                        }                                                              %! mraz.ScoreTemplate.__call__()
+                    >>                                                                 %! mraz.ScoreTemplate.__call__()
+                >>                                                                     %! mraz.ScoreTemplate.__call__()
+            }                                                                          %! mraz.ScoreTemplate.__call__()
+        >>                                                                             %! mraz.ScoreTemplate.__call__()
 
     """
 
@@ -207,7 +207,8 @@ class ScoreTemplate(baca.ScoreTemplate):
         """
         Calls score template.
         """
-        tag = "mraz.ScoreTemplate.__call__"
+        site = "mraz.ScoreTemplate.__call__()"
+        tag = abjad.Tag(site)
         # GLOBAL CONTEXT
         global_context = self._make_global_context()
 
