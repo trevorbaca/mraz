@@ -883,7 +883,7 @@ C_RH_Voice_II = {                                                              %
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
             \override DynamicLineSpanner.staff-padding = #8                    %! baca.dls_staff_padding():baca.OverrideCommand._call(1)
-            \once \override Score.SpanBar.extra-offset = #'(-0.75 . 0)         %! +SEGMENT:baca.span_bar_extra_offset():baca.OverrideCommand._call(1)
+            \once \override Score.SpanBar.extra-offset = #'(-0.75 . 0)         %! baca.span_bar_extra_offset():+SEGMENT:baca.OverrideCommand._call(1)
             \ottava 1                                                          %! baca.ottava():SpannerIndicatorCommand(1)
             \override Slur.direction = #up                                     %! baca.slur_up():baca.OverrideCommand._call(1)
             b'16
