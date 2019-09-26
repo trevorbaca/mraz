@@ -964,7 +964,7 @@ maker = baca.SegmentMaker(
     color_octaves=False,
     check_all_are_pitched=True,
     deactivate=[
-        abjad.tags.REPEAT_PITCH_CLASS,
+        abjad.tags.REPEAT_PITCH_CLASS_COLORING,
     ],
     final_bar_line=False,
     ignore_repeat_pitch_classes=True,
