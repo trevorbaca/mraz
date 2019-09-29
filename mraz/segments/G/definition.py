@@ -351,6 +351,7 @@ maker(
     baca.metronome_mark("84", baca.leaf(0)),
     baca.metronome_mark(baca.Accelerando(), baca.leaf(0)),
     baca.metronome_mark("112", baca.leaf(8)),
+    baca.bar_line("|.", baca.skip(-1)),
 )
 
 maker(
