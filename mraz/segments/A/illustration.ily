@@ -390,7 +390,7 @@ A_RH_Voice_II = {                                                              %
 
             % [A RH_Voice_II measure 1]                                        %! baca.SegmentMaker._comment_measure_numbers()
             \override DynamicLineSpanner.staff-padding = #8                    %! baca.dls_staff_padding():baca.OverrideCommand._call(1)
-            \ottava 1                                                          %! baca.ottava():SpannerIndicatorCommand(1)
+            \ottava 1                                                          %! baca.ottava():baca.SpannerIndicatorCommand._call(1)
             \override Slur.direction = #up                                     %! baca.slur_up():baca.OverrideCommand._call(1)
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
@@ -416,7 +416,7 @@ A_RH_Voice_II = {                                                              %
         %@%     }                                                              %! FIGURE_NAME
             - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
             \<                                                                 %! baca.hairpin():baca.PiecewiseCommand._call(1):baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
-            (                                                                  %! baca.slur():SpannerIndicatorCommand(1)
+            (                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(1)
             [
 
             \set stemLeftBeamCount = 2
@@ -504,10 +504,10 @@ A_RH_Voice_II = {                                                              %
             cs''''!16
             - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
             \ff                                                                %! baca.hairpin():baca.PiecewiseCommand._call(2):SPANNER_STOP:baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
-            )                                                                  %! baca.slur():SpannerIndicatorCommand(2):SPANNER_STOP
+            )                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
             ]
             \revert DynamicLineSpanner.staff-padding                           %! baca.dls_staff_padding():baca.OverrideCommand._call(2)
-            \ottava 0                                                          %! baca.ottava():SpannerIndicatorCommand(2)
+            \ottava 0                                                          %! baca.ottava():baca.SpannerIndicatorCommand._call(2)
             \revert Slur.direction                                             %! baca.slur_up():baca.OverrideCommand._call(2)
 
         }
@@ -859,7 +859,7 @@ A_RH_Voice_III = {                                                             %
 
             % [A RH_Voice_III measure 8]                                       %! baca.SegmentMaker._comment_measure_numbers()
             \once \override DynamicText.X-offset = #0.25                       %! baca.dynamic_text_x_offset():baca.OverrideCommand._call(1)
-            \ottava 1                                                          %! baca.ottava():SpannerIndicatorCommand(1)
+            \ottava 1                                                          %! baca.ottava():baca.SpannerIndicatorCommand._call(1)
             \override Stem.direction = #down                                   %! baca.stem_down():baca.OverrideCommand._call(1)
             \override TupletBracket.direction = #down                          %! baca.tuplet_bracket_down():baca.OverrideCommand._call(1)
             a''4
@@ -904,7 +904,7 @@ A_RH_Voice_III = {                                                             %
 
             g'''4
             - \tenuto                                                          %! baca.tenuto():baca.IndicatorCommand._call()
-            \ottava 0                                                          %! baca.ottava():SpannerIndicatorCommand(2)
+            \ottava 0                                                          %! baca.ottava():baca.SpannerIndicatorCommand._call(2)
             \revert Stem.direction                                             %! baca.stem_down():baca.OverrideCommand._call(2)
 
             r4
@@ -1928,7 +1928,7 @@ A_LH_Voice_VI = {                                                              %
         \times 4/3 {
 
             % [A LH_Voice_VI measure 3]                                        %! baca.SegmentMaker._comment_measure_numbers()
-            \ottava -1                                                         %! baca.ottava_bassa():SpannerIndicatorCommand(1)
+            \ottava -1                                                         %! baca.ottava_bassa():baca.SpannerIndicatorCommand._call(1)
             \override TupletBracket.direction = #down                          %! baca.tuplet_bracket_down():baca.OverrideCommand._call(1)
             \override TupletBracket.staff-padding = #6                         %! baca.tuplet_bracket_staff_padding():baca.OverrideCommand._call(1)
             \once \override PianoMusicLHStaff.Clef.X-extent = ##f              %! baca.clef_x_extent_false():baca.clef_shift():SHIFTED_CLEF:MEASURE_3:baca.OverrideCommand._call(1)
@@ -1963,7 +1963,7 @@ A_LH_Voice_VI = {                                                              %
             r4
 
             ef,,!8
-            \ottava 0                                                          %! baca.ottava_bassa():SpannerIndicatorCommand(2)
+            \ottava 0                                                          %! baca.ottava_bassa():baca.SpannerIndicatorCommand._call(2)
 
             r4
             \revert Rest.direction                                             %! baca.rest_down():baca.OverrideCommand._call(2)
