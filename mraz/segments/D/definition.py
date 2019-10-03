@@ -966,6 +966,7 @@ maker = baca.SegmentMaker(
     deactivate=[
         abjad.tags.REPEAT_PITCH_CLASS_COLORING,
     ],
+    do_not_check_beamed_long_notes=True,
     ignore_repeat_pitch_classes=True,
     segment_directory=abjad.Path(os.path.realpath(__file__)).parent,
     skips_instead_of_rests=True,
