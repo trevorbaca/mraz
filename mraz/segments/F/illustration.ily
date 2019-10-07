@@ -1101,7 +1101,7 @@ F_RH_Voice_II = {                                                              %
         %@%             }                                                      %! FIGURE_NAME
         %@%     }                                                              %! FIGURE_NAME
             [
-            (                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(1)
+            (                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
@@ -1122,7 +1122,7 @@ F_RH_Voice_II = {                                                              %
             \set stemRightBeamCount = 1
             af'!16
             - \staccato                                                        %! baca.staccato():baca.IndicatorCommand._call()
-            )                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
+            )                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(4):SPANNER_STOP
 
         }
 
@@ -1132,7 +1132,7 @@ F_RH_Voice_II = {                                                              %
             \set stemRightBeamCount = 2
             bf!16
             - \staccato                                                        %! baca.staccato():baca.IndicatorCommand._call()
-            (                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(1)
+            (                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
@@ -1153,7 +1153,7 @@ F_RH_Voice_II = {                                                              %
             \set stemRightBeamCount = 1
             a''16
             - \staccato                                                        %! baca.staccato():baca.IndicatorCommand._call()
-            )                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
+            )                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(4):SPANNER_STOP
 
         }
 
@@ -1163,7 +1163,7 @@ F_RH_Voice_II = {                                                              %
             \set stemRightBeamCount = 2
             d16
             - \staccato                                                        %! baca.staccato():baca.IndicatorCommand._call()
-            (                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(1)
+            (                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
@@ -1189,7 +1189,7 @@ F_RH_Voice_II = {                                                              %
             \set stemRightBeamCount = 1
             f''16
             - \staccato                                                        %! baca.staccato():baca.IndicatorCommand._call()
-            )                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
+            )                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(4):SPANNER_STOP
 
         }
 
@@ -1199,7 +1199,7 @@ F_RH_Voice_II = {                                                              %
             \set stemRightBeamCount = 2
             a16
             - \staccato                                                        %! baca.staccato():baca.IndicatorCommand._call()
-            (                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(1)
+            (                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
@@ -1220,7 +1220,7 @@ F_RH_Voice_II = {                                                              %
             \set stemRightBeamCount = 1
             c'''16
             - \staccato                                                        %! baca.staccato():baca.IndicatorCommand._call()
-            )                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
+            )                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(4):SPANNER_STOP
 
         }
 
@@ -1230,7 +1230,7 @@ F_RH_Voice_II = {                                                              %
             \set stemRightBeamCount = 2
             e16
             - \staccato                                                        %! baca.staccato():baca.IndicatorCommand._call()
-            (                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(1)
+            (                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
@@ -1251,7 +1251,7 @@ F_RH_Voice_II = {                                                              %
             \set stemRightBeamCount = 1
             ef'!16
             - \staccato                                                        %! baca.staccato():baca.IndicatorCommand._call()
-            )                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
+            )                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(4):SPANNER_STOP
 
         }
 
@@ -1261,7 +1261,7 @@ F_RH_Voice_II = {                                                              %
             \set stemRightBeamCount = 2
             b16
             - \staccato                                                        %! baca.staccato():baca.IndicatorCommand._call()
-            (                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(1)
+            (                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
@@ -1272,7 +1272,7 @@ F_RH_Voice_II = {                                                              %
             \set stemRightBeamCount = 0
             a'16
             - \staccato                                                        %! baca.staccato():baca.IndicatorCommand._call()
-            )                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
+            )                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(4):SPANNER_STOP
             ]
             \revert Beam.positions                                             %! baca.beam_positions():baca.OverrideCommand._call(2)
 
@@ -1308,7 +1308,7 @@ F_RH_Voice_II = {                                                              %
         %@%             }                                                      %! FIGURE_NAME
         %@%     }                                                              %! FIGURE_NAME
             [
-            (                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(1)
+            (                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
@@ -1329,7 +1329,7 @@ F_RH_Voice_II = {                                                              %
             \set stemRightBeamCount = 1
             ef'''!16
             - \staccato                                                        %! baca.staccato():baca.IndicatorCommand._call()
-            )                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
+            )                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(4):SPANNER_STOP
 
         }
 
@@ -1339,7 +1339,7 @@ F_RH_Voice_II = {                                                              %
             \set stemRightBeamCount = 2
             f'16
             - \staccato                                                        %! baca.staccato():baca.IndicatorCommand._call()
-            (                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(1)
+            (                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
@@ -1365,7 +1365,7 @@ F_RH_Voice_II = {                                                              %
             \set stemRightBeamCount = 1
             c''''16
             - \staccato                                                        %! baca.staccato():baca.IndicatorCommand._call()
-            )                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
+            )                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(4):SPANNER_STOP
 
         }
 
@@ -1375,7 +1375,7 @@ F_RH_Voice_II = {                                                              %
             \set stemRightBeamCount = 2
             e'16
             - \staccato                                                        %! baca.staccato():baca.IndicatorCommand._call()
-            (                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(1)
+            (                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
@@ -1401,7 +1401,7 @@ F_RH_Voice_II = {                                                              %
             \set stemRightBeamCount = 1
             b''16
             - \staccato                                                        %! baca.staccato():baca.IndicatorCommand._call()
-            )                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
+            )                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(4):SPANNER_STOP
 
         }
 
@@ -1411,7 +1411,7 @@ F_RH_Voice_II = {                                                              %
             \set stemRightBeamCount = 2
             g'16
             - \staccato                                                        %! baca.staccato():baca.IndicatorCommand._call()
-            (                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(1)
+            (                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
@@ -1432,7 +1432,7 @@ F_RH_Voice_II = {                                                              %
             \set stemRightBeamCount = 1
             cs''''!16
             - \staccato                                                        %! baca.staccato():baca.IndicatorCommand._call()
-            )                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
+            )                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(4):SPANNER_STOP
 
         }
 
@@ -1442,7 +1442,7 @@ F_RH_Voice_II = {                                                              %
             \set stemRightBeamCount = 2
             af'!16
             - \staccato                                                        %! baca.staccato():baca.IndicatorCommand._call()
-            (                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(1)
+            (                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
@@ -1463,7 +1463,7 @@ F_RH_Voice_II = {                                                              %
             \set stemRightBeamCount = 0
             a''16
             - \staccato                                                        %! baca.staccato():baca.IndicatorCommand._call()
-            )                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
+            )                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(4):SPANNER_STOP
             ]
             \revert Beam.positions                                             %! baca.beam_positions():baca.OverrideCommand._call(2)
 
@@ -1499,7 +1499,7 @@ F_RH_Voice_II = {                                                              %
         %@%             }                                                      %! FIGURE_NAME
         %@%     }                                                              %! FIGURE_NAME
             [
-            (                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(1)
+            (                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
@@ -1515,7 +1515,7 @@ F_RH_Voice_II = {                                                              %
             \set stemRightBeamCount = 1
             c''''16
             - \staccato                                                        %! baca.staccato():baca.IndicatorCommand._call()
-            )                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
+            )                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(4):SPANNER_STOP
 
         }
 
@@ -1525,7 +1525,7 @@ F_RH_Voice_II = {                                                              %
             \set stemRightBeamCount = 2
             e'16
             - \staccato                                                        %! baca.staccato():baca.IndicatorCommand._call()
-            (                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(1)
+            (                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
@@ -1541,7 +1541,7 @@ F_RH_Voice_II = {                                                              %
             \set stemRightBeamCount = 1
             bf'!16
             - \staccato                                                        %! baca.staccato():baca.IndicatorCommand._call()
-            )                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
+            )                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(4):SPANNER_STOP
 
         }
 
@@ -1551,7 +1551,7 @@ F_RH_Voice_II = {                                                              %
             \set stemRightBeamCount = 2
             ef'!16
             - \staccato                                                        %! baca.staccato():baca.IndicatorCommand._call()
-            (                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(1)
+            (                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
@@ -1567,7 +1567,7 @@ F_RH_Voice_II = {                                                              %
             \set stemRightBeamCount = 1
             a''16
             - \staccato                                                        %! baca.staccato():baca.IndicatorCommand._call()
-            )                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
+            )                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(4):SPANNER_STOP
 
         }
 
@@ -1577,7 +1577,7 @@ F_RH_Voice_II = {                                                              %
             \set stemRightBeamCount = 2
             d'16
             - \staccato                                                        %! baca.staccato():baca.IndicatorCommand._call()
-            (                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(1)
+            (                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
@@ -1598,7 +1598,7 @@ F_RH_Voice_II = {                                                              %
             \set stemRightBeamCount = 1
             ef'''!16
             - \staccato                                                        %! baca.staccato():baca.IndicatorCommand._call()
-            )                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
+            )                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(4):SPANNER_STOP
 
         }
 
@@ -1608,7 +1608,7 @@ F_RH_Voice_II = {                                                              %
             \set stemRightBeamCount = 2
             f'16
             - \staccato                                                        %! baca.staccato():baca.IndicatorCommand._call()
-            (                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(1)
+            (                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
@@ -1624,7 +1624,7 @@ F_RH_Voice_II = {                                                              %
             \set stemRightBeamCount = 0
             g''16
             - \staccato                                                        %! baca.staccato():baca.IndicatorCommand._call()
-            )                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
+            )                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(4):SPANNER_STOP
             ]
             \revert Beam.positions                                             %! baca.beam_positions():baca.OverrideCommand._call(2)
 
@@ -1660,7 +1660,7 @@ F_RH_Voice_II = {                                                              %
         %@%             }                                                      %! FIGURE_NAME
         %@%     }                                                              %! FIGURE_NAME
             [
-            (                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(1)
+            (                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
@@ -1676,7 +1676,7 @@ F_RH_Voice_II = {                                                              %
             \set stemRightBeamCount = 1
             f'''16
             - \staccato                                                        %! baca.staccato():baca.IndicatorCommand._call()
-            )                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
+            )                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(4):SPANNER_STOP
 
         }
 
@@ -1686,7 +1686,7 @@ F_RH_Voice_II = {                                                              %
             \set stemRightBeamCount = 2
             af''!16
             - \staccato                                                        %! baca.staccato():baca.IndicatorCommand._call()
-            (                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(1)
+            (                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
@@ -1697,7 +1697,7 @@ F_RH_Voice_II = {                                                              %
             \set stemRightBeamCount = 1
             ef'''!16
             - \staccato                                                        %! baca.staccato():baca.IndicatorCommand._call()
-            )                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
+            )                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(4):SPANNER_STOP
 
         }
 
@@ -1707,7 +1707,7 @@ F_RH_Voice_II = {                                                              %
             \set stemRightBeamCount = 2
             b''16
             - \staccato                                                        %! baca.staccato():baca.IndicatorCommand._call()
-            (                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(1)
+            (                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
@@ -1718,7 +1718,7 @@ F_RH_Voice_II = {                                                              %
             \set stemRightBeamCount = 1
             a'''16
             - \staccato                                                        %! baca.staccato():baca.IndicatorCommand._call()
-            )                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
+            )                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(4):SPANNER_STOP
 
         }
 
@@ -1728,7 +1728,7 @@ F_RH_Voice_II = {                                                              %
             \set stemRightBeamCount = 2
             d''16
             - \staccato                                                        %! baca.staccato():baca.IndicatorCommand._call()
-            (                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(1)
+            (                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
@@ -1749,7 +1749,7 @@ F_RH_Voice_II = {                                                              %
             \set stemRightBeamCount = 0
             ef''''!16
             - \staccato                                                        %! baca.staccato():baca.IndicatorCommand._call()
-            )                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
+            )                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(4):SPANNER_STOP
             ]
             \revert Beam.positions                                             %! baca.beam_positions():baca.OverrideCommand._call(2)
             \revert Script.direction                                           %! baca.script_up():baca.OverrideCommand._call(2)
@@ -1788,7 +1788,7 @@ F_RH_Voice_II = {                                                              %
         %@%             }                                                      %! FIGURE_NAME
         %@%     }                                                              %! FIGURE_NAME
             [
-            (                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(1)
+            (                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
@@ -1809,7 +1809,7 @@ F_RH_Voice_II = {                                                              %
             \set stemRightBeamCount = 1
             fs''''!16
             - \staccato                                                        %! baca.staccato():baca.IndicatorCommand._call()
-            )                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
+            )                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(4):SPANNER_STOP
 
         }
 
@@ -1819,7 +1819,7 @@ F_RH_Voice_II = {                                                              %
             \set stemRightBeamCount = 2
             c''16
             - \staccato                                                        %! baca.staccato():baca.IndicatorCommand._call()
-            (                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(1)
+            (                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
@@ -1835,7 +1835,7 @@ F_RH_Voice_II = {                                                              %
             \set stemRightBeamCount = 1
             af''!16
             - \staccato                                                        %! baca.staccato():baca.IndicatorCommand._call()
-            )                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
+            )                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(4):SPANNER_STOP
 
         }
 
@@ -1845,7 +1845,7 @@ F_RH_Voice_II = {                                                              %
             \set stemRightBeamCount = 2
             bf''!16
             - \staccato                                                        %! baca.staccato():baca.IndicatorCommand._call()
-            (                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(1)
+            (                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
@@ -1861,7 +1861,7 @@ F_RH_Voice_II = {                                                              %
             \set stemRightBeamCount = 1
             g''''16
             - \staccato                                                        %! baca.staccato():baca.IndicatorCommand._call()
-            )                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
+            )                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(4):SPANNER_STOP
 
         }
 
@@ -1871,7 +1871,7 @@ F_RH_Voice_II = {                                                              %
             \set stemRightBeamCount = 2
             b''16
             - \staccato                                                        %! baca.staccato():baca.IndicatorCommand._call()
-            (                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(1)
+            (                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
@@ -1882,7 +1882,7 @@ F_RH_Voice_II = {                                                              %
             \set stemRightBeamCount = 0
             d''''16
             - \staccato                                                        %! baca.staccato():baca.IndicatorCommand._call()
-            )                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
+            )                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(4):SPANNER_STOP
             ]
             \revert Beam.positions                                             %! baca.beam_positions():baca.OverrideCommand._call(2)
 
@@ -2102,7 +2102,7 @@ F_RH_Voice_III = {                                                             %
         \times 8/5 {
 
             % [F RH_Voice_III measure 82 / measure 1]                          %! baca.SegmentMaker._comment_measure_numbers()
-            \ottava 1                                                          %! baca.ottava():baca.SpannerIndicatorCommand._call(1)
+            \ottava 1                                                          %! baca.ottava():baca.SpannerIndicatorCommand._call(2):SPANNER_START
             \override Stem.direction = #down                                   %! baca.stem_down():baca.OverrideCommand._call(1)
             \override TupletBracket.direction = #down                          %! baca.tuplet_bracket_down():baca.OverrideCommand._call(1)
             a''4
@@ -2153,7 +2153,7 @@ F_RH_Voice_III = {                                                             %
 
             g'''4
             - \tenuto                                                          %! baca.tenuto():baca.IndicatorCommand._call()
-            \ottava 0                                                          %! baca.ottava():baca.SpannerIndicatorCommand._call(2)
+            \ottava 0                                                          %! baca.ottava():baca.SpannerIndicatorCommand._call(4):SPANNER_STOP
             \revert Stem.direction                                             %! baca.stem_down():baca.OverrideCommand._call(2)
 
             r4
@@ -2195,14 +2195,14 @@ F_RH_Voice_III = {                                                             %
             %@%             }                                                  %! FIGURE_NAME
             %@%     }                                                          %! FIGURE_NAME
                 [
-                (                                                              %! baca.slur():baca.SpannerIndicatorCommand._call(1)
+                (                                                              %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 
                 ef'''!8
 
                 f'''8
 
                 c'''8
-                )                                                              %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
+                )                                                              %! baca.slur():baca.SpannerIndicatorCommand._call(4):SPANNER_STOP
                 ]
 
             }
@@ -2212,7 +2212,7 @@ F_RH_Voice_III = {                                                             %
 
                 a''8
                 [
-                (                                                              %! baca.slur():baca.SpannerIndicatorCommand._call(1)
+                (                                                              %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 
                 bf''!8
 
@@ -2225,7 +2225,7 @@ F_RH_Voice_III = {                                                             %
                 f''8
 
                 ef''!8
-                )                                                              %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
+                )                                                              %! baca.slur():baca.SpannerIndicatorCommand._call(4):SPANNER_STOP
                 ]
 
             }
@@ -2234,14 +2234,14 @@ F_RH_Voice_III = {                                                             %
 
                 f''8
                 [
-                (                                                              %! baca.slur():baca.SpannerIndicatorCommand._call(1)
+                (                                                              %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 
                 fs''!8
 
                 af''!8
 
                 ef''!8
-                )                                                              %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
+                )                                                              %! baca.slur():baca.SpannerIndicatorCommand._call(4):SPANNER_STOP
                 ]
 
             }
@@ -2251,7 +2251,7 @@ F_RH_Voice_III = {                                                             %
 
                 c''8
                 [
-                (                                                              %! baca.slur():baca.SpannerIndicatorCommand._call(1)
+                (                                                              %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 
                 cs''!8
 
@@ -2260,7 +2260,7 @@ F_RH_Voice_III = {                                                             %
                 bf'!8
 
                 g'8
-                )                                                              %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
+                )                                                              %! baca.slur():baca.SpannerIndicatorCommand._call(4):SPANNER_STOP
                 ]
 
                 s8
@@ -2274,14 +2274,14 @@ F_RH_Voice_III = {                                                             %
 
                 e'8
                 [
-                (                                                              %! baca.slur():baca.SpannerIndicatorCommand._call(1)
+                (                                                              %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 
                 g'8
 
                 a'8
 
                 d'8
-                )                                                              %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
+                )                                                              %! baca.slur():baca.SpannerIndicatorCommand._call(4):SPANNER_STOP
                 ]
                 \revert TupletBracket.direction                                %! baca.tuplet_bracket_down():baca.OverrideCommand._call(2)
 
@@ -2349,7 +2349,7 @@ F_RH_Voice_III = {                                                             %
             %@%             }                                                  %! FIGURE_NAME
             %@%     }                                                          %! FIGURE_NAME
                 [
-                (                                                              %! baca.slur():baca.SpannerIndicatorCommand._call(1)
+                (                                                              %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 
                 c'''8
 
@@ -2362,7 +2362,7 @@ F_RH_Voice_III = {                                                             %
                 a''8
 
                 g''8
-                )                                                              %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
+                )                                                              %! baca.slur():baca.SpannerIndicatorCommand._call(4):SPANNER_STOP
                 ~                                                              %! baca.tie():baca.IndicatorCommand._call()
                 ]
 
@@ -2372,14 +2372,14 @@ F_RH_Voice_III = {                                                             %
 
                 g''8
                 [
-                (                                                              %! baca.slur():baca.SpannerIndicatorCommand._call(1)
+                (                                                              %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 
                 bf''!8
 
                 c'''8
 
                 f''8
-                )                                                              %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
+                )                                                              %! baca.slur():baca.SpannerIndicatorCommand._call(4):SPANNER_STOP
                 ]
 
             }
@@ -2389,7 +2389,7 @@ F_RH_Voice_III = {                                                             %
 
                 e''8
                 [
-                (                                                              %! baca.slur():baca.SpannerIndicatorCommand._call(1)
+                (                                                              %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 
                 ef''!8
 
@@ -2403,7 +2403,7 @@ F_RH_Voice_III = {                                                             %
                 s8
 
                 bf'!8
-                )                                                              %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
+                )                                                              %! baca.slur():baca.SpannerIndicatorCommand._call(4):SPANNER_STOP
 
             }
 
@@ -2412,10 +2412,10 @@ F_RH_Voice_III = {                                                             %
 
                 fs''!8
                 [
-                (                                                              %! baca.slur():baca.SpannerIndicatorCommand._call(1)
+                (                                                              %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 
                 b'8
-                )                                                              %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
+                )                                                              %! baca.slur():baca.SpannerIndicatorCommand._call(4):SPANNER_STOP
                 ]
 
                 s8
@@ -2428,7 +2428,7 @@ F_RH_Voice_III = {                                                             %
 
                 f''8
                 [
-                (                                                              %! baca.slur():baca.SpannerIndicatorCommand._call(1)
+                (                                                              %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 
                 d''8
 
@@ -2443,7 +2443,7 @@ F_RH_Voice_III = {                                                             %
                 cs'!8
 
                 b'8
-                )                                                              %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
+                )                                                              %! baca.slur():baca.SpannerIndicatorCommand._call(4):SPANNER_STOP
                 ]
                 \revert TupletBracket.direction                                %! baca.tuplet_bracket_down():baca.OverrideCommand._call(2)
 
@@ -2486,14 +2486,14 @@ F_RH_Voice_III = {                                                             %
             %@%             }                                                  %! FIGURE_NAME
             %@%     }                                                          %! FIGURE_NAME
                 [
-                (                                                              %! baca.slur():baca.SpannerIndicatorCommand._call(1)
+                (                                                              %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 
                 d'''8
 
                 e'''8
 
                 g'''8
-                )                                                              %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
+                )                                                              %! baca.slur():baca.SpannerIndicatorCommand._call(4):SPANNER_STOP
                 ]
 
             }
@@ -2503,7 +2503,7 @@ F_RH_Voice_III = {                                                             %
 
                 af''!8
                 [
-                (                                                              %! baca.slur():baca.SpannerIndicatorCommand._call(1)
+                (                                                              %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 
                 f'''8
 
@@ -2518,7 +2518,7 @@ F_RH_Voice_III = {                                                             %
                 e''8
 
                 d''8
-                )                                                              %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
+                )                                                              %! baca.slur():baca.SpannerIndicatorCommand._call(4):SPANNER_STOP
                 ]
 
             }
@@ -2527,21 +2527,21 @@ F_RH_Voice_III = {                                                             %
             \times 3/4 {
 
                 af''!8
-                (                                                              %! baca.slur():baca.SpannerIndicatorCommand._call(1)
+                (                                                              %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 
                 s8
 
                 s8
 
                 fs''!8
-                )                                                              %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
+                )                                                              %! baca.slur():baca.SpannerIndicatorCommand._call(4):SPANNER_STOP
 
             }
 
             \scaleDurations #'(1 . 1) {
 
                 a''8
-                (                                                              %! baca.slur():baca.SpannerIndicatorCommand._call(1)
+                (                                                              %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 
                 s8
 
@@ -2556,7 +2556,7 @@ F_RH_Voice_III = {                                                             %
                 s8
 
                 ef''!8
-                )                                                              %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
+                )                                                              %! baca.slur():baca.SpannerIndicatorCommand._call(4):SPANNER_STOP
 
             }
 
@@ -2565,7 +2565,7 @@ F_RH_Voice_III = {                                                             %
 
                 b'8
                 [
-                (                                                              %! baca.slur():baca.SpannerIndicatorCommand._call(1)
+                (                                                              %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 
                 fs'!8
                 ]
@@ -2573,7 +2573,7 @@ F_RH_Voice_III = {                                                             %
                 s8
 
                 a'8
-                )                                                              %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
+                )                                                              %! baca.slur():baca.SpannerIndicatorCommand._call(4):SPANNER_STOP
                 \revert TupletBracket.direction                                %! baca.tuplet_bracket_down():baca.OverrideCommand._call(2)
 
             }
@@ -2640,7 +2640,7 @@ F_RH_Voice_III = {                                                             %
             %@%             }                                                  %! FIGURE_NAME
             %@%     }                                                          %! FIGURE_NAME
                 [
-                (                                                              %! baca.slur():baca.SpannerIndicatorCommand._call(1)
+                (                                                              %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 
                 g'''8
 
@@ -2654,7 +2654,7 @@ F_RH_Voice_III = {                                                             %
                 s8
 
                 fs'''!8
-                )                                                              %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
+                )                                                              %! baca.slur():baca.SpannerIndicatorCommand._call(4):SPANNER_STOP
 
             }
 
@@ -2662,7 +2662,7 @@ F_RH_Voice_III = {                                                             %
             \times 3/4 {
 
                 bf''!8
-                (                                                              %! baca.slur():baca.SpannerIndicatorCommand._call(1)
+                (                                                              %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 
                 s8
 
@@ -2670,7 +2670,7 @@ F_RH_Voice_III = {                                                             %
                 [
 
                 af''!8
-                )                                                              %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
+                )                                                              %! baca.slur():baca.SpannerIndicatorCommand._call(4):SPANNER_STOP
                 ]
 
             }
@@ -2678,7 +2678,7 @@ F_RH_Voice_III = {                                                             %
             \scaleDurations #'(1 . 1) {
 
                 cs'''!8
-                (                                                              %! baca.slur():baca.SpannerIndicatorCommand._call(1)
+                (                                                              %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 
                 s8
 
@@ -2693,7 +2693,7 @@ F_RH_Voice_III = {                                                             %
                 s8
 
                 g''8
-                )                                                              %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
+                )                                                              %! baca.slur():baca.SpannerIndicatorCommand._call(4):SPANNER_STOP
 
             }
 
@@ -2702,10 +2702,10 @@ F_RH_Voice_III = {                                                             %
 
                 cs''!8
                 [
-                (                                                              %! baca.slur():baca.SpannerIndicatorCommand._call(1)
+                (                                                              %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 
                 bf'!8
-                )                                                              %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
+                )                                                              %! baca.slur():baca.SpannerIndicatorCommand._call(4):SPANNER_STOP
                 ]
 
                 s8
@@ -2719,7 +2719,7 @@ F_RH_Voice_III = {                                                             %
 
                 e''8
                 [
-                (                                                              %! baca.slur():baca.SpannerIndicatorCommand._call(1)
+                (                                                              %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 
                 a'8
 
@@ -2734,7 +2734,7 @@ F_RH_Voice_III = {                                                             %
                 [
 
                 bf'!8
-                )                                                              %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
+                )                                                              %! baca.slur():baca.SpannerIndicatorCommand._call(4):SPANNER_STOP
                 ]
 
             }
@@ -2743,14 +2743,14 @@ F_RH_Voice_III = {                                                             %
 
                 c''8
                 [
-                (                                                              %! baca.slur():baca.SpannerIndicatorCommand._call(1)
+                (                                                              %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 
                 b'8
 
                 cs'!8
 
                 bf'!8
-                )                                                              %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
+                )                                                              %! baca.slur():baca.SpannerIndicatorCommand._call(4):SPANNER_STOP
                 ]
                 \revert TupletBracket.direction                                %! baca.tuplet_bracket_down():baca.OverrideCommand._call(2)
 
@@ -2824,7 +2824,7 @@ F_RH_Voice_III = {                                                             %
             %@%             }                                                  %! FIGURE_NAME
             %@%     }                                                          %! FIGURE_NAME
                 [
-                (                                                              %! baca.slur():baca.SpannerIndicatorCommand._call(1)
+                (                                                              %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 
                 af'''!8
 
@@ -2837,7 +2837,7 @@ F_RH_Voice_III = {                                                             %
                 cs'''!8
 
                 b''8
-                )                                                              %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
+                )                                                              %! baca.slur():baca.SpannerIndicatorCommand._call(4):SPANNER_STOP
                 ]
 
             }
@@ -2848,12 +2848,12 @@ F_RH_Voice_III = {                                                             %
 
                 d''8
                 [
-                (                                                              %! baca.slur():baca.SpannerIndicatorCommand._call(1)
+                (                                                              %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 
                 e''8
 
                 cs''!8
-                )                                                              %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
+                )                                                              %! baca.slur():baca.SpannerIndicatorCommand._call(4):SPANNER_STOP
                 ]
 
             }
@@ -2862,7 +2862,7 @@ F_RH_Voice_III = {                                                             %
             \times 6/7 {
 
                 af''!8
-                (                                                              %! baca.slur():baca.SpannerIndicatorCommand._call(1)
+                (                                                              %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 
                 s8
 
@@ -2876,7 +2876,7 @@ F_RH_Voice_III = {                                                             %
                 [
 
                 d'8
-                )                                                              %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
+                )                                                              %! baca.slur():baca.SpannerIndicatorCommand._call(4):SPANNER_STOP
                 ]
                 \revert TupletBracket.direction                                %! baca.tuplet_bracket_down():baca.OverrideCommand._call(2)
                 \revert TupletBracket.staff-padding                            %! baca.tuplet_bracket_staff_padding():baca.OverrideCommand._call(2)
@@ -3723,7 +3723,7 @@ F_LH_Voice_IV = {                                                              %
             \p                                                                 %! baca.dynamic():baca.IndicatorCommand._call():baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
             - \staccato                                                        %! baca.staccato():baca.IndicatorCommand._call()
             - \tenuto                                                          %! baca.tenuto():baca.IndicatorCommand._call()
-            (                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(1)
+            (                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 
             r8.
 
@@ -3736,7 +3736,7 @@ F_LH_Voice_IV = {                                                              %
             cs!8.
             - \staccato                                                        %! baca.staccato():baca.IndicatorCommand._call()
             - \tenuto                                                          %! baca.tenuto():baca.IndicatorCommand._call()
-            )                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
+            )                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(4):SPANNER_STOP
 
             r8.
 
@@ -3782,7 +3782,7 @@ F_LH_Voice_IV = {                                                              %
             \p                                                                 %! baca.dynamic():baca.IndicatorCommand._call():baca.SegmentMaker._set_status_tag():REDUNDANT_DYNAMIC
             - \staccato                                                        %! baca.staccato():baca.IndicatorCommand._call()
             - \tenuto                                                          %! baca.tenuto():baca.IndicatorCommand._call()
-            (                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(1)
+            (                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 
             r16
 
@@ -3801,7 +3801,7 @@ F_LH_Voice_IV = {                                                              %
             cs!8.
             - \staccato                                                        %! baca.staccato():baca.IndicatorCommand._call()
             - \tenuto                                                          %! baca.tenuto():baca.IndicatorCommand._call()
-            )                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
+            )                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(4):SPANNER_STOP
 
             r16
             \revert Slur.direction                                             %! baca.slur_down():baca.OverrideCommand._call(2)
@@ -3834,14 +3834,14 @@ F_LH_Voice_IV = {                                                              %
         %@%                 ]                                                  %! FIGURE_NAME
         %@%             }                                                      %! FIGURE_NAME
         %@%     }                                                              %! FIGURE_NAME
-            (                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(1)
+            (                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 
             r16
 
             g8.
             - \staccato                                                        %! baca.staccato():baca.IndicatorCommand._call()
             - \tenuto                                                          %! baca.tenuto():baca.IndicatorCommand._call()
-            )                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
+            )                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(4):SPANNER_STOP
 
             r16
 
@@ -3877,7 +3877,7 @@ F_LH_Voice_IV = {                                                              %
         %@%                 ]                                                  %! FIGURE_NAME
         %@%             }                                                      %! FIGURE_NAME
         %@%     }                                                              %! FIGURE_NAME
-            (                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(1)
+            (                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 
             r16
 
@@ -3896,7 +3896,7 @@ F_LH_Voice_IV = {                                                              %
             af,!8.
             - \staccato                                                        %! baca.staccato():baca.IndicatorCommand._call()
             - \tenuto                                                          %! baca.tenuto():baca.IndicatorCommand._call()
-            )                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
+            )                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(4):SPANNER_STOP
 
             r16
 
@@ -3929,12 +3929,12 @@ F_LH_Voice_IV = {                                                              %
         %@%             }                                                      %! FIGURE_NAME
         %@%     }                                                              %! FIGURE_NAME
             [
-            (                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(1)
+            (                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 
             bf!8.
             - \staccato                                                        %! baca.staccato():baca.IndicatorCommand._call()
             - \tenuto                                                          %! baca.tenuto():baca.IndicatorCommand._call()
-            )                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
+            )                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(4):SPANNER_STOP
             ]
 
         }
@@ -3966,7 +3966,7 @@ F_LH_Voice_IV = {                                                              %
         %@%             }                                                      %! FIGURE_NAME
         %@%     }                                                              %! FIGURE_NAME
             [
-            (                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(1)
+            (                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 
             b8.
             - \staccato                                                        %! baca.staccato():baca.IndicatorCommand._call()
@@ -3975,7 +3975,7 @@ F_LH_Voice_IV = {                                                              %
             g8.
             - \staccato                                                        %! baca.staccato():baca.IndicatorCommand._call()
             - \tenuto                                                          %! baca.tenuto():baca.IndicatorCommand._call()
-            )                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
+            )                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(4):SPANNER_STOP
             ]
 
         }
@@ -4009,12 +4009,12 @@ F_LH_Voice_IV = {                                                              %
             - \staccato                                                        %! baca.staccato():baca.IndicatorCommand._call()
             - \tenuto                                                          %! baca.tenuto():baca.IndicatorCommand._call()
             [
-            (                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(1)
+            (                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 
             ef,!8.
             - \staccato                                                        %! baca.staccato():baca.IndicatorCommand._call()
             - \tenuto                                                          %! baca.tenuto():baca.IndicatorCommand._call()
-            )                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
+            )                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(4):SPANNER_STOP
             ]
 
             r4
@@ -4060,7 +4060,7 @@ F_LH_Voice_IV = {                                                              %
             - \staccato                                                        %! baca.staccato():baca.IndicatorCommand._call()
             - \tenuto                                                          %! baca.tenuto():baca.IndicatorCommand._call()
             [
-            (                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(1)
+            (                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 
             af,!8
             - \staccato                                                        %! baca.staccato():baca.IndicatorCommand._call()
@@ -4069,7 +4069,7 @@ F_LH_Voice_IV = {                                                              %
             e,8
             - \staccato                                                        %! baca.staccato():baca.IndicatorCommand._call()
             - \tenuto                                                          %! baca.tenuto():baca.IndicatorCommand._call()
-            )                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
+            )                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(4):SPANNER_STOP
             ]
 
         }
@@ -4101,7 +4101,7 @@ F_LH_Voice_IV = {                                                              %
         %@%             }                                                      %! FIGURE_NAME
         %@%     }                                                              %! FIGURE_NAME
             [
-            (                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(1)
+            (                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 
             cs!8
             - \staccato                                                        %! baca.staccato():baca.IndicatorCommand._call()
@@ -4114,7 +4114,7 @@ F_LH_Voice_IV = {                                                              %
             g,8
             - \staccato                                                        %! baca.staccato():baca.IndicatorCommand._call()
             - \tenuto                                                          %! baca.tenuto():baca.IndicatorCommand._call()
-            )                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
+            )                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(4):SPANNER_STOP
             ]
 
         }
@@ -4503,7 +4503,7 @@ F_LH_Voice_VI = {                                                              %
         \times 4/3 {
 
             % [F LH_Voice_VI measure 86 / measure 5]                           %! baca.SegmentMaker._comment_measure_numbers()
-            \ottava -1                                                         %! baca.ottava_bassa():baca.SpannerIndicatorCommand._call(1)
+            \ottava -1                                                         %! baca.ottava_bassa():baca.SpannerIndicatorCommand._call(2):SPANNER_START
             \override Stem.direction = #down                                   %! baca.stem_down():baca.OverrideCommand._call(1)
             \override TupletBracket.direction = #down                          %! baca.tuplet_bracket_down():baca.OverrideCommand._call(1)
             \override TupletBracket.staff-padding = #6                         %! baca.tuplet_bracket_staff_padding():baca.OverrideCommand._call(1)
@@ -4532,7 +4532,7 @@ F_LH_Voice_VI = {                                                              %
             r4
 
             ef,,!8
-            \ottava 0                                                          %! baca.ottava_bassa():baca.SpannerIndicatorCommand._call(2)
+            \ottava 0                                                          %! baca.ottava_bassa():baca.SpannerIndicatorCommand._call(4):SPANNER_STOP
             \revert Stem.direction                                             %! baca.stem_down():baca.OverrideCommand._call(2)
 
             r4
