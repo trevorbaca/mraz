@@ -1311,7 +1311,7 @@ B_LH_Voice_V = {                                                               %
         \scaleDurations #'(1 . 1) {
 
             % [B LH_Voice_V measure 10 / measure 1]                            %! baca.SegmentMaker._comment_measure_numbers()
-            \ottava -1                                                         %! baca.ottava_bassa():baca.SpannerIndicatorCommand._call(1)
+            \ottava -1                                                         %! baca.ottava_bassa():baca.SpannerIndicatorCommand._call(2):SPANNER_START
             \override TupletBracket.direction = #up                            %! baca.tuplet_bracket_up():baca.OverrideCommand._call(1)
             \dynamicUp                                                         %! baca.dynamic_up():baca.IndicatorCommand._call()
             g,8.
@@ -1810,7 +1810,7 @@ B_LH_Voice_V = {                                                               %
             r32
 
             af,,!8
-            \ottava 0                                                          %! baca.ottava_bassa():baca.SpannerIndicatorCommand._call(2)
+            \ottava 0                                                          %! baca.ottava_bassa():baca.SpannerIndicatorCommand._call(4):SPANNER_STOP
 
             r32
             \revert TupletBracket.direction                                    %! baca.tuplet_bracket_up():baca.OverrideCommand._call(2)
