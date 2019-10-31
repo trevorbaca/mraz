@@ -2542,6 +2542,8 @@ C_LH_Resonance_Voice = {                                                       %
             - \tweak color #darkcyan                                           %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(2):SPANNER_START
             - \tweak staff-padding #8                                          %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(2):SPANNER_START
             \bacaStartTextSpanRhythmAnnotation                                 %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(2):SPANNER_START
+            - \tweak stencil ##f                                               %! baca.SegmentMaker._attach_shadow_tie_indicators()
+            ~                                                                  %! baca.SegmentMaker._attach_shadow_tie_indicators()
 
         }
 
@@ -2560,7 +2562,7 @@ C_LH_Resonance_Voice = {                                                       %
             \once \override NoteHead.transparent = ##t                         %! baca.note_head_transparent():baca.OverrideCommand._call(1)
             \once \override RepeatTie.transparent = ##t                        %! baca.repeat_tie_transparent():baca.OverrideCommand._call(1)
             \once \override Stem.transparent = ##t                             %! baca.stem_transparent():baca.OverrideCommand._call(1)
-            <e, fs,! gs,! as,! b,>4
+            <e, fs, gs, as, b,>4
         %@% ^ \markup {                                                        %! FIGURE_NAME
         %@%     \fontsize                                                      %! FIGURE_NAME
         %@%         #2                                                         %! FIGURE_NAME
@@ -2579,6 +2581,8 @@ C_LH_Resonance_Voice = {                                                       %
         %@%             }                                                      %! FIGURE_NAME
         %@%     }                                                              %! FIGURE_NAME
             \repeatTie                                                         %! baca.repeat_tie():baca.IndicatorCommand._call()
+            - \tweak stencil ##f                                               %! baca.SegmentMaker._attach_shadow_tie_indicators()
+            ~                                                                  %! baca.SegmentMaker._attach_shadow_tie_indicators()
 
         }
 
@@ -2589,7 +2593,7 @@ C_LH_Resonance_Voice = {                                                       %
         \scaleDurations #'(1 . 1) {
 
             % [C LH_Resonance_Voice measure 24 / measure 3]                    %! baca.SegmentMaker._comment_measure_numbers()
-            <e, fs,! gs,! as,! b,>4
+            <e, fs, gs, as, b,>4
         %@% ^ \markup {                                                        %! FIGURE_NAME
         %@%     \fontsize                                                      %! FIGURE_NAME
         %@%         #2                                                         %! FIGURE_NAME
@@ -2608,6 +2612,8 @@ C_LH_Resonance_Voice = {                                                       %
         %@%             }                                                      %! FIGURE_NAME
         %@%     }                                                              %! FIGURE_NAME
             \repeatTie                                                         %! baca.repeat_tie():baca.IndicatorCommand._call()
+            - \tweak stencil ##f                                               %! baca.SegmentMaker._attach_shadow_tie_indicators()
+            ~                                                                  %! baca.SegmentMaker._attach_shadow_tie_indicators()
 
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 0
@@ -2618,8 +2624,10 @@ C_LH_Resonance_Voice = {                                                       %
             \once \override NoteHead.transparent = ##t                         %! baca.note_head_transparent():baca.OverrideCommand._call(1)
             \once \override RepeatTie.transparent = ##t                        %! baca.repeat_tie_transparent():baca.OverrideCommand._call(1)
             \once \override Stem.transparent = ##t                             %! baca.stem_transparent():baca.OverrideCommand._call(1)
-            <e, fs,! gs,! as,! b,>16
+            <e, fs, gs, as, b,>16
             \repeatTie                                                         %! baca.repeat_tie():baca.IndicatorCommand._call()
+            - \tweak stencil ##f                                               %! baca.SegmentMaker._attach_shadow_tie_indicators()
+            ~                                                                  %! baca.SegmentMaker._attach_shadow_tie_indicators()
 
         }
 
@@ -2637,7 +2645,7 @@ C_LH_Resonance_Voice = {                                                       %
             \once \override NoteHead.transparent = ##t                         %! baca.note_head_transparent():baca.OverrideCommand._call(1)
             \once \override RepeatTie.transparent = ##t                        %! baca.repeat_tie_transparent():baca.OverrideCommand._call(1)
             \once \override Stem.transparent = ##t                             %! baca.stem_transparent():baca.OverrideCommand._call(1)
-            <e, fs,! gs,! as,! b,>4
+            <e, fs, gs, as, b,>4
         %@% ^ \markup {                                                        %! FIGURE_NAME
         %@%     \fontsize                                                      %! FIGURE_NAME
         %@%         #2                                                         %! FIGURE_NAME
@@ -2656,6 +2664,8 @@ C_LH_Resonance_Voice = {                                                       %
         %@%             }                                                      %! FIGURE_NAME
         %@%     }                                                              %! FIGURE_NAME
             \repeatTie                                                         %! baca.repeat_tie():baca.IndicatorCommand._call()
+            - \tweak stencil ##f                                               %! baca.SegmentMaker._attach_shadow_tie_indicators()
+            ~                                                                  %! baca.SegmentMaker._attach_shadow_tie_indicators()
 
         }
 
@@ -2666,7 +2676,7 @@ C_LH_Resonance_Voice = {                                                       %
         \scaleDurations #'(1 . 1) {
 
             % [C LH_Resonance_Voice measure 26 / measure 5]                    %! baca.SegmentMaker._comment_measure_numbers()
-            <e, fs,! gs,! as,! b,>2
+            <e, fs, gs, as, b,>2
         %@% ^ \markup {                                                        %! FIGURE_NAME
         %@%     \fontsize                                                      %! FIGURE_NAME
         %@%         #2                                                         %! FIGURE_NAME
@@ -2685,6 +2695,8 @@ C_LH_Resonance_Voice = {                                                       %
         %@%             }                                                      %! FIGURE_NAME
         %@%     }                                                              %! FIGURE_NAME
             \repeatTie                                                         %! baca.repeat_tie():baca.IndicatorCommand._call()
+            - \tweak stencil ##f                                               %! baca.SegmentMaker._attach_shadow_tie_indicators()
+            ~                                                                  %! baca.SegmentMaker._attach_shadow_tie_indicators()
 
         }
 
@@ -2695,7 +2707,7 @@ C_LH_Resonance_Voice = {                                                       %
         \scaleDurations #'(1 . 1) {
 
             % [C LH_Resonance_Voice measure 27 / measure 6]                    %! baca.SegmentMaker._comment_measure_numbers()
-            <e, fs,! gs,! as,! b,>2
+            <e, fs, gs, as, b,>2
         %@% ^ \markup {                                                        %! FIGURE_NAME
         %@%     \fontsize                                                      %! FIGURE_NAME
         %@%         #2                                                         %! FIGURE_NAME
@@ -2714,6 +2726,8 @@ C_LH_Resonance_Voice = {                                                       %
         %@%             }                                                      %! FIGURE_NAME
         %@%     }                                                              %! FIGURE_NAME
             \repeatTie                                                         %! baca.repeat_tie():baca.IndicatorCommand._call()
+            - \tweak stencil ##f                                               %! baca.SegmentMaker._attach_shadow_tie_indicators()
+            ~                                                                  %! baca.SegmentMaker._attach_shadow_tie_indicators()
 
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 0
@@ -2724,7 +2738,7 @@ C_LH_Resonance_Voice = {                                                       %
             \once \override NoteHead.transparent = ##t                         %! baca.note_head_transparent():baca.OverrideCommand._call(1)
             \once \override RepeatTie.transparent = ##t                        %! baca.repeat_tie_transparent():baca.OverrideCommand._call(1)
             \once \override Stem.transparent = ##t                             %! baca.stem_transparent():baca.OverrideCommand._call(1)
-            <e, fs,! gs,! as,! b,>8
+            <e, fs, gs, as, b,>8
             \repeatTie                                                         %! baca.repeat_tie():baca.IndicatorCommand._call()
 
         }
@@ -2759,6 +2773,8 @@ C_LH_Resonance_Voice = {                                                       %
         %@%                 ]                                                  %! FIGURE_NAME
         %@%             }                                                      %! FIGURE_NAME
         %@%     }                                                              %! FIGURE_NAME
+            - \tweak stencil ##f                                               %! baca.SegmentMaker._attach_shadow_tie_indicators()
+            ~                                                                  %! baca.SegmentMaker._attach_shadow_tie_indicators()
 
             \override NoteHead.no-ledgers = ##t                                %! baca.no_ledgers():baca.OverrideCommand._call(1)
             \override Accidental.transparent = ##t                             %! baca.accidental_transparent():baca.OverrideCommand._call(1)
@@ -2767,13 +2783,17 @@ C_LH_Resonance_Voice = {                                                       %
             \override NoteHead.transparent = ##t                               %! baca.note_head_transparent():baca.OverrideCommand._call(1)
             \override RepeatTie.transparent = ##t                              %! baca.repeat_tie_transparent():baca.OverrideCommand._call(1)
             \override Stem.transparent = ##t                                   %! baca.stem_transparent():baca.OverrideCommand._call(1)
-            <e, fs,! gs,! as,! b,>4
+            <e, fs, gs, as, b,>4
             \repeatTie                                                         %! baca.repeat_tie():baca.IndicatorCommand._call()
+            - \tweak stencil ##f                                               %! baca.SegmentMaker._attach_shadow_tie_indicators()
+            ~                                                                  %! baca.SegmentMaker._attach_shadow_tie_indicators()
 
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 0
-            <e, fs,! gs,! as,! b,>16
+            <e, fs, gs, as, b,>16
             \repeatTie                                                         %! baca.repeat_tie():baca.IndicatorCommand._call()
+            - \tweak stencil ##f                                               %! baca.SegmentMaker._attach_shadow_tie_indicators()
+            ~                                                                  %! baca.SegmentMaker._attach_shadow_tie_indicators()
             \revert NoteHead.no-ledgers                                        %! baca.no_ledgers():baca.OverrideCommand._call(2)
             \revert Accidental.transparent                                     %! baca.accidental_transparent():baca.OverrideCommand._call(2)
             \revert Beam.transparent                                           %! baca.beam_transparent():baca.OverrideCommand._call(2)
@@ -2792,7 +2812,7 @@ C_LH_Resonance_Voice = {                                                       %
 
             % [C LH_Resonance_Voice measure 31 / measure 10]                   %! baca.SegmentMaker._comment_measure_numbers()
             \override Accidental.stencil = ##f                                 %! baca.accidental_stencil_false():baca.OverrideCommand._call(1)
-            <e, fs,! gs,! as,! b,>1..
+            <e, fs, gs, as, b,>1..
         %@% ^ \markup {                                                        %! FIGURE_NAME
         %@%     \fontsize                                                      %! FIGURE_NAME
         %@%         #2                                                         %! FIGURE_NAME
@@ -2811,6 +2831,8 @@ C_LH_Resonance_Voice = {                                                       %
         %@%             }                                                      %! FIGURE_NAME
         %@%     }                                                              %! FIGURE_NAME
             \repeatTie                                                         %! baca.repeat_tie():baca.IndicatorCommand._call()
+            - \tweak stencil ##f                                               %! baca.SegmentMaker._attach_shadow_tie_indicators()
+            ~                                                                  %! baca.SegmentMaker._attach_shadow_tie_indicators()
 
         }
 
@@ -2821,7 +2843,7 @@ C_LH_Resonance_Voice = {                                                       %
         \scaleDurations #'(1 . 1) {
 
             % [C LH_Resonance_Voice measure 32 / measure 11]                   %! baca.SegmentMaker._comment_measure_numbers()
-            <e, fs,! gs,! as,! b,>1.
+            <e, fs, gs, as, b,>1.
         %@% ^ \markup {                                                        %! FIGURE_NAME
         %@%     \fontsize                                                      %! FIGURE_NAME
         %@%         #2                                                         %! FIGURE_NAME
