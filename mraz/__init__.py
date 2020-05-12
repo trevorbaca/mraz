@@ -8,7 +8,8 @@ if not (
     raise ImportError("Requires Python 3.7.")
 del distutils
 del platform
-
+from .ScoreTemplate import ScoreTemplate
+from .SilverDesignMaker import SilverDesignMaker
 
 from mraz.tools import *
 from mraz.materials.instruments.definition import instruments
