@@ -338,3 +338,30 @@ class CollectionMaker(object):
         collections["stage 3"]["rh"] = v5_stage_3_segments
         collections["stage 3"]["lh"] = v6_stage_3_segments
         return collections
+
+
+def clean_up_repeat_ties():
+    """
+    Cleans up repeat ties.
+    """
+    return [
+        baca.beam_stencil_false(selector=baca.leaves()),
+        baca.dots_stencil_false(selector=baca.leaves()),
+        baca.flag_stencil_false(selector=baca.leaves()),
+        baca.stem_stencil_false(selector=baca.leaves()),
+    ]
+
+
+def transparent_music(selector):
+    """
+    Makes transparent music.
+    """
+    return [
+        baca.no_ledgers(selector=selector),
+        baca.accidental_transparent(selector=selector),
+        baca.beam_transparent(selector=selector),
+        baca.flag_transparent(selector=selector),
+        baca.note_head_transparent(selector=selector),
+        baca.repeat_tie_transparent(selector=selector),
+        baca.stem_transparent(selector=selector),
+    ]
