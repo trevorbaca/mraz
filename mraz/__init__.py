@@ -13,4 +13,3 @@ del platform
 from mraz.tools import *
 from mraz.materials.instruments.definition import instruments
 from mraz.materials.metronome_marks.definition import metronome_marks
-from mraz import segments
