@@ -78,7 +78,7 @@ install:
     
 script:
     - BLACK_OPTS="--target-version=py36 --check --diff"
-    - BLACK_EXCLUDE="__metadata__.py|__persist__.py|segments|layout.py|ScoreTemplate.py"
+    - BLACK_EXCLUDE="__metadata__.py|__persist__.py|segments|layout.py|ScoreTemplate.py|tools.py"
     - black $BLACK_OPTS --exclude $BLACK_EXCLUDE $PACKAGE
     - mypy --ignore-missing-imports $PACKAGE
     - coverage run -a `which baca-doctest` $PACKAGE
