@@ -113,7 +113,7 @@ accumulator(
     "lh_v5",
     "r2.",
     # TODO: teach PianoPedalBracket to attach for a single leaf
-#    baca.sustain_pedal()
+    # baca.sustain_pedal()
     anchor=baca.anchor_to_figure("rh-2 4.1.1"),
     signature=4,
     figure_name="lh-5 4.1.2",
@@ -275,7 +275,7 @@ accumulator(
     baca.cross_staff(),
     baca.dynamic("mp"),
     # TODO: tag colored score only:
-    #baca.stem_color("darkmagenta", context="PianoStaff"),
+    # baca.stem_color("darkmagenta", context="PianoStaff"),
     baca.stem_up(),
     signature=4,
     figure_name="lh-5 4.2.10",
@@ -601,7 +601,7 @@ accumulator(
     ),
     rmakers.beam_groups(),
     baca.slur(map=baca.ntruns()),
-    baca.slur_down(baca.leaf(0)), # lilypond error when slur is up
+    baca.slur_down(baca.leaf(0)),  # lilypond error when slur is up
     anchor=baca.anchor("lh_v5", baca.rest(-8)),
     signature=4,
     figure_name="rh-1 4.4.5",

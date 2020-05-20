@@ -1,12 +1,20 @@
 import distutils.version
 import platform
 
-from mraz.materials.instruments.definition import instruments
-from mraz.materials.metronome_marks.definition import metronome_marks
-from mraz.tools import *
-
 from .ScoreTemplate import ScoreTemplate
 from .SilverDesignMaker import SilverDesignMaker
+from .materials import instruments, metronome_marks
+from .tools import CollectionMaker, clean_up_repeat_ties, transparent_music
+
+__all__ = [
+    "ScoreTemplate",
+    "SilverDesignMaker",
+    "instruments",
+    "metronome_marks",
+    "CollectionMaker",
+    "clean_up_repeat_ties",
+    "transparent_music",
+]
 
 if not (
     distutils.version.LooseVersion("3.7")

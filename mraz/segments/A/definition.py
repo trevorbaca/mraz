@@ -51,9 +51,9 @@ accumulator(
 
 accumulator(
     "lh_v4",
-    collections_7["stage 1"]["lh"][-1].transpose(4*7),
+    collections_7["stage 1"]["lh"][-1].transpose(4 * 7),
     baca.figure([1], 16, treatments=[1]),
-    baca.register(6, 6+10),
+    baca.register(6, 6 + 10),
     baca.imbricate(
         "lh_v4_i",
         [14, 18],
