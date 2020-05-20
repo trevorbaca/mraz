@@ -19,7 +19,7 @@ accumulator(
     "rh_v1",
     collections["stage 1"]["rh"].next(),
     baca.figure([1], 16, treatments=[-1]),
-    baca.register(13, 13+10),
+    baca.register(13, 13 + 10),
     baca.nest("2/16"),
     rmakers.beam_groups(),
     baca.imbricate(
@@ -39,7 +39,7 @@ accumulator(
     "rh_v2",
     collections["stage 1"]["rh"].next(),
     baca.figure([1], 16),
-    baca.register(7, 7+10),
+    baca.register(7, 7 + 10),
     rmakers.beam_groups(),
     baca.imbricate(
         "rh_v2_i",
@@ -59,7 +59,7 @@ accumulator(
     "rh_v1",
     collections["stage 1"]["rh"].next(),
     baca.figure([1], 16, treatments=[-1]),
-    baca.register(15, 15+10),
+    baca.register(15, 15 + 10),
     baca.nest("1/16"),
     rmakers.beam_groups(),
     baca.imbricate(
@@ -76,7 +76,7 @@ accumulator(
     "rh_v2",
     collections["stage 1"]["rh"].next(),
     baca.figure([1], 16),
-    baca.register(9, 9+10),
+    baca.register(9, 9 + 10),
     rmakers.beam_groups(),
     baca.nest("-1/16"),
     baca.imbricate(
@@ -94,7 +94,7 @@ accumulator(
     "rh_v1",
     collections["stage 1"]["rh"].next(),
     baca.figure([1], 16),
-    baca.register(17, 17+10),
+    baca.register(17, 17 + 10),
     rmakers.beam_groups(),
     baca.nest("1/16"),
     baca.imbricate(
@@ -113,7 +113,7 @@ accumulator(
     "rh_v2",
     collections["stage 1"]["rh"].next(),
     baca.figure([1], 16, treatments=[-1]),
-    baca.register(11, 11+10),
+    baca.register(11, 11 + 10),
     rmakers.beam_groups(),
     baca.imbricate(
         "rh_v2_i",
@@ -132,7 +132,7 @@ accumulator(
     "rh_v1",
     collections["stage 1"]["rh"].next(),
     baca.figure([1], 16),
-    baca.register(19, 19+10),
+    baca.register(19, 19 + 10),
     rmakers.beam_groups(),
     baca.nest("1/16"),
     baca.imbricate(
@@ -149,7 +149,7 @@ accumulator(
     "rh_v2",
     collections["stage 1"]["rh"].next(),
     baca.figure([1], 16),
-    baca.register(13, 13+10),
+    baca.register(13, 13 + 10),
     rmakers.beam_groups(),
     baca.nest("-1/16"),
     baca.imbricate(
@@ -170,7 +170,7 @@ accumulator(
     "rh_v2",
     collections["stage 1"]["rh"].next(),
     baca.figure([1], 16),
-    baca.register(15, 15+10),
+    baca.register(15, 15 + 10),
     rmakers.beam_groups(),
     baca.imbricate(
         "rh_v2_i",
@@ -189,7 +189,7 @@ accumulator(
     "rh_v1",
     collections["stage 1"]["rh"].next(),
     baca.figure([1], 16, treatments=[-1]),
-    baca.register(23, 23+10),
+    baca.register(23, 23 + 10),
     rmakers.beam_groups(),
     baca.nest("2/16"),
     baca.imbricate(
@@ -207,7 +207,7 @@ accumulator(
     "rh_v2",
     collections["stage 1"]["rh"].next(exhausted=True),
     baca.figure([1], 16, treatments=[-1]),
-    baca.register(17, 17+10),
+    baca.register(17, 17 + 10),
     rmakers.beam_groups(),
     baca.imbricate(
         "rh_v2_i",
@@ -224,10 +224,10 @@ accumulator(
 
 accumulator(
     "lh_v4",
-    collections["stage 1"]["lh"].next().transpose(0*7),
+    collections["stage 1"]["lh"].next().transpose(0 * 7),
     baca.figure([1], 16, treatments=[-1]),
     rmakers.beam_groups(),
-    baca.register(-2, -2+16),
+    baca.register(-2, -2 + 16),
     baca.imbricate(
         "lh_v4_i",
         [0, 19, 23],
@@ -244,9 +244,9 @@ accumulator(
 
 accumulator(
     "lh_v5",
-    collections["stage 1"]["lh"].next().transpose(1*7),
+    collections["stage 1"]["lh"].next().transpose(1 * 7),
     baca.figure([1], 16),
-    baca.register(0, 0+16),
+    baca.register(0, 0 + 16),
     rmakers.beam_groups(),
     baca.nest("-2/16"),
     baca.imbricate(
@@ -270,10 +270,10 @@ accumulator(
 
 accumulator(
     "lh_v4",
-    collections["stage 1"]["lh"].next().transpose(2*7),
+    collections["stage 1"]["lh"].next().transpose(2 * 7),
     baca.figure([1], 16),
     rmakers.beam_groups(),
-    baca.register(2, 2+16),
+    baca.register(2, 2 + 16),
     baca.imbricate(
         "lh_v4_i",
         [13],
@@ -291,9 +291,9 @@ accumulator(
 
 accumulator(
     "lh_v5",
-    collections["stage 1"]["lh"].next().transpose(3*7),
+    collections["stage 1"]["lh"].next().transpose(3 * 7),
     baca.figure([1], 16),
-    baca.register(4, 4+16),
+    baca.register(4, 4 + 16),
     rmakers.beam_groups(),
     baca.nest("-2/16"),
     baca.imbricate(
@@ -315,10 +315,10 @@ accumulator(
 
 accumulator(
     "lh_v4",
-    collections["stage 1"]["lh"].next(exhausted=True).transpose(4*7),
+    collections["stage 1"]["lh"].next(exhausted=True).transpose(4 * 7),
     baca.figure([1], 16, treatments=[1]),
     rmakers.beam_groups(),
-    baca.register(6, 6+10),
+    baca.register(6, 6 + 10),
     baca.imbricate(
         "lh_v4_i",
         [14, 18],
