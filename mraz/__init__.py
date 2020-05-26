@@ -3,8 +3,13 @@ import platform
 
 from .ScoreTemplate import ScoreTemplate
 from .SilverDesignMaker import SilverDesignMaker
-from .materials import instruments, metronome_marks
-from .tools import CollectionMaker, clean_up_repeat_ties, transparent_music
+from .tools import (
+    CollectionMaker,
+    clean_up_repeat_ties,
+    instruments,
+    metronome_marks,
+    transparent_music,
+)
 
 __all__ = [
     "ScoreTemplate",
