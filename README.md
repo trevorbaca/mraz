@@ -2,8 +2,8 @@ Mráz
 ====
 
 [![Build Status](
-    https://travis-ci.org/trevorbaca/mraz.svg)](
-    https://travis-ci.org/trevorbaca/mraz)
+    https://api.travis-ci.org/trevorbaca/mraz.svg)](
+    https://api.travis-ci.org/trevorbaca/mraz)
 <!---
 [![Code style: black](
     https://img.shields.io/badge/code%20style-black-000000.svg)](
