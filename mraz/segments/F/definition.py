@@ -1,5 +1,3 @@
-import os
-
 import abjad
 import baca
 import mraz
@@ -466,7 +464,7 @@ maker = baca.SegmentMaker(
     check_all_are_pitched=True,
     color_octaves=False,
     do_not_check_beamed_long_notes=True,
-    segment_directory=abjad.Path(os.path.realpath(__file__)).parent,
+    segment_directory=abjad.Path(__file__).resolve().parent,
     skips_instead_of_rests=True,
     time_signatures=accumulator.time_signatures,
 )
