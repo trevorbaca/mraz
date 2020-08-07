@@ -1,4 +1,5 @@
 import abjad
+import ide
 
 
 persist = abjad.OrderedDict(
@@ -65,7 +66,7 @@ persist = abjad.OrderedDict(
                     (
                         'LH_Voice_IV',
                         [
-                            abjad.Momento(
+                            ide.Momento(
                                 context='LH_Voice_IV',
                                 prototype='abjad.Dynamic',
                                 value='p',
@@ -75,7 +76,7 @@ persist = abjad.OrderedDict(
                     (
                         'LH_Voice_V',
                         [
-                            abjad.Momento(
+                            ide.Momento(
                                 context='LH_Voice_V',
                                 prototype='abjad.Dynamic',
                                 value='ppp',
@@ -85,7 +86,7 @@ persist = abjad.OrderedDict(
                     (
                         'LH_Voice_VI',
                         [
-                            abjad.Momento(
+                            ide.Momento(
                                 context='LH_Voice_VI',
                                 prototype='abjad.Dynamic',
                                 value='f',
@@ -95,7 +96,7 @@ persist = abjad.OrderedDict(
                     (
                         'Piano_Music_LH_Staff',
                         [
-                            abjad.Momento(
+                            ide.Momento(
                                 context='LH_Voice_IV',
                                 prototype='abjad.Clef',
                                 value='treble',
@@ -105,7 +106,7 @@ persist = abjad.OrderedDict(
                     (
                         'Piano_Music_RH_Staff',
                         [
-                            abjad.Momento(
+                            ide.Momento(
                                 context='RH_Voice_I',
                                 prototype='abjad.Clef',
                                 value='treble',
@@ -115,7 +116,7 @@ persist = abjad.OrderedDict(
                     (
                         'Piano_Music_Staff_Group',
                         [
-                            abjad.Momento(
+                            ide.Momento(
                                 context='RH_Voice_I',
                                 manifest='instruments',
                                 value='Piano',
@@ -125,7 +126,7 @@ persist = abjad.OrderedDict(
                     (
                         'RH_Voice_I',
                         [
-                            abjad.Momento(
+                            ide.Momento(
                                 context='RH_Voice_I',
                                 prototype='abjad.Dynamic',
                                 value='f',
@@ -135,7 +136,7 @@ persist = abjad.OrderedDict(
                     (
                         'RH_Voice_II',
                         [
-                            abjad.Momento(
+                            ide.Momento(
                                 context='RH_Voice_II',
                                 prototype='abjad.Dynamic',
                                 value='fff',
@@ -145,7 +146,7 @@ persist = abjad.OrderedDict(
                     (
                         'RH_Voice_III',
                         [
-                            abjad.Momento(
+                            ide.Momento(
                                 context='RH_Voice_III',
                                 prototype='abjad.Dynamic',
                                 value='mp',
@@ -155,7 +156,7 @@ persist = abjad.OrderedDict(
                     (
                         'RH_Voice_IV',
                         [
-                            abjad.Momento(
+                            ide.Momento(
                                 context='RH_Voice_IV',
                                 prototype='abjad.Dynamic',
                                 value='p',
@@ -165,12 +166,12 @@ persist = abjad.OrderedDict(
                     (
                         'Score',
                         [
-                            abjad.Momento(
+                            ide.Momento(
                                 context='Global_Skips',
                                 manifest='metronome_marks',
                                 value='84',
                                 ),
-                            abjad.Momento(
+                            ide.Momento(
                                 context='Global_Skips',
                                 prototype='abjad.TimeSignature',
                                 value='1/4',
