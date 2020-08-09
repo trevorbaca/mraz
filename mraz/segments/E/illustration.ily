@@ -1,4 +1,4 @@
-E_Global_Rests = {                                                             %! abjad.Path.extern()
+E_Global_Rests = {                                                             %! ide.Path.extern()
 
     % [E Global_Rests measure 78 / measure 1]                                  %! baca.SegmentMaker._comment_measure_numbers()
     R1 * 9/8                                                                   %! baca.SegmentMaker._make_global_rests(1)
@@ -15,10 +15,10 @@ E_Global_Rests = {                                                             %
     % [E Global_Rests measure 82 / measure 5]                                  %! baca.SegmentMaker._comment_measure_numbers():baca.SegmentMaker._style_phantom_measures(4):PHANTOM
     R1 * 1/4                                                                   %! baca.SegmentMaker._make_global_rests(2):PHANTOM
 
-}                                                                              %! abjad.Path.extern()
+}                                                                              %! ide.Path.extern()
 
 
-E_Global_Skips = {                                                             %! abjad.Path.extern()
+E_Global_Skips = {                                                             %! ide.Path.extern()
 
     % [E Global_Skips measure 78 / measure 1]                                  %! baca.SegmentMaker._comment_measure_numbers()
     \time 9/8                                                                  %! baca.SegmentMaker._make_global_skips(2):baca.SegmentMaker._set_status_tag():EXPLICIT_TIME_SIGNATURE
@@ -91,10 +91,10 @@ E_Global_Skips = {                                                             %
     \once \override Score.BarLine.transparent = ##t                            %! baca.SegmentMaker._style_phantom_measures(3):PHANTOM
     \once \override Score.SpanBar.transparent = ##t                            %! baca.SegmentMaker._style_phantom_measures(3):PHANTOM
 
-}                                                                              %! abjad.Path.extern()
+}                                                                              %! ide.Path.extern()
 
 
-E_RH_Voice_I = {                                                               %! abjad.Path.extern()
+E_RH_Voice_I = {                                                               %! ide.Path.extern()
 
     % [E RH_Voice_I measure 78 / measure 1]                                    %! baca.SegmentMaker._comment_measure_numbers()
     \clef "treble"                                                             %! baca.SegmentMaker._reapply_persistent_indicators(3):baca.SegmentMaker._set_status_tag():REAPPLIED_CLEF
@@ -139,10 +139,10 @@ E_RH_Voice_I = {                                                               %
 
     >>                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container(7):PHANTOM
 
-}                                                                              %! abjad.Path.extern()
+}                                                                              %! ide.Path.extern()
 
 
-E_RH_Voice_I_Inserts = {                                                       %! abjad.Path.extern()
+E_RH_Voice_I_Inserts = {                                                       %! ide.Path.extern()
 
     % [E RH_Voice_I_Inserts measure 78 / measure 1]                            %! baca.SegmentMaker._comment_measure_numbers()
     s1 * 9/8                                                                   %! baca.SegmentMaker._call_rhythm_commands()
@@ -179,10 +179,10 @@ E_RH_Voice_I_Inserts = {                                                       %
 
     >>                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container(7):PHANTOM
 
-}                                                                              %! abjad.Path.extern()
+}                                                                              %! ide.Path.extern()
 
 
-E_RH_Voice_II = {                                                              %! abjad.Path.extern()
+E_RH_Voice_II = {                                                              %! ide.Path.extern()
 
     % [E RH_Voice_II measure 78 / measure 1]                                   %! baca.SegmentMaker._comment_measure_numbers()
     s1 * 9/8                                                                   %! baca.SegmentMaker._call_rhythm_commands()
@@ -221,10 +221,10 @@ E_RH_Voice_II = {                                                              %
 
     >>                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container(7):PHANTOM
 
-}                                                                              %! abjad.Path.extern()
+}                                                                              %! ide.Path.extern()
 
 
-E_RH_Voice_II_Inserts = {                                                      %! abjad.Path.extern()
+E_RH_Voice_II_Inserts = {                                                      %! ide.Path.extern()
 
     % [E RH_Voice_II_Inserts measure 78 / measure 1]                           %! baca.SegmentMaker._comment_measure_numbers()
     s1 * 9/8                                                                   %! baca.SegmentMaker._call_rhythm_commands()
@@ -261,10 +261,10 @@ E_RH_Voice_II_Inserts = {                                                      %
 
     >>                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container(7):PHANTOM
 
-}                                                                              %! abjad.Path.extern()
+}                                                                              %! ide.Path.extern()
 
 
-E_RH_Voice_III = {                                                             %! abjad.Path.extern()
+E_RH_Voice_III = {                                                             %! ide.Path.extern()
 
     {
 
@@ -502,10 +502,10 @@ E_RH_Voice_III = {                                                             %
 
     >>                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container(7):PHANTOM
 
-}                                                                              %! abjad.Path.extern()
+}                                                                              %! ide.Path.extern()
 
 
-E_RH_Voice_III_Inserts = {                                                     %! abjad.Path.extern()
+E_RH_Voice_III_Inserts = {                                                     %! ide.Path.extern()
 
     % [E RH_Voice_III_Inserts measure 78 / measure 1]                          %! baca.SegmentMaker._comment_measure_numbers()
     s1 * 9/8                                                                   %! baca.SegmentMaker._call_rhythm_commands()
@@ -542,10 +542,10 @@ E_RH_Voice_III_Inserts = {                                                     %
 
     >>                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container(7):PHANTOM
 
-}                                                                              %! abjad.Path.extern()
+}                                                                              %! ide.Path.extern()
 
 
-E_RH_Voice_IV = {                                                              %! abjad.Path.extern()
+E_RH_Voice_IV = {                                                              %! ide.Path.extern()
 
     % [E RH_Voice_IV measure 78 / measure 1]                                   %! baca.SegmentMaker._comment_measure_numbers()
     s1 * 9/8                                                                   %! baca.SegmentMaker._call_rhythm_commands()
@@ -584,10 +584,10 @@ E_RH_Voice_IV = {                                                              %
 
     >>                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container(7):PHANTOM
 
-}                                                                              %! abjad.Path.extern()
+}                                                                              %! ide.Path.extern()
 
 
-E_RH_Voice_IV_Inserts = {                                                      %! abjad.Path.extern()
+E_RH_Voice_IV_Inserts = {                                                      %! ide.Path.extern()
 
     % [E RH_Voice_IV_Inserts measure 78 / measure 1]                           %! baca.SegmentMaker._comment_measure_numbers()
     s1 * 9/8                                                                   %! baca.SegmentMaker._call_rhythm_commands()
@@ -624,10 +624,10 @@ E_RH_Voice_IV_Inserts = {                                                      %
 
     >>                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container(7):PHANTOM
 
-}                                                                              %! abjad.Path.extern()
+}                                                                              %! ide.Path.extern()
 
 
-E_RH_Voice_V = {                                                               %! abjad.Path.extern()
+E_RH_Voice_V = {                                                               %! ide.Path.extern()
 
     % [E RH_Voice_V measure 78 / measure 1]                                    %! baca.SegmentMaker._comment_measure_numbers()
     s1 * 9/8                                                                   %! baca.SegmentMaker._call_rhythm_commands()
@@ -664,10 +664,10 @@ E_RH_Voice_V = {                                                               %
 
     >>                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container(7):PHANTOM
 
-}                                                                              %! abjad.Path.extern()
+}                                                                              %! ide.Path.extern()
 
 
-E_RH_Voice_VI = {                                                              %! abjad.Path.extern()
+E_RH_Voice_VI = {                                                              %! ide.Path.extern()
 
     % [E RH_Voice_VI measure 78 / measure 1]                                   %! baca.SegmentMaker._comment_measure_numbers()
     s1 * 9/8                                                                   %! baca.SegmentMaker._call_rhythm_commands()
@@ -704,10 +704,10 @@ E_RH_Voice_VI = {                                                              %
 
     >>                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container(7):PHANTOM
 
-}                                                                              %! abjad.Path.extern()
+}                                                                              %! ide.Path.extern()
 
 
-E_RH_Resonance_Voice = {                                                       %! abjad.Path.extern()
+E_RH_Resonance_Voice = {                                                       %! ide.Path.extern()
 
     % [E RH_Resonance_Voice measure 78 / measure 1]                            %! baca.SegmentMaker._comment_measure_numbers()
     s1 * 9/8                                                                   %! baca.SegmentMaker._call_rhythm_commands()
@@ -744,48 +744,48 @@ E_RH_Resonance_Voice = {                                                       %
 
     >>                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container(7):PHANTOM
 
-}                                                                              %! abjad.Path.extern()
+}                                                                              %! ide.Path.extern()
 
 
-E_Piano_Music_RH_Staff = <<                                                    %! abjad.Path.extern()
+E_Piano_Music_RH_Staff = <<                                                    %! ide.Path.extern()
 
     \context RHVoiceI = "RH_Voice_I"                                           %! mraz.ScoreTemplate.__call__()
-    \E_RH_Voice_I                                                              %! abjad.Path.extern()
+    \E_RH_Voice_I                                                              %! ide.Path.extern()
 
     \context RHVoiceIInserts = "RH_Voice_I_Inserts"                            %! mraz.ScoreTemplate.__call__()
-    \E_RH_Voice_I_Inserts                                                      %! abjad.Path.extern()
+    \E_RH_Voice_I_Inserts                                                      %! ide.Path.extern()
 
     \context RHVoiceII = "RH_Voice_II"                                         %! mraz.ScoreTemplate.__call__()
-    \E_RH_Voice_II                                                             %! abjad.Path.extern()
+    \E_RH_Voice_II                                                             %! ide.Path.extern()
 
     \context RHVoiceIIInserts = "RH_Voice_II_Inserts"                          %! mraz.ScoreTemplate.__call__()
-    \E_RH_Voice_II_Inserts                                                     %! abjad.Path.extern()
+    \E_RH_Voice_II_Inserts                                                     %! ide.Path.extern()
 
     \context RHVoiceIII = "RH_Voice_III"                                       %! mraz.ScoreTemplate.__call__()
-    \E_RH_Voice_III                                                            %! abjad.Path.extern()
+    \E_RH_Voice_III                                                            %! ide.Path.extern()
 
     \context RHVoiceIIIInserts = "RH_Voice_III_Inserts"                        %! mraz.ScoreTemplate.__call__()
-    \E_RH_Voice_III_Inserts                                                    %! abjad.Path.extern()
+    \E_RH_Voice_III_Inserts                                                    %! ide.Path.extern()
 
     \context RHVoiceIV = "RH_Voice_IV"                                         %! mraz.ScoreTemplate.__call__()
-    \E_RH_Voice_IV                                                             %! abjad.Path.extern()
+    \E_RH_Voice_IV                                                             %! ide.Path.extern()
 
     \context RHVoiceIVInserts = "RH_Voice_IV_Inserts"                          %! mraz.ScoreTemplate.__call__()
-    \E_RH_Voice_IV_Inserts                                                     %! abjad.Path.extern()
+    \E_RH_Voice_IV_Inserts                                                     %! ide.Path.extern()
 
     \context RHVoiceV = "RH_Voice_V"                                           %! mraz.ScoreTemplate.__call__()
-    \E_RH_Voice_V                                                              %! abjad.Path.extern()
+    \E_RH_Voice_V                                                              %! ide.Path.extern()
 
     \context RHVoiceVI = "RH_Voice_VI"                                         %! mraz.ScoreTemplate.__call__()
-    \E_RH_Voice_VI                                                             %! abjad.Path.extern()
+    \E_RH_Voice_VI                                                             %! ide.Path.extern()
 
     \context RHResonanceVoice = "RH_Resonance_Voice"                           %! mraz.ScoreTemplate.__call__()
-    \E_RH_Resonance_Voice                                                      %! abjad.Path.extern()
+    \E_RH_Resonance_Voice                                                      %! ide.Path.extern()
 
->>                                                                             %! abjad.Path.extern()
+>>                                                                             %! ide.Path.extern()
 
 
-E_LH_Voice_I = {                                                               %! abjad.Path.extern()
+E_LH_Voice_I = {                                                               %! ide.Path.extern()
 
     % [E LH_Voice_I measure 78 / measure 1]                                    %! baca.SegmentMaker._comment_measure_numbers()
     s1 * 9/8                                                                   %! baca.SegmentMaker._call_rhythm_commands()
@@ -822,10 +822,10 @@ E_LH_Voice_I = {                                                               %
 
     >>                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container(7):PHANTOM
 
-}                                                                              %! abjad.Path.extern()
+}                                                                              %! ide.Path.extern()
 
 
-E_LH_Voice_II = {                                                              %! abjad.Path.extern()
+E_LH_Voice_II = {                                                              %! ide.Path.extern()
 
     % [E LH_Voice_II measure 78 / measure 1]                                   %! baca.SegmentMaker._comment_measure_numbers()
     s1 * 9/8                                                                   %! baca.SegmentMaker._call_rhythm_commands()
@@ -862,10 +862,10 @@ E_LH_Voice_II = {                                                              %
 
     >>                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container(7):PHANTOM
 
-}                                                                              %! abjad.Path.extern()
+}                                                                              %! ide.Path.extern()
 
 
-E_LH_Voice_III = {                                                             %! abjad.Path.extern()
+E_LH_Voice_III = {                                                             %! ide.Path.extern()
 
     % [E LH_Voice_III measure 78 / measure 1]                                  %! baca.SegmentMaker._comment_measure_numbers()
     s1 * 9/8                                                                   %! baca.SegmentMaker._call_rhythm_commands()
@@ -902,10 +902,10 @@ E_LH_Voice_III = {                                                             %
 
     >>                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container(7):PHANTOM
 
-}                                                                              %! abjad.Path.extern()
+}                                                                              %! ide.Path.extern()
 
 
-E_LH_Voice_IV = {                                                              %! abjad.Path.extern()
+E_LH_Voice_IV = {                                                              %! ide.Path.extern()
 
     % [E LH_Voice_IV measure 78 / measure 1]                                   %! baca.SegmentMaker._comment_measure_numbers()
 %%% \once \override PianoMusicLHStaff.Clef.X-extent = ##f                      %! baca.clef_x_extent_false():baca.clef_shift():SHIFTED_CLEF:MEASURE_78:baca.OverrideCommand._call(1)
@@ -1160,10 +1160,10 @@ E_LH_Voice_IV = {                                                              %
 
     >>                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container(7):PHANTOM
 
-}                                                                              %! abjad.Path.extern()
+}                                                                              %! ide.Path.extern()
 
 
-E_LH_Voice_IV_Inserts = {                                                      %! abjad.Path.extern()
+E_LH_Voice_IV_Inserts = {                                                      %! ide.Path.extern()
 
     % [E LH_Voice_IV_Inserts measure 78 / measure 1]                           %! baca.SegmentMaker._comment_measure_numbers()
     s1 * 9/8                                                                   %! baca.SegmentMaker._call_rhythm_commands()
@@ -1200,10 +1200,10 @@ E_LH_Voice_IV_Inserts = {                                                      %
 
     >>                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container(7):PHANTOM
 
-}                                                                              %! abjad.Path.extern()
+}                                                                              %! ide.Path.extern()
 
 
-E_LH_Voice_V = {                                                               %! abjad.Path.extern()
+E_LH_Voice_V = {                                                               %! ide.Path.extern()
 
     % [E LH_Voice_V measure 78 / measure 1]                                    %! baca.SegmentMaker._comment_measure_numbers()
     s1 * 9/8                                                                   %! baca.SegmentMaker._call_rhythm_commands()
@@ -1242,10 +1242,10 @@ E_LH_Voice_V = {                                                               %
 
     >>                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container(7):PHANTOM
 
-}                                                                              %! abjad.Path.extern()
+}                                                                              %! ide.Path.extern()
 
 
-E_LH_Voice_V_Inserts = {                                                       %! abjad.Path.extern()
+E_LH_Voice_V_Inserts = {                                                       %! ide.Path.extern()
 
     % [E LH_Voice_V_Inserts measure 78 / measure 1]                            %! baca.SegmentMaker._comment_measure_numbers()
     s1 * 9/8                                                                   %! baca.SegmentMaker._call_rhythm_commands()
@@ -1282,10 +1282,10 @@ E_LH_Voice_V_Inserts = {                                                       %
 
     >>                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container(7):PHANTOM
 
-}                                                                              %! abjad.Path.extern()
+}                                                                              %! ide.Path.extern()
 
 
-E_LH_Voice_VI = {                                                              %! abjad.Path.extern()
+E_LH_Voice_VI = {                                                              %! ide.Path.extern()
 
     % [E LH_Voice_VI measure 78 / measure 1]                                   %! baca.SegmentMaker._comment_measure_numbers()
     s1 * 9/8                                                                   %! baca.SegmentMaker._call_rhythm_commands()
@@ -1324,10 +1324,10 @@ E_LH_Voice_VI = {                                                              %
 
     >>                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container(7):PHANTOM
 
-}                                                                              %! abjad.Path.extern()
+}                                                                              %! ide.Path.extern()
 
 
-E_LH_Voice_VI_Inserts = {                                                      %! abjad.Path.extern()
+E_LH_Voice_VI_Inserts = {                                                      %! ide.Path.extern()
 
     % [E LH_Voice_VI_Inserts measure 78 / measure 1]                           %! baca.SegmentMaker._comment_measure_numbers()
     s1 * 9/8                                                                   %! baca.SegmentMaker._call_rhythm_commands()
@@ -1364,10 +1364,10 @@ E_LH_Voice_VI_Inserts = {                                                      %
 
     >>                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container(7):PHANTOM
 
-}                                                                              %! abjad.Path.extern()
+}                                                                              %! ide.Path.extern()
 
 
-E_LH_Resonance_Voice = {                                                       %! abjad.Path.extern()
+E_LH_Resonance_Voice = {                                                       %! ide.Path.extern()
 
     % [E LH_Resonance_Voice measure 78 / measure 1]                            %! baca.SegmentMaker._comment_measure_numbers()
     s1 * 9/8                                                                   %! baca.SegmentMaker._call_rhythm_commands()
@@ -1404,39 +1404,39 @@ E_LH_Resonance_Voice = {                                                       %
 
     >>                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container(7):PHANTOM
 
-}                                                                              %! abjad.Path.extern()
+}                                                                              %! ide.Path.extern()
 
 
-E_Piano_Music_LH_Staff = <<                                                    %! abjad.Path.extern()
+E_Piano_Music_LH_Staff = <<                                                    %! ide.Path.extern()
 
     \context LHVoiceI = "LH_Voice_I"                                           %! mraz.ScoreTemplate.__call__()
-    \E_LH_Voice_I                                                              %! abjad.Path.extern()
+    \E_LH_Voice_I                                                              %! ide.Path.extern()
 
     \context LHVoiceII = "LH_Voice_II"                                         %! mraz.ScoreTemplate.__call__()
-    \E_LH_Voice_II                                                             %! abjad.Path.extern()
+    \E_LH_Voice_II                                                             %! ide.Path.extern()
 
     \context LHVoiceIII = "LH_Voice_III"                                       %! mraz.ScoreTemplate.__call__()
-    \E_LH_Voice_III                                                            %! abjad.Path.extern()
+    \E_LH_Voice_III                                                            %! ide.Path.extern()
 
     \context LHVoiceIV = "LH_Voice_IV"                                         %! mraz.ScoreTemplate.__call__()
-    \E_LH_Voice_IV                                                             %! abjad.Path.extern()
+    \E_LH_Voice_IV                                                             %! ide.Path.extern()
 
     \context LHVoiceIVInserts = "LH_Voice_IV_Inserts"                          %! mraz.ScoreTemplate.__call__()
-    \E_LH_Voice_IV_Inserts                                                     %! abjad.Path.extern()
+    \E_LH_Voice_IV_Inserts                                                     %! ide.Path.extern()
 
     \context LHVoiceV = "LH_Voice_V"                                           %! mraz.ScoreTemplate.__call__()
-    \E_LH_Voice_V                                                              %! abjad.Path.extern()
+    \E_LH_Voice_V                                                              %! ide.Path.extern()
 
     \context LHVoiceVInserts = "LH_Voice_V_Inserts"                            %! mraz.ScoreTemplate.__call__()
-    \E_LH_Voice_V_Inserts                                                      %! abjad.Path.extern()
+    \E_LH_Voice_V_Inserts                                                      %! ide.Path.extern()
 
     \context LHVoiceVI = "LH_Voice_VI"                                         %! mraz.ScoreTemplate.__call__()
-    \E_LH_Voice_VI                                                             %! abjad.Path.extern()
+    \E_LH_Voice_VI                                                             %! ide.Path.extern()
 
     \context LHVoiceVIInserts = "LH_Voice_VI_Inserts"                          %! mraz.ScoreTemplate.__call__()
-    \E_LH_Voice_VI_Inserts                                                     %! abjad.Path.extern()
+    \E_LH_Voice_VI_Inserts                                                     %! ide.Path.extern()
 
     \context LHResonanceVoice = "LH_Resonance_Voice"                           %! mraz.ScoreTemplate.__call__()
-    \E_LH_Resonance_Voice                                                      %! abjad.Path.extern()
+    \E_LH_Resonance_Voice                                                      %! ide.Path.extern()
 
->>                                                                             %! abjad.Path.extern()
+>>                                                                             %! ide.Path.extern()
