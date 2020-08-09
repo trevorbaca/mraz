@@ -338,7 +338,7 @@ maker = baca.SegmentMaker(
     do_not_check_beamed_long_notes=True,
     ignore_repeat_pitch_classes=True,
     final_segment=True,
-    segment_directory=abjad.Path(__file__).resolve().parent,
+    segment_directory=baca.Path(__file__).resolve().parent,
     skips_instead_of_rests=True,
     time_signatures=accumulator.time_signatures,
 )
