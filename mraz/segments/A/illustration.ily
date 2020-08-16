@@ -218,12 +218,7 @@ A_RH_Voice_I = {                                                               %
         \scaleDurations #'(1 . 1) {
 
             % [A RH_Voice_I measure 1]                                         %! baca.SegmentMaker._comment_measure_numbers()
-            \set PianoStaff.instrumentName =                                   %! baca.start_markup():-PARTS:baca.IndicatorCommand._call()
-            \markup {                                                          %! baca.start_markup():-PARTS:baca.IndicatorCommand._call()
-                \hcenter-in                                                    %! baca.start_markup():-PARTS:baca.IndicatorCommand._call()
-                    #12                                                        %! baca.start_markup():-PARTS:baca.IndicatorCommand._call()
-                    PIANO                                                      %! baca.start_markup():-PARTS:baca.IndicatorCommand._call()
-                }                                                              %! baca.start_markup():-PARTS:baca.IndicatorCommand._call()
+            \set PianoStaff.instrumentName = \markup \hcenter-in #12 "PIANO"   %! baca.start_markup():-PARTS:baca.IndicatorCommand._call()
             \clef "treble"                                                     %! abjad.ScoreTemplate.attach_defaults(3):baca.SegmentMaker._set_status_tag():DEFAULT_CLEF
             \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'DarkViolet) %! baca.SegmentMaker._attach_color_literal(2):DEFAULT_CLEF_COLOR
         %@% \override PianoMusicRHStaff.Clef.color = ##f                       %! baca.SegmentMaker._attach_color_literal(1):DEFAULT_CLEF_COLOR_CANCELLATION
