@@ -875,23 +875,7 @@ D_RH_Voice_I = {                                                               %
             \override TextScript.direction = #up                               %! baca.text_script_up():baca.OverrideCommand._call(1)
             \dynamicUp                                                         %! baca.dynamic_up():baca.IndicatorCommand._call()
             r8
-        %@% ^ \markup {                                                        %! FIGURE_NAME
-        %@%     \fontsize                                                      %! FIGURE_NAME
-        %@%         #2                                                         %! FIGURE_NAME
-        %@%         \concat                                                    %! FIGURE_NAME
-        %@%             {                                                      %! FIGURE_NAME
-        %@%                 [                                                  %! FIGURE_NAME
-        %@%                 "rh-1 4.4.1"                                       %! FIGURE_NAME
-        %@%                 \hspace                                            %! FIGURE_NAME
-        %@%                     #1                                             %! FIGURE_NAME
-        %@%                 \raise                                             %! FIGURE_NAME
-        %@%                     #0.25                                          %! FIGURE_NAME
-        %@%                     \fontsize                                      %! FIGURE_NAME
-        %@%                         #-2                                        %! FIGURE_NAME
-        %@%                         (44)                                       %! FIGURE_NAME
-        %@%                 ]                                                  %! FIGURE_NAME
-        %@%             }                                                      %! FIGURE_NAME
-        %@%     }                                                              %! FIGURE_NAME
+        %@% ^ \markup \fontsize #2 \concat { [ rh-1 4.4.1 \hspace #1 \raise #0.25 \fontsize #-2 (44) ] } %! FIGURE_NAME
 
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 1
@@ -947,23 +931,7 @@ D_RH_Voice_I = {                                                               %
 
             % [D RH_Voice_I measure 53 / measure 20]                           %! baca.SegmentMaker._comment_measure_numbers()
             r2
-        %@% ^ \markup {                                                        %! FIGURE_NAME
-        %@%     \fontsize                                                      %! FIGURE_NAME
-        %@%         #2                                                         %! FIGURE_NAME
-        %@%         \concat                                                    %! FIGURE_NAME
-        %@%             {                                                      %! FIGURE_NAME
-        %@%                 [                                                  %! FIGURE_NAME
-        %@%                 "rh-1 4.4.2"                                       %! FIGURE_NAME
-        %@%                 \hspace                                            %! FIGURE_NAME
-        %@%                     #1                                             %! FIGURE_NAME
-        %@%                 \raise                                             %! FIGURE_NAME
-        %@%                     #0.25                                          %! FIGURE_NAME
-        %@%                     \fontsize                                      %! FIGURE_NAME
-        %@%                         #-2                                        %! FIGURE_NAME
-        %@%                         (45)                                       %! FIGURE_NAME
-        %@%                 ]                                                  %! FIGURE_NAME
-        %@%             }                                                      %! FIGURE_NAME
-        %@%     }                                                              %! FIGURE_NAME
+        %@% ^ \markup \fontsize #2 \concat { [ rh-1 4.4.2 \hspace #1 \raise #0.25 \fontsize #-2 (45) ] } %! FIGURE_NAME
 
         }
 
@@ -976,23 +944,7 @@ D_RH_Voice_I = {                                                               %
             % [D RH_Voice_I measure 54 / measure 21]                           %! baca.SegmentMaker._comment_measure_numbers()
             \once \override Rest.transparent = ##t                             %! baca.rest_transparent():baca.OverrideCommand._call(1)
             r4
-        %@% ^ \markup {                                                        %! FIGURE_NAME
-        %@%     \fontsize                                                      %! FIGURE_NAME
-        %@%         #2                                                         %! FIGURE_NAME
-        %@%         \concat                                                    %! FIGURE_NAME
-        %@%             {                                                      %! FIGURE_NAME
-        %@%                 [                                                  %! FIGURE_NAME
-        %@%                 "rh-1 4.4.3"                                       %! FIGURE_NAME
-        %@%                 \hspace                                            %! FIGURE_NAME
-        %@%                     #1                                             %! FIGURE_NAME
-        %@%                 \raise                                             %! FIGURE_NAME
-        %@%                     #0.25                                          %! FIGURE_NAME
-        %@%                     \fontsize                                      %! FIGURE_NAME
-        %@%                         #-2                                        %! FIGURE_NAME
-        %@%                         (33)                                       %! FIGURE_NAME
-        %@%                 ]                                                  %! FIGURE_NAME
-        %@%             }                                                      %! FIGURE_NAME
-        %@%     }                                                              %! FIGURE_NAME
+        %@% ^ \markup \fontsize #2 \concat { [ rh-1 4.4.3 \hspace #1 \raise #0.25 \fontsize #-2 (33) ] } %! FIGURE_NAME
 
         }
 
@@ -1010,23 +962,7 @@ D_RH_Voice_I = {                                                               %
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 1
             bf''''!8
-        %@% ^ \markup {                                                        %! FIGURE_NAME
-        %@%     \fontsize                                                      %! FIGURE_NAME
-        %@%         #2                                                         %! FIGURE_NAME
-        %@%         \concat                                                    %! FIGURE_NAME
-        %@%             {                                                      %! FIGURE_NAME
-        %@%                 [                                                  %! FIGURE_NAME
-        %@%                 "rh-1 4.4.4"                                       %! FIGURE_NAME
-        %@%                 \hspace                                            %! FIGURE_NAME
-        %@%                     #1                                             %! FIGURE_NAME
-        %@%                 \raise                                             %! FIGURE_NAME
-        %@%                     #0.25                                          %! FIGURE_NAME
-        %@%                     \fontsize                                      %! FIGURE_NAME
-        %@%                         #-2                                        %! FIGURE_NAME
-        %@%                         (46)                                       %! FIGURE_NAME
-        %@%                 ]                                                  %! FIGURE_NAME
-        %@%             }                                                      %! FIGURE_NAME
-        %@%     }                                                              %! FIGURE_NAME
+        %@% ^ \markup \fontsize #2 \concat { [ rh-1 4.4.4 \hspace #1 \raise #0.25 \fontsize #-2 (46) ] } %! FIGURE_NAME
 
             s8
 
@@ -1071,23 +1007,7 @@ D_RH_Voice_I = {                                                               %
             \set stemRightBeamCount = 1
             \once \override Slur.direction = #down                             %! baca.slur_down():baca.OverrideCommand._call(1)
             ef''''!8
-        %@% ^ \markup {                                                        %! FIGURE_NAME
-        %@%     \fontsize                                                      %! FIGURE_NAME
-        %@%         #2                                                         %! FIGURE_NAME
-        %@%         \concat                                                    %! FIGURE_NAME
-        %@%             {                                                      %! FIGURE_NAME
-        %@%                 [                                                  %! FIGURE_NAME
-        %@%                 "rh-1 4.4.5"                                       %! FIGURE_NAME
-        %@%                 \hspace                                            %! FIGURE_NAME
-        %@%                     #1                                             %! FIGURE_NAME
-        %@%                 \raise                                             %! FIGURE_NAME
-        %@%                     #0.25                                          %! FIGURE_NAME
-        %@%                     \fontsize                                      %! FIGURE_NAME
-        %@%                         #-2                                        %! FIGURE_NAME
-        %@%                         (47)                                       %! FIGURE_NAME
-        %@%                 ]                                                  %! FIGURE_NAME
-        %@%             }                                                      %! FIGURE_NAME
-        %@%     }                                                              %! FIGURE_NAME
+        %@% ^ \markup \fontsize #2 \concat { [ rh-1 4.4.5 \hspace #1 \raise #0.25 \fontsize #-2 (47) ] } %! FIGURE_NAME
             [
             (                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 
@@ -1159,23 +1079,7 @@ D_RH_Voice_I = {                                                               %
             - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
             \f                                                                 %! baca.dynamic():baca.IndicatorCommand._call():baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
             - \tenuto                                                          %! baca.tenuto():baca.IndicatorCommand._call()
-        %@% ^ \markup {                                                        %! FIGURE_NAME
-        %@%     \fontsize                                                      %! FIGURE_NAME
-        %@%         #2                                                         %! FIGURE_NAME
-        %@%         \concat                                                    %! FIGURE_NAME
-        %@%             {                                                      %! FIGURE_NAME
-        %@%                 [                                                  %! FIGURE_NAME
-        %@%                 "rh-1 4.5.1"                                       %! FIGURE_NAME
-        %@%                 \hspace                                            %! FIGURE_NAME
-        %@%                     #1                                             %! FIGURE_NAME
-        %@%                 \raise                                             %! FIGURE_NAME
-        %@%                     #0.25                                          %! FIGURE_NAME
-        %@%                     \fontsize                                      %! FIGURE_NAME
-        %@%                         #-2                                        %! FIGURE_NAME
-        %@%                         (56)                                       %! FIGURE_NAME
-        %@%                 ]                                                  %! FIGURE_NAME
-        %@%             }                                                      %! FIGURE_NAME
-        %@%     }                                                              %! FIGURE_NAME
+        %@% ^ \markup \fontsize #2 \concat { [ rh-1 4.5.1 \hspace #1 \raise #0.25 \fontsize #-2 (56) ] } %! FIGURE_NAME
 
         }
 
@@ -1188,23 +1092,7 @@ D_RH_Voice_I = {                                                               %
             % [D RH_Voice_I measure 67 / measure 34]                           %! baca.SegmentMaker._comment_measure_numbers()
             f''''1.
             - \tenuto                                                          %! baca.tenuto():baca.IndicatorCommand._call()
-        %@% ^ \markup {                                                        %! FIGURE_NAME
-        %@%     \fontsize                                                      %! FIGURE_NAME
-        %@%         #2                                                         %! FIGURE_NAME
-        %@%         \concat                                                    %! FIGURE_NAME
-        %@%             {                                                      %! FIGURE_NAME
-        %@%                 [                                                  %! FIGURE_NAME
-        %@%                 "rh-1 4.5.2"                                       %! FIGURE_NAME
-        %@%                 \hspace                                            %! FIGURE_NAME
-        %@%                     #1                                             %! FIGURE_NAME
-        %@%                 \raise                                             %! FIGURE_NAME
-        %@%                     #0.25                                          %! FIGURE_NAME
-        %@%                     \fontsize                                      %! FIGURE_NAME
-        %@%                         #-2                                        %! FIGURE_NAME
-        %@%                         (57)                                       %! FIGURE_NAME
-        %@%                 ]                                                  %! FIGURE_NAME
-        %@%             }                                                      %! FIGURE_NAME
-        %@%     }                                                              %! FIGURE_NAME
+        %@% ^ \markup \fontsize #2 \concat { [ rh-1 4.5.2 \hspace #1 \raise #0.25 \fontsize #-2 (57) ] } %! FIGURE_NAME
 
         }
 
@@ -1217,23 +1105,7 @@ D_RH_Voice_I = {                                                               %
             % [D RH_Voice_I measure 68 / measure 35]                           %! baca.SegmentMaker._comment_measure_numbers()
             bf''''!1
             - \tenuto                                                          %! baca.tenuto():baca.IndicatorCommand._call()
-        %@% ^ \markup {                                                        %! FIGURE_NAME
-        %@%     \fontsize                                                      %! FIGURE_NAME
-        %@%         #2                                                         %! FIGURE_NAME
-        %@%         \concat                                                    %! FIGURE_NAME
-        %@%             {                                                      %! FIGURE_NAME
-        %@%                 [                                                  %! FIGURE_NAME
-        %@%                 "rh-1 4.5.3"                                       %! FIGURE_NAME
-        %@%                 \hspace                                            %! FIGURE_NAME
-        %@%                     #1                                             %! FIGURE_NAME
-        %@%                 \raise                                             %! FIGURE_NAME
-        %@%                     #0.25                                          %! FIGURE_NAME
-        %@%                     \fontsize                                      %! FIGURE_NAME
-        %@%                         #-2                                        %! FIGURE_NAME
-        %@%                         (58)                                       %! FIGURE_NAME
-        %@%                 ]                                                  %! FIGURE_NAME
-        %@%             }                                                      %! FIGURE_NAME
-        %@%     }                                                              %! FIGURE_NAME
+        %@% ^ \markup \fontsize #2 \concat { [ rh-1 4.5.3 \hspace #1 \raise #0.25 \fontsize #-2 (58) ] } %! FIGURE_NAME
 
         }
 
@@ -1246,23 +1118,7 @@ D_RH_Voice_I = {                                                               %
             % [D RH_Voice_I measure 69 / measure 36]                           %! baca.SegmentMaker._comment_measure_numbers()
             ef''''!1
             - \tenuto                                                          %! baca.tenuto():baca.IndicatorCommand._call()
-        %@% ^ \markup {                                                        %! FIGURE_NAME
-        %@%     \fontsize                                                      %! FIGURE_NAME
-        %@%         #2                                                         %! FIGURE_NAME
-        %@%         \concat                                                    %! FIGURE_NAME
-        %@%             {                                                      %! FIGURE_NAME
-        %@%                 [                                                  %! FIGURE_NAME
-        %@%                 "rh-1 4.5.4"                                       %! FIGURE_NAME
-        %@%                 \hspace                                            %! FIGURE_NAME
-        %@%                     #1                                             %! FIGURE_NAME
-        %@%                 \raise                                             %! FIGURE_NAME
-        %@%                     #0.25                                          %! FIGURE_NAME
-        %@%                     \fontsize                                      %! FIGURE_NAME
-        %@%                         #-2                                        %! FIGURE_NAME
-        %@%                         (59)                                       %! FIGURE_NAME
-        %@%                 ]                                                  %! FIGURE_NAME
-        %@%             }                                                      %! FIGURE_NAME
-        %@%     }                                                              %! FIGURE_NAME
+        %@% ^ \markup \fontsize #2 \concat { [ rh-1 4.5.4 \hspace #1 \raise #0.25 \fontsize #-2 (59) ] } %! FIGURE_NAME
             \ottava 0                                                          %! baca.ottava():baca.SpannerIndicatorCommand._call(4):SPANNER_STOP
 
         }
@@ -1280,23 +1136,7 @@ D_RH_Voice_I = {                                                               %
             \ottava 1                                                          %! baca.ottava():baca.SpannerIndicatorCommand._call(2):SPANNER_START
             f''''1
             - \tenuto                                                          %! baca.tenuto():baca.IndicatorCommand._call()
-        %@% ^ \markup {                                                        %! FIGURE_NAME
-        %@%     \fontsize                                                      %! FIGURE_NAME
-        %@%         #2                                                         %! FIGURE_NAME
-        %@%         \concat                                                    %! FIGURE_NAME
-        %@%             {                                                      %! FIGURE_NAME
-        %@%                 [                                                  %! FIGURE_NAME
-        %@%                 "rh-1 4.5.5"                                       %! FIGURE_NAME
-        %@%                 \hspace                                            %! FIGURE_NAME
-        %@%                     #1                                             %! FIGURE_NAME
-        %@%                 \raise                                             %! FIGURE_NAME
-        %@%                     #0.25                                          %! FIGURE_NAME
-        %@%                     \fontsize                                      %! FIGURE_NAME
-        %@%                         #-2                                        %! FIGURE_NAME
-        %@%                         (60)                                       %! FIGURE_NAME
-        %@%                 ]                                                  %! FIGURE_NAME
-        %@%             }                                                      %! FIGURE_NAME
-        %@%     }                                                              %! FIGURE_NAME
+        %@% ^ \markup \fontsize #2 \concat { [ rh-1 4.5.5 \hspace #1 \raise #0.25 \fontsize #-2 (60) ] } %! FIGURE_NAME
 
         }
 
@@ -1309,23 +1149,7 @@ D_RH_Voice_I = {                                                               %
             % [D RH_Voice_I measure 72 / measure 39]                           %! baca.SegmentMaker._comment_measure_numbers()
             bf''''!2
             - \tenuto                                                          %! baca.tenuto():baca.IndicatorCommand._call()
-        %@% ^ \markup {                                                        %! FIGURE_NAME
-        %@%     \fontsize                                                      %! FIGURE_NAME
-        %@%         #2                                                         %! FIGURE_NAME
-        %@%         \concat                                                    %! FIGURE_NAME
-        %@%             {                                                      %! FIGURE_NAME
-        %@%                 [                                                  %! FIGURE_NAME
-        %@%                 "rh-1 4.5.6"                                       %! FIGURE_NAME
-        %@%                 \hspace                                            %! FIGURE_NAME
-        %@%                     #1                                             %! FIGURE_NAME
-        %@%                 \raise                                             %! FIGURE_NAME
-        %@%                     #0.25                                          %! FIGURE_NAME
-        %@%                     \fontsize                                      %! FIGURE_NAME
-        %@%                         #-2                                        %! FIGURE_NAME
-        %@%                         (61)                                       %! FIGURE_NAME
-        %@%                 ]                                                  %! FIGURE_NAME
-        %@%             }                                                      %! FIGURE_NAME
-        %@%     }                                                              %! FIGURE_NAME
+        %@% ^ \markup \fontsize #2 \concat { [ rh-1 4.5.6 \hspace #1 \raise #0.25 \fontsize #-2 (61) ] } %! FIGURE_NAME
             \ottava 0                                                          %! baca.ottava():baca.SpannerIndicatorCommand._call(4):SPANNER_STOP
             <> \bacaStopTextSpanRhythmAnnotation                               %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(4):SPANNER_STOP
 
@@ -1584,23 +1408,7 @@ D_RH_Voice_II = {                                                              %
             \ff                                                                %! baca.dynamic():baca.IndicatorCommand._call():baca.SegmentMaker._set_status_tag():REDUNDANT_DYNAMIC
             - \marcato                                                         %! baca.marcato():baca.IndicatorCommand._call()
             \arpeggio                                                          %! baca.up_arpeggio():baca.IndicatorCommand._call()
-        %@% ^ \markup {                                                        %! FIGURE_NAME
-        %@%     \fontsize                                                      %! FIGURE_NAME
-        %@%         #2                                                         %! FIGURE_NAME
-        %@%         \concat                                                    %! FIGURE_NAME
-        %@%             {                                                      %! FIGURE_NAME
-        %@%                 [                                                  %! FIGURE_NAME
-        %@%                 "rh-2 4.1.1"                                       %! FIGURE_NAME
-        %@%                 \hspace                                            %! FIGURE_NAME
-        %@%                     #1                                             %! FIGURE_NAME
-        %@%                 \raise                                             %! FIGURE_NAME
-        %@%                     #0.25                                          %! FIGURE_NAME
-        %@%                     \fontsize                                      %! FIGURE_NAME
-        %@%                         #-2                                        %! FIGURE_NAME
-        %@%                         (1)                                        %! FIGURE_NAME
-        %@%                 ]                                                  %! FIGURE_NAME
-        %@%             }                                                      %! FIGURE_NAME
-        %@%     }                                                              %! FIGURE_NAME
+        %@% ^ \markup \fontsize #2 \concat { [ rh-2 4.1.1 \hspace #1 \raise #0.25 \fontsize #-2 (1) ] } %! FIGURE_NAME
 
         }
 
@@ -1777,23 +1585,7 @@ D_RH_Voice_II = {                                                              %
             b'16
             - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
             \f                                                                 %! baca.hairpin():baca.PiecewiseCommand._call(2):SPANNER_STOP:baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
-        %@% ^ \markup {                                                        %! FIGURE_NAME
-        %@%     \fontsize                                                      %! FIGURE_NAME
-        %@%         #2                                                         %! FIGURE_NAME
-        %@%         \concat                                                    %! FIGURE_NAME
-        %@%             {                                                      %! FIGURE_NAME
-        %@%                 [                                                  %! FIGURE_NAME
-        %@%                 "rh-2 4.5.1"                                       %! FIGURE_NAME
-        %@%                 \hspace                                            %! FIGURE_NAME
-        %@%                     #1                                             %! FIGURE_NAME
-        %@%                 \raise                                             %! FIGURE_NAME
-        %@%                     #0.25                                          %! FIGURE_NAME
-        %@%                     \fontsize                                      %! FIGURE_NAME
-        %@%                         #-2                                        %! FIGURE_NAME
-        %@%                         (62)                                       %! FIGURE_NAME
-        %@%                 ]                                                  %! FIGURE_NAME
-        %@%             }                                                      %! FIGURE_NAME
-        %@%     }                                                              %! FIGURE_NAME
+        %@% ^ \markup \fontsize #2 \concat { [ rh-2 4.5.1 \hspace #1 \raise #0.25 \fontsize #-2 (62) ] } %! FIGURE_NAME
             - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
             \<                                                                 %! baca.hairpin():baca.PiecewiseCommand._call(2):SPANNER_START:baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
             [
@@ -1906,23 +1698,7 @@ D_RH_Voice_II = {                                                              %
             ef''!16
             - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
             \f                                                                 %! baca.hairpin():baca.PiecewiseCommand._call(2):SPANNER_STOP:baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
-        %@% ^ \markup {                                                        %! FIGURE_NAME
-        %@%     \fontsize                                                      %! FIGURE_NAME
-        %@%         #2                                                         %! FIGURE_NAME
-        %@%         \concat                                                    %! FIGURE_NAME
-        %@%             {                                                      %! FIGURE_NAME
-        %@%                 [                                                  %! FIGURE_NAME
-        %@%                 "rh-2 4.5.2"                                       %! FIGURE_NAME
-        %@%                 \hspace                                            %! FIGURE_NAME
-        %@%                     #1                                             %! FIGURE_NAME
-        %@%                 \raise                                             %! FIGURE_NAME
-        %@%                     #0.25                                          %! FIGURE_NAME
-        %@%                     \fontsize                                      %! FIGURE_NAME
-        %@%                         #-2                                        %! FIGURE_NAME
-        %@%                         (63)                                       %! FIGURE_NAME
-        %@%                 ]                                                  %! FIGURE_NAME
-        %@%             }                                                      %! FIGURE_NAME
-        %@%     }                                                              %! FIGURE_NAME
+        %@% ^ \markup \fontsize #2 \concat { [ rh-2 4.5.2 \hspace #1 \raise #0.25 \fontsize #-2 (63) ] } %! FIGURE_NAME
             - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
             \<                                                                 %! baca.hairpin():baca.PiecewiseCommand._call(2):SPANNER_START:baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
             [
@@ -2030,23 +1806,7 @@ D_RH_Voice_II = {                                                              %
             <a g' af'! b' cs''! f'' ef'''! c''''>1.
             - \marcato                                                         %! baca.marcato():baca.IndicatorCommand._call()
             \arpeggio                                                          %! baca.up_arpeggio():baca.IndicatorCommand._call()
-        %@% ^ \markup {                                                        %! FIGURE_NAME
-        %@%     \fontsize                                                      %! FIGURE_NAME
-        %@%         #2                                                         %! FIGURE_NAME
-        %@%         \concat                                                    %! FIGURE_NAME
-        %@%             {                                                      %! FIGURE_NAME
-        %@%                 [                                                  %! FIGURE_NAME
-        %@%                 "rh-2 4.5.3"                                       %! FIGURE_NAME
-        %@%                 \hspace                                            %! FIGURE_NAME
-        %@%                     #1                                             %! FIGURE_NAME
-        %@%                 \raise                                             %! FIGURE_NAME
-        %@%                     #0.25                                          %! FIGURE_NAME
-        %@%                     \fontsize                                      %! FIGURE_NAME
-        %@%                         #-2                                        %! FIGURE_NAME
-        %@%                         (64)                                       %! FIGURE_NAME
-        %@%                 ]                                                  %! FIGURE_NAME
-        %@%             }                                                      %! FIGURE_NAME
-        %@%     }                                                              %! FIGURE_NAME
+        %@% ^ \markup \fontsize #2 \concat { [ rh-2 4.5.3 \hspace #1 \raise #0.25 \fontsize #-2 (64) ] } %! FIGURE_NAME
 
         }
 
@@ -2066,23 +1826,7 @@ D_RH_Voice_II = {                                                              %
             cs''!16
             - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
             \f                                                                 %! baca.hairpin():baca.PiecewiseCommand._call(2):SPANNER_STOP:baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
-        %@% ^ \markup {                                                        %! FIGURE_NAME
-        %@%     \fontsize                                                      %! FIGURE_NAME
-        %@%         #2                                                         %! FIGURE_NAME
-        %@%         \concat                                                    %! FIGURE_NAME
-        %@%             {                                                      %! FIGURE_NAME
-        %@%                 [                                                  %! FIGURE_NAME
-        %@%                 "rh-2 4.5.4"                                       %! FIGURE_NAME
-        %@%                 \hspace                                            %! FIGURE_NAME
-        %@%                     #1                                             %! FIGURE_NAME
-        %@%                 \raise                                             %! FIGURE_NAME
-        %@%                     #0.25                                          %! FIGURE_NAME
-        %@%                     \fontsize                                      %! FIGURE_NAME
-        %@%                         #-2                                        %! FIGURE_NAME
-        %@%                         (65)                                       %! FIGURE_NAME
-        %@%                 ]                                                  %! FIGURE_NAME
-        %@%             }                                                      %! FIGURE_NAME
-        %@%     }                                                              %! FIGURE_NAME
+        %@% ^ \markup \fontsize #2 \concat { [ rh-2 4.5.4 \hspace #1 \raise #0.25 \fontsize #-2 (65) ] } %! FIGURE_NAME
             - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
             \<                                                                 %! baca.hairpin():baca.PiecewiseCommand._call(2):SPANNER_START:baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
             [
@@ -2204,23 +1948,7 @@ D_RH_Voice_II = {                                                              %
             a''16
             - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
             \f                                                                 %! baca.hairpin():baca.PiecewiseCommand._call(2):SPANNER_STOP:baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
-        %@% ^ \markup {                                                        %! FIGURE_NAME
-        %@%     \fontsize                                                      %! FIGURE_NAME
-        %@%         #2                                                         %! FIGURE_NAME
-        %@%         \concat                                                    %! FIGURE_NAME
-        %@%             {                                                      %! FIGURE_NAME
-        %@%                 [                                                  %! FIGURE_NAME
-        %@%                 "rh-2 4.5.5"                                       %! FIGURE_NAME
-        %@%                 \hspace                                            %! FIGURE_NAME
-        %@%                     #1                                             %! FIGURE_NAME
-        %@%                 \raise                                             %! FIGURE_NAME
-        %@%                     #0.25                                          %! FIGURE_NAME
-        %@%                     \fontsize                                      %! FIGURE_NAME
-        %@%                         #-2                                        %! FIGURE_NAME
-        %@%                         (66)                                       %! FIGURE_NAME
-        %@%                 ]                                                  %! FIGURE_NAME
-        %@%             }                                                      %! FIGURE_NAME
-        %@%     }                                                              %! FIGURE_NAME
+        %@% ^ \markup \fontsize #2 \concat { [ rh-2 4.5.5 \hspace #1 \raise #0.25 \fontsize #-2 (66) ] } %! FIGURE_NAME
             - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
             \<                                                                 %! baca.hairpin():baca.PiecewiseCommand._call(2):SPANNER_START:baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
             [
@@ -2281,23 +2009,7 @@ D_RH_Voice_II = {                                                              %
             <f'' ef'''! c'''' e'''' fs''''! bf''''!>1
             \arpeggio                                                          %! baca.up_arpeggio():baca.IndicatorCommand._call()
             - \marcato                                                         %! baca.marcato():baca.IndicatorCommand._call()
-        %@% ^ \markup {                                                        %! FIGURE_NAME
-        %@%     \fontsize                                                      %! FIGURE_NAME
-        %@%         #2                                                         %! FIGURE_NAME
-        %@%         \concat                                                    %! FIGURE_NAME
-        %@%             {                                                      %! FIGURE_NAME
-        %@%                 [                                                  %! FIGURE_NAME
-        %@%                 "rh-2 4.6.1"                                       %! FIGURE_NAME
-        %@%                 \hspace                                            %! FIGURE_NAME
-        %@%                     #1                                             %! FIGURE_NAME
-        %@%                 \raise                                             %! FIGURE_NAME
-        %@%                     #0.25                                          %! FIGURE_NAME
-        %@%                     \fontsize                                      %! FIGURE_NAME
-        %@%                         #-2                                        %! FIGURE_NAME
-        %@%                         (67)                                       %! FIGURE_NAME
-        %@%                 ]                                                  %! FIGURE_NAME
-        %@%             }                                                      %! FIGURE_NAME
-        %@%     }                                                              %! FIGURE_NAME
+        %@% ^ \markup \fontsize #2 \concat { [ rh-2 4.6.1 \hspace #1 \raise #0.25 \fontsize #-2 (67) ] } %! FIGURE_NAME
 
         }
 
@@ -2314,23 +2026,7 @@ D_RH_Voice_II = {                                                              %
             <a g' af'! b' cs''! f'' ef'''! c''''>1
             \arpeggio                                                          %! baca.up_arpeggio():baca.IndicatorCommand._call()
             - \marcato                                                         %! baca.marcato():baca.IndicatorCommand._call()
-        %@% ^ \markup {                                                        %! FIGURE_NAME
-        %@%     \fontsize                                                      %! FIGURE_NAME
-        %@%         #2                                                         %! FIGURE_NAME
-        %@%         \concat                                                    %! FIGURE_NAME
-        %@%             {                                                      %! FIGURE_NAME
-        %@%                 [                                                  %! FIGURE_NAME
-        %@%                 "rh-2 4.6.2"                                       %! FIGURE_NAME
-        %@%                 \hspace                                            %! FIGURE_NAME
-        %@%                     #1                                             %! FIGURE_NAME
-        %@%                 \raise                                             %! FIGURE_NAME
-        %@%                     #0.25                                          %! FIGURE_NAME
-        %@%                     \fontsize                                      %! FIGURE_NAME
-        %@%                         #-2                                        %! FIGURE_NAME
-        %@%                         (68)                                       %! FIGURE_NAME
-        %@%                 ]                                                  %! FIGURE_NAME
-        %@%             }                                                      %! FIGURE_NAME
-        %@%     }                                                              %! FIGURE_NAME
+        %@% ^ \markup \fontsize #2 \concat { [ rh-2 4.6.2 \hspace #1 \raise #0.25 \fontsize #-2 (68) ] } %! FIGURE_NAME
 
         }
 
@@ -2347,23 +2043,7 @@ D_RH_Voice_II = {                                                              %
             <e' fs'! bf'! a'' g''' af'''! b''' cs''''!>1
             \arpeggio                                                          %! baca.up_arpeggio():baca.IndicatorCommand._call()
             - \marcato                                                         %! baca.marcato():baca.IndicatorCommand._call()
-        %@% ^ \markup {                                                        %! FIGURE_NAME
-        %@%     \fontsize                                                      %! FIGURE_NAME
-        %@%         #2                                                         %! FIGURE_NAME
-        %@%         \concat                                                    %! FIGURE_NAME
-        %@%             {                                                      %! FIGURE_NAME
-        %@%                 [                                                  %! FIGURE_NAME
-        %@%                 "rh-2 4.6.3"                                       %! FIGURE_NAME
-        %@%                 \hspace                                            %! FIGURE_NAME
-        %@%                     #1                                             %! FIGURE_NAME
-        %@%                 \raise                                             %! FIGURE_NAME
-        %@%                     #0.25                                          %! FIGURE_NAME
-        %@%                     \fontsize                                      %! FIGURE_NAME
-        %@%                         #-2                                        %! FIGURE_NAME
-        %@%                         (69)                                       %! FIGURE_NAME
-        %@%                 ]                                                  %! FIGURE_NAME
-        %@%             }                                                      %! FIGURE_NAME
-        %@%     }                                                              %! FIGURE_NAME
+        %@% ^ \markup \fontsize #2 \concat { [ rh-2 4.6.3 \hspace #1 \raise #0.25 \fontsize #-2 (69) ] } %! FIGURE_NAME
 
         }
 
@@ -2385,23 +2065,7 @@ D_RH_Voice_II = {                                                              %
             - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
             \fff                                                               %! baca.dynamic():baca.IndicatorCommand._call():baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
             - \accent                                                          %! baca.accent():baca.IndicatorCommand._call()
-        %@% ^ \markup {                                                        %! FIGURE_NAME
-        %@%     \fontsize                                                      %! FIGURE_NAME
-        %@%         #2                                                         %! FIGURE_NAME
-        %@%         \concat                                                    %! FIGURE_NAME
-        %@%             {                                                      %! FIGURE_NAME
-        %@%                 [                                                  %! FIGURE_NAME
-        %@%                 b.1.10                                             %! FIGURE_NAME
-        %@%                 \hspace                                            %! FIGURE_NAME
-        %@%                     #1                                             %! FIGURE_NAME
-        %@%                 \raise                                             %! FIGURE_NAME
-        %@%                     #0.25                                          %! FIGURE_NAME
-        %@%                     \fontsize                                      %! FIGURE_NAME
-        %@%                         #-2                                        %! FIGURE_NAME
-        %@%                         (73)                                       %! FIGURE_NAME
-        %@%                 ]                                                  %! FIGURE_NAME
-        %@%             }                                                      %! FIGURE_NAME
-        %@%     }                                                              %! FIGURE_NAME
+        %@% ^ \markup \fontsize #2 \concat { [ b.1.10 \hspace #1 \raise #0.25 \fontsize #-2 (73) ] } %! FIGURE_NAME
 
             \override Rest.direction = #up                                     %! baca.rest_up():baca.OverrideCommand._call(1)
             r2..
@@ -2632,23 +2296,7 @@ D_RH_Voice_III = {                                                             %
             - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
             \ff                                                                %! baca.dynamic():baca.IndicatorCommand._call():baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
             - \tenuto                                                          %! baca.tenuto():baca.IndicatorCommand._call()
-        %@% ^ \markup {                                                        %! FIGURE_NAME
-        %@%     \fontsize                                                      %! FIGURE_NAME
-        %@%         #2                                                         %! FIGURE_NAME
-        %@%         \concat                                                    %! FIGURE_NAME
-        %@%             {                                                      %! FIGURE_NAME
-        %@%                 [                                                  %! FIGURE_NAME
-        %@%                 "rh-3 4.1.1"                                       %! FIGURE_NAME
-        %@%                 \hspace                                            %! FIGURE_NAME
-        %@%                     #1                                             %! FIGURE_NAME
-        %@%                 \raise                                             %! FIGURE_NAME
-        %@%                     #0.25                                          %! FIGURE_NAME
-        %@%                     \fontsize                                      %! FIGURE_NAME
-        %@%                         #-2                                        %! FIGURE_NAME
-        %@%                         (0)                                        %! FIGURE_NAME
-        %@%                 ]                                                  %! FIGURE_NAME
-        %@%             }                                                      %! FIGURE_NAME
-        %@%     }                                                              %! FIGURE_NAME
+        %@% ^ \markup \fontsize #2 \concat { [ rh-3 4.1.1 \hspace #1 \raise #0.25 \fontsize #-2 (0) ] } %! FIGURE_NAME
             - \abjad-dashed-line-with-hook                                     %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(2):SPANNER_START
             - \baca-text-spanner-left-text "baca.music()"                      %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(2):SPANNER_START
             - \tweak bound-details.right.padding #2.75                         %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(2):AUTODETECT:SPANNER_START
@@ -2690,23 +2338,7 @@ D_RH_Voice_III = {                                                             %
             \override TupletBracket.direction = #up                            %! baca.tuplet_bracket_up():baca.OverrideCommand._call(1)
             \override TupletBracket.staff-padding = #4                         %! baca.tuplet_bracket_staff_padding():baca.OverrideCommand._call(1)
             r4
-        %@% ^ \markup {                                                        %! FIGURE_NAME
-        %@%     \fontsize                                                      %! FIGURE_NAME
-        %@%         #2                                                         %! FIGURE_NAME
-        %@%         \concat                                                    %! FIGURE_NAME
-        %@%             {                                                      %! FIGURE_NAME
-        %@%                 [                                                  %! FIGURE_NAME
-        %@%                 "rh-3 4.1.3"                                       %! FIGURE_NAME
-        %@%                 \hspace                                            %! FIGURE_NAME
-        %@%                     #1                                             %! FIGURE_NAME
-        %@%                 \raise                                             %! FIGURE_NAME
-        %@%                     #0.25                                          %! FIGURE_NAME
-        %@%                     \fontsize                                      %! FIGURE_NAME
-        %@%                         #-2                                        %! FIGURE_NAME
-        %@%                         (2)                                        %! FIGURE_NAME
-        %@%                 ]                                                  %! FIGURE_NAME
-        %@%             }                                                      %! FIGURE_NAME
-        %@%     }                                                              %! FIGURE_NAME
+        %@% ^ \markup \fontsize #2 \concat { [ rh-3 4.1.3 \hspace #1 \raise #0.25 \fontsize #-2 (2) ] } %! FIGURE_NAME
 
             \override Stem.direction = #up                                     %! baca.stem_up():baca.OverrideCommand._call(1)
             ef''!8
@@ -2743,23 +2375,7 @@ D_RH_Voice_III = {                                                             %
 
             % [D RH_Voice_III measure 38 / measure 5]                          %! baca.SegmentMaker._comment_measure_numbers()
             r2.
-        %@% ^ \markup {                                                        %! FIGURE_NAME
-        %@%     \fontsize                                                      %! FIGURE_NAME
-        %@%         #2                                                         %! FIGURE_NAME
-        %@%         \concat                                                    %! FIGURE_NAME
-        %@%             {                                                      %! FIGURE_NAME
-        %@%                 [                                                  %! FIGURE_NAME
-        %@%                 "rh-3 4.1.4"                                       %! FIGURE_NAME
-        %@%                 \hspace                                            %! FIGURE_NAME
-        %@%                     #1                                             %! FIGURE_NAME
-        %@%                 \raise                                             %! FIGURE_NAME
-        %@%                     #0.25                                          %! FIGURE_NAME
-        %@%                     \fontsize                                      %! FIGURE_NAME
-        %@%                         #-2                                        %! FIGURE_NAME
-        %@%                         (4)                                        %! FIGURE_NAME
-        %@%                 ]                                                  %! FIGURE_NAME
-        %@%             }                                                      %! FIGURE_NAME
-        %@%     }                                                              %! FIGURE_NAME
+        %@% ^ \markup \fontsize #2 \concat { [ rh-3 4.1.4 \hspace #1 \raise #0.25 \fontsize #-2 (4) ] } %! FIGURE_NAME
 
         }
 
@@ -2775,23 +2391,7 @@ D_RH_Voice_III = {                                                             %
             \override TupletBracket.direction = #up                            %! baca.tuplet_bracket_up():baca.OverrideCommand._call(1)
             ef'!8
             - \tenuto                                                          %! baca.tenuto():baca.IndicatorCommand._call()
-        %@% ^ \markup {                                                        %! FIGURE_NAME
-        %@%     \fontsize                                                      %! FIGURE_NAME
-        %@%         #2                                                         %! FIGURE_NAME
-        %@%         \concat                                                    %! FIGURE_NAME
-        %@%             {                                                      %! FIGURE_NAME
-        %@%                 [                                                  %! FIGURE_NAME
-        %@%                 "rh-3 4.1.5"                                       %! FIGURE_NAME
-        %@%                 \hspace                                            %! FIGURE_NAME
-        %@%                     #1                                             %! FIGURE_NAME
-        %@%                 \raise                                             %! FIGURE_NAME
-        %@%                     #0.25                                          %! FIGURE_NAME
-        %@%                     \fontsize                                      %! FIGURE_NAME
-        %@%                         #-2                                        %! FIGURE_NAME
-        %@%                         (5)                                        %! FIGURE_NAME
-        %@%                 ]                                                  %! FIGURE_NAME
-        %@%             }                                                      %! FIGURE_NAME
-        %@%     }                                                              %! FIGURE_NAME
+        %@% ^ \markup \fontsize #2 \concat { [ rh-3 4.1.5 \hspace #1 \raise #0.25 \fontsize #-2 (5) ] } %! FIGURE_NAME
 
             r4
 
@@ -2820,23 +2420,7 @@ D_RH_Voice_III = {                                                             %
 
             % [D RH_Voice_III measure 40 / measure 7]                          %! baca.SegmentMaker._comment_measure_numbers()
             r2.
-        %@% ^ \markup {                                                        %! FIGURE_NAME
-        %@%     \fontsize                                                      %! FIGURE_NAME
-        %@%         #2                                                         %! FIGURE_NAME
-        %@%         \concat                                                    %! FIGURE_NAME
-        %@%             {                                                      %! FIGURE_NAME
-        %@%                 [                                                  %! FIGURE_NAME
-        %@%                 "rh-3 4.1.6"                                       %! FIGURE_NAME
-        %@%                 \hspace                                            %! FIGURE_NAME
-        %@%                     #1                                             %! FIGURE_NAME
-        %@%                 \raise                                             %! FIGURE_NAME
-        %@%                     #0.25                                          %! FIGURE_NAME
-        %@%                     \fontsize                                      %! FIGURE_NAME
-        %@%                         #-2                                        %! FIGURE_NAME
-        %@%                         (6)                                        %! FIGURE_NAME
-        %@%                 ]                                                  %! FIGURE_NAME
-        %@%             }                                                      %! FIGURE_NAME
-        %@%     }                                                              %! FIGURE_NAME
+        %@% ^ \markup \fontsize #2 \concat { [ rh-3 4.1.6 \hspace #1 \raise #0.25 \fontsize #-2 (6) ] } %! FIGURE_NAME
 
         }
 
@@ -2854,23 +2438,7 @@ D_RH_Voice_III = {                                                             %
             \override TupletBracket.direction = #down                          %! baca.tuplet_bracket_down():baca.OverrideCommand._call(1)
             af'''!8
             - \tenuto                                                          %! baca.tenuto():baca.IndicatorCommand._call()
-        %@% ^ \markup {                                                        %! FIGURE_NAME
-        %@%     \fontsize                                                      %! FIGURE_NAME
-        %@%         #2                                                         %! FIGURE_NAME
-        %@%         \concat                                                    %! FIGURE_NAME
-        %@%             {                                                      %! FIGURE_NAME
-        %@%                 [                                                  %! FIGURE_NAME
-        %@%                 "insert 5.2"                                       %! FIGURE_NAME
-        %@%                 \hspace                                            %! FIGURE_NAME
-        %@%                     #1                                             %! FIGURE_NAME
-        %@%                 \raise                                             %! FIGURE_NAME
-        %@%                     #0.25                                          %! FIGURE_NAME
-        %@%                     \fontsize                                      %! FIGURE_NAME
-        %@%                         #-2                                        %! FIGURE_NAME
-        %@%                         (34)                                       %! FIGURE_NAME
-        %@%                 ]                                                  %! FIGURE_NAME
-        %@%             }                                                      %! FIGURE_NAME
-        %@%     }                                                              %! FIGURE_NAME
+        %@% ^ \markup \fontsize #2 \concat { [ insert 5.2 \hspace #1 \raise #0.25 \fontsize #-2 (34) ] } %! FIGURE_NAME
             [
             (                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 
@@ -2904,23 +2472,7 @@ D_RH_Voice_III = {                                                             %
             \override TupletBracket.staff-padding = #4                         %! baca.tuplet_bracket_staff_padding():baca.OverrideCommand._call(1)
             \override TupletBracket.direction = #up                            %! baca.tuplet_bracket_up():baca.OverrideCommand._call(1)
             r4
-        %@% ^ \markup {                                                        %! FIGURE_NAME
-        %@%     \fontsize                                                      %! FIGURE_NAME
-        %@%         #2                                                         %! FIGURE_NAME
-        %@%         \concat                                                    %! FIGURE_NAME
-        %@%             {                                                      %! FIGURE_NAME
-        %@%                 [                                                  %! FIGURE_NAME
-        %@%                 "rh-3 4.6.1"                                       %! FIGURE_NAME
-        %@%                 \hspace                                            %! FIGURE_NAME
-        %@%                     #1                                             %! FIGURE_NAME
-        %@%                 \raise                                             %! FIGURE_NAME
-        %@%                     #0.25                                          %! FIGURE_NAME
-        %@%                     \fontsize                                      %! FIGURE_NAME
-        %@%                         #-2                                        %! FIGURE_NAME
-        %@%                         (71)                                       %! FIGURE_NAME
-        %@%                 ]                                                  %! FIGURE_NAME
-        %@%             }                                                      %! FIGURE_NAME
-        %@%     }                                                              %! FIGURE_NAME
+        %@% ^ \markup \fontsize #2 \concat { [ rh-3 4.6.1 \hspace #1 \raise #0.25 \fontsize #-2 (71) ] } %! FIGURE_NAME
 
             \override Stem.direction = #up                                     %! baca.stem_up():baca.OverrideCommand._call(1)
             ef''!8
@@ -2964,23 +2516,7 @@ D_RH_Voice_III = {                                                             %
             - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
             \mf                                                                %! baca.dynamic():baca.IndicatorCommand._call():baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
             - \tenuto                                                          %! baca.tenuto():baca.IndicatorCommand._call()
-        %@% ^ \markup {                                                        %! FIGURE_NAME
-        %@%     \fontsize                                                      %! FIGURE_NAME
-        %@%         #2                                                         %! FIGURE_NAME
-        %@%         \concat                                                    %! FIGURE_NAME
-        %@%             {                                                      %! FIGURE_NAME
-        %@%                 [                                                  %! FIGURE_NAME
-        %@%                 b.1.11                                             %! FIGURE_NAME
-        %@%                 \hspace                                            %! FIGURE_NAME
-        %@%                     #1                                             %! FIGURE_NAME
-        %@%                 \raise                                             %! FIGURE_NAME
-        %@%                     #0.25                                          %! FIGURE_NAME
-        %@%                     \fontsize                                      %! FIGURE_NAME
-        %@%                         #-2                                        %! FIGURE_NAME
-        %@%                         (74)                                       %! FIGURE_NAME
-        %@%                 ]                                                  %! FIGURE_NAME
-        %@%             }                                                      %! FIGURE_NAME
-        %@%     }                                                              %! FIGURE_NAME
+        %@% ^ \markup \fontsize #2 \concat { [ b.1.11 \hspace #1 \raise #0.25 \fontsize #-2 (74) ] } %! FIGURE_NAME
 
             \override Rest.direction = #down                                   %! baca.rest_down():baca.OverrideCommand._call(1)
             r4
@@ -3540,23 +3076,7 @@ D_RH_Voice_V = {                                                               %
 
             % [D RH_Voice_V measure 50 / measure 17]                           %! baca.SegmentMaker._comment_measure_numbers()
             <b d' fs'! a'>16
-        %@% ^ \markup {                                                        %! FIGURE_NAME
-        %@%     \fontsize                                                      %! FIGURE_NAME
-        %@%         #2                                                         %! FIGURE_NAME
-        %@%         \concat                                                    %! FIGURE_NAME
-        %@%             {                                                      %! FIGURE_NAME
-        %@%                 [                                                  %! FIGURE_NAME
-        %@%                 "rh-5 4.2.1"                                       %! FIGURE_NAME
-        %@%                 \hspace                                            %! FIGURE_NAME
-        %@%                     #1                                             %! FIGURE_NAME
-        %@%                 \raise                                             %! FIGURE_NAME
-        %@%                     #0.25                                          %! FIGURE_NAME
-        %@%                     \fontsize                                      %! FIGURE_NAME
-        %@%                         #-2                                        %! FIGURE_NAME
-        %@%                         (23)                                       %! FIGURE_NAME
-        %@%                 ]                                                  %! FIGURE_NAME
-        %@%             }                                                      %! FIGURE_NAME
-        %@%     }                                                              %! FIGURE_NAME
+        %@% ^ \markup \fontsize #2 \concat { [ rh-5 4.2.1 \hspace #1 \raise #0.25 \fontsize #-2 (23) ] } %! FIGURE_NAME
 
             r8.
             <> \bacaStopTextSpanRhythmAnnotation                               %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(4):SPANNER_STOP
@@ -4231,23 +3751,7 @@ D_LH_Voice_II = {                                                              %
             \override Staff.SustainPedalLineSpanner.staff-padding = #4         %! baca.sustain_pedal_staff_padding():baca.OverrideCommand._call(1)
             \override Rest.transparent = ##t                                   %! baca.rest_transparent():baca.OverrideCommand._call(1)
             r1
-        %@% ^ \markup {                                                        %! FIGURE_NAME
-        %@%     \fontsize                                                      %! FIGURE_NAME
-        %@%         #2                                                         %! FIGURE_NAME
-        %@%         \concat                                                    %! FIGURE_NAME
-        %@%             {                                                      %! FIGURE_NAME
-        %@%                 [                                                  %! FIGURE_NAME
-        %@%                 "lh-2 4.6.1"                                       %! FIGURE_NAME
-        %@%                 \hspace                                            %! FIGURE_NAME
-        %@%                     #1                                             %! FIGURE_NAME
-        %@%                 \raise                                             %! FIGURE_NAME
-        %@%                     #0.25                                          %! FIGURE_NAME
-        %@%                     \fontsize                                      %! FIGURE_NAME
-        %@%                         #-2                                        %! FIGURE_NAME
-        %@%                         (70)                                       %! FIGURE_NAME
-        %@%                 ]                                                  %! FIGURE_NAME
-        %@%             }                                                      %! FIGURE_NAME
-        %@%     }                                                              %! FIGURE_NAME
+        %@% ^ \markup \fontsize #2 \concat { [ lh-2 4.6.1 \hspace #1 \raise #0.25 \fontsize #-2 (70) ] } %! FIGURE_NAME
             \sustainOn                                                         %! baca.sustain_pedal():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 
             % [D LH_Voice_II measure 74 / measure 41]                          %! baca.SegmentMaker._comment_measure_numbers()
@@ -4502,23 +4006,7 @@ D_LH_Voice_IV = {                                                              %
             b'8.
             - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
             \p                                                                 %! baca.dynamic():baca.IndicatorCommand._call():baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
-        %@% ^ \markup {                                                        %! FIGURE_NAME
-        %@%     \fontsize                                                      %! FIGURE_NAME
-        %@%         #2                                                         %! FIGURE_NAME
-        %@%         \concat                                                    %! FIGURE_NAME
-        %@%             {                                                      %! FIGURE_NAME
-        %@%                 [                                                  %! FIGURE_NAME
-        %@%                 "insert 5.1"                                       %! FIGURE_NAME
-        %@%                 \hspace                                            %! FIGURE_NAME
-        %@%                     #1                                             %! FIGURE_NAME
-        %@%                 \raise                                             %! FIGURE_NAME
-        %@%                     #0.25                                          %! FIGURE_NAME
-        %@%                     \fontsize                                      %! FIGURE_NAME
-        %@%                         #-2                                        %! FIGURE_NAME
-        %@%                         (3)                                        %! FIGURE_NAME
-        %@%                 ]                                                  %! FIGURE_NAME
-        %@%             }                                                      %! FIGURE_NAME
-        %@%     }                                                              %! FIGURE_NAME
+        %@% ^ \markup \fontsize #2 \concat { [ insert 5.1 \hspace #1 \raise #0.25 \fontsize #-2 (3) ] } %! FIGURE_NAME
             (                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 
             r8.
@@ -4877,23 +4365,7 @@ D_LH_Voice_V = {                                                               %
             r2.
             - \tweak color #(x11-color 'green4)                                %! REAPPLIED_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
             \f                                                                 %! baca.SegmentMaker._reapply_persistent_indicators(3):baca.SegmentMaker._set_status_tag():REAPPLIED_DYNAMIC
-        %@% ^ \markup {                                                        %! FIGURE_NAME
-        %@%     \fontsize                                                      %! FIGURE_NAME
-        %@%         #2                                                         %! FIGURE_NAME
-        %@%         \concat                                                    %! FIGURE_NAME
-        %@%             {                                                      %! FIGURE_NAME
-        %@%                 [                                                  %! FIGURE_NAME
-        %@%                 "lh-5 4.1.1"                                       %! FIGURE_NAME
-        %@%                 \hspace                                            %! FIGURE_NAME
-        %@%                     #1                                             %! FIGURE_NAME
-        %@%                 \raise                                             %! FIGURE_NAME
-        %@%                     #0.25                                          %! FIGURE_NAME
-        %@%                     \fontsize                                      %! FIGURE_NAME
-        %@%                         #-2                                        %! FIGURE_NAME
-        %@%                         (7)                                        %! FIGURE_NAME
-        %@%                 ]                                                  %! FIGURE_NAME
-        %@%             }                                                      %! FIGURE_NAME
-        %@%     }                                                              %! FIGURE_NAME
+        %@% ^ \markup \fontsize #2 \concat { [ lh-5 4.1.1 \hspace #1 \raise #0.25 \fontsize #-2 (7) ] } %! FIGURE_NAME
             - \abjad-dashed-line-with-hook                                     %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(2):SPANNER_START
             - \baca-text-spanner-left-text "baca.music()"                      %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(2):SPANNER_START
             - \tweak bound-details.right.padding #2.75                         %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(2):AUTODETECT:SPANNER_START
@@ -4928,23 +4400,7 @@ D_LH_Voice_V = {                                                               %
 
             % [D LH_Voice_V measure 35 / measure 2]                            %! baca.SegmentMaker._comment_measure_numbers()
             r2.
-        %@% ^ \markup {                                                        %! FIGURE_NAME
-        %@%     \fontsize                                                      %! FIGURE_NAME
-        %@%         #2                                                         %! FIGURE_NAME
-        %@%         \concat                                                    %! FIGURE_NAME
-        %@%             {                                                      %! FIGURE_NAME
-        %@%                 [                                                  %! FIGURE_NAME
-        %@%                 "lh-5 4.1.2"                                       %! FIGURE_NAME
-        %@%                 \hspace                                            %! FIGURE_NAME
-        %@%                     #1                                             %! FIGURE_NAME
-        %@%                 \raise                                             %! FIGURE_NAME
-        %@%                     #0.25                                          %! FIGURE_NAME
-        %@%                     \fontsize                                      %! FIGURE_NAME
-        %@%                         #-2                                        %! FIGURE_NAME
-        %@%                         (8)                                        %! FIGURE_NAME
-        %@%                 ]                                                  %! FIGURE_NAME
-        %@%             }                                                      %! FIGURE_NAME
-        %@%     }                                                              %! FIGURE_NAME
+        %@% ^ \markup \fontsize #2 \concat { [ lh-5 4.1.2 \hspace #1 \raise #0.25 \fontsize #-2 (8) ] } %! FIGURE_NAME
 
         }
 
@@ -4956,23 +4412,7 @@ D_LH_Voice_V = {                                                               %
 
             % [D LH_Voice_V measure 36 / measure 3]                            %! baca.SegmentMaker._comment_measure_numbers()
             r4
-        %@% ^ \markup {                                                        %! FIGURE_NAME
-        %@%     \fontsize                                                      %! FIGURE_NAME
-        %@%         #2                                                         %! FIGURE_NAME
-        %@%         \concat                                                    %! FIGURE_NAME
-        %@%             {                                                      %! FIGURE_NAME
-        %@%                 [                                                  %! FIGURE_NAME
-        %@%                 "lh-5 4.1.3"                                       %! FIGURE_NAME
-        %@%                 \hspace                                            %! FIGURE_NAME
-        %@%                     #1                                             %! FIGURE_NAME
-        %@%                 \raise                                             %! FIGURE_NAME
-        %@%                     #0.25                                          %! FIGURE_NAME
-        %@%                     \fontsize                                      %! FIGURE_NAME
-        %@%                         #-2                                        %! FIGURE_NAME
-        %@%                         (9)                                        %! FIGURE_NAME
-        %@%                 ]                                                  %! FIGURE_NAME
-        %@%             }                                                      %! FIGURE_NAME
-        %@%     }                                                              %! FIGURE_NAME
+        %@% ^ \markup \fontsize #2 \concat { [ lh-5 4.1.3 \hspace #1 \raise #0.25 \fontsize #-2 (9) ] } %! FIGURE_NAME
 
             af!8.
             - \tenuto                                                          %! baca.tenuto():baca.IndicatorCommand._call()
@@ -5006,23 +4446,7 @@ D_LH_Voice_V = {                                                               %
 
             % [D LH_Voice_V measure 38 / measure 5]                            %! baca.SegmentMaker._comment_measure_numbers()
             r16
-        %@% ^ \markup {                                                        %! FIGURE_NAME
-        %@%     \fontsize                                                      %! FIGURE_NAME
-        %@%         #2                                                         %! FIGURE_NAME
-        %@%         \concat                                                    %! FIGURE_NAME
-        %@%             {                                                      %! FIGURE_NAME
-        %@%                 [                                                  %! FIGURE_NAME
-        %@%                 "lh-5 4.1.4"                                       %! FIGURE_NAME
-        %@%                 \hspace                                            %! FIGURE_NAME
-        %@%                     #1                                             %! FIGURE_NAME
-        %@%                 \raise                                             %! FIGURE_NAME
-        %@%                     #0.25                                          %! FIGURE_NAME
-        %@%                     \fontsize                                      %! FIGURE_NAME
-        %@%                         #-2                                        %! FIGURE_NAME
-        %@%                         (10)                                       %! FIGURE_NAME
-        %@%                 ]                                                  %! FIGURE_NAME
-        %@%             }                                                      %! FIGURE_NAME
-        %@%     }                                                              %! FIGURE_NAME
+        %@% ^ \markup \fontsize #2 \concat { [ lh-5 4.1.4 \hspace #1 \raise #0.25 \fontsize #-2 (10) ] } %! FIGURE_NAME
 
             <g b f' fs'! a'>8.
             - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
@@ -5041,23 +4465,7 @@ D_LH_Voice_V = {                                                               %
 
             % [D LH_Voice_V measure 39 / measure 6]                            %! baca.SegmentMaker._comment_measure_numbers()
             r4
-        %@% ^ \markup {                                                        %! FIGURE_NAME
-        %@%     \fontsize                                                      %! FIGURE_NAME
-        %@%         #2                                                         %! FIGURE_NAME
-        %@%         \concat                                                    %! FIGURE_NAME
-        %@%             {                                                      %! FIGURE_NAME
-        %@%                 [                                                  %! FIGURE_NAME
-        %@%                 "lh-5 4.1.5"                                       %! FIGURE_NAME
-        %@%                 \hspace                                            %! FIGURE_NAME
-        %@%                     #1                                             %! FIGURE_NAME
-        %@%                 \raise                                             %! FIGURE_NAME
-        %@%                     #0.25                                          %! FIGURE_NAME
-        %@%                     \fontsize                                      %! FIGURE_NAME
-        %@%                         #-2                                        %! FIGURE_NAME
-        %@%                         (11)                                       %! FIGURE_NAME
-        %@%                 ]                                                  %! FIGURE_NAME
-        %@%             }                                                      %! FIGURE_NAME
-        %@%     }                                                              %! FIGURE_NAME
+        %@% ^ \markup \fontsize #2 \concat { [ lh-5 4.1.5 \hspace #1 \raise #0.25 \fontsize #-2 (11) ] } %! FIGURE_NAME
 
             r4
 
@@ -5091,23 +4499,7 @@ D_LH_Voice_V = {                                                               %
             % [D LH_Voice_V measure 40 / measure 7]                            %! baca.SegmentMaker._comment_measure_numbers()
             \override Rest.direction = #up                                     %! baca.rest_up():baca.OverrideCommand._call(1)
             r2.
-        %@% ^ \markup {                                                        %! FIGURE_NAME
-        %@%     \fontsize                                                      %! FIGURE_NAME
-        %@%         #2                                                         %! FIGURE_NAME
-        %@%         \concat                                                    %! FIGURE_NAME
-        %@%             {                                                      %! FIGURE_NAME
-        %@%                 [                                                  %! FIGURE_NAME
-        %@%                 "lh-5 4.1.6"                                       %! FIGURE_NAME
-        %@%                 \hspace                                            %! FIGURE_NAME
-        %@%                     #1                                             %! FIGURE_NAME
-        %@%                 \raise                                             %! FIGURE_NAME
-        %@%                     #0.25                                          %! FIGURE_NAME
-        %@%                     \fontsize                                      %! FIGURE_NAME
-        %@%                         #-2                                        %! FIGURE_NAME
-        %@%                         (12)                                       %! FIGURE_NAME
-        %@%                 ]                                                  %! FIGURE_NAME
-        %@%             }                                                      %! FIGURE_NAME
-        %@%     }                                                              %! FIGURE_NAME
+        %@% ^ \markup \fontsize #2 \concat { [ lh-5 4.1.6 \hspace #1 \raise #0.25 \fontsize #-2 (12) ] } %! FIGURE_NAME
 
         }
 
@@ -5119,23 +4511,7 @@ D_LH_Voice_V = {                                                               %
 
             % [D LH_Voice_V measure 41 / measure 8]                            %! baca.SegmentMaker._comment_measure_numbers()
             r16
-        %@% ^ \markup {                                                        %! FIGURE_NAME
-        %@%     \fontsize                                                      %! FIGURE_NAME
-        %@%         #2                                                         %! FIGURE_NAME
-        %@%         \concat                                                    %! FIGURE_NAME
-        %@%             {                                                      %! FIGURE_NAME
-        %@%                 [                                                  %! FIGURE_NAME
-        %@%                 "lh-5 4.2.1"                                       %! FIGURE_NAME
-        %@%                 \hspace                                            %! FIGURE_NAME
-        %@%                     #1                                             %! FIGURE_NAME
-        %@%                 \raise                                             %! FIGURE_NAME
-        %@%                     #0.25                                          %! FIGURE_NAME
-        %@%                     \fontsize                                      %! FIGURE_NAME
-        %@%                         #-2                                        %! FIGURE_NAME
-        %@%                         (13)                                       %! FIGURE_NAME
-        %@%                 ]                                                  %! FIGURE_NAME
-        %@%             }                                                      %! FIGURE_NAME
-        %@%     }                                                              %! FIGURE_NAME
+        %@% ^ \markup \fontsize #2 \concat { [ lh-5 4.2.1 \hspace #1 \raise #0.25 \fontsize #-2 (13) ] } %! FIGURE_NAME
 
             <g b f' fs'! a'>8.
             - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
@@ -5155,23 +4531,7 @@ D_LH_Voice_V = {                                                               %
             % [D LH_Voice_V measure 42 / measure 9]                            %! baca.SegmentMaker._comment_measure_numbers()
             <g b f' fs'! a'>16
             - \marcato                                                         %! baca.marcato():baca.IndicatorCommand._call()
-        %@% ^ \markup {                                                        %! FIGURE_NAME
-        %@%     \fontsize                                                      %! FIGURE_NAME
-        %@%         #2                                                         %! FIGURE_NAME
-        %@%         \concat                                                    %! FIGURE_NAME
-        %@%             {                                                      %! FIGURE_NAME
-        %@%                 [                                                  %! FIGURE_NAME
-        %@%                 "lh-5 4.2.2"                                       %! FIGURE_NAME
-        %@%                 \hspace                                            %! FIGURE_NAME
-        %@%                     #1                                             %! FIGURE_NAME
-        %@%                 \raise                                             %! FIGURE_NAME
-        %@%                     #0.25                                          %! FIGURE_NAME
-        %@%                     \fontsize                                      %! FIGURE_NAME
-        %@%                         #-2                                        %! FIGURE_NAME
-        %@%                         (14)                                       %! FIGURE_NAME
-        %@%                 ]                                                  %! FIGURE_NAME
-        %@%             }                                                      %! FIGURE_NAME
-        %@%     }                                                              %! FIGURE_NAME
+        %@% ^ \markup \fontsize #2 \concat { [ lh-5 4.2.2 \hspace #1 \raise #0.25 \fontsize #-2 (14) ] } %! FIGURE_NAME
 
             r8.
 
@@ -5191,23 +4551,7 @@ D_LH_Voice_V = {                                                               %
                 % [D LH_Voice_V measure 43 / measure 10]                       %! baca.SegmentMaker._comment_measure_numbers()
                 \override TupletBracket.direction = #up                        %! baca.tuplet_bracket_up():baca.OverrideCommand._call(1)
                 r16
-            %@% ^ \markup {                                                    %! FIGURE_NAME
-            %@%     \fontsize                                                  %! FIGURE_NAME
-            %@%         #2                                                     %! FIGURE_NAME
-            %@%         \concat                                                %! FIGURE_NAME
-            %@%             {                                                  %! FIGURE_NAME
-            %@%                 [                                              %! FIGURE_NAME
-            %@%                 "lh-5 4.2.3"                                   %! FIGURE_NAME
-            %@%                 \hspace                                        %! FIGURE_NAME
-            %@%                     #1                                         %! FIGURE_NAME
-            %@%                 \raise                                         %! FIGURE_NAME
-            %@%                     #0.25                                      %! FIGURE_NAME
-            %@%                     \fontsize                                  %! FIGURE_NAME
-            %@%                         #-2                                    %! FIGURE_NAME
-            %@%                         (15)                                   %! FIGURE_NAME
-            %@%                 ]                                              %! FIGURE_NAME
-            %@%             }                                                  %! FIGURE_NAME
-            %@%     }                                                          %! FIGURE_NAME
+            %@% ^ \markup \fontsize #2 \concat { [ lh-5 4.2.3 \hspace #1 \raise #0.25 \fontsize #-2 (15) ] } %! FIGURE_NAME
 
                 <g b f' fs'! a'>8.
                 - \marcato                                                     %! baca.marcato():baca.IndicatorCommand._call()
@@ -5228,23 +4572,7 @@ D_LH_Voice_V = {                                                               %
             % [D LH_Voice_V measure 44 / measure 11]                           %! baca.SegmentMaker._comment_measure_numbers()
             <g b f' fs'! a'>16
             - \marcato                                                         %! baca.marcato():baca.IndicatorCommand._call()
-        %@% ^ \markup {                                                        %! FIGURE_NAME
-        %@%     \fontsize                                                      %! FIGURE_NAME
-        %@%         #2                                                         %! FIGURE_NAME
-        %@%         \concat                                                    %! FIGURE_NAME
-        %@%             {                                                      %! FIGURE_NAME
-        %@%                 [                                                  %! FIGURE_NAME
-        %@%                 "lh-5 4.2.4"                                       %! FIGURE_NAME
-        %@%                 \hspace                                            %! FIGURE_NAME
-        %@%                     #1                                             %! FIGURE_NAME
-        %@%                 \raise                                             %! FIGURE_NAME
-        %@%                     #0.25                                          %! FIGURE_NAME
-        %@%                     \fontsize                                      %! FIGURE_NAME
-        %@%                         #-2                                        %! FIGURE_NAME
-        %@%                         (16)                                       %! FIGURE_NAME
-        %@%                 ]                                                  %! FIGURE_NAME
-        %@%             }                                                      %! FIGURE_NAME
-        %@%     }                                                              %! FIGURE_NAME
+        %@% ^ \markup \fontsize #2 \concat { [ lh-5 4.2.4 \hspace #1 \raise #0.25 \fontsize #-2 (16) ] } %! FIGURE_NAME
 
             r8.
 
@@ -5260,23 +4588,7 @@ D_LH_Voice_V = {                                                               %
 
             % [D LH_Voice_V measure 45 / measure 12]                           %! baca.SegmentMaker._comment_measure_numbers()
             r16
-        %@% ^ \markup {                                                        %! FIGURE_NAME
-        %@%     \fontsize                                                      %! FIGURE_NAME
-        %@%         #2                                                         %! FIGURE_NAME
-        %@%         \concat                                                    %! FIGURE_NAME
-        %@%             {                                                      %! FIGURE_NAME
-        %@%                 [                                                  %! FIGURE_NAME
-        %@%                 "lh-5 4.2.5"                                       %! FIGURE_NAME
-        %@%                 \hspace                                            %! FIGURE_NAME
-        %@%                     #1                                             %! FIGURE_NAME
-        %@%                 \raise                                             %! FIGURE_NAME
-        %@%                     #0.25                                          %! FIGURE_NAME
-        %@%                     \fontsize                                      %! FIGURE_NAME
-        %@%                         #-2                                        %! FIGURE_NAME
-        %@%                         (17)                                       %! FIGURE_NAME
-        %@%                 ]                                                  %! FIGURE_NAME
-        %@%             }                                                      %! FIGURE_NAME
-        %@%     }                                                              %! FIGURE_NAME
+        %@% ^ \markup \fontsize #2 \concat { [ lh-5 4.2.5 \hspace #1 \raise #0.25 \fontsize #-2 (17) ] } %! FIGURE_NAME
 
             <g b f' fs'! a'>8.
             - \marcato                                                         %! baca.marcato():baca.IndicatorCommand._call()
@@ -5294,23 +4606,7 @@ D_LH_Voice_V = {                                                               %
             % [D LH_Voice_V measure 46 / measure 13]                           %! baca.SegmentMaker._comment_measure_numbers()
             <g b f' fs'! a'>16
             - \marcato                                                         %! baca.marcato():baca.IndicatorCommand._call()
-        %@% ^ \markup {                                                        %! FIGURE_NAME
-        %@%     \fontsize                                                      %! FIGURE_NAME
-        %@%         #2                                                         %! FIGURE_NAME
-        %@%         \concat                                                    %! FIGURE_NAME
-        %@%             {                                                      %! FIGURE_NAME
-        %@%                 [                                                  %! FIGURE_NAME
-        %@%                 "lh-5 4.2.6"                                       %! FIGURE_NAME
-        %@%                 \hspace                                            %! FIGURE_NAME
-        %@%                     #1                                             %! FIGURE_NAME
-        %@%                 \raise                                             %! FIGURE_NAME
-        %@%                     #0.25                                          %! FIGURE_NAME
-        %@%                     \fontsize                                      %! FIGURE_NAME
-        %@%                         #-2                                        %! FIGURE_NAME
-        %@%                         (18)                                       %! FIGURE_NAME
-        %@%                 ]                                                  %! FIGURE_NAME
-        %@%             }                                                      %! FIGURE_NAME
-        %@%     }                                                              %! FIGURE_NAME
+        %@% ^ \markup \fontsize #2 \concat { [ lh-5 4.2.6 \hspace #1 \raise #0.25 \fontsize #-2 (18) ] } %! FIGURE_NAME
 
             r8.
 
@@ -5330,23 +4626,7 @@ D_LH_Voice_V = {                                                               %
                 % [D LH_Voice_V measure 47 / measure 14]                       %! baca.SegmentMaker._comment_measure_numbers()
                 \override TupletBracket.direction = #up                        %! baca.tuplet_bracket_up():baca.OverrideCommand._call(1)
                 r16
-            %@% ^ \markup {                                                    %! FIGURE_NAME
-            %@%     \fontsize                                                  %! FIGURE_NAME
-            %@%         #2                                                     %! FIGURE_NAME
-            %@%         \concat                                                %! FIGURE_NAME
-            %@%             {                                                  %! FIGURE_NAME
-            %@%                 [                                              %! FIGURE_NAME
-            %@%                 "lh-5 4.2.7"                                   %! FIGURE_NAME
-            %@%                 \hspace                                        %! FIGURE_NAME
-            %@%                     #1                                         %! FIGURE_NAME
-            %@%                 \raise                                         %! FIGURE_NAME
-            %@%                     #0.25                                      %! FIGURE_NAME
-            %@%                     \fontsize                                  %! FIGURE_NAME
-            %@%                         #-2                                    %! FIGURE_NAME
-            %@%                         (19)                                   %! FIGURE_NAME
-            %@%                 ]                                              %! FIGURE_NAME
-            %@%             }                                                  %! FIGURE_NAME
-            %@%     }                                                          %! FIGURE_NAME
+            %@% ^ \markup \fontsize #2 \concat { [ lh-5 4.2.7 \hspace #1 \raise #0.25 \fontsize #-2 (19) ] } %! FIGURE_NAME
 
                 <g b f' fs'! a'>8.
                 - \marcato                                                     %! baca.marcato():baca.IndicatorCommand._call()
@@ -5367,23 +4647,7 @@ D_LH_Voice_V = {                                                               %
             % [D LH_Voice_V measure 48 / measure 15]                           %! baca.SegmentMaker._comment_measure_numbers()
             <g b f' fs'! a'>16
             - \marcato                                                         %! baca.marcato():baca.IndicatorCommand._call()
-        %@% ^ \markup {                                                        %! FIGURE_NAME
-        %@%     \fontsize                                                      %! FIGURE_NAME
-        %@%         #2                                                         %! FIGURE_NAME
-        %@%         \concat                                                    %! FIGURE_NAME
-        %@%             {                                                      %! FIGURE_NAME
-        %@%                 [                                                  %! FIGURE_NAME
-        %@%                 "lh-5 4.2.8"                                       %! FIGURE_NAME
-        %@%                 \hspace                                            %! FIGURE_NAME
-        %@%                     #1                                             %! FIGURE_NAME
-        %@%                 \raise                                             %! FIGURE_NAME
-        %@%                     #0.25                                          %! FIGURE_NAME
-        %@%                     \fontsize                                      %! FIGURE_NAME
-        %@%                         #-2                                        %! FIGURE_NAME
-        %@%                         (20)                                       %! FIGURE_NAME
-        %@%                 ]                                                  %! FIGURE_NAME
-        %@%             }                                                      %! FIGURE_NAME
-        %@%     }                                                              %! FIGURE_NAME
+        %@% ^ \markup \fontsize #2 \concat { [ lh-5 4.2.8 \hspace #1 \raise #0.25 \fontsize #-2 (20) ] } %! FIGURE_NAME
 
             r8.
 
@@ -5403,23 +4667,7 @@ D_LH_Voice_V = {                                                               %
                 % [D LH_Voice_V measure 49 / measure 16]                       %! baca.SegmentMaker._comment_measure_numbers()
                 \override TupletBracket.direction = #up                        %! baca.tuplet_bracket_up():baca.OverrideCommand._call(1)
                 r16
-            %@% ^ \markup {                                                    %! FIGURE_NAME
-            %@%     \fontsize                                                  %! FIGURE_NAME
-            %@%         #2                                                     %! FIGURE_NAME
-            %@%         \concat                                                %! FIGURE_NAME
-            %@%             {                                                  %! FIGURE_NAME
-            %@%                 [                                              %! FIGURE_NAME
-            %@%                 "lh-5 4.2.9"                                   %! FIGURE_NAME
-            %@%                 \hspace                                        %! FIGURE_NAME
-            %@%                     #1                                         %! FIGURE_NAME
-            %@%                 \raise                                         %! FIGURE_NAME
-            %@%                     #0.25                                      %! FIGURE_NAME
-            %@%                     \fontsize                                  %! FIGURE_NAME
-            %@%                         #-2                                    %! FIGURE_NAME
-            %@%                         (21)                                   %! FIGURE_NAME
-            %@%                 ]                                              %! FIGURE_NAME
-            %@%             }                                                  %! FIGURE_NAME
-            %@%     }                                                          %! FIGURE_NAME
+            %@% ^ \markup \fontsize #2 \concat { [ lh-5 4.2.9 \hspace #1 \raise #0.25 \fontsize #-2 (21) ] } %! FIGURE_NAME
 
                 <g b f' fs'! a'>8.
                 - \marcato                                                     %! baca.marcato():baca.IndicatorCommand._call()
@@ -5444,23 +4692,7 @@ D_LH_Voice_V = {                                                               %
             <g, e f af!>16
             - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
             \mp                                                                %! baca.dynamic():baca.IndicatorCommand._call():baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
-        %@% ^ \markup {                                                        %! FIGURE_NAME
-        %@%     \fontsize                                                      %! FIGURE_NAME
-        %@%         #2                                                         %! FIGURE_NAME
-        %@%         \concat                                                    %! FIGURE_NAME
-        %@%             {                                                      %! FIGURE_NAME
-        %@%                 [                                                  %! FIGURE_NAME
-        %@%                 "lh-5 4.2.10"                                      %! FIGURE_NAME
-        %@%                 \hspace                                            %! FIGURE_NAME
-        %@%                     #1                                             %! FIGURE_NAME
-        %@%                 \raise                                             %! FIGURE_NAME
-        %@%                     #0.25                                          %! FIGURE_NAME
-        %@%                     \fontsize                                      %! FIGURE_NAME
-        %@%                         #-2                                        %! FIGURE_NAME
-        %@%                         (22)                                       %! FIGURE_NAME
-        %@%                 ]                                                  %! FIGURE_NAME
-        %@%             }                                                      %! FIGURE_NAME
-        %@%     }                                                              %! FIGURE_NAME
+        %@% ^ \markup \fontsize #2 \concat { [ lh-5 4.2.10 \hspace #1 \raise #0.25 \fontsize #-2 (22) ] } %! FIGURE_NAME
 
             r8.
 
@@ -5479,23 +4711,7 @@ D_LH_Voice_V = {                                                               %
                 \override TupletBracket.staff-padding = #2                     %! baca.tuplet_bracket_staff_padding():baca.OverrideCommand._call(1)
                 \override TupletBracket.direction = #down                      %! baca.tuplet_bracket_down():baca.OverrideCommand._call(1)
                 r4
-            %@% ^ \markup {                                                    %! FIGURE_NAME
-            %@%     \fontsize                                                  %! FIGURE_NAME
-            %@%         #2                                                     %! FIGURE_NAME
-            %@%         \concat                                                %! FIGURE_NAME
-            %@%             {                                                  %! FIGURE_NAME
-            %@%                 [                                              %! FIGURE_NAME
-            %@%                 "lh-5 4.4.1"                                   %! FIGURE_NAME
-            %@%                 \hspace                                        %! FIGURE_NAME
-            %@%                     #1                                         %! FIGURE_NAME
-            %@%                 \raise                                         %! FIGURE_NAME
-            %@%                     #0.25                                      %! FIGURE_NAME
-            %@%                     \fontsize                                  %! FIGURE_NAME
-            %@%                         #-2                                    %! FIGURE_NAME
-            %@%                         (30)                                   %! FIGURE_NAME
-            %@%                 ]                                              %! FIGURE_NAME
-            %@%             }                                                  %! FIGURE_NAME
-            %@%     }                                                          %! FIGURE_NAME
+            %@% ^ \markup \fontsize #2 \concat { [ lh-5 4.4.1 \hspace #1 \raise #0.25 \fontsize #-2 (30) ] } %! FIGURE_NAME
 
                 \set stemLeftBeamCount = 0
                 \set stemRightBeamCount = 1
@@ -5528,23 +4744,7 @@ D_LH_Voice_V = {                                                               %
 
             % [D LH_Voice_V measure 52 / measure 19]                           %! baca.SegmentMaker._comment_measure_numbers()
             r1
-        %@% ^ \markup {                                                        %! FIGURE_NAME
-        %@%     \fontsize                                                      %! FIGURE_NAME
-        %@%         #2                                                         %! FIGURE_NAME
-        %@%         \concat                                                    %! FIGURE_NAME
-        %@%             {                                                      %! FIGURE_NAME
-        %@%                 [                                                  %! FIGURE_NAME
-        %@%                 "lh-5 4.4.2"                                       %! FIGURE_NAME
-        %@%                 \hspace                                            %! FIGURE_NAME
-        %@%                     #1                                             %! FIGURE_NAME
-        %@%                 \raise                                             %! FIGURE_NAME
-        %@%                     #0.25                                          %! FIGURE_NAME
-        %@%                     \fontsize                                      %! FIGURE_NAME
-        %@%                         #-2                                        %! FIGURE_NAME
-        %@%                         (31)                                       %! FIGURE_NAME
-        %@%                 ]                                                  %! FIGURE_NAME
-        %@%             }                                                      %! FIGURE_NAME
-        %@%     }                                                              %! FIGURE_NAME
+        %@% ^ \markup \fontsize #2 \concat { [ lh-5 4.4.2 \hspace #1 \raise #0.25 \fontsize #-2 (31) ] } %! FIGURE_NAME
 
         }
 
@@ -5556,23 +4756,7 @@ D_LH_Voice_V = {                                                               %
 
             % [D LH_Voice_V measure 53 / measure 20]                           %! baca.SegmentMaker._comment_measure_numbers()
             r8
-        %@% ^ \markup {                                                        %! FIGURE_NAME
-        %@%     \fontsize                                                      %! FIGURE_NAME
-        %@%         #2                                                         %! FIGURE_NAME
-        %@%         \concat                                                    %! FIGURE_NAME
-        %@%             {                                                      %! FIGURE_NAME
-        %@%                 [                                                  %! FIGURE_NAME
-        %@%                 "lh-5 4.4.3"                                       %! FIGURE_NAME
-        %@%                 \hspace                                            %! FIGURE_NAME
-        %@%                     #1                                             %! FIGURE_NAME
-        %@%                 \raise                                             %! FIGURE_NAME
-        %@%                     #0.25                                          %! FIGURE_NAME
-        %@%                     \fontsize                                      %! FIGURE_NAME
-        %@%                         #-2                                        %! FIGURE_NAME
-        %@%                         (32)                                       %! FIGURE_NAME
-        %@%                 ]                                                  %! FIGURE_NAME
-        %@%             }                                                      %! FIGURE_NAME
-        %@%     }                                                              %! FIGURE_NAME
+        %@% ^ \markup \fontsize #2 \concat { [ lh-5 4.4.3 \hspace #1 \raise #0.25 \fontsize #-2 (32) ] } %! FIGURE_NAME
 
             <c e af!>4.
 
@@ -5592,23 +4776,7 @@ D_LH_Voice_V = {                                                               %
 
                 % [D LH_Voice_V measure 56 / measure 23]                       %! baca.SegmentMaker._comment_measure_numbers()
                 r4
-            %@% ^ \markup {                                                    %! FIGURE_NAME
-            %@%     \fontsize                                                  %! FIGURE_NAME
-            %@%         #2                                                     %! FIGURE_NAME
-            %@%         \concat                                                %! FIGURE_NAME
-            %@%             {                                                  %! FIGURE_NAME
-            %@%                 [                                              %! FIGURE_NAME
-            %@%                 "lh-5 4.4.4"                                   %! FIGURE_NAME
-            %@%                 \hspace                                        %! FIGURE_NAME
-            %@%                     #1                                         %! FIGURE_NAME
-            %@%                 \raise                                         %! FIGURE_NAME
-            %@%                     #0.25                                      %! FIGURE_NAME
-            %@%                     \fontsize                                  %! FIGURE_NAME
-            %@%                         #-2                                    %! FIGURE_NAME
-            %@%                         (35)                                   %! FIGURE_NAME
-            %@%                 ]                                              %! FIGURE_NAME
-            %@%             }                                                  %! FIGURE_NAME
-            %@%     }                                                          %! FIGURE_NAME
+            %@% ^ \markup \fontsize #2 \concat { [ lh-5 4.4.4 \hspace #1 \raise #0.25 \fontsize #-2 (35) ] } %! FIGURE_NAME
 
                 \set stemLeftBeamCount = 0
                 \set stemRightBeamCount = 1
@@ -5648,23 +4816,7 @@ D_LH_Voice_V = {                                                               %
 
             % [D LH_Voice_V measure 57 / measure 24]                           %! baca.SegmentMaker._comment_measure_numbers()
             r2
-        %@% ^ \markup {                                                        %! FIGURE_NAME
-        %@%     \fontsize                                                      %! FIGURE_NAME
-        %@%         #2                                                         %! FIGURE_NAME
-        %@%         \concat                                                    %! FIGURE_NAME
-        %@%             {                                                      %! FIGURE_NAME
-        %@%                 [                                                  %! FIGURE_NAME
-        %@%                 "lh-5 4.4.5"                                       %! FIGURE_NAME
-        %@%                 \hspace                                            %! FIGURE_NAME
-        %@%                     #1                                             %! FIGURE_NAME
-        %@%                 \raise                                             %! FIGURE_NAME
-        %@%                     #0.25                                          %! FIGURE_NAME
-        %@%                     \fontsize                                      %! FIGURE_NAME
-        %@%                         #-2                                        %! FIGURE_NAME
-        %@%                         (36)                                       %! FIGURE_NAME
-        %@%                 ]                                                  %! FIGURE_NAME
-        %@%             }                                                      %! FIGURE_NAME
-        %@%     }                                                              %! FIGURE_NAME
+        %@% ^ \markup \fontsize #2 \concat { [ lh-5 4.4.5 \hspace #1 \raise #0.25 \fontsize #-2 (36) ] } %! FIGURE_NAME
 
         }
 
@@ -5679,23 +4831,7 @@ D_LH_Voice_V = {                                                               %
 
                 % [D LH_Voice_V measure 58 / measure 25]                       %! baca.SegmentMaker._comment_measure_numbers()
                 r4
-            %@% ^ \markup {                                                    %! FIGURE_NAME
-            %@%     \fontsize                                                  %! FIGURE_NAME
-            %@%         #2                                                     %! FIGURE_NAME
-            %@%         \concat                                                %! FIGURE_NAME
-            %@%             {                                                  %! FIGURE_NAME
-            %@%                 [                                              %! FIGURE_NAME
-            %@%                 "lh-5 4.4.6"                                   %! FIGURE_NAME
-            %@%                 \hspace                                        %! FIGURE_NAME
-            %@%                     #1                                         %! FIGURE_NAME
-            %@%                 \raise                                         %! FIGURE_NAME
-            %@%                     #0.25                                      %! FIGURE_NAME
-            %@%                     \fontsize                                  %! FIGURE_NAME
-            %@%                         #-2                                    %! FIGURE_NAME
-            %@%                         (37)                                   %! FIGURE_NAME
-            %@%                 ]                                              %! FIGURE_NAME
-            %@%             }                                                  %! FIGURE_NAME
-            %@%     }                                                          %! FIGURE_NAME
+            %@% ^ \markup \fontsize #2 \concat { [ lh-5 4.4.6 \hspace #1 \raise #0.25 \fontsize #-2 (37) ] } %! FIGURE_NAME
 
                 \set stemLeftBeamCount = 0
                 \set stemRightBeamCount = 1
@@ -5738,23 +4874,7 @@ D_LH_Voice_V = {                                                               %
 
                 % [D LH_Voice_V measure 59 / measure 26]                       %! baca.SegmentMaker._comment_measure_numbers()
                 r4
-            %@% ^ \markup {                                                    %! FIGURE_NAME
-            %@%     \fontsize                                                  %! FIGURE_NAME
-            %@%         #2                                                     %! FIGURE_NAME
-            %@%         \concat                                                %! FIGURE_NAME
-            %@%             {                                                  %! FIGURE_NAME
-            %@%                 [                                              %! FIGURE_NAME
-            %@%                 "lh-5 4.4.7"                                   %! FIGURE_NAME
-            %@%                 \hspace                                        %! FIGURE_NAME
-            %@%                     #1                                         %! FIGURE_NAME
-            %@%                 \raise                                         %! FIGURE_NAME
-            %@%                     #0.25                                      %! FIGURE_NAME
-            %@%                     \fontsize                                  %! FIGURE_NAME
-            %@%                         #-2                                    %! FIGURE_NAME
-            %@%                         (38)                                   %! FIGURE_NAME
-            %@%                 ]                                              %! FIGURE_NAME
-            %@%             }                                                  %! FIGURE_NAME
-            %@%     }                                                          %! FIGURE_NAME
+            %@% ^ \markup \fontsize #2 \concat { [ lh-5 4.4.7 \hspace #1 \raise #0.25 \fontsize #-2 (38) ] } %! FIGURE_NAME
 
                 \set stemLeftBeamCount = 0
                 \set stemRightBeamCount = 1
@@ -5786,23 +4906,7 @@ D_LH_Voice_V = {                                                               %
 
             % [D LH_Voice_V measure 60 / measure 27]                           %! baca.SegmentMaker._comment_measure_numbers()
             r8
-        %@% ^ \markup {                                                        %! FIGURE_NAME
-        %@%     \fontsize                                                      %! FIGURE_NAME
-        %@%         #2                                                         %! FIGURE_NAME
-        %@%         \concat                                                    %! FIGURE_NAME
-        %@%             {                                                      %! FIGURE_NAME
-        %@%                 [                                                  %! FIGURE_NAME
-        %@%                 "lh-5 4.4.8"                                       %! FIGURE_NAME
-        %@%                 \hspace                                            %! FIGURE_NAME
-        %@%                     #1                                             %! FIGURE_NAME
-        %@%                 \raise                                             %! FIGURE_NAME
-        %@%                     #0.25                                          %! FIGURE_NAME
-        %@%                     \fontsize                                      %! FIGURE_NAME
-        %@%                         #-2                                        %! FIGURE_NAME
-        %@%                         (39)                                       %! FIGURE_NAME
-        %@%                 ]                                                  %! FIGURE_NAME
-        %@%             }                                                      %! FIGURE_NAME
-        %@%     }                                                              %! FIGURE_NAME
+        %@% ^ \markup \fontsize #2 \concat { [ lh-5 4.4.8 \hspace #1 \raise #0.25 \fontsize #-2 (39) ] } %! FIGURE_NAME
 
             <bf!>8
 
@@ -5818,23 +4922,7 @@ D_LH_Voice_V = {                                                               %
 
             % [D LH_Voice_V measure 61 / measure 28]                           %! baca.SegmentMaker._comment_measure_numbers()
             r2
-        %@% ^ \markup {                                                        %! FIGURE_NAME
-        %@%     \fontsize                                                      %! FIGURE_NAME
-        %@%         #2                                                         %! FIGURE_NAME
-        %@%         \concat                                                    %! FIGURE_NAME
-        %@%             {                                                      %! FIGURE_NAME
-        %@%                 [                                                  %! FIGURE_NAME
-        %@%                 "lh-5 4.4.9"                                       %! FIGURE_NAME
-        %@%                 \hspace                                            %! FIGURE_NAME
-        %@%                     #1                                             %! FIGURE_NAME
-        %@%                 \raise                                             %! FIGURE_NAME
-        %@%                     #0.25                                          %! FIGURE_NAME
-        %@%                     \fontsize                                      %! FIGURE_NAME
-        %@%                         #-2                                        %! FIGURE_NAME
-        %@%                         (40)                                       %! FIGURE_NAME
-        %@%                 ]                                                  %! FIGURE_NAME
-        %@%             }                                                      %! FIGURE_NAME
-        %@%     }                                                              %! FIGURE_NAME
+        %@% ^ \markup \fontsize #2 \concat { [ lh-5 4.4.9 \hspace #1 \raise #0.25 \fontsize #-2 (40) ] } %! FIGURE_NAME
 
         }
 
@@ -5849,23 +4937,7 @@ D_LH_Voice_V = {                                                               %
 
                 % [D LH_Voice_V measure 62 / measure 29]                       %! baca.SegmentMaker._comment_measure_numbers()
                 r4
-            %@% ^ \markup {                                                    %! FIGURE_NAME
-            %@%     \fontsize                                                  %! FIGURE_NAME
-            %@%         #2                                                     %! FIGURE_NAME
-            %@%         \concat                                                %! FIGURE_NAME
-            %@%             {                                                  %! FIGURE_NAME
-            %@%                 [                                              %! FIGURE_NAME
-            %@%                 "lh-5 4.4.10"                                  %! FIGURE_NAME
-            %@%                 \hspace                                        %! FIGURE_NAME
-            %@%                     #1                                         %! FIGURE_NAME
-            %@%                 \raise                                         %! FIGURE_NAME
-            %@%                     #0.25                                      %! FIGURE_NAME
-            %@%                     \fontsize                                  %! FIGURE_NAME
-            %@%                         #-2                                    %! FIGURE_NAME
-            %@%                         (41)                                   %! FIGURE_NAME
-            %@%                 ]                                              %! FIGURE_NAME
-            %@%             }                                                  %! FIGURE_NAME
-            %@%     }                                                          %! FIGURE_NAME
+            %@% ^ \markup \fontsize #2 \concat { [ lh-5 4.4.10 \hspace #1 \raise #0.25 \fontsize #-2 (41) ] } %! FIGURE_NAME
 
                 \set stemLeftBeamCount = 0
                 \set stemRightBeamCount = 1
@@ -5897,23 +4969,7 @@ D_LH_Voice_V = {                                                               %
 
             % [D LH_Voice_V measure 63 / measure 30]                           %! baca.SegmentMaker._comment_measure_numbers()
             r8
-        %@% ^ \markup {                                                        %! FIGURE_NAME
-        %@%     \fontsize                                                      %! FIGURE_NAME
-        %@%         #2                                                         %! FIGURE_NAME
-        %@%         \concat                                                    %! FIGURE_NAME
-        %@%             {                                                      %! FIGURE_NAME
-        %@%                 [                                                  %! FIGURE_NAME
-        %@%                 "lh-5 4.4.11"                                      %! FIGURE_NAME
-        %@%                 \hspace                                            %! FIGURE_NAME
-        %@%                     #1                                             %! FIGURE_NAME
-        %@%                 \raise                                             %! FIGURE_NAME
-        %@%                     #0.25                                          %! FIGURE_NAME
-        %@%                     \fontsize                                      %! FIGURE_NAME
-        %@%                         #-2                                        %! FIGURE_NAME
-        %@%                         (42)                                       %! FIGURE_NAME
-        %@%                 ]                                                  %! FIGURE_NAME
-        %@%             }                                                      %! FIGURE_NAME
-        %@%     }                                                              %! FIGURE_NAME
+        %@% ^ \markup \fontsize #2 \concat { [ lh-5 4.4.11 \hspace #1 \raise #0.25 \fontsize #-2 (42) ] } %! FIGURE_NAME
 
             <c f bf!>4.
 
@@ -5927,23 +4983,7 @@ D_LH_Voice_V = {                                                               %
 
             % [D LH_Voice_V measure 64 / measure 31]                           %! baca.SegmentMaker._comment_measure_numbers()
             r8
-        %@% ^ \markup {                                                        %! FIGURE_NAME
-        %@%     \fontsize                                                      %! FIGURE_NAME
-        %@%         #2                                                         %! FIGURE_NAME
-        %@%         \concat                                                    %! FIGURE_NAME
-        %@%             {                                                      %! FIGURE_NAME
-        %@%                 [                                                  %! FIGURE_NAME
-        %@%                 "lh-5 4.4.12"                                      %! FIGURE_NAME
-        %@%                 \hspace                                            %! FIGURE_NAME
-        %@%                     #1                                             %! FIGURE_NAME
-        %@%                 \raise                                             %! FIGURE_NAME
-        %@%                     #0.25                                          %! FIGURE_NAME
-        %@%                     \fontsize                                      %! FIGURE_NAME
-        %@%                         #-2                                        %! FIGURE_NAME
-        %@%                         (43)                                       %! FIGURE_NAME
-        %@%                 ]                                                  %! FIGURE_NAME
-        %@%             }                                                      %! FIGURE_NAME
-        %@%     }                                                              %! FIGURE_NAME
+        %@% ^ \markup \fontsize #2 \concat { [ lh-5 4.4.12 \hspace #1 \raise #0.25 \fontsize #-2 (43) ] } %! FIGURE_NAME
 
             <d' e' af'!>8
 
@@ -5962,23 +5002,7 @@ D_LH_Voice_V = {                                                               %
 
             % [D LH_Voice_V measure 76 / measure 43]                           %! baca.SegmentMaker._comment_measure_numbers()
             r4
-        %@% ^ \markup {                                                        %! FIGURE_NAME
-        %@%     \fontsize                                                      %! FIGURE_NAME
-        %@%         #2                                                         %! FIGURE_NAME
-        %@%         \concat                                                    %! FIGURE_NAME
-        %@%             {                                                      %! FIGURE_NAME
-        %@%                 [                                                  %! FIGURE_NAME
-        %@%                 "lh-5 4.6.1"                                       %! FIGURE_NAME
-        %@%                 \hspace                                            %! FIGURE_NAME
-        %@%                     #1                                             %! FIGURE_NAME
-        %@%                 \raise                                             %! FIGURE_NAME
-        %@%                     #0.25                                          %! FIGURE_NAME
-        %@%                     \fontsize                                      %! FIGURE_NAME
-        %@%                         #-2                                        %! FIGURE_NAME
-        %@%                         (72)                                       %! FIGURE_NAME
-        %@%                 ]                                                  %! FIGURE_NAME
-        %@%             }                                                      %! FIGURE_NAME
-        %@%     }                                                              %! FIGURE_NAME
+        %@% ^ \markup \fontsize #2 \concat { [ lh-5 4.6.1 \hspace #1 \raise #0.25 \fontsize #-2 (72) ] } %! FIGURE_NAME
 
             af!8.
             - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
@@ -6705,23 +5729,7 @@ D_LH_Resonance_Voice = {                                                       %
 
                 % [D LH_Resonance_Voice measure 43 / measure 10]               %! baca.SegmentMaker._comment_measure_numbers()
                 s4
-            %@% ^ \markup {                                                    %! FIGURE_NAME
-            %@%     \fontsize                                                  %! FIGURE_NAME
-            %@%         #2                                                     %! FIGURE_NAME
-            %@%         \concat                                                %! FIGURE_NAME
-            %@%             {                                                  %! FIGURE_NAME
-            %@%                 [                                              %! FIGURE_NAME
-            %@%                 "lh-r 4.2.1"                                   %! FIGURE_NAME
-            %@%                 \hspace                                        %! FIGURE_NAME
-            %@%                     #1                                         %! FIGURE_NAME
-            %@%                 \raise                                         %! FIGURE_NAME
-            %@%                     #0.25                                      %! FIGURE_NAME
-            %@%                     \fontsize                                  %! FIGURE_NAME
-            %@%                         #-2                                    %! FIGURE_NAME
-            %@%                         (24)                                   %! FIGURE_NAME
-            %@%                 ]                                              %! FIGURE_NAME
-            %@%             }                                                  %! FIGURE_NAME
-            %@%     }                                                          %! FIGURE_NAME
+            %@% ^ \markup \fontsize #2 \concat { [ lh-r 4.2.1 \hspace #1 \raise #0.25 \fontsize #-2 (24) ] } %! FIGURE_NAME
 
                 <cs,,! cs,!>2
                 - \tweak stencil ##f                                           %! baca.SegmentMaker._attach_shadow_tie_indicators()
@@ -6742,23 +5750,7 @@ D_LH_Resonance_Voice = {                                                       %
             \override Dots.stencil = ##f                                       %! baca.dots_stencil_false():baca.OverrideCommand._call(1)
             \override Stem.stencil = ##f                                       %! baca.stem_stencil_false():baca.OverrideCommand._call(1)
             <cs,, cs,>4
-        %@% ^ \markup {                                                        %! FIGURE_NAME
-        %@%     \fontsize                                                      %! FIGURE_NAME
-        %@%         #2                                                         %! FIGURE_NAME
-        %@%         \concat                                                    %! FIGURE_NAME
-        %@%             {                                                      %! FIGURE_NAME
-        %@%                 [                                                  %! FIGURE_NAME
-        %@%                 "lh-r 4.2.2"                                       %! FIGURE_NAME
-        %@%                 \hspace                                            %! FIGURE_NAME
-        %@%                     #1                                             %! FIGURE_NAME
-        %@%                 \raise                                             %! FIGURE_NAME
-        %@%                     #0.25                                          %! FIGURE_NAME
-        %@%                     \fontsize                                      %! FIGURE_NAME
-        %@%                         #-2                                        %! FIGURE_NAME
-        %@%                         (25)                                       %! FIGURE_NAME
-        %@%                 ]                                                  %! FIGURE_NAME
-        %@%             }                                                      %! FIGURE_NAME
-        %@%     }                                                              %! FIGURE_NAME
+        %@% ^ \markup \fontsize #2 \concat { [ lh-r 4.2.2 \hspace #1 \raise #0.25 \fontsize #-2 (25) ] } %! FIGURE_NAME
             \repeatTie                                                         %! baca.repeat_tie():baca.IndicatorCommand._call()
             - \tweak stencil ##f                                               %! baca.SegmentMaker._attach_shadow_tie_indicators()
             ~                                                                  %! baca.SegmentMaker._attach_shadow_tie_indicators()
@@ -6772,23 +5764,7 @@ D_LH_Resonance_Voice = {                                                       %
         \scaleDurations #'(1 . 1) {
 
             <cs,, cs,>1
-        %@% ^ \markup {                                                        %! FIGURE_NAME
-        %@%     \fontsize                                                      %! FIGURE_NAME
-        %@%         #2                                                         %! FIGURE_NAME
-        %@%         \concat                                                    %! FIGURE_NAME
-        %@%             {                                                      %! FIGURE_NAME
-        %@%                 [                                                  %! FIGURE_NAME
-        %@%                 "lh-r 4.2.3"                                       %! FIGURE_NAME
-        %@%                 \hspace                                            %! FIGURE_NAME
-        %@%                     #1                                             %! FIGURE_NAME
-        %@%                 \raise                                             %! FIGURE_NAME
-        %@%                     #0.25                                          %! FIGURE_NAME
-        %@%                     \fontsize                                      %! FIGURE_NAME
-        %@%                         #-2                                        %! FIGURE_NAME
-        %@%                         (26)                                       %! FIGURE_NAME
-        %@%                 ]                                                  %! FIGURE_NAME
-        %@%             }                                                      %! FIGURE_NAME
-        %@%     }                                                              %! FIGURE_NAME
+        %@% ^ \markup \fontsize #2 \concat { [ lh-r 4.2.3 \hspace #1 \raise #0.25 \fontsize #-2 (26) ] } %! FIGURE_NAME
             \repeatTie                                                         %! baca.repeat_tie():baca.IndicatorCommand._call()
             \revert Accidental.stencil                                         %! baca.accidental_stencil_false():baca.OverrideCommand._call(2)
             \revert Dots.stencil                                               %! baca.dots_stencil_false():baca.OverrideCommand._call(2)
@@ -6810,23 +5786,7 @@ D_LH_Resonance_Voice = {                                                       %
 
                 % [D LH_Resonance_Voice measure 47 / measure 14]               %! baca.SegmentMaker._comment_measure_numbers()
                 s4
-            %@% ^ \markup {                                                    %! FIGURE_NAME
-            %@%     \fontsize                                                  %! FIGURE_NAME
-            %@%         #2                                                     %! FIGURE_NAME
-            %@%         \concat                                                %! FIGURE_NAME
-            %@%             {                                                  %! FIGURE_NAME
-            %@%                 [                                              %! FIGURE_NAME
-            %@%                 "lh-r 4.2.4"                                   %! FIGURE_NAME
-            %@%                 \hspace                                        %! FIGURE_NAME
-            %@%                     #1                                         %! FIGURE_NAME
-            %@%                 \raise                                         %! FIGURE_NAME
-            %@%                     #0.25                                      %! FIGURE_NAME
-            %@%                     \fontsize                                  %! FIGURE_NAME
-            %@%                         #-2                                    %! FIGURE_NAME
-            %@%                         (27)                                   %! FIGURE_NAME
-            %@%                 ]                                              %! FIGURE_NAME
-            %@%             }                                                  %! FIGURE_NAME
-            %@%     }                                                          %! FIGURE_NAME
+            %@% ^ \markup \fontsize #2 \concat { [ lh-r 4.2.4 \hspace #1 \raise #0.25 \fontsize #-2 (27) ] } %! FIGURE_NAME
 
                 <ef,,! ef,!>2
                 - \tweak stencil ##f                                           %! baca.SegmentMaker._attach_shadow_tie_indicators()
@@ -6847,23 +5807,7 @@ D_LH_Resonance_Voice = {                                                       %
             \override Dots.stencil = ##f                                       %! baca.dots_stencil_false():baca.OverrideCommand._call(1)
             \override Stem.stencil = ##f                                       %! baca.stem_stencil_false():baca.OverrideCommand._call(1)
             <ef,, ef,>4
-        %@% ^ \markup {                                                        %! FIGURE_NAME
-        %@%     \fontsize                                                      %! FIGURE_NAME
-        %@%         #2                                                         %! FIGURE_NAME
-        %@%         \concat                                                    %! FIGURE_NAME
-        %@%             {                                                      %! FIGURE_NAME
-        %@%                 [                                                  %! FIGURE_NAME
-        %@%                 "lh-r 4.2.5"                                       %! FIGURE_NAME
-        %@%                 \hspace                                            %! FIGURE_NAME
-        %@%                     #1                                             %! FIGURE_NAME
-        %@%                 \raise                                             %! FIGURE_NAME
-        %@%                     #0.25                                          %! FIGURE_NAME
-        %@%                     \fontsize                                      %! FIGURE_NAME
-        %@%                         #-2                                        %! FIGURE_NAME
-        %@%                         (28)                                       %! FIGURE_NAME
-        %@%                 ]                                                  %! FIGURE_NAME
-        %@%             }                                                      %! FIGURE_NAME
-        %@%     }                                                              %! FIGURE_NAME
+        %@% ^ \markup \fontsize #2 \concat { [ lh-r 4.2.5 \hspace #1 \raise #0.25 \fontsize #-2 (28) ] } %! FIGURE_NAME
             \repeatTie                                                         %! baca.repeat_tie():baca.IndicatorCommand._call()
             - \tweak stencil ##f                                               %! baca.SegmentMaker._attach_shadow_tie_indicators()
             ~                                                                  %! baca.SegmentMaker._attach_shadow_tie_indicators()
@@ -6877,23 +5821,7 @@ D_LH_Resonance_Voice = {                                                       %
         \scaleDurations #'(1 . 1) {
 
             <ef,, ef,>1
-        %@% ^ \markup {                                                        %! FIGURE_NAME
-        %@%     \fontsize                                                      %! FIGURE_NAME
-        %@%         #2                                                         %! FIGURE_NAME
-        %@%         \concat                                                    %! FIGURE_NAME
-        %@%             {                                                      %! FIGURE_NAME
-        %@%                 [                                                  %! FIGURE_NAME
-        %@%                 "lh-r 4.2.6"                                       %! FIGURE_NAME
-        %@%                 \hspace                                            %! FIGURE_NAME
-        %@%                     #1                                             %! FIGURE_NAME
-        %@%                 \raise                                             %! FIGURE_NAME
-        %@%                     #0.25                                          %! FIGURE_NAME
-        %@%                     \fontsize                                      %! FIGURE_NAME
-        %@%                         #-2                                        %! FIGURE_NAME
-        %@%                         (29)                                       %! FIGURE_NAME
-        %@%                 ]                                                  %! FIGURE_NAME
-        %@%             }                                                      %! FIGURE_NAME
-        %@%     }                                                              %! FIGURE_NAME
+        %@% ^ \markup \fontsize #2 \concat { [ lh-r 4.2.6 \hspace #1 \raise #0.25 \fontsize #-2 (29) ] } %! FIGURE_NAME
             \repeatTie                                                         %! baca.repeat_tie():baca.IndicatorCommand._call()
             \revert Accidental.stencil                                         %! baca.accidental_stencil_false():baca.OverrideCommand._call(2)
             \revert Dots.stencil                                               %! baca.dots_stencil_false():baca.OverrideCommand._call(2)
@@ -6913,23 +5841,7 @@ D_LH_Resonance_Voice = {                                                       %
             % [D LH_Resonance_Voice measure 65 / measure 32]                   %! baca.SegmentMaker._comment_measure_numbers()
             \once \override Accidental.X-extent = ##f                          %! baca.accidental_x_extent_false():baca.OverrideCommand._call(1)
             <e, fs,! gs,! as,! b,>4
-        %@% ^ \markup {                                                        %! FIGURE_NAME
-        %@%     \fontsize                                                      %! FIGURE_NAME
-        %@%         #2                                                         %! FIGURE_NAME
-        %@%         \concat                                                    %! FIGURE_NAME
-        %@%             {                                                      %! FIGURE_NAME
-        %@%                 [                                                  %! FIGURE_NAME
-        %@%                 "lh-r 4.5.1"                                       %! FIGURE_NAME
-        %@%                 \hspace                                            %! FIGURE_NAME
-        %@%                     #1                                             %! FIGURE_NAME
-        %@%                 \raise                                             %! FIGURE_NAME
-        %@%                     #0.25                                          %! FIGURE_NAME
-        %@%                     \fontsize                                      %! FIGURE_NAME
-        %@%                         #-2                                        %! FIGURE_NAME
-        %@%                         (48)                                       %! FIGURE_NAME
-        %@%                 ]                                                  %! FIGURE_NAME
-        %@%             }                                                      %! FIGURE_NAME
-        %@%     }                                                              %! FIGURE_NAME
+        %@% ^ \markup \fontsize #2 \concat { [ lh-r 4.5.1 \hspace #1 \raise #0.25 \fontsize #-2 (48) ] } %! FIGURE_NAME
             - \tweak stencil ##f                                               %! baca.SegmentMaker._attach_shadow_tie_indicators()
             ~                                                                  %! baca.SegmentMaker._attach_shadow_tie_indicators()
 
@@ -6946,23 +5858,7 @@ D_LH_Resonance_Voice = {                                                       %
             \override Dots.stencil = ##f                                       %! baca.dots_stencil_false():baca.OverrideCommand._call(1)
             \override Stem.stencil = ##f                                       %! baca.stem_stencil_false():baca.OverrideCommand._call(1)
             <e, fs, gs, as, b,>1..
-        %@% ^ \markup {                                                        %! FIGURE_NAME
-        %@%     \fontsize                                                      %! FIGURE_NAME
-        %@%         #2                                                         %! FIGURE_NAME
-        %@%         \concat                                                    %! FIGURE_NAME
-        %@%             {                                                      %! FIGURE_NAME
-        %@%                 [                                                  %! FIGURE_NAME
-        %@%                 "lh-r 4.5.2"                                       %! FIGURE_NAME
-        %@%                 \hspace                                            %! FIGURE_NAME
-        %@%                     #1                                             %! FIGURE_NAME
-        %@%                 \raise                                             %! FIGURE_NAME
-        %@%                     #0.25                                          %! FIGURE_NAME
-        %@%                     \fontsize                                      %! FIGURE_NAME
-        %@%                         #-2                                        %! FIGURE_NAME
-        %@%                         (49)                                       %! FIGURE_NAME
-        %@%                 ]                                                  %! FIGURE_NAME
-        %@%             }                                                      %! FIGURE_NAME
-        %@%     }                                                              %! FIGURE_NAME
+        %@% ^ \markup \fontsize #2 \concat { [ lh-r 4.5.2 \hspace #1 \raise #0.25 \fontsize #-2 (49) ] } %! FIGURE_NAME
             \repeatTie                                                         %! baca.repeat_tie():baca.IndicatorCommand._call()
             - \tweak stencil ##f                                               %! baca.SegmentMaker._attach_shadow_tie_indicators()
             ~                                                                  %! baca.SegmentMaker._attach_shadow_tie_indicators()
@@ -6977,23 +5873,7 @@ D_LH_Resonance_Voice = {                                                       %
 
             % [D LH_Resonance_Voice measure 67 / measure 34]                   %! baca.SegmentMaker._comment_measure_numbers()
             <e, fs, gs, as, b,>1.
-        %@% ^ \markup {                                                        %! FIGURE_NAME
-        %@%     \fontsize                                                      %! FIGURE_NAME
-        %@%         #2                                                         %! FIGURE_NAME
-        %@%         \concat                                                    %! FIGURE_NAME
-        %@%             {                                                      %! FIGURE_NAME
-        %@%                 [                                                  %! FIGURE_NAME
-        %@%                 "lh-r 4.5.3"                                       %! FIGURE_NAME
-        %@%                 \hspace                                            %! FIGURE_NAME
-        %@%                     #1                                             %! FIGURE_NAME
-        %@%                 \raise                                             %! FIGURE_NAME
-        %@%                     #0.25                                          %! FIGURE_NAME
-        %@%                     \fontsize                                      %! FIGURE_NAME
-        %@%                         #-2                                        %! FIGURE_NAME
-        %@%                         (50)                                       %! FIGURE_NAME
-        %@%                 ]                                                  %! FIGURE_NAME
-        %@%             }                                                      %! FIGURE_NAME
-        %@%     }                                                              %! FIGURE_NAME
+        %@% ^ \markup \fontsize #2 \concat { [ lh-r 4.5.3 \hspace #1 \raise #0.25 \fontsize #-2 (50) ] } %! FIGURE_NAME
             \repeatTie                                                         %! baca.repeat_tie():baca.IndicatorCommand._call()
             - \tweak stencil ##f                                               %! baca.SegmentMaker._attach_shadow_tie_indicators()
             ~                                                                  %! baca.SegmentMaker._attach_shadow_tie_indicators()
@@ -7008,23 +5888,7 @@ D_LH_Resonance_Voice = {                                                       %
 
             % [D LH_Resonance_Voice measure 68 / measure 35]                   %! baca.SegmentMaker._comment_measure_numbers()
             <e, fs, gs, as, b,>1
-        %@% ^ \markup {                                                        %! FIGURE_NAME
-        %@%     \fontsize                                                      %! FIGURE_NAME
-        %@%         #2                                                         %! FIGURE_NAME
-        %@%         \concat                                                    %! FIGURE_NAME
-        %@%             {                                                      %! FIGURE_NAME
-        %@%                 [                                                  %! FIGURE_NAME
-        %@%                 "lh-r 4.5.4"                                       %! FIGURE_NAME
-        %@%                 \hspace                                            %! FIGURE_NAME
-        %@%                     #1                                             %! FIGURE_NAME
-        %@%                 \raise                                             %! FIGURE_NAME
-        %@%                     #0.25                                          %! FIGURE_NAME
-        %@%                     \fontsize                                      %! FIGURE_NAME
-        %@%                         #-2                                        %! FIGURE_NAME
-        %@%                         (51)                                       %! FIGURE_NAME
-        %@%                 ]                                                  %! FIGURE_NAME
-        %@%             }                                                      %! FIGURE_NAME
-        %@%     }                                                              %! FIGURE_NAME
+        %@% ^ \markup \fontsize #2 \concat { [ lh-r 4.5.4 \hspace #1 \raise #0.25 \fontsize #-2 (51) ] } %! FIGURE_NAME
             \repeatTie                                                         %! baca.repeat_tie():baca.IndicatorCommand._call()
             - \tweak stencil ##f                                               %! baca.SegmentMaker._attach_shadow_tie_indicators()
             ~                                                                  %! baca.SegmentMaker._attach_shadow_tie_indicators()
@@ -7039,23 +5903,7 @@ D_LH_Resonance_Voice = {                                                       %
 
             % [D LH_Resonance_Voice measure 69 / measure 36]                   %! baca.SegmentMaker._comment_measure_numbers()
             <e, fs, gs, as, b,>1
-        %@% ^ \markup {                                                        %! FIGURE_NAME
-        %@%     \fontsize                                                      %! FIGURE_NAME
-        %@%         #2                                                         %! FIGURE_NAME
-        %@%         \concat                                                    %! FIGURE_NAME
-        %@%             {                                                      %! FIGURE_NAME
-        %@%                 [                                                  %! FIGURE_NAME
-        %@%                 "lh-r 4.5.5"                                       %! FIGURE_NAME
-        %@%                 \hspace                                            %! FIGURE_NAME
-        %@%                     #1                                             %! FIGURE_NAME
-        %@%                 \raise                                             %! FIGURE_NAME
-        %@%                     #0.25                                          %! FIGURE_NAME
-        %@%                     \fontsize                                      %! FIGURE_NAME
-        %@%                         #-2                                        %! FIGURE_NAME
-        %@%                         (52)                                       %! FIGURE_NAME
-        %@%                 ]                                                  %! FIGURE_NAME
-        %@%             }                                                      %! FIGURE_NAME
-        %@%     }                                                              %! FIGURE_NAME
+        %@% ^ \markup \fontsize #2 \concat { [ lh-r 4.5.5 \hspace #1 \raise #0.25 \fontsize #-2 (52) ] } %! FIGURE_NAME
             \repeatTie                                                         %! baca.repeat_tie():baca.IndicatorCommand._call()
             - \tweak stencil ##f                                               %! baca.SegmentMaker._attach_shadow_tie_indicators()
             ~                                                                  %! baca.SegmentMaker._attach_shadow_tie_indicators()
@@ -7070,23 +5918,7 @@ D_LH_Resonance_Voice = {                                                       %
 
             % [D LH_Resonance_Voice measure 70 / measure 37]                   %! baca.SegmentMaker._comment_measure_numbers()
             <e, fs, gs, as, b,>1.
-        %@% ^ \markup {                                                        %! FIGURE_NAME
-        %@%     \fontsize                                                      %! FIGURE_NAME
-        %@%         #2                                                         %! FIGURE_NAME
-        %@%         \concat                                                    %! FIGURE_NAME
-        %@%             {                                                      %! FIGURE_NAME
-        %@%                 [                                                  %! FIGURE_NAME
-        %@%                 "lh-r 4.5.6"                                       %! FIGURE_NAME
-        %@%                 \hspace                                            %! FIGURE_NAME
-        %@%                     #1                                             %! FIGURE_NAME
-        %@%                 \raise                                             %! FIGURE_NAME
-        %@%                     #0.25                                          %! FIGURE_NAME
-        %@%                     \fontsize                                      %! FIGURE_NAME
-        %@%                         #-2                                        %! FIGURE_NAME
-        %@%                         (53)                                       %! FIGURE_NAME
-        %@%                 ]                                                  %! FIGURE_NAME
-        %@%             }                                                      %! FIGURE_NAME
-        %@%     }                                                              %! FIGURE_NAME
+        %@% ^ \markup \fontsize #2 \concat { [ lh-r 4.5.6 \hspace #1 \raise #0.25 \fontsize #-2 (53) ] } %! FIGURE_NAME
             \repeatTie                                                         %! baca.repeat_tie():baca.IndicatorCommand._call()
             - \tweak stencil ##f                                               %! baca.SegmentMaker._attach_shadow_tie_indicators()
             ~                                                                  %! baca.SegmentMaker._attach_shadow_tie_indicators()
@@ -7101,23 +5933,7 @@ D_LH_Resonance_Voice = {                                                       %
 
             % [D LH_Resonance_Voice measure 71 / measure 38]                   %! baca.SegmentMaker._comment_measure_numbers()
             <e, fs, gs, as, b,>1
-        %@% ^ \markup {                                                        %! FIGURE_NAME
-        %@%     \fontsize                                                      %! FIGURE_NAME
-        %@%         #2                                                         %! FIGURE_NAME
-        %@%         \concat                                                    %! FIGURE_NAME
-        %@%             {                                                      %! FIGURE_NAME
-        %@%                 [                                                  %! FIGURE_NAME
-        %@%                 "lh-r 4.5.7"                                       %! FIGURE_NAME
-        %@%                 \hspace                                            %! FIGURE_NAME
-        %@%                     #1                                             %! FIGURE_NAME
-        %@%                 \raise                                             %! FIGURE_NAME
-        %@%                     #0.25                                          %! FIGURE_NAME
-        %@%                     \fontsize                                      %! FIGURE_NAME
-        %@%                         #-2                                        %! FIGURE_NAME
-        %@%                         (54)                                       %! FIGURE_NAME
-        %@%                 ]                                                  %! FIGURE_NAME
-        %@%             }                                                      %! FIGURE_NAME
-        %@%     }                                                              %! FIGURE_NAME
+        %@% ^ \markup \fontsize #2 \concat { [ lh-r 4.5.7 \hspace #1 \raise #0.25 \fontsize #-2 (54) ] } %! FIGURE_NAME
             \repeatTie                                                         %! baca.repeat_tie():baca.IndicatorCommand._call()
             - \tweak stencil ##f                                               %! baca.SegmentMaker._attach_shadow_tie_indicators()
             ~                                                                  %! baca.SegmentMaker._attach_shadow_tie_indicators()
@@ -7132,23 +5948,7 @@ D_LH_Resonance_Voice = {                                                       %
 
             % [D LH_Resonance_Voice measure 72 / measure 39]                   %! baca.SegmentMaker._comment_measure_numbers()
             <e, fs, gs, as, b,>2
-        %@% ^ \markup {                                                        %! FIGURE_NAME
-        %@%     \fontsize                                                      %! FIGURE_NAME
-        %@%         #2                                                         %! FIGURE_NAME
-        %@%         \concat                                                    %! FIGURE_NAME
-        %@%             {                                                      %! FIGURE_NAME
-        %@%                 [                                                  %! FIGURE_NAME
-        %@%                 "lh-r 4.5.8"                                       %! FIGURE_NAME
-        %@%                 \hspace                                            %! FIGURE_NAME
-        %@%                     #1                                             %! FIGURE_NAME
-        %@%                 \raise                                             %! FIGURE_NAME
-        %@%                     #0.25                                          %! FIGURE_NAME
-        %@%                     \fontsize                                      %! FIGURE_NAME
-        %@%                         #-2                                        %! FIGURE_NAME
-        %@%                         (55)                                       %! FIGURE_NAME
-        %@%                 ]                                                  %! FIGURE_NAME
-        %@%             }                                                      %! FIGURE_NAME
-        %@%     }                                                              %! FIGURE_NAME
+        %@% ^ \markup \fontsize #2 \concat { [ lh-r 4.5.8 \hspace #1 \raise #0.25 \fontsize #-2 (55) ] } %! FIGURE_NAME
             \repeatTie                                                         %! baca.repeat_tie():baca.IndicatorCommand._call()
             \revert Accidental.stencil                                         %! baca.accidental_stencil_false():baca.OverrideCommand._call(2)
             \revert Dots.stencil                                               %! baca.dots_stencil_false():baca.OverrideCommand._call(2)
