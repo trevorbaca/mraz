@@ -2975,10 +2975,8 @@ class SilverDesignMaker(object):
                 parts = segment.partition_by_counts([7, 3], cyclic=True, overhang=True)
                 part_segments = []
                 for i, part in enumerate(parts):
-                    # name = f'{source}_{}'
-                    markup = [abjad.Markup(source)]
-                    markup.append(abjad.Markup(i).sub())
-                    markup = abjad.Markup.concat(markup)
+                    string = rf"\concat {{ {source} \sub {i} }}"
+                    markup = abjad.Markup(string)
                     part_segment = baca.PitchClassSegment(part)
                     part_segments.append(part_segment)
                 new_segments.append(part_segments)
