@@ -279,23 +279,7 @@ E_RH_Voice_III = {                                                             %
             \pp                                                                %! baca.dynamic():baca.IndicatorCommand._call():baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
             - \staccato                                                        %! baca.staccato():baca.IndicatorCommand._call()
             - \tenuto                                                          %! baca.tenuto():baca.IndicatorCommand._call()
-        %@% ^ \markup {                                                        %! FIGURE_NAME
-        %@%     \fontsize                                                      %! FIGURE_NAME
-        %@%         #2                                                         %! FIGURE_NAME
-        %@%         \concat                                                    %! FIGURE_NAME
-        %@%             {                                                      %! FIGURE_NAME
-        %@%                 [                                                  %! FIGURE_NAME
-        %@%                 "rh-3 6.1.1"                                       %! FIGURE_NAME
-        %@%                 \hspace                                            %! FIGURE_NAME
-        %@%                     #1                                             %! FIGURE_NAME
-        %@%                 \raise                                             %! FIGURE_NAME
-        %@%                     #0.25                                          %! FIGURE_NAME
-        %@%                     \fontsize                                      %! FIGURE_NAME
-        %@%                         #-2                                        %! FIGURE_NAME
-        %@%                         (0)                                        %! FIGURE_NAME
-        %@%                 ]                                                  %! FIGURE_NAME
-        %@%             }                                                      %! FIGURE_NAME
-        %@%     }                                                              %! FIGURE_NAME
+        %@% ^ \markup \fontsize #2 \concat { [ rh-3 6.1.1 \hspace #1 \raise #0.25 \fontsize #-2 (0) ] } %! FIGURE_NAME
             - \abjad-dashed-line-with-hook                                     %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(2):SPANNER_START
             - \baca-text-spanner-left-text "baca.music()"                      %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(2):SPANNER_START
             - \tweak bound-details.right.padding #2.75                         %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(2):AUTODETECT:SPANNER_START
@@ -350,23 +334,7 @@ E_RH_Voice_III = {                                                             %
             bf'''!8
             - \staccato                                                        %! baca.staccato():baca.IndicatorCommand._call()
             - \tenuto                                                          %! baca.tenuto():baca.IndicatorCommand._call()
-        %@% ^ \markup {                                                        %! FIGURE_NAME
-        %@%     \fontsize                                                      %! FIGURE_NAME
-        %@%         #2                                                         %! FIGURE_NAME
-        %@%         \concat                                                    %! FIGURE_NAME
-        %@%             {                                                      %! FIGURE_NAME
-        %@%                 [                                                  %! FIGURE_NAME
-        %@%                 "rh-3 6.1.2"                                       %! FIGURE_NAME
-        %@%                 \hspace                                            %! FIGURE_NAME
-        %@%                     #1                                             %! FIGURE_NAME
-        %@%                 \raise                                             %! FIGURE_NAME
-        %@%                     #0.25                                          %! FIGURE_NAME
-        %@%                     \fontsize                                      %! FIGURE_NAME
-        %@%                         #-2                                        %! FIGURE_NAME
-        %@%                         (1)                                        %! FIGURE_NAME
-        %@%                 ]                                                  %! FIGURE_NAME
-        %@%             }                                                      %! FIGURE_NAME
-        %@%     }                                                              %! FIGURE_NAME
+        %@% ^ \markup \fontsize #2 \concat { [ rh-3 6.1.2 \hspace #1 \raise #0.25 \fontsize #-2 (1) ] } %! FIGURE_NAME
 
             cs'''!8
             - \staccato                                                        %! baca.staccato():baca.IndicatorCommand._call()
@@ -388,23 +356,7 @@ E_RH_Voice_III = {                                                             %
 
             % [E RH_Voice_III measure 80 / measure 3]                          %! baca.SegmentMaker._comment_measure_numbers()
             r8
-        %@% ^ \markup {                                                        %! FIGURE_NAME
-        %@%     \fontsize                                                      %! FIGURE_NAME
-        %@%         #2                                                         %! FIGURE_NAME
-        %@%         \concat                                                    %! FIGURE_NAME
-        %@%             {                                                      %! FIGURE_NAME
-        %@%                 [                                                  %! FIGURE_NAME
-        %@%                 "rh-3 6.1.3"                                       %! FIGURE_NAME
-        %@%                 \hspace                                            %! FIGURE_NAME
-        %@%                     #1                                             %! FIGURE_NAME
-        %@%                 \raise                                             %! FIGURE_NAME
-        %@%                     #0.25                                          %! FIGURE_NAME
-        %@%                     \fontsize                                      %! FIGURE_NAME
-        %@%                         #-2                                        %! FIGURE_NAME
-        %@%                         (2)                                        %! FIGURE_NAME
-        %@%                 ]                                                  %! FIGURE_NAME
-        %@%             }                                                      %! FIGURE_NAME
-        %@%     }                                                              %! FIGURE_NAME
+        %@% ^ \markup \fontsize #2 \concat { [ rh-3 6.1.3 \hspace #1 \raise #0.25 \fontsize #-2 (2) ] } %! FIGURE_NAME
 
             d'''8
             - \staccato                                                        %! baca.staccato():baca.IndicatorCommand._call()
@@ -442,23 +394,7 @@ E_RH_Voice_III = {                                                             %
             af''!8
             - \staccato                                                        %! baca.staccato():baca.IndicatorCommand._call()
             - \tenuto                                                          %! baca.tenuto():baca.IndicatorCommand._call()
-        %@% ^ \markup {                                                        %! FIGURE_NAME
-        %@%     \fontsize                                                      %! FIGURE_NAME
-        %@%         #2                                                         %! FIGURE_NAME
-        %@%         \concat                                                    %! FIGURE_NAME
-        %@%             {                                                      %! FIGURE_NAME
-        %@%                 [                                                  %! FIGURE_NAME
-        %@%                 "rh-3 6.1.4"                                       %! FIGURE_NAME
-        %@%                 \hspace                                            %! FIGURE_NAME
-        %@%                     #1                                             %! FIGURE_NAME
-        %@%                 \raise                                             %! FIGURE_NAME
-        %@%                     #0.25                                          %! FIGURE_NAME
-        %@%                     \fontsize                                      %! FIGURE_NAME
-        %@%                         #-2                                        %! FIGURE_NAME
-        %@%                         (3)                                        %! FIGURE_NAME
-        %@%                 ]                                                  %! FIGURE_NAME
-        %@%             }                                                      %! FIGURE_NAME
-        %@%     }                                                              %! FIGURE_NAME
+        %@% ^ \markup \fontsize #2 \concat { [ rh-3 6.1.4 \hspace #1 \raise #0.25 \fontsize #-2 (3) ] } %! FIGURE_NAME
 
             e''8
             - \staccato                                                        %! baca.staccato():baca.IndicatorCommand._call()
@@ -935,23 +871,7 @@ E_LH_Voice_IV = {                                                              %
             - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
             \mp                                                                %! baca.dynamic():baca.IndicatorCommand._call():baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
             - \tenuto                                                          %! baca.tenuto():baca.IndicatorCommand._call()
-        %@% ^ \markup {                                                        %! FIGURE_NAME
-        %@%     \fontsize                                                      %! FIGURE_NAME
-        %@%         #2                                                         %! FIGURE_NAME
-        %@%         \concat                                                    %! FIGURE_NAME
-        %@%             {                                                      %! FIGURE_NAME
-        %@%                 [                                                  %! FIGURE_NAME
-        %@%                 "lh-4 6.1.1"                                       %! FIGURE_NAME
-        %@%                 \hspace                                            %! FIGURE_NAME
-        %@%                     #1                                             %! FIGURE_NAME
-        %@%                 \raise                                             %! FIGURE_NAME
-        %@%                     #0.25                                          %! FIGURE_NAME
-        %@%                     \fontsize                                      %! FIGURE_NAME
-        %@%                         #-2                                        %! FIGURE_NAME
-        %@%                         (4)                                        %! FIGURE_NAME
-        %@%                 ]                                                  %! FIGURE_NAME
-        %@%             }                                                      %! FIGURE_NAME
-        %@%     }                                                              %! FIGURE_NAME
+        %@% ^ \markup \fontsize #2 \concat { [ lh-4 6.1.1 \hspace #1 \raise #0.25 \fontsize #-2 (4) ] } %! FIGURE_NAME
 
             r16
 
@@ -985,23 +905,7 @@ E_LH_Voice_IV = {                                                              %
             \override TupletBracket.staff-padding = #3                         %! baca.tuplet_bracket_staff_padding():baca.OverrideCommand._call(1)
             b'16
             - \tenuto                                                          %! baca.tenuto():baca.IndicatorCommand._call()
-        %@% ^ \markup {                                                        %! FIGURE_NAME
-        %@%     \fontsize                                                      %! FIGURE_NAME
-        %@%         #2                                                         %! FIGURE_NAME
-        %@%         \concat                                                    %! FIGURE_NAME
-        %@%             {                                                      %! FIGURE_NAME
-        %@%                 [                                                  %! FIGURE_NAME
-        %@%                 "lh-4 6.1.2"                                       %! FIGURE_NAME
-        %@%                 \hspace                                            %! FIGURE_NAME
-        %@%                     #1                                             %! FIGURE_NAME
-        %@%                 \raise                                             %! FIGURE_NAME
-        %@%                     #0.25                                          %! FIGURE_NAME
-        %@%                     \fontsize                                      %! FIGURE_NAME
-        %@%                         #-2                                        %! FIGURE_NAME
-        %@%                         (5)                                        %! FIGURE_NAME
-        %@%                 ]                                                  %! FIGURE_NAME
-        %@%             }                                                      %! FIGURE_NAME
-        %@%     }                                                              %! FIGURE_NAME
+        %@% ^ \markup \fontsize #2 \concat { [ lh-4 6.1.2 \hspace #1 \raise #0.25 \fontsize #-2 (5) ] } %! FIGURE_NAME
 
             r8
 
@@ -1033,23 +937,7 @@ E_LH_Voice_IV = {                                                              %
 
             d'16
             - \tenuto                                                          %! baca.tenuto():baca.IndicatorCommand._call()
-        %@% ^ \markup {                                                        %! FIGURE_NAME
-        %@%     \fontsize                                                      %! FIGURE_NAME
-        %@%         #2                                                         %! FIGURE_NAME
-        %@%         \concat                                                    %! FIGURE_NAME
-        %@%             {                                                      %! FIGURE_NAME
-        %@%                 [                                                  %! FIGURE_NAME
-        %@%                 "lh-4 6.1.3"                                       %! FIGURE_NAME
-        %@%                 \hspace                                            %! FIGURE_NAME
-        %@%                     #1                                             %! FIGURE_NAME
-        %@%                 \raise                                             %! FIGURE_NAME
-        %@%                     #0.25                                          %! FIGURE_NAME
-        %@%                     \fontsize                                      %! FIGURE_NAME
-        %@%                         #-2                                        %! FIGURE_NAME
-        %@%                         (6)                                        %! FIGURE_NAME
-        %@%                 ]                                                  %! FIGURE_NAME
-        %@%             }                                                      %! FIGURE_NAME
-        %@%     }                                                              %! FIGURE_NAME
+        %@% ^ \markup \fontsize #2 \concat { [ lh-4 6.1.3 \hspace #1 \raise #0.25 \fontsize #-2 (6) ] } %! FIGURE_NAME
 
             r32
 
@@ -1084,23 +972,7 @@ E_LH_Voice_IV = {                                                              %
             % [E LH_Voice_IV measure 81 / measure 4]                           %! baca.SegmentMaker._comment_measure_numbers()
             fs''!16
             - \tenuto                                                          %! baca.tenuto():baca.IndicatorCommand._call()
-        %@% ^ \markup {                                                        %! FIGURE_NAME
-        %@%     \fontsize                                                      %! FIGURE_NAME
-        %@%         #2                                                         %! FIGURE_NAME
-        %@%         \concat                                                    %! FIGURE_NAME
-        %@%             {                                                      %! FIGURE_NAME
-        %@%                 [                                                  %! FIGURE_NAME
-        %@%                 "lh-4 6.1.4"                                       %! FIGURE_NAME
-        %@%                 \hspace                                            %! FIGURE_NAME
-        %@%                     #1                                             %! FIGURE_NAME
-        %@%                 \raise                                             %! FIGURE_NAME
-        %@%                     #0.25                                          %! FIGURE_NAME
-        %@%                     \fontsize                                      %! FIGURE_NAME
-        %@%                         #-2                                        %! FIGURE_NAME
-        %@%                         (7)                                        %! FIGURE_NAME
-        %@%                 ]                                                  %! FIGURE_NAME
-        %@%             }                                                      %! FIGURE_NAME
-        %@%     }                                                              %! FIGURE_NAME
+        %@% ^ \markup \fontsize #2 \concat { [ lh-4 6.1.4 \hspace #1 \raise #0.25 \fontsize #-2 (7) ] } %! FIGURE_NAME
 
             r32
 

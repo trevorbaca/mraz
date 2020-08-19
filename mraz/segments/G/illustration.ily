@@ -244,23 +244,7 @@ G_RH_Voice_I = {                                                               %
                 e''16
                 - \tweak color #(x11-color 'blue)                              %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
                 \fff                                                           %! baca.dynamic():baca.IndicatorCommand._call():baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
-            %@% ^ \markup {                                                    %! FIGURE_NAME
-            %@%     \fontsize                                                  %! FIGURE_NAME
-            %@%         #2                                                     %! FIGURE_NAME
-            %@%         \concat                                                %! FIGURE_NAME
-            %@%             {                                                  %! FIGURE_NAME
-            %@%                 [                                              %! FIGURE_NAME
-            %@%                 "rh-1 7.1.1"                                   %! FIGURE_NAME
-            %@%                 \hspace                                        %! FIGURE_NAME
-            %@%                     #1                                         %! FIGURE_NAME
-            %@%                 \raise                                         %! FIGURE_NAME
-            %@%                     #0.25                                      %! FIGURE_NAME
-            %@%                     \fontsize                                  %! FIGURE_NAME
-            %@%                         #-2                                    %! FIGURE_NAME
-            %@%                         (0)                                    %! FIGURE_NAME
-            %@%                 ]                                              %! FIGURE_NAME
-            %@%             }                                                  %! FIGURE_NAME
-            %@%     }                                                          %! FIGURE_NAME
+            %@% ^ \markup \fontsize #2 \concat { [ rh-1 7.1.1 \hspace #1 \raise #0.25 \fontsize #-2 (0) ] } %! FIGURE_NAME
                 ^ \baca-reapplied-indicator-markup "(“Piano”)"                 %! REAPPLIED_INSTRUMENT_ALERT:baca.SegmentMaker._attach_latent_indicator_alert()
                 [
                 - \abjad-dashed-line-with-hook                                 %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(2):SPANNER_START
@@ -348,23 +332,7 @@ G_RH_Voice_I = {                                                               %
                 \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 2
                 fs''!16
-            %@% ^ \markup {                                                    %! FIGURE_NAME
-            %@%     \fontsize                                                  %! FIGURE_NAME
-            %@%         #2                                                     %! FIGURE_NAME
-            %@%         \concat                                                %! FIGURE_NAME
-            %@%             {                                                  %! FIGURE_NAME
-            %@%                 [                                              %! FIGURE_NAME
-            %@%                 "rh-1 7.1.2"                                   %! FIGURE_NAME
-            %@%                 \hspace                                        %! FIGURE_NAME
-            %@%                     #1                                         %! FIGURE_NAME
-            %@%                 \raise                                         %! FIGURE_NAME
-            %@%                     #0.25                                      %! FIGURE_NAME
-            %@%                     \fontsize                                  %! FIGURE_NAME
-            %@%                         #-2                                    %! FIGURE_NAME
-            %@%                         (2)                                    %! FIGURE_NAME
-            %@%                 ]                                              %! FIGURE_NAME
-            %@%             }                                                  %! FIGURE_NAME
-            %@%     }                                                          %! FIGURE_NAME
+            %@% ^ \markup \fontsize #2 \concat { [ rh-1 7.1.2 \hspace #1 \raise #0.25 \fontsize #-2 (2) ] } %! FIGURE_NAME
 
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 2
@@ -416,23 +384,7 @@ G_RH_Voice_I = {                                                               %
                 \set stemLeftBeamCount = 0
                 \set stemRightBeamCount = 2
                 af''!16
-            %@% ^ \markup {                                                    %! FIGURE_NAME
-            %@%     \fontsize                                                  %! FIGURE_NAME
-            %@%         #2                                                     %! FIGURE_NAME
-            %@%         \concat                                                %! FIGURE_NAME
-            %@%             {                                                  %! FIGURE_NAME
-            %@%                 [                                              %! FIGURE_NAME
-            %@%                 "rh-1 7.1.3"                                   %! FIGURE_NAME
-            %@%                 \hspace                                        %! FIGURE_NAME
-            %@%                     #1                                         %! FIGURE_NAME
-            %@%                 \raise                                         %! FIGURE_NAME
-            %@%                     #0.25                                      %! FIGURE_NAME
-            %@%                     \fontsize                                  %! FIGURE_NAME
-            %@%                         #-2                                    %! FIGURE_NAME
-            %@%                         (4)                                    %! FIGURE_NAME
-            %@%                 ]                                              %! FIGURE_NAME
-            %@%             }                                                  %! FIGURE_NAME
-            %@%     }                                                          %! FIGURE_NAME
+            %@% ^ \markup \fontsize #2 \concat { [ rh-1 7.1.3 \hspace #1 \raise #0.25 \fontsize #-2 (4) ] } %! FIGURE_NAME
                 [
 
                 \set stemLeftBeamCount = 2
@@ -467,23 +419,7 @@ G_RH_Voice_I = {                                                               %
                 \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 2
                 af''!16
-            %@% ^ \markup {                                                    %! FIGURE_NAME
-            %@%     \fontsize                                                  %! FIGURE_NAME
-            %@%         #2                                                     %! FIGURE_NAME
-            %@%         \concat                                                %! FIGURE_NAME
-            %@%             {                                                  %! FIGURE_NAME
-            %@%                 [                                              %! FIGURE_NAME
-            %@%                 "rh-1 7.1.4"                                   %! FIGURE_NAME
-            %@%                 \hspace                                        %! FIGURE_NAME
-            %@%                     #1                                         %! FIGURE_NAME
-            %@%                 \raise                                         %! FIGURE_NAME
-            %@%                     #0.25                                      %! FIGURE_NAME
-            %@%                     \fontsize                                  %! FIGURE_NAME
-            %@%                         #-2                                    %! FIGURE_NAME
-            %@%                         (6)                                    %! FIGURE_NAME
-            %@%                 ]                                              %! FIGURE_NAME
-            %@%             }                                                  %! FIGURE_NAME
-            %@%     }                                                          %! FIGURE_NAME
+            %@% ^ \markup \fontsize #2 \concat { [ rh-1 7.1.4 \hspace #1 \raise #0.25 \fontsize #-2 (6) ] } %! FIGURE_NAME
 
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 2
@@ -528,23 +464,7 @@ G_RH_Voice_I = {                                                               %
                 \set stemRightBeamCount = 2
                 \override Beam.positions = #'(12 . 12)                         %! baca.beam_positions():baca.OverrideCommand._call(1)
                 f'''16
-            %@% ^ \markup {                                                    %! FIGURE_NAME
-            %@%     \fontsize                                                  %! FIGURE_NAME
-            %@%         #2                                                     %! FIGURE_NAME
-            %@%         \concat                                                %! FIGURE_NAME
-            %@%             {                                                  %! FIGURE_NAME
-            %@%                 [                                              %! FIGURE_NAME
-            %@%                 "rh-1 7.1.5"                                   %! FIGURE_NAME
-            %@%                 \hspace                                        %! FIGURE_NAME
-            %@%                     #1                                         %! FIGURE_NAME
-            %@%                 \raise                                         %! FIGURE_NAME
-            %@%                     #0.25                                      %! FIGURE_NAME
-            %@%                     \fontsize                                  %! FIGURE_NAME
-            %@%                         #-2                                    %! FIGURE_NAME
-            %@%                         (9)                                    %! FIGURE_NAME
-            %@%                 ]                                              %! FIGURE_NAME
-            %@%             }                                                  %! FIGURE_NAME
-            %@%     }                                                          %! FIGURE_NAME
+            %@% ^ \markup \fontsize #2 \concat { [ rh-1 7.1.5 \hspace #1 \raise #0.25 \fontsize #-2 (9) ] } %! FIGURE_NAME
                 [
 
                 \set stemLeftBeamCount = 2
@@ -1002,23 +922,7 @@ G_RH_Voice_II = {                                                              %
             c''16
             - \tweak color #(x11-color 'DeepPink1)                             %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
             \fff                                                               %! baca.dynamic():baca.IndicatorCommand._call():baca.SegmentMaker._set_status_tag():REDUNDANT_DYNAMIC
-        %@% ^ \markup {                                                        %! FIGURE_NAME
-        %@%     \fontsize                                                      %! FIGURE_NAME
-        %@%         #2                                                         %! FIGURE_NAME
-        %@%         \concat                                                    %! FIGURE_NAME
-        %@%             {                                                      %! FIGURE_NAME
-        %@%                 [                                                  %! FIGURE_NAME
-        %@%                 "rh-2 7.1.1"                                       %! FIGURE_NAME
-        %@%                 \hspace                                            %! FIGURE_NAME
-        %@%                     #1                                             %! FIGURE_NAME
-        %@%                 \raise                                             %! FIGURE_NAME
-        %@%                     #0.25                                          %! FIGURE_NAME
-        %@%                     \fontsize                                      %! FIGURE_NAME
-        %@%                         #-2                                        %! FIGURE_NAME
-        %@%                         (1)                                        %! FIGURE_NAME
-        %@%                 ]                                                  %! FIGURE_NAME
-        %@%             }                                                      %! FIGURE_NAME
-        %@%     }                                                              %! FIGURE_NAME
+        %@% ^ \markup \fontsize #2 \concat { [ rh-2 7.1.1 \hspace #1 \raise #0.25 \fontsize #-2 (1) ] } %! FIGURE_NAME
             [
             (                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 
@@ -1053,23 +957,7 @@ G_RH_Voice_II = {                                                              %
                 \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 2
                 cs''!16
-            %@% ^ \markup {                                                    %! FIGURE_NAME
-            %@%     \fontsize                                                  %! FIGURE_NAME
-            %@%         #2                                                     %! FIGURE_NAME
-            %@%         \concat                                                %! FIGURE_NAME
-            %@%             {                                                  %! FIGURE_NAME
-            %@%                 [                                              %! FIGURE_NAME
-            %@%                 "rh-2 7.1.2"                                   %! FIGURE_NAME
-            %@%                 \hspace                                        %! FIGURE_NAME
-            %@%                     #1                                         %! FIGURE_NAME
-            %@%                 \raise                                         %! FIGURE_NAME
-            %@%                     #0.25                                      %! FIGURE_NAME
-            %@%                     \fontsize                                  %! FIGURE_NAME
-            %@%                         #-2                                    %! FIGURE_NAME
-            %@%                         (3)                                    %! FIGURE_NAME
-            %@%                 ]                                              %! FIGURE_NAME
-            %@%             }                                                  %! FIGURE_NAME
-            %@%     }                                                          %! FIGURE_NAME
+            %@% ^ \markup \fontsize #2 \concat { [ rh-2 7.1.2 \hspace #1 \raise #0.25 \fontsize #-2 (3) ] } %! FIGURE_NAME
                 (                                                              %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 
                 \set stemLeftBeamCount = 2
@@ -1139,23 +1027,7 @@ G_RH_Voice_II = {                                                              %
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
             c''16
-        %@% ^ \markup {                                                        %! FIGURE_NAME
-        %@%     \fontsize                                                      %! FIGURE_NAME
-        %@%         #2                                                         %! FIGURE_NAME
-        %@%         \concat                                                    %! FIGURE_NAME
-        %@%             {                                                      %! FIGURE_NAME
-        %@%                 [                                                  %! FIGURE_NAME
-        %@%                 "rh-2 7.1.3"                                       %! FIGURE_NAME
-        %@%                 \hspace                                            %! FIGURE_NAME
-        %@%                     #1                                             %! FIGURE_NAME
-        %@%                 \raise                                             %! FIGURE_NAME
-        %@%                     #0.25                                          %! FIGURE_NAME
-        %@%                     \fontsize                                      %! FIGURE_NAME
-        %@%                         #-2                                        %! FIGURE_NAME
-        %@%                         (5)                                        %! FIGURE_NAME
-        %@%                 ]                                                  %! FIGURE_NAME
-        %@%             }                                                      %! FIGURE_NAME
-        %@%     }                                                              %! FIGURE_NAME
+        %@% ^ \markup \fontsize #2 \concat { [ rh-2 7.1.3 \hspace #1 \raise #0.25 \fontsize #-2 (5) ] } %! FIGURE_NAME
             [
             (                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 
@@ -1235,23 +1107,7 @@ G_RH_Voice_II = {                                                              %
                 \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 2
                 a''16
-            %@% ^ \markup {                                                    %! FIGURE_NAME
-            %@%     \fontsize                                                  %! FIGURE_NAME
-            %@%         #2                                                     %! FIGURE_NAME
-            %@%         \concat                                                %! FIGURE_NAME
-            %@%             {                                                  %! FIGURE_NAME
-            %@%                 [                                              %! FIGURE_NAME
-            %@%                 "rh-2 7.1.4"                                   %! FIGURE_NAME
-            %@%                 \hspace                                        %! FIGURE_NAME
-            %@%                     #1                                         %! FIGURE_NAME
-            %@%                 \raise                                         %! FIGURE_NAME
-            %@%                     #0.25                                      %! FIGURE_NAME
-            %@%                     \fontsize                                  %! FIGURE_NAME
-            %@%                         #-2                                    %! FIGURE_NAME
-            %@%                         (7)                                    %! FIGURE_NAME
-            %@%                 ]                                              %! FIGURE_NAME
-            %@%             }                                                  %! FIGURE_NAME
-            %@%     }                                                          %! FIGURE_NAME
+            %@% ^ \markup \fontsize #2 \concat { [ rh-2 7.1.4 \hspace #1 \raise #0.25 \fontsize #-2 (7) ] } %! FIGURE_NAME
                 (                                                              %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 
                 \set stemLeftBeamCount = 2
@@ -1312,23 +1168,7 @@ G_RH_Voice_II = {                                                              %
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
             f''16
-        %@% ^ \markup {                                                        %! FIGURE_NAME
-        %@%     \fontsize                                                      %! FIGURE_NAME
-        %@%         #2                                                         %! FIGURE_NAME
-        %@%         \concat                                                    %! FIGURE_NAME
-        %@%             {                                                      %! FIGURE_NAME
-        %@%                 [                                                  %! FIGURE_NAME
-        %@%                 "rh-2 7.1.5"                                       %! FIGURE_NAME
-        %@%                 \hspace                                            %! FIGURE_NAME
-        %@%                     #1                                             %! FIGURE_NAME
-        %@%                 \raise                                             %! FIGURE_NAME
-        %@%                     #0.25                                          %! FIGURE_NAME
-        %@%                     \fontsize                                      %! FIGURE_NAME
-        %@%                         #-2                                        %! FIGURE_NAME
-        %@%                         (8)                                        %! FIGURE_NAME
-        %@%                 ]                                                  %! FIGURE_NAME
-        %@%             }                                                      %! FIGURE_NAME
-        %@%     }                                                              %! FIGURE_NAME
+        %@% ^ \markup \fontsize #2 \concat { [ rh-2 7.1.5 \hspace #1 \raise #0.25 \fontsize #-2 (8) ] } %! FIGURE_NAME
             [
             (                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 
@@ -1356,23 +1196,7 @@ G_RH_Voice_II = {                                                              %
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
             e'''16
-        %@% ^ \markup {                                                        %! FIGURE_NAME
-        %@%     \fontsize                                                      %! FIGURE_NAME
-        %@%         #2                                                         %! FIGURE_NAME
-        %@%         \concat                                                    %! FIGURE_NAME
-        %@%             {                                                      %! FIGURE_NAME
-        %@%                 [                                                  %! FIGURE_NAME
-        %@%                 "rh-2 7.1.6"                                       %! FIGURE_NAME
-        %@%                 \hspace                                            %! FIGURE_NAME
-        %@%                     #1                                             %! FIGURE_NAME
-        %@%                 \raise                                             %! FIGURE_NAME
-        %@%                     #0.25                                          %! FIGURE_NAME
-        %@%                     \fontsize                                      %! FIGURE_NAME
-        %@%                         #-2                                        %! FIGURE_NAME
-        %@%                         (10)                                       %! FIGURE_NAME
-        %@%                 ]                                                  %! FIGURE_NAME
-        %@%             }                                                      %! FIGURE_NAME
-        %@%     }                                                              %! FIGURE_NAME
+        %@% ^ \markup \fontsize #2 \concat { [ rh-2 7.1.6 \hspace #1 \raise #0.25 \fontsize #-2 (10) ] } %! FIGURE_NAME
             (                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 
             \set stemLeftBeamCount = 2
@@ -2419,23 +2243,7 @@ G_LH_Voice_IV = {                                                              %
             fs'!16
             - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
             \ff                                                                %! baca.dynamic():baca.IndicatorCommand._call():baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
-        %@% ^ \markup {                                                        %! FIGURE_NAME
-        %@%     \fontsize                                                      %! FIGURE_NAME
-        %@%         #2                                                         %! FIGURE_NAME
-        %@%         \concat                                                    %! FIGURE_NAME
-        %@%             {                                                      %! FIGURE_NAME
-        %@%                 [                                                  %! FIGURE_NAME
-        %@%                 "lh-4 7.1.1"                                       %! FIGURE_NAME
-        %@%                 \hspace                                            %! FIGURE_NAME
-        %@%                     #1                                             %! FIGURE_NAME
-        %@%                 \raise                                             %! FIGURE_NAME
-        %@%                     #0.25                                          %! FIGURE_NAME
-        %@%                     \fontsize                                      %! FIGURE_NAME
-        %@%                         #-2                                        %! FIGURE_NAME
-        %@%                         (11)                                       %! FIGURE_NAME
-        %@%                 ]                                                  %! FIGURE_NAME
-        %@%             }                                                      %! FIGURE_NAME
-        %@%     }                                                              %! FIGURE_NAME
+        %@% ^ \markup \fontsize #2 \concat { [ lh-4 7.1.1 \hspace #1 \raise #0.25 \fontsize #-2 (11) ] } %! FIGURE_NAME
             [
 
             \set stemLeftBeamCount = 2
@@ -2498,23 +2306,7 @@ G_LH_Voice_IV = {                                                              %
             cs''!16
             - \tweak color #(x11-color 'DeepPink1)                             %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
             \ff                                                                %! baca.dynamic():baca.IndicatorCommand._call():baca.SegmentMaker._set_status_tag():REDUNDANT_DYNAMIC
-        %@% ^ \markup {                                                        %! FIGURE_NAME
-        %@%     \fontsize                                                      %! FIGURE_NAME
-        %@%         #2                                                         %! FIGURE_NAME
-        %@%         \concat                                                    %! FIGURE_NAME
-        %@%             {                                                      %! FIGURE_NAME
-        %@%                 [                                                  %! FIGURE_NAME
-        %@%                 "lh-4 7.1.2"                                       %! FIGURE_NAME
-        %@%                 \hspace                                            %! FIGURE_NAME
-        %@%                     #1                                             %! FIGURE_NAME
-        %@%                 \raise                                             %! FIGURE_NAME
-        %@%                     #0.25                                          %! FIGURE_NAME
-        %@%                     \fontsize                                      %! FIGURE_NAME
-        %@%                         #-2                                        %! FIGURE_NAME
-        %@%                         (13)                                       %! FIGURE_NAME
-        %@%                 ]                                                  %! FIGURE_NAME
-        %@%             }                                                      %! FIGURE_NAME
-        %@%     }                                                              %! FIGURE_NAME
+        %@% ^ \markup \fontsize #2 \concat { [ lh-4 7.1.2 \hspace #1 \raise #0.25 \fontsize #-2 (13) ] } %! FIGURE_NAME
             [
 
             \set stemLeftBeamCount = 2
@@ -2543,23 +2335,7 @@ G_LH_Voice_IV = {                                                              %
             d''16
             - \tweak color #(x11-color 'DeepPink1)                             %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
             \ff                                                                %! baca.dynamic():baca.IndicatorCommand._call():baca.SegmentMaker._set_status_tag():REDUNDANT_DYNAMIC
-        %@% ^ \markup {                                                        %! FIGURE_NAME
-        %@%     \fontsize                                                      %! FIGURE_NAME
-        %@%         #2                                                         %! FIGURE_NAME
-        %@%         \concat                                                    %! FIGURE_NAME
-        %@%             {                                                      %! FIGURE_NAME
-        %@%                 [                                                  %! FIGURE_NAME
-        %@%                 "lh-4 7.1.3"                                       %! FIGURE_NAME
-        %@%                 \hspace                                            %! FIGURE_NAME
-        %@%                     #1                                             %! FIGURE_NAME
-        %@%                 \raise                                             %! FIGURE_NAME
-        %@%                     #0.25                                          %! FIGURE_NAME
-        %@%                     \fontsize                                      %! FIGURE_NAME
-        %@%                         #-2                                        %! FIGURE_NAME
-        %@%                         (15)                                       %! FIGURE_NAME
-        %@%                 ]                                                  %! FIGURE_NAME
-        %@%             }                                                      %! FIGURE_NAME
-        %@%     }                                                              %! FIGURE_NAME
+        %@% ^ \markup \fontsize #2 \concat { [ lh-4 7.1.3 \hspace #1 \raise #0.25 \fontsize #-2 (15) ] } %! FIGURE_NAME
             [
 
             \set stemLeftBeamCount = 2
@@ -2834,23 +2610,7 @@ G_LH_Voice_V = {                                                               %
                 cs'!16
                 - \tweak color #(x11-color 'blue)                              %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
                 \pp                                                            %! baca.dynamic():baca.IndicatorCommand._call():baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
-            %@% ^ \markup {                                                    %! FIGURE_NAME
-            %@%     \fontsize                                                  %! FIGURE_NAME
-            %@%         #2                                                     %! FIGURE_NAME
-            %@%         \concat                                                %! FIGURE_NAME
-            %@%             {                                                  %! FIGURE_NAME
-            %@%                 [                                              %! FIGURE_NAME
-            %@%                 "lh-5 7.1.1"                                   %! FIGURE_NAME
-            %@%                 \hspace                                        %! FIGURE_NAME
-            %@%                     #1                                         %! FIGURE_NAME
-            %@%                 \raise                                         %! FIGURE_NAME
-            %@%                     #0.25                                      %! FIGURE_NAME
-            %@%                     \fontsize                                  %! FIGURE_NAME
-            %@%                         #-2                                    %! FIGURE_NAME
-            %@%                         (12)                                   %! FIGURE_NAME
-            %@%                 ]                                              %! FIGURE_NAME
-            %@%             }                                                  %! FIGURE_NAME
-            %@%     }                                                          %! FIGURE_NAME
+            %@% ^ \markup \fontsize #2 \concat { [ lh-5 7.1.1 \hspace #1 \raise #0.25 \fontsize #-2 (12) ] } %! FIGURE_NAME
                 [
                 (                                                              %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 
@@ -2955,23 +2715,7 @@ G_LH_Voice_V = {                                                               %
                 ef''!16
                 - \tweak color #(x11-color 'DeepPink1)                         %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
                 \pp                                                            %! baca.dynamic():baca.IndicatorCommand._call():baca.SegmentMaker._set_status_tag():REDUNDANT_DYNAMIC
-            %@% ^ \markup {                                                    %! FIGURE_NAME
-            %@%     \fontsize                                                  %! FIGURE_NAME
-            %@%         #2                                                     %! FIGURE_NAME
-            %@%         \concat                                                %! FIGURE_NAME
-            %@%             {                                                  %! FIGURE_NAME
-            %@%                 [                                              %! FIGURE_NAME
-            %@%                 "lh-5 7.1.2"                                   %! FIGURE_NAME
-            %@%                 \hspace                                        %! FIGURE_NAME
-            %@%                     #1                                         %! FIGURE_NAME
-            %@%                 \raise                                         %! FIGURE_NAME
-            %@%                     #0.25                                      %! FIGURE_NAME
-            %@%                     \fontsize                                  %! FIGURE_NAME
-            %@%                         #-2                                    %! FIGURE_NAME
-            %@%                         (14)                                   %! FIGURE_NAME
-            %@%                 ]                                              %! FIGURE_NAME
-            %@%             }                                                  %! FIGURE_NAME
-            %@%     }                                                          %! FIGURE_NAME
+            %@% ^ \markup \fontsize #2 \concat { [ lh-5 7.1.2 \hspace #1 \raise #0.25 \fontsize #-2 (14) ] } %! FIGURE_NAME
                 [
                 (                                                              %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 

@@ -298,23 +298,7 @@ C_RH_Voice_I = {                                                               %
             - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
             \f                                                                 %! baca.dynamic():baca.IndicatorCommand._call():baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
             - \tenuto                                                          %! baca.tenuto():baca.IndicatorCommand._call()
-        %@% ^ \markup {                                                        %! FIGURE_NAME
-        %@%     \fontsize                                                      %! FIGURE_NAME
-        %@%         #2                                                         %! FIGURE_NAME
-        %@%         \concat                                                    %! FIGURE_NAME
-        %@%             {                                                      %! FIGURE_NAME
-        %@%                 [                                                  %! FIGURE_NAME
-        %@%                 b.2.11                                             %! FIGURE_NAME
-        %@%                 \hspace                                            %! FIGURE_NAME
-        %@%                     #1                                             %! FIGURE_NAME
-        %@%                 \raise                                             %! FIGURE_NAME
-        %@%                     #0.25                                          %! FIGURE_NAME
-        %@%                     \fontsize                                      %! FIGURE_NAME
-        %@%                         #-2                                        %! FIGURE_NAME
-        %@%                         (10)                                       %! FIGURE_NAME
-        %@%                 ]                                                  %! FIGURE_NAME
-        %@%             }                                                      %! FIGURE_NAME
-        %@%     }                                                              %! FIGURE_NAME
+        %@% ^ \markup \fontsize #2 \concat { [ b.2.11 \hspace #1 \raise #0.25 \fontsize #-2 (10) ] } %! FIGURE_NAME
 
         }
 
@@ -327,23 +311,7 @@ C_RH_Voice_I = {                                                               %
             % [C RH_Voice_I measure 32 / measure 11]                           %! baca.SegmentMaker._comment_measure_numbers()
             f''''1.
             - \tenuto                                                          %! baca.tenuto():baca.IndicatorCommand._call()
-        %@% ^ \markup {                                                        %! FIGURE_NAME
-        %@%     \fontsize                                                      %! FIGURE_NAME
-        %@%         #2                                                         %! FIGURE_NAME
-        %@%         \concat                                                    %! FIGURE_NAME
-        %@%             {                                                      %! FIGURE_NAME
-        %@%                 [                                                  %! FIGURE_NAME
-        %@%                 b.2.12                                             %! FIGURE_NAME
-        %@%                 \hspace                                            %! FIGURE_NAME
-        %@%                     #1                                             %! FIGURE_NAME
-        %@%                 \raise                                             %! FIGURE_NAME
-        %@%                     #0.25                                          %! FIGURE_NAME
-        %@%                     \fontsize                                      %! FIGURE_NAME
-        %@%                         #-2                                        %! FIGURE_NAME
-        %@%                         (11)                                       %! FIGURE_NAME
-        %@%                 ]                                                  %! FIGURE_NAME
-        %@%             }                                                      %! FIGURE_NAME
-        %@%     }                                                              %! FIGURE_NAME
+        %@% ^ \markup \fontsize #2 \concat { [ b.2.12 \hspace #1 \raise #0.25 \fontsize #-2 (11) ] } %! FIGURE_NAME
 
         }
 
@@ -356,23 +324,7 @@ C_RH_Voice_I = {                                                               %
             % [C RH_Voice_I measure 33 / measure 12]                           %! baca.SegmentMaker._comment_measure_numbers()
             bf''''!1
             - \tenuto                                                          %! baca.tenuto():baca.IndicatorCommand._call()
-        %@% ^ \markup {                                                        %! FIGURE_NAME
-        %@%     \fontsize                                                      %! FIGURE_NAME
-        %@%         #2                                                         %! FIGURE_NAME
-        %@%         \concat                                                    %! FIGURE_NAME
-        %@%             {                                                      %! FIGURE_NAME
-        %@%                 [                                                  %! FIGURE_NAME
-        %@%                 b.2.13                                             %! FIGURE_NAME
-        %@%                 \hspace                                            %! FIGURE_NAME
-        %@%                     #1                                             %! FIGURE_NAME
-        %@%                 \raise                                             %! FIGURE_NAME
-        %@%                     #0.25                                          %! FIGURE_NAME
-        %@%                     \fontsize                                      %! FIGURE_NAME
-        %@%                         #-2                                        %! FIGURE_NAME
-        %@%                         (12)                                       %! FIGURE_NAME
-        %@%                 ]                                                  %! FIGURE_NAME
-        %@%             }                                                      %! FIGURE_NAME
-        %@%     }                                                              %! FIGURE_NAME
+        %@% ^ \markup \fontsize #2 \concat { [ b.2.13 \hspace #1 \raise #0.25 \fontsize #-2 (12) ] } %! FIGURE_NAME
             \ottava 0                                                          %! baca.ottava():baca.SpannerIndicatorCommand._call(4):SPANNER_STOP
             <> \bacaStopTextSpanRhythmAnnotation                               %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(4):SPANNER_STOP
 
@@ -492,23 +444,7 @@ C_RH_Voice_II = {                                                              %
             % [C RH_Voice_II measure 23 / measure 2]                           %! baca.SegmentMaker._comment_measure_numbers()
             \once \override Rest.transparent = ##t                             %! baca.rest_transparent():baca.OverrideCommand._call(1)
             r4
-        %@% ^ \markup {                                                        %! FIGURE_NAME
-        %@%     \fontsize                                                      %! FIGURE_NAME
-        %@%         #2                                                         %! FIGURE_NAME
-        %@%         \concat                                                    %! FIGURE_NAME
-        %@%             {                                                      %! FIGURE_NAME
-        %@%                 [                                                  %! FIGURE_NAME
-        %@%                 b.2.2                                              %! FIGURE_NAME
-        %@%                 \hspace                                            %! FIGURE_NAME
-        %@%                     #1                                             %! FIGURE_NAME
-        %@%                 \raise                                             %! FIGURE_NAME
-        %@%                     #0.25                                          %! FIGURE_NAME
-        %@%                     \fontsize                                      %! FIGURE_NAME
-        %@%                         #-2                                        %! FIGURE_NAME
-        %@%                         (1)                                        %! FIGURE_NAME
-        %@%                 ]                                                  %! FIGURE_NAME
-        %@%             }                                                      %! FIGURE_NAME
-        %@%     }                                                              %! FIGURE_NAME
+        %@% ^ \markup \fontsize #2 \concat { [ b.2.2 \hspace #1 \raise #0.25 \fontsize #-2 (1) ] } %! FIGURE_NAME
 
         }
 
@@ -528,23 +464,7 @@ C_RH_Voice_II = {                                                              %
             - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
             \ppp                                                               %! baca.dynamic():baca.IndicatorCommand._call():baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
             - \staccato                                                        %! baca.staccato():baca.IndicatorCommand._call()
-        %@% ^ \markup {                                                        %! FIGURE_NAME
-        %@%     \fontsize                                                      %! FIGURE_NAME
-        %@%         #2                                                         %! FIGURE_NAME
-        %@%         \concat                                                    %! FIGURE_NAME
-        %@%             {                                                      %! FIGURE_NAME
-        %@%                 [                                                  %! FIGURE_NAME
-        %@%                 b.2.3                                              %! FIGURE_NAME
-        %@%                 \hspace                                            %! FIGURE_NAME
-        %@%                     #1                                             %! FIGURE_NAME
-        %@%                 \raise                                             %! FIGURE_NAME
-        %@%                     #0.25                                          %! FIGURE_NAME
-        %@%                     \fontsize                                      %! FIGURE_NAME
-        %@%                         #-2                                        %! FIGURE_NAME
-        %@%                         (2)                                        %! FIGURE_NAME
-        %@%                 ]                                                  %! FIGURE_NAME
-        %@%             }                                                      %! FIGURE_NAME
-        %@%     }                                                              %! FIGURE_NAME
+        %@% ^ \markup \fontsize #2 \concat { [ b.2.3 \hspace #1 \raise #0.25 \fontsize #-2 (2) ] } %! FIGURE_NAME
             [
             (                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 
@@ -582,23 +502,7 @@ C_RH_Voice_II = {                                                              %
             % [C RH_Voice_II measure 25 / measure 4]                           %! baca.SegmentMaker._comment_measure_numbers()
             \once \override Rest.transparent = ##t                             %! baca.rest_transparent():baca.OverrideCommand._call(1)
             r4
-        %@% ^ \markup {                                                        %! FIGURE_NAME
-        %@%     \fontsize                                                      %! FIGURE_NAME
-        %@%         #2                                                         %! FIGURE_NAME
-        %@%         \concat                                                    %! FIGURE_NAME
-        %@%             {                                                      %! FIGURE_NAME
-        %@%                 [                                                  %! FIGURE_NAME
-        %@%                 b.2.4                                              %! FIGURE_NAME
-        %@%                 \hspace                                            %! FIGURE_NAME
-        %@%                     #1                                             %! FIGURE_NAME
-        %@%                 \raise                                             %! FIGURE_NAME
-        %@%                     #0.25                                          %! FIGURE_NAME
-        %@%                     \fontsize                                      %! FIGURE_NAME
-        %@%                         #-2                                        %! FIGURE_NAME
-        %@%                         (3)                                        %! FIGURE_NAME
-        %@%                 ]                                                  %! FIGURE_NAME
-        %@%             }                                                      %! FIGURE_NAME
-        %@%     }                                                              %! FIGURE_NAME
+        %@% ^ \markup \fontsize #2 \concat { [ b.2.4 \hspace #1 \raise #0.25 \fontsize #-2 (3) ] } %! FIGURE_NAME
 
         }
 
@@ -620,23 +524,7 @@ C_RH_Voice_II = {                                                              %
             - \tweak color #(x11-color 'DeepPink1)                             %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
             \ppp                                                               %! baca.dynamic():baca.IndicatorCommand._call():baca.SegmentMaker._set_status_tag():REDUNDANT_DYNAMIC
             - \staccato                                                        %! baca.staccato():baca.IndicatorCommand._call()
-        %@% ^ \markup {                                                        %! FIGURE_NAME
-        %@%     \fontsize                                                      %! FIGURE_NAME
-        %@%         #2                                                         %! FIGURE_NAME
-        %@%         \concat                                                    %! FIGURE_NAME
-        %@%             {                                                      %! FIGURE_NAME
-        %@%                 [                                                  %! FIGURE_NAME
-        %@%                 b.2.6                                              %! FIGURE_NAME
-        %@%                 \hspace                                            %! FIGURE_NAME
-        %@%                     #1                                             %! FIGURE_NAME
-        %@%                 \raise                                             %! FIGURE_NAME
-        %@%                     #0.25                                          %! FIGURE_NAME
-        %@%                     \fontsize                                      %! FIGURE_NAME
-        %@%                         #-2                                        %! FIGURE_NAME
-        %@%                         (5)                                        %! FIGURE_NAME
-        %@%                 ]                                                  %! FIGURE_NAME
-        %@%             }                                                      %! FIGURE_NAME
-        %@%     }                                                              %! FIGURE_NAME
+        %@% ^ \markup \fontsize #2 \concat { [ b.2.6 \hspace #1 \raise #0.25 \fontsize #-2 (5) ] } %! FIGURE_NAME
             [
             (                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 
@@ -705,23 +593,7 @@ C_RH_Voice_II = {                                                              %
             % [C RH_Voice_II measure 28 / measure 7]                           %! baca.SegmentMaker._comment_measure_numbers()
             \once \override Rest.transparent = ##t                             %! baca.rest_transparent():baca.OverrideCommand._call(1)
             r4
-        %@% ^ \markup {                                                        %! FIGURE_NAME
-        %@%     \fontsize                                                      %! FIGURE_NAME
-        %@%         #2                                                         %! FIGURE_NAME
-        %@%         \concat                                                    %! FIGURE_NAME
-        %@%             {                                                      %! FIGURE_NAME
-        %@%                 [                                                  %! FIGURE_NAME
-        %@%                 b.2.7                                              %! FIGURE_NAME
-        %@%                 \hspace                                            %! FIGURE_NAME
-        %@%                     #1                                             %! FIGURE_NAME
-        %@%                 \raise                                             %! FIGURE_NAME
-        %@%                     #0.25                                          %! FIGURE_NAME
-        %@%                     \fontsize                                      %! FIGURE_NAME
-        %@%                         #-2                                        %! FIGURE_NAME
-        %@%                         (6)                                        %! FIGURE_NAME
-        %@%                 ]                                                  %! FIGURE_NAME
-        %@%             }                                                      %! FIGURE_NAME
-        %@%     }                                                              %! FIGURE_NAME
+        %@% ^ \markup \fontsize #2 \concat { [ b.2.7 \hspace #1 \raise #0.25 \fontsize #-2 (6) ] } %! FIGURE_NAME
 
         }
 
@@ -743,23 +615,7 @@ C_RH_Voice_II = {                                                              %
             - \tweak color #(x11-color 'DeepPink1)                             %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
             \ppp                                                               %! baca.dynamic():baca.IndicatorCommand._call():baca.SegmentMaker._set_status_tag():REDUNDANT_DYNAMIC
             - \staccato                                                        %! baca.staccato():baca.IndicatorCommand._call()
-        %@% ^ \markup {                                                        %! FIGURE_NAME
-        %@%     \fontsize                                                      %! FIGURE_NAME
-        %@%         #2                                                         %! FIGURE_NAME
-        %@%         \concat                                                    %! FIGURE_NAME
-        %@%             {                                                      %! FIGURE_NAME
-        %@%                 [                                                  %! FIGURE_NAME
-        %@%                 b.2.10                                             %! FIGURE_NAME
-        %@%                 \hspace                                            %! FIGURE_NAME
-        %@%                     #1                                             %! FIGURE_NAME
-        %@%                 \raise                                             %! FIGURE_NAME
-        %@%                     #0.25                                          %! FIGURE_NAME
-        %@%                     \fontsize                                      %! FIGURE_NAME
-        %@%                         #-2                                        %! FIGURE_NAME
-        %@%                         (9)                                        %! FIGURE_NAME
-        %@%                 ]                                                  %! FIGURE_NAME
-        %@%             }                                                      %! FIGURE_NAME
-        %@%     }                                                              %! FIGURE_NAME
+        %@% ^ \markup \fontsize #2 \concat { [ b.2.10 \hspace #1 \raise #0.25 \fontsize #-2 (9) ] } %! FIGURE_NAME
             [
             (                                                                  %! baca.slur():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 
@@ -905,23 +761,7 @@ C_RH_Voice_II = {                                                              %
             b'16
             - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
             \f                                                                 %! baca.hairpin():baca.PiecewiseCommand._call(2):SPANNER_STOP:baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
-        %@% ^ \markup {                                                        %! FIGURE_NAME
-        %@%     \fontsize                                                      %! FIGURE_NAME
-        %@%         #2                                                         %! FIGURE_NAME
-        %@%         \concat                                                    %! FIGURE_NAME
-        %@%             {                                                      %! FIGURE_NAME
-        %@%                 [                                                  %! FIGURE_NAME
-        %@%                 b.2.14                                             %! FIGURE_NAME
-        %@%                 \hspace                                            %! FIGURE_NAME
-        %@%                     #1                                             %! FIGURE_NAME
-        %@%                 \raise                                             %! FIGURE_NAME
-        %@%                     #0.25                                          %! FIGURE_NAME
-        %@%                     \fontsize                                      %! FIGURE_NAME
-        %@%                         #-2                                        %! FIGURE_NAME
-        %@%                         (13)                                       %! FIGURE_NAME
-        %@%                 ]                                                  %! FIGURE_NAME
-        %@%             }                                                      %! FIGURE_NAME
-        %@%     }                                                              %! FIGURE_NAME
+        %@% ^ \markup \fontsize #2 \concat { [ b.2.14 \hspace #1 \raise #0.25 \fontsize #-2 (13) ] } %! FIGURE_NAME
             - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
             \<                                                                 %! baca.hairpin():baca.PiecewiseCommand._call(2):SPANNER_START:baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
             [
@@ -1138,23 +978,7 @@ C_RH_Voice_III = {                                                             %
             ef!8
             - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
             \ff                                                                %! baca.dynamic():baca.IndicatorCommand._call():baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
-        %@% ^ \markup {                                                        %! FIGURE_NAME
-        %@%     \fontsize                                                      %! FIGURE_NAME
-        %@%         #2                                                         %! FIGURE_NAME
-        %@%         \concat                                                    %! FIGURE_NAME
-        %@%             {                                                      %! FIGURE_NAME
-        %@%                 [                                                  %! FIGURE_NAME
-        %@%                 b.2.8                                              %! FIGURE_NAME
-        %@%                 \hspace                                            %! FIGURE_NAME
-        %@%                     #1                                             %! FIGURE_NAME
-        %@%                 \raise                                             %! FIGURE_NAME
-        %@%                     #0.25                                          %! FIGURE_NAME
-        %@%                     \fontsize                                      %! FIGURE_NAME
-        %@%                         #-2                                        %! FIGURE_NAME
-        %@%                         (7)                                        %! FIGURE_NAME
-        %@%                 ]                                                  %! FIGURE_NAME
-        %@%             }                                                      %! FIGURE_NAME
-        %@%     }                                                              %! FIGURE_NAME
+        %@% ^ \markup \fontsize #2 \concat { [ b.2.8 \hspace #1 \raise #0.25 \fontsize #-2 (7) ] } %! FIGURE_NAME
 
             r4
 
@@ -1311,23 +1135,7 @@ C_RH_Voice_IV = {                                                              %
             d''16
             - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
             \ff                                                                %! baca.dynamic():baca.IndicatorCommand._call():baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
-        %@% ^ \markup {                                                        %! FIGURE_NAME
-        %@%     \fontsize                                                      %! FIGURE_NAME
-        %@%         #2                                                         %! FIGURE_NAME
-        %@%         \concat                                                    %! FIGURE_NAME
-        %@%             {                                                      %! FIGURE_NAME
-        %@%                 [                                                  %! FIGURE_NAME
-        %@%                 b.2.1                                              %! FIGURE_NAME
-        %@%                 \hspace                                            %! FIGURE_NAME
-        %@%                     #1                                             %! FIGURE_NAME
-        %@%                 \raise                                             %! FIGURE_NAME
-        %@%                     #0.25                                          %! FIGURE_NAME
-        %@%                     \fontsize                                      %! FIGURE_NAME
-        %@%                         #-2                                        %! FIGURE_NAME
-        %@%                         (0)                                        %! FIGURE_NAME
-        %@%                 ]                                                  %! FIGURE_NAME
-        %@%             }                                                      %! FIGURE_NAME
-        %@%     }                                                              %! FIGURE_NAME
+        %@% ^ \markup \fontsize #2 \concat { [ b.2.1 \hspace #1 \raise #0.25 \fontsize #-2 (0) ] } %! FIGURE_NAME
             [
             - \abjad-dashed-line-with-hook                                     %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(2):SPANNER_START
             - \baca-text-spanner-left-text "baca.music()"                      %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(2):SPANNER_START
@@ -1379,23 +1187,7 @@ C_RH_Voice_IV = {                                                              %
             d''16
             - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
             \p                                                                 %! baca.dynamic():baca.IndicatorCommand._call():baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
-        %@% ^ \markup {                                                        %! FIGURE_NAME
-        %@%     \fontsize                                                      %! FIGURE_NAME
-        %@%         #2                                                         %! FIGURE_NAME
-        %@%         \concat                                                    %! FIGURE_NAME
-        %@%             {                                                      %! FIGURE_NAME
-        %@%                 [                                                  %! FIGURE_NAME
-        %@%                 b.2.5                                              %! FIGURE_NAME
-        %@%                 \hspace                                            %! FIGURE_NAME
-        %@%                     #1                                             %! FIGURE_NAME
-        %@%                 \raise                                             %! FIGURE_NAME
-        %@%                     #0.25                                          %! FIGURE_NAME
-        %@%                     \fontsize                                      %! FIGURE_NAME
-        %@%                         #-2                                        %! FIGURE_NAME
-        %@%                         (4)                                        %! FIGURE_NAME
-        %@%                 ]                                                  %! FIGURE_NAME
-        %@%             }                                                      %! FIGURE_NAME
-        %@%     }                                                              %! FIGURE_NAME
+        %@% ^ \markup \fontsize #2 \concat { [ b.2.5 \hspace #1 \raise #0.25 \fontsize #-2 (4) ] } %! FIGURE_NAME
             [
 
             \set stemLeftBeamCount = 2
@@ -2207,23 +1999,7 @@ C_LH_Voice_V = {                                                               %
             \override Rest.direction = #up                                     %! baca.rest_up():baca.OverrideCommand._call(1)
             \dynamicDown                                                       %! baca.dynamic_down():baca.IndicatorCommand._call()
             r2.
-        %@% ^ \markup {                                                        %! FIGURE_NAME
-        %@%     \fontsize                                                      %! FIGURE_NAME
-        %@%         #2                                                         %! FIGURE_NAME
-        %@%         \concat                                                    %! FIGURE_NAME
-        %@%             {                                                      %! FIGURE_NAME
-        %@%                 [                                                  %! FIGURE_NAME
-        %@%                 b.2.9                                              %! FIGURE_NAME
-        %@%                 \hspace                                            %! FIGURE_NAME
-        %@%                     #1                                             %! FIGURE_NAME
-        %@%                 \raise                                             %! FIGURE_NAME
-        %@%                     #0.25                                          %! FIGURE_NAME
-        %@%                     \fontsize                                      %! FIGURE_NAME
-        %@%                         #-2                                        %! FIGURE_NAME
-        %@%                         (8)                                        %! FIGURE_NAME
-        %@%                 ]                                                  %! FIGURE_NAME
-        %@%             }                                                      %! FIGURE_NAME
-        %@%     }                                                              %! FIGURE_NAME
+        %@% ^ \markup \fontsize #2 \concat { [ b.2.9 \hspace #1 \raise #0.25 \fontsize #-2 (8) ] } %! FIGURE_NAME
 
             af!8.
             - \tweak color #(x11-color 'blue)                                  %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
@@ -2519,23 +2295,7 @@ C_LH_Resonance_Voice = {                                                       %
             \override Flag.stencil = ##f                                       %! baca.flag_stencil_false():baca.OverrideCommand._call(1)
             \override Stem.stencil = ##f                                       %! baca.stem_stencil_false():baca.OverrideCommand._call(1)
             <e, fs,! gs,! as,! b,>2
-        %@% ^ \markup {                                                        %! FIGURE_NAME
-        %@%     \fontsize                                                      %! FIGURE_NAME
-        %@%         #2                                                         %! FIGURE_NAME
-        %@%         \concat                                                    %! FIGURE_NAME
-        %@%             {                                                      %! FIGURE_NAME
-        %@%                 [                                                  %! FIGURE_NAME
-        %@%                 b.2.r.1                                            %! FIGURE_NAME
-        %@%                 \hspace                                            %! FIGURE_NAME
-        %@%                     #1                                             %! FIGURE_NAME
-        %@%                 \raise                                             %! FIGURE_NAME
-        %@%                     #0.25                                          %! FIGURE_NAME
-        %@%                     \fontsize                                      %! FIGURE_NAME
-        %@%                         #-2                                        %! FIGURE_NAME
-        %@%                         (14)                                       %! FIGURE_NAME
-        %@%                 ]                                                  %! FIGURE_NAME
-        %@%             }                                                      %! FIGURE_NAME
-        %@%     }                                                              %! FIGURE_NAME
+        %@% ^ \markup \fontsize #2 \concat { [ b.2.r.1 \hspace #1 \raise #0.25 \fontsize #-2 (14) ] } %! FIGURE_NAME
             - \abjad-dashed-line-with-hook                                     %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(2):SPANNER_START
             - \baca-text-spanner-left-text "baca.music()"                      %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(2):SPANNER_START
             - \tweak bound-details.right.padding #2.75                         %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(2):AUTODETECT:SPANNER_START
@@ -2563,23 +2323,7 @@ C_LH_Resonance_Voice = {                                                       %
             \once \override RepeatTie.transparent = ##t                        %! baca.repeat_tie_transparent():baca.OverrideCommand._call(1)
             \once \override Stem.transparent = ##t                             %! baca.stem_transparent():baca.OverrideCommand._call(1)
             <e, fs, gs, as, b,>4
-        %@% ^ \markup {                                                        %! FIGURE_NAME
-        %@%     \fontsize                                                      %! FIGURE_NAME
-        %@%         #2                                                         %! FIGURE_NAME
-        %@%         \concat                                                    %! FIGURE_NAME
-        %@%             {                                                      %! FIGURE_NAME
-        %@%                 [                                                  %! FIGURE_NAME
-        %@%                 b.2.r.2                                            %! FIGURE_NAME
-        %@%                 \hspace                                            %! FIGURE_NAME
-        %@%                     #1                                             %! FIGURE_NAME
-        %@%                 \raise                                             %! FIGURE_NAME
-        %@%                     #0.25                                          %! FIGURE_NAME
-        %@%                     \fontsize                                      %! FIGURE_NAME
-        %@%                         #-2                                        %! FIGURE_NAME
-        %@%                         (15)                                       %! FIGURE_NAME
-        %@%                 ]                                                  %! FIGURE_NAME
-        %@%             }                                                      %! FIGURE_NAME
-        %@%     }                                                              %! FIGURE_NAME
+        %@% ^ \markup \fontsize #2 \concat { [ b.2.r.2 \hspace #1 \raise #0.25 \fontsize #-2 (15) ] } %! FIGURE_NAME
             \repeatTie                                                         %! baca.repeat_tie():baca.IndicatorCommand._call()
             - \tweak stencil ##f                                               %! baca.SegmentMaker._attach_shadow_tie_indicators()
             ~                                                                  %! baca.SegmentMaker._attach_shadow_tie_indicators()
@@ -2594,23 +2338,7 @@ C_LH_Resonance_Voice = {                                                       %
 
             % [C LH_Resonance_Voice measure 24 / measure 3]                    %! baca.SegmentMaker._comment_measure_numbers()
             <e, fs, gs, as, b,>4
-        %@% ^ \markup {                                                        %! FIGURE_NAME
-        %@%     \fontsize                                                      %! FIGURE_NAME
-        %@%         #2                                                         %! FIGURE_NAME
-        %@%         \concat                                                    %! FIGURE_NAME
-        %@%             {                                                      %! FIGURE_NAME
-        %@%                 [                                                  %! FIGURE_NAME
-        %@%                 b.2.r.3                                            %! FIGURE_NAME
-        %@%                 \hspace                                            %! FIGURE_NAME
-        %@%                     #1                                             %! FIGURE_NAME
-        %@%                 \raise                                             %! FIGURE_NAME
-        %@%                     #0.25                                          %! FIGURE_NAME
-        %@%                     \fontsize                                      %! FIGURE_NAME
-        %@%                         #-2                                        %! FIGURE_NAME
-        %@%                         (16)                                       %! FIGURE_NAME
-        %@%                 ]                                                  %! FIGURE_NAME
-        %@%             }                                                      %! FIGURE_NAME
-        %@%     }                                                              %! FIGURE_NAME
+        %@% ^ \markup \fontsize #2 \concat { [ b.2.r.3 \hspace #1 \raise #0.25 \fontsize #-2 (16) ] } %! FIGURE_NAME
             \repeatTie                                                         %! baca.repeat_tie():baca.IndicatorCommand._call()
             - \tweak stencil ##f                                               %! baca.SegmentMaker._attach_shadow_tie_indicators()
             ~                                                                  %! baca.SegmentMaker._attach_shadow_tie_indicators()
@@ -2646,23 +2374,7 @@ C_LH_Resonance_Voice = {                                                       %
             \once \override RepeatTie.transparent = ##t                        %! baca.repeat_tie_transparent():baca.OverrideCommand._call(1)
             \once \override Stem.transparent = ##t                             %! baca.stem_transparent():baca.OverrideCommand._call(1)
             <e, fs, gs, as, b,>4
-        %@% ^ \markup {                                                        %! FIGURE_NAME
-        %@%     \fontsize                                                      %! FIGURE_NAME
-        %@%         #2                                                         %! FIGURE_NAME
-        %@%         \concat                                                    %! FIGURE_NAME
-        %@%             {                                                      %! FIGURE_NAME
-        %@%                 [                                                  %! FIGURE_NAME
-        %@%                 b.2.r.4                                            %! FIGURE_NAME
-        %@%                 \hspace                                            %! FIGURE_NAME
-        %@%                     #1                                             %! FIGURE_NAME
-        %@%                 \raise                                             %! FIGURE_NAME
-        %@%                     #0.25                                          %! FIGURE_NAME
-        %@%                     \fontsize                                      %! FIGURE_NAME
-        %@%                         #-2                                        %! FIGURE_NAME
-        %@%                         (17)                                       %! FIGURE_NAME
-        %@%                 ]                                                  %! FIGURE_NAME
-        %@%             }                                                      %! FIGURE_NAME
-        %@%     }                                                              %! FIGURE_NAME
+        %@% ^ \markup \fontsize #2 \concat { [ b.2.r.4 \hspace #1 \raise #0.25 \fontsize #-2 (17) ] } %! FIGURE_NAME
             \repeatTie                                                         %! baca.repeat_tie():baca.IndicatorCommand._call()
             - \tweak stencil ##f                                               %! baca.SegmentMaker._attach_shadow_tie_indicators()
             ~                                                                  %! baca.SegmentMaker._attach_shadow_tie_indicators()
@@ -2677,23 +2389,7 @@ C_LH_Resonance_Voice = {                                                       %
 
             % [C LH_Resonance_Voice measure 26 / measure 5]                    %! baca.SegmentMaker._comment_measure_numbers()
             <e, fs, gs, as, b,>2
-        %@% ^ \markup {                                                        %! FIGURE_NAME
-        %@%     \fontsize                                                      %! FIGURE_NAME
-        %@%         #2                                                         %! FIGURE_NAME
-        %@%         \concat                                                    %! FIGURE_NAME
-        %@%             {                                                      %! FIGURE_NAME
-        %@%                 [                                                  %! FIGURE_NAME
-        %@%                 b.2.r.5                                            %! FIGURE_NAME
-        %@%                 \hspace                                            %! FIGURE_NAME
-        %@%                     #1                                             %! FIGURE_NAME
-        %@%                 \raise                                             %! FIGURE_NAME
-        %@%                     #0.25                                          %! FIGURE_NAME
-        %@%                     \fontsize                                      %! FIGURE_NAME
-        %@%                         #-2                                        %! FIGURE_NAME
-        %@%                         (18)                                       %! FIGURE_NAME
-        %@%                 ]                                                  %! FIGURE_NAME
-        %@%             }                                                      %! FIGURE_NAME
-        %@%     }                                                              %! FIGURE_NAME
+        %@% ^ \markup \fontsize #2 \concat { [ b.2.r.5 \hspace #1 \raise #0.25 \fontsize #-2 (18) ] } %! FIGURE_NAME
             \repeatTie                                                         %! baca.repeat_tie():baca.IndicatorCommand._call()
             - \tweak stencil ##f                                               %! baca.SegmentMaker._attach_shadow_tie_indicators()
             ~                                                                  %! baca.SegmentMaker._attach_shadow_tie_indicators()
@@ -2708,23 +2404,7 @@ C_LH_Resonance_Voice = {                                                       %
 
             % [C LH_Resonance_Voice measure 27 / measure 6]                    %! baca.SegmentMaker._comment_measure_numbers()
             <e, fs, gs, as, b,>2
-        %@% ^ \markup {                                                        %! FIGURE_NAME
-        %@%     \fontsize                                                      %! FIGURE_NAME
-        %@%         #2                                                         %! FIGURE_NAME
-        %@%         \concat                                                    %! FIGURE_NAME
-        %@%             {                                                      %! FIGURE_NAME
-        %@%                 [                                                  %! FIGURE_NAME
-        %@%                 b.2.r.6                                            %! FIGURE_NAME
-        %@%                 \hspace                                            %! FIGURE_NAME
-        %@%                     #1                                             %! FIGURE_NAME
-        %@%                 \raise                                             %! FIGURE_NAME
-        %@%                     #0.25                                          %! FIGURE_NAME
-        %@%                     \fontsize                                      %! FIGURE_NAME
-        %@%                         #-2                                        %! FIGURE_NAME
-        %@%                         (19)                                       %! FIGURE_NAME
-        %@%                 ]                                                  %! FIGURE_NAME
-        %@%             }                                                      %! FIGURE_NAME
-        %@%     }                                                              %! FIGURE_NAME
+        %@% ^ \markup \fontsize #2 \concat { [ b.2.r.6 \hspace #1 \raise #0.25 \fontsize #-2 (19) ] } %! FIGURE_NAME
             \repeatTie                                                         %! baca.repeat_tie():baca.IndicatorCommand._call()
             - \tweak stencil ##f                                               %! baca.SegmentMaker._attach_shadow_tie_indicators()
             ~                                                                  %! baca.SegmentMaker._attach_shadow_tie_indicators()
@@ -2756,23 +2436,7 @@ C_LH_Resonance_Voice = {                                                       %
             % [C LH_Resonance_Voice measure 30 / measure 9]                    %! baca.SegmentMaker._comment_measure_numbers()
             \once \override Accidental.X-extent = ##f                          %! baca.accidental_x_extent_false():baca.OverrideCommand._call(1)
             <e, fs,! gs,! as,! b,>1
-        %@% ^ \markup {                                                        %! FIGURE_NAME
-        %@%     \fontsize                                                      %! FIGURE_NAME
-        %@%         #2                                                         %! FIGURE_NAME
-        %@%         \concat                                                    %! FIGURE_NAME
-        %@%             {                                                      %! FIGURE_NAME
-        %@%                 [                                                  %! FIGURE_NAME
-        %@%                 b.2.r.7                                            %! FIGURE_NAME
-        %@%                 \hspace                                            %! FIGURE_NAME
-        %@%                     #1                                             %! FIGURE_NAME
-        %@%                 \raise                                             %! FIGURE_NAME
-        %@%                     #0.25                                          %! FIGURE_NAME
-        %@%                     \fontsize                                      %! FIGURE_NAME
-        %@%                         #-2                                        %! FIGURE_NAME
-        %@%                         (20)                                       %! FIGURE_NAME
-        %@%                 ]                                                  %! FIGURE_NAME
-        %@%             }                                                      %! FIGURE_NAME
-        %@%     }                                                              %! FIGURE_NAME
+        %@% ^ \markup \fontsize #2 \concat { [ b.2.r.7 \hspace #1 \raise #0.25 \fontsize #-2 (20) ] } %! FIGURE_NAME
             - \tweak stencil ##f                                               %! baca.SegmentMaker._attach_shadow_tie_indicators()
             ~                                                                  %! baca.SegmentMaker._attach_shadow_tie_indicators()
 
@@ -2813,23 +2477,7 @@ C_LH_Resonance_Voice = {                                                       %
             % [C LH_Resonance_Voice measure 31 / measure 10]                   %! baca.SegmentMaker._comment_measure_numbers()
             \override Accidental.stencil = ##f                                 %! baca.accidental_stencil_false():baca.OverrideCommand._call(1)
             <e, fs, gs, as, b,>1..
-        %@% ^ \markup {                                                        %! FIGURE_NAME
-        %@%     \fontsize                                                      %! FIGURE_NAME
-        %@%         #2                                                         %! FIGURE_NAME
-        %@%         \concat                                                    %! FIGURE_NAME
-        %@%             {                                                      %! FIGURE_NAME
-        %@%                 [                                                  %! FIGURE_NAME
-        %@%                 b.2.r.8                                            %! FIGURE_NAME
-        %@%                 \hspace                                            %! FIGURE_NAME
-        %@%                     #1                                             %! FIGURE_NAME
-        %@%                 \raise                                             %! FIGURE_NAME
-        %@%                     #0.25                                          %! FIGURE_NAME
-        %@%                     \fontsize                                      %! FIGURE_NAME
-        %@%                         #-2                                        %! FIGURE_NAME
-        %@%                         (21)                                       %! FIGURE_NAME
-        %@%                 ]                                                  %! FIGURE_NAME
-        %@%             }                                                      %! FIGURE_NAME
-        %@%     }                                                              %! FIGURE_NAME
+        %@% ^ \markup \fontsize #2 \concat { [ b.2.r.8 \hspace #1 \raise #0.25 \fontsize #-2 (21) ] } %! FIGURE_NAME
             \repeatTie                                                         %! baca.repeat_tie():baca.IndicatorCommand._call()
             - \tweak stencil ##f                                               %! baca.SegmentMaker._attach_shadow_tie_indicators()
             ~                                                                  %! baca.SegmentMaker._attach_shadow_tie_indicators()
@@ -2844,23 +2492,7 @@ C_LH_Resonance_Voice = {                                                       %
 
             % [C LH_Resonance_Voice measure 32 / measure 11]                   %! baca.SegmentMaker._comment_measure_numbers()
             <e, fs, gs, as, b,>1.
-        %@% ^ \markup {                                                        %! FIGURE_NAME
-        %@%     \fontsize                                                      %! FIGURE_NAME
-        %@%         #2                                                         %! FIGURE_NAME
-        %@%         \concat                                                    %! FIGURE_NAME
-        %@%             {                                                      %! FIGURE_NAME
-        %@%                 [                                                  %! FIGURE_NAME
-        %@%                 b.2.r.9                                            %! FIGURE_NAME
-        %@%                 \hspace                                            %! FIGURE_NAME
-        %@%                     #1                                             %! FIGURE_NAME
-        %@%                 \raise                                             %! FIGURE_NAME
-        %@%                     #0.25                                          %! FIGURE_NAME
-        %@%                     \fontsize                                      %! FIGURE_NAME
-        %@%                         #-2                                        %! FIGURE_NAME
-        %@%                         (22)                                       %! FIGURE_NAME
-        %@%                 ]                                                  %! FIGURE_NAME
-        %@%             }                                                      %! FIGURE_NAME
-        %@%     }                                                              %! FIGURE_NAME
+        %@% ^ \markup \fontsize #2 \concat { [ b.2.r.9 \hspace #1 \raise #0.25 \fontsize #-2 (22) ] } %! FIGURE_NAME
             \repeatTie                                                         %! baca.repeat_tie():baca.IndicatorCommand._call()
             <> \bacaStopTextSpanRhythmAnnotation                               %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(4):SPANNER_STOP
 
