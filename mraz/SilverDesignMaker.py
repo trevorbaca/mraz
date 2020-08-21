@@ -2971,12 +2971,12 @@ class SilverDesignMaker(object):
             if 6 < len(segment):
                 segment = abjad.sequence(segment)
                 # source = segment._name
-                source = "?"
+                # source = "?"
                 parts = segment.partition_by_counts([7, 3], cyclic=True, overhang=True)
                 part_segments = []
                 for i, part in enumerate(parts):
-                    string = rf"\concat {{ {source} \sub {i} }}"
-                    markup = abjad.Markup(string)
+                    # string = rf"\concat {{ {source} \sub {i} }}"
+                    # markup = abjad.Markup(string)
                     part_segment = baca.PitchClassSegment(part)
                     part_segments.append(part_segment)
                 new_segments.append(part_segments)
