@@ -225,7 +225,7 @@ A_RH_Voice_I = {                                                               %
             \set PianoMusicRHStaff.forceClef = ##t                             %! abjad.ScoreTemplate.attach_defaults(3):baca.SegmentMaker._treat_persistent_wrapper(2):baca.SegmentMaker._set_status_tag():DEFAULT_CLEF
             bf''''!1
             - \tenuto                                                          %! baca.tenuto():baca.IndicatorCommand._call()
-            ^ \markup { "(ottava brackets always govern all voices on staff)" } %! baca.markup():baca.IndicatorCommand._call()
+            ^ \mraz-ottava-brackets-always-govern-markup                       %! baca.markup():baca.IndicatorCommand._call()
         %@% ^ \markup \fontsize #2 \concat { [ b.1.1 \hspace #1 \raise #0.25 \fontsize #-2 (0) ] } %! FIGURE_NAME
             ^ \baca-default-indicator-markup "(“Piano”)"                       %! DEFAULT_INSTRUMENT_ALERT:baca.SegmentMaker._attach_latent_indicator_alert()
             - \abjad-dashed-line-with-hook                                     %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(2):SPANNER_START
