@@ -25,7 +25,10 @@ accumulator(
     baca.register(36),
     rmakers.beam_groups(),
     baca.tenuto(baca.pheads()),
-    baca.markup("(ottava brackets always govern all voices on staff)"),
+    baca.markup(
+        r"\mraz-ottava-brackets-always-govern-markup",
+        literal=True,
+    ),
     figure_name="b.1.1",
     hide_time_signature=True,
     signature=4,
