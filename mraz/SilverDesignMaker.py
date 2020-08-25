@@ -16,11 +16,11 @@ class SilverDesignMaker(object):
         ...     cell_indices=Down,
         ...     set_classes=True,
         ...     )
-        >>> abjad.show(lilypond_file, strict=79) # doctest: +SKIP
+        >>> abjad.show(lilypond_file) # doctest: +SKIP
 
         ..  docs::
 
-            >>> abjad.f(lilypond_file[abjad.Voice], strict=79)
+            >>> abjad.f(lilypond_file[abjad.Voice])
             \new Voice
             \with
             {
@@ -626,11 +626,11 @@ class SilverDesignMaker(object):
             ...     cell_indices=False,
             ...     set_classes=True,
             ...     )
-            >>> abjad.show(lilypond_file, strict=79) # doctest: +SKIP
+            >>> abjad.show(lilypond_file) # doctest: +SKIP
 
             ..  docs::
 
-                >>> abjad.f(lilypond_file[abjad.Voice], strict=79)
+                >>> abjad.f(lilypond_file[abjad.Voice])
                 \new Voice
                 \with
                 {
@@ -706,11 +706,11 @@ class SilverDesignMaker(object):
             ...     cell_indices=Down,
             ...     set_classes=True,
             ...     )
-            >>> abjad.show(lilypond_file, strict=79) # doctest: +SKIP
+            >>> abjad.show(lilypond_file) # doctest: +SKIP
 
             ..  docs::
 
-                >>> abjad.f(lilypond_file[abjad.Voice], strict=79)
+                >>> abjad.f(lilypond_file[abjad.Voice])
                 \new Voice
                 \with
                 {
@@ -1336,11 +1336,11 @@ class SilverDesignMaker(object):
             ...     cell_indices=Down,
             ...     set_classes=True,
             ...     )
-            >>> abjad.show(lilypond_file, strict=79) # doctest: +SKIP
+            >>> abjad.show(lilypond_file) # doctest: +SKIP
 
             ..  docs::
 
-                >>> abjad.f(lilypond_file[abjad.Voice], strict=79)
+                >>> abjad.f(lilypond_file[abjad.Voice])
                 \new Voice
                 \with
                 {
@@ -1764,11 +1764,11 @@ class SilverDesignMaker(object):
             ...     cell_indices=Down,
             ...     set_classes=True,
             ...     )
-            >>> abjad.show(lilypond_file, strict=79) # doctest: +SKIP
+            >>> abjad.show(lilypond_file) # doctest: +SKIP
 
             ..  docs::
 
-                >>> abjad.f(lilypond_file[abjad.Voice], strict=79)
+                >>> abjad.f(lilypond_file[abjad.Voice])
                 \new Voice
                 \with
                 {
@@ -2180,11 +2180,11 @@ class SilverDesignMaker(object):
             ...     cell_indices=Down,
             ...     set_classes=True,
             ...     )
-            >>> abjad.show(lilypond_file, strict=79) # doctest: +SKIP
+            >>> abjad.show(lilypond_file) # doctest: +SKIP
 
             ..  docs::
 
-                >>> abjad.f(lilypond_file[abjad.Voice], strict=79)
+                >>> abjad.f(lilypond_file[abjad.Voice])
                 \new Voice
                 \with
                 {
@@ -2608,11 +2608,11 @@ class SilverDesignMaker(object):
             ...     cell_indices=Down,
             ...     set_classes=False,
             ...     )
-            >>> abjad.show(lilypond_file, strict=79) # doctest: +SKIP
+            >>> abjad.show(lilypond_file) # doctest: +SKIP
 
             ..  docs::
 
-                >>> abjad.f(lilypond_file[abjad.Voice], strict=79)
+                >>> abjad.f(lilypond_file[abjad.Voice])
                 \new Voice
                 \with
                 {
@@ -2997,11 +2997,11 @@ class SilverDesignMaker(object):
             ...     cell_indices=Down,
             ...     set_classes=True,
             ...     )
-            >>> abjad.show(lilypond_file, strict=79) # doctest: +SKIP
+            >>> abjad.show(lilypond_file) # doctest: +SKIP
 
             ..  docs::
 
-                >>> abjad.f(lilypond_file[abjad.Voice], strict=79)
+                >>> abjad.f(lilypond_file[abjad.Voice])
                 \new Voice
                 \with
                 {
@@ -3616,11 +3616,11 @@ class SilverDesignMaker(object):
             ...     cell_indices=Down,
             ...     set_classes=True,
             ...     )
-            >>> abjad.show(lilypond_file, strict=79) # doctest: +SKIP
+            >>> abjad.show(lilypond_file) # doctest: +SKIP
 
             ..  docs::
 
-                >>> abjad.f(lilypond_file[abjad.Voice], strict=79)
+                >>> abjad.f(lilypond_file[abjad.Voice])
                 \new Voice
                 \with
                 {
