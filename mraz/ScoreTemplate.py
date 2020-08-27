@@ -96,15 +96,11 @@ class ScoreTemplate(baca.ScoreTemplate):
         global_context = self._make_global_context()
 
         # RH VOICES
-        rh_voice_1 = abjad.Voice(
-            lilypond_type="RHVoiceI", name="RH_Voice_I", tag=tag
-        )
+        rh_voice_1 = abjad.Voice(lilypond_type="RHVoiceI", name="RH_Voice_I", tag=tag)
         rh_voice_1I = abjad.Voice(
             lilypond_type="RHVoiceIInserts", name="RH_Voice_I_Inserts", tag=tag
         )
-        rh_voice_2 = abjad.Voice(
-            lilypond_type="RHVoiceII", name="RH_Voice_II", tag=tag
-        )
+        rh_voice_2 = abjad.Voice(lilypond_type="RHVoiceII", name="RH_Voice_II", tag=tag)
         rh_voice_2I = abjad.Voice(
             lilypond_type="RHVoiceIIInserts",
             name="RH_Voice_II_Inserts",
@@ -118,20 +114,14 @@ class ScoreTemplate(baca.ScoreTemplate):
             name="RH_Voice_III_Inserts",
             tag=tag,
         )
-        rh_voice_4 = abjad.Voice(
-            lilypond_type="RHVoiceIV", name="RH_Voice_IV", tag=tag
-        )
+        rh_voice_4 = abjad.Voice(lilypond_type="RHVoiceIV", name="RH_Voice_IV", tag=tag)
         rh_voice_4I = abjad.Voice(
             lilypond_type="RHVoiceIVInserts",
             name="RH_Voice_IV_Inserts",
             tag=tag,
         )
-        rh_voice_5 = abjad.Voice(
-            lilypond_type="RHVoiceV", name="RH_Voice_V", tag=tag
-        )
-        rh_voice_6 = abjad.Voice(
-            lilypond_type="RHVoiceVI", name="RH_Voice_VI", tag=tag
-        )
+        rh_voice_5 = abjad.Voice(lilypond_type="RHVoiceV", name="RH_Voice_V", tag=tag)
+        rh_voice_6 = abjad.Voice(lilypond_type="RHVoiceVI", name="RH_Voice_VI", tag=tag)
         rh_resonance_voice = abjad.Voice(
             lilypond_type="RHResonanceVoice",
             name="RH_Resonance_Voice",
@@ -139,32 +129,22 @@ class ScoreTemplate(baca.ScoreTemplate):
         )
 
         # LH VOICES
-        lh_voice_1 = abjad.Voice(
-            lilypond_type="LHVoiceI", name="LH_Voice_I", tag=tag
-        )
-        lh_voice_2 = abjad.Voice(
-            lilypond_type="LHVoiceII", name="LH_Voice_II", tag=tag
-        )
+        lh_voice_1 = abjad.Voice(lilypond_type="LHVoiceI", name="LH_Voice_I", tag=tag)
+        lh_voice_2 = abjad.Voice(lilypond_type="LHVoiceII", name="LH_Voice_II", tag=tag)
         lh_voice_3 = abjad.Voice(
             lilypond_type="LHVoiceIII", name="LH_Voice_III", tag=tag
         )
-        lh_voice_4 = abjad.Voice(
-            lilypond_type="LHVoiceIV", name="LH_Voice_IV", tag=tag
-        )
+        lh_voice_4 = abjad.Voice(lilypond_type="LHVoiceIV", name="LH_Voice_IV", tag=tag)
         lh_voice_4I = abjad.Voice(
             lilypond_type="LHVoiceIVInserts",
             name="LH_Voice_IV_Inserts",
             tag=tag,
         )
-        lh_voice_5 = abjad.Voice(
-            lilypond_type="LHVoiceV", name="LH_Voice_V", tag=tag
-        )
+        lh_voice_5 = abjad.Voice(lilypond_type="LHVoiceV", name="LH_Voice_V", tag=tag)
         lh_voice_5I = abjad.Voice(
             lilypond_type="LHVoiceVInserts", name="LH_Voice_V_Inserts", tag=tag
         )
-        lh_voice_6 = abjad.Voice(
-            lilypond_type="LHVoiceVI", name="LH_Voice_VI", tag=tag
-        )
+        lh_voice_6 = abjad.Voice(lilypond_type="LHVoiceVI", name="LH_Voice_VI", tag=tag)
         lh_voice_6I = abjad.Voice(
             lilypond_type="LHVoiceVIInserts",
             name="LH_Voice_VI_Inserts",
@@ -196,9 +176,7 @@ class ScoreTemplate(baca.ScoreTemplate):
             name="Piano_Music_RH_Staff",
             tag=tag,
         )
-        abjad.annotate(
-            piano_music_rh_staff, "default_clef", abjad.Clef("treble")
-        )
+        abjad.annotate(piano_music_rh_staff, "default_clef", abjad.Clef("treble"))
 
         # LH STAFF
         piano_music_lh_staff = abjad.Staff(
@@ -219,9 +197,7 @@ class ScoreTemplate(baca.ScoreTemplate):
             name="Piano_Music_LH_Staff",
             tag=tag,
         )
-        abjad.annotate(
-            piano_music_lh_staff, "default_clef", abjad.Clef("bass")
-        )
+        abjad.annotate(piano_music_lh_staff, "default_clef", abjad.Clef("bass"))
 
         # STAFF GROUP
         piano_music_staff_group = abjad.StaffGroup(
@@ -242,9 +218,7 @@ class ScoreTemplate(baca.ScoreTemplate):
         )
 
         # SCORE
-        score = abjad.Score(
-            [global_context, music_context], name="Score", tag=tag
-        )
+        score = abjad.Score([global_context, music_context], name="Score", tag=tag)
         self._assert_lilypond_identifiers(score)
         self._assert_unique_context_names(score)
         self._assert_matching_custom_context_names(score)
