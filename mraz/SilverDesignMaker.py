@@ -20,7 +20,9 @@ class SilverDesignMaker(object):
 
         ..  docs::
 
-            >>> abjad.f(lilypond_file[abjad.Voice])
+            >>> voice = lilypond_file[abjad.Score][0][0]
+            >>> string = abjad.lilypond(voice)
+            >>> print(string)
             \new Voice
             \with
             {
@@ -592,7 +594,7 @@ class SilverDesignMaker(object):
                 c'8
                 \stopGroup
                 s8
-                \bar "|."                                                                  %! SCORE_1
+                \bar "|."
                 \override Score.BarLine.transparent = ##f
             }
 
@@ -630,7 +632,9 @@ class SilverDesignMaker(object):
 
             ..  docs::
 
-                >>> abjad.f(lilypond_file[abjad.Voice])
+                >>> voice = lilypond_file[abjad.Score][0][0]
+                >>> string = abjad.lilypond(voice)
+                >>> print(string)
                 \new Voice
                 \with
                 {
@@ -681,7 +685,7 @@ class SilverDesignMaker(object):
                     f'8
                     \stopGroup
                     s8
-                    \bar "|."                                                                  %! SCORE_1
+                    \bar "|."
                     \override Score.BarLine.transparent = ##f
                 }
 
@@ -710,7 +714,9 @@ class SilverDesignMaker(object):
 
             ..  docs::
 
-                >>> abjad.f(lilypond_file[abjad.Voice])
+                >>> voice = lilypond_file[abjad.Score][0][0]
+                >>> string = abjad.lilypond(voice)
+                >>> print(string)
                 \new Voice
                 \with
                 {
@@ -1306,7 +1312,7 @@ class SilverDesignMaker(object):
                     a'8
                     \stopGroup
                     s8
-                    \bar "|."                                                                  %! SCORE_1
+                    \bar "|."
                     \override Score.BarLine.transparent = ##f
                 }
 
@@ -1340,7 +1346,9 @@ class SilverDesignMaker(object):
 
             ..  docs::
 
-                >>> abjad.f(lilypond_file[abjad.Voice])
+                >>> voice = lilypond_file[abjad.Score][0][0]
+                >>> string = abjad.lilypond(voice)
+                >>> print(string)
                 \new Voice
                 \with
                 {
@@ -1720,7 +1728,7 @@ class SilverDesignMaker(object):
                     a'8
                     \stopGroup
                     s8
-                    \bar "|."                                                                  %! SCORE_1
+                    \bar "|."
                     \override Score.BarLine.transparent = ##f
                 }
 
@@ -1768,7 +1776,9 @@ class SilverDesignMaker(object):
 
             ..  docs::
 
-                >>> abjad.f(lilypond_file[abjad.Voice])
+                >>> voice = lilypond_file[abjad.Score][0][0]
+                >>> string = abjad.lilypond(voice)
+                >>> print(string)
                 \new Voice
                 \with
                 {
@@ -2148,7 +2158,7 @@ class SilverDesignMaker(object):
                     d'8
                     \stopGroup
                     s8
-                    \bar "|."                                                                  %! SCORE_1
+                    \bar "|."
                     \override Score.BarLine.transparent = ##f
                 }
 
@@ -2184,7 +2194,9 @@ class SilverDesignMaker(object):
 
             ..  docs::
 
-                >>> abjad.f(lilypond_file[abjad.Voice])
+                >>> voice = lilypond_file[abjad.Score][0][0]
+                >>> string = abjad.lilypond(voice)
+                >>> print(string)
                 \new Voice
                 \with
                 {
@@ -2564,7 +2576,7 @@ class SilverDesignMaker(object):
                     cs'8
                     \stopGroup
                     s8
-                    \bar "|."                                                                  %! SCORE_1
+                    \bar "|."
                     \override Score.BarLine.transparent = ##f
                 }
 
@@ -2612,7 +2624,9 @@ class SilverDesignMaker(object):
 
             ..  docs::
 
-                >>> abjad.f(lilypond_file[abjad.Voice])
+                >>> voice = lilypond_file[abjad.Score][0][0]
+                >>> string = abjad.lilypond(voice)
+                >>> print(string)
                 \new Voice
                 \with
                 {
@@ -2952,7 +2966,7 @@ class SilverDesignMaker(object):
                     \stopGroup
                     \stopGroup
                     s8
-                    \bar "|."                                                                  %! SCORE_1
+                    \bar "|."
                     \override Score.BarLine.transparent = ##f
                 }
 
@@ -3001,7 +3015,9 @@ class SilverDesignMaker(object):
 
             ..  docs::
 
-                >>> abjad.f(lilypond_file[abjad.Voice])
+                >>> voice = lilypond_file[abjad.Score][0][0]
+                >>> string = abjad.lilypond(voice)
+                >>> print(string)
                 \new Voice
                 \with
                 {
@@ -3573,7 +3589,7 @@ class SilverDesignMaker(object):
                     c'8
                     \stopGroup
                     s8
-                    \bar "|."                                                                  %! SCORE_1
+                    \bar "|."
                     \override Score.BarLine.transparent = ##f
                 }
 
@@ -3620,7 +3636,9 @@ class SilverDesignMaker(object):
 
             ..  docs::
 
-                >>> abjad.f(lilypond_file[abjad.Voice])
+                >>> voice = lilypond_file[abjad.Score][0][0]
+                >>> string = abjad.lilypond(voice)
+                >>> print(string)
                 \new Voice
                 \with
                 {
@@ -4192,7 +4210,7 @@ class SilverDesignMaker(object):
                     c'8
                     \stopGroup
                     s8
-                    \bar "|."                                                                  %! SCORE_1
+                    \bar "|."
                     \override Score.BarLine.transparent = ##f
                 }
 
