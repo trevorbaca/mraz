@@ -546,7 +546,7 @@ accumulator(
     baca.dynamic_text_extra_offset((0, -8)),
     baca.dynamic_up(),
     baca.slur(map=baca.ntruns()),
-    baca.text_script_color("black", baca.pleaf(0)),
+    baca.text_script_color("#black", baca.pleaf(0)),
     baca.text_script_up(),
     anchor=baca.resume_after("rh_v5"),
     signature=4,
