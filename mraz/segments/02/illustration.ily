@@ -1320,9 +1320,9 @@ b_LH_Voice_V = {                                                               %
         %@% ^ \markup \fontsize #2 \concat { [ lh-5 8.3.1 \hspace #1 \raise #0.25 \fontsize #-2 (0) ] } %! FIGURE_NAME
             - \abjad-dashed-line-with-hook                                     %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(2):SPANNER_START
             - \baca-text-spanner-left-text "baca.music()"                      %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(2):SPANNER_START
-            - \tweak bound-details.right.padding #2.75                         %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(2):AUTODETECT:SPANNER_START
+            - \tweak bound-details.right.padding 2.75                          %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(2):AUTODETECT:SPANNER_START
             - \tweak color #darkcyan                                           %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(2):SPANNER_START
-            - \tweak staff-padding #8                                          %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(2):SPANNER_START
+            - \tweak staff-padding 8                                           %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(2):SPANNER_START
             \bacaStartTextSpanRhythmAnnotation                                 %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(2):SPANNER_START
 
             r32
@@ -1520,7 +1520,7 @@ b_LH_Voice_V = {                                                               %
         \times 16/15 {
 
             % [02 LH_Voice_V measure 18 / measure 9]                           %! baca.SegmentMaker._comment_measure_numbers()
-            \override TupletBracket.staff-padding = #3                         %! baca.tuplet_bracket_staff_padding():baca.OverrideCommand._call(1)
+            \override TupletBracket.staff-padding = 3                          %! baca.tuplet_bracket_staff_padding():baca.OverrideCommand._call(1)
             fs,,!8
         %@% ^ \markup \fontsize #2 \concat { [ lh-5 8.3.9 \hspace #1 \raise #0.25 \fontsize #-2 (8) ] } %! FIGURE_NAME
 
@@ -1723,7 +1723,7 @@ b_LH_Voice_VI = {                                                              %
 
     % [02 LH_Voice_VI measure 10 / measure 1]                                  %! baca.SegmentMaker._comment_measure_numbers()
     \override Script.direction = #down                                         %! baca.script_down():baca.OverrideCommand._call(1)
-    \override TupletBracket.staff-padding = #6                                 %! baca.tuplet_bracket_staff_padding():baca.OverrideCommand._call(1)
+    \override TupletBracket.staff-padding = 6                                  %! baca.tuplet_bracket_staff_padding():baca.OverrideCommand._call(1)
     \clef "bass"                                                               %! baca.SegmentMaker._reapply_persistent_indicators(3):baca.SegmentMaker._set_status_tag():REAPPLIED_CLEF
     \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'green4)        %! baca.SegmentMaker._attach_color_literal(2):REAPPLIED_CLEF_COLOR
 %@% \override PianoMusicLHStaff.Clef.color = ##f                               %! baca.SegmentMaker._attach_color_literal(1):REAPPLIED_CLEF_COLOR_CANCELLATION
@@ -1733,9 +1733,9 @@ b_LH_Voice_VI = {                                                              %
     \f                                                                         %! baca.SegmentMaker._reapply_persistent_indicators(3):baca.SegmentMaker._set_status_tag():REAPPLIED_DYNAMIC
     - \abjad-dashed-line-with-hook                                             %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(2):SPANNER_START
     - \baca-text-spanner-left-text "baca.music()"                              %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(2):SPANNER_START
-    - \tweak bound-details.right.padding #2.75                                 %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(2):AUTODETECT:SPANNER_START
+    - \tweak bound-details.right.padding 2.75                                  %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(2):AUTODETECT:SPANNER_START
     - \tweak color #darkcyan                                                   %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(2):SPANNER_START
-    - \tweak staff-padding #8                                                  %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(2):SPANNER_START
+    - \tweak staff-padding 8                                                   %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(2):SPANNER_START
     \bacaStartTextSpanRhythmAnnotation                                         %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(2):SPANNER_START
     \override PianoMusicLHStaff.Clef.color = #(x11-color 'OliveDrab)           %! baca.SegmentMaker._attach_color_literal(2):REAPPLIED_CLEF_REDRAW_COLOR
 
@@ -1751,7 +1751,7 @@ b_LH_Voice_VI = {                                                              %
             - \tenuto                                                          %! baca.tenuto():baca.IndicatorCommand._call()
         %@% ^ \markup \fontsize #2 \concat { [ lh-6 8.3.1 \hspace #1 \raise #0.25 \fontsize #-2 (12) ] } %! FIGURE_NAME
 
-            \override Rest.staff-position = #-10                               %! baca.rest_position():baca.OverrideCommand._call(1)
+            \override Rest.staff-position = -10                                %! baca.rest_position():baca.OverrideCommand._call(1)
             r4
 
             c,,4
@@ -1811,7 +1811,7 @@ b_LH_Voice_VI = {                                                              %
 
             r8.
 
-            \once \override NoteColumn.force-hshift = #-1                      %! baca.note_column_shift():baca.OverrideCommand._call(1)
+            \once \override NoteColumn.force-hshift = -1                       %! baca.note_column_shift():baca.OverrideCommand._call(1)
             e,,16
             - \tenuto                                                          %! baca.tenuto():baca.IndicatorCommand._call()
 
