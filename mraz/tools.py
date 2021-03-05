@@ -19,7 +19,7 @@ metronome_marks = abjad.OrderedDict(
 # classes
 
 
-class CollectionMaker(object):
+class CollectionMaker:
     """
     Collection maker.
     """
