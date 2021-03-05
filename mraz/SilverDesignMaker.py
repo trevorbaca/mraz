@@ -2,7 +2,7 @@ import abjad
 import baca
 
 
-class SilverDesignMaker(object):
+class SilverDesignMaker:
     r"""
     Silver design-maker.
 
