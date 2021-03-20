@@ -1,10 +1,10 @@
 import distutils.version
 import platform
 
-from .ScoreTemplate import ScoreTemplate
-from .SilverDesignMaker import SilverDesignMaker
 from .tools import (
     CollectionMaker,
+    ScoreTemplate,
+    SilverDesignMaker,
     clean_up_repeat_ties,
     instruments,
     metronome_marks,
