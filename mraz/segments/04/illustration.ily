@@ -869,7 +869,8 @@ d_RH_Voice_I = {                                                               %
     {
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 5/4 {
+        \times 5/4
+        {
 
             % [04 RH_Voice_I measure 51 / measure 18]                          %! baca.SegmentMaker._comment_measure_numbers()
             \override TextScript.direction = #up                               %! baca.text_script_up():baca.OverrideCommand._call(1)
@@ -927,7 +928,8 @@ d_RH_Voice_I = {                                                               %
 
     {
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             % [04 RH_Voice_I measure 53 / measure 20]                          %! baca.SegmentMaker._comment_measure_numbers()
             r2
@@ -939,7 +941,8 @@ d_RH_Voice_I = {                                                               %
 
     {
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             % [04 RH_Voice_I measure 54 / measure 21]                          %! baca.SegmentMaker._comment_measure_numbers()
             \once \override Rest.transparent = ##t                             %! baca.rest_transparent():baca.OverrideCommand._call(1)
@@ -956,7 +959,8 @@ d_RH_Voice_I = {                                                               %
     {
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 6/4 {
+        \times 6/4
+        {
 
             % [04 RH_Voice_I measure 56 / measure 23]                          %! baca.SegmentMaker._comment_measure_numbers()
             \set stemLeftBeamCount = 0
@@ -1000,7 +1004,8 @@ d_RH_Voice_I = {                                                               %
     {
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 19/14 {
+        \times 19/14
+        {
 
             % [04 RH_Voice_I measure 60 / measure 27]                          %! baca.SegmentMaker._comment_measure_numbers()
             \set stemLeftBeamCount = 0
@@ -1072,7 +1077,8 @@ d_RH_Voice_I = {                                                               %
 
     {
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             % [04 RH_Voice_I measure 66 / measure 33]                          %! baca.SegmentMaker._comment_measure_numbers()
             ef''''!1..
@@ -1087,7 +1093,8 @@ d_RH_Voice_I = {                                                               %
 
     {
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             % [04 RH_Voice_I measure 67 / measure 34]                          %! baca.SegmentMaker._comment_measure_numbers()
             f''''1.
@@ -1100,7 +1107,8 @@ d_RH_Voice_I = {                                                               %
 
     {
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             % [04 RH_Voice_I measure 68 / measure 35]                          %! baca.SegmentMaker._comment_measure_numbers()
             bf''''!1
@@ -1113,7 +1121,8 @@ d_RH_Voice_I = {                                                               %
 
     {
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             % [04 RH_Voice_I measure 69 / measure 36]                          %! baca.SegmentMaker._comment_measure_numbers()
             ef''''!1
@@ -1130,7 +1139,8 @@ d_RH_Voice_I = {                                                               %
 
     {
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             % [04 RH_Voice_I measure 71 / measure 38]                          %! baca.SegmentMaker._comment_measure_numbers()
             \ottava 1                                                          %! baca.ottava():baca.SpannerIndicatorCommand._call(2):SPANNER_START
@@ -1144,7 +1154,8 @@ d_RH_Voice_I = {                                                               %
 
     {
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             % [04 RH_Voice_I measure 72 / measure 39]                          %! baca.SegmentMaker._comment_measure_numbers()
             bf''''!2
@@ -1398,7 +1409,8 @@ d_RH_Voice_II = {                                                              %
 
     {
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             % [04 RH_Voice_II measure 35 / measure 2]                          %! baca.SegmentMaker._comment_measure_numbers()
             \once \override Script.direction = #up                             %! baca.script_up():baca.OverrideCommand._call(1)
@@ -1422,7 +1434,8 @@ d_RH_Voice_II = {                                                              %
         \override TupletNumber.stencil = ##f
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 5/4 {
+        \times 5/4
+        {
 
             % [04 RH_Voice_II measure 51 / measure 18]                         %! baca.SegmentMaker._comment_measure_numbers()
             s8
@@ -1472,7 +1485,8 @@ d_RH_Voice_II = {                                                              %
         \override TupletNumber.stencil = ##f
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 6/4 {
+        \times 6/4
+        {
 
             % [04 RH_Voice_II measure 56 / measure 23]                         %! baca.SegmentMaker._comment_measure_numbers()
             s8
@@ -1516,7 +1530,8 @@ d_RH_Voice_II = {                                                              %
         \override TupletNumber.stencil = ##f
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 19/14 {
+        \times 19/14
+        {
 
             % [04 RH_Voice_II measure 60 / measure 27]                         %! baca.SegmentMaker._comment_measure_numbers()
             s8
@@ -1575,7 +1590,8 @@ d_RH_Voice_II = {                                                              %
 
     {
 
-        \times 4/5 {
+        \times 4/5
+        {
 
             % [04 RH_Voice_II measure 68 / measure 35]                         %! baca.SegmentMaker._comment_measure_numbers()
             \set stemLeftBeamCount = 0
@@ -1609,7 +1625,8 @@ d_RH_Voice_II = {                                                              %
 
         }
 
-        \times 4/5 {
+        \times 4/5
+        {
 
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
@@ -1633,7 +1650,8 @@ d_RH_Voice_II = {                                                              %
 
         }
 
-        \times 4/5 {
+        \times 4/5
+        {
 
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
@@ -1657,7 +1675,8 @@ d_RH_Voice_II = {                                                              %
 
         }
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
@@ -1687,7 +1706,8 @@ d_RH_Voice_II = {                                                              %
 
     {
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             % [04 RH_Voice_II measure 69 / measure 36]                         %! baca.SegmentMaker._comment_measure_numbers()
             \set stemLeftBeamCount = 0
@@ -1718,7 +1738,8 @@ d_RH_Voice_II = {                                                              %
 
         }
 
-        \times 4/5 {
+        \times 4/5
+        {
 
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
@@ -1742,7 +1763,8 @@ d_RH_Voice_II = {                                                              %
 
         }
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
@@ -1762,7 +1784,8 @@ d_RH_Voice_II = {                                                              %
 
         }
 
-        \times 4/5 {
+        \times 4/5
+        {
 
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
@@ -1797,7 +1820,8 @@ d_RH_Voice_II = {                                                              %
 
     {
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             % [04 RH_Voice_II measure 70 / measure 37]                         %! baca.SegmentMaker._comment_measure_numbers()
             \once \override Script.direction = #up                             %! baca.script_up():baca.OverrideCommand._call(1)
@@ -1814,7 +1838,8 @@ d_RH_Voice_II = {                                                              %
 
     {
 
-        \times 2/3 {
+        \times 2/3
+        {
 
             % [04 RH_Voice_II measure 71 / measure 38]                         %! baca.SegmentMaker._comment_measure_numbers()
             \set stemLeftBeamCount = 0
@@ -1854,7 +1879,8 @@ d_RH_Voice_II = {                                                              %
 
         }
 
-        \times 4/5 {
+        \times 4/5
+        {
 
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
@@ -1878,7 +1904,8 @@ d_RH_Voice_II = {                                                              %
 
         }
 
-        \times 4/5 {
+        \times 4/5
+        {
 
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
@@ -1902,7 +1929,8 @@ d_RH_Voice_II = {                                                              %
 
         }
 
-        \times 4/5 {
+        \times 4/5
+        {
 
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
@@ -1937,7 +1965,8 @@ d_RH_Voice_II = {                                                              %
 
     {
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             % [04 RH_Voice_II measure 72 / measure 39]                         %! baca.SegmentMaker._comment_measure_numbers()
             \set stemLeftBeamCount = 0
@@ -1968,7 +1997,8 @@ d_RH_Voice_II = {                                                              %
 
         }
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
@@ -2000,7 +2030,8 @@ d_RH_Voice_II = {                                                              %
 
     {
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             % [04 RH_Voice_II measure 73 / measure 40]                         %! baca.SegmentMaker._comment_measure_numbers()
             \arpeggioArrowUp                                                   %! baca.up_arpeggio():baca.IndicatorCommand._call()
@@ -2017,7 +2048,8 @@ d_RH_Voice_II = {                                                              %
 
     {
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             % [04 RH_Voice_II measure 74 / measure 41]                         %! baca.SegmentMaker._comment_measure_numbers()
             \arpeggioArrowUp                                                   %! baca.up_arpeggio():baca.IndicatorCommand._call()
@@ -2034,7 +2066,8 @@ d_RH_Voice_II = {                                                              %
 
     {
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             % [04 RH_Voice_II measure 75 / measure 42]                         %! baca.SegmentMaker._comment_measure_numbers()
             \arpeggioArrowUp                                                   %! baca.up_arpeggio():baca.IndicatorCommand._call()
@@ -2054,7 +2087,8 @@ d_RH_Voice_II = {                                                              %
 
     {
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             % [04 RH_Voice_II measure 77 / measure 44]                         %! baca.SegmentMaker._comment_measure_numbers()
             \override Script.direction = #up                                   %! baca.script_up():baca.OverrideCommand._call(1)
@@ -2286,7 +2320,8 @@ d_RH_Voice_III = {                                                             %
     {
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 12/11 {
+        \times 12/11
+        {
 
             % [04 RH_Voice_III measure 34 / measure 1]                         %! baca.SegmentMaker._comment_measure_numbers()
             \override Stem.direction = #up                                     %! baca.stem_up():baca.OverrideCommand._call(1)
@@ -2332,7 +2367,8 @@ d_RH_Voice_III = {                                                             %
     {
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 6/7 {
+        \times 6/7
+        {
 
             % [04 RH_Voice_III measure 36 / measure 3]                         %! baca.SegmentMaker._comment_measure_numbers()
             \override TupletBracket.direction = #up                            %! baca.tuplet_bracket_up():baca.OverrideCommand._call(1)
@@ -2371,7 +2407,8 @@ d_RH_Voice_III = {                                                             %
 
     {
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             % [04 RH_Voice_III measure 38 / measure 5]                         %! baca.SegmentMaker._comment_measure_numbers()
             r2.
@@ -2384,7 +2421,8 @@ d_RH_Voice_III = {                                                             %
     {
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 12/11 {
+        \times 12/11
+        {
 
             % [04 RH_Voice_III measure 39 / measure 6]                         %! baca.SegmentMaker._comment_measure_numbers()
             \override Stem.direction = #up                                     %! baca.stem_up():baca.OverrideCommand._call(1)
@@ -2416,7 +2454,8 @@ d_RH_Voice_III = {                                                             %
 
     {
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             % [04 RH_Voice_III measure 40 / measure 7]                         %! baca.SegmentMaker._comment_measure_numbers()
             r2.
@@ -2431,7 +2470,8 @@ d_RH_Voice_III = {                                                             %
 
     {
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             % [04 RH_Voice_III measure 55 / measure 22]                        %! baca.SegmentMaker._comment_measure_numbers()
             \override Stem.direction = #down                                   %! baca.stem_down():baca.OverrideCommand._call(1)
@@ -2465,7 +2505,8 @@ d_RH_Voice_III = {                                                             %
     {
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 6/7 {
+        \times 6/7
+        {
 
             % [04 RH_Voice_III measure 76 / measure 43]                        %! baca.SegmentMaker._comment_measure_numbers()
             \override TextScript.direction = #up                               %! baca.text_script_up():baca.OverrideCommand._call(1)
@@ -2506,7 +2547,8 @@ d_RH_Voice_III = {                                                             %
     {
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 8/5 {
+        \times 8/5
+        {
 
             % [04 RH_Voice_III measure 77 / measure 44]                        %! baca.SegmentMaker._comment_measure_numbers()
             \ottava 1                                                          %! baca.ottava():baca.SpannerIndicatorCommand._call(2):SPANNER_START
@@ -3072,7 +3114,8 @@ d_RH_Voice_V = {                                                               %
 
     {
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             % [04 RH_Voice_V measure 50 / measure 17]                          %! baca.SegmentMaker._comment_measure_numbers()
             <b d' fs'! a'>16
@@ -3745,7 +3788,8 @@ d_LH_Voice_II = {                                                              %
 
     {
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             % [04 LH_Voice_II measure 73 / measure 40]                         %! baca.SegmentMaker._comment_measure_numbers()
             \override Staff.SustainPedalLineSpanner.staff-padding = 4          %! baca.sustain_pedal_staff_padding():baca.OverrideCommand._call(1)
@@ -3999,7 +4043,8 @@ d_LH_Voice_IV = {                                                              %
 
     {
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             % [04 LH_Voice_IV measure 37 / measure 4]                          %! baca.SegmentMaker._comment_measure_numbers()
             \override Slur.direction = #up                                     %! baca.slur_up():baca.OverrideCommand._call(1)
@@ -4358,7 +4403,8 @@ d_LH_Voice_V = {                                                               %
 
     {
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             % [04 LH_Voice_V measure 34 / measure 1]                           %! baca.SegmentMaker._comment_measure_numbers()
             \dynamicDown                                                       %! baca.dynamic_down():baca.IndicatorCommand._call()
@@ -4396,7 +4442,8 @@ d_LH_Voice_V = {                                                               %
 
     {
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             % [04 LH_Voice_V measure 35 / measure 2]                           %! baca.SegmentMaker._comment_measure_numbers()
             r2.
@@ -4408,7 +4455,8 @@ d_LH_Voice_V = {                                                               %
 
     {
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             % [04 LH_Voice_V measure 36 / measure 3]                           %! baca.SegmentMaker._comment_measure_numbers()
             r4
@@ -4442,7 +4490,8 @@ d_LH_Voice_V = {                                                               %
 
     {
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             % [04 LH_Voice_V measure 38 / measure 5]                           %! baca.SegmentMaker._comment_measure_numbers()
             r16
@@ -4461,7 +4510,8 @@ d_LH_Voice_V = {                                                               %
 
     {
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             % [04 LH_Voice_V measure 39 / measure 6]                           %! baca.SegmentMaker._comment_measure_numbers()
             r4
@@ -4494,7 +4544,8 @@ d_LH_Voice_V = {                                                               %
 
     {
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             % [04 LH_Voice_V measure 40 / measure 7]                           %! baca.SegmentMaker._comment_measure_numbers()
             \override Rest.direction = #up                                     %! baca.rest_up():baca.OverrideCommand._call(1)
@@ -4507,7 +4558,8 @@ d_LH_Voice_V = {                                                               %
 
     {
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             % [04 LH_Voice_V measure 41 / measure 8]                           %! baca.SegmentMaker._comment_measure_numbers()
             r16
@@ -4526,7 +4578,8 @@ d_LH_Voice_V = {                                                               %
 
     {
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             % [04 LH_Voice_V measure 42 / measure 9]                           %! baca.SegmentMaker._comment_measure_numbers()
             <g b f' fs'! a'>16
@@ -4544,9 +4597,11 @@ d_LH_Voice_V = {                                                               %
     {
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 4/3 {
+        \times 4/3
+        {
 
-            \scaleDurations #'(1 . 1) {
+            \scaleDurations #'(1 . 1)
+            {
 
                 % [04 LH_Voice_V measure 43 / measure 10]                      %! baca.SegmentMaker._comment_measure_numbers()
                 \override TupletBracket.direction = #up                        %! baca.tuplet_bracket_up():baca.OverrideCommand._call(1)
@@ -4567,7 +4622,8 @@ d_LH_Voice_V = {                                                               %
 
     {
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             % [04 LH_Voice_V measure 44 / measure 11]                          %! baca.SegmentMaker._comment_measure_numbers()
             <g b f' fs'! a'>16
@@ -4584,7 +4640,8 @@ d_LH_Voice_V = {                                                               %
 
     {
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             % [04 LH_Voice_V measure 45 / measure 12]                          %! baca.SegmentMaker._comment_measure_numbers()
             r16
@@ -4601,7 +4658,8 @@ d_LH_Voice_V = {                                                               %
 
     {
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             % [04 LH_Voice_V measure 46 / measure 13]                          %! baca.SegmentMaker._comment_measure_numbers()
             <g b f' fs'! a'>16
@@ -4619,9 +4677,11 @@ d_LH_Voice_V = {                                                               %
     {
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 4/3 {
+        \times 4/3
+        {
 
-            \scaleDurations #'(1 . 1) {
+            \scaleDurations #'(1 . 1)
+            {
 
                 % [04 LH_Voice_V measure 47 / measure 14]                      %! baca.SegmentMaker._comment_measure_numbers()
                 \override TupletBracket.direction = #up                        %! baca.tuplet_bracket_up():baca.OverrideCommand._call(1)
@@ -4642,7 +4702,8 @@ d_LH_Voice_V = {                                                               %
 
     {
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             % [04 LH_Voice_V measure 48 / measure 15]                          %! baca.SegmentMaker._comment_measure_numbers()
             <g b f' fs'! a'>16
@@ -4660,9 +4721,11 @@ d_LH_Voice_V = {                                                               %
     {
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 4/3 {
+        \times 4/3
+        {
 
-            \scaleDurations #'(1 . 1) {
+            \scaleDurations #'(1 . 1)
+            {
 
                 % [04 LH_Voice_V measure 49 / measure 16]                      %! baca.SegmentMaker._comment_measure_numbers()
                 \override TupletBracket.direction = #up                        %! baca.tuplet_bracket_up():baca.OverrideCommand._call(1)
@@ -4684,7 +4747,8 @@ d_LH_Voice_V = {                                                               %
 
     {
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             % [04 LH_Voice_V measure 50 / measure 17]                          %! baca.SegmentMaker._comment_measure_numbers()
             \once \override Stem.direction = #up                               %! baca.stem_up():baca.OverrideCommand._call(1)
@@ -4703,9 +4767,11 @@ d_LH_Voice_V = {                                                               %
     {
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 7/6 {
+        \times 7/6
+        {
 
-            \scaleDurations #'(1 . 1) {
+            \scaleDurations #'(1 . 1)
+            {
 
                 % [04 LH_Voice_V measure 51 / measure 18]                      %! baca.SegmentMaker._comment_measure_numbers()
                 \override TupletBracket.staff-padding = 2                      %! baca.tuplet_bracket_staff_padding():baca.OverrideCommand._call(1)
@@ -4722,7 +4788,8 @@ d_LH_Voice_V = {                                                               %
 
             }
 
-            \scaleDurations #'(1 . 1) {
+            \scaleDurations #'(1 . 1)
+            {
 
                 \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 1
@@ -4740,7 +4807,8 @@ d_LH_Voice_V = {                                                               %
 
     {
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             % [04 LH_Voice_V measure 52 / measure 19]                          %! baca.SegmentMaker._comment_measure_numbers()
             r1
@@ -4752,7 +4820,8 @@ d_LH_Voice_V = {                                                               %
 
     {
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             % [04 LH_Voice_V measure 53 / measure 20]                          %! baca.SegmentMaker._comment_measure_numbers()
             r8
@@ -4770,9 +4839,11 @@ d_LH_Voice_V = {                                                               %
     {
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 8/7 {
+        \times 8/7
+        {
 
-            \scaleDurations #'(1 . 1) {
+            \scaleDurations #'(1 . 1)
+            {
 
                 % [04 LH_Voice_V measure 56 / measure 23]                      %! baca.SegmentMaker._comment_measure_numbers()
                 r4
@@ -4786,7 +4857,8 @@ d_LH_Voice_V = {                                                               %
 
             }
 
-            \scaleDurations #'(1 . 1) {
+            \scaleDurations #'(1 . 1)
+            {
 
                 \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 1
@@ -4794,7 +4866,8 @@ d_LH_Voice_V = {                                                               %
 
             }
 
-            \scaleDurations #'(1 . 1) {
+            \scaleDurations #'(1 . 1)
+            {
 
                 \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 1
@@ -4812,7 +4885,8 @@ d_LH_Voice_V = {                                                               %
 
     {
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             % [04 LH_Voice_V measure 57 / measure 24]                          %! baca.SegmentMaker._comment_measure_numbers()
             r2
@@ -4825,9 +4899,11 @@ d_LH_Voice_V = {                                                               %
     {
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 8/7 {
+        \times 8/7
+        {
 
-            \scaleDurations #'(1 . 1) {
+            \scaleDurations #'(1 . 1)
+            {
 
                 % [04 LH_Voice_V measure 58 / measure 25]                      %! baca.SegmentMaker._comment_measure_numbers()
                 r4
@@ -4841,7 +4917,8 @@ d_LH_Voice_V = {                                                               %
 
             }
 
-            \scaleDurations #'(1 . 1) {
+            \scaleDurations #'(1 . 1)
+            {
 
                 \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 1
@@ -4849,7 +4926,8 @@ d_LH_Voice_V = {                                                               %
 
             }
 
-            \scaleDurations #'(1 . 1) {
+            \scaleDurations #'(1 . 1)
+            {
 
                 \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 1
@@ -4868,9 +4946,11 @@ d_LH_Voice_V = {                                                               %
     {
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 6/5 {
+        \times 6/5
+        {
 
-            \scaleDurations #'(1 . 1) {
+            \scaleDurations #'(1 . 1)
+            {
 
                 % [04 LH_Voice_V measure 59 / measure 26]                      %! baca.SegmentMaker._comment_measure_numbers()
                 r4
@@ -4884,7 +4964,8 @@ d_LH_Voice_V = {                                                               %
 
             }
 
-            \scaleDurations #'(1 . 1) {
+            \scaleDurations #'(1 . 1)
+            {
 
                 \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 1
@@ -4902,7 +4983,8 @@ d_LH_Voice_V = {                                                               %
 
     {
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             % [04 LH_Voice_V measure 60 / measure 27]                          %! baca.SegmentMaker._comment_measure_numbers()
             r8
@@ -4918,7 +5000,8 @@ d_LH_Voice_V = {                                                               %
 
     {
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             % [04 LH_Voice_V measure 61 / measure 28]                          %! baca.SegmentMaker._comment_measure_numbers()
             r2
@@ -4931,9 +5014,11 @@ d_LH_Voice_V = {                                                               %
     {
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 6/5 {
+        \times 6/5
+        {
 
-            \scaleDurations #'(1 . 1) {
+            \scaleDurations #'(1 . 1)
+            {
 
                 % [04 LH_Voice_V measure 62 / measure 29]                      %! baca.SegmentMaker._comment_measure_numbers()
                 r4
@@ -4947,7 +5032,8 @@ d_LH_Voice_V = {                                                               %
 
             }
 
-            \scaleDurations #'(1 . 1) {
+            \scaleDurations #'(1 . 1)
+            {
 
                 \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 1
@@ -4965,7 +5051,8 @@ d_LH_Voice_V = {                                                               %
 
     {
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             % [04 LH_Voice_V measure 63 / measure 30]                          %! baca.SegmentMaker._comment_measure_numbers()
             r8
@@ -4979,7 +5066,8 @@ d_LH_Voice_V = {                                                               %
 
     {
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             % [04 LH_Voice_V measure 64 / measure 31]                          %! baca.SegmentMaker._comment_measure_numbers()
             r8
@@ -4998,7 +5086,8 @@ d_LH_Voice_V = {                                                               %
 
     {
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             % [04 LH_Voice_V measure 76 / measure 43]                          %! baca.SegmentMaker._comment_measure_numbers()
             r4
@@ -5101,9 +5190,11 @@ d_LH_Voice_V_Inserts = {                                                       %
         \override TupletNumber.stencil = ##f
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 8/7 {
+        \times 8/7
+        {
 
-            \scaleDurations #'(1 . 1) {
+            \scaleDurations #'(1 . 1)
+            {
 
                 % [04 LH_Voice_V_Inserts measure 56 / measure 23]              %! baca.SegmentMaker._comment_measure_numbers()
                 s4
@@ -5117,13 +5208,15 @@ d_LH_Voice_V_Inserts = {                                                       %
 
             }
 
-            \scaleDurations #'(1 . 1) {
+            \scaleDurations #'(1 . 1)
+            {
 
                 s8
 
             }
 
-            \scaleDurations #'(1 . 1) {
+            \scaleDurations #'(1 . 1)
+            {
 
                 s8
 
@@ -5147,9 +5240,11 @@ d_LH_Voice_V_Inserts = {                                                       %
         \override TupletNumber.stencil = ##f
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 8/7 {
+        \times 8/7
+        {
 
-            \scaleDurations #'(1 . 1) {
+            \scaleDurations #'(1 . 1)
+            {
 
                 % [04 LH_Voice_V_Inserts measure 58 / measure 25]              %! baca.SegmentMaker._comment_measure_numbers()
                 \set stemLeftBeamCount = 1
@@ -5163,7 +5258,8 @@ d_LH_Voice_V_Inserts = {                                                       %
 
             }
 
-            \scaleDurations #'(1 . 1) {
+            \scaleDurations #'(1 . 1)
+            {
 
                 \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 1
@@ -5172,7 +5268,8 @@ d_LH_Voice_V_Inserts = {                                                       %
 
             }
 
-            \scaleDurations #'(1 . 1) {
+            \scaleDurations #'(1 . 1)
+            {
 
                 s8
 
@@ -5192,9 +5289,11 @@ d_LH_Voice_V_Inserts = {                                                       %
         \override TupletNumber.stencil = ##f
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 6/5 {
+        \times 6/5
+        {
 
-            \scaleDurations #'(1 . 1) {
+            \scaleDurations #'(1 . 1)
+            {
 
                 % [04 LH_Voice_V_Inserts measure 59 / measure 26]              %! baca.SegmentMaker._comment_measure_numbers()
                 s4
@@ -5207,7 +5306,8 @@ d_LH_Voice_V_Inserts = {                                                       %
 
             }
 
-            \scaleDurations #'(1 . 1) {
+            \scaleDurations #'(1 . 1)
+            {
 
                 s8
 
@@ -5231,9 +5331,11 @@ d_LH_Voice_V_Inserts = {                                                       %
         \override TupletNumber.stencil = ##f
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 6/5 {
+        \times 6/5
+        {
 
-            \scaleDurations #'(1 . 1) {
+            \scaleDurations #'(1 . 1)
+            {
 
                 % [04 LH_Voice_V_Inserts measure 62 / measure 29]              %! baca.SegmentMaker._comment_measure_numbers()
                 \set stemLeftBeamCount = 1
@@ -5247,7 +5349,8 @@ d_LH_Voice_V_Inserts = {                                                       %
 
             }
 
-            \scaleDurations #'(1 . 1) {
+            \scaleDurations #'(1 . 1)
+            {
 
                 s8
 
@@ -5270,7 +5373,8 @@ d_LH_Voice_V_Inserts = {                                                       %
         \override TupletBracket.stencil = ##f
         \override TupletNumber.stencil = ##f
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             % [04 LH_Voice_V_Inserts measure 64 / measure 31]                  %! baca.SegmentMaker._comment_measure_numbers()
             \set stemLeftBeamCount = 1
@@ -5723,9 +5827,11 @@ d_LH_Resonance_Voice = {                                                       %
     {
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 4/3 {
+        \times 4/3
+        {
 
-            \scaleDurations #'(1 . 1) {
+            \scaleDurations #'(1 . 1)
+            {
 
                 % [04 LH_Resonance_Voice measure 43 / measure 10]              %! baca.SegmentMaker._comment_measure_numbers()
                 s4
@@ -5743,7 +5849,8 @@ d_LH_Resonance_Voice = {                                                       %
 
     {
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             % [04 LH_Resonance_Voice measure 44 / measure 11]                  %! baca.SegmentMaker._comment_measure_numbers()
             \override Accidental.stencil = ##f                                 %! baca.accidental_stencil_false():baca.OverrideCommand._call(1)
@@ -5761,7 +5868,8 @@ d_LH_Resonance_Voice = {                                                       %
 
     {
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             <cs,, cs,>1
         %@% ^ \markup \fontsize #2 \concat { [ lh-r 4.2.3 \hspace #1 \raise #0.25 \fontsize #-2 (26) ] } %! FIGURE_NAME
@@ -5780,9 +5888,11 @@ d_LH_Resonance_Voice = {                                                       %
     {
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 4/3 {
+        \times 4/3
+        {
 
-            \scaleDurations #'(1 . 1) {
+            \scaleDurations #'(1 . 1)
+            {
 
                 % [04 LH_Resonance_Voice measure 47 / measure 14]              %! baca.SegmentMaker._comment_measure_numbers()
                 s4
@@ -5800,7 +5910,8 @@ d_LH_Resonance_Voice = {                                                       %
 
     {
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             % [04 LH_Resonance_Voice measure 48 / measure 15]                  %! baca.SegmentMaker._comment_measure_numbers()
             \override Accidental.stencil = ##f                                 %! baca.accidental_stencil_false():baca.OverrideCommand._call(1)
@@ -5818,7 +5929,8 @@ d_LH_Resonance_Voice = {                                                       %
 
     {
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             <ef,, ef,>1
         %@% ^ \markup \fontsize #2 \concat { [ lh-r 4.2.6 \hspace #1 \raise #0.25 \fontsize #-2 (29) ] } %! FIGURE_NAME
@@ -5836,7 +5948,8 @@ d_LH_Resonance_Voice = {                                                       %
 
     {
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             % [04 LH_Resonance_Voice measure 65 / measure 32]                  %! baca.SegmentMaker._comment_measure_numbers()
             \once \override Accidental.X-extent = ##f                          %! baca.accidental_x_extent_false():baca.OverrideCommand._call(1)
@@ -5851,7 +5964,8 @@ d_LH_Resonance_Voice = {                                                       %
 
     {
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             % [04 LH_Resonance_Voice measure 66 / measure 33]                  %! baca.SegmentMaker._comment_measure_numbers()
             \override Accidental.stencil = ##f                                 %! baca.accidental_stencil_false():baca.OverrideCommand._call(1)
@@ -5869,7 +5983,8 @@ d_LH_Resonance_Voice = {                                                       %
 
     {
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             % [04 LH_Resonance_Voice measure 67 / measure 34]                  %! baca.SegmentMaker._comment_measure_numbers()
             <e, fs, gs, as, b,>1.
@@ -5884,7 +5999,8 @@ d_LH_Resonance_Voice = {                                                       %
 
     {
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             % [04 LH_Resonance_Voice measure 68 / measure 35]                  %! baca.SegmentMaker._comment_measure_numbers()
             <e, fs, gs, as, b,>1
@@ -5899,7 +6015,8 @@ d_LH_Resonance_Voice = {                                                       %
 
     {
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             % [04 LH_Resonance_Voice measure 69 / measure 36]                  %! baca.SegmentMaker._comment_measure_numbers()
             <e, fs, gs, as, b,>1
@@ -5914,7 +6031,8 @@ d_LH_Resonance_Voice = {                                                       %
 
     {
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             % [04 LH_Resonance_Voice measure 70 / measure 37]                  %! baca.SegmentMaker._comment_measure_numbers()
             <e, fs, gs, as, b,>1.
@@ -5929,7 +6047,8 @@ d_LH_Resonance_Voice = {                                                       %
 
     {
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             % [04 LH_Resonance_Voice measure 71 / measure 38]                  %! baca.SegmentMaker._comment_measure_numbers()
             <e, fs, gs, as, b,>1
@@ -5944,7 +6063,8 @@ d_LH_Resonance_Voice = {                                                       %
 
     {
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             % [04 LH_Resonance_Voice measure 72 / measure 39]                  %! baca.SegmentMaker._comment_measure_numbers()
             <e, fs, gs, as, b,>2

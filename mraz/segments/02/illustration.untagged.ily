@@ -1164,7 +1164,8 @@ b_LH_Voice_V = {
 
     {
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             % [02 LH_Voice_V measure 10 / measure 1]
             \ottava -1
@@ -1193,7 +1194,8 @@ b_LH_Voice_V = {
     {
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 16/15 {
+        \times 16/15
+        {
 
             % [02 LH_Voice_V measure 11 / measure 2]
             g,,8
@@ -1212,7 +1214,8 @@ b_LH_Voice_V = {
         }
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 16/15 {
+        \times 16/15
+        {
 
             b,,8
 
@@ -1233,7 +1236,8 @@ b_LH_Voice_V = {
 
     {
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             % [02 LH_Voice_V measure 12 / measure 3]
             cs,,!32
@@ -1254,7 +1258,8 @@ b_LH_Voice_V = {
 
     {
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             % [02 LH_Voice_V measure 13 / measure 4]
             bf,,!8.
@@ -1281,7 +1286,8 @@ b_LH_Voice_V = {
 
     {
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             % [02 LH_Voice_V measure 14 / measure 5]
             d,,8
@@ -1299,7 +1305,8 @@ b_LH_Voice_V = {
     {
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 16/15 {
+        \times 16/15
+        {
 
             % [02 LH_Voice_V measure 15 / measure 6]
             b,,,8
@@ -1320,7 +1327,8 @@ b_LH_Voice_V = {
 
     {
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             % [02 LH_Voice_V measure 16 / measure 7]
             ef,,!32
@@ -1347,7 +1355,8 @@ b_LH_Voice_V = {
 
     {
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             % [02 LH_Voice_V measure 17 / measure 8]
             c,8.
@@ -1365,7 +1374,8 @@ b_LH_Voice_V = {
     {
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 16/15 {
+        \times 16/15
+        {
 
             % [02 LH_Voice_V measure 18 / measure 9]
             \override TupletBracket.staff-padding = 3
@@ -1384,7 +1394,8 @@ b_LH_Voice_V = {
         }
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 16/15 {
+        \times 16/15
+        {
 
             d,8
 
@@ -1405,7 +1416,8 @@ b_LH_Voice_V = {
 
     {
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             % [02 LH_Voice_V measure 19 / measure 10]
             a,,,32
@@ -1424,7 +1436,8 @@ b_LH_Voice_V = {
 
     {
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             % [02 LH_Voice_V measure 20 / measure 11]
             b,,8.
@@ -1450,7 +1463,8 @@ b_LH_Voice_V = {
     {
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 16/15 {
+        \times 16/15
+        {
 
             % [02 LH_Voice_V measure 21 / measure 12]
             fs,,!8
@@ -1581,7 +1595,8 @@ b_LH_Voice_VI = {
     {
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 5/6 {
+        \times 5/6
+        {
 
             \override Stem.direction = #down
             af,,!4
@@ -1611,7 +1626,8 @@ b_LH_Voice_VI = {
     {
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 4/3 {
+        \times 4/3
+        {
 
             % [02 LH_Voice_VI measure 13 / measure 4]
             b,,,8
@@ -1635,7 +1651,8 @@ b_LH_Voice_VI = {
     {
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 4/3 {
+        \times 4/3
+        {
 
             bf,,,!16
             - \tenuto
@@ -1662,7 +1679,8 @@ b_LH_Voice_VI = {
     {
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 4/3 {
+        \times 4/3
+        {
 
             g,,16
             - \tenuto
@@ -1688,7 +1706,8 @@ b_LH_Voice_VI = {
     {
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 5/4 {
+        \times 5/4
+        {
 
             d,,8
             - \tenuto
@@ -1711,7 +1730,8 @@ b_LH_Voice_VI = {
     {
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 4/6 {
+        \times 4/6
+        {
 
             e,,8
             - \tenuto

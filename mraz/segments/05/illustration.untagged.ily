@@ -221,7 +221,8 @@ e_RH_Voice_III = {
     {
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 4/3 {
+        \times 4/3
+        {
 
             % [05 RH_Voice_III measure 78 / measure 1]
             \override TupletBracket.staff-padding = 7
@@ -248,7 +249,8 @@ e_RH_Voice_III = {
 
         }
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             c'''8
             - \staccato
@@ -277,7 +279,8 @@ e_RH_Voice_III = {
     {
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 4/3 {
+        \times 4/3
+        {
 
             % [05 RH_Voice_III measure 79 / measure 2]
             \override TupletBracket.staff-padding = 7
@@ -302,7 +305,8 @@ e_RH_Voice_III = {
 
     {
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             % [05 RH_Voice_III measure 80 / measure 3]
             r8
@@ -336,7 +340,8 @@ e_RH_Voice_III = {
     {
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 5/4 {
+        \times 5/4
+        {
 
             % [05 RH_Voice_III measure 81 / measure 4]
             \override TupletBracket.direction = #up
@@ -791,7 +796,8 @@ e_LH_Voice_IV = {
     {
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 9/8 {
+        \times 9/8
+        {
 
             \override TupletBracket.staff-padding = 3
             g'16
@@ -826,7 +832,8 @@ e_LH_Voice_IV = {
     {
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 7/6 {
+        \times 7/6
+        {
 
             \override TupletBracket.staff-padding = 3
             b'16
@@ -858,7 +865,8 @@ e_LH_Voice_IV = {
 
     {
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             d'16
             - \tenuto
@@ -891,7 +899,8 @@ e_LH_Voice_IV = {
 
     {
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             % [05 LH_Voice_IV measure 81 / measure 4]
             fs''!16

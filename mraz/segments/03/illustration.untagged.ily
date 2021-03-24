@@ -163,7 +163,8 @@ c_RH_Voice_I = {
 
     {
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             % [03 RH_Voice_I measure 31 / measure 10]
             \ottava 1
@@ -178,7 +179,8 @@ c_RH_Voice_I = {
 
     {
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             % [03 RH_Voice_I measure 32 / measure 11]
             f''''1.
@@ -190,7 +192,8 @@ c_RH_Voice_I = {
 
     {
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             % [03 RH_Voice_I measure 33 / measure 12]
             bf''''!1
@@ -305,7 +308,8 @@ c_RH_Voice_II = {
 
     {
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             % [03 RH_Voice_II measure 23 / measure 2]
             \once \override Rest.transparent = ##t
@@ -317,7 +321,8 @@ c_RH_Voice_II = {
 
     {
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             % [03 RH_Voice_II measure 24 / measure 3]
             \set stemLeftBeamCount = 0
@@ -361,7 +366,8 @@ c_RH_Voice_II = {
 
     {
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             % [03 RH_Voice_II measure 25 / measure 4]
             \once \override Rest.transparent = ##t
@@ -376,7 +382,8 @@ c_RH_Voice_II = {
 
     {
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             % [03 RH_Voice_II measure 27 / measure 6]
             \set stemLeftBeamCount = 0
@@ -413,7 +420,8 @@ c_RH_Voice_II = {
 
         }
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
@@ -450,7 +458,8 @@ c_RH_Voice_II = {
 
     {
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             % [03 RH_Voice_II measure 28 / measure 7]
             \once \override Rest.transparent = ##t
@@ -465,7 +474,8 @@ c_RH_Voice_II = {
 
     {
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             % [03 RH_Voice_II measure 30 / measure 9]
             \set stemLeftBeamCount = 0
@@ -502,7 +512,8 @@ c_RH_Voice_II = {
 
         }
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
@@ -533,7 +544,8 @@ c_RH_Voice_II = {
 
         }
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
@@ -569,7 +581,8 @@ c_RH_Voice_II = {
 
         }
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
@@ -609,7 +622,8 @@ c_RH_Voice_II = {
 
     {
 
-        \times 4/5 {
+        \times 4/5
+        {
 
             % [03 RH_Voice_II measure 33 / measure 12]
             \set stemLeftBeamCount = 0
@@ -644,7 +658,8 @@ c_RH_Voice_II = {
 
         }
 
-        \times 4/5 {
+        \times 4/5
+        {
 
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
@@ -668,7 +683,8 @@ c_RH_Voice_II = {
 
         }
 
-        \times 4/5 {
+        \times 4/5
+        {
 
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
@@ -692,7 +708,8 @@ c_RH_Voice_II = {
 
         }
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
@@ -826,7 +843,8 @@ c_RH_Voice_III = {
     {
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 12/11 {
+        \times 12/11
+        {
 
             % [03 RH_Voice_III measure 29 / measure 8]
             \override TupletBracket.direction = #up
@@ -975,7 +993,8 @@ c_RH_Voice_IV = {
     {
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 8/7 {
+        \times 8/7
+        {
 
             % [03 RH_Voice_IV measure 22 / measure 1]
             \set stemLeftBeamCount = 0
@@ -1026,7 +1045,8 @@ c_RH_Voice_IV = {
     {
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 8/7 {
+        \times 8/7
+        {
 
             % [03 RH_Voice_IV measure 26 / measure 5]
             \set stemLeftBeamCount = 0
@@ -1138,7 +1158,8 @@ c_RH_Voice_IV_Inserts = {
         \override TupletNumber.stencil = ##f
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 8/7 {
+        \times 8/7
+        {
 
             % [03 RH_Voice_IV_Inserts measure 22 / measure 1]
             d''16
@@ -1175,7 +1196,8 @@ c_RH_Voice_IV_Inserts = {
         \override TupletNumber.stencil = ##f
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 8/7 {
+        \times 8/7
+        {
 
             % [03 RH_Voice_IV_Inserts measure 26 / measure 5]
             d''16
@@ -1815,7 +1837,8 @@ c_LH_Voice_V = {
 
     {
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             % [03 LH_Voice_V measure 29 / measure 8]
             \override Rest.direction = #up
@@ -2097,7 +2120,8 @@ c_LH_Resonance_Voice = {
 
     {
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             % [03 LH_Resonance_Voice measure 22 / measure 1]
             \override Beam.stencil = ##f
@@ -2120,7 +2144,8 @@ c_LH_Resonance_Voice = {
 
     {
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             % [03 LH_Resonance_Voice measure 23 / measure 2]
             \override Accidental.stencil = ##f
@@ -2142,7 +2167,8 @@ c_LH_Resonance_Voice = {
 
     {
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             % [03 LH_Resonance_Voice measure 24 / measure 3]
             <e, fs, gs, as, b,>4
@@ -2170,7 +2196,8 @@ c_LH_Resonance_Voice = {
 
     {
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             % [03 LH_Resonance_Voice measure 25 / measure 4]
             \once \override NoteHead.no-ledgers = ##t
@@ -2191,7 +2218,8 @@ c_LH_Resonance_Voice = {
 
     {
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             % [03 LH_Resonance_Voice measure 26 / measure 5]
             <e, fs, gs, as, b,>2
@@ -2205,7 +2233,8 @@ c_LH_Resonance_Voice = {
 
     {
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             % [03 LH_Resonance_Voice measure 27 / measure 6]
             <e, fs, gs, as, b,>2
@@ -2235,7 +2264,8 @@ c_LH_Resonance_Voice = {
 
     {
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             % [03 LH_Resonance_Voice measure 30 / measure 9]
             \once \override Accidental.X-extent = ##f
@@ -2275,7 +2305,8 @@ c_LH_Resonance_Voice = {
 
     {
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             % [03 LH_Resonance_Voice measure 31 / measure 10]
             \override Accidental.stencil = ##f
@@ -2290,7 +2321,8 @@ c_LH_Resonance_Voice = {
 
     {
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             % [03 LH_Resonance_Voice measure 32 / measure 11]
             <e, fs, gs, as, b,>1.

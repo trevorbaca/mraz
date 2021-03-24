@@ -1308,7 +1308,8 @@ b_LH_Voice_V = {                                                               %
 
     {
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             % [02 LH_Voice_V measure 10 / measure 1]                           %! baca.SegmentMaker._comment_measure_numbers()
             \ottava -1                                                         %! baca.ottava_bassa():baca.SpannerIndicatorCommand._call(2):SPANNER_START
@@ -1338,7 +1339,8 @@ b_LH_Voice_V = {                                                               %
     {
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 16/15 {
+        \times 16/15
+        {
 
             % [02 LH_Voice_V measure 11 / measure 2]                           %! baca.SegmentMaker._comment_measure_numbers()
             g,,8
@@ -1358,7 +1360,8 @@ b_LH_Voice_V = {                                                               %
         }
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 16/15 {
+        \times 16/15
+        {
 
             b,,8
 
@@ -1379,7 +1382,8 @@ b_LH_Voice_V = {                                                               %
 
     {
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             % [02 LH_Voice_V measure 12 / measure 3]                           %! baca.SegmentMaker._comment_measure_numbers()
             cs,,!32
@@ -1401,7 +1405,8 @@ b_LH_Voice_V = {                                                               %
 
     {
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             % [02 LH_Voice_V measure 13 / measure 4]                           %! baca.SegmentMaker._comment_measure_numbers()
             bf,,!8.
@@ -1429,7 +1434,8 @@ b_LH_Voice_V = {                                                               %
 
     {
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             % [02 LH_Voice_V measure 14 / measure 5]                           %! baca.SegmentMaker._comment_measure_numbers()
             d,,8
@@ -1448,7 +1454,8 @@ b_LH_Voice_V = {                                                               %
     {
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 16/15 {
+        \times 16/15
+        {
 
             % [02 LH_Voice_V measure 15 / measure 6]                           %! baca.SegmentMaker._comment_measure_numbers()
             b,,,8
@@ -1470,7 +1477,8 @@ b_LH_Voice_V = {                                                               %
 
     {
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             % [02 LH_Voice_V measure 16 / measure 7]                           %! baca.SegmentMaker._comment_measure_numbers()
             ef,,!32
@@ -1498,7 +1506,8 @@ b_LH_Voice_V = {                                                               %
 
     {
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             % [02 LH_Voice_V measure 17 / measure 8]                           %! baca.SegmentMaker._comment_measure_numbers()
             c,8.
@@ -1517,7 +1526,8 @@ b_LH_Voice_V = {                                                               %
     {
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 16/15 {
+        \times 16/15
+        {
 
             % [02 LH_Voice_V measure 18 / measure 9]                           %! baca.SegmentMaker._comment_measure_numbers()
             \override TupletBracket.staff-padding = 3                          %! baca.tuplet_bracket_staff_padding():baca.OverrideCommand._call(1)
@@ -1537,7 +1547,8 @@ b_LH_Voice_V = {                                                               %
         }
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 16/15 {
+        \times 16/15
+        {
 
             d,8
 
@@ -1558,7 +1569,8 @@ b_LH_Voice_V = {                                                               %
 
     {
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             % [02 LH_Voice_V measure 19 / measure 10]                          %! baca.SegmentMaker._comment_measure_numbers()
             a,,,32
@@ -1578,7 +1590,8 @@ b_LH_Voice_V = {                                                               %
 
     {
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             % [02 LH_Voice_V measure 20 / measure 11]                          %! baca.SegmentMaker._comment_measure_numbers()
             b,,8.
@@ -1605,7 +1618,8 @@ b_LH_Voice_V = {                                                               %
     {
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 16/15 {
+        \times 16/15
+        {
 
             % [02 LH_Voice_V measure 21 / measure 12]                          %! baca.SegmentMaker._comment_measure_numbers()
             fs,,!8
@@ -1742,7 +1756,8 @@ b_LH_Voice_VI = {                                                              %
     {
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 5/6 {
+        \times 5/6
+        {
 
             \override Stem.direction = #down                                   %! baca.stem_down():baca.OverrideCommand._call(1)
             af,,!4
@@ -1773,7 +1788,8 @@ b_LH_Voice_VI = {                                                              %
     {
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 4/3 {
+        \times 4/3
+        {
 
             % [02 LH_Voice_VI measure 13 / measure 4]                          %! baca.SegmentMaker._comment_measure_numbers()
             b,,,8
@@ -1798,7 +1814,8 @@ b_LH_Voice_VI = {                                                              %
     {
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 4/3 {
+        \times 4/3
+        {
 
             bf,,,!16
             - \tenuto                                                          %! baca.tenuto():baca.IndicatorCommand._call()
@@ -1826,7 +1843,8 @@ b_LH_Voice_VI = {                                                              %
     {
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 4/3 {
+        \times 4/3
+        {
 
             g,,16
             - \tenuto                                                          %! baca.tenuto():baca.IndicatorCommand._call()
@@ -1853,7 +1871,8 @@ b_LH_Voice_VI = {                                                              %
     {
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 5/4 {
+        \times 5/4
+        {
 
             d,,8
             - \tenuto                                                          %! baca.tenuto():baca.IndicatorCommand._call()
@@ -1877,7 +1896,8 @@ b_LH_Voice_VI = {                                                              %
     {
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 4/6 {
+        \times 4/6
+        {
 
             e,,8
             - \tenuto                                                          %! baca.tenuto():baca.IndicatorCommand._call()

@@ -119,7 +119,8 @@ a_RH_Voice_I = {
 
     {
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             % [01 RH_Voice_I measure 1]
             \set PianoStaff.instrumentName = \markup \hcenter-in #12 "PIANO"
@@ -268,7 +269,8 @@ a_RH_Voice_II = {
 
     {
 
-        \times 4/5 {
+        \times 4/5
+        {
 
             % [01 RH_Voice_II measure 1]
             \override DynamicLineSpanner.staff-padding = 8
@@ -308,7 +310,8 @@ a_RH_Voice_II = {
 
         }
 
-        \times 4/5 {
+        \times 4/5
+        {
 
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
@@ -332,7 +335,8 @@ a_RH_Voice_II = {
 
         }
 
-        \times 4/5 {
+        \times 4/5
+        {
 
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
@@ -356,7 +360,8 @@ a_RH_Voice_II = {
 
         }
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
@@ -390,7 +395,8 @@ a_RH_Voice_II = {
 
     {
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             % [01 RH_Voice_II measure 4]
             \once \override Rest.transparent = ##t
@@ -405,7 +411,8 @@ a_RH_Voice_II = {
 
     {
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             % [01 RH_Voice_II measure 6]
             \once \override Rest.transparent = ##t
@@ -420,7 +427,8 @@ a_RH_Voice_II = {
 
     {
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             % [01 RH_Voice_II measure 8]
             \override Script.direction = #up
@@ -460,7 +468,8 @@ a_RH_Voice_II = {
 
     {
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             % [01 RH_Voice_II measure 9]
             \once \override Script.direction = #up
@@ -563,7 +572,8 @@ a_RH_Voice_III = {
     {
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 4/3 {
+        \times 4/3
+        {
 
             % [01 RH_Voice_III measure 5]
             \once \override DynamicText.X-offset = 0.5
@@ -592,7 +602,8 @@ a_RH_Voice_III = {
 
     {
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             % [01 RH_Voice_III measure 7]
             r8
@@ -627,7 +638,8 @@ a_RH_Voice_III = {
     {
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 8/5 {
+        \times 8/5
+        {
 
             % [01 RH_Voice_III measure 8]
             \once \override DynamicText.X-offset = 0.25
@@ -1253,7 +1265,8 @@ a_LH_Voice_IV = {
     {
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 8/7 {
+        \times 8/7
+        {
 
             % [01 LH_Voice_IV measure 2]
             \set stemLeftBeamCount = 0
@@ -1374,7 +1387,8 @@ a_LH_Voice_IV_Inserts = {
         \override TupletNumber.stencil = ##f
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 8/7 {
+        \times 8/7
+        {
 
             % [01 LH_Voice_IV_Inserts measure 2]
             d''16
@@ -1476,7 +1490,8 @@ a_LH_Voice_V = {
 
     {
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             % [01 LH_Voice_V measure 3]
             \once \override DynamicText.X-offset = -0.5
@@ -1637,7 +1652,8 @@ a_LH_Voice_VI = {
     {
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 4/3 {
+        \times 4/3
+        {
 
             % [01 LH_Voice_VI measure 3]
             \ottava -1

@@ -226,10 +226,12 @@ g_RH_Voice_I = {                                                               %
     {
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 6/5 {
+        \times 6/5
+        {
 
             \tweak text #tuplet-number::calc-fraction-text
-            \times 5/6 {
+            \times 5/6
+            {
 
                 % [07 RH_Voice_I measure 98 / measure 1]                       %! baca.SegmentMaker._comment_measure_numbers()
                 \set stemLeftBeamCount = 0
@@ -278,7 +280,8 @@ g_RH_Voice_I = {                                                               %
             }
 
             \tweak text #tuplet-number::calc-fraction-text
-            \times 3/4 {
+            \times 3/4
+            {
 
                 \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 2
@@ -298,7 +301,8 @@ g_RH_Voice_I = {                                                               %
 
             }
 
-            \times 2/3 {
+            \times 2/3
+            {
 
                 \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 2
@@ -324,9 +328,11 @@ g_RH_Voice_I = {                                                               %
     {
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 6/5 {
+        \times 6/5
+        {
 
-            \times 2/3 {
+            \times 2/3
+            {
 
                 % [07 RH_Voice_I measure 100 / measure 3]                      %! baca.SegmentMaker._comment_measure_numbers()
                 \set stemLeftBeamCount = 1
@@ -345,7 +351,8 @@ g_RH_Voice_I = {                                                               %
             }
 
             \tweak text #tuplet-number::calc-fraction-text
-            \times 3/4 {
+            \times 3/4
+            {
 
                 \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 2
@@ -376,9 +383,11 @@ g_RH_Voice_I = {                                                               %
     {
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 5/4 {
+        \times 5/4
+        {
 
-            \scaleDurations #'(1 . 1) {
+            \scaleDurations #'(1 . 1)
+            {
 
                 % [07 RH_Voice_I measure 102 / measure 5]                      %! baca.SegmentMaker._comment_measure_numbers()
                 \set stemLeftBeamCount = 0
@@ -411,9 +420,11 @@ g_RH_Voice_I = {                                                               %
     {
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 7/6 {
+        \times 7/6
+        {
 
-            \scaleDurations #'(1 . 1) {
+            \scaleDurations #'(1 . 1)
+            {
 
                 % [07 RH_Voice_I measure 104 / measure 7]                      %! baca.SegmentMaker._comment_measure_numbers()
                 \set stemLeftBeamCount = 1
@@ -454,10 +465,12 @@ g_RH_Voice_I = {                                                               %
     {
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 5/4 {
+        \times 5/4
+        {
 
             \tweak text #tuplet-number::calc-fraction-text
-            \times 3/4 {
+            \times 3/4
+            {
 
                 % [07 RH_Voice_I measure 107 / measure 10]                     %! baca.SegmentMaker._comment_measure_numbers()
                 \set stemLeftBeamCount = 0
@@ -481,7 +494,8 @@ g_RH_Voice_I = {                                                               %
 
             }
 
-            \times 2/3 {
+            \times 2/3
+            {
 
                 \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 2
@@ -498,7 +512,8 @@ g_RH_Voice_I = {                                                               %
             }
 
             \tweak text #tuplet-number::calc-fraction-text
-            \times 3/4 {
+            \times 3/4
+            {
 
                 \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 2
@@ -585,10 +600,12 @@ g_RH_Voice_I_Inserts = {                                                       %
         \override TupletNumber.stencil = ##f
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 6/5 {
+        \times 6/5
+        {
 
             \tweak text #tuplet-number::calc-fraction-text
-            \times 5/6 {
+            \times 5/6
+            {
 
                 % [07 RH_Voice_I_Inserts measure 98 / measure 1]               %! baca.SegmentMaker._comment_measure_numbers()
                 \override Beam.positions = #'(-6.5 . -6.5)                     %! baca.beam_positions():baca.OverrideCommand._call(1)
@@ -615,7 +632,8 @@ g_RH_Voice_I_Inserts = {                                                       %
             }
 
             \tweak text #tuplet-number::calc-fraction-text
-            \times 3/4 {
+            \times 3/4
+            {
 
                 \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 2
@@ -630,7 +648,8 @@ g_RH_Voice_I_Inserts = {                                                       %
 
             }
 
-            \times 2/3 {
+            \times 2/3
+            {
 
                 \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 2
@@ -659,9 +678,11 @@ g_RH_Voice_I_Inserts = {                                                       %
         \override TupletNumber.stencil = ##f
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 6/5 {
+        \times 6/5
+        {
 
-            \times 2/3 {
+            \times 2/3
+            {
 
                 % [07 RH_Voice_I_Inserts measure 100 / measure 3]              %! baca.SegmentMaker._comment_measure_numbers()
                 \set stemLeftBeamCount = 1
@@ -675,7 +696,8 @@ g_RH_Voice_I_Inserts = {                                                       %
             }
 
             \tweak text #tuplet-number::calc-fraction-text
-            \times 3/4 {
+            \times 3/4
+            {
 
                 \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 2
@@ -708,9 +730,11 @@ g_RH_Voice_I_Inserts = {                                                       %
         \override TupletNumber.stencil = ##f
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 5/4 {
+        \times 5/4
+        {
 
-            \scaleDurations #'(1 . 1) {
+            \scaleDurations #'(1 . 1)
+            {
 
                 % [07 RH_Voice_I_Inserts measure 102 / measure 5]              %! baca.SegmentMaker._comment_measure_numbers()
                 \override Beam.positions = #'(-8.5 . -8.5)                     %! baca.beam_positions():baca.OverrideCommand._call(1)
@@ -745,9 +769,11 @@ g_RH_Voice_I_Inserts = {                                                       %
         \override TupletNumber.stencil = ##f
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 7/6 {
+        \times 7/6
+        {
 
-            \scaleDurations #'(1 . 1) {
+            \scaleDurations #'(1 . 1)
+            {
 
                 % [07 RH_Voice_I_Inserts measure 104 / measure 7]              %! baca.SegmentMaker._comment_measure_numbers()
                 \set stemLeftBeamCount = 1
@@ -785,10 +811,12 @@ g_RH_Voice_I_Inserts = {                                                       %
         \override TupletNumber.stencil = ##f
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 5/4 {
+        \times 5/4
+        {
 
             \tweak text #tuplet-number::calc-fraction-text
-            \times 3/4 {
+            \times 3/4
+            {
 
                 % [07 RH_Voice_I_Inserts measure 107 / measure 10]             %! baca.SegmentMaker._comment_measure_numbers()
                 s16
@@ -805,7 +833,8 @@ g_RH_Voice_I_Inserts = {                                                       %
 
             }
 
-            \times 2/3 {
+            \times 2/3
+            {
 
                 s16
 
@@ -819,7 +848,8 @@ g_RH_Voice_I_Inserts = {                                                       %
             }
 
             \tweak text #tuplet-number::calc-fraction-text
-            \times 3/4 {
+            \times 3/4
+            {
 
                 s16
 
@@ -913,7 +943,8 @@ g_RH_Voice_II = {                                                              %
 
     {
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             % [07 RH_Voice_II measure 99 / measure 2]                          %! baca.SegmentMaker._comment_measure_numbers()
             \set stemLeftBeamCount = 0
@@ -949,9 +980,11 @@ g_RH_Voice_II = {                                                              %
     {
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 9/10 {
+        \times 9/10
+        {
 
-            \scaleDurations #'(1 . 1) {
+            \scaleDurations #'(1 . 1)
+            {
 
                 % [07 RH_Voice_II measure 101 / measure 4]                     %! baca.SegmentMaker._comment_measure_numbers()
                 \set stemLeftBeamCount = 1
@@ -971,7 +1004,8 @@ g_RH_Voice_II = {                                                              %
 
             }
 
-            \scaleDurations #'(1 . 1) {
+            \scaleDurations #'(1 . 1)
+            {
 
                 \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 2
@@ -993,7 +1027,8 @@ g_RH_Voice_II = {                                                              %
 
             }
 
-            \scaleDurations #'(1 . 1) {
+            \scaleDurations #'(1 . 1)
+            {
 
                 \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 2
@@ -1021,7 +1056,8 @@ g_RH_Voice_II = {                                                              %
 
     {
 
-        \times 2/3 {
+        \times 2/3
+        {
 
             % [07 RH_Voice_II measure 103 / measure 6]                         %! baca.SegmentMaker._comment_measure_numbers()
             \set stemLeftBeamCount = 0
@@ -1043,7 +1079,8 @@ g_RH_Voice_II = {                                                              %
         }
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 5/6 {
+        \times 5/6
+        {
 
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
@@ -1073,7 +1110,8 @@ g_RH_Voice_II = {                                                              %
 
         }
 
-        \times 2/3 {
+        \times 2/3
+        {
 
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
@@ -1099,9 +1137,11 @@ g_RH_Voice_II = {                                                              %
     {
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 9/10 {
+        \times 9/10
+        {
 
-            \scaleDurations #'(1 . 1) {
+            \scaleDurations #'(1 . 1)
+            {
 
                 % [07 RH_Voice_II measure 105 / measure 8]                     %! baca.SegmentMaker._comment_measure_numbers()
                 \set stemLeftBeamCount = 1
@@ -1125,7 +1165,8 @@ g_RH_Voice_II = {                                                              %
 
             }
 
-            \scaleDurations #'(1 . 1) {
+            \scaleDurations #'(1 . 1)
+            {
 
                 \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 2
@@ -1162,7 +1203,8 @@ g_RH_Voice_II = {                                                              %
 
     {
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             % [07 RH_Voice_II measure 106 / measure 9]                         %! baca.SegmentMaker._comment_measure_numbers()
             \set stemLeftBeamCount = 0
@@ -1190,7 +1232,8 @@ g_RH_Voice_II = {                                                              %
 
     {
 
-        \times 2/3 {
+        \times 2/3
+        {
 
             % [07 RH_Voice_II measure 108 / measure 11]                        %! baca.SegmentMaker._comment_measure_numbers()
             \set stemLeftBeamCount = 1
@@ -1261,7 +1304,8 @@ g_RH_Voice_II_Inserts = {                                                      %
         \override TupletBracket.stencil = ##f
         \override TupletNumber.stencil = ##f
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             % [07 RH_Voice_II_Inserts measure 99 / measure 2]                  %! baca.SegmentMaker._comment_measure_numbers()
             \set stemLeftBeamCount = 0
@@ -1296,9 +1340,11 @@ g_RH_Voice_II_Inserts = {                                                      %
         \override TupletNumber.stencil = ##f
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 9/10 {
+        \times 9/10
+        {
 
-            \scaleDurations #'(1 . 1) {
+            \scaleDurations #'(1 . 1)
+            {
 
                 % [07 RH_Voice_II_Inserts measure 101 / measure 4]             %! baca.SegmentMaker._comment_measure_numbers()
                 \set stemLeftBeamCount = 1
@@ -1315,7 +1361,8 @@ g_RH_Voice_II_Inserts = {                                                      %
 
             }
 
-            \scaleDurations #'(1 . 1) {
+            \scaleDurations #'(1 . 1)
+            {
 
                 s16
 
@@ -1327,7 +1374,8 @@ g_RH_Voice_II_Inserts = {                                                      %
 
             }
 
-            \scaleDurations #'(1 . 1) {
+            \scaleDurations #'(1 . 1)
+            {
 
                 \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 2
@@ -1358,7 +1406,8 @@ g_RH_Voice_II_Inserts = {                                                      %
         \override TupletBracket.stencil = ##f
         \override TupletNumber.stencil = ##f
 
-        \times 2/3 {
+        \times 2/3
+        {
 
             % [07 RH_Voice_II_Inserts measure 103 / measure 6]                 %! baca.SegmentMaker._comment_measure_numbers()
             \set stemLeftBeamCount = 0
@@ -1378,7 +1427,8 @@ g_RH_Voice_II_Inserts = {                                                      %
         }
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 5/6 {
+        \times 5/6
+        {
 
             s16
 
@@ -1394,7 +1444,8 @@ g_RH_Voice_II_Inserts = {                                                      %
 
         }
 
-        \times 2/3 {
+        \times 2/3
+        {
 
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
@@ -1424,9 +1475,11 @@ g_RH_Voice_II_Inserts = {                                                      %
         \override TupletNumber.stencil = ##f
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 9/10 {
+        \times 9/10
+        {
 
-            \scaleDurations #'(1 . 1) {
+            \scaleDurations #'(1 . 1)
+            {
 
                 % [07 RH_Voice_II_Inserts measure 105 / measure 8]             %! baca.SegmentMaker._comment_measure_numbers()
                 \set stemLeftBeamCount = 1
@@ -1442,7 +1495,8 @@ g_RH_Voice_II_Inserts = {                                                      %
 
             }
 
-            \scaleDurations #'(1 . 1) {
+            \scaleDurations #'(1 . 1)
+            {
 
                 \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 2
@@ -1476,7 +1530,8 @@ g_RH_Voice_II_Inserts = {                                                      %
         \override TupletBracket.stencil = ##f
         \override TupletNumber.stencil = ##f
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             % [07 RH_Voice_II_Inserts measure 106 / measure 9]                 %! baca.SegmentMaker._comment_measure_numbers()
             \set stemLeftBeamCount = 0
@@ -1505,7 +1560,8 @@ g_RH_Voice_II_Inserts = {                                                      %
         \override TupletBracket.stencil = ##f
         \override TupletNumber.stencil = ##f
 
-        \times 2/3 {
+        \times 2/3
+        {
 
             % [07 RH_Voice_II_Inserts measure 108 / measure 11]                %! baca.SegmentMaker._comment_measure_numbers()
             \set stemLeftBeamCount = 1
@@ -2235,7 +2291,8 @@ g_LH_Voice_IV = {                                                              %
     {
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 6/7 {
+        \times 6/7
+        {
 
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
@@ -2272,7 +2329,8 @@ g_LH_Voice_IV = {                                                              %
 
         }
 
-        \times 2/3 {
+        \times 2/3
+        {
 
             % [07 LH_Voice_IV measure 99 / measure 2]                          %! baca.SegmentMaker._comment_measure_numbers()
             \set stemLeftBeamCount = 1
@@ -2297,7 +2355,8 @@ g_LH_Voice_IV = {                                                              %
 
     {
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             % [07 LH_Voice_IV measure 103 / measure 6]                         %! baca.SegmentMaker._comment_measure_numbers()
             \set stemLeftBeamCount = 0
@@ -2327,7 +2386,8 @@ g_LH_Voice_IV = {                                                              %
     {
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 8/7 {
+        \times 8/7
+        {
 
             % [07 LH_Voice_IV measure 106 / measure 9]                         %! baca.SegmentMaker._comment_measure_numbers()
             \set stemLeftBeamCount = 0
@@ -2440,7 +2500,8 @@ g_LH_Voice_IV_Inserts = {                                                      %
         \override TupletNumber.stencil = ##f
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 6/7 {
+        \times 6/7
+        {
 
             s16
 
@@ -2459,7 +2520,8 @@ g_LH_Voice_IV_Inserts = {                                                      %
 
         }
 
-        \times 2/3 {
+        \times 2/3
+        {
 
             % [07 LH_Voice_IV_Inserts measure 99 / measure 2]                  %! baca.SegmentMaker._comment_measure_numbers()
             s16
@@ -2480,7 +2542,8 @@ g_LH_Voice_IV_Inserts = {                                                      %
         \override TupletBracket.stencil = ##f
         \override TupletNumber.stencil = ##f
 
-        \scaleDurations #'(1 . 1) {
+        \scaleDurations #'(1 . 1)
+        {
 
             % [07 LH_Voice_IV_Inserts measure 103 / measure 6]                 %! baca.SegmentMaker._comment_measure_numbers()
             cs''!16
@@ -2502,7 +2565,8 @@ g_LH_Voice_IV_Inserts = {                                                      %
         \override TupletNumber.stencil = ##f
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 8/7 {
+        \times 8/7
+        {
 
             % [07 LH_Voice_IV_Inserts measure 106 / measure 9]                 %! baca.SegmentMaker._comment_measure_numbers()
             d''16
@@ -2598,9 +2662,11 @@ g_LH_Voice_V = {                                                               %
     {
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 15/17 {
+        \times 15/17
+        {
 
-            \scaleDurations #'(1 . 1) {
+            \scaleDurations #'(1 . 1)
+            {
 
                 \set stemLeftBeamCount = 0
                 \set stemRightBeamCount = 2
@@ -2625,7 +2691,8 @@ g_LH_Voice_V = {                                                               %
 
             }
 
-            \scaleDurations #'(1 . 1) {
+            \scaleDurations #'(1 . 1)
+            {
 
                 % [07 LH_Voice_V measure 101 / measure 4]                      %! baca.SegmentMaker._comment_measure_numbers()
                 \set stemLeftBeamCount = 1
@@ -2660,7 +2727,8 @@ g_LH_Voice_V = {                                                               %
 
             }
 
-            \scaleDurations #'(1 . 1) {
+            \scaleDurations #'(1 . 1)
+            {
 
                 \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 2
@@ -2706,9 +2774,11 @@ g_LH_Voice_V = {                                                               %
     {
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 15/17 {
+        \times 15/17
+        {
 
-            \scaleDurations #'(1 . 1) {
+            \scaleDurations #'(1 . 1)
+            {
 
                 \set stemLeftBeamCount = 0
                 \set stemRightBeamCount = 2
@@ -2730,7 +2800,8 @@ g_LH_Voice_V = {                                                               %
 
             }
 
-            \scaleDurations #'(1 . 1) {
+            \scaleDurations #'(1 . 1)
+            {
 
                 \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 2
@@ -2764,7 +2835,8 @@ g_LH_Voice_V = {                                                               %
 
             }
 
-            \scaleDurations #'(1 . 1) {
+            \scaleDurations #'(1 . 1)
+            {
 
                 % [07 LH_Voice_V measure 105 / measure 8]                      %! baca.SegmentMaker._comment_measure_numbers()
                 \set stemLeftBeamCount = 1
@@ -2887,9 +2959,11 @@ g_LH_Voice_V_Inserts = {                                                       %
         \override TupletNumber.stencil = ##f
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 15/17 {
+        \times 15/17
+        {
 
-            \scaleDurations #'(1 . 1) {
+            \scaleDurations #'(1 . 1)
+            {
 
                 s16
                 [
@@ -2900,7 +2974,8 @@ g_LH_Voice_V_Inserts = {                                                       %
 
             }
 
-            \scaleDurations #'(1 . 1) {
+            \scaleDurations #'(1 . 1)
+            {
 
                 % [07 LH_Voice_V_Inserts measure 101 / measure 4]              %! baca.SegmentMaker._comment_measure_numbers()
                 \set stemLeftBeamCount = 1
@@ -2923,7 +2998,8 @@ g_LH_Voice_V_Inserts = {                                                       %
 
             }
 
-            \scaleDurations #'(1 . 1) {
+            \scaleDurations #'(1 . 1)
+            {
 
                 \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 2
@@ -2964,9 +3040,11 @@ g_LH_Voice_V_Inserts = {                                                       %
         \override TupletNumber.stencil = ##f
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 15/17 {
+        \times 15/17
+        {
 
-            \scaleDurations #'(1 . 1) {
+            \scaleDurations #'(1 . 1)
+            {
 
                 s16
                 [
@@ -2977,7 +3055,8 @@ g_LH_Voice_V_Inserts = {                                                       %
 
             }
 
-            \scaleDurations #'(1 . 1) {
+            \scaleDurations #'(1 . 1)
+            {
 
                 \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 2
@@ -2998,7 +3077,8 @@ g_LH_Voice_V_Inserts = {                                                       %
 
             }
 
-            \scaleDurations #'(1 . 1) {
+            \scaleDurations #'(1 . 1)
+            {
 
                 % [07 LH_Voice_V_Inserts measure 105 / measure 8]              %! baca.SegmentMaker._comment_measure_numbers()
                 \set stemLeftBeamCount = 1
