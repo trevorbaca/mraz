@@ -1,62 +1,80 @@
 f_Global_Rests = {                                                             %! ide.Path.extern()
 
     % [06 Global_Rests measure 82 / measure 1]                                 %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._make_global_rests(1)
     R1 * 4                                                                     %! baca.SegmentMaker._make_global_rests(1)
 
     % [06 Global_Rests measure 83 / measure 2]                                 %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._make_global_rests(1)
     R1 * 5/2                                                                   %! baca.SegmentMaker._make_global_rests(1)
 
     % [06 Global_Rests measure 84 / measure 3]                                 %! baca.SegmentMaker._comment_measure_numbers()
     \baca-fermata-measure                                                      %! baca.global_fermata():baca.GlobalFermataCommand._call(2)
+    %! baca.SegmentMaker._make_global_rests(1)
     R1 * 1/4                                                                   %! baca.SegmentMaker._make_global_rests(1)
     ^ \baca-short-fermata-markup                                               %! baca.global_fermata():baca.GlobalFermataCommand._call(1)
 
     % [06 Global_Rests measure 85 / measure 4]                                 %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._make_global_rests(1)
     R1 * 3                                                                     %! baca.SegmentMaker._make_global_rests(1)
 
     % [06 Global_Rests measure 86 / measure 5]                                 %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._make_global_rests(1)
     R1 * 1                                                                     %! baca.SegmentMaker._make_global_rests(1)
 
     % [06 Global_Rests measure 87 / measure 6]                                 %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._make_global_rests(1)
     R1 * 5/2                                                                   %! baca.SegmentMaker._make_global_rests(1)
 
     % [06 Global_Rests measure 88 / measure 7]                                 %! baca.SegmentMaker._comment_measure_numbers()
     \baca-fermata-measure                                                      %! baca.global_fermata():baca.GlobalFermataCommand._call(2)
+    %! baca.SegmentMaker._make_global_rests(1)
     R1 * 1/4                                                                   %! baca.SegmentMaker._make_global_rests(1)
     ^ \baca-short-fermata-markup                                               %! baca.global_fermata():baca.GlobalFermataCommand._call(1)
 
     % [06 Global_Rests measure 89 / measure 8]                                 %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._make_global_rests(1)
     R1 * 13/4                                                                  %! baca.SegmentMaker._make_global_rests(1)
 
     % [06 Global_Rests measure 90 / measure 9]                                 %! baca.SegmentMaker._comment_measure_numbers()
     \baca-fermata-measure                                                      %! baca.global_fermata():baca.GlobalFermataCommand._call(2)
+    %! baca.SegmentMaker._make_global_rests(1)
     R1 * 1/4                                                                   %! baca.SegmentMaker._make_global_rests(1)
     ^ \baca-short-fermata-markup                                               %! baca.global_fermata():baca.GlobalFermataCommand._call(1)
 
     % [06 Global_Rests measure 91 / measure 10]                                %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._make_global_rests(1)
     R1 * 29/16                                                                 %! baca.SegmentMaker._make_global_rests(1)
 
     % [06 Global_Rests measure 92 / measure 11]                                %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._make_global_rests(1)
     R1 * 27/16                                                                 %! baca.SegmentMaker._make_global_rests(1)
 
     % [06 Global_Rests measure 93 / measure 12]                                %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._make_global_rests(1)
     R1 * 21/16                                                                 %! baca.SegmentMaker._make_global_rests(1)
 
     % [06 Global_Rests measure 94 / measure 13]                                %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._make_global_rests(1)
     R1 * 15/16                                                                 %! baca.SegmentMaker._make_global_rests(1)
 
     % [06 Global_Rests measure 95 / measure 14]                                %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._make_global_rests(1)
     R1 * 1                                                                     %! baca.SegmentMaker._make_global_rests(1)
 
     % [06 Global_Rests measure 96 / measure 15]                                %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._make_global_rests(1)
     R1 * 7/4                                                                   %! baca.SegmentMaker._make_global_rests(1)
 
     % [06 Global_Rests measure 97 / measure 16]                                %! baca.SegmentMaker._comment_measure_numbers()
     \baca-fermata-measure                                                      %! baca.global_fermata():baca.GlobalFermataCommand._call(2)
+    %! baca.SegmentMaker._make_global_rests(1)
     R1 * 1/4                                                                   %! baca.SegmentMaker._make_global_rests(1)
     ^ \baca-fermata-markup                                                     %! baca.global_fermata():baca.GlobalFermataCommand._call(1)
 
     % [06 Global_Rests measure 98 / measure 17]                                %! baca.SegmentMaker._comment_measure_numbers():baca.SegmentMaker._style_phantom_measures(4):PHANTOM
+    %! baca.SegmentMaker._make_global_rests(2)
+    %! PHANTOM
     R1 * 1/4                                                                   %! baca.SegmentMaker._make_global_rests(2):PHANTOM
 
 }                                                                              %! ide.Path.extern()
@@ -68,6 +86,7 @@ f_Global_Skips = {                                                             %
     \time 16/4                                                                 %! baca.SegmentMaker._make_global_skips(2):baca.SegmentMaker._set_status_tag():EXPLICIT_TIME_SIGNATURE
     \bar ""                                                                    %! EMPTY_START_BAR:+SEGMENT:baca.SegmentMaker._make_global_skips(4)
     \baca-time-signature-color #'blue                                          %! baca.SegmentMaker._attach_color_literal(2):EXPLICIT_TIME_SIGNATURE_COLOR
+    %! baca.SegmentMaker._make_global_skips(1)
     s1 * 4                                                                     %! baca.SegmentMaker._make_global_skips(1)
 %@% - \baca-start-lmn-left-only "1"                                            %! LOCAL_MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
 %@% \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
@@ -85,6 +104,7 @@ f_Global_Skips = {                                                             %
     % [06 Global_Skips measure 83 / measure 2]                                 %! baca.SegmentMaker._comment_measure_numbers()
     \time 10/4                                                                 %! baca.SegmentMaker._make_global_skips(2):baca.SegmentMaker._set_status_tag():EXPLICIT_TIME_SIGNATURE
     \baca-time-signature-color #'blue                                          %! baca.SegmentMaker._attach_color_literal(2):EXPLICIT_TIME_SIGNATURE_COLOR
+    %! baca.SegmentMaker._make_global_skips(1)
     s1 * 5/2                                                                   %! baca.SegmentMaker._make_global_skips(1)
 %@% \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
 %@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
@@ -106,6 +126,7 @@ f_Global_Skips = {                                                             %
     % [06 Global_Skips measure 84 / measure 3]                                 %! baca.SegmentMaker._comment_measure_numbers()
     \time 1/4                                                                  %! baca.SegmentMaker._make_global_skips(2):baca.SegmentMaker._set_status_tag():EXPLICIT_TIME_SIGNATURE
     \baca-time-signature-color #'blue                                          %! baca.SegmentMaker._attach_color_literal(2):EXPLICIT_TIME_SIGNATURE_COLOR
+    %! baca.SegmentMaker._make_global_skips(1)
     s1 * 1/4                                                                   %! baca.SegmentMaker._make_global_skips(1)
 %@% \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
 %@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
@@ -127,6 +148,7 @@ f_Global_Skips = {                                                             %
     % [06 Global_Skips measure 85 / measure 4]                                 %! baca.SegmentMaker._comment_measure_numbers()
     \time 12/4                                                                 %! baca.SegmentMaker._make_global_skips(2):baca.SegmentMaker._set_status_tag():EXPLICIT_TIME_SIGNATURE
     \baca-time-signature-color #'blue                                          %! baca.SegmentMaker._attach_color_literal(2):EXPLICIT_TIME_SIGNATURE_COLOR
+    %! baca.SegmentMaker._make_global_skips(1)
     s1 * 3                                                                     %! baca.SegmentMaker._make_global_skips(1)
 %@% \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
 %@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
@@ -141,6 +163,7 @@ f_Global_Skips = {                                                             %
     % [06 Global_Skips measure 86 / measure 5]                                 %! baca.SegmentMaker._comment_measure_numbers()
     \time 4/4                                                                  %! baca.SegmentMaker._make_global_skips(2):baca.SegmentMaker._set_status_tag():EXPLICIT_TIME_SIGNATURE
     \baca-time-signature-color #'blue                                          %! baca.SegmentMaker._attach_color_literal(2):EXPLICIT_TIME_SIGNATURE_COLOR
+    %! baca.SegmentMaker._make_global_skips(1)
     s1 * 1                                                                     %! baca.SegmentMaker._make_global_skips(1)
 %@% \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
 %@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
@@ -162,6 +185,7 @@ f_Global_Skips = {                                                             %
     % [06 Global_Skips measure 87 / measure 6]                                 %! baca.SegmentMaker._comment_measure_numbers()
     \time 10/4                                                                 %! baca.SegmentMaker._make_global_skips(2):baca.SegmentMaker._set_status_tag():EXPLICIT_TIME_SIGNATURE
     \baca-time-signature-color #'blue                                          %! baca.SegmentMaker._attach_color_literal(2):EXPLICIT_TIME_SIGNATURE_COLOR
+    %! baca.SegmentMaker._make_global_skips(1)
     s1 * 5/2                                                                   %! baca.SegmentMaker._make_global_skips(1)
 %@% \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
 %@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
@@ -176,6 +200,7 @@ f_Global_Skips = {                                                             %
     % [06 Global_Skips measure 88 / measure 7]                                 %! baca.SegmentMaker._comment_measure_numbers()
     \time 1/4                                                                  %! baca.SegmentMaker._make_global_skips(2):baca.SegmentMaker._set_status_tag():EXPLICIT_TIME_SIGNATURE
     \baca-time-signature-color #'blue                                          %! baca.SegmentMaker._attach_color_literal(2):EXPLICIT_TIME_SIGNATURE_COLOR
+    %! baca.SegmentMaker._make_global_skips(1)
     s1 * 1/4                                                                   %! baca.SegmentMaker._make_global_skips(1)
 %@% \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
 %@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
@@ -197,6 +222,7 @@ f_Global_Skips = {                                                             %
     % [06 Global_Skips measure 89 / measure 8]                                 %! baca.SegmentMaker._comment_measure_numbers()
     \time 13/4                                                                 %! baca.SegmentMaker._make_global_skips(2):baca.SegmentMaker._set_status_tag():EXPLICIT_TIME_SIGNATURE
     \baca-time-signature-color #'blue                                          %! baca.SegmentMaker._attach_color_literal(2):EXPLICIT_TIME_SIGNATURE_COLOR
+    %! baca.SegmentMaker._make_global_skips(1)
     s1 * 13/4                                                                  %! baca.SegmentMaker._make_global_skips(1)
 %@% \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
 %@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
@@ -211,6 +237,7 @@ f_Global_Skips = {                                                             %
     % [06 Global_Skips measure 90 / measure 9]                                 %! baca.SegmentMaker._comment_measure_numbers()
     \time 1/4                                                                  %! baca.SegmentMaker._make_global_skips(2):baca.SegmentMaker._set_status_tag():EXPLICIT_TIME_SIGNATURE
     \baca-time-signature-color #'blue                                          %! baca.SegmentMaker._attach_color_literal(2):EXPLICIT_TIME_SIGNATURE_COLOR
+    %! baca.SegmentMaker._make_global_skips(1)
     s1 * 1/4                                                                   %! baca.SegmentMaker._make_global_skips(1)
 %@% \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
 %@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
@@ -232,6 +259,7 @@ f_Global_Skips = {                                                             %
     % [06 Global_Skips measure 91 / measure 10]                                %! baca.SegmentMaker._comment_measure_numbers()
     \time 29/16                                                                %! baca.SegmentMaker._make_global_skips(2):baca.SegmentMaker._set_status_tag():EXPLICIT_TIME_SIGNATURE
     \baca-time-signature-color #'blue                                          %! baca.SegmentMaker._attach_color_literal(2):EXPLICIT_TIME_SIGNATURE_COLOR
+    %! baca.SegmentMaker._make_global_skips(1)
     s1 * 29/16                                                                 %! baca.SegmentMaker._make_global_skips(1)
 %@% \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
 %@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
@@ -253,6 +281,7 @@ f_Global_Skips = {                                                             %
     % [06 Global_Skips measure 92 / measure 11]                                %! baca.SegmentMaker._comment_measure_numbers()
     \time 27/16                                                                %! baca.SegmentMaker._make_global_skips(2):baca.SegmentMaker._set_status_tag():EXPLICIT_TIME_SIGNATURE
     \baca-time-signature-color #'blue                                          %! baca.SegmentMaker._attach_color_literal(2):EXPLICIT_TIME_SIGNATURE_COLOR
+    %! baca.SegmentMaker._make_global_skips(1)
     s1 * 27/16                                                                 %! baca.SegmentMaker._make_global_skips(1)
 %@% \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
 %@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
@@ -267,6 +296,7 @@ f_Global_Skips = {                                                             %
     % [06 Global_Skips measure 93 / measure 12]                                %! baca.SegmentMaker._comment_measure_numbers()
     \time 21/16                                                                %! baca.SegmentMaker._make_global_skips(2):baca.SegmentMaker._set_status_tag():EXPLICIT_TIME_SIGNATURE
     \baca-time-signature-color #'blue                                          %! baca.SegmentMaker._attach_color_literal(2):EXPLICIT_TIME_SIGNATURE_COLOR
+    %! baca.SegmentMaker._make_global_skips(1)
     s1 * 21/16                                                                 %! baca.SegmentMaker._make_global_skips(1)
 %@% \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
 %@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
@@ -288,6 +318,7 @@ f_Global_Skips = {                                                             %
     % [06 Global_Skips measure 94 / measure 13]                                %! baca.SegmentMaker._comment_measure_numbers()
     \time 15/16                                                                %! baca.SegmentMaker._make_global_skips(2):baca.SegmentMaker._set_status_tag():EXPLICIT_TIME_SIGNATURE
     \baca-time-signature-color #'blue                                          %! baca.SegmentMaker._attach_color_literal(2):EXPLICIT_TIME_SIGNATURE_COLOR
+    %! baca.SegmentMaker._make_global_skips(1)
     s1 * 15/16                                                                 %! baca.SegmentMaker._make_global_skips(1)
 %@% \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
 %@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
@@ -302,6 +333,7 @@ f_Global_Skips = {                                                             %
     % [06 Global_Skips measure 95 / measure 14]                                %! baca.SegmentMaker._comment_measure_numbers()
     \time 4/4                                                                  %! baca.SegmentMaker._make_global_skips(2):baca.SegmentMaker._set_status_tag():EXPLICIT_TIME_SIGNATURE
     \baca-time-signature-color #'blue                                          %! baca.SegmentMaker._attach_color_literal(2):EXPLICIT_TIME_SIGNATURE_COLOR
+    %! baca.SegmentMaker._make_global_skips(1)
     s1 * 1                                                                     %! baca.SegmentMaker._make_global_skips(1)
 %@% \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
 %@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
@@ -316,6 +348,7 @@ f_Global_Skips = {                                                             %
     % [06 Global_Skips measure 96 / measure 15]                                %! baca.SegmentMaker._comment_measure_numbers()
     \time 7/4                                                                  %! baca.SegmentMaker._make_global_skips(2):baca.SegmentMaker._set_status_tag():EXPLICIT_TIME_SIGNATURE
     \baca-time-signature-color #'blue                                          %! baca.SegmentMaker._attach_color_literal(2):EXPLICIT_TIME_SIGNATURE_COLOR
+    %! baca.SegmentMaker._make_global_skips(1)
     s1 * 7/4                                                                   %! baca.SegmentMaker._make_global_skips(1)
 %@% \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
 %@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
@@ -337,6 +370,7 @@ f_Global_Skips = {                                                             %
     % [06 Global_Skips measure 97 / measure 16]                                %! baca.SegmentMaker._comment_measure_numbers()
     \time 1/4                                                                  %! baca.SegmentMaker._make_global_skips(2):baca.SegmentMaker._set_status_tag():EXPLICIT_TIME_SIGNATURE
     \baca-time-signature-color #'blue                                          %! baca.SegmentMaker._attach_color_literal(2):EXPLICIT_TIME_SIGNATURE_COLOR
+    %! baca.SegmentMaker._make_global_skips(1)
     s1 * 1/4                                                                   %! baca.SegmentMaker._make_global_skips(1)
 %@% \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
 %@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers()
@@ -357,6 +391,8 @@ f_Global_Skips = {                                                             %
 
     % [06 Global_Skips measure 98 / measure 17]                                %! baca.SegmentMaker._comment_measure_numbers():baca.SegmentMaker._style_phantom_measures(1):PHANTOM
     \baca-time-signature-transparent                                           %! baca.SegmentMaker._style_phantom_measures(2):PHANTOM
+    %! baca.SegmentMaker._make_global_skips(3)
+    %! PHANTOM
     s1 * 1/4                                                                   %! baca.SegmentMaker._make_global_skips(3):PHANTOM
 %@% \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers():baca.SegmentMaker._style_phantom_measures(1):PHANTOM
 %@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER:baca.SegmentMaker._label_measure_numbers():baca.SegmentMaker._style_phantom_measures(1):PHANTOM
@@ -375,6 +411,7 @@ f_RH_Voice_I = {                                                               %
     \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'green4)        %! baca.SegmentMaker._attach_color_literal(2):REAPPLIED_CLEF_COLOR
 %@% \override PianoMusicRHStaff.Clef.color = ##f                               %! baca.SegmentMaker._attach_color_literal(1):REAPPLIED_CLEF_COLOR_CANCELLATION
     \set PianoMusicRHStaff.forceClef = ##t                                     %! baca.SegmentMaker._reapply_persistent_indicators(3):baca.SegmentMaker._treat_persistent_wrapper(2):baca.SegmentMaker._set_status_tag():REAPPLIED_CLEF
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 16/4                                                                  %! baca.SegmentMaker._call_rhythm_commands()
     - \tweak color #(x11-color 'green4)                                        %! REAPPLIED_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \f                                                                         %! baca.SegmentMaker._reapply_persistent_indicators(3):baca.SegmentMaker._set_status_tag():REAPPLIED_DYNAMIC
@@ -382,48 +419,63 @@ f_RH_Voice_I = {                                                               %
     \override PianoMusicRHStaff.Clef.color = #(x11-color 'OliveDrab)           %! baca.SegmentMaker._attach_color_literal(2):REAPPLIED_CLEF_REDRAW_COLOR
 
     % [06 RH_Voice_I measure 83 / measure 2]                                   %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 10/4                                                                  %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_I measure 84 / measure 3]                                   %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 1/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_I measure 85 / measure 4]                                   %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 12/4                                                                  %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_I measure 86 / measure 5]                                   %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 4/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_I measure 87 / measure 6]                                   %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 10/4                                                                  %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_I measure 88 / measure 7]                                   %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 1/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_I measure 89 / measure 8]                                   %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 13/4                                                                  %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_I measure 90 / measure 9]                                   %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 1/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_I measure 91 / measure 10]                                  %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 29/16                                                                 %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_I measure 92 / measure 11]                                  %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 27/16                                                                 %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_I measure 93 / measure 12]                                  %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 21/16                                                                 %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_I measure 94 / measure 13]                                  %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 15/16                                                                 %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_I measure 95 / measure 14]                                  %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 4/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_I measure 96 / measure 15]                                  %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 7/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_I measure 97 / measure 16]                                  %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 1/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 
     <<                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container(7):PHANTOM
@@ -434,6 +486,10 @@ f_RH_Voice_I = {                                                               %
             % [06 RH_Voice_I measure 98 / measure 17]                          %! baca.SegmentMaker._comment_measure_numbers():baca.SegmentMaker._style_phantom_measures(5):PHANTOM
             \abjad-invisible-music-coloring                                    %! baca.SegmentMaker._make_multimeasure_rest_container(2):PHANTOM:MULTIMEASURE_REST:INVISIBLE_MUSIC_COLORING:baca.SegmentMaker._style_phantom_measures(5)
         %@% \abjad-invisible-music                                             %! baca.SegmentMaker._make_multimeasure_rest_container(3):PHANTOM:MULTIMEASURE_REST:INVISIBLE_MUSIC_COMMAND:baca.SegmentMaker._style_phantom_measures(5)
+            %! baca.SegmentMaker._make_multimeasure_rest_container(1)
+            %! PHANTOM
+            %! HIDDEN
+            %! MULTIMEASURE_REST
             R1 * 1/4                                                           %! baca.SegmentMaker._make_multimeasure_rest_container(1):PHANTOM:HIDDEN:MULTIMEASURE_REST
         %@% ^ \baca-duration-multiplier-markup #"1" #"4"                       %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER:HIDDEN:MULTIMEASURE_REST:PHANTOM:baca.SegmentMaker._style_phantom_measures(5)
 
@@ -443,6 +499,10 @@ f_RH_Voice_I = {                                                               %
         {                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(6):PHANTOM
 
             % [06 RH_Rest_Voice_I measure 98 / measure 17]                     %! baca.SegmentMaker._comment_measure_numbers():baca.SegmentMaker._style_phantom_measures(5):PHANTOM
+            %! baca.SegmentMaker._make_multimeasure_rest_container(5)
+            %! PHANTOM
+            %! REST_VOICE
+            %! SKIP
             s1 * 1/4                                                           %! baca.SegmentMaker._make_multimeasure_rest_container(5):PHANTOM:REST_VOICE:SKIP
 
         }                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(6):PHANTOM
@@ -455,51 +515,67 @@ f_RH_Voice_I = {                                                               %
 f_RH_Voice_I_Inserts = {                                                       %! ide.Path.extern()
 
     % [06 RH_Voice_I_Inserts measure 82 / measure 1]                           %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 16/4                                                                  %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_I_Inserts measure 83 / measure 2]                           %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 10/4                                                                  %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_I_Inserts measure 84 / measure 3]                           %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 1/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_I_Inserts measure 85 / measure 4]                           %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 12/4                                                                  %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_I_Inserts measure 86 / measure 5]                           %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 4/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_I_Inserts measure 87 / measure 6]                           %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 10/4                                                                  %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_I_Inserts measure 88 / measure 7]                           %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 1/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_I_Inserts measure 89 / measure 8]                           %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 13/4                                                                  %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_I_Inserts measure 90 / measure 9]                           %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 1/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_I_Inserts measure 91 / measure 10]                          %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 29/16                                                                 %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_I_Inserts measure 92 / measure 11]                          %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 27/16                                                                 %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_I_Inserts measure 93 / measure 12]                          %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 21/16                                                                 %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_I_Inserts measure 94 / measure 13]                          %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 15/16                                                                 %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_I_Inserts measure 95 / measure 14]                          %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 4/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_I_Inserts measure 96 / measure 15]                          %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 7/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_I_Inserts measure 97 / measure 16]                          %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 1/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 
     <<                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container(7):PHANTOM
@@ -510,6 +586,10 @@ f_RH_Voice_I_Inserts = {                                                       %
             % [06 RH_Voice_I_Inserts measure 98 / measure 17]                  %! baca.SegmentMaker._comment_measure_numbers():baca.SegmentMaker._style_phantom_measures(5):PHANTOM
             \abjad-invisible-music-coloring                                    %! baca.SegmentMaker._make_multimeasure_rest_container(2):PHANTOM:MULTIMEASURE_REST:INVISIBLE_MUSIC_COLORING:baca.SegmentMaker._style_phantom_measures(5)
         %@% \abjad-invisible-music                                             %! baca.SegmentMaker._make_multimeasure_rest_container(3):PHANTOM:MULTIMEASURE_REST:INVISIBLE_MUSIC_COMMAND:baca.SegmentMaker._style_phantom_measures(5)
+            %! baca.SegmentMaker._make_multimeasure_rest_container(1)
+            %! PHANTOM
+            %! HIDDEN
+            %! MULTIMEASURE_REST
             R1 * 1/4                                                           %! baca.SegmentMaker._make_multimeasure_rest_container(1):PHANTOM:HIDDEN:MULTIMEASURE_REST
         %@% ^ \baca-duration-multiplier-markup #"1" #"4"                       %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER:HIDDEN:MULTIMEASURE_REST:PHANTOM:baca.SegmentMaker._style_phantom_measures(5)
 
@@ -519,6 +599,10 @@ f_RH_Voice_I_Inserts = {                                                       %
         {                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(6):PHANTOM
 
             % [06 RH_Rest_Voice_I_Inserts measure 98 / measure 17]             %! baca.SegmentMaker._comment_measure_numbers():baca.SegmentMaker._style_phantom_measures(5):PHANTOM
+            %! baca.SegmentMaker._make_multimeasure_rest_container(5)
+            %! PHANTOM
+            %! REST_VOICE
+            %! SKIP
             s1 * 1/4                                                           %! baca.SegmentMaker._make_multimeasure_rest_container(5):PHANTOM:REST_VOICE:SKIP
 
         }                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(6):PHANTOM
@@ -1934,6 +2018,9 @@ f_RH_Voice_II = {                                                              %
             \abjad-invisible-music-coloring                                    %! baca.SegmentMaker._make_multimeasure_rest_container(2):NOTE:INVISIBLE_MUSIC_COLORING
         %@% \abjad-invisible-music                                             %! baca.SegmentMaker._make_multimeasure_rest_container(3):NOTE:INVISIBLE_MUSIC_COMMAND
             \baca-not-yet-pitched-coloring                                     %! baca.SegmentMaker._color_not_yet_pitched():NOT_YET_PITCHED_COLORING:HIDDEN:NOTE
+            %! baca.SegmentMaker._make_multimeasure_rest_container(1)
+            %! HIDDEN
+            %! NOTE
             b'1 * 1/4                                                          %! baca.SegmentMaker._make_multimeasure_rest_container(1):HIDDEN:NOTE
         %@% ^ \baca-duration-multiplier-markup #"1" #"4"                       %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER:HIDDEN:NOTE
 
@@ -1943,6 +2030,9 @@ f_RH_Voice_II = {                                                              %
         {                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(6)
 
             % [06 RH_Rest_Voice_II measure 97 / measure 16]                    %! baca.SegmentMaker._comment_measure_numbers()
+            %! baca.SegmentMaker._make_multimeasure_rest_container(5)
+            %! REST_VOICE
+            %! SKIP
             s1 * 1/4                                                           %! baca.SegmentMaker._make_multimeasure_rest_container(5):REST_VOICE:SKIP
 
         }                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(6)
@@ -1958,6 +2048,10 @@ f_RH_Voice_II = {                                                              %
             \abjad-invisible-music-coloring                                    %! baca.SegmentMaker._make_multimeasure_rest_container(2):PHANTOM:NOTE:INVISIBLE_MUSIC_COLORING:baca.SegmentMaker._style_phantom_measures(5)
         %@% \abjad-invisible-music                                             %! baca.SegmentMaker._make_multimeasure_rest_container(3):PHANTOM:NOTE:INVISIBLE_MUSIC_COMMAND:baca.SegmentMaker._style_phantom_measures(5)
             \baca-not-yet-pitched-coloring                                     %! baca.SegmentMaker._color_not_yet_pitched():NOT_YET_PITCHED_COLORING:HIDDEN:NOTE:baca.SegmentMaker._style_phantom_measures(5):PHANTOM
+            %! baca.SegmentMaker._make_multimeasure_rest_container(1)
+            %! PHANTOM
+            %! HIDDEN
+            %! NOTE
             b'1 * 1/4                                                          %! baca.SegmentMaker._make_multimeasure_rest_container(1):PHANTOM:HIDDEN:NOTE
         %@% ^ \baca-duration-multiplier-markup #"1" #"4"                       %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER:HIDDEN:NOTE:PHANTOM:baca.SegmentMaker._style_phantom_measures(5)
 
@@ -1967,6 +2061,10 @@ f_RH_Voice_II = {                                                              %
         {                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(6):PHANTOM
 
             % [06 RH_Rest_Voice_II measure 98 / measure 17]                    %! baca.SegmentMaker._comment_measure_numbers():baca.SegmentMaker._style_phantom_measures(5):PHANTOM
+            %! baca.SegmentMaker._make_multimeasure_rest_container(5)
+            %! PHANTOM
+            %! REST_VOICE
+            %! SKIP
             s1 * 1/4                                                           %! baca.SegmentMaker._make_multimeasure_rest_container(5):PHANTOM:REST_VOICE:SKIP
 
         }                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(6):PHANTOM
@@ -1979,51 +2077,67 @@ f_RH_Voice_II = {                                                              %
 f_RH_Voice_II_Inserts = {                                                      %! ide.Path.extern()
 
     % [06 RH_Voice_II_Inserts measure 82 / measure 1]                          %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 16/4                                                                  %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_II_Inserts measure 83 / measure 2]                          %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 10/4                                                                  %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_II_Inserts measure 84 / measure 3]                          %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 1/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_II_Inserts measure 85 / measure 4]                          %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 12/4                                                                  %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_II_Inserts measure 86 / measure 5]                          %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 4/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_II_Inserts measure 87 / measure 6]                          %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 10/4                                                                  %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_II_Inserts measure 88 / measure 7]                          %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 1/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_II_Inserts measure 89 / measure 8]                          %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 13/4                                                                  %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_II_Inserts measure 90 / measure 9]                          %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 1/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_II_Inserts measure 91 / measure 10]                         %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 29/16                                                                 %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_II_Inserts measure 92 / measure 11]                         %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 27/16                                                                 %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_II_Inserts measure 93 / measure 12]                         %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 21/16                                                                 %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_II_Inserts measure 94 / measure 13]                         %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 15/16                                                                 %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_II_Inserts measure 95 / measure 14]                         %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 4/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_II_Inserts measure 96 / measure 15]                         %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 7/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_II_Inserts measure 97 / measure 16]                         %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 1/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 
     <<                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container(7):PHANTOM
@@ -2034,6 +2148,10 @@ f_RH_Voice_II_Inserts = {                                                      %
             % [06 RH_Voice_II_Inserts measure 98 / measure 17]                 %! baca.SegmentMaker._comment_measure_numbers():baca.SegmentMaker._style_phantom_measures(5):PHANTOM
             \abjad-invisible-music-coloring                                    %! baca.SegmentMaker._make_multimeasure_rest_container(2):PHANTOM:MULTIMEASURE_REST:INVISIBLE_MUSIC_COLORING:baca.SegmentMaker._style_phantom_measures(5)
         %@% \abjad-invisible-music                                             %! baca.SegmentMaker._make_multimeasure_rest_container(3):PHANTOM:MULTIMEASURE_REST:INVISIBLE_MUSIC_COMMAND:baca.SegmentMaker._style_phantom_measures(5)
+            %! baca.SegmentMaker._make_multimeasure_rest_container(1)
+            %! PHANTOM
+            %! HIDDEN
+            %! MULTIMEASURE_REST
             R1 * 1/4                                                           %! baca.SegmentMaker._make_multimeasure_rest_container(1):PHANTOM:HIDDEN:MULTIMEASURE_REST
         %@% ^ \baca-duration-multiplier-markup #"1" #"4"                       %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER:HIDDEN:MULTIMEASURE_REST:PHANTOM:baca.SegmentMaker._style_phantom_measures(5)
 
@@ -2043,6 +2161,10 @@ f_RH_Voice_II_Inserts = {                                                      %
         {                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(6):PHANTOM
 
             % [06 RH_Rest_Voice_II_Inserts measure 98 / measure 17]            %! baca.SegmentMaker._comment_measure_numbers():baca.SegmentMaker._style_phantom_measures(5):PHANTOM
+            %! baca.SegmentMaker._make_multimeasure_rest_container(5)
+            %! PHANTOM
+            %! REST_VOICE
+            %! SKIP
             s1 * 1/4                                                           %! baca.SegmentMaker._make_multimeasure_rest_container(5):PHANTOM:REST_VOICE:SKIP
 
         }                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(6):PHANTOM
@@ -2744,6 +2866,9 @@ f_RH_Voice_III = {                                                             %
             \abjad-invisible-music-coloring                                    %! baca.SegmentMaker._make_multimeasure_rest_container(2):NOTE:INVISIBLE_MUSIC_COLORING
         %@% \abjad-invisible-music                                             %! baca.SegmentMaker._make_multimeasure_rest_container(3):NOTE:INVISIBLE_MUSIC_COMMAND
             \baca-not-yet-pitched-coloring                                     %! baca.SegmentMaker._color_not_yet_pitched():NOT_YET_PITCHED_COLORING:HIDDEN:NOTE
+            %! baca.SegmentMaker._make_multimeasure_rest_container(1)
+            %! HIDDEN
+            %! NOTE
             b'1 * 1/4                                                          %! baca.SegmentMaker._make_multimeasure_rest_container(1):HIDDEN:NOTE
         %@% ^ \baca-duration-multiplier-markup #"1" #"4"                       %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER:HIDDEN:NOTE
 
@@ -2753,6 +2878,9 @@ f_RH_Voice_III = {                                                             %
         {                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(6)
 
             % [06 RH_Rest_Voice_III measure 97 / measure 16]                   %! baca.SegmentMaker._comment_measure_numbers()
+            %! baca.SegmentMaker._make_multimeasure_rest_container(5)
+            %! REST_VOICE
+            %! SKIP
             s1 * 1/4                                                           %! baca.SegmentMaker._make_multimeasure_rest_container(5):REST_VOICE:SKIP
 
         }                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(6)
@@ -2768,6 +2896,10 @@ f_RH_Voice_III = {                                                             %
             \abjad-invisible-music-coloring                                    %! baca.SegmentMaker._make_multimeasure_rest_container(2):PHANTOM:NOTE:INVISIBLE_MUSIC_COLORING:baca.SegmentMaker._style_phantom_measures(5)
         %@% \abjad-invisible-music                                             %! baca.SegmentMaker._make_multimeasure_rest_container(3):PHANTOM:NOTE:INVISIBLE_MUSIC_COMMAND:baca.SegmentMaker._style_phantom_measures(5)
             \baca-not-yet-pitched-coloring                                     %! baca.SegmentMaker._color_not_yet_pitched():NOT_YET_PITCHED_COLORING:HIDDEN:NOTE:baca.SegmentMaker._style_phantom_measures(5):PHANTOM
+            %! baca.SegmentMaker._make_multimeasure_rest_container(1)
+            %! PHANTOM
+            %! HIDDEN
+            %! NOTE
             b'1 * 1/4                                                          %! baca.SegmentMaker._make_multimeasure_rest_container(1):PHANTOM:HIDDEN:NOTE
         %@% ^ \baca-duration-multiplier-markup #"1" #"4"                       %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER:HIDDEN:NOTE:PHANTOM:baca.SegmentMaker._style_phantom_measures(5)
 
@@ -2777,6 +2909,10 @@ f_RH_Voice_III = {                                                             %
         {                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(6):PHANTOM
 
             % [06 RH_Rest_Voice_III measure 98 / measure 17]                   %! baca.SegmentMaker._comment_measure_numbers():baca.SegmentMaker._style_phantom_measures(5):PHANTOM
+            %! baca.SegmentMaker._make_multimeasure_rest_container(5)
+            %! PHANTOM
+            %! REST_VOICE
+            %! SKIP
             s1 * 1/4                                                           %! baca.SegmentMaker._make_multimeasure_rest_container(5):PHANTOM:REST_VOICE:SKIP
 
         }                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(6):PHANTOM
@@ -2789,51 +2925,67 @@ f_RH_Voice_III = {                                                             %
 f_RH_Voice_III_Inserts = {                                                     %! ide.Path.extern()
 
     % [06 RH_Voice_III_Inserts measure 82 / measure 1]                         %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 16/4                                                                  %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_III_Inserts measure 83 / measure 2]                         %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 10/4                                                                  %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_III_Inserts measure 84 / measure 3]                         %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 1/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_III_Inserts measure 85 / measure 4]                         %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 12/4                                                                  %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_III_Inserts measure 86 / measure 5]                         %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 4/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_III_Inserts measure 87 / measure 6]                         %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 10/4                                                                  %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_III_Inserts measure 88 / measure 7]                         %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 1/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_III_Inserts measure 89 / measure 8]                         %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 13/4                                                                  %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_III_Inserts measure 90 / measure 9]                         %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 1/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_III_Inserts measure 91 / measure 10]                        %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 29/16                                                                 %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_III_Inserts measure 92 / measure 11]                        %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 27/16                                                                 %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_III_Inserts measure 93 / measure 12]                        %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 21/16                                                                 %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_III_Inserts measure 94 / measure 13]                        %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 15/16                                                                 %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_III_Inserts measure 95 / measure 14]                        %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 4/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_III_Inserts measure 96 / measure 15]                        %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 7/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_III_Inserts measure 97 / measure 16]                        %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 1/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 
     <<                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container(7):PHANTOM
@@ -2844,6 +2996,10 @@ f_RH_Voice_III_Inserts = {                                                     %
             % [06 RH_Voice_III_Inserts measure 98 / measure 17]                %! baca.SegmentMaker._comment_measure_numbers():baca.SegmentMaker._style_phantom_measures(5):PHANTOM
             \abjad-invisible-music-coloring                                    %! baca.SegmentMaker._make_multimeasure_rest_container(2):PHANTOM:MULTIMEASURE_REST:INVISIBLE_MUSIC_COLORING:baca.SegmentMaker._style_phantom_measures(5)
         %@% \abjad-invisible-music                                             %! baca.SegmentMaker._make_multimeasure_rest_container(3):PHANTOM:MULTIMEASURE_REST:INVISIBLE_MUSIC_COMMAND:baca.SegmentMaker._style_phantom_measures(5)
+            %! baca.SegmentMaker._make_multimeasure_rest_container(1)
+            %! PHANTOM
+            %! HIDDEN
+            %! MULTIMEASURE_REST
             R1 * 1/4                                                           %! baca.SegmentMaker._make_multimeasure_rest_container(1):PHANTOM:HIDDEN:MULTIMEASURE_REST
         %@% ^ \baca-duration-multiplier-markup #"1" #"4"                       %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER:HIDDEN:MULTIMEASURE_REST:PHANTOM:baca.SegmentMaker._style_phantom_measures(5)
 
@@ -2853,6 +3009,10 @@ f_RH_Voice_III_Inserts = {                                                     %
         {                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(6):PHANTOM
 
             % [06 RH_Rest_Voice_III_Inserts measure 98 / measure 17]           %! baca.SegmentMaker._comment_measure_numbers():baca.SegmentMaker._style_phantom_measures(5):PHANTOM
+            %! baca.SegmentMaker._make_multimeasure_rest_container(5)
+            %! PHANTOM
+            %! REST_VOICE
+            %! SKIP
             s1 * 1/4                                                           %! baca.SegmentMaker._make_multimeasure_rest_container(5):PHANTOM:REST_VOICE:SKIP
 
         }                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(6):PHANTOM
@@ -2865,53 +3025,69 @@ f_RH_Voice_III_Inserts = {                                                     %
 f_RH_Voice_IV = {                                                              %! ide.Path.extern()
 
     % [06 RH_Voice_IV measure 82 / measure 1]                                  %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 16/4                                                                  %! baca.SegmentMaker._call_rhythm_commands()
     - \tweak color #(x11-color 'green4)                                        %! REAPPLIED_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \p                                                                         %! baca.SegmentMaker._reapply_persistent_indicators(3):baca.SegmentMaker._set_status_tag():REAPPLIED_DYNAMIC
 
     % [06 RH_Voice_IV measure 83 / measure 2]                                  %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 10/4                                                                  %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_IV measure 84 / measure 3]                                  %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 1/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_IV measure 85 / measure 4]                                  %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 12/4                                                                  %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_IV measure 86 / measure 5]                                  %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 4/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_IV measure 87 / measure 6]                                  %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 10/4                                                                  %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_IV measure 88 / measure 7]                                  %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 1/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_IV measure 89 / measure 8]                                  %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 13/4                                                                  %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_IV measure 90 / measure 9]                                  %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 1/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_IV measure 91 / measure 10]                                 %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 29/16                                                                 %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_IV measure 92 / measure 11]                                 %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 27/16                                                                 %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_IV measure 93 / measure 12]                                 %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 21/16                                                                 %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_IV measure 94 / measure 13]                                 %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 15/16                                                                 %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_IV measure 95 / measure 14]                                 %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 4/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_IV measure 96 / measure 15]                                 %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 7/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_IV measure 97 / measure 16]                                 %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 1/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 
     <<                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container(7):PHANTOM
@@ -2922,6 +3098,10 @@ f_RH_Voice_IV = {                                                              %
             % [06 RH_Voice_IV measure 98 / measure 17]                         %! baca.SegmentMaker._comment_measure_numbers():baca.SegmentMaker._style_phantom_measures(5):PHANTOM
             \abjad-invisible-music-coloring                                    %! baca.SegmentMaker._make_multimeasure_rest_container(2):PHANTOM:MULTIMEASURE_REST:INVISIBLE_MUSIC_COLORING:baca.SegmentMaker._style_phantom_measures(5)
         %@% \abjad-invisible-music                                             %! baca.SegmentMaker._make_multimeasure_rest_container(3):PHANTOM:MULTIMEASURE_REST:INVISIBLE_MUSIC_COMMAND:baca.SegmentMaker._style_phantom_measures(5)
+            %! baca.SegmentMaker._make_multimeasure_rest_container(1)
+            %! PHANTOM
+            %! HIDDEN
+            %! MULTIMEASURE_REST
             R1 * 1/4                                                           %! baca.SegmentMaker._make_multimeasure_rest_container(1):PHANTOM:HIDDEN:MULTIMEASURE_REST
         %@% ^ \baca-duration-multiplier-markup #"1" #"4"                       %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER:HIDDEN:MULTIMEASURE_REST:PHANTOM:baca.SegmentMaker._style_phantom_measures(5)
 
@@ -2931,6 +3111,10 @@ f_RH_Voice_IV = {                                                              %
         {                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(6):PHANTOM
 
             % [06 RH_Rest_Voice_IV measure 98 / measure 17]                    %! baca.SegmentMaker._comment_measure_numbers():baca.SegmentMaker._style_phantom_measures(5):PHANTOM
+            %! baca.SegmentMaker._make_multimeasure_rest_container(5)
+            %! PHANTOM
+            %! REST_VOICE
+            %! SKIP
             s1 * 1/4                                                           %! baca.SegmentMaker._make_multimeasure_rest_container(5):PHANTOM:REST_VOICE:SKIP
 
         }                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(6):PHANTOM
@@ -2943,51 +3127,67 @@ f_RH_Voice_IV = {                                                              %
 f_RH_Voice_IV_Inserts = {                                                      %! ide.Path.extern()
 
     % [06 RH_Voice_IV_Inserts measure 82 / measure 1]                          %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 16/4                                                                  %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_IV_Inserts measure 83 / measure 2]                          %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 10/4                                                                  %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_IV_Inserts measure 84 / measure 3]                          %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 1/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_IV_Inserts measure 85 / measure 4]                          %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 12/4                                                                  %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_IV_Inserts measure 86 / measure 5]                          %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 4/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_IV_Inserts measure 87 / measure 6]                          %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 10/4                                                                  %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_IV_Inserts measure 88 / measure 7]                          %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 1/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_IV_Inserts measure 89 / measure 8]                          %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 13/4                                                                  %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_IV_Inserts measure 90 / measure 9]                          %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 1/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_IV_Inserts measure 91 / measure 10]                         %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 29/16                                                                 %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_IV_Inserts measure 92 / measure 11]                         %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 27/16                                                                 %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_IV_Inserts measure 93 / measure 12]                         %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 21/16                                                                 %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_IV_Inserts measure 94 / measure 13]                         %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 15/16                                                                 %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_IV_Inserts measure 95 / measure 14]                         %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 4/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_IV_Inserts measure 96 / measure 15]                         %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 7/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_IV_Inserts measure 97 / measure 16]                         %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 1/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 
     <<                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container(7):PHANTOM
@@ -2998,6 +3198,10 @@ f_RH_Voice_IV_Inserts = {                                                      %
             % [06 RH_Voice_IV_Inserts measure 98 / measure 17]                 %! baca.SegmentMaker._comment_measure_numbers():baca.SegmentMaker._style_phantom_measures(5):PHANTOM
             \abjad-invisible-music-coloring                                    %! baca.SegmentMaker._make_multimeasure_rest_container(2):PHANTOM:MULTIMEASURE_REST:INVISIBLE_MUSIC_COLORING:baca.SegmentMaker._style_phantom_measures(5)
         %@% \abjad-invisible-music                                             %! baca.SegmentMaker._make_multimeasure_rest_container(3):PHANTOM:MULTIMEASURE_REST:INVISIBLE_MUSIC_COMMAND:baca.SegmentMaker._style_phantom_measures(5)
+            %! baca.SegmentMaker._make_multimeasure_rest_container(1)
+            %! PHANTOM
+            %! HIDDEN
+            %! MULTIMEASURE_REST
             R1 * 1/4                                                           %! baca.SegmentMaker._make_multimeasure_rest_container(1):PHANTOM:HIDDEN:MULTIMEASURE_REST
         %@% ^ \baca-duration-multiplier-markup #"1" #"4"                       %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER:HIDDEN:MULTIMEASURE_REST:PHANTOM:baca.SegmentMaker._style_phantom_measures(5)
 
@@ -3007,6 +3211,10 @@ f_RH_Voice_IV_Inserts = {                                                      %
         {                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(6):PHANTOM
 
             % [06 RH_Rest_Voice_IV_Inserts measure 98 / measure 17]            %! baca.SegmentMaker._comment_measure_numbers():baca.SegmentMaker._style_phantom_measures(5):PHANTOM
+            %! baca.SegmentMaker._make_multimeasure_rest_container(5)
+            %! PHANTOM
+            %! REST_VOICE
+            %! SKIP
             s1 * 1/4                                                           %! baca.SegmentMaker._make_multimeasure_rest_container(5):PHANTOM:REST_VOICE:SKIP
 
         }                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(6):PHANTOM
@@ -3019,51 +3227,67 @@ f_RH_Voice_IV_Inserts = {                                                      %
 f_RH_Voice_V = {                                                               %! ide.Path.extern()
 
     % [06 RH_Voice_V measure 82 / measure 1]                                   %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 16/4                                                                  %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_V measure 83 / measure 2]                                   %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 10/4                                                                  %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_V measure 84 / measure 3]                                   %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 1/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_V measure 85 / measure 4]                                   %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 12/4                                                                  %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_V measure 86 / measure 5]                                   %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 4/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_V measure 87 / measure 6]                                   %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 10/4                                                                  %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_V measure 88 / measure 7]                                   %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 1/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_V measure 89 / measure 8]                                   %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 13/4                                                                  %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_V measure 90 / measure 9]                                   %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 1/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_V measure 91 / measure 10]                                  %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 29/16                                                                 %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_V measure 92 / measure 11]                                  %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 27/16                                                                 %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_V measure 93 / measure 12]                                  %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 21/16                                                                 %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_V measure 94 / measure 13]                                  %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 15/16                                                                 %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_V measure 95 / measure 14]                                  %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 4/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_V measure 96 / measure 15]                                  %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 7/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_V measure 97 / measure 16]                                  %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 1/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 
     <<                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container(7):PHANTOM
@@ -3074,6 +3298,10 @@ f_RH_Voice_V = {                                                               %
             % [06 RH_Voice_V measure 98 / measure 17]                          %! baca.SegmentMaker._comment_measure_numbers():baca.SegmentMaker._style_phantom_measures(5):PHANTOM
             \abjad-invisible-music-coloring                                    %! baca.SegmentMaker._make_multimeasure_rest_container(2):PHANTOM:MULTIMEASURE_REST:INVISIBLE_MUSIC_COLORING:baca.SegmentMaker._style_phantom_measures(5)
         %@% \abjad-invisible-music                                             %! baca.SegmentMaker._make_multimeasure_rest_container(3):PHANTOM:MULTIMEASURE_REST:INVISIBLE_MUSIC_COMMAND:baca.SegmentMaker._style_phantom_measures(5)
+            %! baca.SegmentMaker._make_multimeasure_rest_container(1)
+            %! PHANTOM
+            %! HIDDEN
+            %! MULTIMEASURE_REST
             R1 * 1/4                                                           %! baca.SegmentMaker._make_multimeasure_rest_container(1):PHANTOM:HIDDEN:MULTIMEASURE_REST
         %@% ^ \baca-duration-multiplier-markup #"1" #"4"                       %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER:HIDDEN:MULTIMEASURE_REST:PHANTOM:baca.SegmentMaker._style_phantom_measures(5)
 
@@ -3083,6 +3311,10 @@ f_RH_Voice_V = {                                                               %
         {                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(6):PHANTOM
 
             % [06 RH_Rest_Voice_V measure 98 / measure 17]                     %! baca.SegmentMaker._comment_measure_numbers():baca.SegmentMaker._style_phantom_measures(5):PHANTOM
+            %! baca.SegmentMaker._make_multimeasure_rest_container(5)
+            %! PHANTOM
+            %! REST_VOICE
+            %! SKIP
             s1 * 1/4                                                           %! baca.SegmentMaker._make_multimeasure_rest_container(5):PHANTOM:REST_VOICE:SKIP
 
         }                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(6):PHANTOM
@@ -3095,51 +3327,67 @@ f_RH_Voice_V = {                                                               %
 f_RH_Voice_VI = {                                                              %! ide.Path.extern()
 
     % [06 RH_Voice_VI measure 82 / measure 1]                                  %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 16/4                                                                  %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_VI measure 83 / measure 2]                                  %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 10/4                                                                  %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_VI measure 84 / measure 3]                                  %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 1/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_VI measure 85 / measure 4]                                  %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 12/4                                                                  %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_VI measure 86 / measure 5]                                  %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 4/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_VI measure 87 / measure 6]                                  %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 10/4                                                                  %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_VI measure 88 / measure 7]                                  %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 1/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_VI measure 89 / measure 8]                                  %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 13/4                                                                  %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_VI measure 90 / measure 9]                                  %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 1/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_VI measure 91 / measure 10]                                 %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 29/16                                                                 %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_VI measure 92 / measure 11]                                 %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 27/16                                                                 %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_VI measure 93 / measure 12]                                 %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 21/16                                                                 %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_VI measure 94 / measure 13]                                 %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 15/16                                                                 %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_VI measure 95 / measure 14]                                 %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 4/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_VI measure 96 / measure 15]                                 %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 7/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Voice_VI measure 97 / measure 16]                                 %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 1/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 
     <<                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container(7):PHANTOM
@@ -3150,6 +3398,10 @@ f_RH_Voice_VI = {                                                              %
             % [06 RH_Voice_VI measure 98 / measure 17]                         %! baca.SegmentMaker._comment_measure_numbers():baca.SegmentMaker._style_phantom_measures(5):PHANTOM
             \abjad-invisible-music-coloring                                    %! baca.SegmentMaker._make_multimeasure_rest_container(2):PHANTOM:MULTIMEASURE_REST:INVISIBLE_MUSIC_COLORING:baca.SegmentMaker._style_phantom_measures(5)
         %@% \abjad-invisible-music                                             %! baca.SegmentMaker._make_multimeasure_rest_container(3):PHANTOM:MULTIMEASURE_REST:INVISIBLE_MUSIC_COMMAND:baca.SegmentMaker._style_phantom_measures(5)
+            %! baca.SegmentMaker._make_multimeasure_rest_container(1)
+            %! PHANTOM
+            %! HIDDEN
+            %! MULTIMEASURE_REST
             R1 * 1/4                                                           %! baca.SegmentMaker._make_multimeasure_rest_container(1):PHANTOM:HIDDEN:MULTIMEASURE_REST
         %@% ^ \baca-duration-multiplier-markup #"1" #"4"                       %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER:HIDDEN:MULTIMEASURE_REST:PHANTOM:baca.SegmentMaker._style_phantom_measures(5)
 
@@ -3159,6 +3411,10 @@ f_RH_Voice_VI = {                                                              %
         {                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(6):PHANTOM
 
             % [06 RH_Rest_Voice_VI measure 98 / measure 17]                    %! baca.SegmentMaker._comment_measure_numbers():baca.SegmentMaker._style_phantom_measures(5):PHANTOM
+            %! baca.SegmentMaker._make_multimeasure_rest_container(5)
+            %! PHANTOM
+            %! REST_VOICE
+            %! SKIP
             s1 * 1/4                                                           %! baca.SegmentMaker._make_multimeasure_rest_container(5):PHANTOM:REST_VOICE:SKIP
 
         }                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(6):PHANTOM
@@ -3171,51 +3427,67 @@ f_RH_Voice_VI = {                                                              %
 f_RH_Resonance_Voice = {                                                       %! ide.Path.extern()
 
     % [06 RH_Resonance_Voice measure 82 / measure 1]                           %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 16/4                                                                  %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Resonance_Voice measure 83 / measure 2]                           %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 10/4                                                                  %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Resonance_Voice measure 84 / measure 3]                           %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 1/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Resonance_Voice measure 85 / measure 4]                           %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 12/4                                                                  %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Resonance_Voice measure 86 / measure 5]                           %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 4/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Resonance_Voice measure 87 / measure 6]                           %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 10/4                                                                  %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Resonance_Voice measure 88 / measure 7]                           %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 1/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Resonance_Voice measure 89 / measure 8]                           %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 13/4                                                                  %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Resonance_Voice measure 90 / measure 9]                           %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 1/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Resonance_Voice measure 91 / measure 10]                          %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 29/16                                                                 %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Resonance_Voice measure 92 / measure 11]                          %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 27/16                                                                 %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Resonance_Voice measure 93 / measure 12]                          %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 21/16                                                                 %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Resonance_Voice measure 94 / measure 13]                          %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 15/16                                                                 %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Resonance_Voice measure 95 / measure 14]                          %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 4/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Resonance_Voice measure 96 / measure 15]                          %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 7/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 RH_Resonance_Voice measure 97 / measure 16]                          %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 1/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 
     <<                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container(7):PHANTOM
@@ -3226,6 +3498,10 @@ f_RH_Resonance_Voice = {                                                       %
             % [06 RH_Resonance_Voice measure 98 / measure 17]                  %! baca.SegmentMaker._comment_measure_numbers():baca.SegmentMaker._style_phantom_measures(5):PHANTOM
             \abjad-invisible-music-coloring                                    %! baca.SegmentMaker._make_multimeasure_rest_container(2):PHANTOM:MULTIMEASURE_REST:INVISIBLE_MUSIC_COLORING:baca.SegmentMaker._style_phantom_measures(5)
         %@% \abjad-invisible-music                                             %! baca.SegmentMaker._make_multimeasure_rest_container(3):PHANTOM:MULTIMEASURE_REST:INVISIBLE_MUSIC_COMMAND:baca.SegmentMaker._style_phantom_measures(5)
+            %! baca.SegmentMaker._make_multimeasure_rest_container(1)
+            %! PHANTOM
+            %! HIDDEN
+            %! MULTIMEASURE_REST
             R1 * 1/4                                                           %! baca.SegmentMaker._make_multimeasure_rest_container(1):PHANTOM:HIDDEN:MULTIMEASURE_REST
         %@% ^ \baca-duration-multiplier-markup #"1" #"4"                       %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER:HIDDEN:MULTIMEASURE_REST:PHANTOM:baca.SegmentMaker._style_phantom_measures(5)
 
@@ -3235,6 +3511,10 @@ f_RH_Resonance_Voice = {                                                       %
         {                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(6):PHANTOM
 
             % [06 RH_Resonance_Rest_Voice measure 98 / measure 17]             %! baca.SegmentMaker._comment_measure_numbers():baca.SegmentMaker._style_phantom_measures(5):PHANTOM
+            %! baca.SegmentMaker._make_multimeasure_rest_container(5)
+            %! PHANTOM
+            %! REST_VOICE
+            %! SKIP
             s1 * 1/4                                                           %! baca.SegmentMaker._make_multimeasure_rest_container(5):PHANTOM:REST_VOICE:SKIP
 
         }                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(6):PHANTOM
@@ -3285,51 +3565,67 @@ f_Piano_Music_RH_Staff = <<                                                    %
 f_LH_Voice_I = {                                                               %! ide.Path.extern()
 
     % [06 LH_Voice_I measure 82 / measure 1]                                   %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 16/4                                                                  %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 LH_Voice_I measure 83 / measure 2]                                   %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 10/4                                                                  %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 LH_Voice_I measure 84 / measure 3]                                   %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 1/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 LH_Voice_I measure 85 / measure 4]                                   %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 12/4                                                                  %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 LH_Voice_I measure 86 / measure 5]                                   %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 4/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 LH_Voice_I measure 87 / measure 6]                                   %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 10/4                                                                  %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 LH_Voice_I measure 88 / measure 7]                                   %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 1/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 LH_Voice_I measure 89 / measure 8]                                   %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 13/4                                                                  %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 LH_Voice_I measure 90 / measure 9]                                   %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 1/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 LH_Voice_I measure 91 / measure 10]                                  %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 29/16                                                                 %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 LH_Voice_I measure 92 / measure 11]                                  %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 27/16                                                                 %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 LH_Voice_I measure 93 / measure 12]                                  %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 21/16                                                                 %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 LH_Voice_I measure 94 / measure 13]                                  %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 15/16                                                                 %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 LH_Voice_I measure 95 / measure 14]                                  %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 4/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 LH_Voice_I measure 96 / measure 15]                                  %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 7/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 LH_Voice_I measure 97 / measure 16]                                  %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 1/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 
     <<                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container(7):PHANTOM
@@ -3340,6 +3636,10 @@ f_LH_Voice_I = {                                                               %
             % [06 LH_Voice_I measure 98 / measure 17]                          %! baca.SegmentMaker._comment_measure_numbers():baca.SegmentMaker._style_phantom_measures(5):PHANTOM
             \abjad-invisible-music-coloring                                    %! baca.SegmentMaker._make_multimeasure_rest_container(2):PHANTOM:MULTIMEASURE_REST:INVISIBLE_MUSIC_COLORING:baca.SegmentMaker._style_phantom_measures(5)
         %@% \abjad-invisible-music                                             %! baca.SegmentMaker._make_multimeasure_rest_container(3):PHANTOM:MULTIMEASURE_REST:INVISIBLE_MUSIC_COMMAND:baca.SegmentMaker._style_phantom_measures(5)
+            %! baca.SegmentMaker._make_multimeasure_rest_container(1)
+            %! PHANTOM
+            %! HIDDEN
+            %! MULTIMEASURE_REST
             R1 * 1/4                                                           %! baca.SegmentMaker._make_multimeasure_rest_container(1):PHANTOM:HIDDEN:MULTIMEASURE_REST
         %@% ^ \baca-duration-multiplier-markup #"1" #"4"                       %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER:HIDDEN:MULTIMEASURE_REST:PHANTOM:baca.SegmentMaker._style_phantom_measures(5)
 
@@ -3349,6 +3649,10 @@ f_LH_Voice_I = {                                                               %
         {                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(6):PHANTOM
 
             % [06 LH_Rest_Voice_I measure 98 / measure 17]                     %! baca.SegmentMaker._comment_measure_numbers():baca.SegmentMaker._style_phantom_measures(5):PHANTOM
+            %! baca.SegmentMaker._make_multimeasure_rest_container(5)
+            %! PHANTOM
+            %! REST_VOICE
+            %! SKIP
             s1 * 1/4                                                           %! baca.SegmentMaker._make_multimeasure_rest_container(5):PHANTOM:REST_VOICE:SKIP
 
         }                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(6):PHANTOM
@@ -3361,51 +3665,67 @@ f_LH_Voice_I = {                                                               %
 f_LH_Voice_II = {                                                              %! ide.Path.extern()
 
     % [06 LH_Voice_II measure 82 / measure 1]                                  %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 16/4                                                                  %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 LH_Voice_II measure 83 / measure 2]                                  %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 10/4                                                                  %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 LH_Voice_II measure 84 / measure 3]                                  %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 1/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 LH_Voice_II measure 85 / measure 4]                                  %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 12/4                                                                  %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 LH_Voice_II measure 86 / measure 5]                                  %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 4/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 LH_Voice_II measure 87 / measure 6]                                  %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 10/4                                                                  %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 LH_Voice_II measure 88 / measure 7]                                  %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 1/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 LH_Voice_II measure 89 / measure 8]                                  %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 13/4                                                                  %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 LH_Voice_II measure 90 / measure 9]                                  %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 1/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 LH_Voice_II measure 91 / measure 10]                                 %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 29/16                                                                 %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 LH_Voice_II measure 92 / measure 11]                                 %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 27/16                                                                 %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 LH_Voice_II measure 93 / measure 12]                                 %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 21/16                                                                 %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 LH_Voice_II measure 94 / measure 13]                                 %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 15/16                                                                 %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 LH_Voice_II measure 95 / measure 14]                                 %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 4/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 LH_Voice_II measure 96 / measure 15]                                 %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 7/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 LH_Voice_II measure 97 / measure 16]                                 %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 1/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 
     <<                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container(7):PHANTOM
@@ -3416,6 +3736,10 @@ f_LH_Voice_II = {                                                              %
             % [06 LH_Voice_II measure 98 / measure 17]                         %! baca.SegmentMaker._comment_measure_numbers():baca.SegmentMaker._style_phantom_measures(5):PHANTOM
             \abjad-invisible-music-coloring                                    %! baca.SegmentMaker._make_multimeasure_rest_container(2):PHANTOM:MULTIMEASURE_REST:INVISIBLE_MUSIC_COLORING:baca.SegmentMaker._style_phantom_measures(5)
         %@% \abjad-invisible-music                                             %! baca.SegmentMaker._make_multimeasure_rest_container(3):PHANTOM:MULTIMEASURE_REST:INVISIBLE_MUSIC_COMMAND:baca.SegmentMaker._style_phantom_measures(5)
+            %! baca.SegmentMaker._make_multimeasure_rest_container(1)
+            %! PHANTOM
+            %! HIDDEN
+            %! MULTIMEASURE_REST
             R1 * 1/4                                                           %! baca.SegmentMaker._make_multimeasure_rest_container(1):PHANTOM:HIDDEN:MULTIMEASURE_REST
         %@% ^ \baca-duration-multiplier-markup #"1" #"4"                       %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER:HIDDEN:MULTIMEASURE_REST:PHANTOM:baca.SegmentMaker._style_phantom_measures(5)
 
@@ -3425,6 +3749,10 @@ f_LH_Voice_II = {                                                              %
         {                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(6):PHANTOM
 
             % [06 LH_Rest_Voice_II measure 98 / measure 17]                    %! baca.SegmentMaker._comment_measure_numbers():baca.SegmentMaker._style_phantom_measures(5):PHANTOM
+            %! baca.SegmentMaker._make_multimeasure_rest_container(5)
+            %! PHANTOM
+            %! REST_VOICE
+            %! SKIP
             s1 * 1/4                                                           %! baca.SegmentMaker._make_multimeasure_rest_container(5):PHANTOM:REST_VOICE:SKIP
 
         }                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(6):PHANTOM
@@ -3437,51 +3765,67 @@ f_LH_Voice_II = {                                                              %
 f_LH_Voice_III = {                                                             %! ide.Path.extern()
 
     % [06 LH_Voice_III measure 82 / measure 1]                                 %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 16/4                                                                  %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 LH_Voice_III measure 83 / measure 2]                                 %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 10/4                                                                  %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 LH_Voice_III measure 84 / measure 3]                                 %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 1/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 LH_Voice_III measure 85 / measure 4]                                 %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 12/4                                                                  %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 LH_Voice_III measure 86 / measure 5]                                 %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 4/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 LH_Voice_III measure 87 / measure 6]                                 %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 10/4                                                                  %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 LH_Voice_III measure 88 / measure 7]                                 %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 1/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 LH_Voice_III measure 89 / measure 8]                                 %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 13/4                                                                  %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 LH_Voice_III measure 90 / measure 9]                                 %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 1/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 LH_Voice_III measure 91 / measure 10]                                %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 29/16                                                                 %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 LH_Voice_III measure 92 / measure 11]                                %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 27/16                                                                 %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 LH_Voice_III measure 93 / measure 12]                                %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 21/16                                                                 %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 LH_Voice_III measure 94 / measure 13]                                %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 15/16                                                                 %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 LH_Voice_III measure 95 / measure 14]                                %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 4/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 LH_Voice_III measure 96 / measure 15]                                %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 7/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 LH_Voice_III measure 97 / measure 16]                                %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 1/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 
     <<                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container(7):PHANTOM
@@ -3492,6 +3836,10 @@ f_LH_Voice_III = {                                                             %
             % [06 LH_Voice_III measure 98 / measure 17]                        %! baca.SegmentMaker._comment_measure_numbers():baca.SegmentMaker._style_phantom_measures(5):PHANTOM
             \abjad-invisible-music-coloring                                    %! baca.SegmentMaker._make_multimeasure_rest_container(2):PHANTOM:MULTIMEASURE_REST:INVISIBLE_MUSIC_COLORING:baca.SegmentMaker._style_phantom_measures(5)
         %@% \abjad-invisible-music                                             %! baca.SegmentMaker._make_multimeasure_rest_container(3):PHANTOM:MULTIMEASURE_REST:INVISIBLE_MUSIC_COMMAND:baca.SegmentMaker._style_phantom_measures(5)
+            %! baca.SegmentMaker._make_multimeasure_rest_container(1)
+            %! PHANTOM
+            %! HIDDEN
+            %! MULTIMEASURE_REST
             R1 * 1/4                                                           %! baca.SegmentMaker._make_multimeasure_rest_container(1):PHANTOM:HIDDEN:MULTIMEASURE_REST
         %@% ^ \baca-duration-multiplier-markup #"1" #"4"                       %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER:HIDDEN:MULTIMEASURE_REST:PHANTOM:baca.SegmentMaker._style_phantom_measures(5)
 
@@ -3501,6 +3849,10 @@ f_LH_Voice_III = {                                                             %
         {                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(6):PHANTOM
 
             % [06 LH_Rest_Voice_III measure 98 / measure 17]                   %! baca.SegmentMaker._comment_measure_numbers():baca.SegmentMaker._style_phantom_measures(5):PHANTOM
+            %! baca.SegmentMaker._make_multimeasure_rest_container(5)
+            %! PHANTOM
+            %! REST_VOICE
+            %! SKIP
             s1 * 1/4                                                           %! baca.SegmentMaker._make_multimeasure_rest_container(5):PHANTOM:REST_VOICE:SKIP
 
         }                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(6):PHANTOM
@@ -3865,6 +4217,10 @@ f_LH_Voice_IV = {                                                              %
             \abjad-invisible-music-coloring                                    %! baca.SegmentMaker._make_multimeasure_rest_container(2):PHANTOM:NOTE:INVISIBLE_MUSIC_COLORING:baca.SegmentMaker._style_phantom_measures(5)
         %@% \abjad-invisible-music                                             %! baca.SegmentMaker._make_multimeasure_rest_container(3):PHANTOM:NOTE:INVISIBLE_MUSIC_COMMAND:baca.SegmentMaker._style_phantom_measures(5)
             \baca-not-yet-pitched-coloring                                     %! baca.SegmentMaker._color_not_yet_pitched():NOT_YET_PITCHED_COLORING:HIDDEN:NOTE:baca.SegmentMaker._style_phantom_measures(5):PHANTOM
+            %! baca.SegmentMaker._make_multimeasure_rest_container(1)
+            %! PHANTOM
+            %! HIDDEN
+            %! NOTE
             b'1 * 1/4                                                          %! baca.SegmentMaker._make_multimeasure_rest_container(1):PHANTOM:HIDDEN:NOTE
         %@% ^ \baca-duration-multiplier-markup #"1" #"4"                       %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER:HIDDEN:NOTE:PHANTOM:baca.SegmentMaker._style_phantom_measures(5)
 
@@ -3874,6 +4230,10 @@ f_LH_Voice_IV = {                                                              %
         {                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(6):PHANTOM
 
             % [06 LH_Rest_Voice_IV measure 98 / measure 17]                    %! baca.SegmentMaker._comment_measure_numbers():baca.SegmentMaker._style_phantom_measures(5):PHANTOM
+            %! baca.SegmentMaker._make_multimeasure_rest_container(5)
+            %! PHANTOM
+            %! REST_VOICE
+            %! SKIP
             s1 * 1/4                                                           %! baca.SegmentMaker._make_multimeasure_rest_container(5):PHANTOM:REST_VOICE:SKIP
 
         }                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(6):PHANTOM
@@ -3886,51 +4246,67 @@ f_LH_Voice_IV = {                                                              %
 f_LH_Voice_IV_Inserts = {                                                      %! ide.Path.extern()
 
     % [06 LH_Voice_IV_Inserts measure 82 / measure 1]                          %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 16/4                                                                  %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 LH_Voice_IV_Inserts measure 83 / measure 2]                          %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 10/4                                                                  %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 LH_Voice_IV_Inserts measure 84 / measure 3]                          %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 1/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 LH_Voice_IV_Inserts measure 85 / measure 4]                          %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 12/4                                                                  %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 LH_Voice_IV_Inserts measure 86 / measure 5]                          %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 4/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 LH_Voice_IV_Inserts measure 87 / measure 6]                          %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 10/4                                                                  %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 LH_Voice_IV_Inserts measure 88 / measure 7]                          %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 1/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 LH_Voice_IV_Inserts measure 89 / measure 8]                          %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 13/4                                                                  %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 LH_Voice_IV_Inserts measure 90 / measure 9]                          %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 1/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 LH_Voice_IV_Inserts measure 91 / measure 10]                         %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 29/16                                                                 %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 LH_Voice_IV_Inserts measure 92 / measure 11]                         %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 27/16                                                                 %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 LH_Voice_IV_Inserts measure 93 / measure 12]                         %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 21/16                                                                 %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 LH_Voice_IV_Inserts measure 94 / measure 13]                         %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 15/16                                                                 %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 LH_Voice_IV_Inserts measure 95 / measure 14]                         %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 4/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 LH_Voice_IV_Inserts measure 96 / measure 15]                         %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 7/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 LH_Voice_IV_Inserts measure 97 / measure 16]                         %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 1/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 
     <<                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container(7):PHANTOM
@@ -3941,6 +4317,10 @@ f_LH_Voice_IV_Inserts = {                                                      %
             % [06 LH_Voice_IV_Inserts measure 98 / measure 17]                 %! baca.SegmentMaker._comment_measure_numbers():baca.SegmentMaker._style_phantom_measures(5):PHANTOM
             \abjad-invisible-music-coloring                                    %! baca.SegmentMaker._make_multimeasure_rest_container(2):PHANTOM:MULTIMEASURE_REST:INVISIBLE_MUSIC_COLORING:baca.SegmentMaker._style_phantom_measures(5)
         %@% \abjad-invisible-music                                             %! baca.SegmentMaker._make_multimeasure_rest_container(3):PHANTOM:MULTIMEASURE_REST:INVISIBLE_MUSIC_COMMAND:baca.SegmentMaker._style_phantom_measures(5)
+            %! baca.SegmentMaker._make_multimeasure_rest_container(1)
+            %! PHANTOM
+            %! HIDDEN
+            %! MULTIMEASURE_REST
             R1 * 1/4                                                           %! baca.SegmentMaker._make_multimeasure_rest_container(1):PHANTOM:HIDDEN:MULTIMEASURE_REST
         %@% ^ \baca-duration-multiplier-markup #"1" #"4"                       %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER:HIDDEN:MULTIMEASURE_REST:PHANTOM:baca.SegmentMaker._style_phantom_measures(5)
 
@@ -3950,6 +4330,10 @@ f_LH_Voice_IV_Inserts = {                                                      %
         {                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(6):PHANTOM
 
             % [06 LH_Rest_Voice_IV_Inserts measure 98 / measure 17]            %! baca.SegmentMaker._comment_measure_numbers():baca.SegmentMaker._style_phantom_measures(5):PHANTOM
+            %! baca.SegmentMaker._make_multimeasure_rest_container(5)
+            %! PHANTOM
+            %! REST_VOICE
+            %! SKIP
             s1 * 1/4                                                           %! baca.SegmentMaker._make_multimeasure_rest_container(5):PHANTOM:REST_VOICE:SKIP
 
         }                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(6):PHANTOM
@@ -4018,6 +4402,9 @@ f_LH_Voice_V = {                                                               %
             \abjad-invisible-music-coloring                                    %! baca.SegmentMaker._make_multimeasure_rest_container(2):NOTE:INVISIBLE_MUSIC_COLORING
         %@% \abjad-invisible-music                                             %! baca.SegmentMaker._make_multimeasure_rest_container(3):NOTE:INVISIBLE_MUSIC_COMMAND
             \baca-not-yet-pitched-coloring                                     %! baca.SegmentMaker._color_not_yet_pitched():NOT_YET_PITCHED_COLORING:HIDDEN:NOTE
+            %! baca.SegmentMaker._make_multimeasure_rest_container(1)
+            %! HIDDEN
+            %! NOTE
             d1 * 5/2                                                           %! baca.SegmentMaker._make_multimeasure_rest_container(1):HIDDEN:NOTE
         %@% ^ \baca-duration-multiplier-markup #"5" #"2"                       %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER:HIDDEN:NOTE
 
@@ -4027,6 +4414,9 @@ f_LH_Voice_V = {                                                               %
         {                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(6)
 
             % [06 LH_Rest_Voice_V measure 87 / measure 6]                      %! baca.SegmentMaker._comment_measure_numbers()
+            %! baca.SegmentMaker._make_multimeasure_rest_container(5)
+            %! REST_VOICE
+            %! SKIP
             s1 * 5/2                                                           %! baca.SegmentMaker._make_multimeasure_rest_container(5):REST_VOICE:SKIP
 
         }                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(6)
@@ -4034,33 +4424,43 @@ f_LH_Voice_V = {                                                               %
     >>                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container(7)
 
     % [06 LH_Voice_V measure 88 / measure 7]                                   %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._make_measure_silences()
     s1 * 1/4                                                                   %! baca.SegmentMaker._make_measure_silences()
 
     % [06 LH_Voice_V measure 89 / measure 8]                                   %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._make_measure_silences()
     s1 * 13/4                                                                  %! baca.SegmentMaker._make_measure_silences()
 
     % [06 LH_Voice_V measure 90 / measure 9]                                   %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._make_measure_silences()
     s1 * 1/4                                                                   %! baca.SegmentMaker._make_measure_silences()
 
     % [06 LH_Voice_V measure 91 / measure 10]                                  %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._make_measure_silences()
     s1 * 29/16                                                                 %! baca.SegmentMaker._make_measure_silences()
 
     % [06 LH_Voice_V measure 92 / measure 11]                                  %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._make_measure_silences()
     s1 * 27/16                                                                 %! baca.SegmentMaker._make_measure_silences()
 
     % [06 LH_Voice_V measure 93 / measure 12]                                  %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._make_measure_silences()
     s1 * 21/16                                                                 %! baca.SegmentMaker._make_measure_silences()
 
     % [06 LH_Voice_V measure 94 / measure 13]                                  %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._make_measure_silences()
     s1 * 15/16                                                                 %! baca.SegmentMaker._make_measure_silences()
 
     % [06 LH_Voice_V measure 95 / measure 14]                                  %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._make_measure_silences()
     s1 * 1                                                                     %! baca.SegmentMaker._make_measure_silences()
 
     % [06 LH_Voice_V measure 96 / measure 15]                                  %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._make_measure_silences()
     s1 * 7/4                                                                   %! baca.SegmentMaker._make_measure_silences()
 
     % [06 LH_Voice_V measure 97 / measure 16]                                  %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._make_measure_silences()
     s1 * 1/4                                                                   %! baca.SegmentMaker._make_measure_silences()
 
     <<                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container(7):PHANTOM
@@ -4072,6 +4472,10 @@ f_LH_Voice_V = {                                                               %
             \abjad-invisible-music-coloring                                    %! baca.SegmentMaker._make_multimeasure_rest_container(2):PHANTOM:NOTE:INVISIBLE_MUSIC_COLORING:baca.SegmentMaker._style_phantom_measures(5)
         %@% \abjad-invisible-music                                             %! baca.SegmentMaker._make_multimeasure_rest_container(3):PHANTOM:NOTE:INVISIBLE_MUSIC_COMMAND:baca.SegmentMaker._style_phantom_measures(5)
             \baca-not-yet-pitched-coloring                                     %! baca.SegmentMaker._color_not_yet_pitched():NOT_YET_PITCHED_COLORING:HIDDEN:NOTE:baca.SegmentMaker._style_phantom_measures(5):PHANTOM
+            %! baca.SegmentMaker._make_multimeasure_rest_container(1)
+            %! PHANTOM
+            %! HIDDEN
+            %! NOTE
             b'1 * 1/4                                                          %! baca.SegmentMaker._make_multimeasure_rest_container(1):PHANTOM:HIDDEN:NOTE
         %@% ^ \baca-duration-multiplier-markup #"1" #"4"                       %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER:HIDDEN:NOTE:PHANTOM:baca.SegmentMaker._style_phantom_measures(5)
 
@@ -4081,6 +4485,10 @@ f_LH_Voice_V = {                                                               %
         {                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(6):PHANTOM
 
             % [06 LH_Rest_Voice_V measure 98 / measure 17]                     %! baca.SegmentMaker._comment_measure_numbers():baca.SegmentMaker._style_phantom_measures(5):PHANTOM
+            %! baca.SegmentMaker._make_multimeasure_rest_container(5)
+            %! PHANTOM
+            %! REST_VOICE
+            %! SKIP
             s1 * 1/4                                                           %! baca.SegmentMaker._make_multimeasure_rest_container(5):PHANTOM:REST_VOICE:SKIP
 
         }                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(6):PHANTOM
@@ -4093,51 +4501,67 @@ f_LH_Voice_V = {                                                               %
 f_LH_Voice_V_Inserts = {                                                       %! ide.Path.extern()
 
     % [06 LH_Voice_V_Inserts measure 82 / measure 1]                           %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 16/4                                                                  %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 LH_Voice_V_Inserts measure 83 / measure 2]                           %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 10/4                                                                  %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 LH_Voice_V_Inserts measure 84 / measure 3]                           %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 1/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 LH_Voice_V_Inserts measure 85 / measure 4]                           %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 12/4                                                                  %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 LH_Voice_V_Inserts measure 86 / measure 5]                           %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 4/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 LH_Voice_V_Inserts measure 87 / measure 6]                           %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 10/4                                                                  %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 LH_Voice_V_Inserts measure 88 / measure 7]                           %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 1/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 LH_Voice_V_Inserts measure 89 / measure 8]                           %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 13/4                                                                  %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 LH_Voice_V_Inserts measure 90 / measure 9]                           %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 1/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 LH_Voice_V_Inserts measure 91 / measure 10]                          %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 29/16                                                                 %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 LH_Voice_V_Inserts measure 92 / measure 11]                          %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 27/16                                                                 %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 LH_Voice_V_Inserts measure 93 / measure 12]                          %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 21/16                                                                 %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 LH_Voice_V_Inserts measure 94 / measure 13]                          %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 15/16                                                                 %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 LH_Voice_V_Inserts measure 95 / measure 14]                          %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 4/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 LH_Voice_V_Inserts measure 96 / measure 15]                          %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 7/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 LH_Voice_V_Inserts measure 97 / measure 16]                          %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 1/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 
     <<                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container(7):PHANTOM
@@ -4148,6 +4572,10 @@ f_LH_Voice_V_Inserts = {                                                       %
             % [06 LH_Voice_V_Inserts measure 98 / measure 17]                  %! baca.SegmentMaker._comment_measure_numbers():baca.SegmentMaker._style_phantom_measures(5):PHANTOM
             \abjad-invisible-music-coloring                                    %! baca.SegmentMaker._make_multimeasure_rest_container(2):PHANTOM:MULTIMEASURE_REST:INVISIBLE_MUSIC_COLORING:baca.SegmentMaker._style_phantom_measures(5)
         %@% \abjad-invisible-music                                             %! baca.SegmentMaker._make_multimeasure_rest_container(3):PHANTOM:MULTIMEASURE_REST:INVISIBLE_MUSIC_COMMAND:baca.SegmentMaker._style_phantom_measures(5)
+            %! baca.SegmentMaker._make_multimeasure_rest_container(1)
+            %! PHANTOM
+            %! HIDDEN
+            %! MULTIMEASURE_REST
             R1 * 1/4                                                           %! baca.SegmentMaker._make_multimeasure_rest_container(1):PHANTOM:HIDDEN:MULTIMEASURE_REST
         %@% ^ \baca-duration-multiplier-markup #"1" #"4"                       %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER:HIDDEN:MULTIMEASURE_REST:PHANTOM:baca.SegmentMaker._style_phantom_measures(5)
 
@@ -4157,6 +4585,10 @@ f_LH_Voice_V_Inserts = {                                                       %
         {                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(6):PHANTOM
 
             % [06 LH_Rest_Voice_V_Inserts measure 98 / measure 17]             %! baca.SegmentMaker._comment_measure_numbers():baca.SegmentMaker._style_phantom_measures(5):PHANTOM
+            %! baca.SegmentMaker._make_multimeasure_rest_container(5)
+            %! PHANTOM
+            %! REST_VOICE
+            %! SKIP
             s1 * 1/4                                                           %! baca.SegmentMaker._make_multimeasure_rest_container(5):PHANTOM:REST_VOICE:SKIP
 
         }                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(6):PHANTOM
@@ -4221,6 +4653,9 @@ f_LH_Voice_VI = {                                                              %
             \abjad-invisible-music-coloring                                    %! baca.SegmentMaker._make_multimeasure_rest_container(2):NOTE:INVISIBLE_MUSIC_COLORING
         %@% \abjad-invisible-music                                             %! baca.SegmentMaker._make_multimeasure_rest_container(3):NOTE:INVISIBLE_MUSIC_COMMAND
             \baca-not-yet-pitched-coloring                                     %! baca.SegmentMaker._color_not_yet_pitched():NOT_YET_PITCHED_COLORING:HIDDEN:NOTE
+            %! baca.SegmentMaker._make_multimeasure_rest_container(1)
+            %! HIDDEN
+            %! NOTE
             d1 * 5/2                                                           %! baca.SegmentMaker._make_multimeasure_rest_container(1):HIDDEN:NOTE
         %@% ^ \baca-duration-multiplier-markup #"5" #"2"                       %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER:HIDDEN:NOTE
 
@@ -4230,6 +4665,9 @@ f_LH_Voice_VI = {                                                              %
         {                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(6)
 
             % [06 LH_Rest_Voice_VI measure 87 / measure 6]                     %! baca.SegmentMaker._comment_measure_numbers()
+            %! baca.SegmentMaker._make_multimeasure_rest_container(5)
+            %! REST_VOICE
+            %! SKIP
             s1 * 5/2                                                           %! baca.SegmentMaker._make_multimeasure_rest_container(5):REST_VOICE:SKIP
 
         }                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(6)
@@ -4237,33 +4675,43 @@ f_LH_Voice_VI = {                                                              %
     >>                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container(7)
 
     % [06 LH_Voice_VI measure 88 / measure 7]                                  %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._make_measure_silences()
     s1 * 1/4                                                                   %! baca.SegmentMaker._make_measure_silences()
 
     % [06 LH_Voice_VI measure 89 / measure 8]                                  %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._make_measure_silences()
     s1 * 13/4                                                                  %! baca.SegmentMaker._make_measure_silences()
 
     % [06 LH_Voice_VI measure 90 / measure 9]                                  %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._make_measure_silences()
     s1 * 1/4                                                                   %! baca.SegmentMaker._make_measure_silences()
 
     % [06 LH_Voice_VI measure 91 / measure 10]                                 %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._make_measure_silences()
     s1 * 29/16                                                                 %! baca.SegmentMaker._make_measure_silences()
 
     % [06 LH_Voice_VI measure 92 / measure 11]                                 %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._make_measure_silences()
     s1 * 27/16                                                                 %! baca.SegmentMaker._make_measure_silences()
 
     % [06 LH_Voice_VI measure 93 / measure 12]                                 %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._make_measure_silences()
     s1 * 21/16                                                                 %! baca.SegmentMaker._make_measure_silences()
 
     % [06 LH_Voice_VI measure 94 / measure 13]                                 %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._make_measure_silences()
     s1 * 15/16                                                                 %! baca.SegmentMaker._make_measure_silences()
 
     % [06 LH_Voice_VI measure 95 / measure 14]                                 %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._make_measure_silences()
     s1 * 1                                                                     %! baca.SegmentMaker._make_measure_silences()
 
     % [06 LH_Voice_VI measure 96 / measure 15]                                 %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._make_measure_silences()
     s1 * 7/4                                                                   %! baca.SegmentMaker._make_measure_silences()
 
     % [06 LH_Voice_VI measure 97 / measure 16]                                 %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._make_measure_silences()
     s1 * 1/4                                                                   %! baca.SegmentMaker._make_measure_silences()
 
     <<                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container(7):PHANTOM
@@ -4275,6 +4723,10 @@ f_LH_Voice_VI = {                                                              %
             \abjad-invisible-music-coloring                                    %! baca.SegmentMaker._make_multimeasure_rest_container(2):PHANTOM:NOTE:INVISIBLE_MUSIC_COLORING:baca.SegmentMaker._style_phantom_measures(5)
         %@% \abjad-invisible-music                                             %! baca.SegmentMaker._make_multimeasure_rest_container(3):PHANTOM:NOTE:INVISIBLE_MUSIC_COMMAND:baca.SegmentMaker._style_phantom_measures(5)
             \baca-not-yet-pitched-coloring                                     %! baca.SegmentMaker._color_not_yet_pitched():NOT_YET_PITCHED_COLORING:HIDDEN:NOTE:baca.SegmentMaker._style_phantom_measures(5):PHANTOM
+            %! baca.SegmentMaker._make_multimeasure_rest_container(1)
+            %! PHANTOM
+            %! HIDDEN
+            %! NOTE
             b'1 * 1/4                                                          %! baca.SegmentMaker._make_multimeasure_rest_container(1):PHANTOM:HIDDEN:NOTE
         %@% ^ \baca-duration-multiplier-markup #"1" #"4"                       %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER:HIDDEN:NOTE:PHANTOM:baca.SegmentMaker._style_phantom_measures(5)
 
@@ -4284,6 +4736,10 @@ f_LH_Voice_VI = {                                                              %
         {                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(6):PHANTOM
 
             % [06 LH_Rest_Voice_VI measure 98 / measure 17]                    %! baca.SegmentMaker._comment_measure_numbers():baca.SegmentMaker._style_phantom_measures(5):PHANTOM
+            %! baca.SegmentMaker._make_multimeasure_rest_container(5)
+            %! PHANTOM
+            %! REST_VOICE
+            %! SKIP
             s1 * 1/4                                                           %! baca.SegmentMaker._make_multimeasure_rest_container(5):PHANTOM:REST_VOICE:SKIP
 
         }                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(6):PHANTOM
@@ -4296,51 +4752,67 @@ f_LH_Voice_VI = {                                                              %
 f_LH_Voice_VI_Inserts = {                                                      %! ide.Path.extern()
 
     % [06 LH_Voice_VI_Inserts measure 82 / measure 1]                          %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 16/4                                                                  %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 LH_Voice_VI_Inserts measure 83 / measure 2]                          %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 10/4                                                                  %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 LH_Voice_VI_Inserts measure 84 / measure 3]                          %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 1/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 LH_Voice_VI_Inserts measure 85 / measure 4]                          %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 12/4                                                                  %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 LH_Voice_VI_Inserts measure 86 / measure 5]                          %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 4/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 LH_Voice_VI_Inserts measure 87 / measure 6]                          %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 10/4                                                                  %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 LH_Voice_VI_Inserts measure 88 / measure 7]                          %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 1/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 LH_Voice_VI_Inserts measure 89 / measure 8]                          %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 13/4                                                                  %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 LH_Voice_VI_Inserts measure 90 / measure 9]                          %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 1/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 LH_Voice_VI_Inserts measure 91 / measure 10]                         %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 29/16                                                                 %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 LH_Voice_VI_Inserts measure 92 / measure 11]                         %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 27/16                                                                 %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 LH_Voice_VI_Inserts measure 93 / measure 12]                         %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 21/16                                                                 %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 LH_Voice_VI_Inserts measure 94 / measure 13]                         %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 15/16                                                                 %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 LH_Voice_VI_Inserts measure 95 / measure 14]                         %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 4/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 LH_Voice_VI_Inserts measure 96 / measure 15]                         %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 7/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 
     % [06 LH_Voice_VI_Inserts measure 97 / measure 16]                         %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 1/4                                                                   %! baca.SegmentMaker._call_rhythm_commands()
 
     <<                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container(7):PHANTOM
@@ -4351,6 +4823,10 @@ f_LH_Voice_VI_Inserts = {                                                      %
             % [06 LH_Voice_VI_Inserts measure 98 / measure 17]                 %! baca.SegmentMaker._comment_measure_numbers():baca.SegmentMaker._style_phantom_measures(5):PHANTOM
             \abjad-invisible-music-coloring                                    %! baca.SegmentMaker._make_multimeasure_rest_container(2):PHANTOM:MULTIMEASURE_REST:INVISIBLE_MUSIC_COLORING:baca.SegmentMaker._style_phantom_measures(5)
         %@% \abjad-invisible-music                                             %! baca.SegmentMaker._make_multimeasure_rest_container(3):PHANTOM:MULTIMEASURE_REST:INVISIBLE_MUSIC_COMMAND:baca.SegmentMaker._style_phantom_measures(5)
+            %! baca.SegmentMaker._make_multimeasure_rest_container(1)
+            %! PHANTOM
+            %! HIDDEN
+            %! MULTIMEASURE_REST
             R1 * 1/4                                                           %! baca.SegmentMaker._make_multimeasure_rest_container(1):PHANTOM:HIDDEN:MULTIMEASURE_REST
         %@% ^ \baca-duration-multiplier-markup #"1" #"4"                       %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER:HIDDEN:MULTIMEASURE_REST:PHANTOM:baca.SegmentMaker._style_phantom_measures(5)
 
@@ -4360,6 +4836,10 @@ f_LH_Voice_VI_Inserts = {                                                      %
         {                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(6):PHANTOM
 
             % [06 LH_Rest_Voice_VI_Inserts measure 98 / measure 17]            %! baca.SegmentMaker._comment_measure_numbers():baca.SegmentMaker._style_phantom_measures(5):PHANTOM
+            %! baca.SegmentMaker._make_multimeasure_rest_container(5)
+            %! PHANTOM
+            %! REST_VOICE
+            %! SKIP
             s1 * 1/4                                                           %! baca.SegmentMaker._make_multimeasure_rest_container(5):PHANTOM:REST_VOICE:SKIP
 
         }                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(6):PHANTOM
@@ -4520,6 +5000,9 @@ f_LH_Resonance_Voice = {                                                       %
             \abjad-invisible-music-coloring                                    %! baca.SegmentMaker._make_multimeasure_rest_container(2):NOTE:INVISIBLE_MUSIC_COLORING
         %@% \abjad-invisible-music                                             %! baca.SegmentMaker._make_multimeasure_rest_container(3):NOTE:INVISIBLE_MUSIC_COMMAND
             \baca-not-yet-pitched-coloring                                     %! baca.SegmentMaker._color_not_yet_pitched():NOT_YET_PITCHED_COLORING:HIDDEN:NOTE
+            %! baca.SegmentMaker._make_multimeasure_rest_container(1)
+            %! HIDDEN
+            %! NOTE
             d1 * 7/4                                                           %! baca.SegmentMaker._make_multimeasure_rest_container(1):HIDDEN:NOTE
         %@% ^ \baca-duration-multiplier-markup #"7" #"4"                       %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER:HIDDEN:NOTE
 
@@ -4529,6 +5012,9 @@ f_LH_Resonance_Voice = {                                                       %
         {                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(6)
 
             % [06 LH_Resonance_Rest_Voice measure 96 / measure 15]             %! baca.SegmentMaker._comment_measure_numbers()
+            %! baca.SegmentMaker._make_multimeasure_rest_container(5)
+            %! REST_VOICE
+            %! SKIP
             s1 * 7/4                                                           %! baca.SegmentMaker._make_multimeasure_rest_container(5):REST_VOICE:SKIP
 
         }                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(6)
@@ -4536,6 +5022,7 @@ f_LH_Resonance_Voice = {                                                       %
     >>                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container(7)
 
     % [06 LH_Resonance_Voice measure 97 / measure 16]                          %! baca.SegmentMaker._comment_measure_numbers()
+    %! baca.SegmentMaker._make_measure_silences()
     s1 * 1/4                                                                   %! baca.SegmentMaker._make_measure_silences()
     \revert Dots.transparent                                                   %! baca.dots_transparent():baca.OverrideCommand._call(2)
 
@@ -4548,6 +5035,10 @@ f_LH_Resonance_Voice = {                                                       %
             \abjad-invisible-music-coloring                                    %! baca.SegmentMaker._make_multimeasure_rest_container(2):PHANTOM:NOTE:INVISIBLE_MUSIC_COLORING:baca.SegmentMaker._style_phantom_measures(5)
         %@% \abjad-invisible-music                                             %! baca.SegmentMaker._make_multimeasure_rest_container(3):PHANTOM:NOTE:INVISIBLE_MUSIC_COMMAND:baca.SegmentMaker._style_phantom_measures(5)
             \baca-not-yet-pitched-coloring                                     %! baca.SegmentMaker._color_not_yet_pitched():NOT_YET_PITCHED_COLORING:HIDDEN:NOTE:baca.SegmentMaker._style_phantom_measures(5):PHANTOM
+            %! baca.SegmentMaker._make_multimeasure_rest_container(1)
+            %! PHANTOM
+            %! HIDDEN
+            %! NOTE
             b'1 * 1/4                                                          %! baca.SegmentMaker._make_multimeasure_rest_container(1):PHANTOM:HIDDEN:NOTE
         %@% ^ \baca-duration-multiplier-markup #"1" #"4"                       %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER:HIDDEN:NOTE:PHANTOM:baca.SegmentMaker._style_phantom_measures(5)
 
@@ -4557,6 +5048,10 @@ f_LH_Resonance_Voice = {                                                       %
         {                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(6):PHANTOM
 
             % [06 LH_Resonance_Rest_Voice measure 98 / measure 17]             %! baca.SegmentMaker._comment_measure_numbers():baca.SegmentMaker._style_phantom_measures(5):PHANTOM
+            %! baca.SegmentMaker._make_multimeasure_rest_container(5)
+            %! PHANTOM
+            %! REST_VOICE
+            %! SKIP
             s1 * 1/4                                                           %! baca.SegmentMaker._make_multimeasure_rest_container(5):PHANTOM:REST_VOICE:SKIP
 
         }                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(6):PHANTOM
