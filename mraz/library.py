@@ -534,8 +534,8 @@ class CollectionMaker:
         lh = lh.cursor(cyclic=True, singletons=True)
         rh = rh.accumulate(
             [
-                baca.pitch_class_segment().alpha(),
-                baca.pitch_class_segment().transpose(n=2),
+                lambda _: _.alpha(),
+                lambda _: _.transpose(n=2),
             ]
         )
         rh = rh.join().remove_repeats()
@@ -547,7 +547,7 @@ class CollectionMaker:
         rh, lh = stage_5_segments.partition([1, 1], overhang=abjad.Exact)
         rh = rh.read(6 * [1], check=abjad.Exact)
         rh = rh.cursor(singletons=True)
-        lh = lh.accumulate([baca.pitch_class_segment().transpose(n=2)])
+        lh = lh.accumulate([lambda _: _.transpose(n=2)])
         lh = lh.join()
         lh = lh.read(5 * [5, 5, 6])
         lh = lh.remove_duplicates(level=1)
@@ -595,8 +595,8 @@ class CollectionMaker:
         rh, lh = stage_2_segments.partition([2, 2], overhang=abjad.Exact)
         rh = rh.accumulate(
             [
-                baca.pitch_class_segment().transpose(n=3),
-                baca.pitch_class_segment().alpha(),
+                lambda _: _.transpose(n=3),
+                lambda _: _.alpha(),
             ]
         )
         rh = rh.cursor(singletons=True)
@@ -627,8 +627,8 @@ class CollectionMaker:
         stage_1_segments = stages[0]
         stage_1_segments = stage_1_segments.accumulate(
             [
-                baca.pitch_class_segment().alpha(),
-                baca.pitch_class_segment().transpose(n=2),
+                lambda _: _.alpha(),
+                lambda _: _.transpose(n=2),
             ]
         )
         stage_1_segments = stage_1_segments.join()
@@ -670,9 +670,7 @@ class CollectionMaker:
             stop = i + 3
             rh_segments_ = rh_segments[start:stop]
             index = i * 7
-            operator = baca.pitch_class_segment().transpose(n=index)
-            expression = baca.sequence().map(operator)
-            rh_segments_ = expression(rh_segments_)
+            rh_segments_ = [_.transpose(n=index) for _ in rh_segments_]
             all_rh_segments.extend(rh_segments_)
         all_rh_segments = baca.sequence(all_rh_segments)
         rh_segment_lists = all_rh_segments.partition([3, 1, 2, 3, 1])
@@ -686,9 +684,7 @@ class CollectionMaker:
             stop = i + 2
             lh_segments_ = lh_segments[start:stop]
             index = i * 7
-            operator = baca.pitch_class_segment().transpose(n=index)
-            expression = baca.sequence().map(operator)
-            lh_segments_ = expression(lh_segments_)
+            lh_segments_ = [_.transpose(n=index) for _ in lh_segments_]
             all_lh_segments.extend(lh_segments_)
         all_lh_segments = baca.sequence(all_lh_segments)
         lh_segment_lists = all_lh_segments.partition([2, 3, 1, 3, 1])
@@ -719,8 +715,8 @@ class CollectionMaker:
         stage_3_segments = stages[2].remove_duplicates()
         stage_3_segments = stage_3_segments.accumulate(
             [
-                baca.pitch_class_segment().alpha(),
-                baca.pitch_class_segment().transpose(n=2),
+                lambda _: _.alpha(),
+                lambda _: _.transpose(n=2),
             ]
         )
         stage_3_segments = stage_3_segments.join()
