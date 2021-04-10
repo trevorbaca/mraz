@@ -105,7 +105,7 @@ class SilverDesignMaker:
             pitch_classes = tree.get_payload()
             segment = baca.PitchClassSegment(items=pitch_classes)
             segments.append(segment)
-        segments = baca.sequence(segments)
+        segments = baca.Sequence(segments)
         segments = segments.helianthate(-1, -1)
         tree = baca.PitchTree(item_class=abjad.NumberedPitchClass, items=segments)
         return tree
@@ -146,7 +146,7 @@ class SilverDesignMaker:
             segment = baca.PitchClassSegment(items=pitch_classes)
             # segment._tracked_expression = tree._tracked_expression
             segments.append(segment)
-        segments = abjad.sequence(segments)
+        segments = baca.Sequence(segments)
         parts = segments.partition_by_counts([5, 7], cyclic=True, overhang=True)
         # fused_segment_names = baca.Cursor(['Q', 'R', 'S'])
         segments = []
@@ -299,7 +299,7 @@ class SilverDesignMaker:
         new_segments = []
         for segment in segments:
             if 6 < len(segment):
-                segment = abjad.sequence(segment)
+                segment = baca.Sequence(segment)
                 # source = segment._name
                 # source = "?"
                 parts = segment.partition_by_counts([7, 3], cyclic=True, overhang=True)
@@ -372,7 +372,7 @@ class SilverDesignMaker:
             # segment._tracked_expression = tree._tracked_expression
             segments.append(segment)
         new_segments = []
-        segments = abjad.sequence(segments)
+        segments = baca.Sequence(segments)
         parts = segments.partition_by_ratio_of_lengths(5 * [1])
         indices = baca.Cursor([0, 5, 9, 10, 11])
         for i, part in enumerate(parts):
@@ -672,7 +672,7 @@ class CollectionMaker:
             index = i * 7
             rh_segments_ = [_.transpose(n=index) for _ in rh_segments_]
             all_rh_segments.extend(rh_segments_)
-        all_rh_segments = baca.sequence(all_rh_segments)
+        all_rh_segments = baca.Sequence(all_rh_segments)
         rh_segment_lists = all_rh_segments.partition([3, 1, 2, 3, 1])
         assert len(rh_segment_lists) == 12
         rh_segment_lists = [baca.CollectionList(_) for _ in rh_segment_lists]
@@ -686,7 +686,7 @@ class CollectionMaker:
             index = i * 7
             lh_segments_ = [_.transpose(n=index) for _ in lh_segments_]
             all_lh_segments.extend(lh_segments_)
-        all_lh_segments = baca.sequence(all_lh_segments)
+        all_lh_segments = baca.Sequence(all_lh_segments)
         lh_segment_lists = all_lh_segments.partition([2, 3, 1, 3, 1])
         assert len(lh_segment_lists) == 5
         lh_segment_lists = [baca.CollectionList(_) for _ in lh_segment_lists]
