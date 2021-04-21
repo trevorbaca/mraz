@@ -58,12 +58,22 @@ accumulator(
     figure_name="rh-3 4.1.3",
 )
 
+
+def nontrivial_tuplet_tleaves():
+    def selector(argument):
+        selection = baca.Selection(argument).tuplets()
+        selection = [baca.Selection(_).tleaves() for _ in selection]
+        return baca.Selection(selection).nontrivial()
+
+    return selector
+
+
 accumulator(
     "lh_v4",
     collections_5["stage 2"]["lh"][0],
     baca.figure([3, -3], 16),
     baca.dynamic("p"),
-    baca.slur(map=baca.tuplets().map(baca.tleaves()).nontrivial()),
+    baca.slur(map=nontrivial_tuplet_tleaves()),
     baca.register(6, -24),
     baca.slur_up(),
     signature=4,
@@ -392,7 +402,7 @@ accumulator(
     baca.figure([2], 16),
     rmakers.beam_groups(),
     rmakers.beam(),
-    baca.slur(map=baca.tuplets().map(baca.tleaves()).nontrivial()),
+    baca.slur(map=nontrivial_tuplet_tleaves()),
     baca.register(24),
     baca.stem_down(),
     baca.tuplet_bracket_down(),
