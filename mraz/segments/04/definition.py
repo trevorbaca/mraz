@@ -294,7 +294,7 @@ accumulator(
     "rh_v5",
     [chord_1_upper.chord()],
     baca.figure([1], 16, affix=baca.rests_after([3])),
-    anchor=baca.anchor("lh_v5", baca.chord(-1)),
+    anchor=baca.anchor("lh_v5", lambda _: baca.Selection(_).chord(-1)),
     signature=4,
     figure_name="rh-5 4.2.1",
 )
