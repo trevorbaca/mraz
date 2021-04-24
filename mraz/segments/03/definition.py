@@ -190,7 +190,7 @@ accumulator(
     rmakers.beam_groups(),
     baca.dls_staff_padding(8),
     baca.hairpin("f < ff"),
-    baca.slur(map=baca.runs()),
+    baca.slur(map=baca.selectors.runs()),
     baca.only_segment(
         baca.span_bar_extra_offset((-0.75, 0)),
     ),
@@ -336,7 +336,7 @@ maker(
     baca.untie(baca.leaves()),
     baca.new(
         baca.repeat_tie(baca.pleaves()[1:]),
-        map=baca.qruns(),
+        map=baca.selectors.qruns(),
     ),
     *mraz.clean_up_repeat_ties(),
 )
