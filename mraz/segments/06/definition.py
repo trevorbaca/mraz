@@ -92,7 +92,7 @@ accumulator(
     # 2019-07-27: F5 restored by command stack
     baca.new(
         baca.tie(baca.ptails()[:-1]),
-        map=baca.qruns(),
+        map=baca.selectors.qruns(),
     ),
     baca.register(24, 0),
     baca.nest("-1/4"),
@@ -528,7 +528,7 @@ maker(
     baca.untie(baca.leaves()),
     baca.new(
         baca.repeat_tie(baca.pleaves()[1:]),
-        map=baca.qruns(),
+        map=baca.selectors.qruns(),
     ),
     baca.dots_transparent(),
 )
