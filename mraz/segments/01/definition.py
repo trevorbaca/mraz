@@ -130,7 +130,7 @@ accumulator(
     collections_6["stage 1"]["rh"][3],
     baca.figure([1], 8, affix=baca.rests_around([1], [1])),
     baca.register(24, 12),
-    baca.span_bar_extra_offset((-0.75, 0), baca.leaf(-1), after=True),
+    baca.span_bar_extra_offset((-0.75, 0), baca.selectors.leaf(-1), after=True),
     baca.staccato(baca.selectors.pheads()),
     baca.tenuto(baca.selectors.pheads()),
     signature=8,
@@ -190,19 +190,19 @@ accumulator.populate_segment_maker(maker)
 
 maker(
     "Global_Skips",
-    baca.metronome_mark("84", baca.leaf(0)),
-    baca.metronome_mark("112", baca.leaf(1)),
-    baca.metronome_mark("84", baca.leaf(4)),
-    baca.metronome_mark("84", baca.leaf(-2)),
-    baca.metronome_mark(baca.Accelerando(), baca.leaf(-2)),
-    baca.metronome_mark("112", baca.leaf(-1)),
+    baca.metronome_mark("84", baca.selectors.leaf(0)),
+    baca.metronome_mark("112", baca.selectors.leaf(1)),
+    baca.metronome_mark("84", baca.selectors.leaf(4)),
+    baca.metronome_mark("84", baca.selectors.leaf(-2)),
+    baca.metronome_mark(baca.Accelerando(), baca.selectors.leaf(-2)),
+    baca.metronome_mark("112", baca.selectors.leaf(-1)),
 )
 
 maker(
     "Global_Rests",
-    baca.global_fermata("short", baca.leaf(3)),
-    baca.global_fermata("fermata", baca.leaf(5)),
-    baca.global_fermata("short", baca.leaf(8)),
+    baca.global_fermata("short", baca.selectors.leaf(3)),
+    baca.global_fermata("fermata", baca.selectors.leaf(5)),
+    baca.global_fermata("short", baca.selectors.leaf(8)),
 )
 
 maker(
