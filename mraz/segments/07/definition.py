@@ -348,9 +348,9 @@ accumulator.populate_segment_maker(maker)
 
 maker(
     "Global_Skips",
-    baca.metronome_mark("84", baca.leaf(0)),
-    baca.metronome_mark(baca.Accelerando(), baca.leaf(0)),
-    baca.metronome_mark("112", baca.leaf(8)),
+    baca.metronome_mark("84", baca.selectors.leaf(0)),
+    baca.metronome_mark(baca.Accelerando(), baca.selectors.leaf(0)),
+    baca.metronome_mark("112", baca.selectors.leaf(8)),
     baca.bar_line("|.", baca.skip(-1)),
 )
 

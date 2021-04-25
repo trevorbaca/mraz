@@ -306,19 +306,19 @@ accumulator.populate_segment_maker(maker)
 
 maker(
     "Global_Skips",
-    baca.metronome_mark("84", baca.leaf(2)),
-    baca.metronome_mark("112", baca.leaf(4)),
-    baca.metronome_mark("84", baca.leaf(5)),
-    baca.metronome_mark("112", baca.leaf(-3)),
-    baca.metronome_mark(baca.Ritardando(), baca.leaf(-3)),
-    baca.metronome_mark("84", baca.leaf(-1)),
+    baca.metronome_mark("84", baca.selectors.leaf(2)),
+    baca.metronome_mark("112", baca.selectors.leaf(4)),
+    baca.metronome_mark("84", baca.selectors.leaf(5)),
+    baca.metronome_mark("112", baca.selectors.leaf(-3)),
+    baca.metronome_mark(baca.Ritardando(), baca.selectors.leaf(-3)),
+    baca.metronome_mark("84", baca.selectors.leaf(-1)),
 )
 
 maker(
     "Global_Rests",
-    baca.global_fermata("short", baca.leaf(1)),
-    baca.global_fermata("fermata", baca.leaf(3)),
-    baca.global_fermata("short", baca.leaf(6)),
+    baca.global_fermata("short", baca.selectors.leaf(1)),
+    baca.global_fermata("fermata", baca.selectors.leaf(3)),
+    baca.global_fermata("short", baca.selectors.leaf(6)),
 )
 
 maker(
@@ -350,7 +350,7 @@ maker(
 
 maker(
     ("lh_resonance", [2, 4]),
-    *mraz.transparent_music(baca.leaf(0)),
+    *mraz.transparent_music(baca.selectors.leaf(0)),
 )
 
 maker(

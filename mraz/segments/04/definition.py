@@ -613,7 +613,7 @@ accumulator(
     ),
     rmakers.beam_groups(),
     baca.slur(map=baca.selectors.ntruns()),
-    baca.slur_down(baca.leaf(0)),  # lilypond error when slur is up
+    baca.slur_down(baca.selectors.leaf(0)),  # lilypond error when slur is up
     anchor=baca.anchor("lh_v5", baca.rest(-8)),
     signature=4,
     figure_name="rh-1 4.4.5",
@@ -989,29 +989,29 @@ accumulator.populate_segment_maker(maker)
 
 maker(
     "Global_Skips",
-    baca.metronome_mark("84", baca.leaf(0)),
-    baca.metronome_mark(baca.Accelerando(), baca.leaf(0)),
-    baca.metronome_mark("112", baca.leaf(4)),
-    baca.metronome_mark("84", baca.leaf(5)),
-    baca.metronome_mark(baca.Accelerando(), baca.leaf(5)),
-    baca.metronome_mark("112", baca.leaf(14)),
-    baca.metronome_mark("112", baca.leaf(19)),
-    baca.metronome_mark(baca.Ritardando(), baca.leaf(19)),
-    baca.metronome_mark("84", baca.leaf(22)),
-    baca.metronome_mark("112", baca.leaf(23)),
-    baca.metronome_mark(baca.Ritardando(), baca.leaf(23)),
-    baca.metronome_mark("84", baca.leaf(27)),
-    baca.metronome_mark("112", baca.leaf(29)),
-    baca.metronome_mark(baca.Ritardando(), baca.leaf(29)),
-    baca.metronome_mark("84", baca.leaf(31)),
-    baca.metronome_mark("112", baca.leaf(32)),
-    baca.metronome_mark(baca.Ritardando(), baca.leaf(32)),
-    baca.metronome_mark("84", baca.leaf(36)),
+    baca.metronome_mark("84", baca.selectors.leaf(0)),
+    baca.metronome_mark(baca.Accelerando(), baca.selectors.leaf(0)),
+    baca.metronome_mark("112", baca.selectors.leaf(4)),
+    baca.metronome_mark("84", baca.selectors.leaf(5)),
+    baca.metronome_mark(baca.Accelerando(), baca.selectors.leaf(5)),
+    baca.metronome_mark("112", baca.selectors.leaf(14)),
+    baca.metronome_mark("112", baca.selectors.leaf(19)),
+    baca.metronome_mark(baca.Ritardando(), baca.selectors.leaf(19)),
+    baca.metronome_mark("84", baca.selectors.leaf(22)),
+    baca.metronome_mark("112", baca.selectors.leaf(23)),
+    baca.metronome_mark(baca.Ritardando(), baca.selectors.leaf(23)),
+    baca.metronome_mark("84", baca.selectors.leaf(27)),
+    baca.metronome_mark("112", baca.selectors.leaf(29)),
+    baca.metronome_mark(baca.Ritardando(), baca.selectors.leaf(29)),
+    baca.metronome_mark("84", baca.selectors.leaf(31)),
+    baca.metronome_mark("112", baca.selectors.leaf(32)),
+    baca.metronome_mark(baca.Ritardando(), baca.selectors.leaf(32)),
+    baca.metronome_mark("84", baca.selectors.leaf(36)),
 )
 
 maker(
     "Global_Rests",
-    baca.global_fermata("fermata", baca.leaf(20)),
+    baca.global_fermata("fermata", baca.selectors.leaf(20)),
 )
 
 maker(
