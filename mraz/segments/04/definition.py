@@ -892,7 +892,7 @@ accumulator(
     "r1 r1 r1",
     # TODO: debug: figure out why bracket extends indefinitely to right
     baca.new(
-        baca.sustain_pedal(selector=baca.rleaves()),
+        baca.sustain_pedal(selector=baca.selectors.rleaves()),
         map=baca.lts()[:-1],
     ),
     baca.sustain_pedal_staff_padding(4),
