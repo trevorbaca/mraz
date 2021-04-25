@@ -240,7 +240,7 @@ maker(
 maker(
     "lh_v6",
     baca.script_down(),
-    baca.stem_down(baca.tleaves(exclude=baca.const.HIDDEN)),
+    baca.stem_down(baca.selectors.tleaves(exclude=baca.const.HIDDEN)),
     baca.tenuto(baca.pheads(exclude=baca.const.HIDDEN)),
     baca.tuplet_bracket_staff_padding(6),
     baca.rest_position(-10),
