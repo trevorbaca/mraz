@@ -24,7 +24,7 @@ accumulator(
     "rh_v2",
     collections["stage 1"]["rh"].next(exhausted=True),
     baca.figure([2, -14], 16),
-    baca.accent(baca.pheads()),
+    baca.accent(baca.selectors.pheads()),
     baca.dynamic("fff"),
     baca.dynamic_up(),
     baca.register(20, 36),
@@ -45,7 +45,7 @@ accumulator(
     baca.register(10, 26),
     baca.rest_down(),
     baca.stem_down(),
-    baca.tenuto(baca.pheads()),
+    baca.tenuto(baca.selectors.pheads()),
     baca.tuplet_bracket_down(),
     anchor=baca.anchor("rh_v2"),
     signature=4,
@@ -206,7 +206,7 @@ accumulator(
     baca.dynamic("ppp"),
     baca.dynamic_down(),
     baca.slur(map=baca.selectors.tuplets()),
-    baca.staccato(baca.pheads()),
+    baca.staccato(baca.selectors.pheads()),
     signature=4,
     figure_name="rh-2 2.2.1",
 )
@@ -219,7 +219,7 @@ accumulator(
     baca.bass_to_octave(4),
     baca.beam_positions(-8),
     baca.slur(map=baca.selectors.tuplets()),
-    baca.staccato(baca.pheads()),
+    baca.staccato(baca.selectors.pheads()),
     signature=4,
     figure_name="rh-2 2.2.2",
 )
@@ -232,7 +232,7 @@ accumulator(
     baca.bass_to_octave(4),
     baca.beam_positions(-8),
     baca.slur(map=baca.selectors.tuplets()),
-    baca.staccato(baca.pheads()),
+    baca.staccato(baca.selectors.pheads()),
     signature=4,
     figure_name="rh-2 2.2.3",
 )
@@ -245,7 +245,7 @@ accumulator(
     baca.bass_to_octave(5),
     baca.beam_positions(-8),
     baca.slur(map=baca.selectors.tuplets()),
-    baca.staccato(baca.pheads()),
+    baca.staccato(baca.selectors.pheads()),
     signature=4,
     figure_name="rh-2 2.2.4",
 )
@@ -258,7 +258,7 @@ accumulator(
     baca.bass_to_octave(5),
     baca.beam_positions(-8),
     baca.slur(map=baca.selectors.tuplets()),
-    baca.staccato(baca.pheads()),
+    baca.staccato(baca.selectors.pheads()),
     signature=4,
     figure_name="rh-2 2.2.5",
 )
@@ -503,7 +503,7 @@ maker(
 
 maker(
     ("rh_v2", (2, 8)),
-    baca.accent(baca.pheads()),
+    baca.accent(baca.selectors.pheads()),
     baca.beam_positions(10.5),
     baca.script_up(),
     baca.stem_up(),
@@ -519,15 +519,17 @@ maker(
 maker(
     ("lh_v4", (2, -1)),
     baca.script_up(),
-    baca.staccato(baca.pheads()),
-    baca.tenuto(baca.pheads()),
+    baca.staccato(baca.selectors.pheads()),
+    baca.tenuto(baca.selectors.pheads()),
 )
 
 maker(
     "lh_resonance",
     baca.untie(baca.leaves()),
     baca.new(
-        baca.repeat_tie(baca.pleaves()[1:]),
+        baca.repeat_tie(
+            baca.selectors.pleaves((1, None)),
+        ),
         map=baca.selectors.qruns(),
     ),
     baca.dots_transparent(),

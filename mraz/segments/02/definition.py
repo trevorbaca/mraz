@@ -163,7 +163,10 @@ accumulator(
     "lh_v6",
     collections["stage 3"]["lh"].next(),
     baca.figure([1, -3], 16, treatments=[4]),
-    baca.note_column_shift(-1, baca.pleaf(-1)),
+    baca.note_column_shift(
+        -1,
+        baca.selectors.pleaf(-1),
+    ),
     baca.register(-39),
     anchor=baca.anchor(
         "lh_v5",
@@ -241,7 +244,7 @@ maker(
     "lh_v6",
     baca.script_down(),
     baca.stem_down(baca.selectors.tleaves(exclude=baca.const.HIDDEN)),
-    baca.tenuto(baca.pheads(exclude=baca.const.HIDDEN)),
+    baca.tenuto(baca.selectors.pheads(exclude=baca.const.HIDDEN)),
     baca.tuplet_bracket_staff_padding(6),
     baca.rest_position(-10),
 )
