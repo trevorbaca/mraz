@@ -72,8 +72,8 @@ accumulator(
     baca.tuplet_bracket_staff_padding(3),
     anchor=baca.anchor(
         "rh_v3",
-        baca.note(3),
-        baca.note(2),
+        baca.selectors.note(3),
+        baca.selectors.note(2),
     ),
     figure_name="lh-4 6.1.1",
 )
@@ -87,8 +87,8 @@ accumulator(
     baca.tuplet_bracket_staff_padding(3),
     anchor=baca.anchor(
         "rh_v3",
-        baca.note(9),
-        baca.note(2),
+        baca.selectors.note(9),
+        baca.selectors.note(2),
     ),
     figure_name="lh-4 6.1.2",
 )
@@ -101,8 +101,8 @@ accumulator(
     baca.tenuto(baca.pheads()),
     anchor=baca.anchor(
         "rh_v3",
-        baca.note(13),
-        baca.note(1),
+        baca.selectors.note(13),
+        baca.selectors.note(1),
     ),
     figure_name="lh-4 6.1.3",
     hide_time_signature=True,

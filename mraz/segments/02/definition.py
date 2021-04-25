@@ -136,8 +136,8 @@ accumulator(
     baca.register(-39),
     anchor=baca.anchor(
         "lh_v5",
-        baca.note(6),
-        baca.note(1),
+        baca.selectors.note(6),
+        baca.selectors.note(1),
     ),
     signature=4,
     figure_name="lh-6 8.3.1",
@@ -152,7 +152,7 @@ accumulator(
     baca.rest_up(),
     anchor=baca.anchor(
         "lh_v5",
-        baca.note(11),
+        baca.selectors.note(11),
     ),
     signature=4,
     figure_name="lh-6 8.3.2",
@@ -167,8 +167,8 @@ accumulator(
     baca.register(-39),
     anchor=baca.anchor(
         "lh_v5",
-        baca.note(23),
-        baca.note(-1),
+        baca.selectors.note(23),
+        baca.selectors.note(-1),
     ),
     signature=4,
     figure_name="lh-6 8.3.3",
@@ -182,8 +182,8 @@ accumulator(
     baca.register(-39),
     anchor=baca.anchor(
         "lh_v5",
-        baca.note(27),
-        baca.note(1),
+        baca.selectors.note(27),
+        baca.selectors.note(1),
     ),
     signature=4,
     figure_name="lh-6 8.3.4",
@@ -198,7 +198,7 @@ accumulator(
     anchor=baca.anchor(
         "lh_v5",
         baca.rest(33),
-        baca.note(-1),
+        baca.selectors.note(-1),
     ),
     signature=4,
     figure_name="lh-6 8.3.5",
@@ -214,8 +214,8 @@ accumulator(
     baca.register(-39),
     anchor=baca.anchor(
         "lh_v5",
-        baca.note(34),
-        baca.note(1),
+        baca.selectors.note(34),
+        baca.selectors.note(1),
     ),
     signature=4,
     figure_name="lh-6 8.3.6",
