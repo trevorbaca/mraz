@@ -200,7 +200,7 @@ accumulator(
     baca.register(-39),
     anchor=baca.anchor(
         "lh_v5",
-        baca.rest(33),
+        baca.selectors.rest(33),
         baca.selectors.note(-1),
     ),
     signature=4,

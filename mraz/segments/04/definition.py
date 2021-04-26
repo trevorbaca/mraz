@@ -304,7 +304,7 @@ accumulator(
     [{-35, -23}],
     baca.figure([8], 16, affix=baca.skips_before([4])),
     baca.nest("+1/4"),
-    anchor=baca.anchor("lh_v5", baca.rest(24)),
+    anchor=baca.anchor("lh_v5", baca.selectors.rest(24)),
     signature=4,
     figure_name="lh-r 4.2.1",
 )
@@ -332,7 +332,7 @@ accumulator(
     [{-33, -21}],
     baca.figure([8], 16, affix=baca.skips_before([4])),
     baca.nest("+1/4"),
-    anchor=baca.anchor("lh_v5", baca.rest(32)),
+    anchor=baca.anchor("lh_v5", baca.selectors.rest(32)),
     signature=4,
     figure_name="lh-r 4.2.4",
 )
@@ -614,7 +614,7 @@ accumulator(
     rmakers.beam_groups(),
     baca.slur(map=baca.selectors.ntruns()),
     baca.slur_down(baca.selectors.leaf(0)),  # lilypond error when slur is up
-    anchor=baca.anchor("lh_v5", baca.rest(-8)),
+    anchor=baca.anchor("lh_v5", baca.selectors.rest(-8)),
     signature=4,
     figure_name="rh-1 4.4.5",
     hide_time_signature=True,
