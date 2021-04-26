@@ -746,10 +746,10 @@ def clean_up_repeat_ties():
     Cleans up repeat ties.
     """
     return [
-        baca.beam_stencil_false(selector=baca.leaves()),
-        baca.dots_stencil_false(selector=baca.leaves()),
-        baca.flag_stencil_false(selector=baca.leaves()),
-        baca.stem_stencil_false(selector=baca.leaves()),
+        baca.beam_stencil_false(selector=baca.selectors.leaves()),
+        baca.dots_stencil_false(selector=baca.selectors.leaves()),
+        baca.flag_stencil_false(selector=baca.selectors.leaves()),
+        baca.stem_stencil_false(selector=baca.selectors.leaves()),
     ]
 
 
