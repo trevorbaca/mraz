@@ -333,7 +333,7 @@ maker(
 
 maker(
     "lh_resonance",
-    baca.untie(baca.leaves()),
+    baca.untie(baca.selectors.leaves()),
     baca.new(
         baca.repeat_tie(
             baca.selectors.pleaves((1, None)),
@@ -345,7 +345,7 @@ maker(
 
 maker(
     ("lh_resonance", [(2, 7), (10, -1)]),
-    baca.accidental_stencil_false(baca.leaves()),
+    baca.accidental_stencil_false(baca.selectors.leaves()),
 )
 
 maker(

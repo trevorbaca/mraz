@@ -527,7 +527,7 @@ maker(
 
 maker(
     "lh_resonance",
-    baca.untie(baca.leaves()),
+    baca.untie(baca.selectors.leaves()),
     baca.new(
         baca.repeat_tie(
             baca.selectors.pleaves((1, None)),
