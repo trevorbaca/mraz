@@ -91,7 +91,9 @@ accumulator(
     # 2018-07-10: F5 flipped to F4 because of command interpretation order
     # 2019-07-27: F5 restored by command stack
     baca.new(
-        baca.tie(baca.ptails()[:-1]),
+        baca.tie(
+            baca.selectors.ptails((None, -1)),
+        ),
         map=baca.selectors.qruns(),
     ),
     baca.register(24, 0),
