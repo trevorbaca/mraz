@@ -781,7 +781,7 @@ accumulator(
     baca.dls_staff_padding(8),
     baca.hairpin(
         "f < ff",
-        selector=baca.leaves()[:-1],
+        selector=baca.selectors.leaves((None, -1)),
     ),
     baca.slur(map=baca.selectors.ntruns()),
     baca.register(10, 36),
@@ -800,7 +800,7 @@ accumulator(
     baca.dls_staff_padding(8),
     baca.hairpin(
         "f < ff",
-        selector=baca.leaves()[:-1],
+        selector=baca.selectors.leaves((None, -1)),
     ),
     baca.slur(map=baca.selectors.ntruns()),
     baca.register(10, 36),
@@ -833,7 +833,7 @@ accumulator(
     baca.dls_staff_padding(8),
     baca.hairpin(
         "f < ff",
-        selector=baca.leaves()[:-1],
+        selector=baca.selectors.leaves((None, -1)),
     ),
     baca.slur(map=baca.selectors.ntruns()),
     baca.register(10, 36),
@@ -852,7 +852,7 @@ accumulator(
     baca.dls_staff_padding(8),
     baca.hairpin(
         "f < ff",
-        selector=baca.leaves()[:-1],
+        selector=baca.selectors.leaves((None, -1)),
     ),
     baca.slur(map=baca.selectors.ntruns()),
     baca.register(10, 36),

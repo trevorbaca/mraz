@@ -355,5 +355,7 @@ maker(
 
 maker(
     ("lh_resonance", [3, 6, 9]),
-    *mraz.transparent_music(baca.leaves()[1:]),
+    *mraz.transparent_music(
+        baca.selectors.leaves((1, None)),
+    ),
 )
