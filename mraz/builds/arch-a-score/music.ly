@@ -5,13 +5,13 @@
 
 #(ly:set-option 'relative-includes #t)
 \include "stylesheet.ily"
-\include "_segments/segment--.ily"
-\include "_segments/segment-A.ily"
-\include "_segments/segment-B.ily"
-\include "_segments/segment-C.ily"
-\include "_segments/segment-D.ily"
-\include "_segments/segment-E.ily"
-\include "_segments/segment-F.ily"
+\include "_segments/segment-01.ily"
+\include "_segments/segment-02.ily"
+\include "_segments/segment-03.ily"
+\include "_segments/segment-04.ily"
+\include "_segments/segment-05.ily"
+\include "_segments/segment-06.ily"
+\include "_segments/segment-07.ily"
 
 
 \score {
@@ -20,13 +20,13 @@
         \include "layout.ly"
         }
         {
-        \include "_segments/segment--.ly"
-        \include "_segments/segment-A.ly"
-        \include "_segments/segment-B.ly"
-        \include "_segments/segment-C.ly"
-        \include "_segments/segment-D.ly"
-        \include "_segments/segment-E.ly"
-        \include "_segments/segment-F.ly"
+        \include "_segments/segment-01.ly"
+        \include "_segments/segment-02.ly"
+        \include "_segments/segment-03.ly"
+        \include "_segments/segment-04.ly"
+        \include "_segments/segment-05.ly"
+        \include "_segments/segment-06.ly"
+        \include "_segments/segment-07.ly"
         }
     >>
 }
