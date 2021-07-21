@@ -66,3 +66,6 @@ spacing.override((51, 65), (1, 24))
 spacing.override(54, (1, 4))
 spacing.override((68, 69), (1, 32))
 spacing.override((71, 72), (1, 32))
+
+if __name__ == "__main__":
+    baca.build.make_layout_ly(__file__)
