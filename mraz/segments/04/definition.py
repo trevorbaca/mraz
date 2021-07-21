@@ -1092,3 +1092,6 @@ maker(
     ("lh_resonance", 32),
     baca.accidental_x_extent_false(),
 )
+
+if __name__ == "__main__":
+    baca.build.make_segment_pdf(maker)
