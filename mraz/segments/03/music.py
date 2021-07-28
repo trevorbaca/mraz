@@ -4,7 +4,7 @@ import abjad
 import baca
 from abjadext import rmakers
 
-import mraz
+from mraz import library as mraz
 
 ###############################################################################
 ##################################### [C] #####################################
