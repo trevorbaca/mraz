@@ -1,12 +1,7 @@
 \version "2.23.1"
 \language "english"
 \include "../../stylesheet.ily"
-\include "illustration.ily"
-
-\header { composer = ##f poet = ##f title = ##f }
-\layout { indent = 0 }
-\paper { print-first-page-number = ##t }
-\paper { first-page-number = #2 }
+\include "music.ily"
 
 \score
 {
@@ -24,10 +19,10 @@
             <<
 
                 \context GlobalRests = "Global_Rests"
-                \b_Global_Rests
+                \a_Global_Rests
 
                 \context GlobalSkips = "Global_Skips"
-                \b_Global_Skips
+                \a_Global_Skips
 
             >>
 
@@ -38,10 +33,10 @@
                 <<
 
                     \context PianoMusicRHStaff = "Piano_Music_RH_Staff"
-                    \b_Piano_Music_RH_Staff
+                    \a_Piano_Music_RH_Staff
 
                     \context PianoMusicLHStaff = "Piano_Music_LH_Staff"
-                    \b_Piano_Music_LH_Staff
+                    \a_Piano_Music_LH_Staff
 
                 >>
 
