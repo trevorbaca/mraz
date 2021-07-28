@@ -36,7 +36,7 @@ class SilverDesignMaker:
         """
         Makes stage zero.
 
-        >>> design = mraz.SilverDesignMaker().make_stage_00()
+        >>> design = mraz.library.SilverDesignMaker().make_stage_00()
         >>> for tree in design:
         ...     [_.number for _ in tree.get_payload()]
         ...
@@ -56,7 +56,7 @@ class SilverDesignMaker:
         """
         Makes stage one.
 
-        >>> design = mraz.SilverDesignMaker().make_stage_01()
+        >>> design = mraz.library.SilverDesignMaker().make_stage_01()
         >>> for tree in design:
         ...     [_.number for _ in tree.get_payload()]
         ...
@@ -114,7 +114,7 @@ class SilverDesignMaker:
         """
         Makes stage two.
 
-        >>> design = mraz.SilverDesignMaker().make_stage_02()
+        >>> design = mraz.library.SilverDesignMaker().make_stage_02()
         >>> for tree in design:
         ...     [_.number for _ in tree.get_payload()]
         ...
@@ -168,7 +168,7 @@ class SilverDesignMaker:
         """
         Makes stage three.
 
-        >>> design = mraz.SilverDesignMaker().make_stage_03()
+        >>> design = mraz.library.SilverDesignMaker().make_stage_03()
         >>> for tree in design:
         ...     [_.number for _ in tree.get_payload()]
         ...
@@ -210,7 +210,7 @@ class SilverDesignMaker:
         """
         Makes stage four.
 
-        >>> design = mraz.SilverDesignMaker().make_stage_04()
+        >>> design = mraz.library.SilverDesignMaker().make_stage_04()
         >>> for tree in design:
         ...     [_.number for _ in tree.get_payload()]
         ...
@@ -264,7 +264,7 @@ class SilverDesignMaker:
         """
         Makes stage five.
 
-        >>> design = mraz.SilverDesignMaker().make_stage_05()
+        >>> design = mraz.library.SilverDesignMaker().make_stage_05()
         >>> for tree in design:
         ...     [_.number for _ in tree.get_payload()]
         ...
@@ -319,7 +319,7 @@ class SilverDesignMaker:
         """
         Makes stage six.
 
-        >>> design = mraz.SilverDesignMaker().make_stage_06()
+        >>> design = mraz.library.SilverDesignMaker().make_stage_06()
         >>> for tree in design:
         ...     [_.number for _ in tree.get_payload()]
         ...
@@ -388,7 +388,7 @@ class SilverDesignMaker:
         """
         Makes stage seven.
 
-        >>> design = mraz.SilverDesignMaker().make_stage_07()
+        >>> design = mraz.library.SilverDesignMaker().make_stage_07()
         >>> for tree in design:
         ...     [_.number for _ in tree.get_payload()]
         ...
@@ -769,16 +769,8 @@ def transparent_music(selector):
 
 
 class ScoreTemplate(baca.ScoreTemplate):
-    r"""
+    """
     Score template.
-
-    >>> import mraz
-
-    ..  container:: example
-
-        >>> mraz.ScoreTemplate()
-        ScoreTemplate()
-
     """
 
     ### CLASS VARIABLES ###
