@@ -467,6 +467,7 @@ maker = baca.SegmentMaker(
     check_all_are_pitched=True,
     color_octaves=False,
     do_not_check_beamed_long_notes=True,
+    score_template=mraz.ScoreTemplate(),
     skips_instead_of_rests=True,
     time_signatures=accumulator.time_signatures,
 )
