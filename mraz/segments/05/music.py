@@ -1,5 +1,3 @@
-import pathlib
-
 import baca
 
 from mraz import library as mraz
