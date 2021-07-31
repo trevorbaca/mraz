@@ -1,62 +1,62 @@
 f_Global_Rests = {
 
-    % [06 Global_Rests measure 82 / measure 1]
+    % [Global_Rests measure 82 / measure 1]
     R1 * 4
 
-    % [06 Global_Rests measure 83 / measure 2]
+    % [Global_Rests measure 83 / measure 2]
     R1 * 5/2
 
-    % [06 Global_Rests measure 84 / measure 3]
+    % [Global_Rests measure 84 / measure 3]
     \baca-fermata-measure
     R1 * 1/4
     ^ \baca-short-fermata-markup
 
-    % [06 Global_Rests measure 85 / measure 4]
+    % [Global_Rests measure 85 / measure 4]
     R1 * 3
 
-    % [06 Global_Rests measure 86 / measure 5]
+    % [Global_Rests measure 86 / measure 5]
     R1 * 1
 
-    % [06 Global_Rests measure 87 / measure 6]
+    % [Global_Rests measure 87 / measure 6]
     R1 * 5/2
 
-    % [06 Global_Rests measure 88 / measure 7]
+    % [Global_Rests measure 88 / measure 7]
     \baca-fermata-measure
     R1 * 1/4
     ^ \baca-short-fermata-markup
 
-    % [06 Global_Rests measure 89 / measure 8]
+    % [Global_Rests measure 89 / measure 8]
     R1 * 13/4
 
-    % [06 Global_Rests measure 90 / measure 9]
+    % [Global_Rests measure 90 / measure 9]
     \baca-fermata-measure
     R1 * 1/4
     ^ \baca-short-fermata-markup
 
-    % [06 Global_Rests measure 91 / measure 10]
+    % [Global_Rests measure 91 / measure 10]
     R1 * 29/16
 
-    % [06 Global_Rests measure 92 / measure 11]
+    % [Global_Rests measure 92 / measure 11]
     R1 * 27/16
 
-    % [06 Global_Rests measure 93 / measure 12]
+    % [Global_Rests measure 93 / measure 12]
     R1 * 21/16
 
-    % [06 Global_Rests measure 94 / measure 13]
+    % [Global_Rests measure 94 / measure 13]
     R1 * 15/16
 
-    % [06 Global_Rests measure 95 / measure 14]
+    % [Global_Rests measure 95 / measure 14]
     R1 * 1
 
-    % [06 Global_Rests measure 96 / measure 15]
+    % [Global_Rests measure 96 / measure 15]
     R1 * 7/4
 
-    % [06 Global_Rests measure 97 / measure 16]
+    % [Global_Rests measure 97 / measure 16]
     \baca-fermata-measure
     R1 * 1/4
     ^ \baca-fermata-markup
 
-    % [06 Global_Rests measure 98 / measure 17]
+    % [Global_Rests measure 98 / measure 17]
     R1 * 1/4
 
 }
@@ -64,7 +64,7 @@ f_Global_Rests = {
 
 f_Global_Skips = {
 
-    % [06 Global_Skips measure 82 / measure 1]
+    % [Global_Skips measure 82 / measure 1]
     \time 16/4
     \bar ""
     \baca-time-signature-color #'blue
@@ -73,7 +73,7 @@ f_Global_Skips = {
     - \baca-metronome-mark-spanner-colored-left-text 2 0 1 "84" #'blue
     \bacaStartTextSpanMM
 
-    % [06 Global_Skips measure 83 / measure 2]
+    % [Global_Skips measure 83 / measure 2]
     \time 10/4
     \baca-time-signature-color #'blue
     s1 * 5/2
@@ -82,7 +82,7 @@ f_Global_Skips = {
     - \baca-metronome-mark-spanner-colored-left-text 2 0 1 "112" #'blue
     \bacaStartTextSpanMM
 
-    % [06 Global_Skips measure 84 / measure 3]
+    % [Global_Skips measure 84 / measure 3]
     \time 1/4
     \baca-time-signature-color #'blue
     s1 * 1/4
@@ -91,12 +91,12 @@ f_Global_Skips = {
     - \baca-metronome-mark-spanner-colored-left-text 2 0 1 "84" #'blue
     \bacaStartTextSpanMM
 
-    % [06 Global_Skips measure 85 / measure 4]
+    % [Global_Skips measure 85 / measure 4]
     \time 12/4
     \baca-time-signature-color #'blue
     s1 * 3
 
-    % [06 Global_Skips measure 86 / measure 5]
+    % [Global_Skips measure 86 / measure 5]
     \time 4/4
     \baca-time-signature-color #'blue
     s1 * 1
@@ -105,12 +105,12 @@ f_Global_Skips = {
     - \baca-metronome-mark-spanner-colored-left-text 2 0 1 "112" #'blue
     \bacaStartTextSpanMM
 
-    % [06 Global_Skips measure 87 / measure 6]
+    % [Global_Skips measure 87 / measure 6]
     \time 10/4
     \baca-time-signature-color #'blue
     s1 * 5/2
 
-    % [06 Global_Skips measure 88 / measure 7]
+    % [Global_Skips measure 88 / measure 7]
     \time 1/4
     \baca-time-signature-color #'blue
     s1 * 1/4
@@ -119,12 +119,12 @@ f_Global_Skips = {
     - \baca-metronome-mark-spanner-colored-left-text 2 0 1 "84" #'blue
     \bacaStartTextSpanMM
 
-    % [06 Global_Skips measure 89 / measure 8]
+    % [Global_Skips measure 89 / measure 8]
     \time 13/4
     \baca-time-signature-color #'blue
     s1 * 13/4
 
-    % [06 Global_Skips measure 90 / measure 9]
+    % [Global_Skips measure 90 / measure 9]
     \time 1/4
     \baca-time-signature-color #'blue
     s1 * 1/4
@@ -133,7 +133,7 @@ f_Global_Skips = {
     - \baca-metronome-mark-spanner-colored-left-text 2 0 1 "112" #'blue
     \bacaStartTextSpanMM
 
-    % [06 Global_Skips measure 91 / measure 10]
+    % [Global_Skips measure 91 / measure 10]
     \time 29/16
     \baca-time-signature-color #'blue
     s1 * 29/16
@@ -142,12 +142,12 @@ f_Global_Skips = {
     - \baca-metronome-mark-spanner-colored-left-text 2 0 1 "84" #'blue
     \bacaStartTextSpanMM
 
-    % [06 Global_Skips measure 92 / measure 11]
+    % [Global_Skips measure 92 / measure 11]
     \time 27/16
     \baca-time-signature-color #'blue
     s1 * 27/16
 
-    % [06 Global_Skips measure 93 / measure 12]
+    % [Global_Skips measure 93 / measure 12]
     \time 21/16
     \baca-time-signature-color #'blue
     s1 * 21/16
@@ -156,17 +156,17 @@ f_Global_Skips = {
     - \baca-metronome-mark-spanner-colored-left-text 2 0 1 "112" #'blue
     \bacaStartTextSpanMM
 
-    % [06 Global_Skips measure 94 / measure 13]
+    % [Global_Skips measure 94 / measure 13]
     \time 15/16
     \baca-time-signature-color #'blue
     s1 * 15/16
 
-    % [06 Global_Skips measure 95 / measure 14]
+    % [Global_Skips measure 95 / measure 14]
     \time 4/4
     \baca-time-signature-color #'blue
     s1 * 1
 
-    % [06 Global_Skips measure 96 / measure 15]
+    % [Global_Skips measure 96 / measure 15]
     \time 7/4
     \baca-time-signature-color #'blue
     s1 * 7/4
@@ -175,7 +175,7 @@ f_Global_Skips = {
     - \baca-metronome-mark-spanner-colored-left-text 2 0 1 "112" #'blue
     \bacaStartTextSpanMM
 
-    % [06 Global_Skips measure 97 / measure 16]
+    % [Global_Skips measure 97 / measure 16]
     \time 1/4
     \baca-time-signature-color #'blue
     s1 * 1/4
@@ -184,7 +184,7 @@ f_Global_Skips = {
     - \baca-metronome-mark-spanner-colored-left-text 2 0 1 "84" #'blue
     \bacaStartTextSpanMM
 
-    % [06 Global_Skips measure 98 / measure 17]
+    % [Global_Skips measure 98 / measure 17]
     \baca-time-signature-transparent
     s1 * 1/4
     \bacaStopTextSpanMM
@@ -196,7 +196,7 @@ f_Global_Skips = {
 
 f_RH_Voice_I = {
 
-    % [06 RH_Voice_I measure 82 / measure 1]
+    % [RH_Voice_I measure 82 / measure 1]
     \clef "treble"
     \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'green4)
     \set PianoMusicRHStaff.forceClef = ##t
@@ -206,49 +206,49 @@ f_RH_Voice_I = {
     ^ \baca-reapplied-indicator-markup "(“Piano”)"
     \override PianoMusicRHStaff.Clef.color = #(x11-color 'OliveDrab)
 
-    % [06 RH_Voice_I measure 83 / measure 2]
+    % [RH_Voice_I measure 83 / measure 2]
     s1 * 10/4
 
-    % [06 RH_Voice_I measure 84 / measure 3]
+    % [RH_Voice_I measure 84 / measure 3]
     s1 * 1/4
 
-    % [06 RH_Voice_I measure 85 / measure 4]
+    % [RH_Voice_I measure 85 / measure 4]
     s1 * 12/4
 
-    % [06 RH_Voice_I measure 86 / measure 5]
+    % [RH_Voice_I measure 86 / measure 5]
     s1 * 4/4
 
-    % [06 RH_Voice_I measure 87 / measure 6]
+    % [RH_Voice_I measure 87 / measure 6]
     s1 * 10/4
 
-    % [06 RH_Voice_I measure 88 / measure 7]
+    % [RH_Voice_I measure 88 / measure 7]
     s1 * 1/4
 
-    % [06 RH_Voice_I measure 89 / measure 8]
+    % [RH_Voice_I measure 89 / measure 8]
     s1 * 13/4
 
-    % [06 RH_Voice_I measure 90 / measure 9]
+    % [RH_Voice_I measure 90 / measure 9]
     s1 * 1/4
 
-    % [06 RH_Voice_I measure 91 / measure 10]
+    % [RH_Voice_I measure 91 / measure 10]
     s1 * 29/16
 
-    % [06 RH_Voice_I measure 92 / measure 11]
+    % [RH_Voice_I measure 92 / measure 11]
     s1 * 27/16
 
-    % [06 RH_Voice_I measure 93 / measure 12]
+    % [RH_Voice_I measure 93 / measure 12]
     s1 * 21/16
 
-    % [06 RH_Voice_I measure 94 / measure 13]
+    % [RH_Voice_I measure 94 / measure 13]
     s1 * 15/16
 
-    % [06 RH_Voice_I measure 95 / measure 14]
+    % [RH_Voice_I measure 95 / measure 14]
     s1 * 4/4
 
-    % [06 RH_Voice_I measure 96 / measure 15]
+    % [RH_Voice_I measure 96 / measure 15]
     s1 * 7/4
 
-    % [06 RH_Voice_I measure 97 / measure 16]
+    % [RH_Voice_I measure 97 / measure 16]
     s1 * 1/4
 
     <<
@@ -256,7 +256,7 @@ f_RH_Voice_I = {
         \context Voice = "RH_Voice_I"
         {
 
-            % [06 RH_Voice_I measure 98 / measure 17]
+            % [RH_Voice_I measure 98 / measure 17]
             \abjad-invisible-music-coloring
             R1 * 1/4
 
@@ -265,7 +265,7 @@ f_RH_Voice_I = {
         \context Voice = "RH_Rest_Voice_I"
         {
 
-            % [06 RH_Rest_Voice_I measure 98 / measure 17]
+            % [RH_Rest_Voice_I measure 98 / measure 17]
             s1 * 1/4
 
         }
@@ -277,52 +277,52 @@ f_RH_Voice_I = {
 
 f_RH_Voice_I_Inserts = {
 
-    % [06 RH_Voice_I_Inserts measure 82 / measure 1]
+    % [RH_Voice_I_Inserts measure 82 / measure 1]
     s1 * 16/4
 
-    % [06 RH_Voice_I_Inserts measure 83 / measure 2]
+    % [RH_Voice_I_Inserts measure 83 / measure 2]
     s1 * 10/4
 
-    % [06 RH_Voice_I_Inserts measure 84 / measure 3]
+    % [RH_Voice_I_Inserts measure 84 / measure 3]
     s1 * 1/4
 
-    % [06 RH_Voice_I_Inserts measure 85 / measure 4]
+    % [RH_Voice_I_Inserts measure 85 / measure 4]
     s1 * 12/4
 
-    % [06 RH_Voice_I_Inserts measure 86 / measure 5]
+    % [RH_Voice_I_Inserts measure 86 / measure 5]
     s1 * 4/4
 
-    % [06 RH_Voice_I_Inserts measure 87 / measure 6]
+    % [RH_Voice_I_Inserts measure 87 / measure 6]
     s1 * 10/4
 
-    % [06 RH_Voice_I_Inserts measure 88 / measure 7]
+    % [RH_Voice_I_Inserts measure 88 / measure 7]
     s1 * 1/4
 
-    % [06 RH_Voice_I_Inserts measure 89 / measure 8]
+    % [RH_Voice_I_Inserts measure 89 / measure 8]
     s1 * 13/4
 
-    % [06 RH_Voice_I_Inserts measure 90 / measure 9]
+    % [RH_Voice_I_Inserts measure 90 / measure 9]
     s1 * 1/4
 
-    % [06 RH_Voice_I_Inserts measure 91 / measure 10]
+    % [RH_Voice_I_Inserts measure 91 / measure 10]
     s1 * 29/16
 
-    % [06 RH_Voice_I_Inserts measure 92 / measure 11]
+    % [RH_Voice_I_Inserts measure 92 / measure 11]
     s1 * 27/16
 
-    % [06 RH_Voice_I_Inserts measure 93 / measure 12]
+    % [RH_Voice_I_Inserts measure 93 / measure 12]
     s1 * 21/16
 
-    % [06 RH_Voice_I_Inserts measure 94 / measure 13]
+    % [RH_Voice_I_Inserts measure 94 / measure 13]
     s1 * 15/16
 
-    % [06 RH_Voice_I_Inserts measure 95 / measure 14]
+    % [RH_Voice_I_Inserts measure 95 / measure 14]
     s1 * 4/4
 
-    % [06 RH_Voice_I_Inserts measure 96 / measure 15]
+    % [RH_Voice_I_Inserts measure 96 / measure 15]
     s1 * 7/4
 
-    % [06 RH_Voice_I_Inserts measure 97 / measure 16]
+    % [RH_Voice_I_Inserts measure 97 / measure 16]
     s1 * 1/4
 
     <<
@@ -330,7 +330,7 @@ f_RH_Voice_I_Inserts = {
         \context Voice = "RH_Voice_I_Inserts"
         {
 
-            % [06 RH_Voice_I_Inserts measure 98 / measure 17]
+            % [RH_Voice_I_Inserts measure 98 / measure 17]
             \abjad-invisible-music-coloring
             R1 * 1/4
 
@@ -339,7 +339,7 @@ f_RH_Voice_I_Inserts = {
         \context Voice = "RH_Rest_Voice_I_Inserts"
         {
 
-            % [06 RH_Rest_Voice_I_Inserts measure 98 / measure 17]
+            % [RH_Rest_Voice_I_Inserts measure 98 / measure 17]
             s1 * 1/4
 
         }
@@ -356,7 +356,7 @@ f_RH_Voice_II = {
         \scaleDurations #'(1 . 1)
         {
 
-            % [06 RH_Voice_II measure 82 / measure 1]
+            % [RH_Voice_II measure 82 / measure 1]
             \override Script.direction = #up
             \override Stem.direction = #up
             \dynamicUp
@@ -408,7 +408,7 @@ f_RH_Voice_II = {
             \times 3/4
             {
 
-                % [06 RH_Voice_II measure 83 / measure 2]
+                % [RH_Voice_II measure 83 / measure 2]
                 \override Beam.positions = #'(10.5 . 10.5)
                 \override Script.direction = #up
                 s8
@@ -506,7 +506,7 @@ f_RH_Voice_II = {
 
     }
 
-    % [06 RH_Voice_II measure 84 / measure 3]
+    % [RH_Voice_II measure 84 / measure 3]
     s1 * 1/4
 
     {
@@ -521,7 +521,7 @@ f_RH_Voice_II = {
             \times 6/7
             {
 
-                % [06 RH_Voice_II measure 85 / measure 4]
+                % [RH_Voice_II measure 85 / measure 4]
                 \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 1
                 s8
@@ -625,7 +625,7 @@ f_RH_Voice_II = {
 
     }
 
-    % [06 RH_Voice_II measure 86 / measure 5]
+    % [RH_Voice_II measure 86 / measure 5]
     s1 * 1
 
     {
@@ -639,7 +639,7 @@ f_RH_Voice_II = {
             \scaleDurations #'(1 . 1)
             {
 
-                % [06 RH_Voice_II measure 87 / measure 6]
+                % [RH_Voice_II measure 87 / measure 6]
                 s8
                 [
 
@@ -746,7 +746,7 @@ f_RH_Voice_II = {
 
     }
 
-    % [06 RH_Voice_II measure 88 / measure 7]
+    % [RH_Voice_II measure 88 / measure 7]
     s1 * 1/4
 
     {
@@ -761,7 +761,7 @@ f_RH_Voice_II = {
             \times 6/7
             {
 
-                % [06 RH_Voice_II measure 89 / measure 8]
+                % [RH_Voice_II measure 89 / measure 8]
                 \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 1
                 s8
@@ -894,7 +894,7 @@ f_RH_Voice_II = {
 
     }
 
-    % [06 RH_Voice_II measure 90 / measure 9]
+    % [RH_Voice_II measure 90 / measure 9]
     \override Script.direction = #up
     \override Slur.direction = #up
     s1 * 1/4
@@ -904,7 +904,7 @@ f_RH_Voice_II = {
         \scaleDurations #'(1 . 1)
         {
 
-            % [06 RH_Voice_II measure 91 / measure 10]
+            % [RH_Voice_II measure 91 / measure 10]
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
             \override Beam.positions = #'(-8 . -8)
@@ -1104,7 +1104,7 @@ f_RH_Voice_II = {
         \scaleDurations #'(1 . 1)
         {
 
-            % [06 RH_Voice_II measure 92 / measure 11]
+            % [RH_Voice_II measure 92 / measure 11]
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
             \override Beam.positions = #'(-8 . -8)
@@ -1283,7 +1283,7 @@ f_RH_Voice_II = {
         \scaleDurations #'(1 . 1)
         {
 
-            % [06 RH_Voice_II measure 93 / measure 12]
+            % [RH_Voice_II measure 93 / measure 12]
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
             \override Beam.positions = #'(-8 . -8)
@@ -1432,7 +1432,7 @@ f_RH_Voice_II = {
         \scaleDurations #'(1 . 1)
         {
 
-            % [06 RH_Voice_II measure 94 / measure 13]
+            % [RH_Voice_II measure 94 / measure 13]
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
             \override Beam.positions = #'(-8 . -8)
@@ -1547,7 +1547,7 @@ f_RH_Voice_II = {
         \scaleDurations #'(1 . 1)
         {
 
-            % [06 RH_Voice_II measure 95 / measure 14]
+            % [RH_Voice_II measure 95 / measure 14]
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
             \override Beam.positions = #'(-8 . -8)
@@ -1671,7 +1671,7 @@ f_RH_Voice_II = {
             \times 6/7
             {
 
-                % [06 RH_Voice_II measure 96 / measure 15]
+                % [RH_Voice_II measure 96 / measure 15]
                 s8
                 [
 
@@ -1745,7 +1745,7 @@ f_RH_Voice_II = {
         \context Voice = "RH_Voice_II"
         {
 
-            % [06 RH_Voice_II measure 97 / measure 16]
+            % [RH_Voice_II measure 97 / measure 16]
             \abjad-invisible-music-coloring
             \baca-not-yet-pitched-coloring
             b'1 * 1/4
@@ -1755,7 +1755,7 @@ f_RH_Voice_II = {
         \context Voice = "RH_Rest_Voice_II"
         {
 
-            % [06 RH_Rest_Voice_II measure 97 / measure 16]
+            % [RH_Rest_Voice_II measure 97 / measure 16]
             s1 * 1/4
 
         }
@@ -1767,7 +1767,7 @@ f_RH_Voice_II = {
         \context Voice = "RH_Voice_II"
         {
 
-            % [06 RH_Voice_II measure 98 / measure 17]
+            % [RH_Voice_II measure 98 / measure 17]
             \abjad-invisible-music-coloring
             \baca-not-yet-pitched-coloring
             b'1 * 1/4
@@ -1777,7 +1777,7 @@ f_RH_Voice_II = {
         \context Voice = "RH_Rest_Voice_II"
         {
 
-            % [06 RH_Rest_Voice_II measure 98 / measure 17]
+            % [RH_Rest_Voice_II measure 98 / measure 17]
             s1 * 1/4
 
         }
@@ -1789,52 +1789,52 @@ f_RH_Voice_II = {
 
 f_RH_Voice_II_Inserts = {
 
-    % [06 RH_Voice_II_Inserts measure 82 / measure 1]
+    % [RH_Voice_II_Inserts measure 82 / measure 1]
     s1 * 16/4
 
-    % [06 RH_Voice_II_Inserts measure 83 / measure 2]
+    % [RH_Voice_II_Inserts measure 83 / measure 2]
     s1 * 10/4
 
-    % [06 RH_Voice_II_Inserts measure 84 / measure 3]
+    % [RH_Voice_II_Inserts measure 84 / measure 3]
     s1 * 1/4
 
-    % [06 RH_Voice_II_Inserts measure 85 / measure 4]
+    % [RH_Voice_II_Inserts measure 85 / measure 4]
     s1 * 12/4
 
-    % [06 RH_Voice_II_Inserts measure 86 / measure 5]
+    % [RH_Voice_II_Inserts measure 86 / measure 5]
     s1 * 4/4
 
-    % [06 RH_Voice_II_Inserts measure 87 / measure 6]
+    % [RH_Voice_II_Inserts measure 87 / measure 6]
     s1 * 10/4
 
-    % [06 RH_Voice_II_Inserts measure 88 / measure 7]
+    % [RH_Voice_II_Inserts measure 88 / measure 7]
     s1 * 1/4
 
-    % [06 RH_Voice_II_Inserts measure 89 / measure 8]
+    % [RH_Voice_II_Inserts measure 89 / measure 8]
     s1 * 13/4
 
-    % [06 RH_Voice_II_Inserts measure 90 / measure 9]
+    % [RH_Voice_II_Inserts measure 90 / measure 9]
     s1 * 1/4
 
-    % [06 RH_Voice_II_Inserts measure 91 / measure 10]
+    % [RH_Voice_II_Inserts measure 91 / measure 10]
     s1 * 29/16
 
-    % [06 RH_Voice_II_Inserts measure 92 / measure 11]
+    % [RH_Voice_II_Inserts measure 92 / measure 11]
     s1 * 27/16
 
-    % [06 RH_Voice_II_Inserts measure 93 / measure 12]
+    % [RH_Voice_II_Inserts measure 93 / measure 12]
     s1 * 21/16
 
-    % [06 RH_Voice_II_Inserts measure 94 / measure 13]
+    % [RH_Voice_II_Inserts measure 94 / measure 13]
     s1 * 15/16
 
-    % [06 RH_Voice_II_Inserts measure 95 / measure 14]
+    % [RH_Voice_II_Inserts measure 95 / measure 14]
     s1 * 4/4
 
-    % [06 RH_Voice_II_Inserts measure 96 / measure 15]
+    % [RH_Voice_II_Inserts measure 96 / measure 15]
     s1 * 7/4
 
-    % [06 RH_Voice_II_Inserts measure 97 / measure 16]
+    % [RH_Voice_II_Inserts measure 97 / measure 16]
     s1 * 1/4
 
     <<
@@ -1842,7 +1842,7 @@ f_RH_Voice_II_Inserts = {
         \context Voice = "RH_Voice_II_Inserts"
         {
 
-            % [06 RH_Voice_II_Inserts measure 98 / measure 17]
+            % [RH_Voice_II_Inserts measure 98 / measure 17]
             \abjad-invisible-music-coloring
             R1 * 1/4
 
@@ -1851,7 +1851,7 @@ f_RH_Voice_II_Inserts = {
         \context Voice = "RH_Rest_Voice_II_Inserts"
         {
 
-            % [06 RH_Rest_Voice_II_Inserts measure 98 / measure 17]
+            % [RH_Rest_Voice_II_Inserts measure 98 / measure 17]
             s1 * 1/4
 
         }
@@ -1869,7 +1869,7 @@ f_RH_Voice_III = {
         \times 8/5
         {
 
-            % [06 RH_Voice_III measure 82 / measure 1]
+            % [RH_Voice_III measure 82 / measure 1]
             \ottava 1
             \override Stem.direction = #down
             \override TupletBracket.direction = #down
@@ -1925,7 +1925,7 @@ f_RH_Voice_III = {
             \times 3/4
             {
 
-                % [06 RH_Voice_III measure 83 / measure 2]
+                % [RH_Voice_III measure 83 / measure 2]
                 \override TupletBracket.direction = #down
                 d'''8
                 - \tweak color #(x11-color 'blue)
@@ -2036,7 +2036,7 @@ f_RH_Voice_III = {
         \scaleDurations #'(1 . 1)
         {
 
-            % [06 RH_Voice_III measure 84 / measure 3]
+            % [RH_Voice_III measure 84 / measure 3]
             \once \override Rest.transparent = ##t
             r4
 
@@ -2054,7 +2054,7 @@ f_RH_Voice_III = {
             \times 6/7
             {
 
-                % [06 RH_Voice_III measure 85 / measure 4]
+                % [RH_Voice_III measure 85 / measure 4]
                 \override TupletBracket.direction = #down
                 cs'''!8
                 [
@@ -2166,7 +2166,7 @@ f_RH_Voice_III = {
 
     }
 
-    % [06 RH_Voice_III measure 86 / measure 5]
+    % [RH_Voice_III measure 86 / measure 5]
     s1 * 1
 
     {
@@ -2178,7 +2178,7 @@ f_RH_Voice_III = {
             \scaleDurations #'(1 . 1)
             {
 
-                % [06 RH_Voice_III measure 87 / measure 6]
+                % [RH_Voice_III measure 87 / measure 6]
                 \override TupletBracket.direction = #down
                 a'''8
                 - \tweak color #(x11-color 'DeepPink1)
@@ -2289,7 +2289,7 @@ f_RH_Voice_III = {
         \scaleDurations #'(1 . 1)
         {
 
-            % [06 RH_Voice_III measure 88 / measure 7]
+            % [RH_Voice_III measure 88 / measure 7]
             \once \override Rest.transparent = ##t
             r4
 
@@ -2307,7 +2307,7 @@ f_RH_Voice_III = {
             \times 6/7
             {
 
-                % [06 RH_Voice_III measure 89 / measure 8]
+                % [RH_Voice_III measure 89 / measure 8]
                 \override TupletBracket.direction = #down
                 c'''8
                 [
@@ -2441,7 +2441,7 @@ f_RH_Voice_III = {
         \scaleDurations #'(1 . 1)
         {
 
-            % [06 RH_Voice_III measure 90 / measure 9]
+            % [RH_Voice_III measure 90 / measure 9]
             \once \override Rest.transparent = ##t
             r4
 
@@ -2449,7 +2449,7 @@ f_RH_Voice_III = {
 
     }
 
-    % [06 RH_Voice_III measure 91 / measure 10]
+    % [RH_Voice_III measure 91 / measure 10]
     s1 * 27/4
 
     {
@@ -2462,7 +2462,7 @@ f_RH_Voice_III = {
             \times 6/7
             {
 
-                % [06 RH_Voice_III measure 96 / measure 15]
+                % [RH_Voice_III measure 96 / measure 15]
                 \override TupletBracket.direction = #down
                 \override TupletBracket.staff-padding = 3
                 f'''8
@@ -2540,7 +2540,7 @@ f_RH_Voice_III = {
         \context Voice = "RH_Voice_III"
         {
 
-            % [06 RH_Voice_III measure 97 / measure 16]
+            % [RH_Voice_III measure 97 / measure 16]
             \abjad-invisible-music-coloring
             \baca-not-yet-pitched-coloring
             b'1 * 1/4
@@ -2550,7 +2550,7 @@ f_RH_Voice_III = {
         \context Voice = "RH_Rest_Voice_III"
         {
 
-            % [06 RH_Rest_Voice_III measure 97 / measure 16]
+            % [RH_Rest_Voice_III measure 97 / measure 16]
             s1 * 1/4
 
         }
@@ -2562,7 +2562,7 @@ f_RH_Voice_III = {
         \context Voice = "RH_Voice_III"
         {
 
-            % [06 RH_Voice_III measure 98 / measure 17]
+            % [RH_Voice_III measure 98 / measure 17]
             \abjad-invisible-music-coloring
             \baca-not-yet-pitched-coloring
             b'1 * 1/4
@@ -2572,7 +2572,7 @@ f_RH_Voice_III = {
         \context Voice = "RH_Rest_Voice_III"
         {
 
-            % [06 RH_Rest_Voice_III measure 98 / measure 17]
+            % [RH_Rest_Voice_III measure 98 / measure 17]
             s1 * 1/4
 
         }
@@ -2584,52 +2584,52 @@ f_RH_Voice_III = {
 
 f_RH_Voice_III_Inserts = {
 
-    % [06 RH_Voice_III_Inserts measure 82 / measure 1]
+    % [RH_Voice_III_Inserts measure 82 / measure 1]
     s1 * 16/4
 
-    % [06 RH_Voice_III_Inserts measure 83 / measure 2]
+    % [RH_Voice_III_Inserts measure 83 / measure 2]
     s1 * 10/4
 
-    % [06 RH_Voice_III_Inserts measure 84 / measure 3]
+    % [RH_Voice_III_Inserts measure 84 / measure 3]
     s1 * 1/4
 
-    % [06 RH_Voice_III_Inserts measure 85 / measure 4]
+    % [RH_Voice_III_Inserts measure 85 / measure 4]
     s1 * 12/4
 
-    % [06 RH_Voice_III_Inserts measure 86 / measure 5]
+    % [RH_Voice_III_Inserts measure 86 / measure 5]
     s1 * 4/4
 
-    % [06 RH_Voice_III_Inserts measure 87 / measure 6]
+    % [RH_Voice_III_Inserts measure 87 / measure 6]
     s1 * 10/4
 
-    % [06 RH_Voice_III_Inserts measure 88 / measure 7]
+    % [RH_Voice_III_Inserts measure 88 / measure 7]
     s1 * 1/4
 
-    % [06 RH_Voice_III_Inserts measure 89 / measure 8]
+    % [RH_Voice_III_Inserts measure 89 / measure 8]
     s1 * 13/4
 
-    % [06 RH_Voice_III_Inserts measure 90 / measure 9]
+    % [RH_Voice_III_Inserts measure 90 / measure 9]
     s1 * 1/4
 
-    % [06 RH_Voice_III_Inserts measure 91 / measure 10]
+    % [RH_Voice_III_Inserts measure 91 / measure 10]
     s1 * 29/16
 
-    % [06 RH_Voice_III_Inserts measure 92 / measure 11]
+    % [RH_Voice_III_Inserts measure 92 / measure 11]
     s1 * 27/16
 
-    % [06 RH_Voice_III_Inserts measure 93 / measure 12]
+    % [RH_Voice_III_Inserts measure 93 / measure 12]
     s1 * 21/16
 
-    % [06 RH_Voice_III_Inserts measure 94 / measure 13]
+    % [RH_Voice_III_Inserts measure 94 / measure 13]
     s1 * 15/16
 
-    % [06 RH_Voice_III_Inserts measure 95 / measure 14]
+    % [RH_Voice_III_Inserts measure 95 / measure 14]
     s1 * 4/4
 
-    % [06 RH_Voice_III_Inserts measure 96 / measure 15]
+    % [RH_Voice_III_Inserts measure 96 / measure 15]
     s1 * 7/4
 
-    % [06 RH_Voice_III_Inserts measure 97 / measure 16]
+    % [RH_Voice_III_Inserts measure 97 / measure 16]
     s1 * 1/4
 
     <<
@@ -2637,7 +2637,7 @@ f_RH_Voice_III_Inserts = {
         \context Voice = "RH_Voice_III_Inserts"
         {
 
-            % [06 RH_Voice_III_Inserts measure 98 / measure 17]
+            % [RH_Voice_III_Inserts measure 98 / measure 17]
             \abjad-invisible-music-coloring
             R1 * 1/4
 
@@ -2646,7 +2646,7 @@ f_RH_Voice_III_Inserts = {
         \context Voice = "RH_Rest_Voice_III_Inserts"
         {
 
-            % [06 RH_Rest_Voice_III_Inserts measure 98 / measure 17]
+            % [RH_Rest_Voice_III_Inserts measure 98 / measure 17]
             s1 * 1/4
 
         }
@@ -2658,54 +2658,54 @@ f_RH_Voice_III_Inserts = {
 
 f_RH_Voice_IV = {
 
-    % [06 RH_Voice_IV measure 82 / measure 1]
+    % [RH_Voice_IV measure 82 / measure 1]
     s1 * 16/4
     - \tweak color #(x11-color 'green4)
     \p
 
-    % [06 RH_Voice_IV measure 83 / measure 2]
+    % [RH_Voice_IV measure 83 / measure 2]
     s1 * 10/4
 
-    % [06 RH_Voice_IV measure 84 / measure 3]
+    % [RH_Voice_IV measure 84 / measure 3]
     s1 * 1/4
 
-    % [06 RH_Voice_IV measure 85 / measure 4]
+    % [RH_Voice_IV measure 85 / measure 4]
     s1 * 12/4
 
-    % [06 RH_Voice_IV measure 86 / measure 5]
+    % [RH_Voice_IV measure 86 / measure 5]
     s1 * 4/4
 
-    % [06 RH_Voice_IV measure 87 / measure 6]
+    % [RH_Voice_IV measure 87 / measure 6]
     s1 * 10/4
 
-    % [06 RH_Voice_IV measure 88 / measure 7]
+    % [RH_Voice_IV measure 88 / measure 7]
     s1 * 1/4
 
-    % [06 RH_Voice_IV measure 89 / measure 8]
+    % [RH_Voice_IV measure 89 / measure 8]
     s1 * 13/4
 
-    % [06 RH_Voice_IV measure 90 / measure 9]
+    % [RH_Voice_IV measure 90 / measure 9]
     s1 * 1/4
 
-    % [06 RH_Voice_IV measure 91 / measure 10]
+    % [RH_Voice_IV measure 91 / measure 10]
     s1 * 29/16
 
-    % [06 RH_Voice_IV measure 92 / measure 11]
+    % [RH_Voice_IV measure 92 / measure 11]
     s1 * 27/16
 
-    % [06 RH_Voice_IV measure 93 / measure 12]
+    % [RH_Voice_IV measure 93 / measure 12]
     s1 * 21/16
 
-    % [06 RH_Voice_IV measure 94 / measure 13]
+    % [RH_Voice_IV measure 94 / measure 13]
     s1 * 15/16
 
-    % [06 RH_Voice_IV measure 95 / measure 14]
+    % [RH_Voice_IV measure 95 / measure 14]
     s1 * 4/4
 
-    % [06 RH_Voice_IV measure 96 / measure 15]
+    % [RH_Voice_IV measure 96 / measure 15]
     s1 * 7/4
 
-    % [06 RH_Voice_IV measure 97 / measure 16]
+    % [RH_Voice_IV measure 97 / measure 16]
     s1 * 1/4
 
     <<
@@ -2713,7 +2713,7 @@ f_RH_Voice_IV = {
         \context Voice = "RH_Voice_IV"
         {
 
-            % [06 RH_Voice_IV measure 98 / measure 17]
+            % [RH_Voice_IV measure 98 / measure 17]
             \abjad-invisible-music-coloring
             R1 * 1/4
 
@@ -2722,7 +2722,7 @@ f_RH_Voice_IV = {
         \context Voice = "RH_Rest_Voice_IV"
         {
 
-            % [06 RH_Rest_Voice_IV measure 98 / measure 17]
+            % [RH_Rest_Voice_IV measure 98 / measure 17]
             s1 * 1/4
 
         }
@@ -2734,52 +2734,52 @@ f_RH_Voice_IV = {
 
 f_RH_Voice_IV_Inserts = {
 
-    % [06 RH_Voice_IV_Inserts measure 82 / measure 1]
+    % [RH_Voice_IV_Inserts measure 82 / measure 1]
     s1 * 16/4
 
-    % [06 RH_Voice_IV_Inserts measure 83 / measure 2]
+    % [RH_Voice_IV_Inserts measure 83 / measure 2]
     s1 * 10/4
 
-    % [06 RH_Voice_IV_Inserts measure 84 / measure 3]
+    % [RH_Voice_IV_Inserts measure 84 / measure 3]
     s1 * 1/4
 
-    % [06 RH_Voice_IV_Inserts measure 85 / measure 4]
+    % [RH_Voice_IV_Inserts measure 85 / measure 4]
     s1 * 12/4
 
-    % [06 RH_Voice_IV_Inserts measure 86 / measure 5]
+    % [RH_Voice_IV_Inserts measure 86 / measure 5]
     s1 * 4/4
 
-    % [06 RH_Voice_IV_Inserts measure 87 / measure 6]
+    % [RH_Voice_IV_Inserts measure 87 / measure 6]
     s1 * 10/4
 
-    % [06 RH_Voice_IV_Inserts measure 88 / measure 7]
+    % [RH_Voice_IV_Inserts measure 88 / measure 7]
     s1 * 1/4
 
-    % [06 RH_Voice_IV_Inserts measure 89 / measure 8]
+    % [RH_Voice_IV_Inserts measure 89 / measure 8]
     s1 * 13/4
 
-    % [06 RH_Voice_IV_Inserts measure 90 / measure 9]
+    % [RH_Voice_IV_Inserts measure 90 / measure 9]
     s1 * 1/4
 
-    % [06 RH_Voice_IV_Inserts measure 91 / measure 10]
+    % [RH_Voice_IV_Inserts measure 91 / measure 10]
     s1 * 29/16
 
-    % [06 RH_Voice_IV_Inserts measure 92 / measure 11]
+    % [RH_Voice_IV_Inserts measure 92 / measure 11]
     s1 * 27/16
 
-    % [06 RH_Voice_IV_Inserts measure 93 / measure 12]
+    % [RH_Voice_IV_Inserts measure 93 / measure 12]
     s1 * 21/16
 
-    % [06 RH_Voice_IV_Inserts measure 94 / measure 13]
+    % [RH_Voice_IV_Inserts measure 94 / measure 13]
     s1 * 15/16
 
-    % [06 RH_Voice_IV_Inserts measure 95 / measure 14]
+    % [RH_Voice_IV_Inserts measure 95 / measure 14]
     s1 * 4/4
 
-    % [06 RH_Voice_IV_Inserts measure 96 / measure 15]
+    % [RH_Voice_IV_Inserts measure 96 / measure 15]
     s1 * 7/4
 
-    % [06 RH_Voice_IV_Inserts measure 97 / measure 16]
+    % [RH_Voice_IV_Inserts measure 97 / measure 16]
     s1 * 1/4
 
     <<
@@ -2787,7 +2787,7 @@ f_RH_Voice_IV_Inserts = {
         \context Voice = "RH_Voice_IV_Inserts"
         {
 
-            % [06 RH_Voice_IV_Inserts measure 98 / measure 17]
+            % [RH_Voice_IV_Inserts measure 98 / measure 17]
             \abjad-invisible-music-coloring
             R1 * 1/4
 
@@ -2796,7 +2796,7 @@ f_RH_Voice_IV_Inserts = {
         \context Voice = "RH_Rest_Voice_IV_Inserts"
         {
 
-            % [06 RH_Rest_Voice_IV_Inserts measure 98 / measure 17]
+            % [RH_Rest_Voice_IV_Inserts measure 98 / measure 17]
             s1 * 1/4
 
         }
@@ -2808,52 +2808,52 @@ f_RH_Voice_IV_Inserts = {
 
 f_RH_Voice_V = {
 
-    % [06 RH_Voice_V measure 82 / measure 1]
+    % [RH_Voice_V measure 82 / measure 1]
     s1 * 16/4
 
-    % [06 RH_Voice_V measure 83 / measure 2]
+    % [RH_Voice_V measure 83 / measure 2]
     s1 * 10/4
 
-    % [06 RH_Voice_V measure 84 / measure 3]
+    % [RH_Voice_V measure 84 / measure 3]
     s1 * 1/4
 
-    % [06 RH_Voice_V measure 85 / measure 4]
+    % [RH_Voice_V measure 85 / measure 4]
     s1 * 12/4
 
-    % [06 RH_Voice_V measure 86 / measure 5]
+    % [RH_Voice_V measure 86 / measure 5]
     s1 * 4/4
 
-    % [06 RH_Voice_V measure 87 / measure 6]
+    % [RH_Voice_V measure 87 / measure 6]
     s1 * 10/4
 
-    % [06 RH_Voice_V measure 88 / measure 7]
+    % [RH_Voice_V measure 88 / measure 7]
     s1 * 1/4
 
-    % [06 RH_Voice_V measure 89 / measure 8]
+    % [RH_Voice_V measure 89 / measure 8]
     s1 * 13/4
 
-    % [06 RH_Voice_V measure 90 / measure 9]
+    % [RH_Voice_V measure 90 / measure 9]
     s1 * 1/4
 
-    % [06 RH_Voice_V measure 91 / measure 10]
+    % [RH_Voice_V measure 91 / measure 10]
     s1 * 29/16
 
-    % [06 RH_Voice_V measure 92 / measure 11]
+    % [RH_Voice_V measure 92 / measure 11]
     s1 * 27/16
 
-    % [06 RH_Voice_V measure 93 / measure 12]
+    % [RH_Voice_V measure 93 / measure 12]
     s1 * 21/16
 
-    % [06 RH_Voice_V measure 94 / measure 13]
+    % [RH_Voice_V measure 94 / measure 13]
     s1 * 15/16
 
-    % [06 RH_Voice_V measure 95 / measure 14]
+    % [RH_Voice_V measure 95 / measure 14]
     s1 * 4/4
 
-    % [06 RH_Voice_V measure 96 / measure 15]
+    % [RH_Voice_V measure 96 / measure 15]
     s1 * 7/4
 
-    % [06 RH_Voice_V measure 97 / measure 16]
+    % [RH_Voice_V measure 97 / measure 16]
     s1 * 1/4
 
     <<
@@ -2861,7 +2861,7 @@ f_RH_Voice_V = {
         \context Voice = "RH_Voice_V"
         {
 
-            % [06 RH_Voice_V measure 98 / measure 17]
+            % [RH_Voice_V measure 98 / measure 17]
             \abjad-invisible-music-coloring
             R1 * 1/4
 
@@ -2870,7 +2870,7 @@ f_RH_Voice_V = {
         \context Voice = "RH_Rest_Voice_V"
         {
 
-            % [06 RH_Rest_Voice_V measure 98 / measure 17]
+            % [RH_Rest_Voice_V measure 98 / measure 17]
             s1 * 1/4
 
         }
@@ -2882,52 +2882,52 @@ f_RH_Voice_V = {
 
 f_RH_Voice_VI = {
 
-    % [06 RH_Voice_VI measure 82 / measure 1]
+    % [RH_Voice_VI measure 82 / measure 1]
     s1 * 16/4
 
-    % [06 RH_Voice_VI measure 83 / measure 2]
+    % [RH_Voice_VI measure 83 / measure 2]
     s1 * 10/4
 
-    % [06 RH_Voice_VI measure 84 / measure 3]
+    % [RH_Voice_VI measure 84 / measure 3]
     s1 * 1/4
 
-    % [06 RH_Voice_VI measure 85 / measure 4]
+    % [RH_Voice_VI measure 85 / measure 4]
     s1 * 12/4
 
-    % [06 RH_Voice_VI measure 86 / measure 5]
+    % [RH_Voice_VI measure 86 / measure 5]
     s1 * 4/4
 
-    % [06 RH_Voice_VI measure 87 / measure 6]
+    % [RH_Voice_VI measure 87 / measure 6]
     s1 * 10/4
 
-    % [06 RH_Voice_VI measure 88 / measure 7]
+    % [RH_Voice_VI measure 88 / measure 7]
     s1 * 1/4
 
-    % [06 RH_Voice_VI measure 89 / measure 8]
+    % [RH_Voice_VI measure 89 / measure 8]
     s1 * 13/4
 
-    % [06 RH_Voice_VI measure 90 / measure 9]
+    % [RH_Voice_VI measure 90 / measure 9]
     s1 * 1/4
 
-    % [06 RH_Voice_VI measure 91 / measure 10]
+    % [RH_Voice_VI measure 91 / measure 10]
     s1 * 29/16
 
-    % [06 RH_Voice_VI measure 92 / measure 11]
+    % [RH_Voice_VI measure 92 / measure 11]
     s1 * 27/16
 
-    % [06 RH_Voice_VI measure 93 / measure 12]
+    % [RH_Voice_VI measure 93 / measure 12]
     s1 * 21/16
 
-    % [06 RH_Voice_VI measure 94 / measure 13]
+    % [RH_Voice_VI measure 94 / measure 13]
     s1 * 15/16
 
-    % [06 RH_Voice_VI measure 95 / measure 14]
+    % [RH_Voice_VI measure 95 / measure 14]
     s1 * 4/4
 
-    % [06 RH_Voice_VI measure 96 / measure 15]
+    % [RH_Voice_VI measure 96 / measure 15]
     s1 * 7/4
 
-    % [06 RH_Voice_VI measure 97 / measure 16]
+    % [RH_Voice_VI measure 97 / measure 16]
     s1 * 1/4
 
     <<
@@ -2935,7 +2935,7 @@ f_RH_Voice_VI = {
         \context Voice = "RH_Voice_VI"
         {
 
-            % [06 RH_Voice_VI measure 98 / measure 17]
+            % [RH_Voice_VI measure 98 / measure 17]
             \abjad-invisible-music-coloring
             R1 * 1/4
 
@@ -2944,7 +2944,7 @@ f_RH_Voice_VI = {
         \context Voice = "RH_Rest_Voice_VI"
         {
 
-            % [06 RH_Rest_Voice_VI measure 98 / measure 17]
+            % [RH_Rest_Voice_VI measure 98 / measure 17]
             s1 * 1/4
 
         }
@@ -2956,52 +2956,52 @@ f_RH_Voice_VI = {
 
 f_RH_Resonance_Voice = {
 
-    % [06 RH_Resonance_Voice measure 82 / measure 1]
+    % [RH_Resonance_Voice measure 82 / measure 1]
     s1 * 16/4
 
-    % [06 RH_Resonance_Voice measure 83 / measure 2]
+    % [RH_Resonance_Voice measure 83 / measure 2]
     s1 * 10/4
 
-    % [06 RH_Resonance_Voice measure 84 / measure 3]
+    % [RH_Resonance_Voice measure 84 / measure 3]
     s1 * 1/4
 
-    % [06 RH_Resonance_Voice measure 85 / measure 4]
+    % [RH_Resonance_Voice measure 85 / measure 4]
     s1 * 12/4
 
-    % [06 RH_Resonance_Voice measure 86 / measure 5]
+    % [RH_Resonance_Voice measure 86 / measure 5]
     s1 * 4/4
 
-    % [06 RH_Resonance_Voice measure 87 / measure 6]
+    % [RH_Resonance_Voice measure 87 / measure 6]
     s1 * 10/4
 
-    % [06 RH_Resonance_Voice measure 88 / measure 7]
+    % [RH_Resonance_Voice measure 88 / measure 7]
     s1 * 1/4
 
-    % [06 RH_Resonance_Voice measure 89 / measure 8]
+    % [RH_Resonance_Voice measure 89 / measure 8]
     s1 * 13/4
 
-    % [06 RH_Resonance_Voice measure 90 / measure 9]
+    % [RH_Resonance_Voice measure 90 / measure 9]
     s1 * 1/4
 
-    % [06 RH_Resonance_Voice measure 91 / measure 10]
+    % [RH_Resonance_Voice measure 91 / measure 10]
     s1 * 29/16
 
-    % [06 RH_Resonance_Voice measure 92 / measure 11]
+    % [RH_Resonance_Voice measure 92 / measure 11]
     s1 * 27/16
 
-    % [06 RH_Resonance_Voice measure 93 / measure 12]
+    % [RH_Resonance_Voice measure 93 / measure 12]
     s1 * 21/16
 
-    % [06 RH_Resonance_Voice measure 94 / measure 13]
+    % [RH_Resonance_Voice measure 94 / measure 13]
     s1 * 15/16
 
-    % [06 RH_Resonance_Voice measure 95 / measure 14]
+    % [RH_Resonance_Voice measure 95 / measure 14]
     s1 * 4/4
 
-    % [06 RH_Resonance_Voice measure 96 / measure 15]
+    % [RH_Resonance_Voice measure 96 / measure 15]
     s1 * 7/4
 
-    % [06 RH_Resonance_Voice measure 97 / measure 16]
+    % [RH_Resonance_Voice measure 97 / measure 16]
     s1 * 1/4
 
     <<
@@ -3009,7 +3009,7 @@ f_RH_Resonance_Voice = {
         \context Voice = "RH_Resonance_Voice"
         {
 
-            % [06 RH_Resonance_Voice measure 98 / measure 17]
+            % [RH_Resonance_Voice measure 98 / measure 17]
             \abjad-invisible-music-coloring
             R1 * 1/4
 
@@ -3018,7 +3018,7 @@ f_RH_Resonance_Voice = {
         \context Voice = "RH_Resonance_Rest_Voice"
         {
 
-            % [06 RH_Resonance_Rest_Voice measure 98 / measure 17]
+            % [RH_Resonance_Rest_Voice measure 98 / measure 17]
             s1 * 1/4
 
         }
@@ -3068,52 +3068,52 @@ f_Piano_Music_RH_Staff = <<
 
 f_LH_Voice_I = {
 
-    % [06 LH_Voice_I measure 82 / measure 1]
+    % [LH_Voice_I measure 82 / measure 1]
     s1 * 16/4
 
-    % [06 LH_Voice_I measure 83 / measure 2]
+    % [LH_Voice_I measure 83 / measure 2]
     s1 * 10/4
 
-    % [06 LH_Voice_I measure 84 / measure 3]
+    % [LH_Voice_I measure 84 / measure 3]
     s1 * 1/4
 
-    % [06 LH_Voice_I measure 85 / measure 4]
+    % [LH_Voice_I measure 85 / measure 4]
     s1 * 12/4
 
-    % [06 LH_Voice_I measure 86 / measure 5]
+    % [LH_Voice_I measure 86 / measure 5]
     s1 * 4/4
 
-    % [06 LH_Voice_I measure 87 / measure 6]
+    % [LH_Voice_I measure 87 / measure 6]
     s1 * 10/4
 
-    % [06 LH_Voice_I measure 88 / measure 7]
+    % [LH_Voice_I measure 88 / measure 7]
     s1 * 1/4
 
-    % [06 LH_Voice_I measure 89 / measure 8]
+    % [LH_Voice_I measure 89 / measure 8]
     s1 * 13/4
 
-    % [06 LH_Voice_I measure 90 / measure 9]
+    % [LH_Voice_I measure 90 / measure 9]
     s1 * 1/4
 
-    % [06 LH_Voice_I measure 91 / measure 10]
+    % [LH_Voice_I measure 91 / measure 10]
     s1 * 29/16
 
-    % [06 LH_Voice_I measure 92 / measure 11]
+    % [LH_Voice_I measure 92 / measure 11]
     s1 * 27/16
 
-    % [06 LH_Voice_I measure 93 / measure 12]
+    % [LH_Voice_I measure 93 / measure 12]
     s1 * 21/16
 
-    % [06 LH_Voice_I measure 94 / measure 13]
+    % [LH_Voice_I measure 94 / measure 13]
     s1 * 15/16
 
-    % [06 LH_Voice_I measure 95 / measure 14]
+    % [LH_Voice_I measure 95 / measure 14]
     s1 * 4/4
 
-    % [06 LH_Voice_I measure 96 / measure 15]
+    % [LH_Voice_I measure 96 / measure 15]
     s1 * 7/4
 
-    % [06 LH_Voice_I measure 97 / measure 16]
+    % [LH_Voice_I measure 97 / measure 16]
     s1 * 1/4
 
     <<
@@ -3121,7 +3121,7 @@ f_LH_Voice_I = {
         \context Voice = "LH_Voice_I"
         {
 
-            % [06 LH_Voice_I measure 98 / measure 17]
+            % [LH_Voice_I measure 98 / measure 17]
             \abjad-invisible-music-coloring
             R1 * 1/4
 
@@ -3130,7 +3130,7 @@ f_LH_Voice_I = {
         \context Voice = "LH_Rest_Voice_I"
         {
 
-            % [06 LH_Rest_Voice_I measure 98 / measure 17]
+            % [LH_Rest_Voice_I measure 98 / measure 17]
             s1 * 1/4
 
         }
@@ -3142,52 +3142,52 @@ f_LH_Voice_I = {
 
 f_LH_Voice_II = {
 
-    % [06 LH_Voice_II measure 82 / measure 1]
+    % [LH_Voice_II measure 82 / measure 1]
     s1 * 16/4
 
-    % [06 LH_Voice_II measure 83 / measure 2]
+    % [LH_Voice_II measure 83 / measure 2]
     s1 * 10/4
 
-    % [06 LH_Voice_II measure 84 / measure 3]
+    % [LH_Voice_II measure 84 / measure 3]
     s1 * 1/4
 
-    % [06 LH_Voice_II measure 85 / measure 4]
+    % [LH_Voice_II measure 85 / measure 4]
     s1 * 12/4
 
-    % [06 LH_Voice_II measure 86 / measure 5]
+    % [LH_Voice_II measure 86 / measure 5]
     s1 * 4/4
 
-    % [06 LH_Voice_II measure 87 / measure 6]
+    % [LH_Voice_II measure 87 / measure 6]
     s1 * 10/4
 
-    % [06 LH_Voice_II measure 88 / measure 7]
+    % [LH_Voice_II measure 88 / measure 7]
     s1 * 1/4
 
-    % [06 LH_Voice_II measure 89 / measure 8]
+    % [LH_Voice_II measure 89 / measure 8]
     s1 * 13/4
 
-    % [06 LH_Voice_II measure 90 / measure 9]
+    % [LH_Voice_II measure 90 / measure 9]
     s1 * 1/4
 
-    % [06 LH_Voice_II measure 91 / measure 10]
+    % [LH_Voice_II measure 91 / measure 10]
     s1 * 29/16
 
-    % [06 LH_Voice_II measure 92 / measure 11]
+    % [LH_Voice_II measure 92 / measure 11]
     s1 * 27/16
 
-    % [06 LH_Voice_II measure 93 / measure 12]
+    % [LH_Voice_II measure 93 / measure 12]
     s1 * 21/16
 
-    % [06 LH_Voice_II measure 94 / measure 13]
+    % [LH_Voice_II measure 94 / measure 13]
     s1 * 15/16
 
-    % [06 LH_Voice_II measure 95 / measure 14]
+    % [LH_Voice_II measure 95 / measure 14]
     s1 * 4/4
 
-    % [06 LH_Voice_II measure 96 / measure 15]
+    % [LH_Voice_II measure 96 / measure 15]
     s1 * 7/4
 
-    % [06 LH_Voice_II measure 97 / measure 16]
+    % [LH_Voice_II measure 97 / measure 16]
     s1 * 1/4
 
     <<
@@ -3195,7 +3195,7 @@ f_LH_Voice_II = {
         \context Voice = "LH_Voice_II"
         {
 
-            % [06 LH_Voice_II measure 98 / measure 17]
+            % [LH_Voice_II measure 98 / measure 17]
             \abjad-invisible-music-coloring
             R1 * 1/4
 
@@ -3204,7 +3204,7 @@ f_LH_Voice_II = {
         \context Voice = "LH_Rest_Voice_II"
         {
 
-            % [06 LH_Rest_Voice_II measure 98 / measure 17]
+            % [LH_Rest_Voice_II measure 98 / measure 17]
             s1 * 1/4
 
         }
@@ -3216,52 +3216,52 @@ f_LH_Voice_II = {
 
 f_LH_Voice_III = {
 
-    % [06 LH_Voice_III measure 82 / measure 1]
+    % [LH_Voice_III measure 82 / measure 1]
     s1 * 16/4
 
-    % [06 LH_Voice_III measure 83 / measure 2]
+    % [LH_Voice_III measure 83 / measure 2]
     s1 * 10/4
 
-    % [06 LH_Voice_III measure 84 / measure 3]
+    % [LH_Voice_III measure 84 / measure 3]
     s1 * 1/4
 
-    % [06 LH_Voice_III measure 85 / measure 4]
+    % [LH_Voice_III measure 85 / measure 4]
     s1 * 12/4
 
-    % [06 LH_Voice_III measure 86 / measure 5]
+    % [LH_Voice_III measure 86 / measure 5]
     s1 * 4/4
 
-    % [06 LH_Voice_III measure 87 / measure 6]
+    % [LH_Voice_III measure 87 / measure 6]
     s1 * 10/4
 
-    % [06 LH_Voice_III measure 88 / measure 7]
+    % [LH_Voice_III measure 88 / measure 7]
     s1 * 1/4
 
-    % [06 LH_Voice_III measure 89 / measure 8]
+    % [LH_Voice_III measure 89 / measure 8]
     s1 * 13/4
 
-    % [06 LH_Voice_III measure 90 / measure 9]
+    % [LH_Voice_III measure 90 / measure 9]
     s1 * 1/4
 
-    % [06 LH_Voice_III measure 91 / measure 10]
+    % [LH_Voice_III measure 91 / measure 10]
     s1 * 29/16
 
-    % [06 LH_Voice_III measure 92 / measure 11]
+    % [LH_Voice_III measure 92 / measure 11]
     s1 * 27/16
 
-    % [06 LH_Voice_III measure 93 / measure 12]
+    % [LH_Voice_III measure 93 / measure 12]
     s1 * 21/16
 
-    % [06 LH_Voice_III measure 94 / measure 13]
+    % [LH_Voice_III measure 94 / measure 13]
     s1 * 15/16
 
-    % [06 LH_Voice_III measure 95 / measure 14]
+    % [LH_Voice_III measure 95 / measure 14]
     s1 * 4/4
 
-    % [06 LH_Voice_III measure 96 / measure 15]
+    % [LH_Voice_III measure 96 / measure 15]
     s1 * 7/4
 
-    % [06 LH_Voice_III measure 97 / measure 16]
+    % [LH_Voice_III measure 97 / measure 16]
     s1 * 1/4
 
     <<
@@ -3269,7 +3269,7 @@ f_LH_Voice_III = {
         \context Voice = "LH_Voice_III"
         {
 
-            % [06 LH_Voice_III measure 98 / measure 17]
+            % [LH_Voice_III measure 98 / measure 17]
             \abjad-invisible-music-coloring
             R1 * 1/4
 
@@ -3278,7 +3278,7 @@ f_LH_Voice_III = {
         \context Voice = "LH_Rest_Voice_III"
         {
 
-            % [06 LH_Rest_Voice_III measure 98 / measure 17]
+            % [LH_Rest_Voice_III measure 98 / measure 17]
             s1 * 1/4
 
         }
@@ -3290,7 +3290,7 @@ f_LH_Voice_III = {
 
 f_LH_Voice_IV = {
 
-    % [06 LH_Voice_IV measure 82 / measure 1]
+    % [LH_Voice_IV measure 82 / measure 1]
     \clef "treble"
     \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'green4)
     \set PianoMusicLHStaff.forceClef = ##t
@@ -3310,7 +3310,7 @@ f_LH_Voice_IV = {
         \scaleDurations #'(1 . 1)
         {
 
-            % [06 LH_Voice_IV measure 85 / measure 4]
+            % [LH_Voice_IV measure 85 / measure 4]
             \override Slur.direction = #down
             \override Script.direction = #up
         %%% \once \override PianoMusicLHStaff.Clef.X-extent = ##f
@@ -3354,7 +3354,7 @@ f_LH_Voice_IV = {
 
     }
 
-    % [06 LH_Voice_IV measure 86 / measure 5]
+    % [LH_Voice_IV measure 86 / measure 5]
     s1 * 1
 
     {
@@ -3362,7 +3362,7 @@ f_LH_Voice_IV = {
         \scaleDurations #'(1 . 1)
         {
 
-            % [06 LH_Voice_IV measure 87 / measure 6]
+            % [LH_Voice_IV measure 87 / measure 6]
             \override Slur.direction = #down
             r2
 
@@ -3424,7 +3424,7 @@ f_LH_Voice_IV = {
 
     }
 
-    % [06 LH_Voice_IV measure 88 / measure 7]
+    % [LH_Voice_IV measure 88 / measure 7]
     s1 * 1/4
 
     {
@@ -3432,7 +3432,7 @@ f_LH_Voice_IV = {
         \scaleDurations #'(1 . 1)
         {
 
-            % [06 LH_Voice_IV measure 89 / measure 8]
+            % [LH_Voice_IV measure 89 / measure 8]
             b'8.
             - \staccato
             - \tenuto
@@ -3538,7 +3538,7 @@ f_LH_Voice_IV = {
 
     }
 
-    % [06 LH_Voice_IV measure 90 / measure 9]
+    % [LH_Voice_IV measure 90 / measure 9]
     s1 * 7
 
     {
@@ -3546,7 +3546,7 @@ f_LH_Voice_IV = {
         \scaleDurations #'(1 . 1)
         {
 
-            % [06 LH_Voice_IV measure 96 / measure 15]
+            % [LH_Voice_IV measure 96 / measure 15]
             r2..
 
             cs'!8
@@ -3605,7 +3605,7 @@ f_LH_Voice_IV = {
         \scaleDurations #'(1 . 1)
         {
 
-            % [06 LH_Voice_IV measure 97 / measure 16]
+            % [LH_Voice_IV measure 97 / measure 16]
             \once \override Rest.transparent = ##t
             \once \override PianoMusicLHStaff.Clef.X-extent = ##f
             \once \override PianoMusicLHStaff.Clef.extra-offset = #'(-2.5 . 0)
@@ -3626,7 +3626,7 @@ f_LH_Voice_IV = {
         \context Voice = "LH_Voice_IV"
         {
 
-            % [06 LH_Voice_IV measure 98 / measure 17]
+            % [LH_Voice_IV measure 98 / measure 17]
             \abjad-invisible-music-coloring
             \baca-not-yet-pitched-coloring
             b'1 * 1/4
@@ -3636,7 +3636,7 @@ f_LH_Voice_IV = {
         \context Voice = "LH_Rest_Voice_IV"
         {
 
-            % [06 LH_Rest_Voice_IV measure 98 / measure 17]
+            % [LH_Rest_Voice_IV measure 98 / measure 17]
             s1 * 1/4
 
         }
@@ -3648,52 +3648,52 @@ f_LH_Voice_IV = {
 
 f_LH_Voice_IV_Inserts = {
 
-    % [06 LH_Voice_IV_Inserts measure 82 / measure 1]
+    % [LH_Voice_IV_Inserts measure 82 / measure 1]
     s1 * 16/4
 
-    % [06 LH_Voice_IV_Inserts measure 83 / measure 2]
+    % [LH_Voice_IV_Inserts measure 83 / measure 2]
     s1 * 10/4
 
-    % [06 LH_Voice_IV_Inserts measure 84 / measure 3]
+    % [LH_Voice_IV_Inserts measure 84 / measure 3]
     s1 * 1/4
 
-    % [06 LH_Voice_IV_Inserts measure 85 / measure 4]
+    % [LH_Voice_IV_Inserts measure 85 / measure 4]
     s1 * 12/4
 
-    % [06 LH_Voice_IV_Inserts measure 86 / measure 5]
+    % [LH_Voice_IV_Inserts measure 86 / measure 5]
     s1 * 4/4
 
-    % [06 LH_Voice_IV_Inserts measure 87 / measure 6]
+    % [LH_Voice_IV_Inserts measure 87 / measure 6]
     s1 * 10/4
 
-    % [06 LH_Voice_IV_Inserts measure 88 / measure 7]
+    % [LH_Voice_IV_Inserts measure 88 / measure 7]
     s1 * 1/4
 
-    % [06 LH_Voice_IV_Inserts measure 89 / measure 8]
+    % [LH_Voice_IV_Inserts measure 89 / measure 8]
     s1 * 13/4
 
-    % [06 LH_Voice_IV_Inserts measure 90 / measure 9]
+    % [LH_Voice_IV_Inserts measure 90 / measure 9]
     s1 * 1/4
 
-    % [06 LH_Voice_IV_Inserts measure 91 / measure 10]
+    % [LH_Voice_IV_Inserts measure 91 / measure 10]
     s1 * 29/16
 
-    % [06 LH_Voice_IV_Inserts measure 92 / measure 11]
+    % [LH_Voice_IV_Inserts measure 92 / measure 11]
     s1 * 27/16
 
-    % [06 LH_Voice_IV_Inserts measure 93 / measure 12]
+    % [LH_Voice_IV_Inserts measure 93 / measure 12]
     s1 * 21/16
 
-    % [06 LH_Voice_IV_Inserts measure 94 / measure 13]
+    % [LH_Voice_IV_Inserts measure 94 / measure 13]
     s1 * 15/16
 
-    % [06 LH_Voice_IV_Inserts measure 95 / measure 14]
+    % [LH_Voice_IV_Inserts measure 95 / measure 14]
     s1 * 4/4
 
-    % [06 LH_Voice_IV_Inserts measure 96 / measure 15]
+    % [LH_Voice_IV_Inserts measure 96 / measure 15]
     s1 * 7/4
 
-    % [06 LH_Voice_IV_Inserts measure 97 / measure 16]
+    % [LH_Voice_IV_Inserts measure 97 / measure 16]
     s1 * 1/4
 
     <<
@@ -3701,7 +3701,7 @@ f_LH_Voice_IV_Inserts = {
         \context Voice = "LH_Voice_IV_Inserts"
         {
 
-            % [06 LH_Voice_IV_Inserts measure 98 / measure 17]
+            % [LH_Voice_IV_Inserts measure 98 / measure 17]
             \abjad-invisible-music-coloring
             R1 * 1/4
 
@@ -3710,7 +3710,7 @@ f_LH_Voice_IV_Inserts = {
         \context Voice = "LH_Rest_Voice_IV_Inserts"
         {
 
-            % [06 LH_Rest_Voice_IV_Inserts measure 98 / measure 17]
+            % [LH_Rest_Voice_IV_Inserts measure 98 / measure 17]
             s1 * 1/4
 
         }
@@ -3722,7 +3722,7 @@ f_LH_Voice_IV_Inserts = {
 
 f_LH_Voice_V = {
 
-    % [06 LH_Voice_V measure 82 / measure 1]
+    % [LH_Voice_V measure 82 / measure 1]
     s1 * 39/4
     - \tweak color #(x11-color 'green4)
     \p
@@ -3738,7 +3738,7 @@ f_LH_Voice_V = {
         \scaleDurations #'(1 . 1)
         {
 
-            % [06 LH_Voice_V measure 86 / measure 5]
+            % [LH_Voice_V measure 86 / measure 5]
             \override Stem.direction = #up
             \dynamicUp
             bf,,!8.
@@ -3774,7 +3774,7 @@ f_LH_Voice_V = {
         \context Voice = "LH_Voice_V"
         {
 
-            % [06 LH_Voice_V measure 87 / measure 6]
+            % [LH_Voice_V measure 87 / measure 6]
             \abjad-invisible-music-coloring
             \baca-not-yet-pitched-coloring
             d1 * 5/2
@@ -3784,41 +3784,41 @@ f_LH_Voice_V = {
         \context Voice = "LH_Rest_Voice_V"
         {
 
-            % [06 LH_Rest_Voice_V measure 87 / measure 6]
+            % [LH_Rest_Voice_V measure 87 / measure 6]
             s1 * 5/2
 
         }
 
     >>
 
-    % [06 LH_Voice_V measure 88 / measure 7]
+    % [LH_Voice_V measure 88 / measure 7]
     s1 * 1/4
 
-    % [06 LH_Voice_V measure 89 / measure 8]
+    % [LH_Voice_V measure 89 / measure 8]
     s1 * 13/4
 
-    % [06 LH_Voice_V measure 90 / measure 9]
+    % [LH_Voice_V measure 90 / measure 9]
     s1 * 1/4
 
-    % [06 LH_Voice_V measure 91 / measure 10]
+    % [LH_Voice_V measure 91 / measure 10]
     s1 * 29/16
 
-    % [06 LH_Voice_V measure 92 / measure 11]
+    % [LH_Voice_V measure 92 / measure 11]
     s1 * 27/16
 
-    % [06 LH_Voice_V measure 93 / measure 12]
+    % [LH_Voice_V measure 93 / measure 12]
     s1 * 21/16
 
-    % [06 LH_Voice_V measure 94 / measure 13]
+    % [LH_Voice_V measure 94 / measure 13]
     s1 * 15/16
 
-    % [06 LH_Voice_V measure 95 / measure 14]
+    % [LH_Voice_V measure 95 / measure 14]
     s1 * 1
 
-    % [06 LH_Voice_V measure 96 / measure 15]
+    % [LH_Voice_V measure 96 / measure 15]
     s1 * 7/4
 
-    % [06 LH_Voice_V measure 97 / measure 16]
+    % [LH_Voice_V measure 97 / measure 16]
     s1 * 1/4
 
     <<
@@ -3826,7 +3826,7 @@ f_LH_Voice_V = {
         \context Voice = "LH_Voice_V"
         {
 
-            % [06 LH_Voice_V measure 98 / measure 17]
+            % [LH_Voice_V measure 98 / measure 17]
             \abjad-invisible-music-coloring
             \baca-not-yet-pitched-coloring
             b'1 * 1/4
@@ -3836,7 +3836,7 @@ f_LH_Voice_V = {
         \context Voice = "LH_Rest_Voice_V"
         {
 
-            % [06 LH_Rest_Voice_V measure 98 / measure 17]
+            % [LH_Rest_Voice_V measure 98 / measure 17]
             s1 * 1/4
 
         }
@@ -3848,52 +3848,52 @@ f_LH_Voice_V = {
 
 f_LH_Voice_V_Inserts = {
 
-    % [06 LH_Voice_V_Inserts measure 82 / measure 1]
+    % [LH_Voice_V_Inserts measure 82 / measure 1]
     s1 * 16/4
 
-    % [06 LH_Voice_V_Inserts measure 83 / measure 2]
+    % [LH_Voice_V_Inserts measure 83 / measure 2]
     s1 * 10/4
 
-    % [06 LH_Voice_V_Inserts measure 84 / measure 3]
+    % [LH_Voice_V_Inserts measure 84 / measure 3]
     s1 * 1/4
 
-    % [06 LH_Voice_V_Inserts measure 85 / measure 4]
+    % [LH_Voice_V_Inserts measure 85 / measure 4]
     s1 * 12/4
 
-    % [06 LH_Voice_V_Inserts measure 86 / measure 5]
+    % [LH_Voice_V_Inserts measure 86 / measure 5]
     s1 * 4/4
 
-    % [06 LH_Voice_V_Inserts measure 87 / measure 6]
+    % [LH_Voice_V_Inserts measure 87 / measure 6]
     s1 * 10/4
 
-    % [06 LH_Voice_V_Inserts measure 88 / measure 7]
+    % [LH_Voice_V_Inserts measure 88 / measure 7]
     s1 * 1/4
 
-    % [06 LH_Voice_V_Inserts measure 89 / measure 8]
+    % [LH_Voice_V_Inserts measure 89 / measure 8]
     s1 * 13/4
 
-    % [06 LH_Voice_V_Inserts measure 90 / measure 9]
+    % [LH_Voice_V_Inserts measure 90 / measure 9]
     s1 * 1/4
 
-    % [06 LH_Voice_V_Inserts measure 91 / measure 10]
+    % [LH_Voice_V_Inserts measure 91 / measure 10]
     s1 * 29/16
 
-    % [06 LH_Voice_V_Inserts measure 92 / measure 11]
+    % [LH_Voice_V_Inserts measure 92 / measure 11]
     s1 * 27/16
 
-    % [06 LH_Voice_V_Inserts measure 93 / measure 12]
+    % [LH_Voice_V_Inserts measure 93 / measure 12]
     s1 * 21/16
 
-    % [06 LH_Voice_V_Inserts measure 94 / measure 13]
+    % [LH_Voice_V_Inserts measure 94 / measure 13]
     s1 * 15/16
 
-    % [06 LH_Voice_V_Inserts measure 95 / measure 14]
+    % [LH_Voice_V_Inserts measure 95 / measure 14]
     s1 * 4/4
 
-    % [06 LH_Voice_V_Inserts measure 96 / measure 15]
+    % [LH_Voice_V_Inserts measure 96 / measure 15]
     s1 * 7/4
 
-    % [06 LH_Voice_V_Inserts measure 97 / measure 16]
+    % [LH_Voice_V_Inserts measure 97 / measure 16]
     s1 * 1/4
 
     <<
@@ -3901,7 +3901,7 @@ f_LH_Voice_V_Inserts = {
         \context Voice = "LH_Voice_V_Inserts"
         {
 
-            % [06 LH_Voice_V_Inserts measure 98 / measure 17]
+            % [LH_Voice_V_Inserts measure 98 / measure 17]
             \abjad-invisible-music-coloring
             R1 * 1/4
 
@@ -3910,7 +3910,7 @@ f_LH_Voice_V_Inserts = {
         \context Voice = "LH_Rest_Voice_V_Inserts"
         {
 
-            % [06 LH_Rest_Voice_V_Inserts measure 98 / measure 17]
+            % [LH_Rest_Voice_V_Inserts measure 98 / measure 17]
             s1 * 1/4
 
         }
@@ -3922,7 +3922,7 @@ f_LH_Voice_V_Inserts = {
 
 f_LH_Voice_VI = {
 
-    % [06 LH_Voice_VI measure 82 / measure 1]
+    % [LH_Voice_VI measure 82 / measure 1]
     s1 * 39/4
     - \tweak color #(x11-color 'green4)
     \f
@@ -3939,7 +3939,7 @@ f_LH_Voice_VI = {
         \times 4/3
         {
 
-            % [06 LH_Voice_VI measure 86 / measure 5]
+            % [LH_Voice_VI measure 86 / measure 5]
             \ottava -1
             \override Stem.direction = #down
             \override TupletBracket.direction = #down
@@ -3970,7 +3970,7 @@ f_LH_Voice_VI = {
         \context Voice = "LH_Voice_VI"
         {
 
-            % [06 LH_Voice_VI measure 87 / measure 6]
+            % [LH_Voice_VI measure 87 / measure 6]
             \abjad-invisible-music-coloring
             \baca-not-yet-pitched-coloring
             d1 * 5/2
@@ -3980,41 +3980,41 @@ f_LH_Voice_VI = {
         \context Voice = "LH_Rest_Voice_VI"
         {
 
-            % [06 LH_Rest_Voice_VI measure 87 / measure 6]
+            % [LH_Rest_Voice_VI measure 87 / measure 6]
             s1 * 5/2
 
         }
 
     >>
 
-    % [06 LH_Voice_VI measure 88 / measure 7]
+    % [LH_Voice_VI measure 88 / measure 7]
     s1 * 1/4
 
-    % [06 LH_Voice_VI measure 89 / measure 8]
+    % [LH_Voice_VI measure 89 / measure 8]
     s1 * 13/4
 
-    % [06 LH_Voice_VI measure 90 / measure 9]
+    % [LH_Voice_VI measure 90 / measure 9]
     s1 * 1/4
 
-    % [06 LH_Voice_VI measure 91 / measure 10]
+    % [LH_Voice_VI measure 91 / measure 10]
     s1 * 29/16
 
-    % [06 LH_Voice_VI measure 92 / measure 11]
+    % [LH_Voice_VI measure 92 / measure 11]
     s1 * 27/16
 
-    % [06 LH_Voice_VI measure 93 / measure 12]
+    % [LH_Voice_VI measure 93 / measure 12]
     s1 * 21/16
 
-    % [06 LH_Voice_VI measure 94 / measure 13]
+    % [LH_Voice_VI measure 94 / measure 13]
     s1 * 15/16
 
-    % [06 LH_Voice_VI measure 95 / measure 14]
+    % [LH_Voice_VI measure 95 / measure 14]
     s1 * 1
 
-    % [06 LH_Voice_VI measure 96 / measure 15]
+    % [LH_Voice_VI measure 96 / measure 15]
     s1 * 7/4
 
-    % [06 LH_Voice_VI measure 97 / measure 16]
+    % [LH_Voice_VI measure 97 / measure 16]
     s1 * 1/4
 
     <<
@@ -4022,7 +4022,7 @@ f_LH_Voice_VI = {
         \context Voice = "LH_Voice_VI"
         {
 
-            % [06 LH_Voice_VI measure 98 / measure 17]
+            % [LH_Voice_VI measure 98 / measure 17]
             \abjad-invisible-music-coloring
             \baca-not-yet-pitched-coloring
             b'1 * 1/4
@@ -4032,7 +4032,7 @@ f_LH_Voice_VI = {
         \context Voice = "LH_Rest_Voice_VI"
         {
 
-            % [06 LH_Rest_Voice_VI measure 98 / measure 17]
+            % [LH_Rest_Voice_VI measure 98 / measure 17]
             s1 * 1/4
 
         }
@@ -4044,52 +4044,52 @@ f_LH_Voice_VI = {
 
 f_LH_Voice_VI_Inserts = {
 
-    % [06 LH_Voice_VI_Inserts measure 82 / measure 1]
+    % [LH_Voice_VI_Inserts measure 82 / measure 1]
     s1 * 16/4
 
-    % [06 LH_Voice_VI_Inserts measure 83 / measure 2]
+    % [LH_Voice_VI_Inserts measure 83 / measure 2]
     s1 * 10/4
 
-    % [06 LH_Voice_VI_Inserts measure 84 / measure 3]
+    % [LH_Voice_VI_Inserts measure 84 / measure 3]
     s1 * 1/4
 
-    % [06 LH_Voice_VI_Inserts measure 85 / measure 4]
+    % [LH_Voice_VI_Inserts measure 85 / measure 4]
     s1 * 12/4
 
-    % [06 LH_Voice_VI_Inserts measure 86 / measure 5]
+    % [LH_Voice_VI_Inserts measure 86 / measure 5]
     s1 * 4/4
 
-    % [06 LH_Voice_VI_Inserts measure 87 / measure 6]
+    % [LH_Voice_VI_Inserts measure 87 / measure 6]
     s1 * 10/4
 
-    % [06 LH_Voice_VI_Inserts measure 88 / measure 7]
+    % [LH_Voice_VI_Inserts measure 88 / measure 7]
     s1 * 1/4
 
-    % [06 LH_Voice_VI_Inserts measure 89 / measure 8]
+    % [LH_Voice_VI_Inserts measure 89 / measure 8]
     s1 * 13/4
 
-    % [06 LH_Voice_VI_Inserts measure 90 / measure 9]
+    % [LH_Voice_VI_Inserts measure 90 / measure 9]
     s1 * 1/4
 
-    % [06 LH_Voice_VI_Inserts measure 91 / measure 10]
+    % [LH_Voice_VI_Inserts measure 91 / measure 10]
     s1 * 29/16
 
-    % [06 LH_Voice_VI_Inserts measure 92 / measure 11]
+    % [LH_Voice_VI_Inserts measure 92 / measure 11]
     s1 * 27/16
 
-    % [06 LH_Voice_VI_Inserts measure 93 / measure 12]
+    % [LH_Voice_VI_Inserts measure 93 / measure 12]
     s1 * 21/16
 
-    % [06 LH_Voice_VI_Inserts measure 94 / measure 13]
+    % [LH_Voice_VI_Inserts measure 94 / measure 13]
     s1 * 15/16
 
-    % [06 LH_Voice_VI_Inserts measure 95 / measure 14]
+    % [LH_Voice_VI_Inserts measure 95 / measure 14]
     s1 * 4/4
 
-    % [06 LH_Voice_VI_Inserts measure 96 / measure 15]
+    % [LH_Voice_VI_Inserts measure 96 / measure 15]
     s1 * 7/4
 
-    % [06 LH_Voice_VI_Inserts measure 97 / measure 16]
+    % [LH_Voice_VI_Inserts measure 97 / measure 16]
     s1 * 1/4
 
     <<
@@ -4097,7 +4097,7 @@ f_LH_Voice_VI_Inserts = {
         \context Voice = "LH_Voice_VI_Inserts"
         {
 
-            % [06 LH_Voice_VI_Inserts measure 98 / measure 17]
+            % [LH_Voice_VI_Inserts measure 98 / measure 17]
             \abjad-invisible-music-coloring
             R1 * 1/4
 
@@ -4106,7 +4106,7 @@ f_LH_Voice_VI_Inserts = {
         \context Voice = "LH_Rest_Voice_VI_Inserts"
         {
 
-            % [06 LH_Rest_Voice_VI_Inserts measure 98 / measure 17]
+            % [LH_Rest_Voice_VI_Inserts measure 98 / measure 17]
             s1 * 1/4
 
         }
@@ -4118,7 +4118,7 @@ f_LH_Voice_VI_Inserts = {
 
 f_LH_Resonance_Voice = {
 
-    % [06 LH_Resonance_Voice measure 82 / measure 1]
+    % [LH_Resonance_Voice measure 82 / measure 1]
     \override Dots.transparent = ##t
     s1 * 17
     - \abjad-dashed-line-with-hook
@@ -4133,7 +4133,7 @@ f_LH_Resonance_Voice = {
         \scaleDurations #'(1 . 1)
         {
 
-            % [06 LH_Resonance_Voice measure 91 / measure 10]
+            % [LH_Resonance_Voice measure 91 / measure 10]
             <cs,,! cs,!>1..
             - \tweak stencil ##f
             ~
@@ -4159,7 +4159,7 @@ f_LH_Resonance_Voice = {
         \scaleDurations #'(1 . 1)
         {
 
-            % [06 LH_Resonance_Voice measure 92 / measure 11]
+            % [LH_Resonance_Voice measure 92 / measure 11]
             \once \override Accidental.stencil = ##f
             \override Stem.transparent = ##t
             <cs,, cs,>1.
@@ -4187,7 +4187,7 @@ f_LH_Resonance_Voice = {
         \scaleDurations #'(1 . 1)
         {
 
-            % [06 LH_Resonance_Voice measure 93 / measure 12]
+            % [LH_Resonance_Voice measure 93 / measure 12]
             <ef,,! ef,!>1
             - \tweak stencil ##f
             ~
@@ -4225,7 +4225,7 @@ f_LH_Resonance_Voice = {
         \scaleDurations #'(1 . 1)
         {
 
-            % [06 LH_Resonance_Voice measure 94 / measure 13]
+            % [LH_Resonance_Voice measure 94 / measure 13]
             \once \override Accidental.stencil = ##f
             \once \override Stem.transparent = ##t
             <ef,, ef,>2...
@@ -4242,7 +4242,7 @@ f_LH_Resonance_Voice = {
         \scaleDurations #'(1 . 1)
         {
 
-            % [06 LH_Resonance_Voice measure 95 / measure 14]
+            % [LH_Resonance_Voice measure 95 / measure 14]
             \once \override Accidental.stencil = ##f
             \once \override Stem.transparent = ##t
             <ef,, ef,>1
@@ -4258,7 +4258,7 @@ f_LH_Resonance_Voice = {
         \context Voice = "LH_Resonance_Voice"
         {
 
-            % [06 LH_Resonance_Voice measure 96 / measure 15]
+            % [LH_Resonance_Voice measure 96 / measure 15]
             \abjad-invisible-music-coloring
             \baca-not-yet-pitched-coloring
             d1 * 7/4
@@ -4268,14 +4268,14 @@ f_LH_Resonance_Voice = {
         \context Voice = "LH_Resonance_Rest_Voice"
         {
 
-            % [06 LH_Resonance_Rest_Voice measure 96 / measure 15]
+            % [LH_Resonance_Rest_Voice measure 96 / measure 15]
             s1 * 7/4
 
         }
 
     >>
 
-    % [06 LH_Resonance_Voice measure 97 / measure 16]
+    % [LH_Resonance_Voice measure 97 / measure 16]
     s1 * 1/4
     \revert Dots.transparent
 
@@ -4284,7 +4284,7 @@ f_LH_Resonance_Voice = {
         \context Voice = "LH_Resonance_Voice"
         {
 
-            % [06 LH_Resonance_Voice measure 98 / measure 17]
+            % [LH_Resonance_Voice measure 98 / measure 17]
             \abjad-invisible-music-coloring
             \baca-not-yet-pitched-coloring
             b'1 * 1/4
@@ -4294,7 +4294,7 @@ f_LH_Resonance_Voice = {
         \context Voice = "LH_Resonance_Rest_Voice"
         {
 
-            % [06 LH_Resonance_Rest_Voice measure 98 / measure 17]
+            % [LH_Resonance_Rest_Voice measure 98 / measure 17]
             s1 * 1/4
 
         }
