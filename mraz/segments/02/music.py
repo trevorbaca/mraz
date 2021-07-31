@@ -227,6 +227,8 @@ accumulator(
 
 maker = baca.SegmentMaker(
     check_all_are_pitched=True,
+    instruments=mraz.instruments,
+    metronome_marks=mraz.metronome_marks,
     score_template=mraz.ScoreTemplate(),
     skips_instead_of_rests=True,
     time_signatures=accumulator.time_signatures,
