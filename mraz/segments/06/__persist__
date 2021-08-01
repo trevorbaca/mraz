@@ -62,7 +62,7 @@ abjad.OrderedDict(
                     (
                         "LH_Voice_IV",
                         [
-                            baca.Momento(
+                            baca.Memento(
                                 context="LH_Voice_IV",
                                 prototype="abjad.Dynamic",
                                 value="p",
@@ -72,7 +72,7 @@ abjad.OrderedDict(
                     (
                         "LH_Voice_V",
                         [
-                            baca.Momento(
+                            baca.Memento(
                                 context="LH_Voice_V",
                                 prototype="abjad.Dynamic",
                                 value="ppp",
@@ -82,7 +82,7 @@ abjad.OrderedDict(
                     (
                         "LH_Voice_VI",
                         [
-                            baca.Momento(
+                            baca.Memento(
                                 context="LH_Voice_VI",
                                 prototype="abjad.Dynamic",
                                 value="f",
@@ -92,7 +92,7 @@ abjad.OrderedDict(
                     (
                         "Piano_Music_LH_Staff",
                         [
-                            baca.Momento(
+                            baca.Memento(
                                 context="LH_Voice_IV",
                                 prototype="abjad.Clef",
                                 value="treble",
@@ -102,7 +102,7 @@ abjad.OrderedDict(
                     (
                         "Piano_Music_RH_Staff",
                         [
-                            baca.Momento(
+                            baca.Memento(
                                 context="RH_Voice_I",
                                 prototype="abjad.Clef",
                                 value="treble",
@@ -112,7 +112,7 @@ abjad.OrderedDict(
                     (
                         "Piano_Music_Staff_Group",
                         [
-                            baca.Momento(
+                            baca.Memento(
                                 context="RH_Voice_I",
                                 manifest="instruments",
                                 value="Piano",
@@ -122,7 +122,7 @@ abjad.OrderedDict(
                     (
                         "RH_Voice_I",
                         [
-                            baca.Momento(
+                            baca.Memento(
                                 context="RH_Voice_I",
                                 prototype="abjad.Dynamic",
                                 value="f",
@@ -132,7 +132,7 @@ abjad.OrderedDict(
                     (
                         "RH_Voice_II",
                         [
-                            baca.Momento(
+                            baca.Memento(
                                 context="RH_Voice_II",
                                 prototype="abjad.Dynamic",
                                 value="fff",
@@ -142,7 +142,7 @@ abjad.OrderedDict(
                     (
                         "RH_Voice_III",
                         [
-                            baca.Momento(
+                            baca.Memento(
                                 context="RH_Voice_III",
                                 prototype="abjad.Dynamic",
                                 value="mp",
@@ -152,7 +152,7 @@ abjad.OrderedDict(
                     (
                         "RH_Voice_IV",
                         [
-                            baca.Momento(
+                            baca.Memento(
                                 context="RH_Voice_IV",
                                 prototype="abjad.Dynamic",
                                 value="p",
@@ -162,12 +162,12 @@ abjad.OrderedDict(
                     (
                         "Score",
                         [
-                            baca.Momento(
+                            baca.Memento(
                                 context="Global_Skips",
                                 manifest="metronome_marks",
                                 value="84",
                             ),
-                            baca.Momento(
+                            baca.Memento(
                                 context="Global_Skips",
                                 prototype="abjad.TimeSignature",
                                 value="1/4",
