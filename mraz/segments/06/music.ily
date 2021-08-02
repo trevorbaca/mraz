@@ -1,4 +1,4 @@
-f_Global_Rests = {
+segment.06.Global.Rests = {
 
     % [Global_Rests measure 82 / measure 1]
     R1 * 4
@@ -62,7 +62,7 @@ f_Global_Rests = {
 }
 
 
-f_Global_Skips = {
+segment.06.Global.Skips = {
 
     % [Global_Skips measure 82 / measure 1]
     \time 16/4
@@ -194,7 +194,7 @@ f_Global_Skips = {
 }
 
 
-f_RH_Voice_I = {
+segment.06.RH.Voice.I = {
 
     % [RH_Voice_I measure 82 / measure 1]
     \clef "treble"
@@ -275,7 +275,7 @@ f_RH_Voice_I = {
 }
 
 
-f_RH_Voice_I_Inserts = {
+segment.06.RH.Voice.I.Inserts = {
 
     % [RH_Voice_I_Inserts measure 82 / measure 1]
     s1 * 16/4
@@ -349,7 +349,7 @@ f_RH_Voice_I_Inserts = {
 }
 
 
-f_RH_Voice_II = {
+segment.06.RH.Voice.II = {
 
     {
 
@@ -1787,7 +1787,7 @@ f_RH_Voice_II = {
 }
 
 
-f_RH_Voice_II_Inserts = {
+segment.06.RH.Voice.II.Inserts = {
 
     % [RH_Voice_II_Inserts measure 82 / measure 1]
     s1 * 16/4
@@ -1861,7 +1861,7 @@ f_RH_Voice_II_Inserts = {
 }
 
 
-f_RH_Voice_III = {
+segment.06.RH.Voice.III = {
 
     {
 
@@ -2582,7 +2582,7 @@ f_RH_Voice_III = {
 }
 
 
-f_RH_Voice_III_Inserts = {
+segment.06.RH.Voice.III.Inserts = {
 
     % [RH_Voice_III_Inserts measure 82 / measure 1]
     s1 * 16/4
@@ -2656,7 +2656,7 @@ f_RH_Voice_III_Inserts = {
 }
 
 
-f_RH_Voice_IV = {
+segment.06.RH.Voice.IV = {
 
     % [RH_Voice_IV measure 82 / measure 1]
     s1 * 16/4
@@ -2732,7 +2732,7 @@ f_RH_Voice_IV = {
 }
 
 
-f_RH_Voice_IV_Inserts = {
+segment.06.RH.Voice.IV.Inserts = {
 
     % [RH_Voice_IV_Inserts measure 82 / measure 1]
     s1 * 16/4
@@ -2806,7 +2806,7 @@ f_RH_Voice_IV_Inserts = {
 }
 
 
-f_RH_Voice_V = {
+segment.06.RH.Voice.V = {
 
     % [RH_Voice_V measure 82 / measure 1]
     s1 * 16/4
@@ -2880,7 +2880,7 @@ f_RH_Voice_V = {
 }
 
 
-f_RH_Voice_VI = {
+segment.06.RH.Voice.VI = {
 
     % [RH_Voice_VI measure 82 / measure 1]
     s1 * 16/4
@@ -2954,7 +2954,7 @@ f_RH_Voice_VI = {
 }
 
 
-f_RH_Resonance_Voice = {
+segment.06.RH.Resonance.Voice = {
 
     % [RH_Resonance_Voice measure 82 / measure 1]
     s1 * 16/4
@@ -3028,45 +3028,45 @@ f_RH_Resonance_Voice = {
 }
 
 
-f_Piano_Music_RH_Staff = <<
+segment.06.Piano.Music.RH.Staff = <<
 
     \context RHVoiceI = "RH_Voice_I"
-    \f_RH_Voice_I
+    { \segment.06.RH.Voice.I }
 
     \context RHVoiceIInserts = "RH_Voice_I_Inserts"
-    \f_RH_Voice_I_Inserts
+    { \segment.06.RH.Voice.I.Inserts }
 
     \context RHVoiceII = "RH_Voice_II"
-    \f_RH_Voice_II
+    { \segment.06.RH.Voice.II }
 
     \context RHVoiceIIInserts = "RH_Voice_II_Inserts"
-    \f_RH_Voice_II_Inserts
+    { \segment.06.RH.Voice.II.Inserts }
 
     \context RHVoiceIII = "RH_Voice_III"
-    \f_RH_Voice_III
+    { \segment.06.RH.Voice.III }
 
     \context RHVoiceIIIInserts = "RH_Voice_III_Inserts"
-    \f_RH_Voice_III_Inserts
+    { \segment.06.RH.Voice.III.Inserts }
 
     \context RHVoiceIV = "RH_Voice_IV"
-    \f_RH_Voice_IV
+    { \segment.06.RH.Voice.IV }
 
     \context RHVoiceIVInserts = "RH_Voice_IV_Inserts"
-    \f_RH_Voice_IV_Inserts
+    { \segment.06.RH.Voice.IV.Inserts }
 
     \context RHVoiceV = "RH_Voice_V"
-    \f_RH_Voice_V
+    { \segment.06.RH.Voice.V }
 
     \context RHVoiceVI = "RH_Voice_VI"
-    \f_RH_Voice_VI
+    { \segment.06.RH.Voice.VI }
 
     \context RHResonanceVoice = "RH_Resonance_Voice"
-    \f_RH_Resonance_Voice
+    { \segment.06.RH.Resonance.Voice }
 
 >>
 
 
-f_LH_Voice_I = {
+segment.06.LH.Voice.I = {
 
     % [LH_Voice_I measure 82 / measure 1]
     s1 * 16/4
@@ -3140,7 +3140,7 @@ f_LH_Voice_I = {
 }
 
 
-f_LH_Voice_II = {
+segment.06.LH.Voice.II = {
 
     % [LH_Voice_II measure 82 / measure 1]
     s1 * 16/4
@@ -3214,7 +3214,7 @@ f_LH_Voice_II = {
 }
 
 
-f_LH_Voice_III = {
+segment.06.LH.Voice.III = {
 
     % [LH_Voice_III measure 82 / measure 1]
     s1 * 16/4
@@ -3288,7 +3288,7 @@ f_LH_Voice_III = {
 }
 
 
-f_LH_Voice_IV = {
+segment.06.LH.Voice.IV = {
 
     % [LH_Voice_IV measure 82 / measure 1]
     \clef "treble"
@@ -3646,7 +3646,7 @@ f_LH_Voice_IV = {
 }
 
 
-f_LH_Voice_IV_Inserts = {
+segment.06.LH.Voice.IV.Inserts = {
 
     % [LH_Voice_IV_Inserts measure 82 / measure 1]
     s1 * 16/4
@@ -3720,7 +3720,7 @@ f_LH_Voice_IV_Inserts = {
 }
 
 
-f_LH_Voice_V = {
+segment.06.LH.Voice.V = {
 
     % [LH_Voice_V measure 82 / measure 1]
     s1 * 39/4
@@ -3846,7 +3846,7 @@ f_LH_Voice_V = {
 }
 
 
-f_LH_Voice_V_Inserts = {
+segment.06.LH.Voice.V.Inserts = {
 
     % [LH_Voice_V_Inserts measure 82 / measure 1]
     s1 * 16/4
@@ -3920,7 +3920,7 @@ f_LH_Voice_V_Inserts = {
 }
 
 
-f_LH_Voice_VI = {
+segment.06.LH.Voice.VI = {
 
     % [LH_Voice_VI measure 82 / measure 1]
     s1 * 39/4
@@ -4042,7 +4042,7 @@ f_LH_Voice_VI = {
 }
 
 
-f_LH_Voice_VI_Inserts = {
+segment.06.LH.Voice.VI.Inserts = {
 
     % [LH_Voice_VI_Inserts measure 82 / measure 1]
     s1 * 16/4
@@ -4116,7 +4116,7 @@ f_LH_Voice_VI_Inserts = {
 }
 
 
-f_LH_Resonance_Voice = {
+segment.06.LH.Resonance.Voice = {
 
     % [LH_Resonance_Voice measure 82 / measure 1]
     \override Dots.transparent = ##t
@@ -4304,36 +4304,36 @@ f_LH_Resonance_Voice = {
 }
 
 
-f_Piano_Music_LH_Staff = <<
+segment.06.Piano.Music.LH.Staff = <<
 
     \context LHVoiceI = "LH_Voice_I"
-    \f_LH_Voice_I
+    { \segment.06.LH.Voice.I }
 
     \context LHVoiceII = "LH_Voice_II"
-    \f_LH_Voice_II
+    { \segment.06.LH.Voice.II }
 
     \context LHVoiceIII = "LH_Voice_III"
-    \f_LH_Voice_III
+    { \segment.06.LH.Voice.III }
 
     \context LHVoiceIV = "LH_Voice_IV"
-    \f_LH_Voice_IV
+    { \segment.06.LH.Voice.IV }
 
     \context LHVoiceIVInserts = "LH_Voice_IV_Inserts"
-    \f_LH_Voice_IV_Inserts
+    { \segment.06.LH.Voice.IV.Inserts }
 
     \context LHVoiceV = "LH_Voice_V"
-    \f_LH_Voice_V
+    { \segment.06.LH.Voice.V }
 
     \context LHVoiceVInserts = "LH_Voice_V_Inserts"
-    \f_LH_Voice_V_Inserts
+    { \segment.06.LH.Voice.V.Inserts }
 
     \context LHVoiceVI = "LH_Voice_VI"
-    \f_LH_Voice_VI
+    { \segment.06.LH.Voice.VI }
 
     \context LHVoiceVIInserts = "LH_Voice_VI_Inserts"
-    \f_LH_Voice_VI_Inserts
+    { \segment.06.LH.Voice.VI.Inserts }
 
     \context LHResonanceVoice = "LH_Resonance_Voice"
-    \f_LH_Resonance_Voice
+    { \segment.06.LH.Resonance.Voice }
 
 >>

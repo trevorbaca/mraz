@@ -1,4 +1,4 @@
-a_Global_Rests = {
+segment.01.Global.Rests = {
 
     % [Global_Rests measure 1]
     R1 * 1
@@ -39,7 +39,7 @@ a_Global_Rests = {
 }
 
 
-a_Global_Skips = {
+segment.01.Global.Skips = {
 
     % [Global_Skips measure 1]
     \time 4/4
@@ -115,7 +115,7 @@ a_Global_Skips = {
 }
 
 
-a_RH_Voice_I = {
+segment.01.RH.Voice.I = {
 
     {
 
@@ -212,7 +212,7 @@ a_RH_Voice_I = {
 }
 
 
-a_RH_Voice_I_Inserts = {
+segment.01.RH.Voice.I.Inserts = {
 
     % [RH_Voice_I_Inserts measure 1]
     s1 * 4/4
@@ -265,7 +265,7 @@ a_RH_Voice_I_Inserts = {
 }
 
 
-a_RH_Voice_II = {
+segment.01.RH.Voice.II = {
 
     {
 
@@ -505,7 +505,7 @@ a_RH_Voice_II = {
 }
 
 
-a_RH_Voice_II_Inserts = {
+segment.01.RH.Voice.II.Inserts = {
 
     % [RH_Voice_II_Inserts measure 1]
     s1 * 4/4
@@ -558,7 +558,7 @@ a_RH_Voice_II_Inserts = {
 }
 
 
-a_RH_Voice_III = {
+segment.01.RH.Voice.III = {
 
     % [RH_Voice_III measure 1]
     s1 * 11/4
@@ -730,7 +730,7 @@ a_RH_Voice_III = {
 }
 
 
-a_RH_Voice_III_Inserts = {
+segment.01.RH.Voice.III.Inserts = {
 
     % [RH_Voice_III_Inserts measure 1]
     s1 * 4/4
@@ -783,7 +783,7 @@ a_RH_Voice_III_Inserts = {
 }
 
 
-a_RH_Voice_IV = {
+segment.01.RH.Voice.IV = {
 
     % [RH_Voice_IV measure 1]
     s1 * 4/4
@@ -836,7 +836,7 @@ a_RH_Voice_IV = {
 }
 
 
-a_RH_Voice_IV_Inserts = {
+segment.01.RH.Voice.IV.Inserts = {
 
     % [RH_Voice_IV_Inserts measure 1]
     s1 * 4/4
@@ -889,7 +889,7 @@ a_RH_Voice_IV_Inserts = {
 }
 
 
-a_RH_Voice_V = {
+segment.01.RH.Voice.V = {
 
     % [RH_Voice_V measure 1]
     s1 * 4/4
@@ -942,7 +942,7 @@ a_RH_Voice_V = {
 }
 
 
-a_RH_Voice_VI = {
+segment.01.RH.Voice.VI = {
 
     % [RH_Voice_VI measure 1]
     s1 * 4/4
@@ -995,7 +995,7 @@ a_RH_Voice_VI = {
 }
 
 
-a_RH_Resonance_Voice = {
+segment.01.RH.Resonance.Voice = {
 
     % [RH_Resonance_Voice measure 1]
     s1 * 4/4
@@ -1048,45 +1048,45 @@ a_RH_Resonance_Voice = {
 }
 
 
-a_Piano_Music_RH_Staff = <<
+segment.01.Piano.Music.RH.Staff = <<
 
     \context RHVoiceI = "RH_Voice_I"
-    \a_RH_Voice_I
+    { \segment.01.RH.Voice.I }
 
     \context RHVoiceIInserts = "RH_Voice_I_Inserts"
-    \a_RH_Voice_I_Inserts
+    { \segment.01.RH.Voice.I.Inserts }
 
     \context RHVoiceII = "RH_Voice_II"
-    \a_RH_Voice_II
+    { \segment.01.RH.Voice.II }
 
     \context RHVoiceIIInserts = "RH_Voice_II_Inserts"
-    \a_RH_Voice_II_Inserts
+    { \segment.01.RH.Voice.II.Inserts }
 
     \context RHVoiceIII = "RH_Voice_III"
-    \a_RH_Voice_III
+    { \segment.01.RH.Voice.III }
 
     \context RHVoiceIIIInserts = "RH_Voice_III_Inserts"
-    \a_RH_Voice_III_Inserts
+    { \segment.01.RH.Voice.III.Inserts }
 
     \context RHVoiceIV = "RH_Voice_IV"
-    \a_RH_Voice_IV
+    { \segment.01.RH.Voice.IV }
 
     \context RHVoiceIVInserts = "RH_Voice_IV_Inserts"
-    \a_RH_Voice_IV_Inserts
+    { \segment.01.RH.Voice.IV.Inserts }
 
     \context RHVoiceV = "RH_Voice_V"
-    \a_RH_Voice_V
+    { \segment.01.RH.Voice.V }
 
     \context RHVoiceVI = "RH_Voice_VI"
-    \a_RH_Voice_VI
+    { \segment.01.RH.Voice.VI }
 
     \context RHResonanceVoice = "RH_Resonance_Voice"
-    \a_RH_Resonance_Voice
+    { \segment.01.RH.Resonance.Voice }
 
 >>
 
 
-a_LH_Voice_I = {
+segment.01.LH.Voice.I = {
 
     % [LH_Voice_I measure 1]
 %%% \once \override PianoMusicLHStaff.Clef.X-extent = ##f
@@ -1145,7 +1145,7 @@ a_LH_Voice_I = {
 }
 
 
-a_LH_Voice_II = {
+segment.01.LH.Voice.II = {
 
     % [LH_Voice_II measure 1]
     s1 * 4/4
@@ -1198,7 +1198,7 @@ a_LH_Voice_II = {
 }
 
 
-a_LH_Voice_III = {
+segment.01.LH.Voice.III = {
 
     % [LH_Voice_III measure 1]
     s1 * 4/4
@@ -1251,7 +1251,7 @@ a_LH_Voice_III = {
 }
 
 
-a_LH_Voice_IV = {
+segment.01.LH.Voice.IV = {
 
     % [LH_Voice_IV measure 1]
     s1 * 1
@@ -1371,7 +1371,7 @@ a_LH_Voice_IV = {
 }
 
 
-a_LH_Voice_IV_Inserts = {
+segment.01.LH.Voice.IV.Inserts = {
 
     % [LH_Voice_IV_Inserts measure 1]
     s1 * 1
@@ -1477,7 +1477,7 @@ a_LH_Voice_IV_Inserts = {
 }
 
 
-a_LH_Voice_V = {
+segment.01.LH.Voice.V = {
 
     % [LH_Voice_V measure 1]
     s1 * 3/2
@@ -1585,7 +1585,7 @@ a_LH_Voice_V = {
 }
 
 
-a_LH_Voice_V_Inserts = {
+segment.01.LH.Voice.V.Inserts = {
 
     % [LH_Voice_V_Inserts measure 1]
     s1 * 4/4
@@ -1638,7 +1638,7 @@ a_LH_Voice_V_Inserts = {
 }
 
 
-a_LH_Voice_VI = {
+segment.01.LH.Voice.VI = {
 
     % [LH_Voice_VI measure 1]
     s1 * 3/2
@@ -1747,7 +1747,7 @@ a_LH_Voice_VI = {
 }
 
 
-a_LH_Voice_VI_Inserts = {
+segment.01.LH.Voice.VI.Inserts = {
 
     % [LH_Voice_VI_Inserts measure 1]
     s1 * 4/4
@@ -1800,7 +1800,7 @@ a_LH_Voice_VI_Inserts = {
 }
 
 
-a_LH_Resonance_Voice = {
+segment.01.LH.Resonance.Voice = {
 
     % [LH_Resonance_Voice measure 1]
     s1 * 4/4
@@ -1853,36 +1853,36 @@ a_LH_Resonance_Voice = {
 }
 
 
-a_Piano_Music_LH_Staff = <<
+segment.01.Piano.Music.LH.Staff = <<
 
     \context LHVoiceI = "LH_Voice_I"
-    \a_LH_Voice_I
+    { \segment.01.LH.Voice.I }
 
     \context LHVoiceII = "LH_Voice_II"
-    \a_LH_Voice_II
+    { \segment.01.LH.Voice.II }
 
     \context LHVoiceIII = "LH_Voice_III"
-    \a_LH_Voice_III
+    { \segment.01.LH.Voice.III }
 
     \context LHVoiceIV = "LH_Voice_IV"
-    \a_LH_Voice_IV
+    { \segment.01.LH.Voice.IV }
 
     \context LHVoiceIVInserts = "LH_Voice_IV_Inserts"
-    \a_LH_Voice_IV_Inserts
+    { \segment.01.LH.Voice.IV.Inserts }
 
     \context LHVoiceV = "LH_Voice_V"
-    \a_LH_Voice_V
+    { \segment.01.LH.Voice.V }
 
     \context LHVoiceVInserts = "LH_Voice_V_Inserts"
-    \a_LH_Voice_V_Inserts
+    { \segment.01.LH.Voice.V.Inserts }
 
     \context LHVoiceVI = "LH_Voice_VI"
-    \a_LH_Voice_VI
+    { \segment.01.LH.Voice.VI }
 
     \context LHVoiceVIInserts = "LH_Voice_VI_Inserts"
-    \a_LH_Voice_VI_Inserts
+    { \segment.01.LH.Voice.VI.Inserts }
 
     \context LHResonanceVoice = "LH_Resonance_Voice"
-    \a_LH_Resonance_Voice
+    { \segment.01.LH.Resonance.Voice }
 
 >>

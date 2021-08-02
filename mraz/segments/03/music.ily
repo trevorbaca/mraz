@@ -1,4 +1,4 @@
-c_Global_Rests = {
+segment.03.Global.Rests = {
 
     % [Global_Rests measure 22 / measure 1]
     R1 * 1/2
@@ -48,7 +48,7 @@ c_Global_Rests = {
 }
 
 
-c_Global_Skips = {
+segment.03.Global.Skips = {
 
     % [Global_Skips measure 22 / measure 1]
     \time 2/4
@@ -145,7 +145,7 @@ c_Global_Skips = {
 }
 
 
-c_RH_Voice_I = {
+segment.03.RH.Voice.I = {
 
     % [RH_Voice_I measure 22 / measure 1]
     \clef "treble"
@@ -230,7 +230,7 @@ c_RH_Voice_I = {
 }
 
 
-c_RH_Voice_I_Inserts = {
+segment.03.RH.Voice.I.Inserts = {
 
     % [RH_Voice_I_Inserts measure 22 / measure 1]
     s1 * 2/4
@@ -292,7 +292,7 @@ c_RH_Voice_I_Inserts = {
 }
 
 
-c_RH_Voice_II = {
+segment.03.RH.Voice.II = {
 
     % [RH_Voice_II measure 22 / measure 1]
     \override Script.direction = #up
@@ -765,7 +765,7 @@ c_RH_Voice_II = {
 }
 
 
-c_RH_Voice_II_Inserts = {
+segment.03.RH.Voice.II.Inserts = {
 
     % [RH_Voice_II_Inserts measure 22 / measure 1]
     s1 * 2/4
@@ -827,7 +827,7 @@ c_RH_Voice_II_Inserts = {
 }
 
 
-c_RH_Voice_III = {
+segment.03.RH.Voice.III = {
 
     % [RH_Voice_III measure 22 / measure 1]
     s1 * 43/16
@@ -926,7 +926,7 @@ c_RH_Voice_III = {
 }
 
 
-c_RH_Voice_III_Inserts = {
+segment.03.RH.Voice.III.Inserts = {
 
     % [RH_Voice_III_Inserts measure 22 / measure 1]
     s1 * 2/4
@@ -988,7 +988,7 @@ c_RH_Voice_III_Inserts = {
 }
 
 
-c_RH_Voice_IV = {
+segment.03.RH.Voice.IV = {
 
     {
 
@@ -1151,7 +1151,7 @@ c_RH_Voice_IV = {
 }
 
 
-c_RH_Voice_IV_Inserts = {
+segment.03.RH.Voice.IV.Inserts = {
 
     {
         \override TupletBracket.stencil = ##f
@@ -1286,7 +1286,7 @@ c_RH_Voice_IV_Inserts = {
 }
 
 
-c_RH_Voice_V = {
+segment.03.RH.Voice.V = {
 
     % [RH_Voice_V measure 22 / measure 1]
     s1 * 2/4
@@ -1348,7 +1348,7 @@ c_RH_Voice_V = {
 }
 
 
-c_RH_Voice_VI = {
+segment.03.RH.Voice.VI = {
 
     % [RH_Voice_VI measure 22 / measure 1]
     s1 * 2/4
@@ -1410,7 +1410,7 @@ c_RH_Voice_VI = {
 }
 
 
-c_RH_Resonance_Voice = {
+segment.03.RH.Resonance.Voice = {
 
     % [RH_Resonance_Voice measure 22 / measure 1]
     s1 * 2/4
@@ -1472,45 +1472,45 @@ c_RH_Resonance_Voice = {
 }
 
 
-c_Piano_Music_RH_Staff = <<
+segment.03.Piano.Music.RH.Staff = <<
 
     \context RHVoiceI = "RH_Voice_I"
-    \c_RH_Voice_I
+    { \segment.03.RH.Voice.I }
 
     \context RHVoiceIInserts = "RH_Voice_I_Inserts"
-    \c_RH_Voice_I_Inserts
+    { \segment.03.RH.Voice.I.Inserts }
 
     \context RHVoiceII = "RH_Voice_II"
-    \c_RH_Voice_II
+    { \segment.03.RH.Voice.II }
 
     \context RHVoiceIIInserts = "RH_Voice_II_Inserts"
-    \c_RH_Voice_II_Inserts
+    { \segment.03.RH.Voice.II.Inserts }
 
     \context RHVoiceIII = "RH_Voice_III"
-    \c_RH_Voice_III
+    { \segment.03.RH.Voice.III }
 
     \context RHVoiceIIIInserts = "RH_Voice_III_Inserts"
-    \c_RH_Voice_III_Inserts
+    { \segment.03.RH.Voice.III.Inserts }
 
     \context RHVoiceIV = "RH_Voice_IV"
-    \c_RH_Voice_IV
+    { \segment.03.RH.Voice.IV }
 
     \context RHVoiceIVInserts = "RH_Voice_IV_Inserts"
-    \c_RH_Voice_IV_Inserts
+    { \segment.03.RH.Voice.IV.Inserts }
 
     \context RHVoiceV = "RH_Voice_V"
-    \c_RH_Voice_V
+    { \segment.03.RH.Voice.V }
 
     \context RHVoiceVI = "RH_Voice_VI"
-    \c_RH_Voice_VI
+    { \segment.03.RH.Voice.VI }
 
     \context RHResonanceVoice = "RH_Resonance_Voice"
-    \c_RH_Resonance_Voice
+    { \segment.03.RH.Resonance.Voice }
 
 >>
 
 
-c_LH_Voice_I = {
+segment.03.LH.Voice.I = {
 
     % [LH_Voice_I measure 22 / measure 1]
     s1 * 2/4
@@ -1572,7 +1572,7 @@ c_LH_Voice_I = {
 }
 
 
-c_LH_Voice_II = {
+segment.03.LH.Voice.II = {
 
     % [LH_Voice_II measure 22 / measure 1]
     s1 * 2/4
@@ -1634,7 +1634,7 @@ c_LH_Voice_II = {
 }
 
 
-c_LH_Voice_III = {
+segment.03.LH.Voice.III = {
 
     % [LH_Voice_III measure 22 / measure 1]
     s1 * 2/4
@@ -1696,7 +1696,7 @@ c_LH_Voice_III = {
 }
 
 
-c_LH_Voice_IV = {
+segment.03.LH.Voice.IV = {
 
     % [LH_Voice_IV measure 22 / measure 1]
     s1 * 2/4
@@ -1760,7 +1760,7 @@ c_LH_Voice_IV = {
 }
 
 
-c_LH_Voice_IV_Inserts = {
+segment.03.LH.Voice.IV.Inserts = {
 
     % [LH_Voice_IV_Inserts measure 22 / measure 1]
     s1 * 2/4
@@ -1822,7 +1822,7 @@ c_LH_Voice_IV_Inserts = {
 }
 
 
-c_LH_Voice_V = {
+segment.03.LH.Voice.V = {
 
     % [LH_Voice_V measure 22 / measure 1]
     s1 * 43/16
@@ -1924,7 +1924,7 @@ c_LH_Voice_V = {
 }
 
 
-c_LH_Voice_V_Inserts = {
+segment.03.LH.Voice.V.Inserts = {
 
     % [LH_Voice_V_Inserts measure 22 / measure 1]
     s1 * 2/4
@@ -1986,7 +1986,7 @@ c_LH_Voice_V_Inserts = {
 }
 
 
-c_LH_Voice_VI = {
+segment.03.LH.Voice.VI = {
 
     % [LH_Voice_VI measure 22 / measure 1]
     \clef "bass"
@@ -2054,7 +2054,7 @@ c_LH_Voice_VI = {
 }
 
 
-c_LH_Voice_VI_Inserts = {
+segment.03.LH.Voice.VI.Inserts = {
 
     % [LH_Voice_VI_Inserts measure 22 / measure 1]
     s1 * 2/4
@@ -2116,7 +2116,7 @@ c_LH_Voice_VI_Inserts = {
 }
 
 
-c_LH_Resonance_Voice = {
+segment.03.LH.Resonance.Voice = {
 
     {
 
@@ -2385,36 +2385,36 @@ c_LH_Resonance_Voice = {
 }
 
 
-c_Piano_Music_LH_Staff = <<
+segment.03.Piano.Music.LH.Staff = <<
 
     \context LHVoiceI = "LH_Voice_I"
-    \c_LH_Voice_I
+    { \segment.03.LH.Voice.I }
 
     \context LHVoiceII = "LH_Voice_II"
-    \c_LH_Voice_II
+    { \segment.03.LH.Voice.II }
 
     \context LHVoiceIII = "LH_Voice_III"
-    \c_LH_Voice_III
+    { \segment.03.LH.Voice.III }
 
     \context LHVoiceIV = "LH_Voice_IV"
-    \c_LH_Voice_IV
+    { \segment.03.LH.Voice.IV }
 
     \context LHVoiceIVInserts = "LH_Voice_IV_Inserts"
-    \c_LH_Voice_IV_Inserts
+    { \segment.03.LH.Voice.IV.Inserts }
 
     \context LHVoiceV = "LH_Voice_V"
-    \c_LH_Voice_V
+    { \segment.03.LH.Voice.V }
 
     \context LHVoiceVInserts = "LH_Voice_V_Inserts"
-    \c_LH_Voice_V_Inserts
+    { \segment.03.LH.Voice.V.Inserts }
 
     \context LHVoiceVI = "LH_Voice_VI"
-    \c_LH_Voice_VI
+    { \segment.03.LH.Voice.VI }
 
     \context LHVoiceVIInserts = "LH_Voice_VI_Inserts"
-    \c_LH_Voice_VI_Inserts
+    { \segment.03.LH.Voice.VI.Inserts }
 
     \context LHResonanceVoice = "LH_Resonance_Voice"
-    \c_LH_Resonance_Voice
+    { \segment.03.LH.Resonance.Voice }
 
 >>
