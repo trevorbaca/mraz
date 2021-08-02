@@ -24,10 +24,10 @@
             <<
 
                 \context GlobalRests = "Global_Rests"
-                \g_Global_Rests
+                { \segment.07.Global.Rests }
 
                 \context GlobalSkips = "Global_Skips"
-                \g_Global_Skips
+                { \segment.07.Global.Skips }
 
             >>
 
@@ -38,10 +38,10 @@
                 <<
 
                     \context PianoMusicRHStaff = "Piano_Music_RH_Staff"
-                    \g_Piano_Music_RH_Staff
+                    { \segment.07.Piano.Music.RH.Staff }
 
                     \context PianoMusicLHStaff = "Piano_Music_LH_Staff"
-                    \g_Piano_Music_LH_Staff
+                    { \segment.07.Piano.Music.LH.Staff }
 
                 >>
 

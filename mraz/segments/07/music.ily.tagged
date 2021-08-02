@@ -1,5 +1,5 @@
-%! baca.Path.extern()
-g_Global_Rests = {
+%! baca.path.extern()
+segment.07.Global.Rests = {
 
     %! baca.SegmentMaker._comment_measure_numbers()
     % [Global_Rests measure 98 / measure 1]
@@ -65,12 +65,12 @@ g_Global_Rests = {
     R1 * 1/4
 
 %! abjad.ScoreTemplate._make_global_context()
-%! baca.Path.extern()
+%! baca.path.extern()
 }
 
 
-%! baca.Path.extern()
-g_Global_Skips = {
+%! baca.path.extern()
+segment.07.Global.Skips = {
 
     %! baca.SegmentMaker._comment_measure_numbers()
     % [Global_Skips measure 98 / measure 1]
@@ -587,12 +587,12 @@ g_Global_Skips = {
     \once \override Score.SpanBar.transparent = ##t
 
 %! abjad.ScoreTemplate._make_global_context()
-%! baca.Path.extern()
+%! baca.path.extern()
 }
 
 
-%! baca.Path.extern()
-g_RH_Voice_I = {
+%! baca.path.extern()
+segment.07.RH.Voice.I = {
 
     {
 
@@ -1130,12 +1130,12 @@ g_RH_Voice_I = {
     >>
 
 %! mraz.ScoreTemplate.__call__()
-%! baca.Path.extern()
+%! baca.path.extern()
 }
 
 
-%! baca.Path.extern()
-g_RH_Voice_I_Inserts = {
+%! baca.path.extern()
+segment.07.RH.Voice.I.Inserts = {
 
     {
         \override TupletBracket.stencil = ##f
@@ -1621,12 +1621,12 @@ g_RH_Voice_I_Inserts = {
     >>
 
 %! mraz.ScoreTemplate.__call__()
-%! baca.Path.extern()
+%! baca.path.extern()
 }
 
 
-%! baca.Path.extern()
-g_RH_Voice_II = {
+%! baca.path.extern()
+segment.07.RH.Voice.II = {
 
     %! baca.SegmentMaker._comment_measure_numbers()
     % [RH_Voice_II measure 98 / measure 1]
@@ -2186,12 +2186,12 @@ g_RH_Voice_II = {
     >>
 
 %! mraz.ScoreTemplate.__call__()
-%! baca.Path.extern()
+%! baca.path.extern()
 }
 
 
-%! baca.Path.extern()
-g_RH_Voice_II_Inserts = {
+%! baca.path.extern()
+segment.07.RH.Voice.II.Inserts = {
 
     %! baca.SegmentMaker._comment_measure_numbers()
     % [RH_Voice_II_Inserts measure 98 / measure 1]
@@ -2666,12 +2666,12 @@ g_RH_Voice_II_Inserts = {
     >>
 
 %! mraz.ScoreTemplate.__call__()
-%! baca.Path.extern()
+%! baca.path.extern()
 }
 
 
-%! baca.Path.extern()
-g_RH_Voice_III = {
+%! baca.path.extern()
+segment.07.RH.Voice.III = {
 
     %! baca.SegmentMaker._comment_measure_numbers()
     % [RH_Voice_III measure 98 / measure 1]
@@ -2808,12 +2808,12 @@ g_RH_Voice_III = {
     >>
 
 %! mraz.ScoreTemplate.__call__()
-%! baca.Path.extern()
+%! baca.path.extern()
 }
 
 
-%! baca.Path.extern()
-g_RH_Voice_III_Inserts = {
+%! baca.path.extern()
+segment.07.RH.Voice.III.Inserts = {
 
     %! baca.SegmentMaker._comment_measure_numbers()
     % [RH_Voice_III_Inserts measure 98 / measure 1]
@@ -2940,12 +2940,12 @@ g_RH_Voice_III_Inserts = {
     >>
 
 %! mraz.ScoreTemplate.__call__()
-%! baca.Path.extern()
+%! baca.path.extern()
 }
 
 
-%! baca.Path.extern()
-g_RH_Voice_IV = {
+%! baca.path.extern()
+segment.07.RH.Voice.IV = {
 
     %! baca.SegmentMaker._comment_measure_numbers()
     % [RH_Voice_IV measure 98 / measure 1]
@@ -3082,12 +3082,12 @@ g_RH_Voice_IV = {
     >>
 
 %! mraz.ScoreTemplate.__call__()
-%! baca.Path.extern()
+%! baca.path.extern()
 }
 
 
-%! baca.Path.extern()
-g_RH_Voice_IV_Inserts = {
+%! baca.path.extern()
+segment.07.RH.Voice.IV.Inserts = {
 
     %! baca.SegmentMaker._comment_measure_numbers()
     % [RH_Voice_IV_Inserts measure 98 / measure 1]
@@ -3214,12 +3214,12 @@ g_RH_Voice_IV_Inserts = {
     >>
 
 %! mraz.ScoreTemplate.__call__()
-%! baca.Path.extern()
+%! baca.path.extern()
 }
 
 
-%! baca.Path.extern()
-g_RH_Voice_V = {
+%! baca.path.extern()
+segment.07.RH.Voice.V = {
 
     %! baca.SegmentMaker._comment_measure_numbers()
     % [RH_Voice_V measure 98 / measure 1]
@@ -3346,12 +3346,12 @@ g_RH_Voice_V = {
     >>
 
 %! mraz.ScoreTemplate.__call__()
-%! baca.Path.extern()
+%! baca.path.extern()
 }
 
 
-%! baca.Path.extern()
-g_RH_Voice_VI = {
+%! baca.path.extern()
+segment.07.RH.Voice.VI = {
 
     %! baca.SegmentMaker._comment_measure_numbers()
     % [RH_Voice_VI measure 98 / measure 1]
@@ -3478,12 +3478,12 @@ g_RH_Voice_VI = {
     >>
 
 %! mraz.ScoreTemplate.__call__()
-%! baca.Path.extern()
+%! baca.path.extern()
 }
 
 
-%! baca.Path.extern()
-g_RH_Resonance_Voice = {
+%! baca.path.extern()
+segment.07.RH.Resonance.Voice = {
 
     %! baca.SegmentMaker._comment_measure_numbers()
     % [RH_Resonance_Voice measure 98 / measure 1]
@@ -3610,86 +3610,86 @@ g_RH_Resonance_Voice = {
     >>
 
 %! mraz.ScoreTemplate.__call__()
-%! baca.Path.extern()
+%! baca.path.extern()
 }
 
 
-%! baca.Path.extern()
-g_Piano_Music_RH_Staff = <<
+%! baca.path.extern()
+segment.07.Piano.Music.RH.Staff = <<
 
     %! mraz.ScoreTemplate.__call__()
     \context RHVoiceI = "RH_Voice_I"
     %! mraz.ScoreTemplate.__call__()
-    %! baca.Path.extern()
-    \g_RH_Voice_I
+    %! baca.path.extern()
+    { \segment.07.RH.Voice.I }
 
     %! mraz.ScoreTemplate.__call__()
     \context RHVoiceIInserts = "RH_Voice_I_Inserts"
     %! mraz.ScoreTemplate.__call__()
-    %! baca.Path.extern()
-    \g_RH_Voice_I_Inserts
+    %! baca.path.extern()
+    { \segment.07.RH.Voice.I.Inserts }
 
     %! mraz.ScoreTemplate.__call__()
     \context RHVoiceII = "RH_Voice_II"
     %! mraz.ScoreTemplate.__call__()
-    %! baca.Path.extern()
-    \g_RH_Voice_II
+    %! baca.path.extern()
+    { \segment.07.RH.Voice.II }
 
     %! mraz.ScoreTemplate.__call__()
     \context RHVoiceIIInserts = "RH_Voice_II_Inserts"
     %! mraz.ScoreTemplate.__call__()
-    %! baca.Path.extern()
-    \g_RH_Voice_II_Inserts
+    %! baca.path.extern()
+    { \segment.07.RH.Voice.II.Inserts }
 
     %! mraz.ScoreTemplate.__call__()
     \context RHVoiceIII = "RH_Voice_III"
     %! mraz.ScoreTemplate.__call__()
-    %! baca.Path.extern()
-    \g_RH_Voice_III
+    %! baca.path.extern()
+    { \segment.07.RH.Voice.III }
 
     %! mraz.ScoreTemplate.__call__()
     \context RHVoiceIIIInserts = "RH_Voice_III_Inserts"
     %! mraz.ScoreTemplate.__call__()
-    %! baca.Path.extern()
-    \g_RH_Voice_III_Inserts
+    %! baca.path.extern()
+    { \segment.07.RH.Voice.III.Inserts }
 
     %! mraz.ScoreTemplate.__call__()
     \context RHVoiceIV = "RH_Voice_IV"
     %! mraz.ScoreTemplate.__call__()
-    %! baca.Path.extern()
-    \g_RH_Voice_IV
+    %! baca.path.extern()
+    { \segment.07.RH.Voice.IV }
 
     %! mraz.ScoreTemplate.__call__()
     \context RHVoiceIVInserts = "RH_Voice_IV_Inserts"
     %! mraz.ScoreTemplate.__call__()
-    %! baca.Path.extern()
-    \g_RH_Voice_IV_Inserts
+    %! baca.path.extern()
+    { \segment.07.RH.Voice.IV.Inserts }
 
     %! mraz.ScoreTemplate.__call__()
     \context RHVoiceV = "RH_Voice_V"
     %! mraz.ScoreTemplate.__call__()
-    %! baca.Path.extern()
-    \g_RH_Voice_V
+    %! baca.path.extern()
+    { \segment.07.RH.Voice.V }
 
     %! mraz.ScoreTemplate.__call__()
     \context RHVoiceVI = "RH_Voice_VI"
     %! mraz.ScoreTemplate.__call__()
-    %! baca.Path.extern()
-    \g_RH_Voice_VI
+    %! baca.path.extern()
+    { \segment.07.RH.Voice.VI }
 
     %! mraz.ScoreTemplate.__call__()
     \context RHResonanceVoice = "RH_Resonance_Voice"
     %! mraz.ScoreTemplate.__call__()
-    %! baca.Path.extern()
-    \g_RH_Resonance_Voice
+    %! baca.path.extern()
+    { \segment.07.RH.Resonance.Voice }
 
 %! mraz.ScoreTemplate.__call__()
-%! baca.Path.extern()
+%! baca.path.extern()
 >>
 
 
-%! baca.Path.extern()
-g_LH_Voice_I = {
+%! baca.path.extern()
+segment.07.LH.Voice.I = {
 
     %! baca.SegmentMaker._comment_measure_numbers()
     % [LH_Voice_I measure 98 / measure 1]
@@ -3816,12 +3816,12 @@ g_LH_Voice_I = {
     >>
 
 %! mraz.ScoreTemplate.__call__()
-%! baca.Path.extern()
+%! baca.path.extern()
 }
 
 
-%! baca.Path.extern()
-g_LH_Voice_II = {
+%! baca.path.extern()
+segment.07.LH.Voice.II = {
 
     %! baca.SegmentMaker._comment_measure_numbers()
     % [LH_Voice_II measure 98 / measure 1]
@@ -3948,12 +3948,12 @@ g_LH_Voice_II = {
     >>
 
 %! mraz.ScoreTemplate.__call__()
-%! baca.Path.extern()
+%! baca.path.extern()
 }
 
 
-%! baca.Path.extern()
-g_LH_Voice_III = {
+%! baca.path.extern()
+segment.07.LH.Voice.III = {
 
     %! baca.SegmentMaker._comment_measure_numbers()
     % [LH_Voice_III measure 98 / measure 1]
@@ -4080,12 +4080,12 @@ g_LH_Voice_III = {
     >>
 
 %! mraz.ScoreTemplate.__call__()
-%! baca.Path.extern()
+%! baca.path.extern()
 }
 
 
-%! baca.Path.extern()
-g_LH_Voice_IV = {
+%! baca.path.extern()
+segment.07.LH.Voice.IV = {
 
     %! baca.SegmentMaker._comment_measure_numbers()
     % [LH_Voice_IV measure 98 / measure 1]
@@ -4487,12 +4487,12 @@ g_LH_Voice_IV = {
     >>
 
 %! mraz.ScoreTemplate.__call__()
-%! baca.Path.extern()
+%! baca.path.extern()
 }
 
 
-%! baca.Path.extern()
-g_LH_Voice_IV_Inserts = {
+%! baca.path.extern()
+segment.07.LH.Voice.IV.Inserts = {
 
     %! baca.SegmentMaker._comment_measure_numbers()
     % [LH_Voice_IV_Inserts measure 98 / measure 1]
@@ -4778,12 +4778,12 @@ g_LH_Voice_IV_Inserts = {
     >>
 
 %! mraz.ScoreTemplate.__call__()
-%! baca.Path.extern()
+%! baca.path.extern()
 }
 
 
-%! baca.Path.extern()
-g_LH_Voice_V = {
+%! baca.path.extern()
+segment.07.LH.Voice.V = {
 
     %! baca.SegmentMaker._comment_measure_numbers()
     % [LH_Voice_V measure 98 / measure 1]
@@ -5300,12 +5300,12 @@ g_LH_Voice_V = {
     >>
 
 %! mraz.ScoreTemplate.__call__()
-%! baca.Path.extern()
+%! baca.path.extern()
 }
 
 
-%! baca.Path.extern()
-g_LH_Voice_V_Inserts = {
+%! baca.path.extern()
+segment.07.LH.Voice.V.Inserts = {
 
     %! baca.SegmentMaker._comment_measure_numbers()
     % [LH_Voice_V_Inserts measure 98 / measure 1]
@@ -5687,12 +5687,12 @@ g_LH_Voice_V_Inserts = {
     >>
 
 %! mraz.ScoreTemplate.__call__()
-%! baca.Path.extern()
+%! baca.path.extern()
 }
 
 
-%! baca.Path.extern()
-g_LH_Voice_VI = {
+%! baca.path.extern()
+segment.07.LH.Voice.VI = {
 
     %! baca.SegmentMaker._comment_measure_numbers()
     % [LH_Voice_VI measure 98 / measure 1]
@@ -5829,12 +5829,12 @@ g_LH_Voice_VI = {
     >>
 
 %! mraz.ScoreTemplate.__call__()
-%! baca.Path.extern()
+%! baca.path.extern()
 }
 
 
-%! baca.Path.extern()
-g_LH_Voice_VI_Inserts = {
+%! baca.path.extern()
+segment.07.LH.Voice.VI.Inserts = {
 
     %! baca.SegmentMaker._comment_measure_numbers()
     % [LH_Voice_VI_Inserts measure 98 / measure 1]
@@ -5961,12 +5961,12 @@ g_LH_Voice_VI_Inserts = {
     >>
 
 %! mraz.ScoreTemplate.__call__()
-%! baca.Path.extern()
+%! baca.path.extern()
 }
 
 
-%! baca.Path.extern()
-g_LH_Resonance_Voice = {
+%! baca.path.extern()
+segment.07.LH.Resonance.Voice = {
 
     %! baca.SegmentMaker._comment_measure_numbers()
     % [LH_Resonance_Voice measure 98 / measure 1]
@@ -6093,73 +6093,73 @@ g_LH_Resonance_Voice = {
     >>
 
 %! mraz.ScoreTemplate.__call__()
-%! baca.Path.extern()
+%! baca.path.extern()
 }
 
 
-%! baca.Path.extern()
-g_Piano_Music_LH_Staff = <<
+%! baca.path.extern()
+segment.07.Piano.Music.LH.Staff = <<
 
     %! mraz.ScoreTemplate.__call__()
     \context LHVoiceI = "LH_Voice_I"
     %! mraz.ScoreTemplate.__call__()
-    %! baca.Path.extern()
-    \g_LH_Voice_I
+    %! baca.path.extern()
+    { \segment.07.LH.Voice.I }
 
     %! mraz.ScoreTemplate.__call__()
     \context LHVoiceII = "LH_Voice_II"
     %! mraz.ScoreTemplate.__call__()
-    %! baca.Path.extern()
-    \g_LH_Voice_II
+    %! baca.path.extern()
+    { \segment.07.LH.Voice.II }
 
     %! mraz.ScoreTemplate.__call__()
     \context LHVoiceIII = "LH_Voice_III"
     %! mraz.ScoreTemplate.__call__()
-    %! baca.Path.extern()
-    \g_LH_Voice_III
+    %! baca.path.extern()
+    { \segment.07.LH.Voice.III }
 
     %! mraz.ScoreTemplate.__call__()
     \context LHVoiceIV = "LH_Voice_IV"
     %! mraz.ScoreTemplate.__call__()
-    %! baca.Path.extern()
-    \g_LH_Voice_IV
+    %! baca.path.extern()
+    { \segment.07.LH.Voice.IV }
 
     %! mraz.ScoreTemplate.__call__()
     \context LHVoiceIVInserts = "LH_Voice_IV_Inserts"
     %! mraz.ScoreTemplate.__call__()
-    %! baca.Path.extern()
-    \g_LH_Voice_IV_Inserts
+    %! baca.path.extern()
+    { \segment.07.LH.Voice.IV.Inserts }
 
     %! mraz.ScoreTemplate.__call__()
     \context LHVoiceV = "LH_Voice_V"
     %! mraz.ScoreTemplate.__call__()
-    %! baca.Path.extern()
-    \g_LH_Voice_V
+    %! baca.path.extern()
+    { \segment.07.LH.Voice.V }
 
     %! mraz.ScoreTemplate.__call__()
     \context LHVoiceVInserts = "LH_Voice_V_Inserts"
     %! mraz.ScoreTemplate.__call__()
-    %! baca.Path.extern()
-    \g_LH_Voice_V_Inserts
+    %! baca.path.extern()
+    { \segment.07.LH.Voice.V.Inserts }
 
     %! mraz.ScoreTemplate.__call__()
     \context LHVoiceVI = "LH_Voice_VI"
     %! mraz.ScoreTemplate.__call__()
-    %! baca.Path.extern()
-    \g_LH_Voice_VI
+    %! baca.path.extern()
+    { \segment.07.LH.Voice.VI }
 
     %! mraz.ScoreTemplate.__call__()
     \context LHVoiceVIInserts = "LH_Voice_VI_Inserts"
     %! mraz.ScoreTemplate.__call__()
-    %! baca.Path.extern()
-    \g_LH_Voice_VI_Inserts
+    %! baca.path.extern()
+    { \segment.07.LH.Voice.VI.Inserts }
 
     %! mraz.ScoreTemplate.__call__()
     \context LHResonanceVoice = "LH_Resonance_Voice"
     %! mraz.ScoreTemplate.__call__()
-    %! baca.Path.extern()
-    \g_LH_Resonance_Voice
+    %! baca.path.extern()
+    { \segment.07.LH.Resonance.Voice }
 
 %! mraz.ScoreTemplate.__call__()
-%! baca.Path.extern()
+%! baca.path.extern()
 >>
