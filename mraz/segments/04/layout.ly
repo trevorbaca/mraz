@@ -37,7 +37,7 @@
             % [Page_Layout measure 34]
             %! SPACING_COMMAND
             %! baca.HorizontalSpacingSpecifier.__call__(1)
-            \baca-new-spacing-section #1 #12
+            \baca-new-spacing-section #1 #32
             %! BREAK
             %! baca.BreakMeasureMap.__call__(1)
             \autoPageBreaksOff
@@ -54,7 +54,7 @@
             s1 * 3/2
             %! SPACING
             %! baca.HorizontalSpacingSpecifier.__call__(2)
-            %@% - \baca-start-spm-left-only "[1/12]"
+            %@% - \baca-start-spm-left-only "[1/32]"
             %! SPACING
             %! baca.HorizontalSpacingSpecifier.__call__(2)
             %@% \bacaStartTextSpanSPM
@@ -63,7 +63,7 @@
             % [Page_Layout measure 35]
             %! SPACING_COMMAND
             %! baca.HorizontalSpacingSpecifier.__call__(1)
-            \baca-new-spacing-section #1 #12
+            \baca-new-spacing-section #1 #32
             %! BREAK
             %! baca.BreakMeasureMap.__call__(2)
             \noBreak
@@ -74,7 +74,7 @@
             %@% \bacaStopTextSpanSPM
             %! SPACING
             %! baca.HorizontalSpacingSpecifier.__call__(2)
-            %@% - \baca-start-spm-left-only "[1/12]"
+            %@% - \baca-start-spm-left-only "[1/32]"
             %! SPACING
             %! baca.HorizontalSpacingSpecifier.__call__(2)
             %@% \bacaStartTextSpanSPM
@@ -103,7 +103,7 @@
             % [Page_Layout measure 37]
             %! SPACING_COMMAND
             %! baca.HorizontalSpacingSpecifier.__call__(1)
-            \baca-new-spacing-section #1 #12
+            \baca-new-spacing-section #1 #32
             %! BREAK
             %! baca.BreakMeasureMap.__call__(2)
             \noBreak
@@ -114,7 +114,7 @@
             %@% \bacaStopTextSpanSPM
             %! SPACING
             %! baca.HorizontalSpacingSpecifier.__call__(2)
-            %@% - \baca-start-spm-left-only "[1/12]"
+            %@% - \baca-start-spm-left-only "[1/32]"
             %! SPACING
             %! baca.HorizontalSpacingSpecifier.__call__(2)
             %@% \bacaStartTextSpanSPM
@@ -123,7 +123,7 @@
             % [Page_Layout measure 38]
             %! SPACING_COMMAND
             %! baca.HorizontalSpacingSpecifier.__call__(1)
-            \baca-new-spacing-section #1 #12
+            \baca-new-spacing-section #1 #32
             %! BREAK
             %! baca.BreakMeasureMap.__call__(2)
             \noBreak
@@ -134,7 +134,7 @@
             %@% \bacaStopTextSpanSPM
             %! SPACING
             %! baca.HorizontalSpacingSpecifier.__call__(2)
-            %@% - \baca-start-spm-left-only "[1/12]"
+            %@% - \baca-start-spm-left-only "[1/32]"
             %! SPACING
             %! baca.HorizontalSpacingSpecifier.__call__(2)
             %@% \bacaStartTextSpanSPM
@@ -375,7 +375,7 @@
             % [Page_Layout measure 50]
             %! SPACING_COMMAND
             %! baca.HorizontalSpacingSpecifier.__call__(1)
-            \baca-new-spacing-section #1 #12
+            \baca-new-spacing-section #1 #24
             %! BREAK
             %! baca.BreakMeasureMap.__call__(2)
             \noBreak
@@ -386,7 +386,7 @@
             %@% \bacaStopTextSpanSPM
             %! SPACING
             %! baca.HorizontalSpacingSpecifier.__call__(2)
-            %@% - \baca-start-spm-left-only "[1/12]"
+            %@% - \baca-start-spm-left-only "[1/24]"
             %! SPACING
             %! baca.HorizontalSpacingSpecifier.__call__(2)
             %@% \bacaStartTextSpanSPM
@@ -435,7 +435,7 @@
             % [Page_Layout measure 53]
             %! SPACING_COMMAND
             %! baca.HorizontalSpacingSpecifier.__call__(1)
-            \baca-new-spacing-section #1 #24
+            \baca-new-spacing-section #1 #4
             %! BREAK
             %! baca.BreakMeasureMap.__call__(2)
             \noBreak
@@ -446,7 +446,7 @@
             %@% \bacaStopTextSpanSPM
             %! SPACING
             %! baca.HorizontalSpacingSpecifier.__call__(2)
-            %@% - \baca-start-spm-left-only "[1/24]"
+            %@% - \baca-start-spm-left-only "[1/4]"
             %! SPACING
             %! baca.HorizontalSpacingSpecifier.__call__(2)
             %@% \bacaStartTextSpanSPM
@@ -687,7 +687,7 @@
             % [Page_Layout measure 65]
             %! SPACING_COMMAND
             %! baca.HorizontalSpacingSpecifier.__call__(1)
-            \baca-new-spacing-section #1 #24
+            \baca-new-spacing-section #1 #12
             %! BREAK
             %! baca.BreakMeasureMap.__call__(2)
             \noBreak
@@ -698,7 +698,7 @@
             %@% \bacaStopTextSpanSPM
             %! SPACING
             %! baca.HorizontalSpacingSpecifier.__call__(2)
-            %@% - \baca-start-spm-left-only "[1/24]"
+            %@% - \baca-start-spm-left-only "[1/12]"
             %! SPACING
             %! baca.HorizontalSpacingSpecifier.__call__(2)
             %@% \bacaStartTextSpanSPM
@@ -747,7 +747,7 @@
             % [Page_Layout measure 68]
             %! SPACING_COMMAND
             %! baca.HorizontalSpacingSpecifier.__call__(1)
-            \baca-new-spacing-section #1 #32
+            \baca-new-spacing-section #1 #12
             %! BREAK
             %! baca.BreakMeasureMap.__call__(2)
             \noBreak
@@ -764,7 +764,7 @@
             %@% \bacaStopTextSpanSPM
             %! SPACING
             %! baca.HorizontalSpacingSpecifier.__call__(2)
-            %@% - \baca-start-spm-left-only "[1/32]"
+            %@% - \baca-start-spm-left-only "[1/12]"
             %! SPACING
             %! baca.HorizontalSpacingSpecifier.__call__(2)
             %@% \bacaStartTextSpanSPM
@@ -773,7 +773,7 @@
             % [Page_Layout measure 69]
             %! SPACING_COMMAND
             %! baca.HorizontalSpacingSpecifier.__call__(1)
-            \baca-new-spacing-section #1 #32
+            \baca-new-spacing-section #1 #12
             %! BREAK
             %! baca.BreakMeasureMap.__call__(2)
             \noBreak
@@ -784,7 +784,7 @@
             %@% \bacaStopTextSpanSPM
             %! SPACING
             %! baca.HorizontalSpacingSpecifier.__call__(2)
-            %@% - \baca-start-spm-left-only "[1/32]"
+            %@% - \baca-start-spm-left-only "[1/12]"
             %! SPACING
             %! baca.HorizontalSpacingSpecifier.__call__(2)
             %@% \bacaStartTextSpanSPM
@@ -813,7 +813,7 @@
             % [Page_Layout measure 71]
             %! SPACING_COMMAND
             %! baca.HorizontalSpacingSpecifier.__call__(1)
-            \baca-new-spacing-section #1 #32
+            \baca-new-spacing-section #1 #12
             %! BREAK
             %! baca.BreakMeasureMap.__call__(2)
             \noBreak
@@ -830,7 +830,7 @@
             %@% \bacaStopTextSpanSPM
             %! SPACING
             %! baca.HorizontalSpacingSpecifier.__call__(2)
-            %@% - \baca-start-spm-left-only "[1/32]"
+            %@% - \baca-start-spm-left-only "[1/12]"
             %! SPACING
             %! baca.HorizontalSpacingSpecifier.__call__(2)
             %@% \bacaStartTextSpanSPM
@@ -839,7 +839,7 @@
             % [Page_Layout measure 72]
             %! SPACING_COMMAND
             %! baca.HorizontalSpacingSpecifier.__call__(1)
-            \baca-new-spacing-section #1 #32
+            \baca-new-spacing-section #1 #12
             %! BREAK
             %! baca.BreakMeasureMap.__call__(2)
             \noBreak
@@ -850,7 +850,7 @@
             %@% \bacaStopTextSpanSPM
             %! SPACING
             %! baca.HorizontalSpacingSpecifier.__call__(2)
-            %@% - \baca-start-spm-left-only "[1/32]"
+            %@% - \baca-start-spm-left-only "[1/12]"
             %! SPACING
             %! baca.HorizontalSpacingSpecifier.__call__(2)
             %@% \bacaStartTextSpanSPM
