@@ -783,11 +783,11 @@ class ScoreTemplate(baca.ScoreTemplate):
 
     voice_colors = {
         "RH_Voice_I": "red",
-        "RH_Voice_I_Inserts": "red",
+        "RH_Insert_Voice_I": "red",
         "RH_Voice_II": "black",
-        "RH_Voice_II_Inserts": "black",
+        "RH_Insert_Voice_II": "black",
         "RH_Voice_III": "darkgreen",
-        "RH_Voice_III_Inserts": "darkgreen",
+        "RH_Insert_Voice_III": "darkgreen",
         "RH_Voice_IV": "blue",
         "RH_Voice_V": "darkmagenta",
         "RH_Voice_VI": "darkcyan",
@@ -796,11 +796,11 @@ class ScoreTemplate(baca.ScoreTemplate):
         "LH_Voice_II": "black",
         "LH_Voice_III": "darkgreen",
         "LH_Voice_IV": "blue",
-        "LH_Voice_IV_Inserts": "blue",
+        "LH_Insert_Voice_IV": "blue",
         "LH_Voice_V": "darkmagenta",
-        "LH_Voice_V_Inserts": "darkmagenta",
+        "LH_Insert_Voice_V": "darkmagenta",
         "LH_Voice_VI": "darkcyan",
-        "LH_Voice_VI_Inserts": "darkcyan",
+        "LH_Insert_Voice_VI": "darkcyan",
         "LH_Resonance_Voice": "darkred",
     }
 
@@ -811,30 +811,30 @@ class ScoreTemplate(baca.ScoreTemplate):
         self.voice_abbreviations.update(
             {
                 "rh_v1": "RH_Voice_I",
-                "rh_v1_i": "RH_Voice_I_Inserts",
+                "rh_v1_i": "RH_Insert_Voice_I",
                 "rh_v2": "RH_Voice_II",
-                "rh_v2_i": "RH_Voice_II_Inserts",
+                "rh_v2_i": "RH_Insert_Voice_II",
                 "rh_v3": "RH_Voice_III",
-                "rh_v3_i": "RH_Voice_III_Inserts",
+                "rh_v3_i": "RH_Insert_Voice_III",
                 "rh_v4": "RH_Voice_IV",
-                "rh_v4_i": "RH_Voice_IV_Inserts",
+                "rh_v4_i": "RH_Insert_Voice_IV",
                 "rh_v5": "RH_Voice_V",
-                "rh_v5_i": "RH_Voice_V_Inserts",
+                "rh_v5_i": "RH_Insert_Voice_V",
                 "rh_v6": "RH_Voice_VI",
-                "rh_v6_i": "RH_Voice_VI_Inserts",
+                "rh_v6_i": "RH_Insert_Voice_VI",
                 "rh_resonance": "RH_Resonance_Voice",
                 "lh_v1": "LH_Voice_I",
-                "lh_v1_i": "LH_VoiceI_Inserts",
+                "lh_v1_i": "LH_Insert_Voice_I",
                 "lh_v2": "LH_Voice_II",
-                "lh_v2_i": "LH_Voice_II_Inserts",
+                "lh_v2_i": "LH_Insert_Voice_II",
                 "lh_v3": "LH_Voice_III",
-                "lh_v3_i": "LH_Voice_III_Inserts",
+                "lh_v3_i": "LH_Insert_Voice_III",
                 "lh_v4": "LH_Voice_IV",
-                "lh_v4_i": "LH_Voice_IV_Inserts",
+                "lh_v4_i": "LH_Insert_Voice_IV",
                 "lh_v5": "LH_Voice_V",
-                "lh_v5_i": "LH_Voice_V_Inserts",
+                "lh_v5_i": "LH_Insert_Voice_V",
                 "lh_v6": "LH_Voice_VI",
-                "lh_v6_i": "LH_Voice_VI_Inserts",
+                "lh_v6_i": "LH_Insert_Voice_VI",
                 "lh_resonance": "LH_Resonance_Voice",
             }
         )
@@ -853,26 +853,26 @@ class ScoreTemplate(baca.ScoreTemplate):
         # RH VOICES
         rh_voice_1 = abjad.Voice(lilypond_type="RHVoiceI", name="RH_Voice_I", tag=tag)
         rh_voice_1I = abjad.Voice(
-            lilypond_type="RHVoiceIInserts", name="RH_Voice_I_Inserts", tag=tag
+            lilypond_type="RHInsertVoiceI", name="RH_Insert_Voice_I", tag=tag
         )
         rh_voice_2 = abjad.Voice(lilypond_type="RHVoiceII", name="RH_Voice_II", tag=tag)
         rh_voice_2I = abjad.Voice(
-            lilypond_type="RHVoiceIIInserts",
-            name="RH_Voice_II_Inserts",
+            lilypond_type="RHInsertVoiceII",
+            name="RH_Insert_Voice_II",
             tag=tag,
         )
         rh_voice_3 = abjad.Voice(
             lilypond_type="RHVoiceIII", name="RH_Voice_III", tag=tag
         )
         rh_voice_3I = abjad.Voice(
-            lilypond_type="RHVoiceIIIInserts",
-            name="RH_Voice_III_Inserts",
+            lilypond_type="RHInsertVoiceIII",
+            name="RH_Insert_Voice_III",
             tag=tag,
         )
         rh_voice_4 = abjad.Voice(lilypond_type="RHVoiceIV", name="RH_Voice_IV", tag=tag)
         rh_voice_4I = abjad.Voice(
-            lilypond_type="RHVoiceIVInserts",
-            name="RH_Voice_IV_Inserts",
+            lilypond_type="RHInsertVoiceIV",
+            name="RH_Insert_Voice_IV",
             tag=tag,
         )
         rh_voice_5 = abjad.Voice(lilypond_type="RHVoiceV", name="RH_Voice_V", tag=tag)
@@ -891,18 +891,18 @@ class ScoreTemplate(baca.ScoreTemplate):
         )
         lh_voice_4 = abjad.Voice(lilypond_type="LHVoiceIV", name="LH_Voice_IV", tag=tag)
         lh_voice_4I = abjad.Voice(
-            lilypond_type="LHVoiceIVInserts",
-            name="LH_Voice_IV_Inserts",
+            lilypond_type="LHInsertVoiceIV",
+            name="LH_Insert_Voice_IV",
             tag=tag,
         )
         lh_voice_5 = abjad.Voice(lilypond_type="LHVoiceV", name="LH_Voice_V", tag=tag)
         lh_voice_5I = abjad.Voice(
-            lilypond_type="LHVoiceVInserts", name="LH_Voice_V_Inserts", tag=tag
+            lilypond_type="LHInsertVoiceV", name="LH_Insert_Voice_V", tag=tag
         )
         lh_voice_6 = abjad.Voice(lilypond_type="LHVoiceVI", name="LH_Voice_VI", tag=tag)
         lh_voice_6I = abjad.Voice(
-            lilypond_type="LHVoiceVIInserts",
-            name="LH_Voice_VI_Inserts",
+            lilypond_type="LHInsertVoiceVI",
+            name="LH_Insert_Voice_VI",
             tag=tag,
         )
         lh_resonance_voice = abjad.Voice(
