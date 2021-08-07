@@ -2,10 +2,10 @@ import baca
 
 breaks = baca.breaks(
     baca.page(
-        baca.system(measure=10, y_offset=0, distances=(10, 15)),
-        baca.system(measure=13, y_offset=60, distances=(10, 15)),
-        baca.system(measure=17, y_offset=120, distances=(10, 15)),
-        baca.system(measure=21, y_offset=180, distances=(10, 15)),
+        baca.system(measure=1, y_offset=0, distances=(10, 15)),
+        baca.system(measure=4, y_offset=60, distances=(10, 15)),
+        baca.system(measure=8, y_offset=120, distances=(10, 15)),
+        baca.system(measure=12, y_offset=180, distances=(10, 15)),
     ),
 )
 
