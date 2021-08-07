@@ -119,6 +119,7 @@ accumulator(
 )
 
 maker = baca.SegmentMaker(
+    activate=(baca.tags.LOCAL_MEASURE_NUMBER,),
     check_all_are_pitched=True,
     ignore_repeat_pitch_classes=False,
     instruments=mraz.instruments,
