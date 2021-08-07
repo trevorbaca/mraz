@@ -389,25 +389,25 @@ segment.05.RH.Voice.I = {
 
 
 %! baca.path.extern()
-segment.05.RH.Voice.I.Inserts = {
+segment.05.RH.Insert.Voice.I = {
 
     %! baca.SegmentMaker._comment_measure_numbers()
-    % [RH_Voice_I_Inserts measure 78 / measure 1]
+    % [RH_Insert_Voice_I measure 78 / measure 1]
     %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 9/8
 
     %! baca.SegmentMaker._comment_measure_numbers()
-    % [RH_Voice_I_Inserts measure 79 / measure 2]
+    % [RH_Insert_Voice_I measure 79 / measure 2]
     %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 4/8
 
     %! baca.SegmentMaker._comment_measure_numbers()
-    % [RH_Voice_I_Inserts measure 80 / measure 3]
+    % [RH_Insert_Voice_I measure 80 / measure 3]
     %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 7/8
 
     %! baca.SegmentMaker._comment_measure_numbers()
-    % [RH_Voice_I_Inserts measure 81 / measure 4]
+    % [RH_Insert_Voice_I measure 81 / measure 4]
     %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 5/8
 
@@ -417,7 +417,7 @@ segment.05.RH.Voice.I.Inserts = {
 
         %! baca.SegmentMaker._make_multimeasure_rest_container(4)
         %! PHANTOM
-        \context Voice = "RH_Voice_I_Inserts"
+        \context Voice = "RH_Insert_Voice_I"
         %! baca.SegmentMaker._make_multimeasure_rest_container(4)
         %! PHANTOM
         {
@@ -425,7 +425,7 @@ segment.05.RH.Voice.I.Inserts = {
             %! baca.SegmentMaker._comment_measure_numbers()
             %! baca.SegmentMaker._style_phantom_measures(5)
             %! PHANTOM
-            % [RH_Voice_I_Inserts measure 82 / measure 5]
+            % [RH_Insert_Voice_I measure 82 / measure 5]
             %! baca.SegmentMaker._make_multimeasure_rest_container(2)
             %! PHANTOM
             %! MULTIMEASURE_REST
@@ -457,7 +457,7 @@ segment.05.RH.Voice.I.Inserts = {
 
         %! baca.SegmentMaker._make_multimeasure_rest_container(6)
         %! PHANTOM
-        \context Voice = "RH_Rest_Voice_I_Inserts"
+        \context Voice = "RH_Insert_Rest_Voice_I"
         %! baca.SegmentMaker._make_multimeasure_rest_container(6)
         %! PHANTOM
         {
@@ -465,7 +465,7 @@ segment.05.RH.Voice.I.Inserts = {
             %! baca.SegmentMaker._comment_measure_numbers()
             %! baca.SegmentMaker._style_phantom_measures(5)
             %! PHANTOM
-            % [RH_Rest_Voice_I_Inserts measure 82 / measure 5]
+            % [RH_Insert_Rest_Voice_I measure 82 / measure 5]
             %! baca.SegmentMaker._make_multimeasure_rest_container(5)
             %! PHANTOM
             %! REST_VOICE
@@ -593,25 +593,25 @@ segment.05.RH.Voice.II = {
 
 
 %! baca.path.extern()
-segment.05.RH.Voice.II.Inserts = {
+segment.05.RH.Insert.Voice.II = {
 
     %! baca.SegmentMaker._comment_measure_numbers()
-    % [RH_Voice_II_Inserts measure 78 / measure 1]
+    % [RH_Insert_Voice_II measure 78 / measure 1]
     %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 9/8
 
     %! baca.SegmentMaker._comment_measure_numbers()
-    % [RH_Voice_II_Inserts measure 79 / measure 2]
+    % [RH_Insert_Voice_II measure 79 / measure 2]
     %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 4/8
 
     %! baca.SegmentMaker._comment_measure_numbers()
-    % [RH_Voice_II_Inserts measure 80 / measure 3]
+    % [RH_Insert_Voice_II measure 80 / measure 3]
     %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 7/8
 
     %! baca.SegmentMaker._comment_measure_numbers()
-    % [RH_Voice_II_Inserts measure 81 / measure 4]
+    % [RH_Insert_Voice_II measure 81 / measure 4]
     %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 5/8
 
@@ -621,7 +621,7 @@ segment.05.RH.Voice.II.Inserts = {
 
         %! baca.SegmentMaker._make_multimeasure_rest_container(4)
         %! PHANTOM
-        \context Voice = "RH_Voice_II_Inserts"
+        \context Voice = "RH_Insert_Voice_II"
         %! baca.SegmentMaker._make_multimeasure_rest_container(4)
         %! PHANTOM
         {
@@ -629,7 +629,7 @@ segment.05.RH.Voice.II.Inserts = {
             %! baca.SegmentMaker._comment_measure_numbers()
             %! baca.SegmentMaker._style_phantom_measures(5)
             %! PHANTOM
-            % [RH_Voice_II_Inserts measure 82 / measure 5]
+            % [RH_Insert_Voice_II measure 82 / measure 5]
             %! baca.SegmentMaker._make_multimeasure_rest_container(2)
             %! PHANTOM
             %! MULTIMEASURE_REST
@@ -661,7 +661,7 @@ segment.05.RH.Voice.II.Inserts = {
 
         %! baca.SegmentMaker._make_multimeasure_rest_container(6)
         %! PHANTOM
-        \context Voice = "RH_Rest_Voice_II_Inserts"
+        \context Voice = "RH_Insert_Rest_Voice_II"
         %! baca.SegmentMaker._make_multimeasure_rest_container(6)
         %! PHANTOM
         {
@@ -669,7 +669,7 @@ segment.05.RH.Voice.II.Inserts = {
             %! baca.SegmentMaker._comment_measure_numbers()
             %! baca.SegmentMaker._style_phantom_measures(5)
             %! PHANTOM
-            % [RH_Rest_Voice_II_Inserts measure 82 / measure 5]
+            % [RH_Insert_Rest_Voice_II measure 82 / measure 5]
             %! baca.SegmentMaker._make_multimeasure_rest_container(5)
             %! PHANTOM
             %! REST_VOICE
@@ -1074,25 +1074,25 @@ segment.05.RH.Voice.III = {
 
 
 %! baca.path.extern()
-segment.05.RH.Voice.III.Inserts = {
+segment.05.RH.Insert.Voice.III = {
 
     %! baca.SegmentMaker._comment_measure_numbers()
-    % [RH_Voice_III_Inserts measure 78 / measure 1]
+    % [RH_Insert_Voice_III measure 78 / measure 1]
     %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 9/8
 
     %! baca.SegmentMaker._comment_measure_numbers()
-    % [RH_Voice_III_Inserts measure 79 / measure 2]
+    % [RH_Insert_Voice_III measure 79 / measure 2]
     %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 4/8
 
     %! baca.SegmentMaker._comment_measure_numbers()
-    % [RH_Voice_III_Inserts measure 80 / measure 3]
+    % [RH_Insert_Voice_III measure 80 / measure 3]
     %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 7/8
 
     %! baca.SegmentMaker._comment_measure_numbers()
-    % [RH_Voice_III_Inserts measure 81 / measure 4]
+    % [RH_Insert_Voice_III measure 81 / measure 4]
     %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 5/8
 
@@ -1102,7 +1102,7 @@ segment.05.RH.Voice.III.Inserts = {
 
         %! baca.SegmentMaker._make_multimeasure_rest_container(4)
         %! PHANTOM
-        \context Voice = "RH_Voice_III_Inserts"
+        \context Voice = "RH_Insert_Voice_III"
         %! baca.SegmentMaker._make_multimeasure_rest_container(4)
         %! PHANTOM
         {
@@ -1110,7 +1110,7 @@ segment.05.RH.Voice.III.Inserts = {
             %! baca.SegmentMaker._comment_measure_numbers()
             %! baca.SegmentMaker._style_phantom_measures(5)
             %! PHANTOM
-            % [RH_Voice_III_Inserts measure 82 / measure 5]
+            % [RH_Insert_Voice_III measure 82 / measure 5]
             %! baca.SegmentMaker._make_multimeasure_rest_container(2)
             %! PHANTOM
             %! MULTIMEASURE_REST
@@ -1142,7 +1142,7 @@ segment.05.RH.Voice.III.Inserts = {
 
         %! baca.SegmentMaker._make_multimeasure_rest_container(6)
         %! PHANTOM
-        \context Voice = "RH_Rest_Voice_III_Inserts"
+        \context Voice = "RH_Insert_Rest_Voice_III"
         %! baca.SegmentMaker._make_multimeasure_rest_container(6)
         %! PHANTOM
         {
@@ -1150,7 +1150,7 @@ segment.05.RH.Voice.III.Inserts = {
             %! baca.SegmentMaker._comment_measure_numbers()
             %! baca.SegmentMaker._style_phantom_measures(5)
             %! PHANTOM
-            % [RH_Rest_Voice_III_Inserts measure 82 / measure 5]
+            % [RH_Insert_Rest_Voice_III measure 82 / measure 5]
             %! baca.SegmentMaker._make_multimeasure_rest_container(5)
             %! PHANTOM
             %! REST_VOICE
@@ -1278,25 +1278,25 @@ segment.05.RH.Voice.IV = {
 
 
 %! baca.path.extern()
-segment.05.RH.Voice.IV.Inserts = {
+segment.05.RH.Insert.Voice.IV = {
 
     %! baca.SegmentMaker._comment_measure_numbers()
-    % [RH_Voice_IV_Inserts measure 78 / measure 1]
+    % [RH_Insert_Voice_IV measure 78 / measure 1]
     %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 9/8
 
     %! baca.SegmentMaker._comment_measure_numbers()
-    % [RH_Voice_IV_Inserts measure 79 / measure 2]
+    % [RH_Insert_Voice_IV measure 79 / measure 2]
     %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 4/8
 
     %! baca.SegmentMaker._comment_measure_numbers()
-    % [RH_Voice_IV_Inserts measure 80 / measure 3]
+    % [RH_Insert_Voice_IV measure 80 / measure 3]
     %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 7/8
 
     %! baca.SegmentMaker._comment_measure_numbers()
-    % [RH_Voice_IV_Inserts measure 81 / measure 4]
+    % [RH_Insert_Voice_IV measure 81 / measure 4]
     %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 5/8
 
@@ -1306,7 +1306,7 @@ segment.05.RH.Voice.IV.Inserts = {
 
         %! baca.SegmentMaker._make_multimeasure_rest_container(4)
         %! PHANTOM
-        \context Voice = "RH_Voice_IV_Inserts"
+        \context Voice = "RH_Insert_Voice_IV"
         %! baca.SegmentMaker._make_multimeasure_rest_container(4)
         %! PHANTOM
         {
@@ -1314,7 +1314,7 @@ segment.05.RH.Voice.IV.Inserts = {
             %! baca.SegmentMaker._comment_measure_numbers()
             %! baca.SegmentMaker._style_phantom_measures(5)
             %! PHANTOM
-            % [RH_Voice_IV_Inserts measure 82 / measure 5]
+            % [RH_Insert_Voice_IV measure 82 / measure 5]
             %! baca.SegmentMaker._make_multimeasure_rest_container(2)
             %! PHANTOM
             %! MULTIMEASURE_REST
@@ -1346,7 +1346,7 @@ segment.05.RH.Voice.IV.Inserts = {
 
         %! baca.SegmentMaker._make_multimeasure_rest_container(6)
         %! PHANTOM
-        \context Voice = "RH_Rest_Voice_IV_Inserts"
+        \context Voice = "RH_Insert_Rest_Voice_IV"
         %! baca.SegmentMaker._make_multimeasure_rest_container(6)
         %! PHANTOM
         {
@@ -1354,7 +1354,7 @@ segment.05.RH.Voice.IV.Inserts = {
             %! baca.SegmentMaker._comment_measure_numbers()
             %! baca.SegmentMaker._style_phantom_measures(5)
             %! PHANTOM
-            % [RH_Rest_Voice_IV_Inserts measure 82 / measure 5]
+            % [RH_Insert_Rest_Voice_IV measure 82 / measure 5]
             %! baca.SegmentMaker._make_multimeasure_rest_container(5)
             %! PHANTOM
             %! REST_VOICE
@@ -1675,10 +1675,10 @@ segment.05.Piano.Music.RH.Staff = <<
     { \segment.05.RH.Voice.I }
 
     %! mraz.ScoreTemplate.__call__()
-    \context RHVoiceIInserts = "RH_Voice_I_Inserts"
+    \context RHInsertVoiceI = "RH_Insert_Voice_I"
     %! mraz.ScoreTemplate.__call__()
     %! baca.path.extern()
-    { \segment.05.RH.Voice.I.Inserts }
+    { \segment.05.RH.Insert.Voice.I }
 
     %! mraz.ScoreTemplate.__call__()
     \context RHVoiceII = "RH_Voice_II"
@@ -1687,10 +1687,10 @@ segment.05.Piano.Music.RH.Staff = <<
     { \segment.05.RH.Voice.II }
 
     %! mraz.ScoreTemplate.__call__()
-    \context RHVoiceIIInserts = "RH_Voice_II_Inserts"
+    \context RHInsertVoiceII = "RH_Insert_Voice_II"
     %! mraz.ScoreTemplate.__call__()
     %! baca.path.extern()
-    { \segment.05.RH.Voice.II.Inserts }
+    { \segment.05.RH.Insert.Voice.II }
 
     %! mraz.ScoreTemplate.__call__()
     \context RHVoiceIII = "RH_Voice_III"
@@ -1699,10 +1699,10 @@ segment.05.Piano.Music.RH.Staff = <<
     { \segment.05.RH.Voice.III }
 
     %! mraz.ScoreTemplate.__call__()
-    \context RHVoiceIIIInserts = "RH_Voice_III_Inserts"
+    \context RHInsertVoiceIII = "RH_Insert_Voice_III"
     %! mraz.ScoreTemplate.__call__()
     %! baca.path.extern()
-    { \segment.05.RH.Voice.III.Inserts }
+    { \segment.05.RH.Insert.Voice.III }
 
     %! mraz.ScoreTemplate.__call__()
     \context RHVoiceIV = "RH_Voice_IV"
@@ -1711,10 +1711,10 @@ segment.05.Piano.Music.RH.Staff = <<
     { \segment.05.RH.Voice.IV }
 
     %! mraz.ScoreTemplate.__call__()
-    \context RHVoiceIVInserts = "RH_Voice_IV_Inserts"
+    \context RHInsertVoiceIV = "RH_Insert_Voice_IV"
     %! mraz.ScoreTemplate.__call__()
     %! baca.path.extern()
-    { \segment.05.RH.Voice.IV.Inserts }
+    { \segment.05.RH.Insert.Voice.IV }
 
     %! mraz.ScoreTemplate.__call__()
     \context RHVoiceV = "RH_Voice_V"
@@ -2432,25 +2432,25 @@ segment.05.LH.Voice.IV = {
 
 
 %! baca.path.extern()
-segment.05.LH.Voice.IV.Inserts = {
+segment.05.LH.Insert.Voice.IV = {
 
     %! baca.SegmentMaker._comment_measure_numbers()
-    % [LH_Voice_IV_Inserts measure 78 / measure 1]
+    % [LH_Insert_Voice_IV measure 78 / measure 1]
     %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 9/8
 
     %! baca.SegmentMaker._comment_measure_numbers()
-    % [LH_Voice_IV_Inserts measure 79 / measure 2]
+    % [LH_Insert_Voice_IV measure 79 / measure 2]
     %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 4/8
 
     %! baca.SegmentMaker._comment_measure_numbers()
-    % [LH_Voice_IV_Inserts measure 80 / measure 3]
+    % [LH_Insert_Voice_IV measure 80 / measure 3]
     %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 7/8
 
     %! baca.SegmentMaker._comment_measure_numbers()
-    % [LH_Voice_IV_Inserts measure 81 / measure 4]
+    % [LH_Insert_Voice_IV measure 81 / measure 4]
     %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 5/8
 
@@ -2460,7 +2460,7 @@ segment.05.LH.Voice.IV.Inserts = {
 
         %! baca.SegmentMaker._make_multimeasure_rest_container(4)
         %! PHANTOM
-        \context Voice = "LH_Voice_IV_Inserts"
+        \context Voice = "LH_Insert_Voice_IV"
         %! baca.SegmentMaker._make_multimeasure_rest_container(4)
         %! PHANTOM
         {
@@ -2468,7 +2468,7 @@ segment.05.LH.Voice.IV.Inserts = {
             %! baca.SegmentMaker._comment_measure_numbers()
             %! baca.SegmentMaker._style_phantom_measures(5)
             %! PHANTOM
-            % [LH_Voice_IV_Inserts measure 82 / measure 5]
+            % [LH_Insert_Voice_IV measure 82 / measure 5]
             %! baca.SegmentMaker._make_multimeasure_rest_container(2)
             %! PHANTOM
             %! MULTIMEASURE_REST
@@ -2500,7 +2500,7 @@ segment.05.LH.Voice.IV.Inserts = {
 
         %! baca.SegmentMaker._make_multimeasure_rest_container(6)
         %! PHANTOM
-        \context Voice = "LH_Rest_Voice_IV_Inserts"
+        \context Voice = "LH_Insert_Rest_Voice_IV"
         %! baca.SegmentMaker._make_multimeasure_rest_container(6)
         %! PHANTOM
         {
@@ -2508,7 +2508,7 @@ segment.05.LH.Voice.IV.Inserts = {
             %! baca.SegmentMaker._comment_measure_numbers()
             %! baca.SegmentMaker._style_phantom_measures(5)
             %! PHANTOM
-            % [LH_Rest_Voice_IV_Inserts measure 82 / measure 5]
+            % [LH_Insert_Rest_Voice_IV measure 82 / measure 5]
             %! baca.SegmentMaker._make_multimeasure_rest_container(5)
             %! PHANTOM
             %! REST_VOICE
@@ -2636,25 +2636,25 @@ segment.05.LH.Voice.V = {
 
 
 %! baca.path.extern()
-segment.05.LH.Voice.V.Inserts = {
+segment.05.LH.Insert.Voice.V = {
 
     %! baca.SegmentMaker._comment_measure_numbers()
-    % [LH_Voice_V_Inserts measure 78 / measure 1]
+    % [LH_Insert_Voice_V measure 78 / measure 1]
     %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 9/8
 
     %! baca.SegmentMaker._comment_measure_numbers()
-    % [LH_Voice_V_Inserts measure 79 / measure 2]
+    % [LH_Insert_Voice_V measure 79 / measure 2]
     %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 4/8
 
     %! baca.SegmentMaker._comment_measure_numbers()
-    % [LH_Voice_V_Inserts measure 80 / measure 3]
+    % [LH_Insert_Voice_V measure 80 / measure 3]
     %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 7/8
 
     %! baca.SegmentMaker._comment_measure_numbers()
-    % [LH_Voice_V_Inserts measure 81 / measure 4]
+    % [LH_Insert_Voice_V measure 81 / measure 4]
     %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 5/8
 
@@ -2664,7 +2664,7 @@ segment.05.LH.Voice.V.Inserts = {
 
         %! baca.SegmentMaker._make_multimeasure_rest_container(4)
         %! PHANTOM
-        \context Voice = "LH_Voice_V_Inserts"
+        \context Voice = "LH_Insert_Voice_V"
         %! baca.SegmentMaker._make_multimeasure_rest_container(4)
         %! PHANTOM
         {
@@ -2672,7 +2672,7 @@ segment.05.LH.Voice.V.Inserts = {
             %! baca.SegmentMaker._comment_measure_numbers()
             %! baca.SegmentMaker._style_phantom_measures(5)
             %! PHANTOM
-            % [LH_Voice_V_Inserts measure 82 / measure 5]
+            % [LH_Insert_Voice_V measure 82 / measure 5]
             %! baca.SegmentMaker._make_multimeasure_rest_container(2)
             %! PHANTOM
             %! MULTIMEASURE_REST
@@ -2704,7 +2704,7 @@ segment.05.LH.Voice.V.Inserts = {
 
         %! baca.SegmentMaker._make_multimeasure_rest_container(6)
         %! PHANTOM
-        \context Voice = "LH_Rest_Voice_V_Inserts"
+        \context Voice = "LH_Insert_Rest_Voice_V"
         %! baca.SegmentMaker._make_multimeasure_rest_container(6)
         %! PHANTOM
         {
@@ -2712,7 +2712,7 @@ segment.05.LH.Voice.V.Inserts = {
             %! baca.SegmentMaker._comment_measure_numbers()
             %! baca.SegmentMaker._style_phantom_measures(5)
             %! PHANTOM
-            % [LH_Rest_Voice_V_Inserts measure 82 / measure 5]
+            % [LH_Insert_Rest_Voice_V measure 82 / measure 5]
             %! baca.SegmentMaker._make_multimeasure_rest_container(5)
             %! PHANTOM
             %! REST_VOICE
@@ -2840,25 +2840,25 @@ segment.05.LH.Voice.VI = {
 
 
 %! baca.path.extern()
-segment.05.LH.Voice.VI.Inserts = {
+segment.05.LH.Insert.Voice.VI = {
 
     %! baca.SegmentMaker._comment_measure_numbers()
-    % [LH_Voice_VI_Inserts measure 78 / measure 1]
+    % [LH_Insert_Voice_VI measure 78 / measure 1]
     %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 9/8
 
     %! baca.SegmentMaker._comment_measure_numbers()
-    % [LH_Voice_VI_Inserts measure 79 / measure 2]
+    % [LH_Insert_Voice_VI measure 79 / measure 2]
     %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 4/8
 
     %! baca.SegmentMaker._comment_measure_numbers()
-    % [LH_Voice_VI_Inserts measure 80 / measure 3]
+    % [LH_Insert_Voice_VI measure 80 / measure 3]
     %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 7/8
 
     %! baca.SegmentMaker._comment_measure_numbers()
-    % [LH_Voice_VI_Inserts measure 81 / measure 4]
+    % [LH_Insert_Voice_VI measure 81 / measure 4]
     %! baca.SegmentMaker._call_rhythm_commands()
     s1 * 5/8
 
@@ -2868,7 +2868,7 @@ segment.05.LH.Voice.VI.Inserts = {
 
         %! baca.SegmentMaker._make_multimeasure_rest_container(4)
         %! PHANTOM
-        \context Voice = "LH_Voice_VI_Inserts"
+        \context Voice = "LH_Insert_Voice_VI"
         %! baca.SegmentMaker._make_multimeasure_rest_container(4)
         %! PHANTOM
         {
@@ -2876,7 +2876,7 @@ segment.05.LH.Voice.VI.Inserts = {
             %! baca.SegmentMaker._comment_measure_numbers()
             %! baca.SegmentMaker._style_phantom_measures(5)
             %! PHANTOM
-            % [LH_Voice_VI_Inserts measure 82 / measure 5]
+            % [LH_Insert_Voice_VI measure 82 / measure 5]
             %! baca.SegmentMaker._make_multimeasure_rest_container(2)
             %! PHANTOM
             %! MULTIMEASURE_REST
@@ -2908,7 +2908,7 @@ segment.05.LH.Voice.VI.Inserts = {
 
         %! baca.SegmentMaker._make_multimeasure_rest_container(6)
         %! PHANTOM
-        \context Voice = "LH_Rest_Voice_VI_Inserts"
+        \context Voice = "LH_Insert_Rest_Voice_VI"
         %! baca.SegmentMaker._make_multimeasure_rest_container(6)
         %! PHANTOM
         {
@@ -2916,7 +2916,7 @@ segment.05.LH.Voice.VI.Inserts = {
             %! baca.SegmentMaker._comment_measure_numbers()
             %! baca.SegmentMaker._style_phantom_measures(5)
             %! PHANTOM
-            % [LH_Rest_Voice_VI_Inserts measure 82 / measure 5]
+            % [LH_Insert_Rest_Voice_VI measure 82 / measure 5]
             %! baca.SegmentMaker._make_multimeasure_rest_container(5)
             %! PHANTOM
             %! REST_VOICE
@@ -3061,10 +3061,10 @@ segment.05.Piano.Music.LH.Staff = <<
     { \segment.05.LH.Voice.IV }
 
     %! mraz.ScoreTemplate.__call__()
-    \context LHVoiceIVInserts = "LH_Voice_IV_Inserts"
+    \context LHInsertVoiceIV = "LH_Insert_Voice_IV"
     %! mraz.ScoreTemplate.__call__()
     %! baca.path.extern()
-    { \segment.05.LH.Voice.IV.Inserts }
+    { \segment.05.LH.Insert.Voice.IV }
 
     %! mraz.ScoreTemplate.__call__()
     \context LHVoiceV = "LH_Voice_V"
@@ -3073,10 +3073,10 @@ segment.05.Piano.Music.LH.Staff = <<
     { \segment.05.LH.Voice.V }
 
     %! mraz.ScoreTemplate.__call__()
-    \context LHVoiceVInserts = "LH_Voice_V_Inserts"
+    \context LHInsertVoiceV = "LH_Insert_Voice_V"
     %! mraz.ScoreTemplate.__call__()
     %! baca.path.extern()
-    { \segment.05.LH.Voice.V.Inserts }
+    { \segment.05.LH.Insert.Voice.V }
 
     %! mraz.ScoreTemplate.__call__()
     \context LHVoiceVI = "LH_Voice_VI"
@@ -3085,10 +3085,10 @@ segment.05.Piano.Music.LH.Staff = <<
     { \segment.05.LH.Voice.VI }
 
     %! mraz.ScoreTemplate.__call__()
-    \context LHVoiceVIInserts = "LH_Voice_VI_Inserts"
+    \context LHInsertVoiceVI = "LH_Insert_Voice_VI"
     %! mraz.ScoreTemplate.__call__()
     %! baca.path.extern()
-    { \segment.05.LH.Voice.VI.Inserts }
+    { \segment.05.LH.Insert.Voice.VI }
 
     %! mraz.ScoreTemplate.__call__()
     \context LHResonanceVoice = "LH_Resonance_Voice"

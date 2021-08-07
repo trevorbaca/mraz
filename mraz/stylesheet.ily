@@ -168,7 +168,7 @@
 
     \context {
         \Voice
-        \name RHVoiceIInserts
+        \name RHInsertVoiceI
         \type Engraver_group
         \alias Voice
         \voiceTwo
@@ -183,7 +183,7 @@
     }
     \context {
         \Voice
-        \name RHVoiceIIInserts
+        \name RHInsertVoiceII
         \type Engraver_group
         \alias Voice
         \voiceOne
@@ -199,7 +199,7 @@
 
     \context {
         \Voice
-        \name RHVoiceIIIInserts
+        \name RHInsertVoiceIII
         \type Engraver_group
         \alias Voice
         \voiceFour
@@ -215,7 +215,7 @@
 
     \context {
         \Voice
-        \name RHVoiceIVInserts
+        \name RHInsertVoiceIV
         \type Engraver_group
         \alias Voice
         \voiceThree
@@ -285,7 +285,7 @@
 
     \context {
         \Voice
-        \name LHVoiceIVInserts
+        \name LHInsertVoiceIV
         \type Engraver_group
         \alias Voice
         \voiceThree
@@ -301,7 +301,7 @@
 
     \context {
         \Voice
-        \name LHVoiceVInserts
+        \name LHInsertVoiceV
         \type Engraver_group
         \alias Voice
         \voiceTwo
@@ -317,7 +317,7 @@
 
     \context {
         \Voice
-        \name LHVoiceVIInserts
+        \name LHInsertVoiceVI
         \type Engraver_group
         \alias Voice
         \voiceOne
@@ -346,13 +346,13 @@
         \type Engraver_group
         \alias Staff
         \accepts RHVoiceI
-        \accepts RHVoiceIInserts
+        \accepts RHInsertVoiceI
         \accepts RHVoiceII
-        \accepts RHVoiceIIInserts
+        \accepts RHInsertVoiceII
         \accepts RHVoiceIII
-        \accepts RHVoiceIIIInserts
+        \accepts RHInsertVoiceIII
         \accepts RHVoiceIV
-        \accepts RHVoiceIVInserts
+        \accepts RHInsertVoiceIV
         \accepts RHVoiceV
         \accepts RHVoiceVI
         \accepts RHResonanceVoice
@@ -368,11 +368,11 @@
         \accepts LHVoiceII
         \accepts LHVoiceIII
         \accepts LHVoiceIV
-        \accepts LHVoiceIVInserts
+        \accepts LHInsertVoiceIV
         \accepts LHVoiceV
-        \accepts LHVoiceVInserts
+        \accepts LHInsertVoiceV
         \accepts LHVoiceVI
-        \accepts LHVoiceVIInserts
+        \accepts LHInsertVoiceVI
         \accepts LHResonanceVoice
     }
 
@@ -492,7 +492,7 @@ mraz-ottava-brackets-always-govern-markup = \markup
 %}
 %
 %\context {
-%    \RHVoiceIInserts
+%    \RHInsertVoiceI
 %    \override Accidental.color = #red
 %    \override Beam.color = #red
 %    \override Dots.color = #red
@@ -532,7 +532,7 @@ mraz-ottava-brackets-always-govern-markup = \markup
 %}
 %
 %\context {
-%    \RHVoiceIIIInserts
+%    \RHInsertVoiceIII
 %    \override Accidental.color = #darkgreen
 %    \override Beam.color = #darkgreen
 %    \override Dots.color = #darkgreen
@@ -572,7 +572,7 @@ mraz-ottava-brackets-always-govern-markup = \markup
 %}
 %
 %\context {
-%    \RHVoiceIVInserts
+%    \RHInsertVoiceIV
 %    \override Accidental.color = #blue
 %    \override Beam.color = #blue
 %    \override Dots.color = #blue
@@ -712,7 +712,7 @@ mraz-ottava-brackets-always-govern-markup = \markup
 %}
 %
 %\context {
-%    \LHVoiceIVInserts
+%    \LHInsertVoiceIV
 %    \override Accidental.color = #blue
 %    \override Beam.color = #blue
 %    \override Dots.color = #blue
@@ -752,7 +752,7 @@ mraz-ottava-brackets-always-govern-markup = \markup
 %}
 %
 %\context {
-%    \LHVoiceVInserts
+%    \LHInsertVoiceV
 %    \override Accidental.color = #darkmagenta
 %    \override Beam.color = #darkmagenta
 %    \override Dots.color = #darkmagenta
@@ -792,7 +792,7 @@ mraz-ottava-brackets-always-govern-markup = \markup
 %}
 %
 %\context {
-%    \LHVoiceVIInserts
+%    \LHInsertVoiceVI
 %    \override Accidental.color = #darkcyan
 %    \override Beam.color = #darkcyan
 %    \override Dots.color = #darkcyan
