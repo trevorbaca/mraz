@@ -54,10 +54,10 @@ segment.05.Global.Skips = {
     s1 * 9/8
     %! LOCAL_MEASURE_NUMBER
     %! baca.SegmentMaker._label_measure_numbers()
-    %@% - \baca-start-lmn-left-only "1"
+    - \baca-start-lmn-left-only "1"
     %! LOCAL_MEASURE_NUMBER
     %! baca.SegmentMaker._label_measure_numbers()
-    %@% \bacaStartTextSpanLMN
+    \bacaStartTextSpanLMN
     %! MEASURE_NUMBER
     %! baca.SegmentMaker._label_measure_numbers()
     %@% - \baca-start-mn-left-only "78"
@@ -108,7 +108,7 @@ segment.05.Global.Skips = {
     s1 * 1/2
     %! LOCAL_MEASURE_NUMBER
     %! baca.SegmentMaker._label_measure_numbers()
-    %@% \bacaStopTextSpanLMN
+    \bacaStopTextSpanLMN
     %! MEASURE_NUMBER
     %! baca.SegmentMaker._label_measure_numbers()
     %@% \bacaStopTextSpanMN
@@ -117,10 +117,10 @@ segment.05.Global.Skips = {
     %@% \bacaStopTextSpanCT
     %! LOCAL_MEASURE_NUMBER
     %! baca.SegmentMaker._label_measure_numbers()
-    %@% - \baca-start-lmn-left-only "2"
+    - \baca-start-lmn-left-only "2"
     %! LOCAL_MEASURE_NUMBER
     %! baca.SegmentMaker._label_measure_numbers()
-    %@% \bacaStartTextSpanLMN
+    \bacaStartTextSpanLMN
     %! MEASURE_NUMBER
     %! baca.SegmentMaker._label_measure_numbers()
     %@% - \baca-start-mn-left-only "79"
@@ -147,7 +147,7 @@ segment.05.Global.Skips = {
     s1 * 7/8
     %! LOCAL_MEASURE_NUMBER
     %! baca.SegmentMaker._label_measure_numbers()
-    %@% \bacaStopTextSpanLMN
+    \bacaStopTextSpanLMN
     %! MEASURE_NUMBER
     %! baca.SegmentMaker._label_measure_numbers()
     %@% \bacaStopTextSpanMN
@@ -156,10 +156,10 @@ segment.05.Global.Skips = {
     %@% \bacaStopTextSpanCT
     %! LOCAL_MEASURE_NUMBER
     %! baca.SegmentMaker._label_measure_numbers()
-    %@% - \baca-start-lmn-left-only "3"
+    - \baca-start-lmn-left-only "3"
     %! LOCAL_MEASURE_NUMBER
     %! baca.SegmentMaker._label_measure_numbers()
-    %@% \bacaStartTextSpanLMN
+    \bacaStartTextSpanLMN
     %! MEASURE_NUMBER
     %! baca.SegmentMaker._label_measure_numbers()
     %@% - \baca-start-mn-left-only "80"
@@ -186,7 +186,7 @@ segment.05.Global.Skips = {
     s1 * 5/8
     %! LOCAL_MEASURE_NUMBER
     %! baca.SegmentMaker._label_measure_numbers()
-    %@% \bacaStopTextSpanLMN
+    \bacaStopTextSpanLMN
     %! MEASURE_NUMBER
     %! baca.SegmentMaker._label_measure_numbers()
     %@% \bacaStopTextSpanMN
@@ -195,10 +195,10 @@ segment.05.Global.Skips = {
     %@% \bacaStopTextSpanCT
     %! LOCAL_MEASURE_NUMBER
     %! baca.SegmentMaker._label_measure_numbers()
-    %@% - \baca-start-lmn-left-only "4"
+    - \baca-start-lmn-left-only "4"
     %! LOCAL_MEASURE_NUMBER
     %! baca.SegmentMaker._label_measure_numbers()
-    %@% \bacaStartTextSpanLMN
+    \bacaStartTextSpanLMN
     %! MEASURE_NUMBER
     %! baca.SegmentMaker._label_measure_numbers()
     %@% - \baca-start-mn-left-only "81"
@@ -232,7 +232,7 @@ segment.05.Global.Skips = {
     %! baca.SegmentMaker._label_measure_numbers()
     %! baca.SegmentMaker._style_phantom_measures(1)
     %! PHANTOM
-    %@% \bacaStopTextSpanLMN
+    \bacaStopTextSpanLMN
     %! MEASURE_NUMBER
     %! baca.SegmentMaker._label_measure_numbers()
     %! baca.SegmentMaker._style_phantom_measures(1)
