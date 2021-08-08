@@ -25,7 +25,7 @@
             %! baca.SegmentMaker._comment_measure_numbers()
             % [Page_Layout measure 1]
             %! SPACING_COMMAND
-            %! baca.HorizontalSpacingSpecifier.__call__(1)
+            %! baca.SpacingSpecifier.__call__(1)
             \baca-new-spacing-section #1 #40
             %! BREAK
             %! baca.BreakMeasureMap.__call__(1)
@@ -42,16 +42,16 @@
             %! baca.SegmentMaker._make_global_skips(1)
             s1 * 1/2
             %! SPACING
-            %! baca.HorizontalSpacingSpecifier.__call__(2)
+            %! baca.SpacingSpecifier.__call__(2)
             %@% - \baca-start-spm-left-only "[1/40]"
             %! SPACING
-            %! baca.HorizontalSpacingSpecifier.__call__(2)
+            %! baca.SpacingSpecifier.__call__(2)
             %@% \bacaStartTextSpanSPM
 
             %! baca.SegmentMaker._comment_measure_numbers()
             % [Page_Layout measure 2]
             %! SPACING_COMMAND
-            %! baca.HorizontalSpacingSpecifier.__call__(1)
+            %! baca.SpacingSpecifier.__call__(1)
             \baca-new-spacing-section #1 #4
             %! BREAK
             %! baca.BreakMeasureMap.__call__(2)
@@ -59,19 +59,19 @@
             %! baca.SegmentMaker._make_global_skips(1)
             s1 * 1/4
             %! SPACING
-            %! baca.HorizontalSpacingSpecifier.__call__(3)
+            %! baca.SpacingSpecifier.__call__(3)
             %@% \bacaStopTextSpanSPM
             %! SPACING
-            %! baca.HorizontalSpacingSpecifier.__call__(2)
+            %! baca.SpacingSpecifier.__call__(2)
             %@% - \baca-start-spm-left-only "[1/4]"
             %! SPACING
-            %! baca.HorizontalSpacingSpecifier.__call__(2)
+            %! baca.SpacingSpecifier.__call__(2)
             %@% \bacaStartTextSpanSPM
 
             %! baca.SegmentMaker._comment_measure_numbers()
             % [Page_Layout measure 3]
             %! SPACING_COMMAND
-            %! baca.HorizontalSpacingSpecifier.__call__(1)
+            %! baca.SpacingSpecifier.__call__(1)
             \baca-new-spacing-section #1 #40
             %! BREAK
             %! baca.BreakMeasureMap.__call__(2)
@@ -79,19 +79,19 @@
             %! baca.SegmentMaker._make_global_skips(1)
             s1 * 5/16
             %! SPACING
-            %! baca.HorizontalSpacingSpecifier.__call__(3)
+            %! baca.SpacingSpecifier.__call__(3)
             %@% \bacaStopTextSpanSPM
             %! SPACING
-            %! baca.HorizontalSpacingSpecifier.__call__(2)
+            %! baca.SpacingSpecifier.__call__(2)
             %@% - \baca-start-spm-left-only "[1/40]"
             %! SPACING
-            %! baca.HorizontalSpacingSpecifier.__call__(2)
+            %! baca.SpacingSpecifier.__call__(2)
             %@% \bacaStartTextSpanSPM
 
             %! baca.SegmentMaker._comment_measure_numbers()
             % [Page_Layout measure 4]
             %! SPACING_COMMAND
-            %! baca.HorizontalSpacingSpecifier.__call__(1)
+            %! baca.SpacingSpecifier.__call__(1)
             \baca-new-spacing-section #1 #4
             %! BREAK
             %! baca.BreakMeasureMap.__call__(2)
@@ -99,19 +99,19 @@
             %! baca.SegmentMaker._make_global_skips(1)
             s1 * 1/4
             %! SPACING
-            %! baca.HorizontalSpacingSpecifier.__call__(3)
+            %! baca.SpacingSpecifier.__call__(3)
             %@% \bacaStopTextSpanSPM
             %! SPACING
-            %! baca.HorizontalSpacingSpecifier.__call__(2)
+            %! baca.SpacingSpecifier.__call__(2)
             %@% - \baca-start-spm-left-only "[1/4]"
             %! SPACING
-            %! baca.HorizontalSpacingSpecifier.__call__(2)
+            %! baca.SpacingSpecifier.__call__(2)
             %@% \bacaStartTextSpanSPM
 
             %! baca.SegmentMaker._comment_measure_numbers()
             % [Page_Layout measure 5]
             %! SPACING_COMMAND
-            %! baca.HorizontalSpacingSpecifier.__call__(1)
+            %! baca.SpacingSpecifier.__call__(1)
             \baca-new-spacing-section #1 #40
             %! BREAK
             %! baca.BreakMeasureMap.__call__(2)
@@ -119,19 +119,19 @@
             %! baca.SegmentMaker._make_global_skips(1)
             s1 * 1/2
             %! SPACING
-            %! baca.HorizontalSpacingSpecifier.__call__(3)
+            %! baca.SpacingSpecifier.__call__(3)
             %@% \bacaStopTextSpanSPM
             %! SPACING
-            %! baca.HorizontalSpacingSpecifier.__call__(2)
+            %! baca.SpacingSpecifier.__call__(2)
             %@% - \baca-start-spm-left-only "[1/40]"
             %! SPACING
-            %! baca.HorizontalSpacingSpecifier.__call__(2)
+            %! baca.SpacingSpecifier.__call__(2)
             %@% \bacaStartTextSpanSPM
 
             %! baca.SegmentMaker._comment_measure_numbers()
             % [Page_Layout measure 6]
             %! SPACING_COMMAND
-            %! baca.HorizontalSpacingSpecifier.__call__(1)
+            %! baca.SpacingSpecifier.__call__(1)
             \baca-new-spacing-section #1 #40
             %! BREAK
             %! baca.BreakMeasureMap.__call__(2)
@@ -139,19 +139,19 @@
             %! baca.SegmentMaker._make_global_skips(1)
             s1 * 5/8
             %! SPACING
-            %! baca.HorizontalSpacingSpecifier.__call__(3)
+            %! baca.SpacingSpecifier.__call__(3)
             %@% \bacaStopTextSpanSPM
             %! SPACING
-            %! baca.HorizontalSpacingSpecifier.__call__(2)
+            %! baca.SpacingSpecifier.__call__(2)
             %@% - \baca-start-spm-left-only "[1/40]"
             %! SPACING
-            %! baca.HorizontalSpacingSpecifier.__call__(2)
+            %! baca.SpacingSpecifier.__call__(2)
             %@% \bacaStartTextSpanSPM
 
             %! baca.SegmentMaker._comment_measure_numbers()
             % [Page_Layout measure 7]
             %! SPACING_COMMAND
-            %! baca.HorizontalSpacingSpecifier.__call__(1)
+            %! baca.SpacingSpecifier.__call__(1)
             \baca-new-spacing-section #35 #96
             %! BREAK
             %! baca.BreakMeasureMap.__call__(2)
@@ -159,19 +159,19 @@
             %! baca.SegmentMaker._make_global_skips(1)
             s1 * 1/4
             %! SPACING
-            %! baca.HorizontalSpacingSpecifier.__call__(3)
+            %! baca.SpacingSpecifier.__call__(3)
             %@% \bacaStopTextSpanSPM
             %! SPACING
-            %! baca.HorizontalSpacingSpecifier.__call__(2)
+            %! baca.SpacingSpecifier.__call__(2)
             %@% - \baca-start-spm-left-only "[[1/4 * 35/24]]"
             %! SPACING
-            %! baca.HorizontalSpacingSpecifier.__call__(2)
+            %! baca.SpacingSpecifier.__call__(2)
             %@% \bacaStartTextSpanSPM
 
             %! baca.SegmentMaker._comment_measure_numbers()
             % [Page_Layout measure 8]
             %! SPACING_COMMAND
-            %! baca.HorizontalSpacingSpecifier.__call__(1)
+            %! baca.SpacingSpecifier.__call__(1)
             \baca-new-spacing-section #1 #32
             %! BREAK
             %! baca.BreakMeasureMap.__call__(2)
@@ -185,19 +185,19 @@
             %! baca.SegmentMaker._make_global_skips(1)
             s1 * 3/2
             %! SPACING
-            %! baca.HorizontalSpacingSpecifier.__call__(3)
+            %! baca.SpacingSpecifier.__call__(3)
             %@% \bacaStopTextSpanSPM
             %! SPACING
-            %! baca.HorizontalSpacingSpecifier.__call__(2)
+            %! baca.SpacingSpecifier.__call__(2)
             %@% - \baca-start-spm-left-only "[1/32]"
             %! SPACING
-            %! baca.HorizontalSpacingSpecifier.__call__(2)
+            %! baca.SpacingSpecifier.__call__(2)
             %@% \bacaStartTextSpanSPM
 
             %! baca.SegmentMaker._comment_measure_numbers()
             % [Page_Layout measure 9]
             %! SPACING_COMMAND
-            %! baca.HorizontalSpacingSpecifier.__call__(1)
+            %! baca.SpacingSpecifier.__call__(1)
             \baca-new-spacing-section #35 #960
             %! BREAK
             %! baca.BreakMeasureMap.__call__(2)
@@ -205,19 +205,19 @@
             %! baca.SegmentMaker._make_global_skips(1)
             s1 * 21/16
             %! SPACING
-            %! baca.HorizontalSpacingSpecifier.__call__(3)
+            %! baca.SpacingSpecifier.__call__(3)
             %@% \bacaStopTextSpanSPM
             %! SPACING
-            %! baca.HorizontalSpacingSpecifier.__call__(2)
+            %! baca.SpacingSpecifier.__call__(2)
             %@% - \baca-start-spm-left-only "[[1/40 * 35/24]]"
             %! SPACING
-            %! baca.HorizontalSpacingSpecifier.__call__(2)
+            %! baca.SpacingSpecifier.__call__(2)
             %@% \bacaStartTextSpanSPM
 
             %! baca.SegmentMaker._comment_measure_numbers()
             % [Page_Layout measure 10]
             %! SPACING_COMMAND
-            %! baca.HorizontalSpacingSpecifier.__call__(1)
+            %! baca.SpacingSpecifier.__call__(1)
             \baca-new-spacing-section #1 #4
             %! BREAK
             %! baca.BreakMeasureMap.__call__(2)
@@ -231,19 +231,19 @@
             %! baca.SegmentMaker._make_global_skips(1)
             s1 * 7/4
             %! SPACING
-            %! baca.HorizontalSpacingSpecifier.__call__(3)
+            %! baca.SpacingSpecifier.__call__(3)
             %@% \bacaStopTextSpanSPM
             %! SPACING
-            %! baca.HorizontalSpacingSpecifier.__call__(2)
+            %! baca.SpacingSpecifier.__call__(2)
             %@% - \baca-start-spm-left-only "[1/4]"
             %! SPACING
-            %! baca.HorizontalSpacingSpecifier.__call__(2)
+            %! baca.SpacingSpecifier.__call__(2)
             %@% \bacaStartTextSpanSPM
 
             %! baca.SegmentMaker._comment_measure_numbers()
             % [Page_Layout measure 11]
             %! SPACING_COMMAND
-            %! baca.HorizontalSpacingSpecifier.__call__(1)
+            %! baca.SpacingSpecifier.__call__(1)
             \baca-new-spacing-section #1 #4
             %! BREAK
             %! baca.BreakMeasureMap.__call__(2)
@@ -251,19 +251,19 @@
             %! baca.SegmentMaker._make_global_skips(1)
             s1 * 3/2
             %! SPACING
-            %! baca.HorizontalSpacingSpecifier.__call__(3)
+            %! baca.SpacingSpecifier.__call__(3)
             %@% \bacaStopTextSpanSPM
             %! SPACING
-            %! baca.HorizontalSpacingSpecifier.__call__(2)
+            %! baca.SpacingSpecifier.__call__(2)
             %@% - \baca-start-spm-left-only "[1/4]"
             %! SPACING
-            %! baca.HorizontalSpacingSpecifier.__call__(2)
+            %! baca.SpacingSpecifier.__call__(2)
             %@% \bacaStartTextSpanSPM
 
             %! baca.SegmentMaker._comment_measure_numbers()
             % [Page_Layout measure 12]
             %! SPACING_COMMAND
-            %! baca.HorizontalSpacingSpecifier.__call__(1)
+            %! baca.SpacingSpecifier.__call__(1)
             \baca-new-spacing-section #1 #40
             %! BREAK
             %! baca.BreakMeasureMap.__call__(2)
@@ -271,13 +271,13 @@
             %! baca.SegmentMaker._make_global_skips(1)
             s1 * 1
             %! SPACING
-            %! baca.HorizontalSpacingSpecifier.__call__(3)
+            %! baca.SpacingSpecifier.__call__(3)
             %@% \bacaStopTextSpanSPM
             %! SPACING
-            %! baca.HorizontalSpacingSpecifier.__call__(2)
+            %! baca.SpacingSpecifier.__call__(2)
             %@% - \baca-start-spm-left-only "[1/40]"
             %! SPACING
-            %! baca.HorizontalSpacingSpecifier.__call__(2)
+            %! baca.SpacingSpecifier.__call__(2)
             %@% \bacaStartTextSpanSPM
 
             %! baca.SegmentMaker._comment_measure_numbers()
@@ -285,7 +285,7 @@
             %! PHANTOM
             % [Page_Layout measure 13]
             %! SPACING_COMMAND
-            %! baca.HorizontalSpacingSpecifier.__call__(1)
+            %! baca.SpacingSpecifier.__call__(1)
             %! baca.SegmentMaker._style_phantom_measures(1)
             %! PHANTOM
             \baca-new-spacing-section #1 #4
@@ -301,7 +301,7 @@
             %! PHANTOM
             s1 * 1/4
             %! SPACING
-            %! baca.HorizontalSpacingSpecifier.__call__(3)
+            %! baca.SpacingSpecifier.__call__(3)
             %! baca.SegmentMaker._style_phantom_measures(1)
             %! PHANTOM
             %@% \bacaStopTextSpanSPM
