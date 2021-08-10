@@ -46,27 +46,25 @@ breaks = baca.breaks(
     ),
 )
 
-spacing = baca.spacing(
-    breaks=breaks,
-    fallback_duration=(1, 32),
-    overrides=(
-        baca.space(8, (1, 16)),
-        baca.space(16, (1, 24)),
-        baca.space((31, 32), (1, 4)),
-        baca.space((34, 50), (1, 12)),
-        baca.space([35, 38], (1, 4)),
-        baca.space((51, 65), (1, 24)),
-        baca.space((66, 67), (1, 4)),
-        baca.space((68, 69), (1, 32)),
-        baca.space(70, (1, 4)),
-        baca.space((71, 72), (1, 32)),
-        baca.space((73, 75), (1, 4)),
-        baca.space([77, 82], (1, 8)),
-        baca.space((83, 96), (1, 28)),
-        baca.space((98, 108), (1, 48)),
-        baca.space([4, 6, 9, 23, 25, 28, 54, 84, 88, 90, 97], (1, 4)),
-    ),
-)
-
 if __name__ == "__main__":
-    baca.build.make_layout_ly(breaks, spacing)
+    baca.build.make_layout_ly(
+        breaks,
+        fallback_duration=(1, 32),
+        overrides=(
+            baca.space(8, (1, 16)),
+            baca.space(16, (1, 24)),
+            baca.space((31, 32), (1, 4)),
+            baca.space((34, 50), (1, 12)),
+            baca.space([35, 38], (1, 4)),
+            baca.space((51, 65), (1, 24)),
+            baca.space((66, 67), (1, 4)),
+            baca.space((68, 69), (1, 32)),
+            baca.space(70, (1, 4)),
+            baca.space((71, 72), (1, 32)),
+            baca.space((73, 75), (1, 4)),
+            baca.space([77, 82], (1, 8)),
+            baca.space((83, 96), (1, 28)),
+            baca.space((98, 108), (1, 48)),
+            baca.space([4, 6, 9, 23, 25, 28, 54, 84, 88, 90, 97], (1, 4)),
+        ),
+    )

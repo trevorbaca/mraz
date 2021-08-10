@@ -17,16 +17,14 @@ breaks = baca.breaks(
     ),
 )
 
-spacing = baca.spacing(
-    breaks=breaks,
-    fallback_duration=(1, 12),
-    overrides=(
-        baca.space((17, 31), (1, 24)),
-        baca.space(20, (1, 4)),
-        baca.space((34, 35), (1, 32)),
-        baca.space((37, 38), (1, 32)),
-    ),
-)
-
 if __name__ == "__main__":
-    baca.build.make_layout_ly(breaks, spacing)
+    baca.build.make_layout_ly(
+        breaks,
+        fallback_duration=(1, 12),
+        overrides=(
+            baca.space((17, 31), (1, 24)),
+            baca.space(20, (1, 4)),
+            baca.space((34, 35), (1, 32)),
+            baca.space((37, 38), (1, 32)),
+        ),
+    )
