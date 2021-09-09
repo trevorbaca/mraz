@@ -6,7 +6,10 @@ from mraz import library as mraz
 ##################################### [E] #####################################
 ###############################################################################
 
-accumulator = baca.Accumulator(mraz.ScoreTemplate())
+accumulator = baca.Accumulator(
+    mraz.ScoreTemplate()(),
+    voice_abbreviations=mraz.ScoreTemplate().voice_abbreviations,
+)
 collection_maker = mraz.CollectionMaker()
 collections = collection_maker.make_segment_6_collections()
 
