@@ -848,7 +848,7 @@ class ScoreTemplate(baca.ScoreTemplate):
         site = "mraz.ScoreTemplate.__call__()"
         tag = abjad.Tag(site)
         # GLOBAL CONTEXT
-        global_context = self._make_global_context()
+        global_context = baca.templates.make_global_context()
 
         # RH VOICES
         rh_voice_1 = abjad.Voice(lilypond_type="RHVoiceI", name="RH_Voice_I", tag=tag)
@@ -974,8 +974,8 @@ class ScoreTemplate(baca.ScoreTemplate):
 
         # SCORE
         score = abjad.Score([global_context, music_context], name="Score", tag=tag)
-        self._assert_lilypond_identifiers(score)
-        self._assert_unique_context_names(score)
-        self._assert_matching_custom_context_names(score)
+        baca.templates.assert_lilypond_identifiers(score)
+        baca.templates.assert_unique_context_names(score)
+        baca.templates.assert_matching_custom_context_names(score)
         self._validate_voice_names(score)
         return score
