@@ -989,7 +989,7 @@ accumulator(
 
 maker = baca.SegmentMaker(
     color_octaves=False,
-    check_all_are_pitched=True,
+    error_on_not_yet_pitched=True,
     activate=(baca.tags.LOCAL_MEASURE_NUMBER,),
     deactivate=(baca.tags.REPEAT_PITCH_CLASS_COLORING,),
     do_not_check_beamed_long_notes=True,

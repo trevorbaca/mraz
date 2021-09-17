@@ -338,7 +338,7 @@ accumulator(
 
 maker = baca.SegmentMaker(
     activate=(baca.tags.LOCAL_MEASURE_NUMBER,),
-    check_all_are_pitched=True,
+    error_on_not_yet_pitched=True,
     color_octaves=False,
     do_not_check_beamed_long_notes=True,
     ignore_repeat_pitch_classes=True,
