@@ -3849,7 +3849,7 @@ segment.04.RH.Voice.II = {
             %! baca.up_arpeggio()
             %! baca.IndicatorCommand._call()
             \arpeggioArrowUp
-            %! baca.SegmentMaker._color_repeat_pitch_classes_()
+            %! baca.segmentmaker.color_repeat_pitch_classes()
             %! REPEAT_PITCH_CLASS_COLORING
             %@% \baca-repeat-pitch-class-coloring
             <a g' af'! b' cs''! f'' ef'''! c''''>1.
@@ -3884,7 +3884,7 @@ segment.04.RH.Voice.II = {
             %! baca.text_script_up()
             %! baca.OverrideCommand._call(1)
             \override TextScript.direction = #up
-            %! baca.SegmentMaker._color_repeat_pitch_classes_()
+            %! baca.segmentmaker.color_repeat_pitch_classes()
             %! REPEAT_PITCH_CLASS_COLORING
             %@% \baca-repeat-pitch-class-coloring
             cs''!16
@@ -4151,7 +4151,7 @@ segment.04.RH.Voice.II = {
 
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 0
-            %! baca.SegmentMaker._color_repeat_pitch_classes_()
+            %! baca.segmentmaker.color_repeat_pitch_classes()
             %! REPEAT_PITCH_CLASS_COLORING
             %@% \baca-repeat-pitch-class-coloring
             fs''''!16
@@ -4187,7 +4187,7 @@ segment.04.RH.Voice.II = {
             %! baca.script_up()
             %! baca.OverrideCommand._call(1)
             \once \override Script.direction = #up
-            %! baca.SegmentMaker._color_repeat_pitch_classes_()
+            %! baca.segmentmaker.color_repeat_pitch_classes()
             %! REPEAT_PITCH_CLASS_COLORING
             %@% \baca-repeat-pitch-class-coloring
             <f'' ef'''! c'''' e'''' fs''''! bf''''!>1
@@ -4217,7 +4217,7 @@ segment.04.RH.Voice.II = {
             %! baca.script_up()
             %! baca.OverrideCommand._call(1)
             \once \override Script.direction = #up
-            %! baca.SegmentMaker._color_repeat_pitch_classes_()
+            %! baca.segmentmaker.color_repeat_pitch_classes()
             %! REPEAT_PITCH_CLASS_COLORING
             %@% \baca-repeat-pitch-class-coloring
             <a g' af'! b' cs''! f'' ef'''! c''''>1
@@ -4247,7 +4247,7 @@ segment.04.RH.Voice.II = {
             %! baca.script_up()
             %! baca.OverrideCommand._call(1)
             \once \override Script.direction = #up
-            %! baca.SegmentMaker._color_repeat_pitch_classes_()
+            %! baca.segmentmaker.color_repeat_pitch_classes()
             %! REPEAT_PITCH_CLASS_COLORING
             %@% \baca-repeat-pitch-class-coloring
             <e' fs'! bf'! a'' g''' af'''! b''' cs''''!>1
