@@ -988,6 +988,7 @@ accumulator(
 )
 
 maker = baca.SegmentMaker(
+    **baca.segments(),
     color_octaves=False,
     error_on_not_yet_pitched=True,
     activate=(baca.tags.LOCAL_MEASURE_NUMBER,),
