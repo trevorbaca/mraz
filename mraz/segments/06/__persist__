@@ -57,125 +57,90 @@ abjad.OrderedDict(
         ),
         (
             "persistent_indicators",
-            abjad.OrderedDict(
-                [
-                    (
-                        "LH_Voice_IV",
-                        [
-                            baca.Memento(
-                                context="LH_Voice_IV",
-                                prototype="abjad.Dynamic",
-                                value="p",
-                            ),
-                        ],
+            {
+                "LH_Voice_IV": [
+                    baca.Memento(
+                        context="LH_Voice_IV",
+                        prototype="abjad.Dynamic",
+                        value="p",
                     ),
-                    (
-                        "LH_Voice_V",
-                        [
-                            baca.Memento(
-                                context="LH_Voice_V",
-                                prototype="abjad.Dynamic",
-                                value="ppp",
-                            ),
-                        ],
+                ],
+                "LH_Voice_V": [
+                    baca.Memento(
+                        context="LH_Voice_V",
+                        prototype="abjad.Dynamic",
+                        value="ppp",
                     ),
-                    (
-                        "LH_Voice_VI",
-                        [
-                            baca.Memento(
-                                context="LH_Voice_VI",
-                                prototype="abjad.Dynamic",
-                                value="f",
-                            ),
-                        ],
+                ],
+                "LH_Voice_VI": [
+                    baca.Memento(
+                        context="LH_Voice_VI",
+                        prototype="abjad.Dynamic",
+                        value="f",
                     ),
-                    (
-                        "Piano_Music_LH_Staff",
-                        [
-                            baca.Memento(
-                                context="LH_Voice_IV",
-                                prototype="abjad.Clef",
-                                value="treble",
-                            ),
-                        ],
+                ],
+                "Piano_Music_LH_Staff": [
+                    baca.Memento(
+                        context="LH_Voice_IV",
+                        prototype="abjad.Clef",
+                        value="treble",
                     ),
-                    (
-                        "Piano_Music_RH_Staff",
-                        [
-                            baca.Memento(
-                                context="RH_Voice_I",
-                                prototype="abjad.Clef",
-                                value="treble",
-                            ),
-                        ],
+                ],
+                "Piano_Music_RH_Staff": [
+                    baca.Memento(
+                        context="RH_Voice_I",
+                        prototype="abjad.Clef",
+                        value="treble",
                     ),
-                    (
-                        "Piano_Music_Staff_Group",
-                        [
-                            baca.Memento(
-                                context="RH_Voice_I",
-                                manifest="instruments",
-                                value="Piano",
-                            ),
-                        ],
+                ],
+                "Piano_Music_Staff_Group": [
+                    baca.Memento(
+                        context="RH_Voice_I",
+                        manifest="instruments",
+                        value="Piano",
                     ),
-                    (
-                        "RH_Voice_I",
-                        [
-                            baca.Memento(
-                                context="RH_Voice_I",
-                                prototype="abjad.Dynamic",
-                                value="f",
-                            ),
-                        ],
+                ],
+                "RH_Voice_I": [
+                    baca.Memento(
+                        context="RH_Voice_I",
+                        prototype="abjad.Dynamic",
+                        value="f",
                     ),
-                    (
-                        "RH_Voice_II",
-                        [
-                            baca.Memento(
-                                context="RH_Voice_II",
-                                prototype="abjad.Dynamic",
-                                value="fff",
-                            ),
-                        ],
+                ],
+                "RH_Voice_II": [
+                    baca.Memento(
+                        context="RH_Voice_II",
+                        prototype="abjad.Dynamic",
+                        value="fff",
                     ),
-                    (
-                        "RH_Voice_III",
-                        [
-                            baca.Memento(
-                                context="RH_Voice_III",
-                                prototype="abjad.Dynamic",
-                                value="mp",
-                            ),
-                        ],
+                ],
+                "RH_Voice_III": [
+                    baca.Memento(
+                        context="RH_Voice_III",
+                        prototype="abjad.Dynamic",
+                        value="mp",
                     ),
-                    (
-                        "RH_Voice_IV",
-                        [
-                            baca.Memento(
-                                context="RH_Voice_IV",
-                                prototype="abjad.Dynamic",
-                                value="p",
-                            ),
-                        ],
+                ],
+                "RH_Voice_IV": [
+                    baca.Memento(
+                        context="RH_Voice_IV",
+                        prototype="abjad.Dynamic",
+                        value="p",
                     ),
-                    (
-                        "Score",
-                        [
-                            baca.Memento(
-                                context="Global_Skips",
-                                manifest="metronome_marks",
-                                value="84",
-                            ),
-                            baca.Memento(
-                                context="Global_Skips",
-                                prototype="abjad.TimeSignature",
-                                value="1/4",
-                            ),
-                        ],
+                ],
+                "Score": [
+                    baca.Memento(
+                        context="Global_Skips",
+                        manifest="metronome_marks",
+                        value="84",
                     ),
-                ]
-            ),
+                    baca.Memento(
+                        context="Global_Skips",
+                        prototype="abjad.TimeSignature",
+                        value="1/4",
+                    ),
+                ],
+            },
         ),
     ]
 )
