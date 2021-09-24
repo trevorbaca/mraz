@@ -123,8 +123,6 @@ accumulator(
 
 maker = baca.SegmentMaker(
     **baca.segments(),
-    error_on_not_yet_pitched=True,
-    ignore_repeat_pitch_classes=False,
     instruments=mraz.instruments,
     metronome_marks=mraz.metronome_marks,
     score_template=mraz.ScoreTemplate(),
@@ -144,4 +142,5 @@ if __name__ == "__main__":
         maker,
         **baca.segments(runtime=True),
         activate=(baca.tags.LOCAL_MEASURE_NUMBER,),
+        error_on_not_yet_pitched=True,
     )
