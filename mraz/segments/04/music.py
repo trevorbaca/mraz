@@ -991,8 +991,6 @@ maker = baca.SegmentMaker(
     **baca.segments(),
     color_octaves=False,
     error_on_not_yet_pitched=True,
-    activate=(baca.tags.LOCAL_MEASURE_NUMBER,),
-    deactivate=(baca.tags.REPEAT_PITCH_CLASS_COLORING,),
     do_not_check_beamed_long_notes=True,
     ignore_repeat_pitch_classes=True,
     instruments=mraz.instruments,
@@ -1097,4 +1095,9 @@ maker(
 )
 
 if __name__ == "__main__":
-    baca.build.make_segment_pdf(maker, runtime=baca.segments(runtime=True))
+    baca.build.make_segment_pdf(
+        maker,
+        **baca.segments(runtime=True),
+        activate=(baca.tags.LOCAL_MEASURE_NUMBER,),
+        deactivate=(baca.tags.REPEAT_PITCH_CLASS_COLORING,),
+    )
