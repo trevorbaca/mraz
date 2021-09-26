@@ -8,7 +8,7 @@ from mraz import library as mraz
 ##################################### [D] #####################################
 ###############################################################################
 
-accumulator = baca.Accumulator(
+figures = baca.FigureAccumulator(
     mraz.ScoreTemplate()(),
     voice_abbreviations=mraz.ScoreTemplate().voice_abbreviations,
 )
@@ -23,7 +23,7 @@ collections_8 = collection_maker.make_segment_8_collections()
 
 #################################### [4.1] ####################################
 
-accumulator(
+figures(
     "rh_v3",
     collections["stage 1"]["rh"].next(),
     baca.figure([2, -4, 2, -4, 4], 16, treatments=[2]),
@@ -36,7 +36,7 @@ accumulator(
     figure_name="rh-3 4.1.1",
 )
 
-accumulator(
+figures(
     "rh_v2",
     collections["stage 6"]["rh"][1],
     baca.figure([12], 16),
@@ -49,7 +49,7 @@ accumulator(
     figure_name="rh-2 4.1.1",
 )
 
-accumulator(
+figures(
     "rh_v3",
     collections["stage 1"]["rh"].next(),
     baca.figure([-4, 2, -4, 4], 16, treatments=[-4]),
@@ -71,7 +71,7 @@ def nontrivial_tuplet_tleaves():
     return selector
 
 
-accumulator(
+figures(
     "lh_v4",
     collections_5["stage 2"]["lh"][0],
     baca.figure([3, -3], 16),
@@ -83,14 +83,14 @@ accumulator(
     figure_name="insert 5.1",
 )
 
-accumulator(
+figures(
     "rh_v3",
     "r2.",
     signature=4,
     figure_name="rh-3 4.1.4",
 )
 
-accumulator(
+figures(
     "rh_v3",
     collections["stage 1"]["rh"].next(exhausted=True),
     baca.figure([2, -4, 2, -4, 4], 16, treatments=[2]),
@@ -101,14 +101,14 @@ accumulator(
     figure_name="rh-3 4.1.5",
 )
 
-accumulator(
+figures(
     "rh_v3",
     "r2.",
     signature=4,
     figure_name="rh-3 4.1.6",
 )
 
-accumulator(
+figures(
     "lh_v5",
     collections["stage 1"]["lh"].next(),
     baca.figure([3, -1], 16, affix=baca.rests_before([12])),
@@ -121,7 +121,7 @@ accumulator(
     hide_time_signature=True,
 )
 
-accumulator(
+figures(
     "lh_v5",
     "r2.",
     # TODO: teach PianoPedalBracket to attach for a single leaf
@@ -132,7 +132,7 @@ accumulator(
     hide_time_signature=True,
 )
 
-accumulator(
+figures(
     "lh_v5",
     collections["stage 1"]["lh"].next(),
     baca.figure(
@@ -147,7 +147,7 @@ accumulator(
     hide_time_signature=True,
 )
 
-accumulator(
+figures(
     "lh_v5",
     collections["stage 2"]["lh"].next(),
     baca.figure([3], 16, affix=baca.rests_around([1], [8])),
@@ -160,7 +160,7 @@ accumulator(
     hide_time_signature=True,
 )
 
-accumulator(
+figures(
     "lh_v5",
     collections["stage 1"]["lh"].next(),
     baca.figure(
@@ -176,7 +176,7 @@ accumulator(
     hide_time_signature=True,
 )
 
-accumulator(
+figures(
     "lh_v5",
     "r2.",
     signature=4,
@@ -186,7 +186,7 @@ accumulator(
 
 #################################### [4.2] ####################################
 
-accumulator(
+figures(
     "lh_v5",
     collections["stage 2"]["lh"].next(),
     baca.figure([3], 16, affix=baca.rests_around([1], [8])),
@@ -197,7 +197,7 @@ accumulator(
     hide_time_signature=False,
 )
 
-accumulator(
+figures(
     "lh_v5",
     collections["stage 2"]["lh"].next(),
     baca.figure([1], 16, affix=baca.rests_after([3, 16])),
@@ -206,7 +206,7 @@ accumulator(
     figure_name="lh-5 4.2.2",
 )
 
-accumulator(
+figures(
     "lh_v5",
     collections["stage 2"]["lh"].next(),
     baca.figure([3], 16, affix=baca.rests_around([1], [8])),
@@ -217,7 +217,7 @@ accumulator(
     figure_name="lh-5 4.2.3",
 )
 
-accumulator(
+figures(
     "lh_v5",
     collections["stage 2"]["lh"].next(),
     baca.figure([1], 16, affix=baca.rests_after([3, 16])),
@@ -226,7 +226,7 @@ accumulator(
     figure_name="lh-5 4.2.4",
 )
 
-accumulator(
+figures(
     "lh_v5",
     collections["stage 2"]["lh"].next(),
     baca.figure([3], 16, affix=baca.rests_around([1], [8])),
@@ -235,7 +235,7 @@ accumulator(
     figure_name="lh-5 4.2.5",
 )
 
-accumulator(
+figures(
     "lh_v5",
     collections["stage 2"]["lh"].next(),
     baca.figure([1], 16, affix=baca.rests_after([3, 16])),
@@ -244,7 +244,7 @@ accumulator(
     figure_name="lh-5 4.2.6",
 )
 
-accumulator(
+figures(
     "lh_v5",
     collections["stage 2"]["lh"].next(),
     baca.figure([3], 16, affix=baca.rests_around([1], [8])),
@@ -255,7 +255,7 @@ accumulator(
     figure_name="lh-5 4.2.7",
 )
 
-accumulator(
+figures(
     "lh_v5",
     collections["stage 2"]["lh"].next(),
     baca.figure([1], 16, affix=baca.rests_after([3, 16])),
@@ -264,7 +264,7 @@ accumulator(
     figure_name="lh-5 4.2.8",
 )
 
-accumulator(
+figures(
     "lh_v5",
     collections["stage 2"]["lh"].next(),
     baca.figure([3], 16, affix=baca.rests_around([1], [8])),
@@ -280,7 +280,7 @@ segment = segment.space_down(bass=7, semitones=3, soprano=9)
 segment = segment.bass_to_octave(2)
 chord_1_upper, chord_1_lower = segment.split(pitch=-1)
 
-accumulator(
+figures(
     "lh_v5",
     [chord_1_lower.chord()],
     baca.figure([1], 16, affix=baca.rests_after([3])),
@@ -293,7 +293,7 @@ accumulator(
     figure_name="lh-5 4.2.10",
 )
 
-accumulator(
+figures(
     "rh_v5",
     [chord_1_upper.chord()],
     baca.figure([1], 16, affix=baca.rests_after([3])),
@@ -302,7 +302,7 @@ accumulator(
     figure_name="rh-5 4.2.1",
 )
 
-accumulator(
+figures(
     "lh_resonance",
     [{-35, -23}],
     baca.figure([8], 16, affix=baca.skips_before([4])),
@@ -312,7 +312,7 @@ accumulator(
     figure_name="lh-r 4.2.1",
 )
 
-accumulator(
+figures(
     "lh_resonance",
     [{-35, -23}],
     baca.figure([4], 16),
@@ -321,7 +321,7 @@ accumulator(
     hide_time_signature=True,
 )
 
-accumulator(
+figures(
     "lh_resonance",
     [{-35, -23}],
     baca.figure([16], 16),
@@ -330,7 +330,7 @@ accumulator(
     hide_time_signature=True,
 )
 
-accumulator(
+figures(
     "lh_resonance",
     [{-33, -21}],
     baca.figure([8], 16, affix=baca.skips_before([4])),
@@ -340,7 +340,7 @@ accumulator(
     figure_name="lh-r 4.2.4",
 )
 
-accumulator(
+figures(
     "lh_resonance",
     [{-33, -21}],
     baca.figure([4], 16),
@@ -349,7 +349,7 @@ accumulator(
     hide_time_signature=True,
 )
 
-accumulator(
+figures(
     "lh_resonance",
     [{-33, -21}],
     baca.figure([16], 16),
@@ -360,7 +360,7 @@ accumulator(
 
 #################################### [4.4] ####################################
 
-accumulator(
+figures(
     "lh_v5",
     collections["stage 4"]["lh"].next(2),
     baca.figure([2], 16, affix=baca.rests_around([4], [4])),
@@ -374,14 +374,14 @@ accumulator(
     hide_time_signature=False,
 )
 
-accumulator(
+figures(
     "lh_v5",
     "r1",
     signature=4,
     figure_name="lh-5 4.4.2",
 )
 
-accumulator(
+figures(
     "lh_v5",
     collections["stage 4"]["lh"].next(),
     baca.figure([6], 16, affix=baca.rests_before([2])),
@@ -391,7 +391,7 @@ accumulator(
     figure_name="lh-5 4.4.3",
 )
 
-accumulator(
+figures(
     "rh_v1",
     "r4",
     baca.rest_transparent(),
@@ -399,7 +399,7 @@ accumulator(
     figure_name="rh-1 4.4.3",
 )
 
-accumulator(
+figures(
     "rh_v3",
     collections_5["stage 2"]["rh"][12],
     baca.figure([2], 16),
@@ -413,7 +413,7 @@ accumulator(
     figure_name="insert 5.2",
 )
 
-accumulator(
+figures(
     "lh_v5",
     collections["stage 4"]["lh"].next(3),
     baca.figure([2], 16, affix=baca.rests_around([4], [4])),
@@ -431,14 +431,14 @@ accumulator(
     figure_name="lh-5 4.4.4",
 )
 
-accumulator(
+figures(
     "lh_v5",
     "r2",
     signature=4,
     figure_name="lh-5 4.4.5",
 )
 
-accumulator(
+figures(
     "lh_v5",
     collections["stage 4"]["lh"].next(3),
     baca.figure([2], 16, affix=baca.rests_around([4], [4])),
@@ -455,7 +455,7 @@ accumulator(
     figure_name="lh-5 4.4.6",
 )
 
-accumulator(
+figures(
     "lh_v5",
     collections["stage 4"]["lh"].next(2),
     baca.figure([2], 16, affix=baca.rests_around([4], [2])),
@@ -473,7 +473,7 @@ accumulator(
     figure_name="lh-5 4.4.7",
 )
 
-accumulator(
+figures(
     "lh_v5",
     collections["stage 4"]["lh"].next(),
     baca.figure([2], 16, affix=baca.rests_around([2], [6])),
@@ -483,14 +483,14 @@ accumulator(
     figure_name="lh-5 4.4.8",
 )
 
-accumulator(
+figures(
     "lh_v5",
     "r2",
     signature=4,
     figure_name="lh-5 4.4.9",
 )
 
-accumulator(
+figures(
     "lh_v5",
     collections["stage 4"]["lh"].next(2),
     baca.figure([2], 16, affix=baca.rests_around([4], [2])),
@@ -508,7 +508,7 @@ accumulator(
     figure_name="lh-5 4.4.10",
 )
 
-accumulator(
+figures(
     "lh_v5",
     collections["stage 4"]["lh"].next(),
     baca.figure([6], 16, affix=baca.rests_before([2])),
@@ -518,7 +518,7 @@ accumulator(
     figure_name="lh-5 4.4.11",
 )
 
-accumulator(
+figures(
     "lh_v5",
     collections["stage 4"]["lh"].next(),
     baca.figure([2], 16, affix=baca.rests_around([2], [6])),
@@ -533,7 +533,7 @@ accumulator(
     figure_name="lh-5 4.4.12",
 )
 
-accumulator(
+figures(
     "rh_v1",
     collections["stage 4"]["rh"].next(),
     baca.figure(
@@ -569,7 +569,7 @@ accumulator(
     figure_name="rh-1 4.4.1",
 )
 
-accumulator(
+figures(
     "rh_v1",
     "r2",
     signature=4,
@@ -577,7 +577,7 @@ accumulator(
     hide_time_signature=True,
 )
 
-accumulator(
+figures(
     "rh_v1",
     collections["stage 4"]["rh"].next(),
     baca.figure([2], 16, treatments=[8]),
@@ -600,7 +600,7 @@ accumulator(
     hide_time_signature=True,
 )
 
-accumulator(
+figures(
     "rh_v1",
     collections["stage 4"]["rh"].next(exhausted=True),
     baca.figure([2], 16, treatments=[10]),
@@ -627,7 +627,7 @@ accumulator(
 
 resonance = baca.PitchSet("e, fs, gs, as, b,", item_class=abjad.NamedPitch)
 
-accumulator(
+figures(
     "lh_resonance",
     [resonance],
     baca.figure([4], 16),
@@ -638,7 +638,7 @@ accumulator(
     hide_time_signature=False,
 )
 
-accumulator(
+figures(
     "lh_resonance",
     [resonance],
     baca.figure([28], 16),
@@ -647,7 +647,7 @@ accumulator(
     figure_name="lh-r 4.5.2",
 )
 
-accumulator(
+figures(
     "lh_resonance",
     [resonance],
     baca.figure([24], 16),
@@ -656,7 +656,7 @@ accumulator(
     figure_name="lh-r 4.5.3",
 )
 
-accumulator(
+figures(
     "lh_resonance",
     [resonance],
     baca.figure([16], 16),
@@ -665,7 +665,7 @@ accumulator(
     figure_name="lh-r 4.5.4",
 )
 
-accumulator(
+figures(
     "lh_resonance",
     [resonance],
     baca.figure([16], 16),
@@ -674,7 +674,7 @@ accumulator(
     figure_name="lh-r 4.5.5",
 )
 
-accumulator(
+figures(
     "lh_resonance",
     [resonance],
     baca.figure([24], 16),
@@ -683,7 +683,7 @@ accumulator(
     figure_name="lh-r 4.5.6",
 )
 
-accumulator(
+figures(
     "lh_resonance",
     [resonance],
     baca.figure([16], 16),
@@ -692,7 +692,7 @@ accumulator(
     figure_name="lh-r 4.5.7",
 )
 
-accumulator(
+figures(
     "lh_resonance",
     [resonance],
     baca.figure([8], 16),
@@ -701,7 +701,7 @@ accumulator(
     figure_name="lh-r 4.5.8",
 )
 
-accumulator(
+figures(
     "rh_v1",
     collections["stage 5"]["rh"].next(),
     baca.figure([28], 16),
@@ -715,7 +715,7 @@ accumulator(
     hide_time_signature=True,
 )
 
-accumulator(
+figures(
     "rh_v1",
     collections["stage 5"]["rh"].next(),
     baca.figure([24], 16),
@@ -727,7 +727,7 @@ accumulator(
     hide_time_signature=True,
 )
 
-accumulator(
+figures(
     "rh_v1",
     collections["stage 5"]["rh"].next(),
     baca.figure([16], 16),
@@ -739,7 +739,7 @@ accumulator(
     hide_time_signature=True,
 )
 
-accumulator(
+figures(
     "rh_v1",
     collections["stage 5"]["rh"].next(),
     baca.figure([16], 16),
@@ -751,7 +751,7 @@ accumulator(
     hide_time_signature=True,
 )
 
-accumulator(
+figures(
     "rh_v1",
     collections["stage 5"]["rh"].next(),
     baca.figure([16], 16),
@@ -764,7 +764,7 @@ accumulator(
     hide_time_signature=True,
 )
 
-accumulator(
+figures(
     "rh_v1",
     collections["stage 5"]["rh"].next(exhausted=True),
     baca.figure([8], 16),
@@ -776,7 +776,7 @@ accumulator(
     hide_time_signature=True,
 )
 
-accumulator(
+figures(
     "rh_v2",
     collections["stage 5"]["lh"].next(4),
     baca.figure([1], 16, treatments=[(1, 4)]),
@@ -795,7 +795,7 @@ accumulator(
     hide_time_signature=True,
 )
 
-accumulator(
+figures(
     "rh_v2",
     collections["stage 5"]["lh"].next(4),
     baca.figure([1], 16, treatments=[(1, 4)]),
@@ -814,7 +814,7 @@ accumulator(
     hide_time_signature=True,
 )
 
-accumulator(
+figures(
     "rh_v2",
     collections["stage 6"]["rh"][1],
     baca.figure([24], 16),
@@ -828,7 +828,7 @@ accumulator(
     hide_time_signature=True,
 )
 
-accumulator(
+figures(
     "rh_v2",
     collections["stage 5"]["lh"].next(4),
     baca.figure([1], 16, treatments=[(1, 4)]),
@@ -847,7 +847,7 @@ accumulator(
     hide_time_signature=True,
 )
 
-accumulator(
+figures(
     "rh_v2",
     collections["stage 5"]["lh"].next(2),
     baca.figure([1], 16, treatments=[(1, 4)]),
@@ -868,7 +868,7 @@ accumulator(
 
 #################################### [4.6] ####################################
 
-accumulator(
+figures(
     "rh_v2",
     collections["stage 6"]["rh"].next(),
     baca.figure([16], 16),
@@ -881,7 +881,7 @@ accumulator(
     figure_name="rh-2 4.6.1",
 )
 
-accumulator(
+figures(
     "rh_v2",
     collections["stage 6"]["rh"].next(),
     baca.figure([16], 16),
@@ -893,7 +893,7 @@ accumulator(
     figure_name="rh-2 4.6.2",
 )
 
-accumulator(
+figures(
     "rh_v2",
     collections["stage 6"]["rh"].next(exhausted=True),
     baca.figure([16], 16),
@@ -905,7 +905,7 @@ accumulator(
     figure_name="rh-2 4.6.3",
 )
 
-accumulator(
+figures(
     "lh_v2",
     "r1 r1 r1",
     # TODO: debug: figure out why bracket extends indefinitely to right
@@ -921,7 +921,7 @@ accumulator(
     hide_time_signature=True,
 )
 
-accumulator(
+figures(
     "rh_v3",
     collections["stage 1"]["rh"][1],
     baca.figure([-4, 2, -4, 4], 16, treatments=[-4]),
@@ -937,7 +937,7 @@ accumulator(
 )
 
 
-accumulator(
+figures(
     "lh_v5",
     collections["stage 1"]["lh"][1],
     baca.figure(
@@ -954,7 +954,7 @@ accumulator(
     hide_time_signature=True,
 )
 
-accumulator(
+figures(
     "rh_v2",
     collections_5["stage 1"]["rh"].next(exhausted=True),
     baca.figure([2, -14], 16),
@@ -970,7 +970,7 @@ accumulator(
     figure_name="b.1.10",
 )
 
-accumulator(
+figures(
     "rh_v3",
     collections_5["stage 1"]["lh"].next(exhausted=True),
     baca.figure([4, -4], 16, treatments=[(16, 4)]),
@@ -993,10 +993,10 @@ maker = baca.CommandAccumulator(
     metronome_marks=mraz.metronome_marks,
     score_template=mraz.ScoreTemplate(),
     skips_instead_of_rests=True,
-    time_signatures=accumulator.time_signatures,
+    time_signatures=figures.time_signatures,
 )
 
-accumulator.populate_segment_maker(maker)
+figures.populate_segment_maker(maker)
 
 maker(
     "Global_Skips",

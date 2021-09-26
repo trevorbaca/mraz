@@ -6,7 +6,7 @@ from mraz import library as mraz
 ##################################### [E] #####################################
 ###############################################################################
 
-accumulator = baca.Accumulator(
+figures = baca.FigureAccumulator(
     mraz.ScoreTemplate()(),
     voice_abbreviations=mraz.ScoreTemplate().voice_abbreviations,
 )
@@ -15,7 +15,7 @@ collections = collection_maker.make_segment_6_collections()
 
 #################################### [6.1] ####################################
 
-accumulator(
+figures(
     "rh_v3",
     collections["stage 1"]["rh"].next(2),
     baca.figure([1], 8, affix=baca.rests_after([1]), treatments=[1, 0]),
@@ -29,7 +29,7 @@ accumulator(
     figure_name="rh-3 6.1.1",
 )
 
-accumulator(
+figures(
     "rh_v3",
     collections["stage 1"]["rh"].next(),
     baca.figure([1], 8, treatments=[1]),
@@ -42,7 +42,7 @@ accumulator(
     figure_name="rh-3 6.1.2",
 )
 
-accumulator(
+figures(
     "rh_v3",
     collections["stage 1"]["rh"].next(),
     baca.figure([1], 8, affix=baca.rests_around([1], [1])),
@@ -53,7 +53,7 @@ accumulator(
     figure_name="rh-3 6.1.3",
 )
 
-accumulator(
+figures(
     "rh_v3",
     collections["stage 1"]["rh"].next(exhausted=True),
     baca.figure([1], 8, treatments=[1]),
@@ -65,7 +65,7 @@ accumulator(
     figure_name="rh-3 6.1.4",
 )
 
-accumulator(
+figures(
     "lh_v4",
     collections["stage 1"]["lh"].next(),
     baca.figure([1, -1], 16, treatments=[1]),
@@ -81,7 +81,7 @@ accumulator(
     figure_name="lh-4 6.1.1",
 )
 
-accumulator(
+figures(
     "lh_v4",
     collections["stage 1"]["lh"].next(),
     baca.figure([1, -2], 16, treatments=[2]),
@@ -96,7 +96,7 @@ accumulator(
     figure_name="lh-4 6.1.2",
 )
 
-accumulator(
+figures(
     "lh_v4",
     collections["stage 1"]["lh"].next(),
     baca.figure([2, -1], 32),
@@ -111,7 +111,7 @@ accumulator(
     hide_time_signature=True,
 )
 
-accumulator(
+figures(
     "lh_v4",
     collections["stage 1"]["lh"].next(exhausted=True),
     baca.figure([2, -1], 32),
@@ -127,10 +127,10 @@ maker = baca.CommandAccumulator(
     metronome_marks=mraz.metronome_marks,
     score_template=mraz.ScoreTemplate(),
     skips_instead_of_rests=True,
-    time_signatures=accumulator.time_signatures,
+    time_signatures=figures.time_signatures,
 )
 
-accumulator.populate_segment_maker(maker)
+figures.populate_segment_maker(maker)
 
 maker(
     "lh_v4",

@@ -8,7 +8,7 @@ from mraz import library as mraz
 ##################################### [C] #####################################
 ###############################################################################
 
-accumulator = baca.Accumulator(
+figures = baca.FigureAccumulator(
     mraz.ScoreTemplate()(),
     voice_abbreviations=mraz.ScoreTemplate().voice_abbreviations,
 )
@@ -23,7 +23,7 @@ resonance = baca.PitchSet("e, fs, gs, as, b,", item_class=abjad.NamedPitch)
 
 ##################################### [C] #####################################
 
-accumulator(
+figures(
     "rh_v4",
     collections_7["stage 1"]["lh"][-1].transpose(4 * 7),
     baca.figure([1], 16, treatments=[1]),
@@ -39,7 +39,7 @@ accumulator(
     figure_name="b.2.1",
 )
 
-accumulator(
+figures(
     "rh_v2",
     "r4",
     baca.rest_transparent(),
@@ -47,7 +47,7 @@ accumulator(
     figure_name="b.2.2",
 )
 
-accumulator(
+figures(
     "rh_v2",
     collections_2["stage 2"]["rh"][0][:1],
     baca.figure([1], 16),
@@ -63,7 +63,7 @@ accumulator(
     figure_name="b.2.3",
 )
 
-accumulator(
+figures(
     "rh_v2",
     "r4",
     baca.rest_transparent(),
@@ -71,7 +71,7 @@ accumulator(
     figure_name="b.2.4",
 )
 
-accumulator(
+figures(
     "rh_v4",
     collections_7["stage 1"]["lh"][-1].transpose(4 * 7),
     baca.figure([1], 16, treatments=[1]),
@@ -87,7 +87,7 @@ accumulator(
     figure_name="b.2.5",
 )
 
-accumulator(
+figures(
     "rh_v2",
     collections_2["stage 2"]["rh"][0][:2],
     baca.figure([1], 16),
@@ -102,7 +102,7 @@ accumulator(
     figure_name="b.2.6",
 )
 
-accumulator(
+figures(
     "rh_v2",
     "r4",
     baca.rest_transparent(),
@@ -110,7 +110,7 @@ accumulator(
     figure_name="b.2.7",
 )
 
-accumulator(
+figures(
     "rh_v3",
     collections_4["stage 1"]["rh"][0],
     baca.figure([2, -4, 2, -4, 4], 16, treatments=[2]),
@@ -121,7 +121,7 @@ accumulator(
     figure_name="b.2.8",
 )
 
-accumulator(
+figures(
     "lh_v5",
     collections_4["stage 1"]["lh"].next(),
     baca.figure([3, -1], 16, affix=baca.rests_before([12])),
@@ -136,7 +136,7 @@ accumulator(
     hide_time_signature=True,
 )
 
-accumulator(
+figures(
     "rh_v2",
     collections_2["stage 2"]["rh"][0][:4],
     baca.figure([1], 16),
@@ -151,7 +151,7 @@ accumulator(
     figure_name="b.2.10",
 )
 
-accumulator(
+figures(
     "rh_v1",
     collections_4["stage 5"]["rh"][0],
     baca.figure([28], 16),
@@ -163,7 +163,7 @@ accumulator(
     figure_name="b.2.11",
 )
 
-accumulator(
+figures(
     "rh_v1",
     collections_4["stage 5"]["rh"][1],
     baca.figure([24], 16),
@@ -174,7 +174,7 @@ accumulator(
     figure_name="b.2.12",
 )
 
-accumulator(
+figures(
     "rh_v1",
     collections_4["stage 5"]["rh"][2],
     baca.figure([16], 16),
@@ -186,7 +186,7 @@ accumulator(
     hide_time_signature=True,
 )
 
-accumulator(
+figures(
     "rh_v2",
     collections_4["stage 5"]["lh"][:4],
     baca.figure([1], 16, treatments=[(1, 4)]),
@@ -205,7 +205,7 @@ accumulator(
     figure_name="b.2.14",
 )
 
-accumulator(
+figures(
     "lh_resonance",
     [resonance],
     baca.figure([8], 16),
@@ -216,7 +216,7 @@ accumulator(
     hide_time_signature=True,
 )
 
-accumulator(
+figures(
     "lh_resonance",
     [resonance],
     baca.figure([4], 16),
@@ -226,7 +226,7 @@ accumulator(
     hide_time_signature=True,
 )
 
-accumulator(
+figures(
     "lh_resonance",
     [resonance],
     baca.figure([5], 16),
@@ -236,7 +236,7 @@ accumulator(
     hide_time_signature=True,
 )
 
-accumulator(
+figures(
     "lh_resonance",
     [resonance],
     baca.figure([4], 16),
@@ -246,7 +246,7 @@ accumulator(
     hide_time_signature=True,
 )
 
-accumulator(
+figures(
     "lh_resonance",
     [resonance],
     baca.figure([8], 16),
@@ -256,7 +256,7 @@ accumulator(
     hide_time_signature=True,
 )
 
-accumulator(
+figures(
     "lh_resonance",
     [resonance],
     baca.figure([10], 16),
@@ -266,7 +266,7 @@ accumulator(
     hide_time_signature=True,
 )
 
-accumulator(
+figures(
     "lh_resonance",
     [resonance],
     baca.figure([21], 16),
@@ -278,7 +278,7 @@ accumulator(
     hide_time_signature=True,
 )
 
-accumulator(
+figures(
     "lh_resonance",
     [resonance],
     baca.figure([28], 16),
@@ -288,7 +288,7 @@ accumulator(
     hide_time_signature=True,
 )
 
-accumulator(
+figures(
     "lh_resonance",
     [resonance],
     baca.figure([24], 16),
@@ -304,10 +304,10 @@ maker = baca.CommandAccumulator(
     metronome_marks=mraz.metronome_marks,
     score_template=mraz.ScoreTemplate(),
     skips_instead_of_rests=True,
-    time_signatures=accumulator.time_signatures,
+    time_signatures=figures.time_signatures,
 )
 
-accumulator.populate_segment_maker(maker)
+figures.populate_segment_maker(maker)
 
 maker(
     "Global_Skips",
