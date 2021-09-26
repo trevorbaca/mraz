@@ -7,7 +7,7 @@ from mraz import library as mraz
 ##################################### [B] #####################################
 ###############################################################################
 
-accumulator = baca.Accumulator(
+figures = baca.FigureAccumulator(
     mraz.ScoreTemplate()(),
     voice_abbreviations=mraz.ScoreTemplate().voice_abbreviations,
 )
@@ -16,7 +16,7 @@ collections = collection_maker.make_segment_8_collections()
 
 #################################### [8.3] ####################################
 
-accumulator(
+figures(
     "lh_v5",
     collections["stage 3"]["rh"].next(),
     baca.figure([6, -1], 32),
@@ -27,7 +27,7 @@ accumulator(
     figure_name="lh-5 8.3.1",
 )
 
-accumulator(
+figures(
     "lh_v5",
     collections["stage 3"]["rh"].next(2),
     baca.figure([4, -1], 32, treatments=[1]),
@@ -37,7 +37,7 @@ accumulator(
     figure_name="lh-5 8.3.2",
 )
 
-accumulator(
+figures(
     "lh_v5",
     collections["stage 3"]["rh"].next(),
     baca.figure([1, -15], 32),
@@ -46,7 +46,7 @@ accumulator(
     figure_name="lh-5 8.3.3",
 )
 
-accumulator(
+figures(
     "lh_v5",
     collections["stage 3"]["rh"].next(),
     baca.figure([6, -1], 32),
@@ -56,7 +56,7 @@ accumulator(
     figure_name="lh-5 8.3.4",
 )
 
-accumulator(
+figures(
     "lh_v5",
     collections["stage 3"]["rh"].next(),
     baca.figure([4, -1], 32),
@@ -65,7 +65,7 @@ accumulator(
     figure_name="lh-5 8.3.5",
 )
 
-accumulator(
+figures(
     "lh_v5",
     collections["stage 3"]["rh"].next(),
     baca.figure([4, -1], 32, treatments=[1]),
@@ -74,7 +74,7 @@ accumulator(
     figure_name="lh-5 8.3.6",
 )
 
-accumulator(
+figures(
     "lh_v5",
     collections["stage 3"]["rh"].next(),
     baca.figure([1, -15], 32),
@@ -84,7 +84,7 @@ accumulator(
     figure_name="lh-5 8.3.7",
 )
 
-accumulator(
+figures(
     "lh_v5",
     collections["stage 3"]["rh"].next(),
     baca.figure([6, -1], 32),
@@ -93,7 +93,7 @@ accumulator(
     figure_name="lh-5 8.3.8",
 )
 
-accumulator(
+figures(
     "lh_v5",
     collections["stage 3"]["rh"].next(2),
     baca.figure([4, -1], 32, treatments=[1]),
@@ -103,7 +103,7 @@ accumulator(
     figure_name="lh-5 8.3.9",
 )
 
-accumulator(
+figures(
     "lh_v5",
     collections["stage 3"]["rh"].next(),
     baca.figure([1, -15], 32),
@@ -113,7 +113,7 @@ accumulator(
     figure_name="lh-5 8.3.10",
 )
 
-accumulator(
+figures(
     "lh_v5",
     collections["stage 3"]["rh"].next(),
     baca.figure([6, -1], 32),
@@ -122,7 +122,7 @@ accumulator(
     figure_name="lh-5 8.3.11",
 )
 
-accumulator(
+figures(
     "lh_v5",
     collections["stage 3"]["rh"].next(exhausted=True),
     baca.figure([4, -1], 32, treatments=[1]),
@@ -131,7 +131,7 @@ accumulator(
     figure_name="lh-5 8.3.12",
 )
 
-accumulator(
+figures(
     "lh_v6",
     collections["stage 3"]["lh"].next(),
     baca.figure([4, -4], 16, treatments=[-4]),
@@ -147,7 +147,7 @@ accumulator(
     hide_time_signature=True,
 )
 
-accumulator(
+figures(
     "lh_v6",
     collections["stage 3"]["lh"].next(),
     baca.figure([2, -4], 16, treatments=[4]),
@@ -162,7 +162,7 @@ accumulator(
     hide_time_signature=True,
 )
 
-accumulator(
+figures(
     "lh_v6",
     collections["stage 3"]["lh"].next(),
     baca.figure([1, -3], 16, treatments=[4]),
@@ -181,7 +181,7 @@ accumulator(
     hide_time_signature=True,
 )
 
-accumulator(
+figures(
     "lh_v6",
     collections["stage 3"]["lh"].next(),
     baca.figure([1, -3], 16, treatments=[4]),
@@ -196,7 +196,7 @@ accumulator(
     hide_time_signature=True,
 )
 
-accumulator(
+figures(
     "lh_v6",
     collections["stage 3"]["lh"].next(),
     baca.figure([2], 16, treatments=[2]),
@@ -211,7 +211,7 @@ accumulator(
     hide_time_signature=True,
 )
 
-accumulator(
+figures(
     "lh_v6",
     collections["stage 3"]["lh"].next(exhausted=True),
     baca.figure([2, -4], 16, treatments=[-6]),
@@ -234,10 +234,10 @@ maker = baca.CommandAccumulator(
     metronome_marks=mraz.metronome_marks,
     score_template=mraz.ScoreTemplate(),
     skips_instead_of_rests=True,
-    time_signatures=accumulator.time_signatures,
+    time_signatures=figures.time_signatures,
 )
 
-accumulator.populate_segment_maker(maker)
+figures.populate_segment_maker(maker)
 
 maker(
     "lh_v5",
