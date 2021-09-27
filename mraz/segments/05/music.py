@@ -121,7 +121,7 @@ figures(
     hide_time_signature=True,
 )
 
-maker = baca.CommandAccumulator(
+commands = baca.CommandAccumulator(
     **baca.segments(),
     instruments=mraz.instruments,
     metronome_marks=mraz.metronome_marks,
@@ -130,16 +130,16 @@ maker = baca.CommandAccumulator(
     time_signatures=figures.time_signatures,
 )
 
-figures.populate_segment_maker(maker)
+figures.populate_segment_maker(commands)
 
-maker(
+commands(
     "lh_v4",
     baca.clef("treble"),
 )
 
 if __name__ == "__main__":
     baca.build.make_segment_pdf(
-        maker,
+        commands,
         **baca.segments(runtime=True),
         activate=(baca.tags.LOCAL_MEASURE_NUMBER,),
         error_on_not_yet_pitched=True,

@@ -298,7 +298,7 @@ figures(
     hide_time_signature=True,
 )
 
-maker = baca.CommandAccumulator(
+commands = baca.CommandAccumulator(
     **baca.segments(),
     instruments=mraz.instruments,
     metronome_marks=mraz.metronome_marks,
@@ -307,9 +307,9 @@ maker = baca.CommandAccumulator(
     time_signatures=figures.time_signatures,
 )
 
-figures.populate_segment_maker(maker)
+figures.populate_segment_maker(commands)
 
-maker(
+commands(
     "Global_Skips",
     baca.metronome_mark("84", baca.selectors.leaf(2)),
     baca.metronome_mark("112", baca.selectors.leaf(4)),
@@ -319,24 +319,24 @@ maker(
     baca.metronome_mark("84", baca.selectors.leaf(-1)),
 )
 
-maker(
+commands(
     "Global_Rests",
     baca.global_fermata("short", baca.selectors.leaf(1)),
     baca.global_fermata("fermata", baca.selectors.leaf(3)),
     baca.global_fermata("short", baca.selectors.leaf(6)),
 )
 
-maker(
+commands(
     "rh_v1",
     baca.ottava(),
 )
 
-maker(
+commands(
     "rh_v2",
     baca.script_up(),
 )
 
-maker(
+commands(
     "lh_resonance",
     baca.untie(baca.selectors.leaves()),
     baca.new(
@@ -348,17 +348,17 @@ maker(
     *mraz.clean_up_repeat_ties(),
 )
 
-maker(
+commands(
     ("lh_resonance", [(2, 7), (10, -1)]),
     baca.accidental_stencil_false(baca.selectors.leaves()),
 )
 
-maker(
+commands(
     ("lh_resonance", [2, 4]),
     *mraz.transparent_music(baca.selectors.leaf(0)),
 )
 
-maker(
+commands(
     ("lh_resonance", [3, 6, 9]),
     *mraz.transparent_music(
         baca.selectors.leaves((1, None)),
@@ -367,7 +367,7 @@ maker(
 
 if __name__ == "__main__":
     baca.build.make_segment_pdf(
-        maker,
+        commands,
         **baca.segments(runtime=True),
         activate=(baca.tags.LOCAL_MEASURE_NUMBER,),
         error_on_not_yet_pitched=True,
