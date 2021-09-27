@@ -553,11 +553,13 @@ commands(
     baca.stem_transparent(),
 )
 
+defaults = baca.segment_interpretation_defaults()
+del defaults["check_wellformedness"]
+
 if __name__ == "__main__":
     baca.build.make_segment_pdf(
         commands,
-        **baca.segment_interpretation_defaults(),
+        **defaults,
         activate=(baca.tags.LOCAL_MEASURE_NUMBER,),
-        do_not_check_beamed_long_notes=True,
         error_on_not_yet_pitched=True,
     )
