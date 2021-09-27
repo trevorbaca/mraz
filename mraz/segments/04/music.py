@@ -987,7 +987,7 @@ figures(
     hide_time_signature=True,
 )
 
-maker = baca.CommandAccumulator(
+commands = baca.CommandAccumulator(
     **baca.segments(),
     instruments=mraz.instruments,
     metronome_marks=mraz.metronome_marks,
@@ -996,9 +996,9 @@ maker = baca.CommandAccumulator(
     time_signatures=figures.time_signatures,
 )
 
-figures.populate_segment_maker(maker)
+figures.populate_segment_maker(commands)
 
-maker(
+commands(
     "Global_Skips",
     baca.metronome_mark("84", baca.selectors.leaf(0)),
     baca.metronome_mark(baca.Accelerando(), baca.selectors.leaf(0)),
@@ -1020,54 +1020,54 @@ maker(
     baca.metronome_mark("84", baca.selectors.leaf(36)),
 )
 
-maker(
+commands(
     "Global_Rests",
     baca.global_fermata("fermata", baca.selectors.leaf(20)),
 )
 
-maker(
+commands(
     "rh_v1",
     baca.stem_up(),
     baca.tuplet_bracket_staff_padding(8),
     baca.tuplet_bracket_up(),
 )
 
-maker(
+commands(
     ("rh_v1", [(1, 36), (38, 39)]),
     baca.ottava(),
 )
 
-maker(
+commands(
     "rh_v3",
     baca.tenuto(baca.selectors.pheads()),
 )
 
-maker(
+commands(
     "lh_v5",
     baca.dynamic_down(),
 )
 
-maker(
+commands(
     ("lh_v5", (7, 16)),
     baca.marcato(baca.selectors.pheads()),
     baca.rest_up(),
 )
 
-maker(
+commands(
     ("lh_v5", (18, -1)),
     baca.stem_down(),
     baca.tuplet_bracket_staff_padding(2),
     baca.tuplet_bracket_down(),
 )
 
-maker(
+commands(
     "lh_v5_i",
     baca.script_up(),
     baca.staccato(baca.selectors.pheads()),
     baca.stem_up(),
 )
 
-maker(
+commands(
     "lh_resonance",
     baca.untie(baca.selectors.leaves()),
     baca.new(
@@ -1078,21 +1078,21 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("lh_resonance", [11, 15, (33, 39)]),
     baca.accidental_stencil_false(baca.selectors.leaves()),
     baca.dots_stencil_false(baca.selectors.leaves()),
     baca.stem_stencil_false(baca.selectors.leaves()),
 )
 
-maker(
+commands(
     ("lh_resonance", 32),
     baca.accidental_x_extent_false(),
 )
 
 if __name__ == "__main__":
     baca.build.make_segment_pdf(
-        maker,
+        commands,
         **baca.segments(runtime=True),
         activate=(baca.tags.LOCAL_MEASURE_NUMBER,),
         deactivate=(baca.tags.REPEAT_PITCH_CLASS_COLORING,),

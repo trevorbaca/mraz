@@ -182,7 +182,7 @@ figures(
     figure_name="b.1.12",
 )
 
-maker = baca.CommandAccumulator(
+commands = baca.CommandAccumulator(
     **baca.segments(),
     instruments=mraz.instruments,
     metronome_marks=mraz.metronome_marks,
@@ -191,9 +191,9 @@ maker = baca.CommandAccumulator(
     time_signatures=figures.time_signatures,
 )
 
-figures.populate_segment_maker(maker)
+figures.populate_segment_maker(commands)
 
-maker(
+commands(
     "Global_Skips",
     baca.metronome_mark("84", baca.selectors.leaf(0)),
     baca.metronome_mark("112", baca.selectors.leaf(1)),
@@ -203,26 +203,26 @@ maker(
     baca.metronome_mark("112", baca.selectors.leaf(-1)),
 )
 
-maker(
+commands(
     "Global_Rests",
     baca.global_fermata("short", baca.selectors.leaf(3)),
     baca.global_fermata("fermata", baca.selectors.leaf(5)),
     baca.global_fermata("short", baca.selectors.leaf(8)),
 )
 
-maker(
+commands(
     "rh_v1",
     baca.start_markup("PIANO", context="PianoStaff", hcenter_in=12),
 )
 
-maker(
+commands(
     "lh_v1",
     baca.clef("treble"),
 )
 
 if __name__ == "__main__":
     baca.build.make_segment_pdf(
-        maker,
+        commands,
         **baca.segments(runtime=True),
         activate=(baca.tags.LOCAL_MEASURE_NUMBER,),
         error_on_not_yet_pitched=True,

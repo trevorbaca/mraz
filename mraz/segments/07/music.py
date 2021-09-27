@@ -336,7 +336,7 @@ figures(
     hide_time_signature=True,
 )
 
-maker = baca.CommandAccumulator(
+commands = baca.CommandAccumulator(
     **baca.segments(),
     instruments=mraz.instruments,
     metronome_marks=mraz.metronome_marks,
@@ -345,9 +345,9 @@ maker = baca.CommandAccumulator(
     time_signatures=figures.time_signatures,
 )
 
-figures.populate_segment_maker(maker)
+figures.populate_segment_maker(commands)
 
-maker(
+commands(
     "Global_Skips",
     baca.metronome_mark("84", baca.selectors.leaf(0)),
     baca.metronome_mark(baca.Accelerando(), baca.selectors.leaf(0)),
@@ -355,29 +355,29 @@ maker(
     baca.bar_line("|.", baca.selectors.skip(-1)),
 )
 
-maker(
+commands(
     "rh_v1",
     baca.beam_positions(10),
     baca.dynamic_up(),
     baca.stem_up(),
 )
 
-maker(
+commands(
     ("rh_v1_i", (1, 5)),
     baca.beam_positions(-6.5),
 )
 
-maker(
+commands(
     ("rh_v1_i", (5, 10)),
     baca.beam_positions(-8.5),
 )
 
-maker(
+commands(
     "rh_v1_i",
     baca.script_down(),
 )
 
-maker(
+commands(
     "rh_v2",
     baca.beam_positions(-4.5),
     baca.dynamic_down(),
@@ -385,68 +385,68 @@ maker(
     baca.stem_down(),
 )
 
-maker(
+commands(
     ("rh_v2_i", (9, -1)),
     baca.beam_positions(18.5),
 )
 
-maker(
+commands(
     ("rh_v2_i", (1, 4)),
     baca.beam_positions(15.5),
 )
 
-maker(
+commands(
     ("rh_v2_i", (6, 8)),
     baca.beam_positions(13.5),
 )
 
-maker(
+commands(
     "rh_v2_i",
     baca.script_up(),
     baca.stem_up(),
 )
 
-maker(
+commands(
     ("lh_v4", (1, 2)),
     baca.beam_positions(-5.5),
 )
 
-maker(
+commands(
     ("lh_v4", (6, -1)),
     baca.beam_positions(-4.5),
 )
 
-maker(
+commands(
     "lh_v4",
     baca.script_down(),
     baca.stem_down(),
 )
 
-maker(
+commands(
     "lh_v4_i",
     baca.script_up(),
     baca.stem_up(),
 )
 
-maker(
+commands(
     ("lh_v5", (1, 5)),
     baca.beam_positions(-6),
 )
 
-maker(
+commands(
     "lh_v5",
     baca.script_down(),
     baca.stem_down(),
 )
 
-maker(
+commands(
     "lh_v5_i",
     baca.script_up(),
     baca.stem_up(),
     baca.beam_positions(9),
 )
 
-maker(
+commands(
     ("lh_v5", -1),
     baca.chunk(
         baca.mark(r"\mraz-colophon-markup"),
@@ -459,7 +459,7 @@ maker(
 
 if __name__ == "__main__":
     baca.build.make_segment_pdf(
-        maker,
+        commands,
         **baca.segments(runtime=True),
         activate=(baca.tags.LOCAL_MEASURE_NUMBER,),
         do_not_check_beamed_long_notes=True,

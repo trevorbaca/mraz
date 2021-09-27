@@ -466,7 +466,7 @@ figures(
     figure_name="lh-4 final",
 )
 
-maker = baca.CommandAccumulator(
+commands = baca.CommandAccumulator(
     **baca.segments(),
     instruments=mraz.instruments,
     metronome_marks=mraz.metronome_marks,
@@ -475,9 +475,9 @@ maker = baca.CommandAccumulator(
     time_signatures=figures.time_signatures,
 )
 
-figures.populate_segment_maker(maker)
+figures.populate_segment_maker(commands)
 
-maker(
+commands(
     "Global_Skips",
     baca.metronome_mark("84", baca.selectors.leaf(0)),
     baca.metronome_mark(baca.Accelerando(), baca.selectors.leaf(0)),
@@ -498,7 +498,7 @@ maker(
     baca.metronome_mark("84", baca.selectors.leaf(15)),
 )
 
-maker(
+commands(
     "Global_Rests",
     baca.global_fermata("short", baca.selectors.leaf(2)),
     baca.global_fermata("short", baca.selectors.leaf(6)),
@@ -506,7 +506,7 @@ maker(
     baca.global_fermata("fermata", baca.selectors.leaf(-1)),
 )
 
-maker(
+commands(
     ("rh_v2", (2, 8)),
     baca.accent(baca.selectors.pheads()),
     baca.beam_positions(10.5),
@@ -514,21 +514,21 @@ maker(
     baca.stem_up(),
 )
 
-maker(
+commands(
     ("rh_v2", (9, 13)),
     baca.script_up(),
     baca.slur_up(),
     baca.stem_down(),
 )
 
-maker(
+commands(
     ("lh_v4", (2, -1)),
     baca.script_up(),
     baca.staccato(baca.selectors.pheads()),
     baca.tenuto(baca.selectors.pheads()),
 )
 
-maker(
+commands(
     "lh_resonance",
     baca.untie(baca.selectors.leaves()),
     baca.new(
@@ -540,14 +540,14 @@ maker(
     baca.dots_transparent(),
 )
 
-maker(
+commands(
     ("lh_resonance", [10, 11, 12, 13, 14]),
     *mraz.transparent_music(
         baca.selectors.leaves((1, None)),
     ),
 )
 
-maker(
+commands(
     ("lh_resonance", [11, 13, 14]),
     baca.accidental_stencil_false(),
     baca.stem_transparent(),
@@ -555,7 +555,7 @@ maker(
 
 if __name__ == "__main__":
     baca.build.make_segment_pdf(
-        maker,
+        commands,
         **baca.segments(runtime=True),
         activate=(baca.tags.LOCAL_MEASURE_NUMBER,),
         do_not_check_beamed_long_notes=True,
