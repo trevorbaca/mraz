@@ -988,7 +988,7 @@ figures(
 )
 
 commands = baca.CommandAccumulator(
-    **baca.segments(),
+    **baca.segment_accumulation_defaults(),
     instruments=mraz.instruments,
     metronome_marks=mraz.metronome_marks,
     score_template=mraz.ScoreTemplate(),
@@ -1093,7 +1093,7 @@ commands(
 if __name__ == "__main__":
     baca.build.make_segment_pdf(
         commands,
-        **baca.segments(runtime=True),
+        **baca.segment_interpretation_defaults(),
         activate=(baca.tags.LOCAL_MEASURE_NUMBER,),
         deactivate=(baca.tags.REPEAT_PITCH_CLASS_COLORING,),
         do_not_check_beamed_long_notes=True,
