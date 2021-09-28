@@ -768,214 +768,201 @@ def transparent_music(selector):
     ]
 
 
-class ScoreTemplate(baca.ScoreTemplate):
-    """
-    Score template.
-    """
+voice_colors = {
+    "RH_Voice_I": "red",
+    "RH_Insert_Voice_I": "red",
+    "RH_Voice_II": "black",
+    "RH_Insert_Voice_II": "black",
+    "RH_Voice_III": "darkgreen",
+    "RH_Insert_Voice_III": "darkgreen",
+    "RH_Voice_IV": "blue",
+    "RH_Voice_V": "darkmagenta",
+    "RH_Voice_VI": "darkcyan",
+    "RH_Resonance_Voice": "darkred",
+    "LH_Voice_I": "red",
+    "LH_Voice_II": "black",
+    "LH_Voice_III": "darkgreen",
+    "LH_Voice_IV": "blue",
+    "LH_Insert_Voice_IV": "blue",
+    "LH_Voice_V": "darkmagenta",
+    "LH_Insert_Voice_V": "darkmagenta",
+    "LH_Voice_VI": "darkcyan",
+    "LH_Insert_Voice_VI": "darkcyan",
+    "LH_Resonance_Voice": "darkred",
+}
 
-    ### CLASS VARIABLES ###
 
-    _do_not_require_margin_markup = True
+def _validate_voice_names(score):
+    voice_names = []
+    for voice in abjad.iterate.components(score, abjad.Voice):
+        voice_names.append(voice.name)
+    for voice_name in sorted(voice_colors):
+        if voice_name not in voice_names:
+            raise Exception(f"voice not in score: {voice_name!r}.")
 
-    _always_make_global_rests = True
 
-    ### CLASS VARIABLES ###
+voice_abbreviations = {
+    "rh_v1": "RH_Voice_I",
+    "rh_v1_i": "RH_Insert_Voice_I",
+    "rh_v2": "RH_Voice_II",
+    "rh_v2_i": "RH_Insert_Voice_II",
+    "rh_v3": "RH_Voice_III",
+    "rh_v3_i": "RH_Insert_Voice_III",
+    "rh_v4": "RH_Voice_IV",
+    "rh_v4_i": "RH_Insert_Voice_IV",
+    "rh_v5": "RH_Voice_V",
+    "rh_v5_i": "RH_Insert_Voice_V",
+    "rh_v6": "RH_Voice_VI",
+    "rh_v6_i": "RH_Insert_Voice_VI",
+    "rh_resonance": "RH_Resonance_Voice",
+    "lh_v1": "LH_Voice_I",
+    "lh_v1_i": "LH_Insert_Voice_I",
+    "lh_v2": "LH_Voice_II",
+    "lh_v2_i": "LH_Insert_Voice_II",
+    "lh_v3": "LH_Voice_III",
+    "lh_v3_i": "LH_Insert_Voice_III",
+    "lh_v4": "LH_Voice_IV",
+    "lh_v4_i": "LH_Insert_Voice_IV",
+    "lh_v5": "LH_Voice_V",
+    "lh_v5_i": "LH_Insert_Voice_V",
+    "lh_v6": "LH_Voice_VI",
+    "lh_v6_i": "LH_Insert_Voice_VI",
+    "lh_resonance": "LH_Resonance_Voice",
+}
 
-    voice_colors = {
-        "RH_Voice_I": "red",
-        "RH_Insert_Voice_I": "red",
-        "RH_Voice_II": "black",
-        "RH_Insert_Voice_II": "black",
-        "RH_Voice_III": "darkgreen",
-        "RH_Insert_Voice_III": "darkgreen",
-        "RH_Voice_IV": "blue",
-        "RH_Voice_V": "darkmagenta",
-        "RH_Voice_VI": "darkcyan",
-        "RH_Resonance_Voice": "darkred",
-        "LH_Voice_I": "red",
-        "LH_Voice_II": "black",
-        "LH_Voice_III": "darkgreen",
-        "LH_Voice_IV": "blue",
-        "LH_Insert_Voice_IV": "blue",
-        "LH_Voice_V": "darkmagenta",
-        "LH_Insert_Voice_V": "darkmagenta",
-        "LH_Voice_VI": "darkcyan",
-        "LH_Insert_Voice_VI": "darkcyan",
-        "LH_Resonance_Voice": "darkred",
-    }
 
-    ### INITIALIZER ###
+def make_empty_score():
+    site = "mraz.ScoreTemplate.__call__()"
+    tag = abjad.Tag(site)
+    # GLOBAL CONTEXT
+    global_context = baca.templates.make_global_context()
 
-    def __init__(self):
-        super(ScoreTemplate, self).__init__()
-        self.voice_abbreviations.update(
-            {
-                "rh_v1": "RH_Voice_I",
-                "rh_v1_i": "RH_Insert_Voice_I",
-                "rh_v2": "RH_Voice_II",
-                "rh_v2_i": "RH_Insert_Voice_II",
-                "rh_v3": "RH_Voice_III",
-                "rh_v3_i": "RH_Insert_Voice_III",
-                "rh_v4": "RH_Voice_IV",
-                "rh_v4_i": "RH_Insert_Voice_IV",
-                "rh_v5": "RH_Voice_V",
-                "rh_v5_i": "RH_Insert_Voice_V",
-                "rh_v6": "RH_Voice_VI",
-                "rh_v6_i": "RH_Insert_Voice_VI",
-                "rh_resonance": "RH_Resonance_Voice",
-                "lh_v1": "LH_Voice_I",
-                "lh_v1_i": "LH_Insert_Voice_I",
-                "lh_v2": "LH_Voice_II",
-                "lh_v2_i": "LH_Insert_Voice_II",
-                "lh_v3": "LH_Voice_III",
-                "lh_v3_i": "LH_Insert_Voice_III",
-                "lh_v4": "LH_Voice_IV",
-                "lh_v4_i": "LH_Insert_Voice_IV",
-                "lh_v5": "LH_Voice_V",
-                "lh_v5_i": "LH_Insert_Voice_V",
-                "lh_v6": "LH_Voice_VI",
-                "lh_v6_i": "LH_Insert_Voice_VI",
-                "lh_resonance": "LH_Resonance_Voice",
-            }
-        )
+    # RH VOICES
+    rh_voice_1 = abjad.Voice(lilypond_type="RHVoiceI", name="RH_Voice_I", tag=tag)
+    rh_voice_1I = abjad.Voice(
+        lilypond_type="RHInsertVoiceI", name="RH_Insert_Voice_I", tag=tag
+    )
+    rh_voice_2 = abjad.Voice(lilypond_type="RHVoiceII", name="RH_Voice_II", tag=tag)
+    rh_voice_2I = abjad.Voice(
+        lilypond_type="RHInsertVoiceII",
+        name="RH_Insert_Voice_II",
+        tag=tag,
+    )
+    rh_voice_3 = abjad.Voice(
+        lilypond_type="RHVoiceIII", name="RH_Voice_III", tag=tag
+    )
+    rh_voice_3I = abjad.Voice(
+        lilypond_type="RHInsertVoiceIII",
+        name="RH_Insert_Voice_III",
+        tag=tag,
+    )
+    rh_voice_4 = abjad.Voice(lilypond_type="RHVoiceIV", name="RH_Voice_IV", tag=tag)
+    rh_voice_4I = abjad.Voice(
+        lilypond_type="RHInsertVoiceIV",
+        name="RH_Insert_Voice_IV",
+        tag=tag,
+    )
+    rh_voice_5 = abjad.Voice(lilypond_type="RHVoiceV", name="RH_Voice_V", tag=tag)
+    rh_voice_6 = abjad.Voice(lilypond_type="RHVoiceVI", name="RH_Voice_VI", tag=tag)
+    rh_resonance_voice = abjad.Voice(
+        lilypond_type="RHResonanceVoice",
+        name="RH_Resonance_Voice",
+        tag=tag,
+    )
 
-    ### SPECIAL METHODS ###
+    # LH VOICES
+    lh_voice_1 = abjad.Voice(lilypond_type="LHVoiceI", name="LH_Voice_I", tag=tag)
+    lh_voice_2 = abjad.Voice(lilypond_type="LHVoiceII", name="LH_Voice_II", tag=tag)
+    lh_voice_3 = abjad.Voice(
+        lilypond_type="LHVoiceIII", name="LH_Voice_III", tag=tag
+    )
+    lh_voice_4 = abjad.Voice(lilypond_type="LHVoiceIV", name="LH_Voice_IV", tag=tag)
+    lh_voice_4I = abjad.Voice(
+        lilypond_type="LHInsertVoiceIV",
+        name="LH_Insert_Voice_IV",
+        tag=tag,
+    )
+    lh_voice_5 = abjad.Voice(lilypond_type="LHVoiceV", name="LH_Voice_V", tag=tag)
+    lh_voice_5I = abjad.Voice(
+        lilypond_type="LHInsertVoiceV", name="LH_Insert_Voice_V", tag=tag
+    )
+    lh_voice_6 = abjad.Voice(lilypond_type="LHVoiceVI", name="LH_Voice_VI", tag=tag)
+    lh_voice_6I = abjad.Voice(
+        lilypond_type="LHInsertVoiceVI",
+        name="LH_Insert_Voice_VI",
+        tag=tag,
+    )
+    lh_resonance_voice = abjad.Voice(
+        lilypond_type="LHResonanceVoice",
+        name="LH_Resonance_Voice",
+        tag=tag,
+    )
 
-    def __call__(self) -> abjad.Score:
-        """
-        Calls score template.
-        """
-        site = "mraz.ScoreTemplate.__call__()"
-        tag = abjad.Tag(site)
-        # GLOBAL CONTEXT
-        global_context = baca.templates.make_global_context()
+    # RH STAFF
+    piano_music_rh_staff = abjad.Staff(
+        [
+            rh_voice_1,
+            rh_voice_1I,
+            rh_voice_2,
+            rh_voice_2I,
+            rh_voice_3,
+            rh_voice_3I,
+            rh_voice_4,
+            rh_voice_4I,
+            rh_voice_5,
+            rh_voice_6,
+            rh_resonance_voice,
+        ],
+        lilypond_type="PianoMusicRHStaff",
+        simultaneous=True,
+        name="Piano_Music_RH_Staff",
+        tag=tag,
+    )
+    abjad.annotate(piano_music_rh_staff, "default_clef", abjad.Clef("treble"))
 
-        # RH VOICES
-        rh_voice_1 = abjad.Voice(lilypond_type="RHVoiceI", name="RH_Voice_I", tag=tag)
-        rh_voice_1I = abjad.Voice(
-            lilypond_type="RHInsertVoiceI", name="RH_Insert_Voice_I", tag=tag
-        )
-        rh_voice_2 = abjad.Voice(lilypond_type="RHVoiceII", name="RH_Voice_II", tag=tag)
-        rh_voice_2I = abjad.Voice(
-            lilypond_type="RHInsertVoiceII",
-            name="RH_Insert_Voice_II",
-            tag=tag,
-        )
-        rh_voice_3 = abjad.Voice(
-            lilypond_type="RHVoiceIII", name="RH_Voice_III", tag=tag
-        )
-        rh_voice_3I = abjad.Voice(
-            lilypond_type="RHInsertVoiceIII",
-            name="RH_Insert_Voice_III",
-            tag=tag,
-        )
-        rh_voice_4 = abjad.Voice(lilypond_type="RHVoiceIV", name="RH_Voice_IV", tag=tag)
-        rh_voice_4I = abjad.Voice(
-            lilypond_type="RHInsertVoiceIV",
-            name="RH_Insert_Voice_IV",
-            tag=tag,
-        )
-        rh_voice_5 = abjad.Voice(lilypond_type="RHVoiceV", name="RH_Voice_V", tag=tag)
-        rh_voice_6 = abjad.Voice(lilypond_type="RHVoiceVI", name="RH_Voice_VI", tag=tag)
-        rh_resonance_voice = abjad.Voice(
-            lilypond_type="RHResonanceVoice",
-            name="RH_Resonance_Voice",
-            tag=tag,
-        )
+    # LH STAFF
+    piano_music_lh_staff = abjad.Staff(
+        [
+            lh_voice_1,
+            lh_voice_2,
+            lh_voice_3,
+            lh_voice_4,
+            lh_voice_4I,
+            lh_voice_5,
+            lh_voice_5I,
+            lh_voice_6,
+            lh_voice_6I,
+            lh_resonance_voice,
+        ],
+        lilypond_type="PianoMusicLHStaff",
+        simultaneous=True,
+        name="Piano_Music_LH_Staff",
+        tag=tag,
+    )
+    abjad.annotate(piano_music_lh_staff, "default_clef", abjad.Clef("bass"))
 
-        # LH VOICES
-        lh_voice_1 = abjad.Voice(lilypond_type="LHVoiceI", name="LH_Voice_I", tag=tag)
-        lh_voice_2 = abjad.Voice(lilypond_type="LHVoiceII", name="LH_Voice_II", tag=tag)
-        lh_voice_3 = abjad.Voice(
-            lilypond_type="LHVoiceIII", name="LH_Voice_III", tag=tag
-        )
-        lh_voice_4 = abjad.Voice(lilypond_type="LHVoiceIV", name="LH_Voice_IV", tag=tag)
-        lh_voice_4I = abjad.Voice(
-            lilypond_type="LHInsertVoiceIV",
-            name="LH_Insert_Voice_IV",
-            tag=tag,
-        )
-        lh_voice_5 = abjad.Voice(lilypond_type="LHVoiceV", name="LH_Voice_V", tag=tag)
-        lh_voice_5I = abjad.Voice(
-            lilypond_type="LHInsertVoiceV", name="LH_Insert_Voice_V", tag=tag
-        )
-        lh_voice_6 = abjad.Voice(lilypond_type="LHVoiceVI", name="LH_Voice_VI", tag=tag)
-        lh_voice_6I = abjad.Voice(
-            lilypond_type="LHInsertVoiceVI",
-            name="LH_Insert_Voice_VI",
-            tag=tag,
-        )
-        lh_resonance_voice = abjad.Voice(
-            lilypond_type="LHResonanceVoice",
-            name="LH_Resonance_Voice",
-            tag=tag,
-        )
+    # STAFF GROUP
+    piano_music_staff_group = abjad.StaffGroup(
+        [piano_music_rh_staff, piano_music_lh_staff],
+        lilypond_type="PianoMusicStaffGroup",
+        name="Piano_Music_Staff_Group",
+        tag=tag,
+    )
+    piano = instruments["Piano"]
+    abjad.annotate(piano_music_staff_group, "default_instrument", piano)
 
-        # RH STAFF
-        piano_music_rh_staff = abjad.Staff(
-            [
-                rh_voice_1,
-                rh_voice_1I,
-                rh_voice_2,
-                rh_voice_2I,
-                rh_voice_3,
-                rh_voice_3I,
-                rh_voice_4,
-                rh_voice_4I,
-                rh_voice_5,
-                rh_voice_6,
-                rh_resonance_voice,
-            ],
-            lilypond_type="PianoMusicRHStaff",
-            simultaneous=True,
-            name="Piano_Music_RH_Staff",
-            tag=tag,
-        )
-        abjad.annotate(piano_music_rh_staff, "default_clef", abjad.Clef("treble"))
+    # MUSIC CONTEXT
+    music_context = abjad.Context(
+        [piano_music_staff_group],
+        lilypond_type="MusicContext",
+        name="Music_Context",
+        tag=tag,
+    )
 
-        # LH STAFF
-        piano_music_lh_staff = abjad.Staff(
-            [
-                lh_voice_1,
-                lh_voice_2,
-                lh_voice_3,
-                lh_voice_4,
-                lh_voice_4I,
-                lh_voice_5,
-                lh_voice_5I,
-                lh_voice_6,
-                lh_voice_6I,
-                lh_resonance_voice,
-            ],
-            lilypond_type="PianoMusicLHStaff",
-            simultaneous=True,
-            name="Piano_Music_LH_Staff",
-            tag=tag,
-        )
-        abjad.annotate(piano_music_lh_staff, "default_clef", abjad.Clef("bass"))
-
-        # STAFF GROUP
-        piano_music_staff_group = abjad.StaffGroup(
-            [piano_music_rh_staff, piano_music_lh_staff],
-            lilypond_type="PianoMusicStaffGroup",
-            name="Piano_Music_Staff_Group",
-            tag=tag,
-        )
-        piano = instruments["Piano"]
-        abjad.annotate(piano_music_staff_group, "default_instrument", piano)
-
-        # MUSIC CONTEXT
-        music_context = abjad.Context(
-            [piano_music_staff_group],
-            lilypond_type="MusicContext",
-            name="Music_Context",
-            tag=tag,
-        )
-
-        # SCORE
-        score = abjad.Score([global_context, music_context], name="Score", tag=tag)
-        baca.templates.assert_lilypond_identifiers(score)
-        baca.templates.assert_unique_context_names(score)
-        baca.templates.assert_matching_custom_context_names(score)
-        self._validate_voice_names(score)
-        return score
+    # SCORE
+    score = abjad.Score([global_context, music_context], name="Score", tag=tag)
+    baca.templates.assert_lilypond_identifiers(score)
+    baca.templates.assert_unique_context_names(score)
+    baca.templates.assert_matching_custom_context_names(score)
+    _validate_voice_names(score)
+    return score

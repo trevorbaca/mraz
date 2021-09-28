@@ -8,8 +8,8 @@ from mraz import library as mraz
 ###############################################################################
 
 figures = baca.FigureAccumulator(
-    mraz.ScoreTemplate()(),
-    voice_abbreviations=mraz.ScoreTemplate().voice_abbreviations,
+    mraz.make_empty_score(),
+    voice_abbreviations=mraz.voice_abbreviations,
 )
 collection_maker = mraz.CollectionMaker()
 collections = collection_maker.make_segment_8_collections()
@@ -232,9 +232,10 @@ commands = baca.CommandAccumulator(
     **baca.segment_accumulation_defaults(),
     instruments=mraz.instruments,
     metronome_marks=mraz.metronome_marks,
-    score_template=mraz.ScoreTemplate(),
+    score_template=mraz.make_empty_score,
     skips_instead_of_rests=True,
     time_signatures=figures.time_signatures,
+    voice_abbreviations=mraz.voice_abbreviations,
 )
 
 figures.populate_commands(commands)
@@ -259,5 +260,7 @@ if __name__ == "__main__":
         commands,
         **baca.segment_interpretation_defaults(),
         activate=(baca.tags.LOCAL_MEASURE_NUMBER,),
+        always_make_global_rests=True,
+        do_not_require_margin_markup=True,
         error_on_not_yet_pitched=True,
     )
