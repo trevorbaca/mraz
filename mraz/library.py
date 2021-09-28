@@ -848,9 +848,7 @@ def make_empty_score():
         name="RH_Insert_Voice_II",
         tag=tag,
     )
-    rh_voice_3 = abjad.Voice(
-        lilypond_type="RHVoiceIII", name="RH_Voice_III", tag=tag
-    )
+    rh_voice_3 = abjad.Voice(lilypond_type="RHVoiceIII", name="RH_Voice_III", tag=tag)
     rh_voice_3I = abjad.Voice(
         lilypond_type="RHInsertVoiceIII",
         name="RH_Insert_Voice_III",
@@ -873,9 +871,7 @@ def make_empty_score():
     # LH VOICES
     lh_voice_1 = abjad.Voice(lilypond_type="LHVoiceI", name="LH_Voice_I", tag=tag)
     lh_voice_2 = abjad.Voice(lilypond_type="LHVoiceII", name="LH_Voice_II", tag=tag)
-    lh_voice_3 = abjad.Voice(
-        lilypond_type="LHVoiceIII", name="LH_Voice_III", tag=tag
-    )
+    lh_voice_3 = abjad.Voice(lilypond_type="LHVoiceIII", name="LH_Voice_III", tag=tag)
     lh_voice_4 = abjad.Voice(lilypond_type="LHVoiceIV", name="LH_Voice_IV", tag=tag)
     lh_voice_4I = abjad.Voice(
         lilypond_type="LHInsertVoiceIV",
