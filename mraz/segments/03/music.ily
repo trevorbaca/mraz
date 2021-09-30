@@ -957,7 +957,7 @@ segment.03.RH.Voice.I = {
     %! PHANTOM
     >>
 
-%! mraz.ScoreTemplate.__call__()
+%! mraz.make_empty_score()
 %! baca.path.extern()
 }
 
@@ -1094,7 +1094,7 @@ segment.03.RH.Insert.Voice.I = {
     %! PHANTOM
     >>
 
-%! mraz.ScoreTemplate.__call__()
+%! mraz.make_empty_score()
 %! baca.path.extern()
 }
 
@@ -1916,7 +1916,7 @@ segment.03.RH.Voice.II = {
     %! PHANTOM
     >>
 
-%! mraz.ScoreTemplate.__call__()
+%! mraz.make_empty_score()
 %! baca.path.extern()
 }
 
@@ -2053,7 +2053,7 @@ segment.03.RH.Insert.Voice.II = {
     %! PHANTOM
     >>
 
-%! mraz.ScoreTemplate.__call__()
+%! mraz.make_empty_score()
 %! baca.path.extern()
 }
 
@@ -2294,7 +2294,7 @@ segment.03.RH.Voice.III = {
     %! PHANTOM
     >>
 
-%! mraz.ScoreTemplate.__call__()
+%! mraz.make_empty_score()
 %! baca.path.extern()
 }
 
@@ -2431,7 +2431,7 @@ segment.03.RH.Insert.Voice.III = {
     %! PHANTOM
     >>
 
-%! mraz.ScoreTemplate.__call__()
+%! mraz.make_empty_score()
 %! baca.path.extern()
 }
 
@@ -2743,7 +2743,7 @@ segment.03.RH.Voice.IV = {
     %! PHANTOM
     >>
 
-%! mraz.ScoreTemplate.__call__()
+%! mraz.make_empty_score()
 %! baca.path.extern()
 }
 
@@ -3003,7 +3003,7 @@ segment.03.RH.Insert.Voice.IV = {
     %! PHANTOM
     >>
 
-%! mraz.ScoreTemplate.__call__()
+%! mraz.make_empty_score()
 %! baca.path.extern()
 }
 
@@ -3140,7 +3140,7 @@ segment.03.RH.Voice.V = {
     %! PHANTOM
     >>
 
-%! mraz.ScoreTemplate.__call__()
+%! mraz.make_empty_score()
 %! baca.path.extern()
 }
 
@@ -3277,7 +3277,7 @@ segment.03.RH.Voice.VI = {
     %! PHANTOM
     >>
 
-%! mraz.ScoreTemplate.__call__()
+%! mraz.make_empty_score()
 %! baca.path.extern()
 }
 
@@ -3414,7 +3414,7 @@ segment.03.RH.Resonance.Voice = {
     %! PHANTOM
     >>
 
-%! mraz.ScoreTemplate.__call__()
+%! mraz.make_empty_score()
 %! baca.path.extern()
 }
 
@@ -3422,73 +3422,73 @@ segment.03.RH.Resonance.Voice = {
 %! baca.path.extern()
 segment.03.Piano.Music.RH.Staff = <<
 
-    %! mraz.ScoreTemplate.__call__()
+    %! mraz.make_empty_score()
     \context RHVoiceI = "RH_Voice_I"
-    %! mraz.ScoreTemplate.__call__()
+    %! mraz.make_empty_score()
     %! baca.path.extern()
     { \segment.03.RH.Voice.I }
 
-    %! mraz.ScoreTemplate.__call__()
+    %! mraz.make_empty_score()
     \context RHInsertVoiceI = "RH_Insert_Voice_I"
-    %! mraz.ScoreTemplate.__call__()
+    %! mraz.make_empty_score()
     %! baca.path.extern()
     { \segment.03.RH.Insert.Voice.I }
 
-    %! mraz.ScoreTemplate.__call__()
+    %! mraz.make_empty_score()
     \context RHVoiceII = "RH_Voice_II"
-    %! mraz.ScoreTemplate.__call__()
+    %! mraz.make_empty_score()
     %! baca.path.extern()
     { \segment.03.RH.Voice.II }
 
-    %! mraz.ScoreTemplate.__call__()
+    %! mraz.make_empty_score()
     \context RHInsertVoiceII = "RH_Insert_Voice_II"
-    %! mraz.ScoreTemplate.__call__()
+    %! mraz.make_empty_score()
     %! baca.path.extern()
     { \segment.03.RH.Insert.Voice.II }
 
-    %! mraz.ScoreTemplate.__call__()
+    %! mraz.make_empty_score()
     \context RHVoiceIII = "RH_Voice_III"
-    %! mraz.ScoreTemplate.__call__()
+    %! mraz.make_empty_score()
     %! baca.path.extern()
     { \segment.03.RH.Voice.III }
 
-    %! mraz.ScoreTemplate.__call__()
+    %! mraz.make_empty_score()
     \context RHInsertVoiceIII = "RH_Insert_Voice_III"
-    %! mraz.ScoreTemplate.__call__()
+    %! mraz.make_empty_score()
     %! baca.path.extern()
     { \segment.03.RH.Insert.Voice.III }
 
-    %! mraz.ScoreTemplate.__call__()
+    %! mraz.make_empty_score()
     \context RHVoiceIV = "RH_Voice_IV"
-    %! mraz.ScoreTemplate.__call__()
+    %! mraz.make_empty_score()
     %! baca.path.extern()
     { \segment.03.RH.Voice.IV }
 
-    %! mraz.ScoreTemplate.__call__()
+    %! mraz.make_empty_score()
     \context RHInsertVoiceIV = "RH_Insert_Voice_IV"
-    %! mraz.ScoreTemplate.__call__()
+    %! mraz.make_empty_score()
     %! baca.path.extern()
     { \segment.03.RH.Insert.Voice.IV }
 
-    %! mraz.ScoreTemplate.__call__()
+    %! mraz.make_empty_score()
     \context RHVoiceV = "RH_Voice_V"
-    %! mraz.ScoreTemplate.__call__()
+    %! mraz.make_empty_score()
     %! baca.path.extern()
     { \segment.03.RH.Voice.V }
 
-    %! mraz.ScoreTemplate.__call__()
+    %! mraz.make_empty_score()
     \context RHVoiceVI = "RH_Voice_VI"
-    %! mraz.ScoreTemplate.__call__()
+    %! mraz.make_empty_score()
     %! baca.path.extern()
     { \segment.03.RH.Voice.VI }
 
-    %! mraz.ScoreTemplate.__call__()
+    %! mraz.make_empty_score()
     \context RHResonanceVoice = "RH_Resonance_Voice"
-    %! mraz.ScoreTemplate.__call__()
+    %! mraz.make_empty_score()
     %! baca.path.extern()
     { \segment.03.RH.Resonance.Voice }
 
-%! mraz.ScoreTemplate.__call__()
+%! mraz.make_empty_score()
 %! baca.path.extern()
 >>
 
@@ -3625,7 +3625,7 @@ segment.03.LH.Voice.I = {
     %! PHANTOM
     >>
 
-%! mraz.ScoreTemplate.__call__()
+%! mraz.make_empty_score()
 %! baca.path.extern()
 }
 
@@ -3762,7 +3762,7 @@ segment.03.LH.Voice.II = {
     %! PHANTOM
     >>
 
-%! mraz.ScoreTemplate.__call__()
+%! mraz.make_empty_score()
 %! baca.path.extern()
 }
 
@@ -3899,7 +3899,7 @@ segment.03.LH.Voice.III = {
     %! PHANTOM
     >>
 
-%! mraz.ScoreTemplate.__call__()
+%! mraz.make_empty_score()
 %! baca.path.extern()
 }
 
@@ -4046,7 +4046,7 @@ segment.03.LH.Voice.IV = {
     %! PHANTOM
     >>
 
-%! mraz.ScoreTemplate.__call__()
+%! mraz.make_empty_score()
 %! baca.path.extern()
 }
 
@@ -4183,7 +4183,7 @@ segment.03.LH.Insert.Voice.IV = {
     %! PHANTOM
     >>
 
-%! mraz.ScoreTemplate.__call__()
+%! mraz.make_empty_score()
 %! baca.path.extern()
 }
 
@@ -4435,7 +4435,7 @@ segment.03.LH.Voice.V = {
     %! PHANTOM
     >>
 
-%! mraz.ScoreTemplate.__call__()
+%! mraz.make_empty_score()
 %! baca.path.extern()
 }
 
@@ -4572,7 +4572,7 @@ segment.03.LH.Insert.Voice.V = {
     %! PHANTOM
     >>
 
-%! mraz.ScoreTemplate.__call__()
+%! mraz.make_empty_score()
 %! baca.path.extern()
 }
 
@@ -4737,7 +4737,7 @@ segment.03.LH.Voice.VI = {
     %! PHANTOM
     >>
 
-%! mraz.ScoreTemplate.__call__()
+%! mraz.make_empty_score()
 %! baca.path.extern()
 }
 
@@ -4874,7 +4874,7 @@ segment.03.LH.Insert.Voice.VI = {
     %! PHANTOM
     >>
 
-%! mraz.ScoreTemplate.__call__()
+%! mraz.make_empty_score()
 %! baca.path.extern()
 }
 
@@ -5435,7 +5435,7 @@ segment.03.LH.Resonance.Voice = {
     %! PHANTOM
     >>
 
-%! mraz.ScoreTemplate.__call__()
+%! mraz.make_empty_score()
 %! baca.path.extern()
 }
 
@@ -5443,66 +5443,66 @@ segment.03.LH.Resonance.Voice = {
 %! baca.path.extern()
 segment.03.Piano.Music.LH.Staff = <<
 
-    %! mraz.ScoreTemplate.__call__()
+    %! mraz.make_empty_score()
     \context LHVoiceI = "LH_Voice_I"
-    %! mraz.ScoreTemplate.__call__()
+    %! mraz.make_empty_score()
     %! baca.path.extern()
     { \segment.03.LH.Voice.I }
 
-    %! mraz.ScoreTemplate.__call__()
+    %! mraz.make_empty_score()
     \context LHVoiceII = "LH_Voice_II"
-    %! mraz.ScoreTemplate.__call__()
+    %! mraz.make_empty_score()
     %! baca.path.extern()
     { \segment.03.LH.Voice.II }
 
-    %! mraz.ScoreTemplate.__call__()
+    %! mraz.make_empty_score()
     \context LHVoiceIII = "LH_Voice_III"
-    %! mraz.ScoreTemplate.__call__()
+    %! mraz.make_empty_score()
     %! baca.path.extern()
     { \segment.03.LH.Voice.III }
 
-    %! mraz.ScoreTemplate.__call__()
+    %! mraz.make_empty_score()
     \context LHVoiceIV = "LH_Voice_IV"
-    %! mraz.ScoreTemplate.__call__()
+    %! mraz.make_empty_score()
     %! baca.path.extern()
     { \segment.03.LH.Voice.IV }
 
-    %! mraz.ScoreTemplate.__call__()
+    %! mraz.make_empty_score()
     \context LHInsertVoiceIV = "LH_Insert_Voice_IV"
-    %! mraz.ScoreTemplate.__call__()
+    %! mraz.make_empty_score()
     %! baca.path.extern()
     { \segment.03.LH.Insert.Voice.IV }
 
-    %! mraz.ScoreTemplate.__call__()
+    %! mraz.make_empty_score()
     \context LHVoiceV = "LH_Voice_V"
-    %! mraz.ScoreTemplate.__call__()
+    %! mraz.make_empty_score()
     %! baca.path.extern()
     { \segment.03.LH.Voice.V }
 
-    %! mraz.ScoreTemplate.__call__()
+    %! mraz.make_empty_score()
     \context LHInsertVoiceV = "LH_Insert_Voice_V"
-    %! mraz.ScoreTemplate.__call__()
+    %! mraz.make_empty_score()
     %! baca.path.extern()
     { \segment.03.LH.Insert.Voice.V }
 
-    %! mraz.ScoreTemplate.__call__()
+    %! mraz.make_empty_score()
     \context LHVoiceVI = "LH_Voice_VI"
-    %! mraz.ScoreTemplate.__call__()
+    %! mraz.make_empty_score()
     %! baca.path.extern()
     { \segment.03.LH.Voice.VI }
 
-    %! mraz.ScoreTemplate.__call__()
+    %! mraz.make_empty_score()
     \context LHInsertVoiceVI = "LH_Insert_Voice_VI"
-    %! mraz.ScoreTemplate.__call__()
+    %! mraz.make_empty_score()
     %! baca.path.extern()
     { \segment.03.LH.Insert.Voice.VI }
 
-    %! mraz.ScoreTemplate.__call__()
+    %! mraz.make_empty_score()
     \context LHResonanceVoice = "LH_Resonance_Voice"
-    %! mraz.ScoreTemplate.__call__()
+    %! mraz.make_empty_score()
     %! baca.path.extern()
     { \segment.03.LH.Resonance.Voice }
 
-%! mraz.ScoreTemplate.__call__()
+%! mraz.make_empty_score()
 %! baca.path.extern()
 >>
