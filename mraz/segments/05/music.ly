@@ -33,9 +33,9 @@
         %! baca._make_lilypond_file()
         }
 
-        %! mraz.ScoreTemplate.__call__()
+        %! mraz.make_empty_score()
         \context Score = "Score"
-        %! mraz.ScoreTemplate.__call__()
+        %! mraz.make_empty_score()
         <<
 
             %! abjad.ScoreTemplate._make_global_context()
@@ -58,35 +58,35 @@
             %! abjad.ScoreTemplate._make_global_context()
             >>
 
-            %! mraz.ScoreTemplate.__call__()
+            %! mraz.make_empty_score()
             \context MusicContext = "Music_Context"
-            %! mraz.ScoreTemplate.__call__()
+            %! mraz.make_empty_score()
             {
 
-                %! mraz.ScoreTemplate.__call__()
+                %! mraz.make_empty_score()
                 \context PianoMusicStaffGroup = "Piano_Music_Staff_Group"
-                %! mraz.ScoreTemplate.__call__()
+                %! mraz.make_empty_score()
                 <<
 
-                    %! mraz.ScoreTemplate.__call__()
+                    %! mraz.make_empty_score()
                     \context PianoMusicRHStaff = "Piano_Music_RH_Staff"
-                    %! mraz.ScoreTemplate.__call__()
+                    %! mraz.make_empty_score()
                     %! baca.path.extern()
                     { \segment.05.Piano.Music.RH.Staff }
 
-                    %! mraz.ScoreTemplate.__call__()
+                    %! mraz.make_empty_score()
                     \context PianoMusicLHStaff = "Piano_Music_LH_Staff"
-                    %! mraz.ScoreTemplate.__call__()
+                    %! mraz.make_empty_score()
                     %! baca.path.extern()
                     { \segment.05.Piano.Music.LH.Staff }
 
-                %! mraz.ScoreTemplate.__call__()
+                %! mraz.make_empty_score()
                 >>
 
-            %! mraz.ScoreTemplate.__call__()
+            %! mraz.make_empty_score()
             }
 
-        %! mraz.ScoreTemplate.__call__()
+        %! mraz.make_empty_score()
         >>
 
     %! baca._make_lilypond_file()
