@@ -1104,8 +1104,12 @@ if __name__ == "__main__":
         **defaults,
         activate=(baca.tags.LOCAL_MEASURE_NUMBER,),
         always_make_global_rests=True,
-        do_not_require_margin_markup=True,
         deactivate=(baca.tags.REPEAT_PITCH_CLASS_COLORING,),
+        do_not_require_margin_markup=True,
         error_on_not_yet_pitched=True,
+        lilypond_file_keywords=baca.make_lilypond_file_dictionary(
+            include_layout_ly=True,
+            includes=["../../stylesheet.ily"],
+        ),
         score=score,
     )
