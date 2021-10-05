@@ -378,5 +378,9 @@ if __name__ == "__main__":
         always_make_global_rests=True,
         do_not_require_margin_markup=True,
         error_on_not_yet_pitched=True,
+        lilypond_file_keywords=baca.make_lilypond_file_dictionary(
+            include_layout_ly=True,
+            includes=["../../stylesheet.ily"],
+        ),
         score=score,
     )
