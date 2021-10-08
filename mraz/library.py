@@ -3,9 +3,9 @@ import inspect
 import abjad
 import baca
 
-instruments = abjad.OrderedDict([("Piano", abjad.Piano())])
+instruments = dict([("Piano", abjad.Piano())])
 
-metronome_marks = abjad.OrderedDict(
+metronome_marks = dict(
     [
         ("84", abjad.MetronomeMark((1, 4), 84)),
         ("112", abjad.MetronomeMark((1, 4), 112)),
