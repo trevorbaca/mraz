@@ -308,7 +308,7 @@ class SilverDesignMaker:
                 part_segments = []
                 for i, part in enumerate(parts):
                     # string = rf"\concat {{ {source} \sub {i} }}"
-                    # markup = abjad.Markup(string)
+                    # markup = abjad.Markup(r"\markup {string}", literal=True)
                     part_segment = baca.PitchClassSegment(part)
                     part_segments.append(part_segment)
                 new_segments.append(part_segments)
