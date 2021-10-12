@@ -31,10 +31,7 @@ figures(
     baca.register(36),
     rmakers.beam_groups(),
     baca.tenuto(baca.selectors.pheads()),
-    baca.markup(
-        r"\mraz-ottava-brackets-always-govern-markup",
-        literal=True,
-    ),
+    baca.markup(r"\mraz-ottava-brackets-always-govern-markup"),
     figure_name="b.1.1",
     hide_time_signature=True,
     signature=4,
