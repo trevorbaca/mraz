@@ -1,7 +1,6 @@
 % Mráz (2017) for piano
 
 \version "2.19.83"
-\language "english"
 
 \include "stylesheet.ily"
 \include "_segments/01.ily"
