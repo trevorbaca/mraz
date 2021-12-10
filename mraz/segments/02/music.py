@@ -1,19 +1,19 @@
 import baca
 from abjadext import rmakers
 
-from mraz import library as mraz
+from mraz import library
 
 #########################################################################################
 ########################################### 02 ##########################################
 #########################################################################################
 
-score = mraz.make_empty_score()
+score = library.make_empty_score()
 
 figures = baca.FigureAccumulator(
     score,
-    voice_abbreviations=mraz.voice_abbreviations,
+    voice_abbreviations=library.voice_abbreviations,
 )
-collection_maker = mraz.CollectionMaker()
+collection_maker = library.CollectionMaker()
 collections = collection_maker.make_segment_8_collections()
 
 #################################### [8.3] ####################################
@@ -234,11 +234,11 @@ voice_names = baca.accumulator.get_voice_names(score)
 
 commands = baca.CommandAccumulator(
     **baca.segment_accumulation_defaults(),
-    instruments=mraz.instruments,
-    metronome_marks=mraz.metronome_marks,
+    instruments=library.instruments,
+    metronome_marks=library.metronome_marks,
     skips_instead_of_rests=True,
     time_signatures=figures.time_signatures,
-    voice_abbreviations=mraz.voice_abbreviations,
+    voice_abbreviations=library.voice_abbreviations,
     voice_names=voice_names,
 )
 
