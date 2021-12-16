@@ -43,34 +43,6 @@
   top-margin = 20\mm
 }
 
-\header
-{
-  composer = \markup
-  {
-    \override #'(font-name . "Palatino")
-    \fontsize #5
-    \line { Trevor Bača (*1975) \hspace #15 }
-  }
-  tagline = \markup \null
-  title = \markup \column
-  {
-    \center-align
-    {
-      \override #'(font-name . "Palatino")
-      \fontsize #14
-      {
-         \line { MRÁZ }
-      }
-      \null
-      \override #'(font-name . "Palatino Italic")
-      \fontsize #3
-      {
-         "for Jared Redmond"
-      }
-    }
-  }
-}
-
 \layout
 {
   \accidentalStyle neo-modern
