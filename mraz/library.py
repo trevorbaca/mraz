@@ -108,7 +108,7 @@ class SilverDesignMaker:
             segment = baca.PitchClassSegment(items=pitch_classes)
             segments.append(segment)
         segments = baca.Sequence(segments)
-        segments = segments.helianthate(-1, -1)
+        segments = baca.sequence.helianthate(segments, -1, -1)
         tree = baca.PitchTree(item_class=abjad.NumberedPitchClass, items=segments)
         return tree
 
