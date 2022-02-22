@@ -481,7 +481,6 @@ class CollectionMaker:
         segments = baca.CollectionList(segments, item_class=abjad.NumberedPitchClass)
         assert len(segments) == 6, repr(len(segments))
         stages = segments.partition([2, 4], overhang=abjad.Exact)
-        assert stages.sum() == segments
         # stage_1_segments = stages[0]
         stage_2_segments = stages[1]
         counts = 2 * [5, 6, 6, 5, 5, 4] + 2 * [4, 5, 5, 4, 4, 3]
@@ -489,7 +488,6 @@ class CollectionMaker:
         stage_2_segments = stage_2_segments.read(counts)
         stage_2_segments = stage_2_segments.remove_duplicates(level=1)
         measures = stage_2_segments.partition([6, 5, 5, 4, 4], overhang=abjad.Exact)
-        assert measures.sum() == stage_2_segments
         measures = [_.arpeggiate_up() for _ in measures]
         measures = baca.Cursor(measures, singletons=True)
         collections["stage 2"]["rh"] = measures
@@ -513,7 +511,6 @@ class CollectionMaker:
         segments = baca.CollectionList(segments, item_class=abjad.NumberedPitchClass)
         assert len(segments) == 13, repr(len(segments))
         stages = segments.partition([2, 2, 2, 2, 2, 3], overhang=abjad.Exact)
-        assert stages.sum() == segments
         stage_1_segments = stages[0]
         stage_2_segments = stages[1]
         # stage_3_segments = stages[2]
@@ -583,7 +580,6 @@ class CollectionMaker:
         segments = baca.CollectionList(segments, item_class=abjad.NumberedPitchClass)
         assert len(segments) == 6, repr(len(segments))
         stages = segments.partition([2, 4], overhang=abjad.Exact)
-        assert stages.sum() == segments
         stage_1_segments = stages[0]
         stage_2_segments = stages[1]
         stage_1_segments = stage_1_segments.remove_duplicate_pitch_classes(level=1)
@@ -624,7 +620,6 @@ class CollectionMaker:
         segments = baca.CollectionList(segments, item_class=abjad.NumberedPitchClass)
         assert len(segments) == 3, repr(len(segments))
         stages = segments.partition([1, 1, 1], overhang=abjad.Exact)
-        assert stages.sum() == segments
         stage_1_segments = stages[0]
         stage_1_segments = stage_1_segments.accumulate(
             [
@@ -711,7 +706,6 @@ class CollectionMaker:
         segments = baca.CollectionList(segments, item_class=abjad.NumberedPitchClass)
         assert len(segments) == 6, repr(len(segments))
         stages = segments.partition([1, 1, 1, 3], overhang=abjad.Exact)
-        assert stages.sum() == segments
 
         stage_3_segments = stages[2].remove_duplicates()
         stage_3_segments = stage_3_segments.accumulate(
