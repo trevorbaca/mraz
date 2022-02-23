@@ -10,12 +10,9 @@ TO-DO
 4.  Integrate SetClass group-system tracking.
     Integrate A/B differencing in group-1 labels.
 
-5.  Integrate PitchTree set-class label-coloring.
-    Color set-classes that appear multiple times.
-
-6.  Write AnchorSpecifier examples.
+5.  Write AnchorSpecifier examples.
     Make clean doc paradigm for contributions from multiple voices.
 
-7.  Debug uneven octave repeat ties. Possibly mail LilyPond list.
+6.  Debug uneven octave repeat ties. Possibly mail LilyPond list.
 
-8.  Make counts=[-4] not cause an infinite loop.
+7.  Make counts=[-4] not cause an infinite loop.
