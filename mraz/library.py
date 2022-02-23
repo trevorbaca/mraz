@@ -20,19 +20,10 @@ class SilverDesignMaker:
     Silver design-maker.
     """
 
-    ### CLASS VARIABLES ###
-
     __slots__ = ()
 
-    ### SPECIAL METHODS ###
-
     def __call__(self):
-        """
-        Calls silver design-maker.
-        """
         return self.make_stage_07()
-
-    ### PUBLIC METHODS ###
 
     def make_stage_00(self):
         """
@@ -382,8 +373,7 @@ class SilverDesignMaker:
             for segment in part:
                 segment = segment.transpose(n=index)
                 new_segments.append(segment)
-        tree = baca.PitchTree(item_class=abjad.NumberedPitchClass, items=new_segments)
-        return tree
+        return new_segments
 
     def make_stage_07(self):
         """
@@ -429,25 +419,13 @@ class SilverDesignMaker:
         [5, 3, 0]
 
         """
-        stage_06_tree = self.make_stage_06()
-        trees = stage_06_tree.iterate(level=-2)
-        segments = []
-        for tree in trees:
-            pitch_classes = tree.get_payload()
-            segment = baca.PitchClassSegment(
-                items=pitch_classes,
-                # name=tree._name,
-                # markup=tree._name_markup
-            )
-            # segment._tracked_expression = tree._tracked_expression
-            segments.append(segment)
+        segments = self.make_stage_06()
         new_segments = []
         for i, segment in enumerate(segments):
             if i % 4 == 3:
                 segment = segment.retrograde()
             new_segments.append(segment)
-        tree = baca.PitchTree(item_class=abjad.NumberedPitchClass, items=new_segments)
-        return tree
+        return new_segments
 
 
 class CollectionMaker:
@@ -455,11 +433,7 @@ class CollectionMaker:
     Collection maker.
     """
 
-    ### CLASS VARIABLES ###
-
     __slots__ = ("_design",)
-
-    ### INITIALIZER ###
 
     def __init__(self):
         maker = SilverDesignMaker()
@@ -468,15 +442,14 @@ class CollectionMaker:
         assert len(design) == 34, repr(len(design))
         self._design = design
 
-    ### PUBLIC METHODS ###
-
     def make_segment_2_collections(self):
         """
         Makes segment 2 collections.
         """
         collections = {"stage 1": {}, "stage 2": {}}
         segments = [
-            baca.PitchClassSegment(_.get_payload()) for _ in self._design[14:20]
+            baca.PitchClassSegment(abjad.sequence.flatten(_, depth=-1))
+            for _ in self._design[14:20]
         ]
         segments = baca.CollectionList(segments, item_class=abjad.NumberedPitchClass)
         assert len(segments) == 6, repr(len(segments))
@@ -506,7 +479,8 @@ class CollectionMaker:
             "stage 6": {},
         }
         segments = [
-            baca.PitchClassSegment(_.get_payload()) for _ in self._design[23:36]
+            baca.PitchClassSegment(abjad.sequence.flatten(_, depth=-1))
+            for _ in self._design[23:36]
         ]
         segments = baca.CollectionList(segments, item_class=abjad.NumberedPitchClass)
         assert len(segments) == 13, repr(len(segments))
@@ -575,7 +549,8 @@ class CollectionMaker:
         """
         collections = {"stage 1": {}, "stage 2": {}}
         segments = [
-            baca.PitchClassSegment(_.get_payload()) for _ in self._design[36:42]
+            baca.PitchClassSegment(abjad.sequence.flatten(_, depth=-1))
+            for _ in self._design[36:42]
         ]
         segments = baca.CollectionList(segments, item_class=abjad.NumberedPitchClass)
         assert len(segments) == 6, repr(len(segments))
@@ -615,7 +590,8 @@ class CollectionMaker:
             "stage 4": {},
         }
         segments = [
-            baca.PitchClassSegment(_.get_payload()) for _ in self._design[42:45]
+            baca.PitchClassSegment(abjad.sequence.flatten(_, depth=-1))
+            for _ in self._design[42:45]
         ]
         segments = baca.CollectionList(segments, item_class=abjad.NumberedPitchClass)
         assert len(segments) == 3, repr(len(segments))
@@ -651,7 +627,8 @@ class CollectionMaker:
         """
         collections = {"stage 1": {}, "stage 2": {}}
         segments = [
-            baca.PitchClassSegment(_.get_payload()) for _ in self._design[45:59]
+            baca.PitchClassSegment(abjad.sequence.flatten(_, depth=-1))
+            for _ in self._design[45:59]
         ]
         segments = baca.CollectionList(segments, item_class=abjad.NumberedPitchClass)
         assert len(segments) == 14, repr(len(segments))
@@ -699,7 +676,8 @@ class CollectionMaker:
             "stage 4": {},
         }
         segments = [
-            baca.PitchClassSegment(_.get_payload()) for _ in self._design[59:65]
+            baca.PitchClassSegment(abjad.sequence.flatten(_, depth=-1))
+            for _ in self._design[59:65]
         ]
         segments = baca.CollectionList(segments, item_class=abjad.NumberedPitchClass)
         assert len(segments) == 6, repr(len(segments))
@@ -826,10 +804,7 @@ voice_abbreviations = {
 
 def make_empty_score():
     tag = baca.site(inspect.currentframe())
-    # GLOBAL CONTEXT
     global_context = baca.score.make_global_context()
-
-    # RH VOICES
     rh_voice_1 = abjad.Voice(lilypond_type="RHVoiceI", name="RH_Voice_I", tag=tag)
     rh_voice_1I = abjad.Voice(
         lilypond_type="RHInsertVoiceI", name="RH_Insert_Voice_I", tag=tag
@@ -859,8 +834,6 @@ def make_empty_score():
         name="RH_Resonance_Voice",
         tag=tag,
     )
-
-    # LH VOICES
     lh_voice_1 = abjad.Voice(lilypond_type="LHVoiceI", name="LH_Voice_I", tag=tag)
     lh_voice_2 = abjad.Voice(lilypond_type="LHVoiceII", name="LH_Voice_II", tag=tag)
     lh_voice_3 = abjad.Voice(lilypond_type="LHVoiceIII", name="LH_Voice_III", tag=tag)
@@ -885,8 +858,6 @@ def make_empty_score():
         name="LH_Resonance_Voice",
         tag=tag,
     )
-
-    # RH STAFF
     piano_music_rh_staff = abjad.Staff(
         [
             rh_voice_1,
@@ -907,8 +878,6 @@ def make_empty_score():
         tag=tag,
     )
     abjad.annotate(piano_music_rh_staff, "default_clef", abjad.Clef("treble"))
-
-    # LH STAFF
     piano_music_lh_staff = abjad.Staff(
         [
             lh_voice_1,
@@ -928,8 +897,6 @@ def make_empty_score():
         tag=tag,
     )
     abjad.annotate(piano_music_lh_staff, "default_clef", abjad.Clef("bass"))
-
-    # STAFF GROUP
     piano_music_staff_group = abjad.StaffGroup(
         [piano_music_rh_staff, piano_music_lh_staff],
         lilypond_type="PianoMusicStaffGroup",
@@ -938,16 +905,12 @@ def make_empty_score():
     )
     piano = instruments["Piano"]
     abjad.annotate(piano_music_staff_group, "default_instrument", piano)
-
-    # MUSIC CONTEXT
     music_context = abjad.Context(
         [piano_music_staff_group],
         lilypond_type="MusicContext",
         name="Music_Context",
         tag=tag,
     )
-
-    # SCORE
     score = abjad.Score([global_context, music_context], name="Score", tag=tag)
     baca.score.assert_lilypond_identifiers(score)
     baca.score.assert_unique_context_names(score)
