@@ -13,13 +13,13 @@ figures = baca.FigureAccumulator(
     score,
     voice_abbreviations=library.voice_abbreviations,
 )
-collections_8 = library.make_section_8_segments()
+section_8 = library.make_section_8_segments()
 
 #################################### [8.3] ####################################
 
 figures(
     "lh_v5",
-    collections_8.three.rh.next(),
+    section_8.stage_3.rh.next(),
     baca.figure([6, -1], 32),
     baca.dynamic("ppp"),
     baca.dynamic_up(),
@@ -30,7 +30,7 @@ figures(
 
 figures(
     "lh_v5",
-    collections_8.three.rh.next(2),
+    section_8.stage_3.rh.next(2),
     baca.figure([4, -1], 32, treatments=[1]),
     baca.register(-39, -27),
     baca.rest_up(),
@@ -40,7 +40,7 @@ figures(
 
 figures(
     "lh_v5",
-    collections_8.three.rh.next(),
+    section_8.stage_3.rh.next(),
     baca.figure([1, -15], 32),
     baca.register(-39),
     signature=2,
@@ -49,7 +49,7 @@ figures(
 
 figures(
     "lh_v5",
-    collections_8.three.rh.next(),
+    section_8.stage_3.rh.next(),
     baca.figure([6, -1], 32),
     baca.register(-27, -39),
     baca.rest_up(),
@@ -59,7 +59,7 @@ figures(
 
 figures(
     "lh_v5",
-    collections_8.three.rh.next(),
+    section_8.stage_3.rh.next(),
     baca.figure([4, -1], 32),
     baca.register(-39, -27),
     signature=4,
@@ -68,7 +68,7 @@ figures(
 
 figures(
     "lh_v5",
-    collections_8.three.rh.next(),
+    section_8.stage_3.rh.next(),
     baca.figure([4, -1], 32, treatments=[1]),
     baca.register(-39, -27),
     signature=4,
@@ -77,7 +77,7 @@ figures(
 
 figures(
     "lh_v5",
-    collections_8.three.rh.next(),
+    section_8.stage_3.rh.next(),
     baca.figure([1, -15], 32),
     baca.register(-39),
     baca.rest_up(),
@@ -87,7 +87,7 @@ figures(
 
 figures(
     "lh_v5",
-    collections_8.three.rh.next(),
+    section_8.stage_3.rh.next(),
     baca.figure([6, -1], 32),
     baca.register(-27, -39),
     signature=4,
@@ -96,7 +96,7 @@ figures(
 
 figures(
     "lh_v5",
-    collections_8.three.rh.next(2),
+    section_8.stage_3.rh.next(2),
     baca.figure([4, -1], 32, treatments=[1]),
     baca.register(-39, -27),
     baca.tuplet_bracket_staff_padding(3),
@@ -106,7 +106,7 @@ figures(
 
 figures(
     "lh_v5",
-    collections_8.three.rh.next(),
+    section_8.stage_3.rh.next(),
     baca.figure([1, -15], 32),
     baca.register(-39),
     baca.rest_up(),
@@ -116,7 +116,7 @@ figures(
 
 figures(
     "lh_v5",
-    collections_8.three.rh.next(),
+    section_8.stage_3.rh.next(),
     baca.figure([6, -1], 32),
     baca.register(-27, -39),
     signature=4,
@@ -125,7 +125,7 @@ figures(
 
 figures(
     "lh_v5",
-    collections_8.three.rh.next(exhausted=True),
+    section_8.stage_3.rh.next(exhausted=True),
     baca.figure([4, -1], 32, treatments=[1]),
     baca.register(-39, -27),
     signature=4,
@@ -134,7 +134,7 @@ figures(
 
 figures(
     "lh_v6",
-    collections_8.three.lh.next(),
+    section_8.stage_3.lh.next(),
     baca.figure([4, -4], 16, treatments=[-4]),
     baca.dynamic("f"),
     baca.register(-39),
@@ -150,7 +150,7 @@ figures(
 
 figures(
     "lh_v6",
-    collections_8.three.lh.next(),
+    section_8.stage_3.lh.next(),
     baca.figure([2, -4], 16, treatments=[4]),
     baca.register(-39),
     baca.rest_up(),
@@ -165,7 +165,7 @@ figures(
 
 figures(
     "lh_v6",
-    collections_8.three.lh.next(),
+    section_8.stage_3.lh.next(),
     baca.figure([1, -3], 16, treatments=[4]),
     baca.note_column_shift(
         -1,
@@ -184,7 +184,7 @@ figures(
 
 figures(
     "lh_v6",
-    collections_8.three.lh.next(),
+    section_8.stage_3.lh.next(),
     baca.figure([1, -3], 16, treatments=[4]),
     baca.register(-39),
     anchor=baca.anchor(
@@ -199,7 +199,7 @@ figures(
 
 figures(
     "lh_v6",
-    collections_8.three.lh.next(),
+    section_8.stage_3.lh.next(),
     baca.figure([2], 16, treatments=[2]),
     baca.register(-39),
     anchor=baca.anchor(
@@ -214,7 +214,7 @@ figures(
 
 figures(
     "lh_v6",
-    collections_8.three.lh.next(exhausted=True),
+    section_8.stage_3.lh.next(exhausted=True),
     baca.figure([2, -4], 16, treatments=[-6]),
     rmakers.force_fraction(),
     rmakers.denominator(4),

@@ -14,17 +14,17 @@ figures = baca.FigureAccumulator(
     score,
     voice_abbreviations=library.voice_abbreviations,
 )
-collections_2 = library.make_section_2_segments()
-collections_4 = library.make_section_4_segments()
-collections_6 = library.make_section_6_segments()
-collections_7 = library.make_section_7_segments()
+section_2 = library.make_section_2_segments()
+section_4 = library.make_section_4_segments()
+section_6 = library.make_section_6_segments()
+section_7 = library.make_section_7_segments()
 resonance = baca.PitchSet("e, fs, gs, as, b,", item_class=abjad.NamedPitch)
 
 ##################################### [C] #####################################
 
 figures(
     "rh_v4",
-    collections_7.one.lh[-1].transpose(4 * 7),
+    section_7.stage_1.lh[-1].transpose(4 * 7),
     baca.figure([1], 16, treatments=[1]),
     rmakers.beam_groups(),
     baca.register(6, 6 + 10),
@@ -48,7 +48,7 @@ figures(
 
 figures(
     "rh_v2",
-    collections_2.two.rh[0][:1],
+    section_2.stage_2.rh[0][:1],
     baca.figure([1], 16),
     rmakers.beam_groups(),
     baca.bass_to_octave(3),
@@ -72,7 +72,7 @@ figures(
 
 figures(
     "rh_v4",
-    collections_7.one.lh[-1].transpose(4 * 7),
+    section_7.stage_1.lh[-1].transpose(4 * 7),
     baca.figure([1], 16, treatments=[1]),
     rmakers.beam_groups(),
     baca.register(6, 6 + 10),
@@ -88,7 +88,7 @@ figures(
 
 figures(
     "rh_v2",
-    collections_2.two.rh[0][:2],
+    section_2.stage_2.rh[0][:2],
     baca.figure([1], 16),
     rmakers.beam_groups(),
     baca.bass_to_octave(3),
@@ -111,7 +111,7 @@ figures(
 
 figures(
     "rh_v3",
-    collections_4.one.rh[0],
+    section_4.stage_1.rh[0],
     baca.figure([2, -4, 2, -4, 4], 16, treatments=[2]),
     baca.dynamic("ff"),
     baca.register(-12, 12),
@@ -122,7 +122,7 @@ figures(
 
 figures(
     "lh_v5",
-    collections_4.one.lh.next(),
+    section_4.stage_1.lh.next(),
     baca.figure([3, -1], 16, affix=baca.rests_before([12])),
     baca.dynamic("f"),
     baca.dynamic_down(),
@@ -137,7 +137,7 @@ figures(
 
 figures(
     "rh_v2",
-    collections_2.two.rh[0][:4],
+    section_2.stage_2.rh[0][:4],
     baca.figure([1], 16),
     rmakers.beam_groups(),
     baca.bass_to_octave(3),
@@ -152,7 +152,7 @@ figures(
 
 figures(
     "rh_v1",
-    collections_4.five.rh[0],
+    section_4.stage_5.rh[0],
     baca.figure([28], 16),
     rmakers.beam_groups(),
     baca.dynamic("f"),
@@ -164,7 +164,7 @@ figures(
 
 figures(
     "rh_v1",
-    collections_4.five.rh[1],
+    section_4.stage_5.rh[1],
     baca.figure([24], 16),
     rmakers.beam_groups(),
     baca.register(36),
@@ -175,7 +175,7 @@ figures(
 
 figures(
     "rh_v1",
-    collections_4.five.rh[2],
+    section_4.stage_5.rh[2],
     baca.figure([16], 16),
     rmakers.beam_groups(),
     baca.register(36),
@@ -187,7 +187,7 @@ figures(
 
 figures(
     "rh_v2",
-    collections_4.five.lh[:4],
+    section_4.stage_5.lh[:4],
     baca.figure([1], 16, treatments=[(1, 4)]),
     rmakers.beam_groups(),
     baca.dls_staff_padding(8),
