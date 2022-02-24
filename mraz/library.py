@@ -1,6 +1,17 @@
 """
 >>> import mraz
 
+>>> def show_collections(stage, stage_name):
+...     stages = ("stage_1", "stage_2", "stage_3", "stage_4", "stage_5", "stage_6")
+...     for stage_name in stages:
+...         bundle = getattr(section, stage_name, None)
+...         if bundle is not None:
+...             for part_name in ("rh", "lh"):
+...                 collections = getattr(bundle, part_name, None)
+...                 if collections is not None:
+...                     print(f"{section_name}.{stage_name}.{part_name}:")
+...                     for collection in collections: print(f"  {collection}")
+
 """
 import inspect
 import types
@@ -334,6 +345,17 @@ design = abjad.CyclicTuple(design)
 
 
 def make_section_2_segments():
+    """
+    >>> section, section_name = mraz.library.make_section_2_segments(), "section_2"
+    >>> show_collections(section, section_name)
+    section_2.stage_2.rh:
+      CollectionList([<6, 12, 16, 17, 20>, <10, 15, 23, 31, 33>, <2, 13, 20, 22, 27, 29>, <9, 11, 19, 30, 36>, <4, 5, 8, 10, 15>, <11, 19, 21>])
+      CollectionList([<2, 13, 20, 22, 27>, <5, 9, 11, 19, 30, 36>, <4, 5, 8, 10, 15, 23>, <7, 11, 21, 26, 37>, <8, 10, 15, 17, 21>])
+      CollectionList([<11, 19, 30, 36>, <4, 5, 8, 10>, <3, 11, 19, 21>, <2, 13, 20, 22, 27>, <5, 9, 11, 19>])
+      CollectionList([<6, 12, 16, 17>, <8, 10, 15>, <11, 19, 21>, <2, 13, 20, 22, 27>])
+      CollectionList([<5, 9, 11, 19, 30>, <0, 4, 5, 8>, <10, 15, 23, 31>, <11, 21, 26>])
+
+    """
     segments = [
         baca.PitchClassSegment(abjad.sequence.flatten(_, depth=-1))
         for _ in design[14:20]
@@ -358,6 +380,72 @@ def make_section_2_segments():
 
 
 def make_section_4_segments():
+    """
+    >>> section, section_name = mraz.library.make_section_4_segments(), "section_4"
+    >>> show_collections(section, section_name)
+    section_4.stage_1.rh:
+      PC<3, 1, 0, 10>
+      PC<3, 1, 0, 10>
+      PC<3, 1, 0, 10>
+    section_4.stage_1.lh:
+      PC<8, 2, 4>
+      PC<8, 2, 4>
+      PC<8, 2, 4>
+    section_4.stage_2.lh:
+      {7, 11, 17, 18, 21}
+      {7, 11, 17, 18, 21}
+      {7, 11, 17, 18, 21}
+      {7, 11, 17, 18, 21}
+      {7, 11, 17, 18, 21}
+      {7, 11, 17, 18, 21}
+      {7, 11, 17, 18, 21}
+      {7, 11, 17, 18, 21}
+      {7, 11, 17, 18, 21}
+      {7, 11, 17, 18, 21}
+      PC<6, 9, 7, 11, 7, 5, 2, 4, 8>
+    section_4.stage_4.rh:
+      PC<2, 8, 3, 9, 2, 5, 11, 4>
+      PC<10, 5, 6, 0, 7, 1, 6, 9>
+      PC<3, 8, 2, 9, 10, 4, 11, 5, 10, 1, 7, 0, 6, 1>
+    section_4.stage_4.lh:
+      PC{0, 10}
+      PC{2, 5}
+      PC{0, 4, 8}
+      PC{10}
+      PC{2, 5}
+      PC{4, 8}
+      PC{0, 5, 10}
+      PC{2, 4, 8}
+    section_4.stage_5.rh:
+      PC<3>
+      PC<5>
+      PC<10>
+      PC<3>
+      PC<5>
+      PC<10>
+    section_4.stage_5.lh:
+      PC<11, 6, 7, 9, 1>
+      PC<10, 1, 8, 9, 11>
+      PC<3, 0, 10, 11, 1>
+      PC<5, 2, 0, 1>
+      PC<3, 7, 4, 2>
+      PC<3, 5, 9, 6, 4>
+      PC<5, 7, 11, 8>
+      PC<6, 7, 9, 1, 10>
+      PC<1, 8, 9, 11, 3, 0>
+      PC<3, 10, 11, 1, 5>
+      PC<2, 5, 0, 1, 3>
+      PC<7, 4, 2, 3, 5>
+      PC<9, 6, 4, 5>
+      PC<7, 11, 8, 6>
+      PC<7, 9, 1, 10, 8>
+    section_4.stage_6.rh:
+      {17, 27, 36, 40, 42, 46}
+      {-3, 7, 8, 11, 13, 17, 27, 36}
+      {4, 6, 10, 21, 31, 32, 35, 37}
+
+
+    """
     segments = [
         baca.PitchClassSegment(abjad.sequence.flatten(_, depth=-1))
         for _ in design[23:36]
@@ -438,6 +526,50 @@ def make_section_4_segments():
 
 
 def make_section_5_segments():
+    """
+    >>> section, section_name = mraz.library.make_section_5_segments(), "section_5"
+    >>> show_collections(section, section_name)
+    section_5.stage_1.rh:
+      PC<0, 2, 3, 5>
+    section_5.stage_1.lh:
+      PC<9, 1, 11, 8, 7>
+    section_5.stage_2.rh:
+      PC<2, 3, 5, 0>
+      PC<9, 10, 0, 7, 4, 5, 3>
+      PC<5, 6, 8, 3>
+      PC<0, 1, 3, 10, 7, 8, 6>
+      PC<4, 7, 9, 2>
+      PC<1, 0, 2, 11, 6, 9, 7>
+      PC<7, 10, 0, 5>
+      PC<4, 3, 5, 2, 9, 0, 10>
+      PC<6, 11, 1, 4>
+      PC<5, 2, 4, 3, 8, 1, 11>
+      PC<9, 2, 4, 7>
+      PC<8, 5, 7, 6, 11, 4, 2>
+      PC<8, 3, 5, 6>
+      PC<9, 4, 6, 7, 10, 5, 3>
+      PC<11, 6, 8, 9>
+      PC<0, 7, 9, 10, 1, 8, 6>
+      PC<10, 7, 9, 8>
+      PC<1, 6, 8, 11, 0, 9, 7>
+      PC<1, 10, 0, 11>
+      PC<4, 9, 11, 2, 3, 0, 10>
+      PC<0, 11, 1, 10>
+      PC<5, 8, 10, 3, 2, 1, 11>
+      PC<3, 2, 4, 1>
+      PC<8, 11, 1, 6, 5, 4, 2>
+    section_5.stage_2.lh:
+      PC<11, 3, 1>
+      PC<8, 4, 10, 1>
+      PC<11, 7>
+      PC<11, 3, 1, 8>
+      PC<4, 10>
+      PC<1, 11, 7>
+      PC<11, 3>
+      PC<1, 8, 4>
+      PC<10, 1, 11, 7>
+
+    """
     segments = [
         baca.PitchClassSegment(abjad.sequence.flatten(_, depth=-1))
         for _ in design[36:42]
@@ -480,6 +612,22 @@ def make_section_5_segments():
 
 
 def make_section_6_segments():
+    """
+    >>> section, section_name = mraz.library.make_section_6_segments(), "section_6"
+    >>> show_collections(section, section_name)
+    section_6.stage_1.rh:
+      PC<6, 9, 11>
+      PC<0, 8, 11, 1>
+      PC<10, 1, 3>
+      PC<2, 4, 0, 3, 5>
+      PC<8, 4, 7, 9>
+    section_6.stage_1.lh:
+      PC<7, 8, 10, 9>
+      PC<11, 0, 2, 1>
+      PC<2, 5, 7, 3, 4>
+      PC<6, 5>
+
+    """
     segments = [
         baca.PitchClassSegment(abjad.sequence.flatten(_, depth=-1))
         for _ in design[42:45]
@@ -520,6 +668,30 @@ def make_section_6_segments():
 
 
 def make_section_7_segments():
+    """
+    >>> section, section_name = mraz.library.make_section_7_segments(), "section_7"
+    >>> show_collections(section, section_name)
+    section_7.stage_1.rh:
+      CollectionList([PC<4, 1, 0, 2, 6, 2>, PC<5, 7, 8, 10>, PC<11, 3, 9>])
+      CollectionList([PC<0, 2, 3, 5>])
+      CollectionList([PC<6, 10, 4>, PC<6, 7, 9, 4>])
+      CollectionList([PC<1, 5, 11>, PC<1, 2, 4, 11>, PC<5, 3, 9>])
+      CollectionList([PC<8, 9, 11, 6>])
+      CollectionList([PC<0, 10, 4>, PC<1, 10, 9, 11, 3, 11>, PC<7, 5, 11>])
+      CollectionList([PC<8, 5, 4, 6, 10, 6>])
+      CollectionList([PC<9, 11, 0, 2>, PC<3, 0, 11, 1, 5, 1>])
+      CollectionList([PC<4, 6, 7, 9>, PC<10, 2, 8>, PC<11, 1, 2, 4>])
+      CollectionList([PC<5, 9, 3>])
+      CollectionList([PC<5, 6, 8, 3>, PC<0, 4, 10>, PC<0, 1, 3, 10>])
+      CollectionList([PC<4, 2, 8>])
+    section_7.stage_1.lh:
+      CollectionList([PC<6, 0, 4, 5, 8, 10, 3>, PC<11, 7, 11>])
+      CollectionList([PC<6, 2, 6>, PC<4, 9, 8, 3, 5, 10, 0>, PC<11, 4, 3, 10, 0, 5, 7>])
+      CollectionList([PC<11, 1, 9>])
+      CollectionList([PC<6, 8, 4>, PC<0, 11, 9, 10, 2, 4, 9>, PC<7, 6, 4, 5, 9, 11, 4>])
+      CollectionList([PC<10, 4, 8, 9, 0, 2, 7>])
+
+    """
     segments = [
         baca.PitchClassSegment(abjad.sequence.flatten(_, depth=-1))
         for _ in design[45:59]
@@ -565,6 +737,33 @@ def make_section_7_segments():
 
 
 def make_section_8_segments():
+    """
+    >>> section, section_name = mraz.library.make_section_8_segments(), "section_8"
+    >>> show_collections(section, section_name)
+    section_8.stage_3.rh:
+      PC<7, 6>
+      PC<7, 9, 1>
+      PC<11, 8, 9>
+      PC<1, 9, 8>
+      PC<10, 2, 0, 11>
+      PC<2, 10>
+      PC<11, 1, 5>
+      PC<3, 0, 1, 3>
+      PC<0, 2>
+      PC<6, 4, 3>
+      PC<2, 3, 5>
+      PC<9, 7>
+      PC<11, 9, 5, 4>
+      PC<6, 10, 8>
+    section_8.stage_3.lh:
+      PC<8, 0, 10>
+      PC<11, 3>
+      PC<10, 0, 4>
+      PC<7, 5, 1>
+      PC<2, 4, 8, 6>
+      PC<4, 5, 7>
+
+    """
     segments = [
         baca.PitchClassSegment(abjad.sequence.flatten(_, depth=-1))
         for _ in design[59:65]
@@ -686,6 +885,7 @@ lh_v5_i = "lh_v5_i"
 lh_v6 = "lh_v6"
 lh_v6_i = "lh_v6_i"
 lh_resonance = "lh_resonance"
+
 
 voice_abbreviations = {
     rh_v1: "RH_Voice_I",
