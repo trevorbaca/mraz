@@ -14,11 +14,11 @@ figures = baca.FigureAccumulator(
     score,
     voice_abbreviations=library.voice_abbreviations,
 )
-section_4 = library.make_section_4_segments()
-section_5 = library.make_section_5_segments()
-section_6 = library.make_section_6_segments()
-section_7 = library.make_section_7_segments()
-section_8 = library.make_section_8_segments()
+section_4 = library.make_section_4_collections()
+section_5 = library.make_section_5_collections()
+section_6 = library.make_section_6_collections()
+section_7 = library.make_section_7_collections()
+section_8 = library.make_section_8_collections()
 
 ##################################### [A] #####################################
 
