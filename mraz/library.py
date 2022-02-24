@@ -224,9 +224,8 @@ def make_stage_05():
     for segment in segments_:
         if 6 < len(segment):
             parts = abjad.sequence.partition_by_counts(
-                list(segment), [7, 3], cyclic=True, overhang=True
+                segment, [7, 3], cyclic=True, overhang=True
             )
-            parts = [baca.PitchClassSegment(_) for _ in parts]
             segments.extend(parts)
         else:
             segments.append(segment)
