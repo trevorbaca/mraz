@@ -1,4 +1,4 @@
-SEGMENTS
+SECTIONS
 ========
 
 1.  stages (4) / cells[:14] (14)
