@@ -1,3 +1,7 @@
+"""
+>>> import mraz
+
+"""
 import inspect
 
 import abjad
@@ -13,419 +17,316 @@ metronome_marks = dict(
 )
 
 
-class SilverDesignMaker:
+def make_stage_00():
     """
-    >>> import mraz
+    >>> for segment in mraz.library.make_stage_00(): print(segment)
+    PC<4, 6, 10>
+    PC<9, 7, 8, 11, 9, 1>
+    PC<0, 2, 3, 5>
 
-    Silver design-maker.
     """
+    J = baca.PitchClassSegment([4, 6, 10])
+    K = baca.PitchClassSegment([9, 7, 8, 11, 9, 1])
+    L = baca.PitchClassSegment([0, 2, 3, 5])
+    segments = [J, K, L]
+    return segments
 
-    __slots__ = ()
 
-    def __call__(self):
-        return self.make_stage_07()
+def make_stage_01():
+    """
+    >>> for segment in mraz.library.make_stage_01(): print(segment)
+    PC<4, 6, 10>
+    PC<9, 7, 8, 11, 9, 1>
+    PC<0, 2, 3, 5>
+    PC<7, 8, 11, 9, 1, 9>
+    PC<2, 3, 5, 0>
+    PC<6, 10, 4>
+    PC<3, 5, 0, 2>
+    PC<10, 4, 6>
+    PC<8, 11, 9, 1, 9, 7>
+    PC<4, 6, 10>
+    PC<11, 9, 1, 9, 7, 8>
+    PC<5, 0, 2, 3>
+    PC<9, 1, 9, 7, 8, 11>
+    PC<0, 2, 3, 5>
+    PC<6, 10, 4>
+    PC<2, 3, 5, 0>
+    PC<10, 4, 6>
+    PC<1, 9, 7, 8, 11, 9>
+    PC<4, 6, 10>
+    PC<9, 7, 8, 11, 9, 1>
+    PC<3, 5, 0, 2>
+    PC<7, 8, 11, 9, 1, 9>
+    PC<5, 0, 2, 3>
+    PC<6, 10, 4>
+    PC<0, 2, 3, 5>
+    PC<10, 4, 6>
+    PC<8, 11, 9, 1, 9, 7>
+    PC<4, 6, 10>
+    PC<11, 9, 1, 9, 7, 8>
+    PC<2, 3, 5, 0>
+    PC<9, 1, 9, 7, 8, 11>
+    PC<3, 5, 0, 2>
+    PC<6, 10, 4>
+    PC<5, 0, 2, 3>
+    PC<10, 4, 6>
+    PC<1, 9, 7, 8, 11, 9>
 
-    def make_stage_00(self):
-        """
-        Makes stage zero.
+    """
+    segments = make_stage_00()
+    segments = baca.sequence.helianthate(segments, -1, -1)
+    return segments
 
-        >>> design = mraz.library.SilverDesignMaker().make_stage_00()
-        >>> for tree in design:
-        ...     [_.number for _ in tree.get_payload()]
-        ...
-        [4, 6, 10]
-        [9, 7, 8, 11, 9, 1]
-        [0, 2, 3, 5]
 
-        """
-        J = baca.PitchClassSegment([4, 6, 10])
-        K = baca.PitchClassSegment([9, 7, 8, 11, 9, 1])
-        L = baca.PitchClassSegment([0, 2, 3, 5])
-        cells = [J, K, L]
-        cells = baca.PitchTree(item_class=abjad.NumberedPitchClass, items=cells)
-        return cells
+def make_stage_02():
+    """
+    >>> for segment in mraz.library.make_stage_02(): print(segment)
+    PC<4, 6, 10>
+    PC<9, 7, 8, 11, 9, 1>
+    PC<0, 2, 3, 5>
+    PC<7, 8, 11, 9, 1, 9>
+    PC<2, 3, 5, 0>
+    PC<6, 10, 4, 3, 5, 0, 2, 10, 4, 6, 8, 11, 9, 1, 9, 7, 4, 6, 10, 11, 9, 1, 9, 7, 8, 5, 0, 2, 3>
+    PC<9, 1, 9, 7, 8, 11>
+    PC<0, 2, 3, 5>
+    PC<6, 10, 4>
+    PC<2, 3, 5, 0>
+    PC<10, 4, 6>
+    PC<1, 9, 7, 8, 11, 9, 4, 6, 10, 9, 7, 8, 11, 9, 1, 3, 5, 0, 2, 7, 8, 11, 9, 1, 9, 5, 0, 2, 3, 6, 10, 4>
+    PC<0, 2, 3, 5>
+    PC<10, 4, 6>
+    PC<8, 11, 9, 1, 9, 7>
+    PC<4, 6, 10>
+    PC<11, 9, 1, 9, 7, 8>
+    PC<2, 3, 5, 0, 9, 1, 9, 7, 8, 11, 3, 5, 0, 2, 6, 10, 4, 5, 0, 2, 3, 10, 4, 6, 1, 9, 7, 8, 11, 9>
 
-    def make_stage_01(self):
-        """
-        Makes stage one.
-
-        >>> design = mraz.library.SilverDesignMaker().make_stage_01()
-        >>> for tree in design:
-        ...     [_.number for _ in tree.get_payload()]
-        ...
-        [4, 6, 10]
-        [9, 7, 8, 11, 9, 1]
-        [0, 2, 3, 5]
-        [7, 8, 11, 9, 1, 9]
-        [2, 3, 5, 0]
-        [6, 10, 4]
-        [3, 5, 0, 2]
-        [10, 4, 6]
-        [8, 11, 9, 1, 9, 7]
-        [4, 6, 10]
-        [11, 9, 1, 9, 7, 8]
-        [5, 0, 2, 3]
-        [9, 1, 9, 7, 8, 11]
-        [0, 2, 3, 5]
-        [6, 10, 4]
-        [2, 3, 5, 0]
-        [10, 4, 6]
-        [1, 9, 7, 8, 11, 9]
-        [4, 6, 10]
-        [9, 7, 8, 11, 9, 1]
-        [3, 5, 0, 2]
-        [7, 8, 11, 9, 1, 9]
-        [5, 0, 2, 3]
-        [6, 10, 4]
-        [0, 2, 3, 5]
-        [10, 4, 6]
-        [8, 11, 9, 1, 9, 7]
-        [4, 6, 10]
-        [11, 9, 1, 9, 7, 8]
-        [2, 3, 5, 0]
-        [9, 1, 9, 7, 8, 11]
-        [3, 5, 0, 2]
-        [6, 10, 4]
-        [5, 0, 2, 3]
-        [10, 4, 6]
-        [1, 9, 7, 8, 11, 9]
-
-        """
-        stage_00 = self.make_stage_00()
-        trees = stage_00.iterate(level=-2)
-        segments = []
-        for tree in trees:
-            pitch_classes = tree.get_payload()
-            segment = baca.PitchClassSegment(items=pitch_classes)
+    """
+    segments_ = make_stage_01()
+    groups = abjad.sequence.partition_by_counts(
+        segments_, [5, 7], cyclic=True, overhang=True
+    )
+    segments = []
+    for i, group in enumerate(groups):
+        if i % 2 == 0:
+            segments.extend(group)
+        else:
+            segment = abjad.sequence.join(group)[0]
             segments.append(segment)
-        segments = baca.sequence.helianthate(segments, -1, -1)
-        tree = baca.PitchTree(item_class=abjad.NumberedPitchClass, items=segments)
-        return tree
+    return segments
 
-    def make_stage_02(self):
-        """
-        Makes stage two.
 
-        >>> design = mraz.library.SilverDesignMaker().make_stage_02()
-        >>> for tree in design:
-        ...     [_.number for _ in tree.get_payload()]
-        ...
-        [4, 6, 10]
-        [9, 7, 8, 11, 9, 1]
-        [0, 2, 3, 5]
-        [7, 8, 11, 9, 1, 9]
-        [2, 3, 5, 0]
-        [6, 10, 4, 3, 5, 0, 2, 10, 4, 6, 8, 11, 9, 1, 9, 7, 4, 6, 10, 11, 9, 1, 9, 7, 8, 5, 0, 2, 3]
-        [9, 1, 9, 7, 8, 11]
-        [0, 2, 3, 5]
-        [6, 10, 4]
-        [2, 3, 5, 0]
-        [10, 4, 6]
-        [1, 9, 7, 8, 11, 9, 4, 6, 10, 9, 7, 8, 11, 9, 1, 3, 5, 0, 2, 7, 8, 11, 9, 1, 9, 5, 0, 2, 3, 6, 10, 4]
-        [0, 2, 3, 5]
-        [10, 4, 6]
-        [8, 11, 9, 1, 9, 7]
-        [4, 6, 10]
-        [11, 9, 1, 9, 7, 8]
-        [2, 3, 5, 0, 9, 1, 9, 7, 8, 11, 3, 5, 0, 2, 6, 10, 4, 5, 0, 2, 3, 10, 4, 6, 1, 9, 7, 8, 11, 9]
+def make_stage_03():
+    """
+    >>> for segment in mraz.library.make_stage_03(): print(segment)
+    PC<4, 6, 10>
+    PC<9, 7, 8, 11, 9, 1>
+    PC<0, 2, 3, 5>
+    PC<7, 8, 11, 9, 1, 9>
+    PC<2, 3, 5, 0>
+    PC<3, 2, 0, 5, 8, 7, 9, 1, 9, 11, 10, 6, 4, 7, 9, 1, 9, 11, 8, 6, 4, 10, 2, 0, 5, 3, 4, 10, 6>
+    PC<9, 1, 9, 7, 8, 11>
+    PC<0, 2, 3, 5>
+    PC<6, 10, 4>
+    PC<2, 3, 5, 0>
+    PC<10, 4, 6>
+    PC<4, 10, 6, 3, 2, 0, 5, 9, 1, 9, 11, 8, 7, 2, 0, 5, 3, 1, 9, 11, 8, 7, 9, 10, 6, 4, 9, 11, 8, 7, 9, 1>
+    PC<0, 2, 3, 5>
+    PC<10, 4, 6>
+    PC<8, 11, 9, 1, 9, 7>
+    PC<4, 6, 10>
+    PC<11, 9, 1, 9, 7, 8>
+    PC<9, 11, 8, 7, 9, 1, 6, 4, 10, 3, 2, 0, 5, 4, 10, 6, 2, 0, 5, 3, 11, 8, 7, 9, 1, 9, 0, 5, 3, 2>
 
-        """
-        stage_01_tree = self.make_stage_01()
-        trees = stage_01_tree.iterate(level=-2)
-        segments = []
-        for tree in trees:
-            pitch_classes = tree.get_payload()
-            segment = baca.PitchClassSegment(items=pitch_classes)
-            # segment._tracked_expression = tree._tracked_expression
-            segments.append(segment)
-        parts = abjad.sequence.partition_by_counts(
-            segments, [5, 7], cyclic=True, overhang=True
-        )
-        # fused_segment_names = baca.Cursor(['Q', 'R', 'S'])
-        segments = []
-        for i, part in enumerate(parts):
-            if i % 2 == 0:
-                for segment in part:
-                    segments.append(segment)
-            else:
-                segment = part[0]
-                for segment_ in part[1:]:
-                    segment += segment_
-                # name = fused_segment_names.next()[0]
-                # segment = abjad.Expression.establish_equivalence(segment, name)
-                segments.append(segment)
-        tree = baca.PitchTree(item_class=abjad.NumberedPitchClass, items=segments)
-        return tree
+    """
+    segments = make_stage_02()
+    segments = [_.retrograde() if 6 < len(_) else _ for _ in segments]
+    return segments
 
-    def make_stage_03(self):
-        """
-        Makes stage three.
 
-        >>> design = mraz.library.SilverDesignMaker().make_stage_03()
-        >>> for tree in design:
-        ...     [_.number for _ in tree.get_payload()]
-        ...
-        [4, 6, 10]
-        [9, 7, 8, 11, 9, 1]
-        [0, 2, 3, 5]
-        [7, 8, 11, 9, 1, 9]
-        [2, 3, 5, 0]
-        [3, 2, 0, 5, 8, 7, 9, 1, 9, 11, 10, 6, 4, 7, 9, 1, 9, 11, 8, 6, 4, 10, 2, 0, 5, 3, 4, 10, 6]
-        [9, 1, 9, 7, 8, 11]
-        [0, 2, 3, 5]
-        [6, 10, 4]
-        [2, 3, 5, 0]
-        [10, 4, 6]
-        [4, 10, 6, 3, 2, 0, 5, 9, 1, 9, 11, 8, 7, 2, 0, 5, 3, 1, 9, 11, 8, 7, 9, 10, 6, 4, 9, 11, 8, 7, 9, 1]
-        [0, 2, 3, 5]
-        [10, 4, 6]
-        [8, 11, 9, 1, 9, 7]
-        [4, 6, 10]
-        [11, 9, 1, 9, 7, 8]
-        [9, 11, 8, 7, 9, 1, 6, 4, 10, 3, 2, 0, 5, 4, 10, 6, 2, 0, 5, 3, 11, 8, 7, 9, 1, 9, 0, 5, 3, 2]
+def make_stage_04():
+    """
+    >>> for segment in mraz.library.make_stage_04(): print(segment)
+    PC<4, 6, 10>
+    PC<9, 7, 8, 11, 9, 1>
+    PC<0, 2, 3, 5>
+    PC<7, 8, 11, 9, 1, 9>
+    PC<2, 3, 5, 0>
+    PC<9, 10, 0, 7, 4, 5, 3, 11, 3, 1, 2, 6, 8, 5, 3, 11, 3, 1, 4, 6, 8, 2, 10, 0, 7, 9, 8, 2, 6>
+    PC<9, 1, 9, 7, 8, 11>
+    PC<0, 2, 3, 5>
+    PC<6, 10, 4>
+    PC<2, 3, 5, 0>
+    PC<10, 4, 6>
+    PC<9, 3, 7, 8, 11, 1, 6, 2, 10, 2, 0, 5, 4, 11, 1, 6, 8, 10, 2, 0, 5, 4, 2, 3, 7, 9, 2, 0, 5, 4, 2, 10>
+    PC<0, 2, 3, 5>
+    PC<10, 4, 6>
+    PC<8, 11, 9, 1, 9, 7>
+    PC<4, 6, 10>
+    PC<11, 9, 1, 9, 7, 8>
+    PC<10, 0, 7, 8, 10, 2, 5, 3, 9, 4, 1, 11, 6, 3, 9, 5, 1, 11, 6, 4, 0, 7, 8, 10, 2, 10, 11, 6, 4, 1>
 
-        """
-        stage_02_tree = self.make_stage_02()
-        trees = stage_02_tree.iterate(level=-2)
-        segments = []
-        for tree in trees:
-            pitch_classes = tree.get_payload()
-            segment = baca.PitchClassSegment(items=pitch_classes)
-            # segment._tracked_expression = tree._tracked_expression
-            segments.append(segment)
-        for i, segment in enumerate(segments[:]):
-            if 6 < len(segment):
-                segments[i] = segment.retrograde()
-        tree = baca.PitchTree(item_class=abjad.NumberedPitchClass, items=segments)
-        return tree
+    """
+    segments_ = make_stage_03()
+    segments, j = [], 0
+    for i, segment in enumerate(segments_):
+        if 6 < len(segment):
+            if j % 3 == 0:
+                segment = segment.invert()
+            elif j % 3 == 1:
+                segment = segment.invert().alpha()
+            elif j % 3 == 2:
+                segment = segment.invert().alpha().invert()
+            j += 1
+        segments.append(segment)
+    return segments
 
-    def make_stage_04(self):
-        """
-        Makes stage four.
 
-        >>> design = mraz.library.SilverDesignMaker().make_stage_04()
-        >>> for tree in design:
-        ...     [_.number for _ in tree.get_payload()]
-        ...
-        [4, 6, 10]
-        [9, 7, 8, 11, 9, 1]
-        [0, 2, 3, 5]
-        [7, 8, 11, 9, 1, 9]
-        [2, 3, 5, 0]
-        [9, 10, 0, 7, 4, 5, 3, 11, 3, 1, 2, 6, 8, 5, 3, 11, 3, 1, 4, 6, 8, 2, 10, 0, 7, 9, 8, 2, 6]
-        [9, 1, 9, 7, 8, 11]
-        [0, 2, 3, 5]
-        [6, 10, 4]
-        [2, 3, 5, 0]
-        [10, 4, 6]
-        [9, 3, 7, 8, 11, 1, 6, 2, 10, 2, 0, 5, 4, 11, 1, 6, 8, 10, 2, 0, 5, 4, 2, 3, 7, 9, 2, 0, 5, 4, 2, 10]
-        [0, 2, 3, 5]
-        [10, 4, 6]
-        [8, 11, 9, 1, 9, 7]
-        [4, 6, 10]
-        [11, 9, 1, 9, 7, 8]
-        [10, 0, 7, 8, 10, 2, 5, 3, 9, 4, 1, 11, 6, 3, 9, 5, 1, 11, 6, 4, 0, 7, 8, 10, 2, 10, 11, 6, 4, 1]
+def make_stage_05():
+    """
+    >>> for segment in mraz.library.make_stage_05(): print(segment)
+    PC<4, 6, 10>
+    PC<9, 7, 8, 11, 9, 1>
+    PC<0, 2, 3, 5>
+    PC<7, 8, 11, 9, 1, 9>
+    PC<2, 3, 5, 0>
+    PC<9, 10, 0, 7, 4, 5, 3>
+    PC<11, 3, 1>
+    PC<2, 6, 8, 5, 3, 11, 3>
+    PC<1, 4, 6>
+    PC<8, 2, 10, 0, 7, 9, 8>
+    PC<2, 6>
+    PC<9, 1, 9, 7, 8, 11>
+    PC<0, 2, 3, 5>
+    PC<6, 10, 4>
+    PC<2, 3, 5, 0>
+    PC<10, 4, 6>
+    PC<9, 3, 7, 8, 11, 1, 6>
+    PC<2, 10, 2>
+    PC<0, 5, 4, 11, 1, 6, 8>
+    PC<10, 2, 0>
+    PC<5, 4, 2, 3, 7, 9, 2>
+    PC<0, 5, 4>
+    PC<2, 10>
+    PC<0, 2, 3, 5>
+    PC<10, 4, 6>
+    PC<8, 11, 9, 1, 9, 7>
+    PC<4, 6, 10>
+    PC<11, 9, 1, 9, 7, 8>
+    PC<10, 0, 7, 8, 10, 2, 5>
+    PC<3, 9, 4>
+    PC<1, 11, 6, 3, 9, 5, 1>
+    PC<11, 6, 4>
+    PC<0, 7, 8, 10, 2, 10, 11>
+    PC<6, 4, 1>
 
-        """
-        stage_03_tree = self.make_stage_03()
-        trees = stage_03_tree.iterate(level=-2)
-        segments = []
-        for tree in trees:
-            pitch_classes = tree.get_payload()
-            segment = baca.PitchClassSegment(items=pitch_classes)
-            # segment._tracked_expression = tree._tracked_expression
-            segments.append(segment)
-        j = 0
-        for i, segment in enumerate(segments[:]):
-            if 6 < len(segment):
-                if j % 3 == 0:
-                    segment = segment.invert()
-                elif j % 3 == 1:
-                    segment = segment.invert().alpha()
-                elif j % 3 == 2:
-                    segment = segment.invert().alpha().invert()
-                # segment = abjad.Expression.establish_equivalence(
-                #    segment,
-                #    segment._name,
-                #    )
-                segments[i] = segment
-                j += 1
-        tree = baca.PitchTree(item_class=abjad.NumberedPitchClass, items=segments)
-        return tree
-
-    def make_stage_05(self):
-        """
-        Makes stage five.
-
-        >>> design = mraz.library.SilverDesignMaker().make_stage_05()
-        >>> for tree in design:
-        ...     [_.number for _ in tree.get_payload()]
-        ...
-        [4, 6, 10]
-        [9, 7, 8, 11, 9, 1]
-        [0, 2, 3, 5]
-        [7, 8, 11, 9, 1, 9]
-        [2, 3, 5, 0]
-        [9, 10, 0, 7, 4, 5, 3, 11, 3, 1, 2, 6, 8, 5, 3, 11, 3, 1, 4, 6, 8, 2, 10, 0, 7, 9, 8, 2, 6]
-        [9, 1, 9, 7, 8, 11]
-        [0, 2, 3, 5]
-        [6, 10, 4]
-        [2, 3, 5, 0]
-        [10, 4, 6]
-        [9, 3, 7, 8, 11, 1, 6, 2, 10, 2, 0, 5, 4, 11, 1, 6, 8, 10, 2, 0, 5, 4, 2, 3, 7, 9, 2, 0, 5, 4, 2, 10]
-        [0, 2, 3, 5]
-        [10, 4, 6]
-        [8, 11, 9, 1, 9, 7]
-        [4, 6, 10]
-        [11, 9, 1, 9, 7, 8]
-        [10, 0, 7, 8, 10, 2, 5, 3, 9, 4, 1, 11, 6, 3, 9, 5, 1, 11, 6, 4, 0, 7, 8, 10, 2, 10, 11, 6, 4, 1]
-
-        """
-        stage_04_tree = self.make_stage_04()
-        trees = stage_04_tree.iterate(level=-2)
-        segments = []
-        for tree in trees:
-            pitch_classes = tree.get_payload()
-            segment = baca.PitchClassSegment(items=pitch_classes)
-            # segment._tracked_expression = tree._tracked_expression
-            segments.append(segment)
-        new_segments = []
-        for segment in segments:
-            if 6 < len(segment):
-                # source = segment._name
-                # source = "?"
-                parts = abjad.sequence.partition_by_counts(
-                    list(segment), [7, 3], cyclic=True, overhang=True
-                )
-                part_segments = []
-                for i, part in enumerate(parts):
-                    # string = rf"\concat {{ {source} \sub {i} }}"
-                    # markup = abjad.Markup(r"\markup {string}")
-                    part_segment = baca.PitchClassSegment(part)
-                    part_segments.append(part_segment)
-                new_segments.append(part_segments)
-            else:
-                new_segments.append(segment)
-        tree = baca.PitchTree(item_class=abjad.NumberedPitchClass, items=new_segments)
-        return tree
-
-    def make_stage_06(self):
-        """
-        Makes stage six.
-
-        >>> design = mraz.library.SilverDesignMaker().make_stage_06()
-        >>> for tree in design:
-        ...     [_.number for _ in tree.get_payload()]
-        ...
-        [4, 6, 10]
-        [9, 7, 8, 11, 9, 1]
-        [0, 2, 3, 5]
-        [7, 8, 11, 9, 1, 9]
-        [2, 3, 5, 0]
-        [9, 10, 0, 7, 4, 5, 3]
-        [11, 3, 1]
-        [7, 11, 1, 10, 8, 4, 8]
-        [6, 9, 11]
-        [1, 7, 3, 5, 0, 2, 1]
-        [7, 11]
-        [2, 6, 2, 0, 1, 4]
-        [5, 7, 8, 10]
-        [11, 3, 9]
-        [11, 0, 2, 9]
-        [7, 1, 3]
-        [6, 0, 4, 5, 8, 10, 3]
-        [11, 7, 11]
-        [9, 2, 1, 8, 10, 3, 5]
-        [7, 11, 9]
-        [3, 2, 0, 1, 5, 7, 0]
-        [10, 3, 2]
-        [0, 8]
-        [10, 0, 1, 3]
-        [8, 2, 4]
-        [6, 9, 7, 11, 7, 5]
-        [2, 4, 8]
-        [10, 8, 0, 8, 6, 7]
-        [9, 11, 6, 7, 9, 1, 4]
-        [2, 8, 3]
-        [0, 10, 5, 2, 8, 4, 0]
-        [10, 5, 3]
-        [11, 6, 7, 9, 1, 9, 10]
-        [5, 3, 0]
-
-        """
-        stage_05_tree = self.make_stage_05()
-        trees = stage_05_tree.iterate(level=-2)
-        segments = []
-        for tree in trees:
-            pitch_classes = tree.get_payload()
-            segment = baca.PitchClassSegment(
-                items=pitch_classes,
-                # name=tree._name,
-                # markup=tree._name_markup
+    """
+    segments_, segments = make_stage_04(), []
+    for segment in segments_:
+        if 6 < len(segment):
+            parts = abjad.sequence.partition_by_counts(
+                list(segment), [7, 3], cyclic=True, overhang=True
             )
-            # segment._tracked_expression = tree._tracked_expression
+            parts = [baca.PitchClassSegment(_) for _ in parts]
+            segments.extend(parts)
+        else:
             segments.append(segment)
-        new_segments = []
-        parts = abjad.sequence.partition_by_ratio_of_lengths(segments, 5 * [1])
-        indices = baca.Cursor([0, 5, 9, 10, 11])
-        for i, part in enumerate(parts):
-            index = indices.next()[0]
-            for segment in part:
-                segment = segment.transpose(n=index)
-                new_segments.append(segment)
-        return new_segments
+    return segments
 
-    def make_stage_07(self):
-        """
-        Makes stage seven.
 
-        >>> design = mraz.library.SilverDesignMaker().make_stage_07()
-        >>> for tree in design:
-        ...     [_.number for _ in tree.get_payload()]
-        ...
-        [4, 6, 10]
-        [9, 7, 8, 11, 9, 1]
-        [0, 2, 3, 5]
-        [9, 1, 9, 11, 8, 7]
-        [2, 3, 5, 0]
-        [9, 10, 0, 7, 4, 5, 3]
-        [11, 3, 1]
-        [8, 4, 8, 10, 1, 11, 7]
-        [6, 9, 11]
-        [1, 7, 3, 5, 0, 2, 1]
-        [7, 11]
-        [4, 1, 0, 2, 6, 2]
-        [5, 7, 8, 10]
-        [11, 3, 9]
-        [11, 0, 2, 9]
-        [3, 1, 7]
-        [6, 0, 4, 5, 8, 10, 3]
-        [11, 7, 11]
-        [9, 2, 1, 8, 10, 3, 5]
-        [9, 11, 7]
-        [3, 2, 0, 1, 5, 7, 0]
-        [10, 3, 2]
-        [0, 8]
-        [3, 1, 0, 10]
-        [8, 2, 4]
-        [6, 9, 7, 11, 7, 5]
-        [2, 4, 8]
-        [7, 6, 8, 0, 8, 10]
-        [9, 11, 6, 7, 9, 1, 4]
-        [2, 8, 3]
-        [0, 10, 5, 2, 8, 4, 0]
-        [3, 5, 10]
-        [11, 6, 7, 9, 1, 9, 10]
-        [5, 3, 0]
+def make_stage_06():
+    """
+    >>> for segment in mraz.library.make_stage_06(): print(segment)
+    PC<4, 6, 10>
+    PC<9, 7, 8, 11, 9, 1>
+    PC<0, 2, 3, 5>
+    PC<7, 8, 11, 9, 1, 9>
+    PC<2, 3, 5, 0>
+    PC<9, 10, 0, 7, 4, 5, 3>
+    PC<11, 3, 1>
+    PC<7, 11, 1, 10, 8, 4, 8>
+    PC<6, 9, 11>
+    PC<1, 7, 3, 5, 0, 2, 1>
+    PC<7, 11>
+    PC<2, 6, 2, 0, 1, 4>
+    PC<5, 7, 8, 10>
+    PC<11, 3, 9>
+    PC<11, 0, 2, 9>
+    PC<7, 1, 3>
+    PC<6, 0, 4, 5, 8, 10, 3>
+    PC<11, 7, 11>
+    PC<9, 2, 1, 8, 10, 3, 5>
+    PC<7, 11, 9>
+    PC<3, 2, 0, 1, 5, 7, 0>
+    PC<10, 3, 2>
+    PC<0, 8>
+    PC<10, 0, 1, 3>
+    PC<8, 2, 4>
+    PC<6, 9, 7, 11, 7, 5>
+    PC<2, 4, 8>
+    PC<10, 8, 0, 8, 6, 7>
+    PC<9, 11, 6, 7, 9, 1, 4>
+    PC<2, 8, 3>
+    PC<0, 10, 5, 2, 8, 4, 0>
+    PC<10, 5, 3>
+    PC<11, 6, 7, 9, 1, 9, 10>
+    PC<5, 3, 0>
 
-        """
-        segments = self.make_stage_06()
-        new_segments = []
-        for i, segment in enumerate(segments):
-            if i % 4 == 3:
-                segment = segment.retrograde()
-            new_segments.append(segment)
-        return new_segments
+    """
+    segments_, segments = make_stage_05(), []
+    groups = abjad.sequence.partition_by_ratio_of_lengths(segments_, [1, 1, 1, 1, 1])
+    transposition = [0, 5, 9, 10, 11]
+    for group, n in zip(groups, transposition):
+        for segment in group:
+            segment = segment.transpose(n=n)
+            segments.append(segment)
+    return segments
+
+
+def make_stage_07():
+    """
+    >>> for segment in mraz.library.make_stage_07(): print(segment)
+    PC<4, 6, 10>
+    PC<9, 7, 8, 11, 9, 1>
+    PC<0, 2, 3, 5>
+    PC<9, 1, 9, 11, 8, 7>
+    PC<2, 3, 5, 0>
+    PC<9, 10, 0, 7, 4, 5, 3>
+    PC<11, 3, 1>
+    PC<8, 4, 8, 10, 1, 11, 7>
+    PC<6, 9, 11>
+    PC<1, 7, 3, 5, 0, 2, 1>
+    PC<7, 11>
+    PC<4, 1, 0, 2, 6, 2>
+    PC<5, 7, 8, 10>
+    PC<11, 3, 9>
+    PC<11, 0, 2, 9>
+    PC<3, 1, 7>
+    PC<6, 0, 4, 5, 8, 10, 3>
+    PC<11, 7, 11>
+    PC<9, 2, 1, 8, 10, 3, 5>
+    PC<9, 11, 7>
+    PC<3, 2, 0, 1, 5, 7, 0>
+    PC<10, 3, 2>
+    PC<0, 8>
+    PC<3, 1, 0, 10>
+    PC<8, 2, 4>
+    PC<6, 9, 7, 11, 7, 5>
+    PC<2, 4, 8>
+    PC<7, 6, 8, 0, 8, 10>
+    PC<9, 11, 6, 7, 9, 1, 4>
+    PC<2, 8, 3>
+    PC<0, 10, 5, 2, 8, 4, 0>
+    PC<3, 5, 10>
+    PC<11, 6, 7, 9, 1, 9, 10>
+    PC<5, 3, 0>
+
+    """
+    segments_, segments = make_stage_06(), []
+    for i, segment in enumerate(segments_):
+        if i % 4 == 3:
+            segment = segment.retrograde()
+        segments.append(segment)
+    return segments
 
 
 class CollectionMaker:
@@ -436,8 +337,7 @@ class CollectionMaker:
     __slots__ = ("_design",)
 
     def __init__(self):
-        maker = SilverDesignMaker()
-        design = maker()
+        design = make_stage_07()
         design = abjad.CyclicTuple(design)
         assert len(design) == 34, repr(len(design))
         self._design = design
