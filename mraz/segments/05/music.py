@@ -17,7 +17,7 @@ section_6 = library.make_section_6_segments()
 #################################### [6.1] ####################################
 
 figures(
-    "rh_v3",
+    library.rh_v3,
     section_6.stage_1.rh.next(2),
     baca.figure([1], 8, affix=baca.rests_after([1]), treatments=[1, 0]),
     baca.dynamic("pp"),
@@ -31,7 +31,7 @@ figures(
 )
 
 figures(
-    "rh_v3",
+    library.rh_v3,
     section_6.stage_1.rh.next(),
     baca.figure([1], 8, treatments=[1]),
     baca.register(24, 12),
@@ -44,7 +44,7 @@ figures(
 )
 
 figures(
-    "rh_v3",
+    library.rh_v3,
     section_6.stage_1.rh.next(),
     baca.figure([1], 8, affix=baca.rests_around([1], [1])),
     baca.register(24, 12),
@@ -55,7 +55,7 @@ figures(
 )
 
 figures(
-    "rh_v3",
+    library.rh_v3,
     section_6.stage_1.rh.next(exhausted=True),
     baca.figure([1], 8, treatments=[1]),
     baca.register(12, 24),
@@ -67,7 +67,7 @@ figures(
 )
 
 figures(
-    "lh_v4",
+    library.lh_v4,
     section_6.stage_1.lh.next(),
     baca.figure([1, -1], 16, treatments=[1]),
     baca.dynamic("mp"),
@@ -75,7 +75,7 @@ figures(
     baca.tenuto(baca.selectors.pheads()),
     baca.tuplet_bracket_staff_padding(3),
     anchor=baca.anchor(
-        "rh_v3",
+        library.rh_v3,
         baca.selectors.note(3),
         baca.selectors.note(2),
     ),
@@ -83,14 +83,14 @@ figures(
 )
 
 figures(
-    "lh_v4",
+    library.lh_v4,
     section_6.stage_1.lh.next(),
     baca.figure([1, -2], 16, treatments=[2]),
     baca.register(0, 12),
     baca.tenuto(baca.selectors.pheads()),
     baca.tuplet_bracket_staff_padding(3),
     anchor=baca.anchor(
-        "rh_v3",
+        library.rh_v3,
         baca.selectors.note(9),
         baca.selectors.note(2),
     ),
@@ -98,13 +98,13 @@ figures(
 )
 
 figures(
-    "lh_v4",
+    library.lh_v4,
     section_6.stage_1.lh.next(),
     baca.figure([2, -1], 32),
     baca.register(0, 12),
     baca.tenuto(baca.selectors.pheads()),
     anchor=baca.anchor(
-        "rh_v3",
+        library.rh_v3,
         baca.selectors.note(13),
         baca.selectors.note(1),
     ),
@@ -113,7 +113,7 @@ figures(
 )
 
 figures(
-    "lh_v4",
+    library.lh_v4,
     section_6.stage_1.lh.next(exhausted=True),
     baca.figure([2, -1], 32),
     baca.register(12, 0),
@@ -137,7 +137,7 @@ commands = baca.CommandAccumulator(
 figures.populate_commands(commands)
 
 commands(
-    "lh_v4",
+    library.lh_v4,
     baca.clef("treble"),
 )
 

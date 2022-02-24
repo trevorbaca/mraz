@@ -23,13 +23,13 @@ resonance = baca.PitchSet("e, fs, gs, as, b,", item_class=abjad.NamedPitch)
 ##################################### [C] #####################################
 
 figures(
-    "rh_v4",
+    library.rh_v4,
     section_7.stage_1.lh[-1].transpose(4 * 7),
     baca.figure([1], 16, treatments=[1]),
     rmakers.beam_groups(),
     baca.register(6, 6 + 10),
     baca.imbricate(
-        "rh_v4_i",
+        library.rh_v4_i,
         [14, 18],
         rmakers.unbeam(),
     ),
@@ -39,7 +39,7 @@ figures(
 )
 
 figures(
-    "rh_v2",
+    library.rh_v2,
     "r4",
     baca.rest_transparent(),
     signature=4,
@@ -47,7 +47,7 @@ figures(
 )
 
 figures(
-    "rh_v2",
+    library.rh_v2,
     section_2.stage_2.rh[0][:1],
     baca.figure([1], 16),
     rmakers.beam_groups(),
@@ -63,7 +63,7 @@ figures(
 )
 
 figures(
-    "rh_v2",
+    library.rh_v2,
     "r4",
     baca.rest_transparent(),
     signature=4,
@@ -71,13 +71,13 @@ figures(
 )
 
 figures(
-    "rh_v4",
+    library.rh_v4,
     section_7.stage_1.lh[-1].transpose(4 * 7),
     baca.figure([1], 16, treatments=[1]),
     rmakers.beam_groups(),
     baca.register(6, 6 + 10),
     baca.imbricate(
-        "rh_v4_i",
+        library.rh_v4_i,
         [14, 18],
         rmakers.unbeam(),
     ),
@@ -87,7 +87,7 @@ figures(
 )
 
 figures(
-    "rh_v2",
+    library.rh_v2,
     section_2.stage_2.rh[0][:2],
     baca.figure([1], 16),
     rmakers.beam_groups(),
@@ -102,7 +102,7 @@ figures(
 )
 
 figures(
-    "rh_v2",
+    library.rh_v2,
     "r4",
     baca.rest_transparent(),
     signature=4,
@@ -110,7 +110,7 @@ figures(
 )
 
 figures(
-    "rh_v3",
+    library.rh_v3,
     section_4.stage_1.rh[0],
     baca.figure([2, -4, 2, -4, 4], 16, treatments=[2]),
     baca.dynamic("ff"),
@@ -121,7 +121,7 @@ figures(
 )
 
 figures(
-    "lh_v5",
+    library.lh_v5,
     section_4.stage_1.lh.next(),
     baca.figure([3, -1], 16, affix=baca.rests_before([12])),
     baca.dynamic("f"),
@@ -136,7 +136,7 @@ figures(
 )
 
 figures(
-    "rh_v2",
+    library.rh_v2,
     section_2.stage_2.rh[0][:4],
     baca.figure([1], 16),
     rmakers.beam_groups(),
@@ -151,7 +151,7 @@ figures(
 )
 
 figures(
-    "rh_v1",
+    library.rh_v1,
     section_4.stage_5.rh[0],
     baca.figure([28], 16),
     rmakers.beam_groups(),
@@ -163,7 +163,7 @@ figures(
 )
 
 figures(
-    "rh_v1",
+    library.rh_v1,
     section_4.stage_5.rh[1],
     baca.figure([24], 16),
     rmakers.beam_groups(),
@@ -174,7 +174,7 @@ figures(
 )
 
 figures(
-    "rh_v1",
+    library.rh_v1,
     section_4.stage_5.rh[2],
     baca.figure([16], 16),
     rmakers.beam_groups(),
@@ -186,7 +186,7 @@ figures(
 )
 
 figures(
-    "rh_v2",
+    library.rh_v2,
     section_4.stage_5.lh[:4],
     baca.figure([1], 16, treatments=[(1, 4)]),
     rmakers.beam_groups(),
@@ -205,7 +205,7 @@ figures(
 )
 
 figures(
-    "lh_resonance",
+    library.lh_resonance,
     [resonance],
     baca.figure([8], 16),
     rmakers.beam_groups(),
@@ -216,7 +216,7 @@ figures(
 )
 
 figures(
-    "lh_resonance",
+    library.lh_resonance,
     [resonance],
     baca.figure([4], 16),
     rmakers.beam_groups(),
@@ -226,7 +226,7 @@ figures(
 )
 
 figures(
-    "lh_resonance",
+    library.lh_resonance,
     [resonance],
     baca.figure([5], 16),
     rmakers.beam_groups(),
@@ -236,7 +236,7 @@ figures(
 )
 
 figures(
-    "lh_resonance",
+    library.lh_resonance,
     [resonance],
     baca.figure([4], 16),
     rmakers.beam_groups(),
@@ -246,7 +246,7 @@ figures(
 )
 
 figures(
-    "lh_resonance",
+    library.lh_resonance,
     [resonance],
     baca.figure([8], 16),
     rmakers.beam_groups(),
@@ -256,7 +256,7 @@ figures(
 )
 
 figures(
-    "lh_resonance",
+    library.lh_resonance,
     [resonance],
     baca.figure([10], 16),
     rmakers.beam_groups(),
@@ -266,7 +266,7 @@ figures(
 )
 
 figures(
-    "lh_resonance",
+    library.lh_resonance,
     [resonance],
     baca.figure([21], 16),
     rmakers.beam_groups(),
@@ -278,7 +278,7 @@ figures(
 )
 
 figures(
-    "lh_resonance",
+    library.lh_resonance,
     [resonance],
     baca.figure([28], 16),
     rmakers.beam_groups(),
@@ -288,7 +288,7 @@ figures(
 )
 
 figures(
-    "lh_resonance",
+    library.lh_resonance,
     [resonance],
     baca.figure([24], 16),
     rmakers.beam_groups(),
@@ -329,17 +329,17 @@ commands(
 )
 
 commands(
-    "rh_v1",
+    library.rh_v1,
     baca.ottava(),
 )
 
 commands(
-    "rh_v2",
+    library.rh_v2,
     baca.script_up(),
 )
 
 commands(
-    "lh_resonance",
+    library.lh_resonance,
     baca.untie(baca.selectors.leaves()),
     baca.new(
         baca.repeat_tie(
@@ -351,17 +351,17 @@ commands(
 )
 
 commands(
-    ("lh_resonance", [(2, 7), (10, -1)]),
+    (library.lh_resonance, [(2, 7), (10, -1)]),
     baca.accidental_stencil_false(baca.selectors.leaves()),
 )
 
 commands(
-    ("lh_resonance", [2, 4]),
+    (library.lh_resonance, [2, 4]),
     *library.transparent_music(baca.selectors.leaf(0)),
 )
 
 commands(
-    ("lh_resonance", [3, 6, 9]),
+    (library.lh_resonance, [3, 6, 9]),
     *library.transparent_music(
         baca.selectors.leaves((1, None)),
     ),

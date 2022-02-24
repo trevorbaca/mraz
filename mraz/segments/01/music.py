@@ -23,7 +23,7 @@ section_8 = library.make_section_8_segments()
 ##################################### [A] #####################################
 
 figures(
-    "rh_v1",
+    library.rh_v1,
     section_4.stage_5.rh[2],
     baca.figure([16], 16),
     baca.register(36),
@@ -36,7 +36,7 @@ figures(
 )
 
 figures(
-    "rh_v2",
+    library.rh_v2,
     section_4.stage_5.lh[:4],
     baca.figure([1], 16, treatments=[(1, 4)]),
     baca.dls_staff_padding(8),
@@ -52,12 +52,12 @@ figures(
 )
 
 figures(
-    "lh_v4",
+    library.lh_v4,
     section_7.stage_1.lh[-1].transpose(4 * 7),
     baca.figure([1], 16, treatments=[1]),
     baca.register(6, 6 + 10),
     baca.imbricate(
-        "lh_v4_i",
+        library.lh_v4_i,
         [14, 18],
     ),
     baca.dynamic("ff"),
@@ -67,7 +67,7 @@ figures(
 )
 
 figures(
-    "lh_v6",
+    library.lh_v6,
     section_8.stage_3.lh[1],
     baca.figure([2, -4], 16, treatments=[4]),
     baca.clef("bass"),
@@ -82,7 +82,7 @@ figures(
 )
 
 figures(
-    "lh_v5",
+    library.lh_v5,
     section_8.stage_3.rh[4],
     baca.figure([6, -1], 32, affix=baca.rests_after([4])),
     baca.dynamic("ppp"),
@@ -96,7 +96,7 @@ figures(
 )
 
 figures(
-    "rh_v2",
+    library.rh_v2,
     "r4",
     baca.rest_transparent(),
     signature=4,
@@ -104,7 +104,7 @@ figures(
 )
 
 figures(
-    "rh_v3",
+    library.rh_v3,
     section_6.stage_1.rh[2],
     baca.figure([1], 8, treatments=[1]),
     baca.dynamic("pp"),
@@ -118,7 +118,7 @@ figures(
 )
 
 figures(
-    "rh_v2",
+    library.rh_v2,
     "r4",
     baca.rest_transparent(),
     signature=4,
@@ -126,7 +126,7 @@ figures(
 )
 
 figures(
-    "rh_v3",
+    library.rh_v3,
     section_6.stage_1.rh[3],
     baca.figure([1], 8, affix=baca.rests_around([1], [1])),
     baca.register(24, 12),
@@ -138,7 +138,7 @@ figures(
 )
 
 figures(
-    "rh_v2",
+    library.rh_v2,
     section_5.stage_1.rh.next(exhausted=True),
     baca.figure([2, -14], 16),
     baca.accent(baca.selectors.pheads()),
@@ -154,7 +154,7 @@ figures(
 )
 
 figures(
-    "rh_v3",
+    library.rh_v3,
     section_5.stage_1.lh.next(exhausted=True),
     baca.figure([4, -4], 16, treatments=[(16, 4)]),
     rmakers.denominator(abjad.Duration(1, 1)),
@@ -172,7 +172,7 @@ figures(
 )
 
 figures(
-    "rh_v2",
+    library.rh_v2,
     "r4",
     baca.script_up(),
     signature=4,
@@ -211,12 +211,12 @@ commands(
 )
 
 commands(
-    "rh_v1",
+    library.rh_v1,
     baca.start_markup("PIANO", context="PianoStaff", hcenter_in=12),
 )
 
 commands(
-    "lh_v1",
+    library.lh_v1,
     baca.clef("treble"),
 )
 

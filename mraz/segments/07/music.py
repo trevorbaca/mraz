@@ -19,14 +19,14 @@ section_7 = library.make_section_7_segments()
 #################################### [7.1] ####################################
 
 figures(
-    "rh_v1",
+    library.rh_v1,
     section_7.stage_1.rh.next(),
     baca.figure([1], 16, treatments=[-1]),
     baca.register(13, 13 + 10),
     baca.nest("2/16"),
     rmakers.beam_groups(),
     baca.imbricate(
-        "rh_v1_i",
+        library.rh_v1_i,
         [17, 23],
         rmakers.beam_groups(beam_rests=True),
         baca.marcato(baca.selectors.pheads()),
@@ -39,13 +39,13 @@ figures(
 )
 
 figures(
-    "rh_v2",
+    library.rh_v2,
     section_7.stage_1.rh.next(),
     baca.figure([1], 16),
     baca.register(7, 7 + 10),
     rmakers.beam_groups(),
     baca.imbricate(
-        "rh_v2_i",
+        library.rh_v2_i,
         [12, 14],
         rmakers.beam_groups(beam_rests=True),
         baca.accent(baca.selectors.pheads()),
@@ -59,14 +59,14 @@ figures(
 )
 
 figures(
-    "rh_v1",
+    library.rh_v1,
     section_7.stage_1.rh.next(),
     baca.figure([1], 16, treatments=[-1]),
     baca.register(15, 15 + 10),
     baca.nest("1/16"),
     rmakers.beam_groups(),
     baca.imbricate(
-        "rh_v1_i",
+        library.rh_v1_i,
         [30, 31],
         rmakers.beam_groups(beam_rests=True),
         baca.marcato(baca.selectors.pheads()),
@@ -76,14 +76,14 @@ figures(
 )
 
 figures(
-    "rh_v2",
+    library.rh_v2,
     section_7.stage_1.rh.next(),
     baca.figure([1], 16),
     baca.register(9, 9 + 10),
     rmakers.beam_groups(),
     baca.nest("-1/16"),
     baca.imbricate(
-        "rh_v2_i",
+        library.rh_v2_i,
         [13, 17, 17, 27],
         baca.accent(baca.selectors.pheads()),
         rmakers.beam_groups(beam_rests=True),
@@ -94,14 +94,14 @@ figures(
 )
 
 figures(
-    "rh_v1",
+    library.rh_v1,
     section_7.stage_1.rh.next(),
     baca.figure([1], 16),
     baca.register(17, 17 + 10),
     rmakers.beam_groups(),
     baca.nest("1/16"),
     baca.imbricate(
-        "rh_v1_i",
+        library.rh_v1_i,
         [21],
         rmakers.beam_groups(beam_rests=True),
         baca.marcato(baca.selectors.pheads()),
@@ -113,13 +113,13 @@ figures(
 )
 
 figures(
-    "rh_v2",
+    library.rh_v2,
     section_7.stage_1.rh.next(),
     baca.figure([1], 16, treatments=[-1]),
     baca.register(11, 11 + 10),
     rmakers.beam_groups(),
     baca.imbricate(
-        "rh_v2_i",
+        library.rh_v2_i,
         [12, 22, 19, 29],
         baca.accent(baca.selectors.pheads()),
         rmakers.beam_groups(beam_rests=True),
@@ -132,14 +132,14 @@ figures(
 )
 
 figures(
-    "rh_v1",
+    library.rh_v1,
     section_7.stage_1.rh.next(),
     baca.figure([1], 16),
     baca.register(19, 19 + 10),
     rmakers.beam_groups(),
     baca.nest("1/16"),
     baca.imbricate(
-        "rh_v1_i",
+        library.rh_v1_i,
         [20, 29],
         rmakers.beam_groups(beam_rests=True),
         baca.marcato(baca.selectors.pheads()),
@@ -149,14 +149,14 @@ figures(
 )
 
 figures(
-    "rh_v2",
+    library.rh_v2,
     section_7.stage_1.rh.next(),
     baca.figure([1], 16),
     baca.register(13, 13 + 10),
     rmakers.beam_groups(),
     baca.nest("-1/16"),
     baca.imbricate(
-        "rh_v2_i",
+        library.rh_v2_i,
         [21, 27, 24],
         baca.accent(baca.selectors.pheads()),
         rmakers.beam_groups(beam_rests=True),
@@ -170,13 +170,13 @@ figures(
 section_7.stage_1.rh.next()
 
 figures(
-    "rh_v2",
+    library.rh_v2,
     section_7.stage_1.rh.next(),
     baca.figure([1], 16),
     baca.register(15, 15 + 10),
     rmakers.beam_groups(),
     baca.imbricate(
-        "rh_v2_i",
+        library.rh_v2_i,
         [17],
         baca.accent(baca.selectors.pheads()),
         rmakers.beam_groups(beam_rests=True),
@@ -189,14 +189,14 @@ figures(
 )
 
 figures(
-    "rh_v1",
+    library.rh_v1,
     section_7.stage_1.rh.next(),
     baca.figure([1], 16, treatments=[-1]),
     baca.register(23, 23 + 10),
     rmakers.beam_groups(),
     baca.nest("2/16"),
     baca.imbricate(
-        "rh_v1_i",
+        library.rh_v1_i,
         [30, 34, 37],
         rmakers.beam_groups(beam_rests=True),
         baca.marcato(baca.selectors.pheads()),
@@ -207,13 +207,13 @@ figures(
 )
 
 figures(
-    "rh_v2",
+    library.rh_v2,
     section_7.stage_1.rh.next(exhausted=True),
     baca.figure([1], 16, treatments=[-1]),
     baca.register(17, 17 + 10),
     rmakers.beam_groups(),
     baca.imbricate(
-        "rh_v2_i",
+        library.rh_v2_i,
         [26, 32],
         baca.accent(baca.selectors.pheads()),
         rmakers.beam_groups(beam_rests=True),
@@ -226,19 +226,19 @@ figures(
 ###################################### LH #####################################
 
 figures(
-    "lh_v4",
+    library.lh_v4,
     section_7.stage_1.lh.next().transpose(0 * 7),
     baca.figure([1], 16, treatments=[-1]),
     rmakers.beam_groups(),
     baca.register(-2, -2 + 16),
     baca.imbricate(
-        "lh_v4_i",
+        library.lh_v4_i,
         [0, 19, 23],
         rmakers.unbeam(),
     ),
     baca.dynamic("ff"),
     anchor=baca.anchor(
-        "rh_v2",
+        library.rh_v2,
         baca.selectors.note(0),
         baca.selectors.lt(7),
     ),
@@ -246,14 +246,14 @@ figures(
 )
 
 figures(
-    "lh_v5",
+    library.lh_v5,
     section_7.stage_1.lh.next().transpose(1 * 7),
     baca.figure([1], 16),
     baca.register(0, 0 + 16),
     rmakers.beam_groups(),
     baca.nest("-2/16"),
     baca.imbricate(
-        "lh_v5_i",
+        library.lh_v5_i,
         [11, 18, 24, 26],
         rmakers.beam_groups(beam_rests=True),
         baca.staccato(baca.selectors.pheads()),
@@ -263,7 +263,7 @@ figures(
     baca.slur(map=baca.selectors.tuplets()),
     baca.tuplet_bracket_down(),
     anchor=baca.anchor(
-        "rh_v2",
+        library.rh_v2,
         baca.selectors.note(4),
         baca.selectors.lt(3),
     ),
@@ -272,19 +272,19 @@ figures(
 )
 
 figures(
-    "lh_v4",
+    library.lh_v4,
     section_7.stage_1.lh.next().transpose(2 * 7),
     baca.figure([1], 16),
     rmakers.beam_groups(),
     baca.register(2, 2 + 16),
     baca.imbricate(
-        "lh_v4_i",
+        library.lh_v4_i,
         [13],
         rmakers.unbeam(),
     ),
     baca.dynamic("ff"),
     anchor=baca.anchor(
-        "rh_v2",
+        library.rh_v2,
         baca.selectors.note(14),
         baca.selectors.lt(0),
     ),
@@ -293,14 +293,14 @@ figures(
 )
 
 figures(
-    "lh_v5",
+    library.lh_v5,
     section_7.stage_1.lh.next().transpose(3 * 7),
     baca.figure([1], 16),
     baca.register(4, 4 + 16),
     rmakers.beam_groups(),
     baca.nest("-2/16"),
     baca.imbricate(
-        "lh_v5_i",
+        library.lh_v5_i,
         [9, 16, 20, 25],
         rmakers.beam_groups(beam_rests=True),
         baca.staccato(baca.selectors.pheads()),
@@ -308,7 +308,7 @@ figures(
     baca.dynamic("pp"),
     baca.slur(map=baca.selectors.tuplets()),
     anchor=baca.anchor(
-        "rh_v2",
+        library.rh_v2,
         baca.selectors.note(26),
         baca.selectors.lt(10),
     ),
@@ -317,19 +317,19 @@ figures(
 )
 
 figures(
-    "lh_v4",
+    library.lh_v4,
     section_7.stage_1.lh.next(exhausted=True).transpose(4 * 7),
     baca.figure([1], 16, treatments=[1]),
     rmakers.beam_groups(),
     baca.register(6, 6 + 10),
     baca.imbricate(
-        "lh_v4_i",
+        library.lh_v4_i,
         [14, 18],
         rmakers.unbeam(),
     ),
     baca.dynamic("ff"),
     anchor=baca.anchor(
-        "rh_v2",
+        library.rh_v2,
         baca.selectors.note(-6),
         baca.selectors.lt(0),
     ),
@@ -360,29 +360,29 @@ commands(
 )
 
 commands(
-    "rh_v1",
+    library.rh_v1,
     baca.beam_positions(10),
     baca.dynamic_up(),
     baca.stem_up(),
 )
 
 commands(
-    ("rh_v1_i", (1, 5)),
+    (library.rh_v1_i, (1, 5)),
     baca.beam_positions(-6.5),
 )
 
 commands(
-    ("rh_v1_i", (5, 10)),
+    (library.rh_v1_i, (5, 10)),
     baca.beam_positions(-8.5),
 )
 
 commands(
-    "rh_v1_i",
+    library.rh_v1_i,
     baca.script_down(),
 )
 
 commands(
-    "rh_v2",
+    library.rh_v2,
     baca.beam_positions(-4.5),
     baca.dynamic_down(),
     baca.slur_up(),
@@ -390,68 +390,68 @@ commands(
 )
 
 commands(
-    ("rh_v2_i", (9, -1)),
+    (library.rh_v2_i, (9, -1)),
     baca.beam_positions(18.5),
 )
 
 commands(
-    ("rh_v2_i", (1, 4)),
+    (library.rh_v2_i, (1, 4)),
     baca.beam_positions(15.5),
 )
 
 commands(
-    ("rh_v2_i", (6, 8)),
+    (library.rh_v2_i, (6, 8)),
     baca.beam_positions(13.5),
 )
 
 commands(
-    "rh_v2_i",
+    library.rh_v2_i,
     baca.script_up(),
     baca.stem_up(),
 )
 
 commands(
-    ("lh_v4", (1, 2)),
+    (library.lh_v4, (1, 2)),
     baca.beam_positions(-5.5),
 )
 
 commands(
-    ("lh_v4", (6, -1)),
+    (library.lh_v4, (6, -1)),
     baca.beam_positions(-4.5),
 )
 
 commands(
-    "lh_v4",
+    library.lh_v4,
     baca.script_down(),
     baca.stem_down(),
 )
 
 commands(
-    "lh_v4_i",
+    library.lh_v4_i,
     baca.script_up(),
     baca.stem_up(),
 )
 
 commands(
-    ("lh_v5", (1, 5)),
+    (library.lh_v5, (1, 5)),
     baca.beam_positions(-6),
 )
 
 commands(
-    "lh_v5",
+    library.lh_v5,
     baca.script_down(),
     baca.stem_down(),
 )
 
 commands(
-    "lh_v5_i",
+    library.lh_v5_i,
     baca.script_up(),
     baca.stem_up(),
     baca.beam_positions(9),
 )
 
 commands(
-    ("lh_v5", -1),
+    (library.lh_v5, -1),
     baca.chunk(
         baca.mark(r"\mraz-colophon-markup"),
         baca.rehearsal_mark_down(),

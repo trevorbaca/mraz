@@ -21,7 +21,7 @@ section_8 = library.make_section_8_segments()
 #################################### [5.1] ####################################
 
 figures(
-    "rh_v2",
+    library.rh_v2,
     section_5.stage_1.rh.next(exhausted=True),
     baca.figure([2, -14], 16),
     baca.accent(baca.selectors.pheads()),
@@ -36,7 +36,7 @@ figures(
 )
 
 figures(
-    "rh_v3",
+    library.rh_v3,
     section_5.stage_1.lh.next(exhausted=True),
     baca.figure([4, -4], 16, treatments=[(16, 4)]),
     rmakers.denominator(abjad.Duration(1, 1)),
@@ -47,7 +47,7 @@ figures(
     baca.stem_down(),
     baca.tenuto(baca.selectors.pheads()),
     baca.tuplet_bracket_down(),
-    anchor=baca.anchor("rh_v2"),
+    anchor=baca.anchor(library.rh_v2),
     signature=4,
     figure_name="rh-3 5.1.1",
 )
@@ -55,13 +55,13 @@ figures(
 #################################### [5.2] ####################################
 
 figures(
-    "rh_v3",
+    library.rh_v3,
     section_5.stage_2.rh.next(5),
     baca.figure([2], 16, treatments=[-2, -2, 0]),
     baca.register(24, 0),
     baca.nest("-1/4"),
     baca.imbricate(
-        "rh_v2",
+        library.rh_v2,
         [8, 6],
         rmakers.beam_groups(beam_rests=True),
         baca.dynamic("fff"),
@@ -77,7 +77,7 @@ figures(
 )
 
 figures(
-    "rh_v3",
+    library.rh_v3,
     "r4",
     baca.rest_transparent(),
     signature=4,
@@ -85,7 +85,7 @@ figures(
 )
 
 figures(
-    "rh_v3",
+    library.rh_v3,
     section_5.stage_2.rh.next(5),
     baca.figure([2], 16, treatments=[-2, 0, -2]),
     # 2018-07-10: F5 flipped to F4 because of command interpretation order
@@ -99,7 +99,7 @@ figures(
     baca.register(24, 0),
     baca.nest("-1/4"),
     baca.imbricate(
-        "rh_v2",
+        library.rh_v2,
         [12, 13, 16, 3],
         rmakers.beam_groups(beam_rests=True),
         hocket=True,
@@ -112,7 +112,7 @@ figures(
 )
 
 figures(
-    "lh_v6",
+    library.lh_v6,
     section_8.stage_3.lh[1],
     baca.figure([2, -4], 16, treatments=[4]),
     baca.dynamic("f"),
@@ -127,7 +127,7 @@ figures(
 )
 
 figures(
-    "lh_v5",
+    library.lh_v5,
     section_8.stage_3.rh[4],
     baca.figure([6, -1], 32, affix=baca.rests_after([4])),
     baca.dynamic("ppp"),
@@ -142,13 +142,13 @@ figures(
 )
 
 figures(
-    "rh_v3",
+    library.rh_v3,
     section_5.stage_2.rh.next(5),
     baca.figure([2], 16, treatments=[0, -2, -2]),
     baca.register(24, 0),
     baca.nest("-3/8"),
     baca.imbricate(
-        "rh_v2",
+        library.rh_v2,
         [18, 15, 17, 16, 5, 8],
         rmakers.beam_groups(beam_rests=True),
         baca.dynamic("fff"),
@@ -164,7 +164,7 @@ figures(
 )
 
 figures(
-    "rh_v3",
+    library.rh_v3,
     "r4",
     baca.rest_transparent(),
     signature=4,
@@ -172,13 +172,13 @@ figures(
 )
 
 figures(
-    "rh_v3",
+    library.rh_v3,
     section_5.stage_2.rh.next(6),
     baca.figure([2], 16, treatments=[-2, -2, 0]),
     baca.register(24, 0),
     baca.nest("-3/8"),
     baca.imbricate(
-        "rh_v2",
+        library.rh_v2,
         [22, 20, 19, 18, 21, 12, 11, 15],
         rmakers.beam_groups(beam_rests=True),
         hocket=True,
@@ -191,7 +191,7 @@ figures(
 )
 
 figures(
-    "rh_v3",
+    library.rh_v3,
     "r4",
     baca.rest_transparent(),
     signature=4,
@@ -199,7 +199,7 @@ figures(
 )
 
 figures(
-    "rh_v2",
+    library.rh_v2,
     section_2.stage_2.rh.next(),
     baca.figure([1], 16),
     rmakers.beam_groups(),
@@ -214,7 +214,7 @@ figures(
 )
 
 figures(
-    "rh_v2",
+    library.rh_v2,
     section_2.stage_2.rh.next(),
     baca.figure([1], 16),
     rmakers.beam_groups(),
@@ -227,7 +227,7 @@ figures(
 )
 
 figures(
-    "rh_v2",
+    library.rh_v2,
     section_2.stage_2.rh.next(),
     baca.figure([1], 16),
     rmakers.beam_groups(),
@@ -240,7 +240,7 @@ figures(
 )
 
 figures(
-    "rh_v2",
+    library.rh_v2,
     section_2.stage_2.rh.next(),
     baca.figure([1], 16),
     rmakers.beam_groups(),
@@ -253,7 +253,7 @@ figures(
 )
 
 figures(
-    "rh_v2",
+    library.rh_v2,
     section_2.stage_2.rh.next(exhausted=True),
     baca.figure([1], 16),
     rmakers.beam_groups(),
@@ -268,7 +268,7 @@ figures(
 ### LH RESONANCE ###
 
 figures(
-    "lh_resonance",
+    library.lh_resonance,
     [{-35, -23}],
     baca.figure([29], 16),
     anchor=baca.anchor_to_figure("rh-2 2.2.1"),
@@ -278,7 +278,7 @@ figures(
 )
 
 figures(
-    "lh_resonance",
+    library.lh_resonance,
     [{-35, -23}],
     baca.figure([27], 16),
     signature=4,
@@ -287,7 +287,7 @@ figures(
 )
 
 figures(
-    "lh_resonance",
+    library.lh_resonance,
     [{-33, -21}],
     baca.figure([21], 16),
     signature=4,
@@ -296,7 +296,7 @@ figures(
 )
 
 figures(
-    "lh_resonance",
+    library.lh_resonance,
     [{-33, -21}],
     baca.figure([15], 16),
     signature=4,
@@ -305,7 +305,7 @@ figures(
 )
 
 figures(
-    "lh_resonance",
+    library.lh_resonance,
     [{-33, -21}],
     baca.figure([16], 16),
     signature=4,
@@ -314,13 +314,13 @@ figures(
 )
 
 figures(
-    "rh_v3",
+    library.rh_v3,
     section_5.stage_2.rh.next(3, exhausted=True),
     baca.figure([2], 16, treatments=[-2, 0, -2]),
     baca.register(24, 0),
     baca.nest("-1/4"),
     baca.imbricate(
-        "rh_v2",
+        library.rh_v2,
         [15, 11, 6, 5],
         rmakers.beam_groups(beam_rests=True),
         baca.dynamic("fff"),
@@ -336,7 +336,7 @@ figures(
 )
 
 figures(
-    "lh_v4",
+    library.lh_v4,
     section_5.stage_2.lh.next(),
     baca.figure([3, -3], 16, affix=baca.rests_around([8, 8, 8], [6])),
     baca.clef("bass"),
@@ -351,7 +351,7 @@ figures(
 )
 
 figures(
-    "lh_v4",
+    library.lh_v4,
     section_5.stage_2.lh.next(),
     baca.figure([3, -1], 16, affix=baca.rests_before([8, 8])),
     baca.dynamic("p"),
@@ -365,7 +365,7 @@ figures(
 )
 
 figures(
-    "lh_v4",
+    library.lh_v4,
     section_5.stage_2.lh.next(),
     baca.figure([3, -1], 16),
     baca.slur(map=baca.selectors.tuplets()),
@@ -376,7 +376,7 @@ figures(
 )
 
 figures(
-    "lh_v4",
+    library.lh_v4,
     section_5.stage_2.lh.next(),
     baca.figure([3, -1], 16),
     baca.slur(map=baca.selectors.tuplets()),
@@ -388,7 +388,7 @@ figures(
 )
 
 figures(
-    "lh_v4",
+    library.lh_v4,
     section_5.stage_2.lh.next(),
     baca.figure([3], 16),
     rmakers.beam_groups(),
@@ -401,7 +401,7 @@ figures(
 )
 
 figures(
-    "lh_v4",
+    library.lh_v4,
     section_5.stage_2.lh.next(),
     baca.figure([3], 16),
     rmakers.beam_groups(),
@@ -414,7 +414,7 @@ figures(
 )
 
 figures(
-    "lh_v4",
+    library.lh_v4,
     section_5.stage_2.lh.next(),
     baca.figure([3], 16, affix=baca.rests_around([3], [4, 4, 4])),
     rmakers.beam_groups(),
@@ -427,7 +427,7 @@ figures(
 )
 
 figures(
-    "lh_v4",
+    library.lh_v4,
     section_5.stage_2.lh.next(),
     baca.figure([2], 16, affix=baca.rests_before([14])),
     rmakers.beam_groups(),
@@ -442,7 +442,7 @@ figures(
 )
 
 figures(
-    "lh_v4",
+    library.lh_v4,
     section_5.stage_2.lh.next(exhausted=True),
     baca.figure([2], 16),
     rmakers.beam_groups(),
@@ -455,7 +455,7 @@ figures(
 )
 
 figures(
-    "lh_v4",
+    library.lh_v4,
     "r4",
     baca.clef("treble"),
     baca.rest_transparent(),
@@ -507,7 +507,7 @@ commands(
 )
 
 commands(
-    ("rh_v2", (2, 8)),
+    (library.rh_v2, (2, 8)),
     baca.accent(baca.selectors.pheads()),
     baca.beam_positions(10.5),
     baca.script_up(),
@@ -515,21 +515,21 @@ commands(
 )
 
 commands(
-    ("rh_v2", (9, 13)),
+    (library.rh_v2, (9, 13)),
     baca.script_up(),
     baca.slur_up(),
     baca.stem_down(),
 )
 
 commands(
-    ("lh_v4", (2, -1)),
+    (library.lh_v4, (2, -1)),
     baca.script_up(),
     baca.staccato(baca.selectors.pheads()),
     baca.tenuto(baca.selectors.pheads()),
 )
 
 commands(
-    "lh_resonance",
+    library.lh_resonance,
     baca.untie(baca.selectors.leaves()),
     baca.new(
         baca.repeat_tie(
@@ -541,14 +541,14 @@ commands(
 )
 
 commands(
-    ("lh_resonance", [10, 11, 12, 13, 14]),
+    (library.lh_resonance, [10, 11, 12, 13, 14]),
     *library.transparent_music(
         baca.selectors.leaves((1, None)),
     ),
 )
 
 commands(
-    ("lh_resonance", [11, 13, 14]),
+    (library.lh_resonance, [11, 13, 14]),
     baca.accidental_stencil_false(),
     baca.stem_transparent(),
 )
