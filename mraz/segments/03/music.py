@@ -16,10 +16,8 @@ figures = baca.FigureAccumulator(
 )
 collections_2 = library.make_segment_2_collections()
 collections_4 = library.make_segment_4_collections()
-collections_5 = library.make_segment_5_collections()
 collections_6 = library.make_segment_6_collections()
 collections_7 = library.make_segment_7_collections()
-collections_8 = library.make_segment_8_collections()
 resonance = baca.PitchSet("e, fs, gs, as, b,", item_class=abjad.NamedPitch)
 
 ##################################### [C] #####################################

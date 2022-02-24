@@ -12,13 +12,13 @@ figures = baca.FigureAccumulator(
     score,
     voice_abbreviations=library.voice_abbreviations,
 )
-collections = library.make_segment_6_collections()
+collections_6 = library.make_segment_6_collections()
 
 #################################### [6.1] ####################################
 
 figures(
     "rh_v3",
-    collections["stage 1"]["rh"].next(2),
+    collections_6["stage 1"]["rh"].next(2),
     baca.figure([1], 8, affix=baca.rests_after([1]), treatments=[1, 0]),
     baca.dynamic("pp"),
     baca.register(24, 12),
@@ -32,7 +32,7 @@ figures(
 
 figures(
     "rh_v3",
-    collections["stage 1"]["rh"].next(),
+    collections_6["stage 1"]["rh"].next(),
     baca.figure([1], 8, treatments=[1]),
     baca.register(24, 12),
     baca.staccato(baca.selectors.pheads()),
@@ -45,7 +45,7 @@ figures(
 
 figures(
     "rh_v3",
-    collections["stage 1"]["rh"].next(),
+    collections_6["stage 1"]["rh"].next(),
     baca.figure([1], 8, affix=baca.rests_around([1], [1])),
     baca.register(24, 12),
     baca.staccato(baca.selectors.pheads()),
@@ -56,7 +56,7 @@ figures(
 
 figures(
     "rh_v3",
-    collections["stage 1"]["rh"].next(exhausted=True),
+    collections_6["stage 1"]["rh"].next(exhausted=True),
     baca.figure([1], 8, treatments=[1]),
     baca.register(12, 24),
     baca.staccato(baca.selectors.pheads()),
@@ -68,7 +68,7 @@ figures(
 
 figures(
     "lh_v4",
-    collections["stage 1"]["lh"].next(),
+    collections_6["stage 1"]["lh"].next(),
     baca.figure([1, -1], 16, treatments=[1]),
     baca.dynamic("mp"),
     baca.register(0, 12),
@@ -84,7 +84,7 @@ figures(
 
 figures(
     "lh_v4",
-    collections["stage 1"]["lh"].next(),
+    collections_6["stage 1"]["lh"].next(),
     baca.figure([1, -2], 16, treatments=[2]),
     baca.register(0, 12),
     baca.tenuto(baca.selectors.pheads()),
@@ -99,7 +99,7 @@ figures(
 
 figures(
     "lh_v4",
-    collections["stage 1"]["lh"].next(),
+    collections_6["stage 1"]["lh"].next(),
     baca.figure([2, -1], 32),
     baca.register(0, 12),
     baca.tenuto(baca.selectors.pheads()),
@@ -114,7 +114,7 @@ figures(
 
 figures(
     "lh_v4",
-    collections["stage 1"]["lh"].next(exhausted=True),
+    collections_6["stage 1"]["lh"].next(exhausted=True),
     baca.figure([2, -1], 32),
     baca.register(12, 0),
     baca.tenuto(baca.selectors.pheads()),
