@@ -14,13 +14,13 @@ figures = baca.FigureAccumulator(
     score,
     voice_abbreviations=library.voice_abbreviations,
 )
-collections_7 = library.make_section_7_segments()
+section_7 = library.make_section_7_segments()
 
 #################################### [7.1] ####################################
 
 figures(
     "rh_v1",
-    collections_7.one.rh.next(),
+    section_7.stage_1.rh.next(),
     baca.figure([1], 16, treatments=[-1]),
     baca.register(13, 13 + 10),
     baca.nest("2/16"),
@@ -40,7 +40,7 @@ figures(
 
 figures(
     "rh_v2",
-    collections_7.one.rh.next(),
+    section_7.stage_1.rh.next(),
     baca.figure([1], 16),
     baca.register(7, 7 + 10),
     rmakers.beam_groups(),
@@ -60,7 +60,7 @@ figures(
 
 figures(
     "rh_v1",
-    collections_7.one.rh.next(),
+    section_7.stage_1.rh.next(),
     baca.figure([1], 16, treatments=[-1]),
     baca.register(15, 15 + 10),
     baca.nest("1/16"),
@@ -77,7 +77,7 @@ figures(
 
 figures(
     "rh_v2",
-    collections_7.one.rh.next(),
+    section_7.stage_1.rh.next(),
     baca.figure([1], 16),
     baca.register(9, 9 + 10),
     rmakers.beam_groups(),
@@ -95,7 +95,7 @@ figures(
 
 figures(
     "rh_v1",
-    collections_7.one.rh.next(),
+    section_7.stage_1.rh.next(),
     baca.figure([1], 16),
     baca.register(17, 17 + 10),
     rmakers.beam_groups(),
@@ -114,7 +114,7 @@ figures(
 
 figures(
     "rh_v2",
-    collections_7.one.rh.next(),
+    section_7.stage_1.rh.next(),
     baca.figure([1], 16, treatments=[-1]),
     baca.register(11, 11 + 10),
     rmakers.beam_groups(),
@@ -133,7 +133,7 @@ figures(
 
 figures(
     "rh_v1",
-    collections_7.one.rh.next(),
+    section_7.stage_1.rh.next(),
     baca.figure([1], 16),
     baca.register(19, 19 + 10),
     rmakers.beam_groups(),
@@ -150,7 +150,7 @@ figures(
 
 figures(
     "rh_v2",
-    collections_7.one.rh.next(),
+    section_7.stage_1.rh.next(),
     baca.figure([1], 16),
     baca.register(13, 13 + 10),
     rmakers.beam_groups(),
@@ -167,11 +167,11 @@ figures(
 )
 
 # sacrifice
-collections_7.one.rh.next()
+section_7.stage_1.rh.next()
 
 figures(
     "rh_v2",
-    collections_7.one.rh.next(),
+    section_7.stage_1.rh.next(),
     baca.figure([1], 16),
     baca.register(15, 15 + 10),
     rmakers.beam_groups(),
@@ -190,7 +190,7 @@ figures(
 
 figures(
     "rh_v1",
-    collections_7.one.rh.next(),
+    section_7.stage_1.rh.next(),
     baca.figure([1], 16, treatments=[-1]),
     baca.register(23, 23 + 10),
     rmakers.beam_groups(),
@@ -208,7 +208,7 @@ figures(
 
 figures(
     "rh_v2",
-    collections_7.one.rh.next(exhausted=True),
+    section_7.stage_1.rh.next(exhausted=True),
     baca.figure([1], 16, treatments=[-1]),
     baca.register(17, 17 + 10),
     rmakers.beam_groups(),
@@ -227,7 +227,7 @@ figures(
 
 figures(
     "lh_v4",
-    collections_7.one.lh.next().transpose(0 * 7),
+    section_7.stage_1.lh.next().transpose(0 * 7),
     baca.figure([1], 16, treatments=[-1]),
     rmakers.beam_groups(),
     baca.register(-2, -2 + 16),
@@ -247,7 +247,7 @@ figures(
 
 figures(
     "lh_v5",
-    collections_7.one.lh.next().transpose(1 * 7),
+    section_7.stage_1.lh.next().transpose(1 * 7),
     baca.figure([1], 16),
     baca.register(0, 0 + 16),
     rmakers.beam_groups(),
@@ -273,7 +273,7 @@ figures(
 
 figures(
     "lh_v4",
-    collections_7.one.lh.next().transpose(2 * 7),
+    section_7.stage_1.lh.next().transpose(2 * 7),
     baca.figure([1], 16),
     rmakers.beam_groups(),
     baca.register(2, 2 + 16),
@@ -294,7 +294,7 @@ figures(
 
 figures(
     "lh_v5",
-    collections_7.one.lh.next().transpose(3 * 7),
+    section_7.stage_1.lh.next().transpose(3 * 7),
     baca.figure([1], 16),
     baca.register(4, 4 + 16),
     rmakers.beam_groups(),
@@ -318,7 +318,7 @@ figures(
 
 figures(
     "lh_v4",
-    collections_7.one.lh.next(exhausted=True).transpose(4 * 7),
+    section_7.stage_1.lh.next(exhausted=True).transpose(4 * 7),
     baca.figure([1], 16, treatments=[1]),
     rmakers.beam_groups(),
     baca.register(6, 6 + 10),

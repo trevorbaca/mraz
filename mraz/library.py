@@ -350,8 +350,8 @@ def make_section_2_segments():
     measures = [_.arpeggiate_up() for _ in measures]
     measures = baca.Cursor(measures, singletons=True)
     return types.SimpleNamespace(
-        one=None,
-        two=types.SimpleNamespace(
+        stage_1=None,
+        stage_2=types.SimpleNamespace(
             rh=measures,
         ),
     )
@@ -413,24 +413,24 @@ def make_section_4_segments():
     stage_6_segments = stage_6_segments.chords()
     stage_6_segments = stage_6_segments.cursor(singletons=True)
     return types.SimpleNamespace(
-        one=types.SimpleNamespace(
+        stage_1=types.SimpleNamespace(
             rh=stage_1_rh_segments,
             lh=stage_1_lh_segments,
         ),
-        two=types.SimpleNamespace(
+        stage_2=types.SimpleNamespace(
             rh=None,
             lh=stage_2_segments,
         ),
-        three=None,
-        four=types.SimpleNamespace(
+        stage_3=None,
+        stage_4=types.SimpleNamespace(
             rh=stage_4_rh_segments,
             lh=stage_4_lh_segments,
         ),
-        five=types.SimpleNamespace(
+        stage_5=types.SimpleNamespace(
             rh=stage_5_rh_segments,
             lh=stage_5_lh_segments,
         ),
-        six=types.SimpleNamespace(
+        stage_6=types.SimpleNamespace(
             rh=stage_6_segments,
             lh=None,
         ),
@@ -468,11 +468,11 @@ def make_section_5_segments():
     stage_2_rh = rh
     stage_2_lh = lh
     return types.SimpleNamespace(
-        one=types.SimpleNamespace(
+        stage_1=types.SimpleNamespace(
             rh=stage_1_rh,
             lh=stage_1_lh,
         ),
-        two=types.SimpleNamespace(
+        stage_2=types.SimpleNamespace(
             rh=stage_2_rh,
             lh=stage_2_lh,
         ),
@@ -509,13 +509,13 @@ def make_section_6_segments():
     rh_stage_1_segments = rh_stage_1_segments.cursor()
     lh_stage_1_segments = lh_stage_1_segments.cursor()
     return types.SimpleNamespace(
-        one=types.SimpleNamespace(
+        stage_1=types.SimpleNamespace(
             rh=rh_stage_1_segments,
             lh=lh_stage_1_segments,
         ),
-        two=None,
-        three=None,
-        four=None,
+        stage_2=None,
+        stage_3=None,
+        stage_4=None,
     )
 
 
@@ -556,11 +556,11 @@ def make_section_7_segments():
     lh_segment_lists = [baca.CollectionList(_) for _ in lh_segment_lists]
     lh_segment_lists = baca.Cursor(lh_segment_lists, singletons=True)
     return types.SimpleNamespace(
-        one=types.SimpleNamespace(
+        stage_1=types.SimpleNamespace(
             rh=rh_segment_lists,
             lh=lh_segment_lists,
         ),
-        two=None,
+        stage_2=None,
     )
 
 
@@ -596,13 +596,13 @@ def make_section_8_segments():
     v5_stage_3_segments = v5_stage_3_segments.cursor()
     v6_stage_3_segments = v6_stage_3_segments.cursor()
     return types.SimpleNamespace(
-        one=None,
-        two=None,
-        three=types.SimpleNamespace(
+        stage_1=None,
+        stage_2=None,
+        stage_3=types.SimpleNamespace(
             rh=v5_stage_3_segments,
             lh=v6_stage_3_segments,
         ),
-        four=None,
+        stage_4=None,
     )
 
 

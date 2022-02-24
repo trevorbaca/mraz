@@ -14,17 +14,17 @@ figures = baca.FigureAccumulator(
     score,
     voice_abbreviations=library.voice_abbreviations,
 )
-collections_4 = library.make_section_4_segments()
-collections_5 = library.make_section_5_segments()
-collections_6 = library.make_section_6_segments()
-collections_7 = library.make_section_7_segments()
-collections_8 = library.make_section_8_segments()
+section_4 = library.make_section_4_segments()
+section_5 = library.make_section_5_segments()
+section_6 = library.make_section_6_segments()
+section_7 = library.make_section_7_segments()
+section_8 = library.make_section_8_segments()
 
 ##################################### [A] #####################################
 
 figures(
     "rh_v1",
-    collections_4.five.rh[2],
+    section_4.stage_5.rh[2],
     baca.figure([16], 16),
     baca.register(36),
     rmakers.beam_groups(),
@@ -37,7 +37,7 @@ figures(
 
 figures(
     "rh_v2",
-    collections_4.five.lh[:4],
+    section_4.stage_5.lh[:4],
     baca.figure([1], 16, treatments=[(1, 4)]),
     baca.dls_staff_padding(8),
     baca.hairpin("f < ff"),
@@ -53,7 +53,7 @@ figures(
 
 figures(
     "lh_v4",
-    collections_7.one.lh[-1].transpose(4 * 7),
+    section_7.stage_1.lh[-1].transpose(4 * 7),
     baca.figure([1], 16, treatments=[1]),
     baca.register(6, 6 + 10),
     baca.imbricate(
@@ -68,7 +68,7 @@ figures(
 
 figures(
     "lh_v6",
-    collections_8.three.lh[1],
+    section_8.stage_3.lh[1],
     baca.figure([2, -4], 16, treatments=[4]),
     baca.clef("bass"),
     baca.dynamic("f"),
@@ -83,7 +83,7 @@ figures(
 
 figures(
     "lh_v5",
-    collections_8.three.rh[4],
+    section_8.stage_3.rh[4],
     baca.figure([6, -1], 32, affix=baca.rests_after([4])),
     baca.dynamic("ppp"),
     baca.dynamic_text_x_offset(-0.5),
@@ -105,7 +105,7 @@ figures(
 
 figures(
     "rh_v3",
-    collections_6.one.rh[2],
+    section_6.stage_1.rh[2],
     baca.figure([1], 8, treatments=[1]),
     baca.dynamic("pp"),
     baca.dynamic_text_x_offset(0.5),
@@ -127,7 +127,7 @@ figures(
 
 figures(
     "rh_v3",
-    collections_6.one.rh[3],
+    section_6.stage_1.rh[3],
     baca.figure([1], 8, affix=baca.rests_around([1], [1])),
     baca.register(24, 12),
     baca.span_bar_extra_offset((-0.75, 0), baca.selectors.leaf(-1), after=True),
@@ -139,7 +139,7 @@ figures(
 
 figures(
     "rh_v2",
-    collections_5.one.rh.next(exhausted=True),
+    section_5.stage_1.rh.next(exhausted=True),
     baca.figure([2, -14], 16),
     baca.accent(baca.selectors.pheads()),
     baca.dynamic("fff"),
@@ -155,7 +155,7 @@ figures(
 
 figures(
     "rh_v3",
-    collections_5.one.lh.next(exhausted=True),
+    section_5.stage_1.lh.next(exhausted=True),
     baca.figure([4, -4], 16, treatments=[(16, 4)]),
     rmakers.denominator(abjad.Duration(1, 1)),
     baca.dynamic("mf"),
