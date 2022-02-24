@@ -14,19 +14,15 @@ figures = baca.FigureAccumulator(
     score,
     voice_abbreviations=library.voice_abbreviations,
 )
-collections = library.make_segment_5_collections()
 collections_2 = library.make_segment_2_collections()
-collections_4 = library.make_segment_4_collections()
 collections_5 = library.make_segment_5_collections()
-collections_6 = library.make_segment_6_collections()
-collections_7 = library.make_segment_7_collections()
 collections_8 = library.make_segment_8_collections()
 
 #################################### [5.1] ####################################
 
 figures(
     "rh_v2",
-    collections["stage 1"]["rh"].next(exhausted=True),
+    collections_5["stage 1"]["rh"].next(exhausted=True),
     baca.figure([2, -14], 16),
     baca.accent(baca.selectors.pheads()),
     baca.dynamic("fff"),
@@ -41,7 +37,7 @@ figures(
 
 figures(
     "rh_v3",
-    collections["stage 1"]["lh"].next(exhausted=True),
+    collections_5["stage 1"]["lh"].next(exhausted=True),
     baca.figure([4, -4], 16, treatments=[(16, 4)]),
     rmakers.denominator(abjad.Duration(1, 1)),
     baca.dynamic("mf"),
@@ -60,7 +56,7 @@ figures(
 
 figures(
     "rh_v3",
-    collections["stage 2"]["rh"].next(5),
+    collections_5["stage 2"]["rh"].next(5),
     baca.figure([2], 16, treatments=[-2, -2, 0]),
     baca.register(24, 0),
     baca.nest("-1/4"),
@@ -90,7 +86,7 @@ figures(
 
 figures(
     "rh_v3",
-    collections["stage 2"]["rh"].next(5),
+    collections_5["stage 2"]["rh"].next(5),
     baca.figure([2], 16, treatments=[-2, 0, -2]),
     # 2018-07-10: F5 flipped to F4 because of command interpretation order
     # 2019-07-27: F5 restored by command stack
@@ -147,7 +143,7 @@ figures(
 
 figures(
     "rh_v3",
-    collections["stage 2"]["rh"].next(5),
+    collections_5["stage 2"]["rh"].next(5),
     baca.figure([2], 16, treatments=[0, -2, -2]),
     baca.register(24, 0),
     baca.nest("-3/8"),
@@ -177,7 +173,7 @@ figures(
 
 figures(
     "rh_v3",
-    collections["stage 2"]["rh"].next(6),
+    collections_5["stage 2"]["rh"].next(6),
     baca.figure([2], 16, treatments=[-2, -2, 0]),
     baca.register(24, 0),
     baca.nest("-3/8"),
@@ -319,7 +315,7 @@ figures(
 
 figures(
     "rh_v3",
-    collections["stage 2"]["rh"].next(3, exhausted=True),
+    collections_5["stage 2"]["rh"].next(3, exhausted=True),
     baca.figure([2], 16, treatments=[-2, 0, -2]),
     baca.register(24, 0),
     baca.nest("-1/4"),
@@ -341,7 +337,7 @@ figures(
 
 figures(
     "lh_v4",
-    collections["stage 2"]["lh"].next(),
+    collections_5["stage 2"]["lh"].next(),
     baca.figure([3, -3], 16, affix=baca.rests_around([8, 8, 8], [6])),
     baca.clef("bass"),
     baca.dynamic("p"),
@@ -356,7 +352,7 @@ figures(
 
 figures(
     "lh_v4",
-    collections["stage 2"]["lh"].next(),
+    collections_5["stage 2"]["lh"].next(),
     baca.figure([3, -1], 16, affix=baca.rests_before([8, 8])),
     baca.dynamic("p"),
     baca.slur(map=baca.selectors.tuplets()),
@@ -370,7 +366,7 @@ figures(
 
 figures(
     "lh_v4",
-    collections["stage 2"]["lh"].next(),
+    collections_5["stage 2"]["lh"].next(),
     baca.figure([3, -1], 16),
     baca.slur(map=baca.selectors.tuplets()),
     baca.register(6, -24),
@@ -381,7 +377,7 @@ figures(
 
 figures(
     "lh_v4",
-    collections["stage 2"]["lh"].next(),
+    collections_5["stage 2"]["lh"].next(),
     baca.figure([3, -1], 16),
     baca.slur(map=baca.selectors.tuplets()),
     baca.register(0, -24),
@@ -393,7 +389,7 @@ figures(
 
 figures(
     "lh_v4",
-    collections["stage 2"]["lh"].next(),
+    collections_5["stage 2"]["lh"].next(),
     baca.figure([3], 16),
     rmakers.beam_groups(),
     rmakers.beam(),
@@ -406,7 +402,7 @@ figures(
 
 figures(
     "lh_v4",
-    collections["stage 2"]["lh"].next(),
+    collections_5["stage 2"]["lh"].next(),
     baca.figure([3], 16),
     rmakers.beam_groups(),
     rmakers.beam(),
@@ -419,7 +415,7 @@ figures(
 
 figures(
     "lh_v4",
-    collections["stage 2"]["lh"].next(),
+    collections_5["stage 2"]["lh"].next(),
     baca.figure([3], 16, affix=baca.rests_around([3], [4, 4, 4])),
     rmakers.beam_groups(),
     rmakers.beam(),
@@ -432,7 +428,7 @@ figures(
 
 figures(
     "lh_v4",
-    collections["stage 2"]["lh"].next(),
+    collections_5["stage 2"]["lh"].next(),
     baca.figure([2], 16, affix=baca.rests_before([14])),
     rmakers.beam_groups(),
     rmakers.beam(),
@@ -447,7 +443,7 @@ figures(
 
 figures(
     "lh_v4",
-    collections["stage 2"]["lh"].next(exhausted=True),
+    collections_5["stage 2"]["lh"].next(exhausted=True),
     baca.figure([2], 16),
     rmakers.beam_groups(),
     rmakers.beam(),
