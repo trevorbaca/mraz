@@ -660,33 +660,60 @@ def _validate_voice_names(score):
             raise Exception(f"voice not in score: {voice_name!r}.")
 
 
+rh_v1 = "rh_v1"
+rh_v1_i = "rh_v1_i"
+rh_v2 = "rh_v2"
+rh_v2_i = "rh_v2_i"
+rh_v3 = "rh_v3"
+rh_v3_i = "rh_v3_i"
+rh_v4 = "rh_v4"
+rh_v4_i = "rh_v4_i"
+rh_v5 = "rh_v5"
+rh_v5_i = "rh_v5_i"
+rh_v6 = "rh_v6"
+rh_v6_i = "rh_v6_i"
+rh_resonance = "rh_resonance"
+lh_v1 = "lh_v1"
+lh_v1_i = "lh_v1_i"
+lh_v2 = "lh_v2"
+lh_v2_i = "lh_v2_i"
+lh_v3 = "lh_v3"
+lh_v3_i = "lh_v3_i"
+lh_v4 = "lh_v4"
+lh_v4_i = "lh_v4_i"
+lh_v5 = "lh_v5"
+lh_v5_i = "lh_v5_i"
+lh_v6 = "lh_v6"
+lh_v6_i = "lh_v6_i"
+lh_resonance = "lh_resonance"
+
 voice_abbreviations = {
-    "rh_v1": "RH_Voice_I",
-    "rh_v1_i": "RH_Insert_Voice_I",
-    "rh_v2": "RH_Voice_II",
-    "rh_v2_i": "RH_Insert_Voice_II",
-    "rh_v3": "RH_Voice_III",
-    "rh_v3_i": "RH_Insert_Voice_III",
-    "rh_v4": "RH_Voice_IV",
-    "rh_v4_i": "RH_Insert_Voice_IV",
-    "rh_v5": "RH_Voice_V",
-    "rh_v5_i": "RH_Insert_Voice_V",
-    "rh_v6": "RH_Voice_VI",
-    "rh_v6_i": "RH_Insert_Voice_VI",
-    "rh_resonance": "RH_Resonance_Voice",
-    "lh_v1": "LH_Voice_I",
-    "lh_v1_i": "LH_Insert_Voice_I",
-    "lh_v2": "LH_Voice_II",
-    "lh_v2_i": "LH_Insert_Voice_II",
-    "lh_v3": "LH_Voice_III",
-    "lh_v3_i": "LH_Insert_Voice_III",
-    "lh_v4": "LH_Voice_IV",
-    "lh_v4_i": "LH_Insert_Voice_IV",
-    "lh_v5": "LH_Voice_V",
-    "lh_v5_i": "LH_Insert_Voice_V",
-    "lh_v6": "LH_Voice_VI",
-    "lh_v6_i": "LH_Insert_Voice_VI",
-    "lh_resonance": "LH_Resonance_Voice",
+    rh_v1: "RH_Voice_I",
+    rh_v1_i: "RH_Insert_Voice_I",
+    rh_v2: "RH_Voice_II",
+    rh_v2_i: "RH_Insert_Voice_II",
+    rh_v3: "RH_Voice_III",
+    rh_v3_i: "RH_Insert_Voice_III",
+    rh_v4: "RH_Voice_IV",
+    rh_v4_i: "RH_Insert_Voice_IV",
+    rh_v5: "RH_Voice_V",
+    rh_v5_i: "RH_Insert_Voice_V",
+    rh_v6: "RH_Voice_VI",
+    rh_v6_i: "RH_Insert_Voice_VI",
+    rh_resonance: "RH_Resonance_Voice",
+    lh_v1: "LH_Voice_I",
+    lh_v1_i: "LH_Insert_Voice_I",
+    lh_v2: "LH_Voice_II",
+    lh_v2_i: "LH_Insert_Voice_II",
+    lh_v3: "LH_Voice_III",
+    lh_v3_i: "LH_Insert_Voice_III",
+    lh_v4: "LH_Voice_IV",
+    lh_v4_i: "LH_Insert_Voice_IV",
+    lh_v5: "LH_Voice_V",
+    lh_v5_i: "LH_Insert_Voice_V",
+    lh_v6: "LH_Voice_VI",
+    lh_v6_i: "LH_Insert_Voice_VI",
+    lh_resonance: "LH_Resonance_Voice",
 }
 
 
