@@ -3,6 +3,7 @@
 
 """
 import inspect
+import types
 
 import abjad
 import baca
@@ -332,11 +333,7 @@ design = make_stage_07()
 design = abjad.CyclicTuple(design)
 
 
-def make_segment_2_collections():
-    """
-    Makes segment 2 collections.
-    """
-    collections = {"stage 1": {}, "stage 2": {}}
+def make_section_2_segments():
     segments = [
         baca.PitchClassSegment(abjad.sequence.flatten(_, depth=-1))
         for _ in design[14:20]
@@ -344,7 +341,6 @@ def make_segment_2_collections():
     segments = baca.CollectionList(segments, item_class=abjad.NumberedPitchClass)
     assert len(segments) == 6, repr(len(segments))
     stages = segments.partition([2, 4], overhang=abjad.Exact)
-    # stage_1_segments = stages[0]
     stage_2_segments = stages[1]
     counts = 2 * [5, 6, 6, 5, 5, 4] + 2 * [4, 5, 5, 4, 4, 3]
     stage_2_segments = stage_2_segments.join()
@@ -353,22 +349,15 @@ def make_segment_2_collections():
     measures = stage_2_segments.partition([6, 5, 5, 4, 4], overhang=abjad.Exact)
     measures = [_.arpeggiate_up() for _ in measures]
     measures = baca.Cursor(measures, singletons=True)
-    collections["stage 2"]["rh"] = measures
-    return collections
+    return types.SimpleNamespace(
+        one=None,
+        two=types.SimpleNamespace(
+            rh=measures,
+        ),
+    )
 
 
-def make_segment_4_collections():
-    """
-    Makes segment 4 collections.
-    """
-    collections = {
-        "stage 1": {},
-        "stage 2": {},
-        "stage 3": {},
-        "stage 4": {},
-        "stage 5": {},
-        "stage 6": {},
-    }
+def make_section_4_segments():
     segments = [
         baca.PitchClassSegment(abjad.sequence.flatten(_, depth=-1))
         for _ in design[23:36]
@@ -378,7 +367,6 @@ def make_segment_4_collections():
     stages = segments.partition([2, 2, 2, 2, 2, 3], overhang=abjad.Exact)
     stage_1_segments = stages[0]
     stage_2_segments = stages[1]
-    # stage_3_segments = stages[2]
     stage_4_segments = stages[3]
     stage_5_segments = stages[4]
     stage_6_segments = stages[5]
@@ -424,22 +412,32 @@ def make_segment_4_collections():
     stage_6_segments = stage_6_segments.soprano_to_octave(n=7)
     stage_6_segments = stage_6_segments.chords()
     stage_6_segments = stage_6_segments.cursor(singletons=True)
-    collections["stage 1"]["rh"] = stage_1_rh_segments
-    collections["stage 1"]["lh"] = stage_1_lh_segments
-    collections["stage 2"]["lh"] = stage_2_segments
-    collections["stage 4"]["rh"] = stage_4_rh_segments
-    collections["stage 4"]["lh"] = stage_4_lh_segments
-    collections["stage 5"]["rh"] = stage_5_rh_segments
-    collections["stage 5"]["lh"] = stage_5_lh_segments
-    collections["stage 6"]["rh"] = stage_6_segments
-    return collections
+    return types.SimpleNamespace(
+        one=types.SimpleNamespace(
+            rh=stage_1_rh_segments,
+            lh=stage_1_lh_segments,
+        ),
+        two=types.SimpleNamespace(
+            rh=None,
+            lh=stage_2_segments,
+        ),
+        three=None,
+        four=types.SimpleNamespace(
+            rh=stage_4_rh_segments,
+            lh=stage_4_lh_segments,
+        ),
+        five=types.SimpleNamespace(
+            rh=stage_5_rh_segments,
+            lh=stage_5_lh_segments,
+        ),
+        six=types.SimpleNamespace(
+            rh=stage_6_segments,
+            lh=None,
+        ),
+    )
 
 
-def make_segment_5_collections():
-    """
-    Makes segment 5 collections.
-    """
-    collections = {"stage 1": {}, "stage 2": {}}
+def make_section_5_segments():
     segments = [
         baca.PitchClassSegment(abjad.sequence.flatten(_, depth=-1))
         for _ in design[36:42]
@@ -453,8 +451,8 @@ def make_segment_5_collections():
     rh, lh = stage_1_segments.partition([1, 1], overhang=abjad.Exact)
     rh = rh.cursor(singletons=True)
     lh = lh.cursor(singletons=True)
-    collections["stage 1"]["rh"] = rh
-    collections["stage 1"]["lh"] = lh
+    stage_1_rh = rh
+    stage_1_lh = lh
     stage_2_segments = stage_2_segments.remove_duplicate_pitch_classes(level=1)
     rh, lh = stage_2_segments.partition([2, 2], overhang=abjad.Exact)
     rh = rh.accumulate(
@@ -467,21 +465,21 @@ def make_segment_5_collections():
     lh = lh.repeat(n=3)
     lh = lh.read([3, 4, 2, 4, 2, 3, 2, 3, 4], check=abjad.Exact)
     lh = lh.cursor(singletons=True)
-    collections["stage 2"]["rh"] = rh
-    collections["stage 2"]["lh"] = lh
-    return collections
+    stage_2_rh = rh
+    stage_2_lh = lh
+    return types.SimpleNamespace(
+        one=types.SimpleNamespace(
+            rh=stage_1_rh,
+            lh=stage_1_lh,
+        ),
+        two=types.SimpleNamespace(
+            rh=stage_2_rh,
+            lh=stage_2_lh,
+        ),
+    )
 
 
-def make_segment_6_collections():
-    """
-    Makes segment 6 collections.
-    """
-    collections = {
-        "stage 1": {},
-        "stage 2": {},
-        "stage 3": {},
-        "stage 4": {},
-    }
+def make_section_6_segments():
     segments = [
         baca.PitchClassSegment(abjad.sequence.flatten(_, depth=-1))
         for _ in design[42:45]
@@ -510,16 +508,18 @@ def make_segment_6_collections():
     assert len(lh_stage_1_segments) == 4
     rh_stage_1_segments = rh_stage_1_segments.cursor()
     lh_stage_1_segments = lh_stage_1_segments.cursor()
-    collections["stage 1"]["rh"] = rh_stage_1_segments
-    collections["stage 1"]["lh"] = lh_stage_1_segments
-    return collections
+    return types.SimpleNamespace(
+        one=types.SimpleNamespace(
+            rh=rh_stage_1_segments,
+            lh=lh_stage_1_segments,
+        ),
+        two=None,
+        three=None,
+        four=None,
+    )
 
 
-def make_segment_7_collections():
-    """
-    Make segment 7 collections.
-    """
-    collections = {"stage 1": {}, "stage 2": {}}
+def make_section_7_segments():
     segments = [
         baca.PitchClassSegment(abjad.sequence.flatten(_, depth=-1))
         for _ in design[45:59]
@@ -543,7 +543,6 @@ def make_segment_7_collections():
     assert len(rh_segment_lists) == 12
     rh_segment_lists = [baca.CollectionList(_) for _ in rh_segment_lists]
     rh_segment_lists = baca.Cursor(rh_segment_lists, singletons=True)
-    collections["stage 1"]["rh"] = rh_segment_lists
     all_lh_segments = []
     for i in range(5):
         start = i
@@ -556,20 +555,16 @@ def make_segment_7_collections():
     assert len(lh_segment_lists) == 5
     lh_segment_lists = [baca.CollectionList(_) for _ in lh_segment_lists]
     lh_segment_lists = baca.Cursor(lh_segment_lists, singletons=True)
-    collections["stage 1"]["lh"] = lh_segment_lists
-    return collections
+    return types.SimpleNamespace(
+        one=types.SimpleNamespace(
+            rh=rh_segment_lists,
+            lh=lh_segment_lists,
+        ),
+        two=None,
+    )
 
 
-def make_segment_8_collections():
-    """
-    Makes segment 8 collections.
-    """
-    collections = {
-        "stage 1": {},
-        "stage 2": {},
-        "stage 3": {},
-        "stage 4": {},
-    }
+def make_section_8_segments():
     segments = [
         baca.PitchClassSegment(abjad.sequence.flatten(_, depth=-1))
         for _ in design[59:65]
@@ -577,7 +572,6 @@ def make_segment_8_collections():
     segments = baca.CollectionList(segments, item_class=abjad.NumberedPitchClass)
     assert len(segments) == 6, repr(len(segments))
     stages = segments.partition([1, 1, 1, 3], overhang=abjad.Exact)
-
     stage_3_segments = stages[2].remove_duplicates()
     stage_3_segments = stage_3_segments.accumulate(
         [
@@ -590,7 +584,6 @@ def make_segment_8_collections():
     assert len(stage_3_segments) == 20
     assert len(stage_3_segments.flatten()) == 60
     assert not stage_3_segments.has_repeats(level=-1), repr(stage_3_segments)
-
     v5_indices = [0, 2, 3, 5, 6, 8, 9]
     v5_stage_3_segments = stage_3_segments.retain(v5_indices, period=10)
     v5_stage_3_segments = v5_stage_3_segments.remove_repeats(level=-1)
@@ -602,15 +595,18 @@ def make_segment_8_collections():
     assert len(v6_stage_3_segments) == 6, len(v6_stage_3_segments)
     v5_stage_3_segments = v5_stage_3_segments.cursor()
     v6_stage_3_segments = v6_stage_3_segments.cursor()
-    collections["stage 3"]["rh"] = v5_stage_3_segments
-    collections["stage 3"]["lh"] = v6_stage_3_segments
-    return collections
+    return types.SimpleNamespace(
+        one=None,
+        two=None,
+        three=types.SimpleNamespace(
+            rh=v5_stage_3_segments,
+            lh=v6_stage_3_segments,
+        ),
+        four=None,
+    )
 
 
 def clean_up_repeat_ties():
-    """
-    Cleans up repeat ties.
-    """
     return [
         baca.beam_stencil_false(selector=baca.selectors.leaves()),
         baca.dots_stencil_false(selector=baca.selectors.leaves()),
@@ -620,9 +616,6 @@ def clean_up_repeat_ties():
 
 
 def transparent_music(selector):
-    """
-    Makes transparent music.
-    """
     return [
         baca.no_ledgers(selector=selector),
         baca.accidental_transparent(selector=selector),
