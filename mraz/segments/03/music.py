@@ -14,13 +14,12 @@ figures = baca.FigureAccumulator(
     score,
     voice_abbreviations=library.voice_abbreviations,
 )
-collection_maker = library.CollectionMaker()
-collections_2 = collection_maker.make_segment_2_collections()
-collections_4 = collection_maker.make_segment_4_collections()
-collections_5 = collection_maker.make_segment_5_collections()
-collections_6 = collection_maker.make_segment_6_collections()
-collections_7 = collection_maker.make_segment_7_collections()
-collections_8 = collection_maker.make_segment_8_collections()
+collections_2 = library.make_segment_2_collections()
+collections_4 = library.make_segment_4_collections()
+collections_5 = library.make_segment_5_collections()
+collections_6 = library.make_segment_6_collections()
+collections_7 = library.make_segment_7_collections()
+collections_8 = library.make_segment_8_collections()
 resonance = baca.PitchSet("e, fs, gs, as, b,", item_class=abjad.NamedPitch)
 
 ##################################### [C] #####################################

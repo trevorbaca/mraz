@@ -13,8 +13,7 @@ figures = baca.FigureAccumulator(
     score,
     voice_abbreviations=library.voice_abbreviations,
 )
-collection_maker = library.CollectionMaker()
-collections = collection_maker.make_segment_8_collections()
+collections = library.make_segment_8_collections()
 
 #################################### [8.3] ####################################
 
