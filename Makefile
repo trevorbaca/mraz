@@ -48,6 +48,10 @@ check:
 	make flake8
 	make isort-check
 
+show:
+	cd mraz; \
+	python show.py
+
 test:
 	make black-check
 	make flake8

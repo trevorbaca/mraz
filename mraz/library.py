@@ -29,9 +29,10 @@ metronome_marks = dict(
 )
 
 
-def make_stage_00():
+def silver_start():
     """
-    >>> for segment in mraz.library.make_stage_00(): print(segment)
+    >>> segments, names = mraz.library.silver_start()
+    >>> for segment in segments: print(segment)
     PC<4, 6, 10>
     PC<9, 7, 8, 11, 9, 1>
     PC<0, 2, 3, 5>
@@ -41,12 +42,14 @@ def make_stage_00():
     K = baca.PitchClassSegment([9, 7, 8, 11, 9, 1])
     L = baca.PitchClassSegment([0, 2, 3, 5])
     segments = [J, K, L]
-    return segments
+    names = ["J", "K", "L"]
+    return segments, names
 
 
-def make_stage_01():
+def silver_transform_1():
     """
-    >>> for segment in mraz.library.make_stage_01(): print(segment)
+    >>> segments, names = mraz.library.silver_transform_1()
+    >>> for segment in segments: print(segment)
     PC<4, 6, 10>
     PC<9, 7, 8, 11, 9, 1>
     PC<0, 2, 3, 5>
@@ -85,14 +88,57 @@ def make_stage_01():
     PC<1, 9, 7, 8, 11, 9>
 
     """
-    segments = make_stage_00()
+    segments, names = silver_start()
     segments = baca.sequence.helianthate(segments, -1, -1)
-    return segments
+    names = len(segments) * ["1"]
+    names = (
+        "r0(J)",
+        "r0(K)",
+        "r0(L)",
+        "r-1(K)",
+        "r-1(L)",
+        "r-1(J)",
+        "r-2(L)",
+        "r-2(J)",
+        "r-2(K)",
+        #
+        "r0(J)",
+        "r-3(K)",
+        "r-3(L)",
+        "r-4(K)",
+        "r0(L)",
+        "r-1(J)",
+        "r-1(L)",
+        "r-2(J)",
+        "r-5(K)",
+        #
+        "r0(J)",
+        "r0(K)",
+        "r-2(L)",
+        "r-1(K)",
+        "r-3(L)",
+        "r-1(J)",
+        "r0(L)",
+        "r-2(J)",
+        "r-2(K)",
+        #
+        "r0(J)",
+        "r-3(K)",
+        "r-1(L)",
+        "r-4(K)",
+        "r-2(L)",
+        "r-1(J)",
+        "r-3(L)",
+        "r-2(J)",
+        "r-5(K)",
+    )
+    return segments, names
 
 
-def make_stage_02():
+def silver_transform_2():
     """
-    >>> for segment in mraz.library.make_stage_02(): print(segment)
+    >>> segments, names = mraz.library.silver_transform_2()
+    >>> for segment in segments: print(segment)
     PC<4, 6, 10>
     PC<9, 7, 8, 11, 9, 1>
     PC<0, 2, 3, 5>
@@ -113,7 +159,7 @@ def make_stage_02():
     PC<2, 3, 5, 0, 9, 1, 9, 7, 8, 11, 3, 5, 0, 2, 6, 10, 4, 5, 0, 2, 3, 10, 4, 6, 1, 9, 7, 8, 11, 9>
 
     """
-    segments_ = make_stage_01()
+    segments_, names = silver_transform_1()
     groups = abjad.sequence.partition_by_counts(
         segments_, [5, 7], cyclic=True, overhang=True
     )
@@ -124,12 +170,36 @@ def make_stage_02():
         else:
             segment = abjad.sequence.join(group)[0]
             segments.append(segment)
-    return segments
+    names = (
+        "r0(J)",
+        "r0(K)",
+        "r0(L)",
+        "r-1(K)",
+        "r-1(L)",
+        # "Q=r-1(J)+r-2(L)+r-2(J)+r-2(K)+r0(J)+r-3(K)+r-3(L)",
+        "Q",
+        "r-4(K)",
+        "r0(L)",
+        "r-1(J)",
+        "r-1(L)",
+        "r-2(J)",
+        # "R=r-5(K)+r0(J)+r0(K)+r-2(L)+r-1(K)+r-3(L)+r-1(J)",
+        "R",
+        "r0(L)",
+        "r-2(J)",
+        "r-2(K)",
+        "r0(J)",
+        "r-3(K)",
+        # "S=r-1(L)+r-4(K)+r-2(L)+r-1(J)+r-3(L)+r-2(J)+r-5(K)",
+        "S",
+    )
+    return segments, names
 
 
-def make_stage_03():
+def silver_transform_3():
     """
-    >>> for segment in mraz.library.make_stage_03(): print(segment)
+    >>> segments, names = mraz.library.silver_transform_3()
+    >>> for segment in segments: print(segment)
     PC<4, 6, 10>
     PC<9, 7, 8, 11, 9, 1>
     PC<0, 2, 3, 5>
@@ -150,14 +220,35 @@ def make_stage_03():
     PC<9, 11, 8, 7, 9, 1, 6, 4, 10, 3, 2, 0, 5, 4, 10, 6, 2, 0, 5, 3, 11, 8, 7, 9, 1, 9, 0, 5, 3, 2>
 
     """
-    segments = make_stage_02()
+    segments, names = silver_transform_2()
     segments = [_.retrograde() if 6 < len(_) else _ for _ in segments]
-    return segments
+    names = (
+        "r0(J)",
+        "r0(K)",
+        "r0(L)",
+        "r-1(K)",
+        "r-1(L)",
+        "R(Q)",
+        "r-4(K)",
+        "r0(L)",
+        "r-1(J)",
+        "r-1(L)",
+        "r-2(J)",
+        "R(R)",
+        "r0(L)",
+        "r-2(J)",
+        "r-2(K)",
+        "r0(J)",
+        "r-3(K)",
+        "R(S)",
+    )
+    return segments, names
 
 
-def make_stage_04():
+def silver_transform_4():
     """
-    >>> for segment in mraz.library.make_stage_04(): print(segment)
+    >>> segments, names = mraz.library.silver_transform_4()
+    >>> for segment in segments: print(segment)
     PC<4, 6, 10>
     PC<9, 7, 8, 11, 9, 1>
     PC<0, 2, 3, 5>
@@ -178,7 +269,7 @@ def make_stage_04():
     PC<10, 0, 7, 8, 10, 2, 5, 3, 9, 4, 1, 11, 6, 3, 9, 5, 1, 11, 6, 4, 0, 7, 8, 10, 2, 10, 11, 6, 4, 1>
 
     """
-    segments_ = make_stage_03()
+    segments_, names = silver_transform_3()
     segments, j = [], 0
     for i, segment in enumerate(segments_):
         if 6 < len(segment):
@@ -190,12 +281,33 @@ def make_stage_04():
                 segment = segment.invert().alpha().invert()
             j += 1
         segments.append(segment)
-    return segments
+    names = (
+        "r0(J)",
+        "r0(K)",
+        "r0(L)",
+        "r-1(K)",
+        "r-1(L)",
+        "IR(Q)",
+        "r-4(K)",
+        "r0(L)",
+        "r-1(J)",
+        "r-1(L)",
+        "r-2(J)",
+        "AIR(R)",
+        "r0(L)",
+        "r-2(J)",
+        "r-2(K)",
+        "r0(J)",
+        "r-3(K)",
+        "IAIR(S)",
+    )
+    return segments, names
 
 
-def make_stage_05():
+def silver_transform_5():
     """
-    >>> for segment in mraz.library.make_stage_05(): print(segment)
+    >>> segments, names = mraz.library.silver_transform_5()
+    >>> for segment in segments: print(segment)
     PC<4, 6, 10>
     PC<9, 7, 8, 11, 9, 1>
     PC<0, 2, 3, 5>
@@ -232,7 +344,8 @@ def make_stage_05():
     PC<6, 4, 1>
 
     """
-    segments_, segments = make_stage_04(), []
+    segments_, names = silver_transform_4()
+    segments = []
     for segment in segments_:
         if 6 < len(segment):
             parts = abjad.sequence.partition_by_counts(
@@ -241,12 +354,49 @@ def make_stage_05():
             segments.extend(parts)
         else:
             segments.append(segment)
-    return segments
+    names = (
+        "r0(J)",
+        "r0(K)",
+        "r0(L)",
+        "r-1(K)",
+        "r-1(L)",
+        "IR(Q).1",
+        "IR(Q).2",
+        "IR(Q).3",
+        "IR(Q).4",
+        "IR(Q).5",
+        "IR(Q).6",
+        "r-4(K)",
+        "r0(L)",
+        "r-1(J)",
+        "r-1(L)",
+        "r-2(J)",
+        "AIR(R).1",
+        "AIR(R).2",
+        "AIR(R).3",
+        "AIR(R).4",
+        "AIR(R).5",
+        "AIR(R).6",
+        "AIR(R).7",
+        "r0(L)",
+        "r-2(J)",
+        "r-2(K)",
+        "r0(J)",
+        "r-3(K)",
+        "IAIR(S).1",
+        "IAIR(S).2",
+        "IAIR(S).3",
+        "IAIR(S).4",
+        "IAIR(S).5",
+        "IAIR(S).6",
+    )
+    return segments, names
 
 
-def make_stage_06():
+def silver_transform_6():
     """
-    >>> for segment in mraz.library.make_stage_06(): print(segment)
+    >>> segments, names = mraz.library.silver_transform_6()
+    >>> for segment in segments: print(segment)
     PC<4, 6, 10>
     PC<9, 7, 8, 11, 9, 1>
     PC<0, 2, 3, 5>
@@ -283,19 +433,62 @@ def make_stage_06():
     PC<5, 3, 0>
 
     """
-    segments_, segments = make_stage_05(), []
+    segments_, names = silver_transform_5()
+    segments = []
     groups = abjad.sequence.partition_by_ratio_of_lengths(segments_, [1, 1, 1, 1, 1])
     transposition = [0, 5, 9, 10, 11]
     for group, n in zip(groups, transposition):
         for segment in group:
             segment = segment.transpose(n=n)
             segments.append(segment)
-    return segments
+    names = (
+        # T0:
+        "T0r0(J)",
+        "T0r0(K)",
+        "T0r0(L)",
+        "T0r-1(K)",
+        "T0r-1(L)",
+        "T0(IR(Q).1)",
+        "T0(IR(Q).2)",
+        # T5:
+        "T5(IR(Q).3)",
+        "T5(IR(Q).4)",
+        "T5(IR(Q).5)",
+        "T5(IR(Q).6)",
+        "T5r-4(K)",
+        "T5r0(L)",
+        "T5r-1(J)",
+        # T9:
+        "T9r-1(L)",
+        "T9r-2(J)",
+        "T9(AIR(R).1)",
+        "T9(AIR(R).2)",
+        "T9(AIR(R).3)",
+        "T9(AIR(R).4)",
+        # T10:
+        "T10(AIR(R).5)",
+        "T10(AIR(R).6)",
+        "T10(AIR(R).7)",
+        "T10r0(L)",
+        "T10r-2(J)",
+        "T10r-2(K)",
+        "T10r0(J)",
+        # T11:
+        "T11r-3(K)",
+        "T11(IAIR(S).1)",
+        "T11(IAIR(S).2)",
+        "T11(IAIR(S).3)",
+        "T11(IAIR(S).4)",
+        "T11(IAIR(S).5)",
+        "T11(IAIR(S).6)",
+    )
+    return segments, names
 
 
-def make_stage_07():
+def silver_transform_7():
     """
-    >>> for segment in mraz.library.make_stage_07(): print(segment)
+    >>> segments, names = mraz.library.silver_transform_7()
+    >>> for segment in segments: print(segment)
     PC<4, 6, 10>
     PC<9, 7, 8, 11, 9, 1>
     PC<0, 2, 3, 5>
@@ -332,21 +525,58 @@ def make_stage_07():
     PC<5, 3, 0>
 
     """
-    segments_, segments = make_stage_06(), []
+    segments_, names = silver_transform_6()
+    segments = []
     for i, segment in enumerate(segments_):
         if i % 4 == 3:
             segment = segment.retrograde()
         segments.append(segment)
-    return segments
+    names = (
+        "T0r0(J)",
+        "T0r0(K)",
+        "T0r0(L)",
+        "RT0r-1(K)",
+        "T0r-1(L)",
+        "T0(IR(Q).1)",
+        "T0(IR(Q).2)",
+        "RT(5IR(Q).3)",
+        "T5(IR(Q).4)",
+        "T5(IR(Q).5)",
+        "T5(IR(Q).6)",
+        "RT5r-4(K)",
+        "T5r0(L)",
+        "T5r-1(J)",
+        "T9r-1(L)",
+        "RT9r-2(J)",
+        "T9(AIR(R).1)",
+        "T9(AIR(R).2)",
+        "T9(AIR(R).3)",
+        "RT9(AIR(R).4)",
+        "T10(AIR(R).5)",
+        "T10(AIR(R).6)",
+        "T10(AIR(R).7)",
+        "RT10r0(L)",
+        "T10r-2(J)",
+        "T10r-2(K)",
+        "T10r0(J)",
+        "RT11r-3(K)",
+        "T11(IAIR(S).1)",
+        "T11(IAIR(S).2)",
+        "T11(IAIR(S).3)",
+        "RT11(IAIR(S).4)",
+        "T11(IAIR(S).5)",
+        "T11(IAIR(S).6)",
+    )
+    return segments, names
 
 
-design = make_stage_07()
-design = abjad.CyclicTuple(design)
+silver, names = silver_transform_7()
+silver = abjad.CyclicTuple(silver)
 
 
-def make_section_2_segments():
+def make_section_2_collections():
     """
-    >>> section, section_name = mraz.library.make_section_2_segments(), "section_2"
+    >>> section, section_name = mraz.library.make_section_2_collections(), "section_2"
     >>> show_collections(section, section_name)
     section_2.stage_2.rh:
       CollectionList([<6, 12, 16, 17, 20>, <10, 15, 23, 31, 33>, <2, 13, 20, 22, 27, 29>, <9, 11, 19, 30, 36>, <4, 5, 8, 10, 15>, <11, 19, 21>])
@@ -358,7 +588,7 @@ def make_section_2_segments():
     """
     segments = [
         baca.PitchClassSegment(abjad.sequence.flatten(_, depth=-1))
-        for _ in design[14:20]
+        for _ in silver[14:20]
     ]
     segments = baca.CollectionList(segments, item_class=abjad.NumberedPitchClass)
     assert len(segments) == 6, repr(len(segments))
@@ -379,9 +609,9 @@ def make_section_2_segments():
     )
 
 
-def make_section_4_segments():
+def make_section_4_collections():
     """
-    >>> section, section_name = mraz.library.make_section_4_segments(), "section_4"
+    >>> section, section_name = mraz.library.make_section_4_collections(), "section_4"
     >>> show_collections(section, section_name)
     section_4.stage_1.rh:
       PC<3, 1, 0, 10>
@@ -448,7 +678,7 @@ def make_section_4_segments():
     """
     segments = [
         baca.PitchClassSegment(abjad.sequence.flatten(_, depth=-1))
-        for _ in design[23:36]
+        for _ in silver[23:36]
     ]
     segments = baca.CollectionList(segments, item_class=abjad.NumberedPitchClass)
     assert len(segments) == 13, repr(len(segments))
@@ -525,9 +755,9 @@ def make_section_4_segments():
     )
 
 
-def make_section_5_segments():
+def make_section_5_collections():
     """
-    >>> section, section_name = mraz.library.make_section_5_segments(), "section_5"
+    >>> section, section_name = mraz.library.make_section_5_collections(), "section_5"
     >>> show_collections(section, section_name)
     section_5.stage_1.rh:
       PC<0, 2, 3, 5>
@@ -572,7 +802,7 @@ def make_section_5_segments():
     """
     segments = [
         baca.PitchClassSegment(abjad.sequence.flatten(_, depth=-1))
-        for _ in design[36:42]
+        for _ in silver[36:42]
     ]
     segments = baca.CollectionList(segments, item_class=abjad.NumberedPitchClass)
     assert len(segments) == 6, repr(len(segments))
@@ -611,9 +841,9 @@ def make_section_5_segments():
     )
 
 
-def make_section_6_segments():
+def make_section_6_collections():
     """
-    >>> section, section_name = mraz.library.make_section_6_segments(), "section_6"
+    >>> section, section_name = mraz.library.make_section_6_collections(), "section_6"
     >>> show_collections(section, section_name)
     section_6.stage_1.rh:
       PC<6, 9, 11>
@@ -630,7 +860,7 @@ def make_section_6_segments():
     """
     segments = [
         baca.PitchClassSegment(abjad.sequence.flatten(_, depth=-1))
-        for _ in design[42:45]
+        for _ in silver[42:45]
     ]
     segments = baca.CollectionList(segments, item_class=abjad.NumberedPitchClass)
     assert len(segments) == 3, repr(len(segments))
@@ -667,9 +897,9 @@ def make_section_6_segments():
     )
 
 
-def make_section_7_segments():
+def make_section_7_collections():
     """
-    >>> section, section_name = mraz.library.make_section_7_segments(), "section_7"
+    >>> section, section_name = mraz.library.make_section_7_collections(), "section_7"
     >>> show_collections(section, section_name)
     section_7.stage_1.rh:
       CollectionList([PC<4, 1, 0, 2, 6, 2>, PC<5, 7, 8, 10>, PC<11, 3, 9>])
@@ -694,7 +924,7 @@ def make_section_7_segments():
     """
     segments = [
         baca.PitchClassSegment(abjad.sequence.flatten(_, depth=-1))
-        for _ in design[45:59]
+        for _ in silver[45:59]
     ]
     segments = baca.CollectionList(segments, item_class=abjad.NumberedPitchClass)
     assert len(segments) == 14, repr(len(segments))
@@ -736,9 +966,9 @@ def make_section_7_segments():
     )
 
 
-def make_section_8_segments():
+def make_section_8_collections():
     """
-    >>> section, section_name = mraz.library.make_section_8_segments(), "section_8"
+    >>> section, section_name = mraz.library.make_section_8_collections(), "section_8"
     >>> show_collections(section, section_name)
     section_8.stage_3.rh:
       PC<7, 6>
@@ -766,7 +996,7 @@ def make_section_8_segments():
     """
     segments = [
         baca.PitchClassSegment(abjad.sequence.flatten(_, depth=-1))
-        for _ in design[59:65]
+        for _ in silver[59:65]
     ]
     segments = baca.CollectionList(segments, item_class=abjad.NumberedPitchClass)
     assert len(segments) == 6, repr(len(segments))
