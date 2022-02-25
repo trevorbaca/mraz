@@ -536,34 +536,42 @@ def silver_transform_7():
         "T0r0(K)",
         "T0r0(L)",
         "RT0r-1(K)",
+        #
         "T0r-1(L)",
         "T0(IR(Q).1)",
         "T0(IR(Q).2)",
         "RT(5IR(Q).3)",
+        #
         "T5(IR(Q).4)",
         "T5(IR(Q).5)",
         "T5(IR(Q).6)",
         "RT5r-4(K)",
+        #
         "T5r0(L)",
         "T5r-1(J)",
         "T9r-1(L)",
         "RT9r-2(J)",
+        #
         "T9(AIR(R).1)",
         "T9(AIR(R).2)",
         "T9(AIR(R).3)",
         "RT9(AIR(R).4)",
+        #
         "T10(AIR(R).5)",
         "T10(AIR(R).6)",
         "T10(AIR(R).7)",
         "RT10r0(L)",
+        #
         "T10r-2(J)",
         "T10r-2(K)",
         "T10r0(J)",
         "RT11r-3(K)",
+        #
         "T11(IAIR(S).1)",
         "T11(IAIR(S).2)",
         "T11(IAIR(S).3)",
         "RT11(IAIR(S).4)",
+        #
         "T11(IAIR(S).5)",
         "T11(IAIR(S).6)",
     )
@@ -586,25 +594,22 @@ def make_section_2_collections():
       CollectionList([<5, 9, 11, 19, 30>, <0, 4, 5, 8>, <10, 15, 23, 31>, <11, 21, 26>])
 
     """
-    segments = [
-        baca.PitchClassSegment(abjad.sequence.flatten(_, depth=-1))
-        for _ in silver[14:20]
-    ]
-    segments = baca.CollectionList(segments, item_class=abjad.NumberedPitchClass)
+    segments = list(silver[14:20])
     assert len(segments) == 6, repr(len(segments))
+    segments = baca.CollectionList(segments, item_class=abjad.NumberedPitchClass)
     stages = segments.partition([2, 4], overhang=abjad.Exact)
-    stage_2_segments = stages[1]
+    segments = stages[1]
     counts = 2 * [5, 6, 6, 5, 5, 4] + 2 * [4, 5, 5, 4, 4, 3]
-    stage_2_segments = stage_2_segments.join()
-    stage_2_segments = stage_2_segments.read(counts)
-    stage_2_segments = stage_2_segments.remove_duplicates(level=1)
-    measures = stage_2_segments.partition([6, 5, 5, 4, 4], overhang=abjad.Exact)
-    measures = [_.arpeggiate_up() for _ in measures]
-    measures = baca.Cursor(measures, singletons=True)
+    segments = segments.join()
+    segments = segments.read(counts)
+    segments = segments.remove_duplicates(level=1)
+    segments = segments.partition([6, 5, 5, 4, 4], overhang=abjad.Exact)
+    segments = [_.arpeggiate_up() for _ in segments]
+    segments = baca.Cursor(segments, singletons=True)
     return types.SimpleNamespace(
         stage_1=None,
         stage_2=types.SimpleNamespace(
-            rh=measures,
+            rh=segments,
         ),
     )
 
