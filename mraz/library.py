@@ -681,10 +681,7 @@ def make_section_4_collections():
 
 
     """
-    segments = [
-        baca.PitchClassSegment(abjad.sequence.flatten(_, depth=-1))
-        for _ in silver[23:36]
-    ]
+    segments = silver[23:36]
     segments = baca.CollectionList(segments, item_class=abjad.NumberedPitchClass)
     assert len(segments) == 13, repr(len(segments))
     stages = segments.partition([2, 2, 2, 2, 2, 3], overhang=abjad.Exact)
@@ -805,10 +802,7 @@ def make_section_5_collections():
       PC<10, 1, 11, 7>
 
     """
-    segments = [
-        baca.PitchClassSegment(abjad.sequence.flatten(_, depth=-1))
-        for _ in silver[36:42]
-    ]
+    segments = silver[36:42]
     segments = baca.CollectionList(segments, item_class=abjad.NumberedPitchClass)
     assert len(segments) == 6, repr(len(segments))
     stages = segments.partition([2, 4], overhang=abjad.Exact)
@@ -863,10 +857,7 @@ def make_section_6_collections():
       PC<6, 5>
 
     """
-    segments = [
-        baca.PitchClassSegment(abjad.sequence.flatten(_, depth=-1))
-        for _ in silver[42:45]
-    ]
+    segments = silver[42:45]
     segments = baca.CollectionList(segments, item_class=abjad.NumberedPitchClass)
     assert len(segments) == 3, repr(len(segments))
     stages = segments.partition([1, 1, 1], overhang=abjad.Exact)
@@ -927,10 +918,7 @@ def make_section_7_collections():
       CollectionList([PC<10, 4, 8, 9, 0, 2, 7>])
 
     """
-    segments = [
-        baca.PitchClassSegment(abjad.sequence.flatten(_, depth=-1))
-        for _ in silver[45:59]
-    ]
+    segments = silver[45:59]
     segments = baca.CollectionList(segments, item_class=abjad.NumberedPitchClass)
     assert len(segments) == 14, repr(len(segments))
     rh_segments, lh_segments, stage_2_segments = segments.partition(
@@ -999,10 +987,7 @@ def make_section_8_collections():
       PC<4, 5, 7>
 
     """
-    segments = [
-        baca.PitchClassSegment(abjad.sequence.flatten(_, depth=-1))
-        for _ in silver[59:65]
-    ]
+    segments = silver[59:65]
     segments = baca.CollectionList(segments, item_class=abjad.NumberedPitchClass)
     assert len(segments) == 6, repr(len(segments))
     stages = segments.partition([1, 1, 1, 3], overhang=abjad.Exact)
