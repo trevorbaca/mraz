@@ -654,7 +654,7 @@ segment.07.RH.Voice.I = {
                 %! EXPLICIT_DYNAMIC
                 \fff
                 %! FIGURE_NAME
-                %@% ^ \markup \fontsize #2 \concat { [ rh-1 7.1.1 \hspace #1 \raise #0.25 \fontsize #-2 (0) ] }
+                %@% ^ \markup \fontsize #2 \concat { [ rh-1 7.1.1 \hspace #1 \raise #0.25 \fontsize #-2 (1) ] }
                 %! REAPPLIED_INSTRUMENT_ALERT
                 %! baca._attach_latent_indicator_alert()
                 ^ \baca-reapplied-indicator-markup "(“Piano”)"
@@ -777,7 +777,7 @@ segment.07.RH.Voice.I = {
                 %! baca.music()
                 fs''!16
                 %! FIGURE_NAME
-                %@% ^ \markup \fontsize #2 \concat { [ rh-1 7.1.2 \hspace #1 \raise #0.25 \fontsize #-2 (2) ] }
+                %@% ^ \markup \fontsize #2 \concat { [ rh-1 7.1.2 \hspace #1 \raise #0.25 \fontsize #-2 (3) ] }
 
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 2
@@ -856,7 +856,7 @@ segment.07.RH.Voice.I = {
                 %! baca.music()
                 af''!16
                 %! FIGURE_NAME
-                %@% ^ \markup \fontsize #2 \concat { [ rh-1 7.1.3 \hspace #1 \raise #0.25 \fontsize #-2 (4) ] }
+                %@% ^ \markup \fontsize #2 \concat { [ rh-1 7.1.3 \hspace #1 \raise #0.25 \fontsize #-2 (5) ] }
                 [
 
                 \set stemLeftBeamCount = 2
@@ -910,7 +910,7 @@ segment.07.RH.Voice.I = {
                 %! baca.music()
                 af''!16
                 %! FIGURE_NAME
-                %@% ^ \markup \fontsize #2 \concat { [ rh-1 7.1.4 \hspace #1 \raise #0.25 \fontsize #-2 (6) ] }
+                %@% ^ \markup \fontsize #2 \concat { [ rh-1 7.1.4 \hspace #1 \raise #0.25 \fontsize #-2 (7) ] }
 
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 2
@@ -979,7 +979,7 @@ segment.07.RH.Voice.I = {
                 %! baca.music()
                 f'''16
                 %! FIGURE_NAME
-                %@% ^ \markup \fontsize #2 \concat { [ rh-1 7.1.5 \hspace #1 \raise #0.25 \fontsize #-2 (9) ] }
+                %@% ^ \markup \fontsize #2 \concat { [ rh-1 7.1.5 \hspace #1 \raise #0.25 \fontsize #-2 (10) ] }
                 [
 
                 \set stemLeftBeamCount = 2
@@ -1798,7 +1798,7 @@ segment.07.RH.Voice.II = {
             %! REDUNDANT_DYNAMIC
             \fff
             %! FIGURE_NAME
-            %@% ^ \markup \fontsize #2 \concat { [ rh-2 7.1.1 \hspace #1 \raise #0.25 \fontsize #-2 (1) ] }
+            %@% ^ \markup \fontsize #2 \concat { [ rh-2 7.1.1 \hspace #1 \raise #0.25 \fontsize #-2 (2) ] }
             [
             %! baca.slur()
             %! baca.SpannerIndicatorCommand._call(2)
@@ -1857,7 +1857,7 @@ segment.07.RH.Voice.II = {
                 %! baca.music()
                 cs''!16
                 %! FIGURE_NAME
-                %@% ^ \markup \fontsize #2 \concat { [ rh-2 7.1.2 \hspace #1 \raise #0.25 \fontsize #-2 (3) ] }
+                %@% ^ \markup \fontsize #2 \concat { [ rh-2 7.1.2 \hspace #1 \raise #0.25 \fontsize #-2 (4) ] }
                 %! baca.slur()
                 %! baca.SpannerIndicatorCommand._call(2)
                 %! SPANNER_START
@@ -1974,7 +1974,7 @@ segment.07.RH.Voice.II = {
             %! baca.music()
             c''16
             %! FIGURE_NAME
-            %@% ^ \markup \fontsize #2 \concat { [ rh-2 7.1.3 \hspace #1 \raise #0.25 \fontsize #-2 (5) ] }
+            %@% ^ \markup \fontsize #2 \concat { [ rh-2 7.1.3 \hspace #1 \raise #0.25 \fontsize #-2 (6) ] }
             [
             %! baca.slur()
             %! baca.SpannerIndicatorCommand._call(2)
@@ -2107,7 +2107,7 @@ segment.07.RH.Voice.II = {
                 %! baca.music()
                 a''16
                 %! FIGURE_NAME
-                %@% ^ \markup \fontsize #2 \concat { [ rh-2 7.1.4 \hspace #1 \raise #0.25 \fontsize #-2 (7) ] }
+                %@% ^ \markup \fontsize #2 \concat { [ rh-2 7.1.4 \hspace #1 \raise #0.25 \fontsize #-2 (8) ] }
                 %! baca.slur()
                 %! baca.SpannerIndicatorCommand._call(2)
                 %! SPANNER_START
@@ -2203,7 +2203,7 @@ segment.07.RH.Voice.II = {
             %! baca.music()
             f''16
             %! FIGURE_NAME
-            %@% ^ \markup \fontsize #2 \concat { [ rh-2 7.1.5 \hspace #1 \raise #0.25 \fontsize #-2 (8) ] }
+            %@% ^ \markup \fontsize #2 \concat { [ rh-2 7.1.5 \hspace #1 \raise #0.25 \fontsize #-2 (9) ] }
             [
             %! baca.slur()
             %! baca.SpannerIndicatorCommand._call(2)
@@ -2250,7 +2250,7 @@ segment.07.RH.Voice.II = {
             %! baca.music()
             e'''16
             %! FIGURE_NAME
-            %@% ^ \markup \fontsize #2 \concat { [ rh-2 7.1.6 \hspace #1 \raise #0.25 \fontsize #-2 (10) ] }
+            %@% ^ \markup \fontsize #2 \concat { [ rh-2 7.1.6 \hspace #1 \raise #0.25 \fontsize #-2 (11) ] }
             %! baca.slur()
             %! baca.SpannerIndicatorCommand._call(2)
             %! SPANNER_START
@@ -4380,7 +4380,7 @@ segment.07.LH.Voice.IV = {
             %! EXPLICIT_DYNAMIC
             \ff
             %! FIGURE_NAME
-            %@% ^ \markup \fontsize #2 \concat { [ lh-4 7.1.1 \hspace #1 \raise #0.25 \fontsize #-2 (11) ] }
+            %@% ^ \markup \fontsize #2 \concat { [ lh-4 7.1.1 \hspace #1 \raise #0.25 \fontsize #-2 (12) ] }
             [
 
             \set stemLeftBeamCount = 2
@@ -4481,7 +4481,7 @@ segment.07.LH.Voice.IV = {
             %! REDUNDANT_DYNAMIC
             \ff
             %! FIGURE_NAME
-            %@% ^ \markup \fontsize #2 \concat { [ lh-4 7.1.2 \hspace #1 \raise #0.25 \fontsize #-2 (13) ] }
+            %@% ^ \markup \fontsize #2 \concat { [ lh-4 7.1.2 \hspace #1 \raise #0.25 \fontsize #-2 (14) ] }
             [
 
             \set stemLeftBeamCount = 2
@@ -4533,7 +4533,7 @@ segment.07.LH.Voice.IV = {
             %! REDUNDANT_DYNAMIC
             \ff
             %! FIGURE_NAME
-            %@% ^ \markup \fontsize #2 \concat { [ lh-4 7.1.3 \hspace #1 \raise #0.25 \fontsize #-2 (15) ] }
+            %@% ^ \markup \fontsize #2 \concat { [ lh-4 7.1.3 \hspace #1 \raise #0.25 \fontsize #-2 (16) ] }
             [
 
             \set stemLeftBeamCount = 2
@@ -5053,7 +5053,7 @@ segment.07.LH.Voice.V = {
                 %! EXPLICIT_DYNAMIC
                 \pp
                 %! FIGURE_NAME
-                %@% ^ \markup \fontsize #2 \concat { [ lh-5 7.1.1 \hspace #1 \raise #0.25 \fontsize #-2 (12) ] }
+                %@% ^ \markup \fontsize #2 \concat { [ lh-5 7.1.1 \hspace #1 \raise #0.25 \fontsize #-2 (13) ] }
                 [
                 %! baca.slur()
                 %! baca.SpannerIndicatorCommand._call(2)
@@ -5229,7 +5229,7 @@ segment.07.LH.Voice.V = {
                 %! REDUNDANT_DYNAMIC
                 \pp
                 %! FIGURE_NAME
-                %@% ^ \markup \fontsize #2 \concat { [ lh-5 7.1.2 \hspace #1 \raise #0.25 \fontsize #-2 (14) ] }
+                %@% ^ \markup \fontsize #2 \concat { [ lh-5 7.1.2 \hspace #1 \raise #0.25 \fontsize #-2 (15) ] }
                 [
                 %! baca.slur()
                 %! baca.SpannerIndicatorCommand._call(2)
