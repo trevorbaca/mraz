@@ -110,8 +110,8 @@
     \accepts PageLayout
 
     \override BarNumber.Y-extent = ##f
-    %%%\override BarNumber.X-offset = -7
-    %%%\override BarNumber.Y-offset = -0.75
+    \override BarNumber.X-offset = -7
+    \override BarNumber.Y-offset = -0.75
     \override BarNumber.font-size = 1
 
     % prevents StaffSymbol from starting too early after cut-away measures:
