@@ -807,7 +807,7 @@ segment.03.RH.Voice.I = {
             %! baca.IndicatorCommand._call()
             - \tenuto
             %! FIGURE_NAME
-            %@% ^ \markup \fontsize #2 \concat { [ b.2.11 \hspace #1 \raise #0.25 \fontsize #-2 (11) ] }
+            %@% ^ \markup \fontsize #2 \concat { [ "b.2.11" \hspace #1 \raise #0.25 \fontsize #-2 (11) ] }
 
         %! baca.music()
         }
@@ -831,7 +831,7 @@ segment.03.RH.Voice.I = {
             %! baca.IndicatorCommand._call()
             - \tenuto
             %! FIGURE_NAME
-            %@% ^ \markup \fontsize #2 \concat { [ b.2.12 \hspace #1 \raise #0.25 \fontsize #-2 (12) ] }
+            %@% ^ \markup \fontsize #2 \concat { [ "b.2.12" \hspace #1 \raise #0.25 \fontsize #-2 (12) ] }
 
         %! baca.music()
         }
@@ -855,7 +855,7 @@ segment.03.RH.Voice.I = {
             %! baca.IndicatorCommand._call()
             - \tenuto
             %! FIGURE_NAME
-            %@% ^ \markup \fontsize #2 \concat { [ b.2.13 \hspace #1 \raise #0.25 \fontsize #-2 (13) ] }
+            %@% ^ \markup \fontsize #2 \concat { [ "b.2.13" \hspace #1 \raise #0.25 \fontsize #-2 (13) ] }
             %! baca.ottava()
             %! baca.SpannerIndicatorCommand._call(4)
             %! SPANNER_STOP
@@ -1115,7 +1115,7 @@ segment.03.RH.Voice.II = {
             %! baca.music()
             r4
             %! FIGURE_NAME
-            %@% ^ \markup \fontsize #2 \concat { [ b.2.2 \hspace #1 \raise #0.25 \fontsize #-2 (2) ] }
+            %@% ^ \markup \fontsize #2 \concat { [ "b.2.2" \hspace #1 \raise #0.25 \fontsize #-2 (2) ] }
 
         %! baca.music()
         }
@@ -1162,7 +1162,7 @@ segment.03.RH.Voice.II = {
             %! baca.IndicatorCommand._call()
             - \staccato
             %! FIGURE_NAME
-            %@% ^ \markup \fontsize #2 \concat { [ b.2.3 \hspace #1 \raise #0.25 \fontsize #-2 (3) ] }
+            %@% ^ \markup \fontsize #2 \concat { [ "b.2.3" \hspace #1 \raise #0.25 \fontsize #-2 (3) ] }
             [
             %! baca.slur()
             %! baca.SpannerIndicatorCommand._call(2)
@@ -1231,7 +1231,7 @@ segment.03.RH.Voice.II = {
             %! baca.music()
             r4
             %! FIGURE_NAME
-            %@% ^ \markup \fontsize #2 \concat { [ b.2.4 \hspace #1 \raise #0.25 \fontsize #-2 (4) ] }
+            %@% ^ \markup \fontsize #2 \concat { [ "b.2.4" \hspace #1 \raise #0.25 \fontsize #-2 (4) ] }
 
         %! baca.music()
         }
@@ -1280,7 +1280,7 @@ segment.03.RH.Voice.II = {
             %! baca.IndicatorCommand._call()
             - \staccato
             %! FIGURE_NAME
-            %@% ^ \markup \fontsize #2 \concat { [ b.2.6 \hspace #1 \raise #0.25 \fontsize #-2 (6) ] }
+            %@% ^ \markup \fontsize #2 \concat { [ "b.2.6" \hspace #1 \raise #0.25 \fontsize #-2 (6) ] }
             [
             %! baca.slur()
             %! baca.SpannerIndicatorCommand._call(2)
@@ -1405,7 +1405,7 @@ segment.03.RH.Voice.II = {
             %! baca.music()
             r4
             %! FIGURE_NAME
-            %@% ^ \markup \fontsize #2 \concat { [ b.2.7 \hspace #1 \raise #0.25 \fontsize #-2 (7) ] }
+            %@% ^ \markup \fontsize #2 \concat { [ "b.2.7" \hspace #1 \raise #0.25 \fontsize #-2 (7) ] }
 
         %! baca.music()
         }
@@ -1454,7 +1454,7 @@ segment.03.RH.Voice.II = {
             %! baca.IndicatorCommand._call()
             - \staccato
             %! FIGURE_NAME
-            %@% ^ \markup \fontsize #2 \concat { [ b.2.10 \hspace #1 \raise #0.25 \fontsize #-2 (10) ] }
+            %@% ^ \markup \fontsize #2 \concat { [ "b.2.10" \hspace #1 \raise #0.25 \fontsize #-2 (10) ] }
             [
             %! baca.slur()
             %! baca.SpannerIndicatorCommand._call(2)
@@ -1731,7 +1731,7 @@ segment.03.RH.Voice.II = {
             %! EXPLICIT_DYNAMIC
             \f
             %! FIGURE_NAME
-            %@% ^ \markup \fontsize #2 \concat { [ b.2.14 \hspace #1 \raise #0.25 \fontsize #-2 (14) ] }
+            %@% ^ \markup \fontsize #2 \concat { [ "b.2.14" \hspace #1 \raise #0.25 \fontsize #-2 (14) ] }
             %! EXPLICIT_DYNAMIC_COLOR
             %! _treat_persistent_wrapper(1)
             %! baca.hairpin()
@@ -2163,7 +2163,7 @@ segment.03.RH.Voice.III = {
             %! EXPLICIT_DYNAMIC
             \ff
             %! FIGURE_NAME
-            %@% ^ \markup \fontsize #2 \concat { [ b.2.8 \hspace #1 \raise #0.25 \fontsize #-2 (8) ] }
+            %@% ^ \markup \fontsize #2 \concat { [ "b.2.8" \hspace #1 \raise #0.25 \fontsize #-2 (8) ] }
 
             %! baca.music()
             r4
@@ -2499,7 +2499,7 @@ segment.03.RH.Voice.IV = {
             %! EXPLICIT_DYNAMIC
             \ff
             %! FIGURE_NAME
-            %@% ^ \markup \fontsize #2 \concat { [ b.2.1 \hspace #1 \raise #0.25 \fontsize #-2 (1) ] }
+            %@% ^ \markup \fontsize #2 \concat { [ "b.2.1" \hspace #1 \raise #0.25 \fontsize #-2 (1) ] }
             [
 
             \set stemLeftBeamCount = 2
@@ -2573,7 +2573,7 @@ segment.03.RH.Voice.IV = {
             %! EXPLICIT_DYNAMIC
             \p
             %! FIGURE_NAME
-            %@% ^ \markup \fontsize #2 \concat { [ b.2.5 \hspace #1 \raise #0.25 \fontsize #-2 (5) ] }
+            %@% ^ \markup \fontsize #2 \concat { [ "b.2.5" \hspace #1 \raise #0.25 \fontsize #-2 (5) ] }
             [
 
             \set stemLeftBeamCount = 2
@@ -4230,7 +4230,7 @@ segment.03.LH.Voice.V = {
             %! baca.music()
             r2.
             %! FIGURE_NAME
-            %@% ^ \markup \fontsize #2 \concat { [ b.2.9 \hspace #1 \raise #0.25 \fontsize #-2 (9) ] }
+            %@% ^ \markup \fontsize #2 \concat { [ "b.2.9" \hspace #1 \raise #0.25 \fontsize #-2 (9) ] }
 
             %! baca.music()
             af!8.
@@ -4884,7 +4884,7 @@ segment.03.LH.Resonance.Voice = {
             \override Stem.stencil = ##f
             <e, fs,! gs,! as,! b,>2
             %! FIGURE_NAME
-            %@% ^ \markup \fontsize #2 \concat { [ b.2.r.1 \hspace #1 \raise #0.25 \fontsize #-2 (15) ] }
+            %@% ^ \markup \fontsize #2 \concat { [ "b.2.r.1" \hspace #1 \raise #0.25 \fontsize #-2 (15) ] }
             %! baca._attach_shadow_tie_indicators()
             - \tweak stencil ##f
             %! baca._attach_shadow_tie_indicators()
@@ -4932,7 +4932,7 @@ segment.03.LH.Resonance.Voice = {
             \once \override Stem.transparent = ##t
             <e, fs, gs, as, b,>4
             %! FIGURE_NAME
-            %@% ^ \markup \fontsize #2 \concat { [ b.2.r.2 \hspace #1 \raise #0.25 \fontsize #-2 (16) ] }
+            %@% ^ \markup \fontsize #2 \concat { [ "b.2.r.2" \hspace #1 \raise #0.25 \fontsize #-2 (16) ] }
             %! baca.repeat_tie()
             %! baca.IndicatorCommand._call()
             \repeatTie
@@ -4959,7 +4959,7 @@ segment.03.LH.Resonance.Voice = {
             % [LH_Resonance_Voice measure 3]
             <e, fs, gs, as, b,>4
             %! FIGURE_NAME
-            %@% ^ \markup \fontsize #2 \concat { [ b.2.r.3 \hspace #1 \raise #0.25 \fontsize #-2 (17) ] }
+            %@% ^ \markup \fontsize #2 \concat { [ "b.2.r.3" \hspace #1 \raise #0.25 \fontsize #-2 (17) ] }
             %! baca.repeat_tie()
             %! baca.IndicatorCommand._call()
             \repeatTie
@@ -5039,7 +5039,7 @@ segment.03.LH.Resonance.Voice = {
             \once \override Stem.transparent = ##t
             <e, fs, gs, as, b,>4
             %! FIGURE_NAME
-            %@% ^ \markup \fontsize #2 \concat { [ b.2.r.4 \hspace #1 \raise #0.25 \fontsize #-2 (18) ] }
+            %@% ^ \markup \fontsize #2 \concat { [ "b.2.r.4" \hspace #1 \raise #0.25 \fontsize #-2 (18) ] }
             %! baca.repeat_tie()
             %! baca.IndicatorCommand._call()
             \repeatTie
@@ -5066,7 +5066,7 @@ segment.03.LH.Resonance.Voice = {
             % [LH_Resonance_Voice measure 5]
             <e, fs, gs, as, b,>2
             %! FIGURE_NAME
-            %@% ^ \markup \fontsize #2 \concat { [ b.2.r.5 \hspace #1 \raise #0.25 \fontsize #-2 (19) ] }
+            %@% ^ \markup \fontsize #2 \concat { [ "b.2.r.5" \hspace #1 \raise #0.25 \fontsize #-2 (19) ] }
             %! baca.repeat_tie()
             %! baca.IndicatorCommand._call()
             \repeatTie
@@ -5093,7 +5093,7 @@ segment.03.LH.Resonance.Voice = {
             % [LH_Resonance_Voice measure 6]
             <e, fs, gs, as, b,>2
             %! FIGURE_NAME
-            %@% ^ \markup \fontsize #2 \concat { [ b.2.r.6 \hspace #1 \raise #0.25 \fontsize #-2 (20) ] }
+            %@% ^ \markup \fontsize #2 \concat { [ "b.2.r.6" \hspace #1 \raise #0.25 \fontsize #-2 (20) ] }
             %! baca.repeat_tie()
             %! baca.IndicatorCommand._call()
             \repeatTie
@@ -5159,7 +5159,7 @@ segment.03.LH.Resonance.Voice = {
             \once \override Accidental.X-extent = ##f
             <e, fs,! gs,! as,! b,>1
             %! FIGURE_NAME
-            %@% ^ \markup \fontsize #2 \concat { [ b.2.r.7 \hspace #1 \raise #0.25 \fontsize #-2 (21) ] }
+            %@% ^ \markup \fontsize #2 \concat { [ "b.2.r.7" \hspace #1 \raise #0.25 \fontsize #-2 (21) ] }
             %! baca._attach_shadow_tie_indicators()
             - \tweak stencil ##f
             %! baca._attach_shadow_tie_indicators()
@@ -5248,7 +5248,7 @@ segment.03.LH.Resonance.Voice = {
             \override Accidental.stencil = ##f
             <e, fs, gs, as, b,>1..
             %! FIGURE_NAME
-            %@% ^ \markup \fontsize #2 \concat { [ b.2.r.8 \hspace #1 \raise #0.25 \fontsize #-2 (22) ] }
+            %@% ^ \markup \fontsize #2 \concat { [ "b.2.r.8" \hspace #1 \raise #0.25 \fontsize #-2 (22) ] }
             %! baca.repeat_tie()
             %! baca.IndicatorCommand._call()
             \repeatTie
@@ -5275,7 +5275,7 @@ segment.03.LH.Resonance.Voice = {
             % [LH_Resonance_Voice measure 11]
             <e, fs, gs, as, b,>1.
             %! FIGURE_NAME
-            %@% ^ \markup \fontsize #2 \concat { [ b.2.r.9 \hspace #1 \raise #0.25 \fontsize #-2 (23) ] }
+            %@% ^ \markup \fontsize #2 \concat { [ "b.2.r.9" \hspace #1 \raise #0.25 \fontsize #-2 (23) ] }
             %! baca.repeat_tie()
             %! baca.IndicatorCommand._call()
             \repeatTie

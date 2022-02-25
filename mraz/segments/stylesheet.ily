@@ -18,3 +18,12 @@
   oddFooterMarkup = \evenFooterMarkup
   print-first-page-number = ##t
 }
+
+\layout
+{
+  \context
+  {
+    \Score
+    \override BarNumber.stencil = ##f
+  }
+}
