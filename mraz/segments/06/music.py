@@ -9,11 +9,7 @@ from mraz import library
 #########################################################################################
 
 score = library.make_empty_score()
-
-figures = baca.FigureAccumulator(
-    score,
-    voice_abbreviations=library.voice_abbreviations,
-)
+figures = baca.FigureAccumulator(score, library.voice_abbreviations)
 section_2 = library.make_section_2_collections()
 section_5 = library.make_section_5_collections()
 section_8 = library.make_section_8_collections()
