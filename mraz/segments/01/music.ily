@@ -617,11 +617,13 @@ segment.01.RH.Voice.I = {
             %! baca.markup()
             %! baca.IndicatorCommand._call()
             ^ \mraz-ottava-brackets-always-govern-markup
-            %! FIGURE_NAME
-            %@% ^ \markup \fontsize #2 \concat { [ "b.1.1" \hspace #1 \raise #0.25 \fontsize #-2 (1) ] }
             %! DEFAULT_INSTRUMENT_ALERT
             %! baca._attach_latent_indicator_alert()
             ^ \baca-default-indicator-markup "(“Piano”)"
+            %! FIGURE_NAME
+            %@% - \tweak color #blue
+            %! FIGURE_NAME
+            %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (1) \hspace #1 "4.5.R.3" ] }
             %! baca.attach_color_literal(2)
             %! DEFAULT_CLEF_REDRAW_COLOR
             \override PianoMusicRHStaff.Clef.color = #(x11-color 'violet)
@@ -954,7 +956,9 @@ segment.01.RH.Voice.II = {
             %! EXPLICIT_DYNAMIC
             \f
             %! FIGURE_NAME
-            %@% ^ \markup \fontsize #2 \concat { [ "b.1.2" \hspace #1 \raise #0.25 \fontsize #-2 (2) ] }
+            %@% - \tweak color #blue
+            %! FIGURE_NAME
+            %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (2) \hspace #1 "4.5.L.1-4" ] }
             %! EXPLICIT_DYNAMIC_COLOR
             %! _treat_persistent_wrapper(1)
             %! baca.hairpin()
@@ -1145,7 +1149,9 @@ segment.01.RH.Voice.II = {
             %! baca.music()
             r4
             %! FIGURE_NAME
-            %@% ^ \markup \fontsize #2 \concat { [ "b.1.6" \hspace #1 \raise #0.25 \fontsize #-2 (6) ] }
+            %@% - \tweak color #blue
+            %! FIGURE_NAME
+            %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (6) ] }}
 
         %! baca.music()
         }
@@ -1174,7 +1180,9 @@ segment.01.RH.Voice.II = {
             %! baca.music()
             r4
             %! FIGURE_NAME
-            %@% ^ \markup \fontsize #2 \concat { [ "b.1.8" \hspace #1 \raise #0.25 \fontsize #-2 (8) ] }
+            %@% - \tweak color #blue
+            %! FIGURE_NAME
+            %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (8) ] }}
 
         %! baca.music()
         }
@@ -1227,7 +1235,9 @@ segment.01.RH.Voice.II = {
             %! baca.IndicatorCommand._call()
             - \accent
             %! FIGURE_NAME
-            %@% ^ \markup \fontsize #2 \concat { [ "b.1.10" \hspace #1 \raise #0.25 \fontsize #-2 (10) ] }
+            %@% - \tweak color #blue
+            %! FIGURE_NAME
+            %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (10) \hspace #1 "5.1.R.3" ] }
 
             %! baca.rest_up()
             %! baca.OverrideCommand._call(1)
@@ -1296,7 +1306,9 @@ segment.01.RH.Voice.II = {
             %! baca.music()
             r4
             %! FIGURE_NAME
-            %@% ^ \markup \fontsize #2 \concat { [ "b.1.12" \hspace #1 \raise #0.25 \fontsize #-2 (12) ] }
+            %@% - \tweak color #blue
+            %! FIGURE_NAME
+            %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (12) ] }}
 
         %! baca.music()
         }
@@ -1547,7 +1559,9 @@ segment.01.RH.Voice.III = {
             %! baca.IndicatorCommand._call()
             - \tenuto
             %! FIGURE_NAME
-            %@% ^ \markup \fontsize #2 \concat { [ "b.1.7" \hspace #1 \raise #0.25 \fontsize #-2 (7) ] }
+            %@% - \tweak color #blue
+            %! FIGURE_NAME
+            %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (7) \hspace #1 "6.1.R.3" ] }
 
             %! baca.music()
             cs'''!8
@@ -1594,7 +1608,9 @@ segment.01.RH.Voice.III = {
             %! baca.music()
             r8
             %! FIGURE_NAME
-            %@% ^ \markup \fontsize #2 \concat { [ "b.1.9" \hspace #1 \raise #0.25 \fontsize #-2 (9) ] }
+            %@% - \tweak color #blue
+            %! FIGURE_NAME
+            %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (9) \hspace #1 "6.1.R.2" ] }
 
             %! baca.music()
             d'''8
@@ -1672,12 +1688,18 @@ segment.01.RH.Voice.III = {
             %! baca.SpannerIndicatorCommand._call(2)
             %! SPANNER_START
             \ottava 1
+            %! baca.ottava_bracket_staff_padding()
+            %! baca.OverrideCommand._call(1)
+            \override Staff.OttavaBracket.staff-padding = 9
             %! baca.stem_down()
             %! baca.OverrideCommand._call(1)
             \override Stem.direction = #down
             %! baca.tuplet_bracket_down()
             %! baca.OverrideCommand._call(1)
             \override TupletBracket.direction = #down
+            %! baca.tuplet_bracket_staff_padding()
+            %! baca.OverrideCommand._call(1)
+            \override TupletBracket.staff-padding = 4
             %! baca.music()
             a''4
             %! EXPLICIT_DYNAMIC_COLOR
@@ -1696,7 +1718,9 @@ segment.01.RH.Voice.III = {
             %! baca.IndicatorCommand._call()
             - \tenuto
             %! FIGURE_NAME
-            %@% ^ \markup \fontsize #2 \concat { [ "b.1.11" \hspace #1 \raise #0.25 \fontsize #-2 (11) ] }
+            %@% - \tweak color #blue
+            %! FIGURE_NAME
+            %@% _ \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (11) \hspace #1 "5.1.L.1" ] }
 
             %! baca.rest_down()
             %! baca.OverrideCommand._call(1)
@@ -1746,12 +1770,18 @@ segment.01.RH.Voice.III = {
 
             %! baca.music()
             r4
+            %! baca.ottava_bracket_staff_padding()
+            %! baca.OverrideCommand._call(2)
+            \revert Staff.OttavaBracket.staff-padding
             %! baca.rest_down()
             %! baca.OverrideCommand._call(2)
             \revert Rest.direction
             %! baca.tuplet_bracket_down()
             %! baca.OverrideCommand._call(2)
             \revert TupletBracket.direction
+            %! baca.tuplet_bracket_staff_padding()
+            %! baca.OverrideCommand._call(2)
+            \revert TupletBracket.staff-padding
 
         %! baca.music()
         }
@@ -3123,7 +3153,9 @@ segment.01.LH.Voice.IV = {
             %! EXPLICIT_DYNAMIC
             \ff
             %! FIGURE_NAME
-            %@% ^ \markup \fontsize #2 \concat { [ "b.1.3" \hspace #1 \raise #0.25 \fontsize #-2 (3) ] }
+            %@% - \tweak color #blue
+            %! FIGURE_NAME
+            %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (3) \hspace #1 "7.1.L.5" ] }
             [
 
             \set stemLeftBeamCount = 2
@@ -3559,7 +3591,9 @@ segment.01.LH.Voice.V = {
             %! EXPLICIT_DYNAMIC
             \ppp
             %! FIGURE_NAME
-            %@% ^ \markup \fontsize #2 \concat { [ "b.1.5" \hspace #1 \raise #0.25 \fontsize #-2 (5) ] }
+            %@% - \tweak color #blue
+            %! FIGURE_NAME
+            %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (5) \hspace #1 "8.3.R.5" ] }
 
             %! baca.rest_up()
             %! baca.OverrideCommand._call(1)
@@ -3941,7 +3975,9 @@ segment.01.LH.Voice.VI = {
             %! EXPLICIT_DYNAMIC
             \f
             %! FIGURE_NAME
-            %@% ^ \markup \fontsize #2 \concat { [ "b.1.4" \hspace #1 \raise #0.25 \fontsize #-2 (4) ] }
+            %@% - \tweak color #blue
+            %! FIGURE_NAME
+            %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (4) \hspace #1 "8.3.L.2" ] }
             %! baca.attach_color_literal(2)
             %! EXPLICIT_CLEF_REDRAW_COLOR
             \override PianoMusicLHStaff.Clef.color = #(x11-color 'DeepSkyBlue2)

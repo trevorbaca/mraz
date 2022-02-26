@@ -2967,7 +2967,9 @@ segment.02.LH.Voice.V = {
             %! EXPLICIT_DYNAMIC
             \ppp
             %! FIGURE_NAME
-            %@% ^ \markup \fontsize #2 \concat { [ "lh-5 8.3.1" \hspace #1 \raise #0.25 \fontsize #-2 (1) ] }
+            %@% - \tweak color #blue
+            %! FIGURE_NAME
+            %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (1) \hspace #1 "lh-5 8.3.1" ] }
 
             %! baca.music()
             r32
@@ -2999,7 +3001,9 @@ segment.02.LH.Voice.V = {
             %! baca.music()
             g,,8
             %! FIGURE_NAME
-            %@% ^ \markup \fontsize #2 \concat { [ "lh-5 8.3.2" \hspace #1 \raise #0.25 \fontsize #-2 (2) ] }
+            %@% - \tweak color #blue
+            %! FIGURE_NAME
+            %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (2) \hspace #1 "lh-5 8.3.2" ] }
 
             %! baca.rest_up()
             %! baca.OverrideCommand._call(1)
@@ -3069,7 +3073,9 @@ segment.02.LH.Voice.V = {
             %! baca.music()
             cs,,!32
             %! FIGURE_NAME
-            %@% ^ \markup \fontsize #2 \concat { [ "lh-5 8.3.3" \hspace #1 \raise #0.25 \fontsize #-2 (3) ] }
+            %@% - \tweak color #blue
+            %! FIGURE_NAME
+            %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (3) \hspace #1 "lh-5 8.3.3" ] }
 
             %! baca.music()
             r4...
@@ -3105,7 +3111,9 @@ segment.02.LH.Voice.V = {
             %! baca.music()
             bf,,!8.
             %! FIGURE_NAME
-            %@% ^ \markup \fontsize #2 \concat { [ "lh-5 8.3.4" \hspace #1 \raise #0.25 \fontsize #-2 (4) ] }
+            %@% - \tweak color #blue
+            %! FIGURE_NAME
+            %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (4) \hspace #1 "lh-5 8.3.4" ] }
 
             %! baca.rest_up()
             %! baca.OverrideCommand._call(1)
@@ -3153,7 +3161,9 @@ segment.02.LH.Voice.V = {
             %! baca.music()
             d,,8
             %! FIGURE_NAME
-            %@% ^ \markup \fontsize #2 \concat { [ "lh-5 8.3.5" \hspace #1 \raise #0.25 \fontsize #-2 (5) ] }
+            %@% - \tweak color #blue
+            %! FIGURE_NAME
+            %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (5) \hspace #1 "lh-5 8.3.5" ] }
 
             %! baca.music()
             r32
@@ -3185,7 +3195,9 @@ segment.02.LH.Voice.V = {
             %! baca.music()
             b,,,8
             %! FIGURE_NAME
-            %@% ^ \markup \fontsize #2 \concat { [ "lh-5 8.3.6" \hspace #1 \raise #0.25 \fontsize #-2 (6) ] }
+            %@% - \tweak color #blue
+            %! FIGURE_NAME
+            %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (6) \hspace #1 "lh-5 8.3.6" ] }
 
             %! baca.music()
             r32
@@ -3221,7 +3233,9 @@ segment.02.LH.Voice.V = {
             %! baca.music()
             ef,,!32
             %! FIGURE_NAME
-            %@% ^ \markup \fontsize #2 \concat { [ "lh-5 8.3.7" \hspace #1 \raise #0.25 \fontsize #-2 (7) ] }
+            %@% - \tweak color #blue
+            %! FIGURE_NAME
+            %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (7) \hspace #1 "lh-5 8.3.7" ] }
 
             %! baca.rest_up()
             %! baca.OverrideCommand._call(1)
@@ -3269,7 +3283,9 @@ segment.02.LH.Voice.V = {
             %! baca.music()
             c,8.
             %! FIGURE_NAME
-            %@% ^ \markup \fontsize #2 \concat { [ "lh-5 8.3.8" \hspace #1 \raise #0.25 \fontsize #-2 (8) ] }
+            %@% - \tweak color #blue
+            %! FIGURE_NAME
+            %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (8) \hspace #1 "lh-5 8.3.8" ] }
 
             %! baca.music()
             r32
@@ -3304,7 +3320,9 @@ segment.02.LH.Voice.V = {
             %! baca.music()
             fs,,!8
             %! FIGURE_NAME
-            %@% ^ \markup \fontsize #2 \concat { [ "lh-5 8.3.9" \hspace #1 \raise #0.25 \fontsize #-2 (9) ] }
+            %@% - \tweak color #blue
+            %! FIGURE_NAME
+            %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (9) \hspace #1 "lh-5 8.3.9" ] }
 
             %! baca.music()
             r32
@@ -3371,7 +3389,9 @@ segment.02.LH.Voice.V = {
             %! baca.music()
             a,,,32
             %! FIGURE_NAME
-            %@% ^ \markup \fontsize #2 \concat { [ "lh-5 8.3.10" \hspace #1 \raise #0.25 \fontsize #-2 (10) ] }
+            %@% - \tweak color #blue
+            %! FIGURE_NAME
+            %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (10) \hspace #1 "lh-5 8.3.10" ] }
 
             %! baca.rest_up()
             %! baca.OverrideCommand._call(1)
@@ -3407,7 +3427,9 @@ segment.02.LH.Voice.V = {
             %! baca.music()
             b,,8.
             %! FIGURE_NAME
-            %@% ^ \markup \fontsize #2 \concat { [ "lh-5 8.3.11" \hspace #1 \raise #0.25 \fontsize #-2 (11) ] }
+            %@% - \tweak color #blue
+            %! FIGURE_NAME
+            %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (11) \hspace #1 "lh-5 8.3.11" ] }
 
             %! baca.music()
             r32
@@ -3451,7 +3473,9 @@ segment.02.LH.Voice.V = {
             %! baca.music()
             fs,,!8
             %! FIGURE_NAME
-            %@% ^ \markup \fontsize #2 \concat { [ "lh-5 8.3.12" \hspace #1 \raise #0.25 \fontsize #-2 (12) ] }
+            %@% - \tweak color #blue
+            %! FIGURE_NAME
+            %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (12) \hspace #1 "lh-5 8.3.12" ] }
 
             %! baca.music()
             r32
@@ -3765,7 +3789,9 @@ segment.02.LH.Voice.VI = {
             %! baca.IndicatorCommand._call()
             - \tenuto
             %! FIGURE_NAME
-            %@% ^ \markup \fontsize #2 \concat { [ "lh-6 8.3.1" \hspace #1 \raise #0.25 \fontsize #-2 (13) ] }
+            %@% - \tweak color #blue
+            %! FIGURE_NAME
+            %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (13) \hspace #1 "lh-6 8.3.1" ] }
 
             %! baca.rest_position()
             %! baca.OverrideCommand._call(1)
@@ -3818,7 +3844,9 @@ segment.02.LH.Voice.VI = {
             %! baca.IndicatorCommand._call()
             - \tenuto
             %! FIGURE_NAME
-            %@% ^ \markup \fontsize #2 \concat { [ "lh-6 8.3.2" \hspace #1 \raise #0.25 \fontsize #-2 (14) ] }
+            %@% - \tweak color #blue
+            %! FIGURE_NAME
+            %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (14) \hspace #1 "lh-6 8.3.2" ] }
 
             %! baca.rest_up()
             %! baca.OverrideCommand._call(1)
@@ -3863,7 +3891,9 @@ segment.02.LH.Voice.VI = {
             %! baca.IndicatorCommand._call()
             - \tenuto
             %! FIGURE_NAME
-            %@% ^ \markup \fontsize #2 \concat { [ "lh-6 8.3.3" \hspace #1 \raise #0.25 \fontsize #-2 (15) ] }
+            %@% - \tweak color #blue
+            %! FIGURE_NAME
+            %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (15) \hspace #1 "lh-6 8.3.3" ] }
 
             %! baca.music()
             r8.
@@ -3914,7 +3944,9 @@ segment.02.LH.Voice.VI = {
             %! baca.IndicatorCommand._call()
             - \tenuto
             %! FIGURE_NAME
-            %@% ^ \markup \fontsize #2 \concat { [ "lh-6 8.3.4" \hspace #1 \raise #0.25 \fontsize #-2 (16) ] }
+            %@% - \tweak color #blue
+            %! FIGURE_NAME
+            %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (16) \hspace #1 "lh-6 8.3.4" ] }
 
             %! baca.music()
             r8.
@@ -3962,7 +3994,9 @@ segment.02.LH.Voice.VI = {
             %! baca.IndicatorCommand._call()
             - \tenuto
             %! FIGURE_NAME
-            %@% ^ \markup \fontsize #2 \concat { [ "lh-6 8.3.5" \hspace #1 \raise #0.25 \fontsize #-2 (17) ] }
+            %@% - \tweak color #blue
+            %! FIGURE_NAME
+            %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (17) \hspace #1 "lh-6 8.3.5" ] }
 
             %! baca.music()
             e,,8
@@ -4007,7 +4041,9 @@ segment.02.LH.Voice.VI = {
             %! baca.IndicatorCommand._call()
             - \tenuto
             %! FIGURE_NAME
-            %@% ^ \markup \fontsize #2 \concat { [ "lh-6 8.3.6" \hspace #1 \raise #0.25 \fontsize #-2 (18) ] }
+            %@% - \tweak color #blue
+            %! FIGURE_NAME
+            %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (18) \hspace #1 "lh-6 8.3.6" ] }
 
             %! baca.music()
             r4

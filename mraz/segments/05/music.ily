@@ -731,7 +731,9 @@ segment.05.RH.Voice.III = {
             %! baca.IndicatorCommand._call()
             - \tenuto
             %! FIGURE_NAME
-            %@% ^ \markup \fontsize #2 \concat { [ "rh-3 6.1.1" \hspace #1 \raise #0.25 \fontsize #-2 (1) ] }
+            %@% - \tweak color #blue
+            %! FIGURE_NAME
+            %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (1) \hspace #1 "rh-3 6.1.1" ] }
 
             %! baca.music()
             a'''8
@@ -837,7 +839,9 @@ segment.05.RH.Voice.III = {
             %! baca.IndicatorCommand._call()
             - \tenuto
             %! FIGURE_NAME
-            %@% ^ \markup \fontsize #2 \concat { [ "rh-3 6.1.2" \hspace #1 \raise #0.25 \fontsize #-2 (2) ] }
+            %@% - \tweak color #blue
+            %! FIGURE_NAME
+            %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (2) \hspace #1 "rh-3 6.1.2" ] }
 
             %! baca.music()
             cs'''!8
@@ -882,7 +886,9 @@ segment.05.RH.Voice.III = {
             %! baca.music()
             r8
             %! FIGURE_NAME
-            %@% ^ \markup \fontsize #2 \concat { [ "rh-3 6.1.3" \hspace #1 \raise #0.25 \fontsize #-2 (3) ] }
+            %@% - \tweak color #blue
+            %! FIGURE_NAME
+            %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (3) \hspace #1 "rh-3 6.1.3" ] }
 
             %! baca.music()
             d'''8
@@ -962,7 +968,9 @@ segment.05.RH.Voice.III = {
             %! baca.IndicatorCommand._call()
             - \tenuto
             %! FIGURE_NAME
-            %@% ^ \markup \fontsize #2 \concat { [ "rh-3 6.1.4" \hspace #1 \raise #0.25 \fontsize #-2 (4) ] }
+            %@% - \tweak color #blue
+            %! FIGURE_NAME
+            %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (4) \hspace #1 "rh-3 6.1.4" ] }
 
             %! baca.music()
             e''8
@@ -2112,7 +2120,9 @@ segment.05.LH.Voice.IV = {
             %! baca.IndicatorCommand._call()
             - \tenuto
             %! FIGURE_NAME
-            %@% ^ \markup \fontsize #2 \concat { [ "lh-4 6.1.1" \hspace #1 \raise #0.25 \fontsize #-2 (5) ] }
+            %@% - \tweak color #blue
+            %! FIGURE_NAME
+            %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (5) \hspace #1 "lh-4 6.1.1" ] }
 
             %! baca.music()
             r16
@@ -2175,7 +2185,9 @@ segment.05.LH.Voice.IV = {
             %! baca.IndicatorCommand._call()
             - \tenuto
             %! FIGURE_NAME
-            %@% ^ \markup \fontsize #2 \concat { [ "lh-4 6.1.2" \hspace #1 \raise #0.25 \fontsize #-2 (6) ] }
+            %@% - \tweak color #blue
+            %! FIGURE_NAME
+            %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (6) \hspace #1 "lh-4 6.1.2" ] }
 
             %! baca.music()
             r8
@@ -2233,7 +2245,9 @@ segment.05.LH.Voice.IV = {
             %! baca.IndicatorCommand._call()
             - \tenuto
             %! FIGURE_NAME
-            %@% ^ \markup \fontsize #2 \concat { [ "lh-4 6.1.3" \hspace #1 \raise #0.25 \fontsize #-2 (7) ] }
+            %@% - \tweak color #blue
+            %! FIGURE_NAME
+            %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (7) \hspace #1 "lh-4 6.1.3" ] }
 
             %! baca.music()
             r32
@@ -2296,7 +2310,9 @@ segment.05.LH.Voice.IV = {
             %! baca.IndicatorCommand._call()
             - \tenuto
             %! FIGURE_NAME
-            %@% ^ \markup \fontsize #2 \concat { [ "lh-4 6.1.4" \hspace #1 \raise #0.25 \fontsize #-2 (8) ] }
+            %@% - \tweak color #blue
+            %! FIGURE_NAME
+            %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (8) \hspace #1 "lh-4 6.1.4" ] }
 
             %! baca.music()
             r32
