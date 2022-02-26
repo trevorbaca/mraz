@@ -653,11 +653,13 @@ segment.07.RH.Voice.I = {
                 %! baca._set_status_tag()
                 %! EXPLICIT_DYNAMIC
                 \fff
-                %! FIGURE_NAME
-                %@% ^ \markup \fontsize #2 \concat { [ "rh-1 7.1.1" \hspace #1 \raise #0.25 \fontsize #-2 (1) ] }
                 %! REAPPLIED_INSTRUMENT_ALERT
                 %! baca._attach_latent_indicator_alert()
                 ^ \baca-reapplied-indicator-markup "(“Piano”)"
+                %! FIGURE_NAME
+                %@% - \tweak color #blue
+                %! FIGURE_NAME
+                %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (1) \hspace #1 "rh-1 7.1.1" ] }
                 [
                 %! baca.attach_color_literal(2)
                 %! REAPPLIED_CLEF_REDRAW_COLOR
@@ -777,7 +779,9 @@ segment.07.RH.Voice.I = {
                 %! baca.music()
                 fs''!16
                 %! FIGURE_NAME
-                %@% ^ \markup \fontsize #2 \concat { [ "rh-1 7.1.2" \hspace #1 \raise #0.25 \fontsize #-2 (3) ] }
+                %@% - \tweak color #blue
+                %! FIGURE_NAME
+                %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (3) \hspace #1 "rh-1 7.1.2" ] }
 
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 2
@@ -856,7 +860,9 @@ segment.07.RH.Voice.I = {
                 %! baca.music()
                 af''!16
                 %! FIGURE_NAME
-                %@% ^ \markup \fontsize #2 \concat { [ "rh-1 7.1.3" \hspace #1 \raise #0.25 \fontsize #-2 (5) ] }
+                %@% - \tweak color #blue
+                %! FIGURE_NAME
+                %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (5) \hspace #1 "rh-1 7.1.3" ] }
                 [
 
                 \set stemLeftBeamCount = 2
@@ -910,7 +916,9 @@ segment.07.RH.Voice.I = {
                 %! baca.music()
                 af''!16
                 %! FIGURE_NAME
-                %@% ^ \markup \fontsize #2 \concat { [ "rh-1 7.1.4" \hspace #1 \raise #0.25 \fontsize #-2 (7) ] }
+                %@% - \tweak color #blue
+                %! FIGURE_NAME
+                %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (7) \hspace #1 "rh-1 7.1.4" ] }
 
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 2
@@ -979,7 +987,9 @@ segment.07.RH.Voice.I = {
                 %! baca.music()
                 f'''16
                 %! FIGURE_NAME
-                %@% ^ \markup \fontsize #2 \concat { [ "rh-1 7.1.5" \hspace #1 \raise #0.25 \fontsize #-2 (10) ] }
+                %@% - \tweak color #blue
+                %! FIGURE_NAME
+                %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (10) \hspace #1 "rh-1 7.1.5" ] }
                 [
 
                 \set stemLeftBeamCount = 2
@@ -1798,7 +1808,9 @@ segment.07.RH.Voice.II = {
             %! REDUNDANT_DYNAMIC
             \fff
             %! FIGURE_NAME
-            %@% ^ \markup \fontsize #2 \concat { [ "rh-2 7.1.1" \hspace #1 \raise #0.25 \fontsize #-2 (2) ] }
+            %@% - \tweak color #blue
+            %! FIGURE_NAME
+            %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (2) \hspace #1 "rh-2 7.1.1" ] }
             [
             %! baca.slur()
             %! baca.SpannerIndicatorCommand._call(2)
@@ -1857,7 +1869,9 @@ segment.07.RH.Voice.II = {
                 %! baca.music()
                 cs''!16
                 %! FIGURE_NAME
-                %@% ^ \markup \fontsize #2 \concat { [ "rh-2 7.1.2" \hspace #1 \raise #0.25 \fontsize #-2 (4) ] }
+                %@% - \tweak color #blue
+                %! FIGURE_NAME
+                %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (4) \hspace #1 "rh-2 7.1.2" ] }
                 %! baca.slur()
                 %! baca.SpannerIndicatorCommand._call(2)
                 %! SPANNER_START
@@ -1974,7 +1988,9 @@ segment.07.RH.Voice.II = {
             %! baca.music()
             c''16
             %! FIGURE_NAME
-            %@% ^ \markup \fontsize #2 \concat { [ "rh-2 7.1.3" \hspace #1 \raise #0.25 \fontsize #-2 (6) ] }
+            %@% - \tweak color #blue
+            %! FIGURE_NAME
+            %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (6) \hspace #1 "rh-2 7.1.3" ] }
             [
             %! baca.slur()
             %! baca.SpannerIndicatorCommand._call(2)
@@ -2107,7 +2123,9 @@ segment.07.RH.Voice.II = {
                 %! baca.music()
                 a''16
                 %! FIGURE_NAME
-                %@% ^ \markup \fontsize #2 \concat { [ "rh-2 7.1.4" \hspace #1 \raise #0.25 \fontsize #-2 (8) ] }
+                %@% - \tweak color #blue
+                %! FIGURE_NAME
+                %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (8) \hspace #1 "rh-2 7.1.4" ] }
                 %! baca.slur()
                 %! baca.SpannerIndicatorCommand._call(2)
                 %! SPANNER_START
@@ -2203,7 +2221,9 @@ segment.07.RH.Voice.II = {
             %! baca.music()
             f''16
             %! FIGURE_NAME
-            %@% ^ \markup \fontsize #2 \concat { [ "rh-2 7.1.5" \hspace #1 \raise #0.25 \fontsize #-2 (9) ] }
+            %@% - \tweak color #blue
+            %! FIGURE_NAME
+            %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (9) \hspace #1 "rh-2 7.1.5" ] }
             [
             %! baca.slur()
             %! baca.SpannerIndicatorCommand._call(2)
@@ -2250,7 +2270,9 @@ segment.07.RH.Voice.II = {
             %! baca.music()
             e'''16
             %! FIGURE_NAME
-            %@% ^ \markup \fontsize #2 \concat { [ "rh-2 7.1.6" \hspace #1 \raise #0.25 \fontsize #-2 (11) ] }
+            %@% - \tweak color #blue
+            %! FIGURE_NAME
+            %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (11) \hspace #1 "rh-2 7.1.6" ] }
             %! baca.slur()
             %! baca.SpannerIndicatorCommand._call(2)
             %! SPANNER_START
@@ -4380,7 +4402,9 @@ segment.07.LH.Voice.IV = {
             %! EXPLICIT_DYNAMIC
             \ff
             %! FIGURE_NAME
-            %@% ^ \markup \fontsize #2 \concat { [ "lh-4 7.1.1" \hspace #1 \raise #0.25 \fontsize #-2 (12) ] }
+            %@% - \tweak color #blue
+            %! FIGURE_NAME
+            %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (12) \hspace #1 "lh-4 7.1.1" ] }
             [
 
             \set stemLeftBeamCount = 2
@@ -4481,7 +4505,9 @@ segment.07.LH.Voice.IV = {
             %! REDUNDANT_DYNAMIC
             \ff
             %! FIGURE_NAME
-            %@% ^ \markup \fontsize #2 \concat { [ "lh-4 7.1.2" \hspace #1 \raise #0.25 \fontsize #-2 (14) ] }
+            %@% - \tweak color #blue
+            %! FIGURE_NAME
+            %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (14) \hspace #1 "lh-4 7.1.2" ] }
             [
 
             \set stemLeftBeamCount = 2
@@ -4533,7 +4559,9 @@ segment.07.LH.Voice.IV = {
             %! REDUNDANT_DYNAMIC
             \ff
             %! FIGURE_NAME
-            %@% ^ \markup \fontsize #2 \concat { [ "lh-4 7.1.3" \hspace #1 \raise #0.25 \fontsize #-2 (16) ] }
+            %@% - \tweak color #blue
+            %! FIGURE_NAME
+            %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (16) \hspace #1 "lh-4 7.1.3" ] }
             [
 
             \set stemLeftBeamCount = 2
@@ -5053,7 +5081,9 @@ segment.07.LH.Voice.V = {
                 %! EXPLICIT_DYNAMIC
                 \pp
                 %! FIGURE_NAME
-                %@% ^ \markup \fontsize #2 \concat { [ "lh-5 7.1.1" \hspace #1 \raise #0.25 \fontsize #-2 (13) ] }
+                %@% - \tweak color #blue
+                %! FIGURE_NAME
+                %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (13) \hspace #1 "lh-5 7.1.1" ] }
                 [
                 %! baca.slur()
                 %! baca.SpannerIndicatorCommand._call(2)
@@ -5229,7 +5259,9 @@ segment.07.LH.Voice.V = {
                 %! REDUNDANT_DYNAMIC
                 \pp
                 %! FIGURE_NAME
-                %@% ^ \markup \fontsize #2 \concat { [ "lh-5 7.1.2" \hspace #1 \raise #0.25 \fontsize #-2 (15) ] }
+                %@% - \tweak color #blue
+                %! FIGURE_NAME
+                %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (15) \hspace #1 "lh-5 7.1.2" ] }
                 [
                 %! baca.slur()
                 %! baca.SpannerIndicatorCommand._call(2)
