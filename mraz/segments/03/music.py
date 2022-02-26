@@ -16,8 +16,6 @@ section_6 = library.make_section_6_collections()
 section_7 = library.make_section_7_collections()
 resonance = baca.PitchSet("e, fs, gs, as, b,", item_class=abjad.NamedPitch)
 
-##################################### [C] #####################################
-
 figures(
     library.rh_v4,
     section_7.stage_1.lh[-1].transpose(4 * 7),
