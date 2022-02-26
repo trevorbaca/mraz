@@ -31,7 +31,8 @@ figures(
     ),
     baca.dynamic("ff"),
     signature=4,
-    figure_name="b.2.1",
+    # figure_name="b.2.1",
+    figure_name="7.1.L.5",
 )
 
 figures(
@@ -39,7 +40,7 @@ figures(
     "r4",
     baca.rest_transparent(),
     signature=4,
-    figure_name="b.2.2",
+    # figure_name="b.2.2",
 )
 
 figures(
@@ -55,7 +56,8 @@ figures(
     baca.staccato(baca.selectors.pheads()),
     baca.stem_down(),
     signature=4,
-    figure_name="b.2.3",
+    # figure_name="b.2.3",
+    figure_name="2.2.R.1.1",
 )
 
 figures(
@@ -63,7 +65,7 @@ figures(
     "r4",
     baca.rest_transparent(),
     signature=4,
-    figure_name="b.2.4",
+    # figure_name="b.2.4",
 )
 
 figures(
@@ -79,7 +81,8 @@ figures(
     ),
     baca.dynamic("p"),
     signature=4,
-    figure_name="b.2.5",
+    # figure_name="b.2.5",
+    figure_name="7.1.L.5'",
 )
 
 figures(
@@ -94,7 +97,8 @@ figures(
     baca.staccato(baca.selectors.pheads()),
     baca.stem_down(),
     signature=4,
-    figure_name="b.2.6",
+    # figure_name="b.2.6",
+    figure_name="2.2.R.1.1-2",
 )
 
 figures(
@@ -102,7 +106,7 @@ figures(
     "r4",
     baca.rest_transparent(),
     signature=4,
-    figure_name="b.2.7",
+    # figure_name="b.2.7",
 )
 
 figures(
@@ -112,8 +116,10 @@ figures(
     baca.dynamic("ff"),
     baca.register(-12, 12),
     baca.tuplet_bracket_up(),
+    baca.tuplet_bracket_staff_padding(3),
     signature=4,
-    figure_name="b.2.8",
+    # figure_name="b.2.8",
+    figure_name="4.1.R.1",
 )
 
 figures(
@@ -125,9 +131,11 @@ figures(
     baca.register(-6, 6),
     baca.rest_up(),
     baca.tenuto(baca.selectors.pheads()),
-    anchor=baca.anchor_to_figure("b.2.8"),
+    # anchor=baca.anchor_to_figure("b.2.8"),
+    anchor=baca.anchor_to_figure("4.1.R.1"),
     signature=4,
-    figure_name="b.2.9",
+    # figure_name="b.2.9",
+    figure_name="4.1.L.1",
     hide_time_signature=True,
 )
 
@@ -143,41 +151,45 @@ figures(
     baca.staccato(baca.selectors.pheads()),
     baca.stem_down(),
     signature=4,
-    figure_name="b.2.10",
+    # figure_name="b.2.10",
+    figure_name="2.2.R.1.1-4",
 )
 
 figures(
     library.rh_v1,
-    section_4.stage_5.rh[0],
+    section_4.stage_5.rh[1 - 1],
     baca.figure([28], 16),
     rmakers.beam_groups(),
     baca.dynamic("f"),
     baca.register(36),
     baca.tenuto(baca.selectors.pheads()),
     signature=4,
-    figure_name="b.2.11",
+    # figure_name="b.2.11",
+    figure_name="4.5.R.1",
 )
 
 figures(
     library.rh_v1,
-    section_4.stage_5.rh[1],
+    section_4.stage_5.rh[2 - 1],
     baca.figure([24], 16),
     rmakers.beam_groups(),
     baca.register(36),
     baca.tenuto(baca.selectors.pheads()),
     signature=4,
-    figure_name="b.2.12",
+    # figure_name="b.2.12",
+    figure_name="4.5.R.2",
 )
 
 figures(
     library.rh_v1,
-    section_4.stage_5.rh[2],
+    section_4.stage_5.rh[3 - 1],
     baca.figure([16], 16),
     rmakers.beam_groups(),
     baca.register(36),
     baca.tenuto(baca.selectors.pheads()),
     signature=4,
-    figure_name="b.2.13",
+    # figure_name="b.2.13",
+    figure_name="4.5.R.3",
     hide_time_signature=True,
 )
 
@@ -195,9 +207,11 @@ figures(
     baca.ottava(),
     baca.register(10, 36),
     baca.slur_up(),
-    anchor=baca.anchor_to_figure("b.2.13"),
+    # anchor=baca.anchor_to_figure("b.2.13"),
+    anchor=baca.anchor_to_figure("4.5.R.3"),
     signature=4,
-    figure_name="b.2.14",
+    # figure_name="b.2.14",
+    figure_name="4.5.L.1-4",
 )
 
 figures(
@@ -205,9 +219,10 @@ figures(
     [resonance],
     baca.figure([8], 16),
     rmakers.beam_groups(),
-    anchor=baca.anchor_to_figure("b.2.1"),
+    # anchor=baca.anchor_to_figure("b.2.1"),
+    anchor=baca.anchor_to_figure("7.1.L.5"),
     signature=4,
-    figure_name="b.2.r.1",
+    # figure_name="b.2.r.1",
     hide_time_signature=True,
 )
 
@@ -217,7 +232,7 @@ figures(
     baca.figure([4], 16),
     rmakers.beam_groups(),
     signature=4,
-    figure_name="b.2.r.2",
+    # figure_name="b.2.r.2",
     hide_time_signature=True,
 )
 
@@ -227,7 +242,7 @@ figures(
     baca.figure([5], 16),
     rmakers.beam_groups(),
     signature=4,
-    figure_name="b.2.r.3",
+    # figure_name="b.2.r.3",
     hide_time_signature=True,
 )
 
@@ -237,7 +252,7 @@ figures(
     baca.figure([4], 16),
     rmakers.beam_groups(),
     signature=4,
-    figure_name="b.2.r.4",
+    # figure_name="b.2.r.4",
     hide_time_signature=True,
 )
 
@@ -247,7 +262,7 @@ figures(
     baca.figure([8], 16),
     rmakers.beam_groups(),
     signature=4,
-    figure_name="b.2.r.5",
+    # figure_name="b.2.r.5",
     hide_time_signature=True,
 )
 
@@ -257,7 +272,7 @@ figures(
     baca.figure([10], 16),
     rmakers.beam_groups(),
     signature=4,
-    figure_name="b.2.r.6",
+    # figure_name="b.2.r.6",
     hide_time_signature=True,
 )
 
@@ -267,9 +282,10 @@ figures(
     baca.figure([21], 16),
     rmakers.beam_groups(),
     baca.accidental_x_extent_false(),
-    anchor=baca.anchor_to_figure("b.2.10"),
+    # anchor=baca.anchor_to_figure("b.2.10"),
+    anchor=baca.anchor_to_figure("2.2.R.1.1-4"),
     signature=4,
-    figure_name="b.2.r.7",
+    # figure_name="b.2.r.7",
     hide_time_signature=True,
 )
 
@@ -279,7 +295,7 @@ figures(
     baca.figure([28], 16),
     rmakers.beam_groups(),
     signature=4,
-    figure_name="b.2.r.8",
+    # figure_name="b.2.r.8",
     hide_time_signature=True,
 )
 
@@ -289,7 +305,7 @@ figures(
     baca.figure([24], 16),
     rmakers.beam_groups(),
     signature=4,
-    figure_name="b.2.r.9",
+    # figure_name="b.2.r.9",
     hide_time_signature=True,
 )
 

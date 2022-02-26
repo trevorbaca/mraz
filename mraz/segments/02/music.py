@@ -11,8 +11,6 @@ score = library.make_empty_score()
 figures = baca.FigureAccumulator(score, library.voice_abbreviations)
 section_8 = library.make_section_8_collections()
 
-#################################### [8.3] ####################################
-
 figures(
     library.lh_v5,
     section_8.stage_3.rh.next(),
@@ -21,7 +19,8 @@ figures(
     baca.dynamic_up(),
     baca.register(-27, -39),
     signature=4,
-    figure_name="lh-5 8.3.1",
+    # figure_name="lh-5 8.3.1",
+    figure_name="8.3.R.1",
 )
 
 figures(
@@ -31,7 +30,8 @@ figures(
     baca.register(-39, -27),
     baca.rest_up(),
     signature=4,
-    figure_name="lh-5 8.3.2",
+    # figure_name="lh-5 8.3.2",
+    figure_name="8.3.R.2-3",
 )
 
 figures(
@@ -40,7 +40,8 @@ figures(
     baca.figure([1, -15], 32),
     baca.register(-39),
     signature=2,
-    figure_name="lh-5 8.3.3",
+    # figure_name="lh-5 8.3.3",
+    figure_name="8.3.R.4",
 )
 
 figures(
@@ -50,7 +51,8 @@ figures(
     baca.register(-27, -39),
     baca.rest_up(),
     signature=4,
-    figure_name="lh-5 8.3.4",
+    # figure_name="lh-5 8.3.4",
+    figure_name="8.3.R.5",
 )
 
 figures(
@@ -59,7 +61,8 @@ figures(
     baca.figure([4, -1], 32),
     baca.register(-39, -27),
     signature=4,
-    figure_name="lh-5 8.3.5",
+    # figure_name="lh-5 8.3.5",
+    figure_name="8.3.R.6",
 )
 
 figures(
@@ -68,7 +71,8 @@ figures(
     baca.figure([4, -1], 32, treatments=[1]),
     baca.register(-39, -27),
     signature=4,
-    figure_name="lh-5 8.3.6",
+    # figure_name="lh-5 8.3.6",
+    figure_name="8.3.R.7",
 )
 
 figures(
@@ -78,7 +82,8 @@ figures(
     baca.register(-39),
     baca.rest_up(),
     signature=2,
-    figure_name="lh-5 8.3.7",
+    # figure_name="lh-5 8.3.7",
+    figure_name="8.3.R.8",
 )
 
 figures(
@@ -87,7 +92,8 @@ figures(
     baca.figure([6, -1], 32),
     baca.register(-27, -39),
     signature=4,
-    figure_name="lh-5 8.3.8",
+    # figure_name="lh-5 8.3.8",
+    figure_name="8.3.R.9",
 )
 
 figures(
@@ -97,7 +103,8 @@ figures(
     baca.register(-39, -27),
     baca.tuplet_bracket_staff_padding(3),
     signature=4,
-    figure_name="lh-5 8.3.9",
+    # figure_name="lh-5 8.3.9",
+    figure_name="8.3.R.10",
 )
 
 figures(
@@ -107,7 +114,8 @@ figures(
     baca.register(-39),
     baca.rest_up(),
     signature=2,
-    figure_name="lh-5 8.3.10",
+    # figure_name="lh-5 8.3.10",
+    figure_name="8.3.R.11",
 )
 
 figures(
@@ -116,7 +124,8 @@ figures(
     baca.figure([6, -1], 32),
     baca.register(-27, -39),
     signature=4,
-    figure_name="lh-5 8.3.11",
+    # figure_name="lh-5 8.3.11",
+    figure_name="8.3.R.12",
 )
 
 figures(
@@ -125,7 +134,8 @@ figures(
     baca.figure([4, -1], 32, treatments=[1]),
     baca.register(-39, -27),
     signature=4,
-    figure_name="lh-5 8.3.12",
+    # figure_name="lh-5 8.3.12",
+    figure_name="8.3.R.13",
 )
 
 figures(
@@ -140,7 +150,8 @@ figures(
         baca.selectors.note(1),
     ),
     signature=4,
-    figure_name="lh-6 8.3.1",
+    # figure_name="lh-6 8.3.1",
+    figure_name="8.3.L.1",
     hide_time_signature=True,
 )
 
@@ -155,7 +166,8 @@ figures(
         baca.selectors.note(11),
     ),
     signature=4,
-    figure_name="lh-6 8.3.2",
+    # figure_name="lh-6 8.3.2",
+    figure_name="8.3.L.2",
     hide_time_signature=True,
 )
 
@@ -174,7 +186,8 @@ figures(
         baca.selectors.note(-1),
     ),
     signature=4,
-    figure_name="lh-6 8.3.3",
+    # figure_name="lh-6 8.3.3",
+    figure_name="8.3.L.3",
     hide_time_signature=True,
 )
 
@@ -189,7 +202,8 @@ figures(
         baca.selectors.note(1),
     ),
     signature=4,
-    figure_name="lh-6 8.3.4",
+    # figure_name="lh-6 8.3.4",
+    figure_name="8.3.L.4",
     hide_time_signature=True,
 )
 
@@ -204,7 +218,8 @@ figures(
         baca.selectors.note(-1),
     ),
     signature=4,
-    figure_name="lh-6 8.3.5",
+    # figure_name="lh-6 8.3.5",
+    figure_name="8.3.L.5",
     hide_time_signature=True,
 )
 
@@ -221,7 +236,8 @@ figures(
         baca.selectors.note(1),
     ),
     signature=4,
-    figure_name="lh-6 8.3.6",
+    # figure_name="lh-6 8.3.6",
+    figure_name="8.3.L.6",
     hide_time_signature=True,
 )
 
