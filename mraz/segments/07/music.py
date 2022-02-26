@@ -31,7 +31,8 @@ figures(
     baca.dynamic("fff"),
     baca.extend_beam(),
     signature=4,
-    figure_name="rh-1 7.1.1",
+    # figure_name="rh-1 7.1.1",
+    figure_name="7.1.R.1",
 )
 
 figures(
@@ -51,7 +52,8 @@ figures(
     baca.slur(map=baca.selectors.tuplets()),
     baca.extend_beam(),
     signature=4,
-    figure_name="rh-2 7.1.1",
+    # figure_name="rh-2 7.1.1",
+    figure_name="7.1.R.2",
 )
 
 figures(
@@ -68,7 +70,8 @@ figures(
         baca.marcato(baca.selectors.pheads()),
     ),
     signature=4,
-    figure_name="rh-1 7.1.2",
+    # figure_name="rh-1 7.1.2",
+    figure_name="7.1.R.3",
 )
 
 figures(
@@ -86,7 +89,8 @@ figures(
     ),
     baca.slur(map=baca.selectors.tuplets()),
     signature=4,
-    figure_name="rh-2 7.1.2",
+    # figure_name="rh-2 7.1.2",
+    figure_name="7.1.R.4",
 )
 
 figures(
@@ -105,7 +109,8 @@ figures(
     ),
     baca.extend_beam(),
     signature=4,
-    figure_name="rh-1 7.1.3",
+    # figure_name="rh-1 7.1.3",
+    figure_name="7.1.R.5",
 )
 
 figures(
@@ -124,7 +129,8 @@ figures(
     baca.slur(map=baca.selectors.tuplets()),
     baca.extend_beam(),
     signature=4,
-    figure_name="rh-2 7.1.3",
+    # figure_name="rh-2 7.1.3",
+    figure_name="7.1.R.6",
 )
 
 figures(
@@ -141,7 +147,8 @@ figures(
         baca.marcato(baca.selectors.pheads()),
     ),
     signature=4,
-    figure_name="rh-1 7.1.4",
+    # figure_name="rh-1 7.1.4",
+    figure_name="7.1.R.7",
 )
 
 figures(
@@ -159,10 +166,11 @@ figures(
     ),
     baca.slur(map=baca.selectors.tuplets()),
     signature=4,
-    figure_name="rh-2 7.1.4",
+    # figure_name="rh-2 7.1.4",
+    figure_name="7.1.R.8",
 )
 
-# sacrifice
+# sacrifice 7.1.R.9
 section_7.stage_1.rh.next()
 
 figures(
@@ -181,7 +189,8 @@ figures(
     baca.slur(map=baca.selectors.tuplets()),
     baca.extend_beam(),
     signature=4,
-    figure_name="rh-2 7.1.5",
+    # figure_name="rh-2 7.1.5",
+    figure_name="7.1.R.10",
 )
 
 figures(
@@ -199,7 +208,8 @@ figures(
     ),
     baca.beam_positions(12),
     signature=4,
-    figure_name="rh-1 7.1.5",
+    # figure_name="rh-1 7.1.5",
+    figure_name="7.1.R.11",
 )
 
 figures(
@@ -216,7 +226,8 @@ figures(
     ),
     baca.slur(map=baca.selectors.tuplets()),
     signature=4,
-    figure_name="rh-2 7.1.6",
+    # figure_name="rh-2 7.1.6",
+    figure_name="7.1.R.12",
 )
 
 ###################################### LH #####################################
@@ -238,7 +249,8 @@ figures(
         baca.selectors.note(0),
         baca.selectors.lt(7),
     ),
-    figure_name="lh-4 7.1.1",
+    # figure_name="lh-4 7.1.1",
+    figure_name="7.1.L.1",
 )
 
 figures(
@@ -263,7 +275,8 @@ figures(
         baca.selectors.note(4),
         baca.selectors.lt(3),
     ),
-    figure_name="lh-5 7.1.1",
+    # figure_name="lh-5 7.1.1",
+    figure_name="7.1.L.2",
     hide_time_signature=True,
 )
 
@@ -284,7 +297,8 @@ figures(
         baca.selectors.note(14),
         baca.selectors.lt(0),
     ),
-    figure_name="lh-4 7.1.2",
+    # figure_name="lh-4 7.1.2",
+    figure_name="7.1.L.3",
     hide_time_signature=True,
 )
 
@@ -308,7 +322,8 @@ figures(
         baca.selectors.note(26),
         baca.selectors.lt(10),
     ),
-    figure_name="lh-5 7.1.2",
+    # figure_name="lh-5 7.1.2",
+    figure_name="7.1.L.4",
     hide_time_signature=True,
 )
 
@@ -329,7 +344,8 @@ figures(
         baca.selectors.note(-6),
         baca.selectors.lt(0),
     ),
-    figure_name="lh-4 7.1.3",
+    # figure_name="lh-4 7.1.3",
+    figure_name="7.1.L.5",
     hide_time_signature=True,
 )
 
