@@ -16,8 +16,6 @@ section_6 = library.make_section_6_collections()
 section_7 = library.make_section_7_collections()
 section_8 = library.make_section_8_collections()
 
-##################################### [A] #####################################
-
 figures(
     library.rh_v1,
     section_4.stage_5.rh[3 - 1],

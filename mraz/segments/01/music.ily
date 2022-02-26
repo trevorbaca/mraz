@@ -1151,7 +1151,7 @@ segment.01.RH.Voice.II = {
             %! FIGURE_NAME
             %@% - \tweak color #blue
             %! FIGURE_NAME
-            %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (6) ] }}
+            %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (6) ] }
 
         %! baca.music()
         }
@@ -1182,7 +1182,7 @@ segment.01.RH.Voice.II = {
             %! FIGURE_NAME
             %@% - \tweak color #blue
             %! FIGURE_NAME
-            %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (8) ] }}
+            %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (8) ] }
 
         %! baca.music()
         }
@@ -1308,7 +1308,7 @@ segment.01.RH.Voice.II = {
             %! FIGURE_NAME
             %@% - \tweak color #blue
             %! FIGURE_NAME
-            %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (12) ] }}
+            %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (12) ] }
 
         %! baca.music()
         }
