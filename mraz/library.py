@@ -604,7 +604,10 @@ def make_section_2_collections():
     segments = segments.read(counts)
     segments = segments.remove_duplicates(level=1)
     segments = abjad.sequence.partition_by_counts(segments, [6, 5, 5, 4, 4])
-    segments = [_.arpeggiate_up() for _ in segments]
+    segments = [
+        baca.CollectionList([baca.PitchClassSegment(_).arpeggiate_up() for _ in list_])
+        for list_ in segments
+    ]
     segments = baca.Cursor(segments, singletons=True)
     return types.SimpleNamespace(
         stage_1=None,
@@ -742,7 +745,11 @@ def make_section_4_collections():
     stage_6_segments = [abjad.sequence.join(_)[0] for _ in stage_6_segments]
     stage_6_segments = baca.CollectionList(stage_6_segments)
     stage_6_segments = stage_6_segments.remove_duplicates(level=1)
-    stage_6_segments = stage_6_segments.arpeggiate_up()
+    # stage_6_segments = stage_6_segments.arpeggiate_up()
+    stage_6_segments = [
+        baca.PitchClassSegment(_).arpeggiate_up() for _ in stage_6_segments
+    ]
+    stage_6_segments = baca.CollectionList(stage_6_segments)
     stage_6_segments = stage_6_segments.soprano_to_octave(n=7)
     stage_6_segments = [_.chord() for _ in stage_6_segments]
     stage_6_segments = baca.Cursor(stage_6_segments, singletons=True)
