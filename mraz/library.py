@@ -1006,14 +1006,14 @@ def make_section_8_collections():
     stage_3_segments = stage_3_segments.read(5 * [2, 3, 4, 3], check=abjad.Exact)
     assert len(stage_3_segments) == 20
     assert len(abjad.sequence.join(stage_3_segments)[0]) == 60
-    assert not stage_3_segments.has_repeats(level=-1), repr(stage_3_segments)
+    assert not baca.pcollections.has_repeats(stage_3_segments, level=-1)
     v5_indices = [0, 2, 3, 5, 6, 8, 9]
     v5_stage_3_segments = stage_3_segments.retain(v5_indices, period=10)
     v5_stage_3_segments = v5_stage_3_segments.remove_repeats(level=-1)
-    assert not v5_stage_3_segments.has_repeats(level=-1), repr(v5_stage_3_segments)
+    assert not baca.pcollections.has_repeats(v5_stage_3_segments, level=-1)
     v6_stage_3_segments = stage_3_segments.remove(v5_indices, period=10)
     v6_stage_3_segments = v6_stage_3_segments.remove_repeats(level=-1)
-    assert not v6_stage_3_segments.has_repeats(level=-1), repr(v6_stage_3_segments)
+    assert not baca.pcollections.has_repeats(v6_stage_3_segments, level=-1)
     assert len(v5_stage_3_segments) == 14, len(v5_stage_3_segments)
     assert len(v6_stage_3_segments) == 6, len(v6_stage_3_segments)
     v5_stage_3_segments = baca.Cursor(v5_stage_3_segments)
