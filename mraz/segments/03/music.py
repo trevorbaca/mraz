@@ -18,7 +18,7 @@ resonance = baca.PitchSet("e, fs, gs, as, b,", item_class=abjad.NamedPitch)
 
 figures(
     library.rh_v4,
-    [_.transpose(4 * 7 ) for _ in section_7.stage_1.lh[-1]],
+    [_.transpose(4 * 7) for _ in section_7.stage_1.lh[-1]],
     baca.figure([1], 16, treatments=[1]),
     rmakers.beam_groups(),
     baca.register(6, 6 + 10),
@@ -68,7 +68,7 @@ figures(
 
 figures(
     library.rh_v4,
-    [_.transpose(4 * 7 ) for _ in section_7.stage_1.lh[-1]],
+    [_.transpose(4 * 7) for _ in section_7.stage_1.lh[-1]],
     baca.figure([1], 16, treatments=[1]),
     rmakers.beam_groups(),
     baca.register(6, 6 + 10),
