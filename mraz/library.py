@@ -692,7 +692,10 @@ def make_section_4_collections():
     stage_6_segments = stages[5]
     stage_1_rh_segments = stage_1_segments[:1].repeat(n=3).cursor()
     stage_1_lh_segments = stage_1_segments[1:].repeat(n=3).cursor()
-    chord = stage_2_segments[0].chord().to_pitches().space_up(bass=7, soprano=9)
+    chord = baca.PitchSet(
+        stage_2_segments[0].chord(),
+        item_class=abjad.NumberedPitch,
+    ).space_up(bass=7, soprano=9)
     chords = 10 * [chord]
     last = stages[1].join()[0]
     chords.append(last)
