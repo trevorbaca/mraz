@@ -234,7 +234,7 @@ figures(
 
 figures(
     library.lh_v4,
-    section_7.stage_1.lh.next().transpose(0 * 7),
+    [_.transpose(0 * 7) for _ in section_7.stage_1.lh.next()],
     baca.figure([1], 16, treatments=[-1]),
     rmakers.beam_groups(),
     baca.register(-2, -2 + 16),
@@ -255,7 +255,7 @@ figures(
 
 figures(
     library.lh_v5,
-    section_7.stage_1.lh.next().transpose(1 * 7),
+    [_.transpose(1 * 7) for _ in section_7.stage_1.lh.next()],
     baca.figure([1], 16),
     baca.register(0, 0 + 16),
     rmakers.beam_groups(),
@@ -282,7 +282,7 @@ figures(
 
 figures(
     library.lh_v4,
-    section_7.stage_1.lh.next().transpose(2 * 7),
+    [_.transpose(2 * 7) for _ in section_7.stage_1.lh.next()],
     baca.figure([1], 16),
     rmakers.beam_groups(),
     baca.register(2, 2 + 16),
@@ -304,7 +304,7 @@ figures(
 
 figures(
     library.lh_v5,
-    section_7.stage_1.lh.next().transpose(3 * 7),
+    [_.transpose(3 * 7) for _ in section_7.stage_1.lh.next()],
     baca.figure([1], 16),
     baca.register(4, 4 + 16),
     rmakers.beam_groups(),
@@ -329,7 +329,7 @@ figures(
 
 figures(
     library.lh_v4,
-    section_7.stage_1.lh.next(exhausted=True).transpose(4 * 7),
+    [_.transpose(4 * 7) for _ in section_7.stage_1.lh.next(exhausted=True)],
     baca.figure([1], 16, treatments=[1]),
     rmakers.beam_groups(),
     baca.register(6, 6 + 10),

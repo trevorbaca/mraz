@@ -50,8 +50,7 @@ figures(
 
 figures(
     library.lh_v4,
-    # section_7.stage_1.lh[-1].transpose(4 * 7),
-    section_7.stage_1.lh[5 - 1].transpose(4 * 7),
+    [_.transpose(4 * 7) for _ in section_7.stage_1.lh[5 - 1]],
     baca.figure([1], 16, treatments=[1]),
     baca.register(6, 6 + 10),
     baca.imbricate(
