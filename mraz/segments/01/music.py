@@ -10,11 +10,11 @@ from mraz import library
 
 score = library.make_empty_score()
 figures = baca.FigureAccumulator(score, library.voice_abbreviations)
-section_4 = library.make_section_4_collections()
-section_5 = library.make_section_5_collections()
-section_6 = library.make_section_6_collections()
-section_7 = library.make_section_7_collections()
-section_8 = library.make_section_8_collections()
+section_4 = library.moment_4()
+section_5 = library.moment_5()
+section_6 = library.moment_6()
+section_7 = library.moment_7()
+section_8 = library.moment_8()
 
 figures(
     library.rh_v1,

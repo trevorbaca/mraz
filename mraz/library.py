@@ -588,9 +588,9 @@ silver, names = silver_transform_7()
 silver = abjad.CyclicTuple(silver)
 
 
-def make_section_2_collections():
+def moment_2():
     """
-    >>> section, section_name = mraz.library.make_section_2_collections(), "section_2"
+    >>> section, section_name = mraz.library.moment_2(), "section_2"
     >>> show_collections(section, section_name)
     section_2.stage_2.rh:
       [<6, 12, 16, 17, 20>, <10, 15, 23, 31, 33>, <2, 13, 20, 22, 27, 29>, <9, 11, 19, 30, 36>, <4, 5, 8, 10, 15>, <11, 19, 21>]
@@ -620,9 +620,9 @@ def make_section_2_collections():
     )
 
 
-def make_section_4_collections():
+def moment_4():
     """
-    >>> section, section_name = mraz.library.make_section_4_collections(), "section_4"
+    >>> section, section_name = mraz.library.moment_4(), "section_4"
     >>> show_collections(section, section_name)
     section_4.stage_1.rh:
       PC<3, 1, 0, 10>
@@ -786,9 +786,9 @@ def make_section_4_collections():
     )
 
 
-def make_section_5_collections():
+def moment_5():
     """
-    >>> section, section_name = mraz.library.make_section_5_collections(), "section_5"
+    >>> section, section_name = mraz.library.moment_5(), "section_5"
     >>> show_collections(section, section_name)
     section_5.stage_1.rh:
       PC<0, 2, 3, 5>
@@ -874,9 +874,9 @@ def make_section_5_collections():
     )
 
 
-def make_section_6_collections():
+def moment_6():
     """
-    >>> section, section_name = mraz.library.make_section_6_collections(), "section_6"
+    >>> section, section_name = mraz.library.moment_6(), "section_6"
     >>> show_collections(section, section_name)
     section_6.stage_1.rh:
       PC<6, 9, 11>
@@ -931,9 +931,9 @@ def make_section_6_collections():
     )
 
 
-def make_section_7_collections():
+def moment_7():
     """
-    >>> section, section_name = mraz.library.make_section_7_collections(), "section_7"
+    >>> section, section_name = mraz.library.moment_7(), "section_7"
     >>> show_collections(section, section_name)
     section_7.stage_1.rh:
       [PC<4, 1, 0, 2, 6, 2>, PC<5, 7, 8, 10>, PC<11, 3, 9>]
@@ -999,9 +999,9 @@ def make_section_7_collections():
     )
 
 
-def make_section_8_collections():
+def moment_8():
     """
-    >>> section, section_name = mraz.library.make_section_8_collections(), "section_8"
+    >>> section, section_name = mraz.library.moment_8(), "section_8"
     >>> show_collections(section, section_name)
     section_8.stage_3.rh:
       PC<7, 6>
