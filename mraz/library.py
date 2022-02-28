@@ -10,7 +10,13 @@
 ...                 collections = getattr(bundle, part_name, None)
 ...                 if collections is not None:
 ...                     print(f"{section_name}.{stage_name}.{part_name}:")
-...                     for collection in collections: print(f"  {collection}")
+...                     for collection in collections:
+...                         if isinstance(collection, list):
+...                             strings = [str(_) for _ in collection]
+...                             string = ", ".join(strings)
+...                             print(f"  [{string}]")
+...                         else:
+...                             print(f"  {collection}")
 
 """
 import inspect
@@ -587,16 +593,15 @@ def make_section_2_collections():
     >>> section, section_name = mraz.library.make_section_2_collections(), "section_2"
     >>> show_collections(section, section_name)
     section_2.stage_2.rh:
-      CollectionList([<6, 12, 16, 17, 20>, <10, 15, 23, 31, 33>, <2, 13, 20, 22, 27, 29>, <9, 11, 19, 30, 36>, <4, 5, 8, 10, 15>, <11, 19, 21>])
-      CollectionList([<2, 13, 20, 22, 27>, <5, 9, 11, 19, 30, 36>, <4, 5, 8, 10, 15, 23>, <7, 11, 21, 26, 37>, <8, 10, 15, 17, 21>])
-      CollectionList([<11, 19, 30, 36>, <4, 5, 8, 10>, <3, 11, 19, 21>, <2, 13, 20, 22, 27>, <5, 9, 11, 19>])
-      CollectionList([<6, 12, 16, 17>, <8, 10, 15>, <11, 19, 21>, <2, 13, 20, 22, 27>])
-      CollectionList([<5, 9, 11, 19, 30>, <0, 4, 5, 8>, <10, 15, 23, 31>, <11, 21, 26>])
+      [<6, 12, 16, 17, 20>, <10, 15, 23, 31, 33>, <2, 13, 20, 22, 27, 29>, <9, 11, 19, 30, 36>, <4, 5, 8, 10, 15>, <11, 19, 21>]
+      [<2, 13, 20, 22, 27>, <5, 9, 11, 19, 30, 36>, <4, 5, 8, 10, 15, 23>, <7, 11, 21, 26, 37>, <8, 10, 15, 17, 21>]
+      [<11, 19, 30, 36>, <4, 5, 8, 10>, <3, 11, 19, 21>, <2, 13, 20, 22, 27>, <5, 9, 11, 19>]
+      [<6, 12, 16, 17>, <8, 10, 15>, <11, 19, 21>, <2, 13, 20, 22, 27>]
+      [<5, 9, 11, 19, 30>, <0, 4, 5, 8>, <10, 15, 23, 31>, <11, 21, 26>]
 
     """
     segments = list(silver[14:20])
     assert len(segments) == 6, repr(len(segments))
-    segments = baca.CollectionList(segments, item_class=abjad.NumberedPitchClass)
     stages = abjad.sequence.partition_by_counts(segments, [2, 4])
     segments = stages[1]
     counts = 2 * [5, 6, 6, 5, 5, 4] + 2 * [4, 5, 5, 4, 4, 3]
@@ -604,10 +609,8 @@ def make_section_2_collections():
     segments = baca.pcollections.read(segments, counts)
     segments = baca.pcollections.remove_duplicates(segments, level=1)
     segments = abjad.sequence.partition_by_counts(segments, [6, 5, 5, 4, 4])
-    segments = [
-        baca.CollectionList([baca.PitchClassSegment(_).arpeggiate_up() for _ in list_])
-        for list_ in segments
-    ]
+    segments = [[baca.PitchClassSegment(_) for _ in list_] for list_ in segments]
+    segments = [[_.arpeggiate_up() for _ in list_] for list_ in segments]
     segments = baca.Cursor(segments, singletons=True)
     return types.SimpleNamespace(
         stage_1=None,
