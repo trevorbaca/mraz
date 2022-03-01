@@ -52,6 +52,7 @@ figures(
     signature=4,
     # figure_name="rh-3 4.1.3",
     figure_name="4.1.R.2",
+    figure_name_direction=abjad.Up,
 )
 
 
@@ -75,6 +76,7 @@ figures(
     signature=4,
     # figure_name="insert 5.1",
     figure_name="5.2.L.1",
+    figure_name_direction=abjad.Down,
 )
 
 figures(
@@ -82,6 +84,7 @@ figures(
     "r2.",
     signature=4,
     figure_name="rh-3 4.1.4",
+    figure_name_direction=abjad.Down,
 )
 
 figures(

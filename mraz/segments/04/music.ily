@@ -5115,7 +5115,7 @@ segment.04.RH.Voice.III = {
             %! FIGURE_NAME
             %@% - \tweak color #blue
             %! FIGURE_NAME
-            %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (3) \hspace #1 "4.1.R.2" ] }
+            %@% ^ \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (3) \hspace #1 "4.1.R.2" ] }
 
             %! baca.stem_up()
             %! baca.OverrideCommand._call(1)
@@ -5188,7 +5188,7 @@ segment.04.RH.Voice.III = {
             %! FIGURE_NAME
             %@% - \tweak color #blue
             %! FIGURE_NAME
-            %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (5) \hspace #1 "rh-3 4.1.4" ] }
+            %@% _ \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (5) \hspace #1 "rh-3 4.1.4" ] }
 
         %! baca.music()
         }
@@ -8329,7 +8329,7 @@ segment.04.LH.Voice.IV = {
             %! FIGURE_NAME
             %@% - \tweak color #blue
             %! FIGURE_NAME
-            %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (4) \hspace #1 "5.2.L.1" ] }
+            %@% _ \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (4) \hspace #1 "5.2.L.1" ] }
             %! baca.slur()
             %! baca.SpannerIndicatorCommand._call(2)
             %! SPANNER_START
