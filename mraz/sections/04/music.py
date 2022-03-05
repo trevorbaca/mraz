@@ -58,9 +58,9 @@ figures(
 
 def nontrivial_tuplet_tleaves():
     def selector(argument):
-        selection = baca.Selection(argument).tuplets()
-        selection = [baca.Selection(_).tleaves() for _ in selection]
-        return baca.Selection(selection).nontrivial()
+        selection = abjad.select.tuplets(argument)
+        selection = [baca.select.tleaves(_) for _ in selection]
+        return abjad.select.nontrivial(selection)
 
     return selector
 
@@ -309,7 +309,7 @@ figures(
     library.rh_v5,
     [chord_1_upper.chord()],
     baca.figure([1], 16, affix=baca.rests_after([3])),
-    anchor=baca.anchor(library.lh_v5, lambda _: baca.Selection(_).chord(-1)),
+    anchor=baca.anchor(library.lh_v5, lambda _: abjad.select.chord(_, -1)),
     signature=4,
     # figure_name="rh-5 4.2.1",
     figure_name="4.2.L.11.L",
