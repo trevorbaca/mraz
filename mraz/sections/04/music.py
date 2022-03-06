@@ -287,13 +287,13 @@ figures(
 )
 
 segment = section_4.stage_2.lh.next(exhausted=True)
-segment = segment.space_down(bass=7, semitones=3, soprano=9)
-segment = segment.bass_to_octave(2)
-chord_1_upper, chord_1_lower = segment.split(pitch=-1)
+segment = baca.pcollections.space_down(segment, bass=7, semitones=3, soprano=9)
+segment = baca.pcollections.bass_to_octave(segment, 2)
+chord_1_upper, chord_1_lower = baca.pcollections.split(segment, pitch=-1)
 
 figures(
     library.lh_v5,
-    [chord_1_lower.chord()],
+    [abjad.PitchSet(chord_1_lower)],
     baca.figure([1], 16, affix=baca.rests_after([3])),
     baca.cross_staff(),
     baca.dynamic("mp"),
@@ -307,7 +307,7 @@ figures(
 
 figures(
     library.rh_v5,
-    [chord_1_upper.chord()],
+    [abjad.PitchSet(chord_1_upper)],
     baca.figure([1], 16, affix=baca.rests_after([3])),
     anchor=baca.anchor(library.lh_v5, lambda _: abjad.select.chord(_, -1)),
     signature=4,
@@ -654,7 +654,7 @@ figures(
     hide_time_signature=True,
 )
 
-resonance = baca.PitchSet("e, fs, gs, as, b,", item_class=abjad.NamedPitch)
+resonance = abjad.PitchSet("e, fs, gs, as, b,", item_class=abjad.NamedPitch)
 
 figures(
     library.lh_resonance,

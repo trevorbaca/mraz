@@ -14,7 +14,7 @@ section_2 = library.moment_2()
 section_4 = library.moment_4()
 section_6 = library.moment_6()
 section_7 = library.moment_7()
-resonance = baca.PitchSet("e, fs, gs, as, b,", item_class=abjad.NamedPitch)
+resonance = abjad.PitchSet("e, fs, gs, as, b,", item_class=abjad.NamedPitch)
 
 figures(
     library.rh_v4,
