@@ -5083,7 +5083,7 @@ segment.07.LH.Voice.V = {
                 %! FIGURE_LABEL
                 %@% - \tweak color #blue
                 %! FIGURE_LABEL
-                %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (13) \hspace #1 "7.1.L.2" ] }
+                %@% _ \markup \concat { [ \raise #0.25 \fontsize #-2 (13) \hspace #1 "7.1.L.2" ] }
                 [
                 %! baca.slur()
                 %! baca.SpannerIndicatorCommand._call(2)
@@ -5261,7 +5261,7 @@ segment.07.LH.Voice.V = {
                 %! FIGURE_LABEL
                 %@% - \tweak color #blue
                 %! FIGURE_LABEL
-                %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (15) \hspace #1 "7.1.L.4" ] }
+                %@% _ \markup \concat { [ \raise #0.25 \fontsize #-2 (15) \hspace #1 "7.1.L.4" ] }
                 [
                 %! baca.slur()
                 %! baca.SpannerIndicatorCommand._call(2)

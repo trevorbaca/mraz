@@ -20,9 +20,8 @@ figures(
     baca.tenuto(baca.selectors.pheads()),
     baca.tuplet_bracket_staff_padding(7),
     baca.tuplet_bracket_up(),
-    signature=8,
-    # figure_name="rh-3 6.1.1",
     figure_name="6.1.R.1-2",
+    signature=8,
 )
 
 figures(
@@ -34,9 +33,9 @@ figures(
     baca.tenuto(baca.selectors.pheads()),
     baca.tuplet_bracket_staff_padding(7),
     baca.tuplet_bracket_up(),
-    signature=8,
-    # figure_name="rh-3 6.1.2",
+    baca.tuplet_bracket_staff_padding(8),
     figure_name="6.1.R.3",
+    signature=8,
 )
 
 figures(
@@ -46,9 +45,8 @@ figures(
     baca.register(24, 12),
     baca.staccato(baca.selectors.pheads()),
     baca.tenuto(baca.selectors.pheads()),
-    signature=8,
-    # figure_name="rh-3 6.1.3",
     figure_name="6.1.R.4",
+    signature=8,
 )
 
 figures(
@@ -59,9 +57,8 @@ figures(
     baca.staccato(baca.selectors.pheads()),
     baca.tenuto(baca.selectors.pheads()),
     baca.tuplet_bracket_up(),
-    signature=8,
-    # figure_name="rh-3 6.1.4",
     figure_name="6.1.R.5",
+    signature=8,
 )
 
 figures(
@@ -77,7 +74,6 @@ figures(
         baca.selectors.note(3),
         baca.selectors.note(2),
     ),
-    # figure_name="lh-4 6.1.1",
     figure_name="6.1.L.1",
 )
 
@@ -93,7 +89,6 @@ figures(
         baca.selectors.note(9),
         baca.selectors.note(2),
     ),
-    # figure_name="lh-4 6.1.2",
     figure_name="6.1.L.2",
 )
 
@@ -108,7 +103,6 @@ figures(
         baca.selectors.note(13),
         baca.selectors.note(1),
     ),
-    # figure_name="lh-4 6.1.3",
     figure_name="6.1.L.3",
     hide_time_signature=True,
 )
@@ -119,7 +113,6 @@ figures(
     baca.figure([2, -1], 32),
     baca.register(12, 0),
     baca.tenuto(baca.selectors.pheads()),
-    # figure_name="lh-4 6.1.4",
     figure_name="6.1.L.4",
     hide_time_signature=True,
 )

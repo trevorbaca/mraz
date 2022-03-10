@@ -1397,7 +1397,7 @@ segment.06.RH.Voice.II = {
             %! FIGURE_LABEL
             %@% - \tweak color #blue
             %! FIGURE_LABEL
-            %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (1) \hspace #1 "5.1.R.1" ] }
+            %@% ^ \markup \concat { [ \raise #0.25 \fontsize #-2 (1) \hspace #1 "5.1.R.1" ] }
 
             %! baca.rest_up()
             %! baca.OverrideCommand._call(1)
@@ -2294,7 +2294,7 @@ segment.06.RH.Voice.II = {
             %! FIGURE_LABEL
             %@% - \tweak color #blue
             %! FIGURE_LABEL
-            %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (12) \hspace #1 "2.2.R.1" ] }
+            %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (9) \hspace #1 "2.2.R.1" ] }
             [
             %! baca.slur()
             %! baca.SpannerIndicatorCommand._call(2)
@@ -2642,7 +2642,7 @@ segment.06.RH.Voice.II = {
             %! FIGURE_LABEL
             %@% - \tweak color #blue
             %! FIGURE_LABEL
-            %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (13) \hspace #1 "2.2.R.2" ] }
+            %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (10) \hspace #1 "2.2.R.2" ] }
             [
             %! baca.slur()
             %! baca.SpannerIndicatorCommand._call(2)
@@ -2958,7 +2958,7 @@ segment.06.RH.Voice.II = {
             %! FIGURE_LABEL
             %@% - \tweak color #blue
             %! FIGURE_LABEL
-            %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (14) \hspace #1 "2.2.R.3" ] }
+            %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (11) \hspace #1 "2.2.R.3" ] }
             [
             %! baca.slur()
             %! baca.SpannerIndicatorCommand._call(2)
@@ -3226,7 +3226,7 @@ segment.06.RH.Voice.II = {
             %! FIGURE_LABEL
             %@% - \tweak color #blue
             %! FIGURE_LABEL
-            %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (15) \hspace #1 "2.2.R.4" ] }
+            %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (12) \hspace #1 "2.2.R.4" ] }
             [
             %! baca.slur()
             %! baca.SpannerIndicatorCommand._call(2)
@@ -3439,7 +3439,7 @@ segment.06.RH.Voice.II = {
             %! FIGURE_LABEL
             %@% - \tweak color #blue
             %! FIGURE_LABEL
-            %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (16) \hspace #1 "2.2.R.5" ] }
+            %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (13) \hspace #1 "2.2.R.5" ] }
             [
             %! baca.slur()
             %! baca.SpannerIndicatorCommand._call(2)
@@ -4059,6 +4059,9 @@ segment.06.RH.Voice.III = {
             %! baca.tuplet_bracket_down()
             %! baca.OverrideCommand._call(1)
             \override TupletBracket.direction = #down
+            %! baca.tuplet_bracket_staff_padding()
+            %! baca.OverrideCommand._call(1)
+            \override TupletBracket.staff-padding = 3
             %! baca.music()
             a''4
             %! EXPLICIT_DYNAMIC_COLOR
@@ -4079,7 +4082,7 @@ segment.06.RH.Voice.III = {
             %! FIGURE_LABEL
             %@% - \tweak color #blue
             %! FIGURE_LABEL
-            %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (2) \hspace #1 "5.1.L.1" ] }
+            %@% _ \markup \concat { [ \raise #0.25 \fontsize #-2 (2) \hspace #1 "5.1.L.1" ] }
 
             %! baca.rest_down()
             %! baca.OverrideCommand._call(1)
@@ -4135,6 +4138,9 @@ segment.06.RH.Voice.III = {
             %! baca.tuplet_bracket_down()
             %! baca.OverrideCommand._call(2)
             \revert TupletBracket.direction
+            %! baca.tuplet_bracket_staff_padding()
+            %! baca.OverrideCommand._call(2)
+            \revert TupletBracket.staff-padding
 
         %! baca.music()
         }
@@ -4373,10 +4379,6 @@ segment.06.RH.Voice.III = {
             \once \override Rest.transparent = ##t
             %! baca.music()
             r4
-            %! FIGURE_LABEL
-            %@% - \tweak color #blue
-            %! FIGURE_LABEL
-            %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (4) ] }
 
         %! baca.music()
         }
@@ -4411,7 +4413,7 @@ segment.06.RH.Voice.III = {
                 %! FIGURE_LABEL
                 %@% - \tweak color #blue
                 %! FIGURE_LABEL
-                %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (5) \hspace #1 "5.2.R.6-10" ] }
+                %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (4) \hspace #1 "5.2.R.6-10" ] }
                 [
                 %! baca.slur()
                 %! baca.SpannerIndicatorCommand._call(2)
@@ -4642,7 +4644,7 @@ segment.06.RH.Voice.III = {
                 %! FIGURE_LABEL
                 %@% - \tweak color #blue
                 %! FIGURE_LABEL
-                %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (8) \hspace #1 "5.2.R.11-15" ] }
+                %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (7) \hspace #1 "5.2.R.11-15" ] }
                 [
                 %! baca.slur()
                 %! baca.SpannerIndicatorCommand._call(2)
@@ -4834,10 +4836,6 @@ segment.06.RH.Voice.III = {
             \once \override Rest.transparent = ##t
             %! baca.music()
             r4
-            %! FIGURE_LABEL
-            %@% - \tweak color #blue
-            %! FIGURE_LABEL
-            %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (9) ] }
 
         %! baca.music()
         }
@@ -4872,7 +4870,7 @@ segment.06.RH.Voice.III = {
                 %! FIGURE_LABEL
                 %@% - \tweak color #blue
                 %! FIGURE_LABEL
-                %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (10) \hspace #1 "5.2.R.16-21" ] }
+                %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (8) \hspace #1 "5.2.R.16-21" ] }
                 [
                 %! baca.slur()
                 %! baca.SpannerIndicatorCommand._call(2)
@@ -5105,10 +5103,6 @@ segment.06.RH.Voice.III = {
             \once \override Rest.transparent = ##t
             %! baca.music()
             r4
-            %! FIGURE_LABEL
-            %@% - \tweak color #blue
-            %! FIGURE_LABEL
-            %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (11) ] }
 
         %! baca.music()
         }
@@ -5163,7 +5157,7 @@ segment.06.RH.Voice.III = {
                 %! FIGURE_LABEL
                 %@% - \tweak color #blue
                 %! FIGURE_LABEL
-                %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (22) \hspace #1 "5.2.R.22-25" ] }
+                %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (14) \hspace #1 "5.2.R.22-25" ] }
                 [
                 %! baca.slur()
                 %! baca.SpannerIndicatorCommand._call(2)
@@ -7015,7 +7009,7 @@ segment.06.LH.Voice.IV = {
             %! FIGURE_LABEL
             %@% - \tweak color #blue
             %! FIGURE_LABEL
-            %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (23) \hspace #1 "5.2.L.1" ] }
+            %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (15) \hspace #1 "5.2.L.1" ] }
             %! baca.slur()
             %! baca.SpannerIndicatorCommand._call(2)
             %! SPANNER_START
@@ -7111,7 +7105,7 @@ segment.06.LH.Voice.IV = {
             %! FIGURE_LABEL
             %@% - \tweak color #blue
             %! FIGURE_LABEL
-            %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (24) \hspace #1 "5.2.L.2" ] }
+            %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (16) \hspace #1 "5.2.L.2" ] }
             %! baca.slur()
             %! baca.SpannerIndicatorCommand._call(2)
             %! SPANNER_START
@@ -7188,7 +7182,7 @@ segment.06.LH.Voice.IV = {
             %! FIGURE_LABEL
             %@% - \tweak color #blue
             %! FIGURE_LABEL
-            %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (25) \hspace #1 "5.2.L.3" ] }
+            %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (17) \hspace #1 "5.2.L.3" ] }
             %! baca.slur()
             %! baca.SpannerIndicatorCommand._call(2)
             %! SPANNER_START
@@ -7245,7 +7239,7 @@ segment.06.LH.Voice.IV = {
             %! FIGURE_LABEL
             %@% - \tweak color #blue
             %! FIGURE_LABEL
-            %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (26) \hspace #1 "5.2.L.4" ] }
+            %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (18) \hspace #1 "5.2.L.4" ] }
             %! baca.slur()
             %! baca.SpannerIndicatorCommand._call(2)
             %! SPANNER_START
@@ -7319,7 +7313,7 @@ segment.06.LH.Voice.IV = {
             %! FIGURE_LABEL
             %@% - \tweak color #blue
             %! FIGURE_LABEL
-            %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (27) \hspace #1 "5.2.L.5" ] }
+            %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (19) \hspace #1 "5.2.L.5" ] }
             [
             %! baca.slur()
             %! baca.SpannerIndicatorCommand._call(2)
@@ -7365,7 +7359,7 @@ segment.06.LH.Voice.IV = {
             %! FIGURE_LABEL
             %@% - \tweak color #blue
             %! FIGURE_LABEL
-            %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (28) \hspace #1 "5.2.L.6" ] }
+            %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (20) \hspace #1 "5.2.L.6" ] }
             [
             %! baca.slur()
             %! baca.SpannerIndicatorCommand._call(2)
@@ -7423,7 +7417,7 @@ segment.06.LH.Voice.IV = {
             %! FIGURE_LABEL
             %@% - \tweak color #blue
             %! FIGURE_LABEL
-            %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (29) \hspace #1 "5.2.L.7" ] }
+            %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (21) \hspace #1 "5.2.L.7" ] }
             [
             %! baca.slur()
             %! baca.SpannerIndicatorCommand._call(2)
@@ -7500,7 +7494,7 @@ segment.06.LH.Voice.IV = {
             %! FIGURE_LABEL
             %@% - \tweak color #blue
             %! FIGURE_LABEL
-            %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (30) \hspace #1 "5.2.L.8" ] }
+            %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (22) \hspace #1 "5.2.L.8" ] }
             [
             %! baca.slur()
             %! baca.SpannerIndicatorCommand._call(2)
@@ -7555,7 +7549,7 @@ segment.06.LH.Voice.IV = {
             %! FIGURE_LABEL
             %@% - \tweak color #blue
             %! FIGURE_LABEL
-            %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (31) \hspace #1 "5.2.L.9" ] }
+            %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (23) \hspace #1 "5.2.L.9" ] }
             [
             %! baca.slur()
             %! baca.SpannerIndicatorCommand._call(2)
@@ -7644,10 +7638,6 @@ segment.06.LH.Voice.IV = {
             \set PianoMusicLHStaff.forceClef = ##t
             %! baca.music()
             r4
-            %! FIGURE_LABEL
-            %@% - \tweak color #blue
-            %! FIGURE_LABEL
-            %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (32) ] }
             %! baca.script_up()
             %! baca.OverrideCommand._call(2)
             \revert Script.direction
@@ -7943,7 +7933,7 @@ segment.06.LH.Voice.V = {
             %! FIGURE_LABEL
             %@% - \tweak color #blue
             %! FIGURE_LABEL
-            %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (7) \hspace #1 "8.3.R.5" ] }
+            %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (6) \hspace #1 "8.3.R.5" ] }
 
             %! baca.rest_up()
             %! baca.OverrideCommand._call(1)
@@ -8374,7 +8364,7 @@ segment.06.LH.Voice.VI = {
             %! FIGURE_LABEL
             %@% - \tweak color #blue
             %! FIGURE_LABEL
-            %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (6) \hspace #1 "8.3.L.2" ] }
+            %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (5) \hspace #1 "8.3.L.2" ] }
 
             %! baca.rest_down()
             %! baca.OverrideCommand._call(1)
@@ -8762,10 +8752,6 @@ segment.06.LH.Resonance.Voice = {
             %! baca._comment_measure_numbers()
             % [LH_Resonance_Voice measure 10]
             <cs,,! cs,!>1..
-            %! FIGURE_LABEL
-            %@% - \tweak color #blue
-            %! FIGURE_LABEL
-            %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (17) ] }
             %! baca._attach_shadow_tie_indicators()
             - \tweak stencil ##f
             %! baca._attach_shadow_tie_indicators()
@@ -8824,10 +8810,6 @@ segment.06.LH.Resonance.Voice = {
             %! baca.OverrideCommand._call(1)
             \override Stem.transparent = ##t
             <cs,, cs,>1.
-            %! FIGURE_LABEL
-            %@% - \tweak color #blue
-            %! FIGURE_LABEL
-            %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (18) ] }
             %! baca.repeat_tie()
             %! baca.IndicatorCommand._call()
             \repeatTie
@@ -8882,10 +8864,6 @@ segment.06.LH.Resonance.Voice = {
             %! baca._comment_measure_numbers()
             % [LH_Resonance_Voice measure 12]
             <ef,,! ef,!>1
-            %! FIGURE_LABEL
-            %@% - \tweak color #blue
-            %! FIGURE_LABEL
-            %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (19) ] }
             %! baca._attach_shadow_tie_indicators()
             - \tweak stencil ##f
             %! baca._attach_shadow_tie_indicators()
@@ -8974,10 +8952,6 @@ segment.06.LH.Resonance.Voice = {
             %! baca.OverrideCommand._call(1)
             \once \override Stem.transparent = ##t
             <ef,, ef,>2...
-            %! FIGURE_LABEL
-            %@% - \tweak color #blue
-            %! FIGURE_LABEL
-            %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (20) ] }
             %! baca.repeat_tie()
             %! baca.IndicatorCommand._call()
             \repeatTie
@@ -9009,10 +8983,6 @@ segment.06.LH.Resonance.Voice = {
             %! baca.OverrideCommand._call(1)
             \once \override Stem.transparent = ##t
             <ef,, ef,>1
-            %! FIGURE_LABEL
-            %@% - \tweak color #blue
-            %! FIGURE_LABEL
-            %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (21) ] }
             %! baca.repeat_tie()
             %! baca.IndicatorCommand._call()
             \repeatTie

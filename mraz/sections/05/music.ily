@@ -830,6 +830,9 @@ segment.05.RH.Voice.III = {
             %! baca.tuplet_bracket_up()
             %! baca.OverrideCommand._call(1)
             \override TupletBracket.direction = #up
+            %! baca.tuplet_bracket_staff_padding()
+            %! baca.OverrideCommand._call(1)
+            \override TupletBracket.staff-padding = 8
             %! baca.music()
             bf'''!8
             %! baca.staccato()
@@ -866,6 +869,9 @@ segment.05.RH.Voice.III = {
             %! baca.tuplet_bracket_up()
             %! baca.OverrideCommand._call(2)
             \revert TupletBracket.direction
+            %! baca.tuplet_bracket_staff_padding()
+            %! baca.OverrideCommand._call(2)
+            \revert TupletBracket.staff-padding
 
         %! baca.music()
         }
