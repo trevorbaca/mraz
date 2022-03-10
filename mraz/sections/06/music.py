@@ -25,9 +25,9 @@ figures(
     baca.rest_up(),
     baca.script_up(),
     baca.stem_up(),
-    signature=4,
-    # figure_name="rh-2 5.1.1",
+    figure_label_direction=abjad.Up,
     figure_name="5.1.R.1",
+    signature=4,
 )
 
 figures(
@@ -42,10 +42,11 @@ figures(
     baca.stem_down(),
     baca.tenuto(baca.selectors.pheads()),
     baca.tuplet_bracket_down(),
+    baca.tuplet_bracket_staff_padding(3),
     anchor=baca.anchor(library.rh_v2),
-    signature=4,
-    # figure_name="rh-3 5.1.1",
+    figure_label_direction=abjad.Down,
     figure_name="5.1.L.1",
+    signature=4,
 )
 
 figures(
@@ -66,25 +67,22 @@ figures(
     baca.dynamic("mp"),
     baca.slur(map=baca.selectors.tuplets()),
     baca.tuplet_bracket_down(),
-    signature=4,
-    # figure_name="rh-3 5.2.1",
     figure_name="5.2.R.1-5",
+    signature=4,
 )
 
 figures(
     library.rh_v3,
     "r4",
     baca.rest_transparent(),
+    do_not_label=True,
     signature=4,
-    # figure_name="rh-3 5.2.2",
 )
 
 figures(
     library.rh_v3,
     section_5.stage_2.rh.next(5),
     baca.figure([2], 16, treatments=[-2, 0, -2]),
-    # 2018-07-10: F5 flipped to F4 because of command interpretation order
-    # 2019-07-27: F5 restored by command stack
     baca.new(
         baca.tie(
             baca.selectors.ptails((None, -1)),
@@ -102,9 +100,8 @@ figures(
     rmakers.beam(),
     baca.slur(map=baca.selectors.tuplets()),
     baca.tuplet_bracket_down(),
-    signature=4,
-    # figure_name="rh-3 5.2.3",
     figure_name="5.2.R.6-10",
+    signature=4,
 )
 
 figures(
@@ -118,9 +115,8 @@ figures(
     baca.stem_down(),
     baca.tuplet_bracket_down(),
     baca.tuplet_bracket_staff_padding(6),
-    signature=4,
-    # figure_name="b.1.4",
     figure_name="8.3.L.2",
+    signature=4,
 )
 
 figures(
@@ -132,12 +128,10 @@ figures(
     baca.register(-27, -39),
     baca.rest_up(),
     baca.stem_up(),
-    # anchor=baca.anchor_to_figure("b.1.4"),
     anchor=baca.anchor_to_figure("8.3.L.2"),
-    signature=4,
-    # figure_name="b.1.5",
     figure_name="8.3.R.5",
     hide_time_signature=True,
+    signature=4,
 )
 
 figures(
@@ -158,17 +152,16 @@ figures(
     baca.dynamic("mp"),
     baca.slur(map=baca.selectors.tuplets()),
     baca.tuplet_bracket_down(),
-    signature=4,
-    # figure_name="rh-3 5.2.5",
     figure_name="5.2.R.11-15",
+    signature=4,
 )
 
 figures(
     library.rh_v3,
     "r4",
     baca.rest_transparent(),
+    do_not_label=True,
     signature=4,
-    # figure_name="rh-3 5.2.6",
 )
 
 figures(
@@ -186,17 +179,16 @@ figures(
     rmakers.beam(),
     baca.slur(map=baca.selectors.tuplets()),
     baca.tuplet_bracket_down(),
-    signature=4,
-    # figure_name="rh-3 5.2.7",
     figure_name="5.2.R.16-21",
+    signature=4,
 )
 
 figures(
     library.rh_v3,
     "r4",
     baca.rest_transparent(),
+    do_not_label=True,
     signature=4,
-    # figure_name="rh-3 5.2.8",
 )
 
 figures(
@@ -210,9 +202,8 @@ figures(
     baca.dynamic_down(),
     baca.slur(map=baca.selectors.tuplets()),
     baca.staccato(baca.selectors.pheads()),
-    signature=4,
-    # figure_name="rh-2 2.2.1",
     figure_name="2.2.R.1",
+    signature=4,
 )
 
 figures(
@@ -224,9 +215,8 @@ figures(
     baca.beam_positions(-8),
     baca.slur(map=baca.selectors.tuplets()),
     baca.staccato(baca.selectors.pheads()),
-    signature=4,
-    # figure_name="rh-2 2.2.2",
     figure_name="2.2.R.2",
+    signature=4,
 )
 
 figures(
@@ -238,9 +228,8 @@ figures(
     baca.beam_positions(-8),
     baca.slur(map=baca.selectors.tuplets()),
     baca.staccato(baca.selectors.pheads()),
-    signature=4,
-    # figure_name="rh-2 2.2.3",
     figure_name="2.2.R.3",
+    signature=4,
 )
 
 figures(
@@ -252,9 +241,8 @@ figures(
     baca.beam_positions(-8),
     baca.slur(map=baca.selectors.tuplets()),
     baca.staccato(baca.selectors.pheads()),
-    signature=4,
-    # figure_name="rh-2 2.2.4",
     figure_name="2.2.R.4",
+    signature=4,
 )
 
 figures(
@@ -266,56 +254,54 @@ figures(
     baca.beam_positions(-8),
     baca.slur(map=baca.selectors.tuplets()),
     baca.staccato(baca.selectors.pheads()),
-    signature=4,
-    # figure_name="rh-2 2.2.5",
     figure_name="2.2.R.5",
+    signature=4,
 )
 
 figures(
     library.lh_resonance,
     [{-35, -23}],
     baca.figure([29], 16),
-    # anchor=baca.anchor_to_figure("rh-2 2.2.1"),
     anchor=baca.anchor_to_figure("2.2.R.1"),
-    signature=4,
-    # figure_name="lhr 2.2.1",
+    do_not_label=True,
     hide_time_signature=True,
+    signature=4,
 )
 
 figures(
     library.lh_resonance,
     [{-35, -23}],
     baca.figure([27], 16),
-    signature=4,
-    # figure_name="lhr 2.2.2a",
+    do_not_label=True,
     hide_time_signature=True,
+    signature=4,
 )
 
 figures(
     library.lh_resonance,
     [{-33, -21}],
     baca.figure([21], 16),
-    signature=4,
-    # figure_name="lhr 2.2.3a",
+    do_not_label=True,
     hide_time_signature=True,
+    signature=4,
 )
 
 figures(
     library.lh_resonance,
     [{-33, -21}],
     baca.figure([15], 16),
-    signature=4,
-    # figure_name="lhr 2.2.4",
+    do_not_label=True,
     hide_time_signature=True,
+    signature=4,
 )
 
 figures(
     library.lh_resonance,
     [{-33, -21}],
     baca.figure([16], 16),
-    signature=4,
-    # figure_name="lhr 2.2.5",
+    do_not_label=True,
     hide_time_signature=True,
+    signature=4,
 )
 
 figures(
@@ -336,9 +322,8 @@ figures(
     baca.slur(map=baca.selectors.tuplets()),
     baca.tuplet_bracket_down(),
     baca.tuplet_bracket_staff_padding(3),
-    signature=4,
-    # figure_name="rh-3 5.2.9",
     figure_name="5.2.R.22-25",
+    signature=4,
 )
 
 figures(
@@ -350,12 +335,10 @@ figures(
     baca.slur(map=baca.selectors.tuplets()),
     baca.register(6, -24),
     baca.slur_down(),
-    # anchor=baca.anchor_to_figure("rh-3 5.2.3"),
     anchor=baca.anchor_to_figure("5.2.R.6-10"),
-    signature=4,
-    # figure_name="lh-4 5.2.1",
     figure_name="5.2.L.1",
     hide_time_signature=True,
+    signature=4,
 )
 
 figures(
@@ -366,12 +349,10 @@ figures(
     baca.slur(map=baca.selectors.tuplets()),
     baca.register(6, -24),
     baca.slur_down(),
-    # anchor=baca.anchor_to_figure("rh-3 5.2.5"),
     anchor=baca.anchor_to_figure("5.2.R.11-15"),
-    signature=4,
-    # figure_name="lh-4 5.2.2",
     figure_name="5.2.L.2",
     hide_time_signature=True,
+    signature=4,
 )
 
 figures(
@@ -380,10 +361,9 @@ figures(
     baca.figure([3, -1], 16),
     baca.slur(map=baca.selectors.tuplets()),
     baca.register(6, -24),
-    signature=4,
-    # figure_name="lh-4 5.2.3",
     figure_name="5.2.L.3",
     hide_time_signature=True,
+    signature=4,
 )
 
 figures(
@@ -392,12 +372,10 @@ figures(
     baca.figure([3, -1], 16),
     baca.slur(map=baca.selectors.tuplets()),
     baca.register(0, -24),
-    # anchor=baca.anchor_to_figure("rh-3 5.2.7"),
     anchor=baca.anchor_to_figure("5.2.R.16-21"),
-    signature=4,
-    # figure_name="lh-4 5.2.4",
     figure_name="5.2.L.4",
     hide_time_signature=True,
+    signature=4,
 )
 
 figures(
@@ -408,10 +386,9 @@ figures(
     rmakers.beam(),
     baca.slur(map=baca.selectors.tuplets()),
     baca.register(0, -24),
-    signature=4,
-    # figure_name="lh-4 5.2.5",
     figure_name="5.2.L.5",
     hide_time_signature=True,
+    signature=4,
 )
 
 figures(
@@ -422,10 +399,9 @@ figures(
     rmakers.beam(),
     baca.slur(map=baca.selectors.tuplets()),
     baca.register(0, -24),
-    signature=4,
-    # figure_name="lh-4 5.2.6",
     figure_name="5.2.L.6",
     hide_time_signature=True,
+    signature=4,
 )
 
 figures(
@@ -436,10 +412,9 @@ figures(
     rmakers.beam(),
     baca.slur(map=baca.selectors.tuplets()),
     baca.register(-6, -48),
-    signature=4,
-    # figure_name="lh-4 5.2.7",
     figure_name="5.2.L.7",
     hide_time_signature=True,
+    signature=4,
 )
 
 figures(
@@ -451,12 +426,10 @@ figures(
     baca.dynamic("p"),
     baca.slur(map=baca.selectors.tuplets()),
     baca.register(-6, -36),
-    # anchor=baca.anchor_to_figure("rh-3 5.2.9"),
     anchor=baca.anchor_to_figure("5.2.R.22-25"),
-    signature=4,
-    # figure_name="lh-4 5.2.8",
     figure_name="5.2.L.8",
     hide_time_signature=True,
+    signature=4,
 )
 
 figures(
@@ -467,10 +440,9 @@ figures(
     rmakers.beam(),
     baca.slur(map=baca.selectors.tuplets()),
     baca.register(-6, -36),
-    signature=4,
-    # figure_name="lh-4 5.2.9",
     figure_name="5.2.L.9",
     hide_time_signature=True,
+    signature=4,
 )
 
 figures(
@@ -478,8 +450,8 @@ figures(
     "r4",
     baca.clef("treble"),
     baca.rest_transparent(),
+    do_not_label=True,
     signature=4,
-    # figure_name="lh-4 final",
 )
 
 voice_names = baca.accumulator.get_voice_names(score)

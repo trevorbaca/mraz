@@ -41,8 +41,8 @@ figures(
     baca.slur_up(),
     rmakers.beam_groups(),
     anchor=baca.anchor_to_figure("4.5.R.3"),
-    signature=4,
     figure_name="4.5.L.1-4",
+    signature=4,
 )
 
 figures(
@@ -56,8 +56,8 @@ figures(
     ),
     baca.dynamic("ff"),
     rmakers.beam_groups(),
-    signature=4,
     figure_name="7.1.L.5",
+    signature=4,
 )
 
 figures(
@@ -71,8 +71,8 @@ figures(
     baca.rest_down(),
     baca.tuplet_bracket_down(),
     baca.tuplet_bracket_staff_padding(6),
-    signature=4,
     figure_name="8.3.L.2",
+    signature=4,
 )
 
 figures(
@@ -107,8 +107,8 @@ figures(
     baca.staccato(baca.selectors.pheads()),
     baca.tenuto(baca.selectors.pheads()),
     baca.tuplet_bracket_staff_padding(8),
-    signature=8,
     figure_name="6.1.R.3",
+    signature=8,
 )
 
 figures(
@@ -127,8 +127,8 @@ figures(
     baca.span_bar_extra_offset((-0.75, 0), baca.selectors.leaf(-1), after=True),
     baca.staccato(baca.selectors.pheads()),
     baca.tenuto(baca.selectors.pheads()),
-    signature=8,
     figure_name="6.1.R.2",
+    signature=8,
 )
 
 figures(
@@ -143,8 +143,8 @@ figures(
     baca.script_up(),
     baca.stem_up(),
     baca.text_script_up(),
-    signature=4,
     figure_name="5.1.R.3",
+    signature=4,
 )
 
 figures(
