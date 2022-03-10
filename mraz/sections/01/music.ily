@@ -1148,10 +1148,6 @@ segment.01.RH.Voice.II = {
             \once \override Rest.transparent = ##t
             %! baca.music()
             r4
-            %! FIGURE_LABEL
-            %@% - \tweak color #blue
-            %! FIGURE_LABEL
-            %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (6) ] }
 
         %! baca.music()
         }
@@ -1179,10 +1175,6 @@ segment.01.RH.Voice.II = {
             \once \override Rest.transparent = ##t
             %! baca.music()
             r4
-            %! FIGURE_LABEL
-            %@% - \tweak color #blue
-            %! FIGURE_LABEL
-            %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (8) ] }
 
         %! baca.music()
         }
@@ -1237,7 +1229,7 @@ segment.01.RH.Voice.II = {
             %! FIGURE_LABEL
             %@% - \tweak color #blue
             %! FIGURE_LABEL
-            %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (10) \hspace #1 "5.1.R.3" ] }
+            %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (8) \hspace #1 "5.1.R.3" ] }
 
             %! baca.rest_up()
             %! baca.OverrideCommand._call(1)
@@ -1305,10 +1297,6 @@ segment.01.RH.Voice.II = {
             \once \override Script.direction = #up
             %! baca.music()
             r4
-            %! FIGURE_LABEL
-            %@% - \tweak color #blue
-            %! FIGURE_LABEL
-            %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (12) ] }
 
         %! baca.music()
         }
@@ -1561,7 +1549,7 @@ segment.01.RH.Voice.III = {
             %! FIGURE_LABEL
             %@% - \tweak color #blue
             %! FIGURE_LABEL
-            %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (7) \hspace #1 "6.1.R.3" ] }
+            %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (6) \hspace #1 "6.1.R.3" ] }
 
             %! baca.music()
             cs'''!8
@@ -1610,7 +1598,7 @@ segment.01.RH.Voice.III = {
             %! FIGURE_LABEL
             %@% - \tweak color #blue
             %! FIGURE_LABEL
-            %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (9) \hspace #1 "6.1.R.2" ] }
+            %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (7) \hspace #1 "6.1.R.2" ] }
 
             %! baca.music()
             d'''8
@@ -1720,7 +1708,7 @@ segment.01.RH.Voice.III = {
             %! FIGURE_LABEL
             %@% - \tweak color #blue
             %! FIGURE_LABEL
-            %@% _ \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (11) \hspace #1 "5.1.L.1" ] }
+            %@% _ \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (9) \hspace #1 "5.1.L.1" ] }
 
             %! baca.rest_down()
             %! baca.OverrideCommand._call(1)

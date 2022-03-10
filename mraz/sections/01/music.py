@@ -24,7 +24,6 @@ figures(
     rmakers.beam_groups(),
     baca.tenuto(baca.selectors.pheads()),
     baca.markup(r"\mraz-ottava-brackets-always-govern-markup"),
-    # figure_name="b.1.1",
     figure_name="4.5.R.3",
     hide_time_signature=True,
     signature=4,
@@ -41,10 +40,8 @@ figures(
     baca.slur(map=baca.selectors.runs()),
     baca.slur_up(),
     rmakers.beam_groups(),
-    # anchor=baca.anchor_to_figure("b.1.1"),
     anchor=baca.anchor_to_figure("4.5.R.3"),
     signature=4,
-    # figure_name="b.1.2",
     figure_name="4.5.L.1-4",
 )
 
@@ -60,7 +57,6 @@ figures(
     baca.dynamic("ff"),
     rmakers.beam_groups(),
     signature=4,
-    # figure_name="b.1.3",
     figure_name="7.1.L.5",
 )
 
@@ -76,7 +72,6 @@ figures(
     baca.tuplet_bracket_down(),
     baca.tuplet_bracket_staff_padding(6),
     signature=4,
-    # figure_name="b.1.4",
     figure_name="8.3.L.2",
 )
 
@@ -89,9 +84,7 @@ figures(
     baca.dynamic_up(),
     baca.register(-27, -39),
     baca.rest_up(),
-    # anchor=baca.anchor_to_figure("b.1.4"),
     anchor=baca.anchor_to_figure("8.3.L.2"),
-    # figure_name="b.1.5",
     figure_name="8.3.R.5",
     hide_time_signature=True,
 )
@@ -100,8 +93,8 @@ figures(
     library.rh_v2,
     "r4",
     baca.rest_transparent(),
+    do_not_label=True,
     signature=4,
-    # figure_name="b.1.6",
 )
 
 figures(
@@ -115,7 +108,6 @@ figures(
     baca.tenuto(baca.selectors.pheads()),
     baca.tuplet_bracket_staff_padding(8),
     signature=8,
-    # figure_name="b.1.7",
     figure_name="6.1.R.3",
 )
 
@@ -123,8 +115,8 @@ figures(
     library.rh_v2,
     "r4",
     baca.rest_transparent(),
+    do_not_label=True,
     signature=4,
-    # figure_name="b.1.8",
 )
 
 figures(
@@ -136,7 +128,6 @@ figures(
     baca.staccato(baca.selectors.pheads()),
     baca.tenuto(baca.selectors.pheads()),
     signature=8,
-    # figure_name="b.1.9",
     figure_name="6.1.R.2",
 )
 
@@ -153,7 +144,6 @@ figures(
     baca.stem_up(),
     baca.text_script_up(),
     signature=4,
-    # figure_name="b.1.10",
     figure_name="5.1.R.3",
 )
 
@@ -172,11 +162,9 @@ figures(
     baca.tenuto(baca.selectors.pheads()),
     baca.tuplet_bracket_down(),
     baca.tuplet_bracket_staff_padding(4),
-    # anchor=baca.anchor_to_figure("b.1.10"),
     anchor=baca.anchor_to_figure("5.1.R.3"),
-    # figure_name="b.1.11",
     figure_name="5.1.L.1",
-    figure_name_direction=abjad.Down,
+    figure_label_direction=abjad.Down,
     hide_time_signature=True,
 )
 
@@ -184,8 +172,8 @@ figures(
     library.rh_v2,
     "r4",
     baca.script_up(),
+    do_not_label=True,
     signature=4,
-    # figure_name="b.1.12",
 )
 
 voice_names = baca.accumulator.get_voice_names(score)

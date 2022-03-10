@@ -22,9 +22,8 @@ figures(
     baca.stem_up(),
     baca.text_script_up(),
     baca.tuplet_bracket_up(),
-    signature=4,
-    # figure_name="rh-3 4.1.1",
     figure_name="4.1.R.1",
+    signature=4,
 )
 
 figures(
@@ -36,9 +35,8 @@ figures(
     baca.marcato(baca.selectors.pheads()),
     baca.script_up(),
     baca.up_arpeggio(baca.selectors.pheads()),
-    signature=4,
-    # figure_name="rh-2 4.1.1",
     figure_name="4.6.R.2",
+    signature=4,
 )
 
 figures(
@@ -49,10 +47,9 @@ figures(
     baca.stem_up(),
     baca.tuplet_bracket_up(),
     baca.tuplet_bracket_staff_padding(4),
-    signature=4,
-    # figure_name="rh-3 4.1.3",
     figure_name="4.1.R.2",
-    figure_name_direction=abjad.Up,
+    figure_label_direction=abjad.Up,
+    signature=4,
 )
 
 
@@ -73,18 +70,18 @@ figures(
     baca.slur(map=nontrivial_tuplet_tleaves()),
     baca.register(6, -24),
     baca.slur_up(),
-    signature=4,
-    # figure_name="insert 5.1",
     figure_name="5.2.L.1",
-    figure_name_direction=abjad.Down,
+    figure_label_direction=abjad.Down,
+    signature=4,
 )
 
 figures(
     library.rh_v3,
     "r2.",
+    do_not_label=True,
+    figure_name="S.1",
+    figure_label_direction=abjad.Down,
     signature=4,
-    figure_name="rh-3 4.1.4",
-    figure_name_direction=abjad.Down,
 )
 
 figures(
@@ -94,16 +91,14 @@ figures(
     baca.register(-6),
     baca.stem_up(),
     baca.tuplet_bracket_up(),
-    signature=4,
-    # figure_name="rh-3 4.1.5",
     figure_name="4.1.R.3",
+    signature=4,
 )
 
 figures(
     library.rh_v3,
     "r2.",
     signature=4,
-    # figure_name="rh-3 4.1.6",
 )
 
 figures(
@@ -113,12 +108,10 @@ figures(
     baca.dynamic("f"),
     baca.register(-6, 6),
     baca.tenuto(baca.selectors.pheads()),
-    # anchor=baca.anchor_to_figure("rh-3 4.1.1"),
     anchor=baca.anchor_to_figure("4.1.R.1"),
-    signature=4,
-    # figure_name="lh-5 4.1.1",
     figure_name="4.1.L.1",
     hide_time_signature=True,
+    signature=4,
 )
 
 figures(
@@ -126,11 +119,9 @@ figures(
     "r2.",
     # TODO: teach PianoPedalBracket to attach for a single leaf
     # baca.sustain_pedal()
-    # anchor=baca.anchor_to_figure("rh-2 4.1.1"),
     anchor=baca.anchor_to_figure("4.6.R.2"),
-    signature=4,
-    figure_name="lh-5 4.1.2",
     hide_time_signature=True,
+    signature=4,
 )
 
 figures(
@@ -143,10 +134,9 @@ figures(
     ),
     baca.register(-6, 6),
     baca.tenuto(baca.selectors.pheads()),
-    signature=4,
-    # figure_name="lh-5 4.1.3",
     figure_name="4.1.L.3",
     hide_time_signature=True,
+    signature=4,
 )
 
 figures(
@@ -156,11 +146,10 @@ figures(
     baca.bass_to_octave(3),
     baca.dynamic("ff"),
     baca.marcato(baca.selectors.pheads()),
-    anchor=baca.anchor_to_figure("rh-3 4.1.4"),
-    signature=4,
-    # figure_name="lh-5 4.1.4",
+    anchor=baca.anchor_to_figure("S.1"),
     figure_name="4.2.L.1",
     hide_time_signature=True,
+    signature=4,
 )
 
 figures(
@@ -174,18 +163,16 @@ figures(
     baca.dynamic("f"),
     baca.register(-6, 6),
     baca.tenuto(baca.selectors.pheads()),
-    signature=4,
-    # figure_name="lh-5 4.1.5",
     figure_name="4.1.L.2",
     hide_time_signature=True,
+    signature=4,
 )
 
 figures(
     library.lh_v5,
     "r2.",
-    signature=4,
-    # figure_name="lh-5 4.1.6",
     hide_time_signature=True,
+    signature=4,
 )
 
 figures(
@@ -194,10 +181,9 @@ figures(
     baca.figure([3], 16, affix=baca.rests_around([1], [8])),
     baca.bass_to_octave(3),
     baca.dynamic("ff"),
-    signature=4,
-    # figure_name="lh-5 4.2.1",
     figure_name="4.2.L.2",
     hide_time_signature=False,
+    signature=4,
 )
 
 figures(
@@ -205,9 +191,8 @@ figures(
     section_4.stage_2.lh.next(),
     baca.figure([1], 16, affix=baca.rests_after([3, 16])),
     baca.bass_to_octave(3),
-    signature=4,
-    # figure_name="lh-5 4.2.2",
     figure_name="4.2.L.3",
+    signature=4,
 )
 
 figures(
@@ -217,9 +202,8 @@ figures(
     baca.bass_to_octave(3),
     baca.nest("+1/4"),
     baca.tuplet_bracket_up(),
-    signature=4,
-    # figure_name="lh-5 4.2.3",
     figure_name="4.2.L.4",
+    signature=4,
 )
 
 figures(
@@ -227,9 +211,8 @@ figures(
     section_4.stage_2.lh.next(),
     baca.figure([1], 16, affix=baca.rests_after([3, 16])),
     baca.bass_to_octave(3),
-    signature=4,
-    # figure_name="lh-5 4.2.4",
     figure_name="4.2.L.5",
+    signature=4,
 )
 
 figures(
@@ -237,9 +220,8 @@ figures(
     section_4.stage_2.lh.next(),
     baca.figure([3], 16, affix=baca.rests_around([1], [8])),
     baca.bass_to_octave(3),
-    signature=4,
-    # figure_name="lh-5 4.2.5",
     figure_name="4.2.L.6",
+    signature=4,
 )
 
 figures(
@@ -247,9 +229,8 @@ figures(
     section_4.stage_2.lh.next(),
     baca.figure([1], 16, affix=baca.rests_after([3, 16])),
     baca.bass_to_octave(3),
-    signature=4,
-    # figure_name="lh-5 4.2.6",
     figure_name="4.2.L.7",
+    signature=4,
 )
 
 figures(
@@ -259,9 +240,8 @@ figures(
     baca.bass_to_octave(3),
     baca.nest("+1/4"),
     baca.tuplet_bracket_up(),
-    signature=4,
-    # figure_name="lh-5 4.2.7",
     figure_name="4.2.L.8",
+    signature=4,
 )
 
 figures(
@@ -269,9 +249,8 @@ figures(
     section_4.stage_2.lh.next(),
     baca.figure([1], 16, affix=baca.rests_after([3, 16])),
     baca.bass_to_octave(3),
-    signature=4,
-    # figure_name="lh-5 4.2.8",
     figure_name="4.2.L.9",
+    signature=4,
 )
 
 figures(
@@ -281,9 +260,8 @@ figures(
     baca.bass_to_octave(3),
     baca.nest("+1/4"),
     baca.tuplet_bracket_up(),
-    signature=4,
-    # figure_name="lh-5 4.2.9",
     figure_name="4.2.L.10",
+    signature=4,
 )
 
 segment = section_4.stage_2.lh.next(exhausted=True)
@@ -300,9 +278,8 @@ figures(
     # TODO: tag colored score only:
     # baca.stem_color("darkmagenta", context="PianoStaff"),
     baca.stem_up(),
-    signature=4,
-    # figure_name="lh-5 4.2.10",
     figure_name="4.2.L.11.U",
+    signature=4,
 )
 
 figures(
@@ -310,9 +287,8 @@ figures(
     [abjad.PitchSet(chord_1_upper)],
     baca.figure([1], 16, affix=baca.rests_after([3])),
     anchor=baca.anchor(library.lh_v5, lambda _: abjad.select.chord(_, -1)),
-    signature=4,
-    # figure_name="rh-5 4.2.1",
     figure_name="4.2.L.11.L",
+    signature=4,
 )
 
 figures(
@@ -321,29 +297,26 @@ figures(
     baca.figure([8], 16, affix=baca.skips_before([4])),
     baca.nest("+1/4"),
     anchor=baca.anchor(library.lh_v5, baca.selectors.rest(24)),
-    signature=4,
-    # figure_name="lh-r 4.2.1",
     figure_name="R.1",
+    signature=4,
 )
 
 figures(
     library.lh_resonance,
     [{-35, -23}],
     baca.figure([4], 16),
-    signature=4,
-    # figure_name="lh-r 4.2.2",
     figure_name="R.2",
     hide_time_signature=True,
+    signature=4,
 )
 
 figures(
     library.lh_resonance,
     [{-35, -23}],
     baca.figure([16], 16),
-    signature=4,
-    # figure_name="lh-r 4.2.3",
     figure_name="R.3",
     hide_time_signature=True,
+    signature=4,
 )
 
 figures(
@@ -352,29 +325,26 @@ figures(
     baca.figure([8], 16, affix=baca.skips_before([4])),
     baca.nest("+1/4"),
     anchor=baca.anchor(library.lh_v5, baca.selectors.rest(32)),
-    signature=4,
-    # figure_name="lh-r 4.2.4",
     figure_name="R.4",
+    signature=4,
 )
 
 figures(
     library.lh_resonance,
     [{-33, -21}],
     baca.figure([4], 16),
-    signature=4,
-    # figure_name="lh-r 4.2.5",
     figure_name="R.5",
     hide_time_signature=True,
+    signature=4,
 )
 
 figures(
     library.lh_resonance,
     [{-33, -21}],
     baca.figure([16], 16),
-    signature=4,
-    # figure_name="lh-r 4.2.6",
     figure_name="R.6",
     hide_time_signature=True,
+    signature=4,
 )
 
 figures(
@@ -386,17 +356,15 @@ figures(
     baca.nest(["+2/16"]),
     baca.register(-12, 0),
     anchor=baca.resume_after(library.lh_v5),
-    signature=4,
-    # figure_name="lh-5 4.4.1",
     figure_name="4.4.L.1-2",
     hide_time_signature=False,
+    signature=4,
 )
 
 figures(
     library.lh_v5,
     "r1",
     signature=4,
-    # figure_name="lh-5 4.4.2",
 )
 
 figures(
@@ -405,9 +373,8 @@ figures(
     baca.figure([6], 16, affix=baca.rests_before([2])),
     baca.slur(map=baca.selectors.ntruns()),
     baca.register(-12, 0),
-    signature=4,
-    # figure_name="lh-5 4.4.3",
     figure_name="4.4.L.3",
+    signature=4,
 )
 
 figures(
@@ -415,7 +382,6 @@ figures(
     "r4",
     baca.rest_transparent(),
     signature=4,
-    # figure_name="rh-1 4.4.3",
 )
 
 figures(
@@ -428,9 +394,8 @@ figures(
     baca.register(24),
     baca.stem_down(),
     baca.tuplet_bracket_down(),
-    signature=4,
-    # figure_name="insert 5.2",
     figure_name="5.2.R.13",
+    signature=4,
 )
 
 figures(
@@ -447,16 +412,14 @@ figures(
         baca.extend_beam(),
     ),
     baca.slur(map=baca.selectors.ntruns()),
-    signature=4,
-    # figure_name="lh-5 4.4.4",
     figure_name="4.4.L.4-6",
+    signature=4,
 )
 
 figures(
     library.lh_v5,
     "r2",
     signature=4,
-    # figure_name="lh-5 4.4.5",
 )
 
 figures(
@@ -472,9 +435,8 @@ figures(
         rmakers.beam_groups(beam_rests=True),
     ),
     baca.slur(map=baca.selectors.ntruns()),
-    signature=4,
-    # figure_name="lh-5 4.4.6",
     figure_name="4.4.L.7-9",
+    signature=4,
 )
 
 figures(
@@ -491,9 +453,8 @@ figures(
         baca.extend_beam(),
     ),
     baca.slur(map=baca.selectors.ntruns()),
-    signature=4,
-    # figure_name="lh-5 4.4.7",
     figure_name="4.4.L.10-11",
+    signature=4,
 )
 
 figures(
@@ -502,16 +463,14 @@ figures(
     baca.figure([2], 16, affix=baca.rests_around([2], [6])),
     baca.slur(map=baca.selectors.ntruns()),
     baca.register(-12, 0),
-    signature=4,
-    # figure_name="lh-5 4.4.8",
     figure_name="4.4.L.12",
+    signature=4,
 )
 
 figures(
     library.lh_v5,
     "r2",
     signature=4,
-    # figure_name="lh-5 4.4.9",
 )
 
 figures(
@@ -528,9 +487,8 @@ figures(
         baca.extend_beam(),
     ),
     baca.slur(map=baca.selectors.ntruns()),
-    signature=4,
-    # figure_name="lh-5 4.4.10",
     figure_name="4.4.L.13-14",
+    signature=4,
 )
 
 figures(
@@ -539,9 +497,8 @@ figures(
     baca.figure([6], 16, affix=baca.rests_before([2])),
     baca.slur(map=baca.selectors.ntruns()),
     baca.register(-12, 0),
-    signature=4,
-    # figure_name="lh-5 4.4.11",
     figure_name="4.4.L.15",
+    signature=4,
 )
 
 figures(
@@ -555,9 +512,8 @@ figures(
         rmakers.beam_groups(beam_rests=True),
     ),
     baca.slur(map=baca.selectors.ntruns()),
-    signature=4,
-    # figure_name="lh-5 4.4.12",
     figure_name="4.4.L.16",
+    signature=4,
 )
 
 figures(
@@ -592,17 +548,15 @@ figures(
     ),
     baca.text_script_up(),
     anchor=baca.resume_after(library.rh_v5),
-    signature=4,
-    # figure_name="rh-1 4.4.1",
     figure_name="4.4.R.1",
+    signature=4,
 )
 
 figures(
     library.rh_v1,
     "r2",
-    signature=4,
-    # figure_name="rh-1 4.4.2",
     hide_time_signature=True,
+    signature=4,
 )
 
 figures(
@@ -622,12 +576,10 @@ figures(
     ),
     rmakers.beam_groups(),
     baca.slur(map=baca.selectors.ntruns()),
-    # anchor=baca.anchor_to_figure("lh-5 4.4.4"),
     anchor=baca.anchor_to_figure("4.4.L.4-6"),
-    signature=4,
-    # figure_name="rh-1 4.4.4",
     figure_name="4.4.R.2",
     hide_time_signature=True,
+    signature=4,
 )
 
 figures(
@@ -646,12 +598,12 @@ figures(
     ),
     rmakers.beam_groups(),
     baca.slur(map=baca.selectors.ntruns()),
-    baca.slur_down(baca.selectors.leaf(0)),  # lilypond error when slur is up
+    # lilypond error when slur is up:
+    baca.slur_down(baca.selectors.leaf(0)),
     anchor=baca.anchor(library.lh_v5, baca.selectors.rest(-8)),
-    signature=4,
-    # figure_name="rh-1 4.4.5",
     figure_name="4.4.R.3",
     hide_time_signature=True,
+    signature=4,
 )
 
 resonance = abjad.PitchSet("e, fs, gs, as, b,", item_class=abjad.NamedPitch)
@@ -662,10 +614,9 @@ figures(
     baca.figure([4], 16),
     rmakers.beam_groups(),
     anchor=baca.resume(),
-    signature=4,
-    # figure_name="lh-r 4.5.1",
     figure_name="R.7",
     hide_time_signature=False,
+    signature=4,
 )
 
 figures(
@@ -673,9 +624,8 @@ figures(
     [resonance],
     baca.figure([28], 16),
     rmakers.beam_groups(),
-    signature=4,
-    # figure_name="lh-r 4.5.2",
     figure_name="R.8",
+    signature=4,
 )
 
 figures(
@@ -683,9 +633,8 @@ figures(
     [resonance],
     baca.figure([24], 16),
     rmakers.beam_groups(),
-    signature=4,
-    # figure_name="lh-r 4.5.3",
     figure_name="R.9",
+    signature=4,
 )
 
 figures(
@@ -693,9 +642,8 @@ figures(
     [resonance],
     baca.figure([16], 16),
     rmakers.beam_groups(),
-    signature=4,
-    # figure_name="lh-r 4.5.4",
     figure_name="R.10",
+    signature=4,
 )
 
 figures(
@@ -703,9 +651,8 @@ figures(
     [resonance],
     baca.figure([16], 16),
     rmakers.beam_groups(),
-    signature=4,
-    # figure_name="lh-r 4.5.5",
     figure_name="R.11",
+    signature=4,
 )
 
 figures(
@@ -713,9 +660,8 @@ figures(
     [resonance],
     baca.figure([24], 16),
     rmakers.beam_groups(),
-    signature=4,
-    # figure_name="lh-r 4.5.6",
     figure_name="R.12",
+    signature=4,
 )
 
 figures(
@@ -723,9 +669,8 @@ figures(
     [resonance],
     baca.figure([16], 16),
     rmakers.beam_groups(),
-    signature=4,
-    # figure_name="lh-r 4.5.7",
     figure_name="R.13",
+    signature=4,
 )
 
 figures(
@@ -733,9 +678,8 @@ figures(
     [resonance],
     baca.figure([8], 16),
     rmakers.beam_groups(),
-    signature=4,
-    # figure_name="lh-r 4.5.8",
     figure_name="R.14",
+    signature=4,
 )
 
 figures(
@@ -746,12 +690,10 @@ figures(
     baca.dynamic("f"),
     baca.register(36),
     baca.tenuto(baca.selectors.pheads()),
-    # anchor=baca.anchor_to_figure("lh-r 4.5.2"),
     anchor=baca.anchor_to_figure("R.8"),
-    signature=4,
-    # figure_name="rh-1 4.5.1",
     figure_name="4.5.R.1",
     hide_time_signature=True,
+    signature=4,
 )
 
 figures(
@@ -761,10 +703,9 @@ figures(
     rmakers.beam_groups(),
     baca.register(36),
     baca.tenuto(baca.selectors.pheads()),
-    signature=4,
-    # figure_name="rh-1 4.5.2",
     figure_name="4.5.R.2",
     hide_time_signature=True,
+    signature=4,
 )
 
 figures(
@@ -774,10 +715,9 @@ figures(
     rmakers.beam_groups(),
     baca.register(36),
     baca.tenuto(baca.selectors.pheads()),
-    signature=4,
-    # figure_name="rh-1 4.5.3",
     figure_name="4.5.R.3",
     hide_time_signature=True,
+    signature=4,
 )
 
 figures(
@@ -787,10 +727,9 @@ figures(
     rmakers.beam_groups(),
     baca.register(36),
     baca.tenuto(baca.selectors.pheads()),
-    signature=4,
-    # figure_name="rh-1 4.5.4",
     figure_name="4.5.R.4",
     hide_time_signature=True,
+    signature=4,
 )
 
 figures(
@@ -800,12 +739,10 @@ figures(
     rmakers.beam_groups(),
     baca.register(36),
     baca.tenuto(baca.selectors.pheads()),
-    # anchor=baca.anchor_to_figure("lh-r 4.5.7"),
     anchor=baca.anchor_to_figure("R.13"),
-    signature=4,
-    # figure_name="rh-1 4.5.5",
     figure_name="4.5.R.5",
     hide_time_signature=True,
+    signature=4,
 )
 
 figures(
@@ -815,10 +752,9 @@ figures(
     rmakers.beam_groups(),
     baca.register(36),
     baca.tenuto(baca.selectors.pheads()),
-    signature=4,
-    # figure_name="rh-1 4.5.6",
     figure_name="4.5.R.6",
     hide_time_signature=True,
+    signature=4,
 )
 
 figures(
@@ -834,12 +770,10 @@ figures(
     baca.slur(map=baca.selectors.ntruns()),
     baca.register(10, 36),
     baca.slur_up(),
-    # anchor=baca.anchor_to_figure("rh-1 4.5.3"),
     anchor=baca.anchor_to_figure("4.5.R.3"),
-    signature=4,
-    # figure_name="rh-2 4.5.1",
     figure_name="4.5.L.1-4",
     hide_time_signature=True,
+    signature=4,
 )
 
 figures(
@@ -856,10 +790,9 @@ figures(
     baca.register(10, 36),
     baca.slur_up(),
     baca.text_script_up(),
-    signature=4,
-    # figure_name="rh-2 4.5.2",
     figure_name="4.5.L.5-8",
     hide_time_signature=True,
+    signature=4,
 )
 
 figures(
@@ -870,12 +803,10 @@ figures(
     baca.marcato(baca.selectors.pheads()),
     baca.script_up(),
     baca.up_arpeggio(baca.selectors.pheads()),
-    # anchor=baca.anchor_to_figure("lh-r 4.5.6"),
     anchor=baca.anchor_to_figure("R.12"),
-    signature=4,
-    # figure_name="rh-2 4.5.3",
     figure_name="4.6.R.2'",
     hide_time_signature=True,
+    signature=4,
 )
 
 figures(
@@ -892,10 +823,9 @@ figures(
     baca.register(10, 36),
     baca.slur_up(),
     baca.text_script_up(),
-    signature=4,
-    # figure_name="rh-2 4.5.4",
     figure_name="4.5.L.9-12",
     hide_time_signature=True,
+    signature=4,
 )
 
 figures(
@@ -912,10 +842,9 @@ figures(
     baca.register(10, 36),
     baca.slur_up(),
     baca.text_script_up(),
-    signature=4,
-    # figure_name="rh-2 4.5.5",
     figure_name="4.5.L.13-14",
     hide_time_signature=True,
+    signature=4,
 )
 
 figures(
@@ -927,9 +856,8 @@ figures(
     baca.marcato(baca.selectors.pheads()),
     baca.script_up(),
     anchor=baca.resume(),
-    signature=4,
-    # figure_name="rh-2 4.6.1",
     figure_name="4.6.R.3",
+    signature=4,
 )
 
 figures(
@@ -940,9 +868,8 @@ figures(
     baca.up_arpeggio(baca.selectors.pheads()),
     baca.marcato(baca.selectors.pheads()),
     baca.script_up(),
-    signature=4,
-    # figure_name="rh-2 4.6.2",
     figure_name="4.6.R.4",
+    signature=4,
 )
 
 figures(
@@ -953,9 +880,8 @@ figures(
     baca.up_arpeggio(baca.selectors.pheads()),
     baca.marcato(baca.selectors.pheads()),
     baca.script_up(),
-    signature=4,
-    # figure_name="rh-2 4.6.3",
     figure_name="4.6.R.5",
+    signature=4,
 )
 
 figures(
@@ -968,11 +894,9 @@ figures(
     ),
     baca.sustain_pedal_staff_padding(4),
     baca.rest_transparent(),
-    # anchor=baca.anchor_to_figure("rh-2 4.6.1"),
     anchor=baca.anchor_to_figure("4.6.R.3"),
-    signature=4,
-    # figure_name="lh-2 4.6.1",
     hide_time_signature=True,
+    signature=4,
 )
 
 figures(
@@ -986,9 +910,8 @@ figures(
     baca.tuplet_bracket_staff_padding(4),
     baca.tuplet_bracket_up(),
     anchor=baca.resume(),
-    signature=4,
-    # figure_name="rh-3 4.6.1",
     figure_name="4.1.R.2'",
+    signature=4,
 )
 
 
@@ -1003,12 +926,10 @@ figures(
     baca.dynamic("p"),
     baca.register(-6, 6),
     baca.tenuto(baca.selectors.pheads()),
-    # anchor=baca.anchor_to_figure("rh-3 4.6.1"),
     anchor=baca.anchor_to_figure("4.1.R.2'"),
-    signature=4,
-    # figure_name="lh-5 4.6.1",
     figure_name="4.1.L.2'",
     hide_time_signature=True,
+    signature=4,
 )
 
 figures(
@@ -1023,9 +944,8 @@ figures(
     baca.script_up(),
     baca.stem_up(),
     baca.text_script_up(),
-    signature=4,
-    # figure_name="b.1.10",
     figure_name="5.1.R.1",
+    signature=4,
 )
 
 figures(
@@ -1039,12 +959,10 @@ figures(
     baca.rest_down(),
     baca.stem_down(),
     baca.tuplet_bracket_down(),
-    # anchor=baca.anchor_to_figure("b.1.10"),
     anchor=baca.anchor_to_figure("5.1.R.1"),
-    signature=4,
-    # figure_name="b.1.11",
     figure_name="5.1.L.1",
     hide_time_signature=True,
+    signature=4,
 )
 
 voice_names = baca.accumulator.get_voice_names(score)

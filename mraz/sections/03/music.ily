@@ -809,7 +809,7 @@ segment.03.RH.Voice.I = {
             %! FIGURE_LABEL
             %@% - \tweak color #blue
             %! FIGURE_LABEL
-            %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (11) \hspace #1 "4.5.R.1" ] }
+            %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (8) \hspace #1 "4.5.R.1" ] }
 
         %! baca.music()
         }
@@ -835,7 +835,7 @@ segment.03.RH.Voice.I = {
             %! FIGURE_LABEL
             %@% - \tweak color #blue
             %! FIGURE_LABEL
-            %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (12) \hspace #1 "4.5.R.2" ] }
+            %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (9) \hspace #1 "4.5.R.2" ] }
 
         %! baca.music()
         }
@@ -861,7 +861,7 @@ segment.03.RH.Voice.I = {
             %! FIGURE_LABEL
             %@% - \tweak color #blue
             %! FIGURE_LABEL
-            %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (13) \hspace #1 "4.5.R.3" ] }
+            %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (10) \hspace #1 "4.5.R.3" ] }
             %! baca.ottava()
             %! baca.SpannerIndicatorCommand._call(4)
             %! SPANNER_STOP
@@ -1120,10 +1120,6 @@ segment.03.RH.Voice.II = {
             \once \override Rest.transparent = ##t
             %! baca.music()
             r4
-            %! FIGURE_LABEL
-            %@% - \tweak color #blue
-            %! FIGURE_LABEL
-            %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (2) ] }
 
         %! baca.music()
         }
@@ -1172,7 +1168,7 @@ segment.03.RH.Voice.II = {
             %! FIGURE_LABEL
             %@% - \tweak color #blue
             %! FIGURE_LABEL
-            %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (3) \hspace #1 "2.2.R.1.1" ] }
+            %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (2) \hspace #1 "2.2.R.1.1" ] }
             [
             %! baca.slur()
             %! baca.SpannerIndicatorCommand._call(2)
@@ -1240,10 +1236,6 @@ segment.03.RH.Voice.II = {
             \once \override Rest.transparent = ##t
             %! baca.music()
             r4
-            %! FIGURE_LABEL
-            %@% - \tweak color #blue
-            %! FIGURE_LABEL
-            %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (4) ] }
 
         %! baca.music()
         }
@@ -1294,7 +1286,7 @@ segment.03.RH.Voice.II = {
             %! FIGURE_LABEL
             %@% - \tweak color #blue
             %! FIGURE_LABEL
-            %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (6) \hspace #1 "2.2.R.1.1-2" ] }
+            %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (4) \hspace #1 "2.2.R.1.1-2" ] }
             [
             %! baca.slur()
             %! baca.SpannerIndicatorCommand._call(2)
@@ -1418,10 +1410,6 @@ segment.03.RH.Voice.II = {
             \once \override Rest.transparent = ##t
             %! baca.music()
             r4
-            %! FIGURE_LABEL
-            %@% - \tweak color #blue
-            %! FIGURE_LABEL
-            %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (7) ] }
 
         %! baca.music()
         }
@@ -1472,7 +1460,7 @@ segment.03.RH.Voice.II = {
             %! FIGURE_LABEL
             %@% - \tweak color #blue
             %! FIGURE_LABEL
-            %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (10) \hspace #1 "2.2.R.1.1-4" ] }
+            %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (7) \hspace #1 "2.2.R.1.1-4" ] }
             [
             %! baca.slur()
             %! baca.SpannerIndicatorCommand._call(2)
@@ -1751,7 +1739,7 @@ segment.03.RH.Voice.II = {
             %! FIGURE_LABEL
             %@% - \tweak color #blue
             %! FIGURE_LABEL
-            %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (14) \hspace #1 "4.5.L.1-4" ] }
+            %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (11) \hspace #1 "4.5.L.1-4" ] }
             %! EXPLICIT_DYNAMIC_COLOR
             %! _treat_persistent_wrapper(1)
             %! baca.hairpin()
@@ -2188,7 +2176,7 @@ segment.03.RH.Voice.III = {
             %! FIGURE_LABEL
             %@% - \tweak color #blue
             %! FIGURE_LABEL
-            %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (8) \hspace #1 "4.1.R.1" ] }
+            %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (5) \hspace #1 "4.1.R.1" ] }
 
             %! baca.music()
             r4
@@ -2605,7 +2593,7 @@ segment.03.RH.Voice.IV = {
             %! FIGURE_LABEL
             %@% - \tweak color #blue
             %! FIGURE_LABEL
-            %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (5) \hspace #1 "7.1.L.5'" ] }
+            %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (3) \hspace #1 "7.1.L.5'" ] }
             [
 
             \set stemLeftBeamCount = 2
@@ -4264,7 +4252,7 @@ segment.03.LH.Voice.V = {
             %! FIGURE_LABEL
             %@% - \tweak color #blue
             %! FIGURE_LABEL
-            %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (9) \hspace #1 "4.1.L.1" ] }
+            %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (6) \hspace #1 "4.1.L.1" ] }
 
             %! baca.music()
             af!8.
@@ -4917,10 +4905,6 @@ segment.03.LH.Resonance.Voice = {
             %! baca.OverrideCommand._call(1)
             \override Stem.stencil = ##f
             <e, fs,! gs,! as,! b,>2
-            %! FIGURE_LABEL
-            %@% - \tweak color #blue
-            %! FIGURE_LABEL
-            %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (15) ] }
             %! baca._attach_shadow_tie_indicators()
             - \tweak stencil ##f
             %! baca._attach_shadow_tie_indicators()
@@ -4967,10 +4951,6 @@ segment.03.LH.Resonance.Voice = {
             %! baca.OverrideCommand._call(1)
             \once \override Stem.transparent = ##t
             <e, fs, gs, as, b,>4
-            %! FIGURE_LABEL
-            %@% - \tweak color #blue
-            %! FIGURE_LABEL
-            %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (16) ] }
             %! baca.repeat_tie()
             %! baca.IndicatorCommand._call()
             \repeatTie
@@ -4996,10 +4976,6 @@ segment.03.LH.Resonance.Voice = {
             %! baca._comment_measure_numbers()
             % [LH_Resonance_Voice measure 3]
             <e, fs, gs, as, b,>4
-            %! FIGURE_LABEL
-            %@% - \tweak color #blue
-            %! FIGURE_LABEL
-            %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (17) ] }
             %! baca.repeat_tie()
             %! baca.IndicatorCommand._call()
             \repeatTie
@@ -5078,10 +5054,6 @@ segment.03.LH.Resonance.Voice = {
             %! baca.OverrideCommand._call(1)
             \once \override Stem.transparent = ##t
             <e, fs, gs, as, b,>4
-            %! FIGURE_LABEL
-            %@% - \tweak color #blue
-            %! FIGURE_LABEL
-            %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (18) ] }
             %! baca.repeat_tie()
             %! baca.IndicatorCommand._call()
             \repeatTie
@@ -5107,10 +5079,6 @@ segment.03.LH.Resonance.Voice = {
             %! baca._comment_measure_numbers()
             % [LH_Resonance_Voice measure 5]
             <e, fs, gs, as, b,>2
-            %! FIGURE_LABEL
-            %@% - \tweak color #blue
-            %! FIGURE_LABEL
-            %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (19) ] }
             %! baca.repeat_tie()
             %! baca.IndicatorCommand._call()
             \repeatTie
@@ -5136,10 +5104,6 @@ segment.03.LH.Resonance.Voice = {
             %! baca._comment_measure_numbers()
             % [LH_Resonance_Voice measure 6]
             <e, fs, gs, as, b,>2
-            %! FIGURE_LABEL
-            %@% - \tweak color #blue
-            %! FIGURE_LABEL
-            %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (20) ] }
             %! baca.repeat_tie()
             %! baca.IndicatorCommand._call()
             \repeatTie
@@ -5204,10 +5168,6 @@ segment.03.LH.Resonance.Voice = {
             %! baca.OverrideCommand._call(1)
             \once \override Accidental.X-extent = ##f
             <e, fs,! gs,! as,! b,>1
-            %! FIGURE_LABEL
-            %@% - \tweak color #blue
-            %! FIGURE_LABEL
-            %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (21) ] }
             %! baca._attach_shadow_tie_indicators()
             - \tweak stencil ##f
             %! baca._attach_shadow_tie_indicators()
@@ -5295,10 +5255,6 @@ segment.03.LH.Resonance.Voice = {
             %! baca.OverrideCommand._call(1)
             \override Accidental.stencil = ##f
             <e, fs, gs, as, b,>1..
-            %! FIGURE_LABEL
-            %@% - \tweak color #blue
-            %! FIGURE_LABEL
-            %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (22) ] }
             %! baca.repeat_tie()
             %! baca.IndicatorCommand._call()
             \repeatTie
@@ -5324,10 +5280,6 @@ segment.03.LH.Resonance.Voice = {
             %! baca._comment_measure_numbers()
             % [LH_Resonance_Voice measure 11]
             <e, fs, gs, as, b,>1.
-            %! FIGURE_LABEL
-            %@% - \tweak color #blue
-            %! FIGURE_LABEL
-            %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (23) ] }
             %! baca.repeat_tie()
             %! baca.IndicatorCommand._call()
             \repeatTie
