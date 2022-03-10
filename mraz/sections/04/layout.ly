@@ -38,7 +38,7 @@
             \noBreak
             %! BREAK
             %! baca.IndicatorCommand._call()
-            \baca-lbsd #0 #'(14 15)
+            \baca-lbsd #0 #'(14 17)
             %! BREAK
             %! baca.IndicatorCommand._call()
             \pageBreak

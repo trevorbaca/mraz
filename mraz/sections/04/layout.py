@@ -3,7 +3,7 @@ import baca
 spacing = baca.make_layout(
     baca.page(
         1,
-        baca.system(measure=1, y_offset=0, distances=(14, 15)),
+        baca.system(measure=1, y_offset=0, distances=(14, 17)),
         baca.system(measure=7, y_offset=55, distances=(10, 17)),
         baca.system(measure=14, y_offset=100, distances=(22, 17)),
         baca.system(measure=22, y_offset=162.5, distances=(22, 17)),

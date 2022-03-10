@@ -659,7 +659,7 @@ segment.07.RH.Voice.I = {
                 %! FIGURE_LABEL
                 %@% - \tweak color #blue
                 %! FIGURE_LABEL
-                %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (1) \hspace #1 "7.1.R.1" ] }
+                %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (1) \hspace #1 "7.1.R.1" ] }
                 [
                 %! baca.attach_color_literal(2)
                 %! REAPPLIED_CLEF_REDRAW_COLOR
@@ -781,7 +781,7 @@ segment.07.RH.Voice.I = {
                 %! FIGURE_LABEL
                 %@% - \tweak color #blue
                 %! FIGURE_LABEL
-                %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (3) \hspace #1 "7.1.R.3" ] }
+                %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (3) \hspace #1 "7.1.R.3" ] }
 
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 2
@@ -862,7 +862,7 @@ segment.07.RH.Voice.I = {
                 %! FIGURE_LABEL
                 %@% - \tweak color #blue
                 %! FIGURE_LABEL
-                %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (5) \hspace #1 "7.1.R.5" ] }
+                %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (5) \hspace #1 "7.1.R.5" ] }
                 [
 
                 \set stemLeftBeamCount = 2
@@ -918,7 +918,7 @@ segment.07.RH.Voice.I = {
                 %! FIGURE_LABEL
                 %@% - \tweak color #blue
                 %! FIGURE_LABEL
-                %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (7) \hspace #1 "7.1.R.7" ] }
+                %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (7) \hspace #1 "7.1.R.7" ] }
 
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 2
@@ -989,7 +989,7 @@ segment.07.RH.Voice.I = {
                 %! FIGURE_LABEL
                 %@% - \tweak color #blue
                 %! FIGURE_LABEL
-                %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (10) \hspace #1 "7.1.R.11" ] }
+                %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (10) \hspace #1 "7.1.R.11" ] }
                 [
 
                 \set stemLeftBeamCount = 2
@@ -1810,7 +1810,7 @@ segment.07.RH.Voice.II = {
             %! FIGURE_LABEL
             %@% - \tweak color #blue
             %! FIGURE_LABEL
-            %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (2) \hspace #1 "7.1.R.2" ] }
+            %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (2) \hspace #1 "7.1.R.2" ] }
             [
             %! baca.slur()
             %! baca.SpannerIndicatorCommand._call(2)
@@ -1871,7 +1871,7 @@ segment.07.RH.Voice.II = {
                 %! FIGURE_LABEL
                 %@% - \tweak color #blue
                 %! FIGURE_LABEL
-                %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (4) \hspace #1 "7.1.R.4" ] }
+                %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (4) \hspace #1 "7.1.R.4" ] }
                 %! baca.slur()
                 %! baca.SpannerIndicatorCommand._call(2)
                 %! SPANNER_START
@@ -1990,7 +1990,7 @@ segment.07.RH.Voice.II = {
             %! FIGURE_LABEL
             %@% - \tweak color #blue
             %! FIGURE_LABEL
-            %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (6) \hspace #1 "7.1.R.6" ] }
+            %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (6) \hspace #1 "7.1.R.6" ] }
             [
             %! baca.slur()
             %! baca.SpannerIndicatorCommand._call(2)
@@ -2125,7 +2125,7 @@ segment.07.RH.Voice.II = {
                 %! FIGURE_LABEL
                 %@% - \tweak color #blue
                 %! FIGURE_LABEL
-                %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (8) \hspace #1 "7.1.R.8" ] }
+                %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (8) \hspace #1 "7.1.R.8" ] }
                 %! baca.slur()
                 %! baca.SpannerIndicatorCommand._call(2)
                 %! SPANNER_START
@@ -2223,7 +2223,7 @@ segment.07.RH.Voice.II = {
             %! FIGURE_LABEL
             %@% - \tweak color #blue
             %! FIGURE_LABEL
-            %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (9) \hspace #1 "7.1.R.10" ] }
+            %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (9) \hspace #1 "7.1.R.10" ] }
             [
             %! baca.slur()
             %! baca.SpannerIndicatorCommand._call(2)
@@ -2272,7 +2272,7 @@ segment.07.RH.Voice.II = {
             %! FIGURE_LABEL
             %@% - \tweak color #blue
             %! FIGURE_LABEL
-            %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (11) \hspace #1 "7.1.R.12" ] }
+            %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (11) \hspace #1 "7.1.R.12" ] }
             %! baca.slur()
             %! baca.SpannerIndicatorCommand._call(2)
             %! SPANNER_START
@@ -4404,7 +4404,7 @@ segment.07.LH.Voice.IV = {
             %! FIGURE_LABEL
             %@% - \tweak color #blue
             %! FIGURE_LABEL
-            %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (12) \hspace #1 "7.1.L.1" ] }
+            %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (12) \hspace #1 "7.1.L.1" ] }
             [
 
             \set stemLeftBeamCount = 2
@@ -4507,7 +4507,7 @@ segment.07.LH.Voice.IV = {
             %! FIGURE_LABEL
             %@% - \tweak color #blue
             %! FIGURE_LABEL
-            %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (14) \hspace #1 "7.1.L.3" ] }
+            %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (14) \hspace #1 "7.1.L.3" ] }
             [
 
             \set stemLeftBeamCount = 2
@@ -4561,7 +4561,7 @@ segment.07.LH.Voice.IV = {
             %! FIGURE_LABEL
             %@% - \tweak color #blue
             %! FIGURE_LABEL
-            %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (16) \hspace #1 "7.1.L.5" ] }
+            %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (16) \hspace #1 "7.1.L.5" ] }
             [
 
             \set stemLeftBeamCount = 2
@@ -5083,7 +5083,7 @@ segment.07.LH.Voice.V = {
                 %! FIGURE_LABEL
                 %@% - \tweak color #blue
                 %! FIGURE_LABEL
-                %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (13) \hspace #1 "7.1.L.2" ] }
+                %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (13) \hspace #1 "7.1.L.2" ] }
                 [
                 %! baca.slur()
                 %! baca.SpannerIndicatorCommand._call(2)
@@ -5261,7 +5261,7 @@ segment.07.LH.Voice.V = {
                 %! FIGURE_LABEL
                 %@% - \tweak color #blue
                 %! FIGURE_LABEL
-                %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (15) \hspace #1 "7.1.L.4" ] }
+                %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (15) \hspace #1 "7.1.L.4" ] }
                 [
                 %! baca.slur()
                 %! baca.SpannerIndicatorCommand._call(2)
