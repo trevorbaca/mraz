@@ -620,9 +620,9 @@ segment.01.RH.Voice.I = {
             %! DEFAULT_INSTRUMENT_ALERT
             %! baca._attach_latent_indicator_alert()
             ^ \baca-default-indicator-markup "(“Piano”)"
-            %! FIGURE_NAME
+            %! FIGURE_LABEL
             %@% - \tweak color #blue
-            %! FIGURE_NAME
+            %! FIGURE_LABEL
             %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (1) \hspace #1 "4.5.R.3" ] }
             %! baca.attach_color_literal(2)
             %! DEFAULT_CLEF_REDRAW_COLOR
@@ -955,9 +955,9 @@ segment.01.RH.Voice.II = {
             %! baca._set_status_tag()
             %! EXPLICIT_DYNAMIC
             \f
-            %! FIGURE_NAME
+            %! FIGURE_LABEL
             %@% - \tweak color #blue
-            %! FIGURE_NAME
+            %! FIGURE_LABEL
             %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (2) \hspace #1 "4.5.L.1-4" ] }
             %! EXPLICIT_DYNAMIC_COLOR
             %! _treat_persistent_wrapper(1)
@@ -1148,9 +1148,9 @@ segment.01.RH.Voice.II = {
             \once \override Rest.transparent = ##t
             %! baca.music()
             r4
-            %! FIGURE_NAME
+            %! FIGURE_LABEL
             %@% - \tweak color #blue
-            %! FIGURE_NAME
+            %! FIGURE_LABEL
             %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (6) ] }
 
         %! baca.music()
@@ -1179,9 +1179,9 @@ segment.01.RH.Voice.II = {
             \once \override Rest.transparent = ##t
             %! baca.music()
             r4
-            %! FIGURE_NAME
+            %! FIGURE_LABEL
             %@% - \tweak color #blue
-            %! FIGURE_NAME
+            %! FIGURE_LABEL
             %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (8) ] }
 
         %! baca.music()
@@ -1234,9 +1234,9 @@ segment.01.RH.Voice.II = {
             %! baca.accent()
             %! baca.IndicatorCommand._call()
             - \accent
-            %! FIGURE_NAME
+            %! FIGURE_LABEL
             %@% - \tweak color #blue
-            %! FIGURE_NAME
+            %! FIGURE_LABEL
             %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (10) \hspace #1 "5.1.R.3" ] }
 
             %! baca.rest_up()
@@ -1305,9 +1305,9 @@ segment.01.RH.Voice.II = {
             \once \override Script.direction = #up
             %! baca.music()
             r4
-            %! FIGURE_NAME
+            %! FIGURE_LABEL
             %@% - \tweak color #blue
-            %! FIGURE_NAME
+            %! FIGURE_LABEL
             %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (12) ] }
 
         %! baca.music()
@@ -1558,9 +1558,9 @@ segment.01.RH.Voice.III = {
             %! baca.tenuto()
             %! baca.IndicatorCommand._call()
             - \tenuto
-            %! FIGURE_NAME
+            %! FIGURE_LABEL
             %@% - \tweak color #blue
-            %! FIGURE_NAME
+            %! FIGURE_LABEL
             %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (7) \hspace #1 "6.1.R.3" ] }
 
             %! baca.music()
@@ -1607,9 +1607,9 @@ segment.01.RH.Voice.III = {
             % [RH_Voice_III measure 7]
             %! baca.music()
             r8
-            %! FIGURE_NAME
+            %! FIGURE_LABEL
             %@% - \tweak color #blue
-            %! FIGURE_NAME
+            %! FIGURE_LABEL
             %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (9) \hspace #1 "6.1.R.2" ] }
 
             %! baca.music()
@@ -1717,9 +1717,9 @@ segment.01.RH.Voice.III = {
             %! baca.tenuto()
             %! baca.IndicatorCommand._call()
             - \tenuto
-            %! FIGURE_NAME
+            %! FIGURE_LABEL
             %@% - \tweak color #blue
-            %! FIGURE_NAME
+            %! FIGURE_LABEL
             %@% _ \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (11) \hspace #1 "5.1.L.1" ] }
 
             %! baca.rest_down()
@@ -3152,9 +3152,9 @@ segment.01.LH.Voice.IV = {
             %! baca._set_status_tag()
             %! EXPLICIT_DYNAMIC
             \ff
-            %! FIGURE_NAME
+            %! FIGURE_LABEL
             %@% - \tweak color #blue
-            %! FIGURE_NAME
+            %! FIGURE_LABEL
             %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (3) \hspace #1 "7.1.L.5" ] }
             [
 
@@ -3590,9 +3590,9 @@ segment.01.LH.Voice.V = {
             %! baca._set_status_tag()
             %! EXPLICIT_DYNAMIC
             \ppp
-            %! FIGURE_NAME
+            %! FIGURE_LABEL
             %@% - \tweak color #blue
-            %! FIGURE_NAME
+            %! FIGURE_LABEL
             %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (5) \hspace #1 "8.3.R.5" ] }
 
             %! baca.rest_up()
@@ -3974,9 +3974,9 @@ segment.01.LH.Voice.VI = {
             %! baca._set_status_tag()
             %! EXPLICIT_DYNAMIC
             \f
-            %! FIGURE_NAME
+            %! FIGURE_LABEL
             %@% - \tweak color #blue
-            %! FIGURE_NAME
+            %! FIGURE_LABEL
             %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (4) \hspace #1 "8.3.L.2" ] }
             %! baca.attach_color_literal(2)
             %! EXPLICIT_CLEF_REDRAW_COLOR

@@ -2966,9 +2966,9 @@ segment.02.LH.Voice.V = {
             %! baca._set_status_tag()
             %! EXPLICIT_DYNAMIC
             \ppp
-            %! FIGURE_NAME
+            %! FIGURE_LABEL
             %@% - \tweak color #blue
-            %! FIGURE_NAME
+            %! FIGURE_LABEL
             %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (1) \hspace #1 "8.3.R.1" ] }
 
             %! baca.music()
@@ -3000,9 +3000,9 @@ segment.02.LH.Voice.V = {
             % [LH_Voice_V measure 2]
             %! baca.music()
             g,,8
-            %! FIGURE_NAME
+            %! FIGURE_LABEL
             %@% - \tweak color #blue
-            %! FIGURE_NAME
+            %! FIGURE_LABEL
             %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (2) \hspace #1 "8.3.R.2-3" ] }
 
             %! baca.rest_up()
@@ -3072,9 +3072,9 @@ segment.02.LH.Voice.V = {
             % [LH_Voice_V measure 3]
             %! baca.music()
             cs,,!32
-            %! FIGURE_NAME
+            %! FIGURE_LABEL
             %@% - \tweak color #blue
-            %! FIGURE_NAME
+            %! FIGURE_LABEL
             %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (3) \hspace #1 "8.3.R.4" ] }
 
             %! baca.music()
@@ -3110,9 +3110,9 @@ segment.02.LH.Voice.V = {
             % [LH_Voice_V measure 4]
             %! baca.music()
             bf,,!8.
-            %! FIGURE_NAME
+            %! FIGURE_LABEL
             %@% - \tweak color #blue
-            %! FIGURE_NAME
+            %! FIGURE_LABEL
             %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (4) \hspace #1 "8.3.R.5" ] }
 
             %! baca.rest_up()
@@ -3160,9 +3160,9 @@ segment.02.LH.Voice.V = {
             % [LH_Voice_V measure 5]
             %! baca.music()
             d,,8
-            %! FIGURE_NAME
+            %! FIGURE_LABEL
             %@% - \tweak color #blue
-            %! FIGURE_NAME
+            %! FIGURE_LABEL
             %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (5) \hspace #1 "8.3.R.6" ] }
 
             %! baca.music()
@@ -3194,9 +3194,9 @@ segment.02.LH.Voice.V = {
             % [LH_Voice_V measure 6]
             %! baca.music()
             b,,,8
-            %! FIGURE_NAME
+            %! FIGURE_LABEL
             %@% - \tweak color #blue
-            %! FIGURE_NAME
+            %! FIGURE_LABEL
             %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (6) \hspace #1 "8.3.R.7" ] }
 
             %! baca.music()
@@ -3232,9 +3232,9 @@ segment.02.LH.Voice.V = {
             % [LH_Voice_V measure 7]
             %! baca.music()
             ef,,!32
-            %! FIGURE_NAME
+            %! FIGURE_LABEL
             %@% - \tweak color #blue
-            %! FIGURE_NAME
+            %! FIGURE_LABEL
             %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (7) \hspace #1 "8.3.R.8" ] }
 
             %! baca.rest_up()
@@ -3282,9 +3282,9 @@ segment.02.LH.Voice.V = {
             % [LH_Voice_V measure 8]
             %! baca.music()
             c,8.
-            %! FIGURE_NAME
+            %! FIGURE_LABEL
             %@% - \tweak color #blue
-            %! FIGURE_NAME
+            %! FIGURE_LABEL
             %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (8) \hspace #1 "8.3.R.9" ] }
 
             %! baca.music()
@@ -3319,9 +3319,9 @@ segment.02.LH.Voice.V = {
             \override TupletBracket.staff-padding = 3
             %! baca.music()
             fs,,!8
-            %! FIGURE_NAME
+            %! FIGURE_LABEL
             %@% - \tweak color #blue
-            %! FIGURE_NAME
+            %! FIGURE_LABEL
             %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (9) \hspace #1 "8.3.R.10" ] }
 
             %! baca.music()
@@ -3388,9 +3388,9 @@ segment.02.LH.Voice.V = {
             % [LH_Voice_V measure 10]
             %! baca.music()
             a,,,32
-            %! FIGURE_NAME
+            %! FIGURE_LABEL
             %@% - \tweak color #blue
-            %! FIGURE_NAME
+            %! FIGURE_LABEL
             %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (10) \hspace #1 "8.3.R.11" ] }
 
             %! baca.rest_up()
@@ -3426,9 +3426,9 @@ segment.02.LH.Voice.V = {
             % [LH_Voice_V measure 11]
             %! baca.music()
             b,,8.
-            %! FIGURE_NAME
+            %! FIGURE_LABEL
             %@% - \tweak color #blue
-            %! FIGURE_NAME
+            %! FIGURE_LABEL
             %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (11) \hspace #1 "8.3.R.12" ] }
 
             %! baca.music()
@@ -3472,9 +3472,9 @@ segment.02.LH.Voice.V = {
             % [LH_Voice_V measure 12]
             %! baca.music()
             fs,,!8
-            %! FIGURE_NAME
+            %! FIGURE_LABEL
             %@% - \tweak color #blue
-            %! FIGURE_NAME
+            %! FIGURE_LABEL
             %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (12) \hspace #1 "8.3.R.13" ] }
 
             %! baca.music()
@@ -3788,9 +3788,9 @@ segment.02.LH.Voice.VI = {
             %! baca.tenuto()
             %! baca.IndicatorCommand._call()
             - \tenuto
-            %! FIGURE_NAME
+            %! FIGURE_LABEL
             %@% - \tweak color #blue
-            %! FIGURE_NAME
+            %! FIGURE_LABEL
             %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (13) \hspace #1 "8.3.L.1" ] }
 
             %! baca.rest_position()
@@ -3843,9 +3843,9 @@ segment.02.LH.Voice.VI = {
             %! baca.tenuto()
             %! baca.IndicatorCommand._call()
             - \tenuto
-            %! FIGURE_NAME
+            %! FIGURE_LABEL
             %@% - \tweak color #blue
-            %! FIGURE_NAME
+            %! FIGURE_LABEL
             %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (14) \hspace #1 "8.3.L.2" ] }
 
             %! baca.rest_up()
@@ -3890,9 +3890,9 @@ segment.02.LH.Voice.VI = {
             %! baca.tenuto()
             %! baca.IndicatorCommand._call()
             - \tenuto
-            %! FIGURE_NAME
+            %! FIGURE_LABEL
             %@% - \tweak color #blue
-            %! FIGURE_NAME
+            %! FIGURE_LABEL
             %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (15) \hspace #1 "8.3.L.3" ] }
 
             %! baca.music()
@@ -3943,9 +3943,9 @@ segment.02.LH.Voice.VI = {
             %! baca.tenuto()
             %! baca.IndicatorCommand._call()
             - \tenuto
-            %! FIGURE_NAME
+            %! FIGURE_LABEL
             %@% - \tweak color #blue
-            %! FIGURE_NAME
+            %! FIGURE_LABEL
             %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (16) \hspace #1 "8.3.L.4" ] }
 
             %! baca.music()
@@ -3993,9 +3993,9 @@ segment.02.LH.Voice.VI = {
             %! baca.tenuto()
             %! baca.IndicatorCommand._call()
             - \tenuto
-            %! FIGURE_NAME
+            %! FIGURE_LABEL
             %@% - \tweak color #blue
-            %! FIGURE_NAME
+            %! FIGURE_LABEL
             %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (17) \hspace #1 "8.3.L.5" ] }
 
             %! baca.music()
@@ -4040,9 +4040,9 @@ segment.02.LH.Voice.VI = {
             %! baca.tenuto()
             %! baca.IndicatorCommand._call()
             - \tenuto
-            %! FIGURE_NAME
+            %! FIGURE_LABEL
             %@% - \tweak color #blue
-            %! FIGURE_NAME
+            %! FIGURE_LABEL
             %@% - \markup \fontsize #2 \concat { [ \raise #0.25 \fontsize #-2 (18) \hspace #1 "8.3.L.6" ] }
 
             %! baca.music()
