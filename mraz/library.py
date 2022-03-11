@@ -711,7 +711,7 @@ def moment_4():
     stage_1_lh_segments = abjad.sequence.repeat(stage_1_lh_segments, n=3)
     stage_1_lh_segments = abjad.sequence.flatten(stage_1_lh_segments)
     stage_1_lh_segments = baca.Cursor(stage_1_lh_segments)
-    chord = abjad.PitchSet(stage_2_segments[0])
+    chord = abjad.NamedPitchSet(stage_2_segments[0])
     chord = baca.pcollections.space_up(chord, bass=7, soprano=9)
     chords = 10 * [chord]
     last = abjad.sequence.join(stages[1])[0]
@@ -722,7 +722,7 @@ def moment_4():
     lh = baca.pcollections.remove_duplicates(lh, level=-1)
     lh = baca.pcollections.read(lh, [2, 2, 3, 1, 2, 2, 3, 3], check=abjad.Exact)
     lh = [abjad.NumberedPitchClassSegment(_) for _ in lh]
-    lh = [abjad.PitchSet(_) for _ in lh]
+    lh = [abjad.NamedPitchSet(_) for _ in lh]
     lh = baca.Cursor(lh, cyclic=True, singletons=True)
     rh = baca.sequence.accumulate(
         rh, [lambda _: baca.pcollections.alpha(_), lambda _: _.transpose(n=2)]
@@ -766,7 +766,7 @@ def moment_4():
     stage_6_segments = [
         baca.pcollections.soprano_to_octave(_, n=7) for _ in stage_6_segments
     ]
-    stage_6_segments = [abjad.PitchSet(_) for _ in stage_6_segments]
+    stage_6_segments = [abjad.NamedPitchSet(_) for _ in stage_6_segments]
     stage_6_segments = baca.Cursor(stage_6_segments, singletons=True)
     return types.SimpleNamespace(
         stage_1=types.SimpleNamespace(
