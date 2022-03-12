@@ -612,9 +612,7 @@ def moment_2():
     segments = baca.pcollections.read(segments, counts)
     segments = baca.pcollections.remove_duplicates(segments, level=1)
     segments = abjad.sequence.partition_by_counts(segments, [6, 5, 5, 4, 4])
-    segments = [
-        [abjad.PitchClassSegment(_) for _ in list_] for list_ in segments
-    ]
+    segments = [[abjad.PitchClassSegment(_) for _ in list_] for list_ in segments]
     segments = [
         [baca.pcollections.arpeggiate_up(_) for _ in list_] for list_ in segments
     ]
@@ -919,16 +917,12 @@ def moment_6():
     rh_stage_1_segments = baca.pcollections.remove_duplicates(
         rh_stage_1_segments, level=1
     )
-    rh_stage_1_segments = [
-        abjad.PitchClassSegment(_) for _ in rh_stage_1_segments
-    ]
+    rh_stage_1_segments = [abjad.PitchClassSegment(_) for _ in rh_stage_1_segments]
     lh_stage_1_segments = abjad.sequence.remove(stage_1_segments, rh_indices)
     lh_stage_1_segments = baca.pcollections.remove_duplicates(
         lh_stage_1_segments, level=1
     )
-    lh_stage_1_segments = [
-        abjad.PitchClassSegment(_) for _ in lh_stage_1_segments
-    ]
+    lh_stage_1_segments = [abjad.PitchClassSegment(_) for _ in lh_stage_1_segments]
     assert len(rh_stage_1_segments) == 5
     assert len(lh_stage_1_segments) == 4
     rh_stage_1_segments = baca.Cursor(rh_stage_1_segments)
@@ -1063,17 +1057,13 @@ def moment_8():
     v5_stage_3_segments = baca.pcollections.remove_repeats(
         v5_stage_3_segments, level=-1
     )
-    v5_stage_3_segments = [
-        abjad.PitchClassSegment(_) for _ in v5_stage_3_segments
-    ]
+    v5_stage_3_segments = [abjad.PitchClassSegment(_) for _ in v5_stage_3_segments]
     assert not baca.pcollections.has_repeats(v5_stage_3_segments, level=-1)
     v6_stage_3_segments = abjad.sequence.remove(stage_3_segments, v5_indices, period=10)
     v6_stage_3_segments = baca.pcollections.remove_repeats(
         v6_stage_3_segments, level=-1
     )
-    v6_stage_3_segments = [
-        abjad.PitchClassSegment(_) for _ in v6_stage_3_segments
-    ]
+    v6_stage_3_segments = [abjad.PitchClassSegment(_) for _ in v6_stage_3_segments]
     assert not baca.pcollections.has_repeats(v6_stage_3_segments, level=-1)
     assert len(v5_stage_3_segments) == 14, len(v5_stage_3_segments)
     assert len(v6_stage_3_segments) == 6, len(v6_stage_3_segments)
