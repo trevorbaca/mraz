@@ -14,7 +14,7 @@ section_2 = library.moment_2()
 section_4 = library.moment_4()
 section_6 = library.moment_6()
 section_7 = library.moment_7()
-resonance = abjad.NamedPitchSet("e, fs, gs, as, b,")
+resonance = set("e, fs, gs, as, b,".split())
 
 figures(
     library.rh_v4,
