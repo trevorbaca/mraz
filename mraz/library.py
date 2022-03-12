@@ -656,14 +656,14 @@ def moment_4():
       PC<10, 5, 6, 0, 7, 1, 6, 9>
       PC<3, 8, 2, 9, 10, 4, 11, 5, 10, 1, 7, 0, 6, 1>
     section_4.stage_4.lh:
-      {c' bf'}
-      {d' f'}
-      {c' e' af'}
-      {bf'}
-      {d' f'}
-      {e' af'}
-      {c' f' bf'}
-      {d' e' af'}
+      {0, 10}
+      {2, 5}
+      {0, 4, 8}
+      {10}
+      {2, 5}
+      {4, 8}
+      {0, 5, 10}
+      {2, 4, 8}
     section_4.stage_5.rh:
       PC<3>
       PC<5>
@@ -688,10 +688,9 @@ def moment_4():
       PC<7, 11, 8, 6>
       PC<7, 9, 1, 10, 8>
     section_4.stage_6.rh:
-      {f'' ef''' c'''' e'''' fs'''' bf''''}
-      {a g' af' b' cs'' f'' ef''' c''''}
-      {e' fs' bf' a'' g''' af''' b''' cs''''}
-
+      {17, 27, 36, 40, 42, 46}
+      {-3, 7, 8, 11, 13, 17, 27, 36}
+      {4, 6, 10, 21, 31, 32, 35, 37}
 
     """
     segments = silver[23:36]
@@ -711,7 +710,7 @@ def moment_4():
     stage_1_lh_segments = abjad.sequence.repeat(stage_1_lh_segments, n=3)
     stage_1_lh_segments = abjad.sequence.flatten(stage_1_lh_segments)
     stage_1_lh_segments = baca.Cursor(stage_1_lh_segments)
-    chord = abjad.NamedPitchSet(stage_2_segments[0])
+    chord = abjad.NumberedPitchSet(stage_2_segments[0])
     chord = baca.pcollections.space_up(chord, bass=7, soprano=9)
     chords = 10 * [chord]
     last = abjad.sequence.join(stages[1])[0]
@@ -722,7 +721,7 @@ def moment_4():
     lh = baca.pcollections.remove_duplicates(lh, level=-1)
     lh = baca.pcollections.read(lh, [2, 2, 3, 1, 2, 2, 3, 3], check=abjad.Exact)
     lh = [abjad.NumberedPitchClassSegment(_) for _ in lh]
-    lh = [abjad.NamedPitchSet(_) for _ in lh]
+    lh = [abjad.NumberedPitchSet(_) for _ in lh]
     lh = baca.Cursor(lh, cyclic=True, singletons=True)
     rh = baca.sequence.accumulate(
         rh, [lambda _: baca.pcollections.alpha(_), lambda _: _.transpose(n=2)]
@@ -766,7 +765,7 @@ def moment_4():
     stage_6_segments = [
         baca.pcollections.soprano_to_octave(_, n=7) for _ in stage_6_segments
     ]
-    stage_6_segments = [abjad.NamedPitchSet(_) for _ in stage_6_segments]
+    stage_6_segments = [abjad.NumberedPitchSet(_) for _ in stage_6_segments]
     stage_6_segments = baca.Cursor(stage_6_segments, singletons=True)
     return types.SimpleNamespace(
         stage_1=types.SimpleNamespace(
