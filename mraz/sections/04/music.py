@@ -58,7 +58,7 @@ figures(
 def nontrivial_tuplet_tleaves():
     def selector(argument):
         selection = abjad.select.tuplets(argument)
-        selection = [baca.select.tleaves(_) for _ in selection]
+        selection = [baca.tleaves(_) for _ in selection]
         return abjad.select.nontrivial(selection)
 
     return selector
