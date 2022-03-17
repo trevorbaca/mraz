@@ -15,14 +15,14 @@ def _add_segments_to_voice(voice, label, segments, names, do_not_page_break=Fals
         skip = abjad.Skip("s8")
         voice.append(skip)
         number = i + 1
-        markup = abjad.Markup(rf"\markup {number}", direction=abjad.Up)
+        markup = abjad.Markup(rf"\markup {number}")
         abjad.tweak(markup).staff_padding = 2
-        abjad.attach(markup, notes[0])
+        abjad.attach(markup, notes[0], direction=abjad.Up)
         if i == 0:
             string = rf'\markup \bold \with-color #red "{label}"'
-            markup = abjad.Markup(string, direction=abjad.Up)
+            markup = abjad.Markup(string)
             abjad.tweak(markup).staff_padding = 6
-            abjad.attach(markup, notes[0])
+            abjad.attach(markup, notes[0], direction=abjad.Up)
         if i == len(segments) - 1:
             literal = abjad.LilyPondLiteral(r"\break", format_slot="after")
             abjad.attach(literal, voice[-1])
@@ -139,6 +139,7 @@ def _show_transforms():
 def _add_moment_to_voice(voice, moment_number, moment_bundle):
     stage_names = ("stage_1", "stage_2", "stage_3", "stage_4", "stage_5", "stage_6")
     all_leaves_in_moment = []
+    segments_ = (abjad.PitchClassSegment, abjad.PitchSegment)
     for stage_name in stage_names:
         stage_bundle = getattr(moment_bundle, stage_name, None)
         if stage_bundle is None:
@@ -147,48 +148,42 @@ def _add_moment_to_voice(voice, moment_number, moment_bundle):
             part_bundle = getattr(stage_bundle, part_name, None)
             if part_bundle is None:
                 continue
-            prototype = (list, abjad.Segment, abjad.Set)
-            collection_prototype = (abjad.Segment, abjad.Set)
             for item_number, item in enumerate(part_bundle, start=1):
-                assert isinstance(item, prototype), repr(item)
                 if isinstance(item, list):
                     all_leaves = []
-                    assert all(isinstance(_, (collection_prototype)) for _ in item)
                     for subitem_number, subitem in enumerate(item, start=1):
-                        if isinstance(subitem, abjad.Segment):
+                        if isinstance(subitem, segments_):
                             leaves = [abjad.Note(_.number, (1, 8)) for _ in subitem]
                             abjad.horizontal_bracket(leaves)
                         else:
-                            assert isinstance(subitem, abjad.Set)
+                            assert isinstance(subitem, set | frozenset)
                             numbers = [_.number for _ in subitem]
                             chord = abjad.Chord(numbers, (1, 8))
                             leaves = [chord]
-                        markup = abjad.Markup(
-                            rf"\markup {subitem_number}", direction=abjad.Up
-                        )
+                        markup = abjad.Markup(rf"\markup {subitem_number}")
                         abjad.tweak(markup).color = "#blue"
                         abjad.tweak(markup).staff_padding = 3
-                        abjad.attach(markup, leaves[0])
+                        abjad.attach(markup, leaves[0], direction=abjad.Up)
                         all_leaves.extend(leaves)
                     abjad.horizontal_bracket(all_leaves)
                     part = part_name[0].upper()
                     stage_number = stage_name[-1]
                     string = f"{moment_number}.{stage_number}.{part}.{item_number}"
-                    markup = abjad.Markup(rf'\markup "{string}"', direction=abjad.Up)
+                    markup = abjad.Markup(rf'\markup "{string}"')
                     abjad.tweak(markup).color = "#red"
                     abjad.tweak(markup).staff_padding = 6
-                    abjad.attach(markup, all_leaves[0])
-                elif isinstance(item, abjad.Segment):
+                    abjad.attach(markup, all_leaves[0], direction=abjad.Up)
+                elif isinstance(item, segments_):
                     all_leaves = [abjad.Note(_.number, (1, 8)) for _ in item]
                     abjad.horizontal_bracket(all_leaves)
                     part = part_name[0].upper()
                     stage_number = stage_name[-1]
                     string = f"{moment_number}.{stage_number}.{part}.{item_number}"
-                    markup = abjad.Markup(rf'\markup "{string}"', direction=abjad.Up)
+                    markup = abjad.Markup(rf'\markup "{string}"')
                     abjad.tweak(markup).color = "#red"
                     abjad.tweak(markup).staff_padding = 6
-                    abjad.attach(markup, all_leaves[0])
-                elif isinstance(item, abjad.Set):
+                    abjad.attach(markup, all_leaves[0], direction=abjad.Up)
+                elif isinstance(item, set | frozenset):
                     numbers = [_.number for _ in item]
                     chord = abjad.Chord(numbers, (1, 8))
                     all_leaves = [chord]
@@ -196,10 +191,10 @@ def _add_moment_to_voice(voice, moment_number, moment_bundle):
                     part = part_name[0].upper()
                     stage_number = stage_name[-1]
                     string = f"{moment_number}.{stage_number}.{part}.{item_number}"
-                    markup = abjad.Markup(rf'\markup "{string}"', direction=abjad.Up)
+                    markup = abjad.Markup(rf'\markup "{string}"')
                     abjad.tweak(markup).color = "#red"
                     abjad.tweak(markup).staff_padding = 6
-                    abjad.attach(markup, all_leaves[0])
+                    abjad.attach(markup, all_leaves[0], direction=abjad.Up)
                 else:
                     raise Exception(item)
                 voice.extend(all_leaves)
