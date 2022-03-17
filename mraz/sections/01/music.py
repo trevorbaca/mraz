@@ -164,7 +164,7 @@ figures(
     baca.tuplet_bracket_staff_padding(4),
     anchor=baca.anchor_to_figure("5.1.R.3"),
     figure_name="5.1.L.1",
-    figure_label_direction=abjad.Down,
+    figure_label_direction=abjad.DOWN,
     hide_time_signature=True,
 )
 

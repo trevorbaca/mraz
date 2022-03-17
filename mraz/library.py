@@ -717,7 +717,7 @@ def moment_4():
     assert len(stage_4_segments) == 2
     rh, lh = abjad.sequence.partition_by_counts(stage_4_segments, [1, 1])
     lh = baca.pcollections.remove_duplicates(lh, level=-1)
-    lh = baca.pcollections.read(lh, [2, 2, 3, 1, 2, 2, 3, 3], check=abjad.Exact)
+    lh = baca.pcollections.read(lh, [2, 2, 3, 1, 2, 2, 3, 3], check=abjad.EXACT)
     lh = [abjad.PitchClassSegment(_) for _ in lh]
     lh = [abjad.PitchSet(_) for _ in lh]
     lh = baca.Cursor(lh, cyclic=True, singletons=True)
@@ -728,7 +728,7 @@ def moment_4():
         rh = abjad.sequence.flatten(rh)
     rh = abjad.sequence.join(rh)
     rh = baca.pcollections.remove_repeats(rh)
-    rh = baca.pcollections.read(rh, [8, 8, 14], check=abjad.Exact)
+    rh = baca.pcollections.read(rh, [8, 8, 14], check=abjad.EXACT)
     rh = [abjad.PitchClassSegment(_) for _ in rh]
     rh = baca.Cursor(rh)
     stage_4_rh_segments = rh
@@ -737,7 +737,7 @@ def moment_4():
         stage_5_segments, level=1
     )
     rh, lh = abjad.sequence.partition_by_counts(stage_5_segments, [1, 1])
-    rh = baca.pcollections.read(rh, 6 * [1], check=abjad.Exact)
+    rh = baca.pcollections.read(rh, 6 * [1], check=abjad.EXACT)
     rh = [abjad.PitchClassSegment(_) for _ in rh]
     rh = baca.Cursor(rh, singletons=True)
     lh = [abjad.PitchClassSegment(_) for _ in lh]
@@ -863,7 +863,7 @@ def moment_5():
     lh = abjad.sequence.repeat(lh, n=3)
     lh = abjad.sequence.flatten(lh)
     lh = [abjad.PitchClassSegment(_) for _ in lh]
-    lh = baca.pcollections.read(lh, [3, 4, 2, 4, 2, 3, 2, 3, 4], check=abjad.Exact)
+    lh = baca.pcollections.read(lh, [3, 4, 2, 4, 2, 3, 2, 3, 4], check=abjad.EXACT)
     lh = [abjad.PitchClassSegment(_) for _ in lh]
     lh = baca.Cursor(lh, singletons=True)
     stage_2_rh = rh
@@ -909,7 +909,7 @@ def moment_6():
     stage_1_segments = abjad.sequence.flatten(stage_1_segments)
     stage_1_segments = abjad.sequence.join(stage_1_segments)
     stage_1_segments = baca.pcollections.read(
-        stage_1_segments, [3, 5, 4, 3, 4, 5, 5, 3, 4], check=abjad.Exact
+        stage_1_segments, [3, 5, 4, 3, 4, 5, 5, 3, 4], check=abjad.EXACT
     )
     assert len(abjad.sequence.join(stage_1_segments)[0]) == 36
     rh_indices = [0, 2, 3, 5, 8]
@@ -1047,7 +1047,7 @@ def moment_8():
     stage_3_segments = abjad.sequence.join(stage_3_segments)
     stage_3_segments = abjad.sequence.flatten(stage_3_segments)
     stage_3_segments = baca.pcollections.read(
-        stage_3_segments, 5 * [2, 3, 4, 3], check=abjad.Exact
+        stage_3_segments, 5 * [2, 3, 4, 3], check=abjad.EXACT
     )
     assert len(stage_3_segments) == 20
     assert len(abjad.sequence.join(stage_3_segments)[0]) == 60
