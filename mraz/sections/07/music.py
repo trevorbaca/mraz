@@ -263,7 +263,7 @@ figures(
         baca.selectors.note(4),
         baca.selectors.lt(3),
     ),
-    figure_label_direction=abjad.Down,
+    figure_label_direction=abjad.DOWN,
     figure_name="7.1.L.2",
     hide_time_signature=True,
 )
@@ -309,7 +309,7 @@ figures(
         baca.selectors.note(26),
         baca.selectors.lt(10),
     ),
-    figure_label_direction=abjad.Down,
+    figure_label_direction=abjad.DOWN,
     figure_name="7.1.L.4",
     hide_time_signature=True,
 )
@@ -454,7 +454,7 @@ commands(
         baca.mark(r"\mraz-colophon-markup"),
         baca.rehearsal_mark_down(),
         baca.rehearsal_mark_padding(6),
-        baca.rehearsal_mark_self_alignment_x(abjad.Right),
+        baca.rehearsal_mark_self_alignment_x(abjad.RIGHT),
         selector=baca.selectors.rleaf(-1),
     ),
 )

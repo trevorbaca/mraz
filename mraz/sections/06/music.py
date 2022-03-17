@@ -25,7 +25,7 @@ figures(
     baca.rest_up(),
     baca.script_up(),
     baca.stem_up(),
-    figure_label_direction=abjad.Up,
+    figure_label_direction=abjad.UP,
     figure_name="5.1.R.1",
     signature=4,
 )
@@ -44,7 +44,7 @@ figures(
     baca.tuplet_bracket_down(),
     baca.tuplet_bracket_staff_padding(3),
     anchor=baca.anchor(library.rh_v2),
-    figure_label_direction=abjad.Down,
+    figure_label_direction=abjad.DOWN,
     figure_name="5.1.L.1",
     signature=4,
 )
