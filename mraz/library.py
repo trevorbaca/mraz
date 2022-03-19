@@ -1193,7 +1193,7 @@ voice_abbreviations = {
 
 
 def make_empty_score():
-    tag = baca.site(inspect.currentframe())
+    tag = baca.function_name(inspect.currentframe())
     global_context = baca.score.make_global_context()
     rh_voice_1 = abjad.Voice(lilypond_type="RHVoiceI", name="RH_Voice_I", tag=tag)
     rh_voice_1I = abjad.Voice(
