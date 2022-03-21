@@ -4,10 +4,10 @@
 >>> def show_collections(stage, stage_name):
 ...     stages = ("stage_1", "stage_2", "stage_3", "stage_4", "stage_5", "stage_6")
 ...     for stage_name in stages:
-...         bundle = getattr(section, stage_name, None)
-...         if bundle is not None:
+...         namespace = getattr(section, stage_name, None)
+...         if namespace is not None:
 ...             for part_name in ("rh", "lh"):
-...                 collections = getattr(bundle, part_name, None)
+...                 collections = getattr(namespace, part_name, None)
 ...                 if collections is not None:
 ...                     print(f"{section_name}.{stage_name}.{part_name}:")
 ...                     for collection in collections:

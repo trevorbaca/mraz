@@ -136,19 +136,19 @@ def _show_transforms():
     abjad.persist.as_pdf(lilypond_file, name)
 
 
-def _add_moment_to_voice(voice, moment_number, moment_bundle):
+def _add_moment_to_voice(voice, moment_number, moment_namespace):
     stage_names = ("stage_1", "stage_2", "stage_3", "stage_4", "stage_5", "stage_6")
     all_leaves_in_moment = []
     segments_ = (abjad.PitchClassSegment, abjad.PitchSegment)
     for stage_name in stage_names:
-        stage_bundle = getattr(moment_bundle, stage_name, None)
-        if stage_bundle is None:
+        stage_namespace = getattr(moment_namespace, stage_name, None)
+        if stage_namespace is None:
             continue
         for part_name in ("rh", "lh"):
-            part_bundle = getattr(stage_bundle, part_name, None)
-            if part_bundle is None:
+            part_namespace = getattr(stage_namespace, part_name, None)
+            if part_namespace is None:
                 continue
-            for item_number, item in enumerate(part_bundle, start=1):
+            for item_number, item in enumerate(part_namespace, start=1):
                 if isinstance(item, list):
                     all_leaves = []
                     for subitem_number, subitem in enumerate(item, start=1):
@@ -211,18 +211,18 @@ def _show_moments():
     voice = abjad.Voice(name="Voice")
     staff = abjad.Staff([voice], name="Staff")
     score = abjad.Score([staff], name="Score")
-    bundle = library.moment_2()
-    _add_moment_to_voice(voice, 2, bundle)
-    bundle = library.moment_4()
-    _add_moment_to_voice(voice, 4, bundle)
-    bundle = library.moment_5()
-    _add_moment_to_voice(voice, 5, bundle)
-    bundle = library.moment_6()
-    _add_moment_to_voice(voice, 6, bundle)
-    bundle = library.moment_7()
-    _add_moment_to_voice(voice, 7, bundle)
-    bundle = library.moment_8()
-    _add_moment_to_voice(voice, 8, bundle)
+    namespace = library.moment_2()
+    _add_moment_to_voice(voice, 2, namespace)
+    namespace = library.moment_4()
+    _add_moment_to_voice(voice, 4, namespace)
+    namespace = library.moment_5()
+    _add_moment_to_voice(voice, 5, namespace)
+    namespace = library.moment_6()
+    _add_moment_to_voice(voice, 6, namespace)
+    namespace = library.moment_7()
+    _add_moment_to_voice(voice, 7, namespace)
+    namespace = library.moment_8()
+    _add_moment_to_voice(voice, 8, namespace)
     leaf = abjad.select.leaf(score, 0)
     time_signature = abjad.TimeSignature((1, 8))
     abjad.attach(time_signature, leaf)
