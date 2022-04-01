@@ -915,7 +915,7 @@ segment.02.RH.Voice.II = {
     %! baca._call_rhythm_commands()
     s1 * 7/16
     %! REAPPLIED_DYNAMIC_COLOR
-    %! _treat_persistent_wrapper(1)
+    %! baca.treat_persistent_wrapper()
     %! baca._reapply_persistent_indicators(3)
     %! baca._set_status_tag()
     %! REAPPLIED_DYNAMIC
@@ -1199,7 +1199,7 @@ segment.02.RH.Voice.III = {
     %! baca._call_rhythm_commands()
     s1 * 7/16
     %! REAPPLIED_DYNAMIC_COLOR
-    %! _treat_persistent_wrapper(1)
+    %! baca.treat_persistent_wrapper()
     %! baca._reapply_persistent_indicators(3)
     %! baca._set_status_tag()
     %! REAPPLIED_DYNAMIC
@@ -2653,7 +2653,7 @@ segment.02.LH.Voice.IV = {
     %! baca._call_rhythm_commands()
     s1 * 7/16
     %! REAPPLIED_DYNAMIC_COLOR
-    %! _treat_persistent_wrapper(1)
+    %! baca.treat_persistent_wrapper()
     %! baca._reapply_persistent_indicators(3)
     %! baca._set_status_tag()
     %! REAPPLIED_DYNAMIC
@@ -2955,7 +2955,7 @@ segment.02.LH.Voice.V = {
             %! baca.music()
             g,8.
             %! EXPLICIT_DYNAMIC_COLOR
-            %! _treat_persistent_wrapper(1)
+            %! baca.treat_persistent_wrapper()
             %! baca.dynamic()
             %! baca.IndicatorCommand._call()
             %! baca._set_status_tag()
@@ -3745,7 +3745,7 @@ segment.02.LH.Voice.VI = {
     %! baca.music()
     s1 * 11/16
     %! REAPPLIED_DYNAMIC_COLOR
-    %! _treat_persistent_wrapper(1)
+    %! baca.treat_persistent_wrapper()
     %! baca._reapply_persistent_indicators(3)
     %! baca._set_status_tag()
     %! REAPPLIED_DYNAMIC
@@ -3774,7 +3774,7 @@ segment.02.LH.Voice.VI = {
             %! baca.music()
             af,,!4
             %! REDUNDANT_DYNAMIC_COLOR
-            %! _treat_persistent_wrapper(1)
+            %! baca.treat_persistent_wrapper()
             %! baca.dynamic()
             %! baca.IndicatorCommand._call()
             %! baca._set_status_tag()
