@@ -3311,12 +3311,12 @@ segment.04.RH.Voice.II = {
 
             %! baca._comment_measure_numbers()
             % [RH_Voice_II measure 2]
-            %! baca.script_up()
-            %! baca.OverrideCommand._call(1)
-            \once \override Script.direction = #up
             %! baca.up_arpeggio()
             %! baca.IndicatorCommand._call()
             \arpeggioArrowUp
+            %! baca.script_up()
+            %! baca.OverrideCommand._call(1)
+            \once \override Script.direction = #up
             <a g' af'! b' cs''! f'' ef'''! c''''>2.
             %! REDUNDANT_DYNAMIC_COLOR
             %! baca.treat_persistent_wrapper()
@@ -3330,12 +3330,12 @@ segment.04.RH.Voice.II = {
             %! baca._set_status_tag()
             %! REDUNDANT_DYNAMIC
             \ff
-            %! baca.marcato()
-            %! baca.IndicatorCommand._call()
-            - \marcato
             %! baca.up_arpeggio()
             %! baca.IndicatorCommand._call()
             \arpeggio
+            %! baca.marcato()
+            %! baca.IndicatorCommand._call()
+            - \marcato
             %! FIGURE_LABEL
             %@% - \tweak color #blue
             %! FIGURE_LABEL
@@ -4019,22 +4019,22 @@ segment.04.RH.Voice.II = {
 
             %! baca._comment_measure_numbers()
             % [RH_Voice_II measure 37]
-            %! baca.script_up()
-            %! baca.OverrideCommand._call(1)
-            \once \override Script.direction = #up
             %! baca.up_arpeggio()
             %! baca.IndicatorCommand._call()
             \arpeggioArrowUp
+            %! baca.script_up()
+            %! baca.OverrideCommand._call(1)
+            \once \override Script.direction = #up
             %! baca.color_repeat_pitch_classes()
             %! REPEAT_PITCH_CLASS_COLORING
             %@% \baca-repeat-pitch-class-coloring
             <a g' af'! b' cs''! f'' ef'''! c''''>1.
-            %! baca.marcato()
-            %! baca.IndicatorCommand._call()
-            - \marcato
             %! baca.up_arpeggio()
             %! baca.IndicatorCommand._call()
             \arpeggio
+            %! baca.marcato()
+            %! baca.IndicatorCommand._call()
+            - \marcato
             %! FIGURE_LABEL
             %@% - \tweak color #blue
             %! FIGURE_LABEL
@@ -5458,10 +5458,6 @@ segment.04.RH.Voice.III = {
 
             %! baca._comment_measure_numbers()
             % [RH_Voice_III measure 44]
-            %! baca.ottava()
-            %! baca.SpannerIndicatorCommand._call(2)
-            %! SPANNER_START
-            \ottava 1
             %! baca.stem_down()
             %! baca.OverrideCommand._call(1)
             \override Stem.direction = #down
@@ -5471,6 +5467,10 @@ segment.04.RH.Voice.III = {
             %! baca.tuplet_bracket_staff_padding()
             %! baca.OverrideCommand._call(1)
             \override TupletBracket.staff-padding = 3
+            %! baca.ottava()
+            %! baca.SpannerIndicatorCommand._call(2)
+            %! SPANNER_START
+            \ottava 1
             %! baca.music()
             a''4
             %! EXPLICIT_DYNAMIC_COLOR
@@ -5531,13 +5531,13 @@ segment.04.RH.Voice.III = {
             %! baca.tenuto()
             %! baca.IndicatorCommand._call()
             - \tenuto
+            %! baca.stem_down()
+            %! baca.OverrideCommand._call(2)
+            \revert Stem.direction
             %! baca.ottava()
             %! baca.SpannerIndicatorCommand._call(4)
             %! SPANNER_STOP
             \ottava 0
-            %! baca.stem_down()
-            %! baca.OverrideCommand._call(2)
-            \revert Stem.direction
 
             %! baca.music()
             r4

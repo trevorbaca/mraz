@@ -927,18 +927,18 @@ segment.01.RH.Voice.II = {
 
             %! baca._comment_measure_numbers()
             % [RH_Voice_II measure 1]
+            \set stemLeftBeamCount = 0
+            \set stemRightBeamCount = 2
             %! baca.dls_staff_padding()
             %! baca.OverrideCommand._call(1)
             \override DynamicLineSpanner.staff-padding = 8
+            %! baca.slur_up()
+            %! baca.OverrideCommand._call(1)
+            \override Slur.direction = #up
             %! baca.ottava()
             %! baca.SpannerIndicatorCommand._call(2)
             %! SPANNER_START
             \ottava 1
-            %! baca.slur_up()
-            %! baca.OverrideCommand._call(1)
-            \override Slur.direction = #up
-            \set stemLeftBeamCount = 0
-            \set stemRightBeamCount = 2
             %! baca.music()
             b'16
             %! EXPLICIT_DYNAMIC_COLOR
@@ -1114,13 +1114,13 @@ segment.01.RH.Voice.II = {
             %! baca.dls_staff_padding()
             %! baca.OverrideCommand._call(2)
             \revert DynamicLineSpanner.staff-padding
+            %! baca.slur_up()
+            %! baca.OverrideCommand._call(2)
+            \revert Slur.direction
             %! baca.ottava()
             %! baca.SpannerIndicatorCommand._call(4)
             %! SPANNER_STOP
             \ottava 0
-            %! baca.slur_up()
-            %! baca.OverrideCommand._call(2)
-            \revert Slur.direction
 
         %! baca.music()
         }
@@ -1672,10 +1672,6 @@ segment.01.RH.Voice.III = {
             %! baca.dynamic_text_x_offset()
             %! baca.OverrideCommand._call(1)
             \once \override DynamicText.X-offset = 0.25
-            %! baca.ottava()
-            %! baca.SpannerIndicatorCommand._call(2)
-            %! SPANNER_START
-            \ottava 1
             %! baca.ottava_bracket_staff_padding()
             %! baca.OverrideCommand._call(1)
             \override Staff.OttavaBracket.staff-padding = 9
@@ -1688,6 +1684,10 @@ segment.01.RH.Voice.III = {
             %! baca.tuplet_bracket_staff_padding()
             %! baca.OverrideCommand._call(1)
             \override TupletBracket.staff-padding = 4
+            %! baca.ottava()
+            %! baca.SpannerIndicatorCommand._call(2)
+            %! SPANNER_START
+            \ottava 1
             %! baca.music()
             a''4
             %! EXPLICIT_DYNAMIC_COLOR
@@ -1748,13 +1748,13 @@ segment.01.RH.Voice.III = {
             %! baca.tenuto()
             %! baca.IndicatorCommand._call()
             - \tenuto
+            %! baca.stem_down()
+            %! baca.OverrideCommand._call(2)
+            \revert Stem.direction
             %! baca.ottava()
             %! baca.SpannerIndicatorCommand._call(4)
             %! SPANNER_STOP
             \ottava 0
-            %! baca.stem_down()
-            %! baca.OverrideCommand._call(2)
-            \revert Stem.direction
 
             %! baca.music()
             r4
@@ -3909,10 +3909,6 @@ segment.01.LH.Voice.VI = {
 
             %! baca._comment_measure_numbers()
             % [LH_Voice_VI measure 3]
-            %! baca.ottava_bassa()
-            %! baca.SpannerIndicatorCommand._call(2)
-            %! SPANNER_START
-            \ottava -1
             %! baca.tuplet_bracket_down()
             %! baca.OverrideCommand._call(1)
             \override TupletBracket.direction = #down
@@ -3931,6 +3927,10 @@ segment.01.LH.Voice.VI = {
             %! MEASURE_3
             %! baca.OverrideCommand._call(1)
             \once \override PianoMusicLHStaff.Clef.extra-offset = #'(-2.75 . 0)
+            %! baca.ottava_bassa()
+            %! baca.SpannerIndicatorCommand._call(2)
+            %! SPANNER_START
+            \ottava -1
             %! baca.clef()
             %! baca.IndicatorCommand._call()
             %! baca._set_status_tag()
