@@ -1713,13 +1713,13 @@ segment.03.RH.Voice.II = {
             %! +SEGMENT
             %! baca.OverrideCommand._call(1)
             \once \override Score.SpanBar.extra-offset = #'(-0.75 . 0)
+            %! baca.slur_up()
+            %! baca.OverrideCommand._call(1)
+            \override Slur.direction = #up
             %! baca.ottava()
             %! baca.SpannerIndicatorCommand._call(2)
             %! SPANNER_START
             \ottava 1
-            %! baca.slur_up()
-            %! baca.OverrideCommand._call(1)
-            \override Slur.direction = #up
             %! baca.music()
             b'16
             %! EXPLICIT_DYNAMIC_COLOR
@@ -1895,16 +1895,16 @@ segment.03.RH.Voice.II = {
             %! baca.dls_staff_padding()
             %! baca.OverrideCommand._call(2)
             \revert DynamicLineSpanner.staff-padding
-            %! baca.ottava()
-            %! baca.SpannerIndicatorCommand._call(4)
-            %! SPANNER_STOP
-            \ottava 0
             %! baca.slur_up()
             %! baca.OverrideCommand._call(2)
             \revert Slur.direction
             %! baca.script_up()
             %! baca.OverrideCommand._call(2)
             \revert Script.direction
+            %! baca.ottava()
+            %! baca.SpannerIndicatorCommand._call(4)
+            %! SPANNER_STOP
+            \ottava 0
 
         %! baca.music()
         }

@@ -4049,10 +4049,6 @@ segment.06.RH.Voice.III = {
 
             %! baca._comment_measure_numbers()
             % [RH_Voice_III measure 1]
-            %! baca.ottava()
-            %! baca.SpannerIndicatorCommand._call(2)
-            %! SPANNER_START
-            \ottava 1
             %! baca.stem_down()
             %! baca.OverrideCommand._call(1)
             \override Stem.direction = #down
@@ -4062,6 +4058,10 @@ segment.06.RH.Voice.III = {
             %! baca.tuplet_bracket_staff_padding()
             %! baca.OverrideCommand._call(1)
             \override TupletBracket.staff-padding = 3
+            %! baca.ottava()
+            %! baca.SpannerIndicatorCommand._call(2)
+            %! SPANNER_START
+            \ottava 1
             %! baca.music()
             a''4
             %! EXPLICIT_DYNAMIC_COLOR
@@ -4122,13 +4122,13 @@ segment.06.RH.Voice.III = {
             %! baca.tenuto()
             %! baca.IndicatorCommand._call()
             - \tenuto
+            %! baca.stem_down()
+            %! baca.OverrideCommand._call(2)
+            \revert Stem.direction
             %! baca.ottava()
             %! baca.SpannerIndicatorCommand._call(4)
             %! SPANNER_STOP
             \ottava 0
-            %! baca.stem_down()
-            %! baca.OverrideCommand._call(2)
-            \revert Stem.direction
 
             %! baca.music()
             r4
@@ -8334,10 +8334,6 @@ segment.06.LH.Voice.VI = {
 
             %! baca._comment_measure_numbers()
             % [LH_Voice_VI measure 5]
-            %! baca.ottava_bassa()
-            %! baca.SpannerIndicatorCommand._call(2)
-            %! SPANNER_START
-            \ottava -1
             %! baca.stem_down()
             %! baca.OverrideCommand._call(1)
             \override Stem.direction = #down
@@ -8347,6 +8343,10 @@ segment.06.LH.Voice.VI = {
             %! baca.tuplet_bracket_staff_padding()
             %! baca.OverrideCommand._call(1)
             \override TupletBracket.staff-padding = 6
+            %! baca.ottava_bassa()
+            %! baca.SpannerIndicatorCommand._call(2)
+            %! SPANNER_START
+            \ottava -1
             %! baca.music()
             b,,,8
             %! REDUNDANT_DYNAMIC_COLOR
@@ -8374,13 +8374,13 @@ segment.06.LH.Voice.VI = {
 
             %! baca.music()
             ef,,!8
+            %! baca.stem_down()
+            %! baca.OverrideCommand._call(2)
+            \revert Stem.direction
             %! baca.ottava_bassa()
             %! baca.SpannerIndicatorCommand._call(4)
             %! SPANNER_STOP
             \ottava 0
-            %! baca.stem_down()
-            %! baca.OverrideCommand._call(2)
-            \revert Stem.direction
 
             %! baca.music()
             r4

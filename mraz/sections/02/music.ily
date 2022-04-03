@@ -2942,13 +2942,13 @@ segment.02.LH.Voice.V = {
 
             %! baca._comment_measure_numbers()
             % [LH_Voice_V measure 1]
+            %! baca.tuplet_bracket_up()
+            %! baca.OverrideCommand._call(1)
+            \override TupletBracket.direction = #up
             %! baca.ottava_bassa()
             %! baca.SpannerIndicatorCommand._call(2)
             %! SPANNER_START
             \ottava -1
-            %! baca.tuplet_bracket_up()
-            %! baca.OverrideCommand._call(1)
-            \override TupletBracket.direction = #up
             %! baca.dynamic_up()
             %! baca.IndicatorCommand._call()
             \dynamicUp
