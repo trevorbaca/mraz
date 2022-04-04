@@ -1740,6 +1740,7 @@ segment.03.RH.Voice.II = {
             %@% - \tweak color #blue
             %! FIGURE_LABEL
             %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (11) \hspace #1 "4.5.L.1-4" ] }
+            [
             %! EXPLICIT_DYNAMIC_COLOR
             %! baca.treat_persistent_wrapper()
             %! baca.hairpin()
@@ -1754,7 +1755,6 @@ segment.03.RH.Voice.II = {
             %! baca._set_status_tag()
             %! EXPLICIT_DYNAMIC
             \<
-            [
             %! baca.slur()
             %! baca.SpannerIndicatorCommand._call(2)
             %! SPANNER_START
