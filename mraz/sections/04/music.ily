@@ -3640,6 +3640,7 @@ segment.04.RH.Voice.II = {
             %@% - \tweak color #blue
             %! FIGURE_LABEL
             %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (40) \hspace #1 "4.5.L.1-4" ] }
+            [
             %! EXPLICIT_DYNAMIC_COLOR
             %! baca.treat_persistent_wrapper()
             %! baca.hairpin()
@@ -3654,7 +3655,6 @@ segment.04.RH.Voice.II = {
             %! baca._set_status_tag()
             %! EXPLICIT_DYNAMIC
             \<
-            [
             %! baca.slur()
             %! baca.SpannerIndicatorCommand._call(2)
             %! SPANNER_START
@@ -3846,6 +3846,7 @@ segment.04.RH.Voice.II = {
             %@% - \tweak color #blue
             %! FIGURE_LABEL
             %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (41) \hspace #1 "4.5.L.5-8" ] }
+            [
             %! EXPLICIT_DYNAMIC_COLOR
             %! baca.treat_persistent_wrapper()
             %! baca.hairpin()
@@ -3860,7 +3861,6 @@ segment.04.RH.Voice.II = {
             %! baca._set_status_tag()
             %! EXPLICIT_DYNAMIC
             \<
-            [
             %! baca.slur()
             %! baca.SpannerIndicatorCommand._call(2)
             %! SPANNER_START
@@ -4090,6 +4090,7 @@ segment.04.RH.Voice.II = {
             %@% - \tweak color #blue
             %! FIGURE_LABEL
             %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (43) \hspace #1 "4.5.L.9-12" ] }
+            [
             %! EXPLICIT_DYNAMIC_COLOR
             %! baca.treat_persistent_wrapper()
             %! baca.hairpin()
@@ -4104,7 +4105,6 @@ segment.04.RH.Voice.II = {
             %! baca._set_status_tag()
             %! EXPLICIT_DYNAMIC
             \<
-            [
             %! baca.slur()
             %! baca.SpannerIndicatorCommand._call(2)
             %! SPANNER_START
@@ -4309,6 +4309,7 @@ segment.04.RH.Voice.II = {
             %@% - \tweak color #blue
             %! FIGURE_LABEL
             %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (44) \hspace #1 "4.5.L.13-14" ] }
+            [
             %! EXPLICIT_DYNAMIC_COLOR
             %! baca.treat_persistent_wrapper()
             %! baca.hairpin()
@@ -4323,7 +4324,6 @@ segment.04.RH.Voice.II = {
             %! baca._set_status_tag()
             %! EXPLICIT_DYNAMIC
             \<
-            [
             %! baca.slur()
             %! baca.SpannerIndicatorCommand._call(2)
             %! SPANNER_START
