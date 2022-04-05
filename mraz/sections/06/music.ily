@@ -4441,10 +4441,10 @@ segment.06.RH.Voice.III = {
                 %! baca.SpannerIndicatorCommand._call(4)
                 %! SPANNER_STOP
                 )
+                ]
                 %! baca.tie()
                 %! baca.IndicatorCommand._call()
                 ~
-                ]
 
             %! baca.music()
             }
