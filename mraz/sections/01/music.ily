@@ -959,6 +959,7 @@ segment.01.RH.Voice.II = {
             %@% - \tweak color #blue
             %! FIGURE_LABEL
             %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (2) \hspace #1 "4.5.L.1-4" ] }
+            [
             %! EXPLICIT_DYNAMIC_COLOR
             %! baca.treat_persistent_wrapper()
             %! baca.hairpin()
@@ -977,7 +978,6 @@ segment.01.RH.Voice.II = {
             %! baca.SpannerIndicatorCommand._call(2)
             %! SPANNER_START
             (
-            [
 
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
