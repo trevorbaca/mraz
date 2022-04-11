@@ -85,9 +85,9 @@ figures(
     baca.figure([2], 16, treatments=[-2, 0, -2]),
     baca.new(
         baca.tie(
-            baca.selectors.ptails((None, -1)),
+            lambda _: baca.select.ptails(_)[:-1],
         ),
-        map=baca.selectors.qruns(),
+        map=lambda _: baca.select.qruns(_),
     ),
     baca.register(24, 0),
     baca.nest("-1/4"),
@@ -526,7 +526,7 @@ commands(
         baca.repeat_tie(
             baca.selectors.pleaves((1, None)),
         ),
-        map=baca.selectors.qruns(),
+        map=lambda _: baca.select.qruns(_),
     ),
     baca.dots_transparent(),
 )
