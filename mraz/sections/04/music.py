@@ -945,7 +945,7 @@ figures(
     "r1 r1 r1",
     # TODO: debug: figure out why bracket extends indefinitely to right
     baca.new(
-        baca.sustain_pedal(selector=baca.selectors.rleaves()),
+        baca.sustain_pedal(selector=lambda _: baca.select.rleaves(_)),
         map=baca.selectors.lts((None, -1)),
     ),
     baca.sustain_pedal_staff_padding(4),
