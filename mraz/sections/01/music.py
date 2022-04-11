@@ -37,7 +37,7 @@ figures(
     baca.hairpin("f < ff"),
     baca.ottava(),
     baca.register(10, 36),
-    baca.slur(map=baca.selectors.runs()),
+    baca.slur(map=lambda _: baca.select.runs(_)),
     baca.slur_up(),
     rmakers.beam_groups(),
     anchor=baca.anchor_to_figure("4.5.R.3"),
