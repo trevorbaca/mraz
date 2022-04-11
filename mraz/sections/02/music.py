@@ -198,7 +198,7 @@ figures(
     baca.register(-39),
     anchor=baca.anchor(
         library.lh_v5,
-        baca.selectors.rest(33),
+        lambda _: baca.select.rest(_, 33),
         baca.selectors.note(-1),
     ),
     figure_name="8.3.L.5",

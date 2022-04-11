@@ -354,7 +354,7 @@ commands(
     baca.metronome_mark("84", baca.selectors.leaf(0)),
     baca.metronome_mark(baca.Accelerando(), baca.selectors.leaf(0)),
     baca.metronome_mark("112", baca.selectors.leaf(8)),
-    baca.bar_line("|.", baca.selectors.skip(-1)),
+    baca.bar_line("|.", lambda _: baca.select.skip(_, -1)),
 )
 
 commands(
