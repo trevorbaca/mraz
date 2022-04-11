@@ -1115,7 +1115,7 @@ commands(
         baca.repeat_tie(
             baca.selectors.pleaves((1, None)),
         ),
-        map=baca.selectors.qruns(),
+        map=lambda _: baca.select.qruns(_),
     ),
 )
 
