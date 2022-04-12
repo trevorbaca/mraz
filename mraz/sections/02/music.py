@@ -1,3 +1,4 @@
+import abjad
 import baca
 from abjadext import rmakers
 
@@ -134,8 +135,8 @@ figures(
     baca.register(-39),
     anchor=baca.anchor(
         library.lh_v5,
-        baca.selectors.note(6),
-        baca.selectors.note(1),
+        lambda _: abjad.select.note(_, 6),
+        lambda _: abjad.select.note(_, 1),
     ),
     figure_name="8.3.L.1",
     hide_time_signature=True,
@@ -150,7 +151,7 @@ figures(
     baca.rest_up(),
     anchor=baca.anchor(
         library.lh_v5,
-        baca.selectors.note(11),
+        lambda _: abjad.select.note(_, 11),
     ),
     figure_name="8.3.L.2",
     hide_time_signature=True,
@@ -163,13 +164,13 @@ figures(
     baca.figure([1, -3], 16, treatments=[4]),
     baca.note_column_shift(
         -1,
-        baca.selectors.pleaf(-1),
+        lambda _: baca.select.pleaf(_, -1),
     ),
     baca.register(-39),
     anchor=baca.anchor(
         library.lh_v5,
-        baca.selectors.note(23),
-        baca.selectors.note(-1),
+        lambda _: abjad.select.note(_, 23),
+        lambda _: abjad.select.note(_, -1),
     ),
     figure_name="8.3.L.3",
     hide_time_signature=True,
@@ -183,8 +184,8 @@ figures(
     baca.register(-39),
     anchor=baca.anchor(
         library.lh_v5,
-        baca.selectors.note(27),
-        baca.selectors.note(1),
+        lambda _: abjad.select.note(_, 27),
+        lambda _: abjad.select.note(_, 1),
     ),
     figure_name="8.3.L.4",
     hide_time_signature=True,
@@ -199,7 +200,7 @@ figures(
     anchor=baca.anchor(
         library.lh_v5,
         lambda _: baca.select.rest(_, 33),
-        baca.selectors.note(-1),
+        lambda _: abjad.select.note(_, -1),
     ),
     figure_name="8.3.L.5",
     hide_time_signature=True,
@@ -215,8 +216,8 @@ figures(
     baca.register(-39),
     anchor=baca.anchor(
         library.lh_v5,
-        baca.selectors.note(34),
-        baca.selectors.note(1),
+        lambda _: abjad.select.note(_, 34),
+        lambda _: abjad.select.note(_, 1),
     ),
     figure_name="8.3.L.6",
     hide_time_signature=True,
@@ -247,7 +248,7 @@ commands(
     library.lh_v6,
     baca.script_down(),
     baca.stem_down(lambda _: baca.select.tleaves(_, exclude=baca.const.HIDDEN)),
-    baca.tenuto(baca.selectors.pheads(exclude=baca.const.HIDDEN)),
+    baca.tenuto(lambda _: baca.select.pheads(_, exclude=baca.const.HIDDEN)),
     baca.tuplet_bracket_staff_padding(6),
     baca.rest_position(-10),
 )
