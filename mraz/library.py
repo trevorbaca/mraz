@@ -1082,10 +1082,10 @@ def moment_8():
 
 def clean_up_repeat_ties():
     return [
-        baca.beam_stencil_false(selector=baca.selectors.leaves()),
-        baca.dots_stencil_false(selector=baca.selectors.leaves()),
-        baca.flag_stencil_false(selector=baca.selectors.leaves()),
-        baca.stem_stencil_false(selector=baca.selectors.leaves()),
+        baca.beam_stencil_false(selector=lambda _: baca.select.leaves(_)),
+        baca.dots_stencil_false(selector=lambda _: baca.select.leaves(_)),
+        baca.flag_stencil_false(selector=lambda _: baca.select.leaves(_)),
+        baca.stem_stencil_false(selector=lambda _: baca.select.leaves(_)),
     ]
 
 

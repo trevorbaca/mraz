@@ -351,9 +351,9 @@ figures.populate_commands(commands)
 
 commands(
     "Global_Skips",
-    baca.metronome_mark("84", baca.selectors.leaf(0)),
-    baca.metronome_mark(baca.Accelerando(), baca.selectors.leaf(0)),
-    baca.metronome_mark("112", baca.selectors.leaf(8)),
+    baca.metronome_mark("84", lambda _: abjad.select.leaf(_, 0)),
+    baca.metronome_mark(baca.Accelerando(), lambda _: abjad.select.leaf(_, 0)),
+    baca.metronome_mark("112", lambda _: abjad.select.leaf(_, 8)),
     baca.bar_line("|.", lambda _: baca.select.skip(_, -1)),
 )
 

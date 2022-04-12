@@ -1,3 +1,4 @@
+import abjad
 import baca
 from abjadext import rmakers
 
@@ -307,19 +308,19 @@ figures.populate_commands(commands)
 
 commands(
     "Global_Skips",
-    baca.metronome_mark("84", baca.selectors.leaf(2)),
-    baca.metronome_mark("112", baca.selectors.leaf(4)),
-    baca.metronome_mark("84", baca.selectors.leaf(5)),
-    baca.metronome_mark("112", baca.selectors.leaf(-3)),
-    baca.metronome_mark(baca.Ritardando(), baca.selectors.leaf(-3)),
-    baca.metronome_mark("84", baca.selectors.leaf(-1)),
+    baca.metronome_mark("84", lambda _: abjad.select.leaf(_, 2)),
+    baca.metronome_mark("112", lambda _: abjad.select.leaf(_, 4)),
+    baca.metronome_mark("84", lambda _: abjad.select.leaf(_, 5)),
+    baca.metronome_mark("112", lambda _: abjad.select.leaf(_, -3)),
+    baca.metronome_mark(baca.Ritardando(), lambda _: abjad.select.leaf(_, -3)),
+    baca.metronome_mark("84", lambda _: abjad.select.leaf(_, -1)),
 )
 
 commands(
     "Global_Rests",
-    baca.global_fermata("short", baca.selectors.leaf(1)),
-    baca.global_fermata("fermata", baca.selectors.leaf(3)),
-    baca.global_fermata("short", baca.selectors.leaf(6)),
+    baca.global_fermata("short", lambda _: abjad.select.leaf(_, 1)),
+    baca.global_fermata("fermata", lambda _: abjad.select.leaf(_, 3)),
+    baca.global_fermata("short", lambda _: abjad.select.leaf(_, 6)),
 )
 
 commands(
@@ -334,7 +335,7 @@ commands(
 
 commands(
     library.lh_resonance,
-    baca.untie(baca.selectors.leaves()),
+    baca.untie(lambda _: baca.select.leaves(_)),
     baca.new(
         baca.repeat_tie(
             baca.selectors.pleaves((1, None)),
@@ -346,12 +347,12 @@ commands(
 
 commands(
     (library.lh_resonance, [(2, 7), (10, -1)]),
-    baca.accidental_stencil_false(baca.selectors.leaves()),
+    baca.accidental_stencil_false(lambda _: baca.select.leaves(_)),
 )
 
 commands(
     (library.lh_resonance, [2, 4]),
-    *library.transparent_music(baca.selectors.leaf(0)),
+    *library.transparent_music(lambda _: abjad.select.leaf(_, 0)),
 )
 
 commands(
