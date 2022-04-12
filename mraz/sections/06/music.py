@@ -534,7 +534,7 @@ commands(
 commands(
     (library.lh_resonance, [10, 11, 12, 13, 14]),
     *library.transparent_music(
-        baca.selectors.leaves((1, None)),
+        lambda _: baca.select.leaves(_)[1:],
     ),
 )
 

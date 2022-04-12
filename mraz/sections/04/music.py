@@ -817,7 +817,7 @@ figures(
     baca.dls_staff_padding(8),
     baca.hairpin(
         "f < ff",
-        selector=baca.selectors.leaves((None, -1)),
+        selector=lambda _: baca.select.leaves(_)[:-1],
     ),
     baca.slur(map=lambda _: baca.select.ntruns(_)),
     baca.register(10, 36),
@@ -836,7 +836,7 @@ figures(
     baca.dls_staff_padding(8),
     baca.hairpin(
         "f < ff",
-        selector=baca.selectors.leaves((None, -1)),
+        selector=lambda _: baca.select.leaves(_)[:-1],
     ),
     baca.slur(map=lambda _: baca.select.ntruns(_)),
     baca.register(10, 36),
@@ -870,7 +870,7 @@ figures(
     baca.dls_staff_padding(8),
     baca.hairpin(
         "f < ff",
-        selector=baca.selectors.leaves((None, -1)),
+        selector=lambda _: baca.select.leaves(_)[:-1],
     ),
     baca.slur(map=lambda _: baca.select.ntruns(_)),
     baca.register(10, 36),
@@ -889,7 +889,7 @@ figures(
     baca.dls_staff_padding(8),
     baca.hairpin(
         "f < ff",
-        selector=baca.selectors.leaves((None, -1)),
+        selector=lambda _: baca.select.leaves(_)[:-1],
     ),
     baca.slur(map=lambda _: baca.select.ntruns(_)),
     baca.register(10, 36),
@@ -946,7 +946,7 @@ figures(
     # TODO: debug: figure out why bracket extends indefinitely to right
     baca.new(
         baca.sustain_pedal(selector=lambda _: baca.select.rleaves(_)),
-        map=baca.selectors.lts((None, -1)),
+        map=lambda _: baca.select.lts(_)[:-1],
     ),
     baca.sustain_pedal_staff_padding(4),
     baca.rest_transparent(),
