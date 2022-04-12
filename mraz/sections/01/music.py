@@ -124,7 +124,9 @@ figures(
     section_6.stage_1.rh[3],
     baca.figure([1], 8, affix=baca.rests_around([1], [1])),
     baca.register(24, 12),
-    baca.span_bar_extra_offset((-0.75, 0), baca.selectors.leaf(-1), after=True),
+    baca.span_bar_extra_offset(
+        (-0.75, 0), lambda _: abjad.select.leaf(_, -1), after=True
+    ),
     baca.staccato(lambda _: baca.select.pheads(_)),
     baca.tenuto(lambda _: baca.select.pheads(_)),
     figure_name="6.1.R.2",
@@ -192,19 +194,19 @@ figures.populate_commands(commands)
 
 commands(
     "Global_Skips",
-    baca.metronome_mark("84", baca.selectors.leaf(0)),
-    baca.metronome_mark("112", baca.selectors.leaf(1)),
-    baca.metronome_mark("84", baca.selectors.leaf(4)),
-    baca.metronome_mark("84", baca.selectors.leaf(-2)),
-    baca.metronome_mark(baca.Accelerando(), baca.selectors.leaf(-2)),
-    baca.metronome_mark("112", baca.selectors.leaf(-1)),
+    baca.metronome_mark("84", lambda _: abjad.select.leaf(_, 0)),
+    baca.metronome_mark("112", lambda _: abjad.select.leaf(_, 1)),
+    baca.metronome_mark("84", lambda _: abjad.select.leaf(_, 4)),
+    baca.metronome_mark("84", lambda _: abjad.select.leaf(_, -2)),
+    baca.metronome_mark(baca.Accelerando(), lambda _: abjad.select.leaf(_, -2)),
+    baca.metronome_mark("112", lambda _: abjad.select.leaf(_, -1)),
 )
 
 commands(
     "Global_Rests",
-    baca.global_fermata("short", baca.selectors.leaf(3)),
-    baca.global_fermata("fermata", baca.selectors.leaf(5)),
-    baca.global_fermata("short", baca.selectors.leaf(8)),
+    baca.global_fermata("short", lambda _: abjad.select.leaf(_, 3)),
+    baca.global_fermata("fermata", lambda _: abjad.select.leaf(_, 5)),
+    baca.global_fermata("short", lambda _: abjad.select.leaf(_, 8)),
 )
 
 commands(

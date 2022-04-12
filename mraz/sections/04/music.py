@@ -639,7 +639,7 @@ figures(
     rmakers.beam_groups(),
     baca.slur(map=lambda _: baca.select.ntruns(_)),
     # lilypond error when slur is up:
-    baca.slur_down(baca.selectors.leaf(0)),
+    baca.slur_down(lambda _: abjad.select.leaf(_, 0)),
     anchor=baca.anchor(library.lh_v5, lambda _: baca.select.rest(_, -8)),
     figure_label_direction=abjad.UP,
     figure_name="4.4.R.3",
@@ -1041,29 +1041,29 @@ figures.populate_commands(commands)
 
 commands(
     "Global_Skips",
-    baca.metronome_mark("84", baca.selectors.leaf(0)),
-    baca.metronome_mark(baca.Accelerando(), baca.selectors.leaf(0)),
-    baca.metronome_mark("112", baca.selectors.leaf(4)),
-    baca.metronome_mark("84", baca.selectors.leaf(5)),
-    baca.metronome_mark(baca.Accelerando(), baca.selectors.leaf(5)),
-    baca.metronome_mark("112", baca.selectors.leaf(14)),
-    baca.metronome_mark("112", baca.selectors.leaf(19)),
-    baca.metronome_mark(baca.Ritardando(), baca.selectors.leaf(19)),
-    baca.metronome_mark("84", baca.selectors.leaf(22)),
-    baca.metronome_mark("112", baca.selectors.leaf(23)),
-    baca.metronome_mark(baca.Ritardando(), baca.selectors.leaf(23)),
-    baca.metronome_mark("84", baca.selectors.leaf(27)),
-    baca.metronome_mark("112", baca.selectors.leaf(29)),
-    baca.metronome_mark(baca.Ritardando(), baca.selectors.leaf(29)),
-    baca.metronome_mark("84", baca.selectors.leaf(31)),
-    baca.metronome_mark("112", baca.selectors.leaf(32)),
-    baca.metronome_mark(baca.Ritardando(), baca.selectors.leaf(32)),
-    baca.metronome_mark("84", baca.selectors.leaf(36)),
+    baca.metronome_mark("84", lambda _: abjad.select.leaf(_, 0)),
+    baca.metronome_mark(baca.Accelerando(), lambda _: abjad.select.leaf(_, 0)),
+    baca.metronome_mark("112", lambda _: abjad.select.leaf(_, 4)),
+    baca.metronome_mark("84", lambda _: abjad.select.leaf(_, 5)),
+    baca.metronome_mark(baca.Accelerando(), lambda _: abjad.select.leaf(_, 5)),
+    baca.metronome_mark("112", lambda _: abjad.select.leaf(_, 14)),
+    baca.metronome_mark("112", lambda _: abjad.select.leaf(_, 19)),
+    baca.metronome_mark(baca.Ritardando(), lambda _: abjad.select.leaf(_, 19)),
+    baca.metronome_mark("84", lambda _: abjad.select.leaf(_, 22)),
+    baca.metronome_mark("112", lambda _: abjad.select.leaf(_, 23)),
+    baca.metronome_mark(baca.Ritardando(), lambda _: abjad.select.leaf(_, 23)),
+    baca.metronome_mark("84", lambda _: abjad.select.leaf(_, 27)),
+    baca.metronome_mark("112", lambda _: abjad.select.leaf(_, 29)),
+    baca.metronome_mark(baca.Ritardando(), lambda _: abjad.select.leaf(_, 29)),
+    baca.metronome_mark("84", lambda _: abjad.select.leaf(_, 31)),
+    baca.metronome_mark("112", lambda _: abjad.select.leaf(_, 32)),
+    baca.metronome_mark(baca.Ritardando(), lambda _: abjad.select.leaf(_, 32)),
+    baca.metronome_mark("84", lambda _: abjad.select.leaf(_, 36)),
 )
 
 commands(
     "Global_Rests",
-    baca.global_fermata("fermata", baca.selectors.leaf(20)),
+    baca.global_fermata("fermata", lambda _: abjad.select.leaf(_, 20)),
 )
 
 commands(
@@ -1110,7 +1110,7 @@ commands(
 
 commands(
     library.lh_resonance,
-    baca.untie(baca.selectors.leaves()),
+    baca.untie(lambda _: baca.select.leaves(_)),
     baca.new(
         baca.repeat_tie(
             baca.selectors.pleaves((1, None)),
@@ -1121,9 +1121,9 @@ commands(
 
 commands(
     (library.lh_resonance, [11, 15, (33, 39)]),
-    baca.accidental_stencil_false(baca.selectors.leaves()),
-    baca.dots_stencil_false(baca.selectors.leaves()),
-    baca.stem_stencil_false(baca.selectors.leaves()),
+    baca.accidental_stencil_false(lambda _: baca.select.leaves(_)),
+    baca.dots_stencil_false(lambda _: baca.select.leaves(_)),
+    baca.stem_stencil_false(lambda _: baca.select.leaves(_)),
 )
 
 commands(
