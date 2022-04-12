@@ -1,7 +1,7 @@
 TO-DO
 =====
 
-1.  Extend selectors to work with named figures.
+1.  Extend select functions to work with named figures.
 
 2.  Reestablish silver design transform markup.
 
