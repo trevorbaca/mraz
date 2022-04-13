@@ -86,7 +86,7 @@ segment.01.Global.Skips = {
     %! baca._set_status_tag()
     %! EXPLICIT_TIME_SIGNATURE
     \time 4/4
-    %! baca.attach_color_literal(2)
+    %! baca._attach_color_literal(2)
     %! EXPLICIT_TIME_SIGNATURE_COLOR
     \baca-time-signature-color #'blue
     %! baca._make_global_skips(1)
@@ -137,7 +137,7 @@ segment.01.Global.Skips = {
     %! baca._set_status_tag()
     %! EXPLICIT_TIME_SIGNATURE
     \time 2/4
-    %! baca.attach_color_literal(2)
+    %! baca._attach_color_literal(2)
     %! EXPLICIT_TIME_SIGNATURE_COLOR
     \baca-time-signature-color #'blue
     %! baca._make_global_skips(1)
@@ -199,7 +199,7 @@ segment.01.Global.Skips = {
     %! baca._set_status_tag()
     %! EXPLICIT_TIME_SIGNATURE
     \time 4/4
-    %! baca.attach_color_literal(2)
+    %! baca._attach_color_literal(2)
     %! EXPLICIT_TIME_SIGNATURE_COLOR
     \baca-time-signature-color #'blue
     %! baca._make_global_skips(1)
@@ -238,7 +238,7 @@ segment.01.Global.Skips = {
     %! baca._set_status_tag()
     %! EXPLICIT_TIME_SIGNATURE
     \time 1/4
-    %! baca.attach_color_literal(2)
+    %! baca._attach_color_literal(2)
     %! EXPLICIT_TIME_SIGNATURE_COLOR
     \baca-time-signature-color #'blue
     %! baca._make_global_skips(1)
@@ -277,7 +277,7 @@ segment.01.Global.Skips = {
     %! baca._set_status_tag()
     %! EXPLICIT_TIME_SIGNATURE
     \time 4/8
-    %! baca.attach_color_literal(2)
+    %! baca._attach_color_literal(2)
     %! EXPLICIT_TIME_SIGNATURE_COLOR
     \baca-time-signature-color #'blue
     %! baca._make_global_skips(1)
@@ -339,7 +339,7 @@ segment.01.Global.Skips = {
     %! baca._set_status_tag()
     %! EXPLICIT_TIME_SIGNATURE
     \time 1/4
-    %! baca.attach_color_literal(2)
+    %! baca._attach_color_literal(2)
     %! EXPLICIT_TIME_SIGNATURE_COLOR
     \baca-time-signature-color #'blue
     %! baca._make_global_skips(1)
@@ -378,7 +378,7 @@ segment.01.Global.Skips = {
     %! baca._set_status_tag()
     %! EXPLICIT_TIME_SIGNATURE
     \time 7/8
-    %! baca.attach_color_literal(2)
+    %! baca._attach_color_literal(2)
     %! EXPLICIT_TIME_SIGNATURE_COLOR
     \baca-time-signature-color #'blue
     %! baca._make_global_skips(1)
@@ -417,7 +417,7 @@ segment.01.Global.Skips = {
     %! baca._set_status_tag()
     %! EXPLICIT_TIME_SIGNATURE
     \time 16/4
-    %! baca.attach_color_literal(2)
+    %! baca._attach_color_literal(2)
     %! EXPLICIT_TIME_SIGNATURE_COLOR
     \baca-time-signature-color #'blue
     %! baca._make_global_skips(1)
@@ -479,7 +479,7 @@ segment.01.Global.Skips = {
     %! baca._set_status_tag()
     %! EXPLICIT_TIME_SIGNATURE
     \time 1/4
-    %! baca.attach_color_literal(2)
+    %! baca._attach_color_literal(2)
     %! EXPLICIT_TIME_SIGNATURE_COLOR
     \baca-time-signature-color #'blue
     %! baca._make_global_skips(1)
@@ -598,10 +598,10 @@ segment.01.RH.Voice.I = {
             %! baca._set_status_tag()
             %! DEFAULT_CLEF
             \clef "treble"
-            %! baca.attach_color_literal(2)
+            %! baca._attach_color_literal(2)
             %! DEFAULT_CLEF_COLOR
             \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'DarkViolet)
-            %! baca.attach_color_literal(1)
+            %! baca._attach_color_literal(1)
             %! DEFAULT_CLEF_COLOR_CANCELLATION
             %@% \override PianoMusicRHStaff.Clef.color = ##f
             %! baca._attach_default_indicators(3)
@@ -624,7 +624,7 @@ segment.01.RH.Voice.I = {
             %@% - \tweak color #blue
             %! FIGURE_LABEL
             %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (1) \hspace #1 "4.5.R.3" ] }
-            %! baca.attach_color_literal(2)
+            %! baca._attach_color_literal(2)
             %! DEFAULT_CLEF_REDRAW_COLOR
             \override PianoMusicRHStaff.Clef.color = #(x11-color 'violet)
 
@@ -2728,10 +2728,10 @@ segment.01.LH.Voice.I = {
     %! baca._set_status_tag()
     %! EXPLICIT_CLEF
     \clef "treble"
-    %! baca.attach_color_literal(2)
+    %! baca._attach_color_literal(2)
     %! EXPLICIT_CLEF_COLOR
     \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'blue)
-    %! baca.attach_color_literal(1)
+    %! baca._attach_color_literal(1)
     %! EXPLICIT_CLEF_COLOR_CANCELLATION
     %@% \override PianoMusicLHStaff.Clef.color = ##f
     %! baca.clef()
@@ -2742,7 +2742,7 @@ segment.01.LH.Voice.I = {
     \set PianoMusicLHStaff.forceClef = ##t
     %! baca._call_rhythm_commands()
     s1 * 4/4
-    %! baca.attach_color_literal(2)
+    %! baca._attach_color_literal(2)
     %! EXPLICIT_CLEF_REDRAW_COLOR
     \override PianoMusicLHStaff.Clef.color = #(x11-color 'DeepSkyBlue2)
 
@@ -3936,10 +3936,10 @@ segment.01.LH.Voice.VI = {
             %! baca._set_status_tag()
             %! EXPLICIT_CLEF
             \clef "bass"
-            %! baca.attach_color_literal(2)
+            %! baca._attach_color_literal(2)
             %! EXPLICIT_CLEF_COLOR
             \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'blue)
-            %! baca.attach_color_literal(1)
+            %! baca._attach_color_literal(1)
             %! EXPLICIT_CLEF_COLOR_CANCELLATION
             %@% \override PianoMusicLHStaff.Clef.color = ##f
             %! baca.clef()
@@ -3966,7 +3966,7 @@ segment.01.LH.Voice.VI = {
             %@% - \tweak color #blue
             %! FIGURE_LABEL
             %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (4) \hspace #1 "8.3.L.2" ] }
-            %! baca.attach_color_literal(2)
+            %! baca._attach_color_literal(2)
             %! EXPLICIT_CLEF_REDRAW_COLOR
             \override PianoMusicLHStaff.Clef.color = #(x11-color 'DeepSkyBlue2)
 
