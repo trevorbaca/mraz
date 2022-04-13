@@ -16,13 +16,13 @@ def _add_segments_to_voice(voice, label, segments, names, do_not_page_break=Fals
         voice.append(skip)
         number = i + 1
         markup = abjad.Markup(rf"\markup {number}")
-        abjad.tweak(markup, r"- \tweak staff-padding 2")
-        abjad.attach(markup, notes[0], direction=abjad.UP)
+        bundle = abjad.bundle(markup, r"- \tweak staff-padding 2")
+        abjad.attach(bundle, notes[0], direction=abjad.UP)
         if i == 0:
             string = rf'\markup \bold \with-color #red "{label}"'
             markup = abjad.Markup(string)
-            abjad.tweak(markup, r"- \tweak staff-padding 6")
-            abjad.attach(markup, notes[0], direction=abjad.UP)
+            bundle = abjad.bundle(markup, r"- \tweak staff-padding 6")
+            abjad.attach(bundle, notes[0], direction=abjad.UP)
         if i == len(segments) - 1:
             literal = abjad.LilyPondLiteral(r"\break", site="after")
             abjad.attach(literal, voice[-1])
@@ -161,18 +161,24 @@ def _add_moment_to_voice(voice, moment_number, moment_namespace):
                             chord = abjad.Chord(numbers, (1, 8))
                             leaves = [chord]
                         markup = abjad.Markup(rf"\markup {subitem_number}")
-                        abjad.tweak(markup, r"- \tweak color #blue")
-                        abjad.tweak(markup, r"- \tweak staff-padding 3")
-                        abjad.attach(markup, leaves[0], direction=abjad.UP)
+                        bundle = abjad.bundle(
+                            markup,
+                            r"- \tweak color #blue",
+                            r"- \tweak staff-padding 3",
+                        )
+                        abjad.attach(bundle, leaves[0], direction=abjad.UP)
                         all_leaves.extend(leaves)
                     abjad.horizontal_bracket(all_leaves)
                     part = part_name[0].upper()
                     stage_number = stage_name[-1]
                     string = f"{moment_number}.{stage_number}.{part}.{item_number}"
                     markup = abjad.Markup(rf'\markup "{string}"')
-                    abjad.tweak(markup, r"- \tweak color #red")
-                    abjad.tweak(markup, r"- \tweak staff-padding 6")
-                    abjad.attach(markup, all_leaves[0], direction=abjad.UP)
+                    bundle = abjad.bundle(
+                        markup,
+                        r"- \tweak color #red",
+                        r"- \tweak staff-padding 6",
+                    )
+                    abjad.attach(bundle, all_leaves[0], direction=abjad.UP)
                 elif isinstance(item, segments_):
                     all_leaves = [abjad.Note(_.number, (1, 8)) for _ in item]
                     abjad.horizontal_bracket(all_leaves)
@@ -180,9 +186,12 @@ def _add_moment_to_voice(voice, moment_number, moment_namespace):
                     stage_number = stage_name[-1]
                     string = f"{moment_number}.{stage_number}.{part}.{item_number}"
                     markup = abjad.Markup(rf'\markup "{string}"')
-                    abjad.tweak(markup, r"- \tweak color #red")
-                    abjad.tweak(markup, r"- \tweak staff-padding 6")
-                    abjad.attach(markup, all_leaves[0], direction=abjad.UP)
+                    bundle = abjad.bundle(
+                        markup,
+                        r"- \tweak color #red",
+                        r"- \tweak staff-padding 6",
+                    )
+                    abjad.attach(bundle, all_leaves[0], direction=abjad.UP)
                 elif isinstance(item, set | frozenset):
                     numbers = [_.number for _ in item]
                     chord = abjad.Chord(numbers, (1, 8))
@@ -192,9 +201,12 @@ def _add_moment_to_voice(voice, moment_number, moment_namespace):
                     stage_number = stage_name[-1]
                     string = f"{moment_number}.{stage_number}.{part}.{item_number}"
                     markup = abjad.Markup(rf'\markup "{string}"')
-                    abjad.tweak(markup, r"- \tweak color #red")
-                    abjad.tweak(markup, r"- \tweak staff-padding 6")
-                    abjad.attach(markup, all_leaves[0], direction=abjad.UP)
+                    bundle = abjad.bundle(
+                        markup,
+                        r"- \tweak color #red",
+                        r"- \tweak staff-padding 6",
+                    )
+                    abjad.attach(bundle, all_leaves[0], direction=abjad.UP)
                 else:
                     raise Exception(item)
                 voice.extend(all_leaves)

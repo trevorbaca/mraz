@@ -1,4 +1,4 @@
-\version "2.22.1"
+\version "2.23.6"
 \language "english"
 #(set-default-paper-size "letter")
 #(set-global-staff-size 14)
