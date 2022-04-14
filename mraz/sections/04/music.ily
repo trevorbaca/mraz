@@ -2989,225 +2989,269 @@ segment.04.RH.Voice.I = {
 %! baca.path.extern()
 segment.04.RH.Insert.Voice.I = {
 
-    %! baca._comment_measure_numbers()
-    % [RH_Insert_Voice_I measure 1]
-    %! baca._call_rhythm_commands()
-    s1 * 6/4
+    %! baca._make_multimeasure_rest_container(7)
+    <<
+
+        %! baca._make_multimeasure_rest_container(4)
+        \context Voice = "RH_Insert_Voice_I"
+        %! baca._make_multimeasure_rest_container(4)
+        {
+
+            %! baca._comment_measure_numbers()
+            % [RH_Insert_Voice_I measure 1]
+            %! baca._make_multimeasure_rest_container(2)
+            %! NOTE
+            %! INVISIBLE_MUSIC_COLORING
+            \abjad-invisible-music-coloring
+            %! baca._make_multimeasure_rest_container(3)
+            %! NOTE
+            %! INVISIBLE_MUSIC_COMMAND
+            %@% \abjad-invisible-music
+            %! baca._make_multimeasure_rest_container(1)
+            %! HIDDEN
+            %! NOTE
+            b'1 * 3/2
+            %! baca._label_duration_multipliers()
+            %! DURATION_MULTIPLIER
+            %! HIDDEN
+            %! NOTE
+            %@% ^ \baca-duration-multiplier-markup #"3" #"2"
+
+        %! baca._make_multimeasure_rest_container(4)
+        }
+
+        %! baca._make_multimeasure_rest_container(6)
+        \context Voice = "RH_Insert_Rest_Voice_I"
+        %! baca._make_multimeasure_rest_container(6)
+        {
+
+            %! baca._comment_measure_numbers()
+            % [RH_Insert_Rest_Voice_I measure 1]
+            %! baca._make_multimeasure_rest_container(5)
+            %! REST_VOICE
+            %! SKIP
+            s1 * 3/2
+
+        %! baca._make_multimeasure_rest_container(6)
+        }
+
+    %! baca._make_multimeasure_rest_container(7)
+    >>
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_I measure 2]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 3/4
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_I measure 3]
-    %! baca._call_rhythm_commands()
-    s1 * 6/4
+    %! baca._make_measure_silences()
+    s1 * 3/2
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_I measure 4]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 9/8
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_I measure 5]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 3/4
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_I measure 6]
-    %! baca._call_rhythm_commands()
-    s1 * 6/4
+    %! baca._make_measure_silences()
+    s1 * 3/2
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_I measure 7]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 3/4
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_I measure 8]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 3/4
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_I measure 9]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 5/4
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_I measure 10]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_I measure 11]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 5/4
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_I measure 12]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 3/4
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_I measure 13]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 5/4
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_I measure 14]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_I measure 15]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 5/4
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_I measure 16]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_I measure 17]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 1/4
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_I measure 18]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 7/8
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_I measure 19]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_I measure 20]
-    %! baca._call_rhythm_commands()
-    s1 * 2/4
+    %! baca._make_measure_silences()
+    s1 * 1/2
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_I measure 21]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 1/4
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_I measure 22]
-    %! baca._call_rhythm_commands()
-    s1 * 2/4
+    %! baca._make_measure_silences()
+    s1 * 1/2
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_I measure 23]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_I measure 24]
-    %! baca._call_rhythm_commands()
-    s1 * 2/4
+    %! baca._make_measure_silences()
+    s1 * 1/2
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_I measure 25]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_I measure 26]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 3/4
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_I measure 27]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 5/8
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_I measure 28]
-    %! baca._call_rhythm_commands()
-    s1 * 2/4
+    %! baca._make_measure_silences()
+    s1 * 1/2
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_I measure 29]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 3/4
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_I measure 30]
-    %! baca._call_rhythm_commands()
-    s1 * 2/4
+    %! baca._make_measure_silences()
+    s1 * 1/2
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_I measure 31]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 5/8
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_I measure 32]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 1/4
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_I measure 33]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 7/4
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_I measure 34]
-    %! baca._call_rhythm_commands()
-    s1 * 6/4
+    %! baca._make_measure_silences()
+    s1 * 3/2
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_I measure 35]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_I measure 36]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_I measure 37]
-    %! baca._call_rhythm_commands()
-    s1 * 6/4
+    %! baca._make_measure_silences()
+    s1 * 3/2
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_I measure 38]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_I measure 39]
-    %! baca._call_rhythm_commands()
-    s1 * 2/4
+    %! baca._make_measure_silences()
+    s1 * 1/2
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_I measure 40]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_I measure 41]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_I measure 42]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_I measure 43]
-    %! baca._call_rhythm_commands()
-    s1 * 6/4
+    %! baca._make_measure_silences()
+    s1 * 3/2
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_I measure 44]
-    %! baca._call_rhythm_commands()
-    s1 * 16/4
+    %! baca._make_measure_silences()
+    s1 * 4
 
     %! baca._make_multimeasure_rest_container(7)
     %! PHANTOM
@@ -4697,225 +4741,269 @@ segment.04.RH.Voice.II = {
 %! baca.path.extern()
 segment.04.RH.Insert.Voice.II = {
 
-    %! baca._comment_measure_numbers()
-    % [RH_Insert_Voice_II measure 1]
-    %! baca._call_rhythm_commands()
-    s1 * 6/4
+    %! baca._make_multimeasure_rest_container(7)
+    <<
+
+        %! baca._make_multimeasure_rest_container(4)
+        \context Voice = "RH_Insert_Voice_II"
+        %! baca._make_multimeasure_rest_container(4)
+        {
+
+            %! baca._comment_measure_numbers()
+            % [RH_Insert_Voice_II measure 1]
+            %! baca._make_multimeasure_rest_container(2)
+            %! NOTE
+            %! INVISIBLE_MUSIC_COLORING
+            \abjad-invisible-music-coloring
+            %! baca._make_multimeasure_rest_container(3)
+            %! NOTE
+            %! INVISIBLE_MUSIC_COMMAND
+            %@% \abjad-invisible-music
+            %! baca._make_multimeasure_rest_container(1)
+            %! HIDDEN
+            %! NOTE
+            b'1 * 3/2
+            %! baca._label_duration_multipliers()
+            %! DURATION_MULTIPLIER
+            %! HIDDEN
+            %! NOTE
+            %@% ^ \baca-duration-multiplier-markup #"3" #"2"
+
+        %! baca._make_multimeasure_rest_container(4)
+        }
+
+        %! baca._make_multimeasure_rest_container(6)
+        \context Voice = "RH_Insert_Rest_Voice_II"
+        %! baca._make_multimeasure_rest_container(6)
+        {
+
+            %! baca._comment_measure_numbers()
+            % [RH_Insert_Rest_Voice_II measure 1]
+            %! baca._make_multimeasure_rest_container(5)
+            %! REST_VOICE
+            %! SKIP
+            s1 * 3/2
+
+        %! baca._make_multimeasure_rest_container(6)
+        }
+
+    %! baca._make_multimeasure_rest_container(7)
+    >>
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_II measure 2]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 3/4
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_II measure 3]
-    %! baca._call_rhythm_commands()
-    s1 * 6/4
+    %! baca._make_measure_silences()
+    s1 * 3/2
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_II measure 4]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 9/8
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_II measure 5]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 3/4
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_II measure 6]
-    %! baca._call_rhythm_commands()
-    s1 * 6/4
+    %! baca._make_measure_silences()
+    s1 * 3/2
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_II measure 7]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 3/4
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_II measure 8]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 3/4
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_II measure 9]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 5/4
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_II measure 10]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_II measure 11]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 5/4
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_II measure 12]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 3/4
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_II measure 13]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 5/4
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_II measure 14]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_II measure 15]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 5/4
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_II measure 16]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_II measure 17]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 1/4
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_II measure 18]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 7/8
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_II measure 19]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_II measure 20]
-    %! baca._call_rhythm_commands()
-    s1 * 2/4
+    %! baca._make_measure_silences()
+    s1 * 1/2
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_II measure 21]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 1/4
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_II measure 22]
-    %! baca._call_rhythm_commands()
-    s1 * 2/4
+    %! baca._make_measure_silences()
+    s1 * 1/2
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_II measure 23]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_II measure 24]
-    %! baca._call_rhythm_commands()
-    s1 * 2/4
+    %! baca._make_measure_silences()
+    s1 * 1/2
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_II measure 25]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_II measure 26]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 3/4
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_II measure 27]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 5/8
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_II measure 28]
-    %! baca._call_rhythm_commands()
-    s1 * 2/4
+    %! baca._make_measure_silences()
+    s1 * 1/2
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_II measure 29]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 3/4
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_II measure 30]
-    %! baca._call_rhythm_commands()
-    s1 * 2/4
+    %! baca._make_measure_silences()
+    s1 * 1/2
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_II measure 31]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 5/8
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_II measure 32]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 1/4
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_II measure 33]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 7/4
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_II measure 34]
-    %! baca._call_rhythm_commands()
-    s1 * 6/4
+    %! baca._make_measure_silences()
+    s1 * 3/2
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_II measure 35]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_II measure 36]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_II measure 37]
-    %! baca._call_rhythm_commands()
-    s1 * 6/4
+    %! baca._make_measure_silences()
+    s1 * 3/2
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_II measure 38]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_II measure 39]
-    %! baca._call_rhythm_commands()
-    s1 * 2/4
+    %! baca._make_measure_silences()
+    s1 * 1/2
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_II measure 40]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_II measure 41]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_II measure 42]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_II measure 43]
-    %! baca._call_rhythm_commands()
-    s1 * 6/4
+    %! baca._make_measure_silences()
+    s1 * 3/2
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_II measure 44]
-    %! baca._call_rhythm_commands()
-    s1 * 16/4
+    %! baca._make_measure_silences()
+    s1 * 4
 
     %! baca._make_multimeasure_rest_container(7)
     %! PHANTOM
@@ -5634,225 +5722,269 @@ segment.04.RH.Voice.III = {
 %! baca.path.extern()
 segment.04.RH.Insert.Voice.III = {
 
-    %! baca._comment_measure_numbers()
-    % [RH_Insert_Voice_III measure 1]
-    %! baca._call_rhythm_commands()
-    s1 * 6/4
+    %! baca._make_multimeasure_rest_container(7)
+    <<
+
+        %! baca._make_multimeasure_rest_container(4)
+        \context Voice = "RH_Insert_Voice_III"
+        %! baca._make_multimeasure_rest_container(4)
+        {
+
+            %! baca._comment_measure_numbers()
+            % [RH_Insert_Voice_III measure 1]
+            %! baca._make_multimeasure_rest_container(2)
+            %! NOTE
+            %! INVISIBLE_MUSIC_COLORING
+            \abjad-invisible-music-coloring
+            %! baca._make_multimeasure_rest_container(3)
+            %! NOTE
+            %! INVISIBLE_MUSIC_COMMAND
+            %@% \abjad-invisible-music
+            %! baca._make_multimeasure_rest_container(1)
+            %! HIDDEN
+            %! NOTE
+            b'1 * 3/2
+            %! baca._label_duration_multipliers()
+            %! DURATION_MULTIPLIER
+            %! HIDDEN
+            %! NOTE
+            %@% ^ \baca-duration-multiplier-markup #"3" #"2"
+
+        %! baca._make_multimeasure_rest_container(4)
+        }
+
+        %! baca._make_multimeasure_rest_container(6)
+        \context Voice = "RH_Insert_Rest_Voice_III"
+        %! baca._make_multimeasure_rest_container(6)
+        {
+
+            %! baca._comment_measure_numbers()
+            % [RH_Insert_Rest_Voice_III measure 1]
+            %! baca._make_multimeasure_rest_container(5)
+            %! REST_VOICE
+            %! SKIP
+            s1 * 3/2
+
+        %! baca._make_multimeasure_rest_container(6)
+        }
+
+    %! baca._make_multimeasure_rest_container(7)
+    >>
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_III measure 2]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 3/4
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_III measure 3]
-    %! baca._call_rhythm_commands()
-    s1 * 6/4
+    %! baca._make_measure_silences()
+    s1 * 3/2
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_III measure 4]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 9/8
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_III measure 5]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 3/4
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_III measure 6]
-    %! baca._call_rhythm_commands()
-    s1 * 6/4
+    %! baca._make_measure_silences()
+    s1 * 3/2
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_III measure 7]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 3/4
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_III measure 8]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 3/4
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_III measure 9]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 5/4
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_III measure 10]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_III measure 11]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 5/4
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_III measure 12]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 3/4
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_III measure 13]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 5/4
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_III measure 14]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_III measure 15]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 5/4
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_III measure 16]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_III measure 17]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 1/4
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_III measure 18]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 7/8
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_III measure 19]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_III measure 20]
-    %! baca._call_rhythm_commands()
-    s1 * 2/4
+    %! baca._make_measure_silences()
+    s1 * 1/2
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_III measure 21]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 1/4
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_III measure 22]
-    %! baca._call_rhythm_commands()
-    s1 * 2/4
+    %! baca._make_measure_silences()
+    s1 * 1/2
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_III measure 23]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_III measure 24]
-    %! baca._call_rhythm_commands()
-    s1 * 2/4
+    %! baca._make_measure_silences()
+    s1 * 1/2
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_III measure 25]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_III measure 26]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 3/4
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_III measure 27]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 5/8
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_III measure 28]
-    %! baca._call_rhythm_commands()
-    s1 * 2/4
+    %! baca._make_measure_silences()
+    s1 * 1/2
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_III measure 29]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 3/4
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_III measure 30]
-    %! baca._call_rhythm_commands()
-    s1 * 2/4
+    %! baca._make_measure_silences()
+    s1 * 1/2
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_III measure 31]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 5/8
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_III measure 32]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 1/4
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_III measure 33]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 7/4
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_III measure 34]
-    %! baca._call_rhythm_commands()
-    s1 * 6/4
+    %! baca._make_measure_silences()
+    s1 * 3/2
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_III measure 35]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_III measure 36]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_III measure 37]
-    %! baca._call_rhythm_commands()
-    s1 * 6/4
+    %! baca._make_measure_silences()
+    s1 * 3/2
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_III measure 38]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_III measure 39]
-    %! baca._call_rhythm_commands()
-    s1 * 2/4
+    %! baca._make_measure_silences()
+    s1 * 1/2
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_III measure 40]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_III measure 41]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_III measure 42]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_III measure 43]
-    %! baca._call_rhythm_commands()
-    s1 * 6/4
+    %! baca._make_measure_silences()
+    s1 * 3/2
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_III measure 44]
-    %! baca._call_rhythm_commands()
-    s1 * 16/4
+    %! baca._make_measure_silences()
+    s1 * 4
 
     %! baca._make_multimeasure_rest_container(7)
     %! PHANTOM
@@ -5931,235 +6063,279 @@ segment.04.RH.Insert.Voice.III = {
 %! baca.path.extern()
 segment.04.RH.Voice.IV = {
 
-    %! baca._comment_measure_numbers()
-    % [RH_Voice_IV measure 1]
-    %! baca._call_rhythm_commands()
-    s1 * 6/4
-    %! REAPPLIED_DYNAMIC_COLOR
-    %! baca.treat_persistent_wrapper()
-    %! baca._reapply_persistent_indicators(3)
-    %! baca._set_status_tag()
-    %! REAPPLIED_DYNAMIC
-    - \tweak color #(x11-color 'green4)
-    %! baca._reapply_persistent_indicators(3)
-    %! baca._set_status_tag()
-    %! REAPPLIED_DYNAMIC
-    \p
+    %! baca._make_multimeasure_rest_container(7)
+    <<
+
+        %! baca._make_multimeasure_rest_container(4)
+        \context Voice = "RH_Voice_IV"
+        %! baca._make_multimeasure_rest_container(4)
+        {
+
+            %! baca._comment_measure_numbers()
+            % [RH_Voice_IV measure 1]
+            %! baca._make_multimeasure_rest_container(2)
+            %! NOTE
+            %! INVISIBLE_MUSIC_COLORING
+            \abjad-invisible-music-coloring
+            %! baca._make_multimeasure_rest_container(3)
+            %! NOTE
+            %! INVISIBLE_MUSIC_COMMAND
+            %@% \abjad-invisible-music
+            %! baca._make_multimeasure_rest_container(1)
+            %! HIDDEN
+            %! NOTE
+            b'1 * 3/2
+            %! REAPPLIED_DYNAMIC_COLOR
+            %! baca.treat_persistent_wrapper()
+            %! baca._reapply_persistent_indicators(3)
+            %! baca._set_status_tag()
+            %! REAPPLIED_DYNAMIC
+            - \tweak color #(x11-color 'green4)
+            %! baca._reapply_persistent_indicators(3)
+            %! baca._set_status_tag()
+            %! REAPPLIED_DYNAMIC
+            \p
+            %! baca._label_duration_multipliers()
+            %! DURATION_MULTIPLIER
+            %! HIDDEN
+            %! NOTE
+            %@% ^ \baca-duration-multiplier-markup #"3" #"2"
+
+        %! baca._make_multimeasure_rest_container(4)
+        }
+
+        %! baca._make_multimeasure_rest_container(6)
+        \context Voice = "RH_Rest_Voice_IV"
+        %! baca._make_multimeasure_rest_container(6)
+        {
+
+            %! baca._comment_measure_numbers()
+            % [RH_Rest_Voice_IV measure 1]
+            %! baca._make_multimeasure_rest_container(5)
+            %! REST_VOICE
+            %! SKIP
+            s1 * 3/2
+
+        %! baca._make_multimeasure_rest_container(6)
+        }
+
+    %! baca._make_multimeasure_rest_container(7)
+    >>
 
     %! baca._comment_measure_numbers()
     % [RH_Voice_IV measure 2]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 3/4
 
     %! baca._comment_measure_numbers()
     % [RH_Voice_IV measure 3]
-    %! baca._call_rhythm_commands()
-    s1 * 6/4
+    %! baca._make_measure_silences()
+    s1 * 3/2
 
     %! baca._comment_measure_numbers()
     % [RH_Voice_IV measure 4]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 9/8
 
     %! baca._comment_measure_numbers()
     % [RH_Voice_IV measure 5]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 3/4
 
     %! baca._comment_measure_numbers()
     % [RH_Voice_IV measure 6]
-    %! baca._call_rhythm_commands()
-    s1 * 6/4
+    %! baca._make_measure_silences()
+    s1 * 3/2
 
     %! baca._comment_measure_numbers()
     % [RH_Voice_IV measure 7]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 3/4
 
     %! baca._comment_measure_numbers()
     % [RH_Voice_IV measure 8]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 3/4
 
     %! baca._comment_measure_numbers()
     % [RH_Voice_IV measure 9]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 5/4
 
     %! baca._comment_measure_numbers()
     % [RH_Voice_IV measure 10]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [RH_Voice_IV measure 11]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 5/4
 
     %! baca._comment_measure_numbers()
     % [RH_Voice_IV measure 12]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 3/4
 
     %! baca._comment_measure_numbers()
     % [RH_Voice_IV measure 13]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 5/4
 
     %! baca._comment_measure_numbers()
     % [RH_Voice_IV measure 14]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [RH_Voice_IV measure 15]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 5/4
 
     %! baca._comment_measure_numbers()
     % [RH_Voice_IV measure 16]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [RH_Voice_IV measure 17]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 1/4
 
     %! baca._comment_measure_numbers()
     % [RH_Voice_IV measure 18]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 7/8
 
     %! baca._comment_measure_numbers()
     % [RH_Voice_IV measure 19]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [RH_Voice_IV measure 20]
-    %! baca._call_rhythm_commands()
-    s1 * 2/4
+    %! baca._make_measure_silences()
+    s1 * 1/2
 
     %! baca._comment_measure_numbers()
     % [RH_Voice_IV measure 21]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 1/4
 
     %! baca._comment_measure_numbers()
     % [RH_Voice_IV measure 22]
-    %! baca._call_rhythm_commands()
-    s1 * 2/4
+    %! baca._make_measure_silences()
+    s1 * 1/2
 
     %! baca._comment_measure_numbers()
     % [RH_Voice_IV measure 23]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [RH_Voice_IV measure 24]
-    %! baca._call_rhythm_commands()
-    s1 * 2/4
+    %! baca._make_measure_silences()
+    s1 * 1/2
 
     %! baca._comment_measure_numbers()
     % [RH_Voice_IV measure 25]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [RH_Voice_IV measure 26]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 3/4
 
     %! baca._comment_measure_numbers()
     % [RH_Voice_IV measure 27]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 5/8
 
     %! baca._comment_measure_numbers()
     % [RH_Voice_IV measure 28]
-    %! baca._call_rhythm_commands()
-    s1 * 2/4
+    %! baca._make_measure_silences()
+    s1 * 1/2
 
     %! baca._comment_measure_numbers()
     % [RH_Voice_IV measure 29]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 3/4
 
     %! baca._comment_measure_numbers()
     % [RH_Voice_IV measure 30]
-    %! baca._call_rhythm_commands()
-    s1 * 2/4
+    %! baca._make_measure_silences()
+    s1 * 1/2
 
     %! baca._comment_measure_numbers()
     % [RH_Voice_IV measure 31]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 5/8
 
     %! baca._comment_measure_numbers()
     % [RH_Voice_IV measure 32]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 1/4
 
     %! baca._comment_measure_numbers()
     % [RH_Voice_IV measure 33]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 7/4
 
     %! baca._comment_measure_numbers()
     % [RH_Voice_IV measure 34]
-    %! baca._call_rhythm_commands()
-    s1 * 6/4
+    %! baca._make_measure_silences()
+    s1 * 3/2
 
     %! baca._comment_measure_numbers()
     % [RH_Voice_IV measure 35]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [RH_Voice_IV measure 36]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [RH_Voice_IV measure 37]
-    %! baca._call_rhythm_commands()
-    s1 * 6/4
+    %! baca._make_measure_silences()
+    s1 * 3/2
 
     %! baca._comment_measure_numbers()
     % [RH_Voice_IV measure 38]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [RH_Voice_IV measure 39]
-    %! baca._call_rhythm_commands()
-    s1 * 2/4
+    %! baca._make_measure_silences()
+    s1 * 1/2
 
     %! baca._comment_measure_numbers()
     % [RH_Voice_IV measure 40]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [RH_Voice_IV measure 41]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [RH_Voice_IV measure 42]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [RH_Voice_IV measure 43]
-    %! baca._call_rhythm_commands()
-    s1 * 6/4
+    %! baca._make_measure_silences()
+    s1 * 3/2
 
     %! baca._comment_measure_numbers()
     % [RH_Voice_IV measure 44]
-    %! baca._call_rhythm_commands()
-    s1 * 16/4
+    %! baca._make_measure_silences()
+    s1 * 4
 
     %! baca._make_multimeasure_rest_container(7)
     %! PHANTOM
@@ -6238,225 +6414,269 @@ segment.04.RH.Voice.IV = {
 %! baca.path.extern()
 segment.04.RH.Insert.Voice.IV = {
 
-    %! baca._comment_measure_numbers()
-    % [RH_Insert_Voice_IV measure 1]
-    %! baca._call_rhythm_commands()
-    s1 * 6/4
+    %! baca._make_multimeasure_rest_container(7)
+    <<
+
+        %! baca._make_multimeasure_rest_container(4)
+        \context Voice = "RH_Insert_Voice_IV"
+        %! baca._make_multimeasure_rest_container(4)
+        {
+
+            %! baca._comment_measure_numbers()
+            % [RH_Insert_Voice_IV measure 1]
+            %! baca._make_multimeasure_rest_container(2)
+            %! NOTE
+            %! INVISIBLE_MUSIC_COLORING
+            \abjad-invisible-music-coloring
+            %! baca._make_multimeasure_rest_container(3)
+            %! NOTE
+            %! INVISIBLE_MUSIC_COMMAND
+            %@% \abjad-invisible-music
+            %! baca._make_multimeasure_rest_container(1)
+            %! HIDDEN
+            %! NOTE
+            b'1 * 3/2
+            %! baca._label_duration_multipliers()
+            %! DURATION_MULTIPLIER
+            %! HIDDEN
+            %! NOTE
+            %@% ^ \baca-duration-multiplier-markup #"3" #"2"
+
+        %! baca._make_multimeasure_rest_container(4)
+        }
+
+        %! baca._make_multimeasure_rest_container(6)
+        \context Voice = "RH_Insert_Rest_Voice_IV"
+        %! baca._make_multimeasure_rest_container(6)
+        {
+
+            %! baca._comment_measure_numbers()
+            % [RH_Insert_Rest_Voice_IV measure 1]
+            %! baca._make_multimeasure_rest_container(5)
+            %! REST_VOICE
+            %! SKIP
+            s1 * 3/2
+
+        %! baca._make_multimeasure_rest_container(6)
+        }
+
+    %! baca._make_multimeasure_rest_container(7)
+    >>
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_IV measure 2]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 3/4
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_IV measure 3]
-    %! baca._call_rhythm_commands()
-    s1 * 6/4
+    %! baca._make_measure_silences()
+    s1 * 3/2
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_IV measure 4]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 9/8
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_IV measure 5]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 3/4
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_IV measure 6]
-    %! baca._call_rhythm_commands()
-    s1 * 6/4
+    %! baca._make_measure_silences()
+    s1 * 3/2
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_IV measure 7]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 3/4
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_IV measure 8]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 3/4
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_IV measure 9]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 5/4
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_IV measure 10]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_IV measure 11]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 5/4
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_IV measure 12]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 3/4
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_IV measure 13]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 5/4
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_IV measure 14]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_IV measure 15]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 5/4
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_IV measure 16]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_IV measure 17]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 1/4
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_IV measure 18]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 7/8
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_IV measure 19]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_IV measure 20]
-    %! baca._call_rhythm_commands()
-    s1 * 2/4
+    %! baca._make_measure_silences()
+    s1 * 1/2
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_IV measure 21]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 1/4
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_IV measure 22]
-    %! baca._call_rhythm_commands()
-    s1 * 2/4
+    %! baca._make_measure_silences()
+    s1 * 1/2
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_IV measure 23]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_IV measure 24]
-    %! baca._call_rhythm_commands()
-    s1 * 2/4
+    %! baca._make_measure_silences()
+    s1 * 1/2
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_IV measure 25]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_IV measure 26]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 3/4
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_IV measure 27]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 5/8
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_IV measure 28]
-    %! baca._call_rhythm_commands()
-    s1 * 2/4
+    %! baca._make_measure_silences()
+    s1 * 1/2
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_IV measure 29]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 3/4
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_IV measure 30]
-    %! baca._call_rhythm_commands()
-    s1 * 2/4
+    %! baca._make_measure_silences()
+    s1 * 1/2
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_IV measure 31]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 5/8
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_IV measure 32]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 1/4
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_IV measure 33]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 7/4
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_IV measure 34]
-    %! baca._call_rhythm_commands()
-    s1 * 6/4
+    %! baca._make_measure_silences()
+    s1 * 3/2
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_IV measure 35]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_IV measure 36]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_IV measure 37]
-    %! baca._call_rhythm_commands()
-    s1 * 6/4
+    %! baca._make_measure_silences()
+    s1 * 3/2
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_IV measure 38]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_IV measure 39]
-    %! baca._call_rhythm_commands()
-    s1 * 2/4
+    %! baca._make_measure_silences()
+    s1 * 1/2
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_IV measure 40]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_IV measure 41]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_IV measure 42]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_IV measure 43]
-    %! baca._call_rhythm_commands()
-    s1 * 6/4
+    %! baca._make_measure_silences()
+    s1 * 3/2
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_IV measure 44]
-    %! baca._call_rhythm_commands()
-    s1 * 16/4
+    %! baca._make_measure_silences()
+    s1 * 4
 
     %! baca._make_multimeasure_rest_container(7)
     %! PHANTOM
@@ -6821,225 +7041,269 @@ segment.04.RH.Voice.V = {
 %! baca.path.extern()
 segment.04.RH.Voice.VI = {
 
-    %! baca._comment_measure_numbers()
-    % [RH_Voice_VI measure 1]
-    %! baca._call_rhythm_commands()
-    s1 * 6/4
+    %! baca._make_multimeasure_rest_container(7)
+    <<
+
+        %! baca._make_multimeasure_rest_container(4)
+        \context Voice = "RH_Voice_VI"
+        %! baca._make_multimeasure_rest_container(4)
+        {
+
+            %! baca._comment_measure_numbers()
+            % [RH_Voice_VI measure 1]
+            %! baca._make_multimeasure_rest_container(2)
+            %! NOTE
+            %! INVISIBLE_MUSIC_COLORING
+            \abjad-invisible-music-coloring
+            %! baca._make_multimeasure_rest_container(3)
+            %! NOTE
+            %! INVISIBLE_MUSIC_COMMAND
+            %@% \abjad-invisible-music
+            %! baca._make_multimeasure_rest_container(1)
+            %! HIDDEN
+            %! NOTE
+            b'1 * 3/2
+            %! baca._label_duration_multipliers()
+            %! DURATION_MULTIPLIER
+            %! HIDDEN
+            %! NOTE
+            %@% ^ \baca-duration-multiplier-markup #"3" #"2"
+
+        %! baca._make_multimeasure_rest_container(4)
+        }
+
+        %! baca._make_multimeasure_rest_container(6)
+        \context Voice = "RH_Rest_Voice_VI"
+        %! baca._make_multimeasure_rest_container(6)
+        {
+
+            %! baca._comment_measure_numbers()
+            % [RH_Rest_Voice_VI measure 1]
+            %! baca._make_multimeasure_rest_container(5)
+            %! REST_VOICE
+            %! SKIP
+            s1 * 3/2
+
+        %! baca._make_multimeasure_rest_container(6)
+        }
+
+    %! baca._make_multimeasure_rest_container(7)
+    >>
 
     %! baca._comment_measure_numbers()
     % [RH_Voice_VI measure 2]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 3/4
 
     %! baca._comment_measure_numbers()
     % [RH_Voice_VI measure 3]
-    %! baca._call_rhythm_commands()
-    s1 * 6/4
+    %! baca._make_measure_silences()
+    s1 * 3/2
 
     %! baca._comment_measure_numbers()
     % [RH_Voice_VI measure 4]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 9/8
 
     %! baca._comment_measure_numbers()
     % [RH_Voice_VI measure 5]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 3/4
 
     %! baca._comment_measure_numbers()
     % [RH_Voice_VI measure 6]
-    %! baca._call_rhythm_commands()
-    s1 * 6/4
+    %! baca._make_measure_silences()
+    s1 * 3/2
 
     %! baca._comment_measure_numbers()
     % [RH_Voice_VI measure 7]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 3/4
 
     %! baca._comment_measure_numbers()
     % [RH_Voice_VI measure 8]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 3/4
 
     %! baca._comment_measure_numbers()
     % [RH_Voice_VI measure 9]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 5/4
 
     %! baca._comment_measure_numbers()
     % [RH_Voice_VI measure 10]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [RH_Voice_VI measure 11]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 5/4
 
     %! baca._comment_measure_numbers()
     % [RH_Voice_VI measure 12]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 3/4
 
     %! baca._comment_measure_numbers()
     % [RH_Voice_VI measure 13]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 5/4
 
     %! baca._comment_measure_numbers()
     % [RH_Voice_VI measure 14]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [RH_Voice_VI measure 15]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 5/4
 
     %! baca._comment_measure_numbers()
     % [RH_Voice_VI measure 16]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [RH_Voice_VI measure 17]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 1/4
 
     %! baca._comment_measure_numbers()
     % [RH_Voice_VI measure 18]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 7/8
 
     %! baca._comment_measure_numbers()
     % [RH_Voice_VI measure 19]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [RH_Voice_VI measure 20]
-    %! baca._call_rhythm_commands()
-    s1 * 2/4
+    %! baca._make_measure_silences()
+    s1 * 1/2
 
     %! baca._comment_measure_numbers()
     % [RH_Voice_VI measure 21]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 1/4
 
     %! baca._comment_measure_numbers()
     % [RH_Voice_VI measure 22]
-    %! baca._call_rhythm_commands()
-    s1 * 2/4
+    %! baca._make_measure_silences()
+    s1 * 1/2
 
     %! baca._comment_measure_numbers()
     % [RH_Voice_VI measure 23]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [RH_Voice_VI measure 24]
-    %! baca._call_rhythm_commands()
-    s1 * 2/4
+    %! baca._make_measure_silences()
+    s1 * 1/2
 
     %! baca._comment_measure_numbers()
     % [RH_Voice_VI measure 25]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [RH_Voice_VI measure 26]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 3/4
 
     %! baca._comment_measure_numbers()
     % [RH_Voice_VI measure 27]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 5/8
 
     %! baca._comment_measure_numbers()
     % [RH_Voice_VI measure 28]
-    %! baca._call_rhythm_commands()
-    s1 * 2/4
+    %! baca._make_measure_silences()
+    s1 * 1/2
 
     %! baca._comment_measure_numbers()
     % [RH_Voice_VI measure 29]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 3/4
 
     %! baca._comment_measure_numbers()
     % [RH_Voice_VI measure 30]
-    %! baca._call_rhythm_commands()
-    s1 * 2/4
+    %! baca._make_measure_silences()
+    s1 * 1/2
 
     %! baca._comment_measure_numbers()
     % [RH_Voice_VI measure 31]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 5/8
 
     %! baca._comment_measure_numbers()
     % [RH_Voice_VI measure 32]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 1/4
 
     %! baca._comment_measure_numbers()
     % [RH_Voice_VI measure 33]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 7/4
 
     %! baca._comment_measure_numbers()
     % [RH_Voice_VI measure 34]
-    %! baca._call_rhythm_commands()
-    s1 * 6/4
+    %! baca._make_measure_silences()
+    s1 * 3/2
 
     %! baca._comment_measure_numbers()
     % [RH_Voice_VI measure 35]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [RH_Voice_VI measure 36]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [RH_Voice_VI measure 37]
-    %! baca._call_rhythm_commands()
-    s1 * 6/4
+    %! baca._make_measure_silences()
+    s1 * 3/2
 
     %! baca._comment_measure_numbers()
     % [RH_Voice_VI measure 38]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [RH_Voice_VI measure 39]
-    %! baca._call_rhythm_commands()
-    s1 * 2/4
+    %! baca._make_measure_silences()
+    s1 * 1/2
 
     %! baca._comment_measure_numbers()
     % [RH_Voice_VI measure 40]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [RH_Voice_VI measure 41]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [RH_Voice_VI measure 42]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [RH_Voice_VI measure 43]
-    %! baca._call_rhythm_commands()
-    s1 * 6/4
+    %! baca._make_measure_silences()
+    s1 * 3/2
 
     %! baca._comment_measure_numbers()
     % [RH_Voice_VI measure 44]
-    %! baca._call_rhythm_commands()
-    s1 * 16/4
+    %! baca._make_measure_silences()
+    s1 * 4
 
     %! baca._make_multimeasure_rest_container(7)
     %! PHANTOM
@@ -7118,225 +7382,269 @@ segment.04.RH.Voice.VI = {
 %! baca.path.extern()
 segment.04.RH.Resonance.Voice = {
 
-    %! baca._comment_measure_numbers()
-    % [RH_Resonance_Voice measure 1]
-    %! baca._call_rhythm_commands()
-    s1 * 6/4
+    %! baca._make_multimeasure_rest_container(7)
+    <<
+
+        %! baca._make_multimeasure_rest_container(4)
+        \context Voice = "RH_Resonance_Voice"
+        %! baca._make_multimeasure_rest_container(4)
+        {
+
+            %! baca._comment_measure_numbers()
+            % [RH_Resonance_Voice measure 1]
+            %! baca._make_multimeasure_rest_container(2)
+            %! NOTE
+            %! INVISIBLE_MUSIC_COLORING
+            \abjad-invisible-music-coloring
+            %! baca._make_multimeasure_rest_container(3)
+            %! NOTE
+            %! INVISIBLE_MUSIC_COMMAND
+            %@% \abjad-invisible-music
+            %! baca._make_multimeasure_rest_container(1)
+            %! HIDDEN
+            %! NOTE
+            b'1 * 3/2
+            %! baca._label_duration_multipliers()
+            %! DURATION_MULTIPLIER
+            %! HIDDEN
+            %! NOTE
+            %@% ^ \baca-duration-multiplier-markup #"3" #"2"
+
+        %! baca._make_multimeasure_rest_container(4)
+        }
+
+        %! baca._make_multimeasure_rest_container(6)
+        \context Voice = "RH_Resonance_Rest_Voice"
+        %! baca._make_multimeasure_rest_container(6)
+        {
+
+            %! baca._comment_measure_numbers()
+            % [RH_Resonance_Rest_Voice measure 1]
+            %! baca._make_multimeasure_rest_container(5)
+            %! REST_VOICE
+            %! SKIP
+            s1 * 3/2
+
+        %! baca._make_multimeasure_rest_container(6)
+        }
+
+    %! baca._make_multimeasure_rest_container(7)
+    >>
 
     %! baca._comment_measure_numbers()
     % [RH_Resonance_Voice measure 2]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 3/4
 
     %! baca._comment_measure_numbers()
     % [RH_Resonance_Voice measure 3]
-    %! baca._call_rhythm_commands()
-    s1 * 6/4
+    %! baca._make_measure_silences()
+    s1 * 3/2
 
     %! baca._comment_measure_numbers()
     % [RH_Resonance_Voice measure 4]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 9/8
 
     %! baca._comment_measure_numbers()
     % [RH_Resonance_Voice measure 5]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 3/4
 
     %! baca._comment_measure_numbers()
     % [RH_Resonance_Voice measure 6]
-    %! baca._call_rhythm_commands()
-    s1 * 6/4
+    %! baca._make_measure_silences()
+    s1 * 3/2
 
     %! baca._comment_measure_numbers()
     % [RH_Resonance_Voice measure 7]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 3/4
 
     %! baca._comment_measure_numbers()
     % [RH_Resonance_Voice measure 8]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 3/4
 
     %! baca._comment_measure_numbers()
     % [RH_Resonance_Voice measure 9]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 5/4
 
     %! baca._comment_measure_numbers()
     % [RH_Resonance_Voice measure 10]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [RH_Resonance_Voice measure 11]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 5/4
 
     %! baca._comment_measure_numbers()
     % [RH_Resonance_Voice measure 12]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 3/4
 
     %! baca._comment_measure_numbers()
     % [RH_Resonance_Voice measure 13]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 5/4
 
     %! baca._comment_measure_numbers()
     % [RH_Resonance_Voice measure 14]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [RH_Resonance_Voice measure 15]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 5/4
 
     %! baca._comment_measure_numbers()
     % [RH_Resonance_Voice measure 16]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [RH_Resonance_Voice measure 17]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 1/4
 
     %! baca._comment_measure_numbers()
     % [RH_Resonance_Voice measure 18]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 7/8
 
     %! baca._comment_measure_numbers()
     % [RH_Resonance_Voice measure 19]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [RH_Resonance_Voice measure 20]
-    %! baca._call_rhythm_commands()
-    s1 * 2/4
+    %! baca._make_measure_silences()
+    s1 * 1/2
 
     %! baca._comment_measure_numbers()
     % [RH_Resonance_Voice measure 21]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 1/4
 
     %! baca._comment_measure_numbers()
     % [RH_Resonance_Voice measure 22]
-    %! baca._call_rhythm_commands()
-    s1 * 2/4
+    %! baca._make_measure_silences()
+    s1 * 1/2
 
     %! baca._comment_measure_numbers()
     % [RH_Resonance_Voice measure 23]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [RH_Resonance_Voice measure 24]
-    %! baca._call_rhythm_commands()
-    s1 * 2/4
+    %! baca._make_measure_silences()
+    s1 * 1/2
 
     %! baca._comment_measure_numbers()
     % [RH_Resonance_Voice measure 25]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [RH_Resonance_Voice measure 26]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 3/4
 
     %! baca._comment_measure_numbers()
     % [RH_Resonance_Voice measure 27]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 5/8
 
     %! baca._comment_measure_numbers()
     % [RH_Resonance_Voice measure 28]
-    %! baca._call_rhythm_commands()
-    s1 * 2/4
+    %! baca._make_measure_silences()
+    s1 * 1/2
 
     %! baca._comment_measure_numbers()
     % [RH_Resonance_Voice measure 29]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 3/4
 
     %! baca._comment_measure_numbers()
     % [RH_Resonance_Voice measure 30]
-    %! baca._call_rhythm_commands()
-    s1 * 2/4
+    %! baca._make_measure_silences()
+    s1 * 1/2
 
     %! baca._comment_measure_numbers()
     % [RH_Resonance_Voice measure 31]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 5/8
 
     %! baca._comment_measure_numbers()
     % [RH_Resonance_Voice measure 32]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 1/4
 
     %! baca._comment_measure_numbers()
     % [RH_Resonance_Voice measure 33]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 7/4
 
     %! baca._comment_measure_numbers()
     % [RH_Resonance_Voice measure 34]
-    %! baca._call_rhythm_commands()
-    s1 * 6/4
+    %! baca._make_measure_silences()
+    s1 * 3/2
 
     %! baca._comment_measure_numbers()
     % [RH_Resonance_Voice measure 35]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [RH_Resonance_Voice measure 36]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [RH_Resonance_Voice measure 37]
-    %! baca._call_rhythm_commands()
-    s1 * 6/4
+    %! baca._make_measure_silences()
+    s1 * 3/2
 
     %! baca._comment_measure_numbers()
     % [RH_Resonance_Voice measure 38]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [RH_Resonance_Voice measure 39]
-    %! baca._call_rhythm_commands()
-    s1 * 2/4
+    %! baca._make_measure_silences()
+    s1 * 1/2
 
     %! baca._comment_measure_numbers()
     % [RH_Resonance_Voice measure 40]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [RH_Resonance_Voice measure 41]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [RH_Resonance_Voice measure 42]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [RH_Resonance_Voice measure 43]
-    %! baca._call_rhythm_commands()
-    s1 * 6/4
+    %! baca._make_measure_silences()
+    s1 * 3/2
 
     %! baca._comment_measure_numbers()
     % [RH_Resonance_Voice measure 44]
-    %! baca._call_rhythm_commands()
-    s1 * 16/4
+    %! baca._make_measure_silences()
+    s1 * 4
 
     %! baca._make_multimeasure_rest_container(7)
     %! PHANTOM
@@ -7489,225 +7797,269 @@ segment.04.Piano.Music.RH.Staff = <<
 %! baca.path.extern()
 segment.04.LH.Voice.I = {
 
-    %! baca._comment_measure_numbers()
-    % [LH_Voice_I measure 1]
-    %! baca._call_rhythm_commands()
-    s1 * 6/4
+    %! baca._make_multimeasure_rest_container(7)
+    <<
+
+        %! baca._make_multimeasure_rest_container(4)
+        \context Voice = "LH_Voice_I"
+        %! baca._make_multimeasure_rest_container(4)
+        {
+
+            %! baca._comment_measure_numbers()
+            % [LH_Voice_I measure 1]
+            %! baca._make_multimeasure_rest_container(2)
+            %! NOTE
+            %! INVISIBLE_MUSIC_COLORING
+            \abjad-invisible-music-coloring
+            %! baca._make_multimeasure_rest_container(3)
+            %! NOTE
+            %! INVISIBLE_MUSIC_COMMAND
+            %@% \abjad-invisible-music
+            %! baca._make_multimeasure_rest_container(1)
+            %! HIDDEN
+            %! NOTE
+            d1 * 3/2
+            %! baca._label_duration_multipliers()
+            %! DURATION_MULTIPLIER
+            %! HIDDEN
+            %! NOTE
+            %@% ^ \baca-duration-multiplier-markup #"3" #"2"
+
+        %! baca._make_multimeasure_rest_container(4)
+        }
+
+        %! baca._make_multimeasure_rest_container(6)
+        \context Voice = "LH_Rest_Voice_I"
+        %! baca._make_multimeasure_rest_container(6)
+        {
+
+            %! baca._comment_measure_numbers()
+            % [LH_Rest_Voice_I measure 1]
+            %! baca._make_multimeasure_rest_container(5)
+            %! REST_VOICE
+            %! SKIP
+            s1 * 3/2
+
+        %! baca._make_multimeasure_rest_container(6)
+        }
+
+    %! baca._make_multimeasure_rest_container(7)
+    >>
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_I measure 2]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 3/4
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_I measure 3]
-    %! baca._call_rhythm_commands()
-    s1 * 6/4
+    %! baca._make_measure_silences()
+    s1 * 3/2
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_I measure 4]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 9/8
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_I measure 5]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 3/4
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_I measure 6]
-    %! baca._call_rhythm_commands()
-    s1 * 6/4
+    %! baca._make_measure_silences()
+    s1 * 3/2
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_I measure 7]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 3/4
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_I measure 8]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 3/4
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_I measure 9]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 5/4
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_I measure 10]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_I measure 11]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 5/4
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_I measure 12]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 3/4
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_I measure 13]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 5/4
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_I measure 14]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_I measure 15]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 5/4
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_I measure 16]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_I measure 17]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 1/4
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_I measure 18]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 7/8
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_I measure 19]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_I measure 20]
-    %! baca._call_rhythm_commands()
-    s1 * 2/4
+    %! baca._make_measure_silences()
+    s1 * 1/2
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_I measure 21]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 1/4
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_I measure 22]
-    %! baca._call_rhythm_commands()
-    s1 * 2/4
+    %! baca._make_measure_silences()
+    s1 * 1/2
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_I measure 23]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_I measure 24]
-    %! baca._call_rhythm_commands()
-    s1 * 2/4
+    %! baca._make_measure_silences()
+    s1 * 1/2
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_I measure 25]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_I measure 26]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 3/4
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_I measure 27]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 5/8
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_I measure 28]
-    %! baca._call_rhythm_commands()
-    s1 * 2/4
+    %! baca._make_measure_silences()
+    s1 * 1/2
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_I measure 29]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 3/4
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_I measure 30]
-    %! baca._call_rhythm_commands()
-    s1 * 2/4
+    %! baca._make_measure_silences()
+    s1 * 1/2
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_I measure 31]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 5/8
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_I measure 32]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 1/4
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_I measure 33]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 7/4
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_I measure 34]
-    %! baca._call_rhythm_commands()
-    s1 * 6/4
+    %! baca._make_measure_silences()
+    s1 * 3/2
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_I measure 35]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_I measure 36]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_I measure 37]
-    %! baca._call_rhythm_commands()
-    s1 * 6/4
+    %! baca._make_measure_silences()
+    s1 * 3/2
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_I measure 38]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_I measure 39]
-    %! baca._call_rhythm_commands()
-    s1 * 2/4
+    %! baca._make_measure_silences()
+    s1 * 1/2
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_I measure 40]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_I measure 41]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_I measure 42]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_I measure 43]
-    %! baca._call_rhythm_commands()
-    s1 * 6/4
+    %! baca._make_measure_silences()
+    s1 * 3/2
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_I measure 44]
-    %! baca._call_rhythm_commands()
-    s1 * 16/4
+    %! baca._make_measure_silences()
+    s1 * 4
 
     %! baca._make_multimeasure_rest_container(7)
     %! PHANTOM
@@ -7979,225 +8331,269 @@ segment.04.LH.Voice.II = {
 %! baca.path.extern()
 segment.04.LH.Voice.III = {
 
-    %! baca._comment_measure_numbers()
-    % [LH_Voice_III measure 1]
-    %! baca._call_rhythm_commands()
-    s1 * 6/4
+    %! baca._make_multimeasure_rest_container(7)
+    <<
+
+        %! baca._make_multimeasure_rest_container(4)
+        \context Voice = "LH_Voice_III"
+        %! baca._make_multimeasure_rest_container(4)
+        {
+
+            %! baca._comment_measure_numbers()
+            % [LH_Voice_III measure 1]
+            %! baca._make_multimeasure_rest_container(2)
+            %! NOTE
+            %! INVISIBLE_MUSIC_COLORING
+            \abjad-invisible-music-coloring
+            %! baca._make_multimeasure_rest_container(3)
+            %! NOTE
+            %! INVISIBLE_MUSIC_COMMAND
+            %@% \abjad-invisible-music
+            %! baca._make_multimeasure_rest_container(1)
+            %! HIDDEN
+            %! NOTE
+            d1 * 3/2
+            %! baca._label_duration_multipliers()
+            %! DURATION_MULTIPLIER
+            %! HIDDEN
+            %! NOTE
+            %@% ^ \baca-duration-multiplier-markup #"3" #"2"
+
+        %! baca._make_multimeasure_rest_container(4)
+        }
+
+        %! baca._make_multimeasure_rest_container(6)
+        \context Voice = "LH_Rest_Voice_III"
+        %! baca._make_multimeasure_rest_container(6)
+        {
+
+            %! baca._comment_measure_numbers()
+            % [LH_Rest_Voice_III measure 1]
+            %! baca._make_multimeasure_rest_container(5)
+            %! REST_VOICE
+            %! SKIP
+            s1 * 3/2
+
+        %! baca._make_multimeasure_rest_container(6)
+        }
+
+    %! baca._make_multimeasure_rest_container(7)
+    >>
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_III measure 2]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 3/4
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_III measure 3]
-    %! baca._call_rhythm_commands()
-    s1 * 6/4
+    %! baca._make_measure_silences()
+    s1 * 3/2
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_III measure 4]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 9/8
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_III measure 5]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 3/4
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_III measure 6]
-    %! baca._call_rhythm_commands()
-    s1 * 6/4
+    %! baca._make_measure_silences()
+    s1 * 3/2
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_III measure 7]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 3/4
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_III measure 8]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 3/4
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_III measure 9]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 5/4
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_III measure 10]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_III measure 11]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 5/4
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_III measure 12]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 3/4
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_III measure 13]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 5/4
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_III measure 14]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_III measure 15]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 5/4
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_III measure 16]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_III measure 17]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 1/4
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_III measure 18]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 7/8
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_III measure 19]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_III measure 20]
-    %! baca._call_rhythm_commands()
-    s1 * 2/4
+    %! baca._make_measure_silences()
+    s1 * 1/2
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_III measure 21]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 1/4
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_III measure 22]
-    %! baca._call_rhythm_commands()
-    s1 * 2/4
+    %! baca._make_measure_silences()
+    s1 * 1/2
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_III measure 23]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_III measure 24]
-    %! baca._call_rhythm_commands()
-    s1 * 2/4
+    %! baca._make_measure_silences()
+    s1 * 1/2
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_III measure 25]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_III measure 26]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 3/4
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_III measure 27]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 5/8
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_III measure 28]
-    %! baca._call_rhythm_commands()
-    s1 * 2/4
+    %! baca._make_measure_silences()
+    s1 * 1/2
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_III measure 29]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 3/4
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_III measure 30]
-    %! baca._call_rhythm_commands()
-    s1 * 2/4
+    %! baca._make_measure_silences()
+    s1 * 1/2
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_III measure 31]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 5/8
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_III measure 32]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 1/4
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_III measure 33]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 7/4
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_III measure 34]
-    %! baca._call_rhythm_commands()
-    s1 * 6/4
+    %! baca._make_measure_silences()
+    s1 * 3/2
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_III measure 35]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_III measure 36]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_III measure 37]
-    %! baca._call_rhythm_commands()
-    s1 * 6/4
+    %! baca._make_measure_silences()
+    s1 * 3/2
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_III measure 38]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_III measure 39]
-    %! baca._call_rhythm_commands()
-    s1 * 2/4
+    %! baca._make_measure_silences()
+    s1 * 1/2
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_III measure 40]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_III measure 41]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_III measure 42]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_III measure 43]
-    %! baca._call_rhythm_commands()
-    s1 * 6/4
+    %! baca._make_measure_silences()
+    s1 * 3/2
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_III measure 44]
-    %! baca._call_rhythm_commands()
-    s1 * 16/4
+    %! baca._make_measure_silences()
+    s1 * 4
 
     %! baca._make_multimeasure_rest_container(7)
     %! PHANTOM
@@ -8676,225 +9072,269 @@ segment.04.LH.Voice.IV = {
 %! baca.path.extern()
 segment.04.LH.Insert.Voice.IV = {
 
-    %! baca._comment_measure_numbers()
-    % [LH_Insert_Voice_IV measure 1]
-    %! baca._call_rhythm_commands()
-    s1 * 6/4
+    %! baca._make_multimeasure_rest_container(7)
+    <<
+
+        %! baca._make_multimeasure_rest_container(4)
+        \context Voice = "LH_Insert_Voice_IV"
+        %! baca._make_multimeasure_rest_container(4)
+        {
+
+            %! baca._comment_measure_numbers()
+            % [LH_Insert_Voice_IV measure 1]
+            %! baca._make_multimeasure_rest_container(2)
+            %! NOTE
+            %! INVISIBLE_MUSIC_COLORING
+            \abjad-invisible-music-coloring
+            %! baca._make_multimeasure_rest_container(3)
+            %! NOTE
+            %! INVISIBLE_MUSIC_COMMAND
+            %@% \abjad-invisible-music
+            %! baca._make_multimeasure_rest_container(1)
+            %! HIDDEN
+            %! NOTE
+            d1 * 3/2
+            %! baca._label_duration_multipliers()
+            %! DURATION_MULTIPLIER
+            %! HIDDEN
+            %! NOTE
+            %@% ^ \baca-duration-multiplier-markup #"3" #"2"
+
+        %! baca._make_multimeasure_rest_container(4)
+        }
+
+        %! baca._make_multimeasure_rest_container(6)
+        \context Voice = "LH_Insert_Rest_Voice_IV"
+        %! baca._make_multimeasure_rest_container(6)
+        {
+
+            %! baca._comment_measure_numbers()
+            % [LH_Insert_Rest_Voice_IV measure 1]
+            %! baca._make_multimeasure_rest_container(5)
+            %! REST_VOICE
+            %! SKIP
+            s1 * 3/2
+
+        %! baca._make_multimeasure_rest_container(6)
+        }
+
+    %! baca._make_multimeasure_rest_container(7)
+    >>
 
     %! baca._comment_measure_numbers()
     % [LH_Insert_Voice_IV measure 2]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 3/4
 
     %! baca._comment_measure_numbers()
     % [LH_Insert_Voice_IV measure 3]
-    %! baca._call_rhythm_commands()
-    s1 * 6/4
+    %! baca._make_measure_silences()
+    s1 * 3/2
 
     %! baca._comment_measure_numbers()
     % [LH_Insert_Voice_IV measure 4]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 9/8
 
     %! baca._comment_measure_numbers()
     % [LH_Insert_Voice_IV measure 5]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 3/4
 
     %! baca._comment_measure_numbers()
     % [LH_Insert_Voice_IV measure 6]
-    %! baca._call_rhythm_commands()
-    s1 * 6/4
+    %! baca._make_measure_silences()
+    s1 * 3/2
 
     %! baca._comment_measure_numbers()
     % [LH_Insert_Voice_IV measure 7]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 3/4
 
     %! baca._comment_measure_numbers()
     % [LH_Insert_Voice_IV measure 8]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 3/4
 
     %! baca._comment_measure_numbers()
     % [LH_Insert_Voice_IV measure 9]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 5/4
 
     %! baca._comment_measure_numbers()
     % [LH_Insert_Voice_IV measure 10]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [LH_Insert_Voice_IV measure 11]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 5/4
 
     %! baca._comment_measure_numbers()
     % [LH_Insert_Voice_IV measure 12]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 3/4
 
     %! baca._comment_measure_numbers()
     % [LH_Insert_Voice_IV measure 13]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 5/4
 
     %! baca._comment_measure_numbers()
     % [LH_Insert_Voice_IV measure 14]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [LH_Insert_Voice_IV measure 15]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 5/4
 
     %! baca._comment_measure_numbers()
     % [LH_Insert_Voice_IV measure 16]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [LH_Insert_Voice_IV measure 17]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 1/4
 
     %! baca._comment_measure_numbers()
     % [LH_Insert_Voice_IV measure 18]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 7/8
 
     %! baca._comment_measure_numbers()
     % [LH_Insert_Voice_IV measure 19]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [LH_Insert_Voice_IV measure 20]
-    %! baca._call_rhythm_commands()
-    s1 * 2/4
+    %! baca._make_measure_silences()
+    s1 * 1/2
 
     %! baca._comment_measure_numbers()
     % [LH_Insert_Voice_IV measure 21]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 1/4
 
     %! baca._comment_measure_numbers()
     % [LH_Insert_Voice_IV measure 22]
-    %! baca._call_rhythm_commands()
-    s1 * 2/4
+    %! baca._make_measure_silences()
+    s1 * 1/2
 
     %! baca._comment_measure_numbers()
     % [LH_Insert_Voice_IV measure 23]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [LH_Insert_Voice_IV measure 24]
-    %! baca._call_rhythm_commands()
-    s1 * 2/4
+    %! baca._make_measure_silences()
+    s1 * 1/2
 
     %! baca._comment_measure_numbers()
     % [LH_Insert_Voice_IV measure 25]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [LH_Insert_Voice_IV measure 26]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 3/4
 
     %! baca._comment_measure_numbers()
     % [LH_Insert_Voice_IV measure 27]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 5/8
 
     %! baca._comment_measure_numbers()
     % [LH_Insert_Voice_IV measure 28]
-    %! baca._call_rhythm_commands()
-    s1 * 2/4
+    %! baca._make_measure_silences()
+    s1 * 1/2
 
     %! baca._comment_measure_numbers()
     % [LH_Insert_Voice_IV measure 29]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 3/4
 
     %! baca._comment_measure_numbers()
     % [LH_Insert_Voice_IV measure 30]
-    %! baca._call_rhythm_commands()
-    s1 * 2/4
+    %! baca._make_measure_silences()
+    s1 * 1/2
 
     %! baca._comment_measure_numbers()
     % [LH_Insert_Voice_IV measure 31]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 5/8
 
     %! baca._comment_measure_numbers()
     % [LH_Insert_Voice_IV measure 32]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 1/4
 
     %! baca._comment_measure_numbers()
     % [LH_Insert_Voice_IV measure 33]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 7/4
 
     %! baca._comment_measure_numbers()
     % [LH_Insert_Voice_IV measure 34]
-    %! baca._call_rhythm_commands()
-    s1 * 6/4
+    %! baca._make_measure_silences()
+    s1 * 3/2
 
     %! baca._comment_measure_numbers()
     % [LH_Insert_Voice_IV measure 35]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [LH_Insert_Voice_IV measure 36]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [LH_Insert_Voice_IV measure 37]
-    %! baca._call_rhythm_commands()
-    s1 * 6/4
+    %! baca._make_measure_silences()
+    s1 * 3/2
 
     %! baca._comment_measure_numbers()
     % [LH_Insert_Voice_IV measure 38]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [LH_Insert_Voice_IV measure 39]
-    %! baca._call_rhythm_commands()
-    s1 * 2/4
+    %! baca._make_measure_silences()
+    s1 * 1/2
 
     %! baca._comment_measure_numbers()
     % [LH_Insert_Voice_IV measure 40]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [LH_Insert_Voice_IV measure 41]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [LH_Insert_Voice_IV measure 42]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [LH_Insert_Voice_IV measure 43]
-    %! baca._call_rhythm_commands()
-    s1 * 6/4
+    %! baca._make_measure_silences()
+    s1 * 3/2
 
     %! baca._comment_measure_numbers()
     % [LH_Insert_Voice_IV measure 44]
-    %! baca._call_rhythm_commands()
-    s1 * 16/4
+    %! baca._make_measure_silences()
+    s1 * 4
 
     %! baca._make_multimeasure_rest_container(7)
     %! PHANTOM
@@ -10883,253 +11323,297 @@ segment.04.LH.Insert.Voice.V = {
 %! baca.path.extern()
 segment.04.LH.Voice.VI = {
 
-    %! baca._comment_measure_numbers()
-    % [LH_Voice_VI measure 1]
-    %! baca._reapply_persistent_indicators(3)
-    %! baca._set_status_tag()
-    %! REAPPLIED_CLEF
-    \clef "bass"
-    %! baca._attach_color_literal(2)
-    %! REAPPLIED_CLEF_COLOR
-    \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'green4)
-    %! baca._attach_color_literal(1)
-    %! REAPPLIED_CLEF_COLOR_CANCELLATION
-    %@% \override PianoMusicLHStaff.Clef.color = ##f
-    %! baca._reapply_persistent_indicators(3)
-    %! baca.treat_persistent_wrapper(2)
-    %! baca._set_status_tag()
-    %! REAPPLIED_CLEF
-    \set PianoMusicLHStaff.forceClef = ##t
-    %! baca._call_rhythm_commands()
-    s1 * 6/4
-    %! REAPPLIED_DYNAMIC_COLOR
-    %! baca.treat_persistent_wrapper()
-    %! baca._reapply_persistent_indicators(3)
-    %! baca._set_status_tag()
-    %! REAPPLIED_DYNAMIC
-    - \tweak color #(x11-color 'green4)
-    %! baca._reapply_persistent_indicators(3)
-    %! baca._set_status_tag()
-    %! REAPPLIED_DYNAMIC
-    \f
-    %! baca._attach_color_literal(2)
-    %! REAPPLIED_CLEF_REDRAW_COLOR
-    \override PianoMusicLHStaff.Clef.color = #(x11-color 'OliveDrab)
+    %! baca._make_multimeasure_rest_container(7)
+    <<
+
+        %! baca._make_multimeasure_rest_container(4)
+        \context Voice = "LH_Voice_VI"
+        %! baca._make_multimeasure_rest_container(4)
+        {
+
+            %! baca._comment_measure_numbers()
+            % [LH_Voice_VI measure 1]
+            %! baca._make_multimeasure_rest_container(2)
+            %! NOTE
+            %! INVISIBLE_MUSIC_COLORING
+            \abjad-invisible-music-coloring
+            %! baca._make_multimeasure_rest_container(3)
+            %! NOTE
+            %! INVISIBLE_MUSIC_COMMAND
+            %@% \abjad-invisible-music
+            %! baca._reapply_persistent_indicators(3)
+            %! baca._set_status_tag()
+            %! REAPPLIED_CLEF
+            \clef "bass"
+            %! baca._attach_color_literal(2)
+            %! REAPPLIED_CLEF_COLOR
+            \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'green4)
+            %! baca._attach_color_literal(1)
+            %! REAPPLIED_CLEF_COLOR_CANCELLATION
+            %@% \override PianoMusicLHStaff.Clef.color = ##f
+            %! baca._reapply_persistent_indicators(3)
+            %! baca.treat_persistent_wrapper(2)
+            %! baca._set_status_tag()
+            %! REAPPLIED_CLEF
+            \set PianoMusicLHStaff.forceClef = ##t
+            %! baca._make_multimeasure_rest_container(1)
+            %! HIDDEN
+            %! NOTE
+            d1 * 3/2
+            %! REAPPLIED_DYNAMIC_COLOR
+            %! baca.treat_persistent_wrapper()
+            %! baca._reapply_persistent_indicators(3)
+            %! baca._set_status_tag()
+            %! REAPPLIED_DYNAMIC
+            - \tweak color #(x11-color 'green4)
+            %! baca._reapply_persistent_indicators(3)
+            %! baca._set_status_tag()
+            %! REAPPLIED_DYNAMIC
+            \f
+            %! baca._label_duration_multipliers()
+            %! DURATION_MULTIPLIER
+            %! HIDDEN
+            %! NOTE
+            %@% ^ \baca-duration-multiplier-markup #"3" #"2"
+            %! baca._attach_color_literal(2)
+            %! REAPPLIED_CLEF_REDRAW_COLOR
+            \override PianoMusicLHStaff.Clef.color = #(x11-color 'OliveDrab)
+
+        %! baca._make_multimeasure_rest_container(4)
+        }
+
+        %! baca._make_multimeasure_rest_container(6)
+        \context Voice = "LH_Rest_Voice_VI"
+        %! baca._make_multimeasure_rest_container(6)
+        {
+
+            %! baca._comment_measure_numbers()
+            % [LH_Rest_Voice_VI measure 1]
+            %! baca._make_multimeasure_rest_container(5)
+            %! REST_VOICE
+            %! SKIP
+            s1 * 3/2
+
+        %! baca._make_multimeasure_rest_container(6)
+        }
+
+    %! baca._make_multimeasure_rest_container(7)
+    >>
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_VI measure 2]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 3/4
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_VI measure 3]
-    %! baca._call_rhythm_commands()
-    s1 * 6/4
+    %! baca._make_measure_silences()
+    s1 * 3/2
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_VI measure 4]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 9/8
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_VI measure 5]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 3/4
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_VI measure 6]
-    %! baca._call_rhythm_commands()
-    s1 * 6/4
+    %! baca._make_measure_silences()
+    s1 * 3/2
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_VI measure 7]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 3/4
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_VI measure 8]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 3/4
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_VI measure 9]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 5/4
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_VI measure 10]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_VI measure 11]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 5/4
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_VI measure 12]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 3/4
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_VI measure 13]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 5/4
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_VI measure 14]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_VI measure 15]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 5/4
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_VI measure 16]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_VI measure 17]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 1/4
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_VI measure 18]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 7/8
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_VI measure 19]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_VI measure 20]
-    %! baca._call_rhythm_commands()
-    s1 * 2/4
+    %! baca._make_measure_silences()
+    s1 * 1/2
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_VI measure 21]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 1/4
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_VI measure 22]
-    %! baca._call_rhythm_commands()
-    s1 * 2/4
+    %! baca._make_measure_silences()
+    s1 * 1/2
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_VI measure 23]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_VI measure 24]
-    %! baca._call_rhythm_commands()
-    s1 * 2/4
+    %! baca._make_measure_silences()
+    s1 * 1/2
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_VI measure 25]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_VI measure 26]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 3/4
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_VI measure 27]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 5/8
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_VI measure 28]
-    %! baca._call_rhythm_commands()
-    s1 * 2/4
+    %! baca._make_measure_silences()
+    s1 * 1/2
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_VI measure 29]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 3/4
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_VI measure 30]
-    %! baca._call_rhythm_commands()
-    s1 * 2/4
+    %! baca._make_measure_silences()
+    s1 * 1/2
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_VI measure 31]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 5/8
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_VI measure 32]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 1/4
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_VI measure 33]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 7/4
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_VI measure 34]
-    %! baca._call_rhythm_commands()
-    s1 * 6/4
+    %! baca._make_measure_silences()
+    s1 * 3/2
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_VI measure 35]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_VI measure 36]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_VI measure 37]
-    %! baca._call_rhythm_commands()
-    s1 * 6/4
+    %! baca._make_measure_silences()
+    s1 * 3/2
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_VI measure 38]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_VI measure 39]
-    %! baca._call_rhythm_commands()
-    s1 * 2/4
+    %! baca._make_measure_silences()
+    s1 * 1/2
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_VI measure 40]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_VI measure 41]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_VI measure 42]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_VI measure 43]
-    %! baca._call_rhythm_commands()
-    s1 * 6/4
+    %! baca._make_measure_silences()
+    s1 * 3/2
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_VI measure 44]
-    %! baca._call_rhythm_commands()
-    s1 * 16/4
+    %! baca._make_measure_silences()
+    s1 * 4
 
     %! baca._make_multimeasure_rest_container(7)
     %! PHANTOM
@@ -11208,225 +11692,269 @@ segment.04.LH.Voice.VI = {
 %! baca.path.extern()
 segment.04.LH.Insert.Voice.VI = {
 
-    %! baca._comment_measure_numbers()
-    % [LH_Insert_Voice_VI measure 1]
-    %! baca._call_rhythm_commands()
-    s1 * 6/4
+    %! baca._make_multimeasure_rest_container(7)
+    <<
+
+        %! baca._make_multimeasure_rest_container(4)
+        \context Voice = "LH_Insert_Voice_VI"
+        %! baca._make_multimeasure_rest_container(4)
+        {
+
+            %! baca._comment_measure_numbers()
+            % [LH_Insert_Voice_VI measure 1]
+            %! baca._make_multimeasure_rest_container(2)
+            %! NOTE
+            %! INVISIBLE_MUSIC_COLORING
+            \abjad-invisible-music-coloring
+            %! baca._make_multimeasure_rest_container(3)
+            %! NOTE
+            %! INVISIBLE_MUSIC_COMMAND
+            %@% \abjad-invisible-music
+            %! baca._make_multimeasure_rest_container(1)
+            %! HIDDEN
+            %! NOTE
+            d1 * 3/2
+            %! baca._label_duration_multipliers()
+            %! DURATION_MULTIPLIER
+            %! HIDDEN
+            %! NOTE
+            %@% ^ \baca-duration-multiplier-markup #"3" #"2"
+
+        %! baca._make_multimeasure_rest_container(4)
+        }
+
+        %! baca._make_multimeasure_rest_container(6)
+        \context Voice = "LH_Insert_Rest_Voice_VI"
+        %! baca._make_multimeasure_rest_container(6)
+        {
+
+            %! baca._comment_measure_numbers()
+            % [LH_Insert_Rest_Voice_VI measure 1]
+            %! baca._make_multimeasure_rest_container(5)
+            %! REST_VOICE
+            %! SKIP
+            s1 * 3/2
+
+        %! baca._make_multimeasure_rest_container(6)
+        }
+
+    %! baca._make_multimeasure_rest_container(7)
+    >>
 
     %! baca._comment_measure_numbers()
     % [LH_Insert_Voice_VI measure 2]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 3/4
 
     %! baca._comment_measure_numbers()
     % [LH_Insert_Voice_VI measure 3]
-    %! baca._call_rhythm_commands()
-    s1 * 6/4
+    %! baca._make_measure_silences()
+    s1 * 3/2
 
     %! baca._comment_measure_numbers()
     % [LH_Insert_Voice_VI measure 4]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 9/8
 
     %! baca._comment_measure_numbers()
     % [LH_Insert_Voice_VI measure 5]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 3/4
 
     %! baca._comment_measure_numbers()
     % [LH_Insert_Voice_VI measure 6]
-    %! baca._call_rhythm_commands()
-    s1 * 6/4
+    %! baca._make_measure_silences()
+    s1 * 3/2
 
     %! baca._comment_measure_numbers()
     % [LH_Insert_Voice_VI measure 7]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 3/4
 
     %! baca._comment_measure_numbers()
     % [LH_Insert_Voice_VI measure 8]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 3/4
 
     %! baca._comment_measure_numbers()
     % [LH_Insert_Voice_VI measure 9]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 5/4
 
     %! baca._comment_measure_numbers()
     % [LH_Insert_Voice_VI measure 10]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [LH_Insert_Voice_VI measure 11]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 5/4
 
     %! baca._comment_measure_numbers()
     % [LH_Insert_Voice_VI measure 12]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 3/4
 
     %! baca._comment_measure_numbers()
     % [LH_Insert_Voice_VI measure 13]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 5/4
 
     %! baca._comment_measure_numbers()
     % [LH_Insert_Voice_VI measure 14]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [LH_Insert_Voice_VI measure 15]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 5/4
 
     %! baca._comment_measure_numbers()
     % [LH_Insert_Voice_VI measure 16]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [LH_Insert_Voice_VI measure 17]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 1/4
 
     %! baca._comment_measure_numbers()
     % [LH_Insert_Voice_VI measure 18]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 7/8
 
     %! baca._comment_measure_numbers()
     % [LH_Insert_Voice_VI measure 19]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [LH_Insert_Voice_VI measure 20]
-    %! baca._call_rhythm_commands()
-    s1 * 2/4
+    %! baca._make_measure_silences()
+    s1 * 1/2
 
     %! baca._comment_measure_numbers()
     % [LH_Insert_Voice_VI measure 21]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 1/4
 
     %! baca._comment_measure_numbers()
     % [LH_Insert_Voice_VI measure 22]
-    %! baca._call_rhythm_commands()
-    s1 * 2/4
+    %! baca._make_measure_silences()
+    s1 * 1/2
 
     %! baca._comment_measure_numbers()
     % [LH_Insert_Voice_VI measure 23]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [LH_Insert_Voice_VI measure 24]
-    %! baca._call_rhythm_commands()
-    s1 * 2/4
+    %! baca._make_measure_silences()
+    s1 * 1/2
 
     %! baca._comment_measure_numbers()
     % [LH_Insert_Voice_VI measure 25]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [LH_Insert_Voice_VI measure 26]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 3/4
 
     %! baca._comment_measure_numbers()
     % [LH_Insert_Voice_VI measure 27]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 5/8
 
     %! baca._comment_measure_numbers()
     % [LH_Insert_Voice_VI measure 28]
-    %! baca._call_rhythm_commands()
-    s1 * 2/4
+    %! baca._make_measure_silences()
+    s1 * 1/2
 
     %! baca._comment_measure_numbers()
     % [LH_Insert_Voice_VI measure 29]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 3/4
 
     %! baca._comment_measure_numbers()
     % [LH_Insert_Voice_VI measure 30]
-    %! baca._call_rhythm_commands()
-    s1 * 2/4
+    %! baca._make_measure_silences()
+    s1 * 1/2
 
     %! baca._comment_measure_numbers()
     % [LH_Insert_Voice_VI measure 31]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 5/8
 
     %! baca._comment_measure_numbers()
     % [LH_Insert_Voice_VI measure 32]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 1/4
 
     %! baca._comment_measure_numbers()
     % [LH_Insert_Voice_VI measure 33]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 7/4
 
     %! baca._comment_measure_numbers()
     % [LH_Insert_Voice_VI measure 34]
-    %! baca._call_rhythm_commands()
-    s1 * 6/4
+    %! baca._make_measure_silences()
+    s1 * 3/2
 
     %! baca._comment_measure_numbers()
     % [LH_Insert_Voice_VI measure 35]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [LH_Insert_Voice_VI measure 36]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [LH_Insert_Voice_VI measure 37]
-    %! baca._call_rhythm_commands()
-    s1 * 6/4
+    %! baca._make_measure_silences()
+    s1 * 3/2
 
     %! baca._comment_measure_numbers()
     % [LH_Insert_Voice_VI measure 38]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [LH_Insert_Voice_VI measure 39]
-    %! baca._call_rhythm_commands()
-    s1 * 2/4
+    %! baca._make_measure_silences()
+    s1 * 1/2
 
     %! baca._comment_measure_numbers()
     % [LH_Insert_Voice_VI measure 40]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [LH_Insert_Voice_VI measure 41]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [LH_Insert_Voice_VI measure 42]
-    %! baca._call_rhythm_commands()
-    s1 * 4/4
+    %! baca._make_measure_silences()
+    s1 * 1
 
     %! baca._comment_measure_numbers()
     % [LH_Insert_Voice_VI measure 43]
-    %! baca._call_rhythm_commands()
-    s1 * 6/4
+    %! baca._make_measure_silences()
+    s1 * 3/2
 
     %! baca._comment_measure_numbers()
     % [LH_Insert_Voice_VI measure 44]
-    %! baca._call_rhythm_commands()
-    s1 * 16/4
+    %! baca._make_measure_silences()
+    s1 * 4
 
     %! baca._make_multimeasure_rest_container(7)
     %! PHANTOM
