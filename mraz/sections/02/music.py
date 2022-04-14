@@ -247,8 +247,8 @@ commands(
 commands(
     library.lh_v6,
     baca.script_down(),
-    baca.stem_down(lambda _: baca.select.tleaves(_, exclude=baca.const.HIDDEN)),
-    baca.tenuto(lambda _: baca.select.pheads(_, exclude=baca.const.HIDDEN)),
+    baca.stem_down(lambda _: baca.select.tleaves(_, exclude=baca.enums.HIDDEN)),
+    baca.tenuto(lambda _: baca.select.pheads(_, exclude=baca.enums.HIDDEN)),
     baca.tuplet_bracket_staff_padding(6),
     baca.rest_position(-10),
 )
