@@ -263,55 +263,99 @@ segment.05.Global.Skips = {
 %! baca.path.extern()
 segment.05.RH.Voice.I = {
 
-    %! baca._comment_measure_numbers()
-    % [RH_Voice_I measure 1]
-    %! baca._reapply_persistent_indicators(3)
-    %! baca._set_status_tag()
-    %! REAPPLIED_CLEF
-    \clef "treble"
-    %! baca._attach_color_literal(2)
-    %! REAPPLIED_CLEF_COLOR
-    \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'green4)
-    %! baca._attach_color_literal(1)
-    %! REAPPLIED_CLEF_COLOR_CANCELLATION
-    %@% \override PianoMusicRHStaff.Clef.color = ##f
-    %! baca._reapply_persistent_indicators(3)
-    %! baca.treat_persistent_wrapper(2)
-    %! baca._set_status_tag()
-    %! REAPPLIED_CLEF
-    \set PianoMusicRHStaff.forceClef = ##t
-    %! baca._call_rhythm_commands()
-    s1 * 9/8
-    %! REAPPLIED_DYNAMIC_COLOR
-    %! baca.treat_persistent_wrapper()
-    %! baca._reapply_persistent_indicators(3)
-    %! baca._set_status_tag()
-    %! REAPPLIED_DYNAMIC
-    - \tweak color #(x11-color 'green4)
-    %! baca._reapply_persistent_indicators(3)
-    %! baca._set_status_tag()
-    %! REAPPLIED_DYNAMIC
-    \f
-    %! REAPPLIED_INSTRUMENT_ALERT
-    %! baca._attach_latent_indicator_alert()
-    ^ \baca-reapplied-indicator-markup "(“Piano”)"
-    %! baca._attach_color_literal(2)
-    %! REAPPLIED_CLEF_REDRAW_COLOR
-    \override PianoMusicRHStaff.Clef.color = #(x11-color 'OliveDrab)
+    %! baca._make_multimeasure_rest_container(7)
+    <<
+
+        %! baca._make_multimeasure_rest_container(4)
+        \context Voice = "RH_Voice_I"
+        %! baca._make_multimeasure_rest_container(4)
+        {
+
+            %! baca._comment_measure_numbers()
+            % [RH_Voice_I measure 1]
+            %! baca._make_multimeasure_rest_container(2)
+            %! NOTE
+            %! INVISIBLE_MUSIC_COLORING
+            \abjad-invisible-music-coloring
+            %! baca._make_multimeasure_rest_container(3)
+            %! NOTE
+            %! INVISIBLE_MUSIC_COMMAND
+            %@% \abjad-invisible-music
+            %! baca._reapply_persistent_indicators(3)
+            %! baca._set_status_tag()
+            %! REAPPLIED_CLEF
+            \clef "treble"
+            %! baca._attach_color_literal(2)
+            %! REAPPLIED_CLEF_COLOR
+            \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'green4)
+            %! baca._attach_color_literal(1)
+            %! REAPPLIED_CLEF_COLOR_CANCELLATION
+            %@% \override PianoMusicRHStaff.Clef.color = ##f
+            %! baca._reapply_persistent_indicators(3)
+            %! baca.treat_persistent_wrapper(2)
+            %! baca._set_status_tag()
+            %! REAPPLIED_CLEF
+            \set PianoMusicRHStaff.forceClef = ##t
+            %! baca._make_multimeasure_rest_container(1)
+            %! HIDDEN
+            %! NOTE
+            b'1 * 9/8
+            %! REAPPLIED_DYNAMIC_COLOR
+            %! baca.treat_persistent_wrapper()
+            %! baca._reapply_persistent_indicators(3)
+            %! baca._set_status_tag()
+            %! REAPPLIED_DYNAMIC
+            - \tweak color #(x11-color 'green4)
+            %! baca._reapply_persistent_indicators(3)
+            %! baca._set_status_tag()
+            %! REAPPLIED_DYNAMIC
+            \f
+            %! REAPPLIED_INSTRUMENT_ALERT
+            %! baca._attach_latent_indicator_alert()
+            ^ \baca-reapplied-indicator-markup "(“Piano”)"
+            %! baca._label_duration_multipliers()
+            %! DURATION_MULTIPLIER
+            %! HIDDEN
+            %! NOTE
+            %@% ^ \baca-duration-multiplier-markup #"9" #"8"
+            %! baca._attach_color_literal(2)
+            %! REAPPLIED_CLEF_REDRAW_COLOR
+            \override PianoMusicRHStaff.Clef.color = #(x11-color 'OliveDrab)
+
+        %! baca._make_multimeasure_rest_container(4)
+        }
+
+        %! baca._make_multimeasure_rest_container(6)
+        \context Voice = "RH_Rest_Voice_I"
+        %! baca._make_multimeasure_rest_container(6)
+        {
+
+            %! baca._comment_measure_numbers()
+            % [RH_Rest_Voice_I measure 1]
+            %! baca._make_multimeasure_rest_container(5)
+            %! REST_VOICE
+            %! SKIP
+            s1 * 9/8
+
+        %! baca._make_multimeasure_rest_container(6)
+        }
+
+    %! baca._make_multimeasure_rest_container(7)
+    >>
 
     %! baca._comment_measure_numbers()
     % [RH_Voice_I measure 2]
-    %! baca._call_rhythm_commands()
-    s1 * 4/8
+    %! baca._make_measure_silences()
+    s1 * 1/2
 
     %! baca._comment_measure_numbers()
     % [RH_Voice_I measure 3]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 7/8
 
     %! baca._comment_measure_numbers()
     % [RH_Voice_I measure 4]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 5/8
 
     %! baca._make_multimeasure_rest_container(7)
@@ -391,24 +435,68 @@ segment.05.RH.Voice.I = {
 %! baca.path.extern()
 segment.05.RH.Insert.Voice.I = {
 
-    %! baca._comment_measure_numbers()
-    % [RH_Insert_Voice_I measure 1]
-    %! baca._call_rhythm_commands()
-    s1 * 9/8
+    %! baca._make_multimeasure_rest_container(7)
+    <<
+
+        %! baca._make_multimeasure_rest_container(4)
+        \context Voice = "RH_Insert_Voice_I"
+        %! baca._make_multimeasure_rest_container(4)
+        {
+
+            %! baca._comment_measure_numbers()
+            % [RH_Insert_Voice_I measure 1]
+            %! baca._make_multimeasure_rest_container(2)
+            %! NOTE
+            %! INVISIBLE_MUSIC_COLORING
+            \abjad-invisible-music-coloring
+            %! baca._make_multimeasure_rest_container(3)
+            %! NOTE
+            %! INVISIBLE_MUSIC_COMMAND
+            %@% \abjad-invisible-music
+            %! baca._make_multimeasure_rest_container(1)
+            %! HIDDEN
+            %! NOTE
+            b'1 * 9/8
+            %! baca._label_duration_multipliers()
+            %! DURATION_MULTIPLIER
+            %! HIDDEN
+            %! NOTE
+            %@% ^ \baca-duration-multiplier-markup #"9" #"8"
+
+        %! baca._make_multimeasure_rest_container(4)
+        }
+
+        %! baca._make_multimeasure_rest_container(6)
+        \context Voice = "RH_Insert_Rest_Voice_I"
+        %! baca._make_multimeasure_rest_container(6)
+        {
+
+            %! baca._comment_measure_numbers()
+            % [RH_Insert_Rest_Voice_I measure 1]
+            %! baca._make_multimeasure_rest_container(5)
+            %! REST_VOICE
+            %! SKIP
+            s1 * 9/8
+
+        %! baca._make_multimeasure_rest_container(6)
+        }
+
+    %! baca._make_multimeasure_rest_container(7)
+    >>
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_I measure 2]
-    %! baca._call_rhythm_commands()
-    s1 * 4/8
+    %! baca._make_measure_silences()
+    s1 * 1/2
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_I measure 3]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 7/8
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_I measure 4]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 5/8
 
     %! baca._make_multimeasure_rest_container(7)
@@ -488,34 +576,78 @@ segment.05.RH.Insert.Voice.I = {
 %! baca.path.extern()
 segment.05.RH.Voice.II = {
 
-    %! baca._comment_measure_numbers()
-    % [RH_Voice_II measure 1]
-    %! baca._call_rhythm_commands()
-    s1 * 9/8
-    %! REAPPLIED_DYNAMIC_COLOR
-    %! baca.treat_persistent_wrapper()
-    %! baca._reapply_persistent_indicators(3)
-    %! baca._set_status_tag()
-    %! REAPPLIED_DYNAMIC
-    - \tweak color #(x11-color 'green4)
-    %! baca._reapply_persistent_indicators(3)
-    %! baca._set_status_tag()
-    %! REAPPLIED_DYNAMIC
-    \fff
+    %! baca._make_multimeasure_rest_container(7)
+    <<
+
+        %! baca._make_multimeasure_rest_container(4)
+        \context Voice = "RH_Voice_II"
+        %! baca._make_multimeasure_rest_container(4)
+        {
+
+            %! baca._comment_measure_numbers()
+            % [RH_Voice_II measure 1]
+            %! baca._make_multimeasure_rest_container(2)
+            %! NOTE
+            %! INVISIBLE_MUSIC_COLORING
+            \abjad-invisible-music-coloring
+            %! baca._make_multimeasure_rest_container(3)
+            %! NOTE
+            %! INVISIBLE_MUSIC_COMMAND
+            %@% \abjad-invisible-music
+            %! baca._make_multimeasure_rest_container(1)
+            %! HIDDEN
+            %! NOTE
+            b'1 * 9/8
+            %! REAPPLIED_DYNAMIC_COLOR
+            %! baca.treat_persistent_wrapper()
+            %! baca._reapply_persistent_indicators(3)
+            %! baca._set_status_tag()
+            %! REAPPLIED_DYNAMIC
+            - \tweak color #(x11-color 'green4)
+            %! baca._reapply_persistent_indicators(3)
+            %! baca._set_status_tag()
+            %! REAPPLIED_DYNAMIC
+            \fff
+            %! baca._label_duration_multipliers()
+            %! DURATION_MULTIPLIER
+            %! HIDDEN
+            %! NOTE
+            %@% ^ \baca-duration-multiplier-markup #"9" #"8"
+
+        %! baca._make_multimeasure_rest_container(4)
+        }
+
+        %! baca._make_multimeasure_rest_container(6)
+        \context Voice = "RH_Rest_Voice_II"
+        %! baca._make_multimeasure_rest_container(6)
+        {
+
+            %! baca._comment_measure_numbers()
+            % [RH_Rest_Voice_II measure 1]
+            %! baca._make_multimeasure_rest_container(5)
+            %! REST_VOICE
+            %! SKIP
+            s1 * 9/8
+
+        %! baca._make_multimeasure_rest_container(6)
+        }
+
+    %! baca._make_multimeasure_rest_container(7)
+    >>
 
     %! baca._comment_measure_numbers()
     % [RH_Voice_II measure 2]
-    %! baca._call_rhythm_commands()
-    s1 * 4/8
+    %! baca._make_measure_silences()
+    s1 * 1/2
 
     %! baca._comment_measure_numbers()
     % [RH_Voice_II measure 3]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 7/8
 
     %! baca._comment_measure_numbers()
     % [RH_Voice_II measure 4]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 5/8
 
     %! baca._make_multimeasure_rest_container(7)
@@ -595,24 +727,68 @@ segment.05.RH.Voice.II = {
 %! baca.path.extern()
 segment.05.RH.Insert.Voice.II = {
 
-    %! baca._comment_measure_numbers()
-    % [RH_Insert_Voice_II measure 1]
-    %! baca._call_rhythm_commands()
-    s1 * 9/8
+    %! baca._make_multimeasure_rest_container(7)
+    <<
+
+        %! baca._make_multimeasure_rest_container(4)
+        \context Voice = "RH_Insert_Voice_II"
+        %! baca._make_multimeasure_rest_container(4)
+        {
+
+            %! baca._comment_measure_numbers()
+            % [RH_Insert_Voice_II measure 1]
+            %! baca._make_multimeasure_rest_container(2)
+            %! NOTE
+            %! INVISIBLE_MUSIC_COLORING
+            \abjad-invisible-music-coloring
+            %! baca._make_multimeasure_rest_container(3)
+            %! NOTE
+            %! INVISIBLE_MUSIC_COMMAND
+            %@% \abjad-invisible-music
+            %! baca._make_multimeasure_rest_container(1)
+            %! HIDDEN
+            %! NOTE
+            b'1 * 9/8
+            %! baca._label_duration_multipliers()
+            %! DURATION_MULTIPLIER
+            %! HIDDEN
+            %! NOTE
+            %@% ^ \baca-duration-multiplier-markup #"9" #"8"
+
+        %! baca._make_multimeasure_rest_container(4)
+        }
+
+        %! baca._make_multimeasure_rest_container(6)
+        \context Voice = "RH_Insert_Rest_Voice_II"
+        %! baca._make_multimeasure_rest_container(6)
+        {
+
+            %! baca._comment_measure_numbers()
+            % [RH_Insert_Rest_Voice_II measure 1]
+            %! baca._make_multimeasure_rest_container(5)
+            %! REST_VOICE
+            %! SKIP
+            s1 * 9/8
+
+        %! baca._make_multimeasure_rest_container(6)
+        }
+
+    %! baca._make_multimeasure_rest_container(7)
+    >>
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_II measure 2]
-    %! baca._call_rhythm_commands()
-    s1 * 4/8
+    %! baca._make_measure_silences()
+    s1 * 1/2
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_II measure 3]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 7/8
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_II measure 4]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 5/8
 
     %! baca._make_multimeasure_rest_container(7)
@@ -1091,24 +1267,68 @@ segment.05.RH.Voice.III = {
 %! baca.path.extern()
 segment.05.RH.Insert.Voice.III = {
 
-    %! baca._comment_measure_numbers()
-    % [RH_Insert_Voice_III measure 1]
-    %! baca._call_rhythm_commands()
-    s1 * 9/8
+    %! baca._make_multimeasure_rest_container(7)
+    <<
+
+        %! baca._make_multimeasure_rest_container(4)
+        \context Voice = "RH_Insert_Voice_III"
+        %! baca._make_multimeasure_rest_container(4)
+        {
+
+            %! baca._comment_measure_numbers()
+            % [RH_Insert_Voice_III measure 1]
+            %! baca._make_multimeasure_rest_container(2)
+            %! NOTE
+            %! INVISIBLE_MUSIC_COLORING
+            \abjad-invisible-music-coloring
+            %! baca._make_multimeasure_rest_container(3)
+            %! NOTE
+            %! INVISIBLE_MUSIC_COMMAND
+            %@% \abjad-invisible-music
+            %! baca._make_multimeasure_rest_container(1)
+            %! HIDDEN
+            %! NOTE
+            b'1 * 9/8
+            %! baca._label_duration_multipliers()
+            %! DURATION_MULTIPLIER
+            %! HIDDEN
+            %! NOTE
+            %@% ^ \baca-duration-multiplier-markup #"9" #"8"
+
+        %! baca._make_multimeasure_rest_container(4)
+        }
+
+        %! baca._make_multimeasure_rest_container(6)
+        \context Voice = "RH_Insert_Rest_Voice_III"
+        %! baca._make_multimeasure_rest_container(6)
+        {
+
+            %! baca._comment_measure_numbers()
+            % [RH_Insert_Rest_Voice_III measure 1]
+            %! baca._make_multimeasure_rest_container(5)
+            %! REST_VOICE
+            %! SKIP
+            s1 * 9/8
+
+        %! baca._make_multimeasure_rest_container(6)
+        }
+
+    %! baca._make_multimeasure_rest_container(7)
+    >>
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_III measure 2]
-    %! baca._call_rhythm_commands()
-    s1 * 4/8
+    %! baca._make_measure_silences()
+    s1 * 1/2
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_III measure 3]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 7/8
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_III measure 4]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 5/8
 
     %! baca._make_multimeasure_rest_container(7)
@@ -1188,34 +1408,78 @@ segment.05.RH.Insert.Voice.III = {
 %! baca.path.extern()
 segment.05.RH.Voice.IV = {
 
-    %! baca._comment_measure_numbers()
-    % [RH_Voice_IV measure 1]
-    %! baca._call_rhythm_commands()
-    s1 * 9/8
-    %! REAPPLIED_DYNAMIC_COLOR
-    %! baca.treat_persistent_wrapper()
-    %! baca._reapply_persistent_indicators(3)
-    %! baca._set_status_tag()
-    %! REAPPLIED_DYNAMIC
-    - \tweak color #(x11-color 'green4)
-    %! baca._reapply_persistent_indicators(3)
-    %! baca._set_status_tag()
-    %! REAPPLIED_DYNAMIC
-    \p
+    %! baca._make_multimeasure_rest_container(7)
+    <<
+
+        %! baca._make_multimeasure_rest_container(4)
+        \context Voice = "RH_Voice_IV"
+        %! baca._make_multimeasure_rest_container(4)
+        {
+
+            %! baca._comment_measure_numbers()
+            % [RH_Voice_IV measure 1]
+            %! baca._make_multimeasure_rest_container(2)
+            %! NOTE
+            %! INVISIBLE_MUSIC_COLORING
+            \abjad-invisible-music-coloring
+            %! baca._make_multimeasure_rest_container(3)
+            %! NOTE
+            %! INVISIBLE_MUSIC_COMMAND
+            %@% \abjad-invisible-music
+            %! baca._make_multimeasure_rest_container(1)
+            %! HIDDEN
+            %! NOTE
+            b'1 * 9/8
+            %! REAPPLIED_DYNAMIC_COLOR
+            %! baca.treat_persistent_wrapper()
+            %! baca._reapply_persistent_indicators(3)
+            %! baca._set_status_tag()
+            %! REAPPLIED_DYNAMIC
+            - \tweak color #(x11-color 'green4)
+            %! baca._reapply_persistent_indicators(3)
+            %! baca._set_status_tag()
+            %! REAPPLIED_DYNAMIC
+            \p
+            %! baca._label_duration_multipliers()
+            %! DURATION_MULTIPLIER
+            %! HIDDEN
+            %! NOTE
+            %@% ^ \baca-duration-multiplier-markup #"9" #"8"
+
+        %! baca._make_multimeasure_rest_container(4)
+        }
+
+        %! baca._make_multimeasure_rest_container(6)
+        \context Voice = "RH_Rest_Voice_IV"
+        %! baca._make_multimeasure_rest_container(6)
+        {
+
+            %! baca._comment_measure_numbers()
+            % [RH_Rest_Voice_IV measure 1]
+            %! baca._make_multimeasure_rest_container(5)
+            %! REST_VOICE
+            %! SKIP
+            s1 * 9/8
+
+        %! baca._make_multimeasure_rest_container(6)
+        }
+
+    %! baca._make_multimeasure_rest_container(7)
+    >>
 
     %! baca._comment_measure_numbers()
     % [RH_Voice_IV measure 2]
-    %! baca._call_rhythm_commands()
-    s1 * 4/8
+    %! baca._make_measure_silences()
+    s1 * 1/2
 
     %! baca._comment_measure_numbers()
     % [RH_Voice_IV measure 3]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 7/8
 
     %! baca._comment_measure_numbers()
     % [RH_Voice_IV measure 4]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 5/8
 
     %! baca._make_multimeasure_rest_container(7)
@@ -1295,24 +1559,68 @@ segment.05.RH.Voice.IV = {
 %! baca.path.extern()
 segment.05.RH.Insert.Voice.IV = {
 
-    %! baca._comment_measure_numbers()
-    % [RH_Insert_Voice_IV measure 1]
-    %! baca._call_rhythm_commands()
-    s1 * 9/8
+    %! baca._make_multimeasure_rest_container(7)
+    <<
+
+        %! baca._make_multimeasure_rest_container(4)
+        \context Voice = "RH_Insert_Voice_IV"
+        %! baca._make_multimeasure_rest_container(4)
+        {
+
+            %! baca._comment_measure_numbers()
+            % [RH_Insert_Voice_IV measure 1]
+            %! baca._make_multimeasure_rest_container(2)
+            %! NOTE
+            %! INVISIBLE_MUSIC_COLORING
+            \abjad-invisible-music-coloring
+            %! baca._make_multimeasure_rest_container(3)
+            %! NOTE
+            %! INVISIBLE_MUSIC_COMMAND
+            %@% \abjad-invisible-music
+            %! baca._make_multimeasure_rest_container(1)
+            %! HIDDEN
+            %! NOTE
+            b'1 * 9/8
+            %! baca._label_duration_multipliers()
+            %! DURATION_MULTIPLIER
+            %! HIDDEN
+            %! NOTE
+            %@% ^ \baca-duration-multiplier-markup #"9" #"8"
+
+        %! baca._make_multimeasure_rest_container(4)
+        }
+
+        %! baca._make_multimeasure_rest_container(6)
+        \context Voice = "RH_Insert_Rest_Voice_IV"
+        %! baca._make_multimeasure_rest_container(6)
+        {
+
+            %! baca._comment_measure_numbers()
+            % [RH_Insert_Rest_Voice_IV measure 1]
+            %! baca._make_multimeasure_rest_container(5)
+            %! REST_VOICE
+            %! SKIP
+            s1 * 9/8
+
+        %! baca._make_multimeasure_rest_container(6)
+        }
+
+    %! baca._make_multimeasure_rest_container(7)
+    >>
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_IV measure 2]
-    %! baca._call_rhythm_commands()
-    s1 * 4/8
+    %! baca._make_measure_silences()
+    s1 * 1/2
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_IV measure 3]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 7/8
 
     %! baca._comment_measure_numbers()
     % [RH_Insert_Voice_IV measure 4]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 5/8
 
     %! baca._make_multimeasure_rest_container(7)
@@ -1392,24 +1700,68 @@ segment.05.RH.Insert.Voice.IV = {
 %! baca.path.extern()
 segment.05.RH.Voice.V = {
 
-    %! baca._comment_measure_numbers()
-    % [RH_Voice_V measure 1]
-    %! baca._call_rhythm_commands()
-    s1 * 9/8
+    %! baca._make_multimeasure_rest_container(7)
+    <<
+
+        %! baca._make_multimeasure_rest_container(4)
+        \context Voice = "RH_Voice_V"
+        %! baca._make_multimeasure_rest_container(4)
+        {
+
+            %! baca._comment_measure_numbers()
+            % [RH_Voice_V measure 1]
+            %! baca._make_multimeasure_rest_container(2)
+            %! NOTE
+            %! INVISIBLE_MUSIC_COLORING
+            \abjad-invisible-music-coloring
+            %! baca._make_multimeasure_rest_container(3)
+            %! NOTE
+            %! INVISIBLE_MUSIC_COMMAND
+            %@% \abjad-invisible-music
+            %! baca._make_multimeasure_rest_container(1)
+            %! HIDDEN
+            %! NOTE
+            b'1 * 9/8
+            %! baca._label_duration_multipliers()
+            %! DURATION_MULTIPLIER
+            %! HIDDEN
+            %! NOTE
+            %@% ^ \baca-duration-multiplier-markup #"9" #"8"
+
+        %! baca._make_multimeasure_rest_container(4)
+        }
+
+        %! baca._make_multimeasure_rest_container(6)
+        \context Voice = "RH_Rest_Voice_V"
+        %! baca._make_multimeasure_rest_container(6)
+        {
+
+            %! baca._comment_measure_numbers()
+            % [RH_Rest_Voice_V measure 1]
+            %! baca._make_multimeasure_rest_container(5)
+            %! REST_VOICE
+            %! SKIP
+            s1 * 9/8
+
+        %! baca._make_multimeasure_rest_container(6)
+        }
+
+    %! baca._make_multimeasure_rest_container(7)
+    >>
 
     %! baca._comment_measure_numbers()
     % [RH_Voice_V measure 2]
-    %! baca._call_rhythm_commands()
-    s1 * 4/8
+    %! baca._make_measure_silences()
+    s1 * 1/2
 
     %! baca._comment_measure_numbers()
     % [RH_Voice_V measure 3]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 7/8
 
     %! baca._comment_measure_numbers()
     % [RH_Voice_V measure 4]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 5/8
 
     %! baca._make_multimeasure_rest_container(7)
@@ -1489,24 +1841,68 @@ segment.05.RH.Voice.V = {
 %! baca.path.extern()
 segment.05.RH.Voice.VI = {
 
-    %! baca._comment_measure_numbers()
-    % [RH_Voice_VI measure 1]
-    %! baca._call_rhythm_commands()
-    s1 * 9/8
+    %! baca._make_multimeasure_rest_container(7)
+    <<
+
+        %! baca._make_multimeasure_rest_container(4)
+        \context Voice = "RH_Voice_VI"
+        %! baca._make_multimeasure_rest_container(4)
+        {
+
+            %! baca._comment_measure_numbers()
+            % [RH_Voice_VI measure 1]
+            %! baca._make_multimeasure_rest_container(2)
+            %! NOTE
+            %! INVISIBLE_MUSIC_COLORING
+            \abjad-invisible-music-coloring
+            %! baca._make_multimeasure_rest_container(3)
+            %! NOTE
+            %! INVISIBLE_MUSIC_COMMAND
+            %@% \abjad-invisible-music
+            %! baca._make_multimeasure_rest_container(1)
+            %! HIDDEN
+            %! NOTE
+            b'1 * 9/8
+            %! baca._label_duration_multipliers()
+            %! DURATION_MULTIPLIER
+            %! HIDDEN
+            %! NOTE
+            %@% ^ \baca-duration-multiplier-markup #"9" #"8"
+
+        %! baca._make_multimeasure_rest_container(4)
+        }
+
+        %! baca._make_multimeasure_rest_container(6)
+        \context Voice = "RH_Rest_Voice_VI"
+        %! baca._make_multimeasure_rest_container(6)
+        {
+
+            %! baca._comment_measure_numbers()
+            % [RH_Rest_Voice_VI measure 1]
+            %! baca._make_multimeasure_rest_container(5)
+            %! REST_VOICE
+            %! SKIP
+            s1 * 9/8
+
+        %! baca._make_multimeasure_rest_container(6)
+        }
+
+    %! baca._make_multimeasure_rest_container(7)
+    >>
 
     %! baca._comment_measure_numbers()
     % [RH_Voice_VI measure 2]
-    %! baca._call_rhythm_commands()
-    s1 * 4/8
+    %! baca._make_measure_silences()
+    s1 * 1/2
 
     %! baca._comment_measure_numbers()
     % [RH_Voice_VI measure 3]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 7/8
 
     %! baca._comment_measure_numbers()
     % [RH_Voice_VI measure 4]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 5/8
 
     %! baca._make_multimeasure_rest_container(7)
@@ -1586,24 +1982,68 @@ segment.05.RH.Voice.VI = {
 %! baca.path.extern()
 segment.05.RH.Resonance.Voice = {
 
-    %! baca._comment_measure_numbers()
-    % [RH_Resonance_Voice measure 1]
-    %! baca._call_rhythm_commands()
-    s1 * 9/8
+    %! baca._make_multimeasure_rest_container(7)
+    <<
+
+        %! baca._make_multimeasure_rest_container(4)
+        \context Voice = "RH_Resonance_Voice"
+        %! baca._make_multimeasure_rest_container(4)
+        {
+
+            %! baca._comment_measure_numbers()
+            % [RH_Resonance_Voice measure 1]
+            %! baca._make_multimeasure_rest_container(2)
+            %! NOTE
+            %! INVISIBLE_MUSIC_COLORING
+            \abjad-invisible-music-coloring
+            %! baca._make_multimeasure_rest_container(3)
+            %! NOTE
+            %! INVISIBLE_MUSIC_COMMAND
+            %@% \abjad-invisible-music
+            %! baca._make_multimeasure_rest_container(1)
+            %! HIDDEN
+            %! NOTE
+            b'1 * 9/8
+            %! baca._label_duration_multipliers()
+            %! DURATION_MULTIPLIER
+            %! HIDDEN
+            %! NOTE
+            %@% ^ \baca-duration-multiplier-markup #"9" #"8"
+
+        %! baca._make_multimeasure_rest_container(4)
+        }
+
+        %! baca._make_multimeasure_rest_container(6)
+        \context Voice = "RH_Resonance_Rest_Voice"
+        %! baca._make_multimeasure_rest_container(6)
+        {
+
+            %! baca._comment_measure_numbers()
+            % [RH_Resonance_Rest_Voice measure 1]
+            %! baca._make_multimeasure_rest_container(5)
+            %! REST_VOICE
+            %! SKIP
+            s1 * 9/8
+
+        %! baca._make_multimeasure_rest_container(6)
+        }
+
+    %! baca._make_multimeasure_rest_container(7)
+    >>
 
     %! baca._comment_measure_numbers()
     % [RH_Resonance_Voice measure 2]
-    %! baca._call_rhythm_commands()
-    s1 * 4/8
+    %! baca._make_measure_silences()
+    s1 * 1/2
 
     %! baca._comment_measure_numbers()
     % [RH_Resonance_Voice measure 3]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 7/8
 
     %! baca._comment_measure_numbers()
     % [RH_Resonance_Voice measure 4]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 5/8
 
     %! baca._make_multimeasure_rest_container(7)
@@ -1757,24 +2197,68 @@ segment.05.Piano.Music.RH.Staff = <<
 %! baca.path.extern()
 segment.05.LH.Voice.I = {
 
-    %! baca._comment_measure_numbers()
-    % [LH_Voice_I measure 1]
-    %! baca._call_rhythm_commands()
-    s1 * 9/8
+    %! baca._make_multimeasure_rest_container(7)
+    <<
+
+        %! baca._make_multimeasure_rest_container(4)
+        \context Voice = "LH_Voice_I"
+        %! baca._make_multimeasure_rest_container(4)
+        {
+
+            %! baca._comment_measure_numbers()
+            % [LH_Voice_I measure 1]
+            %! baca._make_multimeasure_rest_container(2)
+            %! NOTE
+            %! INVISIBLE_MUSIC_COLORING
+            \abjad-invisible-music-coloring
+            %! baca._make_multimeasure_rest_container(3)
+            %! NOTE
+            %! INVISIBLE_MUSIC_COMMAND
+            %@% \abjad-invisible-music
+            %! baca._make_multimeasure_rest_container(1)
+            %! HIDDEN
+            %! NOTE
+            b'1 * 9/8
+            %! baca._label_duration_multipliers()
+            %! DURATION_MULTIPLIER
+            %! HIDDEN
+            %! NOTE
+            %@% ^ \baca-duration-multiplier-markup #"9" #"8"
+
+        %! baca._make_multimeasure_rest_container(4)
+        }
+
+        %! baca._make_multimeasure_rest_container(6)
+        \context Voice = "LH_Rest_Voice_I"
+        %! baca._make_multimeasure_rest_container(6)
+        {
+
+            %! baca._comment_measure_numbers()
+            % [LH_Rest_Voice_I measure 1]
+            %! baca._make_multimeasure_rest_container(5)
+            %! REST_VOICE
+            %! SKIP
+            s1 * 9/8
+
+        %! baca._make_multimeasure_rest_container(6)
+        }
+
+    %! baca._make_multimeasure_rest_container(7)
+    >>
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_I measure 2]
-    %! baca._call_rhythm_commands()
-    s1 * 4/8
+    %! baca._make_measure_silences()
+    s1 * 1/2
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_I measure 3]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 7/8
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_I measure 4]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 5/8
 
     %! baca._make_multimeasure_rest_container(7)
@@ -1854,24 +2338,68 @@ segment.05.LH.Voice.I = {
 %! baca.path.extern()
 segment.05.LH.Voice.II = {
 
-    %! baca._comment_measure_numbers()
-    % [LH_Voice_II measure 1]
-    %! baca._call_rhythm_commands()
-    s1 * 9/8
+    %! baca._make_multimeasure_rest_container(7)
+    <<
+
+        %! baca._make_multimeasure_rest_container(4)
+        \context Voice = "LH_Voice_II"
+        %! baca._make_multimeasure_rest_container(4)
+        {
+
+            %! baca._comment_measure_numbers()
+            % [LH_Voice_II measure 1]
+            %! baca._make_multimeasure_rest_container(2)
+            %! NOTE
+            %! INVISIBLE_MUSIC_COLORING
+            \abjad-invisible-music-coloring
+            %! baca._make_multimeasure_rest_container(3)
+            %! NOTE
+            %! INVISIBLE_MUSIC_COMMAND
+            %@% \abjad-invisible-music
+            %! baca._make_multimeasure_rest_container(1)
+            %! HIDDEN
+            %! NOTE
+            b'1 * 9/8
+            %! baca._label_duration_multipliers()
+            %! DURATION_MULTIPLIER
+            %! HIDDEN
+            %! NOTE
+            %@% ^ \baca-duration-multiplier-markup #"9" #"8"
+
+        %! baca._make_multimeasure_rest_container(4)
+        }
+
+        %! baca._make_multimeasure_rest_container(6)
+        \context Voice = "LH_Rest_Voice_II"
+        %! baca._make_multimeasure_rest_container(6)
+        {
+
+            %! baca._comment_measure_numbers()
+            % [LH_Rest_Voice_II measure 1]
+            %! baca._make_multimeasure_rest_container(5)
+            %! REST_VOICE
+            %! SKIP
+            s1 * 9/8
+
+        %! baca._make_multimeasure_rest_container(6)
+        }
+
+    %! baca._make_multimeasure_rest_container(7)
+    >>
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_II measure 2]
-    %! baca._call_rhythm_commands()
-    s1 * 4/8
+    %! baca._make_measure_silences()
+    s1 * 1/2
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_II measure 3]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 7/8
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_II measure 4]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 5/8
 
     %! baca._make_multimeasure_rest_container(7)
@@ -1951,24 +2479,68 @@ segment.05.LH.Voice.II = {
 %! baca.path.extern()
 segment.05.LH.Voice.III = {
 
-    %! baca._comment_measure_numbers()
-    % [LH_Voice_III measure 1]
-    %! baca._call_rhythm_commands()
-    s1 * 9/8
+    %! baca._make_multimeasure_rest_container(7)
+    <<
+
+        %! baca._make_multimeasure_rest_container(4)
+        \context Voice = "LH_Voice_III"
+        %! baca._make_multimeasure_rest_container(4)
+        {
+
+            %! baca._comment_measure_numbers()
+            % [LH_Voice_III measure 1]
+            %! baca._make_multimeasure_rest_container(2)
+            %! NOTE
+            %! INVISIBLE_MUSIC_COLORING
+            \abjad-invisible-music-coloring
+            %! baca._make_multimeasure_rest_container(3)
+            %! NOTE
+            %! INVISIBLE_MUSIC_COMMAND
+            %@% \abjad-invisible-music
+            %! baca._make_multimeasure_rest_container(1)
+            %! HIDDEN
+            %! NOTE
+            b'1 * 9/8
+            %! baca._label_duration_multipliers()
+            %! DURATION_MULTIPLIER
+            %! HIDDEN
+            %! NOTE
+            %@% ^ \baca-duration-multiplier-markup #"9" #"8"
+
+        %! baca._make_multimeasure_rest_container(4)
+        }
+
+        %! baca._make_multimeasure_rest_container(6)
+        \context Voice = "LH_Rest_Voice_III"
+        %! baca._make_multimeasure_rest_container(6)
+        {
+
+            %! baca._comment_measure_numbers()
+            % [LH_Rest_Voice_III measure 1]
+            %! baca._make_multimeasure_rest_container(5)
+            %! REST_VOICE
+            %! SKIP
+            s1 * 9/8
+
+        %! baca._make_multimeasure_rest_container(6)
+        }
+
+    %! baca._make_multimeasure_rest_container(7)
+    >>
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_III measure 2]
-    %! baca._call_rhythm_commands()
-    s1 * 4/8
+    %! baca._make_measure_silences()
+    s1 * 1/2
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_III measure 3]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 7/8
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_III measure 4]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 5/8
 
     %! baca._make_multimeasure_rest_container(7)
@@ -2460,24 +3032,68 @@ segment.05.LH.Voice.IV = {
 %! baca.path.extern()
 segment.05.LH.Insert.Voice.IV = {
 
-    %! baca._comment_measure_numbers()
-    % [LH_Insert_Voice_IV measure 1]
-    %! baca._call_rhythm_commands()
-    s1 * 9/8
+    %! baca._make_multimeasure_rest_container(7)
+    <<
+
+        %! baca._make_multimeasure_rest_container(4)
+        \context Voice = "LH_Insert_Voice_IV"
+        %! baca._make_multimeasure_rest_container(4)
+        {
+
+            %! baca._comment_measure_numbers()
+            % [LH_Insert_Voice_IV measure 1]
+            %! baca._make_multimeasure_rest_container(2)
+            %! NOTE
+            %! INVISIBLE_MUSIC_COLORING
+            \abjad-invisible-music-coloring
+            %! baca._make_multimeasure_rest_container(3)
+            %! NOTE
+            %! INVISIBLE_MUSIC_COMMAND
+            %@% \abjad-invisible-music
+            %! baca._make_multimeasure_rest_container(1)
+            %! HIDDEN
+            %! NOTE
+            b'1 * 9/8
+            %! baca._label_duration_multipliers()
+            %! DURATION_MULTIPLIER
+            %! HIDDEN
+            %! NOTE
+            %@% ^ \baca-duration-multiplier-markup #"9" #"8"
+
+        %! baca._make_multimeasure_rest_container(4)
+        }
+
+        %! baca._make_multimeasure_rest_container(6)
+        \context Voice = "LH_Insert_Rest_Voice_IV"
+        %! baca._make_multimeasure_rest_container(6)
+        {
+
+            %! baca._comment_measure_numbers()
+            % [LH_Insert_Rest_Voice_IV measure 1]
+            %! baca._make_multimeasure_rest_container(5)
+            %! REST_VOICE
+            %! SKIP
+            s1 * 9/8
+
+        %! baca._make_multimeasure_rest_container(6)
+        }
+
+    %! baca._make_multimeasure_rest_container(7)
+    >>
 
     %! baca._comment_measure_numbers()
     % [LH_Insert_Voice_IV measure 2]
-    %! baca._call_rhythm_commands()
-    s1 * 4/8
+    %! baca._make_measure_silences()
+    s1 * 1/2
 
     %! baca._comment_measure_numbers()
     % [LH_Insert_Voice_IV measure 3]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 7/8
 
     %! baca._comment_measure_numbers()
     % [LH_Insert_Voice_IV measure 4]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 5/8
 
     %! baca._make_multimeasure_rest_container(7)
@@ -2557,34 +3173,78 @@ segment.05.LH.Insert.Voice.IV = {
 %! baca.path.extern()
 segment.05.LH.Voice.V = {
 
-    %! baca._comment_measure_numbers()
-    % [LH_Voice_V measure 1]
-    %! baca._call_rhythm_commands()
-    s1 * 9/8
-    %! REAPPLIED_DYNAMIC_COLOR
-    %! baca.treat_persistent_wrapper()
-    %! baca._reapply_persistent_indicators(3)
-    %! baca._set_status_tag()
-    %! REAPPLIED_DYNAMIC
-    - \tweak color #(x11-color 'green4)
-    %! baca._reapply_persistent_indicators(3)
-    %! baca._set_status_tag()
-    %! REAPPLIED_DYNAMIC
-    \p
+    %! baca._make_multimeasure_rest_container(7)
+    <<
+
+        %! baca._make_multimeasure_rest_container(4)
+        \context Voice = "LH_Voice_V"
+        %! baca._make_multimeasure_rest_container(4)
+        {
+
+            %! baca._comment_measure_numbers()
+            % [LH_Voice_V measure 1]
+            %! baca._make_multimeasure_rest_container(2)
+            %! NOTE
+            %! INVISIBLE_MUSIC_COLORING
+            \abjad-invisible-music-coloring
+            %! baca._make_multimeasure_rest_container(3)
+            %! NOTE
+            %! INVISIBLE_MUSIC_COMMAND
+            %@% \abjad-invisible-music
+            %! baca._make_multimeasure_rest_container(1)
+            %! HIDDEN
+            %! NOTE
+            b'1 * 9/8
+            %! REAPPLIED_DYNAMIC_COLOR
+            %! baca.treat_persistent_wrapper()
+            %! baca._reapply_persistent_indicators(3)
+            %! baca._set_status_tag()
+            %! REAPPLIED_DYNAMIC
+            - \tweak color #(x11-color 'green4)
+            %! baca._reapply_persistent_indicators(3)
+            %! baca._set_status_tag()
+            %! REAPPLIED_DYNAMIC
+            \p
+            %! baca._label_duration_multipliers()
+            %! DURATION_MULTIPLIER
+            %! HIDDEN
+            %! NOTE
+            %@% ^ \baca-duration-multiplier-markup #"9" #"8"
+
+        %! baca._make_multimeasure_rest_container(4)
+        }
+
+        %! baca._make_multimeasure_rest_container(6)
+        \context Voice = "LH_Rest_Voice_V"
+        %! baca._make_multimeasure_rest_container(6)
+        {
+
+            %! baca._comment_measure_numbers()
+            % [LH_Rest_Voice_V measure 1]
+            %! baca._make_multimeasure_rest_container(5)
+            %! REST_VOICE
+            %! SKIP
+            s1 * 9/8
+
+        %! baca._make_multimeasure_rest_container(6)
+        }
+
+    %! baca._make_multimeasure_rest_container(7)
+    >>
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_V measure 2]
-    %! baca._call_rhythm_commands()
-    s1 * 4/8
+    %! baca._make_measure_silences()
+    s1 * 1/2
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_V measure 3]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 7/8
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_V measure 4]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 5/8
 
     %! baca._make_multimeasure_rest_container(7)
@@ -2664,24 +3324,68 @@ segment.05.LH.Voice.V = {
 %! baca.path.extern()
 segment.05.LH.Insert.Voice.V = {
 
-    %! baca._comment_measure_numbers()
-    % [LH_Insert_Voice_V measure 1]
-    %! baca._call_rhythm_commands()
-    s1 * 9/8
+    %! baca._make_multimeasure_rest_container(7)
+    <<
+
+        %! baca._make_multimeasure_rest_container(4)
+        \context Voice = "LH_Insert_Voice_V"
+        %! baca._make_multimeasure_rest_container(4)
+        {
+
+            %! baca._comment_measure_numbers()
+            % [LH_Insert_Voice_V measure 1]
+            %! baca._make_multimeasure_rest_container(2)
+            %! NOTE
+            %! INVISIBLE_MUSIC_COLORING
+            \abjad-invisible-music-coloring
+            %! baca._make_multimeasure_rest_container(3)
+            %! NOTE
+            %! INVISIBLE_MUSIC_COMMAND
+            %@% \abjad-invisible-music
+            %! baca._make_multimeasure_rest_container(1)
+            %! HIDDEN
+            %! NOTE
+            b'1 * 9/8
+            %! baca._label_duration_multipliers()
+            %! DURATION_MULTIPLIER
+            %! HIDDEN
+            %! NOTE
+            %@% ^ \baca-duration-multiplier-markup #"9" #"8"
+
+        %! baca._make_multimeasure_rest_container(4)
+        }
+
+        %! baca._make_multimeasure_rest_container(6)
+        \context Voice = "LH_Insert_Rest_Voice_V"
+        %! baca._make_multimeasure_rest_container(6)
+        {
+
+            %! baca._comment_measure_numbers()
+            % [LH_Insert_Rest_Voice_V measure 1]
+            %! baca._make_multimeasure_rest_container(5)
+            %! REST_VOICE
+            %! SKIP
+            s1 * 9/8
+
+        %! baca._make_multimeasure_rest_container(6)
+        }
+
+    %! baca._make_multimeasure_rest_container(7)
+    >>
 
     %! baca._comment_measure_numbers()
     % [LH_Insert_Voice_V measure 2]
-    %! baca._call_rhythm_commands()
-    s1 * 4/8
+    %! baca._make_measure_silences()
+    s1 * 1/2
 
     %! baca._comment_measure_numbers()
     % [LH_Insert_Voice_V measure 3]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 7/8
 
     %! baca._comment_measure_numbers()
     % [LH_Insert_Voice_V measure 4]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 5/8
 
     %! baca._make_multimeasure_rest_container(7)
@@ -2761,34 +3465,78 @@ segment.05.LH.Insert.Voice.V = {
 %! baca.path.extern()
 segment.05.LH.Voice.VI = {
 
-    %! baca._comment_measure_numbers()
-    % [LH_Voice_VI measure 1]
-    %! baca._call_rhythm_commands()
-    s1 * 9/8
-    %! REAPPLIED_DYNAMIC_COLOR
-    %! baca.treat_persistent_wrapper()
-    %! baca._reapply_persistent_indicators(3)
-    %! baca._set_status_tag()
-    %! REAPPLIED_DYNAMIC
-    - \tweak color #(x11-color 'green4)
-    %! baca._reapply_persistent_indicators(3)
-    %! baca._set_status_tag()
-    %! REAPPLIED_DYNAMIC
-    \f
+    %! baca._make_multimeasure_rest_container(7)
+    <<
+
+        %! baca._make_multimeasure_rest_container(4)
+        \context Voice = "LH_Voice_VI"
+        %! baca._make_multimeasure_rest_container(4)
+        {
+
+            %! baca._comment_measure_numbers()
+            % [LH_Voice_VI measure 1]
+            %! baca._make_multimeasure_rest_container(2)
+            %! NOTE
+            %! INVISIBLE_MUSIC_COLORING
+            \abjad-invisible-music-coloring
+            %! baca._make_multimeasure_rest_container(3)
+            %! NOTE
+            %! INVISIBLE_MUSIC_COMMAND
+            %@% \abjad-invisible-music
+            %! baca._make_multimeasure_rest_container(1)
+            %! HIDDEN
+            %! NOTE
+            b'1 * 9/8
+            %! REAPPLIED_DYNAMIC_COLOR
+            %! baca.treat_persistent_wrapper()
+            %! baca._reapply_persistent_indicators(3)
+            %! baca._set_status_tag()
+            %! REAPPLIED_DYNAMIC
+            - \tweak color #(x11-color 'green4)
+            %! baca._reapply_persistent_indicators(3)
+            %! baca._set_status_tag()
+            %! REAPPLIED_DYNAMIC
+            \f
+            %! baca._label_duration_multipliers()
+            %! DURATION_MULTIPLIER
+            %! HIDDEN
+            %! NOTE
+            %@% ^ \baca-duration-multiplier-markup #"9" #"8"
+
+        %! baca._make_multimeasure_rest_container(4)
+        }
+
+        %! baca._make_multimeasure_rest_container(6)
+        \context Voice = "LH_Rest_Voice_VI"
+        %! baca._make_multimeasure_rest_container(6)
+        {
+
+            %! baca._comment_measure_numbers()
+            % [LH_Rest_Voice_VI measure 1]
+            %! baca._make_multimeasure_rest_container(5)
+            %! REST_VOICE
+            %! SKIP
+            s1 * 9/8
+
+        %! baca._make_multimeasure_rest_container(6)
+        }
+
+    %! baca._make_multimeasure_rest_container(7)
+    >>
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_VI measure 2]
-    %! baca._call_rhythm_commands()
-    s1 * 4/8
+    %! baca._make_measure_silences()
+    s1 * 1/2
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_VI measure 3]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 7/8
 
     %! baca._comment_measure_numbers()
     % [LH_Voice_VI measure 4]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 5/8
 
     %! baca._make_multimeasure_rest_container(7)
@@ -2868,24 +3616,68 @@ segment.05.LH.Voice.VI = {
 %! baca.path.extern()
 segment.05.LH.Insert.Voice.VI = {
 
-    %! baca._comment_measure_numbers()
-    % [LH_Insert_Voice_VI measure 1]
-    %! baca._call_rhythm_commands()
-    s1 * 9/8
+    %! baca._make_multimeasure_rest_container(7)
+    <<
+
+        %! baca._make_multimeasure_rest_container(4)
+        \context Voice = "LH_Insert_Voice_VI"
+        %! baca._make_multimeasure_rest_container(4)
+        {
+
+            %! baca._comment_measure_numbers()
+            % [LH_Insert_Voice_VI measure 1]
+            %! baca._make_multimeasure_rest_container(2)
+            %! NOTE
+            %! INVISIBLE_MUSIC_COLORING
+            \abjad-invisible-music-coloring
+            %! baca._make_multimeasure_rest_container(3)
+            %! NOTE
+            %! INVISIBLE_MUSIC_COMMAND
+            %@% \abjad-invisible-music
+            %! baca._make_multimeasure_rest_container(1)
+            %! HIDDEN
+            %! NOTE
+            b'1 * 9/8
+            %! baca._label_duration_multipliers()
+            %! DURATION_MULTIPLIER
+            %! HIDDEN
+            %! NOTE
+            %@% ^ \baca-duration-multiplier-markup #"9" #"8"
+
+        %! baca._make_multimeasure_rest_container(4)
+        }
+
+        %! baca._make_multimeasure_rest_container(6)
+        \context Voice = "LH_Insert_Rest_Voice_VI"
+        %! baca._make_multimeasure_rest_container(6)
+        {
+
+            %! baca._comment_measure_numbers()
+            % [LH_Insert_Rest_Voice_VI measure 1]
+            %! baca._make_multimeasure_rest_container(5)
+            %! REST_VOICE
+            %! SKIP
+            s1 * 9/8
+
+        %! baca._make_multimeasure_rest_container(6)
+        }
+
+    %! baca._make_multimeasure_rest_container(7)
+    >>
 
     %! baca._comment_measure_numbers()
     % [LH_Insert_Voice_VI measure 2]
-    %! baca._call_rhythm_commands()
-    s1 * 4/8
+    %! baca._make_measure_silences()
+    s1 * 1/2
 
     %! baca._comment_measure_numbers()
     % [LH_Insert_Voice_VI measure 3]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 7/8
 
     %! baca._comment_measure_numbers()
     % [LH_Insert_Voice_VI measure 4]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 5/8
 
     %! baca._make_multimeasure_rest_container(7)
@@ -2965,24 +3757,68 @@ segment.05.LH.Insert.Voice.VI = {
 %! baca.path.extern()
 segment.05.LH.Resonance.Voice = {
 
-    %! baca._comment_measure_numbers()
-    % [LH_Resonance_Voice measure 1]
-    %! baca._call_rhythm_commands()
-    s1 * 9/8
+    %! baca._make_multimeasure_rest_container(7)
+    <<
+
+        %! baca._make_multimeasure_rest_container(4)
+        \context Voice = "LH_Resonance_Voice"
+        %! baca._make_multimeasure_rest_container(4)
+        {
+
+            %! baca._comment_measure_numbers()
+            % [LH_Resonance_Voice measure 1]
+            %! baca._make_multimeasure_rest_container(2)
+            %! NOTE
+            %! INVISIBLE_MUSIC_COLORING
+            \abjad-invisible-music-coloring
+            %! baca._make_multimeasure_rest_container(3)
+            %! NOTE
+            %! INVISIBLE_MUSIC_COMMAND
+            %@% \abjad-invisible-music
+            %! baca._make_multimeasure_rest_container(1)
+            %! HIDDEN
+            %! NOTE
+            b'1 * 9/8
+            %! baca._label_duration_multipliers()
+            %! DURATION_MULTIPLIER
+            %! HIDDEN
+            %! NOTE
+            %@% ^ \baca-duration-multiplier-markup #"9" #"8"
+
+        %! baca._make_multimeasure_rest_container(4)
+        }
+
+        %! baca._make_multimeasure_rest_container(6)
+        \context Voice = "LH_Resonance_Rest_Voice"
+        %! baca._make_multimeasure_rest_container(6)
+        {
+
+            %! baca._comment_measure_numbers()
+            % [LH_Resonance_Rest_Voice measure 1]
+            %! baca._make_multimeasure_rest_container(5)
+            %! REST_VOICE
+            %! SKIP
+            s1 * 9/8
+
+        %! baca._make_multimeasure_rest_container(6)
+        }
+
+    %! baca._make_multimeasure_rest_container(7)
+    >>
 
     %! baca._comment_measure_numbers()
     % [LH_Resonance_Voice measure 2]
-    %! baca._call_rhythm_commands()
-    s1 * 4/8
+    %! baca._make_measure_silences()
+    s1 * 1/2
 
     %! baca._comment_measure_numbers()
     % [LH_Resonance_Voice measure 3]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 7/8
 
     %! baca._comment_measure_numbers()
     % [LH_Resonance_Voice measure 4]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     s1 * 5/8
 
     %! baca._make_multimeasure_rest_container(7)
