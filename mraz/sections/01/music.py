@@ -211,11 +211,13 @@ commands(
 
 commands(
     library.rh_v1,
+    baca.attach_first_segment_default_indicators(),
     baca.start_markup("PIANO", context="PianoStaff", hcenter_in=12),
 )
 
 commands(
     library.lh_v1,
+    baca.attach_first_segment_default_indicators(),
     baca.clef("treble"),
 )
 
