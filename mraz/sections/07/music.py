@@ -350,6 +350,11 @@ commands = baca.CommandAccumulator(
 figures.populate_commands(commands)
 
 commands(
+    library.all_voices,
+    baca.reapply_persistent_indicators(),
+)
+
+commands(
     "Global_Skips",
     baca.metronome_mark("84", lambda _: abjad.select.leaf(_, 0)),
     baca.metronome_mark(baca.Accelerando(), lambda _: abjad.select.leaf(_, 0)),
