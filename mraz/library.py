@@ -1161,6 +1161,21 @@ lh_v6 = "lh_v6"
 lh_v6_i = "lh_v6_i"
 lh_resonance = "lh_resonance"
 
+all_voices = [
+    rh_v1,
+    rh_v2,
+    rh_v3,
+    rh_v4,
+    rh_v5,
+    rh_v6,
+    lh_v1,
+    lh_v2,
+    lh_v3,
+    lh_v4,
+    lh_v5,
+    lh_v6,
+]
+
 
 voice_abbreviations = {
     rh_v1: "RH_Voice_I",

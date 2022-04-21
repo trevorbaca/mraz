@@ -133,6 +133,11 @@ commands = baca.CommandAccumulator(
 figures.populate_commands(commands)
 
 commands(
+    library.all_voices,
+    baca.reapply_persistent_indicators(),
+)
+
+commands(
     library.lh_v4,
     baca.clef("treble"),
 )

@@ -239,6 +239,11 @@ commands = baca.CommandAccumulator(
 figures.populate_commands(commands)
 
 commands(
+    library.all_voices,
+    baca.reapply_persistent_indicators(),
+)
+
+commands(
     library.lh_v5,
     baca.ottava_bassa(),
     baca.tuplet_bracket_up(),
