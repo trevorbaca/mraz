@@ -736,16 +736,16 @@ segment.01.RH.Voice.I = {
               %! baca.tenuto()
             - \tenuto
             % MARKUP:
-              %! baca.IndicatorCommand._call()
-              %! baca.markup()
-            ^ \mraz-ottava-brackets-always-govern-markup
-              %! DEFAULT_INSTRUMENT_ALERT
-              %! baca._attach_latent_indicator_alert()
-            ^ \baca-default-indicator-markup "(“Piano”)"
               %! FIGURE_LABEL
             %@% - \tweak color #blue
               %! FIGURE_LABEL
             %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (1) \hspace #1 "4.5.R.3" ] }
+              %! DEFAULT_INSTRUMENT_ALERT
+              %! baca._attach_latent_indicator_alert()
+            ^ \baca-default-indicator-markup "(“Piano”)"
+              %! baca.IndicatorCommand._call()
+              %! baca.markup()
+            ^ \mraz-ottava-brackets-always-govern-markup
             % ABSOLUTE_AFTER:
             % COMMANDS:
               %! DEFAULT_CLEF_REDRAW_COLOR
