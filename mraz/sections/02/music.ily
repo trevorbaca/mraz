@@ -788,14 +788,14 @@ segment.02.RH.Voice.I = {
             b'1 * 7/16
             % AFTER:
             % MARKUP:
-              %! REAPPLIED_INSTRUMENT_ALERT
-              %! baca._attach_latent_indicator_alert()
-            ^ \baca-reapplied-indicator-markup "(“Piano”)"
               %! DURATION_MULTIPLIER
               %! HIDDEN
               %! NOTE
               %! baca._label_duration_multipliers()
             %@% ^ \baca-duration-multiplier-markup #"7" #"16"
+              %! REAPPLIED_INSTRUMENT_ALERT
+              %! baca._attach_latent_indicator_alert()
+            ^ \baca-reapplied-indicator-markup "(“Piano”)"
             % ABSOLUTE_AFTER:
             % COMMANDS:
               %! REAPPLIED_CLEF_REDRAW_COLOR
