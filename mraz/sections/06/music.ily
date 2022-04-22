@@ -123,17 +123,17 @@ segment.06.Global.Skips = {
 
     %! baca._comment_measure_numbers()
     % [Global_Skips measure 1]
-    %! EXPLICIT_TIME_SIGNATURE
-    %! baca._make_global_skips(2)
-    %! baca._set_status_tag()
-    \time 16/4
+    %! EXPLICIT_TIME_SIGNATURE_COLOR
+    %! baca._attach_color_literal(2)
+    \baca-time-signature-color #'blue
     %! +SEGMENT
     %! EMPTY_START_BAR
     %! baca._attach_nonfirst_empty_start_bar()
     \bar ""
-    %! EXPLICIT_TIME_SIGNATURE_COLOR
-    %! baca._attach_color_literal(2)
-    \baca-time-signature-color #'blue
+    %! EXPLICIT_TIME_SIGNATURE
+    %! baca._make_global_skips(2)
+    %! baca._set_status_tag()
+    \time 16/4
     %! baca._make_global_skips(1)
     s1 * 4
     %! LOCAL_MEASURE_NUMBER
@@ -178,13 +178,13 @@ segment.06.Global.Skips = {
 
     %! baca._comment_measure_numbers()
     % [Global_Skips measure 2]
+    %! EXPLICIT_TIME_SIGNATURE_COLOR
+    %! baca._attach_color_literal(2)
+    \baca-time-signature-color #'blue
     %! EXPLICIT_TIME_SIGNATURE
     %! baca._make_global_skips(2)
     %! baca._set_status_tag()
     \time 10/4
-    %! EXPLICIT_TIME_SIGNATURE_COLOR
-    %! baca._attach_color_literal(2)
-    \baca-time-signature-color #'blue
     %! baca._make_global_skips(1)
     s1 * 5/2
     %! LOCAL_MEASURE_NUMBER
@@ -240,13 +240,13 @@ segment.06.Global.Skips = {
 
     %! baca._comment_measure_numbers()
     % [Global_Skips measure 3]
+    %! EXPLICIT_TIME_SIGNATURE_COLOR
+    %! baca._attach_color_literal(2)
+    \baca-time-signature-color #'blue
     %! EXPLICIT_TIME_SIGNATURE
     %! baca._make_global_skips(2)
     %! baca._set_status_tag()
     \time 1/4
-    %! EXPLICIT_TIME_SIGNATURE_COLOR
-    %! baca._attach_color_literal(2)
-    \baca-time-signature-color #'blue
     %! baca._make_global_skips(1)
     s1 * 1/4
     %! LOCAL_MEASURE_NUMBER
@@ -302,13 +302,13 @@ segment.06.Global.Skips = {
 
     %! baca._comment_measure_numbers()
     % [Global_Skips measure 4]
+    %! EXPLICIT_TIME_SIGNATURE_COLOR
+    %! baca._attach_color_literal(2)
+    \baca-time-signature-color #'blue
     %! EXPLICIT_TIME_SIGNATURE
     %! baca._make_global_skips(2)
     %! baca._set_status_tag()
     \time 12/4
-    %! EXPLICIT_TIME_SIGNATURE_COLOR
-    %! baca._attach_color_literal(2)
-    \baca-time-signature-color #'blue
     %! baca._make_global_skips(1)
     s1 * 3
     %! LOCAL_MEASURE_NUMBER
@@ -341,13 +341,13 @@ segment.06.Global.Skips = {
 
     %! baca._comment_measure_numbers()
     % [Global_Skips measure 5]
+    %! EXPLICIT_TIME_SIGNATURE_COLOR
+    %! baca._attach_color_literal(2)
+    \baca-time-signature-color #'blue
     %! EXPLICIT_TIME_SIGNATURE
     %! baca._make_global_skips(2)
     %! baca._set_status_tag()
     \time 4/4
-    %! EXPLICIT_TIME_SIGNATURE_COLOR
-    %! baca._attach_color_literal(2)
-    \baca-time-signature-color #'blue
     %! baca._make_global_skips(1)
     s1 * 1
     %! LOCAL_MEASURE_NUMBER
@@ -403,13 +403,13 @@ segment.06.Global.Skips = {
 
     %! baca._comment_measure_numbers()
     % [Global_Skips measure 6]
+    %! EXPLICIT_TIME_SIGNATURE_COLOR
+    %! baca._attach_color_literal(2)
+    \baca-time-signature-color #'blue
     %! EXPLICIT_TIME_SIGNATURE
     %! baca._make_global_skips(2)
     %! baca._set_status_tag()
     \time 10/4
-    %! EXPLICIT_TIME_SIGNATURE_COLOR
-    %! baca._attach_color_literal(2)
-    \baca-time-signature-color #'blue
     %! baca._make_global_skips(1)
     s1 * 5/2
     %! LOCAL_MEASURE_NUMBER
@@ -442,13 +442,13 @@ segment.06.Global.Skips = {
 
     %! baca._comment_measure_numbers()
     % [Global_Skips measure 7]
+    %! EXPLICIT_TIME_SIGNATURE_COLOR
+    %! baca._attach_color_literal(2)
+    \baca-time-signature-color #'blue
     %! EXPLICIT_TIME_SIGNATURE
     %! baca._make_global_skips(2)
     %! baca._set_status_tag()
     \time 1/4
-    %! EXPLICIT_TIME_SIGNATURE_COLOR
-    %! baca._attach_color_literal(2)
-    \baca-time-signature-color #'blue
     %! baca._make_global_skips(1)
     s1 * 1/4
     %! LOCAL_MEASURE_NUMBER
@@ -504,13 +504,13 @@ segment.06.Global.Skips = {
 
     %! baca._comment_measure_numbers()
     % [Global_Skips measure 8]
+    %! EXPLICIT_TIME_SIGNATURE_COLOR
+    %! baca._attach_color_literal(2)
+    \baca-time-signature-color #'blue
     %! EXPLICIT_TIME_SIGNATURE
     %! baca._make_global_skips(2)
     %! baca._set_status_tag()
     \time 13/4
-    %! EXPLICIT_TIME_SIGNATURE_COLOR
-    %! baca._attach_color_literal(2)
-    \baca-time-signature-color #'blue
     %! baca._make_global_skips(1)
     s1 * 13/4
     %! LOCAL_MEASURE_NUMBER
@@ -543,13 +543,13 @@ segment.06.Global.Skips = {
 
     %! baca._comment_measure_numbers()
     % [Global_Skips measure 9]
+    %! EXPLICIT_TIME_SIGNATURE_COLOR
+    %! baca._attach_color_literal(2)
+    \baca-time-signature-color #'blue
     %! EXPLICIT_TIME_SIGNATURE
     %! baca._make_global_skips(2)
     %! baca._set_status_tag()
     \time 1/4
-    %! EXPLICIT_TIME_SIGNATURE_COLOR
-    %! baca._attach_color_literal(2)
-    \baca-time-signature-color #'blue
     %! baca._make_global_skips(1)
     s1 * 1/4
     %! LOCAL_MEASURE_NUMBER
@@ -605,13 +605,13 @@ segment.06.Global.Skips = {
 
     %! baca._comment_measure_numbers()
     % [Global_Skips measure 10]
+    %! EXPLICIT_TIME_SIGNATURE_COLOR
+    %! baca._attach_color_literal(2)
+    \baca-time-signature-color #'blue
     %! EXPLICIT_TIME_SIGNATURE
     %! baca._make_global_skips(2)
     %! baca._set_status_tag()
     \time 29/16
-    %! EXPLICIT_TIME_SIGNATURE_COLOR
-    %! baca._attach_color_literal(2)
-    \baca-time-signature-color #'blue
     %! baca._make_global_skips(1)
     s1 * 29/16
     %! LOCAL_MEASURE_NUMBER
@@ -667,13 +667,13 @@ segment.06.Global.Skips = {
 
     %! baca._comment_measure_numbers()
     % [Global_Skips measure 11]
+    %! EXPLICIT_TIME_SIGNATURE_COLOR
+    %! baca._attach_color_literal(2)
+    \baca-time-signature-color #'blue
     %! EXPLICIT_TIME_SIGNATURE
     %! baca._make_global_skips(2)
     %! baca._set_status_tag()
     \time 27/16
-    %! EXPLICIT_TIME_SIGNATURE_COLOR
-    %! baca._attach_color_literal(2)
-    \baca-time-signature-color #'blue
     %! baca._make_global_skips(1)
     s1 * 27/16
     %! LOCAL_MEASURE_NUMBER
@@ -706,13 +706,13 @@ segment.06.Global.Skips = {
 
     %! baca._comment_measure_numbers()
     % [Global_Skips measure 12]
+    %! EXPLICIT_TIME_SIGNATURE_COLOR
+    %! baca._attach_color_literal(2)
+    \baca-time-signature-color #'blue
     %! EXPLICIT_TIME_SIGNATURE
     %! baca._make_global_skips(2)
     %! baca._set_status_tag()
     \time 21/16
-    %! EXPLICIT_TIME_SIGNATURE_COLOR
-    %! baca._attach_color_literal(2)
-    \baca-time-signature-color #'blue
     %! baca._make_global_skips(1)
     s1 * 21/16
     %! LOCAL_MEASURE_NUMBER
@@ -768,13 +768,13 @@ segment.06.Global.Skips = {
 
     %! baca._comment_measure_numbers()
     % [Global_Skips measure 13]
+    %! EXPLICIT_TIME_SIGNATURE_COLOR
+    %! baca._attach_color_literal(2)
+    \baca-time-signature-color #'blue
     %! EXPLICIT_TIME_SIGNATURE
     %! baca._make_global_skips(2)
     %! baca._set_status_tag()
     \time 15/16
-    %! EXPLICIT_TIME_SIGNATURE_COLOR
-    %! baca._attach_color_literal(2)
-    \baca-time-signature-color #'blue
     %! baca._make_global_skips(1)
     s1 * 15/16
     %! LOCAL_MEASURE_NUMBER
@@ -807,13 +807,13 @@ segment.06.Global.Skips = {
 
     %! baca._comment_measure_numbers()
     % [Global_Skips measure 14]
+    %! EXPLICIT_TIME_SIGNATURE_COLOR
+    %! baca._attach_color_literal(2)
+    \baca-time-signature-color #'blue
     %! EXPLICIT_TIME_SIGNATURE
     %! baca._make_global_skips(2)
     %! baca._set_status_tag()
     \time 4/4
-    %! EXPLICIT_TIME_SIGNATURE_COLOR
-    %! baca._attach_color_literal(2)
-    \baca-time-signature-color #'blue
     %! baca._make_global_skips(1)
     s1 * 1
     %! LOCAL_MEASURE_NUMBER
@@ -846,13 +846,13 @@ segment.06.Global.Skips = {
 
     %! baca._comment_measure_numbers()
     % [Global_Skips measure 15]
+    %! EXPLICIT_TIME_SIGNATURE_COLOR
+    %! baca._attach_color_literal(2)
+    \baca-time-signature-color #'blue
     %! EXPLICIT_TIME_SIGNATURE
     %! baca._make_global_skips(2)
     %! baca._set_status_tag()
     \time 7/4
-    %! EXPLICIT_TIME_SIGNATURE_COLOR
-    %! baca._attach_color_literal(2)
-    \baca-time-signature-color #'blue
     %! baca._make_global_skips(1)
     s1 * 7/4
     %! LOCAL_MEASURE_NUMBER
@@ -908,13 +908,13 @@ segment.06.Global.Skips = {
 
     %! baca._comment_measure_numbers()
     % [Global_Skips measure 16]
+    %! EXPLICIT_TIME_SIGNATURE_COLOR
+    %! baca._attach_color_literal(2)
+    \baca-time-signature-color #'blue
     %! EXPLICIT_TIME_SIGNATURE
     %! baca._make_global_skips(2)
     %! baca._set_status_tag()
     \time 1/4
-    %! EXPLICIT_TIME_SIGNATURE_COLOR
-    %! baca._attach_color_literal(2)
-    \baca-time-signature-color #'blue
     %! baca._make_global_skips(1)
     s1 * 1/4
     %! LOCAL_MEASURE_NUMBER
@@ -1023,14 +1023,14 @@ segment.06.RH.Voice.I = {
 
             %! baca._comment_measure_numbers()
             % [RH_Voice_I measure 1]
-            %! INVISIBLE_MUSIC_COLORING
-            %! NOTE
-            %! baca._make_multimeasure_rest_container(2)
-            \abjad-invisible-music-coloring
             %! INVISIBLE_MUSIC_COMMAND
             %! NOTE
             %! baca._make_multimeasure_rest_container(3)
             %@% \abjad-invisible-music
+            %! INVISIBLE_MUSIC_COLORING
+            %! NOTE
+            %! baca._make_multimeasure_rest_container(2)
+            \abjad-invisible-music-coloring
             %! REAPPLIED_CLEF
             %! baca._reapply_persistent_indicators(3)
             %! baca._set_status_tag()
@@ -1183,18 +1183,18 @@ segment.06.RH.Voice.I = {
             %! baca._comment_measure_numbers()
             %! baca._style_phantom_measures(5)
             % [RH_Voice_I measure 17]
-            %! INVISIBLE_MUSIC_COLORING
-            %! NOTE
-            %! PHANTOM
-            %! baca._make_multimeasure_rest_container(2)
-            %! baca._style_phantom_measures(5)
-            \abjad-invisible-music-coloring
             %! INVISIBLE_MUSIC_COMMAND
             %! NOTE
             %! PHANTOM
             %! baca._make_multimeasure_rest_container(3)
             %! baca._style_phantom_measures(5)
             %@% \abjad-invisible-music
+            %! INVISIBLE_MUSIC_COLORING
+            %! NOTE
+            %! PHANTOM
+            %! baca._make_multimeasure_rest_container(2)
+            %! baca._style_phantom_measures(5)
+            \abjad-invisible-music-coloring
             %! HIDDEN
             %! NOTE
             %! PHANTOM
@@ -1255,14 +1255,14 @@ segment.06.RH.Insert.Voice.I = {
 
             %! baca._comment_measure_numbers()
             % [RH_Insert_Voice_I measure 1]
-            %! INVISIBLE_MUSIC_COLORING
-            %! NOTE
-            %! baca._make_multimeasure_rest_container(2)
-            \abjad-invisible-music-coloring
             %! INVISIBLE_MUSIC_COMMAND
             %! NOTE
             %! baca._make_multimeasure_rest_container(3)
             %@% \abjad-invisible-music
+            %! INVISIBLE_MUSIC_COLORING
+            %! NOTE
+            %! baca._make_multimeasure_rest_container(2)
+            \abjad-invisible-music-coloring
             %! HIDDEN
             %! NOTE
             %! baca._make_multimeasure_rest_container(1)
@@ -1384,18 +1384,18 @@ segment.06.RH.Insert.Voice.I = {
             %! baca._comment_measure_numbers()
             %! baca._style_phantom_measures(5)
             % [RH_Insert_Voice_I measure 17]
-            %! INVISIBLE_MUSIC_COLORING
-            %! NOTE
-            %! PHANTOM
-            %! baca._make_multimeasure_rest_container(2)
-            %! baca._style_phantom_measures(5)
-            \abjad-invisible-music-coloring
             %! INVISIBLE_MUSIC_COMMAND
             %! NOTE
             %! PHANTOM
             %! baca._make_multimeasure_rest_container(3)
             %! baca._style_phantom_measures(5)
             %@% \abjad-invisible-music
+            %! INVISIBLE_MUSIC_COLORING
+            %! NOTE
+            %! PHANTOM
+            %! baca._make_multimeasure_rest_container(2)
+            %! baca._style_phantom_measures(5)
+            \abjad-invisible-music-coloring
             %! HIDDEN
             %! NOTE
             %! PHANTOM
@@ -1651,11 +1651,11 @@ segment.06.RH.Voice.II = {
                 %! baca.music()
                 s8
 
-                \set stemLeftBeamCount = 1
-                \set stemRightBeamCount = 1
                 %! baca.OverrideCommand._call(1)
                 %! baca.stem_up()
                 \override Stem.direction = #up
+                \set stemLeftBeamCount = 1
+                \set stemRightBeamCount = 1
                 %! baca.music()
                 af'!8
                 %! REDUNDANT_DYNAMIC_COLOR
@@ -2351,14 +2351,14 @@ segment.06.RH.Voice.II = {
 
             %! baca._comment_measure_numbers()
             % [RH_Voice_II measure 10]
-            \set stemLeftBeamCount = 0
-            \set stemRightBeamCount = 2
             %! baca.OverrideCommand._call(1)
             %! baca.beam_positions()
             \override Beam.positions = #'(-8 . -8)
             %! baca.OverrideCommand._call(1)
             %! baca.stem_down()
             \override Stem.direction = #down
+            \set stemLeftBeamCount = 0
+            \set stemRightBeamCount = 2
             %! baca.IndicatorCommand._call()
             %! baca.dynamic_down()
             \dynamicDown
@@ -2717,11 +2717,11 @@ segment.06.RH.Voice.II = {
 
             %! baca._comment_measure_numbers()
             % [RH_Voice_II measure 11]
-            \set stemLeftBeamCount = 0
-            \set stemRightBeamCount = 2
             %! baca.OverrideCommand._call(1)
             %! baca.beam_positions()
             \override Beam.positions = #'(-8 . -8)
+            \set stemLeftBeamCount = 0
+            \set stemRightBeamCount = 2
             %! baca.music()
             d'16
             %! baca.IndicatorCommand._call()
@@ -3033,11 +3033,11 @@ segment.06.RH.Voice.II = {
 
             %! baca._comment_measure_numbers()
             % [RH_Voice_II measure 12]
-            \set stemLeftBeamCount = 0
-            \set stemRightBeamCount = 2
             %! baca.OverrideCommand._call(1)
             %! baca.beam_positions()
             \override Beam.positions = #'(-8 . -8)
+            \set stemLeftBeamCount = 0
+            \set stemRightBeamCount = 2
             %! baca.music()
             b'16
             %! baca.IndicatorCommand._call()
@@ -3301,11 +3301,11 @@ segment.06.RH.Voice.II = {
 
             %! baca._comment_measure_numbers()
             % [RH_Voice_II measure 13]
-            \set stemLeftBeamCount = 0
-            \set stemRightBeamCount = 2
             %! baca.OverrideCommand._call(1)
             %! baca.beam_positions()
             \override Beam.positions = #'(-8 . -8)
+            \set stemLeftBeamCount = 0
+            \set stemRightBeamCount = 2
             %! baca.music()
             fs''!16
             %! baca.IndicatorCommand._call()
@@ -3514,11 +3514,11 @@ segment.06.RH.Voice.II = {
 
             %! baca._comment_measure_numbers()
             % [RH_Voice_II measure 14]
-            \set stemLeftBeamCount = 0
-            \set stemRightBeamCount = 2
             %! baca.OverrideCommand._call(1)
             %! baca.beam_positions()
             \override Beam.positions = #'(-8 . -8)
+            \set stemLeftBeamCount = 0
+            \set stemRightBeamCount = 2
             %! baca.music()
             f''16
             %! baca.IndicatorCommand._call()
@@ -3852,14 +3852,14 @@ segment.06.RH.Voice.II = {
 
             %! baca._comment_measure_numbers()
             % [RH_Voice_II measure 16]
-            %! INVISIBLE_MUSIC_COLORING
-            %! NOTE
-            %! baca._make_multimeasure_rest_container(2)
-            \abjad-invisible-music-coloring
             %! INVISIBLE_MUSIC_COMMAND
             %! NOTE
             %! baca._make_multimeasure_rest_container(3)
             %@% \abjad-invisible-music
+            %! INVISIBLE_MUSIC_COLORING
+            %! NOTE
+            %! baca._make_multimeasure_rest_container(2)
+            \abjad-invisible-music-coloring
             %! HIDDEN
             %! NOTE
             %! baca._make_multimeasure_rest_container(1)
@@ -3906,18 +3906,18 @@ segment.06.RH.Voice.II = {
             %! baca._comment_measure_numbers()
             %! baca._style_phantom_measures(5)
             % [RH_Voice_II measure 17]
-            %! INVISIBLE_MUSIC_COLORING
-            %! NOTE
-            %! PHANTOM
-            %! baca._make_multimeasure_rest_container(2)
-            %! baca._style_phantom_measures(5)
-            \abjad-invisible-music-coloring
             %! INVISIBLE_MUSIC_COMMAND
             %! NOTE
             %! PHANTOM
             %! baca._make_multimeasure_rest_container(3)
             %! baca._style_phantom_measures(5)
             %@% \abjad-invisible-music
+            %! INVISIBLE_MUSIC_COLORING
+            %! NOTE
+            %! PHANTOM
+            %! baca._make_multimeasure_rest_container(2)
+            %! baca._style_phantom_measures(5)
+            \abjad-invisible-music-coloring
             %! HIDDEN
             %! NOTE
             %! PHANTOM
@@ -3978,14 +3978,14 @@ segment.06.RH.Insert.Voice.II = {
 
             %! baca._comment_measure_numbers()
             % [RH_Insert_Voice_II measure 1]
-            %! INVISIBLE_MUSIC_COLORING
-            %! NOTE
-            %! baca._make_multimeasure_rest_container(2)
-            \abjad-invisible-music-coloring
             %! INVISIBLE_MUSIC_COMMAND
             %! NOTE
             %! baca._make_multimeasure_rest_container(3)
             %@% \abjad-invisible-music
+            %! INVISIBLE_MUSIC_COLORING
+            %! NOTE
+            %! baca._make_multimeasure_rest_container(2)
+            \abjad-invisible-music-coloring
             %! HIDDEN
             %! NOTE
             %! baca._make_multimeasure_rest_container(1)
@@ -4107,18 +4107,18 @@ segment.06.RH.Insert.Voice.II = {
             %! baca._comment_measure_numbers()
             %! baca._style_phantom_measures(5)
             % [RH_Insert_Voice_II measure 17]
-            %! INVISIBLE_MUSIC_COLORING
-            %! NOTE
-            %! PHANTOM
-            %! baca._make_multimeasure_rest_container(2)
-            %! baca._style_phantom_measures(5)
-            \abjad-invisible-music-coloring
             %! INVISIBLE_MUSIC_COMMAND
             %! NOTE
             %! PHANTOM
             %! baca._make_multimeasure_rest_container(3)
             %! baca._style_phantom_measures(5)
             %@% \abjad-invisible-music
+            %! INVISIBLE_MUSIC_COLORING
+            %! NOTE
+            %! PHANTOM
+            %! baca._make_multimeasure_rest_container(2)
+            %! baca._style_phantom_measures(5)
+            \abjad-invisible-music-coloring
             %! HIDDEN
             %! NOTE
             %! PHANTOM
@@ -4181,6 +4181,10 @@ segment.06.RH.Voice.III = {
 
             %! baca._comment_measure_numbers()
             % [RH_Voice_III measure 1]
+            %! SPANNER_START
+            %! baca.SpannerIndicatorCommand._call(2)
+            %! baca.ottava()
+            \ottava 1
             %! baca.OverrideCommand._call(1)
             %! baca.stem_down()
             \override Stem.direction = #down
@@ -4190,10 +4194,6 @@ segment.06.RH.Voice.III = {
             %! baca.OverrideCommand._call(1)
             %! baca.tuplet_bracket_staff_padding()
             \override TupletBracket.staff-padding = 3
-            %! SPANNER_START
-            %! baca.SpannerIndicatorCommand._call(2)
-            %! baca.ottava()
-            \ottava 1
             %! baca.music()
             a''4
             %! EXPLICIT_DYNAMIC_COLOR
@@ -4254,13 +4254,13 @@ segment.06.RH.Voice.III = {
             %! baca.IndicatorCommand._call()
             %! baca.tenuto()
             - \tenuto
-            %! baca.OverrideCommand._call(2)
-            %! baca.stem_down()
-            \revert Stem.direction
             %! SPANNER_STOP
             %! baca.SpannerIndicatorCommand._call(4)
             %! baca.ottava()
             \ottava 0
+            %! baca.OverrideCommand._call(2)
+            %! baca.stem_down()
+            \revert Stem.direction
 
             %! baca.music()
             r4
@@ -5415,14 +5415,14 @@ segment.06.RH.Voice.III = {
 
             %! baca._comment_measure_numbers()
             % [RH_Voice_III measure 16]
-            %! INVISIBLE_MUSIC_COLORING
-            %! NOTE
-            %! baca._make_multimeasure_rest_container(2)
-            \abjad-invisible-music-coloring
             %! INVISIBLE_MUSIC_COMMAND
             %! NOTE
             %! baca._make_multimeasure_rest_container(3)
             %@% \abjad-invisible-music
+            %! INVISIBLE_MUSIC_COLORING
+            %! NOTE
+            %! baca._make_multimeasure_rest_container(2)
+            \abjad-invisible-music-coloring
             %! HIDDEN
             %! NOTE
             %! baca._make_multimeasure_rest_container(1)
@@ -5469,18 +5469,18 @@ segment.06.RH.Voice.III = {
             %! baca._comment_measure_numbers()
             %! baca._style_phantom_measures(5)
             % [RH_Voice_III measure 17]
-            %! INVISIBLE_MUSIC_COLORING
-            %! NOTE
-            %! PHANTOM
-            %! baca._make_multimeasure_rest_container(2)
-            %! baca._style_phantom_measures(5)
-            \abjad-invisible-music-coloring
             %! INVISIBLE_MUSIC_COMMAND
             %! NOTE
             %! PHANTOM
             %! baca._make_multimeasure_rest_container(3)
             %! baca._style_phantom_measures(5)
             %@% \abjad-invisible-music
+            %! INVISIBLE_MUSIC_COLORING
+            %! NOTE
+            %! PHANTOM
+            %! baca._make_multimeasure_rest_container(2)
+            %! baca._style_phantom_measures(5)
+            \abjad-invisible-music-coloring
             %! HIDDEN
             %! NOTE
             %! PHANTOM
@@ -5541,14 +5541,14 @@ segment.06.RH.Insert.Voice.III = {
 
             %! baca._comment_measure_numbers()
             % [RH_Insert_Voice_III measure 1]
-            %! INVISIBLE_MUSIC_COLORING
-            %! NOTE
-            %! baca._make_multimeasure_rest_container(2)
-            \abjad-invisible-music-coloring
             %! INVISIBLE_MUSIC_COMMAND
             %! NOTE
             %! baca._make_multimeasure_rest_container(3)
             %@% \abjad-invisible-music
+            %! INVISIBLE_MUSIC_COLORING
+            %! NOTE
+            %! baca._make_multimeasure_rest_container(2)
+            \abjad-invisible-music-coloring
             %! HIDDEN
             %! NOTE
             %! baca._make_multimeasure_rest_container(1)
@@ -5670,18 +5670,18 @@ segment.06.RH.Insert.Voice.III = {
             %! baca._comment_measure_numbers()
             %! baca._style_phantom_measures(5)
             % [RH_Insert_Voice_III measure 17]
-            %! INVISIBLE_MUSIC_COLORING
-            %! NOTE
-            %! PHANTOM
-            %! baca._make_multimeasure_rest_container(2)
-            %! baca._style_phantom_measures(5)
-            \abjad-invisible-music-coloring
             %! INVISIBLE_MUSIC_COMMAND
             %! NOTE
             %! PHANTOM
             %! baca._make_multimeasure_rest_container(3)
             %! baca._style_phantom_measures(5)
             %@% \abjad-invisible-music
+            %! INVISIBLE_MUSIC_COLORING
+            %! NOTE
+            %! PHANTOM
+            %! baca._make_multimeasure_rest_container(2)
+            %! baca._style_phantom_measures(5)
+            \abjad-invisible-music-coloring
             %! HIDDEN
             %! NOTE
             %! PHANTOM
@@ -5742,14 +5742,14 @@ segment.06.RH.Voice.IV = {
 
             %! baca._comment_measure_numbers()
             % [RH_Voice_IV measure 1]
-            %! INVISIBLE_MUSIC_COLORING
-            %! NOTE
-            %! baca._make_multimeasure_rest_container(2)
-            \abjad-invisible-music-coloring
             %! INVISIBLE_MUSIC_COMMAND
             %! NOTE
             %! baca._make_multimeasure_rest_container(3)
             %@% \abjad-invisible-music
+            %! INVISIBLE_MUSIC_COLORING
+            %! NOTE
+            %! baca._make_multimeasure_rest_container(2)
+            \abjad-invisible-music-coloring
             %! HIDDEN
             %! NOTE
             %! baca._make_multimeasure_rest_container(1)
@@ -5881,18 +5881,18 @@ segment.06.RH.Voice.IV = {
             %! baca._comment_measure_numbers()
             %! baca._style_phantom_measures(5)
             % [RH_Voice_IV measure 17]
-            %! INVISIBLE_MUSIC_COLORING
-            %! NOTE
-            %! PHANTOM
-            %! baca._make_multimeasure_rest_container(2)
-            %! baca._style_phantom_measures(5)
-            \abjad-invisible-music-coloring
             %! INVISIBLE_MUSIC_COMMAND
             %! NOTE
             %! PHANTOM
             %! baca._make_multimeasure_rest_container(3)
             %! baca._style_phantom_measures(5)
             %@% \abjad-invisible-music
+            %! INVISIBLE_MUSIC_COLORING
+            %! NOTE
+            %! PHANTOM
+            %! baca._make_multimeasure_rest_container(2)
+            %! baca._style_phantom_measures(5)
+            \abjad-invisible-music-coloring
             %! HIDDEN
             %! NOTE
             %! PHANTOM
@@ -5953,14 +5953,14 @@ segment.06.RH.Insert.Voice.IV = {
 
             %! baca._comment_measure_numbers()
             % [RH_Insert_Voice_IV measure 1]
-            %! INVISIBLE_MUSIC_COLORING
-            %! NOTE
-            %! baca._make_multimeasure_rest_container(2)
-            \abjad-invisible-music-coloring
             %! INVISIBLE_MUSIC_COMMAND
             %! NOTE
             %! baca._make_multimeasure_rest_container(3)
             %@% \abjad-invisible-music
+            %! INVISIBLE_MUSIC_COLORING
+            %! NOTE
+            %! baca._make_multimeasure_rest_container(2)
+            \abjad-invisible-music-coloring
             %! HIDDEN
             %! NOTE
             %! baca._make_multimeasure_rest_container(1)
@@ -6082,18 +6082,18 @@ segment.06.RH.Insert.Voice.IV = {
             %! baca._comment_measure_numbers()
             %! baca._style_phantom_measures(5)
             % [RH_Insert_Voice_IV measure 17]
-            %! INVISIBLE_MUSIC_COLORING
-            %! NOTE
-            %! PHANTOM
-            %! baca._make_multimeasure_rest_container(2)
-            %! baca._style_phantom_measures(5)
-            \abjad-invisible-music-coloring
             %! INVISIBLE_MUSIC_COMMAND
             %! NOTE
             %! PHANTOM
             %! baca._make_multimeasure_rest_container(3)
             %! baca._style_phantom_measures(5)
             %@% \abjad-invisible-music
+            %! INVISIBLE_MUSIC_COLORING
+            %! NOTE
+            %! PHANTOM
+            %! baca._make_multimeasure_rest_container(2)
+            %! baca._style_phantom_measures(5)
+            \abjad-invisible-music-coloring
             %! HIDDEN
             %! NOTE
             %! PHANTOM
@@ -6154,14 +6154,14 @@ segment.06.RH.Voice.V = {
 
             %! baca._comment_measure_numbers()
             % [RH_Voice_V measure 1]
-            %! INVISIBLE_MUSIC_COLORING
-            %! NOTE
-            %! baca._make_multimeasure_rest_container(2)
-            \abjad-invisible-music-coloring
             %! INVISIBLE_MUSIC_COMMAND
             %! NOTE
             %! baca._make_multimeasure_rest_container(3)
             %@% \abjad-invisible-music
+            %! INVISIBLE_MUSIC_COLORING
+            %! NOTE
+            %! baca._make_multimeasure_rest_container(2)
+            \abjad-invisible-music-coloring
             %! HIDDEN
             %! NOTE
             %! baca._make_multimeasure_rest_container(1)
@@ -6283,18 +6283,18 @@ segment.06.RH.Voice.V = {
             %! baca._comment_measure_numbers()
             %! baca._style_phantom_measures(5)
             % [RH_Voice_V measure 17]
-            %! INVISIBLE_MUSIC_COLORING
-            %! NOTE
-            %! PHANTOM
-            %! baca._make_multimeasure_rest_container(2)
-            %! baca._style_phantom_measures(5)
-            \abjad-invisible-music-coloring
             %! INVISIBLE_MUSIC_COMMAND
             %! NOTE
             %! PHANTOM
             %! baca._make_multimeasure_rest_container(3)
             %! baca._style_phantom_measures(5)
             %@% \abjad-invisible-music
+            %! INVISIBLE_MUSIC_COLORING
+            %! NOTE
+            %! PHANTOM
+            %! baca._make_multimeasure_rest_container(2)
+            %! baca._style_phantom_measures(5)
+            \abjad-invisible-music-coloring
             %! HIDDEN
             %! NOTE
             %! PHANTOM
@@ -6355,14 +6355,14 @@ segment.06.RH.Voice.VI = {
 
             %! baca._comment_measure_numbers()
             % [RH_Voice_VI measure 1]
-            %! INVISIBLE_MUSIC_COLORING
-            %! NOTE
-            %! baca._make_multimeasure_rest_container(2)
-            \abjad-invisible-music-coloring
             %! INVISIBLE_MUSIC_COMMAND
             %! NOTE
             %! baca._make_multimeasure_rest_container(3)
             %@% \abjad-invisible-music
+            %! INVISIBLE_MUSIC_COLORING
+            %! NOTE
+            %! baca._make_multimeasure_rest_container(2)
+            \abjad-invisible-music-coloring
             %! HIDDEN
             %! NOTE
             %! baca._make_multimeasure_rest_container(1)
@@ -6484,18 +6484,18 @@ segment.06.RH.Voice.VI = {
             %! baca._comment_measure_numbers()
             %! baca._style_phantom_measures(5)
             % [RH_Voice_VI measure 17]
-            %! INVISIBLE_MUSIC_COLORING
-            %! NOTE
-            %! PHANTOM
-            %! baca._make_multimeasure_rest_container(2)
-            %! baca._style_phantom_measures(5)
-            \abjad-invisible-music-coloring
             %! INVISIBLE_MUSIC_COMMAND
             %! NOTE
             %! PHANTOM
             %! baca._make_multimeasure_rest_container(3)
             %! baca._style_phantom_measures(5)
             %@% \abjad-invisible-music
+            %! INVISIBLE_MUSIC_COLORING
+            %! NOTE
+            %! PHANTOM
+            %! baca._make_multimeasure_rest_container(2)
+            %! baca._style_phantom_measures(5)
+            \abjad-invisible-music-coloring
             %! HIDDEN
             %! NOTE
             %! PHANTOM
@@ -6556,14 +6556,14 @@ segment.06.RH.Resonance.Voice = {
 
             %! baca._comment_measure_numbers()
             % [RH_Resonance_Voice measure 1]
-            %! INVISIBLE_MUSIC_COLORING
-            %! NOTE
-            %! baca._make_multimeasure_rest_container(2)
-            \abjad-invisible-music-coloring
             %! INVISIBLE_MUSIC_COMMAND
             %! NOTE
             %! baca._make_multimeasure_rest_container(3)
             %@% \abjad-invisible-music
+            %! INVISIBLE_MUSIC_COLORING
+            %! NOTE
+            %! baca._make_multimeasure_rest_container(2)
+            \abjad-invisible-music-coloring
             %! HIDDEN
             %! NOTE
             %! baca._make_multimeasure_rest_container(1)
@@ -6685,18 +6685,18 @@ segment.06.RH.Resonance.Voice = {
             %! baca._comment_measure_numbers()
             %! baca._style_phantom_measures(5)
             % [RH_Resonance_Voice measure 17]
-            %! INVISIBLE_MUSIC_COLORING
-            %! NOTE
-            %! PHANTOM
-            %! baca._make_multimeasure_rest_container(2)
-            %! baca._style_phantom_measures(5)
-            \abjad-invisible-music-coloring
             %! INVISIBLE_MUSIC_COMMAND
             %! NOTE
             %! PHANTOM
             %! baca._make_multimeasure_rest_container(3)
             %! baca._style_phantom_measures(5)
             %@% \abjad-invisible-music
+            %! INVISIBLE_MUSIC_COLORING
+            %! NOTE
+            %! PHANTOM
+            %! baca._make_multimeasure_rest_container(2)
+            %! baca._style_phantom_measures(5)
+            \abjad-invisible-music-coloring
             %! HIDDEN
             %! NOTE
             %! PHANTOM
@@ -6831,14 +6831,14 @@ segment.06.LH.Voice.I = {
 
             %! baca._comment_measure_numbers()
             % [LH_Voice_I measure 1]
-            %! INVISIBLE_MUSIC_COLORING
-            %! NOTE
-            %! baca._make_multimeasure_rest_container(2)
-            \abjad-invisible-music-coloring
             %! INVISIBLE_MUSIC_COMMAND
             %! NOTE
             %! baca._make_multimeasure_rest_container(3)
             %@% \abjad-invisible-music
+            %! INVISIBLE_MUSIC_COLORING
+            %! NOTE
+            %! baca._make_multimeasure_rest_container(2)
+            \abjad-invisible-music-coloring
             %! HIDDEN
             %! NOTE
             %! baca._make_multimeasure_rest_container(1)
@@ -6960,18 +6960,18 @@ segment.06.LH.Voice.I = {
             %! baca._comment_measure_numbers()
             %! baca._style_phantom_measures(5)
             % [LH_Voice_I measure 17]
-            %! INVISIBLE_MUSIC_COLORING
-            %! NOTE
-            %! PHANTOM
-            %! baca._make_multimeasure_rest_container(2)
-            %! baca._style_phantom_measures(5)
-            \abjad-invisible-music-coloring
             %! INVISIBLE_MUSIC_COMMAND
             %! NOTE
             %! PHANTOM
             %! baca._make_multimeasure_rest_container(3)
             %! baca._style_phantom_measures(5)
             %@% \abjad-invisible-music
+            %! INVISIBLE_MUSIC_COLORING
+            %! NOTE
+            %! PHANTOM
+            %! baca._make_multimeasure_rest_container(2)
+            %! baca._style_phantom_measures(5)
+            \abjad-invisible-music-coloring
             %! HIDDEN
             %! NOTE
             %! PHANTOM
@@ -7032,14 +7032,14 @@ segment.06.LH.Voice.II = {
 
             %! baca._comment_measure_numbers()
             % [LH_Voice_II measure 1]
-            %! INVISIBLE_MUSIC_COLORING
-            %! NOTE
-            %! baca._make_multimeasure_rest_container(2)
-            \abjad-invisible-music-coloring
             %! INVISIBLE_MUSIC_COMMAND
             %! NOTE
             %! baca._make_multimeasure_rest_container(3)
             %@% \abjad-invisible-music
+            %! INVISIBLE_MUSIC_COLORING
+            %! NOTE
+            %! baca._make_multimeasure_rest_container(2)
+            \abjad-invisible-music-coloring
             %! HIDDEN
             %! NOTE
             %! baca._make_multimeasure_rest_container(1)
@@ -7161,18 +7161,18 @@ segment.06.LH.Voice.II = {
             %! baca._comment_measure_numbers()
             %! baca._style_phantom_measures(5)
             % [LH_Voice_II measure 17]
-            %! INVISIBLE_MUSIC_COLORING
-            %! NOTE
-            %! PHANTOM
-            %! baca._make_multimeasure_rest_container(2)
-            %! baca._style_phantom_measures(5)
-            \abjad-invisible-music-coloring
             %! INVISIBLE_MUSIC_COMMAND
             %! NOTE
             %! PHANTOM
             %! baca._make_multimeasure_rest_container(3)
             %! baca._style_phantom_measures(5)
             %@% \abjad-invisible-music
+            %! INVISIBLE_MUSIC_COLORING
+            %! NOTE
+            %! PHANTOM
+            %! baca._make_multimeasure_rest_container(2)
+            %! baca._style_phantom_measures(5)
+            \abjad-invisible-music-coloring
             %! HIDDEN
             %! NOTE
             %! PHANTOM
@@ -7233,14 +7233,14 @@ segment.06.LH.Voice.III = {
 
             %! baca._comment_measure_numbers()
             % [LH_Voice_III measure 1]
-            %! INVISIBLE_MUSIC_COLORING
-            %! NOTE
-            %! baca._make_multimeasure_rest_container(2)
-            \abjad-invisible-music-coloring
             %! INVISIBLE_MUSIC_COMMAND
             %! NOTE
             %! baca._make_multimeasure_rest_container(3)
             %@% \abjad-invisible-music
+            %! INVISIBLE_MUSIC_COLORING
+            %! NOTE
+            %! baca._make_multimeasure_rest_container(2)
+            \abjad-invisible-music-coloring
             %! HIDDEN
             %! NOTE
             %! baca._make_multimeasure_rest_container(1)
@@ -7362,18 +7362,18 @@ segment.06.LH.Voice.III = {
             %! baca._comment_measure_numbers()
             %! baca._style_phantom_measures(5)
             % [LH_Voice_III measure 17]
-            %! INVISIBLE_MUSIC_COLORING
-            %! NOTE
-            %! PHANTOM
-            %! baca._make_multimeasure_rest_container(2)
-            %! baca._style_phantom_measures(5)
-            \abjad-invisible-music-coloring
             %! INVISIBLE_MUSIC_COMMAND
             %! NOTE
             %! PHANTOM
             %! baca._make_multimeasure_rest_container(3)
             %! baca._style_phantom_measures(5)
             %@% \abjad-invisible-music
+            %! INVISIBLE_MUSIC_COLORING
+            %! NOTE
+            %! PHANTOM
+            %! baca._make_multimeasure_rest_container(2)
+            %! baca._style_phantom_measures(5)
+            \abjad-invisible-music-coloring
             %! HIDDEN
             %! NOTE
             %! PHANTOM
@@ -7467,12 +7467,6 @@ segment.06.LH.Voice.IV = {
 
             %! baca._comment_measure_numbers()
             % [LH_Voice_IV measure 4]
-            %! baca.OverrideCommand._call(1)
-            %! baca.slur_down()
-            \override Slur.direction = #down
-            %! baca.OverrideCommand._call(1)
-            %! baca.script_up()
-            \override Script.direction = #up
             %! MEASURE_85
             %! SHIFTED_CLEF
             %! baca.OverrideCommand._call(1)
@@ -7485,6 +7479,12 @@ segment.06.LH.Voice.IV = {
             %! baca.clef_extra_offset()
             %! baca.clef_shift()
         %%% \once \override PianoMusicLHStaff.Clef.extra-offset = #'(-2.75 . 0)
+            %! baca.OverrideCommand._call(1)
+            %! baca.script_up()
+            \override Script.direction = #up
+            %! baca.OverrideCommand._call(1)
+            %! baca.slur_down()
+            \override Slur.direction = #down
             %! EXPLICIT_CLEF
             %! baca.IndicatorCommand._call()
             %! baca._set_status_tag()
@@ -8132,9 +8132,6 @@ segment.06.LH.Voice.IV = {
 
             %! baca._comment_measure_numbers()
             % [LH_Voice_IV measure 16]
-            %! baca.OverrideCommand._call(1)
-            %! baca.rest_transparent()
-            \once \override Rest.transparent = ##t
             %! MEASURE_97
             %! SHIFTED_CLEF
             %! baca.OverrideCommand._call(1)
@@ -8147,6 +8144,9 @@ segment.06.LH.Voice.IV = {
             %! baca.clef_extra_offset()
             %! baca.clef_shift()
             \once \override PianoMusicLHStaff.Clef.extra-offset = #'(-2.5 . 0)
+            %! baca.OverrideCommand._call(1)
+            %! baca.rest_transparent()
+            \once \override Rest.transparent = ##t
             %! EXPLICIT_CLEF
             %! baca.IndicatorCommand._call()
             %! baca._set_status_tag()
@@ -8194,18 +8194,18 @@ segment.06.LH.Voice.IV = {
             %! baca._comment_measure_numbers()
             %! baca._style_phantom_measures(5)
             % [LH_Voice_IV measure 17]
-            %! INVISIBLE_MUSIC_COLORING
-            %! NOTE
-            %! PHANTOM
-            %! baca._make_multimeasure_rest_container(2)
-            %! baca._style_phantom_measures(5)
-            \abjad-invisible-music-coloring
             %! INVISIBLE_MUSIC_COMMAND
             %! NOTE
             %! PHANTOM
             %! baca._make_multimeasure_rest_container(3)
             %! baca._style_phantom_measures(5)
             %@% \abjad-invisible-music
+            %! INVISIBLE_MUSIC_COLORING
+            %! NOTE
+            %! PHANTOM
+            %! baca._make_multimeasure_rest_container(2)
+            %! baca._style_phantom_measures(5)
+            \abjad-invisible-music-coloring
             %! HIDDEN
             %! NOTE
             %! PHANTOM
@@ -8266,14 +8266,14 @@ segment.06.LH.Insert.Voice.IV = {
 
             %! baca._comment_measure_numbers()
             % [LH_Insert_Voice_IV measure 1]
-            %! INVISIBLE_MUSIC_COLORING
-            %! NOTE
-            %! baca._make_multimeasure_rest_container(2)
-            \abjad-invisible-music-coloring
             %! INVISIBLE_MUSIC_COMMAND
             %! NOTE
             %! baca._make_multimeasure_rest_container(3)
             %@% \abjad-invisible-music
+            %! INVISIBLE_MUSIC_COLORING
+            %! NOTE
+            %! baca._make_multimeasure_rest_container(2)
+            \abjad-invisible-music-coloring
             %! HIDDEN
             %! NOTE
             %! baca._make_multimeasure_rest_container(1)
@@ -8395,18 +8395,18 @@ segment.06.LH.Insert.Voice.IV = {
             %! baca._comment_measure_numbers()
             %! baca._style_phantom_measures(5)
             % [LH_Insert_Voice_IV measure 17]
-            %! INVISIBLE_MUSIC_COLORING
-            %! NOTE
-            %! PHANTOM
-            %! baca._make_multimeasure_rest_container(2)
-            %! baca._style_phantom_measures(5)
-            \abjad-invisible-music-coloring
             %! INVISIBLE_MUSIC_COMMAND
             %! NOTE
             %! PHANTOM
             %! baca._make_multimeasure_rest_container(3)
             %! baca._style_phantom_measures(5)
             %@% \abjad-invisible-music
+            %! INVISIBLE_MUSIC_COLORING
+            %! NOTE
+            %! PHANTOM
+            %! baca._make_multimeasure_rest_container(2)
+            %! baca._style_phantom_measures(5)
+            \abjad-invisible-music-coloring
             %! HIDDEN
             %! NOTE
             %! PHANTOM
@@ -8556,14 +8556,14 @@ segment.06.LH.Voice.V = {
 
             %! baca._comment_measure_numbers()
             % [LH_Voice_V measure 6]
-            %! INVISIBLE_MUSIC_COLORING
-            %! NOTE
-            %! baca._make_multimeasure_rest_container(2)
-            \abjad-invisible-music-coloring
             %! INVISIBLE_MUSIC_COMMAND
             %! NOTE
             %! baca._make_multimeasure_rest_container(3)
             %@% \abjad-invisible-music
+            %! INVISIBLE_MUSIC_COLORING
+            %! NOTE
+            %! baca._make_multimeasure_rest_container(2)
+            \abjad-invisible-music-coloring
             %! HIDDEN
             %! NOTE
             %! baca._make_multimeasure_rest_container(1)
@@ -8660,18 +8660,18 @@ segment.06.LH.Voice.V = {
             %! baca._comment_measure_numbers()
             %! baca._style_phantom_measures(5)
             % [LH_Voice_V measure 17]
-            %! INVISIBLE_MUSIC_COLORING
-            %! NOTE
-            %! PHANTOM
-            %! baca._make_multimeasure_rest_container(2)
-            %! baca._style_phantom_measures(5)
-            \abjad-invisible-music-coloring
             %! INVISIBLE_MUSIC_COMMAND
             %! NOTE
             %! PHANTOM
             %! baca._make_multimeasure_rest_container(3)
             %! baca._style_phantom_measures(5)
             %@% \abjad-invisible-music
+            %! INVISIBLE_MUSIC_COLORING
+            %! NOTE
+            %! PHANTOM
+            %! baca._make_multimeasure_rest_container(2)
+            %! baca._style_phantom_measures(5)
+            \abjad-invisible-music-coloring
             %! HIDDEN
             %! NOTE
             %! PHANTOM
@@ -8732,14 +8732,14 @@ segment.06.LH.Insert.Voice.V = {
 
             %! baca._comment_measure_numbers()
             % [LH_Insert_Voice_V measure 1]
-            %! INVISIBLE_MUSIC_COLORING
-            %! NOTE
-            %! baca._make_multimeasure_rest_container(2)
-            \abjad-invisible-music-coloring
             %! INVISIBLE_MUSIC_COMMAND
             %! NOTE
             %! baca._make_multimeasure_rest_container(3)
             %@% \abjad-invisible-music
+            %! INVISIBLE_MUSIC_COLORING
+            %! NOTE
+            %! baca._make_multimeasure_rest_container(2)
+            \abjad-invisible-music-coloring
             %! HIDDEN
             %! NOTE
             %! baca._make_multimeasure_rest_container(1)
@@ -8861,18 +8861,18 @@ segment.06.LH.Insert.Voice.V = {
             %! baca._comment_measure_numbers()
             %! baca._style_phantom_measures(5)
             % [LH_Insert_Voice_V measure 17]
-            %! INVISIBLE_MUSIC_COLORING
-            %! NOTE
-            %! PHANTOM
-            %! baca._make_multimeasure_rest_container(2)
-            %! baca._style_phantom_measures(5)
-            \abjad-invisible-music-coloring
             %! INVISIBLE_MUSIC_COMMAND
             %! NOTE
             %! PHANTOM
             %! baca._make_multimeasure_rest_container(3)
             %! baca._style_phantom_measures(5)
             %@% \abjad-invisible-music
+            %! INVISIBLE_MUSIC_COLORING
+            %! NOTE
+            %! PHANTOM
+            %! baca._make_multimeasure_rest_container(2)
+            %! baca._style_phantom_measures(5)
+            \abjad-invisible-music-coloring
             %! HIDDEN
             %! NOTE
             %! PHANTOM
@@ -8950,6 +8950,10 @@ segment.06.LH.Voice.VI = {
 
             %! baca._comment_measure_numbers()
             % [LH_Voice_VI measure 5]
+            %! SPANNER_START
+            %! baca.SpannerIndicatorCommand._call(2)
+            %! baca.ottava_bassa()
+            \ottava -1
             %! baca.OverrideCommand._call(1)
             %! baca.stem_down()
             \override Stem.direction = #down
@@ -8959,10 +8963,6 @@ segment.06.LH.Voice.VI = {
             %! baca.OverrideCommand._call(1)
             %! baca.tuplet_bracket_staff_padding()
             \override TupletBracket.staff-padding = 6
-            %! SPANNER_START
-            %! baca.SpannerIndicatorCommand._call(2)
-            %! baca.ottava_bassa()
-            \ottava -1
             %! baca.music()
             b,,,8
             %! REDUNDANT_DYNAMIC_COLOR
@@ -8990,13 +8990,13 @@ segment.06.LH.Voice.VI = {
 
             %! baca.music()
             ef,,!8
-            %! baca.OverrideCommand._call(2)
-            %! baca.stem_down()
-            \revert Stem.direction
             %! SPANNER_STOP
             %! baca.SpannerIndicatorCommand._call(4)
             %! baca.ottava_bassa()
             \ottava 0
+            %! baca.OverrideCommand._call(2)
+            %! baca.stem_down()
+            \revert Stem.direction
 
             %! baca.music()
             r4
@@ -9026,14 +9026,14 @@ segment.06.LH.Voice.VI = {
 
             %! baca._comment_measure_numbers()
             % [LH_Voice_VI measure 6]
-            %! INVISIBLE_MUSIC_COLORING
-            %! NOTE
-            %! baca._make_multimeasure_rest_container(2)
-            \abjad-invisible-music-coloring
             %! INVISIBLE_MUSIC_COMMAND
             %! NOTE
             %! baca._make_multimeasure_rest_container(3)
             %@% \abjad-invisible-music
+            %! INVISIBLE_MUSIC_COLORING
+            %! NOTE
+            %! baca._make_multimeasure_rest_container(2)
+            \abjad-invisible-music-coloring
             %! HIDDEN
             %! NOTE
             %! baca._make_multimeasure_rest_container(1)
@@ -9130,18 +9130,18 @@ segment.06.LH.Voice.VI = {
             %! baca._comment_measure_numbers()
             %! baca._style_phantom_measures(5)
             % [LH_Voice_VI measure 17]
-            %! INVISIBLE_MUSIC_COLORING
-            %! NOTE
-            %! PHANTOM
-            %! baca._make_multimeasure_rest_container(2)
-            %! baca._style_phantom_measures(5)
-            \abjad-invisible-music-coloring
             %! INVISIBLE_MUSIC_COMMAND
             %! NOTE
             %! PHANTOM
             %! baca._make_multimeasure_rest_container(3)
             %! baca._style_phantom_measures(5)
             %@% \abjad-invisible-music
+            %! INVISIBLE_MUSIC_COLORING
+            %! NOTE
+            %! PHANTOM
+            %! baca._make_multimeasure_rest_container(2)
+            %! baca._style_phantom_measures(5)
+            \abjad-invisible-music-coloring
             %! HIDDEN
             %! NOTE
             %! PHANTOM
@@ -9202,14 +9202,14 @@ segment.06.LH.Insert.Voice.VI = {
 
             %! baca._comment_measure_numbers()
             % [LH_Insert_Voice_VI measure 1]
-            %! INVISIBLE_MUSIC_COLORING
-            %! NOTE
-            %! baca._make_multimeasure_rest_container(2)
-            \abjad-invisible-music-coloring
             %! INVISIBLE_MUSIC_COMMAND
             %! NOTE
             %! baca._make_multimeasure_rest_container(3)
             %@% \abjad-invisible-music
+            %! INVISIBLE_MUSIC_COLORING
+            %! NOTE
+            %! baca._make_multimeasure_rest_container(2)
+            \abjad-invisible-music-coloring
             %! HIDDEN
             %! NOTE
             %! baca._make_multimeasure_rest_container(1)
@@ -9331,18 +9331,18 @@ segment.06.LH.Insert.Voice.VI = {
             %! baca._comment_measure_numbers()
             %! baca._style_phantom_measures(5)
             % [LH_Insert_Voice_VI measure 17]
-            %! INVISIBLE_MUSIC_COLORING
-            %! NOTE
-            %! PHANTOM
-            %! baca._make_multimeasure_rest_container(2)
-            %! baca._style_phantom_measures(5)
-            \abjad-invisible-music-coloring
             %! INVISIBLE_MUSIC_COMMAND
             %! NOTE
             %! PHANTOM
             %! baca._make_multimeasure_rest_container(3)
             %! baca._style_phantom_measures(5)
             %@% \abjad-invisible-music
+            %! INVISIBLE_MUSIC_COLORING
+            %! NOTE
+            %! PHANTOM
+            %! baca._make_multimeasure_rest_container(2)
+            %! baca._style_phantom_measures(5)
+            \abjad-invisible-music-coloring
             %! HIDDEN
             %! NOTE
             %! PHANTOM
@@ -9418,9 +9418,6 @@ segment.06.LH.Resonance.Voice = {
             ~
 
             %! baca.OverrideCommand._call(1)
-            %! baca.no_ledgers()
-            \once \override NoteHead.no-ledgers = ##t
-            %! baca.OverrideCommand._call(1)
             %! baca.accidental_transparent()
             \once \override Accidental.transparent = ##t
             %! baca.OverrideCommand._call(1)
@@ -9429,6 +9426,9 @@ segment.06.LH.Resonance.Voice = {
             %! baca.OverrideCommand._call(1)
             %! baca.flag_transparent()
             \once \override Flag.transparent = ##t
+            %! baca.OverrideCommand._call(1)
+            %! baca.no_ledgers()
+            \once \override NoteHead.no-ledgers = ##t
             %! baca.OverrideCommand._call(1)
             %! baca.note_head_transparent()
             \once \override NoteHead.transparent = ##t
@@ -9479,9 +9479,6 @@ segment.06.LH.Resonance.Voice = {
             ~
 
             %! baca.OverrideCommand._call(1)
-            %! baca.no_ledgers()
-            \once \override NoteHead.no-ledgers = ##t
-            %! baca.OverrideCommand._call(1)
             %! baca.accidental_transparent()
             \once \override Accidental.transparent = ##t
             %! baca.OverrideCommand._call(1)
@@ -9490,6 +9487,9 @@ segment.06.LH.Resonance.Voice = {
             %! baca.OverrideCommand._call(1)
             %! baca.flag_transparent()
             \once \override Flag.transparent = ##t
+            %! baca.OverrideCommand._call(1)
+            %! baca.no_ledgers()
+            \once \override NoteHead.no-ledgers = ##t
             %! baca.OverrideCommand._call(1)
             %! baca.note_head_transparent()
             \once \override NoteHead.transparent = ##t
@@ -9530,9 +9530,6 @@ segment.06.LH.Resonance.Voice = {
             ~
 
             %! baca.OverrideCommand._call(1)
-            %! baca.no_ledgers()
-            \override NoteHead.no-ledgers = ##t
-            %! baca.OverrideCommand._call(1)
             %! baca.accidental_transparent()
             \override Accidental.transparent = ##t
             %! baca.OverrideCommand._call(1)
@@ -9541,6 +9538,9 @@ segment.06.LH.Resonance.Voice = {
             %! baca.OverrideCommand._call(1)
             %! baca.flag_transparent()
             \override Flag.transparent = ##t
+            %! baca.OverrideCommand._call(1)
+            %! baca.no_ledgers()
+            \override NoteHead.no-ledgers = ##t
             %! baca.OverrideCommand._call(1)
             %! baca.note_head_transparent()
             \override NoteHead.transparent = ##t
@@ -9568,9 +9568,6 @@ segment.06.LH.Resonance.Voice = {
             %! baca._attach_shadow_tie_indicators()
             ~
             %! baca.OverrideCommand._call(2)
-            %! baca.no_ledgers()
-            \revert NoteHead.no-ledgers
-            %! baca.OverrideCommand._call(2)
             %! baca.accidental_transparent()
             \revert Accidental.transparent
             %! baca.OverrideCommand._call(2)
@@ -9579,6 +9576,9 @@ segment.06.LH.Resonance.Voice = {
             %! baca.OverrideCommand._call(2)
             %! baca.flag_transparent()
             \revert Flag.transparent
+            %! baca.OverrideCommand._call(2)
+            %! baca.no_ledgers()
+            \revert NoteHead.no-ledgers
             %! baca.OverrideCommand._call(2)
             %! baca.note_head_transparent()
             \revert NoteHead.transparent
@@ -9663,14 +9663,14 @@ segment.06.LH.Resonance.Voice = {
 
             %! baca._comment_measure_numbers()
             % [LH_Resonance_Voice measure 15]
-            %! INVISIBLE_MUSIC_COLORING
-            %! NOTE
-            %! baca._make_multimeasure_rest_container(2)
-            \abjad-invisible-music-coloring
             %! INVISIBLE_MUSIC_COMMAND
             %! NOTE
             %! baca._make_multimeasure_rest_container(3)
             %@% \abjad-invisible-music
+            %! INVISIBLE_MUSIC_COLORING
+            %! NOTE
+            %! baca._make_multimeasure_rest_container(2)
+            \abjad-invisible-music-coloring
             %! HIDDEN
             %! NOTE
             %! baca._make_multimeasure_rest_container(1)
@@ -9725,18 +9725,18 @@ segment.06.LH.Resonance.Voice = {
             %! baca._comment_measure_numbers()
             %! baca._style_phantom_measures(5)
             % [LH_Resonance_Voice measure 17]
-            %! INVISIBLE_MUSIC_COLORING
-            %! NOTE
-            %! PHANTOM
-            %! baca._make_multimeasure_rest_container(2)
-            %! baca._style_phantom_measures(5)
-            \abjad-invisible-music-coloring
             %! INVISIBLE_MUSIC_COMMAND
             %! NOTE
             %! PHANTOM
             %! baca._make_multimeasure_rest_container(3)
             %! baca._style_phantom_measures(5)
             %@% \abjad-invisible-music
+            %! INVISIBLE_MUSIC_COLORING
+            %! NOTE
+            %! PHANTOM
+            %! baca._make_multimeasure_rest_container(2)
+            %! baca._style_phantom_measures(5)
+            \abjad-invisible-music-coloring
             %! HIDDEN
             %! NOTE
             %! PHANTOM
