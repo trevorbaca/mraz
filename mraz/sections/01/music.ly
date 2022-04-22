@@ -1,135 +1,135 @@
-%! abjad.LilyPondFile._get_format_pieces()
-%! baca._make_lilypond_file()
+  %! abjad.LilyPondFile._get_format_pieces()
+  %! baca._make_lilypond_file()
 \version "2.23.6"
 \include "../stylesheet.ily"
 \include "header.ily"
-%! baca.path.extern()
+  %! baca.path.extern()
 \include "music.ily"
 
-%! abjad.LilyPondFile._get_format_pieces()
-%! baca._make_lilypond_file()
+  %! abjad.LilyPondFile._get_format_pieces()
+  %! baca._make_lilypond_file()
 \score
-%! abjad.LilyPondFile._get_format_pieces()
-%! baca._make_lilypond_file()
+  %! abjad.LilyPondFile._get_format_pieces()
+  %! baca._make_lilypond_file()
 {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-    %! baca._make_lilypond_file()
+      %! baca._make_lilypond_file()
     <<
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
         % OPEN_BRACKETS:
-        %! baca._make_lilypond_file()
+          %! baca._make_lilypond_file()
         {
         % OPENING:
             % COMMANDS:
-            %! baca._make_lilypond_file()
+              %! baca._make_lilypond_file()
             \include "layout.ly"
         % CLOSE_BRACKETS:
-        %! baca._make_lilypond_file()
+          %! baca._make_lilypond_file()
         }
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
         % OPEN_BRACKETS:
-        %! mraz.make_empty_score()
+          %! mraz.make_empty_score()
         \context Score = "Score"
-        %! mraz.make_empty_score()
+          %! mraz.make_empty_score()
         <<
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
             % OPEN_BRACKETS:
-            %! baca.make_global_context()
+              %! baca.make_global_context()
             \context GlobalContext = "Global_Context"
-            %! baca.make_global_context()
+              %! baca.make_global_context()
             <<
                 % ABSOLUTE_BEFORE:
                 % COMMANDS:
 
                 % OPEN_BRACKETS:
-                %! baca.make_global_context()
+                  %! baca.make_global_context()
                 \context GlobalRests = "Global_Rests"
-                %! baca.make_global_context()
-                %! baca.path.extern()
+                  %! baca.make_global_context()
+                  %! baca.path.extern()
                 { \segment.01.Global.Rests }
                 % ABSOLUTE_BEFORE:
                 % COMMANDS:
 
                 % OPEN_BRACKETS:
-                %! baca.make_global_context()
+                  %! baca.make_global_context()
                 \context GlobalSkips = "Global_Skips"
-                %! baca.make_global_context()
-                %! baca.path.extern()
+                  %! baca.make_global_context()
+                  %! baca.path.extern()
                 { \segment.01.Global.Skips }
                 % CLOSING:
                 % COMMANDS:
 
             % CLOSE_BRACKETS:
-            %! baca.make_global_context()
+              %! baca.make_global_context()
             >>
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
             % OPEN_BRACKETS:
-            %! mraz.make_empty_score()
+              %! mraz.make_empty_score()
             \context MusicContext = "Music_Context"
-            %! mraz.make_empty_score()
+              %! mraz.make_empty_score()
             {
                 % ABSOLUTE_BEFORE:
                 % COMMANDS:
 
                 % OPEN_BRACKETS:
-                %! mraz.make_empty_score()
+                  %! mraz.make_empty_score()
                 \context PianoMusicStaffGroup = "Piano_Music_Staff_Group"
-                %! mraz.make_empty_score()
+                  %! mraz.make_empty_score()
                 <<
                     % ABSOLUTE_BEFORE:
                     % COMMANDS:
 
                     % OPEN_BRACKETS:
-                    %! mraz.make_empty_score()
+                      %! mraz.make_empty_score()
                     \context PianoMusicRHStaff = "Piano_Music_RH_Staff"
-                    %! mraz.make_empty_score()
-                    %! baca.path.extern()
+                      %! mraz.make_empty_score()
+                      %! baca.path.extern()
                     { \segment.01.Piano.Music.RH.Staff }
                     % ABSOLUTE_BEFORE:
                     % COMMANDS:
 
                     % OPEN_BRACKETS:
-                    %! mraz.make_empty_score()
+                      %! mraz.make_empty_score()
                     \context PianoMusicLHStaff = "Piano_Music_LH_Staff"
-                    %! mraz.make_empty_score()
-                    %! baca.path.extern()
+                      %! mraz.make_empty_score()
+                      %! baca.path.extern()
                     { \segment.01.Piano.Music.LH.Staff }
                     % CLOSING:
                     % COMMANDS:
 
                 % CLOSE_BRACKETS:
-                %! mraz.make_empty_score()
+                  %! mraz.make_empty_score()
                 >>
                 % CLOSING:
                 % COMMANDS:
 
             % CLOSE_BRACKETS:
-            %! mraz.make_empty_score()
+              %! mraz.make_empty_score()
             }
             % CLOSING:
             % COMMANDS:
 
         % CLOSE_BRACKETS:
-        %! mraz.make_empty_score()
+          %! mraz.make_empty_score()
         >>
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-    %! baca._make_lilypond_file()
+      %! baca._make_lilypond_file()
     >>
 
-%! abjad.LilyPondFile._get_format_pieces()
-%! baca._make_lilypond_file()
+  %! abjad.LilyPondFile._get_format_pieces()
+  %! baca._make_lilypond_file()
 }
