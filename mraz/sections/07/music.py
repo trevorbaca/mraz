@@ -477,6 +477,7 @@ if __name__ == "__main__":
         do_not_require_margin_markup=True,
         error_on_not_yet_pitched=True,
         final_segment=True,
+        intercalate_mmrests_by_hand=True,
     )
     lilypond_file = baca.make_lilypond_file(
         score,

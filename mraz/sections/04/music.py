@@ -1149,6 +1149,7 @@ if __name__ == "__main__":
         deactivate=(baca.tags.REPEAT_PITCH_CLASS_COLORING,),
         do_not_require_margin_markup=True,
         error_on_not_yet_pitched=True,
+        intercalate_mmrests_by_hand=True,
     )
     lilypond_file = baca.make_lilypond_file(
         score,
