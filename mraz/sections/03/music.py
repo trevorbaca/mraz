@@ -392,6 +392,7 @@ if __name__ == "__main__":
         always_make_global_rests=True,
         append_phantom_measures_by_hand=True,
         do_not_require_margin_markup=True,
+        do_not_sort_commands=True,
         error_on_not_yet_pitched=True,
         intercalate_mmrests_by_hand=True,
     )
