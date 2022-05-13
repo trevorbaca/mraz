@@ -454,7 +454,7 @@ commands(
 )
 
 commands(
-    (library.lh_v6, -1),
+    (library.rh_v1, -1),
     baca.chunk(
         baca.mark(r"\mraz-colophon-markup"),
         baca.rehearsal_mark_down(),
