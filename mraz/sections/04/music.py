@@ -1165,6 +1165,7 @@ if __name__ == "__main__":
         append_phantom_measures_by_hand=True,
         deactivate=(baca.tags.REPEAT_PITCH_CLASS_COLORING,),
         do_not_require_margin_markup=True,
+        do_not_sort_commands=True,
         error_on_not_yet_pitched=True,
         intercalate_mmrests_by_hand=True,
     )
