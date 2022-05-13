@@ -1485,6 +1485,9 @@ segment.07.RH.Voice.I = {
                   %! baca.OverrideCommand._call(2)
                   %! baca.beam_positions()
                 \revert Beam.positions
+                  %! baca.OverrideCommand._call(2)
+                  %! baca.stem_up()
+                \revert Stem.direction
                 % CLOSING:
                 % COMMANDS:
 
@@ -1506,88 +1509,15 @@ segment.07.RH.Voice.I = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-    % OPEN_BRACKETS:
-      %! baca._make_multimeasure_rest_container(7)
-    <<
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
-
-        % OPEN_BRACKETS:
-          %! baca._make_multimeasure_rest_container(4)
-        \context Voice = "RH_Voice_I"
-          %! baca._make_multimeasure_rest_container(4)
-        {
-            % ABSOLUTE_BEFORE:
-            % COMMANDS:
-
-              %! baca._comment_measure_numbers()
-            % [RH_Voice_I measure 11]
-            % BEFORE:
-            % COMMANDS:
-              %! INVISIBLE_MUSIC_COMMAND
-              %! NOTE
-              %! baca._make_multimeasure_rest_container(3)
-            %@% \abjad-invisible-music
-              %! INVISIBLE_MUSIC_COLORING
-              %! NOTE
-              %! baca._make_multimeasure_rest_container(2)
-            \abjad-invisible-music-coloring
-            % GROB_OVERRIDES:
-            \once \override Accidental.stencil = ##f
-            \once \override NoteColumn.ignore-collision = ##t
-              %! HIDDEN
-              %! NOTE
-              %! baca._make_multimeasure_rest_container(1)
-            b'1 * 1/8
-            % AFTER:
-            % MARKUP:
-              %! DURATION_MULTIPLIER
-              %! HIDDEN
-              %! NOTE
-              %! baca._label_duration_multipliers()
-            %@% ^ \baca-duration-multiplier-markup #"1" #"8"
-            % COMMANDS:
-              %! baca.OverrideCommand._call(2)
-              %! baca.beam_positions()
-            \revert Beam.positions
-              %! baca.OverrideCommand._call(2)
-              %! baca.stem_up()
-            \revert Stem.direction
-            % CLOSING:
-            % COMMANDS:
-
-        % CLOSE_BRACKETS:
-          %! baca._make_multimeasure_rest_container(4)
-        }
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
-
-        % OPEN_BRACKETS:
-          %! baca._make_multimeasure_rest_container(6)
-        \context Voice = "RH_Rest_Voice_I"
-          %! baca._make_multimeasure_rest_container(6)
-        {
-            % ABSOLUTE_BEFORE:
-            % COMMANDS:
-
-              %! baca._comment_measure_numbers()
-            % [RH_Rest_Voice_I measure 11]
-              %! REST_VOICE
-              %! SKIP
-              %! baca._make_multimeasure_rest_container(5)
-            s1 * 1/8
-            % CLOSING:
-            % COMMANDS:
-
-        % CLOSE_BRACKETS:
-          %! baca._make_multimeasure_rest_container(6)
-        }
-        % CLOSING:
-        % COMMANDS:
-
-    % CLOSE_BRACKETS:
-      %! baca._make_multimeasure_rest_container(7)
-    >>
+      %! baca._comment_measure_numbers()
+    % [RH_Voice_I measure 11]
+      %! baca.make_music()
+    s1 * 1/8
+    % AFTER:
+    % COMMANDS:
+      %! baca.OverrideCommand._call(2)
+      %! baca.beam_positions()
+    \revert Beam.positions
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -2410,85 +2340,15 @@ segment.07.RH.Insert.Voice.I = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-    % OPEN_BRACKETS:
-      %! baca._make_multimeasure_rest_container(7)
-    <<
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
-
-        % OPEN_BRACKETS:
-          %! baca._make_multimeasure_rest_container(4)
-        \context Voice = "RH_Insert_Voice_I"
-          %! baca._make_multimeasure_rest_container(4)
-        {
-            % ABSOLUTE_BEFORE:
-            % COMMANDS:
-
-              %! baca._comment_measure_numbers()
-            % [RH_Insert_Voice_I measure 11]
-            % BEFORE:
-            % COMMANDS:
-              %! INVISIBLE_MUSIC_COMMAND
-              %! NOTE
-              %! baca._make_multimeasure_rest_container(3)
-            %@% \abjad-invisible-music
-              %! INVISIBLE_MUSIC_COLORING
-              %! NOTE
-              %! baca._make_multimeasure_rest_container(2)
-            \abjad-invisible-music-coloring
-            % GROB_OVERRIDES:
-            \once \override Accidental.stencil = ##f
-            \once \override NoteColumn.ignore-collision = ##t
-              %! HIDDEN
-              %! NOTE
-              %! baca._make_multimeasure_rest_container(1)
-            b'1 * 1/8
-            % AFTER:
-            % MARKUP:
-              %! DURATION_MULTIPLIER
-              %! HIDDEN
-              %! NOTE
-              %! baca._label_duration_multipliers()
-            %@% ^ \baca-duration-multiplier-markup #"1" #"8"
-            % COMMANDS:
-              %! baca.OverrideCommand._call(2)
-              %! baca.script_down()
-            \revert Script.direction
-            % CLOSING:
-            % COMMANDS:
-
-        % CLOSE_BRACKETS:
-          %! baca._make_multimeasure_rest_container(4)
-        }
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
-
-        % OPEN_BRACKETS:
-          %! baca._make_multimeasure_rest_container(6)
-        \context Voice = "RH_Insert_Rest_Voice_I"
-          %! baca._make_multimeasure_rest_container(6)
-        {
-            % ABSOLUTE_BEFORE:
-            % COMMANDS:
-
-              %! baca._comment_measure_numbers()
-            % [RH_Insert_Rest_Voice_I measure 11]
-              %! REST_VOICE
-              %! SKIP
-              %! baca._make_multimeasure_rest_container(5)
-            s1 * 1/8
-            % CLOSING:
-            % COMMANDS:
-
-        % CLOSE_BRACKETS:
-          %! baca._make_multimeasure_rest_container(6)
-        }
-        % CLOSING:
-        % COMMANDS:
-
-    % CLOSE_BRACKETS:
-      %! baca._make_multimeasure_rest_container(7)
-    >>
+      %! baca._comment_measure_numbers()
+    % [RH_Insert_Voice_I measure 11]
+      %! baca.make_music()
+    s1 * 1/8
+    % AFTER:
+    % COMMANDS:
+      %! baca.OverrideCommand._call(2)
+      %! baca.script_down()
+    \revert Script.direction
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -7608,6 +7468,10 @@ segment.07.LH.Voice.IV = {
             % AFTER:
             % STOP_BEAM:
             ]
+            % COMMANDS:
+              %! baca.OverrideCommand._call(2)
+              %! baca.stem_down()
+            \revert Stem.direction
             % CLOSING:
             % COMMANDS:
 
@@ -7623,88 +7487,8 @@ segment.07.LH.Voice.IV = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-    % OPEN_BRACKETS:
-      %! baca._make_multimeasure_rest_container(7)
-    <<
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
-
-        % OPEN_BRACKETS:
-          %! baca._make_multimeasure_rest_container(4)
-        \context Voice = "LH_Voice_IV"
-          %! baca._make_multimeasure_rest_container(4)
-        {
-            % ABSOLUTE_BEFORE:
-            % COMMANDS:
-
-            % BEFORE:
-            % COMMANDS:
-              %! INVISIBLE_MUSIC_COMMAND
-              %! NOTE
-              %! baca._make_multimeasure_rest_container(3)
-            %@% \abjad-invisible-music
-              %! INVISIBLE_MUSIC_COLORING
-              %! NOTE
-              %! baca._make_multimeasure_rest_container(2)
-            \abjad-invisible-music-coloring
-            % GROB_OVERRIDES:
-            \once \override Accidental.stencil = ##f
-            \once \override NoteColumn.ignore-collision = ##t
-              %! HIDDEN
-              %! NOTE
-              %! baca._make_multimeasure_rest_container(1)
-            b'1 * 5/16
-            % AFTER:
-            % MARKUP:
-              %! DURATION_MULTIPLIER
-              %! HIDDEN
-              %! NOTE
-              %! baca._label_duration_multipliers()
-            %@% ^ \baca-duration-multiplier-markup #"5" #"16"
-            % COMMANDS:
-              %! baca.OverrideCommand._call(2)
-              %! baca.stem_down()
-            \revert Stem.direction
-            % CLOSING:
-            % COMMANDS:
-
-        % CLOSE_BRACKETS:
-          %! baca._make_multimeasure_rest_container(4)
-        }
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
-
-        % OPEN_BRACKETS:
-          %! baca._make_multimeasure_rest_container(6)
-        \context Voice = "LH_Rest_Voice_IV"
-          %! baca._make_multimeasure_rest_container(6)
-        {
-            % ABSOLUTE_BEFORE:
-            % COMMANDS:
-
-              %! REST_VOICE
-              %! SKIP
-              %! baca._make_multimeasure_rest_container(5)
-            s1 * 5/16
-            % CLOSING:
-            % COMMANDS:
-
-        % CLOSE_BRACKETS:
-          %! baca._make_multimeasure_rest_container(6)
-        }
-        % CLOSING:
-        % COMMANDS:
-
-    % CLOSE_BRACKETS:
-      %! baca._make_multimeasure_rest_container(7)
-    >>
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
-
-      %! baca._comment_measure_numbers()
-    % [LH_Voice_IV measure 11]
-      %! baca._make_measure_silences()
-    s1 * 1/8
+      %! baca.make_music()
+    s1 * 7/16
     % AFTER:
     % COMMANDS:
       %! baca.OverrideCommand._call(2)
@@ -8052,6 +7836,11 @@ segment.07.LH.Insert.Voice.IV = {
 
               %! baca.make_music()
             fs''!16
+            % AFTER:
+            % COMMANDS:
+              %! baca.OverrideCommand._call(2)
+              %! baca.stem_up()
+            \revert Stem.direction
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
@@ -8075,88 +7864,8 @@ segment.07.LH.Insert.Voice.IV = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-    % OPEN_BRACKETS:
-      %! baca._make_multimeasure_rest_container(7)
-    <<
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
-
-        % OPEN_BRACKETS:
-          %! baca._make_multimeasure_rest_container(4)
-        \context Voice = "LH_Insert_Voice_IV"
-          %! baca._make_multimeasure_rest_container(4)
-        {
-            % ABSOLUTE_BEFORE:
-            % COMMANDS:
-
-            % BEFORE:
-            % COMMANDS:
-              %! INVISIBLE_MUSIC_COMMAND
-              %! NOTE
-              %! baca._make_multimeasure_rest_container(3)
-            %@% \abjad-invisible-music
-              %! INVISIBLE_MUSIC_COLORING
-              %! NOTE
-              %! baca._make_multimeasure_rest_container(2)
-            \abjad-invisible-music-coloring
-            % GROB_OVERRIDES:
-            \once \override Accidental.stencil = ##f
-            \once \override NoteColumn.ignore-collision = ##t
-              %! HIDDEN
-              %! NOTE
-              %! baca._make_multimeasure_rest_container(1)
-            b'1 * 5/16
-            % AFTER:
-            % MARKUP:
-              %! DURATION_MULTIPLIER
-              %! HIDDEN
-              %! NOTE
-              %! baca._label_duration_multipliers()
-            %@% ^ \baca-duration-multiplier-markup #"5" #"16"
-            % COMMANDS:
-              %! baca.OverrideCommand._call(2)
-              %! baca.stem_up()
-            \revert Stem.direction
-            % CLOSING:
-            % COMMANDS:
-
-        % CLOSE_BRACKETS:
-          %! baca._make_multimeasure_rest_container(4)
-        }
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
-
-        % OPEN_BRACKETS:
-          %! baca._make_multimeasure_rest_container(6)
-        \context Voice = "LH_Insert_Rest_Voice_IV"
-          %! baca._make_multimeasure_rest_container(6)
-        {
-            % ABSOLUTE_BEFORE:
-            % COMMANDS:
-
-              %! REST_VOICE
-              %! SKIP
-              %! baca._make_multimeasure_rest_container(5)
-            s1 * 5/16
-            % CLOSING:
-            % COMMANDS:
-
-        % CLOSE_BRACKETS:
-          %! baca._make_multimeasure_rest_container(6)
-        }
-        % CLOSING:
-        % COMMANDS:
-
-    % CLOSE_BRACKETS:
-      %! baca._make_multimeasure_rest_container(7)
-    >>
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
-
-      %! baca._comment_measure_numbers()
-    % [LH_Insert_Voice_IV measure 11]
-      %! baca._make_measure_silences()
-    s1 * 1/8
+      %! baca.make_music()
+    s1 * 7/16
     % AFTER:
     % COMMANDS:
       %! baca.OverrideCommand._call(2)
@@ -8871,6 +8580,10 @@ segment.07.LH.Voice.V = {
                 )
                 % STOP_BEAM:
                 ]
+                % COMMANDS:
+                  %! baca.OverrideCommand._call(2)
+                  %! baca.stem_down()
+                \revert Stem.direction
                 % CLOSING:
                 % COMMANDS:
 
@@ -8892,102 +8605,8 @@ segment.07.LH.Voice.V = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-    % OPEN_BRACKETS:
-      %! baca._make_multimeasure_rest_container(7)
-    <<
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
-
-        % OPEN_BRACKETS:
-          %! baca._make_multimeasure_rest_container(4)
-        \context Voice = "LH_Voice_V"
-          %! baca._make_multimeasure_rest_container(4)
-        {
-            % ABSOLUTE_BEFORE:
-            % COMMANDS:
-
-            % BEFORE:
-            % COMMANDS:
-              %! INVISIBLE_MUSIC_COMMAND
-              %! NOTE
-              %! baca._make_multimeasure_rest_container(3)
-            %@% \abjad-invisible-music
-              %! INVISIBLE_MUSIC_COLORING
-              %! NOTE
-              %! baca._make_multimeasure_rest_container(2)
-            \abjad-invisible-music-coloring
-            % GROB_OVERRIDES:
-            \once \override Accidental.stencil = ##f
-            \once \override NoteColumn.ignore-collision = ##t
-              %! HIDDEN
-              %! NOTE
-              %! baca._make_multimeasure_rest_container(1)
-            b'1 * 3/17
-            % AFTER:
-            % MARKUP:
-              %! DURATION_MULTIPLIER
-              %! HIDDEN
-              %! NOTE
-              %! baca._label_duration_multipliers()
-            %@% ^ \baca-duration-multiplier-markup #"3" #"17"
-            % COMMANDS:
-              %! baca.OverrideCommand._call(2)
-              %! baca.stem_down()
-            \revert Stem.direction
-            % CLOSING:
-            % COMMANDS:
-
-        % CLOSE_BRACKETS:
-          %! baca._make_multimeasure_rest_container(4)
-        }
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
-
-        % OPEN_BRACKETS:
-          %! baca._make_multimeasure_rest_container(6)
-        \context Voice = "LH_Rest_Voice_V"
-          %! baca._make_multimeasure_rest_container(6)
-        {
-            % ABSOLUTE_BEFORE:
-            % COMMANDS:
-
-              %! REST_VOICE
-              %! SKIP
-              %! baca._make_multimeasure_rest_container(5)
-            s1 * 3/17
-            % CLOSING:
-            % COMMANDS:
-
-        % CLOSE_BRACKETS:
-          %! baca._make_multimeasure_rest_container(6)
-        }
-        % CLOSING:
-        % COMMANDS:
-
-    % CLOSE_BRACKETS:
-      %! baca._make_multimeasure_rest_container(7)
-    >>
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
-
-      %! baca._comment_measure_numbers()
-    % [LH_Voice_V measure 9]
-      %! baca._make_measure_silences()
-    s1 * 3/16
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
-
-      %! baca._comment_measure_numbers()
-    % [LH_Voice_V measure 10]
-      %! baca._make_measure_silences()
-    s1 * 5/8
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
-
-      %! baca._comment_measure_numbers()
-    % [LH_Voice_V measure 11]
-      %! baca._make_measure_silences()
-    s1 * 1/8
+      %! baca.make_music()
+    s1 * 303/272
     % AFTER:
     % COMMANDS:
       %! baca.OverrideCommand._call(2)
@@ -9031,31 +8650,9 @@ segment.07.LH.Voice.V = {
               %! baca._make_multimeasure_rest_container(2)
               %! baca._style_phantom_measures(5)
             \abjad-invisible-music-coloring
-              %! PHANTOM
-              %! baca.OverrideCommand._call(1)
-              %! baca._style_phantom_measures(5)
-              %! baca.rehearsal_mark_down()
-            \once \override Score.RehearsalMark.direction = #down
-              %! PHANTOM
-              %! baca.OverrideCommand._call(1)
-              %! baca._style_phantom_measures(5)
-              %! baca.rehearsal_mark_padding()
-            \once \override Score.RehearsalMark.padding = 6
-              %! PHANTOM
-              %! baca.OverrideCommand._call(1)
-              %! baca._style_phantom_measures(5)
-              %! baca.rehearsal_mark_self_alignment_x()
-            \once \override Score.RehearsalMark.self-alignment-X = #right
             % GROB_OVERRIDES:
             \once \override Accidental.stencil = ##f
             \once \override NoteColumn.ignore-collision = ##t
-            % OPENING:
-            % COMMANDS:
-              %! PHANTOM
-              %! baca.IndicatorCommand._call()
-              %! baca._style_phantom_measures(5)
-              %! baca.mark()
-            \mark \mraz-colophon-markup
               %! HIDDEN
               %! NOTE
               %! PHANTOM
@@ -9536,6 +9133,10 @@ segment.07.LH.Insert.Voice.V = {
                 - \staccato
                 % STOP_BEAM:
                 ]
+                % COMMANDS:
+                  %! baca.OverrideCommand._call(2)
+                  %! baca.stem_up()
+                \revert Stem.direction
                 % CLOSING:
                 % COMMANDS:
 
@@ -9560,102 +9161,8 @@ segment.07.LH.Insert.Voice.V = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-    % OPEN_BRACKETS:
-      %! baca._make_multimeasure_rest_container(7)
-    <<
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
-
-        % OPEN_BRACKETS:
-          %! baca._make_multimeasure_rest_container(4)
-        \context Voice = "LH_Insert_Voice_V"
-          %! baca._make_multimeasure_rest_container(4)
-        {
-            % ABSOLUTE_BEFORE:
-            % COMMANDS:
-
-            % BEFORE:
-            % COMMANDS:
-              %! INVISIBLE_MUSIC_COMMAND
-              %! NOTE
-              %! baca._make_multimeasure_rest_container(3)
-            %@% \abjad-invisible-music
-              %! INVISIBLE_MUSIC_COLORING
-              %! NOTE
-              %! baca._make_multimeasure_rest_container(2)
-            \abjad-invisible-music-coloring
-            % GROB_OVERRIDES:
-            \once \override Accidental.stencil = ##f
-            \once \override NoteColumn.ignore-collision = ##t
-              %! HIDDEN
-              %! NOTE
-              %! baca._make_multimeasure_rest_container(1)
-            b'1 * 3/17
-            % AFTER:
-            % MARKUP:
-              %! DURATION_MULTIPLIER
-              %! HIDDEN
-              %! NOTE
-              %! baca._label_duration_multipliers()
-            %@% ^ \baca-duration-multiplier-markup #"3" #"17"
-            % COMMANDS:
-              %! baca.OverrideCommand._call(2)
-              %! baca.stem_up()
-            \revert Stem.direction
-            % CLOSING:
-            % COMMANDS:
-
-        % CLOSE_BRACKETS:
-          %! baca._make_multimeasure_rest_container(4)
-        }
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
-
-        % OPEN_BRACKETS:
-          %! baca._make_multimeasure_rest_container(6)
-        \context Voice = "LH_Insert_Rest_Voice_V"
-          %! baca._make_multimeasure_rest_container(6)
-        {
-            % ABSOLUTE_BEFORE:
-            % COMMANDS:
-
-              %! REST_VOICE
-              %! SKIP
-              %! baca._make_multimeasure_rest_container(5)
-            s1 * 3/17
-            % CLOSING:
-            % COMMANDS:
-
-        % CLOSE_BRACKETS:
-          %! baca._make_multimeasure_rest_container(6)
-        }
-        % CLOSING:
-        % COMMANDS:
-
-    % CLOSE_BRACKETS:
-      %! baca._make_multimeasure_rest_container(7)
-    >>
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
-
-      %! baca._comment_measure_numbers()
-    % [LH_Insert_Voice_V measure 9]
-      %! baca._make_measure_silences()
-    s1 * 3/16
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
-
-      %! baca._comment_measure_numbers()
-    % [LH_Insert_Voice_V measure 10]
-      %! baca._make_measure_silences()
-    s1 * 5/8
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
-
-      %! baca._comment_measure_numbers()
-    % [LH_Insert_Voice_V measure 11]
-      %! baca._make_measure_silences()
-    s1 * 1/8
+      %! baca.make_music()
+    s1 * 303/272
     % AFTER:
     % COMMANDS:
       %! baca.OverrideCommand._call(2)
@@ -9970,9 +9477,31 @@ segment.07.LH.Voice.VI = {
               %! baca._make_multimeasure_rest_container(2)
               %! baca._style_phantom_measures(5)
             \abjad-invisible-music-coloring
+              %! PHANTOM
+              %! baca.OverrideCommand._call(1)
+              %! baca._style_phantom_measures(5)
+              %! baca.rehearsal_mark_down()
+            \once \override Score.RehearsalMark.direction = #down
+              %! PHANTOM
+              %! baca.OverrideCommand._call(1)
+              %! baca._style_phantom_measures(5)
+              %! baca.rehearsal_mark_padding()
+            \once \override Score.RehearsalMark.padding = 6
+              %! PHANTOM
+              %! baca.OverrideCommand._call(1)
+              %! baca._style_phantom_measures(5)
+              %! baca.rehearsal_mark_self_alignment_x()
+            \once \override Score.RehearsalMark.self-alignment-X = #right
             % GROB_OVERRIDES:
             \once \override Accidental.stencil = ##f
             \once \override NoteColumn.ignore-collision = ##t
+            % OPENING:
+            % COMMANDS:
+              %! PHANTOM
+              %! baca.IndicatorCommand._call()
+              %! baca._style_phantom_measures(5)
+              %! baca.mark()
+            \mark \mraz-colophon-markup
               %! HIDDEN
               %! NOTE
               %! PHANTOM
