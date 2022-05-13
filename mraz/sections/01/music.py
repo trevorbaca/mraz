@@ -209,6 +209,22 @@ commands(
     baca.global_fermata("short", lambda _: abjad.select.leaf(_, 8)),
 )
 
+# phantom
+
+all_voices = [
+    _
+    for _ in voice_names
+    if "RH_Voice" in _
+    or "LH_Voice" in _
+    or "Insert_Voice" in _
+    or "Resonance_Voice" in _
+]
+
+commands(
+    all_voices,
+    baca.append_phantom_measure(),
+)
+
 commands(
     library.rh_v1,
     baca.attach_first_segment_default_indicators(),
@@ -228,6 +244,7 @@ if __name__ == "__main__":
         **baca.score_interpretation_defaults(),
         activate=(baca.tags.LOCAL_MEASURE_NUMBER,),
         always_make_global_rests=True,
+        append_phantom_measures_by_hand=True,
         do_not_require_margin_markup=True,
         error_on_not_yet_pitched=True,
         intercalate_mmrests_by_hand=True,

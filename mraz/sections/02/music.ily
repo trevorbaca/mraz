@@ -849,11 +849,37 @@ segment.02.RH.Voice.I = {
               %! baca._comment_measure_numbers()
               %! baca._style_phantom_measures(5)
             % [RH_Rest_Voice_I measure 13]
+            % OPENING:
+            % COMMANDS:
+              %! PHANTOM
+              %! baca._style_phantom_measures(7)
+            \once \override MultiMeasureRest.transparent = ##t
+              %! PHANTOM
+              %! baca._style_phantom_measures(6)
+            \once \override Score.TimeSignature.X-extent = ##f
+              %! PHANTOM
+              %! baca._style_phantom_measures(8)
+            \stopStaff
+              %! PHANTOM
+              %! baca._style_phantom_measures(8)
+            \once \override Staff.StaffSymbol.transparent = ##t
+              %! PHANTOM
+              %! baca._style_phantom_measures(8)
+            \startStaff
+              %! MULTIMEASURE_REST
               %! PHANTOM
               %! REST_VOICE
-              %! SKIP
               %! baca._make_multimeasure_rest_container(5)
-            s1 * 1/4
+            R1 * 1/4
+            % AFTER:
+            % MARKUP:
+              %! DURATION_MULTIPLIER
+              %! MULTIMEASURE_REST
+              %! PHANTOM
+              %! REST_VOICE
+              %! baca._label_duration_multipliers()
+              %! baca._style_phantom_measures(5)
+            %@% ^ \baca-duration-multiplier-markup #"1" #"4"
             % CLOSING:
             % COMMANDS:
 
@@ -965,11 +991,37 @@ segment.02.RH.Insert.Voice.I = {
               %! baca._comment_measure_numbers()
               %! baca._style_phantom_measures(5)
             % [RH_Insert_Rest_Voice_I measure 13]
+            % OPENING:
+            % COMMANDS:
+              %! PHANTOM
+              %! baca._style_phantom_measures(7)
+            \once \override MultiMeasureRest.transparent = ##t
+              %! PHANTOM
+              %! baca._style_phantom_measures(6)
+            \once \override Score.TimeSignature.X-extent = ##f
+              %! PHANTOM
+              %! baca._style_phantom_measures(8)
+            \stopStaff
+              %! PHANTOM
+              %! baca._style_phantom_measures(8)
+            \once \override Staff.StaffSymbol.transparent = ##t
+              %! PHANTOM
+              %! baca._style_phantom_measures(8)
+            \startStaff
+              %! MULTIMEASURE_REST
               %! PHANTOM
               %! REST_VOICE
-              %! SKIP
               %! baca._make_multimeasure_rest_container(5)
-            s1 * 1/4
+            R1 * 1/4
+            % AFTER:
+            % MARKUP:
+              %! DURATION_MULTIPLIER
+              %! MULTIMEASURE_REST
+              %! PHANTOM
+              %! REST_VOICE
+              %! baca._label_duration_multipliers()
+              %! baca._style_phantom_measures(5)
+            %@% ^ \baca-duration-multiplier-markup #"1" #"4"
             % CLOSING:
             % COMMANDS:
 
@@ -1093,11 +1145,37 @@ segment.02.RH.Voice.II = {
               %! baca._comment_measure_numbers()
               %! baca._style_phantom_measures(5)
             % [RH_Rest_Voice_II measure 13]
+            % OPENING:
+            % COMMANDS:
+              %! PHANTOM
+              %! baca._style_phantom_measures(7)
+            \once \override MultiMeasureRest.transparent = ##t
+              %! PHANTOM
+              %! baca._style_phantom_measures(6)
+            \once \override Score.TimeSignature.X-extent = ##f
+              %! PHANTOM
+              %! baca._style_phantom_measures(8)
+            \stopStaff
+              %! PHANTOM
+              %! baca._style_phantom_measures(8)
+            \once \override Staff.StaffSymbol.transparent = ##t
+              %! PHANTOM
+              %! baca._style_phantom_measures(8)
+            \startStaff
+              %! MULTIMEASURE_REST
               %! PHANTOM
               %! REST_VOICE
-              %! SKIP
               %! baca._make_multimeasure_rest_container(5)
-            s1 * 1/4
+            R1 * 1/4
+            % AFTER:
+            % MARKUP:
+              %! DURATION_MULTIPLIER
+              %! MULTIMEASURE_REST
+              %! PHANTOM
+              %! REST_VOICE
+              %! baca._label_duration_multipliers()
+              %! baca._style_phantom_measures(5)
+            %@% ^ \baca-duration-multiplier-markup #"1" #"4"
             % CLOSING:
             % COMMANDS:
 
@@ -1209,11 +1287,37 @@ segment.02.RH.Insert.Voice.II = {
               %! baca._comment_measure_numbers()
               %! baca._style_phantom_measures(5)
             % [RH_Insert_Rest_Voice_II measure 13]
+            % OPENING:
+            % COMMANDS:
+              %! PHANTOM
+              %! baca._style_phantom_measures(7)
+            \once \override MultiMeasureRest.transparent = ##t
+              %! PHANTOM
+              %! baca._style_phantom_measures(6)
+            \once \override Score.TimeSignature.X-extent = ##f
+              %! PHANTOM
+              %! baca._style_phantom_measures(8)
+            \stopStaff
+              %! PHANTOM
+              %! baca._style_phantom_measures(8)
+            \once \override Staff.StaffSymbol.transparent = ##t
+              %! PHANTOM
+              %! baca._style_phantom_measures(8)
+            \startStaff
+              %! MULTIMEASURE_REST
               %! PHANTOM
               %! REST_VOICE
-              %! SKIP
               %! baca._make_multimeasure_rest_container(5)
-            s1 * 1/4
+            R1 * 1/4
+            % AFTER:
+            % MARKUP:
+              %! DURATION_MULTIPLIER
+              %! MULTIMEASURE_REST
+              %! PHANTOM
+              %! REST_VOICE
+              %! baca._label_duration_multipliers()
+              %! baca._style_phantom_measures(5)
+            %@% ^ \baca-duration-multiplier-markup #"1" #"4"
             % CLOSING:
             % COMMANDS:
 
@@ -1337,11 +1441,37 @@ segment.02.RH.Voice.III = {
               %! baca._comment_measure_numbers()
               %! baca._style_phantom_measures(5)
             % [RH_Rest_Voice_III measure 13]
+            % OPENING:
+            % COMMANDS:
+              %! PHANTOM
+              %! baca._style_phantom_measures(7)
+            \once \override MultiMeasureRest.transparent = ##t
+              %! PHANTOM
+              %! baca._style_phantom_measures(6)
+            \once \override Score.TimeSignature.X-extent = ##f
+              %! PHANTOM
+              %! baca._style_phantom_measures(8)
+            \stopStaff
+              %! PHANTOM
+              %! baca._style_phantom_measures(8)
+            \once \override Staff.StaffSymbol.transparent = ##t
+              %! PHANTOM
+              %! baca._style_phantom_measures(8)
+            \startStaff
+              %! MULTIMEASURE_REST
               %! PHANTOM
               %! REST_VOICE
-              %! SKIP
               %! baca._make_multimeasure_rest_container(5)
-            s1 * 1/4
+            R1 * 1/4
+            % AFTER:
+            % MARKUP:
+              %! DURATION_MULTIPLIER
+              %! MULTIMEASURE_REST
+              %! PHANTOM
+              %! REST_VOICE
+              %! baca._label_duration_multipliers()
+              %! baca._style_phantom_measures(5)
+            %@% ^ \baca-duration-multiplier-markup #"1" #"4"
             % CLOSING:
             % COMMANDS:
 
@@ -1453,11 +1583,37 @@ segment.02.RH.Insert.Voice.III = {
               %! baca._comment_measure_numbers()
               %! baca._style_phantom_measures(5)
             % [RH_Insert_Rest_Voice_III measure 13]
+            % OPENING:
+            % COMMANDS:
+              %! PHANTOM
+              %! baca._style_phantom_measures(7)
+            \once \override MultiMeasureRest.transparent = ##t
+              %! PHANTOM
+              %! baca._style_phantom_measures(6)
+            \once \override Score.TimeSignature.X-extent = ##f
+              %! PHANTOM
+              %! baca._style_phantom_measures(8)
+            \stopStaff
+              %! PHANTOM
+              %! baca._style_phantom_measures(8)
+            \once \override Staff.StaffSymbol.transparent = ##t
+              %! PHANTOM
+              %! baca._style_phantom_measures(8)
+            \startStaff
+              %! MULTIMEASURE_REST
               %! PHANTOM
               %! REST_VOICE
-              %! SKIP
               %! baca._make_multimeasure_rest_container(5)
-            s1 * 1/4
+            R1 * 1/4
+            % AFTER:
+            % MARKUP:
+              %! DURATION_MULTIPLIER
+              %! MULTIMEASURE_REST
+              %! PHANTOM
+              %! REST_VOICE
+              %! baca._label_duration_multipliers()
+              %! baca._style_phantom_measures(5)
+            %@% ^ \baca-duration-multiplier-markup #"1" #"4"
             % CLOSING:
             % COMMANDS:
 
@@ -1569,11 +1725,37 @@ segment.02.RH.Voice.IV = {
               %! baca._comment_measure_numbers()
               %! baca._style_phantom_measures(5)
             % [RH_Rest_Voice_IV measure 13]
+            % OPENING:
+            % COMMANDS:
+              %! PHANTOM
+              %! baca._style_phantom_measures(7)
+            \once \override MultiMeasureRest.transparent = ##t
+              %! PHANTOM
+              %! baca._style_phantom_measures(6)
+            \once \override Score.TimeSignature.X-extent = ##f
+              %! PHANTOM
+              %! baca._style_phantom_measures(8)
+            \stopStaff
+              %! PHANTOM
+              %! baca._style_phantom_measures(8)
+            \once \override Staff.StaffSymbol.transparent = ##t
+              %! PHANTOM
+              %! baca._style_phantom_measures(8)
+            \startStaff
+              %! MULTIMEASURE_REST
               %! PHANTOM
               %! REST_VOICE
-              %! SKIP
               %! baca._make_multimeasure_rest_container(5)
-            s1 * 1/4
+            R1 * 1/4
+            % AFTER:
+            % MARKUP:
+              %! DURATION_MULTIPLIER
+              %! MULTIMEASURE_REST
+              %! PHANTOM
+              %! REST_VOICE
+              %! baca._label_duration_multipliers()
+              %! baca._style_phantom_measures(5)
+            %@% ^ \baca-duration-multiplier-markup #"1" #"4"
             % CLOSING:
             % COMMANDS:
 
@@ -1685,11 +1867,37 @@ segment.02.RH.Insert.Voice.IV = {
               %! baca._comment_measure_numbers()
               %! baca._style_phantom_measures(5)
             % [RH_Insert_Rest_Voice_IV measure 13]
+            % OPENING:
+            % COMMANDS:
+              %! PHANTOM
+              %! baca._style_phantom_measures(7)
+            \once \override MultiMeasureRest.transparent = ##t
+              %! PHANTOM
+              %! baca._style_phantom_measures(6)
+            \once \override Score.TimeSignature.X-extent = ##f
+              %! PHANTOM
+              %! baca._style_phantom_measures(8)
+            \stopStaff
+              %! PHANTOM
+              %! baca._style_phantom_measures(8)
+            \once \override Staff.StaffSymbol.transparent = ##t
+              %! PHANTOM
+              %! baca._style_phantom_measures(8)
+            \startStaff
+              %! MULTIMEASURE_REST
               %! PHANTOM
               %! REST_VOICE
-              %! SKIP
               %! baca._make_multimeasure_rest_container(5)
-            s1 * 1/4
+            R1 * 1/4
+            % AFTER:
+            % MARKUP:
+              %! DURATION_MULTIPLIER
+              %! MULTIMEASURE_REST
+              %! PHANTOM
+              %! REST_VOICE
+              %! baca._label_duration_multipliers()
+              %! baca._style_phantom_measures(5)
+            %@% ^ \baca-duration-multiplier-markup #"1" #"4"
             % CLOSING:
             % COMMANDS:
 
@@ -1801,11 +2009,37 @@ segment.02.RH.Voice.V = {
               %! baca._comment_measure_numbers()
               %! baca._style_phantom_measures(5)
             % [RH_Rest_Voice_V measure 13]
+            % OPENING:
+            % COMMANDS:
+              %! PHANTOM
+              %! baca._style_phantom_measures(7)
+            \once \override MultiMeasureRest.transparent = ##t
+              %! PHANTOM
+              %! baca._style_phantom_measures(6)
+            \once \override Score.TimeSignature.X-extent = ##f
+              %! PHANTOM
+              %! baca._style_phantom_measures(8)
+            \stopStaff
+              %! PHANTOM
+              %! baca._style_phantom_measures(8)
+            \once \override Staff.StaffSymbol.transparent = ##t
+              %! PHANTOM
+              %! baca._style_phantom_measures(8)
+            \startStaff
+              %! MULTIMEASURE_REST
               %! PHANTOM
               %! REST_VOICE
-              %! SKIP
               %! baca._make_multimeasure_rest_container(5)
-            s1 * 1/4
+            R1 * 1/4
+            % AFTER:
+            % MARKUP:
+              %! DURATION_MULTIPLIER
+              %! MULTIMEASURE_REST
+              %! PHANTOM
+              %! REST_VOICE
+              %! baca._label_duration_multipliers()
+              %! baca._style_phantom_measures(5)
+            %@% ^ \baca-duration-multiplier-markup #"1" #"4"
             % CLOSING:
             % COMMANDS:
 
@@ -1917,11 +2151,37 @@ segment.02.RH.Voice.VI = {
               %! baca._comment_measure_numbers()
               %! baca._style_phantom_measures(5)
             % [RH_Rest_Voice_VI measure 13]
+            % OPENING:
+            % COMMANDS:
+              %! PHANTOM
+              %! baca._style_phantom_measures(7)
+            \once \override MultiMeasureRest.transparent = ##t
+              %! PHANTOM
+              %! baca._style_phantom_measures(6)
+            \once \override Score.TimeSignature.X-extent = ##f
+              %! PHANTOM
+              %! baca._style_phantom_measures(8)
+            \stopStaff
+              %! PHANTOM
+              %! baca._style_phantom_measures(8)
+            \once \override Staff.StaffSymbol.transparent = ##t
+              %! PHANTOM
+              %! baca._style_phantom_measures(8)
+            \startStaff
+              %! MULTIMEASURE_REST
               %! PHANTOM
               %! REST_VOICE
-              %! SKIP
               %! baca._make_multimeasure_rest_container(5)
-            s1 * 1/4
+            R1 * 1/4
+            % AFTER:
+            % MARKUP:
+              %! DURATION_MULTIPLIER
+              %! MULTIMEASURE_REST
+              %! PHANTOM
+              %! REST_VOICE
+              %! baca._label_duration_multipliers()
+              %! baca._style_phantom_measures(5)
+            %@% ^ \baca-duration-multiplier-markup #"1" #"4"
             % CLOSING:
             % COMMANDS:
 
@@ -2033,11 +2293,37 @@ segment.02.RH.Resonance.Voice = {
               %! baca._comment_measure_numbers()
               %! baca._style_phantom_measures(5)
             % [RH_Resonance_Rest_Voice measure 13]
+            % OPENING:
+            % COMMANDS:
+              %! PHANTOM
+              %! baca._style_phantom_measures(7)
+            \once \override MultiMeasureRest.transparent = ##t
+              %! PHANTOM
+              %! baca._style_phantom_measures(6)
+            \once \override Score.TimeSignature.X-extent = ##f
+              %! PHANTOM
+              %! baca._style_phantom_measures(8)
+            \stopStaff
+              %! PHANTOM
+              %! baca._style_phantom_measures(8)
+            \once \override Staff.StaffSymbol.transparent = ##t
+              %! PHANTOM
+              %! baca._style_phantom_measures(8)
+            \startStaff
+              %! MULTIMEASURE_REST
               %! PHANTOM
               %! REST_VOICE
-              %! SKIP
               %! baca._make_multimeasure_rest_container(5)
-            s1 * 1/4
+            R1 * 1/4
+            % AFTER:
+            % MARKUP:
+              %! DURATION_MULTIPLIER
+              %! MULTIMEASURE_REST
+              %! PHANTOM
+              %! REST_VOICE
+              %! baca._label_duration_multipliers()
+              %! baca._style_phantom_measures(5)
+            %@% ^ \baca-duration-multiplier-markup #"1" #"4"
             % CLOSING:
             % COMMANDS:
 
@@ -2259,11 +2545,37 @@ segment.02.LH.Voice.I = {
               %! baca._comment_measure_numbers()
               %! baca._style_phantom_measures(5)
             % [LH_Rest_Voice_I measure 13]
+            % OPENING:
+            % COMMANDS:
+              %! PHANTOM
+              %! baca._style_phantom_measures(7)
+            \once \override MultiMeasureRest.transparent = ##t
+              %! PHANTOM
+              %! baca._style_phantom_measures(6)
+            \once \override Score.TimeSignature.X-extent = ##f
+              %! PHANTOM
+              %! baca._style_phantom_measures(8)
+            \stopStaff
+              %! PHANTOM
+              %! baca._style_phantom_measures(8)
+            \once \override Staff.StaffSymbol.transparent = ##t
+              %! PHANTOM
+              %! baca._style_phantom_measures(8)
+            \startStaff
+              %! MULTIMEASURE_REST
               %! PHANTOM
               %! REST_VOICE
-              %! SKIP
               %! baca._make_multimeasure_rest_container(5)
-            s1 * 1/4
+            R1 * 1/4
+            % AFTER:
+            % MARKUP:
+              %! DURATION_MULTIPLIER
+              %! MULTIMEASURE_REST
+              %! PHANTOM
+              %! REST_VOICE
+              %! baca._label_duration_multipliers()
+              %! baca._style_phantom_measures(5)
+            %@% ^ \baca-duration-multiplier-markup #"1" #"4"
             % CLOSING:
             % COMMANDS:
 
@@ -2375,11 +2687,37 @@ segment.02.LH.Voice.II = {
               %! baca._comment_measure_numbers()
               %! baca._style_phantom_measures(5)
             % [LH_Rest_Voice_II measure 13]
+            % OPENING:
+            % COMMANDS:
+              %! PHANTOM
+              %! baca._style_phantom_measures(7)
+            \once \override MultiMeasureRest.transparent = ##t
+              %! PHANTOM
+              %! baca._style_phantom_measures(6)
+            \once \override Score.TimeSignature.X-extent = ##f
+              %! PHANTOM
+              %! baca._style_phantom_measures(8)
+            \stopStaff
+              %! PHANTOM
+              %! baca._style_phantom_measures(8)
+            \once \override Staff.StaffSymbol.transparent = ##t
+              %! PHANTOM
+              %! baca._style_phantom_measures(8)
+            \startStaff
+              %! MULTIMEASURE_REST
               %! PHANTOM
               %! REST_VOICE
-              %! SKIP
               %! baca._make_multimeasure_rest_container(5)
-            s1 * 1/4
+            R1 * 1/4
+            % AFTER:
+            % MARKUP:
+              %! DURATION_MULTIPLIER
+              %! MULTIMEASURE_REST
+              %! PHANTOM
+              %! REST_VOICE
+              %! baca._label_duration_multipliers()
+              %! baca._style_phantom_measures(5)
+            %@% ^ \baca-duration-multiplier-markup #"1" #"4"
             % CLOSING:
             % COMMANDS:
 
@@ -2491,11 +2829,37 @@ segment.02.LH.Voice.III = {
               %! baca._comment_measure_numbers()
               %! baca._style_phantom_measures(5)
             % [LH_Rest_Voice_III measure 13]
+            % OPENING:
+            % COMMANDS:
+              %! PHANTOM
+              %! baca._style_phantom_measures(7)
+            \once \override MultiMeasureRest.transparent = ##t
+              %! PHANTOM
+              %! baca._style_phantom_measures(6)
+            \once \override Score.TimeSignature.X-extent = ##f
+              %! PHANTOM
+              %! baca._style_phantom_measures(8)
+            \stopStaff
+              %! PHANTOM
+              %! baca._style_phantom_measures(8)
+            \once \override Staff.StaffSymbol.transparent = ##t
+              %! PHANTOM
+              %! baca._style_phantom_measures(8)
+            \startStaff
+              %! MULTIMEASURE_REST
               %! PHANTOM
               %! REST_VOICE
-              %! SKIP
               %! baca._make_multimeasure_rest_container(5)
-            s1 * 1/4
+            R1 * 1/4
+            % AFTER:
+            % MARKUP:
+              %! DURATION_MULTIPLIER
+              %! MULTIMEASURE_REST
+              %! PHANTOM
+              %! REST_VOICE
+              %! baca._label_duration_multipliers()
+              %! baca._style_phantom_measures(5)
+            %@% ^ \baca-duration-multiplier-markup #"1" #"4"
             % CLOSING:
             % COMMANDS:
 
@@ -2619,11 +2983,37 @@ segment.02.LH.Voice.IV = {
               %! baca._comment_measure_numbers()
               %! baca._style_phantom_measures(5)
             % [LH_Rest_Voice_IV measure 13]
+            % OPENING:
+            % COMMANDS:
+              %! PHANTOM
+              %! baca._style_phantom_measures(7)
+            \once \override MultiMeasureRest.transparent = ##t
+              %! PHANTOM
+              %! baca._style_phantom_measures(6)
+            \once \override Score.TimeSignature.X-extent = ##f
+              %! PHANTOM
+              %! baca._style_phantom_measures(8)
+            \stopStaff
+              %! PHANTOM
+              %! baca._style_phantom_measures(8)
+            \once \override Staff.StaffSymbol.transparent = ##t
+              %! PHANTOM
+              %! baca._style_phantom_measures(8)
+            \startStaff
+              %! MULTIMEASURE_REST
               %! PHANTOM
               %! REST_VOICE
-              %! SKIP
               %! baca._make_multimeasure_rest_container(5)
-            s1 * 1/4
+            R1 * 1/4
+            % AFTER:
+            % MARKUP:
+              %! DURATION_MULTIPLIER
+              %! MULTIMEASURE_REST
+              %! PHANTOM
+              %! REST_VOICE
+              %! baca._label_duration_multipliers()
+              %! baca._style_phantom_measures(5)
+            %@% ^ \baca-duration-multiplier-markup #"1" #"4"
             % CLOSING:
             % COMMANDS:
 
@@ -2735,11 +3125,37 @@ segment.02.LH.Insert.Voice.IV = {
               %! baca._comment_measure_numbers()
               %! baca._style_phantom_measures(5)
             % [LH_Insert_Rest_Voice_IV measure 13]
+            % OPENING:
+            % COMMANDS:
+              %! PHANTOM
+              %! baca._style_phantom_measures(7)
+            \once \override MultiMeasureRest.transparent = ##t
+              %! PHANTOM
+              %! baca._style_phantom_measures(6)
+            \once \override Score.TimeSignature.X-extent = ##f
+              %! PHANTOM
+              %! baca._style_phantom_measures(8)
+            \stopStaff
+              %! PHANTOM
+              %! baca._style_phantom_measures(8)
+            \once \override Staff.StaffSymbol.transparent = ##t
+              %! PHANTOM
+              %! baca._style_phantom_measures(8)
+            \startStaff
+              %! MULTIMEASURE_REST
               %! PHANTOM
               %! REST_VOICE
-              %! SKIP
               %! baca._make_multimeasure_rest_container(5)
-            s1 * 1/4
+            R1 * 1/4
+            % AFTER:
+            % MARKUP:
+              %! DURATION_MULTIPLIER
+              %! MULTIMEASURE_REST
+              %! PHANTOM
+              %! REST_VOICE
+              %! baca._label_duration_multipliers()
+              %! baca._style_phantom_measures(5)
+            %@% ^ \baca-duration-multiplier-markup #"1" #"4"
             % CLOSING:
             % COMMANDS:
 
@@ -3790,11 +4206,37 @@ segment.02.LH.Voice.V = {
               %! baca._comment_measure_numbers()
               %! baca._style_phantom_measures(5)
             % [LH_Rest_Voice_V measure 13]
+            % OPENING:
+            % COMMANDS:
+              %! PHANTOM
+              %! baca._style_phantom_measures(7)
+            \once \override MultiMeasureRest.transparent = ##t
+              %! PHANTOM
+              %! baca._style_phantom_measures(6)
+            \once \override Score.TimeSignature.X-extent = ##f
+              %! PHANTOM
+              %! baca._style_phantom_measures(8)
+            \stopStaff
+              %! PHANTOM
+              %! baca._style_phantom_measures(8)
+            \once \override Staff.StaffSymbol.transparent = ##t
+              %! PHANTOM
+              %! baca._style_phantom_measures(8)
+            \startStaff
+              %! MULTIMEASURE_REST
               %! PHANTOM
               %! REST_VOICE
-              %! SKIP
               %! baca._make_multimeasure_rest_container(5)
-            s1 * 1/4
+            R1 * 1/4
+            % AFTER:
+            % MARKUP:
+              %! DURATION_MULTIPLIER
+              %! MULTIMEASURE_REST
+              %! PHANTOM
+              %! REST_VOICE
+              %! baca._label_duration_multipliers()
+              %! baca._style_phantom_measures(5)
+            %@% ^ \baca-duration-multiplier-markup #"1" #"4"
             % CLOSING:
             % COMMANDS:
 
@@ -3906,11 +4348,37 @@ segment.02.LH.Insert.Voice.V = {
               %! baca._comment_measure_numbers()
               %! baca._style_phantom_measures(5)
             % [LH_Insert_Rest_Voice_V measure 13]
+            % OPENING:
+            % COMMANDS:
+              %! PHANTOM
+              %! baca._style_phantom_measures(7)
+            \once \override MultiMeasureRest.transparent = ##t
+              %! PHANTOM
+              %! baca._style_phantom_measures(6)
+            \once \override Score.TimeSignature.X-extent = ##f
+              %! PHANTOM
+              %! baca._style_phantom_measures(8)
+            \stopStaff
+              %! PHANTOM
+              %! baca._style_phantom_measures(8)
+            \once \override Staff.StaffSymbol.transparent = ##t
+              %! PHANTOM
+              %! baca._style_phantom_measures(8)
+            \startStaff
+              %! MULTIMEASURE_REST
               %! PHANTOM
               %! REST_VOICE
-              %! SKIP
               %! baca._make_multimeasure_rest_container(5)
-            s1 * 1/4
+            R1 * 1/4
+            % AFTER:
+            % MARKUP:
+              %! DURATION_MULTIPLIER
+              %! MULTIMEASURE_REST
+              %! PHANTOM
+              %! REST_VOICE
+              %! baca._label_duration_multipliers()
+              %! baca._style_phantom_measures(5)
+            %@% ^ \baca-duration-multiplier-markup #"1" #"4"
             % CLOSING:
             % COMMANDS:
 
@@ -4600,11 +5068,37 @@ segment.02.LH.Voice.VI = {
               %! baca._comment_measure_numbers()
               %! baca._style_phantom_measures(5)
             % [LH_Rest_Voice_VI measure 13]
+            % OPENING:
+            % COMMANDS:
+              %! PHANTOM
+              %! baca._style_phantom_measures(7)
+            \once \override MultiMeasureRest.transparent = ##t
+              %! PHANTOM
+              %! baca._style_phantom_measures(6)
+            \once \override Score.TimeSignature.X-extent = ##f
+              %! PHANTOM
+              %! baca._style_phantom_measures(8)
+            \stopStaff
+              %! PHANTOM
+              %! baca._style_phantom_measures(8)
+            \once \override Staff.StaffSymbol.transparent = ##t
+              %! PHANTOM
+              %! baca._style_phantom_measures(8)
+            \startStaff
+              %! MULTIMEASURE_REST
               %! PHANTOM
               %! REST_VOICE
-              %! SKIP
               %! baca._make_multimeasure_rest_container(5)
-            s1 * 1/4
+            R1 * 1/4
+            % AFTER:
+            % MARKUP:
+              %! DURATION_MULTIPLIER
+              %! MULTIMEASURE_REST
+              %! PHANTOM
+              %! REST_VOICE
+              %! baca._label_duration_multipliers()
+              %! baca._style_phantom_measures(5)
+            %@% ^ \baca-duration-multiplier-markup #"1" #"4"
             % CLOSING:
             % COMMANDS:
 
@@ -4716,11 +5210,37 @@ segment.02.LH.Insert.Voice.VI = {
               %! baca._comment_measure_numbers()
               %! baca._style_phantom_measures(5)
             % [LH_Insert_Rest_Voice_VI measure 13]
+            % OPENING:
+            % COMMANDS:
+              %! PHANTOM
+              %! baca._style_phantom_measures(7)
+            \once \override MultiMeasureRest.transparent = ##t
+              %! PHANTOM
+              %! baca._style_phantom_measures(6)
+            \once \override Score.TimeSignature.X-extent = ##f
+              %! PHANTOM
+              %! baca._style_phantom_measures(8)
+            \stopStaff
+              %! PHANTOM
+              %! baca._style_phantom_measures(8)
+            \once \override Staff.StaffSymbol.transparent = ##t
+              %! PHANTOM
+              %! baca._style_phantom_measures(8)
+            \startStaff
+              %! MULTIMEASURE_REST
               %! PHANTOM
               %! REST_VOICE
-              %! SKIP
               %! baca._make_multimeasure_rest_container(5)
-            s1 * 1/4
+            R1 * 1/4
+            % AFTER:
+            % MARKUP:
+              %! DURATION_MULTIPLIER
+              %! MULTIMEASURE_REST
+              %! PHANTOM
+              %! REST_VOICE
+              %! baca._label_duration_multipliers()
+              %! baca._style_phantom_measures(5)
+            %@% ^ \baca-duration-multiplier-markup #"1" #"4"
             % CLOSING:
             % COMMANDS:
 
@@ -4832,11 +5352,37 @@ segment.02.LH.Resonance.Voice = {
               %! baca._comment_measure_numbers()
               %! baca._style_phantom_measures(5)
             % [LH_Resonance_Rest_Voice measure 13]
+            % OPENING:
+            % COMMANDS:
+              %! PHANTOM
+              %! baca._style_phantom_measures(7)
+            \once \override MultiMeasureRest.transparent = ##t
+              %! PHANTOM
+              %! baca._style_phantom_measures(6)
+            \once \override Score.TimeSignature.X-extent = ##f
+              %! PHANTOM
+              %! baca._style_phantom_measures(8)
+            \stopStaff
+              %! PHANTOM
+              %! baca._style_phantom_measures(8)
+            \once \override Staff.StaffSymbol.transparent = ##t
+              %! PHANTOM
+              %! baca._style_phantom_measures(8)
+            \startStaff
+              %! MULTIMEASURE_REST
               %! PHANTOM
               %! REST_VOICE
-              %! SKIP
               %! baca._make_multimeasure_rest_container(5)
-            s1 * 1/4
+            R1 * 1/4
+            % AFTER:
+            % MARKUP:
+              %! DURATION_MULTIPLIER
+              %! MULTIMEASURE_REST
+              %! PHANTOM
+              %! REST_VOICE
+              %! baca._label_duration_multipliers()
+              %! baca._style_phantom_measures(5)
+            %@% ^ \baca-duration-multiplier-markup #"1" #"4"
             % CLOSING:
             % COMMANDS:
 
