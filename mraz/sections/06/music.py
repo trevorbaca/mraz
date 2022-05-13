@@ -569,17 +569,14 @@ defaults = baca.score_interpretation_defaults()
 del defaults["check_wellformedness"]
 
 if __name__ == "__main__":
-    metadata, persist, score, timing = baca.build.interpret_segment(
+    metadata, persist, score, timing = baca.build.interpret_section(
         score,
         commands,
         **defaults,
         activate=(baca.tags.LOCAL_MEASURE_NUMBER,),
         always_make_global_rests=True,
-        append_phantom_measures_by_hand=True,
         do_not_require_margin_markup=True,
-        do_not_sort_commands=True,
         error_on_not_yet_pitched=True,
-        intercalate_mmrests_by_hand=True,
     )
     lilypond_file = baca.make_lilypond_file(
         score,
