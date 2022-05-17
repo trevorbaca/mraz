@@ -349,9 +349,17 @@ commands = baca.CommandAccumulator(
 
 figures.populate_commands(commands)
 
-# phantom
+commands(
+    "Global_Skips",
+    baca.metronome_mark("84", lambda _: abjad.select.leaf(_, 0)),
+    baca.metronome_mark(baca.Accelerando(), lambda _: abjad.select.leaf(_, 0)),
+    baca.metronome_mark("112", lambda _: abjad.select.leaf(_, 8)),
+    baca.bar_line("|.", lambda _: baca.select.skip(_, -1)),
+)
 
-all_voices = [
+# phantom & reapply
+
+music_voice_names = [
     _
     for _ in voice_names
     if "RH_Voice" in _
@@ -361,22 +369,12 @@ all_voices = [
 ]
 
 commands(
-    all_voices,
+    music_voice_names,
     baca.append_phantom_measure(),
-)
-
-commands(
-    library.all_voices,
     baca.reapply_persistent_indicators(),
 )
 
-commands(
-    "Global_Skips",
-    baca.metronome_mark("84", lambda _: abjad.select.leaf(_, 0)),
-    baca.metronome_mark(baca.Accelerando(), lambda _: abjad.select.leaf(_, 0)),
-    baca.metronome_mark("112", lambda _: abjad.select.leaf(_, 8)),
-    baca.bar_line("|.", lambda _: baca.select.skip(_, -1)),
-)
+# rh_v1
 
 commands(
     library.rh_v1,

@@ -132,9 +132,9 @@ commands = baca.CommandAccumulator(
 
 figures.populate_commands(commands)
 
-# phantom
+# phantom & reapply
 
-all_voices = [
+music_voice_names = [
     _
     for _ in voice_names
     if "RH_Voice" in _
@@ -144,14 +144,12 @@ all_voices = [
 ]
 
 commands(
-    all_voices,
+    music_voice_names,
     baca.append_phantom_measure(),
-)
-
-commands(
-    library.all_voices,
     baca.reapply_persistent_indicators(),
 )
+
+# lh_v4
 
 commands(
     library.lh_v4,
