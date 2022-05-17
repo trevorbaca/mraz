@@ -468,27 +468,6 @@ commands = baca.CommandAccumulator(
 
 figures.populate_commands(commands)
 
-# phantom
-
-all_voices = [
-    _
-    for _ in voice_names
-    if "RH_Voice" in _
-    or "LH_Voice" in _
-    or "Insert_Voice" in _
-    or "Resonance_Voice" in _
-]
-
-commands(
-    all_voices,
-    baca.append_phantom_measure(),
-)
-
-commands(
-    library.all_voices,
-    baca.reapply_persistent_indicators(),
-)
-
 commands(
     "Global_Skips",
     baca.metronome_mark("84", lambda _: abjad.select.leaf(_, 0)),
@@ -517,6 +496,25 @@ commands(
     baca.global_fermata("short", lambda _: abjad.select.leaf(_, 8)),
     baca.global_fermata("fermata", lambda _: abjad.select.leaf(_, -1)),
 )
+
+# phantom & reapply
+
+music_voice_names = [
+    _
+    for _ in voice_names
+    if "RH_Voice" in _
+    or "LH_Voice" in _
+    or "Insert_Voice" in _
+    or "Resonance_Voice" in _
+]
+
+commands(
+    music_voice_names,
+    baca.append_phantom_measure(),
+    baca.reapply_persistent_indicators(),
+)
+
+# rh_v2
 
 commands(
     (library.rh_v2, (2, 8)),

@@ -209,9 +209,9 @@ commands(
     baca.global_fermata("short", lambda _: abjad.select.leaf(_, 8)),
 )
 
-# phantom
+# phantom & reapply
 
-all_voices = [
+music_voice_names = [
     _
     for _ in voice_names
     if "RH_Voice" in _
@@ -221,19 +221,20 @@ all_voices = [
 ]
 
 commands(
-    all_voices,
+    music_voice_names,
     baca.append_phantom_measure(),
+    baca.attach_first_segment_default_indicators(),
 )
+
+# rh_v1
 
 commands(
     library.rh_v1,
-    baca.attach_first_segment_default_indicators(),
     baca.start_markup("PIANO", context="PianoStaff", hcenter_in=12),
 )
 
 commands(
     library.lh_v1,
-    baca.attach_first_segment_default_indicators(),
     baca.clef("treble"),
 )
 
