@@ -84,7 +84,7 @@
 
                 % OPEN_BRACKETS:
                   %! mraz.make_empty_score()
-                \context PianoMusicStaffGroup = "Piano_Music_Staff_Group"
+                \context PianoMusicStaffGroup = "Piano_Music.Staff_Group"
                   %! mraz.make_empty_score()
                 <<
                     % ABSOLUTE_BEFORE:
@@ -92,7 +92,7 @@
 
                     % OPEN_BRACKETS:
                       %! mraz.make_empty_score()
-                    \context PianoMusicRHStaff = "Piano_Music_RH_Staff"
+                    \context PianoMusicRHStaff = "Piano_Music_RH.Staff"
                       %! mraz.make_empty_score()
                       %! baca.path.extern()
                     { \segment.01.Piano.Music.RH.Staff }
@@ -101,7 +101,7 @@
 
                     % OPEN_BRACKETS:
                       %! mraz.make_empty_score()
-                    \context PianoMusicLHStaff = "Piano_Music_LH_Staff"
+                    \context PianoMusicLHStaff = "Piano_Music_LH.Staff"
                       %! mraz.make_empty_score()
                       %! baca.path.extern()
                     { \segment.01.Piano.Music.LH.Staff }
