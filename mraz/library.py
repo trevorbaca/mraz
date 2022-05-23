@@ -1102,26 +1102,26 @@ def transparent_music(selector):
 
 
 voice_colors = {
-    "RH_Voice_I": "red",
-    "RH_Insert_Voice_I": "red",
-    "RH_Voice_II": "black",
-    "RH_Insert_Voice_II": "black",
-    "RH_Voice_III": "darkgreen",
-    "RH_Insert_Voice_III": "darkgreen",
-    "RH_Voice_IV": "blue",
-    "RH_Voice_V": "darkmagenta",
-    "RH_Voice_VI": "darkcyan",
-    "RH_Resonance_Voice": "darkred",
-    "LH_Voice_I": "red",
-    "LH_Voice_II": "black",
-    "LH_Voice_III": "darkgreen",
-    "LH_Voice_IV": "blue",
-    "LH_Insert_Voice_IV": "blue",
-    "LH_Voice_V": "darkmagenta",
-    "LH_Insert_Voice_V": "darkmagenta",
-    "LH_Voice_VI": "darkcyan",
-    "LH_Insert_Voice_VI": "darkcyan",
-    "LH_Resonance_Voice": "darkred",
+    "RH.Voice.1": "red",
+    "RH.Insert_Voice.1": "red",
+    "RH.Voice.2": "black",
+    "RH.Insert_Voice.2": "black",
+    "RH.Voice.3": "darkgreen",
+    "RH.Insert_Voice.3": "darkgreen",
+    "RH.Voice.4": "blue",
+    "RH.Voice.5": "darkmagenta",
+    "RH.Voice.6": "darkcyan",
+    "RH.Resonance_Voice": "darkred",
+    "LH.Voice.1": "red",
+    "LH.Voice.2": "black",
+    "LH.Voice.3": "darkgreen",
+    "LH.Voice.4": "blue",
+    "LH.Insert_Voice.4": "blue",
+    "LH.Voice.5": "darkmagenta",
+    "LH.Insert_Voice.5": "darkmagenta",
+    "LH.Voice.6": "darkcyan",
+    "LH.Insert_Voice.6": "darkcyan",
+    "LH.Resonance_Voice": "darkred",
 }
 
 
@@ -1178,89 +1178,89 @@ all_voices = [
 
 
 voice_abbreviations = {
-    rh_v1: "RH_Voice_I",
-    rh_v1_i: "RH_Insert_Voice_I",
-    rh_v2: "RH_Voice_II",
-    rh_v2_i: "RH_Insert_Voice_II",
-    rh_v3: "RH_Voice_III",
-    rh_v3_i: "RH_Insert_Voice_III",
-    rh_v4: "RH_Voice_IV",
-    rh_v4_i: "RH_Insert_Voice_IV",
-    rh_v5: "RH_Voice_V",
-    rh_v5_i: "RH_Insert_Voice_V",
-    rh_v6: "RH_Voice_VI",
-    rh_v6_i: "RH_Insert_Voice_VI",
-    rh_resonance: "RH_Resonance_Voice",
-    lh_v1: "LH_Voice_I",
-    lh_v1_i: "LH_Insert_Voice_I",
-    lh_v2: "LH_Voice_II",
-    lh_v2_i: "LH_Insert_Voice_II",
-    lh_v3: "LH_Voice_III",
-    lh_v3_i: "LH_Insert_Voice_III",
-    lh_v4: "LH_Voice_IV",
-    lh_v4_i: "LH_Insert_Voice_IV",
-    lh_v5: "LH_Voice_V",
-    lh_v5_i: "LH_Insert_Voice_V",
-    lh_v6: "LH_Voice_VI",
-    lh_v6_i: "LH_Insert_Voice_VI",
-    lh_resonance: "LH_Resonance_Voice",
+    rh_v1: "RH.Voice.1",
+    rh_v1_i: "RH.Insert_Voice.1",
+    rh_v2: "RH.Voice.2",
+    rh_v2_i: "RH.Insert_Voice.2",
+    rh_v3: "RH.Voice.3",
+    rh_v3_i: "RH.Insert_Voice.3",
+    rh_v4: "RH.Voice.4",
+    rh_v4_i: "RH.Insert_Voice.4",
+    rh_v5: "RH.Voice.5",
+    rh_v5_i: "RH.Insert_Voice.5",
+    rh_v6: "RH.Voice.6",
+    rh_v6_i: "RH.Insert_Voice.6",
+    rh_resonance: "RH.Resonance_Voice",
+    lh_v1: "LH.Voice.1",
+    lh_v1_i: "LH.Insert_Voice.1",
+    lh_v2: "LH.Voice.2",
+    lh_v2_i: "LH.Insert_Voice.2",
+    lh_v3: "LH.Voice.3",
+    lh_v3_i: "LH.Insert_Voice.3",
+    lh_v4: "LH.Voice.4",
+    lh_v4_i: "LH.Insert_Voice.4",
+    lh_v5: "LH.Voice.5",
+    lh_v5_i: "LH.Insert_Voice.5",
+    lh_v6: "LH.Voice.6",
+    lh_v6_i: "LH.Insert_Voice.6",
+    lh_resonance: "LH.Resonance_Voice",
 }
 
 
 def make_empty_score():
     tag = baca.tags.function_name(inspect.currentframe())
     global_context = baca.score.make_global_context()
-    rh_voice_1 = abjad.Voice(lilypond_type="RHVoiceI", name="RH_Voice_I", tag=tag)
+    rh_voice_1 = abjad.Voice(lilypond_type="RHVoiceI", name="RH.Voice.1", tag=tag)
     rh_voice_1I = abjad.Voice(
-        lilypond_type="RHInsertVoiceI", name="RH_Insert_Voice_I", tag=tag
+        lilypond_type="RHInsertVoiceI", name="RH.Insert_Voice.1", tag=tag
     )
-    rh_voice_2 = abjad.Voice(lilypond_type="RHVoiceII", name="RH_Voice_II", tag=tag)
+    rh_voice_2 = abjad.Voice(lilypond_type="RHVoiceII", name="RH.Voice.2", tag=tag)
     rh_voice_2I = abjad.Voice(
         lilypond_type="RHInsertVoiceII",
-        name="RH_Insert_Voice_II",
+        name="RH.Insert_Voice.2",
         tag=tag,
     )
-    rh_voice_3 = abjad.Voice(lilypond_type="RHVoiceIII", name="RH_Voice_III", tag=tag)
+    rh_voice_3 = abjad.Voice(lilypond_type="RHVoiceIII", name="RH.Voice.3", tag=tag)
     rh_voice_3I = abjad.Voice(
         lilypond_type="RHInsertVoiceIII",
-        name="RH_Insert_Voice_III",
+        name="RH.Insert_Voice.3",
         tag=tag,
     )
-    rh_voice_4 = abjad.Voice(lilypond_type="RHVoiceIV", name="RH_Voice_IV", tag=tag)
+    rh_voice_4 = abjad.Voice(lilypond_type="RHVoiceIV", name="RH.Voice.4", tag=tag)
     rh_voice_4I = abjad.Voice(
         lilypond_type="RHInsertVoiceIV",
-        name="RH_Insert_Voice_IV",
+        name="RH.Insert_Voice.4",
         tag=tag,
     )
-    rh_voice_5 = abjad.Voice(lilypond_type="RHVoiceV", name="RH_Voice_V", tag=tag)
-    rh_voice_6 = abjad.Voice(lilypond_type="RHVoiceVI", name="RH_Voice_VI", tag=tag)
+    rh_voice_5 = abjad.Voice(lilypond_type="RHVoiceV", name="RH.Voice.5", tag=tag)
+    rh_voice_6 = abjad.Voice(lilypond_type="RHVoiceVI", name="RH.Voice.6", tag=tag)
     rh_resonance_voice = abjad.Voice(
         lilypond_type="RHResonanceVoice",
-        name="RH_Resonance_Voice",
+        name="RH.Resonance_Voice",
         tag=tag,
     )
-    lh_voice_1 = abjad.Voice(lilypond_type="LHVoiceI", name="LH_Voice_I", tag=tag)
-    lh_voice_2 = abjad.Voice(lilypond_type="LHVoiceII", name="LH_Voice_II", tag=tag)
-    lh_voice_3 = abjad.Voice(lilypond_type="LHVoiceIII", name="LH_Voice_III", tag=tag)
-    lh_voice_4 = abjad.Voice(lilypond_type="LHVoiceIV", name="LH_Voice_IV", tag=tag)
+    lh_voice_1 = abjad.Voice(lilypond_type="LHVoiceI", name="LH.Voice.1", tag=tag)
+    lh_voice_2 = abjad.Voice(lilypond_type="LHVoiceII", name="LH.Voice.2", tag=tag)
+    lh_voice_3 = abjad.Voice(lilypond_type="LHVoiceIII", name="LH.Voice.3", tag=tag)
+    lh_voice_4 = abjad.Voice(lilypond_type="LHVoiceIV", name="LH.Voice.4", tag=tag)
     lh_voice_4I = abjad.Voice(
         lilypond_type="LHInsertVoiceIV",
-        name="LH_Insert_Voice_IV",
+        name="LH.Insert_Voice.4",
         tag=tag,
     )
-    lh_voice_5 = abjad.Voice(lilypond_type="LHVoiceV", name="LH_Voice_V", tag=tag)
+    lh_voice_5 = abjad.Voice(lilypond_type="LHVoiceV", name="LH.Voice.5", tag=tag)
     lh_voice_5I = abjad.Voice(
-        lilypond_type="LHInsertVoiceV", name="LH_Insert_Voice_V", tag=tag
+        lilypond_type="LHInsertVoiceV", name="LH.Insert_Voice.5", tag=tag
     )
-    lh_voice_6 = abjad.Voice(lilypond_type="LHVoiceVI", name="LH_Voice_VI", tag=tag)
+    lh_voice_6 = abjad.Voice(lilypond_type="LHVoiceVI", name="LH.Voice.6", tag=tag)
     lh_voice_6I = abjad.Voice(
         lilypond_type="LHInsertVoiceVI",
-        name="LH_Insert_Voice_VI",
+        name="LH.Insert_Voice.6",
         tag=tag,
     )
     lh_resonance_voice = abjad.Voice(
         lilypond_type="LHResonanceVoice",
-        name="LH_Resonance_Voice",
+        name="LH.Resonance_Voice",
         tag=tag,
     )
     piano_music_rh_staff = abjad.Staff(
@@ -1279,7 +1279,7 @@ def make_empty_score():
         ],
         lilypond_type="PianoMusicRHStaff",
         simultaneous=True,
-        name="Piano_Music_RH_Staff",
+        name="Piano_Music_RH.Staff",
         tag=tag,
     )
     abjad.annotate(piano_music_rh_staff, "default_clef", abjad.Clef("treble"))
@@ -1298,14 +1298,14 @@ def make_empty_score():
         ],
         lilypond_type="PianoMusicLHStaff",
         simultaneous=True,
-        name="Piano_Music_LH_Staff",
+        name="Piano_Music_LH.Staff",
         tag=tag,
     )
     abjad.annotate(piano_music_lh_staff, "default_clef", abjad.Clef("bass"))
     piano_music_staff_group = abjad.StaffGroup(
         [piano_music_rh_staff, piano_music_lh_staff],
         lilypond_type="PianoMusicStaffGroup",
-        name="Piano_Music_Staff_Group",
+        name="Piano_Music.Staff_Group",
         tag=tag,
     )
     piano = instruments["Piano"]
@@ -1319,6 +1319,6 @@ def make_empty_score():
     score = abjad.Score([global_context, music_context], name="Score", tag=tag)
     baca.score.assert_lilypond_identifiers(score)
     baca.score.assert_unique_context_names(score)
-    baca.score.assert_matching_custom_context_names(score)
+    # baca.score.assert_matching_custom_context_names(score)
     _validate_voice_names(score)
     return score

@@ -5,56 +5,44 @@
         "Global_Rests",
         "Global_Skips",
         "Music_Context",
-        "Piano_Music_Staff_Group",
-        "Piano_Music_RH_Staff",
-        "RH_Voice_I",
-        "RH_Rest_Voice_I",
-        "RH_Insert_Voice_I",
-        "RH_Insert_Rest_Voice_I",
-        "RH_Voice_II",
-        "RH_Rest_Voice_II",
-        "RH_Insert_Voice_II",
-        "RH_Insert_Rest_Voice_II",
-        "RH_Voice_III",
-        "RH_Rest_Voice_III",
-        "RH_Insert_Voice_III",
-        "RH_Insert_Rest_Voice_III",
-        "RH_Voice_IV",
-        "RH_Rest_Voice_IV",
-        "RH_Insert_Voice_IV",
-        "RH_Insert_Rest_Voice_IV",
-        "RH_Voice_V",
-        "RH_Rest_Voice_V",
-        "RH_Voice_VI",
-        "RH_Rest_Voice_VI",
-        "RH_Resonance_Voice",
-        "RH_Resonance_Rest_Voice",
-        "Piano_Music_LH_Staff",
-        "LH_Voice_I",
-        "LH_Rest_Voice_I",
-        "LH_Voice_II",
-        "LH_Rest_Voice_II",
-        "LH_Voice_III",
-        "LH_Rest_Voice_III",
-        "LH_Voice_IV",
-        "LH_Rest_Voice_IV",
-        "LH_Insert_Voice_IV",
-        "LH_Insert_Rest_Voice_IV",
-        "LH_Voice_V",
-        "LH_Rest_Voice_V",
-        "LH_Insert_Voice_V",
-        "LH_Insert_Rest_Voice_V",
-        "LH_Voice_VI",
-        "LH_Rest_Voice_VI",
-        "LH_Insert_Voice_VI",
-        "LH_Insert_Rest_Voice_VI",
-        "LH_Resonance_Voice",
-        "LH_Resonance_Rest_Voice",
+        "Piano_Music.Staff_Group",
+        "Piano_Music_RH.Staff",
+        "RH.Voice.1",
+        "RH.Insert_Voice.1",
+        "RH.Insert_Rest_Voice.1",
+        "RH.Voice.2",
+        "RH.Insert_Voice.2",
+        "RH.Insert_Rest_Voice.2",
+        "RH.Voice.3",
+        "RH.Insert_Voice.3",
+        "RH.Insert_Rest_Voice.3",
+        "RH.Voice.4",
+        "RH.Insert_Voice.4",
+        "RH.Insert_Rest_Voice.4",
+        "RH.Voice.5",
+        "RH.Voice.6",
+        "RH.Resonance_Voice",
+        "RH.Resonance_Rest_Voice",
+        "Piano_Music_LH.Staff",
+        "LH.Voice.1",
+        "LH.Voice.2",
+        "LH.Voice.3",
+        "LH.Voice.4",
+        "LH.Insert_Voice.4",
+        "LH.Insert_Rest_Voice.4",
+        "LH.Voice.5",
+        "LH.Insert_Voice.5",
+        "LH.Insert_Rest_Voice.5",
+        "LH.Voice.6",
+        "LH.Insert_Voice.6",
+        "LH.Insert_Rest_Voice.6",
+        "LH.Resonance_Voice",
+        "LH.Resonance_Rest_Voice",
     ],
     "persistent_indicators": {
-        "LH_Voice_IV": [
+        "LH.Voice.4": [
             baca.Memento(
-                context="LH_Voice_IV",
+                context="LH.Voice.4",
                 edition=None,
                 manifest=None,
                 prototype="abjad.Dynamic",
@@ -62,9 +50,9 @@
                 value="p",
             )
         ],
-        "LH_Voice_V": [
+        "LH.Voice.5": [
             baca.Memento(
-                context="LH_Voice_V",
+                context="LH.Voice.5",
                 edition=None,
                 manifest=None,
                 prototype="abjad.Dynamic",
@@ -72,9 +60,9 @@
                 value="ppp",
             )
         ],
-        "LH_Voice_VI": [
+        "LH.Voice.6": [
             baca.Memento(
-                context="LH_Voice_VI",
+                context="LH.Voice.6",
                 edition=None,
                 manifest=None,
                 prototype="abjad.Dynamic",
@@ -82,29 +70,9 @@
                 value="f",
             )
         ],
-        "Piano_Music_LH_Staff": [
+        "Piano_Music.Staff_Group": [
             baca.Memento(
-                context="LH_Voice_IV",
-                edition=None,
-                manifest=None,
-                prototype="abjad.Clef",
-                synthetic_offset=None,
-                value="treble",
-            )
-        ],
-        "Piano_Music_RH_Staff": [
-            baca.Memento(
-                context="RH_Voice_I",
-                edition=None,
-                manifest=None,
-                prototype="abjad.Clef",
-                synthetic_offset=None,
-                value="treble",
-            )
-        ],
-        "Piano_Music_Staff_Group": [
-            baca.Memento(
-                context="RH_Voice_I",
+                context="RH.Insert_Voice.1",
                 edition=None,
                 manifest="instruments",
                 prototype=None,
@@ -112,9 +80,29 @@
                 value="Piano",
             )
         ],
-        "RH_Voice_I": [
+        "Piano_Music_LH.Staff": [
             baca.Memento(
-                context="RH_Voice_I",
+                context="LH.Voice.4",
+                edition=None,
+                manifest=None,
+                prototype="abjad.Clef",
+                synthetic_offset=None,
+                value="treble",
+            )
+        ],
+        "Piano_Music_RH.Staff": [
+            baca.Memento(
+                context="RH.Voice.1",
+                edition=None,
+                manifest=None,
+                prototype="abjad.Clef",
+                synthetic_offset=None,
+                value="treble",
+            )
+        ],
+        "RH.Voice.1": [
+            baca.Memento(
+                context="RH.Voice.1",
                 edition=None,
                 manifest=None,
                 prototype="abjad.Dynamic",
@@ -122,9 +110,9 @@
                 value="f",
             )
         ],
-        "RH_Voice_II": [
+        "RH.Voice.2": [
             baca.Memento(
-                context="RH_Voice_II",
+                context="RH.Voice.2",
                 edition=None,
                 manifest=None,
                 prototype="abjad.Dynamic",
@@ -132,9 +120,9 @@
                 value="fff",
             )
         ],
-        "RH_Voice_III": [
+        "RH.Voice.3": [
             baca.Memento(
-                context="RH_Voice_III",
+                context="RH.Voice.3",
                 edition=None,
                 manifest=None,
                 prototype="abjad.Dynamic",
@@ -142,9 +130,9 @@
                 value="mp",
             )
         ],
-        "RH_Voice_IV": [
+        "RH.Voice.4": [
             baca.Memento(
-                context="RH_Voice_IV",
+                context="RH.Voice.4",
                 edition=None,
                 manifest=None,
                 prototype="abjad.Dynamic",
