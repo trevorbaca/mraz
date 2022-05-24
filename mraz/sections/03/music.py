@@ -188,7 +188,7 @@ figures(
     baca.dls_staff_padding(8),
     baca.hairpin("f < ff"),
     baca.slur(map=lambda _: baca.select.runs(_)),
-    baca.only_segment(
+    baca.only_section(
         baca.span_bar_extra_offset((-0.75, 0)),
     ),
     baca.ottava(),
