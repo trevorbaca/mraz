@@ -54,7 +54,7 @@
                 \context GlobalRests = "Global_Rests"
                   %! baca.make_global_context()
                   %! baca.path.extern()
-                { \section_number.6.Global_Rests }
+                { \number.6.Global_Rests }
                 % ABSOLUTE_BEFORE:
                 % COMMANDS:
 
@@ -63,7 +63,7 @@
                 \context GlobalSkips = "Global_Skips"
                   %! baca.make_global_context()
                   %! baca.path.extern()
-                { \section_number.6.Global_Skips }
+                { \number.6.Global_Skips }
                 % CLOSING:
                 % COMMANDS:
 
@@ -94,7 +94,7 @@
                     \context PianoMusicRHStaff = "Piano_Music_RH.Staff"
                       %! mraz.make_empty_score()
                       %! baca.path.extern()
-                    { \section_number.6.Piano_Music_RH.Staff }
+                    { \number.6.Piano_Music_RH.Staff }
                     % ABSOLUTE_BEFORE:
                     % COMMANDS:
 
@@ -103,7 +103,7 @@
                     \context PianoMusicLHStaff = "Piano_Music_LH.Staff"
                       %! mraz.make_empty_score()
                       %! baca.path.extern()
-                    { \section_number.6.Piano_Music_LH.Staff }
+                    { \number.6.Piano_Music_LH.Staff }
                     % CLOSING:
                     % COMMANDS:
 

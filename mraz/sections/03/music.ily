@@ -1,5 +1,5 @@
   %! baca.path.extern()
-section_number.3.Global_Rests = {
+number.3.Global_Rests = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -134,7 +134,7 @@ section_number.3.Global_Rests = {
 
 
   %! baca.path.extern()
-section_number.3.Global_Skips = {
+number.3.Global_Skips = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -881,7 +881,7 @@ section_number.3.Global_Skips = {
 
 
   %! baca.path.extern()
-section_number.3.RH.Voice.1 = {
+number.3.RH.Voice.1 = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -1073,7 +1073,7 @@ section_number.3.RH.Voice.1 = {
 
 
   %! baca.path.extern()
-section_number.3.RH.Insert_Voice.1 = {
+number.3.RH.Insert_Voice.1 = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -1220,7 +1220,7 @@ section_number.3.RH.Insert_Voice.1 = {
 
 
   %! baca.path.extern()
-section_number.3.RH.Voice.2 = {
+number.3.RH.Voice.2 = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -2524,7 +2524,7 @@ section_number.3.RH.Voice.2 = {
 
 
   %! baca.path.extern()
-section_number.3.RH.Insert_Voice.2 = {
+number.3.RH.Insert_Voice.2 = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -2666,7 +2666,7 @@ section_number.3.RH.Insert_Voice.2 = {
 
 
   %! baca.path.extern()
-section_number.3.RH.Voice.3 = {
+number.3.RH.Voice.3 = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -2791,7 +2791,7 @@ section_number.3.RH.Voice.3 = {
 
 
   %! baca.path.extern()
-section_number.3.RH.Insert_Voice.3 = {
+number.3.RH.Insert_Voice.3 = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -2933,7 +2933,7 @@ section_number.3.RH.Insert_Voice.3 = {
 
 
   %! baca.path.extern()
-section_number.3.RH.Voice.4 = {
+number.3.RH.Voice.4 = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -3192,7 +3192,7 @@ section_number.3.RH.Voice.4 = {
 
 
   %! baca.path.extern()
-section_number.3.RH.Insert_Voice.4 = {
+number.3.RH.Insert_Voice.4 = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -3485,7 +3485,7 @@ section_number.3.RH.Insert_Voice.4 = {
 
 
   %! baca.path.extern()
-section_number.3.RH.Voice.5 = {
+number.3.RH.Voice.5 = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -3503,7 +3503,7 @@ section_number.3.RH.Voice.5 = {
 
 
   %! baca.path.extern()
-section_number.3.RH.Voice.6 = {
+number.3.RH.Voice.6 = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -3521,7 +3521,7 @@ section_number.3.RH.Voice.6 = {
 
 
   %! baca.path.extern()
-section_number.3.RH.Resonance_Voice = {
+number.3.RH.Resonance_Voice = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -3663,7 +3663,7 @@ section_number.3.RH.Resonance_Voice = {
 
 
   %! baca.path.extern()
-section_number.3.Piano_Music_RH.Staff = <<
+number.3.Piano_Music_RH.Staff = <<
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -3672,7 +3672,7 @@ section_number.3.Piano_Music_RH.Staff = <<
     \context RHVoiceI = "RH.Voice.1"
       %! mraz.make_empty_score()
       %! baca.path.extern()
-    { \section_number.3.RH.Voice.1 }
+    { \number.3.RH.Voice.1 }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -3681,7 +3681,7 @@ section_number.3.Piano_Music_RH.Staff = <<
     \context RHInsertVoiceI = "RH.Insert_Voice.1"
       %! mraz.make_empty_score()
       %! baca.path.extern()
-    { \section_number.3.RH.Insert_Voice.1 }
+    { \number.3.RH.Insert_Voice.1 }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -3690,7 +3690,7 @@ section_number.3.Piano_Music_RH.Staff = <<
     \context RHVoiceII = "RH.Voice.2"
       %! mraz.make_empty_score()
       %! baca.path.extern()
-    { \section_number.3.RH.Voice.2 }
+    { \number.3.RH.Voice.2 }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -3699,7 +3699,7 @@ section_number.3.Piano_Music_RH.Staff = <<
     \context RHInsertVoiceII = "RH.Insert_Voice.2"
       %! mraz.make_empty_score()
       %! baca.path.extern()
-    { \section_number.3.RH.Insert_Voice.2 }
+    { \number.3.RH.Insert_Voice.2 }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -3708,7 +3708,7 @@ section_number.3.Piano_Music_RH.Staff = <<
     \context RHVoiceIII = "RH.Voice.3"
       %! mraz.make_empty_score()
       %! baca.path.extern()
-    { \section_number.3.RH.Voice.3 }
+    { \number.3.RH.Voice.3 }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -3717,7 +3717,7 @@ section_number.3.Piano_Music_RH.Staff = <<
     \context RHInsertVoiceIII = "RH.Insert_Voice.3"
       %! mraz.make_empty_score()
       %! baca.path.extern()
-    { \section_number.3.RH.Insert_Voice.3 }
+    { \number.3.RH.Insert_Voice.3 }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -3726,7 +3726,7 @@ section_number.3.Piano_Music_RH.Staff = <<
     \context RHVoiceIV = "RH.Voice.4"
       %! mraz.make_empty_score()
       %! baca.path.extern()
-    { \section_number.3.RH.Voice.4 }
+    { \number.3.RH.Voice.4 }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -3735,7 +3735,7 @@ section_number.3.Piano_Music_RH.Staff = <<
     \context RHInsertVoiceIV = "RH.Insert_Voice.4"
       %! mraz.make_empty_score()
       %! baca.path.extern()
-    { \section_number.3.RH.Insert_Voice.4 }
+    { \number.3.RH.Insert_Voice.4 }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -3744,7 +3744,7 @@ section_number.3.Piano_Music_RH.Staff = <<
     \context RHVoiceV = "RH.Voice.5"
       %! mraz.make_empty_score()
       %! baca.path.extern()
-    { \section_number.3.RH.Voice.5 }
+    { \number.3.RH.Voice.5 }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -3753,7 +3753,7 @@ section_number.3.Piano_Music_RH.Staff = <<
     \context RHVoiceVI = "RH.Voice.6"
       %! mraz.make_empty_score()
       %! baca.path.extern()
-    { \section_number.3.RH.Voice.6 }
+    { \number.3.RH.Voice.6 }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -3762,7 +3762,7 @@ section_number.3.Piano_Music_RH.Staff = <<
     \context RHResonanceVoice = "RH.Resonance_Voice"
       %! mraz.make_empty_score()
       %! baca.path.extern()
-    { \section_number.3.RH.Resonance_Voice }
+    { \number.3.RH.Resonance_Voice }
     % CLOSING:
     % COMMANDS:
 
@@ -3773,7 +3773,7 @@ section_number.3.Piano_Music_RH.Staff = <<
 
 
   %! baca.path.extern()
-section_number.3.LH.Voice.1 = {
+number.3.LH.Voice.1 = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -3791,7 +3791,7 @@ section_number.3.LH.Voice.1 = {
 
 
   %! baca.path.extern()
-section_number.3.LH.Voice.2 = {
+number.3.LH.Voice.2 = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -3809,7 +3809,7 @@ section_number.3.LH.Voice.2 = {
 
 
   %! baca.path.extern()
-section_number.3.LH.Voice.3 = {
+number.3.LH.Voice.3 = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -3827,7 +3827,7 @@ section_number.3.LH.Voice.3 = {
 
 
   %! baca.path.extern()
-section_number.3.LH.Voice.4 = {
+number.3.LH.Voice.4 = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -3845,7 +3845,7 @@ section_number.3.LH.Voice.4 = {
 
 
   %! baca.path.extern()
-section_number.3.LH.Insert_Voice.4 = {
+number.3.LH.Insert_Voice.4 = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -3987,7 +3987,7 @@ section_number.3.LH.Insert_Voice.4 = {
 
 
   %! baca.path.extern()
-section_number.3.LH.Voice.5 = {
+number.3.LH.Voice.5 = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -4122,7 +4122,7 @@ section_number.3.LH.Voice.5 = {
 
 
   %! baca.path.extern()
-section_number.3.LH.Insert_Voice.5 = {
+number.3.LH.Insert_Voice.5 = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -4264,7 +4264,7 @@ section_number.3.LH.Insert_Voice.5 = {
 
 
   %! baca.path.extern()
-section_number.3.LH.Voice.6 = {
+number.3.LH.Voice.6 = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -4304,7 +4304,7 @@ section_number.3.LH.Voice.6 = {
 
 
   %! baca.path.extern()
-section_number.3.LH.Insert_Voice.6 = {
+number.3.LH.Insert_Voice.6 = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -4446,7 +4446,7 @@ section_number.3.LH.Insert_Voice.6 = {
 
 
   %! baca.path.extern()
-section_number.3.LH.Resonance_Voice = {
+number.3.LH.Resonance_Voice = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -5196,7 +5196,7 @@ section_number.3.LH.Resonance_Voice = {
 
 
   %! baca.path.extern()
-section_number.3.Piano_Music_LH.Staff = <<
+number.3.Piano_Music_LH.Staff = <<
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -5205,7 +5205,7 @@ section_number.3.Piano_Music_LH.Staff = <<
     \context LHVoiceI = "LH.Voice.1"
       %! mraz.make_empty_score()
       %! baca.path.extern()
-    { \section_number.3.LH.Voice.1 }
+    { \number.3.LH.Voice.1 }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -5214,7 +5214,7 @@ section_number.3.Piano_Music_LH.Staff = <<
     \context LHVoiceII = "LH.Voice.2"
       %! mraz.make_empty_score()
       %! baca.path.extern()
-    { \section_number.3.LH.Voice.2 }
+    { \number.3.LH.Voice.2 }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -5223,7 +5223,7 @@ section_number.3.Piano_Music_LH.Staff = <<
     \context LHVoiceIII = "LH.Voice.3"
       %! mraz.make_empty_score()
       %! baca.path.extern()
-    { \section_number.3.LH.Voice.3 }
+    { \number.3.LH.Voice.3 }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -5232,7 +5232,7 @@ section_number.3.Piano_Music_LH.Staff = <<
     \context LHVoiceIV = "LH.Voice.4"
       %! mraz.make_empty_score()
       %! baca.path.extern()
-    { \section_number.3.LH.Voice.4 }
+    { \number.3.LH.Voice.4 }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -5241,7 +5241,7 @@ section_number.3.Piano_Music_LH.Staff = <<
     \context LHInsertVoiceIV = "LH.Insert_Voice.4"
       %! mraz.make_empty_score()
       %! baca.path.extern()
-    { \section_number.3.LH.Insert_Voice.4 }
+    { \number.3.LH.Insert_Voice.4 }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -5250,7 +5250,7 @@ section_number.3.Piano_Music_LH.Staff = <<
     \context LHVoiceV = "LH.Voice.5"
       %! mraz.make_empty_score()
       %! baca.path.extern()
-    { \section_number.3.LH.Voice.5 }
+    { \number.3.LH.Voice.5 }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -5259,7 +5259,7 @@ section_number.3.Piano_Music_LH.Staff = <<
     \context LHInsertVoiceV = "LH.Insert_Voice.5"
       %! mraz.make_empty_score()
       %! baca.path.extern()
-    { \section_number.3.LH.Insert_Voice.5 }
+    { \number.3.LH.Insert_Voice.5 }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -5268,7 +5268,7 @@ section_number.3.Piano_Music_LH.Staff = <<
     \context LHVoiceVI = "LH.Voice.6"
       %! mraz.make_empty_score()
       %! baca.path.extern()
-    { \section_number.3.LH.Voice.6 }
+    { \number.3.LH.Voice.6 }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -5277,7 +5277,7 @@ section_number.3.Piano_Music_LH.Staff = <<
     \context LHInsertVoiceVI = "LH.Insert_Voice.6"
       %! mraz.make_empty_score()
       %! baca.path.extern()
-    { \section_number.3.LH.Insert_Voice.6 }
+    { \number.3.LH.Insert_Voice.6 }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -5286,7 +5286,7 @@ section_number.3.Piano_Music_LH.Staff = <<
     \context LHResonanceVoice = "LH.Resonance_Voice"
       %! mraz.make_empty_score()
       %! baca.path.extern()
-    { \section_number.3.LH.Resonance_Voice }
+    { \number.3.LH.Resonance_Voice }
     % CLOSING:
     % COMMANDS:
 
