@@ -223,13 +223,16 @@ music_voice_names = [
 commands(
     music_voice_names,
     baca.append_phantom_measure(),
-    baca.attach_first_section_default_indicators(),
+    baca.attach_first_section_default_indicators(
+        attach_instruments_by_hand=True,
+    ),
 )
 
 # rh_v1
 
 commands(
     library.rh_v1,
+    baca.instrument(commands.instruments["Piano"]),
     baca.start_markup("PIANO", context="PianoStaff", hcenter_in=12),
 )
 

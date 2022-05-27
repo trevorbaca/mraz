@@ -740,6 +740,9 @@ number.1.RH.Voice.1 = {
             %@% - \tweak color #blue
               %! FIGURE_LABEL
             %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (1) \hspace #1 "4.5.R.3" ] }
+              %! EXPLICIT_INSTRUMENT_ALERT
+              %! baca._attach_latent_indicator_alert()
+            ^ \baca-explicit-indicator-markup "(“Piano”)"
               %! baca.IndicatorCommand._call()
               %! baca.markup()
             ^ \mraz-ottava-brackets-always-govern-markup
@@ -785,11 +788,6 @@ number.1.RH.Insert_Voice.1 = {
     % [RH.Insert_Voice.1 measure 1]
       %! baca.make_music()
     s1 * 69/8
-    % AFTER:
-    % MARKUP:
-      %! DEFAULT_INSTRUMENT_ALERT
-      %! baca._attach_latent_indicator_alert()
-    ^ \baca-default-indicator-markup "(“Piano”)"
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 

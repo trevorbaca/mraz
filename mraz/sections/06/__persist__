@@ -72,7 +72,7 @@
         ],
         "Piano_Music.Staff_Group": [
             baca.Memento(
-                context="RH.Insert_Voice.1",
+                context="RH.Voice.1",
                 edition=None,
                 manifest="instruments",
                 prototype=None,
