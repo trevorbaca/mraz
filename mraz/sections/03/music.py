@@ -307,7 +307,7 @@ commands = baca.CommandAccumulator(
 figures.populate_commands(commands)
 
 commands(
-    "Global_Skips",
+    "GlobalSkips",
     baca.metronome_mark("84", lambda _: abjad.select.leaf(_, 2)),
     baca.metronome_mark("112", lambda _: abjad.select.leaf(_, 4)),
     baca.metronome_mark("84", lambda _: abjad.select.leaf(_, 5)),
@@ -317,7 +317,7 @@ commands(
 )
 
 commands(
-    "Global_Rests",
+    "GlobalRests",
     baca.global_fermata("short", lambda _: abjad.select.leaf(_, 1)),
     baca.global_fermata("fermata", lambda _: abjad.select.leaf(_, 3)),
     baca.global_fermata("short", lambda _: abjad.select.leaf(_, 6)),
