@@ -2688,6 +2688,11 @@ number.4.RH.Voice.1 = {
     \set PianoMusicRHStaff.forceClef = ##t
       %! baca.make_music()
     s1 * 141/8
+    % AFTER:
+    % MARKUP:
+      %! REAPPLIED_INSTRUMENT_ALERT
+      %! baca._attach_latent_indicator_alert()
+    ^ \baca-reapplied-indicator-markup "(“Piano”)"
     % ABSOLUTE_AFTER:
     % COMMANDS:
       %! REAPPLIED_CLEF_REDRAW_COLOR
@@ -3599,11 +3604,6 @@ number.4.RH.Insert_Voice.1 = {
     % [RH.Insert_Voice.1 measure 1]
       %! baca.make_music()
     s1 * 44
-    % AFTER:
-    % MARKUP:
-      %! REAPPLIED_INSTRUMENT_ALERT
-      %! baca._attach_latent_indicator_alert()
-    ^ \baca-reapplied-indicator-markup "(“Piano”)"
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 

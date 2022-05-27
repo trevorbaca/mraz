@@ -789,6 +789,9 @@ number.7.RH.Voice.1 = {
                 %@% - \tweak color #blue
                   %! FIGURE_LABEL
                 %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (1) \hspace #1 "7.1.R.1" ] }
+                  %! REAPPLIED_INSTRUMENT_ALERT
+                  %! baca._attach_latent_indicator_alert()
+                ^ \baca-reapplied-indicator-markup "(“Piano”)"
                 % START_BEAM:
                 [
                 % ABSOLUTE_AFTER:
@@ -1588,10 +1591,6 @@ number.7.RH.Insert_Voice.1 = {
                   %! baca.make_music()
                 s16
                 % AFTER:
-                % MARKUP:
-                  %! REAPPLIED_INSTRUMENT_ALERT
-                  %! baca._attach_latent_indicator_alert()
-                ^ \baca-reapplied-indicator-markup "(“Piano”)"
                 % START_BEAM:
                 [
                 % ABSOLUTE_BEFORE:
