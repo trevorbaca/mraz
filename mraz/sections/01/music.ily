@@ -858,7 +858,7 @@ number.1.RH.Insert_Voice.1 = {
         % OPEN_BRACKETS:
           %! PHANTOM
           %! baca._make_multimeasure_rest_container(6)
-        \context Voice = "RH.Insert_Rest_Voice.1"
+        \context Voice = "RH.Insert_RestVoice.1"
           %! PHANTOM
           %! baca._make_multimeasure_rest_container(6)
         {
@@ -868,7 +868,7 @@ number.1.RH.Insert_Voice.1 = {
               %! PHANTOM
               %! baca._comment_measure_numbers()
               %! baca._style_phantom_measures(5)
-            % [RH.Insert_Rest_Voice.1 measure 10]
+            % [RH.Insert_RestVoice.1 measure 10]
             % OPENING:
             % COMMANDS:
               %! PHANTOM
@@ -1614,7 +1614,7 @@ number.1.RH.Insert_Voice.2 = {
         % OPEN_BRACKETS:
           %! PHANTOM
           %! baca._make_multimeasure_rest_container(6)
-        \context Voice = "RH.Insert_Rest_Voice.2"
+        \context Voice = "RH.Insert_RestVoice.2"
           %! PHANTOM
           %! baca._make_multimeasure_rest_container(6)
         {
@@ -1624,7 +1624,7 @@ number.1.RH.Insert_Voice.2 = {
               %! PHANTOM
               %! baca._comment_measure_numbers()
               %! baca._style_phantom_measures(5)
-            % [RH.Insert_Rest_Voice.2 measure 10]
+            % [RH.Insert_RestVoice.2 measure 10]
             % OPENING:
             % COMMANDS:
               %! PHANTOM
@@ -2169,7 +2169,7 @@ number.1.RH.Insert_Voice.3 = {
         % OPEN_BRACKETS:
           %! PHANTOM
           %! baca._make_multimeasure_rest_container(6)
-        \context Voice = "RH.Insert_Rest_Voice.3"
+        \context Voice = "RH.Insert_RestVoice.3"
           %! PHANTOM
           %! baca._make_multimeasure_rest_container(6)
         {
@@ -2179,7 +2179,7 @@ number.1.RH.Insert_Voice.3 = {
               %! PHANTOM
               %! baca._comment_measure_numbers()
               %! baca._style_phantom_measures(5)
-            % [RH.Insert_Rest_Voice.3 measure 10]
+            % [RH.Insert_RestVoice.3 measure 10]
             % OPENING:
             % COMMANDS:
               %! PHANTOM
@@ -2329,7 +2329,7 @@ number.1.RH.Insert_Voice.4 = {
         % OPEN_BRACKETS:
           %! PHANTOM
           %! baca._make_multimeasure_rest_container(6)
-        \context Voice = "RH.Insert_Rest_Voice.4"
+        \context Voice = "RH.Insert_RestVoice.4"
           %! PHANTOM
           %! baca._make_multimeasure_rest_container(6)
         {
@@ -2339,7 +2339,7 @@ number.1.RH.Insert_Voice.4 = {
               %! PHANTOM
               %! baca._comment_measure_numbers()
               %! baca._style_phantom_measures(5)
-            % [RH.Insert_Rest_Voice.4 measure 10]
+            % [RH.Insert_RestVoice.4 measure 10]
             % OPENING:
             % COMMANDS:
               %! PHANTOM
@@ -2507,7 +2507,7 @@ number.1.RH.Resonance_Voice = {
         % OPEN_BRACKETS:
           %! PHANTOM
           %! baca._make_multimeasure_rest_container(6)
-        \context Voice = "RH.Resonance_Rest_Voice"
+        \context Voice = "RH.Resonance_RestVoice"
           %! PHANTOM
           %! baca._make_multimeasure_rest_container(6)
         {
@@ -2517,7 +2517,7 @@ number.1.RH.Resonance_Voice = {
               %! PHANTOM
               %! baca._comment_measure_numbers()
               %! baca._style_phantom_measures(5)
-            % [RH.Resonance_Rest_Voice measure 10]
+            % [RH.Resonance_RestVoice measure 10]
             % OPENING:
             % COMMANDS:
               %! PHANTOM
@@ -3072,7 +3072,7 @@ number.1.LH.Insert_Voice.4 = {
         % OPEN_BRACKETS:
           %! PHANTOM
           %! baca._make_multimeasure_rest_container(6)
-        \context Voice = "LH.Insert_Rest_Voice.4"
+        \context Voice = "LH.Insert_RestVoice.4"
           %! PHANTOM
           %! baca._make_multimeasure_rest_container(6)
         {
@@ -3082,7 +3082,7 @@ number.1.LH.Insert_Voice.4 = {
               %! PHANTOM
               %! baca._comment_measure_numbers()
               %! baca._style_phantom_measures(5)
-            % [LH.Insert_Rest_Voice.4 measure 10]
+            % [LH.Insert_RestVoice.4 measure 10]
             % OPENING:
             % COMMANDS:
               %! PHANTOM
@@ -3351,7 +3351,7 @@ number.1.LH.Insert_Voice.5 = {
         % OPEN_BRACKETS:
           %! PHANTOM
           %! baca._make_multimeasure_rest_container(6)
-        \context Voice = "LH.Insert_Rest_Voice.5"
+        \context Voice = "LH.Insert_RestVoice.5"
           %! PHANTOM
           %! baca._make_multimeasure_rest_container(6)
         {
@@ -3361,7 +3361,7 @@ number.1.LH.Insert_Voice.5 = {
               %! PHANTOM
               %! baca._comment_measure_numbers()
               %! baca._style_phantom_measures(5)
-            % [LH.Insert_Rest_Voice.5 measure 10]
+            % [LH.Insert_RestVoice.5 measure 10]
             % OPENING:
             % COMMANDS:
               %! PHANTOM
@@ -3657,7 +3657,7 @@ number.1.LH.Insert_Voice.6 = {
         % OPEN_BRACKETS:
           %! PHANTOM
           %! baca._make_multimeasure_rest_container(6)
-        \context Voice = "LH.Insert_Rest_Voice.6"
+        \context Voice = "LH.Insert_RestVoice.6"
           %! PHANTOM
           %! baca._make_multimeasure_rest_container(6)
         {
@@ -3667,7 +3667,7 @@ number.1.LH.Insert_Voice.6 = {
               %! PHANTOM
               %! baca._comment_measure_numbers()
               %! baca._style_phantom_measures(5)
-            % [LH.Insert_Rest_Voice.6 measure 10]
+            % [LH.Insert_RestVoice.6 measure 10]
             % OPENING:
             % COMMANDS:
               %! PHANTOM
@@ -3799,7 +3799,7 @@ number.1.LH.Resonance_Voice = {
         % OPEN_BRACKETS:
           %! PHANTOM
           %! baca._make_multimeasure_rest_container(6)
-        \context Voice = "LH.Resonance_Rest_Voice"
+        \context Voice = "LH.Resonance_RestVoice"
           %! PHANTOM
           %! baca._make_multimeasure_rest_container(6)
         {
@@ -3809,7 +3809,7 @@ number.1.LH.Resonance_Voice = {
               %! PHANTOM
               %! baca._comment_measure_numbers()
               %! baca._style_phantom_measures(5)
-            % [LH.Resonance_Rest_Voice measure 10]
+            % [LH.Resonance_RestVoice measure 10]
             % OPENING:
             % COMMANDS:
               %! PHANTOM
