@@ -113,7 +113,6 @@ def instruments():
 
 def make_empty_score():
     tag = baca.tags.function_name(inspect.currentframe())
-    _instruments = instruments()
     global_context = baca.score.make_global_context()
     rh_voice_1 = abjad.Voice(lilypond_type="RHVoiceI", name="RH.Voice.1", tag=tag)
     rh_voice_1I = abjad.Voice(
@@ -213,7 +212,6 @@ def make_empty_score():
         name="Piano_Music.Staff_Group",
         tag=tag,
     )
-    piano = _instruments["Piano"]
     music_context = abjad.Context(
         [piano_music_staff_group],
         lilypond_type="MusicContext",
