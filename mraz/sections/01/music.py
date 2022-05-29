@@ -223,9 +223,6 @@ music_voice_names = [
 commands(
     music_voice_names,
     baca.append_phantom_measure(),
-    baca.attach_first_section_default_indicators(
-        attach_instruments_by_hand=True,
-    ),
 )
 
 # rh_v1
