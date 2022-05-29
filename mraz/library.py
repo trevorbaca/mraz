@@ -186,7 +186,6 @@ def make_empty_score():
         name="Piano_Music_RH.Staff",
         tag=tag,
     )
-    abjad.annotate(piano_music_rh_staff, "default_clef", abjad.Clef("treble"))
     piano_music_lh_staff = abjad.Staff(
         [
             lh_voice_1,
@@ -205,7 +204,6 @@ def make_empty_score():
         name="Piano_Music_LH.Staff",
         tag=tag,
     )
-    abjad.annotate(piano_music_lh_staff, "default_clef", abjad.Clef("bass"))
     piano_music_staff_group = abjad.StaffGroup(
         [piano_music_rh_staff, piano_music_lh_staff],
         lilypond_type="PianoMusicStaffGroup",

@@ -707,25 +707,39 @@ number.1.RH.Voice.1 = {
             % [RH.Voice.1 measure 1]
             % BEFORE:
             % COMMANDS:
+              %! MEASURE_1
+              %! SHIFTED_CLEF
+              %! baca.OverrideCommand._call(1)
+              %! baca.clef_shift()
+              %! baca.clef_x_extent_false()
+        %%% \once \override PianoMusicRHStaff.Clef.X-extent = ##f
+              %! MEASURE_1
+              %! SHIFTED_CLEF
+              %! baca.OverrideCommand._call(1)
+              %! baca.clef_extra_offset()
+              %! baca.clef_shift()
+        %%% \once \override PianoMusicRHStaff.Clef.extra-offset = #'(-2.5 . 0)
               %! -PARTS
               %! baca.IndicatorCommand._call()
               %! baca.start_markup()
             \set PianoStaff.instrumentName = \markup \hcenter-in #12 "PIANO"
             % OPENING:
             % COMMANDS:
-              %! DEFAULT_CLEF
-              %! baca._attach_default_indicators(3)
+              %! EXPLICIT_CLEF
+              %! baca.IndicatorCommand._call()
               %! baca._set_status_tag()
+              %! baca.clef()
             \clef "treble"
-              %! DEFAULT_CLEF_COLOR
+              %! EXPLICIT_CLEF_COLOR
               %! baca._attach_color_literal(2)
-            \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'DarkViolet)
-              %! DEFAULT_CLEF_COLOR_CANCELLATION
+            \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'blue)
+              %! EXPLICIT_CLEF_COLOR_CANCELLATION
               %! baca._attach_color_literal(1)
             %@% \override PianoMusicRHStaff.Clef.color = ##f
-              %! DEFAULT_CLEF
-              %! baca._attach_default_indicators(3)
+              %! EXPLICIT_CLEF
+              %! baca.IndicatorCommand._call()
               %! baca._set_status_tag()
+              %! baca.clef()
               %! baca.treat_persistent_wrapper(2)
             \set PianoMusicRHStaff.forceClef = ##t
               %! baca.make_music()
@@ -748,9 +762,9 @@ number.1.RH.Voice.1 = {
             ^ \mraz-ottava-brackets-always-govern-markup
             % ABSOLUTE_AFTER:
             % COMMANDS:
-              %! DEFAULT_CLEF_REDRAW_COLOR
+              %! EXPLICIT_CLEF_REDRAW_COLOR
               %! baca._attach_color_literal(2)
-            \override PianoMusicRHStaff.Clef.color = #(x11-color 'violet)
+            \override PianoMusicRHStaff.Clef.color = #(x11-color 'DeepSkyBlue2)
             % CLOSING:
             % COMMANDS:
 

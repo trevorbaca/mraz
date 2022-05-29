@@ -234,6 +234,7 @@ commands(
     library.rh_v1,
     baca.instrument(commands.instruments["Piano"]),
     baca.start_markup("PIANO", context="PianoStaff", hcenter_in=12),
+    baca.clef("treble"),
 )
 
 commands(
