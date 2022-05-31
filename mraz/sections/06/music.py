@@ -497,7 +497,7 @@ commands(
     baca.global_fermata("fermata", lambda _: abjad.select.leaf(_, -1)),
 )
 
-# phantom & reapply
+# reapply
 
 music_voice_names = [
     _
@@ -510,7 +510,6 @@ music_voice_names = [
 
 commands(
     music_voice_names,
-    baca.append_phantom_measure(),
     baca.reapply_persistent_indicators(),
 )
 

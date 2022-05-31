@@ -209,22 +209,6 @@ commands(
     baca.global_fermata("short", lambda _: abjad.select.leaf(_, 8)),
 )
 
-# phantom & reapply
-
-music_voice_names = [
-    _
-    for _ in voice_names
-    if "RH_Voice" in _
-    or "LH_Voice" in _
-    or "Insert_Voice" in _
-    or "Resonance_Voice" in _
-]
-
-commands(
-    music_voice_names,
-    baca.append_phantom_measure(),
-)
-
 # rh_v1
 
 commands(

@@ -357,7 +357,7 @@ commands(
     baca.bar_line("|.", lambda _: baca.select.skip(_, -1)),
 )
 
-# phantom & reapply
+# reapply
 
 music_voice_names = [
     _
@@ -370,7 +370,6 @@ music_voice_names = [
 
 commands(
     music_voice_names,
-    baca.append_phantom_measure(),
     baca.reapply_persistent_indicators(),
 )
 
