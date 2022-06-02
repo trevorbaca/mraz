@@ -213,7 +213,7 @@ commands(
 commands(
     library.rh_v1,
     baca.instrument(commands.instruments["Piano"]),
-    baca.start_markup("PIANO", context="PianoStaff", hcenter_in=12),
+    baca.instrument_name("PIANO", context="PianoStaff", hcenter_in=12),
     baca.clef("treble"),
 )
 
@@ -229,7 +229,7 @@ if __name__ == "__main__":
         **baca.score_interpretation_defaults(),
         activate=(baca.tags.LOCAL_MEASURE_NUMBER,),
         always_make_global_rests=True,
-        do_not_require_margin_markup=True,
+        do_not_require_short_instrument_names=True,
         error_on_not_yet_pitched=True,
     )
     lilypond_file = baca.make_lilypond_file(

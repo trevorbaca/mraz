@@ -711,7 +711,7 @@ number.1.RH.Voice.1 = {
         %%% \once \override PianoMusicRHStaff.Clef.extra-offset = #'(-2.5 . 0)
               %! -PARTS
               %! baca.IndicatorCommand._call()
-              %! baca.start_markup()
+              %! baca.instrument_name()
             \set PianoStaff.instrumentName = \markup \hcenter-in #12 "PIANO"
             % OPENING:
             % COMMANDS:

@@ -1159,7 +1159,7 @@ if __name__ == "__main__":
         activate=(baca.tags.LOCAL_MEASURE_NUMBER,),
         always_make_global_rests=True,
         deactivate=(baca.tags.REPEAT_PITCH_CLASS_COLORING,),
-        do_not_require_margin_markup=True,
+        do_not_require_short_instrument_names=True,
         error_on_not_yet_pitched=True,
     )
     lilypond_file = baca.make_lilypond_file(
