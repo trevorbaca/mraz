@@ -707,7 +707,7 @@ number.1.RH.Voice.1 = {
               %! -PARTS
               %! baca.IndicatorCommand._call()
               %! baca.instrument_name()
-            \set PianoStaff.instrumentName = \markup \hcenter-in #12 "PIANO"
+            \set PianoStaff.instrumentName = \mraz-piano-markup
             % OPENING:
             % COMMANDS:
               %! EXPLICIT_CLEF
