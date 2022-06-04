@@ -213,7 +213,7 @@ commands(
 commands(
     library.rh_v1,
     baca.instrument(commands.instruments["Piano"]),
-    baca.instrument_name("PIANO", context="PianoStaff", hcenter_in=12),
+    baca.instrument_name(r"\mraz-piano-markup", context="PianoStaff"),
     baca.clef("treble"),
 )
 

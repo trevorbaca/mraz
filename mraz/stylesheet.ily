@@ -482,6 +482,8 @@ mraz-colophon-markup = \markup
 mraz-ottava-brackets-always-govern-markup = \markup
   "(ottava brackets always govern all voices on staff)"
 
+mraz-piano-markup = \markup \hcenter-in #12 PIANO
+
 %%% OPTIONAL VOICE COLORING %%%
 
 %\context
