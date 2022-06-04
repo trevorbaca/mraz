@@ -6,14 +6,14 @@ number.6.Rests = {
       %! baca._comment_measure_numbers()
     % [Rests measure 1]
       %! baca._make_global_rests(1)
-    R1 * 4
+    R1 * 16/4
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Rests measure 2]
       %! baca._make_global_rests(1)
-    R1 * 5/2
+    R1 * 10/4
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -37,21 +37,21 @@ number.6.Rests = {
       %! baca._comment_measure_numbers()
     % [Rests measure 4]
       %! baca._make_global_rests(1)
-    R1 * 3
+    R1 * 12/4
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Rests measure 5]
       %! baca._make_global_rests(1)
-    R1 * 1
+    R1 * 4/4
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Rests measure 6]
       %! baca._make_global_rests(1)
-    R1 * 5/2
+    R1 * 10/4
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -127,7 +127,7 @@ number.6.Rests = {
       %! baca._comment_measure_numbers()
     % [Rests measure 14]
       %! baca._make_global_rests(1)
-    R1 * 1
+    R1 * 4/4
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -182,7 +182,7 @@ number.6.Skips = {
       %! baca._set_status_tag()
     \time 16/4
       %! baca._make_global_skips(1)
-    s1 * 4
+    s1 * 16/4
     % AFTER:
     % SPANNER_STARTS:
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
@@ -239,7 +239,7 @@ number.6.Skips = {
       %! baca._set_status_tag()
     \time 10/4
       %! baca._make_global_skips(1)
-    s1 * 5/2
+    s1 * 10/4
     % AFTER:
     % SPANNER_STOPS:
       %! CLOCK_TIME
@@ -377,7 +377,7 @@ number.6.Skips = {
       %! baca._set_status_tag()
     \time 12/4
       %! baca._make_global_skips(1)
-    s1 * 3
+    s1 * 12/4
     % AFTER:
     % SPANNER_STOPS:
       %! CLOCK_TIME
@@ -423,7 +423,7 @@ number.6.Skips = {
       %! baca._set_status_tag()
     \time 4/4
       %! baca._make_global_skips(1)
-    s1 * 1
+    s1 * 4/4
     % AFTER:
     % SPANNER_STOPS:
       %! CLOCK_TIME
@@ -492,7 +492,7 @@ number.6.Skips = {
       %! baca._set_status_tag()
     \time 10/4
       %! baca._make_global_skips(1)
-    s1 * 5/2
+    s1 * 10/4
     % AFTER:
     % SPANNER_STOPS:
       %! CLOCK_TIME
@@ -952,7 +952,7 @@ number.6.Skips = {
       %! baca._set_status_tag()
     \time 4/4
       %! baca._make_global_skips(1)
-    s1 * 1
+    s1 * 4/4
     % AFTER:
     % SPANNER_STOPS:
       %! CLOCK_TIME
@@ -1127,7 +1127,7 @@ number.6.Skips = {
       %! ANCHOR_SKIP
       %! baca._comment_measure_numbers()
       %! baca._style_anchor_skip(1)
-    % [Skips measure 17]
+    % [anchor skip]
     % OPENING:
     % COMMANDS:
       %! ANCHOR_SKIP

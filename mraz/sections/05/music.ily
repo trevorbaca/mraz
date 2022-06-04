@@ -13,7 +13,7 @@ number.5.Rests = {
       %! baca._comment_measure_numbers()
     % [Rests measure 2]
       %! baca._make_global_rests(1)
-    R1 * 1/2
+    R1 * 4/8
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -118,7 +118,7 @@ number.5.Skips = {
       %! baca._set_status_tag()
     \time 4/8
       %! baca._make_global_skips(1)
-    s1 * 1/2
+    s1 * 4/8
     % AFTER:
     % SPANNER_STOPS:
       %! CLOCK_TIME
@@ -247,7 +247,7 @@ number.5.Skips = {
       %! ANCHOR_SKIP
       %! baca._comment_measure_numbers()
       %! baca._style_anchor_skip(1)
-    % [Skips measure 5]
+    % [anchor skip]
     % OPENING:
     % COMMANDS:
       %! ANCHOR_SKIP
