@@ -746,7 +746,7 @@ number.1.RH.Voice.1 = {
             %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (1) \hspace #1 "4.5.R.3" ] }
               %! EXPLICIT_INSTRUMENT_ALERT
               %! baca._attach_latent_indicator_alert()
-            ^ \baca-explicit-indicator-markup "(“Piano”)"
+            ^ \baca-explicit-instrument-markup "(“Piano”)"
               %! baca.IndicatorCommand._call()
               %! baca.markup()
             ^ \mraz-ottava-brackets-always-govern-markup
