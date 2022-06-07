@@ -357,25 +357,22 @@ baca.interpret.set_up_score(
 
 figures.populate_commands(commands)
 
+skips = score["Skips"]
+manifests = commands.manifests()
+
+for index, item in (
+    (0, "84"),
+    (0, baca.Accelerando()),
+    (8, "112"),
+):
+    skip = skips[index]
+    indicator = commands.metronome_marks.get(item, item)
+    baca.commands._metronome_mark(skip, indicator, manifests)
+
 commands(
     "Skips",
-    baca.metronome_mark("84", lambda _: abjad.select.leaf(_, 0)),
-    baca.metronome_mark(baca.Accelerando(), lambda _: abjad.select.leaf(_, 0)),
-    baca.metronome_mark("112", lambda _: abjad.select.leaf(_, 8)),
     baca.bar_line("|.", lambda _: baca.select.skip(_, -1)),
 )
-
-# skips = score["Skips"]
-# manifests = commands.manifests()
-#
-# for index, item in (
-#    (0, "84"),
-#    (0, baca.Accelerando()),
-#    (8, "112"),
-# ):
-#    skip = skips[index]
-#    indicator = commands.metronome_marks.get(item, item)
-#    baca.commands._metronome_mark(skip, indicator, manifests)
 
 # reapply
 
