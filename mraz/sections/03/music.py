@@ -324,6 +324,21 @@ commands(
     baca.metronome_mark("84", lambda _: abjad.select.leaf(_, -1)),
 )
 
+# skips = score["Skips"]
+# manifests = commands.manifests()
+#
+# for index, item in (
+#    (3 - 1, "84"),
+#    (5 - 1, "112"),
+#    (6 - 1, "84"),
+#    (-3, "112"),
+#    (-3, baca.Ritardando()),
+#    (-1, "84"),
+# ):
+#    skip = skips[index]
+#    indicator = commands.metronome_marks.get(item, item)
+#    baca.commands._metronome_mark(skip, indicator, manifests)
+
 commands(
     "Rests",
     baca.global_fermata("short", lambda _: abjad.select.leaf(_, 1)),

@@ -1069,6 +1069,34 @@ commands(
     baca.metronome_mark("84", lambda _: abjad.select.leaf(_, 36)),
 )
 
+# skips = score["Skips"]
+# manifests = commands.manifests()
+#
+# for index, item in (
+#    (0, "84"),
+#    (0, baca.Accelerando),
+#    (0, baca.Accelerando()),
+#    (4, "112"),
+#    (5, "84"),
+#    (5, baca.Accelerando()),
+#    (14, "112"),
+#    (19, "112"),
+#    (19, baca.Ritardando()),
+#    (22, "84"),
+#    (23, "112"),
+#    (23, baca.Ritardando()),
+#    (27, "84"),
+#    (29, "112"),
+#    (29, baca.Ritardando()),
+#    (31, "84"),
+#    (32, "112"),
+#    (32, baca.Ritardando()),
+#    (36, "84"),
+# ):
+#    skip = skips[index]
+#    indicator = commands.metronome_marks.get(item, item)
+#    baca.commands._metronome_mark(skip, indicator, manifests)
+
 commands(
     "Rests",
     baca.global_fermata("fermata", lambda _: abjad.select.leaf(_, 20)),

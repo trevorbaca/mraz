@@ -365,6 +365,18 @@ commands(
     baca.bar_line("|.", lambda _: baca.select.skip(_, -1)),
 )
 
+# skips = score["Skips"]
+# manifests = commands.manifests()
+#
+# for index, item in (
+#    (0, "84"),
+#    (0, baca.Accelerando()),
+#    (8, "112"),
+# ):
+#    skip = skips[index]
+#    indicator = commands.metronome_marks.get(item, item)
+#    baca.commands._metronome_mark(skip, indicator, manifests)
+
 # reapply
 
 music_voice_names = [
