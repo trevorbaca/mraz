@@ -747,7 +747,6 @@ number.2.RH.Music.1 = {
       %! baca._set_status_tag()
       %! baca.treat_persistent_wrapper(2)
     \set PianoMusicRHStaff.forceClef = ##t
-      %! baca.make_music()
     s1 * 167/16
     % AFTER:
     % MARKUP:
@@ -775,7 +774,6 @@ number.2.RH.Insert_Voice.1 = {
 
       %! baca._comment_measure_numbers()
     % [RH.Insert_Voice.1 measure 1]
-      %! baca.make_music()
     s1 * 167/16
     % CLOSING:
     % COMMANDS:
@@ -793,7 +791,6 @@ number.2.RH.Music.2 = {
 
       %! baca._comment_measure_numbers()
     % [RH.Music.2 measure 1]
-      %! baca.make_music()
     s1 * 167/16
     % CLOSING:
     % COMMANDS:
@@ -811,7 +808,6 @@ number.2.RH.Insert_Voice.2 = {
 
       %! baca._comment_measure_numbers()
     % [RH.Insert_Voice.2 measure 1]
-      %! baca.make_music()
     s1 * 167/16
     % CLOSING:
     % COMMANDS:
@@ -829,7 +825,6 @@ number.2.RH.Music.3 = {
 
       %! baca._comment_measure_numbers()
     % [RH.Music.3 measure 1]
-      %! baca.make_music()
     s1 * 167/16
     % CLOSING:
     % COMMANDS:
@@ -847,7 +842,6 @@ number.2.RH.Insert_Voice.3 = {
 
       %! baca._comment_measure_numbers()
     % [RH.Insert_Voice.3 measure 1]
-      %! baca.make_music()
     s1 * 167/16
     % CLOSING:
     % COMMANDS:
@@ -865,7 +859,6 @@ number.2.RH.Music.4 = {
 
       %! baca._comment_measure_numbers()
     % [RH.Music.4 measure 1]
-      %! baca.make_music()
     s1 * 167/16
     % CLOSING:
     % COMMANDS:
@@ -883,7 +876,6 @@ number.2.RH.Insert_Voice.4 = {
 
       %! baca._comment_measure_numbers()
     % [RH.Insert_Voice.4 measure 1]
-      %! baca.make_music()
     s1 * 167/16
     % CLOSING:
     % COMMANDS:
@@ -901,7 +893,6 @@ number.2.RH.Music.5 = {
 
       %! baca._comment_measure_numbers()
     % [RH.Music.5 measure 1]
-      %! baca.make_music()
     s1 * 167/16
     % CLOSING:
     % COMMANDS:
@@ -919,7 +910,6 @@ number.2.RH.Music.6 = {
 
       %! baca._comment_measure_numbers()
     % [RH.Music.6 measure 1]
-      %! baca.make_music()
     s1 * 167/16
     % CLOSING:
     % COMMANDS:
@@ -937,7 +927,6 @@ number.2.RH.Resonance_Voice = {
 
       %! baca._comment_measure_numbers()
     % [RH.Resonance_Voice measure 1]
-      %! baca.make_music()
     s1 * 167/16
     % CLOSING:
     % COMMANDS:
@@ -1065,7 +1054,6 @@ number.2.LH.Music.1 = {
 
       %! baca._comment_measure_numbers()
     % [LH.Music.1 measure 1]
-      %! baca.make_music()
     s1 * 167/16
     % CLOSING:
     % COMMANDS:
@@ -1083,7 +1071,6 @@ number.2.LH.Music.2 = {
 
       %! baca._comment_measure_numbers()
     % [LH.Music.2 measure 1]
-      %! baca.make_music()
     s1 * 167/16
     % CLOSING:
     % COMMANDS:
@@ -1101,7 +1088,6 @@ number.2.LH.Music.3 = {
 
       %! baca._comment_measure_numbers()
     % [LH.Music.3 measure 1]
-      %! baca.make_music()
     s1 * 167/16
     % CLOSING:
     % COMMANDS:
@@ -1119,7 +1105,6 @@ number.2.LH.Music.4 = {
 
       %! baca._comment_measure_numbers()
     % [LH.Music.4 measure 1]
-      %! baca.make_music()
     s1 * 167/16
     % CLOSING:
     % COMMANDS:
@@ -1137,7 +1122,6 @@ number.2.LH.Insert_Voice.4 = {
 
       %! baca._comment_measure_numbers()
     % [LH.Insert_Voice.4 measure 1]
-      %! baca.make_music()
     s1 * 167/16
     % CLOSING:
     % COMMANDS:
@@ -1154,15 +1138,12 @@ number.2.LH.Music.5 = {
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
         % OPEN_BRACKETS:
-          %! baca.make_music()
         \scaleDurations #'(1 . 1)
-          %! baca.make_music()
         {
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -1183,7 +1164,6 @@ number.2.LH.Music.5 = {
               %! baca.IndicatorCommand._call()
               %! baca.dynamic_up()
             \dynamicUp
-              %! baca.make_music()
             g,8.
             % AFTER:
             % ARTICULATIONS:
@@ -1207,52 +1187,42 @@ number.2.LH.Music.5 = {
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.make_music()
             r32
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.make_music()
             fs,,!8.
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.make_music()
             r32
             % CLOSING:
             % COMMANDS:
 
         % CLOSE_BRACKETS:
-          %! baca.make_music()
         }
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
         % OPEN_BRACKETS:
-          %! baca.make_music()
         \tweak text #tuplet-number::calc-fraction-text
-          %! baca.make_music()
         \times 16/15
-          %! baca.make_music()
         {
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
               %! baca._comment_measure_numbers()
             % [LH.Music.5 measure 2]
-              %! baca.make_music()
             g,,8
             % AFTER:
             % MARKUP:
@@ -1268,73 +1238,58 @@ number.2.LH.Music.5 = {
               %! baca.OverrideCommand._call(1)
               %! baca.rest_up()
             \override Rest.direction = #up
-              %! baca.make_music()
             r32
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.make_music()
             a,,8
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.make_music()
             r32
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.make_music()
             cs,,!8
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.make_music()
             r32
             % CLOSING:
             % COMMANDS:
 
         % CLOSE_BRACKETS:
-          %! baca.make_music()
         }
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
         % OPEN_BRACKETS:
-          %! baca.make_music()
         \tweak text #tuplet-number::calc-fraction-text
-          %! baca.make_music()
         \times 16/15
-          %! baca.make_music()
         {
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.make_music()
             b,,8
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.make_music()
             r32
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.make_music()
             af,,!8
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.make_music()
             r32
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.make_music()
             a,,8
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.make_music()
             r32
             % AFTER:
             % COMMANDS:
@@ -1345,34 +1300,28 @@ number.2.LH.Music.5 = {
             % COMMANDS:
 
         % CLOSE_BRACKETS:
-          %! baca.make_music()
         }
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
         % OPEN_BRACKETS:
-          %! baca.make_music()
         \scaleDurations #'(1 . 1)
-          %! baca.make_music()
         {
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
               %! baca._comment_measure_numbers()
             % [LH.Music.5 measure 3]
-              %! baca.make_music()
             cs,,!32
             % AFTER:
             % MARKUP:
@@ -1383,60 +1332,49 @@ number.2.LH.Music.5 = {
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.make_music()
             r4...
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.make_music()
             a,,,32
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.make_music()
             r4...
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.make_music()
             af,,!32
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.make_music()
             r4...
             % CLOSING:
             % COMMANDS:
 
         % CLOSE_BRACKETS:
-          %! baca.make_music()
         }
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
         % OPEN_BRACKETS:
-          %! baca.make_music()
         \scaleDurations #'(1 . 1)
-          %! baca.make_music()
         {
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
               %! baca._comment_measure_numbers()
             % [LH.Music.5 measure 4]
-              %! baca.make_music()
             bf,,!8.
             % AFTER:
             % MARKUP:
@@ -1452,37 +1390,30 @@ number.2.LH.Music.5 = {
               %! baca.OverrideCommand._call(1)
               %! baca.rest_up()
             \override Rest.direction = #up
-              %! baca.make_music()
             r32
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.make_music()
             d,8.
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.make_music()
             r32
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.make_music()
             c,8.
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.make_music()
             r32
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.make_music()
             b,,8.
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.make_music()
             r32
             % AFTER:
             % COMMANDS:
@@ -1493,34 +1424,28 @@ number.2.LH.Music.5 = {
             % COMMANDS:
 
         % CLOSE_BRACKETS:
-          %! baca.make_music()
         }
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
         % OPEN_BRACKETS:
-          %! baca.make_music()
         \scaleDurations #'(1 . 1)
-          %! baca.make_music()
         {
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
               %! baca._comment_measure_numbers()
             % [LH.Music.5 measure 5]
-              %! baca.make_music()
             d,,8
             % AFTER:
             % MARKUP:
@@ -1531,52 +1456,42 @@ number.2.LH.Music.5 = {
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.make_music()
             r32
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.make_music()
             bf,,!8
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.make_music()
             r32
             % CLOSING:
             % COMMANDS:
 
         % CLOSE_BRACKETS:
-          %! baca.make_music()
         }
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
         % OPEN_BRACKETS:
-          %! baca.make_music()
         \tweak text #tuplet-number::calc-fraction-text
-          %! baca.make_music()
         \times 16/15
-          %! baca.make_music()
         {
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
               %! baca._comment_measure_numbers()
             % [LH.Music.5 measure 6]
-              %! baca.make_music()
             b,,,8
             % AFTER:
             % MARKUP:
@@ -1587,60 +1502,49 @@ number.2.LH.Music.5 = {
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.make_music()
             r32
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.make_music()
             cs,,!8
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.make_music()
             r32
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.make_music()
             f,,8
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.make_music()
             r32
             % CLOSING:
             % COMMANDS:
 
         % CLOSE_BRACKETS:
-          %! baca.make_music()
         }
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
         % OPEN_BRACKETS:
-          %! baca.make_music()
         \scaleDurations #'(1 . 1)
-          %! baca.make_music()
         {
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
               %! baca._comment_measure_numbers()
             % [LH.Music.5 measure 7]
-              %! baca.make_music()
             ef,,!32
             % AFTER:
             % MARKUP:
@@ -1656,37 +1560,30 @@ number.2.LH.Music.5 = {
               %! baca.OverrideCommand._call(1)
               %! baca.rest_up()
             \override Rest.direction = #up
-              %! baca.make_music()
             r4...
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.make_music()
             c,,32
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.make_music()
             r4...
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.make_music()
             cs,,!32
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.make_music()
             r4...
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.make_music()
             ef,,!32
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.make_music()
             r4...
             % AFTER:
             % COMMANDS:
@@ -1697,34 +1594,28 @@ number.2.LH.Music.5 = {
             % COMMANDS:
 
         % CLOSE_BRACKETS:
-          %! baca.make_music()
         }
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
         % OPEN_BRACKETS:
-          %! baca.make_music()
         \scaleDurations #'(1 . 1)
-          %! baca.make_music()
         {
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
               %! baca._comment_measure_numbers()
             % [LH.Music.5 measure 8]
-              %! baca.make_music()
             c,8.
             % AFTER:
             % MARKUP:
@@ -1735,45 +1626,36 @@ number.2.LH.Music.5 = {
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.make_music()
             r32
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.make_music()
             d,8.
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.make_music()
             r32
             % CLOSING:
             % COMMANDS:
 
         % CLOSE_BRACKETS:
-          %! baca.make_music()
         }
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
         % OPEN_BRACKETS:
-          %! baca.make_music()
         \tweak text #tuplet-number::calc-fraction-text
-          %! baca.make_music()
         \times 16/15
-          %! baca.make_music()
         {
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -1785,7 +1667,6 @@ number.2.LH.Music.5 = {
               %! baca.OverrideCommand._call(1)
               %! baca.tuplet_bracket_staff_padding()
             \override TupletBracket.staff-padding = 3
-              %! baca.make_music()
             fs,,!8
             % AFTER:
             % MARKUP:
@@ -1796,73 +1677,58 @@ number.2.LH.Music.5 = {
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.make_music()
             r32
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.make_music()
             e,,8
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.make_music()
             r32
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.make_music()
             ef,,!8
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.make_music()
             r32
             % CLOSING:
             % COMMANDS:
 
         % CLOSE_BRACKETS:
-          %! baca.make_music()
         }
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
         % OPEN_BRACKETS:
-          %! baca.make_music()
         \tweak text #tuplet-number::calc-fraction-text
-          %! baca.make_music()
         \times 16/15
-          %! baca.make_music()
         {
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.make_music()
             d,8
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.make_music()
             r32
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.make_music()
             ef,!8
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.make_music()
             r32
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.make_music()
             f,8
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.make_music()
             r32
             % AFTER:
             % COMMANDS:
@@ -1873,34 +1739,28 @@ number.2.LH.Music.5 = {
             % COMMANDS:
 
         % CLOSE_BRACKETS:
-          %! baca.make_music()
         }
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
         % OPEN_BRACKETS:
-          %! baca.make_music()
         \scaleDurations #'(1 . 1)
-          %! baca.make_music()
         {
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
               %! baca._comment_measure_numbers()
             % [LH.Music.5 measure 10]
-              %! baca.make_music()
             a,,,32
             % AFTER:
             % MARKUP:
@@ -1916,17 +1776,14 @@ number.2.LH.Music.5 = {
               %! baca.OverrideCommand._call(1)
               %! baca.rest_up()
             \override Rest.direction = #up
-              %! baca.make_music()
             r4...
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.make_music()
             g,,32
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.make_music()
             r4...
             % AFTER:
             % COMMANDS:
@@ -1937,34 +1794,28 @@ number.2.LH.Music.5 = {
             % COMMANDS:
 
         % CLOSE_BRACKETS:
-          %! baca.make_music()
         }
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
         % OPEN_BRACKETS:
-          %! baca.make_music()
         \scaleDurations #'(1 . 1)
-          %! baca.make_music()
         {
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
               %! baca._comment_measure_numbers()
             % [LH.Music.5 measure 11]
-              %! baca.make_music()
             b,,8.
             % AFTER:
             % MARKUP:
@@ -1975,72 +1826,58 @@ number.2.LH.Music.5 = {
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.make_music()
             r32
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.make_music()
             a,,8.
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.make_music()
             r32
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.make_music()
             f,,8.
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.make_music()
             r32
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.make_music()
             e,,8.
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.make_music()
             r32
             % CLOSING:
             % COMMANDS:
 
         % CLOSE_BRACKETS:
-          %! baca.make_music()
         }
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
         % OPEN_BRACKETS:
-          %! baca.make_music()
         \tweak text #tuplet-number::calc-fraction-text
-          %! baca.make_music()
         \times 16/15
-          %! baca.make_music()
         {
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
               %! baca._comment_measure_numbers()
             % [LH.Music.5 measure 12]
-              %! baca.make_music()
             fs,,!8
             % AFTER:
             % MARKUP:
@@ -2051,22 +1888,18 @@ number.2.LH.Music.5 = {
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.make_music()
             r32
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.make_music()
             bf,,!8
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.make_music()
             r32
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.make_music()
             af,,!8
             % AFTER:
             % COMMANDS:
@@ -2077,7 +1910,6 @@ number.2.LH.Music.5 = {
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.make_music()
             r32
             % AFTER:
             % COMMANDS:
@@ -2088,13 +1920,11 @@ number.2.LH.Music.5 = {
             % COMMANDS:
 
         % CLOSE_BRACKETS:
-          %! baca.make_music()
         }
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % CLOSING:
     % COMMANDS:
@@ -2112,7 +1942,6 @@ number.2.LH.Insert_Voice.5 = {
 
       %! baca._comment_measure_numbers()
     % [LH.Insert_Voice.5 measure 1]
-      %! baca.make_music()
     s1 * 167/16
     % CLOSING:
     % COMMANDS:
@@ -2155,7 +1984,6 @@ number.2.LH.Music.6 = {
       %! baca._set_status_tag()
       %! baca.treat_persistent_wrapper(2)
     \set PianoMusicLHStaff.forceClef = ##t
-      %! baca.make_music()
     s1 * 11/16
     % ABSOLUTE_AFTER:
     % COMMANDS:
@@ -2166,17 +1994,13 @@ number.2.LH.Music.6 = {
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
         % OPEN_BRACKETS:
-          %! baca.make_music()
         \tweak text #tuplet-number::calc-fraction-text
-          %! baca.make_music()
         \times 5/6
-          %! baca.make_music()
         {
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -2186,7 +2010,6 @@ number.2.LH.Music.6 = {
               %! baca.OverrideCommand._call(1)
               %! baca.stem_down()
             \override Stem.direction = #down
-              %! baca.make_music()
             af,,!4
             % AFTER:
             % ARTICULATIONS:
@@ -2218,12 +2041,10 @@ number.2.LH.Music.6 = {
               %! baca.OverrideCommand._call(1)
               %! baca.rest_position()
             \override Rest.staff-position = -10
-              %! baca.make_music()
             r4
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.make_music()
             c,,4
             % AFTER:
             % ARTICULATIONS:
@@ -2233,12 +2054,10 @@ number.2.LH.Music.6 = {
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.make_music()
             r4
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.make_music()
             bf,,,!4
             % AFTER:
             % ARTICULATIONS:
@@ -2248,47 +2067,38 @@ number.2.LH.Music.6 = {
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.make_music()
             r4
             % CLOSING:
             % COMMANDS:
 
         % CLOSE_BRACKETS:
-          %! baca.make_music()
         }
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_music()
     s1 * 1
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
         % OPEN_BRACKETS:
-          %! baca.make_music()
         \tweak text #tuplet-number::calc-fraction-text
-          %! baca.make_music()
         \times 4/3
-          %! baca.make_music()
         {
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
               %! baca._comment_measure_numbers()
             % [LH.Music.6 measure 4]
-              %! baca.make_music()
             b,,,8
             % AFTER:
             % ARTICULATIONS:
@@ -2308,12 +2118,10 @@ number.2.LH.Music.6 = {
               %! baca.OverrideCommand._call(1)
               %! baca.rest_up()
             \override Rest.direction = #up
-              %! baca.make_music()
             r4
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.make_music()
             ef,,!8
             % AFTER:
             % ARTICULATIONS:
@@ -2323,7 +2131,6 @@ number.2.LH.Music.6 = {
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.make_music()
             r4
             % AFTER:
             % COMMANDS:
@@ -2334,39 +2141,31 @@ number.2.LH.Music.6 = {
             % COMMANDS:
 
         % CLOSE_BRACKETS:
-          %! baca.make_music()
         }
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_music()
     s1 * 73/48
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
         % OPEN_BRACKETS:
-          %! baca.make_music()
         \tweak text #tuplet-number::calc-fraction-text
-          %! baca.make_music()
         \times 4/3
-          %! baca.make_music()
         {
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.make_music()
             bf,,,!16
             % AFTER:
             % ARTICULATIONS:
@@ -2381,12 +2180,10 @@ number.2.LH.Music.6 = {
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.make_music()
             r8.
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.make_music()
             c,,16
             % AFTER:
             % ARTICULATIONS:
@@ -2396,7 +2193,6 @@ number.2.LH.Music.6 = {
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.make_music()
             r8.
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -2406,7 +2202,6 @@ number.2.LH.Music.6 = {
               %! baca.OverrideCommand._call(1)
               %! baca.note_column_shift()
             \once \override NoteColumn.force-hshift = -1
-              %! baca.make_music()
             e,,16
             % AFTER:
             % ARTICULATIONS:
@@ -2416,45 +2211,36 @@ number.2.LH.Music.6 = {
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.make_music()
             r8.
             % CLOSING:
             % COMMANDS:
 
         % CLOSE_BRACKETS:
-          %! baca.make_music()
         }
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_music()
     s1 * 7/16
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
         % OPEN_BRACKETS:
-          %! baca.make_music()
         \tweak text #tuplet-number::calc-fraction-text
-          %! baca.make_music()
         \times 4/3
-          %! baca.make_music()
         {
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.make_music()
             g,,16
             % AFTER:
             % ARTICULATIONS:
@@ -2469,12 +2255,10 @@ number.2.LH.Music.6 = {
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.make_music()
             r8.
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.make_music()
             f,,16
             % AFTER:
             % ARTICULATIONS:
@@ -2484,12 +2268,10 @@ number.2.LH.Music.6 = {
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.make_music()
             r8.
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.make_music()
             cs,,!16
             % AFTER:
             % ARTICULATIONS:
@@ -2499,45 +2281,36 @@ number.2.LH.Music.6 = {
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.make_music()
             r8.
             % CLOSING:
             % COMMANDS:
 
         % CLOSE_BRACKETS:
-          %! baca.make_music()
         }
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_music()
     s1 * 11/48
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
         % OPEN_BRACKETS:
-          %! baca.make_music()
         \tweak text #tuplet-number::calc-fraction-text
-          %! baca.make_music()
         \times 5/4
-          %! baca.make_music()
         {
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.make_music()
             d,,8
             % AFTER:
             % ARTICULATIONS:
@@ -2552,7 +2325,6 @@ number.2.LH.Music.6 = {
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.make_music()
             e,,8
             % AFTER:
             % ARTICULATIONS:
@@ -2562,7 +2334,6 @@ number.2.LH.Music.6 = {
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.make_music()
             af,,!8
             % AFTER:
             % ARTICULATIONS:
@@ -2572,7 +2343,6 @@ number.2.LH.Music.6 = {
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.make_music()
             fs,,!8
             % AFTER:
             % ARTICULATIONS:
@@ -2583,39 +2353,31 @@ number.2.LH.Music.6 = {
             % COMMANDS:
 
         % CLOSE_BRACKETS:
-          %! baca.make_music()
         }
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_music()
     s1 * 1/16
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! baca.make_music()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
         % OPEN_BRACKETS:
-          %! baca.make_music()
         \tweak text #tuplet-number::calc-fraction-text
-          %! baca.make_music()
         \times 4/6
-          %! baca.make_music()
         {
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.make_music()
             e,,8
             % AFTER:
             % ARTICULATIONS:
@@ -2630,14 +2392,12 @@ number.2.LH.Music.6 = {
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.make_music()
             r4
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
               %! baca._comment_measure_numbers()
             % [LH.Music.6 measure 11]
-              %! baca.make_music()
             f,,8
             % AFTER:
             % ARTICULATIONS:
@@ -2647,12 +2407,10 @@ number.2.LH.Music.6 = {
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.make_music()
             r4
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.make_music()
             g,,8
             % AFTER:
             % ARTICULATIONS:
@@ -2666,7 +2424,6 @@ number.2.LH.Music.6 = {
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
-              %! baca.make_music()
             r4
             % AFTER:
             % COMMANDS:
@@ -2677,18 +2434,15 @@ number.2.LH.Music.6 = {
             % COMMANDS:
 
         % CLOSE_BRACKETS:
-          %! baca.make_music()
         }
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! baca.make_music()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_music()
     s1 * 7/8
     % AFTER:
     % COMMANDS:
@@ -2714,7 +2468,6 @@ number.2.LH.Insert_Voice.6 = {
 
       %! baca._comment_measure_numbers()
     % [LH.Insert_Voice.6 measure 1]
-      %! baca.make_music()
     s1 * 167/16
     % CLOSING:
     % COMMANDS:
@@ -2732,7 +2485,6 @@ number.2.LH.Resonance_Voice = {
 
       %! baca._comment_measure_numbers()
     % [LH.Resonance_Voice measure 1]
-      %! baca.make_music()
     s1 * 167/16
     % CLOSING:
     % COMMANDS:
