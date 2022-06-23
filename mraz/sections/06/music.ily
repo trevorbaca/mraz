@@ -6777,15 +6777,11 @@ number.6.LH.Music.4 = {
             % COMMANDS:
               %! MEASURE_85
               %! SHIFTED_CLEF
-              %! baca.OverrideCommand._call(1)
-              %! baca.clef_shift()
-              %! baca.clef_x_extent_false()
+              %! baca.clef_x_extent_false_function(1)
         %%% \once \override PianoMusicLHStaff.Clef.X-extent = ##f
               %! MEASURE_85
               %! SHIFTED_CLEF
-              %! baca.OverrideCommand._call(1)
-              %! baca.clef_extra_offset()
-              %! baca.clef_shift()
+              %! baca.clef_extra_offset_function(1)
         %%% \once \override PianoMusicLHStaff.Clef.extra-offset = #'(-2.75 . 0)
               %! baca.OverrideCommand._call(1)
               %! baca.script_up()
@@ -7662,15 +7658,11 @@ number.6.LH.Music.4 = {
             % COMMANDS:
               %! MEASURE_97
               %! SHIFTED_CLEF
-              %! baca.OverrideCommand._call(1)
-              %! baca.clef_shift()
-              %! baca.clef_x_extent_false()
+              %! baca.clef_x_extent_false_function(1)
             \once \override PianoMusicLHStaff.Clef.X-extent = ##f
               %! MEASURE_97
               %! SHIFTED_CLEF
-              %! baca.OverrideCommand._call(1)
-              %! baca.clef_extra_offset()
-              %! baca.clef_shift()
+              %! baca.clef_extra_offset_function(1)
             \once \override PianoMusicLHStaff.Clef.extra-offset = #'(-2.5 . 0)
               %! baca.OverrideCommand._call(1)
               %! baca.rest_transparent()
