@@ -685,15 +685,11 @@ number.1.RH.Music.1 = {
             % COMMANDS:
               %! MEASURE_1
               %! SHIFTED_CLEF
-              %! baca.OverrideCommand._call(1)
-              %! baca.clef_shift()
-              %! baca.clef_x_extent_false()
+              %! baca.clef_x_extent_false_function(1)
         %%% \once \override PianoMusicRHStaff.Clef.X-extent = ##f
               %! MEASURE_1
               %! SHIFTED_CLEF
-              %! baca.OverrideCommand._call(1)
-              %! baca.clef_extra_offset()
-              %! baca.clef_shift()
+              %! baca.clef_extra_offset_function(1)
         %%% \once \override PianoMusicRHStaff.Clef.extra-offset = #'(-2.5 . 0)
               %! -PARTS
               %! baca.IndicatorCommand._call()
@@ -1942,15 +1938,11 @@ number.1.LH.Music.1 = {
     % COMMANDS:
       %! MEASURE_1
       %! SHIFTED_CLEF
-      %! baca.OverrideCommand._call(1)
-      %! baca.clef_shift()
-      %! baca.clef_x_extent_false()
+      %! baca.clef_x_extent_false_function(1)
 %%% \once \override PianoMusicLHStaff.Clef.X-extent = ##f
       %! MEASURE_1
       %! SHIFTED_CLEF
-      %! baca.OverrideCommand._call(1)
-      %! baca.clef_extra_offset()
-      %! baca.clef_shift()
+      %! baca.clef_extra_offset_function(1)
 %%% \once \override PianoMusicLHStaff.Clef.extra-offset = #'(-2.5 . 0)
     % OPENING:
     % COMMANDS:
@@ -2396,15 +2388,11 @@ number.1.LH.Music.6 = {
             % COMMANDS:
               %! MEASURE_3
               %! SHIFTED_CLEF
-              %! baca.OverrideCommand._call(1)
-              %! baca.clef_shift()
-              %! baca.clef_x_extent_false()
+              %! baca.clef_x_extent_false_function(1)
             \once \override PianoMusicLHStaff.Clef.X-extent = ##f
               %! MEASURE_3
               %! SHIFTED_CLEF
-              %! baca.OverrideCommand._call(1)
-              %! baca.clef_extra_offset()
-              %! baca.clef_shift()
+              %! baca.clef_extra_offset_function(1)
             \once \override PianoMusicLHStaff.Clef.extra-offset = #'(-2.75 . 0)
               %! SPANNER_START
               %! baca.SpannerIndicatorCommand._call(2)

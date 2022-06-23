@@ -1103,15 +1103,11 @@ number.5.LH.Music.4 = {
     % COMMANDS:
       %! MEASURE_78
       %! SHIFTED_CLEF
-      %! baca.OverrideCommand._call(1)
-      %! baca.clef_shift()
-      %! baca.clef_x_extent_false()
+      %! baca.clef_x_extent_false_function(1)
 %%% \once \override PianoMusicLHStaff.Clef.X-extent = ##f
       %! MEASURE_78
       %! SHIFTED_CLEF
-      %! baca.OverrideCommand._call(1)
-      %! baca.clef_extra_offset()
-      %! baca.clef_shift()
+      %! baca.clef_extra_offset_function(1)
 %%% \once \override PianoMusicLHStaff.Clef.extra-offset = #'(-2.5 . 0)
     % OPENING:
     % COMMANDS:
