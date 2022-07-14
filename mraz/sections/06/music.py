@@ -517,10 +517,7 @@ for index, string in (
 music_voice_names = [
     _
     for _ in voice_names
-    if "RH_Voice" in _
-    or "LH_Voice" in _
-    or "Insert_Voice" in _
-    or "Resonance_Voice" in _
+    if "RHVoice" in _ or "LHVoice" in _ or "InsertVoice" in _ or "ResonanceVoice" in _
 ]
 
 commands(

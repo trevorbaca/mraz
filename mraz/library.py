@@ -70,25 +70,25 @@ lh_resonance = "lh_resonance"
 def _validate_voice_names(score):
     voice_colors = {
         "RH.Music.1": "red",
-        "RH.Insert_Voice.1": "red",
+        "RH.InsertVoice.1": "red",
         "RH.Music.2": "black",
-        "RH.Insert_Voice.2": "black",
+        "RH.InsertVoice.2": "black",
         "RH.Music.3": "darkgreen",
-        "RH.Insert_Voice.3": "darkgreen",
+        "RH.InsertVoice.3": "darkgreen",
         "RH.Music.4": "blue",
         "RH.Music.5": "darkmagenta",
         "RH.Music.6": "darkcyan",
-        "RH.Resonance_Voice": "darkred",
+        "RH.ResonanceVoice": "darkred",
         "LH.Music.1": "red",
         "LH.Music.2": "black",
         "LH.Music.3": "darkgreen",
         "LH.Music.4": "blue",
-        "LH.Insert_Voice.4": "blue",
+        "LH.InsertVoice.4": "blue",
         "LH.Music.5": "darkmagenta",
-        "LH.Insert_Voice.5": "darkmagenta",
+        "LH.InsertVoice.5": "darkmagenta",
         "LH.Music.6": "darkcyan",
-        "LH.Insert_Voice.6": "darkcyan",
-        "LH.Resonance_Voice": "darkred",
+        "LH.InsertVoice.6": "darkcyan",
+        "LH.ResonanceVoice": "darkred",
     }
     voice_names = []
     for voice in abjad.iterate.components(score, abjad.Voice):
@@ -116,31 +116,31 @@ def make_empty_score():
     global_context = baca.score.make_global_context()
     rh_voice_1 = abjad.Voice(lilypond_type="RHVoiceI", name="RH.Music.1", tag=tag)
     rh_voice_1I = abjad.Voice(
-        lilypond_type="RHInsertVoiceI", name="RH.Insert_Voice.1", tag=tag
+        lilypond_type="RHInsertVoiceI", name="RH.InsertVoice.1", tag=tag
     )
     rh_voice_2 = abjad.Voice(lilypond_type="RHVoiceII", name="RH.Music.2", tag=tag)
     rh_voice_2I = abjad.Voice(
         lilypond_type="RHInsertVoiceII",
-        name="RH.Insert_Voice.2",
+        name="RH.InsertVoice.2",
         tag=tag,
     )
     rh_voice_3 = abjad.Voice(lilypond_type="RHVoiceIII", name="RH.Music.3", tag=tag)
     rh_voice_3I = abjad.Voice(
         lilypond_type="RHInsertVoiceIII",
-        name="RH.Insert_Voice.3",
+        name="RH.InsertVoice.3",
         tag=tag,
     )
     rh_voice_4 = abjad.Voice(lilypond_type="RHVoiceIV", name="RH.Music.4", tag=tag)
     rh_voice_4I = abjad.Voice(
         lilypond_type="RHInsertVoiceIV",
-        name="RH.Insert_Voice.4",
+        name="RH.InsertVoice.4",
         tag=tag,
     )
     rh_voice_5 = abjad.Voice(lilypond_type="RHVoiceV", name="RH.Music.5", tag=tag)
     rh_voice_6 = abjad.Voice(lilypond_type="RHVoiceVI", name="RH.Music.6", tag=tag)
     rh_resonance_voice = abjad.Voice(
         lilypond_type="RHResonanceVoice",
-        name="RH.Resonance_Voice",
+        name="RH.ResonanceVoice",
         tag=tag,
     )
     lh_voice_1 = abjad.Voice(lilypond_type="LHVoiceI", name="LH.Music.1", tag=tag)
@@ -149,22 +149,22 @@ def make_empty_score():
     lh_voice_4 = abjad.Voice(lilypond_type="LHVoiceIV", name="LH.Music.4", tag=tag)
     lh_voice_4I = abjad.Voice(
         lilypond_type="LHInsertVoiceIV",
-        name="LH.Insert_Voice.4",
+        name="LH.InsertVoice.4",
         tag=tag,
     )
     lh_voice_5 = abjad.Voice(lilypond_type="LHVoiceV", name="LH.Music.5", tag=tag)
     lh_voice_5I = abjad.Voice(
-        lilypond_type="LHInsertVoiceV", name="LH.Insert_Voice.5", tag=tag
+        lilypond_type="LHInsertVoiceV", name="LH.InsertVoice.5", tag=tag
     )
     lh_voice_6 = abjad.Voice(lilypond_type="LHVoiceVI", name="LH.Music.6", tag=tag)
     lh_voice_6I = abjad.Voice(
         lilypond_type="LHInsertVoiceVI",
-        name="LH.Insert_Voice.6",
+        name="LH.InsertVoice.6",
         tag=tag,
     )
     lh_resonance_voice = abjad.Voice(
         lilypond_type="LHResonanceVoice",
-        name="LH.Resonance_Voice",
+        name="LH.ResonanceVoice",
         tag=tag,
     )
     piano_music_rh_staff = abjad.Staff(
@@ -183,7 +183,7 @@ def make_empty_score():
         ],
         lilypond_type="PianoMusicRHStaff",
         simultaneous=True,
-        name="Piano_Music_RH.Staff",
+        name="PianoMusicRH.Staff",
         tag=tag,
     )
     piano_music_lh_staff = abjad.Staff(
@@ -201,13 +201,13 @@ def make_empty_score():
         ],
         lilypond_type="PianoMusicLHStaff",
         simultaneous=True,
-        name="Piano_Music_LH.Staff",
+        name="PianoMusicLH.Staff",
         tag=tag,
     )
     piano_music_staff_group = abjad.StaffGroup(
         [piano_music_rh_staff, piano_music_lh_staff],
         lilypond_type="PianoMusicStaffGroup",
-        name="Piano_Music.Staff_Group",
+        name="PianoMusic.StaffGroup",
         tag=tag,
     )
     music_context = abjad.Context(
@@ -1301,29 +1301,29 @@ def transparent_music(selector):
 def voice_abbreviations():
     return {
         rh_v1: "RH.Music.1",
-        rh_v1_i: "RH.Insert_Voice.1",
+        rh_v1_i: "RH.InsertVoice.1",
         rh_v2: "RH.Music.2",
-        rh_v2_i: "RH.Insert_Voice.2",
+        rh_v2_i: "RH.InsertVoice.2",
         rh_v3: "RH.Music.3",
-        rh_v3_i: "RH.Insert_Voice.3",
+        rh_v3_i: "RH.InsertVoice.3",
         rh_v4: "RH.Music.4",
-        rh_v4_i: "RH.Insert_Voice.4",
+        rh_v4_i: "RH.InsertVoice.4",
         rh_v5: "RH.Music.5",
-        rh_v5_i: "RH.Insert_Voice.5",
+        rh_v5_i: "RH.InsertVoice.5",
         rh_v6: "RH.Music.6",
-        rh_v6_i: "RH.Insert_Voice.6",
-        rh_resonance: "RH.Resonance_Voice",
+        rh_v6_i: "RH.InsertVoice.6",
+        rh_resonance: "RH.ResonanceVoice",
         lh_v1: "LH.Music.1",
-        lh_v1_i: "LH.Insert_Voice.1",
+        lh_v1_i: "LH.InsertVoice.1",
         lh_v2: "LH.Music.2",
-        lh_v2_i: "LH.Insert_Voice.2",
+        lh_v2_i: "LH.InsertVoice.2",
         lh_v3: "LH.Music.3",
-        lh_v3_i: "LH.Insert_Voice.3",
+        lh_v3_i: "LH.InsertVoice.3",
         lh_v4: "LH.Music.4",
-        lh_v4_i: "LH.Insert_Voice.4",
+        lh_v4_i: "LH.InsertVoice.4",
         lh_v5: "LH.Music.5",
-        lh_v5_i: "LH.Insert_Voice.5",
+        lh_v5_i: "LH.InsertVoice.5",
         lh_v6: "LH.Music.6",
-        lh_v6_i: "LH.Insert_Voice.6",
-        lh_resonance: "LH.Resonance_Voice",
+        lh_v6_i: "LH.InsertVoice.6",
+        lh_resonance: "LH.ResonanceVoice",
     }

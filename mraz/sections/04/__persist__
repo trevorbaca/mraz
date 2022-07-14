@@ -5,30 +5,30 @@
         "Rests",
         "Skips",
         "MusicContext",
-        "Piano_Music.Staff_Group",
-        "Piano_Music_RH.Staff",
+        "PianoMusic.StaffGroup",
+        "PianoMusicRH.Staff",
         "RH.Music.1",
-        "RH.Insert_Voice.1",
+        "RH.InsertVoice.1",
         "RH.Music.2",
-        "RH.Insert_Voice.2",
+        "RH.InsertVoice.2",
         "RH.Music.3",
-        "RH.Insert_Voice.3",
+        "RH.InsertVoice.3",
         "RH.Music.4",
-        "RH.Insert_Voice.4",
+        "RH.InsertVoice.4",
         "RH.Music.5",
         "RH.Music.6",
-        "RH.Resonance_Voice",
-        "Piano_Music_LH.Staff",
+        "RH.ResonanceVoice",
+        "PianoMusicLH.Staff",
         "LH.Music.1",
         "LH.Music.2",
         "LH.Music.3",
         "LH.Music.4",
-        "LH.Insert_Voice.4",
+        "LH.InsertVoice.4",
         "LH.Music.5",
-        "LH.Insert_Voice.5",
+        "LH.InsertVoice.5",
         "LH.Music.6",
-        "LH.Insert_Voice.6",
-        "LH.Resonance_Voice",
+        "LH.InsertVoice.6",
+        "LH.ResonanceVoice",
     ],
     "persistent_indicators": {
         "LH.Music.4": [
@@ -61,7 +61,7 @@
                 value="f",
             )
         ],
-        "Piano_Music.Staff_Group": [
+        "PianoMusic.StaffGroup": [
             baca.Memento(
                 context="RH.Music.1",
                 edition=None,
@@ -71,7 +71,7 @@
                 value="Piano",
             )
         ],
-        "Piano_Music_LH.Staff": [
+        "PianoMusicLH.Staff": [
             baca.Memento(
                 context="LH.Music.6",
                 edition=None,
@@ -81,7 +81,7 @@
                 value="bass",
             )
         ],
-        "Piano_Music_RH.Staff": [
+        "PianoMusicRH.Staff": [
             baca.Memento(
                 context="RH.Music.1",
                 edition=None,

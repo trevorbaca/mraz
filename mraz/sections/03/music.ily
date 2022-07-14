@@ -1042,12 +1042,12 @@ number.3.RH.Music.1 = {
 
 
   %! baca.path.extern()
-number.3.RH.Insert_Voice.1 = {
+number.3.RH.InsertVoice.1 = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [RH.Insert_Voice.1 measure 1]
+    % [RH.InsertVoice.1 measure 1]
     s1 * 39/4
     % CLOSING:
     % COMMANDS:
@@ -2245,12 +2245,12 @@ number.3.RH.Music.2 = {
 
 
   %! baca.path.extern()
-number.3.RH.Insert_Voice.2 = {
+number.3.RH.InsertVoice.2 = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [RH.Insert_Voice.2 measure 1]
+    % [RH.InsertVoice.2 measure 1]
     s1 * 39/4
     % CLOSING:
     % COMMANDS:
@@ -2372,12 +2372,12 @@ number.3.RH.Music.3 = {
 
 
   %! baca.path.extern()
-number.3.RH.Insert_Voice.3 = {
+number.3.RH.InsertVoice.3 = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [RH.Insert_Voice.3 measure 1]
+    % [RH.InsertVoice.3 measure 1]
     s1 * 39/4
     % CLOSING:
     % COMMANDS:
@@ -2620,7 +2620,7 @@ number.3.RH.Music.4 = {
 
 
   %! baca.path.extern()
-number.3.RH.Insert_Voice.4 = {
+number.3.RH.InsertVoice.4 = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -2641,7 +2641,7 @@ number.3.RH.Insert_Voice.4 = {
             % COMMANDS:
 
               %! baca._comment_measure_numbers()
-            % [RH.Insert_Voice.4 measure 1]
+            % [RH.InsertVoice.4 measure 1]
             d''16
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -2684,7 +2684,7 @@ number.3.RH.Insert_Voice.4 = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [RH.Insert_Voice.4 measure 2]
+    % [RH.InsertVoice.4 measure 2]
     s1 * 13/16
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -2706,7 +2706,7 @@ number.3.RH.Insert_Voice.4 = {
             % COMMANDS:
 
               %! baca._comment_measure_numbers()
-            % [RH.Insert_Voice.4 measure 5]
+            % [RH.InsertVoice.4 measure 5]
             d''16
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -2749,7 +2749,7 @@ number.3.RH.Insert_Voice.4 = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [RH.Insert_Voice.4 measure 6]
+    % [RH.InsertVoice.4 measure 6]
     s1 * 127/16
     % CLOSING:
     % COMMANDS:
@@ -2795,12 +2795,12 @@ number.3.RH.Music.6 = {
 
 
   %! baca.path.extern()
-number.3.RH.Resonance_Voice = {
+number.3.RH.ResonanceVoice = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [RH.Resonance_Voice measure 1]
+    % [RH.ResonanceVoice measure 1]
     s1 * 39/4
     % CLOSING:
     % COMMANDS:
@@ -2812,7 +2812,7 @@ number.3.RH.Resonance_Voice = {
 
 
   %! baca.path.extern()
-number.3.Piano_Music_RH.Staff = <<
+number.3.PianoMusicRH.Staff = <<
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -2827,10 +2827,10 @@ number.3.Piano_Music_RH.Staff = <<
 
     % OPEN_BRACKETS:
       %! mraz.make_empty_score()
-    \context RHInsertVoiceI = "RH.Insert_Voice.1"
+    \context RHInsertVoiceI = "RH.InsertVoice.1"
       %! mraz.make_empty_score()
       %! baca.path.extern()
-    { \number.3.RH.Insert_Voice.1 }
+    { \number.3.RH.InsertVoice.1 }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -2845,10 +2845,10 @@ number.3.Piano_Music_RH.Staff = <<
 
     % OPEN_BRACKETS:
       %! mraz.make_empty_score()
-    \context RHInsertVoiceII = "RH.Insert_Voice.2"
+    \context RHInsertVoiceII = "RH.InsertVoice.2"
       %! mraz.make_empty_score()
       %! baca.path.extern()
-    { \number.3.RH.Insert_Voice.2 }
+    { \number.3.RH.InsertVoice.2 }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -2863,10 +2863,10 @@ number.3.Piano_Music_RH.Staff = <<
 
     % OPEN_BRACKETS:
       %! mraz.make_empty_score()
-    \context RHInsertVoiceIII = "RH.Insert_Voice.3"
+    \context RHInsertVoiceIII = "RH.InsertVoice.3"
       %! mraz.make_empty_score()
       %! baca.path.extern()
-    { \number.3.RH.Insert_Voice.3 }
+    { \number.3.RH.InsertVoice.3 }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -2881,10 +2881,10 @@ number.3.Piano_Music_RH.Staff = <<
 
     % OPEN_BRACKETS:
       %! mraz.make_empty_score()
-    \context RHInsertVoiceIV = "RH.Insert_Voice.4"
+    \context RHInsertVoiceIV = "RH.InsertVoice.4"
       %! mraz.make_empty_score()
       %! baca.path.extern()
-    { \number.3.RH.Insert_Voice.4 }
+    { \number.3.RH.InsertVoice.4 }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -2908,10 +2908,10 @@ number.3.Piano_Music_RH.Staff = <<
 
     % OPEN_BRACKETS:
       %! mraz.make_empty_score()
-    \context RHResonanceVoice = "RH.Resonance_Voice"
+    \context RHResonanceVoice = "RH.ResonanceVoice"
       %! mraz.make_empty_score()
       %! baca.path.extern()
-    { \number.3.RH.Resonance_Voice }
+    { \number.3.RH.ResonanceVoice }
     % CLOSING:
     % COMMANDS:
 
@@ -2990,12 +2990,12 @@ number.3.LH.Music.4 = {
 
 
   %! baca.path.extern()
-number.3.LH.Insert_Voice.4 = {
+number.3.LH.InsertVoice.4 = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [LH.Insert_Voice.4 measure 1]
+    % [LH.InsertVoice.4 measure 1]
     s1 * 39/4
     % CLOSING:
     % COMMANDS:
@@ -3128,12 +3128,12 @@ number.3.LH.Music.5 = {
 
 
   %! baca.path.extern()
-number.3.LH.Insert_Voice.5 = {
+number.3.LH.InsertVoice.5 = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [LH.Insert_Voice.5 measure 1]
+    % [LH.InsertVoice.5 measure 1]
     s1 * 39/4
     % CLOSING:
     % COMMANDS:
@@ -3184,12 +3184,12 @@ number.3.LH.Music.6 = {
 
 
   %! baca.path.extern()
-number.3.LH.Insert_Voice.6 = {
+number.3.LH.InsertVoice.6 = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [LH.Insert_Voice.6 measure 1]
+    % [LH.InsertVoice.6 measure 1]
     s1 * 39/4
     % CLOSING:
     % COMMANDS:
@@ -3201,7 +3201,7 @@ number.3.LH.Insert_Voice.6 = {
 
 
   %! baca.path.extern()
-number.3.LH.Resonance_Voice = {
+number.3.LH.ResonanceVoice = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -3217,7 +3217,7 @@ number.3.LH.Resonance_Voice = {
             % COMMANDS:
 
               %! baca._comment_measure_numbers()
-            % [LH.Resonance_Voice measure 1]
+            % [LH.ResonanceVoice measure 1]
             % BEFORE:
             % COMMANDS:
               %! baca.OverrideCommand._call(1)
@@ -3264,7 +3264,7 @@ number.3.LH.Resonance_Voice = {
             % COMMANDS:
 
               %! baca._comment_measure_numbers()
-            % [LH.Resonance_Voice measure 2]
+            % [LH.ResonanceVoice measure 2]
             % BEFORE:
             % COMMANDS:
               %! baca.OverrideCommand._call(1)
@@ -3326,7 +3326,7 @@ number.3.LH.Resonance_Voice = {
             % COMMANDS:
 
               %! baca._comment_measure_numbers()
-            % [LH.Resonance_Voice measure 3]
+            % [LH.ResonanceVoice measure 3]
             <e, fs, gs, as, b,>4
             % AFTER:
             % SPANNER_STARTS:
@@ -3400,7 +3400,7 @@ number.3.LH.Resonance_Voice = {
             % COMMANDS:
 
               %! baca._comment_measure_numbers()
-            % [LH.Resonance_Voice measure 4]
+            % [LH.ResonanceVoice measure 4]
             % BEFORE:
             % COMMANDS:
               %! baca.OverrideCommand._call(1)
@@ -3459,7 +3459,7 @@ number.3.LH.Resonance_Voice = {
             % COMMANDS:
 
               %! baca._comment_measure_numbers()
-            % [LH.Resonance_Voice measure 5]
+            % [LH.ResonanceVoice measure 5]
             <e, fs, gs, as, b,>2
             % AFTER:
             % SPANNER_STARTS:
@@ -3495,7 +3495,7 @@ number.3.LH.Resonance_Voice = {
             % COMMANDS:
 
               %! baca._comment_measure_numbers()
-            % [LH.Resonance_Voice measure 6]
+            % [LH.ResonanceVoice measure 6]
             <e, fs, gs, as, b,>2
             % AFTER:
             % SPANNER_STARTS:
@@ -3554,7 +3554,7 @@ number.3.LH.Resonance_Voice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [LH.Resonance_Voice measure 7]
+    % [LH.ResonanceVoice measure 7]
     s1 * 7/4
     % AFTER:
     % COMMANDS:
@@ -3576,7 +3576,7 @@ number.3.LH.Resonance_Voice = {
             % COMMANDS:
 
               %! baca._comment_measure_numbers()
-            % [LH.Resonance_Voice measure 9]
+            % [LH.ResonanceVoice measure 9]
             % BEFORE:
             % COMMANDS:
               %! baca.OverrideCommand._call(1)
@@ -3689,7 +3689,7 @@ number.3.LH.Resonance_Voice = {
             % COMMANDS:
 
               %! baca._comment_measure_numbers()
-            % [LH.Resonance_Voice measure 10]
+            % [LH.ResonanceVoice measure 10]
             % BEFORE:
             % COMMANDS:
               %! baca.OverrideCommand._call(1)
@@ -3730,7 +3730,7 @@ number.3.LH.Resonance_Voice = {
             % COMMANDS:
 
               %! baca._comment_measure_numbers()
-            % [LH.Resonance_Voice measure 11]
+            % [LH.ResonanceVoice measure 11]
             <e, fs, gs, as, b,>1.
             % AFTER:
             % SPANNER_STARTS:
@@ -3751,7 +3751,7 @@ number.3.LH.Resonance_Voice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [LH.Resonance_Voice measure 12]
+    % [LH.ResonanceVoice measure 12]
     s1 * 1
     % AFTER:
     % COMMANDS:
@@ -3780,7 +3780,7 @@ number.3.LH.Resonance_Voice = {
 
 
   %! baca.path.extern()
-number.3.Piano_Music_LH.Staff = <<
+number.3.PianoMusicLH.Staff = <<
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -3822,10 +3822,10 @@ number.3.Piano_Music_LH.Staff = <<
 
     % OPEN_BRACKETS:
       %! mraz.make_empty_score()
-    \context LHInsertVoiceIV = "LH.Insert_Voice.4"
+    \context LHInsertVoiceIV = "LH.InsertVoice.4"
       %! mraz.make_empty_score()
       %! baca.path.extern()
-    { \number.3.LH.Insert_Voice.4 }
+    { \number.3.LH.InsertVoice.4 }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -3840,10 +3840,10 @@ number.3.Piano_Music_LH.Staff = <<
 
     % OPEN_BRACKETS:
       %! mraz.make_empty_score()
-    \context LHInsertVoiceV = "LH.Insert_Voice.5"
+    \context LHInsertVoiceV = "LH.InsertVoice.5"
       %! mraz.make_empty_score()
       %! baca.path.extern()
-    { \number.3.LH.Insert_Voice.5 }
+    { \number.3.LH.InsertVoice.5 }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -3858,19 +3858,19 @@ number.3.Piano_Music_LH.Staff = <<
 
     % OPEN_BRACKETS:
       %! mraz.make_empty_score()
-    \context LHInsertVoiceVI = "LH.Insert_Voice.6"
+    \context LHInsertVoiceVI = "LH.InsertVoice.6"
       %! mraz.make_empty_score()
       %! baca.path.extern()
-    { \number.3.LH.Insert_Voice.6 }
+    { \number.3.LH.InsertVoice.6 }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
       %! mraz.make_empty_score()
-    \context LHResonanceVoice = "LH.Resonance_Voice"
+    \context LHResonanceVoice = "LH.ResonanceVoice"
       %! mraz.make_empty_score()
       %! baca.path.extern()
-    { \number.3.LH.Resonance_Voice }
+    { \number.3.LH.ResonanceVoice }
     % CLOSING:
     % COMMANDS:
 
