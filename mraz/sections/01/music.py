@@ -183,7 +183,6 @@ voice_names = baca.accumulator.get_voice_names(score)
 commands = baca.CommandAccumulator(
     instruments=library.instruments(),
     metronome_marks=library.metronome_marks(),
-    skips_instead_of_rests=True,
     time_signatures=figures.time_signatures,
     voice_abbreviations=library.voice_abbreviations(),
     voice_names=voice_names,
@@ -241,10 +240,12 @@ commands(
 if __name__ == "__main__":
     metadata, persist, score, timing = baca.build.interpret_section(
         score,
-        commands,
+        commands.manifests(),
+        commands.time_signatures,
         **baca.score_interpretation_defaults(),
         activate=(baca.tags.LOCAL_MEASURE_NUMBER,),
         always_make_global_rests=True,
+        commands=commands,
         do_not_require_short_instrument_names=True,
         error_on_not_yet_pitched=True,
     )
