@@ -1027,7 +1027,7 @@ figures(
 
 voice_names = baca.accumulator.get_voice_names(score)
 
-commands = baca.CommandAccumulator(
+accumulator = baca.CommandAccumulator(
     instruments=library.instruments(),
     metronome_marks=library.metronome_marks(),
     time_signatures=figures.time_signatures,
@@ -1037,18 +1037,18 @@ commands = baca.CommandAccumulator(
 
 baca.interpret.set_up_score(
     score,
-    commands,
-    commands.manifests(),
-    commands.time_signatures,
+    accumulator,
+    accumulator.manifests(),
+    accumulator.time_signatures,
     append_anchor_skip=True,
     always_make_global_rests=True,
     attach_nonfirst_empty_start_bar=True,
 )
 
-figures.populate_commands(score, commands)
+figures.populate_commands(score, accumulator)
 
 skips = score["Skips"]
-manifests = commands.manifests()
+manifests = accumulator.manifests()
 
 for index, item in (
     (0, "84"),
@@ -1072,7 +1072,7 @@ for index, item in (
     (36, "84"),
 ):
     skip = skips[index]
-    indicator = commands.metronome_marks.get(item, item)
+    indicator = accumulator.metronome_marks.get(item, item)
     baca.metronome_mark(skip, indicator, manifests)
 
 rests = score["Rests"]
@@ -1087,56 +1087,56 @@ music_voice_names = [
     if "RHVoice" in _ or "LHVoice" in _ or "InsertVoice" in _ or "ResonanceVoice" in _
 ]
 
-commands(
+accumulator(
     music_voice_names,
     baca.reapply_persistent_indicators(),
 )
 
 # rh_v1
 
-commands(
+accumulator(
     library.rh_v1,
     baca.stem_up(),
     baca.tuplet_bracket_staff_padding(8),
     baca.tuplet_bracket_up(),
 )
 
-commands(
+accumulator(
     (library.rh_v1, [(1, 36), (38, 39)]),
     baca.ottava(),
 )
 
-commands(
+accumulator(
     library.rh_v3,
     baca.tenuto(lambda _: baca.select.pheads(_)),
 )
 
-commands(
+accumulator(
     library.lh_v5,
     baca.dynamic_down(),
 )
 
-commands(
+accumulator(
     (library.lh_v5, (7, 16)),
     baca.marcato(lambda _: baca.select.pheads(_)),
     baca.rest_up(),
 )
 
-commands(
+accumulator(
     (library.lh_v5, (18, -1)),
     baca.stem_down(),
     baca.tuplet_bracket_staff_padding(2),
     baca.tuplet_bracket_down(),
 )
 
-commands(
+accumulator(
     library.lh_v5_i,
     baca.script_up(),
     baca.staccato(lambda _: baca.select.pheads(_)),
     baca.stem_up(),
 )
 
-commands(
+accumulator(
     library.lh_resonance,
     baca.untie(lambda _: baca.select.leaves(_)),
     baca.new(
@@ -1147,35 +1147,35 @@ commands(
     ),
 )
 
-commands(
+accumulator(
     (library.lh_resonance, [11, 15, (33, 39)]),
     baca.accidental_stencil_false(lambda _: baca.select.leaves(_)),
     baca.dots_stencil_false(lambda _: baca.select.leaves(_)),
     baca.stem_stencil_false(lambda _: baca.select.leaves(_)),
 )
 
-commands(
+accumulator(
     (library.lh_resonance, 32),
     baca.accidental_x_extent_false(),
 )
 
-defaults = baca.score_interpretation_defaults()
+defaults = baca.interpret.section_defaults()
 del defaults["check_wellformedness"]
 
 if __name__ == "__main__":
-    metadata, persist, score, timing = baca.build.interpret_section(
+    metadata, persist, score, timing = baca.build.section(
         score,
-        commands.manifests(),
-        commands.time_signatures,
+        accumulator.manifests(),
+        accumulator.time_signatures,
         **defaults,
         activate=(baca.tags.LOCAL_MEASURE_NUMBER,),
         always_make_global_rests=True,
-        commands=commands,
+        commands=accumulator.commands,
         deactivate=(baca.tags.REPEAT_PITCH_CLASS_COLORING,),
         do_not_require_short_instrument_names=True,
         error_on_not_yet_pitched=True,
     )
-    lilypond_file = baca.make_lilypond_file(
+    lilypond_file = baca.lilypond.file(
         score,
         include_layout_ly=True,
         includes=["../stylesheet.ily"],

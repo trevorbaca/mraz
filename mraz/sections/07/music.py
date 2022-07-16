@@ -337,7 +337,7 @@ figures(
 
 voice_names = baca.accumulator.get_voice_names(score)
 
-commands = baca.CommandAccumulator(
+accumulator = baca.CommandAccumulator(
     instruments=library.instruments(),
     metronome_marks=library.metronome_marks(),
     time_signatures=figures.time_signatures,
@@ -347,18 +347,18 @@ commands = baca.CommandAccumulator(
 
 baca.interpret.set_up_score(
     score,
-    commands,
-    commands.manifests(),
-    commands.time_signatures,
+    accumulator,
+    accumulator.manifests(),
+    accumulator.time_signatures,
     append_anchor_skip=True,
     always_make_global_rests=True,
     attach_nonfirst_empty_start_bar=True,
 )
 
-figures.populate_commands(score, commands)
+figures.populate_commands(score, accumulator)
 
 skips = score["Skips"]
-manifests = commands.manifests()
+manifests = accumulator.manifests()
 
 for index, item in (
     (0, "84"),
@@ -366,7 +366,7 @@ for index, item in (
     (8, "112"),
 ):
     skip = skips[index]
-    indicator = commands.metronome_marks.get(item, item)
+    indicator = accumulator.metronome_marks.get(item, item)
     baca.metronome_mark(skip, indicator, manifests)
 
 baca.bar_line(score["Skips"][11 - 1], "|.")
@@ -379,36 +379,36 @@ music_voice_names = [
     if "RHVoice" in _ or "LHVoice" in _ or "InsertVoice" in _ or "ResonanceVoice" in _
 ]
 
-commands(
+accumulator(
     music_voice_names,
     baca.reapply_persistent_indicators(),
 )
 
 # rh_v1
 
-commands(
+accumulator(
     library.rh_v1,
     baca.beam_positions(10),
     baca.dynamic_up(),
     baca.stem_up(),
 )
 
-commands(
+accumulator(
     (library.rh_v1_i, (1, 5)),
     baca.beam_positions(-6.5),
 )
 
-commands(
+accumulator(
     (library.rh_v1_i, (5, 10)),
     baca.beam_positions(-8.5),
 )
 
-commands(
+accumulator(
     library.rh_v1_i,
     baca.script_down(),
 )
 
-commands(
+accumulator(
     library.rh_v2,
     baca.beam_positions(-4.5),
     baca.dynamic_down(),
@@ -416,68 +416,68 @@ commands(
     baca.stem_down(),
 )
 
-commands(
+accumulator(
     (library.rh_v2_i, (9, -1)),
     baca.beam_positions(18.5),
 )
 
-commands(
+accumulator(
     (library.rh_v2_i, (1, 4)),
     baca.beam_positions(15.5),
 )
 
-commands(
+accumulator(
     (library.rh_v2_i, (6, 8)),
     baca.beam_positions(13.5),
 )
 
-commands(
+accumulator(
     library.rh_v2_i,
     baca.script_up(),
     baca.stem_up(),
 )
 
-commands(
+accumulator(
     (library.lh_v4, (1, 2)),
     baca.beam_positions(-5.5),
 )
 
-commands(
+accumulator(
     (library.lh_v4, (6, -1)),
     baca.beam_positions(-4.5),
 )
 
-commands(
+accumulator(
     library.lh_v4,
     baca.script_down(),
     baca.stem_down(),
 )
 
-commands(
+accumulator(
     library.lh_v4_i,
     baca.script_up(),
     baca.stem_up(),
 )
 
-commands(
+accumulator(
     (library.lh_v5, (1, 5)),
     baca.beam_positions(-6),
 )
 
-commands(
+accumulator(
     library.lh_v5,
     baca.script_down(),
     baca.stem_down(),
 )
 
-commands(
+accumulator(
     library.lh_v5_i,
     baca.script_up(),
     baca.stem_up(),
     baca.beam_positions(9),
 )
 
-commands(
+accumulator(
     (library.rh_v1, -1),
     baca.chunk(
         baca.mark(r"\mraz-colophon-markup"),
@@ -488,23 +488,23 @@ commands(
     ),
 )
 
-defaults = baca.score_interpretation_defaults()
+defaults = baca.interpret.section_defaults()
 del defaults["check_wellformedness"]
 
 if __name__ == "__main__":
-    metadata, persist, score, timing = baca.build.interpret_section(
+    metadata, persist, score, timing = baca.build.section(
         score,
-        commands.manifests(),
-        commands.time_signatures,
+        accumulator.manifests(),
+        accumulator.time_signatures,
         **defaults,
         activate=(baca.tags.LOCAL_MEASURE_NUMBER,),
         always_make_global_rests=True,
-        commands=commands,
+        commands=accumulator.commands,
         do_not_require_short_instrument_names=True,
         error_on_not_yet_pitched=True,
         final_section=True,
     )
-    lilypond_file = baca.make_lilypond_file(
+    lilypond_file = baca.lilypond.file(
         score,
         include_layout_ly=True,
         includes=["../stylesheet.ily"],
