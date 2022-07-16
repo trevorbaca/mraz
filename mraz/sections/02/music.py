@@ -226,7 +226,7 @@ figures(
 
 voice_names = baca.accumulator.get_voice_names(score)
 
-commands = baca.CommandAccumulator(
+accumulator = baca.CommandAccumulator(
     instruments=library.instruments(),
     metronome_marks=library.metronome_marks(),
     time_signatures=figures.time_signatures,
@@ -236,15 +236,15 @@ commands = baca.CommandAccumulator(
 
 baca.interpret.set_up_score(
     score,
-    commands,
-    commands.manifests(),
-    commands.time_signatures,
+    accumulator,
+    accumulator.manifests(),
+    accumulator.time_signatures,
     append_anchor_skip=True,
     always_make_global_rests=True,
     attach_nonfirst_empty_start_bar=True,
 )
 
-figures.populate_commands(score, commands)
+figures.populate_commands(score, accumulator)
 
 # reapply
 
@@ -254,20 +254,20 @@ music_voice_names = [
     if "RHVoice" in _ or "LHVoice" in _ or "InsertVoice" in _ or "ResonanceVoice" in _
 ]
 
-commands(
+accumulator(
     music_voice_names,
     baca.reapply_persistent_indicators(),
 )
 
 # lh_v5
 
-commands(
+accumulator(
     library.lh_v5,
     baca.ottava_bassa(),
     baca.tuplet_bracket_up(),
 )
 
-commands(
+accumulator(
     library.lh_v6,
     baca.script_down(),
     baca.stem_down(lambda _: baca.select.tleaves(_, exclude=baca.enums.HIDDEN)),
@@ -277,18 +277,18 @@ commands(
 )
 
 if __name__ == "__main__":
-    metadata, persist, score, timing = baca.build.interpret_section(
+    metadata, persist, score, timing = baca.build.section(
         score,
-        commands.manifests(),
-        commands.time_signatures,
-        **baca.score_interpretation_defaults(),
+        accumulator.manifests(),
+        accumulator.time_signatures,
+        **baca.interpret.section_defaults(),
         activate=(baca.tags.LOCAL_MEASURE_NUMBER,),
         always_make_global_rests=True,
-        commands=commands,
+        commands=accumulator.commands,
         do_not_require_short_instrument_names=True,
         error_on_not_yet_pitched=True,
     )
-    lilypond_file = baca.make_lilypond_file(
+    lilypond_file = baca.lilypond.file(
         score,
         include_layout_ly=True,
         includes=["../stylesheet.ily"],
