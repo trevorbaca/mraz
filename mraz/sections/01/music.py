@@ -223,21 +223,31 @@ for index, string in (
 ):
     baca.global_fermata(rests[index], string)
 
-# rh_v1
 
-accumulator(
-    library.rh_v1,
-    baca.instrument(accumulator.instruments["Piano"]),
-    baca.instrument_name(r"\mraz-piano-markup", context="PianoStaff"),
-    baca.clef("treble"),
-)
+def postprocess(cache):
+    accumulator(
+        library.rh_v1,
+        baca.instrument(accumulator.instruments["Piano"]),
+        baca.instrument_name(r"\mraz-piano-markup", context="PianoStaff"),
+        baca.clef("treble"),
+    )
+    accumulator(
+        library.lh_v1,
+        baca.clef("treble"),
+    )
 
-accumulator(
-    library.lh_v1,
-    baca.clef("treble"),
-)
+
+def main():
+    cache = baca.interpret.cache_leaves(
+        score,
+        len(accumulator.time_signatures),
+        accumulator.voice_abbreviations,
+    )
+    postprocess(cache)
+
 
 if __name__ == "__main__":
+    main()
     metadata, persist, score, timing = baca.build.section(
         score,
         accumulator.manifests(),

@@ -140,27 +140,37 @@ baca.interpret.set_up_score(
 
 figures.populate_commands(score, accumulator)
 
-# reapply
 
-music_voice_names = [
-    _
-    for _ in voice_names
-    if "RHVoice" in _ or "LHVoice" in _ or "InsertVoice" in _ or "ResonanceVoice" in _
-]
+def postprocess(cache):
+    accumulator(
+        library.lh_v4,
+        baca.clef("treble"),
+    )
 
-accumulator(
-    music_voice_names,
-    baca.reapply_persistent_indicators(),
-)
 
-# lh_v4
+def main():
+    previous_persist = baca.previous_metadata(__file__, file_name="__persist__")
+    music_voice_names = [
+        _
+        for _ in voice_names
+        if "RHVoice" in _
+        or "LHVoice" in _
+        or "InsertVoice" in _
+        or "ResonanceVoice" in _
+    ]
+    baca.reapply(
+        accumulator, accumulator.manifests(), previous_persist, music_voice_names
+    )
+    cache = baca.interpret.cache_leaves(
+        score,
+        len(accumulator.time_signatures),
+        accumulator.voice_abbreviations,
+    )
+    postprocess(cache)
 
-accumulator(
-    library.lh_v4,
-    baca.clef("treble"),
-)
 
 if __name__ == "__main__":
+    main()
     metadata, persist, score, timing = baca.build.section(
         score,
         accumulator.manifests(),

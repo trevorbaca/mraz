@@ -371,127 +371,137 @@ for index, item in (
 
 baca.bar_line(score["Skips"][11 - 1], "|.")
 
-# reapply
 
-music_voice_names = [
-    _
-    for _ in voice_names
-    if "RHVoice" in _ or "LHVoice" in _ or "InsertVoice" in _ or "ResonanceVoice" in _
-]
+def postprocess(cache):
 
-accumulator(
-    music_voice_names,
-    baca.reapply_persistent_indicators(),
-)
+    accumulator(
+        library.rh_v1,
+        baca.beam_positions(10),
+        baca.dynamic_up(),
+        baca.stem_up(),
+    )
 
-# rh_v1
+    accumulator(
+        (library.rh_v1_i, (1, 5)),
+        baca.beam_positions(-6.5),
+    )
 
-accumulator(
-    library.rh_v1,
-    baca.beam_positions(10),
-    baca.dynamic_up(),
-    baca.stem_up(),
-)
+    accumulator(
+        (library.rh_v1_i, (5, 10)),
+        baca.beam_positions(-8.5),
+    )
 
-accumulator(
-    (library.rh_v1_i, (1, 5)),
-    baca.beam_positions(-6.5),
-)
+    accumulator(
+        library.rh_v1_i,
+        baca.script_down(),
+    )
 
-accumulator(
-    (library.rh_v1_i, (5, 10)),
-    baca.beam_positions(-8.5),
-)
+    accumulator(
+        library.rh_v2,
+        baca.beam_positions(-4.5),
+        baca.dynamic_down(),
+        baca.slur_up(),
+        baca.stem_down(),
+    )
 
-accumulator(
-    library.rh_v1_i,
-    baca.script_down(),
-)
+    accumulator(
+        (library.rh_v2_i, (9, -1)),
+        baca.beam_positions(18.5),
+    )
 
-accumulator(
-    library.rh_v2,
-    baca.beam_positions(-4.5),
-    baca.dynamic_down(),
-    baca.slur_up(),
-    baca.stem_down(),
-)
+    accumulator(
+        (library.rh_v2_i, (1, 4)),
+        baca.beam_positions(15.5),
+    )
 
-accumulator(
-    (library.rh_v2_i, (9, -1)),
-    baca.beam_positions(18.5),
-)
+    accumulator(
+        (library.rh_v2_i, (6, 8)),
+        baca.beam_positions(13.5),
+    )
 
-accumulator(
-    (library.rh_v2_i, (1, 4)),
-    baca.beam_positions(15.5),
-)
+    accumulator(
+        library.rh_v2_i,
+        baca.script_up(),
+        baca.stem_up(),
+    )
 
-accumulator(
-    (library.rh_v2_i, (6, 8)),
-    baca.beam_positions(13.5),
-)
+    accumulator(
+        (library.lh_v4, (1, 2)),
+        baca.beam_positions(-5.5),
+    )
 
-accumulator(
-    library.rh_v2_i,
-    baca.script_up(),
-    baca.stem_up(),
-)
+    accumulator(
+        (library.lh_v4, (6, -1)),
+        baca.beam_positions(-4.5),
+    )
 
-accumulator(
-    (library.lh_v4, (1, 2)),
-    baca.beam_positions(-5.5),
-)
+    accumulator(
+        library.lh_v4,
+        baca.script_down(),
+        baca.stem_down(),
+    )
 
-accumulator(
-    (library.lh_v4, (6, -1)),
-    baca.beam_positions(-4.5),
-)
+    accumulator(
+        library.lh_v4_i,
+        baca.script_up(),
+        baca.stem_up(),
+    )
 
-accumulator(
-    library.lh_v4,
-    baca.script_down(),
-    baca.stem_down(),
-)
+    accumulator(
+        (library.lh_v5, (1, 5)),
+        baca.beam_positions(-6),
+    )
 
-accumulator(
-    library.lh_v4_i,
-    baca.script_up(),
-    baca.stem_up(),
-)
+    accumulator(
+        library.lh_v5,
+        baca.script_down(),
+        baca.stem_down(),
+    )
 
-accumulator(
-    (library.lh_v5, (1, 5)),
-    baca.beam_positions(-6),
-)
+    accumulator(
+        library.lh_v5_i,
+        baca.script_up(),
+        baca.stem_up(),
+        baca.beam_positions(9),
+    )
 
-accumulator(
-    library.lh_v5,
-    baca.script_down(),
-    baca.stem_down(),
-)
+    accumulator(
+        (library.rh_v1, -1),
+        baca.chunk(
+            baca.mark(r"\mraz-colophon-markup"),
+            baca.rehearsal_mark_down(),
+            baca.rehearsal_mark_padding(6),
+            baca.rehearsal_mark_self_alignment_x(abjad.RIGHT),
+            selector=lambda _: baca.select.rleaf(_, -1),
+        ),
+    )
 
-accumulator(
-    library.lh_v5_i,
-    baca.script_up(),
-    baca.stem_up(),
-    baca.beam_positions(9),
-)
 
-accumulator(
-    (library.rh_v1, -1),
-    baca.chunk(
-        baca.mark(r"\mraz-colophon-markup"),
-        baca.rehearsal_mark_down(),
-        baca.rehearsal_mark_padding(6),
-        baca.rehearsal_mark_self_alignment_x(abjad.RIGHT),
-        selector=lambda _: baca.select.rleaf(_, -1),
-    ),
-)
+def main():
+    previous_persist = baca.previous_metadata(__file__, file_name="__persist__")
+    music_voice_names = [
+        _
+        for _ in voice_names
+        if "RHVoice" in _
+        or "LHVoice" in _
+        or "InsertVoice" in _
+        or "ResonanceVoice" in _
+    ]
+    baca.reapply(
+        accumulator, accumulator.manifests(), previous_persist, music_voice_names
+    )
+    cache = baca.interpret.cache_leaves(
+        score,
+        len(accumulator.time_signatures),
+        accumulator.voice_abbreviations,
+    )
+    postprocess(cache)
 
-defaults = baca.interpret.section_defaults()
-del defaults["check_wellformedness"]
 
 if __name__ == "__main__":
+    main()
+    defaults = baca.interpret.section_defaults()
+    del defaults["check_wellformedness"]
     metadata, persist, score, timing = baca.build.section(
         score,
         accumulator.manifests(),
