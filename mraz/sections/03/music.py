@@ -337,61 +337,72 @@ for index, string in (
 ):
     baca.global_fermata(rests[index], string)
 
-# reapply
 
-music_voice_names = [
-    _
-    for _ in voice_names
-    if "RHVoice" in _ or "LHVoice" in _ or "InsertVoice" in _ or "ResonanceVoice" in _
-]
+def postprocess(cache):
 
-accumulator(
-    music_voice_names,
-    baca.reapply_persistent_indicators(),
-)
+    accumulator(
+        library.rh_v1,
+        baca.ottava(),
+    )
 
-# rh_v1
+    accumulator(
+        library.rh_v2,
+        baca.script_up(),
+    )
 
-accumulator(
-    library.rh_v1,
-    baca.ottava(),
-)
-
-accumulator(
-    library.rh_v2,
-    baca.script_up(),
-)
-
-accumulator(
-    library.lh_resonance,
-    baca.untie(lambda _: baca.select.leaves(_)),
-    baca.new(
-        baca.repeat_tie(
-            lambda _: baca.select.pleaves(_)[1:],
+    accumulator(
+        library.lh_resonance,
+        baca.untie(lambda _: baca.select.leaves(_)),
+        baca.new(
+            baca.repeat_tie(
+                lambda _: baca.select.pleaves(_)[1:],
+            ),
+            map=lambda _: baca.select.qruns(_),
         ),
-        map=lambda _: baca.select.qruns(_),
-    ),
-    *library.clean_up_repeat_ties(),
-)
+        *library.clean_up_repeat_ties(),
+    )
 
-accumulator(
-    (library.lh_resonance, [(2, 7), (10, -1)]),
-    baca.accidental_stencil_false(lambda _: baca.select.leaves(_)),
-)
+    accumulator(
+        (library.lh_resonance, [(2, 7), (10, -1)]),
+        baca.accidental_stencil_false(lambda _: baca.select.leaves(_)),
+    )
 
-accumulator(
-    (library.lh_resonance, [2, 4]),
-    *library.transparent_music(lambda _: abjad.select.leaf(_, 0)),
-)
+    accumulator(
+        (library.lh_resonance, [2, 4]),
+        *library.transparent_music(lambda _: abjad.select.leaf(_, 0)),
+    )
 
-accumulator(
-    (library.lh_resonance, [3, 6, 9]),
-    *library.transparent_music(
-        lambda _: baca.select.leaves(_)[1:],
-    ),
-)
+    accumulator(
+        (library.lh_resonance, [3, 6, 9]),
+        *library.transparent_music(
+            lambda _: baca.select.leaves(_)[1:],
+        ),
+    )
+
+
+def main():
+    previous_persist = baca.previous_metadata(__file__, file_name="__persist__")
+    music_voice_names = [
+        _
+        for _ in voice_names
+        if "RHVoice" in _
+        or "LHVoice" in _
+        or "InsertVoice" in _
+        or "ResonanceVoice" in _
+    ]
+    baca.reapply(
+        accumulator, accumulator.manifests(), previous_persist, music_voice_names
+    )
+    cache = baca.interpret.cache_leaves(
+        score,
+        len(accumulator.time_signatures),
+        accumulator.voice_abbreviations,
+    )
+    postprocess(cache)
+
 
 if __name__ == "__main__":
+    main()
     metadata, persist, score, timing = baca.build.section(
         score,
         accumulator.manifests(),

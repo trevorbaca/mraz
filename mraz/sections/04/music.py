@@ -1079,90 +1079,102 @@ rests = score["Rests"]
 for index, string in ((21 - 1, "fermata"),):
     baca.global_fermata(rests[index], string)
 
-# reapply
 
-music_voice_names = [
-    _
-    for _ in voice_names
-    if "RHVoice" in _ or "LHVoice" in _ or "InsertVoice" in _ or "ResonanceVoice" in _
-]
+def postprocess(cache):
 
-accumulator(
-    music_voice_names,
-    baca.reapply_persistent_indicators(),
-)
+    # rh_v1
 
-# rh_v1
+    accumulator(
+        library.rh_v1,
+        baca.stem_up(),
+        baca.tuplet_bracket_staff_padding(8),
+        baca.tuplet_bracket_up(),
+    )
 
-accumulator(
-    library.rh_v1,
-    baca.stem_up(),
-    baca.tuplet_bracket_staff_padding(8),
-    baca.tuplet_bracket_up(),
-)
+    accumulator(
+        (library.rh_v1, [(1, 36), (38, 39)]),
+        baca.ottava(),
+    )
 
-accumulator(
-    (library.rh_v1, [(1, 36), (38, 39)]),
-    baca.ottava(),
-)
+    accumulator(
+        library.rh_v3,
+        baca.tenuto(lambda _: baca.select.pheads(_)),
+    )
 
-accumulator(
-    library.rh_v3,
-    baca.tenuto(lambda _: baca.select.pheads(_)),
-)
+    accumulator(
+        library.lh_v5,
+        baca.dynamic_down(),
+    )
 
-accumulator(
-    library.lh_v5,
-    baca.dynamic_down(),
-)
+    accumulator(
+        (library.lh_v5, (7, 16)),
+        baca.marcato(lambda _: baca.select.pheads(_)),
+        baca.rest_up(),
+    )
 
-accumulator(
-    (library.lh_v5, (7, 16)),
-    baca.marcato(lambda _: baca.select.pheads(_)),
-    baca.rest_up(),
-)
+    accumulator(
+        (library.lh_v5, (18, -1)),
+        baca.stem_down(),
+        baca.tuplet_bracket_staff_padding(2),
+        baca.tuplet_bracket_down(),
+    )
 
-accumulator(
-    (library.lh_v5, (18, -1)),
-    baca.stem_down(),
-    baca.tuplet_bracket_staff_padding(2),
-    baca.tuplet_bracket_down(),
-)
+    accumulator(
+        library.lh_v5_i,
+        baca.script_up(),
+        baca.staccato(lambda _: baca.select.pheads(_)),
+        baca.stem_up(),
+    )
 
-accumulator(
-    library.lh_v5_i,
-    baca.script_up(),
-    baca.staccato(lambda _: baca.select.pheads(_)),
-    baca.stem_up(),
-)
-
-accumulator(
-    library.lh_resonance,
-    baca.untie(lambda _: baca.select.leaves(_)),
-    baca.new(
-        baca.repeat_tie(
-            lambda _: baca.select.pleaves(_)[1:],
+    accumulator(
+        library.lh_resonance,
+        baca.untie(lambda _: baca.select.leaves(_)),
+        baca.new(
+            baca.repeat_tie(
+                lambda _: baca.select.pleaves(_)[1:],
+            ),
+            map=lambda _: baca.select.qruns(_),
         ),
-        map=lambda _: baca.select.qruns(_),
-    ),
-)
+    )
 
-accumulator(
-    (library.lh_resonance, [11, 15, (33, 39)]),
-    baca.accidental_stencil_false(lambda _: baca.select.leaves(_)),
-    baca.dots_stencil_false(lambda _: baca.select.leaves(_)),
-    baca.stem_stencil_false(lambda _: baca.select.leaves(_)),
-)
+    accumulator(
+        (library.lh_resonance, [11, 15, (33, 39)]),
+        baca.accidental_stencil_false(lambda _: baca.select.leaves(_)),
+        baca.dots_stencil_false(lambda _: baca.select.leaves(_)),
+        baca.stem_stencil_false(lambda _: baca.select.leaves(_)),
+    )
 
-accumulator(
-    (library.lh_resonance, 32),
-    baca.accidental_x_extent_false(),
-)
+    accumulator(
+        (library.lh_resonance, 32),
+        baca.accidental_x_extent_false(),
+    )
 
-defaults = baca.interpret.section_defaults()
-del defaults["check_wellformedness"]
+
+def main():
+    previous_persist = baca.previous_metadata(__file__, file_name="__persist__")
+    music_voice_names = [
+        _
+        for _ in voice_names
+        if "RHVoice" in _
+        or "LHVoice" in _
+        or "InsertVoice" in _
+        or "ResonanceVoice" in _
+    ]
+    baca.reapply(
+        accumulator, accumulator.manifests(), previous_persist, music_voice_names
+    )
+    cache = baca.interpret.cache_leaves(
+        score,
+        len(accumulator.time_signatures),
+        accumulator.voice_abbreviations,
+    )
+    postprocess(cache)
+
 
 if __name__ == "__main__":
+    main()
+    defaults = baca.interpret.section_defaults()
+    del defaults["check_wellformedness"]
     metadata, persist, score, timing = baca.build.section(
         score,
         accumulator.manifests(),
