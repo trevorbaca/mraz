@@ -189,7 +189,10 @@ figures(
     baca.hairpin("f < ff"),
     baca.slur(map=lambda _: baca.select.runs(_)),
     baca.only_section(
-        baca.span_bar_extra_offset((-0.75, 0)),
+        baca.span_bar_extra_offset(
+            (-0.75, 0),
+            selector=lambda _: abjad.select.leaf(_, 0),
+        ),
     ),
     baca.ottava(),
     baca.register(10, 36),
@@ -265,7 +268,7 @@ figures(
     [resonance],
     baca.figure([21], 16),
     rmakers.beam_groups(),
-    baca.accidental_x_extent_false(),
+    baca.accidental_x_extent_false(selector=lambda _: abjad.select.leaf(_, 0)),
     anchor=baca.anchor_to_figure("2.2.R.1.1-4"),
     do_not_label=True,
     hide_time_signature=True,
