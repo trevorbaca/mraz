@@ -575,8 +575,8 @@ figures(
     ),
     rmakers.beam_groups(),
     baca.dynamic("mf"),
-    baca.dynamic_text_x_offset(-4),
-    baca.dynamic_text_extra_offset((0, -8)),
+    baca.dynamic_text_x_offset(-4, selector=lambda _: baca.select.pleaf(_, 0)),
+    baca.dynamic_text_extra_offset((0, -8), selector=lambda _: baca.select.pleaf(_, 0)),
     baca.dynamic_up(),
     baca.slur(map=lambda _: baca.select.ntruns(_)),
     baca.text_script_color(
