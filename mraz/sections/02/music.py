@@ -164,7 +164,7 @@ figures(
     baca.figure([1, -3], 16, treatments=[4]),
     baca.note_column_shift(
         -1,
-        lambda _: baca.select.pleaf(_, -1),
+        selector=lambda _: baca.select.pleaf(_, -1),
     ),
     baca.register(-39),
     anchor=baca.anchor(
@@ -256,8 +256,8 @@ def postprocess(cache):
     accumulator(
         library.lh_v6,
         baca.script_down(),
-        baca.stem_down(lambda _: baca.select.tleaves(_, exclude=baca.enums.HIDDEN)),
-        baca.tenuto(lambda _: baca.select.pheads(_, exclude=baca.enums.HIDDEN)),
+        baca.stem_down(selector=lambda _: baca.select.tleaves(_, exclude=baca.enums.HIDDEN)),
+        baca.tenuto(selector=lambda _: baca.select.pheads(_, exclude=baca.enums.HIDDEN)),
         baca.tuplet_bracket_staff_padding(6),
         baca.rest_position(-10),
     )
