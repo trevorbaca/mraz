@@ -35,7 +35,7 @@ figures(
 figures(
     library.rh_v2,
     "r4",
-    baca.rest_transparent(),
+    baca.rest_transparent(selector=lambda _: abjad.select.rests(_)),
     do_not_label=True,
     signature=4,
 )
@@ -59,7 +59,7 @@ figures(
 figures(
     library.rh_v2,
     "r4",
-    baca.rest_transparent(),
+    baca.rest_transparent(selector=lambda _: abjad.select.rests(_)),
     do_not_label=True,
     signature=4,
 )
@@ -98,7 +98,7 @@ figures(
 figures(
     library.rh_v2,
     "r4",
-    baca.rest_transparent(),
+    baca.rest_transparent(selector=lambda _: abjad.select.rests(_)),
     do_not_label=True,
     signature=4,
 )
@@ -122,7 +122,7 @@ figures(
     baca.dynamic("f"),
     baca.dynamic_down(),
     baca.register(-6, 6),
-    baca.rest_up(),
+    baca.rest_up(selector=lambda _: abjad.select.rests(_)),
     baca.tenuto(selector=lambda _: baca.select.pheads(_)),
     anchor=baca.anchor_to_figure("4.1.R.1"),
     figure_name="4.1.L.1",

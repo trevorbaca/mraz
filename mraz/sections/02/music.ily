@@ -2039,7 +2039,7 @@ number.2.LH.Music.6 = {
             % BEFORE:
             % COMMANDS:
               %! baca.OverrideCommand._call(1)
-              %! baca.rest_position()
+              %! baca.rest_staff_position()
             \override Rest.staff-position = -10
             r4
             % ABSOLUTE_BEFORE:
@@ -2428,7 +2428,7 @@ number.2.LH.Music.6 = {
             % AFTER:
             % COMMANDS:
               %! baca.OverrideCommand._call(2)
-              %! baca.rest_position()
+              %! baca.rest_staff_position()
             \revert Rest.staff-position
             % CLOSING:
             % COMMANDS:
