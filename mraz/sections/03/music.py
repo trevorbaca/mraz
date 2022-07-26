@@ -50,7 +50,7 @@ figures(
     baca.dynamic_text_x_offset(0),
     baca.dynamic_down(),
     baca.slur(map=lambda _: baca.select.tuplets(_)),
-    baca.staccato(lambda _: baca.select.pheads(_)),
+    baca.staccato(selector=lambda _: baca.select.pheads(_)),
     baca.stem_down(),
     figure_name="2.2.R.1.1",
     signature=4,
@@ -89,7 +89,7 @@ figures(
     baca.dynamic("ppp"),
     baca.dynamic_text_x_offset(0),
     baca.slur(map=lambda _: baca.select.tuplets(_)),
-    baca.staccato(lambda _: baca.select.pheads(_)),
+    baca.staccato(selector=lambda _: baca.select.pheads(_)),
     baca.stem_down(),
     figure_name="2.2.R.1.1-2",
     signature=4,
@@ -123,7 +123,7 @@ figures(
     baca.dynamic_down(),
     baca.register(-6, 6),
     baca.rest_up(),
-    baca.tenuto(lambda _: baca.select.pheads(_)),
+    baca.tenuto(selector=lambda _: baca.select.pheads(_)),
     anchor=baca.anchor_to_figure("4.1.R.1"),
     figure_name="4.1.L.1",
     hide_time_signature=True,
@@ -139,7 +139,7 @@ figures(
     baca.dynamic("ppp"),
     baca.dynamic_text_x_offset(0),
     baca.slur(map=lambda _: baca.select.tuplets(_)),
-    baca.staccato(lambda _: baca.select.pheads(_)),
+    baca.staccato(selector=lambda _: baca.select.pheads(_)),
     baca.stem_down(),
     figure_name="2.2.R.1.1-4",
     signature=4,
@@ -152,7 +152,7 @@ figures(
     rmakers.beam_groups(),
     baca.dynamic("f"),
     baca.register(36),
-    baca.tenuto(lambda _: baca.select.pheads(_)),
+    baca.tenuto(selector=lambda _: baca.select.pheads(_)),
     figure_name="4.5.R.1",
     signature=4,
 )
@@ -163,7 +163,7 @@ figures(
     baca.figure([24], 16),
     rmakers.beam_groups(),
     baca.register(36),
-    baca.tenuto(lambda _: baca.select.pheads(_)),
+    baca.tenuto(selector=lambda _: baca.select.pheads(_)),
     figure_name="4.5.R.2",
     signature=4,
 )
@@ -174,7 +174,7 @@ figures(
     baca.figure([16], 16),
     rmakers.beam_groups(),
     baca.register(36),
-    baca.tenuto(lambda _: baca.select.pheads(_)),
+    baca.tenuto(selector=lambda _: baca.select.pheads(_)),
     figure_name="4.5.R.3",
     hide_time_signature=True,
     signature=4,
@@ -352,10 +352,10 @@ def postprocess(cache):
 
     accumulator(
         library.lh_resonance,
-        baca.untie(lambda _: baca.select.leaves(_)),
+        baca.untie(selector=lambda _: baca.select.leaves(_)),
         baca.new(
             baca.repeat_tie(
-                lambda _: baca.select.pleaves(_)[1:],
+                selector=lambda _: baca.select.pleaves(_)[1:],
             ),
             map=lambda _: baca.select.qruns(_),
         ),
@@ -364,18 +364,18 @@ def postprocess(cache):
 
     accumulator(
         (library.lh_resonance, [(2, 7), (10, -1)]),
-        baca.accidental_stencil_false(lambda _: baca.select.leaves(_)),
+        baca.accidental_stencil_false(selector=lambda _: baca.select.leaves(_)),
     )
 
     accumulator(
         (library.lh_resonance, [2, 4]),
-        *library.transparent_music(lambda _: abjad.select.leaf(_, 0)),
+        *library.transparent_music(selector=lambda _: abjad.select.leaf(_, 0)),
     )
 
     accumulator(
         (library.lh_resonance, [3, 6, 9]),
         *library.transparent_music(
-            lambda _: baca.select.leaves(_)[1:],
+            selector=lambda _: baca.select.leaves(_)[1:],
         ),
     )
 

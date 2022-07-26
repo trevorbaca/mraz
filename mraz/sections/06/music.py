@@ -18,7 +18,7 @@ figures(
     library.rh_v2,
     section_5.stage_1.rh.next(exhausted=True),
     baca.figure([2, -14], 16),
-    baca.accent(lambda _: baca.select.pheads(_)),
+    baca.accent(selector=lambda _: baca.select.pheads(_)),
     baca.dynamic("fff"),
     baca.dynamic_up(),
     baca.register(20, 36),
@@ -40,7 +40,7 @@ figures(
     baca.register(10, 26),
     baca.rest_down(),
     baca.stem_down(),
-    baca.tenuto(lambda _: baca.select.pheads(_)),
+    baca.tenuto(selector=lambda _: baca.select.pheads(_)),
     baca.tuplet_bracket_down(),
     baca.tuplet_bracket_staff_padding(3),
     anchor=baca.anchor(library.rh_v2),
@@ -85,7 +85,7 @@ figures(
     baca.figure([2], 16, treatments=[-2, 0, -2]),
     baca.new(
         baca.tie(
-            lambda _: baca.select.ptails(_)[:-1],
+            selector=lambda _: baca.select.ptails(_)[:-1],
         ),
         map=lambda _: baca.select.qruns(_),
     ),
@@ -201,7 +201,7 @@ figures(
     baca.dynamic("ppp"),
     baca.dynamic_down(),
     baca.slur(map=lambda _: baca.select.tuplets(_)),
-    baca.staccato(lambda _: baca.select.pheads(_)),
+    baca.staccato(selector=lambda _: baca.select.pheads(_)),
     figure_name="2.2.R.1",
     signature=4,
 )
@@ -214,7 +214,7 @@ figures(
     baca.bass_to_octave(4),
     baca.beam_positions(-8),
     baca.slur(map=lambda _: baca.select.tuplets(_)),
-    baca.staccato(lambda _: baca.select.pheads(_)),
+    baca.staccato(selector=lambda _: baca.select.pheads(_)),
     figure_name="2.2.R.2",
     signature=4,
 )
@@ -227,7 +227,7 @@ figures(
     baca.bass_to_octave(4),
     baca.beam_positions(-8),
     baca.slur(map=lambda _: baca.select.tuplets(_)),
-    baca.staccato(lambda _: baca.select.pheads(_)),
+    baca.staccato(selector=lambda _: baca.select.pheads(_)),
     figure_name="2.2.R.3",
     signature=4,
 )
@@ -240,7 +240,7 @@ figures(
     baca.bass_to_octave(5),
     baca.beam_positions(-8),
     baca.slur(map=lambda _: baca.select.tuplets(_)),
-    baca.staccato(lambda _: baca.select.pheads(_)),
+    baca.staccato(selector=lambda _: baca.select.pheads(_)),
     figure_name="2.2.R.4",
     signature=4,
 )
@@ -253,7 +253,7 @@ figures(
     baca.bass_to_octave(5),
     baca.beam_positions(-8),
     baca.slur(map=lambda _: baca.select.tuplets(_)),
-    baca.staccato(lambda _: baca.select.pheads(_)),
+    baca.staccato(selector=lambda _: baca.select.pheads(_)),
     figure_name="2.2.R.5",
     signature=4,
 )
