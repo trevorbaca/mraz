@@ -51,7 +51,7 @@ figures(
     baca.dynamic_down(),
     baca.slur(map=lambda _: baca.select.tuplets(_)),
     baca.staccato(selector=lambda _: baca.select.pheads(_)),
-    baca.stem_down(),
+    baca.stem_down(selector=lambda _: baca.select.pleaves(_)),
     figure_name="2.2.R.1.1",
     signature=4,
 )
@@ -90,7 +90,7 @@ figures(
     baca.dynamic_text_x_offset(0, selector=lambda _: baca.select.pleaf(_, 0)),
     baca.slur(map=lambda _: baca.select.tuplets(_)),
     baca.staccato(selector=lambda _: baca.select.pheads(_)),
-    baca.stem_down(),
+    baca.stem_down(selector=lambda _: baca.select.pleaves(_)),
     figure_name="2.2.R.1.1-2",
     signature=4,
 )
@@ -140,7 +140,7 @@ figures(
     baca.dynamic_text_x_offset(0, selector=lambda _: baca.select.pleaf(_, 0)),
     baca.slur(map=lambda _: baca.select.tuplets(_)),
     baca.staccato(selector=lambda _: baca.select.pheads(_)),
-    baca.stem_down(),
+    baca.stem_down(selector=lambda _: baca.select.pleaves(_)),
     figure_name="2.2.R.1.1-4",
     signature=4,
 )

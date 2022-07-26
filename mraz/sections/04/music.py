@@ -19,7 +19,7 @@ figures(
     baca.figure([2, -4, 2, -4, 4], 16, treatments=[2]),
     baca.dynamic("ff"),
     baca.register(-12, 12),
-    baca.stem_up(),
+    baca.stem_up(selector=lambda _: baca.select.pleaves(_)),
     baca.text_script_up(),
     baca.tuplet_bracket_up(),
     baca.tuplet_bracket_staff_padding(3),
@@ -46,7 +46,7 @@ figures(
     section_4.stage_1.rh.next(),
     baca.figure([-4, 2, -4, 4], 16, treatments=[-4]),
     baca.register(12, -12),
-    baca.stem_up(),
+    baca.stem_up(selector=lambda _: baca.select.pleaves(_)),
     baca.tuplet_bracket_up(),
     baca.tuplet_bracket_staff_padding(4),
     figure_name="4.1.R.2",
@@ -91,7 +91,7 @@ figures(
     section_4.stage_1.rh.next(exhausted=True),
     baca.figure([2, -4, 2, -4, 4], 16, treatments=[2]),
     baca.register(-6),
-    baca.stem_up(),
+    baca.stem_up(selector=lambda _: baca.select.pleaves(_)),
     baca.tuplet_bracket_up(),
     figure_label_direction=abjad.UP,
     figure_name="4.1.R.3",
@@ -289,7 +289,7 @@ figures(
     baca.dynamic("mp"),
     # TODO: tag colored score only:
     # baca.stem_color("darkmagenta", context="PianoStaff"),
-    baca.stem_up(),
+    baca.stem_up(selector=lambda _: baca.select.pleaves(_)),
     figure_label_direction=abjad.DOWN,
     figure_name="4.2.L.11.L",
     signature=4,
@@ -418,7 +418,7 @@ figures(
     rmakers.beam(),
     baca.slur(map=nontrivial_tuplet_tleaves()),
     baca.register(24),
-    baca.stem_down(),
+    baca.stem_down(selector=lambda _: baca.select.pleaves(_)),
     baca.tuplet_bracket_down(),
     figure_name="5.2.R.13",
     signature=4,
@@ -963,7 +963,7 @@ figures(
     baca.figure([-4, 2, -4, 4], 16, treatments=[-4]),
     baca.dynamic("mp"),
     baca.register(12, -12),
-    baca.stem_up(),
+    baca.stem_up(selector=lambda _: baca.select.pleaves(_)),
     baca.text_script_up(),
     baca.tuplet_bracket_staff_padding(4),
     baca.tuplet_bracket_up(),
@@ -1001,7 +1001,7 @@ figures(
     baca.register(20, 36),
     baca.rest_up(selector=lambda _: abjad.select.rests(_)),
     baca.script_up(),
-    baca.stem_up(),
+    baca.stem_up(selector=lambda _: baca.select.pleaves(_)),
     baca.text_script_up(),
     figure_name="5.1.R.1",
     signature=4,
@@ -1016,7 +1016,7 @@ figures(
     baca.ottava(),
     baca.register(10, 26),
     baca.rest_down(selector=lambda _: abjad.select.rests(_)),
-    baca.stem_down(),
+    baca.stem_down(selector=lambda _: baca.select.pleaves(_)),
     baca.tuplet_bracket_down(),
     baca.tuplet_bracket_staff_padding(3),
     anchor=baca.anchor_to_figure("5.1.R.1"),
@@ -1086,7 +1086,7 @@ def postprocess(cache):
 
     accumulator(
         library.rh_v1,
-        baca.stem_up(),
+        baca.stem_up(selector=lambda _: baca.select.pleaves(_)),
         baca.tuplet_bracket_staff_padding(8),
         baca.tuplet_bracket_up(),
     )
@@ -1114,7 +1114,7 @@ def postprocess(cache):
 
     accumulator(
         (library.lh_v5, (18, -1)),
-        baca.stem_down(),
+        baca.stem_down(selector=lambda _: baca.select.pleaves(_)),
         baca.tuplet_bracket_staff_padding(2),
         baca.tuplet_bracket_down(),
     )
@@ -1123,7 +1123,7 @@ def postprocess(cache):
         library.lh_v5_i,
         baca.script_up(),
         baca.staccato(lambda _: baca.select.pheads(_)),
-        baca.stem_up(),
+        baca.stem_up(selector=lambda _: baca.select.pleaves(_)),
     )
 
     accumulator(

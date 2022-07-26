@@ -378,7 +378,7 @@ def postprocess(cache):
         library.rh_v1,
         baca.beam_positions(10),
         baca.dynamic_up(),
-        baca.stem_up(),
+        baca.stem_up(selector=lambda _: baca.select.pleaves(_)),
     )
 
     accumulator(
@@ -401,7 +401,7 @@ def postprocess(cache):
         baca.beam_positions(-4.5),
         baca.dynamic_down(),
         baca.slur_up(),
-        baca.stem_down(),
+        baca.stem_down(selector=lambda _: baca.select.pleaves(_)),
     )
 
     accumulator(
@@ -422,7 +422,7 @@ def postprocess(cache):
     accumulator(
         library.rh_v2_i,
         baca.script_up(),
-        baca.stem_up(),
+        baca.stem_up(selector=lambda _: baca.select.pleaves(_)),
     )
 
     accumulator(
@@ -438,13 +438,13 @@ def postprocess(cache):
     accumulator(
         library.lh_v4,
         baca.script_down(),
-        baca.stem_down(),
+        baca.stem_down(selector=lambda _: baca.select.pleaves(_)),
     )
 
     accumulator(
         library.lh_v4_i,
         baca.script_up(),
-        baca.stem_up(),
+        baca.stem_up(selector=lambda _: baca.select.pleaves(_)),
     )
 
     accumulator(
@@ -455,13 +455,13 @@ def postprocess(cache):
     accumulator(
         library.lh_v5,
         baca.script_down(),
-        baca.stem_down(),
+        baca.stem_down(selector=lambda _: baca.select.pleaves(_)),
     )
 
     accumulator(
         library.lh_v5_i,
         baca.script_up(),
-        baca.stem_up(),
+        baca.stem_up(selector=lambda _: baca.select.pleaves(_)),
         baca.beam_positions(9),
     )
 
