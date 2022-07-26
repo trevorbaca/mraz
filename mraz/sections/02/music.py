@@ -256,8 +256,12 @@ def postprocess(cache):
     accumulator(
         library.lh_v6,
         baca.script_down(),
-        baca.stem_down(selector=lambda _: baca.select.tleaves(_, exclude=baca.enums.HIDDEN)),
-        baca.tenuto(selector=lambda _: baca.select.pheads(_, exclude=baca.enums.HIDDEN)),
+        baca.stem_down(
+            selector=lambda _: baca.select.tleaves(_, exclude=baca.enums.HIDDEN)
+        ),
+        baca.tenuto(
+            selector=lambda _: baca.select.pheads(_, exclude=baca.enums.HIDDEN)
+        ),
         baca.tuplet_bracket_staff_padding(6),
         baca.rest_position(-10),
     )

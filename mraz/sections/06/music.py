@@ -556,7 +556,7 @@ def postprocess(cache):
 
     accumulator(
         (library.lh_resonance, [11, 13, 14]),
-        baca.accidental_stencil_false(),
+        baca.accidental_stencil_false(selector=lambda _: abjad.select.leaf(_, 0)),
         baca.stem_transparent(),
     )
 
