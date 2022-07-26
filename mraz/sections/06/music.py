@@ -24,7 +24,7 @@ figures(
     baca.register(20, 36),
     baca.rest_up(selector=lambda _: abjad.select.rests(_)),
     baca.script_up(),
-    baca.stem_up(),
+    baca.stem_up(selector=lambda _: baca.select.pleaves(_)),
     figure_label_direction=abjad.UP,
     figure_name="5.1.R.1",
     signature=4,
@@ -39,7 +39,7 @@ figures(
     baca.ottava(),
     baca.register(10, 26),
     baca.rest_down(selector=lambda _: abjad.select.rests(_)),
-    baca.stem_down(),
+    baca.stem_down(selector=lambda _: baca.select.pleaves(_)),
     baca.tenuto(selector=lambda _: baca.select.pheads(_)),
     baca.tuplet_bracket_down(),
     baca.tuplet_bracket_staff_padding(3),
@@ -112,7 +112,7 @@ figures(
     baca.ottava_bassa(),
     baca.register(-39),
     baca.rest_down(selector=lambda _: abjad.select.rests(_)),
-    baca.stem_down(),
+    baca.stem_down(selector=lambda _: baca.select.pleaves(_)),
     baca.tuplet_bracket_down(),
     baca.tuplet_bracket_staff_padding(6),
     figure_name="8.3.L.2",
@@ -127,7 +127,7 @@ figures(
     baca.dynamic_up(),
     baca.register(-27, -39),
     baca.rest_up(selector=lambda _: abjad.select.rests(_)),
-    baca.stem_up(),
+    baca.stem_up(selector=lambda _: baca.select.pleaves(_)),
     anchor=baca.anchor_to_figure("8.3.L.2"),
     figure_name="8.3.R.5",
     hide_time_signature=True,
@@ -518,14 +518,14 @@ def postprocess(cache):
         baca.accent(lambda _: baca.select.pheads(_)),
         baca.beam_positions(10.5),
         baca.script_up(),
-        baca.stem_up(),
+        baca.stem_up(selector=lambda _: baca.select.pleaves(_)),
     )
 
     accumulator(
         (library.rh_v2, (9, 13)),
         baca.script_up(),
         baca.slur_up(),
-        baca.stem_down(),
+        baca.stem_down(selector=lambda _: baca.select.pleaves(_)),
     )
 
     accumulator(
@@ -557,7 +557,7 @@ def postprocess(cache):
     accumulator(
         (library.lh_resonance, [11, 13, 14]),
         baca.accidental_stencil_false(selector=lambda _: abjad.select.leaf(_, 0)),
-        baca.stem_transparent(),
+        baca.stem_transparent(selector=lambda _: baca.select.pleaves(_)),
     )
 
 

@@ -3277,7 +3277,7 @@ number.3.LH.ResonanceVoice = {
               %! baca.flag_transparent()
             \once \override Flag.transparent = ##t
               %! baca.OverrideCommand._call(1)
-              %! baca.no_ledgers()
+              %! baca.note_head_no_ledgers()
             \once \override NoteHead.no-ledgers = ##t
               %! baca.OverrideCommand._call(1)
               %! baca.note_head_transparent()
@@ -3352,7 +3352,7 @@ number.3.LH.ResonanceVoice = {
               %! baca.flag_transparent()
             \once \override Flag.transparent = ##t
               %! baca.OverrideCommand._call(1)
-              %! baca.no_ledgers()
+              %! baca.note_head_no_ledgers()
             \once \override NoteHead.no-ledgers = ##t
               %! baca.OverrideCommand._call(1)
               %! baca.note_head_transparent()
@@ -3413,7 +3413,7 @@ number.3.LH.ResonanceVoice = {
               %! baca.flag_transparent()
             \once \override Flag.transparent = ##t
               %! baca.OverrideCommand._call(1)
-              %! baca.no_ledgers()
+              %! baca.note_head_no_ledgers()
             \once \override NoteHead.no-ledgers = ##t
               %! baca.OverrideCommand._call(1)
               %! baca.note_head_transparent()
@@ -3521,7 +3521,7 @@ number.3.LH.ResonanceVoice = {
               %! baca.flag_transparent()
             \once \override Flag.transparent = ##t
               %! baca.OverrideCommand._call(1)
-              %! baca.no_ledgers()
+              %! baca.note_head_no_ledgers()
             \once \override NoteHead.no-ledgers = ##t
               %! baca.OverrideCommand._call(1)
               %! baca.note_head_transparent()
@@ -3604,7 +3604,7 @@ number.3.LH.ResonanceVoice = {
               %! baca.flag_transparent()
             \override Flag.transparent = ##t
               %! baca.OverrideCommand._call(1)
-              %! baca.no_ledgers()
+              %! baca.note_head_no_ledgers()
             \override NoteHead.no-ledgers = ##t
               %! baca.OverrideCommand._call(1)
               %! baca.note_head_transparent()
@@ -3653,7 +3653,7 @@ number.3.LH.ResonanceVoice = {
               %! baca.flag_transparent()
             \revert Flag.transparent
               %! baca.OverrideCommand._call(2)
-              %! baca.no_ledgers()
+              %! baca.note_head_no_ledgers()
             \revert NoteHead.no-ledgers
               %! baca.OverrideCommand._call(2)
               %! baca.note_head_transparent()

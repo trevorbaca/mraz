@@ -1287,7 +1287,7 @@ def silver_transform_7():
 
 def transparent_music(selector):
     return [
-        baca.no_ledgers(selector=selector),
+        baca.note_head_no_ledgers(True, selector=selector),
         baca.accidental_transparent(selector=selector),
         baca.beam_transparent(selector=selector),
         baca.flag_transparent(selector=selector),
