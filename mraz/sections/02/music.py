@@ -28,7 +28,7 @@ figures(
     section_8.stage_3.rh.next(2),
     baca.figure([4, -1], 32, treatments=[1]),
     baca.register(-39, -27),
-    baca.rest_up(),
+    baca.rest_up(selector=lambda _: abjad.select.rests(_)),
     figure_name="8.3.R.2-3",
     signature=4,
 )
@@ -47,7 +47,7 @@ figures(
     section_8.stage_3.rh.next(),
     baca.figure([6, -1], 32),
     baca.register(-27, -39),
-    baca.rest_up(),
+    baca.rest_up(selector=lambda _: abjad.select.rests(_)),
     figure_name="8.3.R.5",
     signature=4,
 )
@@ -75,7 +75,7 @@ figures(
     section_8.stage_3.rh.next(),
     baca.figure([1, -15], 32),
     baca.register(-39),
-    baca.rest_up(),
+    baca.rest_up(selector=lambda _: abjad.select.rests(_)),
     figure_name="8.3.R.8",
     signature=2,
 )
@@ -104,7 +104,7 @@ figures(
     section_8.stage_3.rh.next(),
     baca.figure([1, -15], 32),
     baca.register(-39),
-    baca.rest_up(),
+    baca.rest_up(selector=lambda _: abjad.select.rests(_)),
     figure_name="8.3.R.11",
     signature=2,
 )
@@ -148,7 +148,7 @@ figures(
     section_8.stage_3.lh.next(),
     baca.figure([2, -4], 16, treatments=[4]),
     baca.register(-39),
-    baca.rest_up(),
+    baca.rest_up(selector=lambda _: abjad.select.rests(_)),
     anchor=baca.anchor(
         library.lh_v5,
         lambda _: abjad.select.note(_, 11),
@@ -263,7 +263,7 @@ def postprocess(cache):
             selector=lambda _: baca.select.pheads(_, exclude=baca.enums.HIDDEN)
         ),
         baca.tuplet_bracket_staff_padding(6),
-        baca.rest_position(-10),
+        baca.rest_staff_position(-10, selector=lambda _: abjad.select.rests(_)),
     )
 
 

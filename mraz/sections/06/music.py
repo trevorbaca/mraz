@@ -22,7 +22,7 @@ figures(
     baca.dynamic("fff"),
     baca.dynamic_up(),
     baca.register(20, 36),
-    baca.rest_up(),
+    baca.rest_up(selector=lambda _: abjad.select.rests(_)),
     baca.script_up(),
     baca.stem_up(),
     figure_label_direction=abjad.UP,
@@ -38,7 +38,7 @@ figures(
     baca.dynamic("mf"),
     baca.ottava(),
     baca.register(10, 26),
-    baca.rest_down(),
+    baca.rest_down(selector=lambda _: abjad.select.rests(_)),
     baca.stem_down(),
     baca.tenuto(selector=lambda _: baca.select.pheads(_)),
     baca.tuplet_bracket_down(),
@@ -74,7 +74,7 @@ figures(
 figures(
     library.rh_v3,
     "r4",
-    baca.rest_transparent(),
+    baca.rest_transparent(selector=lambda _: abjad.select.rests(_)),
     do_not_label=True,
     signature=4,
 )
@@ -111,7 +111,7 @@ figures(
     baca.dynamic("f"),
     baca.ottava_bassa(),
     baca.register(-39),
-    baca.rest_down(),
+    baca.rest_down(selector=lambda _: abjad.select.rests(_)),
     baca.stem_down(),
     baca.tuplet_bracket_down(),
     baca.tuplet_bracket_staff_padding(6),
@@ -126,7 +126,7 @@ figures(
     baca.dynamic("ppp"),
     baca.dynamic_up(),
     baca.register(-27, -39),
-    baca.rest_up(),
+    baca.rest_up(selector=lambda _: abjad.select.rests(_)),
     baca.stem_up(),
     anchor=baca.anchor_to_figure("8.3.L.2"),
     figure_name="8.3.R.5",
@@ -159,7 +159,7 @@ figures(
 figures(
     library.rh_v3,
     "r4",
-    baca.rest_transparent(),
+    baca.rest_transparent(selector=lambda _: abjad.select.rests(_)),
     do_not_label=True,
     signature=4,
 )
@@ -186,7 +186,7 @@ figures(
 figures(
     library.rh_v3,
     "r4",
-    baca.rest_transparent(),
+    baca.rest_transparent(selector=lambda _: abjad.select.rests(_)),
     do_not_label=True,
     signature=4,
 )
@@ -449,7 +449,7 @@ figures(
     library.lh_v4,
     "r4",
     baca.clef("treble"),
-    baca.rest_transparent(),
+    baca.rest_transparent(selector=lambda _: abjad.select.rests(_)),
     do_not_label=True,
     signature=4,
 )

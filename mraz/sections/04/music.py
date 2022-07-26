@@ -404,7 +404,7 @@ figures(
 figures(
     library.rh_v1,
     "r4",
-    baca.rest_transparent(),
+    baca.rest_transparent(selector=lambda _: abjad.select.rests(_)),
     do_not_label=True,
     figure_name="S.7",
     signature=4,
@@ -949,7 +949,7 @@ figures(
         map=lambda _: baca.select.lts(_)[:-1],
     ),
     baca.sustain_pedal_staff_padding(4),
-    baca.rest_transparent(),
+    baca.rest_transparent(selector=lambda _: abjad.select.rests(_)),
     anchor=baca.anchor_to_figure("4.6.R.3"),
     do_not_label=True,
     figure_name="S.11",
@@ -999,7 +999,7 @@ figures(
     baca.dynamic("fff"),
     baca.dynamic_up(),
     baca.register(20, 36),
-    baca.rest_up(),
+    baca.rest_up(selector=lambda _: abjad.select.rests(_)),
     baca.script_up(),
     baca.stem_up(),
     baca.text_script_up(),
@@ -1015,7 +1015,7 @@ figures(
     baca.dynamic("mf"),
     baca.ottava(),
     baca.register(10, 26),
-    baca.rest_down(),
+    baca.rest_down(selector=lambda _: abjad.select.rests(_)),
     baca.stem_down(),
     baca.tuplet_bracket_down(),
     baca.tuplet_bracket_staff_padding(3),
@@ -1109,7 +1109,7 @@ def postprocess(cache):
     accumulator(
         (library.lh_v5, (7, 16)),
         baca.marcato(lambda _: baca.select.pheads(_)),
-        baca.rest_up(),
+        baca.rest_up(selector=lambda _: abjad.select.rests(_)),
     )
 
     accumulator(
