@@ -227,7 +227,9 @@ for index, string in (
 def postprocess(cache):
     accumulator(
         library.rh_v1,
-        baca.instrument(accumulator.instruments["Piano"]),
+        baca.instrument(
+            accumulator.instruments["Piano"], selector=lambda _: abjad.select.leaf(_, 0)
+        ),
         baca.instrument_name(r"\mraz-piano-markup", context="PianoStaff"),
         baca.clef("treble"),
     )
