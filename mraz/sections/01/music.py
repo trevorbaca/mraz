@@ -230,7 +230,11 @@ def postprocess(cache):
         baca.instrument(
             accumulator.instruments["Piano"], selector=lambda _: abjad.select.leaf(_, 0)
         ),
-        baca.instrument_name(r"\mraz-piano-markup", context="PianoStaff"),
+        baca.instrument_name(
+            r"\mraz-piano-markup",
+            context="PianoStaff",
+            selector=lambda _: abjad.select.leaf(_, 0),
+        ),
         baca.clef("treble"),
     )
     accumulator(
