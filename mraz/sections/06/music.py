@@ -330,7 +330,7 @@ figures(
     library.lh_v4,
     section_5.stage_2.lh.next(),
     baca.figure([3, -3], 16, affix=baca.rests_around([8, 8, 8], [6])),
-    baca.clef("bass"),
+    baca.clef("bass", selector=lambda _: abjad.select.leaf(_, 0)),
     baca.dynamic("p", selector=lambda _: baca.select.phead(_, 0)),
     baca.slur(map=lambda _: baca.select.tuplets(_)),
     baca.register(6, -24),
@@ -448,7 +448,7 @@ figures(
 figures(
     library.lh_v4,
     "r4",
-    baca.clef("treble"),
+    baca.clef("treble", selector=lambda _: abjad.select.leaf(_, 0)),
     baca.rest_transparent(selector=lambda _: abjad.select.rests(_)),
     do_not_label=True,
     signature=4,

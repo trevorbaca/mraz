@@ -67,7 +67,7 @@ figures(
     library.lh_v6,
     section_8.stage_3.lh[2 - 1],
     baca.figure([2, -4], 16, treatments=[4]),
-    baca.clef("bass"),
+    baca.clef("bass", selector=lambda _: abjad.select.leaf(_, 0)),
     baca.dynamic("f", selector=lambda _: baca.select.phead(_, 0)),
     baca.ottava_bassa(),
     baca.register(-39),
@@ -238,11 +238,11 @@ def postprocess(cache):
             context="PianoStaff",
             selector=lambda _: abjad.select.leaf(_, 0),
         ),
-        baca.clef("treble"),
+        baca.clef("treble", selector=lambda _: abjad.select.leaf(_, 0)),
     )
     accumulator(
         library.lh_v1,
-        baca.clef("treble"),
+        baca.clef("treble", selector=lambda _: abjad.select.leaf(_, 0)),
     )
 
 
