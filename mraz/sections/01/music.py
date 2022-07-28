@@ -23,7 +23,10 @@ figures(
     baca.register(36),
     rmakers.beam_groups(),
     baca.tenuto(selector=lambda _: baca.select.pheads(_)),
-    baca.markup(r"\mraz-ottava-brackets-always-govern-markup"),
+    baca.markup(
+        r"\mraz-ottava-brackets-always-govern-markup",
+        selector=lambda _: baca.select.pleaf(_, 0),
+    ),
     figure_name="4.5.R.3",
     hide_time_signature=True,
     signature=4,
