@@ -16,7 +16,7 @@ figures(
     library.lh_v5,
     section_8.stage_3.rh.next(),
     baca.figure([6, -1], 32),
-    baca.dynamic("ppp"),
+    baca.dynamic("ppp", selector=lambda _: baca.select.phead(_, 0)),
     baca.dynamic_up(),
     baca.register(-27, -39),
     figure_name="8.3.R.1",
@@ -131,7 +131,7 @@ figures(
     library.lh_v6,
     section_8.stage_3.lh.next(),
     baca.figure([4, -4], 16, treatments=[-4]),
-    baca.dynamic("f"),
+    baca.dynamic("f", selector=lambda _: baca.select.phead(_, 0)),
     baca.register(-39),
     anchor=baca.anchor(
         library.lh_v5,
