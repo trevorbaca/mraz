@@ -144,7 +144,7 @@ figures.populate_commands(score, accumulator)
 def postprocess(cache):
     accumulator(
         library.lh_v4,
-        baca.clef("treble"),
+        baca.clef("treble", selector=lambda _: abjad.select.leaf(_, 0)),
     )
 
 
