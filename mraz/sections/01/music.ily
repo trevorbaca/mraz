@@ -127,15 +127,21 @@ number.1.Skips = {
     \bacaStartTextSpanMM
       %! EXPLICIT_METRONOME_MARK
       %! baca._attach_metronome_marks(2)
+      %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
+      %! baca.metronome_mark()
     %@% - \abjad-invisible-line
       %! EXPLICIT_METRONOME_MARK
       %! baca._attach_metronome_marks(2)
+      %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
+      %! baca.metronome_mark()
     %@% - \baca-metronome-mark-spanner-left-text 2 0 1 "84"
       %! EXPLICIT_METRONOME_MARK
       %! baca._attach_metronome_marks(2)
+      %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
+      %! baca.metronome_mark()
     %@% \bacaStartTextSpanMM
       %! CLOCK_TIME
       %! baca._label_clock_time()
@@ -196,15 +202,21 @@ number.1.Skips = {
     \bacaStartTextSpanMM
       %! EXPLICIT_METRONOME_MARK
       %! baca._attach_metronome_marks(2)
+      %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
+      %! baca.metronome_mark()
     %@% - \abjad-invisible-line
       %! EXPLICIT_METRONOME_MARK
       %! baca._attach_metronome_marks(2)
+      %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
+      %! baca.metronome_mark()
     %@% - \baca-metronome-mark-spanner-left-text 2 0 1 "112"
       %! EXPLICIT_METRONOME_MARK
       %! baca._attach_metronome_marks(2)
+      %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
+      %! baca.metronome_mark()
     %@% \bacaStartTextSpanMM
       %! CLOCK_TIME
       %! baca._label_clock_time()
@@ -357,15 +369,21 @@ number.1.Skips = {
     \bacaStartTextSpanMM
       %! EXPLICIT_METRONOME_MARK
       %! baca._attach_metronome_marks(2)
+      %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
+      %! baca.metronome_mark()
     %@% - \abjad-invisible-line
       %! EXPLICIT_METRONOME_MARK
       %! baca._attach_metronome_marks(2)
+      %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
+      %! baca.metronome_mark()
     %@% - \baca-metronome-mark-spanner-left-text 2 0 1 "84"
       %! EXPLICIT_METRONOME_MARK
       %! baca._attach_metronome_marks(2)
+      %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
+      %! baca.metronome_mark()
     %@% \bacaStartTextSpanMM
       %! CLOCK_TIME
       %! baca._label_clock_time()
@@ -518,15 +536,21 @@ number.1.Skips = {
     \bacaStartTextSpanMM
       %! EXPLICIT_METRONOME_MARK
       %! baca._attach_metronome_marks(2)
+      %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
+      %! baca.metronome_mark()
     %@% - \abjad-dashed-line-with-arrow
       %! EXPLICIT_METRONOME_MARK
       %! baca._attach_metronome_marks(2)
+      %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
+      %! baca.metronome_mark()
     %@% - \baca-metronome-mark-spanner-left-text 2 0 1 "84"
       %! EXPLICIT_METRONOME_MARK
       %! baca._attach_metronome_marks(2)
+      %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
+      %! baca.metronome_mark()
     %@% \bacaStartTextSpanMM
       %! CLOCK_TIME
       %! baca._label_clock_time()
@@ -587,15 +611,21 @@ number.1.Skips = {
     \bacaStartTextSpanMM
       %! EXPLICIT_METRONOME_MARK
       %! baca._attach_metronome_marks(2)
+      %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
+      %! baca.metronome_mark()
     %@% - \abjad-invisible-line
       %! EXPLICIT_METRONOME_MARK
       %! baca._attach_metronome_marks(2)
+      %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
+      %! baca.metronome_mark()
     %@% - \baca-metronome-mark-spanner-left-text 2 0 1 "112"
       %! EXPLICIT_METRONOME_MARK
       %! baca._attach_metronome_marks(2)
+      %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
+      %! baca.metronome_mark()
     %@% \bacaStartTextSpanMM
       %! CLOCK_TIME
       %! baca._label_clock_time()
@@ -692,13 +722,13 @@ number.1.RH.Music.1 = {
               %! baca.clef_extra_offset_function(1)
         %%% \once \override PianoMusicRHStaff.Clef.extra-offset = #'(-2.5 . 0)
               %! -PARTS
-              %! baca.IndicatorCommand._call()
+              %! baca._attach_persistent_indicator()
               %! baca.instrument_name()
             \set PianoStaff.instrumentName = \mraz-piano-markup
             % OPENING:
             % COMMANDS:
               %! EXPLICIT_CLEF
-              %! baca.IndicatorCommand._call()
+              %! baca._attach_persistent_indicator()
               %! baca._set_status_tag()
               %! baca.clef()
             \clef "treble"
@@ -709,7 +739,7 @@ number.1.RH.Music.1 = {
               %! baca._attach_color_literal(1)
             %@% \override PianoMusicRHStaff.Clef.color = ##f
               %! EXPLICIT_CLEF
-              %! baca.IndicatorCommand._call()
+              %! baca._attach_persistent_indicator()
               %! baca._set_status_tag()
               %! baca.clef()
               %! baca.treat_persistent_wrapper(2)
@@ -717,7 +747,7 @@ number.1.RH.Music.1 = {
             bf''''!1
             % AFTER:
             % ARTICULATIONS:
-              %! baca.IndicatorCommand._call()
+              %! baca._attach_persistent_indicator()
               %! baca.tenuto()
             - \tenuto
             % MARKUP:
@@ -728,7 +758,7 @@ number.1.RH.Music.1 = {
               %! EXPLICIT_INSTRUMENT_ALERT
               %! baca._attach_latent_indicator_alert()
             ^ \baca-explicit-instrument-markup "(“Piano”)"
-              %! baca.IndicatorCommand._call()
+              %! baca._attach_persistent_indicator()
               %! baca.markup()
             ^ \mraz-ottava-brackets-always-govern-markup
             % ABSOLUTE_AFTER:
@@ -1185,24 +1215,24 @@ number.1.RH.Music.2 = {
             \override TextScript.direction = #up
             % OPENING:
             % COMMANDS:
-              %! baca.IndicatorCommand._call()
+              %! baca._attach_persistent_indicator()
               %! baca.dynamic_up()
             \dynamicUp
             c'''8
             % AFTER:
             % ARTICULATIONS:
-              %! baca.IndicatorCommand._call()
+              %! baca._attach_persistent_indicator()
               %! baca.accent()
             - \accent
               %! EXPLICIT_DYNAMIC_COLOR
               %! baca.treat_persistent_wrapper()
               %! EXPLICIT_DYNAMIC
-              %! baca.IndicatorCommand._call()
+              %! baca._attach_persistent_indicator()
               %! baca._set_status_tag()
               %! baca.dynamic()
             - \tweak color #(x11-color 'blue)
               %! EXPLICIT_DYNAMIC
-              %! baca.IndicatorCommand._call()
+              %! baca._attach_persistent_indicator()
               %! baca._set_status_tag()
               %! baca.dynamic()
             \fff
@@ -1226,7 +1256,7 @@ number.1.RH.Music.2 = {
             d'''8
             % AFTER:
             % ARTICULATIONS:
-              %! baca.IndicatorCommand._call()
+              %! baca._attach_persistent_indicator()
               %! baca.accent()
             - \accent
             % ABSOLUTE_BEFORE:
@@ -1239,7 +1269,7 @@ number.1.RH.Music.2 = {
             ef''''!8
             % AFTER:
             % ARTICULATIONS:
-              %! baca.IndicatorCommand._call()
+              %! baca._attach_persistent_indicator()
               %! baca.accent()
             - \accent
             % ABSOLUTE_BEFORE:
@@ -1252,7 +1282,7 @@ number.1.RH.Music.2 = {
             f''''8
             % AFTER:
             % ARTICULATIONS:
-              %! baca.IndicatorCommand._call()
+              %! baca._attach_persistent_indicator()
               %! baca.accent()
             - \accent
             % COMMANDS:
@@ -1378,21 +1408,21 @@ number.1.RH.Music.3 = {
             bf'''!8
             % AFTER:
             % ARTICULATIONS:
-              %! baca.IndicatorCommand._call()
+              %! baca._attach_persistent_indicator()
               %! baca.staccato()
             - \staccato
-              %! baca.IndicatorCommand._call()
+              %! baca._attach_persistent_indicator()
               %! baca.tenuto()
             - \tenuto
               %! EXPLICIT_DYNAMIC_COLOR
               %! baca.treat_persistent_wrapper()
               %! EXPLICIT_DYNAMIC
-              %! baca.IndicatorCommand._call()
+              %! baca._attach_persistent_indicator()
               %! baca._set_status_tag()
               %! baca.dynamic()
             - \tweak color #(x11-color 'blue)
               %! EXPLICIT_DYNAMIC
-              %! baca.IndicatorCommand._call()
+              %! baca._attach_persistent_indicator()
               %! baca._set_status_tag()
               %! baca.dynamic()
             \pp
@@ -1407,10 +1437,10 @@ number.1.RH.Music.3 = {
             cs'''!8
             % AFTER:
             % ARTICULATIONS:
-              %! baca.IndicatorCommand._call()
+              %! baca._attach_persistent_indicator()
               %! baca.staccato()
             - \staccato
-              %! baca.IndicatorCommand._call()
+              %! baca._attach_persistent_indicator()
               %! baca.tenuto()
             - \tenuto
             % ABSOLUTE_BEFORE:
@@ -1419,10 +1449,10 @@ number.1.RH.Music.3 = {
             ef'''!8
             % AFTER:
             % ARTICULATIONS:
-              %! baca.IndicatorCommand._call()
+              %! baca._attach_persistent_indicator()
               %! baca.staccato()
             - \staccato
-              %! baca.IndicatorCommand._call()
+              %! baca._attach_persistent_indicator()
               %! baca.tenuto()
             - \tenuto
             % COMMANDS:
@@ -1468,10 +1498,10 @@ number.1.RH.Music.3 = {
             d'''8
             % AFTER:
             % ARTICULATIONS:
-              %! baca.IndicatorCommand._call()
+              %! baca._attach_persistent_indicator()
               %! baca.staccato()
             - \staccato
-              %! baca.IndicatorCommand._call()
+              %! baca._attach_persistent_indicator()
               %! baca.tenuto()
             - \tenuto
             % MARKUP:
@@ -1485,10 +1515,10 @@ number.1.RH.Music.3 = {
             e'''8
             % AFTER:
             % ARTICULATIONS:
-              %! baca.IndicatorCommand._call()
+              %! baca._attach_persistent_indicator()
               %! baca.staccato()
             - \staccato
-              %! baca.IndicatorCommand._call()
+              %! baca._attach_persistent_indicator()
               %! baca.tenuto()
             - \tenuto
             % ABSOLUTE_BEFORE:
@@ -1497,10 +1527,10 @@ number.1.RH.Music.3 = {
             c'''8
             % AFTER:
             % ARTICULATIONS:
-              %! baca.IndicatorCommand._call()
+              %! baca._attach_persistent_indicator()
               %! baca.staccato()
             - \staccato
-              %! baca.IndicatorCommand._call()
+              %! baca._attach_persistent_indicator()
               %! baca.tenuto()
             - \tenuto
             % ABSOLUTE_BEFORE:
@@ -1509,10 +1539,10 @@ number.1.RH.Music.3 = {
             ef'''!8
             % AFTER:
             % ARTICULATIONS:
-              %! baca.IndicatorCommand._call()
+              %! baca._attach_persistent_indicator()
               %! baca.staccato()
             - \staccato
-              %! baca.IndicatorCommand._call()
+              %! baca._attach_persistent_indicator()
               %! baca.tenuto()
             - \tenuto
             % ABSOLUTE_BEFORE:
@@ -1521,10 +1551,10 @@ number.1.RH.Music.3 = {
             f''8
             % AFTER:
             % ARTICULATIONS:
-              %! baca.IndicatorCommand._call()
+              %! baca._attach_persistent_indicator()
               %! baca.staccato()
             - \staccato
-              %! baca.IndicatorCommand._call()
+              %! baca._attach_persistent_indicator()
               %! baca.tenuto()
             - \tenuto
             % ABSOLUTE_BEFORE:
@@ -1587,18 +1617,18 @@ number.1.RH.Music.3 = {
             a''4
             % AFTER:
             % ARTICULATIONS:
-              %! baca.IndicatorCommand._call()
+              %! baca._attach_persistent_indicator()
               %! baca.tenuto()
             - \tenuto
               %! EXPLICIT_DYNAMIC_COLOR
               %! baca.treat_persistent_wrapper()
               %! EXPLICIT_DYNAMIC
-              %! baca.IndicatorCommand._call()
+              %! baca._attach_persistent_indicator()
               %! baca._set_status_tag()
               %! baca.dynamic()
             - \tweak color #(x11-color 'blue)
               %! EXPLICIT_DYNAMIC
-              %! baca.IndicatorCommand._call()
+              %! baca._attach_persistent_indicator()
               %! baca._set_status_tag()
               %! baca.dynamic()
             \mf
@@ -1622,7 +1652,7 @@ number.1.RH.Music.3 = {
             cs''!4
             % AFTER:
             % ARTICULATIONS:
-              %! baca.IndicatorCommand._call()
+              %! baca._attach_persistent_indicator()
               %! baca.tenuto()
             - \tenuto
             % ABSOLUTE_BEFORE:
@@ -1635,7 +1665,7 @@ number.1.RH.Music.3 = {
             b''4
             % AFTER:
             % ARTICULATIONS:
-              %! baca.IndicatorCommand._call()
+              %! baca._attach_persistent_indicator()
               %! baca.tenuto()
             - \tenuto
             % ABSOLUTE_BEFORE:
@@ -1648,7 +1678,7 @@ number.1.RH.Music.3 = {
             af''!4
             % AFTER:
             % ARTICULATIONS:
-              %! baca.IndicatorCommand._call()
+              %! baca._attach_persistent_indicator()
               %! baca.tenuto()
             - \tenuto
             % ABSOLUTE_BEFORE:
@@ -1661,7 +1691,7 @@ number.1.RH.Music.3 = {
             g'''4
             % AFTER:
             % ARTICULATIONS:
-              %! baca.IndicatorCommand._call()
+              %! baca._attach_persistent_indicator()
               %! baca.tenuto()
             - \tenuto
             % COMMANDS:
@@ -1947,7 +1977,7 @@ number.1.LH.Music.1 = {
     % OPENING:
     % COMMANDS:
       %! EXPLICIT_CLEF
-      %! baca.IndicatorCommand._call()
+      %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
       %! baca.clef()
     \clef "treble"
@@ -1958,7 +1988,7 @@ number.1.LH.Music.1 = {
       %! baca._attach_color_literal(1)
     %@% \override PianoMusicLHStaff.Clef.color = ##f
       %! EXPLICIT_CLEF
-      %! baca.IndicatorCommand._call()
+      %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
       %! baca.clef()
       %! baca.treat_persistent_wrapper(2)
@@ -2047,12 +2077,12 @@ number.1.LH.Music.4 = {
               %! EXPLICIT_DYNAMIC_COLOR
               %! baca.treat_persistent_wrapper()
               %! EXPLICIT_DYNAMIC
-              %! baca.IndicatorCommand._call()
+              %! baca._attach_persistent_indicator()
               %! baca._set_status_tag()
               %! baca.dynamic()
             - \tweak color #(x11-color 'blue)
               %! EXPLICIT_DYNAMIC
-              %! baca.IndicatorCommand._call()
+              %! baca._attach_persistent_indicator()
               %! baca._set_status_tag()
               %! baca.dynamic()
             \ff
@@ -2252,7 +2282,7 @@ number.1.LH.Music.5 = {
             \once \override DynamicText.X-offset = -0.5
             % OPENING:
             % COMMANDS:
-              %! baca.IndicatorCommand._call()
+              %! baca._attach_persistent_indicator()
               %! baca.dynamic_up()
             \dynamicUp
             bf,,!8.
@@ -2261,12 +2291,12 @@ number.1.LH.Music.5 = {
               %! EXPLICIT_DYNAMIC_COLOR
               %! baca.treat_persistent_wrapper()
               %! EXPLICIT_DYNAMIC
-              %! baca.IndicatorCommand._call()
+              %! baca._attach_persistent_indicator()
               %! baca._set_status_tag()
               %! baca.dynamic()
             - \tweak color #(x11-color 'blue)
               %! EXPLICIT_DYNAMIC
-              %! baca.IndicatorCommand._call()
+              %! baca._attach_persistent_indicator()
               %! baca._set_status_tag()
               %! baca.dynamic()
             \ppp
@@ -2407,7 +2437,7 @@ number.1.LH.Music.6 = {
             % OPENING:
             % COMMANDS:
               %! EXPLICIT_CLEF
-              %! baca.IndicatorCommand._call()
+              %! baca._attach_persistent_indicator()
               %! baca._set_status_tag()
               %! baca.clef()
             \clef "bass"
@@ -2418,7 +2448,7 @@ number.1.LH.Music.6 = {
               %! baca._attach_color_literal(1)
             %@% \override PianoMusicLHStaff.Clef.color = ##f
               %! EXPLICIT_CLEF
-              %! baca.IndicatorCommand._call()
+              %! baca._attach_persistent_indicator()
               %! baca._set_status_tag()
               %! baca.clef()
               %! baca.treat_persistent_wrapper(2)
@@ -2429,12 +2459,12 @@ number.1.LH.Music.6 = {
               %! EXPLICIT_DYNAMIC_COLOR
               %! baca.treat_persistent_wrapper()
               %! EXPLICIT_DYNAMIC
-              %! baca.IndicatorCommand._call()
+              %! baca._attach_persistent_indicator()
               %! baca._set_status_tag()
               %! baca.dynamic()
             - \tweak color #(x11-color 'blue)
               %! EXPLICIT_DYNAMIC
-              %! baca.IndicatorCommand._call()
+              %! baca._attach_persistent_indicator()
               %! baca._set_status_tag()
               %! baca.dynamic()
             \f

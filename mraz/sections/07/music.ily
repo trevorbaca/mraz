@@ -121,15 +121,21 @@ number.7.Skips = {
     \bacaStartTextSpanMM
       %! EXPLICIT_METRONOME_MARK
       %! baca._attach_metronome_marks(2)
+      %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
+      %! baca.metronome_mark()
     %@% - \abjad-dashed-line-with-arrow
       %! EXPLICIT_METRONOME_MARK
       %! baca._attach_metronome_marks(2)
+      %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
+      %! baca.metronome_mark()
     %@% - \baca-metronome-mark-spanner-left-text 2 0 1 "84"
       %! EXPLICIT_METRONOME_MARK
       %! baca._attach_metronome_marks(2)
+      %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
+      %! baca.metronome_mark()
     %@% \bacaStartTextSpanMM
       %! CLOCK_TIME
       %! baca._label_clock_time()
@@ -512,15 +518,21 @@ number.7.Skips = {
     \bacaStartTextSpanMM
       %! EXPLICIT_METRONOME_MARK
       %! baca._attach_metronome_marks(2)
+      %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
+      %! baca.metronome_mark()
     %@% - \abjad-invisible-line
       %! EXPLICIT_METRONOME_MARK
       %! baca._attach_metronome_marks(2)
+      %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
+      %! baca.metronome_mark()
     %@% - \baca-metronome-mark-spanner-left-text 2 0 1 "112"
       %! EXPLICIT_METRONOME_MARK
       %! baca._attach_metronome_marks(2)
+      %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
+      %! baca.metronome_mark()
     %@% \bacaStartTextSpanMM
       %! CLOCK_TIME
       %! baca._label_clock_time()
@@ -735,7 +747,7 @@ number.7.RH.Music.1 = {
                   %! baca._reapply_persistent_indicators(3)
                   %! baca._set_status_tag()
                 \clef "treble"
-                  %! baca.IndicatorCommand._call()
+                  %! baca._attach_persistent_indicator()
                   %! baca.dynamic_up()
                 \dynamicUp
                   %! REAPPLIED_CLEF_COLOR
@@ -755,12 +767,12 @@ number.7.RH.Music.1 = {
                   %! EXPLICIT_DYNAMIC_COLOR
                   %! baca.treat_persistent_wrapper()
                   %! EXPLICIT_DYNAMIC
-                  %! baca.IndicatorCommand._call()
+                  %! baca._attach_persistent_indicator()
                   %! baca._set_status_tag()
                   %! baca.dynamic()
                 - \tweak color #(x11-color 'blue)
                   %! EXPLICIT_DYNAMIC
-                  %! baca.IndicatorCommand._call()
+                  %! baca._attach_persistent_indicator()
                   %! baca._set_status_tag()
                   %! baca.dynamic()
                 \fff
@@ -1402,7 +1414,7 @@ number.7.RH.Music.1 = {
     \once \override Score.RehearsalMark.self-alignment-X = #right
     % OPENING:
     % COMMANDS:
-      %! baca.IndicatorCommand._call()
+      %! baca._attach_persistent_indicator()
       %! baca.mark()
     \mark \mraz-colophon-markup
     s1 * 1/8
@@ -1504,7 +1516,7 @@ number.7.RH.InsertVoice.1 = {
                 f''16
                 % AFTER:
                 % ARTICULATIONS:
-                  %! baca.IndicatorCommand._call()
+                  %! baca._attach_persistent_indicator()
                   %! baca.marcato()
                 - \marcato
                 % ABSOLUTE_BEFORE:
@@ -1540,7 +1552,7 @@ number.7.RH.InsertVoice.1 = {
                 b''16
                 % AFTER:
                 % ARTICULATIONS:
-                  %! baca.IndicatorCommand._call()
+                  %! baca._attach_persistent_indicator()
                   %! baca.marcato()
                 - \marcato
                 % ABSOLUTE_BEFORE:
@@ -1641,7 +1653,7 @@ number.7.RH.InsertVoice.1 = {
                 fs'''!16
                 % AFTER:
                 % ARTICULATIONS:
-                  %! baca.IndicatorCommand._call()
+                  %! baca._attach_persistent_indicator()
                   %! baca.marcato()
                 - \marcato
                 % ABSOLUTE_BEFORE:
@@ -1654,7 +1666,7 @@ number.7.RH.InsertVoice.1 = {
                 g'''16
                 % AFTER:
                 % ARTICULATIONS:
-                  %! baca.IndicatorCommand._call()
+                  %! baca._attach_persistent_indicator()
                   %! baca.marcato()
                 - \marcato
                 % ABSOLUTE_BEFORE:
@@ -1738,7 +1750,7 @@ number.7.RH.InsertVoice.1 = {
                 a''16
                 % AFTER:
                 % ARTICULATIONS:
-                  %! baca.IndicatorCommand._call()
+                  %! baca._attach_persistent_indicator()
                   %! baca.marcato()
                 - \marcato
                 % ABSOLUTE_BEFORE:
@@ -1816,7 +1828,7 @@ number.7.RH.InsertVoice.1 = {
                 af''!16
                 % AFTER:
                 % ARTICULATIONS:
-                  %! baca.IndicatorCommand._call()
+                  %! baca._attach_persistent_indicator()
                   %! baca.marcato()
                 - \marcato
                 % ABSOLUTE_BEFORE:
@@ -1829,7 +1841,7 @@ number.7.RH.InsertVoice.1 = {
                 f'''16
                 % AFTER:
                 % ARTICULATIONS:
-                  %! baca.IndicatorCommand._call()
+                  %! baca._attach_persistent_indicator()
                   %! baca.marcato()
                 - \marcato
                 % ABSOLUTE_BEFORE:
@@ -1917,7 +1929,7 @@ number.7.RH.InsertVoice.1 = {
                 fs'''!16
                 % AFTER:
                 % ARTICULATIONS:
-                  %! baca.IndicatorCommand._call()
+                  %! baca._attach_persistent_indicator()
                   %! baca.marcato()
                 - \marcato
                 % ABSOLUTE_BEFORE:
@@ -1957,7 +1969,7 @@ number.7.RH.InsertVoice.1 = {
                 bf'''!16
                 % AFTER:
                 % ARTICULATIONS:
-                  %! baca.IndicatorCommand._call()
+                  %! baca._attach_persistent_indicator()
                   %! baca.marcato()
                 - \marcato
                 % CLOSING:
@@ -1986,7 +1998,7 @@ number.7.RH.InsertVoice.1 = {
                 cs''''!16
                 % AFTER:
                 % ARTICULATIONS:
-                  %! baca.IndicatorCommand._call()
+                  %! baca._attach_persistent_indicator()
                   %! baca.marcato()
                 - \marcato
                 % ABSOLUTE_BEFORE:
@@ -2059,7 +2071,7 @@ number.7.RH.Music.2 = {
     \override Slur.direction = #up
     % OPENING:
     % COMMANDS:
-      %! baca.IndicatorCommand._call()
+      %! baca._attach_persistent_indicator()
       %! baca.dynamic_down()
     \dynamicDown
     s1 * 3/4
@@ -2092,12 +2104,12 @@ number.7.RH.Music.2 = {
               %! EXPLICIT_DYNAMIC_COLOR
               %! baca.treat_persistent_wrapper()
               %! EXPLICIT_DYNAMIC
-              %! baca.IndicatorCommand._call()
+              %! baca._attach_persistent_indicator()
               %! baca._set_status_tag()
               %! baca.dynamic()
             - \tweak color #(x11-color 'blue)
               %! EXPLICIT_DYNAMIC
-              %! baca.IndicatorCommand._call()
+              %! baca._attach_persistent_indicator()
               %! baca._set_status_tag()
               %! baca.dynamic()
             \fff
@@ -2896,7 +2908,7 @@ number.7.RH.InsertVoice.2 = {
             c''16
             % AFTER:
             % ARTICULATIONS:
-              %! baca.IndicatorCommand._call()
+              %! baca._attach_persistent_indicator()
               %! baca.accent()
             - \accent
             % START_BEAM:
@@ -2911,7 +2923,7 @@ number.7.RH.InsertVoice.2 = {
             d''16
             % AFTER:
             % ARTICULATIONS:
-              %! baca.IndicatorCommand._call()
+              %! baca._attach_persistent_indicator()
               %! baca.accent()
             - \accent
             % ABSOLUTE_BEFORE:
@@ -2979,7 +2991,7 @@ number.7.RH.InsertVoice.2 = {
                 cs''!16
                 % AFTER:
                 % ARTICULATIONS:
-                  %! baca.IndicatorCommand._call()
+                  %! baca._attach_persistent_indicator()
                   %! baca.accent()
                 - \accent
                 % ABSOLUTE_BEFORE:
@@ -2992,7 +3004,7 @@ number.7.RH.InsertVoice.2 = {
                 f''16
                 % AFTER:
                 % ARTICULATIONS:
-                  %! baca.IndicatorCommand._call()
+                  %! baca._attach_persistent_indicator()
                   %! baca.accent()
                 - \accent
                 % ABSOLUTE_BEFORE:
@@ -3047,7 +3059,7 @@ number.7.RH.InsertVoice.2 = {
                 f''16
                 % AFTER:
                 % ARTICULATIONS:
-                  %! baca.IndicatorCommand._call()
+                  %! baca._attach_persistent_indicator()
                   %! baca.accent()
                 - \accent
                 % ABSOLUTE_BEFORE:
@@ -3060,7 +3072,7 @@ number.7.RH.InsertVoice.2 = {
                 ef'''!16
                 % AFTER:
                 % ARTICULATIONS:
-                  %! baca.IndicatorCommand._call()
+                  %! baca._attach_persistent_indicator()
                   %! baca.accent()
                 - \accent
                 % ABSOLUTE_BEFORE:
@@ -3128,7 +3140,7 @@ number.7.RH.InsertVoice.2 = {
             c''16
             % AFTER:
             % ARTICULATIONS:
-              %! baca.IndicatorCommand._call()
+              %! baca._attach_persistent_indicator()
               %! baca.accent()
             - \accent
             % START_BEAM:
@@ -3143,7 +3155,7 @@ number.7.RH.InsertVoice.2 = {
             bf''!16
             % AFTER:
             % ARTICULATIONS:
-              %! baca.IndicatorCommand._call()
+              %! baca._attach_persistent_indicator()
               %! baca.accent()
             - \accent
             % ABSOLUTE_BEFORE:
@@ -3207,7 +3219,7 @@ number.7.RH.InsertVoice.2 = {
             g''16
             % AFTER:
             % ARTICULATIONS:
-              %! baca.IndicatorCommand._call()
+              %! baca._attach_persistent_indicator()
               %! baca.accent()
             - \accent
             % ABSOLUTE_BEFORE:
@@ -3220,7 +3232,7 @@ number.7.RH.InsertVoice.2 = {
             f'''16
             % AFTER:
             % ARTICULATIONS:
-              %! baca.IndicatorCommand._call()
+              %! baca._attach_persistent_indicator()
               %! baca.accent()
             - \accent
             % ABSOLUTE_BEFORE:
@@ -3284,7 +3296,7 @@ number.7.RH.InsertVoice.2 = {
                 a''16
                 % AFTER:
                 % ARTICULATIONS:
-                  %! baca.IndicatorCommand._call()
+                  %! baca._attach_persistent_indicator()
                   %! baca.accent()
                 - \accent
                 % ABSOLUTE_BEFORE:
@@ -3320,7 +3332,7 @@ number.7.RH.InsertVoice.2 = {
                 ef'''!16
                 % AFTER:
                 % ARTICULATIONS:
-                  %! baca.IndicatorCommand._call()
+                  %! baca._attach_persistent_indicator()
                   %! baca.accent()
                 - \accent
                 % ABSOLUTE_BEFORE:
@@ -3333,7 +3345,7 @@ number.7.RH.InsertVoice.2 = {
                 c'''16
                 % AFTER:
                 % ARTICULATIONS:
-                  %! baca.IndicatorCommand._call()
+                  %! baca._attach_persistent_indicator()
                   %! baca.accent()
                 - \accent
                 % ABSOLUTE_BEFORE:
@@ -3407,7 +3419,7 @@ number.7.RH.InsertVoice.2 = {
             f''16
             % AFTER:
             % ARTICULATIONS:
-              %! baca.IndicatorCommand._call()
+              %! baca._attach_persistent_indicator()
               %! baca.accent()
             - \accent
             % START_BEAM:
@@ -3478,7 +3490,7 @@ number.7.RH.InsertVoice.2 = {
             d'''16
             % AFTER:
             % ARTICULATIONS:
-              %! baca.IndicatorCommand._call()
+              %! baca._attach_persistent_indicator()
               %! baca.accent()
             - \accent
             % ABSOLUTE_BEFORE:
@@ -3491,7 +3503,7 @@ number.7.RH.InsertVoice.2 = {
             af'''!16
             % AFTER:
             % ARTICULATIONS:
-              %! baca.IndicatorCommand._call()
+              %! baca._attach_persistent_indicator()
               %! baca.accent()
             - \accent
             % STOP_BEAM:
@@ -3874,12 +3886,12 @@ number.7.LH.Music.4 = {
               %! EXPLICIT_DYNAMIC_COLOR
               %! baca.treat_persistent_wrapper()
               %! EXPLICIT_DYNAMIC
-              %! baca.IndicatorCommand._call()
+              %! baca._attach_persistent_indicator()
               %! baca._set_status_tag()
               %! baca.dynamic()
             - \tweak color #(x11-color 'blue)
               %! EXPLICIT_DYNAMIC
-              %! baca.IndicatorCommand._call()
+              %! baca._attach_persistent_indicator()
               %! baca._set_status_tag()
               %! baca.dynamic()
             \ff
@@ -4026,12 +4038,12 @@ number.7.LH.Music.4 = {
               %! REDUNDANT_DYNAMIC_COLOR
               %! baca.treat_persistent_wrapper()
               %! REDUNDANT_DYNAMIC
-              %! baca.IndicatorCommand._call()
+              %! baca._attach_persistent_indicator()
               %! baca._set_status_tag()
               %! baca.dynamic()
             - \tweak color #(x11-color 'DeepPink1)
               %! REDUNDANT_DYNAMIC
-              %! baca.IndicatorCommand._call()
+              %! baca._attach_persistent_indicator()
               %! baca._set_status_tag()
               %! baca.dynamic()
             \ff
@@ -4102,12 +4114,12 @@ number.7.LH.Music.4 = {
               %! REDUNDANT_DYNAMIC_COLOR
               %! baca.treat_persistent_wrapper()
               %! REDUNDANT_DYNAMIC
-              %! baca.IndicatorCommand._call()
+              %! baca._attach_persistent_indicator()
               %! baca._set_status_tag()
               %! baca.dynamic()
             - \tweak color #(x11-color 'DeepPink1)
               %! REDUNDANT_DYNAMIC
-              %! baca.IndicatorCommand._call()
+              %! baca._attach_persistent_indicator()
               %! baca._set_status_tag()
               %! baca.dynamic()
             \ff
@@ -4485,7 +4497,7 @@ number.7.LH.Music.5 = {
                 \set stemRightBeamCount = 2
                 % OPENING:
                 % COMMANDS:
-                  %! baca.IndicatorCommand._call()
+                  %! baca._attach_persistent_indicator()
                   %! baca.dynamic_down()
                 \dynamicDown
                 cs'!16
@@ -4494,12 +4506,12 @@ number.7.LH.Music.5 = {
                   %! EXPLICIT_DYNAMIC_COLOR
                   %! baca.treat_persistent_wrapper()
                   %! EXPLICIT_DYNAMIC
-                  %! baca.IndicatorCommand._call()
+                  %! baca._attach_persistent_indicator()
                   %! baca._set_status_tag()
                   %! baca.dynamic()
                 - \tweak color #(x11-color 'blue)
                   %! EXPLICIT_DYNAMIC
-                  %! baca.IndicatorCommand._call()
+                  %! baca._attach_persistent_indicator()
                   %! baca._set_status_tag()
                   %! baca.dynamic()
                 \pp
@@ -4758,12 +4770,12 @@ number.7.LH.Music.5 = {
                   %! REDUNDANT_DYNAMIC_COLOR
                   %! baca.treat_persistent_wrapper()
                   %! REDUNDANT_DYNAMIC
-                  %! baca.IndicatorCommand._call()
+                  %! baca._attach_persistent_indicator()
                   %! baca._set_status_tag()
                   %! baca.dynamic()
                 - \tweak color #(x11-color 'DeepPink1)
                   %! REDUNDANT_DYNAMIC
-                  %! baca.IndicatorCommand._call()
+                  %! baca._attach_persistent_indicator()
                   %! baca._set_status_tag()
                   %! baca.dynamic()
                 \pp
@@ -5079,7 +5091,7 @@ number.7.LH.InsertVoice.5 = {
                 b'16
                 % AFTER:
                 % ARTICULATIONS:
-                  %! baca.IndicatorCommand._call()
+                  %! baca._attach_persistent_indicator()
                   %! baca.staccato()
                 - \staccato
                 % ABSOLUTE_BEFORE:
@@ -5127,7 +5139,7 @@ number.7.LH.InsertVoice.5 = {
                 fs''!16
                 % AFTER:
                 % ARTICULATIONS:
-                  %! baca.IndicatorCommand._call()
+                  %! baca._attach_persistent_indicator()
                   %! baca.staccato()
                 - \staccato
                 % ABSOLUTE_BEFORE:
@@ -5156,7 +5168,7 @@ number.7.LH.InsertVoice.5 = {
                 c'''16
                 % AFTER:
                 % ARTICULATIONS:
-                  %! baca.IndicatorCommand._call()
+                  %! baca._attach_persistent_indicator()
                   %! baca.staccato()
                 - \staccato
                 % ABSOLUTE_BEFORE:
@@ -5169,7 +5181,7 @@ number.7.LH.InsertVoice.5 = {
                 d'''16
                 % AFTER:
                 % ARTICULATIONS:
-                  %! baca.IndicatorCommand._call()
+                  %! baca._attach_persistent_indicator()
                   %! baca.staccato()
                 - \staccato
                 % STOP_BEAM:
@@ -5254,7 +5266,7 @@ number.7.LH.InsertVoice.5 = {
                 a'16
                 % AFTER:
                 % ARTICULATIONS:
-                  %! baca.IndicatorCommand._call()
+                  %! baca._attach_persistent_indicator()
                   %! baca.staccato()
                 - \staccato
                 % ABSOLUTE_BEFORE:
@@ -5304,7 +5316,7 @@ number.7.LH.InsertVoice.5 = {
                 e''16
                 % AFTER:
                 % ARTICULATIONS:
-                  %! baca.IndicatorCommand._call()
+                  %! baca._attach_persistent_indicator()
                   %! baca.staccato()
                 - \staccato
                 % ABSOLUTE_BEFORE:
@@ -5333,7 +5345,7 @@ number.7.LH.InsertVoice.5 = {
                 af''!16
                 % AFTER:
                 % ARTICULATIONS:
-                  %! baca.IndicatorCommand._call()
+                  %! baca._attach_persistent_indicator()
                   %! baca.staccato()
                 - \staccato
                 % ABSOLUTE_BEFORE:
@@ -5346,7 +5358,7 @@ number.7.LH.InsertVoice.5 = {
                 cs'''!16
                 % AFTER:
                 % ARTICULATIONS:
-                  %! baca.IndicatorCommand._call()
+                  %! baca._attach_persistent_indicator()
                   %! baca.staccato()
                 - \staccato
                 % STOP_BEAM:
