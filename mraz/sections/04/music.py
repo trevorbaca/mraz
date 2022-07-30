@@ -285,7 +285,7 @@ figures(
     library.lh_v5,
     [set(chord_1_lower)],
     baca.figure([1], 16, affix=baca.rests_after([3])),
-    baca.cross_staff(),
+    baca.cross_staff(selector=lambda _: baca.select.phead(_, 0)),
     baca.dynamic("mp", selector=lambda _: baca.select.phead(_, 0)),
     # TODO: tag colored score only:
     # baca.stem_color("darkmagenta", context="PianoStaff"),
@@ -435,7 +435,7 @@ figures(
         library.lh_v5_i,
         [10],
         rmakers.beam_groups(beam_rests=True),
-        baca.extend_beam(),
+        baca.extend_beam(selector=lambda _: abjad.select.leaf(_, -1)),
     ),
     baca.slur(map=lambda _: baca.select.ntruns(_)),
     figure_label_direction=abjad.DOWN,
@@ -480,7 +480,7 @@ figures(
         library.lh_v5_i,
         [5],
         rmakers.beam_groups(beam_rests=True),
-        baca.extend_beam(),
+        baca.extend_beam(selector=lambda _: abjad.select.leaf(_, -1)),
     ),
     baca.slur(map=lambda _: baca.select.ntruns(_)),
     figure_label_direction=abjad.DOWN,
@@ -518,7 +518,7 @@ figures(
         library.lh_v5_i,
         [5],
         rmakers.beam_groups(beam_rests=True),
-        baca.extend_beam(),
+        baca.extend_beam(selector=lambda _: abjad.select.leaf(_, -1)),
     ),
     baca.slur(map=lambda _: baca.select.ntruns(_)),
     figure_label_direction=abjad.DOWN,
@@ -577,7 +577,7 @@ figures(
     baca.dynamic("mf", selector=lambda _: baca.select.phead(_, 0)),
     baca.dynamic_text_x_offset(-4, selector=lambda _: baca.select.pleaf(_, 0)),
     baca.dynamic_text_extra_offset((0, -8), selector=lambda _: baca.select.pleaf(_, 0)),
-    baca.dynamic_up(),
+    baca.dynamic_up(selector=lambda _: abjad.select.leaf(_, 0)),
     baca.slur(map=lambda _: baca.select.ntruns(_)),
     baca.text_script_color(
         "#black",
@@ -997,7 +997,7 @@ figures(
     baca.figure([2, -14], 16),
     baca.accent(lambda _: baca.select.pheads(_)),
     baca.dynamic("fff", selector=lambda _: baca.select.phead(_, 0)),
-    baca.dynamic_up(),
+    baca.dynamic_up(selector=lambda _: abjad.select.leaf(_, 0)),
     baca.register(20, 36),
     baca.rest_up(selector=lambda _: abjad.select.rests(_)),
     baca.script_up(),
@@ -1103,7 +1103,7 @@ def postprocess(cache):
 
     accumulator(
         library.lh_v5,
-        baca.dynamic_down(),
+        baca.dynamic_down(selector=lambda _: abjad.select.leaf(_, 0)),
     )
 
     accumulator(

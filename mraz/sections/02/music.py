@@ -17,7 +17,7 @@ figures(
     section_8.stage_3.rh.next(),
     baca.figure([6, -1], 32),
     baca.dynamic("ppp", selector=lambda _: baca.select.phead(_, 0)),
-    baca.dynamic_up(),
+    baca.dynamic_up(selector=lambda _: abjad.select.leaf(_, 0)),
     baca.register(-27, -39),
     figure_name="8.3.R.1",
     signature=4,

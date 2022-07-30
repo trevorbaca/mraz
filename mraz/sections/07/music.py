@@ -26,10 +26,10 @@ figures(
         [17, 23],
         rmakers.beam_groups(beam_rests=True),
         baca.marcato(selector=lambda _: baca.select.pheads(_)),
-        baca.extend_beam(),
+        baca.extend_beam(selector=lambda _: abjad.select.leaf(_, -1)),
     ),
     baca.dynamic("fff", selector=lambda _: baca.select.phead(_, 0)),
-    baca.extend_beam(),
+    baca.extend_beam(selector=lambda _: abjad.select.leaf(_, -1)),
     figure_name="7.1.R.1",
     signature=4,
 )
@@ -45,11 +45,11 @@ figures(
         [12, 14],
         rmakers.beam_groups(beam_rests=True),
         baca.accent(selector=lambda _: baca.select.pheads(_)),
-        baca.extend_beam(),
+        baca.extend_beam(selector=lambda _: abjad.select.leaf(_, -1)),
     ),
     baca.dynamic("fff", selector=lambda _: baca.select.phead(_, 0)),
     baca.slur(map=lambda _: baca.select.tuplets(_)),
-    baca.extend_beam(),
+    baca.extend_beam(selector=lambda _: abjad.select.leaf(_, -1)),
     figure_name="7.1.R.2",
     signature=4,
 )
@@ -101,9 +101,9 @@ figures(
         [21],
         rmakers.beam_groups(beam_rests=True),
         baca.marcato(selector=lambda _: baca.select.pheads(_)),
-        baca.extend_beam(),
+        baca.extend_beam(selector=lambda _: abjad.select.leaf(_, -1)),
     ),
-    baca.extend_beam(),
+    baca.extend_beam(selector=lambda _: abjad.select.leaf(_, -1)),
     figure_name="7.1.R.5",
     signature=4,
 )
@@ -119,10 +119,10 @@ figures(
         [12, 22, 19, 29],
         baca.accent(selector=lambda _: baca.select.pheads(_)),
         rmakers.beam_groups(beam_rests=True),
-        baca.extend_beam(),
+        baca.extend_beam(selector=lambda _: abjad.select.leaf(_, -1)),
     ),
     baca.slur(map=lambda _: baca.select.tuplets(_)),
-    baca.extend_beam(),
+    baca.extend_beam(selector=lambda _: abjad.select.leaf(_, -1)),
     figure_name="7.1.R.6",
     signature=4,
 )
@@ -176,10 +176,10 @@ figures(
         [17],
         baca.accent(selector=lambda _: baca.select.pheads(_)),
         rmakers.beam_groups(beam_rests=True),
-        baca.extend_beam(),
+        baca.extend_beam(selector=lambda _: abjad.select.leaf(_, -1)),
     ),
     baca.slur(map=lambda _: baca.select.tuplets(_)),
-    baca.extend_beam(),
+    baca.extend_beam(selector=lambda _: abjad.select.leaf(_, -1)),
     figure_name="7.1.R.10",
     signature=4,
 )
@@ -255,7 +255,7 @@ figures(
         baca.staccato(selector=lambda _: baca.select.pheads(_)),
     ),
     baca.dynamic("pp", selector=lambda _: baca.select.phead(_, 0)),
-    baca.dynamic_down(),
+    baca.dynamic_down(selector=lambda _: abjad.select.leaf(_, 0)),
     baca.slur(map=lambda _: baca.select.tuplets(_)),
     baca.tuplet_bracket_down(),
     anchor=baca.anchor(
@@ -377,7 +377,7 @@ def postprocess(cache):
     accumulator(
         library.rh_v1,
         baca.beam_positions(10),
-        baca.dynamic_up(),
+        baca.dynamic_up(selector=lambda _: abjad.select.leaf(_, 0)),
         baca.stem_up(selector=lambda _: baca.select.pleaves(_)),
     )
 
@@ -399,7 +399,7 @@ def postprocess(cache):
     accumulator(
         library.rh_v2,
         baca.beam_positions(-4.5),
-        baca.dynamic_down(),
+        baca.dynamic_down(selector=lambda _: abjad.select.leaf(_, 0)),
         baca.slur_up(),
         baca.stem_down(selector=lambda _: baca.select.pleaves(_)),
     )
