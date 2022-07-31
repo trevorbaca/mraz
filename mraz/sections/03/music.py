@@ -194,7 +194,7 @@ figures(
             selector=lambda _: abjad.select.leaf(_, 0),
         ),
     ),
-    baca.ottava(),
+    baca.ottava(selector=lambda _: baca.select.tleaves(_)),
     baca.register(10, 36),
     baca.slur_up(),
     anchor=baca.anchor_to_figure("4.5.R.3"),
@@ -345,7 +345,7 @@ def postprocess(cache):
 
     accumulator(
         library.rh_v1,
-        baca.ottava(),
+        baca.ottava(selector=lambda _: baca.select.tleaves(_)),
     )
 
     accumulator(
