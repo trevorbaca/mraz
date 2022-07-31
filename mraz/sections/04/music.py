@@ -1013,7 +1013,7 @@ figures(
     baca.figure([4, -4], 16, treatments=[(16, 4)]),
     rmakers.denominator(abjad.Duration(1, 1)),
     baca.dynamic("mf", selector=lambda _: baca.select.phead(_, 0)),
-    baca.ottava(),
+    baca.ottava(selector=lambda _: baca.select.tleaves(_)),
     baca.register(10, 26),
     baca.rest_down(selector=lambda _: abjad.select.rests(_)),
     baca.stem_down(selector=lambda _: baca.select.pleaves(_)),
@@ -1093,7 +1093,7 @@ def postprocess(cache):
 
     accumulator(
         (library.rh_v1, [(1, 36), (38, 39)]),
-        baca.ottava(),
+        baca.ottava(selector=lambda _: baca.select.tleaves(_)),
     )
 
     accumulator(

@@ -250,7 +250,7 @@ figures.populate_commands(score, accumulator)
 def postprocess(cache):
     accumulator(
         library.lh_v5,
-        baca.ottava_bassa(),
+        baca.ottava_bassa(selector=lambda _: baca.select.tleaves(_)),
         baca.tuplet_bracket_up(),
     )
     accumulator(
