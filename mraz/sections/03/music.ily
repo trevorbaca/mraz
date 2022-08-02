@@ -129,7 +129,7 @@ number.3.Skips = {
       %! REAPPLIED_TIME_SIGNATURE_COLOR
       %! baca._attach_color_literal(2)
     \baca-time-signature-color #'green4
-      %! +SEGMENT
+      %! +SECTION
       %! EMPTY_START_BAR
       %! baca._attach_nonfirst_empty_start_bar()
     \bar ""
@@ -1982,7 +1982,7 @@ number.3.RH.Music.2 = {
             % [RH.Music.2 measure 12]
             % BEFORE:
             % COMMANDS:
-              %! +SEGMENT
+              %! +SECTION
               %! baca.OverrideCommand._call(1)
               %! baca.span_bar_extra_offset()
             \once \override Score.SpanBar.extra-offset = #'(-0.75 . 0)
