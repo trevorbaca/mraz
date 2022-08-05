@@ -1153,8 +1153,7 @@ number.2.LH.Music.5 = {
             % BEFORE:
             % COMMANDS:
               %! SPANNER_START
-              %! baca.SpannerIndicatorCommand._call(2)
-              %! baca.ottava_bassa()
+              %! baca._do_spanner_indicator_command(2)
             \ottava -1
               %! baca.OverrideCommand._call(1)
               %! baca.tuplet_bracket_up()
@@ -1904,8 +1903,7 @@ number.2.LH.Music.5 = {
             % AFTER:
             % COMMANDS:
               %! SPANNER_STOP
-              %! baca.SpannerIndicatorCommand._call(4)
-              %! baca.ottava_bassa()
+              %! baca._do_spanner_indicator_command(4)
             \ottava 0
             % ABSOLUTE_BEFORE:
             % COMMANDS:
