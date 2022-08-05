@@ -2575,8 +2575,7 @@ number.6.RH.Music.2 = {
             [
             % SPANNER_STARTS:
               %! SPANNER_START
-              %! baca.SpannerIndicatorCommand._call(2)
-              %! baca.slur()
+              %! baca._do_spanner_indicator_command(2)
             (
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -2632,8 +2631,7 @@ number.6.RH.Music.2 = {
             - \staccato
             % SPANNER_STOPS:
               %! SPANNER_STOP
-              %! baca.SpannerIndicatorCommand._call(4)
-              %! baca.slur()
+              %! baca._do_spanner_indicator_command(4)
             )
             % CLOSING:
             % COMMANDS:
@@ -2661,8 +2659,7 @@ number.6.RH.Music.2 = {
             - \staccato
             % SPANNER_STARTS:
               %! SPANNER_START
-              %! baca.SpannerIndicatorCommand._call(2)
-              %! baca.slur()
+              %! baca._do_spanner_indicator_command(2)
             (
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -2718,8 +2715,7 @@ number.6.RH.Music.2 = {
             - \staccato
             % SPANNER_STOPS:
               %! SPANNER_STOP
-              %! baca.SpannerIndicatorCommand._call(4)
-              %! baca.slur()
+              %! baca._do_spanner_indicator_command(4)
             )
             % CLOSING:
             % COMMANDS:
@@ -2747,8 +2743,7 @@ number.6.RH.Music.2 = {
             - \staccato
             % SPANNER_STARTS:
               %! SPANNER_START
-              %! baca.SpannerIndicatorCommand._call(2)
-              %! baca.slur()
+              %! baca._do_spanner_indicator_command(2)
             (
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -2817,8 +2812,7 @@ number.6.RH.Music.2 = {
             - \staccato
             % SPANNER_STOPS:
               %! SPANNER_STOP
-              %! baca.SpannerIndicatorCommand._call(4)
-              %! baca.slur()
+              %! baca._do_spanner_indicator_command(4)
             )
             % CLOSING:
             % COMMANDS:
@@ -2846,8 +2840,7 @@ number.6.RH.Music.2 = {
             - \staccato
             % SPANNER_STARTS:
               %! SPANNER_START
-              %! baca.SpannerIndicatorCommand._call(2)
-              %! baca.slur()
+              %! baca._do_spanner_indicator_command(2)
             (
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -2903,8 +2896,7 @@ number.6.RH.Music.2 = {
             - \staccato
             % SPANNER_STOPS:
               %! SPANNER_STOP
-              %! baca.SpannerIndicatorCommand._call(4)
-              %! baca.slur()
+              %! baca._do_spanner_indicator_command(4)
             )
             % CLOSING:
             % COMMANDS:
@@ -2932,8 +2924,7 @@ number.6.RH.Music.2 = {
             - \staccato
             % SPANNER_STARTS:
               %! SPANNER_START
-              %! baca.SpannerIndicatorCommand._call(2)
-              %! baca.slur()
+              %! baca._do_spanner_indicator_command(2)
             (
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -2989,8 +2980,7 @@ number.6.RH.Music.2 = {
             - \staccato
             % SPANNER_STOPS:
               %! SPANNER_STOP
-              %! baca.SpannerIndicatorCommand._call(4)
-              %! baca.slur()
+              %! baca._do_spanner_indicator_command(4)
             )
             % CLOSING:
             % COMMANDS:
@@ -3018,8 +3008,7 @@ number.6.RH.Music.2 = {
             - \staccato
             % SPANNER_STARTS:
               %! SPANNER_START
-              %! baca.SpannerIndicatorCommand._call(2)
-              %! baca.slur()
+              %! baca._do_spanner_indicator_command(2)
             (
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -3049,8 +3038,7 @@ number.6.RH.Music.2 = {
             - \staccato
             % SPANNER_STOPS:
               %! SPANNER_STOP
-              %! baca.SpannerIndicatorCommand._call(4)
-              %! baca.slur()
+              %! baca._do_spanner_indicator_command(4)
             )
             % STOP_BEAM:
             ]
@@ -3106,8 +3094,7 @@ number.6.RH.Music.2 = {
             [
             % SPANNER_STARTS:
               %! SPANNER_START
-              %! baca.SpannerIndicatorCommand._call(2)
-              %! baca.slur()
+              %! baca._do_spanner_indicator_command(2)
             (
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -3163,8 +3150,7 @@ number.6.RH.Music.2 = {
             - \staccato
             % SPANNER_STOPS:
               %! SPANNER_STOP
-              %! baca.SpannerIndicatorCommand._call(4)
-              %! baca.slur()
+              %! baca._do_spanner_indicator_command(4)
             )
             % CLOSING:
             % COMMANDS:
@@ -3192,8 +3178,7 @@ number.6.RH.Music.2 = {
             - \staccato
             % SPANNER_STARTS:
               %! SPANNER_START
-              %! baca.SpannerIndicatorCommand._call(2)
-              %! baca.slur()
+              %! baca._do_spanner_indicator_command(2)
             (
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -3262,8 +3247,7 @@ number.6.RH.Music.2 = {
             - \staccato
             % SPANNER_STOPS:
               %! SPANNER_STOP
-              %! baca.SpannerIndicatorCommand._call(4)
-              %! baca.slur()
+              %! baca._do_spanner_indicator_command(4)
             )
             % CLOSING:
             % COMMANDS:
@@ -3291,8 +3275,7 @@ number.6.RH.Music.2 = {
             - \staccato
             % SPANNER_STARTS:
               %! SPANNER_START
-              %! baca.SpannerIndicatorCommand._call(2)
-              %! baca.slur()
+              %! baca._do_spanner_indicator_command(2)
             (
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -3361,8 +3344,7 @@ number.6.RH.Music.2 = {
             - \staccato
             % SPANNER_STOPS:
               %! SPANNER_STOP
-              %! baca.SpannerIndicatorCommand._call(4)
-              %! baca.slur()
+              %! baca._do_spanner_indicator_command(4)
             )
             % CLOSING:
             % COMMANDS:
@@ -3390,8 +3372,7 @@ number.6.RH.Music.2 = {
             - \staccato
             % SPANNER_STARTS:
               %! SPANNER_START
-              %! baca.SpannerIndicatorCommand._call(2)
-              %! baca.slur()
+              %! baca._do_spanner_indicator_command(2)
             (
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -3447,8 +3428,7 @@ number.6.RH.Music.2 = {
             - \staccato
             % SPANNER_STOPS:
               %! SPANNER_STOP
-              %! baca.SpannerIndicatorCommand._call(4)
-              %! baca.slur()
+              %! baca._do_spanner_indicator_command(4)
             )
             % CLOSING:
             % COMMANDS:
@@ -3476,8 +3456,7 @@ number.6.RH.Music.2 = {
             - \staccato
             % SPANNER_STARTS:
               %! SPANNER_START
-              %! baca.SpannerIndicatorCommand._call(2)
-              %! baca.slur()
+              %! baca._do_spanner_indicator_command(2)
             (
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -3533,8 +3512,7 @@ number.6.RH.Music.2 = {
             - \staccato
             % SPANNER_STOPS:
               %! SPANNER_STOP
-              %! baca.SpannerIndicatorCommand._call(4)
-              %! baca.slur()
+              %! baca._do_spanner_indicator_command(4)
             )
             % STOP_BEAM:
             ]
@@ -3590,8 +3568,7 @@ number.6.RH.Music.2 = {
             [
             % SPANNER_STARTS:
               %! SPANNER_START
-              %! baca.SpannerIndicatorCommand._call(2)
-              %! baca.slur()
+              %! baca._do_spanner_indicator_command(2)
             (
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -3634,8 +3611,7 @@ number.6.RH.Music.2 = {
             - \staccato
             % SPANNER_STOPS:
               %! SPANNER_STOP
-              %! baca.SpannerIndicatorCommand._call(4)
-              %! baca.slur()
+              %! baca._do_spanner_indicator_command(4)
             )
             % CLOSING:
             % COMMANDS:
@@ -3663,8 +3639,7 @@ number.6.RH.Music.2 = {
             - \staccato
             % SPANNER_STARTS:
               %! SPANNER_START
-              %! baca.SpannerIndicatorCommand._call(2)
-              %! baca.slur()
+              %! baca._do_spanner_indicator_command(2)
             (
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -3707,8 +3682,7 @@ number.6.RH.Music.2 = {
             - \staccato
             % SPANNER_STOPS:
               %! SPANNER_STOP
-              %! baca.SpannerIndicatorCommand._call(4)
-              %! baca.slur()
+              %! baca._do_spanner_indicator_command(4)
             )
             % CLOSING:
             % COMMANDS:
@@ -3736,8 +3710,7 @@ number.6.RH.Music.2 = {
             - \staccato
             % SPANNER_STARTS:
               %! SPANNER_START
-              %! baca.SpannerIndicatorCommand._call(2)
-              %! baca.slur()
+              %! baca._do_spanner_indicator_command(2)
             (
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -3780,8 +3753,7 @@ number.6.RH.Music.2 = {
             - \staccato
             % SPANNER_STOPS:
               %! SPANNER_STOP
-              %! baca.SpannerIndicatorCommand._call(4)
-              %! baca.slur()
+              %! baca._do_spanner_indicator_command(4)
             )
             % CLOSING:
             % COMMANDS:
@@ -3809,8 +3781,7 @@ number.6.RH.Music.2 = {
             - \staccato
             % SPANNER_STARTS:
               %! SPANNER_START
-              %! baca.SpannerIndicatorCommand._call(2)
-              %! baca.slur()
+              %! baca._do_spanner_indicator_command(2)
             (
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -3866,8 +3837,7 @@ number.6.RH.Music.2 = {
             - \staccato
             % SPANNER_STOPS:
               %! SPANNER_STOP
-              %! baca.SpannerIndicatorCommand._call(4)
-              %! baca.slur()
+              %! baca._do_spanner_indicator_command(4)
             )
             % CLOSING:
             % COMMANDS:
@@ -3895,8 +3865,7 @@ number.6.RH.Music.2 = {
             - \staccato
             % SPANNER_STARTS:
               %! SPANNER_START
-              %! baca.SpannerIndicatorCommand._call(2)
-              %! baca.slur()
+              %! baca._do_spanner_indicator_command(2)
             (
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -3939,8 +3908,7 @@ number.6.RH.Music.2 = {
             - \staccato
             % SPANNER_STOPS:
               %! SPANNER_STOP
-              %! baca.SpannerIndicatorCommand._call(4)
-              %! baca.slur()
+              %! baca._do_spanner_indicator_command(4)
             )
             % STOP_BEAM:
             ]
@@ -3996,8 +3964,7 @@ number.6.RH.Music.2 = {
             [
             % SPANNER_STARTS:
               %! SPANNER_START
-              %! baca.SpannerIndicatorCommand._call(2)
-              %! baca.slur()
+              %! baca._do_spanner_indicator_command(2)
             (
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -4040,8 +4007,7 @@ number.6.RH.Music.2 = {
             - \staccato
             % SPANNER_STOPS:
               %! SPANNER_STOP
-              %! baca.SpannerIndicatorCommand._call(4)
-              %! baca.slur()
+              %! baca._do_spanner_indicator_command(4)
             )
             % CLOSING:
             % COMMANDS:
@@ -4069,8 +4035,7 @@ number.6.RH.Music.2 = {
             - \staccato
             % SPANNER_STARTS:
               %! SPANNER_START
-              %! baca.SpannerIndicatorCommand._call(2)
-              %! baca.slur()
+              %! baca._do_spanner_indicator_command(2)
             (
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -4100,8 +4065,7 @@ number.6.RH.Music.2 = {
             - \staccato
             % SPANNER_STOPS:
               %! SPANNER_STOP
-              %! baca.SpannerIndicatorCommand._call(4)
-              %! baca.slur()
+              %! baca._do_spanner_indicator_command(4)
             )
             % CLOSING:
             % COMMANDS:
@@ -4129,8 +4093,7 @@ number.6.RH.Music.2 = {
             - \staccato
             % SPANNER_STARTS:
               %! SPANNER_START
-              %! baca.SpannerIndicatorCommand._call(2)
-              %! baca.slur()
+              %! baca._do_spanner_indicator_command(2)
             (
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -4160,8 +4123,7 @@ number.6.RH.Music.2 = {
             - \staccato
             % SPANNER_STOPS:
               %! SPANNER_STOP
-              %! baca.SpannerIndicatorCommand._call(4)
-              %! baca.slur()
+              %! baca._do_spanner_indicator_command(4)
             )
             % CLOSING:
             % COMMANDS:
@@ -4189,8 +4151,7 @@ number.6.RH.Music.2 = {
             - \staccato
             % SPANNER_STARTS:
               %! SPANNER_START
-              %! baca.SpannerIndicatorCommand._call(2)
-              %! baca.slur()
+              %! baca._do_spanner_indicator_command(2)
             (
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -4246,8 +4207,7 @@ number.6.RH.Music.2 = {
             - \staccato
             % SPANNER_STOPS:
               %! SPANNER_STOP
-              %! baca.SpannerIndicatorCommand._call(4)
-              %! baca.slur()
+              %! baca._do_spanner_indicator_command(4)
             )
             % STOP_BEAM:
             ]
@@ -4312,8 +4272,7 @@ number.6.RH.Music.2 = {
             [
             % SPANNER_STARTS:
               %! SPANNER_START
-              %! baca.SpannerIndicatorCommand._call(2)
-              %! baca.slur()
+              %! baca._do_spanner_indicator_command(2)
             (
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -4369,8 +4328,7 @@ number.6.RH.Music.2 = {
             - \staccato
             % SPANNER_STOPS:
               %! SPANNER_STOP
-              %! baca.SpannerIndicatorCommand._call(4)
-              %! baca.slur()
+              %! baca._do_spanner_indicator_command(4)
             )
             % CLOSING:
             % COMMANDS:
@@ -4398,8 +4356,7 @@ number.6.RH.Music.2 = {
             - \staccato
             % SPANNER_STARTS:
               %! SPANNER_START
-              %! baca.SpannerIndicatorCommand._call(2)
-              %! baca.slur()
+              %! baca._do_spanner_indicator_command(2)
             (
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -4442,8 +4399,7 @@ number.6.RH.Music.2 = {
             - \staccato
             % SPANNER_STOPS:
               %! SPANNER_STOP
-              %! baca.SpannerIndicatorCommand._call(4)
-              %! baca.slur()
+              %! baca._do_spanner_indicator_command(4)
             )
             % CLOSING:
             % COMMANDS:
@@ -4471,8 +4427,7 @@ number.6.RH.Music.2 = {
             - \staccato
             % SPANNER_STARTS:
               %! SPANNER_START
-              %! baca.SpannerIndicatorCommand._call(2)
-              %! baca.slur()
+              %! baca._do_spanner_indicator_command(2)
             (
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -4515,8 +4470,7 @@ number.6.RH.Music.2 = {
             - \staccato
             % SPANNER_STOPS:
               %! SPANNER_STOP
-              %! baca.SpannerIndicatorCommand._call(4)
-              %! baca.slur()
+              %! baca._do_spanner_indicator_command(4)
             )
             % CLOSING:
             % COMMANDS:
@@ -4544,8 +4498,7 @@ number.6.RH.Music.2 = {
             - \staccato
             % SPANNER_STARTS:
               %! SPANNER_START
-              %! baca.SpannerIndicatorCommand._call(2)
-              %! baca.slur()
+              %! baca._do_spanner_indicator_command(2)
             (
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -4575,8 +4528,7 @@ number.6.RH.Music.2 = {
             - \staccato
             % SPANNER_STOPS:
               %! SPANNER_STOP
-              %! baca.SpannerIndicatorCommand._call(4)
-              %! baca.slur()
+              %! baca._do_spanner_indicator_command(4)
             )
             % STOP_BEAM:
             ]
@@ -4822,8 +4774,7 @@ number.6.RH.Music.3 = {
             % BEFORE:
             % COMMANDS:
               %! SPANNER_START
-              %! baca.SpannerIndicatorCommand._call(2)
-              %! baca.ottava()
+              %! baca._do_spanner_indicator_command(2)
             \ottava 1
               %! baca.OverrideCommand._call(1)
               %! baca.stem_down()
@@ -4916,8 +4867,7 @@ number.6.RH.Music.3 = {
             - \tenuto
             % COMMANDS:
               %! SPANNER_STOP
-              %! baca.SpannerIndicatorCommand._call(4)
-              %! baca.ottava()
+              %! baca._do_spanner_indicator_command(4)
             \ottava 0
               %! baca.OverrideCommand._call(2)
               %! baca.stem_down()
@@ -5000,8 +4950,7 @@ number.6.RH.Music.3 = {
                 [
                 % SPANNER_STARTS:
                   %! SPANNER_START
-                  %! baca.SpannerIndicatorCommand._call(2)
-                  %! baca.slur()
+                  %! baca._do_spanner_indicator_command(2)
                 (
                 % ABSOLUTE_BEFORE:
                 % COMMANDS:
@@ -5018,8 +4967,7 @@ number.6.RH.Music.3 = {
                 % AFTER:
                 % SPANNER_STOPS:
                   %! SPANNER_STOP
-                  %! baca.SpannerIndicatorCommand._call(4)
-                  %! baca.slur()
+                  %! baca._do_spanner_indicator_command(4)
                 )
                 % STOP_BEAM:
                 ]
@@ -5044,8 +4992,7 @@ number.6.RH.Music.3 = {
                 [
                 % SPANNER_STARTS:
                   %! SPANNER_START
-                  %! baca.SpannerIndicatorCommand._call(2)
-                  %! baca.slur()
+                  %! baca._do_spanner_indicator_command(2)
                 (
                 % ABSOLUTE_BEFORE:
                 % COMMANDS:
@@ -5074,8 +5021,7 @@ number.6.RH.Music.3 = {
                 % AFTER:
                 % SPANNER_STOPS:
                   %! SPANNER_STOP
-                  %! baca.SpannerIndicatorCommand._call(4)
-                  %! baca.slur()
+                  %! baca._do_spanner_indicator_command(4)
                 )
                 % STOP_BEAM:
                 ]
@@ -5099,8 +5045,7 @@ number.6.RH.Music.3 = {
                 [
                 % SPANNER_STARTS:
                   %! SPANNER_START
-                  %! baca.SpannerIndicatorCommand._call(2)
-                  %! baca.slur()
+                  %! baca._do_spanner_indicator_command(2)
                 (
                 % ABSOLUTE_BEFORE:
                 % COMMANDS:
@@ -5117,8 +5062,7 @@ number.6.RH.Music.3 = {
                 % AFTER:
                 % SPANNER_STOPS:
                   %! SPANNER_STOP
-                  %! baca.SpannerIndicatorCommand._call(4)
-                  %! baca.slur()
+                  %! baca._do_spanner_indicator_command(4)
                 )
                 % STOP_BEAM:
                 ]
@@ -5143,8 +5087,7 @@ number.6.RH.Music.3 = {
                 [
                 % SPANNER_STARTS:
                   %! SPANNER_START
-                  %! baca.SpannerIndicatorCommand._call(2)
-                  %! baca.slur()
+                  %! baca._do_spanner_indicator_command(2)
                 (
                 % ABSOLUTE_BEFORE:
                 % COMMANDS:
@@ -5165,8 +5108,7 @@ number.6.RH.Music.3 = {
                 % AFTER:
                 % SPANNER_STOPS:
                   %! SPANNER_STOP
-                  %! baca.SpannerIndicatorCommand._call(4)
-                  %! baca.slur()
+                  %! baca._do_spanner_indicator_command(4)
                 )
                 % STOP_BEAM:
                 ]
@@ -5199,8 +5141,7 @@ number.6.RH.Music.3 = {
                 [
                 % SPANNER_STARTS:
                   %! SPANNER_START
-                  %! baca.SpannerIndicatorCommand._call(2)
-                  %! baca.slur()
+                  %! baca._do_spanner_indicator_command(2)
                 (
                 % ABSOLUTE_BEFORE:
                 % COMMANDS:
@@ -5217,8 +5158,7 @@ number.6.RH.Music.3 = {
                 % AFTER:
                 % SPANNER_STOPS:
                   %! SPANNER_STOP
-                  %! baca.SpannerIndicatorCommand._call(4)
-                  %! baca.slur()
+                  %! baca._do_spanner_indicator_command(4)
                 )
                 % STOP_BEAM:
                 ]
@@ -5313,8 +5253,7 @@ number.6.RH.Music.3 = {
                 [
                 % SPANNER_STARTS:
                   %! SPANNER_START
-                  %! baca.SpannerIndicatorCommand._call(2)
-                  %! baca.slur()
+                  %! baca._do_spanner_indicator_command(2)
                 (
                 % ABSOLUTE_BEFORE:
                 % COMMANDS:
@@ -5343,8 +5282,7 @@ number.6.RH.Music.3 = {
                 % AFTER:
                 % SPANNER_STOPS:
                   %! SPANNER_STOP
-                  %! baca.SpannerIndicatorCommand._call(4)
-                  %! baca.slur()
+                  %! baca._do_spanner_indicator_command(4)
                 )
                 % STOP_BEAM:
                 ]
@@ -5372,8 +5310,7 @@ number.6.RH.Music.3 = {
                 [
                 % SPANNER_STARTS:
                   %! SPANNER_START
-                  %! baca.SpannerIndicatorCommand._call(2)
-                  %! baca.slur()
+                  %! baca._do_spanner_indicator_command(2)
                 (
                 % ABSOLUTE_BEFORE:
                 % COMMANDS:
@@ -5390,8 +5327,7 @@ number.6.RH.Music.3 = {
                 % AFTER:
                 % SPANNER_STOPS:
                   %! SPANNER_STOP
-                  %! baca.SpannerIndicatorCommand._call(4)
-                  %! baca.slur()
+                  %! baca._do_spanner_indicator_command(4)
                 )
                 % STOP_BEAM:
                 ]
@@ -5416,8 +5352,7 @@ number.6.RH.Music.3 = {
                 [
                 % SPANNER_STARTS:
                   %! SPANNER_START
-                  %! baca.SpannerIndicatorCommand._call(2)
-                  %! baca.slur()
+                  %! baca._do_spanner_indicator_command(2)
                 (
                 % ABSOLUTE_BEFORE:
                 % COMMANDS:
@@ -5449,8 +5384,7 @@ number.6.RH.Music.3 = {
                 % AFTER:
                 % SPANNER_STOPS:
                   %! SPANNER_STOP
-                  %! baca.SpannerIndicatorCommand._call(4)
-                  %! baca.slur()
+                  %! baca._do_spanner_indicator_command(4)
                 )
                 % CLOSING:
                 % COMMANDS:
@@ -5473,8 +5407,7 @@ number.6.RH.Music.3 = {
                 [
                 % SPANNER_STARTS:
                   %! SPANNER_START
-                  %! baca.SpannerIndicatorCommand._call(2)
-                  %! baca.slur()
+                  %! baca._do_spanner_indicator_command(2)
                 (
                 % ABSOLUTE_BEFORE:
                 % COMMANDS:
@@ -5483,8 +5416,7 @@ number.6.RH.Music.3 = {
                 % AFTER:
                 % SPANNER_STOPS:
                   %! SPANNER_STOP
-                  %! baca.SpannerIndicatorCommand._call(4)
-                  %! baca.slur()
+                  %! baca._do_spanner_indicator_command(4)
                 )
                 % STOP_BEAM:
                 ]
@@ -5516,8 +5448,7 @@ number.6.RH.Music.3 = {
                 [
                 % SPANNER_STARTS:
                   %! SPANNER_START
-                  %! baca.SpannerIndicatorCommand._call(2)
-                  %! baca.slur()
+                  %! baca._do_spanner_indicator_command(2)
                 (
                 % ABSOLUTE_BEFORE:
                 % COMMANDS:
@@ -5552,8 +5483,7 @@ number.6.RH.Music.3 = {
                 % AFTER:
                 % SPANNER_STOPS:
                   %! SPANNER_STOP
-                  %! baca.SpannerIndicatorCommand._call(4)
-                  %! baca.slur()
+                  %! baca._do_spanner_indicator_command(4)
                 )
                 % STOP_BEAM:
                 ]
@@ -5634,8 +5564,7 @@ number.6.RH.Music.3 = {
                 [
                 % SPANNER_STARTS:
                   %! SPANNER_START
-                  %! baca.SpannerIndicatorCommand._call(2)
-                  %! baca.slur()
+                  %! baca._do_spanner_indicator_command(2)
                 (
                 % ABSOLUTE_BEFORE:
                 % COMMANDS:
@@ -5652,8 +5581,7 @@ number.6.RH.Music.3 = {
                 % AFTER:
                 % SPANNER_STOPS:
                   %! SPANNER_STOP
-                  %! baca.SpannerIndicatorCommand._call(4)
-                  %! baca.slur()
+                  %! baca._do_spanner_indicator_command(4)
                 )
                 % STOP_BEAM:
                 ]
@@ -5678,8 +5606,7 @@ number.6.RH.Music.3 = {
                 [
                 % SPANNER_STARTS:
                   %! SPANNER_START
-                  %! baca.SpannerIndicatorCommand._call(2)
-                  %! baca.slur()
+                  %! baca._do_spanner_indicator_command(2)
                 (
                 % ABSOLUTE_BEFORE:
                 % COMMANDS:
@@ -5714,8 +5641,7 @@ number.6.RH.Music.3 = {
                 % AFTER:
                 % SPANNER_STOPS:
                   %! SPANNER_STOP
-                  %! baca.SpannerIndicatorCommand._call(4)
-                  %! baca.slur()
+                  %! baca._do_spanner_indicator_command(4)
                 )
                 % STOP_BEAM:
                 ]
@@ -5738,8 +5664,7 @@ number.6.RH.Music.3 = {
                 % AFTER:
                 % SPANNER_STARTS:
                   %! SPANNER_START
-                  %! baca.SpannerIndicatorCommand._call(2)
-                  %! baca.slur()
+                  %! baca._do_spanner_indicator_command(2)
                 (
                 % ABSOLUTE_BEFORE:
                 % COMMANDS:
@@ -5756,8 +5681,7 @@ number.6.RH.Music.3 = {
                 % AFTER:
                 % SPANNER_STOPS:
                   %! SPANNER_STOP
-                  %! baca.SpannerIndicatorCommand._call(4)
-                  %! baca.slur()
+                  %! baca._do_spanner_indicator_command(4)
                 )
                 % CLOSING:
                 % COMMANDS:
@@ -5777,8 +5701,7 @@ number.6.RH.Music.3 = {
                 % AFTER:
                 % SPANNER_STARTS:
                   %! SPANNER_START
-                  %! baca.SpannerIndicatorCommand._call(2)
-                  %! baca.slur()
+                  %! baca._do_spanner_indicator_command(2)
                 (
                 % ABSOLUTE_BEFORE:
                 % COMMANDS:
@@ -5813,8 +5736,7 @@ number.6.RH.Music.3 = {
                 % AFTER:
                 % SPANNER_STOPS:
                   %! SPANNER_STOP
-                  %! baca.SpannerIndicatorCommand._call(4)
-                  %! baca.slur()
+                  %! baca._do_spanner_indicator_command(4)
                 )
                 % CLOSING:
                 % COMMANDS:
@@ -5837,8 +5759,7 @@ number.6.RH.Music.3 = {
                 [
                 % SPANNER_STARTS:
                   %! SPANNER_START
-                  %! baca.SpannerIndicatorCommand._call(2)
-                  %! baca.slur()
+                  %! baca._do_spanner_indicator_command(2)
                 (
                 % ABSOLUTE_BEFORE:
                 % COMMANDS:
@@ -5858,8 +5779,7 @@ number.6.RH.Music.3 = {
                 % AFTER:
                 % SPANNER_STOPS:
                   %! SPANNER_STOP
-                  %! baca.SpannerIndicatorCommand._call(4)
-                  %! baca.slur()
+                  %! baca._do_spanner_indicator_command(4)
                 )
                 % COMMANDS:
                   %! baca.OverrideCommand._call(2)
@@ -5952,8 +5872,7 @@ number.6.RH.Music.3 = {
                 [
                 % SPANNER_STARTS:
                   %! SPANNER_START
-                  %! baca.SpannerIndicatorCommand._call(2)
-                  %! baca.slur()
+                  %! baca._do_spanner_indicator_command(2)
                 (
                 % ABSOLUTE_BEFORE:
                 % COMMANDS:
@@ -5985,8 +5904,7 @@ number.6.RH.Music.3 = {
                 % AFTER:
                 % SPANNER_STOPS:
                   %! SPANNER_STOP
-                  %! baca.SpannerIndicatorCommand._call(4)
-                  %! baca.slur()
+                  %! baca._do_spanner_indicator_command(4)
                 )
                 % CLOSING:
                 % COMMANDS:
@@ -6007,8 +5925,7 @@ number.6.RH.Music.3 = {
                 % AFTER:
                 % SPANNER_STARTS:
                   %! SPANNER_START
-                  %! baca.SpannerIndicatorCommand._call(2)
-                  %! baca.slur()
+                  %! baca._do_spanner_indicator_command(2)
                 (
                 % ABSOLUTE_BEFORE:
                 % COMMANDS:
@@ -6028,8 +5945,7 @@ number.6.RH.Music.3 = {
                 % AFTER:
                 % SPANNER_STOPS:
                   %! SPANNER_STOP
-                  %! baca.SpannerIndicatorCommand._call(4)
-                  %! baca.slur()
+                  %! baca._do_spanner_indicator_command(4)
                 )
                 % STOP_BEAM:
                 ]
@@ -6051,8 +5967,7 @@ number.6.RH.Music.3 = {
                 % AFTER:
                 % SPANNER_STARTS:
                   %! SPANNER_START
-                  %! baca.SpannerIndicatorCommand._call(2)
-                  %! baca.slur()
+                  %! baca._do_spanner_indicator_command(2)
                 (
                 % ABSOLUTE_BEFORE:
                 % COMMANDS:
@@ -6087,8 +6002,7 @@ number.6.RH.Music.3 = {
                 % AFTER:
                 % SPANNER_STOPS:
                   %! SPANNER_STOP
-                  %! baca.SpannerIndicatorCommand._call(4)
-                  %! baca.slur()
+                  %! baca._do_spanner_indicator_command(4)
                 )
                 % CLOSING:
                 % COMMANDS:
@@ -6111,8 +6025,7 @@ number.6.RH.Music.3 = {
                 [
                 % SPANNER_STARTS:
                   %! SPANNER_START
-                  %! baca.SpannerIndicatorCommand._call(2)
-                  %! baca.slur()
+                  %! baca._do_spanner_indicator_command(2)
                 (
                 % ABSOLUTE_BEFORE:
                 % COMMANDS:
@@ -6121,8 +6034,7 @@ number.6.RH.Music.3 = {
                 % AFTER:
                 % SPANNER_STOPS:
                   %! SPANNER_STOP
-                  %! baca.SpannerIndicatorCommand._call(4)
-                  %! baca.slur()
+                  %! baca._do_spanner_indicator_command(4)
                 )
                 % STOP_BEAM:
                 ]
@@ -6155,8 +6067,7 @@ number.6.RH.Music.3 = {
                 [
                 % SPANNER_STARTS:
                   %! SPANNER_START
-                  %! baca.SpannerIndicatorCommand._call(2)
-                  %! baca.slur()
+                  %! baca._do_spanner_indicator_command(2)
                 (
                 % ABSOLUTE_BEFORE:
                 % COMMANDS:
@@ -6191,8 +6102,7 @@ number.6.RH.Music.3 = {
                 % AFTER:
                 % SPANNER_STOPS:
                   %! SPANNER_STOP
-                  %! baca.SpannerIndicatorCommand._call(4)
-                  %! baca.slur()
+                  %! baca._do_spanner_indicator_command(4)
                 )
                 % STOP_BEAM:
                 ]
@@ -6216,8 +6126,7 @@ number.6.RH.Music.3 = {
                 [
                 % SPANNER_STARTS:
                   %! SPANNER_START
-                  %! baca.SpannerIndicatorCommand._call(2)
-                  %! baca.slur()
+                  %! baca._do_spanner_indicator_command(2)
                 (
                 % ABSOLUTE_BEFORE:
                 % COMMANDS:
@@ -6234,8 +6143,7 @@ number.6.RH.Music.3 = {
                 % AFTER:
                 % SPANNER_STOPS:
                   %! SPANNER_STOP
-                  %! baca.SpannerIndicatorCommand._call(4)
-                  %! baca.slur()
+                  %! baca._do_spanner_indicator_command(4)
                 )
                 % STOP_BEAM:
                 ]
@@ -6352,8 +6260,7 @@ number.6.RH.Music.3 = {
                 [
                 % SPANNER_STARTS:
                   %! SPANNER_START
-                  %! baca.SpannerIndicatorCommand._call(2)
-                  %! baca.slur()
+                  %! baca._do_spanner_indicator_command(2)
                 (
                 % ABSOLUTE_BEFORE:
                 % COMMANDS:
@@ -6382,8 +6289,7 @@ number.6.RH.Music.3 = {
                 % AFTER:
                 % SPANNER_STOPS:
                   %! SPANNER_STOP
-                  %! baca.SpannerIndicatorCommand._call(4)
-                  %! baca.slur()
+                  %! baca._do_spanner_indicator_command(4)
                 )
                 % STOP_BEAM:
                 ]
@@ -6411,8 +6317,7 @@ number.6.RH.Music.3 = {
                 [
                 % SPANNER_STARTS:
                   %! SPANNER_START
-                  %! baca.SpannerIndicatorCommand._call(2)
-                  %! baca.slur()
+                  %! baca._do_spanner_indicator_command(2)
                 (
                 % ABSOLUTE_BEFORE:
                 % COMMANDS:
@@ -6425,8 +6330,7 @@ number.6.RH.Music.3 = {
                 % AFTER:
                 % SPANNER_STOPS:
                   %! SPANNER_STOP
-                  %! baca.SpannerIndicatorCommand._call(4)
-                  %! baca.slur()
+                  %! baca._do_spanner_indicator_command(4)
                 )
                 % STOP_BEAM:
                 ]
@@ -6449,8 +6353,7 @@ number.6.RH.Music.3 = {
                 % AFTER:
                 % SPANNER_STARTS:
                   %! SPANNER_START
-                  %! baca.SpannerIndicatorCommand._call(2)
-                  %! baca.slur()
+                  %! baca._do_spanner_indicator_command(2)
                 (
                 % ABSOLUTE_BEFORE:
                 % COMMANDS:
@@ -6482,8 +6385,7 @@ number.6.RH.Music.3 = {
                 % AFTER:
                 % SPANNER_STOPS:
                   %! SPANNER_STOP
-                  %! baca.SpannerIndicatorCommand._call(4)
-                  %! baca.slur()
+                  %! baca._do_spanner_indicator_command(4)
                 )
                 % STOP_BEAM:
                 ]
@@ -6913,8 +6815,7 @@ number.6.LH.Music.4 = {
             %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (15) \hspace #1 "5.2.L.1" ] }
             % SPANNER_STARTS:
               %! SPANNER_START
-              %! baca.SpannerIndicatorCommand._call(2)
-              %! baca.slur()
+              %! baca._do_spanner_indicator_command(2)
             (
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -6950,8 +6851,7 @@ number.6.LH.Music.4 = {
             - \tenuto
             % SPANNER_STOPS:
               %! SPANNER_STOP
-              %! baca.SpannerIndicatorCommand._call(4)
-              %! baca.slur()
+              %! baca._do_spanner_indicator_command(4)
             )
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -7039,8 +6939,7 @@ number.6.LH.Music.4 = {
             %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (16) \hspace #1 "5.2.L.2" ] }
             % SPANNER_STARTS:
               %! SPANNER_START
-              %! baca.SpannerIndicatorCommand._call(2)
-              %! baca.slur()
+              %! baca._do_spanner_indicator_command(2)
             (
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -7092,8 +6991,7 @@ number.6.LH.Music.4 = {
             - \tenuto
             % SPANNER_STOPS:
               %! SPANNER_STOP
-              %! baca.SpannerIndicatorCommand._call(4)
-              %! baca.slur()
+              %! baca._do_spanner_indicator_command(4)
             )
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -7144,8 +7042,7 @@ number.6.LH.Music.4 = {
             %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (17) \hspace #1 "5.2.L.3" ] }
             % SPANNER_STARTS:
               %! SPANNER_START
-              %! baca.SpannerIndicatorCommand._call(2)
-              %! baca.slur()
+              %! baca._do_spanner_indicator_command(2)
             (
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -7165,8 +7062,7 @@ number.6.LH.Music.4 = {
             - \tenuto
             % SPANNER_STOPS:
               %! SPANNER_STOP
-              %! baca.SpannerIndicatorCommand._call(4)
-              %! baca.slur()
+              %! baca._do_spanner_indicator_command(4)
             )
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -7220,8 +7116,7 @@ number.6.LH.Music.4 = {
             %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (18) \hspace #1 "5.2.L.4" ] }
             % SPANNER_STARTS:
               %! SPANNER_START
-              %! baca.SpannerIndicatorCommand._call(2)
-              %! baca.slur()
+              %! baca._do_spanner_indicator_command(2)
             (
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -7273,8 +7168,7 @@ number.6.LH.Music.4 = {
             - \tenuto
             % SPANNER_STOPS:
               %! SPANNER_STOP
-              %! baca.SpannerIndicatorCommand._call(4)
-              %! baca.slur()
+              %! baca._do_spanner_indicator_command(4)
             )
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -7322,8 +7216,7 @@ number.6.LH.Music.4 = {
             [
             % SPANNER_STARTS:
               %! SPANNER_START
-              %! baca.SpannerIndicatorCommand._call(2)
-              %! baca.slur()
+              %! baca._do_spanner_indicator_command(2)
             (
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -7339,8 +7232,7 @@ number.6.LH.Music.4 = {
             - \tenuto
             % SPANNER_STOPS:
               %! SPANNER_STOP
-              %! baca.SpannerIndicatorCommand._call(4)
-              %! baca.slur()
+              %! baca._do_spanner_indicator_command(4)
             )
             % STOP_BEAM:
             ]
@@ -7386,8 +7278,7 @@ number.6.LH.Music.4 = {
             [
             % SPANNER_STARTS:
               %! SPANNER_START
-              %! baca.SpannerIndicatorCommand._call(2)
-              %! baca.slur()
+              %! baca._do_spanner_indicator_command(2)
             (
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -7415,8 +7306,7 @@ number.6.LH.Music.4 = {
             - \tenuto
             % SPANNER_STOPS:
               %! SPANNER_STOP
-              %! baca.SpannerIndicatorCommand._call(4)
-              %! baca.slur()
+              %! baca._do_spanner_indicator_command(4)
             )
             % STOP_BEAM:
             ]
@@ -7466,8 +7356,7 @@ number.6.LH.Music.4 = {
             [
             % SPANNER_STARTS:
               %! SPANNER_START
-              %! baca.SpannerIndicatorCommand._call(2)
-              %! baca.slur()
+              %! baca._do_spanner_indicator_command(2)
             (
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -7483,8 +7372,7 @@ number.6.LH.Music.4 = {
             - \tenuto
             % SPANNER_STOPS:
               %! SPANNER_STOP
-              %! baca.SpannerIndicatorCommand._call(4)
-              %! baca.slur()
+              %! baca._do_spanner_indicator_command(4)
             )
             % STOP_BEAM:
             ]
@@ -7566,8 +7454,7 @@ number.6.LH.Music.4 = {
             [
             % SPANNER_STARTS:
               %! SPANNER_START
-              %! baca.SpannerIndicatorCommand._call(2)
-              %! baca.slur()
+              %! baca._do_spanner_indicator_command(2)
             (
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -7595,8 +7482,7 @@ number.6.LH.Music.4 = {
             - \tenuto
             % SPANNER_STOPS:
               %! SPANNER_STOP
-              %! baca.SpannerIndicatorCommand._call(4)
-              %! baca.slur()
+              %! baca._do_spanner_indicator_command(4)
             )
             % STOP_BEAM:
             ]
@@ -7642,8 +7528,7 @@ number.6.LH.Music.4 = {
             [
             % SPANNER_STARTS:
               %! SPANNER_START
-              %! baca.SpannerIndicatorCommand._call(2)
-              %! baca.slur()
+              %! baca._do_spanner_indicator_command(2)
             (
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -7683,8 +7568,7 @@ number.6.LH.Music.4 = {
             - \tenuto
             % SPANNER_STOPS:
               %! SPANNER_STOP
-              %! baca.SpannerIndicatorCommand._call(4)
-              %! baca.slur()
+              %! baca._do_spanner_indicator_command(4)
             )
             % STOP_BEAM:
             ]
@@ -7964,8 +7848,7 @@ number.6.LH.Music.6 = {
             % BEFORE:
             % COMMANDS:
               %! SPANNER_START
-              %! baca.SpannerIndicatorCommand._call(2)
-              %! baca.ottava_bassa()
+              %! baca._do_spanner_indicator_command(2)
             \ottava -1
               %! baca.OverrideCommand._call(1)
               %! baca.stem_down()
@@ -8012,8 +7895,7 @@ number.6.LH.Music.6 = {
             % AFTER:
             % COMMANDS:
               %! SPANNER_STOP
-              %! baca.SpannerIndicatorCommand._call(4)
-              %! baca.ottava_bassa()
+              %! baca._do_spanner_indicator_command(4)
             \ottava 0
               %! baca.OverrideCommand._call(2)
               %! baca.stem_down()
