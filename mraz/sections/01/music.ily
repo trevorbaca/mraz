@@ -829,7 +829,7 @@ number.1.RH.Music.2 = {
             % BEFORE:
             % COMMANDS:
               %! SPANNER_START
-              %! baca._do_spanner_indicator_command(2)
+              %! baca._do_spanner_indicator_command(1)
             \ottava 1
               %! baca.OverrideCommand._call(1)
               %! baca.dls_staff_padding()
@@ -865,7 +865,7 @@ number.1.RH.Music.2 = {
             [
             % SPANNER_STARTS:
               %! SPANNER_START
-              %! baca._do_spanner_indicator_command(2)
+              %! baca._do_spanner_indicator_command(1)
             (
               %! EXPLICIT_DYNAMIC_COLOR
               %! baca.treat_persistent_wrapper()
@@ -1076,13 +1076,13 @@ number.1.RH.Music.2 = {
             \ff
             % SPANNER_STOPS:
               %! SPANNER_STOP
-              %! baca._do_spanner_indicator_command(4)
+              %! baca._do_spanner_indicator_command(2)
             )
             % STOP_BEAM:
             ]
             % COMMANDS:
               %! SPANNER_STOP
-              %! baca._do_spanner_indicator_command(4)
+              %! baca._do_spanner_indicator_command(2)
             \ottava 0
               %! baca.OverrideCommand._call(2)
               %! baca.dls_staff_padding()
@@ -1595,7 +1595,7 @@ number.1.RH.Music.3 = {
               %! baca.dynamic_text_x_offset()
             \once \override DynamicText.X-offset = 0.25
               %! SPANNER_START
-              %! baca._do_spanner_indicator_command(2)
+              %! baca._do_spanner_indicator_command(1)
             \ottava 1
               %! baca.OverrideCommand._call(1)
               %! baca.ottava_bracket_staff_padding()
@@ -1691,7 +1691,7 @@ number.1.RH.Music.3 = {
             - \tenuto
             % COMMANDS:
               %! SPANNER_STOP
-              %! baca._do_spanner_indicator_command(4)
+              %! baca._do_spanner_indicator_command(2)
             \ottava 0
               %! baca.OverrideCommand._call(2)
               %! baca.stem_down()
@@ -2419,7 +2419,7 @@ number.1.LH.Music.6 = {
               %! baca.clef_extra_offset_function(1)
             \once \override PianoMusicLHStaff.Clef.extra-offset = #'(-2.75 . 0)
               %! SPANNER_START
-              %! baca._do_spanner_indicator_command(2)
+              %! baca._do_spanner_indicator_command(1)
             \ottava -1
               %! baca.OverrideCommand._call(1)
               %! baca.tuplet_bracket_down()
@@ -2487,7 +2487,7 @@ number.1.LH.Music.6 = {
             % AFTER:
             % COMMANDS:
               %! SPANNER_STOP
-              %! baca._do_spanner_indicator_command(4)
+              %! baca._do_spanner_indicator_command(2)
             \ottava 0
             % ABSOLUTE_BEFORE:
             % COMMANDS:
