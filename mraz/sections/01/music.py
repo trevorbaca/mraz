@@ -16,7 +16,8 @@ section_6 = library.moment_6()
 section_7 = library.moment_7()
 section_8 = library.moment_8()
 
-figures(
+baca.make_figures(
+    figures,
     library.rh_v1,
     section_4.stage_5.rh[3 - 1],
     baca.figure([16], 16),
