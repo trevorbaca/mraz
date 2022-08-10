@@ -29,7 +29,7 @@ figures(
     ),
     baca.dynamic("ff", selector=lambda _: baca.select.phead(_, 0)),
     figure_name="7.1.L.5",
-    signature=4,
+    tsd=4,
 )
 
 figures(
@@ -37,7 +37,7 @@ figures(
     "r4",
     baca.rest_transparent(selector=lambda _: abjad.select.rests(_)),
     do_not_label=True,
-    signature=4,
+    tsd=4,
 )
 
 figures(
@@ -53,7 +53,7 @@ figures(
     baca.staccato(selector=lambda _: baca.select.pheads(_)),
     baca.stem_down(selector=lambda _: baca.select.pleaves(_)),
     figure_name="2.2.R.1.1",
-    signature=4,
+    tsd=4,
 )
 
 figures(
@@ -61,7 +61,7 @@ figures(
     "r4",
     baca.rest_transparent(selector=lambda _: abjad.select.rests(_)),
     do_not_label=True,
-    signature=4,
+    tsd=4,
 )
 
 figures(
@@ -77,7 +77,7 @@ figures(
     ),
     baca.dynamic("p", selector=lambda _: baca.select.phead(_, 0)),
     figure_name="7.1.L.5'",
-    signature=4,
+    tsd=4,
 )
 
 figures(
@@ -92,7 +92,7 @@ figures(
     baca.staccato(selector=lambda _: baca.select.pheads(_)),
     baca.stem_down(selector=lambda _: baca.select.pleaves(_)),
     figure_name="2.2.R.1.1-2",
-    signature=4,
+    tsd=4,
 )
 
 figures(
@@ -100,7 +100,7 @@ figures(
     "r4",
     baca.rest_transparent(selector=lambda _: abjad.select.rests(_)),
     do_not_label=True,
-    signature=4,
+    tsd=4,
 )
 
 figures(
@@ -112,7 +112,7 @@ figures(
     baca.tuplet_bracket_up(),
     baca.tuplet_bracket_staff_padding(3),
     figure_name="4.1.R.1",
-    signature=4,
+    tsd=4,
 )
 
 figures(
@@ -127,7 +127,7 @@ figures(
     anchor=baca.anchor_to_figure("4.1.R.1"),
     figure_name="4.1.L.1",
     hide_time_signature=True,
-    signature=4,
+    tsd=4,
 )
 
 figures(
@@ -142,7 +142,7 @@ figures(
     baca.staccato(selector=lambda _: baca.select.pheads(_)),
     baca.stem_down(selector=lambda _: baca.select.pleaves(_)),
     figure_name="2.2.R.1.1-4",
-    signature=4,
+    tsd=4,
 )
 
 figures(
@@ -154,7 +154,7 @@ figures(
     baca.register(36),
     baca.tenuto(selector=lambda _: baca.select.pheads(_)),
     figure_name="4.5.R.1",
-    signature=4,
+    tsd=4,
 )
 
 figures(
@@ -165,7 +165,7 @@ figures(
     baca.register(36),
     baca.tenuto(selector=lambda _: baca.select.pheads(_)),
     figure_name="4.5.R.2",
-    signature=4,
+    tsd=4,
 )
 
 figures(
@@ -177,7 +177,7 @@ figures(
     baca.tenuto(selector=lambda _: baca.select.pheads(_)),
     figure_name="4.5.R.3",
     hide_time_signature=True,
-    signature=4,
+    tsd=4,
 )
 
 figures(
@@ -199,7 +199,7 @@ figures(
     baca.slur_up(),
     anchor=baca.anchor_to_figure("4.5.R.3"),
     figure_name="4.5.L.1-4",
-    signature=4,
+    tsd=4,
 )
 
 figures(
@@ -210,7 +210,7 @@ figures(
     anchor=baca.anchor_to_figure("7.1.L.5"),
     do_not_label=True,
     hide_time_signature=True,
-    signature=4,
+    tsd=4,
 )
 
 figures(
@@ -220,7 +220,7 @@ figures(
     rmakers.beam_groups(),
     do_not_label=True,
     hide_time_signature=True,
-    signature=4,
+    tsd=4,
 )
 
 figures(
@@ -230,7 +230,7 @@ figures(
     rmakers.beam_groups(),
     do_not_label=True,
     hide_time_signature=True,
-    signature=4,
+    tsd=4,
 )
 
 figures(
@@ -240,7 +240,7 @@ figures(
     rmakers.beam_groups(),
     do_not_label=True,
     hide_time_signature=True,
-    signature=4,
+    tsd=4,
 )
 
 figures(
@@ -250,7 +250,7 @@ figures(
     rmakers.beam_groups(),
     do_not_label=True,
     hide_time_signature=True,
-    signature=4,
+    tsd=4,
 )
 
 figures(
@@ -260,7 +260,7 @@ figures(
     rmakers.beam_groups(),
     do_not_label=True,
     hide_time_signature=True,
-    signature=4,
+    tsd=4,
 )
 
 figures(
@@ -272,7 +272,7 @@ figures(
     anchor=baca.anchor_to_figure("2.2.R.1.1-4"),
     do_not_label=True,
     hide_time_signature=True,
-    signature=4,
+    tsd=4,
 )
 
 figures(
@@ -282,7 +282,7 @@ figures(
     rmakers.beam_groups(),
     do_not_label=True,
     hide_time_signature=True,
-    signature=4,
+    tsd=4,
 )
 
 figures(
@@ -292,7 +292,7 @@ figures(
     rmakers.beam_groups(),
     do_not_label=True,
     hide_time_signature=True,
-    signature=4,
+    tsd=4,
 )
 
 voice_names = baca.accumulator.get_voice_names(score)

@@ -20,7 +20,7 @@ figures(
     baca.dynamic_up(selector=lambda _: abjad.select.leaf(_, 0)),
     baca.register(-27, -39),
     figure_name="8.3.R.1",
-    signature=4,
+    tsd=4,
 )
 
 figures(
@@ -30,7 +30,7 @@ figures(
     baca.register(-39, -27),
     baca.rest_up(selector=lambda _: abjad.select.rests(_)),
     figure_name="8.3.R.2-3",
-    signature=4,
+    tsd=4,
 )
 
 figures(
@@ -39,7 +39,7 @@ figures(
     baca.figure([1, -15], 32),
     baca.register(-39),
     figure_name="8.3.R.4",
-    signature=2,
+    tsd=2,
 )
 
 figures(
@@ -49,7 +49,7 @@ figures(
     baca.register(-27, -39),
     baca.rest_up(selector=lambda _: abjad.select.rests(_)),
     figure_name="8.3.R.5",
-    signature=4,
+    tsd=4,
 )
 
 figures(
@@ -58,7 +58,7 @@ figures(
     baca.figure([4, -1], 32),
     baca.register(-39, -27),
     figure_name="8.3.R.6",
-    signature=4,
+    tsd=4,
 )
 
 figures(
@@ -67,7 +67,7 @@ figures(
     baca.figure([4, -1], 32, treatments=[1]),
     baca.register(-39, -27),
     figure_name="8.3.R.7",
-    signature=4,
+    tsd=4,
 )
 
 figures(
@@ -77,7 +77,7 @@ figures(
     baca.register(-39),
     baca.rest_up(selector=lambda _: abjad.select.rests(_)),
     figure_name="8.3.R.8",
-    signature=2,
+    tsd=2,
 )
 
 figures(
@@ -86,7 +86,7 @@ figures(
     baca.figure([6, -1], 32),
     baca.register(-27, -39),
     figure_name="8.3.R.9",
-    signature=4,
+    tsd=4,
 )
 
 figures(
@@ -96,7 +96,7 @@ figures(
     baca.register(-39, -27),
     baca.tuplet_bracket_staff_padding(3),
     figure_name="8.3.R.10",
-    signature=4,
+    tsd=4,
 )
 
 figures(
@@ -106,7 +106,7 @@ figures(
     baca.register(-39),
     baca.rest_up(selector=lambda _: abjad.select.rests(_)),
     figure_name="8.3.R.11",
-    signature=2,
+    tsd=2,
 )
 
 figures(
@@ -115,7 +115,7 @@ figures(
     baca.figure([6, -1], 32),
     baca.register(-27, -39),
     figure_name="8.3.R.12",
-    signature=4,
+    tsd=4,
 )
 
 figures(
@@ -124,7 +124,7 @@ figures(
     baca.figure([4, -1], 32, treatments=[1]),
     baca.register(-39, -27),
     figure_name="8.3.R.13",
-    signature=4,
+    tsd=4,
 )
 
 figures(
@@ -140,7 +140,7 @@ figures(
     ),
     figure_name="8.3.L.1",
     hide_time_signature=True,
-    signature=4,
+    tsd=4,
 )
 
 figures(
@@ -155,7 +155,7 @@ figures(
     ),
     figure_name="8.3.L.2",
     hide_time_signature=True,
-    signature=4,
+    tsd=4,
 )
 
 figures(
@@ -174,7 +174,7 @@ figures(
     ),
     figure_name="8.3.L.3",
     hide_time_signature=True,
-    signature=4,
+    tsd=4,
 )
 
 figures(
@@ -189,7 +189,7 @@ figures(
     ),
     figure_name="8.3.L.4",
     hide_time_signature=True,
-    signature=4,
+    tsd=4,
 )
 
 figures(
@@ -204,7 +204,7 @@ figures(
     ),
     figure_name="8.3.L.5",
     hide_time_signature=True,
-    signature=4,
+    tsd=4,
 )
 
 figures(
@@ -221,7 +221,7 @@ figures(
     ),
     figure_name="8.3.L.6",
     hide_time_signature=True,
-    signature=4,
+    tsd=4,
 )
 
 voice_names = baca.accumulator.get_voice_names(score)

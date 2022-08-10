@@ -30,7 +30,7 @@ baca.make_figures(
     ),
     figure_name="4.5.R.3",
     hide_time_signature=True,
-    signature=4,
+    tsd=4,
 )
 
 figures(
@@ -46,7 +46,7 @@ figures(
     rmakers.beam_groups(),
     anchor=baca.anchor_to_figure("4.5.R.3"),
     figure_name="4.5.L.1-4",
-    signature=4,
+    tsd=4,
 )
 
 figures(
@@ -61,7 +61,7 @@ figures(
     baca.dynamic("ff", selector=lambda _: baca.select.phead(_, 0)),
     rmakers.beam_groups(),
     figure_name="7.1.L.5",
-    signature=4,
+    tsd=4,
 )
 
 figures(
@@ -76,7 +76,7 @@ figures(
     baca.tuplet_bracket_down(),
     baca.tuplet_bracket_staff_padding(6),
     figure_name="8.3.L.2",
-    signature=4,
+    tsd=4,
 )
 
 figures(
@@ -98,7 +98,7 @@ figures(
     "r4",
     baca.rest_transparent(selector=lambda _: abjad.select.rests(_)),
     do_not_label=True,
-    signature=4,
+    tsd=4,
 )
 
 figures(
@@ -112,7 +112,7 @@ figures(
     baca.tenuto(selector=lambda _: baca.select.pheads(_)),
     baca.tuplet_bracket_staff_padding(8),
     figure_name="6.1.R.3",
-    signature=8,
+    tsd=8,
 )
 
 figures(
@@ -120,7 +120,7 @@ figures(
     "r4",
     baca.rest_transparent(selector=lambda _: abjad.select.rests(_)),
     do_not_label=True,
-    signature=4,
+    tsd=4,
 )
 
 figures(
@@ -134,7 +134,7 @@ figures(
     baca.staccato(selector=lambda _: baca.select.pheads(_)),
     baca.tenuto(selector=lambda _: baca.select.pheads(_)),
     figure_name="6.1.R.2",
-    signature=8,
+    tsd=8,
 )
 
 figures(
@@ -150,7 +150,7 @@ figures(
     baca.stem_up(selector=lambda _: baca.select.pleaves(_)),
     baca.text_script_up(),
     figure_name="5.1.R.3",
-    signature=4,
+    tsd=4,
 )
 
 figures(
@@ -179,7 +179,7 @@ figures(
     "r4",
     baca.script_up(),
     do_not_label=True,
-    signature=4,
+    tsd=4,
 )
 
 voice_names = baca.accumulator.get_voice_names(score)
