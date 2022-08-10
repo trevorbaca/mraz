@@ -27,7 +27,7 @@ figures(
     baca.stem_up(selector=lambda _: baca.select.pleaves(_)),
     figure_label_direction=abjad.UP,
     figure_name="5.1.R.1",
-    signature=4,
+    tsd=4,
 )
 
 figures(
@@ -46,7 +46,7 @@ figures(
     anchor=baca.anchor(library.rh_v2),
     figure_label_direction=abjad.DOWN,
     figure_name="5.1.L.1",
-    signature=4,
+    tsd=4,
 )
 
 figures(
@@ -71,7 +71,7 @@ figures(
     ),
     baca.tuplet_bracket_down(),
     figure_name="5.2.R.1-5",
-    signature=4,
+    tsd=4,
 )
 
 figures(
@@ -79,7 +79,7 @@ figures(
     "r4",
     baca.rest_transparent(selector=lambda _: abjad.select.rests(_)),
     do_not_label=True,
-    signature=4,
+    tsd=4,
 )
 
 figures(
@@ -107,7 +107,7 @@ figures(
     ),
     baca.tuplet_bracket_down(),
     figure_name="5.2.R.6-10",
-    signature=4,
+    tsd=4,
 )
 
 figures(
@@ -122,7 +122,7 @@ figures(
     baca.tuplet_bracket_down(),
     baca.tuplet_bracket_staff_padding(6),
     figure_name="8.3.L.2",
-    signature=4,
+    tsd=4,
 )
 
 figures(
@@ -137,7 +137,7 @@ figures(
     anchor=baca.anchor_to_figure("8.3.L.2"),
     figure_name="8.3.R.5",
     hide_time_signature=True,
-    signature=4,
+    tsd=4,
 )
 
 figures(
@@ -162,7 +162,7 @@ figures(
     ),
     baca.tuplet_bracket_down(),
     figure_name="5.2.R.11-15",
-    signature=4,
+    tsd=4,
 )
 
 figures(
@@ -170,7 +170,7 @@ figures(
     "r4",
     baca.rest_transparent(selector=lambda _: abjad.select.rests(_)),
     do_not_label=True,
-    signature=4,
+    tsd=4,
 )
 
 figures(
@@ -192,7 +192,7 @@ figures(
     ),
     baca.tuplet_bracket_down(),
     figure_name="5.2.R.16-21",
-    signature=4,
+    tsd=4,
 )
 
 figures(
@@ -200,7 +200,7 @@ figures(
     "r4",
     baca.rest_transparent(selector=lambda _: abjad.select.rests(_)),
     do_not_label=True,
-    signature=4,
+    tsd=4,
 )
 
 figures(
@@ -218,7 +218,7 @@ figures(
     ),
     baca.staccato(selector=lambda _: baca.select.pheads(_)),
     figure_name="2.2.R.1",
-    signature=4,
+    tsd=4,
 )
 
 figures(
@@ -234,7 +234,7 @@ figures(
     ),
     baca.staccato(selector=lambda _: baca.select.pheads(_)),
     figure_name="2.2.R.2",
-    signature=4,
+    tsd=4,
 )
 
 figures(
@@ -250,7 +250,7 @@ figures(
     ),
     baca.staccato(selector=lambda _: baca.select.pheads(_)),
     figure_name="2.2.R.3",
-    signature=4,
+    tsd=4,
 )
 
 figures(
@@ -266,7 +266,7 @@ figures(
     ),
     baca.staccato(selector=lambda _: baca.select.pheads(_)),
     figure_name="2.2.R.4",
-    signature=4,
+    tsd=4,
 )
 
 figures(
@@ -282,7 +282,7 @@ figures(
     ),
     baca.staccato(selector=lambda _: baca.select.pheads(_)),
     figure_name="2.2.R.5",
-    signature=4,
+    tsd=4,
 )
 
 figures(
@@ -292,7 +292,7 @@ figures(
     anchor=baca.anchor_to_figure("2.2.R.1"),
     do_not_label=True,
     hide_time_signature=True,
-    signature=4,
+    tsd=4,
 )
 
 figures(
@@ -301,7 +301,7 @@ figures(
     baca.figure([27], 16),
     do_not_label=True,
     hide_time_signature=True,
-    signature=4,
+    tsd=4,
 )
 
 figures(
@@ -310,7 +310,7 @@ figures(
     baca.figure([21], 16),
     do_not_label=True,
     hide_time_signature=True,
-    signature=4,
+    tsd=4,
 )
 
 figures(
@@ -319,7 +319,7 @@ figures(
     baca.figure([15], 16),
     do_not_label=True,
     hide_time_signature=True,
-    signature=4,
+    tsd=4,
 )
 
 figures(
@@ -328,7 +328,7 @@ figures(
     baca.figure([16], 16),
     do_not_label=True,
     hide_time_signature=True,
-    signature=4,
+    tsd=4,
 )
 
 figures(
@@ -353,7 +353,7 @@ figures(
     baca.tuplet_bracket_down(),
     baca.tuplet_bracket_staff_padding(3),
     figure_name="5.2.R.22-25",
-    signature=4,
+    tsd=4,
 )
 
 figures(
@@ -371,7 +371,7 @@ figures(
     anchor=baca.anchor_to_figure("5.2.R.6-10"),
     figure_name="5.2.L.1",
     hide_time_signature=True,
-    signature=4,
+    tsd=4,
 )
 
 figures(
@@ -388,7 +388,7 @@ figures(
     anchor=baca.anchor_to_figure("5.2.R.11-15"),
     figure_name="5.2.L.2",
     hide_time_signature=True,
-    signature=4,
+    tsd=4,
 )
 
 figures(
@@ -402,7 +402,7 @@ figures(
     baca.register(6, -24),
     figure_name="5.2.L.3",
     hide_time_signature=True,
-    signature=4,
+    tsd=4,
 )
 
 figures(
@@ -417,7 +417,7 @@ figures(
     anchor=baca.anchor_to_figure("5.2.R.16-21"),
     figure_name="5.2.L.4",
     hide_time_signature=True,
-    signature=4,
+    tsd=4,
 )
 
 figures(
@@ -433,7 +433,7 @@ figures(
     baca.register(0, -24),
     figure_name="5.2.L.5",
     hide_time_signature=True,
-    signature=4,
+    tsd=4,
 )
 
 figures(
@@ -449,7 +449,7 @@ figures(
     baca.register(0, -24),
     figure_name="5.2.L.6",
     hide_time_signature=True,
-    signature=4,
+    tsd=4,
 )
 
 figures(
@@ -465,7 +465,7 @@ figures(
     baca.register(-6, -48),
     figure_name="5.2.L.7",
     hide_time_signature=True,
-    signature=4,
+    tsd=4,
 )
 
 figures(
@@ -483,7 +483,7 @@ figures(
     anchor=baca.anchor_to_figure("5.2.R.22-25"),
     figure_name="5.2.L.8",
     hide_time_signature=True,
-    signature=4,
+    tsd=4,
 )
 
 figures(
@@ -499,7 +499,7 @@ figures(
     baca.register(-6, -36),
     figure_name="5.2.L.9",
     hide_time_signature=True,
-    signature=4,
+    tsd=4,
 )
 
 figures(
@@ -508,7 +508,7 @@ figures(
     baca.clef("treble", selector=lambda _: abjad.select.leaf(_, 0)),
     baca.rest_transparent(selector=lambda _: abjad.select.rests(_)),
     do_not_label=True,
-    signature=4,
+    tsd=4,
 )
 
 voice_names = baca.accumulator.get_voice_names(score)

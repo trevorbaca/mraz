@@ -22,7 +22,7 @@ figures(
     baca.tuplet_bracket_staff_padding(7),
     baca.tuplet_bracket_up(),
     figure_name="6.1.R.1-2",
-    signature=8,
+    tsd=8,
 )
 
 figures(
@@ -36,7 +36,7 @@ figures(
     baca.tuplet_bracket_up(),
     baca.tuplet_bracket_staff_padding(8),
     figure_name="6.1.R.3",
-    signature=8,
+    tsd=8,
 )
 
 figures(
@@ -47,7 +47,7 @@ figures(
     baca.staccato(selector=lambda _: baca.select.pheads(_)),
     baca.tenuto(selector=lambda _: baca.select.pheads(_)),
     figure_name="6.1.R.4",
-    signature=8,
+    tsd=8,
 )
 
 figures(
@@ -59,7 +59,7 @@ figures(
     baca.tenuto(selector=lambda _: baca.select.pheads(_)),
     baca.tuplet_bracket_up(),
     figure_name="6.1.R.5",
-    signature=8,
+    tsd=8,
 )
 
 figures(

@@ -31,7 +31,7 @@ figures(
     baca.dynamic("fff", selector=lambda _: baca.select.phead(_, 0)),
     baca.extend_beam(selector=lambda _: abjad.select.leaf(_, -1)),
     figure_name="7.1.R.1",
-    signature=4,
+    tsd=4,
 )
 
 figures(
@@ -51,7 +51,7 @@ figures(
     baca.slur(map=lambda _: baca.select.tuplets(_)),
     baca.extend_beam(selector=lambda _: abjad.select.leaf(_, -1)),
     figure_name="7.1.R.2",
-    signature=4,
+    tsd=4,
 )
 
 figures(
@@ -68,7 +68,7 @@ figures(
         baca.marcato(selector=lambda _: baca.select.pheads(_)),
     ),
     figure_name="7.1.R.3",
-    signature=4,
+    tsd=4,
 )
 
 figures(
@@ -86,7 +86,7 @@ figures(
     ),
     baca.slur(map=lambda _: baca.select.tuplets(_)),
     figure_name="7.1.R.4",
-    signature=4,
+    tsd=4,
 )
 
 figures(
@@ -105,7 +105,7 @@ figures(
     ),
     baca.extend_beam(selector=lambda _: abjad.select.leaf(_, -1)),
     figure_name="7.1.R.5",
-    signature=4,
+    tsd=4,
 )
 
 figures(
@@ -124,7 +124,7 @@ figures(
     baca.slur(map=lambda _: baca.select.tuplets(_)),
     baca.extend_beam(selector=lambda _: abjad.select.leaf(_, -1)),
     figure_name="7.1.R.6",
-    signature=4,
+    tsd=4,
 )
 
 figures(
@@ -141,7 +141,7 @@ figures(
         baca.marcato(selector=lambda _: baca.select.pheads(_)),
     ),
     figure_name="7.1.R.7",
-    signature=4,
+    tsd=4,
 )
 
 figures(
@@ -159,7 +159,7 @@ figures(
     ),
     baca.slur(map=lambda _: baca.select.tuplets(_)),
     figure_name="7.1.R.8",
-    signature=4,
+    tsd=4,
 )
 
 # sacrifice 7.1.R.9
@@ -181,7 +181,7 @@ figures(
     baca.slur(map=lambda _: baca.select.tuplets(_)),
     baca.extend_beam(selector=lambda _: abjad.select.leaf(_, -1)),
     figure_name="7.1.R.10",
-    signature=4,
+    tsd=4,
 )
 
 figures(
@@ -199,7 +199,7 @@ figures(
     ),
     baca.beam_positions(12),
     figure_name="7.1.R.11",
-    signature=4,
+    tsd=4,
 )
 
 figures(
@@ -216,7 +216,7 @@ figures(
     ),
     baca.slur(map=lambda _: baca.select.tuplets(_)),
     figure_name="7.1.R.12",
-    signature=4,
+    tsd=4,
 )
 
 ###################################### LH #####################################
