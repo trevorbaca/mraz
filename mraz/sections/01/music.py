@@ -56,19 +56,20 @@ baca.make_figures(
     tsd=4,
 )
 
+collections = [_.transpose(4 * 7) for _ in section_7.stage_1.lh[5 - 1]]
+container = baca.figure_function(collections, [1], 16, treatments=[1])
+baca.register_function(container, 6, 6 + 10)
+dictionary = baca.imbricate_function(container, library.lh_v4_i, [14, 18])
+baca.dynamic_function(baca.select.phead(container, 0), "ff")
+groups = rmakers.nongrace_leaves_in_each_tuplet_function(container)
+rmakers.beam_groups_function(groups)
 baca.make_figures(
     figures,
     library.lh_v4,
-    [_.transpose(4 * 7) for _ in section_7.stage_1.lh[5 - 1]],
-    baca.figure([1], 16, treatments=[1]),
-    baca.register(6, 6 + 10),
-    baca.imbricate(
-        library.lh_v4_i,
-        [14, 18],
-    ),
-    baca.dynamic("ff", selector=lambda _: baca.select.phead(_, 0)),
-    rmakers.beam_groups(),
+    None,
+    container=container,
     figure_name="7.1.L.5",
+    imbricated_selections=dictionary,
     tsd=4,
 )
 
