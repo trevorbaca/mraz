@@ -73,129 +73,147 @@ baca.make_figures(
     tsd=4,
 )
 
+collections = section_8.stage_3.lh[2 - 1]
+container = baca.figure_function(collections, [2, -4], 16, treatments=[4])
+baca.clef_function(abjad.select.leaf(container, 0), "bass")
+baca.dynamic_function(baca.select.phead(container, 0), "f")
+baca.ottava_bassa_function(baca.select.tleaves(container))
+baca.register_function(container, -39)
+baca.rest_down_function(abjad.select.rests(container))
+baca.tuplet_bracket_down_function(container)
+baca.tuplet_bracket_staff_padding_function(container, 6)
 baca.make_figures(
     figures,
     library.lh_v6,
-    section_8.stage_3.lh[2 - 1],
-    baca.figure([2, -4], 16, treatments=[4]),
-    baca.clef("bass", selector=lambda _: abjad.select.leaf(_, 0)),
-    baca.dynamic("f", selector=lambda _: baca.select.phead(_, 0)),
-    baca.ottava_bassa(selector=lambda _: baca.select.tleaves(_)),
-    baca.register(-39),
-    baca.rest_down(selector=lambda _: abjad.select.rests(_)),
-    baca.tuplet_bracket_down(),
-    baca.tuplet_bracket_staff_padding(6),
+    None,
+    container=container,
     figure_name="8.3.L.2",
     tsd=4,
 )
 
+collections = section_8.stage_3.rh[5 - 1]
+container = baca.figure_function(collections, [6, -1], 32, affix=baca.rests_after([4]))
+baca.dynamic_function(baca.select.phead(container, 0), "ppp")
+baca.dynamic_text_x_offset_function(baca.select.pleaf(container, 0), -0.5)
+baca.dynamic_up_function(abjad.select.leaf(container, 0))
+baca.register_function(container, -27, -39)
+baca.rest_up_function(abjad.select.rests(container))
 baca.make_figures(
     figures,
     library.lh_v5,
-    section_8.stage_3.rh[5 - 1],
-    baca.figure([6, -1], 32, affix=baca.rests_after([4])),
-    baca.dynamic("ppp", selector=lambda _: baca.select.phead(_, 0)),
-    baca.dynamic_text_x_offset(-0.5, selector=lambda _: baca.select.pleaf(_, 0)),
-    baca.dynamic_up(selector=lambda _: abjad.select.leaf(_, 0)),
-    baca.register(-27, -39),
-    baca.rest_up(selector=lambda _: abjad.select.rests(_)),
+    None,
     anchor=baca.anchor_to_figure("8.3.L.2"),
+    container=container,
     figure_name="8.3.R.5",
     hide_time_signature=True,
 )
 
+container = abjad.Container([abjad.Tuplet((1, 1), "r4", hide=True)])
+baca.rest_transparent_function(abjad.select.rests(container))
 baca.make_figures(
     figures,
     library.rh_v2,
-    "r4",
-    baca.rest_transparent(selector=lambda _: abjad.select.rests(_)),
+    None,
+    container=container,
     do_not_label=True,
     tsd=4,
 )
 
+collections = section_6.stage_1.rh[3 - 1]
+container = baca.figure_function(collections, [1], 8, treatments=[1])
+baca.dynamic_function(baca.select.phead(container, 0), "pp")
+baca.dynamic_text_x_offset_function(baca.select.pleaf(container, 0), 0.5)
+baca.register_function(container, 24, 12)
+baca.staccato_function(baca.select.pheads(container))
+baca.tenuto_function(baca.select.pheads(container))
+baca.tuplet_bracket_staff_padding_function(container, 8)
 baca.make_figures(
     figures,
     library.rh_v3,
-    section_6.stage_1.rh[3 - 1],
-    baca.figure([1], 8, treatments=[1]),
-    baca.dynamic("pp", selector=lambda _: baca.select.phead(_, 0)),
-    baca.dynamic_text_x_offset(0.5, selector=lambda _: baca.select.pleaf(_, 0)),
-    baca.register(24, 12),
-    baca.staccato(selector=lambda _: baca.select.pheads(_)),
-    baca.tenuto(selector=lambda _: baca.select.pheads(_)),
-    baca.tuplet_bracket_staff_padding(8),
+    None,
+    container=container,
     figure_name="6.1.R.3",
     tsd=8,
 )
 
+container = abjad.Container([abjad.Tuplet((1, 1), "r4", hide=True)])
+baca.rest_transparent_function(abjad.select.rests(container))
 baca.make_figures(
     figures,
     library.rh_v2,
-    "r4",
-    baca.rest_transparent(selector=lambda _: abjad.select.rests(_)),
+    None,
+    container=container,
     do_not_label=True,
     tsd=4,
 )
 
+collections = section_6.stage_1.rh[3]
+container = baca.figure_function(collections, [1], 8, affix=baca.rests_around([1], [1]))
+baca.register_function(container, 24, 12)
+baca.span_bar_extra_offset_function(
+    abjad.select.leaf(container, -1), (-0.75, 0), after=True
+)
+baca.staccato_function(baca.select.pheads(container))
+baca.tenuto_function(baca.select.pheads(container))
 baca.make_figures(
     figures,
     library.rh_v3,
-    section_6.stage_1.rh[3],
-    baca.figure([1], 8, affix=baca.rests_around([1], [1])),
-    baca.register(24, 12),
-    baca.span_bar_extra_offset(
-        (-0.75, 0), selector=lambda _: abjad.select.leaf(_, -1), after=True
-    ),
-    baca.staccato(selector=lambda _: baca.select.pheads(_)),
-    baca.tenuto(selector=lambda _: baca.select.pheads(_)),
+    None,
+    container=container,
     figure_name="6.1.R.2",
     tsd=8,
 )
 
+collections = section_5.stage_1.rh.next(exhausted=True)
+container = baca.figure_function(collections, [2, -14], 16)
+baca.accent_function(baca.select.pheads(container))
+baca.dynamic_function(baca.select.phead(container, 0), "fff")
+baca.dynamic_up_function(abjad.select.leaf(container, 0))
+baca.register_function(container, 20, 36)
+baca.rest_up_function(abjad.select.rests(container))
+baca.script_up_function(container)
+baca.stem_up_function(baca.select.pleaves(container))
+baca.text_script_up_function(container)
 baca.make_figures(
     figures,
     library.rh_v2,
-    section_5.stage_1.rh.next(exhausted=True),
-    baca.figure([2, -14], 16),
-    baca.accent(selector=lambda _: baca.select.pheads(_)),
-    baca.dynamic("fff", selector=lambda _: baca.select.phead(_, 0)),
-    baca.dynamic_up(selector=lambda _: abjad.select.leaf(_, 0)),
-    baca.register(20, 36),
-    baca.rest_up(selector=lambda _: abjad.select.rests(_)),
-    baca.script_up(),
-    baca.stem_up(selector=lambda _: baca.select.pleaves(_)),
-    baca.text_script_up(),
+    None,
+    container=container,
     figure_name="5.1.R.3",
     tsd=4,
 )
 
+collections = section_5.stage_1.lh.next(exhausted=True)
+container = baca.figure_function(collections, [4, -4], 16, treatments=[(16, 4)])
+rmakers.denominator_function(container, abjad.Duration(1, 1))
+baca.dynamic_function(baca.select.phead(container, 0), "mf")
+baca.dynamic_text_x_offset_function(baca.select.pleaf(container, 0), 0.25)
+baca.ottava_function(baca.select.tleaves(container))
+baca.ottava_bracket_staff_padding_function(container, 9)
+baca.register_function(container, 10, 26)
+baca.rest_down_function(abjad.select.rests(container))
+baca.stem_down_function(baca.select.pleaves(container))
+baca.tenuto_function(baca.select.pheads(container))
+baca.tuplet_bracket_down_function(container)
+baca.tuplet_bracket_staff_padding_function(container, 4)
 baca.make_figures(
     figures,
     library.rh_v3,
-    section_5.stage_1.lh.next(exhausted=True),
-    baca.figure([4, -4], 16, treatments=[(16, 4)]),
-    rmakers.denominator(abjad.Duration(1, 1)),
-    baca.dynamic("mf", selector=lambda _: baca.select.phead(_, 0)),
-    baca.dynamic_text_x_offset(0.25, selector=lambda _: baca.select.pleaf(_, 0)),
-    baca.ottava(selector=lambda _: baca.select.tleaves(_)),
-    baca.ottava_bracket_staff_padding(9),
-    baca.register(10, 26),
-    baca.rest_down(selector=lambda _: abjad.select.rests(_)),
-    baca.stem_down(selector=lambda _: baca.select.pleaves(_)),
-    baca.tenuto(selector=lambda _: baca.select.pheads(_)),
-    baca.tuplet_bracket_down(),
-    baca.tuplet_bracket_staff_padding(4),
+    None,
     anchor=baca.anchor_to_figure("5.1.R.3"),
+    container=container,
     figure_name="5.1.L.1",
     figure_label_direction=abjad.DOWN,
     hide_time_signature=True,
 )
 
+container = abjad.Container([abjad.Tuplet((1, 1), "r4", hide=True)])
+baca.script_up_function(container)
 baca.make_figures(
     figures,
     library.rh_v2,
-    "r4",
-    baca.script_up(),
+    None,
+    container=container,
     do_not_label=True,
     tsd=4,
 )
@@ -247,22 +265,20 @@ for index, string in (
 
 
 def postprocess(cache):
-    accumulator(
-        library.rh_v1,
-        baca.instrument(
-            accumulator.instruments["Piano"], selector=lambda _: abjad.select.leaf(_, 0)
-        ),
-        baca.instrument_name(
+    m = cache[library.rh_v1]
+    with baca.scope(m.leaves()) as o:
+        baca.instrument_function(
+            o.leaf(0), accumulator.instruments["Piano"], accumulator.manifests()
+        )
+        baca.instrument_name_function(
+            o.leaf(0),
             r"\mraz-piano-markup",
             context="PianoStaff",
-            selector=lambda _: abjad.select.leaf(_, 0),
-        ),
-        baca.clef("treble", selector=lambda _: abjad.select.leaf(_, 0)),
-    )
-    accumulator(
-        library.lh_v1,
-        baca.clef("treble", selector=lambda _: abjad.select.leaf(_, 0)),
-    )
+        )
+        baca.clef_function(o.leaf(0), "treble")
+    m = cache[library.lh_v1]
+    with baca.scope(m.leaves()) as o:
+        baca.clef_function(o.leaf(0), "treble")
 
 
 def main():
@@ -283,7 +299,6 @@ if __name__ == "__main__":
         **baca.interpret.section_defaults(),
         activate=(baca.tags.LOCAL_MEASURE_NUMBER,),
         always_make_global_rests=True,
-        commands=accumulator.commands,
         do_not_require_short_instrument_names=True,
         error_on_not_yet_pitched=True,
     )
