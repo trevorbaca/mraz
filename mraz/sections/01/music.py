@@ -17,14 +17,15 @@ section_7 = library.moment_7()
 section_8 = library.moment_8()
 
 collections = section_4.stage_5.rh[3 - 1]
-tuplets = baca.figure_function(collections, [16], 16)
-baca.register_function(tuplets, 36)
-groups = rmakers.nongrace_leaves_in_each_tuplet_function(tuplets)
+container = baca.figure_function(collections, [16], 16)
+baca.register_function(container, 36)
+groups = rmakers.nongrace_leaves_in_each_tuplet_function(container)
 rmakers.beam_groups_function(groups)
-baca.tenuto_function(baca.select.pheads(tuplets))
+baca.tenuto_function(baca.select.pheads(container))
 baca.markup_function(
-    baca.select.pleaf(tuplets, 0), r"\mraz-ottava-brackets-always-govern-markup"
+    baca.select.pleaf(container, 0), r"\mraz-ottava-brackets-always-govern-markup"
 )
+tuplets = abjad.mutate.eject_contents(container)
 baca.make_figures(
     figures,
     library.rh_v1,
@@ -36,18 +37,17 @@ baca.make_figures(
 )
 
 collections = section_4.stage_5.lh[:4]
-tuplets = baca.figure_function(collections, [1], 16, treatments=[(1, 4)])
-container = abjad.Container(tuplets)
-baca.dls_staff_padding_function(tuplets, 8)
-baca.hairpin_function(tuplets, "f < ff")
-baca.ottava_function(baca.select.tleaves(tuplets))
-baca.register_function(tuplets, 10, 36)
-for run in baca.select.runs(tuplets):
+container = baca.figure_function(collections, [1], 16, treatments=[(1, 4)])
+baca.dls_staff_padding_function(container, 8)
+baca.hairpin_function(container, "f < ff")
+baca.ottava_function(baca.select.tleaves(container))
+baca.register_function(container, 10, 36)
+for run in baca.select.runs(container):
     baca.slur_function(run)
-baca.slur_up_function(tuplets)
-groups = rmakers.nongrace_leaves_in_each_tuplet_function(tuplets)
+baca.slur_up_function(container)
+groups = rmakers.nongrace_leaves_in_each_tuplet_function(container)
 rmakers.beam_groups_function(groups)
-container[:] = []
+tuplets = abjad.mutate.eject_contents(container)
 baca.make_figures(
     figures,
     library.rh_v2,
