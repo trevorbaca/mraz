@@ -16,7 +16,8 @@ section_6 = library.moment_6()
 section_7 = library.moment_7()
 resonance = set("e, fs, gs, as, b,".split())
 
-figures(
+baca.make_figures(
+    figures,
     library.rh_v4,
     [_.transpose(4 * 7) for _ in section_7.stage_1.lh[-1]],
     baca.figure([1], 16, treatments=[1]),
@@ -32,7 +33,8 @@ figures(
     tsd=4,
 )
 
-figures(
+baca.make_figures(
+    figures,
     library.rh_v2,
     "r4",
     baca.rest_transparent(selector=lambda _: abjad.select.rests(_)),
@@ -40,7 +42,8 @@ figures(
     tsd=4,
 )
 
-figures(
+baca.make_figures(
+    figures,
     library.rh_v2,
     section_2.stage_2.rh[0][:1],
     baca.figure([1], 16),
@@ -56,7 +59,8 @@ figures(
     tsd=4,
 )
 
-figures(
+baca.make_figures(
+    figures,
     library.rh_v2,
     "r4",
     baca.rest_transparent(selector=lambda _: abjad.select.rests(_)),
@@ -64,7 +68,8 @@ figures(
     tsd=4,
 )
 
-figures(
+baca.make_figures(
+    figures,
     library.rh_v4,
     [_.transpose(4 * 7) for _ in section_7.stage_1.lh[-1]],
     baca.figure([1], 16, treatments=[1]),
@@ -80,7 +85,8 @@ figures(
     tsd=4,
 )
 
-figures(
+baca.make_figures(
+    figures,
     library.rh_v2,
     section_2.stage_2.rh[0][:2],
     baca.figure([1], 16),
@@ -95,7 +101,8 @@ figures(
     tsd=4,
 )
 
-figures(
+baca.make_figures(
+    figures,
     library.rh_v2,
     "r4",
     baca.rest_transparent(selector=lambda _: abjad.select.rests(_)),
@@ -103,7 +110,8 @@ figures(
     tsd=4,
 )
 
-figures(
+baca.make_figures(
+    figures,
     library.rh_v3,
     section_4.stage_1.rh[0],
     baca.figure([2, -4, 2, -4, 4], 16, treatments=[2]),
@@ -115,7 +123,8 @@ figures(
     tsd=4,
 )
 
-figures(
+baca.make_figures(
+    figures,
     library.lh_v5,
     section_4.stage_1.lh.next(),
     baca.figure([3, -1], 16, affix=baca.rests_before([12])),
@@ -130,7 +139,8 @@ figures(
     tsd=4,
 )
 
-figures(
+baca.make_figures(
+    figures,
     library.rh_v2,
     section_2.stage_2.rh[0][:4],
     baca.figure([1], 16),
@@ -145,7 +155,8 @@ figures(
     tsd=4,
 )
 
-figures(
+baca.make_figures(
+    figures,
     library.rh_v1,
     section_4.stage_5.rh[1 - 1],
     baca.figure([28], 16),
@@ -157,7 +168,8 @@ figures(
     tsd=4,
 )
 
-figures(
+baca.make_figures(
+    figures,
     library.rh_v1,
     section_4.stage_5.rh[2 - 1],
     baca.figure([24], 16),
@@ -168,7 +180,8 @@ figures(
     tsd=4,
 )
 
-figures(
+baca.make_figures(
+    figures,
     library.rh_v1,
     section_4.stage_5.rh[3 - 1],
     baca.figure([16], 16),
@@ -180,7 +193,8 @@ figures(
     tsd=4,
 )
 
-figures(
+baca.make_figures(
+    figures,
     library.rh_v2,
     section_4.stage_5.lh[:4],
     baca.figure([1], 16, treatments=[(1, 4)]),
@@ -202,7 +216,8 @@ figures(
     tsd=4,
 )
 
-figures(
+baca.make_figures(
+    figures,
     library.lh_resonance,
     [resonance],
     baca.figure([8], 16),
@@ -213,7 +228,8 @@ figures(
     tsd=4,
 )
 
-figures(
+baca.make_figures(
+    figures,
     library.lh_resonance,
     [resonance],
     baca.figure([4], 16),
@@ -223,7 +239,8 @@ figures(
     tsd=4,
 )
 
-figures(
+baca.make_figures(
+    figures,
     library.lh_resonance,
     [resonance],
     baca.figure([5], 16),
@@ -233,7 +250,8 @@ figures(
     tsd=4,
 )
 
-figures(
+baca.make_figures(
+    figures,
     library.lh_resonance,
     [resonance],
     baca.figure([4], 16),
@@ -243,7 +261,8 @@ figures(
     tsd=4,
 )
 
-figures(
+baca.make_figures(
+    figures,
     library.lh_resonance,
     [resonance],
     baca.figure([8], 16),
@@ -253,7 +272,8 @@ figures(
     tsd=4,
 )
 
-figures(
+baca.make_figures(
+    figures,
     library.lh_resonance,
     [resonance],
     baca.figure([10], 16),
@@ -263,7 +283,8 @@ figures(
     tsd=4,
 )
 
-figures(
+baca.make_figures(
+    figures,
     library.lh_resonance,
     [resonance],
     baca.figure([21], 16),
@@ -275,7 +296,8 @@ figures(
     tsd=4,
 )
 
-figures(
+baca.make_figures(
+    figures,
     library.lh_resonance,
     [resonance],
     baca.figure([28], 16),
@@ -285,7 +307,8 @@ figures(
     tsd=4,
 )
 
-figures(
+baca.make_figures(
+    figures,
     library.lh_resonance,
     [resonance],
     baca.figure([24], 16),

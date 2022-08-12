@@ -14,7 +14,8 @@ section_7 = library.moment_7()
 
 #################################### [7.1] ####################################
 
-figures(
+baca.make_figures(
+    figures,
     library.rh_v1,
     section_7.stage_1.rh.next(),
     baca.figure([1], 16, treatments=[-1]),
@@ -34,7 +35,8 @@ figures(
     tsd=4,
 )
 
-figures(
+baca.make_figures(
+    figures,
     library.rh_v2,
     section_7.stage_1.rh.next(),
     baca.figure([1], 16),
@@ -54,7 +56,8 @@ figures(
     tsd=4,
 )
 
-figures(
+baca.make_figures(
+    figures,
     library.rh_v1,
     section_7.stage_1.rh.next(),
     baca.figure([1], 16, treatments=[-1]),
@@ -71,7 +74,8 @@ figures(
     tsd=4,
 )
 
-figures(
+baca.make_figures(
+    figures,
     library.rh_v2,
     section_7.stage_1.rh.next(),
     baca.figure([1], 16),
@@ -89,7 +93,8 @@ figures(
     tsd=4,
 )
 
-figures(
+baca.make_figures(
+    figures,
     library.rh_v1,
     section_7.stage_1.rh.next(),
     baca.figure([1], 16),
@@ -108,7 +113,8 @@ figures(
     tsd=4,
 )
 
-figures(
+baca.make_figures(
+    figures,
     library.rh_v2,
     section_7.stage_1.rh.next(),
     baca.figure([1], 16, treatments=[-1]),
@@ -127,7 +133,8 @@ figures(
     tsd=4,
 )
 
-figures(
+baca.make_figures(
+    figures,
     library.rh_v1,
     section_7.stage_1.rh.next(),
     baca.figure([1], 16),
@@ -144,7 +151,8 @@ figures(
     tsd=4,
 )
 
-figures(
+baca.make_figures(
+    figures,
     library.rh_v2,
     section_7.stage_1.rh.next(),
     baca.figure([1], 16),
@@ -165,7 +173,8 @@ figures(
 # sacrifice 7.1.R.9
 section_7.stage_1.rh.next()
 
-figures(
+baca.make_figures(
+    figures,
     library.rh_v2,
     section_7.stage_1.rh.next(),
     baca.figure([1], 16),
@@ -184,7 +193,8 @@ figures(
     tsd=4,
 )
 
-figures(
+baca.make_figures(
+    figures,
     library.rh_v1,
     section_7.stage_1.rh.next(),
     baca.figure([1], 16, treatments=[-1]),
@@ -202,7 +212,8 @@ figures(
     tsd=4,
 )
 
-figures(
+baca.make_figures(
+    figures,
     library.rh_v2,
     section_7.stage_1.rh.next(exhausted=True),
     baca.figure([1], 16, treatments=[-1]),
@@ -221,7 +232,8 @@ figures(
 
 ###################################### LH #####################################
 
-figures(
+baca.make_figures(
+    figures,
     library.lh_v4,
     [_.transpose(0 * 7) for _ in section_7.stage_1.lh.next()],
     baca.figure([1], 16, treatments=[-1]),
@@ -241,7 +253,8 @@ figures(
     figure_name="7.1.L.1",
 )
 
-figures(
+baca.make_figures(
+    figures,
     library.lh_v5,
     [_.transpose(1 * 7) for _ in section_7.stage_1.lh.next()],
     baca.figure([1], 16),
@@ -268,7 +281,8 @@ figures(
     hide_time_signature=True,
 )
 
-figures(
+baca.make_figures(
+    figures,
     library.lh_v4,
     [_.transpose(2 * 7) for _ in section_7.stage_1.lh.next()],
     baca.figure([1], 16),
@@ -289,7 +303,8 @@ figures(
     hide_time_signature=True,
 )
 
-figures(
+baca.make_figures(
+    figures,
     library.lh_v5,
     [_.transpose(3 * 7) for _ in section_7.stage_1.lh.next()],
     baca.figure([1], 16),
@@ -314,7 +329,8 @@ figures(
     hide_time_signature=True,
 )
 
-figures(
+baca.make_figures(
+    figures,
     library.lh_v4,
     [_.transpose(4 * 7) for _ in section_7.stage_1.lh.next(exhausted=True)],
     baca.figure([1], 16, treatments=[1]),

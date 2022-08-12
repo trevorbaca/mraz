@@ -12,7 +12,8 @@ score = library.make_empty_score()
 figures = baca.FigureAccumulator(score, library.voice_abbreviations())
 section_8 = library.moment_8()
 
-figures(
+baca.make_figures(
+    figures,
     library.lh_v5,
     section_8.stage_3.rh.next(),
     baca.figure([6, -1], 32),
@@ -23,7 +24,8 @@ figures(
     tsd=4,
 )
 
-figures(
+baca.make_figures(
+    figures,
     library.lh_v5,
     section_8.stage_3.rh.next(2),
     baca.figure([4, -1], 32, treatments=[1]),
@@ -33,7 +35,8 @@ figures(
     tsd=4,
 )
 
-figures(
+baca.make_figures(
+    figures,
     library.lh_v5,
     section_8.stage_3.rh.next(),
     baca.figure([1, -15], 32),
@@ -42,7 +45,8 @@ figures(
     tsd=2,
 )
 
-figures(
+baca.make_figures(
+    figures,
     library.lh_v5,
     section_8.stage_3.rh.next(),
     baca.figure([6, -1], 32),
@@ -52,7 +56,8 @@ figures(
     tsd=4,
 )
 
-figures(
+baca.make_figures(
+    figures,
     library.lh_v5,
     section_8.stage_3.rh.next(),
     baca.figure([4, -1], 32),
@@ -61,7 +66,8 @@ figures(
     tsd=4,
 )
 
-figures(
+baca.make_figures(
+    figures,
     library.lh_v5,
     section_8.stage_3.rh.next(),
     baca.figure([4, -1], 32, treatments=[1]),
@@ -70,7 +76,8 @@ figures(
     tsd=4,
 )
 
-figures(
+baca.make_figures(
+    figures,
     library.lh_v5,
     section_8.stage_3.rh.next(),
     baca.figure([1, -15], 32),
@@ -80,7 +87,8 @@ figures(
     tsd=2,
 )
 
-figures(
+baca.make_figures(
+    figures,
     library.lh_v5,
     section_8.stage_3.rh.next(),
     baca.figure([6, -1], 32),
@@ -89,7 +97,8 @@ figures(
     tsd=4,
 )
 
-figures(
+baca.make_figures(
+    figures,
     library.lh_v5,
     section_8.stage_3.rh.next(2),
     baca.figure([4, -1], 32, treatments=[1]),
@@ -99,7 +108,8 @@ figures(
     tsd=4,
 )
 
-figures(
+baca.make_figures(
+    figures,
     library.lh_v5,
     section_8.stage_3.rh.next(),
     baca.figure([1, -15], 32),
@@ -109,7 +119,8 @@ figures(
     tsd=2,
 )
 
-figures(
+baca.make_figures(
+    figures,
     library.lh_v5,
     section_8.stage_3.rh.next(),
     baca.figure([6, -1], 32),
@@ -118,7 +129,8 @@ figures(
     tsd=4,
 )
 
-figures(
+baca.make_figures(
+    figures,
     library.lh_v5,
     section_8.stage_3.rh.next(exhausted=True),
     baca.figure([4, -1], 32, treatments=[1]),
@@ -127,7 +139,8 @@ figures(
     tsd=4,
 )
 
-figures(
+baca.make_figures(
+    figures,
     library.lh_v6,
     section_8.stage_3.lh.next(),
     baca.figure([4, -4], 16, treatments=[-4]),
@@ -143,7 +156,8 @@ figures(
     tsd=4,
 )
 
-figures(
+baca.make_figures(
+    figures,
     library.lh_v6,
     section_8.stage_3.lh.next(),
     baca.figure([2, -4], 16, treatments=[4]),
@@ -158,7 +172,8 @@ figures(
     tsd=4,
 )
 
-figures(
+baca.make_figures(
+    figures,
     library.lh_v6,
     section_8.stage_3.lh.next(),
     baca.figure([1, -3], 16, treatments=[4]),
@@ -177,7 +192,8 @@ figures(
     tsd=4,
 )
 
-figures(
+baca.make_figures(
+    figures,
     library.lh_v6,
     section_8.stage_3.lh.next(),
     baca.figure([1, -3], 16, treatments=[4]),
@@ -192,7 +208,8 @@ figures(
     tsd=4,
 )
 
-figures(
+baca.make_figures(
+    figures,
     library.lh_v6,
     section_8.stage_3.lh.next(),
     baca.figure([2], 16, treatments=[2]),
@@ -207,7 +224,8 @@ figures(
     tsd=4,
 )
 
-figures(
+baca.make_figures(
+    figures,
     library.lh_v6,
     section_8.stage_3.lh.next(exhausted=True),
     baca.figure([2, -4], 16, treatments=[-6]),
