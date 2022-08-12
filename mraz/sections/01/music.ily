@@ -747,8 +747,7 @@ number.1.RH.Music.1 = {
             bf''''!1
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.tenuto()
+              %! baca.tenuto_function()
             - \tenuto
             % MARKUP:
               %! FIGURE_LABEL
@@ -758,8 +757,7 @@ number.1.RH.Music.1 = {
               %! EXPLICIT_INSTRUMENT_ALERT
               %! baca._attach_latent_indicator_alert()
             ^ \baca-explicit-instrument-markup "(“Piano”)"
-              %! baca._attach_persistent_indicator()
-              %! baca.markup()
+              %! baca.markup_function()
             ^ \mraz-ottava-brackets-always-govern-markup
             % ABSOLUTE_AFTER:
             % COMMANDS:
@@ -831,13 +829,13 @@ number.1.RH.Music.2 = {
               %! SPANNER_START
               %! baca._do_spanner_indicator_command(1)
             \ottava 1
-              %! baca.OverrideCommand._call(1)
-              %! baca.dls_staff_padding()
+              %! baca.dls_staff_padding_function(1)
             \override DynamicLineSpanner.staff-padding = 8
-              %! baca.OverrideCommand._call(1)
-              %! baca.slur_up()
+              %! baca.slur_up_function(1)
             \override Slur.direction = #up
+              %! rmakers.beam_groups()
             \set stemLeftBeamCount = 0
+              %! rmakers.beam_groups()
             \set stemRightBeamCount = 2
             b'16
             % AFTER:
@@ -848,13 +846,13 @@ number.1.RH.Music.2 = {
               %! SPANNER_STOP
               %! baca.PiecewiseCommand._call(2)
               %! baca._set_status_tag()
-              %! baca.hairpin()
+              %! baca.hairpin_function()
             - \tweak color #(x11-color 'blue)
               %! EXPLICIT_DYNAMIC
               %! SPANNER_STOP
               %! baca.PiecewiseCommand._call(2)
               %! baca._set_status_tag()
-              %! baca.hairpin()
+              %! baca.hairpin_function()
             \f
             % MARKUP:
               %! FIGURE_LABEL
@@ -862,10 +860,12 @@ number.1.RH.Music.2 = {
               %! FIGURE_LABEL
             %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (2) \hspace #1 "4.5.L.1-4" ] }
             % START_BEAM:
+              %! rmakers.beam_groups()
             [
             % SPANNER_STARTS:
               %! SPANNER_START
               %! baca._do_spanner_indicator_command(1)
+              %! baca.slur_function()
             (
               %! EXPLICIT_DYNAMIC_COLOR
               %! baca.treat_persistent_wrapper()
@@ -873,20 +873,22 @@ number.1.RH.Music.2 = {
               %! SPANNER_START
               %! baca.PiecewiseCommand._call(2)
               %! baca._set_status_tag()
-              %! baca.hairpin()
+              %! baca.hairpin_function()
             - \tweak color #(x11-color 'blue)
               %! EXPLICIT_DYNAMIC
               %! SPANNER_START
               %! baca.PiecewiseCommand._call(2)
               %! baca._set_status_tag()
-              %! baca.hairpin()
+              %! baca.hairpin_function()
             \<
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
             % BEFORE:
             % COMMANDS:
+              %! rmakers.beam_groups()
             \set stemLeftBeamCount = 2
+              %! rmakers.beam_groups()
             \set stemRightBeamCount = 2
             fs''!16
             % ABSOLUTE_BEFORE:
@@ -894,7 +896,9 @@ number.1.RH.Music.2 = {
 
             % BEFORE:
             % COMMANDS:
+              %! rmakers.beam_groups()
             \set stemLeftBeamCount = 2
+              %! rmakers.beam_groups()
             \set stemRightBeamCount = 2
             g''16
             % ABSOLUTE_BEFORE:
@@ -902,7 +906,9 @@ number.1.RH.Music.2 = {
 
             % BEFORE:
             % COMMANDS:
+              %! rmakers.beam_groups()
             \set stemLeftBeamCount = 2
+              %! rmakers.beam_groups()
             \set stemRightBeamCount = 2
             a''16
             % ABSOLUTE_BEFORE:
@@ -910,7 +916,9 @@ number.1.RH.Music.2 = {
 
             % BEFORE:
             % COMMANDS:
+              %! rmakers.beam_groups()
             \set stemLeftBeamCount = 2
+              %! rmakers.beam_groups()
             \set stemRightBeamCount = 1
             cs'''!16
             % CLOSING:
@@ -929,7 +937,9 @@ number.1.RH.Music.2 = {
 
             % BEFORE:
             % COMMANDS:
+              %! rmakers.beam_groups()
             \set stemLeftBeamCount = 1
+              %! rmakers.beam_groups()
             \set stemRightBeamCount = 2
             bf''!16
             % ABSOLUTE_BEFORE:
@@ -937,7 +947,9 @@ number.1.RH.Music.2 = {
 
             % BEFORE:
             % COMMANDS:
+              %! rmakers.beam_groups()
             \set stemLeftBeamCount = 2
+              %! rmakers.beam_groups()
             \set stemRightBeamCount = 2
             cs'''!16
             % ABSOLUTE_BEFORE:
@@ -945,7 +957,9 @@ number.1.RH.Music.2 = {
 
             % BEFORE:
             % COMMANDS:
+              %! rmakers.beam_groups()
             \set stemLeftBeamCount = 2
+              %! rmakers.beam_groups()
             \set stemRightBeamCount = 2
             af''!16
             % ABSOLUTE_BEFORE:
@@ -953,7 +967,9 @@ number.1.RH.Music.2 = {
 
             % BEFORE:
             % COMMANDS:
+              %! rmakers.beam_groups()
             \set stemLeftBeamCount = 2
+              %! rmakers.beam_groups()
             \set stemRightBeamCount = 2
             a''16
             % ABSOLUTE_BEFORE:
@@ -961,7 +977,9 @@ number.1.RH.Music.2 = {
 
             % BEFORE:
             % COMMANDS:
+              %! rmakers.beam_groups()
             \set stemLeftBeamCount = 2
+              %! rmakers.beam_groups()
             \set stemRightBeamCount = 1
             b''16
             % CLOSING:
@@ -980,7 +998,9 @@ number.1.RH.Music.2 = {
 
             % BEFORE:
             % COMMANDS:
+              %! rmakers.beam_groups()
             \set stemLeftBeamCount = 1
+              %! rmakers.beam_groups()
             \set stemRightBeamCount = 2
             ef'''!16
             % ABSOLUTE_BEFORE:
@@ -988,7 +1008,9 @@ number.1.RH.Music.2 = {
 
             % BEFORE:
             % COMMANDS:
+              %! rmakers.beam_groups()
             \set stemLeftBeamCount = 2
+              %! rmakers.beam_groups()
             \set stemRightBeamCount = 2
             c''''16
             % ABSOLUTE_BEFORE:
@@ -996,7 +1018,9 @@ number.1.RH.Music.2 = {
 
             % BEFORE:
             % COMMANDS:
+              %! rmakers.beam_groups()
             \set stemLeftBeamCount = 2
+              %! rmakers.beam_groups()
             \set stemRightBeamCount = 2
             bf'''!16
             % ABSOLUTE_BEFORE:
@@ -1004,7 +1028,9 @@ number.1.RH.Music.2 = {
 
             % BEFORE:
             % COMMANDS:
+              %! rmakers.beam_groups()
             \set stemLeftBeamCount = 2
+              %! rmakers.beam_groups()
             \set stemRightBeamCount = 2
             b'''16
             % ABSOLUTE_BEFORE:
@@ -1012,7 +1038,9 @@ number.1.RH.Music.2 = {
 
             % BEFORE:
             % COMMANDS:
+              %! rmakers.beam_groups()
             \set stemLeftBeamCount = 2
+              %! rmakers.beam_groups()
             \set stemRightBeamCount = 1
             cs''''!16
             % CLOSING:
@@ -1031,7 +1059,9 @@ number.1.RH.Music.2 = {
 
             % BEFORE:
             % COMMANDS:
+              %! rmakers.beam_groups()
             \set stemLeftBeamCount = 1
+              %! rmakers.beam_groups()
             \set stemRightBeamCount = 2
             f''''16
             % ABSOLUTE_BEFORE:
@@ -1039,7 +1069,9 @@ number.1.RH.Music.2 = {
 
             % BEFORE:
             % COMMANDS:
+              %! rmakers.beam_groups()
             \set stemLeftBeamCount = 2
+              %! rmakers.beam_groups()
             \set stemRightBeamCount = 2
             d''''16
             % ABSOLUTE_BEFORE:
@@ -1047,7 +1079,9 @@ number.1.RH.Music.2 = {
 
             % BEFORE:
             % COMMANDS:
+              %! rmakers.beam_groups()
             \set stemLeftBeamCount = 2
+              %! rmakers.beam_groups()
             \set stemRightBeamCount = 2
             c''''16
             % ABSOLUTE_BEFORE:
@@ -1055,7 +1089,9 @@ number.1.RH.Music.2 = {
 
             % BEFORE:
             % COMMANDS:
+              %! rmakers.beam_groups()
             \set stemLeftBeamCount = 2
+              %! rmakers.beam_groups()
             \set stemRightBeamCount = 0
             cs''''!16
             % AFTER:
@@ -1066,29 +1102,29 @@ number.1.RH.Music.2 = {
               %! SPANNER_STOP
               %! baca.PiecewiseCommand._call(3)
               %! baca._set_status_tag()
-              %! baca.hairpin()
+              %! baca.hairpin_function()
             - \tweak color #(x11-color 'blue)
               %! EXPLICIT_DYNAMIC
               %! SPANNER_STOP
               %! baca.PiecewiseCommand._call(3)
               %! baca._set_status_tag()
-              %! baca.hairpin()
+              %! baca.hairpin_function()
             \ff
             % SPANNER_STOPS:
               %! SPANNER_STOP
               %! baca._do_spanner_indicator_command(2)
+              %! baca.slur_function()
             )
             % STOP_BEAM:
+              %! rmakers.beam_groups()
             ]
             % COMMANDS:
               %! SPANNER_STOP
               %! baca._do_spanner_indicator_command(2)
             \ottava 0
-              %! baca.OverrideCommand._call(2)
-              %! baca.dls_staff_padding()
+              %! baca.dls_staff_padding_function(2)
             \revert DynamicLineSpanner.staff-padding
-              %! baca.OverrideCommand._call(2)
-              %! baca.slur_up()
+              %! baca.slur_up_function(2)
             \revert Slur.direction
             % CLOSING:
             % COMMANDS:
