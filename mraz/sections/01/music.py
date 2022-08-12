@@ -16,38 +16,46 @@ section_6 = library.moment_6()
 section_7 = library.moment_7()
 section_8 = library.moment_8()
 
+collections = section_4.stage_5.rh[3 - 1]
+tuplets = baca.figure_function(collections, [16], 16)
+baca.register_function(tuplets, 36)
+groups = rmakers.nongrace_leaves_in_each_tuplet_function(tuplets)
+rmakers.beam_groups_function(groups)
+baca.tenuto_function(baca.select.pheads(tuplets))
+baca.markup_function(
+    baca.select.pleaf(tuplets, 0), r"\mraz-ottava-brackets-always-govern-markup"
+)
 baca.make_figures(
     figures,
     library.rh_v1,
-    section_4.stage_5.rh[3 - 1],
-    baca.figure([16], 16),
-    baca.register(36),
-    rmakers.beam_groups(),
-    baca.tenuto(selector=lambda _: baca.select.pheads(_)),
-    baca.markup(
-        r"\mraz-ottava-brackets-always-govern-markup",
-        selector=lambda _: baca.select.pleaf(_, 0),
-    ),
+    None,
     figure_name="4.5.R.3",
     hide_time_signature=True,
     tsd=4,
+    tuplets=tuplets,
 )
 
+collections = section_4.stage_5.lh[:4]
+tuplets = baca.figure_function(collections, [1], 16, treatments=[(1, 4)])
+container = abjad.Container(tuplets)
+baca.dls_staff_padding_function(tuplets, 8)
+baca.hairpin_function(tuplets, "f < ff")
+baca.ottava_function(baca.select.tleaves(tuplets))
+baca.register_function(tuplets, 10, 36)
+for run in baca.select.runs(tuplets):
+    baca.slur_function(run)
+baca.slur_up_function(tuplets)
+groups = rmakers.nongrace_leaves_in_each_tuplet_function(tuplets)
+rmakers.beam_groups_function(groups)
+container[:] = []
 baca.make_figures(
     figures,
     library.rh_v2,
-    section_4.stage_5.lh[:4],
-    baca.figure([1], 16, treatments=[(1, 4)]),
-    baca.dls_staff_padding(8),
-    baca.hairpin("f < ff"),
-    baca.ottava(selector=lambda _: baca.select.tleaves(_)),
-    baca.register(10, 36),
-    baca.slur(map=lambda _: baca.select.runs(_)),
-    baca.slur_up(),
-    rmakers.beam_groups(),
+    None,
     anchor=baca.anchor_to_figure("4.5.R.3"),
     figure_name="4.5.L.1-4",
     tsd=4,
+    tuplets=tuplets,
 )
 
 baca.make_figures(
