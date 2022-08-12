@@ -14,7 +14,8 @@ section_2 = library.moment_2()
 section_5 = library.moment_5()
 section_8 = library.moment_8()
 
-figures(
+baca.make_figures(
+    figures,
     library.rh_v2,
     section_5.stage_1.rh.next(exhausted=True),
     baca.figure([2, -14], 16),
@@ -30,7 +31,8 @@ figures(
     tsd=4,
 )
 
-figures(
+baca.make_figures(
+    figures,
     library.rh_v3,
     section_5.stage_1.lh.next(exhausted=True),
     baca.figure([4, -4], 16, treatments=[(16, 4)]),
@@ -49,7 +51,8 @@ figures(
     tsd=4,
 )
 
-figures(
+baca.make_figures(
+    figures,
     library.rh_v3,
     section_5.stage_2.rh.next(5),
     baca.figure([2], 16, treatments=[-2, -2, 0]),
@@ -74,7 +77,8 @@ figures(
     tsd=4,
 )
 
-figures(
+baca.make_figures(
+    figures,
     library.rh_v3,
     "r4",
     baca.rest_transparent(selector=lambda _: abjad.select.rests(_)),
@@ -82,7 +86,8 @@ figures(
     tsd=4,
 )
 
-figures(
+baca.make_figures(
+    figures,
     library.rh_v3,
     section_5.stage_2.rh.next(5),
     baca.figure([2], 16, treatments=[-2, 0, -2]),
@@ -110,7 +115,8 @@ figures(
     tsd=4,
 )
 
-figures(
+baca.make_figures(
+    figures,
     library.lh_v6,
     section_8.stage_3.lh[2 - 1],
     baca.figure([2, -4], 16, treatments=[4]),
@@ -125,7 +131,8 @@ figures(
     tsd=4,
 )
 
-figures(
+baca.make_figures(
+    figures,
     library.lh_v5,
     section_8.stage_3.rh[5 - 1],
     baca.figure([6, -1], 32, affix=baca.rests_after([4])),
@@ -140,7 +147,8 @@ figures(
     tsd=4,
 )
 
-figures(
+baca.make_figures(
+    figures,
     library.rh_v3,
     section_5.stage_2.rh.next(5),
     baca.figure([2], 16, treatments=[0, -2, -2]),
@@ -165,7 +173,8 @@ figures(
     tsd=4,
 )
 
-figures(
+baca.make_figures(
+    figures,
     library.rh_v3,
     "r4",
     baca.rest_transparent(selector=lambda _: abjad.select.rests(_)),
@@ -173,7 +182,8 @@ figures(
     tsd=4,
 )
 
-figures(
+baca.make_figures(
+    figures,
     library.rh_v3,
     section_5.stage_2.rh.next(6),
     baca.figure([2], 16, treatments=[-2, -2, 0]),
@@ -195,7 +205,8 @@ figures(
     tsd=4,
 )
 
-figures(
+baca.make_figures(
+    figures,
     library.rh_v3,
     "r4",
     baca.rest_transparent(selector=lambda _: abjad.select.rests(_)),
@@ -203,7 +214,8 @@ figures(
     tsd=4,
 )
 
-figures(
+baca.make_figures(
+    figures,
     library.rh_v2,
     section_2.stage_2.rh.next(),
     baca.figure([1], 16),
@@ -221,7 +233,8 @@ figures(
     tsd=4,
 )
 
-figures(
+baca.make_figures(
+    figures,
     library.rh_v2,
     section_2.stage_2.rh.next(),
     baca.figure([1], 16),
@@ -237,7 +250,8 @@ figures(
     tsd=4,
 )
 
-figures(
+baca.make_figures(
+    figures,
     library.rh_v2,
     section_2.stage_2.rh.next(),
     baca.figure([1], 16),
@@ -253,7 +267,8 @@ figures(
     tsd=4,
 )
 
-figures(
+baca.make_figures(
+    figures,
     library.rh_v2,
     section_2.stage_2.rh.next(),
     baca.figure([1], 16),
@@ -269,7 +284,8 @@ figures(
     tsd=4,
 )
 
-figures(
+baca.make_figures(
+    figures,
     library.rh_v2,
     section_2.stage_2.rh.next(exhausted=True),
     baca.figure([1], 16),
@@ -285,7 +301,8 @@ figures(
     tsd=4,
 )
 
-figures(
+baca.make_figures(
+    figures,
     library.lh_resonance,
     [{-35, -23}],
     baca.figure([29], 16),
@@ -295,7 +312,8 @@ figures(
     tsd=4,
 )
 
-figures(
+baca.make_figures(
+    figures,
     library.lh_resonance,
     [{-35, -23}],
     baca.figure([27], 16),
@@ -304,7 +322,8 @@ figures(
     tsd=4,
 )
 
-figures(
+baca.make_figures(
+    figures,
     library.lh_resonance,
     [{-33, -21}],
     baca.figure([21], 16),
@@ -313,7 +332,8 @@ figures(
     tsd=4,
 )
 
-figures(
+baca.make_figures(
+    figures,
     library.lh_resonance,
     [{-33, -21}],
     baca.figure([15], 16),
@@ -322,7 +342,8 @@ figures(
     tsd=4,
 )
 
-figures(
+baca.make_figures(
+    figures,
     library.lh_resonance,
     [{-33, -21}],
     baca.figure([16], 16),
@@ -331,7 +352,8 @@ figures(
     tsd=4,
 )
 
-figures(
+baca.make_figures(
+    figures,
     library.rh_v3,
     section_5.stage_2.rh.next(3, exhausted=True),
     baca.figure([2], 16, treatments=[-2, 0, -2]),
@@ -356,7 +378,8 @@ figures(
     tsd=4,
 )
 
-figures(
+baca.make_figures(
+    figures,
     library.lh_v4,
     section_5.stage_2.lh.next(),
     baca.figure([3, -3], 16, affix=baca.rests_around([8, 8, 8], [6])),
@@ -374,7 +397,8 @@ figures(
     tsd=4,
 )
 
-figures(
+baca.make_figures(
+    figures,
     library.lh_v4,
     section_5.stage_2.lh.next(),
     baca.figure([3, -1], 16, affix=baca.rests_before([8, 8])),
@@ -391,7 +415,8 @@ figures(
     tsd=4,
 )
 
-figures(
+baca.make_figures(
+    figures,
     library.lh_v4,
     section_5.stage_2.lh.next(),
     baca.figure([3, -1], 16),
@@ -405,7 +430,8 @@ figures(
     tsd=4,
 )
 
-figures(
+baca.make_figures(
+    figures,
     library.lh_v4,
     section_5.stage_2.lh.next(),
     baca.figure([3, -1], 16),
@@ -420,7 +446,8 @@ figures(
     tsd=4,
 )
 
-figures(
+baca.make_figures(
+    figures,
     library.lh_v4,
     section_5.stage_2.lh.next(),
     baca.figure([3], 16),
@@ -436,7 +463,8 @@ figures(
     tsd=4,
 )
 
-figures(
+baca.make_figures(
+    figures,
     library.lh_v4,
     section_5.stage_2.lh.next(),
     baca.figure([3], 16),
@@ -452,7 +480,8 @@ figures(
     tsd=4,
 )
 
-figures(
+baca.make_figures(
+    figures,
     library.lh_v4,
     section_5.stage_2.lh.next(),
     baca.figure([3], 16, affix=baca.rests_around([3], [4, 4, 4])),
@@ -468,7 +497,8 @@ figures(
     tsd=4,
 )
 
-figures(
+baca.make_figures(
+    figures,
     library.lh_v4,
     section_5.stage_2.lh.next(),
     baca.figure([2], 16, affix=baca.rests_before([14])),
@@ -486,7 +516,8 @@ figures(
     tsd=4,
 )
 
-figures(
+baca.make_figures(
+    figures,
     library.lh_v4,
     section_5.stage_2.lh.next(exhausted=True),
     baca.figure([2], 16),
@@ -502,7 +533,8 @@ figures(
     tsd=4,
 )
 
-figures(
+baca.make_figures(
+    figures,
     library.lh_v4,
     "r4",
     baca.clef("treble", selector=lambda _: abjad.select.leaf(_, 0)),
