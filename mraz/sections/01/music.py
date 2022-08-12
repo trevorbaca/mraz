@@ -25,15 +25,14 @@ baca.tenuto_function(baca.select.pheads(container))
 baca.markup_function(
     baca.select.pleaf(container, 0), r"\mraz-ottava-brackets-always-govern-markup"
 )
-tuplets = abjad.mutate.eject_contents(container)
 baca.make_figures(
     figures,
     library.rh_v1,
     None,
+    container=container,
     figure_name="4.5.R.3",
     hide_time_signature=True,
     tsd=4,
-    tuplets=tuplets,
 )
 
 collections = section_4.stage_5.lh[:4]
@@ -47,15 +46,14 @@ for run in baca.select.runs(container):
 baca.slur_up_function(container)
 groups = rmakers.nongrace_leaves_in_each_tuplet_function(container)
 rmakers.beam_groups_function(groups)
-tuplets = abjad.mutate.eject_contents(container)
 baca.make_figures(
     figures,
     library.rh_v2,
     None,
     anchor=baca.anchor_to_figure("4.5.R.3"),
+    container=container,
     figure_name="4.5.L.1-4",
     tsd=4,
-    tuplets=tuplets,
 )
 
 baca.make_figures(
