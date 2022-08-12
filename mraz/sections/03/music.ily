@@ -952,20 +952,19 @@ number.3.RH.Music.1 = {
             ef''''!1..
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.tenuto()
+              %! baca.tenuto_function()
             - \tenuto
               %! EXPLICIT_DYNAMIC_COLOR
               %! baca.treat_persistent_wrapper()
               %! EXPLICIT_DYNAMIC
               %! baca._attach_persistent_indicator()
               %! baca._set_status_tag()
-              %! baca.dynamic()
+              %! baca.dynamic_function()
             - \tweak color #(x11-color 'blue)
               %! EXPLICIT_DYNAMIC
               %! baca._attach_persistent_indicator()
               %! baca._set_status_tag()
-              %! baca.dynamic()
+              %! baca.dynamic_function()
             \f
             % MARKUP:
               %! FIGURE_LABEL
@@ -1001,8 +1000,7 @@ number.3.RH.Music.1 = {
             f''''1.
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.tenuto()
+              %! baca.tenuto_function()
             - \tenuto
             % MARKUP:
               %! FIGURE_LABEL
@@ -1038,8 +1036,7 @@ number.3.RH.Music.1 = {
             bf''''!1
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.tenuto()
+              %! baca.tenuto_function()
             - \tenuto
             % MARKUP:
               %! FIGURE_LABEL
@@ -1095,8 +1092,7 @@ number.3.RH.Music.2 = {
     % [RH.Music.2 measure 1]
     % BEFORE:
     % COMMANDS:
-      %! baca.OverrideCommand._call(1)
-      %! baca.script_up()
+      %! baca.script_up_function(1)
     \override Script.direction = #up
     s1 * 1/2
     % ABSOLUTE_BEFORE:
@@ -1117,8 +1113,7 @@ number.3.RH.Music.2 = {
             % [RH.Music.2 measure 2]
             % BEFORE:
             % COMMANDS:
-              %! baca.OverrideCommand._call(1)
-              %! baca.rest_transparent()
+              %! baca.rest_transparent_function(1)
             \once \override Rest.transparent = ##t
             r4
             % CLOSING:
@@ -1149,36 +1144,34 @@ number.3.RH.Music.2 = {
             % [RH.Music.2 measure 3]
             % BEFORE:
             % COMMANDS:
-              %! baca.OverrideCommand._call(1)
-              %! baca.dynamic_text_x_offset()
+              %! baca.dynamic_text_x_offset_function(1)
             \once \override DynamicText.X-offset = 0
-              %! baca.OverrideCommand._call(1)
-              %! baca.stem_down()
+              %! baca.stem_down_function(1)
             \override Stem.direction = #down
+              %! rmakers.beam_groups()
             \set stemLeftBeamCount = 0
+              %! rmakers.beam_groups()
             \set stemRightBeamCount = 2
             % OPENING:
             % COMMANDS:
-              %! baca._attach_persistent_indicator()
-              %! baca.dynamic_down()
+              %! baca.dynamic_down_function()
             \dynamicDown
             fs!16
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.staccato()
+              %! baca.staccato_function()
             - \staccato
               %! EXPLICIT_DYNAMIC_COLOR
               %! baca.treat_persistent_wrapper()
               %! EXPLICIT_DYNAMIC
               %! baca._attach_persistent_indicator()
               %! baca._set_status_tag()
-              %! baca.dynamic()
+              %! baca.dynamic_function()
             - \tweak color #(x11-color 'blue)
               %! EXPLICIT_DYNAMIC
               %! baca._attach_persistent_indicator()
               %! baca._set_status_tag()
-              %! baca.dynamic()
+              %! baca.dynamic_function()
             \ppp
             % MARKUP:
               %! FIGURE_LABEL
@@ -1186,72 +1179,79 @@ number.3.RH.Music.2 = {
               %! FIGURE_LABEL
             %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (2) \hspace #1 "2.2.R.1.1" ] }
             % START_BEAM:
+              %! rmakers.beam_groups()
             [
             % SPANNER_STARTS:
               %! SPANNER_START
               %! baca._do_spanner_indicator_command(1)
+              %! baca.slur_function()
             (
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
             % BEFORE:
             % COMMANDS:
+              %! rmakers.beam_groups()
             \set stemLeftBeamCount = 2
+              %! rmakers.beam_groups()
             \set stemRightBeamCount = 2
             c'16
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.staccato()
+              %! baca.staccato_function()
             - \staccato
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
             % BEFORE:
             % COMMANDS:
+              %! rmakers.beam_groups()
             \set stemLeftBeamCount = 2
+              %! rmakers.beam_groups()
             \set stemRightBeamCount = 2
             e'16
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.staccato()
+              %! baca.staccato_function()
             - \staccato
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
             % BEFORE:
             % COMMANDS:
+              %! rmakers.beam_groups()
             \set stemLeftBeamCount = 2
+              %! rmakers.beam_groups()
             \set stemRightBeamCount = 2
             f'16
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.staccato()
+              %! baca.staccato_function()
             - \staccato
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
             % BEFORE:
             % COMMANDS:
+              %! rmakers.beam_groups()
             \set stemLeftBeamCount = 2
+              %! rmakers.beam_groups()
             \set stemRightBeamCount = 0
             af'!16
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.staccato()
+              %! baca.staccato_function()
             - \staccato
             % SPANNER_STOPS:
               %! SPANNER_STOP
               %! baca._do_spanner_indicator_command(2)
+              %! baca.slur_function()
             )
             % STOP_BEAM:
+              %! rmakers.beam_groups()
             ]
             % COMMANDS:
-              %! baca.OverrideCommand._call(2)
-              %! baca.stem_down()
+              %! baca.stem_down_function(2)
             \revert Stem.direction
             % CLOSING:
             % COMMANDS:
@@ -1281,8 +1281,7 @@ number.3.RH.Music.2 = {
             % [RH.Music.2 measure 4]
             % BEFORE:
             % COMMANDS:
-              %! baca.OverrideCommand._call(1)
-              %! baca.rest_transparent()
+              %! baca.rest_transparent_function(1)
             \once \override Rest.transparent = ##t
             r4
             % CLOSING:
@@ -1319,31 +1318,30 @@ number.3.RH.Music.2 = {
             % [RH.Music.2 measure 6]
             % BEFORE:
             % COMMANDS:
-              %! baca.OverrideCommand._call(1)
-              %! baca.dynamic_text_x_offset()
+              %! baca.dynamic_text_x_offset_function(1)
             \once \override DynamicText.X-offset = 0
-              %! baca.OverrideCommand._call(1)
-              %! baca.stem_down()
+              %! baca.stem_down_function(1)
             \override Stem.direction = #down
+              %! rmakers.beam_groups()
             \set stemLeftBeamCount = 0
+              %! rmakers.beam_groups()
             \set stemRightBeamCount = 2
             fs!16
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.staccato()
+              %! baca.staccato_function()
             - \staccato
               %! REDUNDANT_DYNAMIC_COLOR
               %! baca.treat_persistent_wrapper()
               %! REDUNDANT_DYNAMIC
               %! baca._attach_persistent_indicator()
               %! baca._set_status_tag()
-              %! baca.dynamic()
+              %! baca.dynamic_function()
             - \tweak color #(x11-color 'DeepPink1)
               %! REDUNDANT_DYNAMIC
               %! baca._attach_persistent_indicator()
               %! baca._set_status_tag()
-              %! baca.dynamic()
+              %! baca.dynamic_function()
             \ppp
             % MARKUP:
               %! FIGURE_LABEL
@@ -1351,66 +1349,73 @@ number.3.RH.Music.2 = {
               %! FIGURE_LABEL
             %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (4) \hspace #1 "2.2.R.1.1-2" ] }
             % START_BEAM:
+              %! rmakers.beam_groups()
             [
             % SPANNER_STARTS:
               %! SPANNER_START
               %! baca._do_spanner_indicator_command(1)
+              %! baca.slur_function()
             (
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
             % BEFORE:
             % COMMANDS:
+              %! rmakers.beam_groups()
             \set stemLeftBeamCount = 2
+              %! rmakers.beam_groups()
             \set stemRightBeamCount = 2
             c'16
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.staccato()
+              %! baca.staccato_function()
             - \staccato
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
             % BEFORE:
             % COMMANDS:
+              %! rmakers.beam_groups()
             \set stemLeftBeamCount = 2
+              %! rmakers.beam_groups()
             \set stemRightBeamCount = 2
             e'16
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.staccato()
+              %! baca.staccato_function()
             - \staccato
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
             % BEFORE:
             % COMMANDS:
+              %! rmakers.beam_groups()
             \set stemLeftBeamCount = 2
+              %! rmakers.beam_groups()
             \set stemRightBeamCount = 2
             f'16
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.staccato()
+              %! baca.staccato_function()
             - \staccato
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
             % BEFORE:
             % COMMANDS:
+              %! rmakers.beam_groups()
             \set stemLeftBeamCount = 2
+              %! rmakers.beam_groups()
             \set stemRightBeamCount = 1
             af'!16
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.staccato()
+              %! baca.staccato_function()
             - \staccato
             % SPANNER_STOPS:
               %! SPANNER_STOP
               %! baca._do_spanner_indicator_command(2)
+              %! baca.slur_function()
             )
             % CLOSING:
             % COMMANDS:
@@ -1428,79 +1433,86 @@ number.3.RH.Music.2 = {
 
             % BEFORE:
             % COMMANDS:
+              %! rmakers.beam_groups()
             \set stemLeftBeamCount = 1
+              %! rmakers.beam_groups()
             \set stemRightBeamCount = 2
             bf!16
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.staccato()
+              %! baca.staccato_function()
             - \staccato
             % SPANNER_STARTS:
               %! SPANNER_START
               %! baca._do_spanner_indicator_command(1)
+              %! baca.slur_function()
             (
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
             % BEFORE:
             % COMMANDS:
+              %! rmakers.beam_groups()
             \set stemLeftBeamCount = 2
+              %! rmakers.beam_groups()
             \set stemRightBeamCount = 2
             ef'!16
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.staccato()
+              %! baca.staccato_function()
             - \staccato
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
             % BEFORE:
             % COMMANDS:
+              %! rmakers.beam_groups()
             \set stemLeftBeamCount = 2
+              %! rmakers.beam_groups()
             \set stemRightBeamCount = 2
             b'16
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.staccato()
+              %! baca.staccato_function()
             - \staccato
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
             % BEFORE:
             % COMMANDS:
+              %! rmakers.beam_groups()
             \set stemLeftBeamCount = 2
+              %! rmakers.beam_groups()
             \set stemRightBeamCount = 2
             g''16
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.staccato()
+              %! baca.staccato_function()
             - \staccato
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
             % BEFORE:
             % COMMANDS:
+              %! rmakers.beam_groups()
             \set stemLeftBeamCount = 2
+              %! rmakers.beam_groups()
             \set stemRightBeamCount = 0
             a''16
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.staccato()
+              %! baca.staccato_function()
             - \staccato
             % SPANNER_STOPS:
               %! SPANNER_STOP
               %! baca._do_spanner_indicator_command(2)
+              %! baca.slur_function()
             )
             % STOP_BEAM:
+              %! rmakers.beam_groups()
             ]
             % COMMANDS:
-              %! baca.OverrideCommand._call(2)
-              %! baca.stem_down()
+              %! baca.stem_down_function(2)
             \revert Stem.direction
             % CLOSING:
             % COMMANDS:
@@ -1530,8 +1542,7 @@ number.3.RH.Music.2 = {
             % [RH.Music.2 measure 7]
             % BEFORE:
             % COMMANDS:
-              %! baca.OverrideCommand._call(1)
-              %! baca.rest_transparent()
+              %! baca.rest_transparent_function(1)
             \once \override Rest.transparent = ##t
             r4
             % CLOSING:
@@ -1568,31 +1579,30 @@ number.3.RH.Music.2 = {
             % [RH.Music.2 measure 9]
             % BEFORE:
             % COMMANDS:
-              %! baca.OverrideCommand._call(1)
-              %! baca.dynamic_text_x_offset()
+              %! baca.dynamic_text_x_offset_function(1)
             \once \override DynamicText.X-offset = 0
-              %! baca.OverrideCommand._call(1)
-              %! baca.stem_down()
+              %! baca.stem_down_function(1)
             \override Stem.direction = #down
+              %! rmakers.beam_groups()
             \set stemLeftBeamCount = 0
+              %! rmakers.beam_groups()
             \set stemRightBeamCount = 2
             fs!16
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.staccato()
+              %! baca.staccato_function()
             - \staccato
               %! REDUNDANT_DYNAMIC_COLOR
               %! baca.treat_persistent_wrapper()
               %! REDUNDANT_DYNAMIC
               %! baca._attach_persistent_indicator()
               %! baca._set_status_tag()
-              %! baca.dynamic()
+              %! baca.dynamic_function()
             - \tweak color #(x11-color 'DeepPink1)
               %! REDUNDANT_DYNAMIC
               %! baca._attach_persistent_indicator()
               %! baca._set_status_tag()
-              %! baca.dynamic()
+              %! baca.dynamic_function()
             \ppp
             % MARKUP:
               %! FIGURE_LABEL
@@ -1600,66 +1610,73 @@ number.3.RH.Music.2 = {
               %! FIGURE_LABEL
             %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (7) \hspace #1 "2.2.R.1.1-4" ] }
             % START_BEAM:
+              %! rmakers.beam_groups()
             [
             % SPANNER_STARTS:
               %! SPANNER_START
               %! baca._do_spanner_indicator_command(1)
+              %! baca.slur_function()
             (
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
             % BEFORE:
             % COMMANDS:
+              %! rmakers.beam_groups()
             \set stemLeftBeamCount = 2
+              %! rmakers.beam_groups()
             \set stemRightBeamCount = 2
             c'16
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.staccato()
+              %! baca.staccato_function()
             - \staccato
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
             % BEFORE:
             % COMMANDS:
+              %! rmakers.beam_groups()
             \set stemLeftBeamCount = 2
+              %! rmakers.beam_groups()
             \set stemRightBeamCount = 2
             e'16
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.staccato()
+              %! baca.staccato_function()
             - \staccato
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
             % BEFORE:
             % COMMANDS:
+              %! rmakers.beam_groups()
             \set stemLeftBeamCount = 2
+              %! rmakers.beam_groups()
             \set stemRightBeamCount = 2
             f'16
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.staccato()
+              %! baca.staccato_function()
             - \staccato
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
             % BEFORE:
             % COMMANDS:
+              %! rmakers.beam_groups()
             \set stemLeftBeamCount = 2
+              %! rmakers.beam_groups()
             \set stemRightBeamCount = 1
             af'!16
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.staccato()
+              %! baca.staccato_function()
             - \staccato
             % SPANNER_STOPS:
               %! SPANNER_STOP
               %! baca._do_spanner_indicator_command(2)
+              %! baca.slur_function()
             )
             % CLOSING:
             % COMMANDS:
@@ -1677,73 +1694,80 @@ number.3.RH.Music.2 = {
 
             % BEFORE:
             % COMMANDS:
+              %! rmakers.beam_groups()
             \set stemLeftBeamCount = 1
+              %! rmakers.beam_groups()
             \set stemRightBeamCount = 2
             bf!16
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.staccato()
+              %! baca.staccato_function()
             - \staccato
             % SPANNER_STARTS:
               %! SPANNER_START
               %! baca._do_spanner_indicator_command(1)
+              %! baca.slur_function()
             (
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
             % BEFORE:
             % COMMANDS:
+              %! rmakers.beam_groups()
             \set stemLeftBeamCount = 2
+              %! rmakers.beam_groups()
             \set stemRightBeamCount = 2
             ef'!16
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.staccato()
+              %! baca.staccato_function()
             - \staccato
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
             % BEFORE:
             % COMMANDS:
+              %! rmakers.beam_groups()
             \set stemLeftBeamCount = 2
+              %! rmakers.beam_groups()
             \set stemRightBeamCount = 2
             b'16
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.staccato()
+              %! baca.staccato_function()
             - \staccato
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
             % BEFORE:
             % COMMANDS:
+              %! rmakers.beam_groups()
             \set stemLeftBeamCount = 2
+              %! rmakers.beam_groups()
             \set stemRightBeamCount = 2
             g''16
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.staccato()
+              %! baca.staccato_function()
             - \staccato
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
             % BEFORE:
             % COMMANDS:
+              %! rmakers.beam_groups()
             \set stemLeftBeamCount = 2
+              %! rmakers.beam_groups()
             \set stemRightBeamCount = 1
             a''16
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.staccato()
+              %! baca.staccato_function()
             - \staccato
             % SPANNER_STOPS:
               %! SPANNER_STOP
               %! baca._do_spanner_indicator_command(2)
+              %! baca.slur_function()
             )
             % CLOSING:
             % COMMANDS:
@@ -1761,86 +1785,94 @@ number.3.RH.Music.2 = {
 
             % BEFORE:
             % COMMANDS:
+              %! rmakers.beam_groups()
             \set stemLeftBeamCount = 1
+              %! rmakers.beam_groups()
             \set stemRightBeamCount = 2
             d16
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.staccato()
+              %! baca.staccato_function()
             - \staccato
             % SPANNER_STARTS:
               %! SPANNER_START
               %! baca._do_spanner_indicator_command(1)
+              %! baca.slur_function()
             (
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
             % BEFORE:
             % COMMANDS:
+              %! rmakers.beam_groups()
             \set stemLeftBeamCount = 2
+              %! rmakers.beam_groups()
             \set stemRightBeamCount = 2
             cs'!16
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.staccato()
+              %! baca.staccato_function()
             - \staccato
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
             % BEFORE:
             % COMMANDS:
+              %! rmakers.beam_groups()
             \set stemLeftBeamCount = 2
+              %! rmakers.beam_groups()
             \set stemRightBeamCount = 2
             af'!16
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.staccato()
+              %! baca.staccato_function()
             - \staccato
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
             % BEFORE:
             % COMMANDS:
+              %! rmakers.beam_groups()
             \set stemLeftBeamCount = 2
+              %! rmakers.beam_groups()
             \set stemRightBeamCount = 2
             bf'!16
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.staccato()
+              %! baca.staccato_function()
             - \staccato
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
             % BEFORE:
             % COMMANDS:
+              %! rmakers.beam_groups()
             \set stemLeftBeamCount = 2
+              %! rmakers.beam_groups()
             \set stemRightBeamCount = 2
             ef''!16
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.staccato()
+              %! baca.staccato_function()
             - \staccato
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
             % BEFORE:
             % COMMANDS:
+              %! rmakers.beam_groups()
             \set stemLeftBeamCount = 2
+              %! rmakers.beam_groups()
             \set stemRightBeamCount = 1
             f''16
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.staccato()
+              %! baca.staccato_function()
             - \staccato
             % SPANNER_STOPS:
               %! SPANNER_STOP
               %! baca._do_spanner_indicator_command(2)
+              %! baca.slur_function()
             )
             % CLOSING:
             % COMMANDS:
@@ -1858,79 +1890,86 @@ number.3.RH.Music.2 = {
 
             % BEFORE:
             % COMMANDS:
+              %! rmakers.beam_groups()
             \set stemLeftBeamCount = 1
+              %! rmakers.beam_groups()
             \set stemRightBeamCount = 2
             a16
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.staccato()
+              %! baca.staccato_function()
             - \staccato
             % SPANNER_STARTS:
               %! SPANNER_START
               %! baca._do_spanner_indicator_command(1)
+              %! baca.slur_function()
             (
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
             % BEFORE:
             % COMMANDS:
+              %! rmakers.beam_groups()
             \set stemLeftBeamCount = 2
+              %! rmakers.beam_groups()
             \set stemRightBeamCount = 2
             b16
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.staccato()
+              %! baca.staccato_function()
             - \staccato
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
             % BEFORE:
             % COMMANDS:
+              %! rmakers.beam_groups()
             \set stemLeftBeamCount = 2
+              %! rmakers.beam_groups()
             \set stemRightBeamCount = 2
             g'16
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.staccato()
+              %! baca.staccato_function()
             - \staccato
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
             % BEFORE:
             % COMMANDS:
+              %! rmakers.beam_groups()
             \set stemLeftBeamCount = 2
+              %! rmakers.beam_groups()
             \set stemRightBeamCount = 2
             fs''!16
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.staccato()
+              %! baca.staccato_function()
             - \staccato
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
             % BEFORE:
             % COMMANDS:
+              %! rmakers.beam_groups()
             \set stemLeftBeamCount = 2
+              %! rmakers.beam_groups()
             \set stemRightBeamCount = 0
             c'''16
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.staccato()
+              %! baca.staccato_function()
             - \staccato
             % SPANNER_STOPS:
               %! SPANNER_STOP
               %! baca._do_spanner_indicator_command(2)
+              %! baca.slur_function()
             )
             % STOP_BEAM:
+              %! rmakers.beam_groups()
             ]
             % COMMANDS:
-              %! baca.OverrideCommand._call(2)
-              %! baca.stem_down()
+              %! baca.stem_down_function(2)
             \revert Stem.direction
             % CLOSING:
             % COMMANDS:
@@ -1967,19 +2006,18 @@ number.3.RH.Music.2 = {
             % BEFORE:
             % COMMANDS:
               %! +SECTION
-              %! baca.OverrideCommand._call(1)
-              %! baca.span_bar_extra_offset()
+              %! baca.span_bar_extra_offset_function(1)
             \once \override Score.SpanBar.extra-offset = #'(-0.75 . 0)
               %! SPANNER_START
               %! baca._do_spanner_indicator_command(1)
             \ottava 1
-              %! baca.OverrideCommand._call(1)
-              %! baca.dls_staff_padding()
+              %! baca.dls_staff_padding_function(1)
             \override DynamicLineSpanner.staff-padding = 8
-              %! baca.OverrideCommand._call(1)
-              %! baca.slur_up()
+              %! baca.slur_up_function(1)
             \override Slur.direction = #up
+              %! rmakers.beam_groups()
             \set stemLeftBeamCount = 0
+              %! rmakers.beam_groups()
             \set stemRightBeamCount = 2
             b'16
             % AFTER:
@@ -1990,13 +2028,13 @@ number.3.RH.Music.2 = {
               %! SPANNER_STOP
               %! baca.PiecewiseCommand._call(2)
               %! baca._set_status_tag()
-              %! baca.hairpin()
+              %! baca.hairpin_function()
             - \tweak color #(x11-color 'blue)
               %! EXPLICIT_DYNAMIC
               %! SPANNER_STOP
               %! baca.PiecewiseCommand._call(2)
               %! baca._set_status_tag()
-              %! baca.hairpin()
+              %! baca.hairpin_function()
             \f
             % MARKUP:
               %! FIGURE_LABEL
@@ -2004,10 +2042,12 @@ number.3.RH.Music.2 = {
               %! FIGURE_LABEL
             %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (11) \hspace #1 "4.5.L.1-4" ] }
             % START_BEAM:
+              %! rmakers.beam_groups()
             [
             % SPANNER_STARTS:
               %! SPANNER_START
               %! baca._do_spanner_indicator_command(1)
+              %! baca.slur_function()
             (
               %! EXPLICIT_DYNAMIC_COLOR
               %! baca.treat_persistent_wrapper()
@@ -2015,20 +2055,22 @@ number.3.RH.Music.2 = {
               %! SPANNER_START
               %! baca.PiecewiseCommand._call(2)
               %! baca._set_status_tag()
-              %! baca.hairpin()
+              %! baca.hairpin_function()
             - \tweak color #(x11-color 'blue)
               %! EXPLICIT_DYNAMIC
               %! SPANNER_START
               %! baca.PiecewiseCommand._call(2)
               %! baca._set_status_tag()
-              %! baca.hairpin()
+              %! baca.hairpin_function()
             \<
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
             % BEFORE:
             % COMMANDS:
+              %! rmakers.beam_groups()
             \set stemLeftBeamCount = 2
+              %! rmakers.beam_groups()
             \set stemRightBeamCount = 2
             fs''!16
             % ABSOLUTE_BEFORE:
@@ -2036,7 +2078,9 @@ number.3.RH.Music.2 = {
 
             % BEFORE:
             % COMMANDS:
+              %! rmakers.beam_groups()
             \set stemLeftBeamCount = 2
+              %! rmakers.beam_groups()
             \set stemRightBeamCount = 2
             g''16
             % ABSOLUTE_BEFORE:
@@ -2044,7 +2088,9 @@ number.3.RH.Music.2 = {
 
             % BEFORE:
             % COMMANDS:
+              %! rmakers.beam_groups()
             \set stemLeftBeamCount = 2
+              %! rmakers.beam_groups()
             \set stemRightBeamCount = 2
             a''16
             % ABSOLUTE_BEFORE:
@@ -2052,7 +2098,9 @@ number.3.RH.Music.2 = {
 
             % BEFORE:
             % COMMANDS:
+              %! rmakers.beam_groups()
             \set stemLeftBeamCount = 2
+              %! rmakers.beam_groups()
             \set stemRightBeamCount = 1
             cs'''!16
             % CLOSING:
@@ -2071,7 +2119,9 @@ number.3.RH.Music.2 = {
 
             % BEFORE:
             % COMMANDS:
+              %! rmakers.beam_groups()
             \set stemLeftBeamCount = 1
+              %! rmakers.beam_groups()
             \set stemRightBeamCount = 2
             bf''!16
             % ABSOLUTE_BEFORE:
@@ -2079,7 +2129,9 @@ number.3.RH.Music.2 = {
 
             % BEFORE:
             % COMMANDS:
+              %! rmakers.beam_groups()
             \set stemLeftBeamCount = 2
+              %! rmakers.beam_groups()
             \set stemRightBeamCount = 2
             cs'''!16
             % ABSOLUTE_BEFORE:
@@ -2087,7 +2139,9 @@ number.3.RH.Music.2 = {
 
             % BEFORE:
             % COMMANDS:
+              %! rmakers.beam_groups()
             \set stemLeftBeamCount = 2
+              %! rmakers.beam_groups()
             \set stemRightBeamCount = 2
             af''!16
             % ABSOLUTE_BEFORE:
@@ -2095,7 +2149,9 @@ number.3.RH.Music.2 = {
 
             % BEFORE:
             % COMMANDS:
+              %! rmakers.beam_groups()
             \set stemLeftBeamCount = 2
+              %! rmakers.beam_groups()
             \set stemRightBeamCount = 2
             a''16
             % ABSOLUTE_BEFORE:
@@ -2103,7 +2159,9 @@ number.3.RH.Music.2 = {
 
             % BEFORE:
             % COMMANDS:
+              %! rmakers.beam_groups()
             \set stemLeftBeamCount = 2
+              %! rmakers.beam_groups()
             \set stemRightBeamCount = 1
             b''16
             % CLOSING:
@@ -2122,7 +2180,9 @@ number.3.RH.Music.2 = {
 
             % BEFORE:
             % COMMANDS:
+              %! rmakers.beam_groups()
             \set stemLeftBeamCount = 1
+              %! rmakers.beam_groups()
             \set stemRightBeamCount = 2
             ef'''!16
             % ABSOLUTE_BEFORE:
@@ -2130,7 +2190,9 @@ number.3.RH.Music.2 = {
 
             % BEFORE:
             % COMMANDS:
+              %! rmakers.beam_groups()
             \set stemLeftBeamCount = 2
+              %! rmakers.beam_groups()
             \set stemRightBeamCount = 2
             c''''16
             % ABSOLUTE_BEFORE:
@@ -2138,7 +2200,9 @@ number.3.RH.Music.2 = {
 
             % BEFORE:
             % COMMANDS:
+              %! rmakers.beam_groups()
             \set stemLeftBeamCount = 2
+              %! rmakers.beam_groups()
             \set stemRightBeamCount = 2
             bf'''!16
             % ABSOLUTE_BEFORE:
@@ -2146,7 +2210,9 @@ number.3.RH.Music.2 = {
 
             % BEFORE:
             % COMMANDS:
+              %! rmakers.beam_groups()
             \set stemLeftBeamCount = 2
+              %! rmakers.beam_groups()
             \set stemRightBeamCount = 2
             b'''16
             % ABSOLUTE_BEFORE:
@@ -2154,7 +2220,9 @@ number.3.RH.Music.2 = {
 
             % BEFORE:
             % COMMANDS:
+              %! rmakers.beam_groups()
             \set stemLeftBeamCount = 2
+              %! rmakers.beam_groups()
             \set stemRightBeamCount = 1
             cs''''!16
             % CLOSING:
@@ -2173,7 +2241,9 @@ number.3.RH.Music.2 = {
 
             % BEFORE:
             % COMMANDS:
+              %! rmakers.beam_groups()
             \set stemLeftBeamCount = 1
+              %! rmakers.beam_groups()
             \set stemRightBeamCount = 2
             f''''16
             % ABSOLUTE_BEFORE:
@@ -2181,7 +2251,9 @@ number.3.RH.Music.2 = {
 
             % BEFORE:
             % COMMANDS:
+              %! rmakers.beam_groups()
             \set stemLeftBeamCount = 2
+              %! rmakers.beam_groups()
             \set stemRightBeamCount = 2
             d''''16
             % ABSOLUTE_BEFORE:
@@ -2189,7 +2261,9 @@ number.3.RH.Music.2 = {
 
             % BEFORE:
             % COMMANDS:
+              %! rmakers.beam_groups()
             \set stemLeftBeamCount = 2
+              %! rmakers.beam_groups()
             \set stemRightBeamCount = 2
             c''''16
             % ABSOLUTE_BEFORE:
@@ -2197,7 +2271,9 @@ number.3.RH.Music.2 = {
 
             % BEFORE:
             % COMMANDS:
+              %! rmakers.beam_groups()
             \set stemLeftBeamCount = 2
+              %! rmakers.beam_groups()
             \set stemRightBeamCount = 0
             cs''''!16
             % AFTER:
@@ -2208,32 +2284,31 @@ number.3.RH.Music.2 = {
               %! SPANNER_STOP
               %! baca.PiecewiseCommand._call(3)
               %! baca._set_status_tag()
-              %! baca.hairpin()
+              %! baca.hairpin_function()
             - \tweak color #(x11-color 'blue)
               %! EXPLICIT_DYNAMIC
               %! SPANNER_STOP
               %! baca.PiecewiseCommand._call(3)
               %! baca._set_status_tag()
-              %! baca.hairpin()
+              %! baca.hairpin_function()
             \ff
             % SPANNER_STOPS:
               %! SPANNER_STOP
               %! baca._do_spanner_indicator_command(2)
+              %! baca.slur_function()
             )
             % STOP_BEAM:
+              %! rmakers.beam_groups()
             ]
             % COMMANDS:
               %! SPANNER_STOP
               %! baca._do_spanner_indicator_command(2)
             \ottava 0
-              %! baca.OverrideCommand._call(2)
-              %! baca.dls_staff_padding()
+              %! baca.dls_staff_padding_function(2)
             \revert DynamicLineSpanner.staff-padding
-              %! baca.OverrideCommand._call(2)
-              %! baca.script_up()
+              %! baca.script_up_function(2)
             \revert Script.direction
-              %! baca.OverrideCommand._call(2)
-              %! baca.slur_up()
+              %! baca.slur_up_function(2)
             \revert Slur.direction
             % CLOSING:
             % COMMANDS:
@@ -2298,11 +2373,9 @@ number.3.RH.Music.3 = {
             % [RH.Music.3 measure 8]
             % BEFORE:
             % COMMANDS:
-              %! baca.OverrideCommand._call(1)
-              %! baca.tuplet_bracket_up()
+              %! baca.tuplet_bracket_up_function(1)
             \override TupletBracket.direction = #up
-              %! baca.OverrideCommand._call(1)
-              %! baca.tuplet_bracket_staff_padding()
+              %! baca.tuplet_bracket_staff_padding_function(1)
             \override TupletBracket.staff-padding = 3
             ef!8
             % AFTER:
@@ -2312,12 +2385,12 @@ number.3.RH.Music.3 = {
               %! EXPLICIT_DYNAMIC
               %! baca._attach_persistent_indicator()
               %! baca._set_status_tag()
-              %! baca.dynamic()
+              %! baca.dynamic_function()
             - \tweak color #(x11-color 'blue)
               %! EXPLICIT_DYNAMIC
               %! baca._attach_persistent_indicator()
               %! baca._set_status_tag()
-              %! baca.dynamic()
+              %! baca.dynamic_function()
             \ff
             % MARKUP:
               %! FIGURE_LABEL
@@ -2350,11 +2423,9 @@ number.3.RH.Music.3 = {
             r4
             % AFTER:
             % COMMANDS:
-              %! baca.OverrideCommand._call(2)
-              %! baca.tuplet_bracket_up()
+              %! baca.tuplet_bracket_up_function(2)
             \revert TupletBracket.direction
-              %! baca.OverrideCommand._call(2)
-              %! baca.tuplet_bracket_staff_padding()
+              %! baca.tuplet_bracket_staff_padding_function(2)
             \revert TupletBracket.staff-padding
             % CLOSING:
             % COMMANDS:
@@ -2419,7 +2490,9 @@ number.3.RH.Music.4 = {
             % [RH.Music.4 measure 1]
             % BEFORE:
             % COMMANDS:
+              %! rmakers.beam_groups()
             \set stemLeftBeamCount = 0
+              %! rmakers.beam_groups()
             \set stemRightBeamCount = 2
             d''16
             % AFTER:
@@ -2429,12 +2502,12 @@ number.3.RH.Music.4 = {
               %! EXPLICIT_DYNAMIC
               %! baca._attach_persistent_indicator()
               %! baca._set_status_tag()
-              %! baca.dynamic()
+              %! baca.dynamic_function()
             - \tweak color #(x11-color 'blue)
               %! EXPLICIT_DYNAMIC
               %! baca._attach_persistent_indicator()
               %! baca._set_status_tag()
-              %! baca.dynamic()
+              %! baca.dynamic_function()
             \ff
             % MARKUP:
               %! FIGURE_LABEL
@@ -2442,13 +2515,16 @@ number.3.RH.Music.4 = {
               %! FIGURE_LABEL
             %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (1) \hspace #1 "7.1.L.5" ] }
             % START_BEAM:
+              %! rmakers.beam_groups()
             [
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
             % BEFORE:
             % COMMANDS:
+              %! rmakers.beam_groups()
             \set stemLeftBeamCount = 2
+              %! rmakers.beam_groups()
             \set stemRightBeamCount = 2
             af'!16
             % ABSOLUTE_BEFORE:
@@ -2456,7 +2532,9 @@ number.3.RH.Music.4 = {
 
             % BEFORE:
             % COMMANDS:
+              %! rmakers.beam_groups()
             \set stemLeftBeamCount = 2
+              %! rmakers.beam_groups()
             \set stemRightBeamCount = 2
             c''16
             % ABSOLUTE_BEFORE:
@@ -2464,7 +2542,9 @@ number.3.RH.Music.4 = {
 
             % BEFORE:
             % COMMANDS:
+              %! rmakers.beam_groups()
             \set stemLeftBeamCount = 2
+              %! rmakers.beam_groups()
             \set stemRightBeamCount = 2
             cs''!16
             % ABSOLUTE_BEFORE:
@@ -2472,7 +2552,9 @@ number.3.RH.Music.4 = {
 
             % BEFORE:
             % COMMANDS:
+              %! rmakers.beam_groups()
             \set stemLeftBeamCount = 2
+              %! rmakers.beam_groups()
             \set stemRightBeamCount = 2
             e''16
             % ABSOLUTE_BEFORE:
@@ -2480,7 +2562,9 @@ number.3.RH.Music.4 = {
 
             % BEFORE:
             % COMMANDS:
+              %! rmakers.beam_groups()
             \set stemLeftBeamCount = 2
+              %! rmakers.beam_groups()
             \set stemRightBeamCount = 2
             fs''!16
             % ABSOLUTE_BEFORE:
@@ -2488,11 +2572,14 @@ number.3.RH.Music.4 = {
 
             % BEFORE:
             % COMMANDS:
+              %! rmakers.beam_groups()
             \set stemLeftBeamCount = 2
+              %! rmakers.beam_groups()
             \set stemRightBeamCount = 0
             b''16
             % AFTER:
             % STOP_BEAM:
+              %! rmakers.beam_groups()
             ]
             % CLOSING:
             % COMMANDS:
@@ -2529,7 +2616,9 @@ number.3.RH.Music.4 = {
             % [RH.Music.4 measure 5]
             % BEFORE:
             % COMMANDS:
+              %! rmakers.beam_groups()
             \set stemLeftBeamCount = 0
+              %! rmakers.beam_groups()
             \set stemRightBeamCount = 2
             d''16
             % AFTER:
@@ -2539,12 +2628,12 @@ number.3.RH.Music.4 = {
               %! EXPLICIT_DYNAMIC
               %! baca._attach_persistent_indicator()
               %! baca._set_status_tag()
-              %! baca.dynamic()
+              %! baca.dynamic_function()
             - \tweak color #(x11-color 'blue)
               %! EXPLICIT_DYNAMIC
               %! baca._attach_persistent_indicator()
               %! baca._set_status_tag()
-              %! baca.dynamic()
+              %! baca.dynamic_function()
             \p
             % MARKUP:
               %! FIGURE_LABEL
@@ -2552,13 +2641,16 @@ number.3.RH.Music.4 = {
               %! FIGURE_LABEL
             %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (3) \hspace #1 "7.1.L.5'" ] }
             % START_BEAM:
+              %! rmakers.beam_groups()
             [
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
             % BEFORE:
             % COMMANDS:
+              %! rmakers.beam_groups()
             \set stemLeftBeamCount = 2
+              %! rmakers.beam_groups()
             \set stemRightBeamCount = 2
             af'!16
             % ABSOLUTE_BEFORE:
@@ -2566,7 +2658,9 @@ number.3.RH.Music.4 = {
 
             % BEFORE:
             % COMMANDS:
+              %! rmakers.beam_groups()
             \set stemLeftBeamCount = 2
+              %! rmakers.beam_groups()
             \set stemRightBeamCount = 2
             c''16
             % ABSOLUTE_BEFORE:
@@ -2574,7 +2668,9 @@ number.3.RH.Music.4 = {
 
             % BEFORE:
             % COMMANDS:
+              %! rmakers.beam_groups()
             \set stemLeftBeamCount = 2
+              %! rmakers.beam_groups()
             \set stemRightBeamCount = 2
             cs''!16
             % ABSOLUTE_BEFORE:
@@ -2582,7 +2678,9 @@ number.3.RH.Music.4 = {
 
             % BEFORE:
             % COMMANDS:
+              %! rmakers.beam_groups()
             \set stemLeftBeamCount = 2
+              %! rmakers.beam_groups()
             \set stemRightBeamCount = 2
             e''16
             % ABSOLUTE_BEFORE:
@@ -2590,7 +2688,9 @@ number.3.RH.Music.4 = {
 
             % BEFORE:
             % COMMANDS:
+              %! rmakers.beam_groups()
             \set stemLeftBeamCount = 2
+              %! rmakers.beam_groups()
             \set stemRightBeamCount = 2
             fs''!16
             % ABSOLUTE_BEFORE:
@@ -2598,11 +2698,14 @@ number.3.RH.Music.4 = {
 
             % BEFORE:
             % COMMANDS:
+              %! rmakers.beam_groups()
             \set stemLeftBeamCount = 2
+              %! rmakers.beam_groups()
             \set stemRightBeamCount = 0
             b''16
             % AFTER:
             % STOP_BEAM:
+              %! rmakers.beam_groups()
             ]
             % CLOSING:
             % COMMANDS:
@@ -3042,13 +3145,11 @@ number.3.LH.Music.5 = {
             % [LH.Music.5 measure 8]
             % BEFORE:
             % COMMANDS:
-              %! baca.OverrideCommand._call(1)
-              %! baca.rest_up()
+              %! baca.rest_up_function(1)
             \override Rest.direction = #up
             % OPENING:
             % COMMANDS:
-              %! baca._attach_persistent_indicator()
-              %! baca.dynamic_down()
+              %! baca.dynamic_down_function()
             \dynamicDown
             r2.
             % ABSOLUTE_BEFORE:
@@ -3057,20 +3158,19 @@ number.3.LH.Music.5 = {
             af!8.
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.tenuto()
+              %! baca.tenuto_function()
             - \tenuto
               %! EXPLICIT_DYNAMIC_COLOR
               %! baca.treat_persistent_wrapper()
               %! EXPLICIT_DYNAMIC
               %! baca._attach_persistent_indicator()
               %! baca._set_status_tag()
-              %! baca.dynamic()
+              %! baca.dynamic_function()
             - \tweak color #(x11-color 'blue)
               %! EXPLICIT_DYNAMIC
               %! baca._attach_persistent_indicator()
               %! baca._set_status_tag()
-              %! baca.dynamic()
+              %! baca.dynamic_function()
             \f
             % MARKUP:
               %! FIGURE_LABEL
@@ -3087,8 +3187,7 @@ number.3.LH.Music.5 = {
             d'8.
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.tenuto()
+              %! baca.tenuto_function()
             - \tenuto
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -3100,8 +3199,7 @@ number.3.LH.Music.5 = {
             e'8.
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.tenuto()
+              %! baca.tenuto_function()
             - \tenuto
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -3109,8 +3207,7 @@ number.3.LH.Music.5 = {
             r16
             % AFTER:
             % COMMANDS:
-              %! baca.OverrideCommand._call(2)
-              %! baca.rest_up()
+              %! baca.rest_up_function(2)
             \revert Rest.direction
             % CLOSING:
             % COMMANDS:
@@ -3230,17 +3327,13 @@ number.3.LH.ResonanceVoice = {
             % [LH.ResonanceVoice measure 1]
             % BEFORE:
             % COMMANDS:
-              %! baca.OverrideCommand._call(1)
-              %! baca.beam_stencil_false()
+              %! baca.beam_stencil_false_function(1)
             \override Beam.stencil = ##f
-              %! baca.OverrideCommand._call(1)
-              %! baca.dots_stencil_false()
+              %! baca.dots_stencil_false_function(1)
             \override Dots.stencil = ##f
-              %! baca.OverrideCommand._call(1)
-              %! baca.flag_stencil_false()
+              %! baca.flag_stencil_false_function(1)
             \override Flag.stencil = ##f
-              %! baca.OverrideCommand._call(1)
-              %! baca.stem_stencil_false()
+              %! baca.stem_stencil_false_function(1)
             \override Stem.stencil = ##f
             <e, fs,! gs,! as,! b,>2
             % AFTER:
@@ -3277,29 +3370,21 @@ number.3.LH.ResonanceVoice = {
             % [LH.ResonanceVoice measure 2]
             % BEFORE:
             % COMMANDS:
-              %! baca.OverrideCommand._call(1)
-              %! baca.accidental_transparent()
+              %! baca.accidental_transparent_function(1)
             \once \override Accidental.transparent = ##t
-              %! baca.OverrideCommand._call(1)
-              %! baca.beam_transparent()
+              %! baca.beam_transparent_function(1)
             \once \override Beam.transparent = ##t
-              %! baca.OverrideCommand._call(1)
-              %! baca.flag_transparent()
+              %! baca.flag_transparent_function(1)
             \once \override Flag.transparent = ##t
-              %! baca.OverrideCommand._call(1)
-              %! baca.note_head_no_ledgers()
+              %! baca.note_head_no_ledgers_function(1)
             \once \override NoteHead.no-ledgers = ##t
-              %! baca.OverrideCommand._call(1)
-              %! baca.note_head_transparent()
+              %! baca.note_head_transparent_function(1)
             \once \override NoteHead.transparent = ##t
-              %! baca.OverrideCommand._call(1)
-              %! baca.repeat_tie_transparent()
+              %! baca.repeat_tie_transparent_function(1)
             \once \override RepeatTie.transparent = ##t
-              %! baca.OverrideCommand._call(1)
-              %! baca.stem_transparent()
+              %! baca.stem_transparent_function(1)
             \once \override Stem.transparent = ##t
-              %! baca.OverrideCommand._call(1)
-              %! baca.accidental_stencil_false()
+              %! baca.accidental_stencil_false_function(1)
             \override Accidental.stencil = ##f
             <e, fs, gs, as, b,>4
             % AFTER:
@@ -3308,8 +3393,7 @@ number.3.LH.ResonanceVoice = {
             - \tweak stencil ##f
               %! baca._attach_shadow_tie_indicators()
             ~
-              %! baca._attach_persistent_indicator()
-              %! baca.repeat_tie()
+              %! baca.repeat_tie_function()
             \repeatTie
             % CLOSING:
             % COMMANDS:
@@ -3344,36 +3428,30 @@ number.3.LH.ResonanceVoice = {
             - \tweak stencil ##f
               %! baca._attach_shadow_tie_indicators()
             ~
-              %! baca._attach_persistent_indicator()
-              %! baca.repeat_tie()
+              %! baca.repeat_tie_function()
             \repeatTie
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
             % BEFORE:
             % COMMANDS:
-              %! baca.OverrideCommand._call(1)
-              %! baca.accidental_transparent()
+              %! baca.accidental_transparent_function(1)
             \once \override Accidental.transparent = ##t
-              %! baca.OverrideCommand._call(1)
-              %! baca.beam_transparent()
+              %! baca.beam_transparent_function(1)
             \once \override Beam.transparent = ##t
-              %! baca.OverrideCommand._call(1)
-              %! baca.flag_transparent()
+              %! baca.flag_transparent_function(1)
             \once \override Flag.transparent = ##t
-              %! baca.OverrideCommand._call(1)
-              %! baca.note_head_no_ledgers()
+              %! baca.note_head_no_ledgers_function(1)
             \once \override NoteHead.no-ledgers = ##t
-              %! baca.OverrideCommand._call(1)
-              %! baca.note_head_transparent()
+              %! baca.note_head_transparent_function(1)
             \once \override NoteHead.transparent = ##t
-              %! baca.OverrideCommand._call(1)
-              %! baca.repeat_tie_transparent()
+              %! baca.repeat_tie_transparent_function(1)
             \once \override RepeatTie.transparent = ##t
-              %! baca.OverrideCommand._call(1)
-              %! baca.stem_transparent()
+              %! baca.stem_transparent_function(1)
             \once \override Stem.transparent = ##t
+              %! rmakers.beam_groups()
             \set stemLeftBeamCount = 2
+              %! rmakers.beam_groups()
             \set stemRightBeamCount = 0
             <e, fs, gs, as, b,>16
             % AFTER:
@@ -3382,8 +3460,7 @@ number.3.LH.ResonanceVoice = {
             - \tweak stencil ##f
               %! baca._attach_shadow_tie_indicators()
             ~
-              %! baca._attach_persistent_indicator()
-              %! baca.repeat_tie()
+              %! baca.repeat_tie_function()
             \repeatTie
             % CLOSING:
             % COMMANDS:
@@ -3413,26 +3490,19 @@ number.3.LH.ResonanceVoice = {
             % [LH.ResonanceVoice measure 4]
             % BEFORE:
             % COMMANDS:
-              %! baca.OverrideCommand._call(1)
-              %! baca.accidental_transparent()
+              %! baca.accidental_transparent_function(1)
             \once \override Accidental.transparent = ##t
-              %! baca.OverrideCommand._call(1)
-              %! baca.beam_transparent()
+              %! baca.beam_transparent_function(1)
             \once \override Beam.transparent = ##t
-              %! baca.OverrideCommand._call(1)
-              %! baca.flag_transparent()
+              %! baca.flag_transparent_function(1)
             \once \override Flag.transparent = ##t
-              %! baca.OverrideCommand._call(1)
-              %! baca.note_head_no_ledgers()
+              %! baca.note_head_no_ledgers_function(1)
             \once \override NoteHead.no-ledgers = ##t
-              %! baca.OverrideCommand._call(1)
-              %! baca.note_head_transparent()
+              %! baca.note_head_transparent_function(1)
             \once \override NoteHead.transparent = ##t
-              %! baca.OverrideCommand._call(1)
-              %! baca.repeat_tie_transparent()
+              %! baca.repeat_tie_transparent_function(1)
             \once \override RepeatTie.transparent = ##t
-              %! baca.OverrideCommand._call(1)
-              %! baca.stem_transparent()
+              %! baca.stem_transparent_function(1)
             \once \override Stem.transparent = ##t
             <e, fs, gs, as, b,>4
             % AFTER:
@@ -3441,8 +3511,7 @@ number.3.LH.ResonanceVoice = {
             - \tweak stencil ##f
               %! baca._attach_shadow_tie_indicators()
             ~
-              %! baca._attach_persistent_indicator()
-              %! baca.repeat_tie()
+              %! baca.repeat_tie_function()
             \repeatTie
             % CLOSING:
             % COMMANDS:
@@ -3477,8 +3546,7 @@ number.3.LH.ResonanceVoice = {
             - \tweak stencil ##f
               %! baca._attach_shadow_tie_indicators()
             ~
-              %! baca._attach_persistent_indicator()
-              %! baca.repeat_tie()
+              %! baca.repeat_tie_function()
             \repeatTie
             % CLOSING:
             % COMMANDS:
@@ -3513,42 +3581,35 @@ number.3.LH.ResonanceVoice = {
             - \tweak stencil ##f
               %! baca._attach_shadow_tie_indicators()
             ~
-              %! baca._attach_persistent_indicator()
-              %! baca.repeat_tie()
+              %! baca.repeat_tie_function()
             \repeatTie
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
             % BEFORE:
             % COMMANDS:
-              %! baca.OverrideCommand._call(1)
-              %! baca.accidental_transparent()
+              %! baca.accidental_transparent_function(1)
             \once \override Accidental.transparent = ##t
-              %! baca.OverrideCommand._call(1)
-              %! baca.beam_transparent()
+              %! baca.beam_transparent_function(1)
             \once \override Beam.transparent = ##t
-              %! baca.OverrideCommand._call(1)
-              %! baca.flag_transparent()
+              %! baca.flag_transparent_function(1)
             \once \override Flag.transparent = ##t
-              %! baca.OverrideCommand._call(1)
-              %! baca.note_head_no_ledgers()
+              %! baca.note_head_no_ledgers_function(1)
             \once \override NoteHead.no-ledgers = ##t
-              %! baca.OverrideCommand._call(1)
-              %! baca.note_head_transparent()
+              %! baca.note_head_transparent_function(1)
             \once \override NoteHead.transparent = ##t
-              %! baca.OverrideCommand._call(1)
-              %! baca.repeat_tie_transparent()
+              %! baca.repeat_tie_transparent_function(1)
             \once \override RepeatTie.transparent = ##t
-              %! baca.OverrideCommand._call(1)
-              %! baca.stem_transparent()
+              %! baca.stem_transparent_function(1)
             \once \override Stem.transparent = ##t
+              %! rmakers.beam_groups()
             \set stemLeftBeamCount = 1
+              %! rmakers.beam_groups()
             \set stemRightBeamCount = 0
             <e, fs, gs, as, b,>8
             % AFTER:
             % SPANNER_STARTS:
-              %! baca._attach_persistent_indicator()
-              %! baca.repeat_tie()
+              %! baca.repeat_tie_function()
             \repeatTie
             % CLOSING:
             % COMMANDS:
@@ -3568,8 +3629,7 @@ number.3.LH.ResonanceVoice = {
     s1 * 7/4
     % AFTER:
     % COMMANDS:
-      %! baca.OverrideCommand._call(2)
-      %! baca.accidental_stencil_false()
+      %! baca.accidental_stencil_false_function(2)
     \revert Accidental.stencil
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -3589,8 +3649,7 @@ number.3.LH.ResonanceVoice = {
             % [LH.ResonanceVoice measure 9]
             % BEFORE:
             % COMMANDS:
-              %! baca.OverrideCommand._call(1)
-              %! baca.accidental_x_extent_false()
+              %! baca.accidental_x_extent_false_function(1)
             \once \override Accidental.X-extent = ##f
             <e, fs,! gs,! as,! b,>1
             % AFTER:
@@ -3604,26 +3663,19 @@ number.3.LH.ResonanceVoice = {
 
             % BEFORE:
             % COMMANDS:
-              %! baca.OverrideCommand._call(1)
-              %! baca.accidental_transparent()
+              %! baca.accidental_transparent_function(1)
             \override Accidental.transparent = ##t
-              %! baca.OverrideCommand._call(1)
-              %! baca.beam_transparent()
+              %! baca.beam_transparent_function(1)
             \override Beam.transparent = ##t
-              %! baca.OverrideCommand._call(1)
-              %! baca.flag_transparent()
+              %! baca.flag_transparent_function(1)
             \override Flag.transparent = ##t
-              %! baca.OverrideCommand._call(1)
-              %! baca.note_head_no_ledgers()
+              %! baca.note_head_no_ledgers_function(1)
             \override NoteHead.no-ledgers = ##t
-              %! baca.OverrideCommand._call(1)
-              %! baca.note_head_transparent()
+              %! baca.note_head_transparent_function(1)
             \override NoteHead.transparent = ##t
-              %! baca.OverrideCommand._call(1)
-              %! baca.repeat_tie_transparent()
+              %! baca.repeat_tie_transparent_function(1)
             \override RepeatTie.transparent = ##t
-              %! baca.OverrideCommand._call(1)
-              %! baca.stem_transparent()
+              %! baca.stem_transparent_function(1)
             \override Stem.transparent = ##t
             <e, fs, gs, as, b,>4
             % AFTER:
@@ -3632,15 +3684,16 @@ number.3.LH.ResonanceVoice = {
             - \tweak stencil ##f
               %! baca._attach_shadow_tie_indicators()
             ~
-              %! baca._attach_persistent_indicator()
-              %! baca.repeat_tie()
+              %! baca.repeat_tie_function()
             \repeatTie
             % ABSOLUTE_BEFORE:
             % COMMANDS:
 
             % BEFORE:
             % COMMANDS:
+              %! rmakers.beam_groups()
             \set stemLeftBeamCount = 2
+              %! rmakers.beam_groups()
             \set stemRightBeamCount = 0
             <e, fs, gs, as, b,>16
             % AFTER:
@@ -3649,30 +3702,22 @@ number.3.LH.ResonanceVoice = {
             - \tweak stencil ##f
               %! baca._attach_shadow_tie_indicators()
             ~
-              %! baca._attach_persistent_indicator()
-              %! baca.repeat_tie()
+              %! baca.repeat_tie_function()
             \repeatTie
             % COMMANDS:
-              %! baca.OverrideCommand._call(2)
-              %! baca.accidental_transparent()
+              %! baca.accidental_transparent_function(2)
             \revert Accidental.transparent
-              %! baca.OverrideCommand._call(2)
-              %! baca.beam_transparent()
+              %! baca.beam_transparent_function(2)
             \revert Beam.transparent
-              %! baca.OverrideCommand._call(2)
-              %! baca.flag_transparent()
+              %! baca.flag_transparent_function(2)
             \revert Flag.transparent
-              %! baca.OverrideCommand._call(2)
-              %! baca.note_head_no_ledgers()
+              %! baca.note_head_no_ledgers_function(2)
             \revert NoteHead.no-ledgers
-              %! baca.OverrideCommand._call(2)
-              %! baca.note_head_transparent()
+              %! baca.note_head_transparent_function(2)
             \revert NoteHead.transparent
-              %! baca.OverrideCommand._call(2)
-              %! baca.repeat_tie_transparent()
+              %! baca.repeat_tie_transparent_function(2)
             \revert RepeatTie.transparent
-              %! baca.OverrideCommand._call(2)
-              %! baca.stem_transparent()
+              %! baca.stem_transparent_function(2)
             \revert Stem.transparent
             % CLOSING:
             % COMMANDS:
@@ -3702,8 +3747,7 @@ number.3.LH.ResonanceVoice = {
             % [LH.ResonanceVoice measure 10]
             % BEFORE:
             % COMMANDS:
-              %! baca.OverrideCommand._call(1)
-              %! baca.accidental_stencil_false()
+              %! baca.accidental_stencil_false_function(1)
             \override Accidental.stencil = ##f
             <e, fs, gs, as, b,>1..
             % AFTER:
@@ -3712,8 +3756,7 @@ number.3.LH.ResonanceVoice = {
             - \tweak stencil ##f
               %! baca._attach_shadow_tie_indicators()
             ~
-              %! baca._attach_persistent_indicator()
-              %! baca.repeat_tie()
+              %! baca.repeat_tie_function()
             \repeatTie
             % CLOSING:
             % COMMANDS:
@@ -3744,8 +3787,7 @@ number.3.LH.ResonanceVoice = {
             <e, fs, gs, as, b,>1.
             % AFTER:
             % SPANNER_STARTS:
-              %! baca._attach_persistent_indicator()
-              %! baca.repeat_tie()
+              %! baca.repeat_tie_function()
             \repeatTie
             % CLOSING:
             % COMMANDS:
@@ -3765,20 +3807,15 @@ number.3.LH.ResonanceVoice = {
     s1 * 1
     % AFTER:
     % COMMANDS:
-      %! baca.OverrideCommand._call(2)
-      %! baca.accidental_stencil_false()
+      %! baca.accidental_stencil_false_function(2)
     \revert Accidental.stencil
-      %! baca.OverrideCommand._call(2)
-      %! baca.beam_stencil_false()
+      %! baca.beam_stencil_false_function(2)
     \revert Beam.stencil
-      %! baca.OverrideCommand._call(2)
-      %! baca.dots_stencil_false()
+      %! baca.dots_stencil_false_function(2)
     \revert Dots.stencil
-      %! baca.OverrideCommand._call(2)
-      %! baca.flag_stencil_false()
+      %! baca.flag_stencil_false_function(2)
     \revert Flag.stencil
-      %! baca.OverrideCommand._call(2)
-      %! baca.stem_stencil_false()
+      %! baca.stem_stencil_false_function(2)
     \revert Stem.stencil
     % CLOSING:
     % COMMANDS:

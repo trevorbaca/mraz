@@ -107,6 +107,13 @@ def clean_up_repeat_ties():
     ]
 
 
+def clean_up_repeat_ties_function(argument):
+    baca.beam_stencil_false_function(argument)
+    baca.dots_stencil_false_function(argument)
+    baca.flag_stencil_false_function(argument)
+    baca.stem_stencil_false_function(argument)
+
+
 def instruments():
     return dict([("Piano", abjad.Piano())])
 
@@ -1295,6 +1302,16 @@ def transparent_music(selector):
         baca.repeat_tie_transparent(selector=selector),
         baca.stem_transparent(selector=selector),
     ]
+
+
+def transparent_music_function(argument):
+    baca.note_head_no_ledgers_function(argument, True)
+    baca.accidental_transparent_function(argument)
+    baca.beam_transparent_function(argument)
+    baca.flag_transparent_function(argument)
+    baca.note_head_transparent_function(argument)
+    baca.repeat_tie_transparent_function(argument)
+    baca.stem_transparent_function(argument)
 
 
 def voice_abbreviations():

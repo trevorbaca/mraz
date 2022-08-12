@@ -16,303 +16,378 @@ section_6 = library.moment_6()
 section_7 = library.moment_7()
 resonance = set("e, fs, gs, as, b,".split())
 
+collections = [_.transpose(4 * 7) for _ in section_7.stage_1.lh[-1]]
+container = baca.figure_function(collections, [1], 16, treatments=[1])
+rmakers.beam_groups_function(container)
+baca.register_function(container, 6, 6 + 10)
+imbrications = baca.imbricate_function(
+    container,
+    library.rh_v4_i,
+    [14, 18],
+)
+for value in imbrications.values():
+    rmakers.unbeam_function(value)
+baca.dynamic_function(baca.select.phead(container, 0), "ff")
 baca.make_figures(
     figures,
     library.rh_v4,
-    [_.transpose(4 * 7) for _ in section_7.stage_1.lh[-1]],
-    baca.figure([1], 16, treatments=[1]),
-    rmakers.beam_groups(),
-    baca.register(6, 6 + 10),
-    baca.imbricate(
-        library.rh_v4_i,
-        [14, 18],
-        rmakers.unbeam(),
-    ),
-    baca.dynamic("ff", selector=lambda _: baca.select.phead(_, 0)),
+    None,
+    container=container,
     figure_name="7.1.L.5",
+    imbrications=imbrications,
     tsd=4,
 )
 
+container = abjad.Container([abjad.Tuplet((1, 1), "r4", hide=True)])
+baca.rest_transparent_function(abjad.select.rests(container))
 baca.make_figures(
     figures,
     library.rh_v2,
-    "r4",
-    baca.rest_transparent(selector=lambda _: abjad.select.rests(_)),
+    None,
+    container=container,
     do_not_label=True,
     tsd=4,
 )
 
+collections = section_2.stage_2.rh[0][:1]
+container = baca.figure_function(collections, [1], 16)
+groups = rmakers.nongrace_leaves_in_each_tuplet_function(container)
+rmakers.beam_groups_function(groups)
+baca.bass_to_octave_function(container, 3)
+baca.dynamic_function(baca.select.phead(container, 0), "ppp")
+baca.dynamic_text_x_offset_function(baca.select.pleaf(container, 0), 0)
+baca.dynamic_down_function(abjad.select.leaf(container, 0))
+for tuplet in baca.select.tuplets(container):
+    baca.slur_function(tuplet)
+baca.staccato_function(baca.select.pheads(container))
+baca.stem_down_function(baca.select.pleaves(container))
 baca.make_figures(
     figures,
     library.rh_v2,
-    section_2.stage_2.rh[0][:1],
-    baca.figure([1], 16),
-    rmakers.beam_groups(),
-    baca.bass_to_octave(3),
-    baca.dynamic("ppp", selector=lambda _: baca.select.phead(_, 0)),
-    baca.dynamic_text_x_offset(0, selector=lambda _: baca.select.pleaf(_, 0)),
-    baca.dynamic_down(selector=lambda _: abjad.select.leaf(_, 0)),
-    baca.slur(map=lambda _: baca.select.tuplets(_)),
-    baca.staccato(selector=lambda _: baca.select.pheads(_)),
-    baca.stem_down(selector=lambda _: baca.select.pleaves(_)),
+    None,
+    container=container,
     figure_name="2.2.R.1.1",
     tsd=4,
 )
 
+container = abjad.Container([abjad.Tuplet((1, 1), "r4", hide=True)])
+baca.rest_transparent_function(abjad.select.rests(container))
 baca.make_figures(
     figures,
     library.rh_v2,
-    "r4",
-    baca.rest_transparent(selector=lambda _: abjad.select.rests(_)),
+    None,
+    container=container,
     do_not_label=True,
     tsd=4,
 )
 
+collections = [_.transpose(4 * 7) for _ in section_7.stage_1.lh[-1]]
+container = baca.figure_function(collections, [1], 16, treatments=[1])
+groups = rmakers.nongrace_leaves_in_each_tuplet_function(container)
+rmakers.beam_groups_function(groups)
+baca.register_function(container, 6, 6 + 10)
+imbrications = baca.imbricate_function(
+    container,
+    library.rh_v4_i,
+    [14, 18],
+)
+for value in imbrications.values():
+    rmakers.unbeam_function(value)
+baca.dynamic_function(baca.select.phead(container, 0), "p")
 baca.make_figures(
     figures,
     library.rh_v4,
-    [_.transpose(4 * 7) for _ in section_7.stage_1.lh[-1]],
-    baca.figure([1], 16, treatments=[1]),
-    rmakers.beam_groups(),
-    baca.register(6, 6 + 10),
-    baca.imbricate(
-        library.rh_v4_i,
-        [14, 18],
-        rmakers.unbeam(),
-    ),
-    baca.dynamic("p", selector=lambda _: baca.select.phead(_, 0)),
+    None,
+    container=container,
     figure_name="7.1.L.5'",
+    imbrications=imbrications,
     tsd=4,
 )
 
+collections = section_2.stage_2.rh[0][:2]
+container = baca.figure_function(collections, [1], 16)
+groups = rmakers.nongrace_leaves_in_each_tuplet_function(container)
+rmakers.beam_groups_function(groups)
+baca.bass_to_octave_function(container, 3)
+baca.dynamic_function(baca.select.phead(container, 0), "ppp")
+baca.dynamic_text_x_offset_function(baca.select.pleaf(container, 0), 0)
+for tuplet in baca.select.tuplets(container):
+    baca.slur_function(tuplet)
+baca.staccato_function(baca.select.pheads(container))
+baca.stem_down_function(baca.select.pleaves(container))
 baca.make_figures(
     figures,
     library.rh_v2,
-    section_2.stage_2.rh[0][:2],
-    baca.figure([1], 16),
-    rmakers.beam_groups(),
-    baca.bass_to_octave(3),
-    baca.dynamic("ppp", selector=lambda _: baca.select.phead(_, 0)),
-    baca.dynamic_text_x_offset(0, selector=lambda _: baca.select.pleaf(_, 0)),
-    baca.slur(map=lambda _: baca.select.tuplets(_)),
-    baca.staccato(selector=lambda _: baca.select.pheads(_)),
-    baca.stem_down(selector=lambda _: baca.select.pleaves(_)),
+    None,
+    container=container,
     figure_name="2.2.R.1.1-2",
     tsd=4,
 )
 
+container = abjad.Container([abjad.Tuplet((1, 1), "r4", hide=True)])
+baca.rest_transparent_function(abjad.select.rests(container))
 baca.make_figures(
     figures,
     library.rh_v2,
-    "r4",
-    baca.rest_transparent(selector=lambda _: abjad.select.rests(_)),
+    None,
+    container=container,
     do_not_label=True,
     tsd=4,
 )
 
+collections = section_4.stage_1.rh[0]
+container = baca.figure_function(collections, [2, -4, 2, -4, 4], 16, treatments=[2])
+baca.dynamic_function(baca.select.phead(container, 0), "ff")
+baca.register_function(container, -12, 12)
+baca.tuplet_bracket_up_function(
+    container,
+)
+baca.tuplet_bracket_staff_padding_function(container, 3)
 baca.make_figures(
     figures,
     library.rh_v3,
-    section_4.stage_1.rh[0],
-    baca.figure([2, -4, 2, -4, 4], 16, treatments=[2]),
-    baca.dynamic("ff", selector=lambda _: baca.select.phead(_, 0)),
-    baca.register(-12, 12),
-    baca.tuplet_bracket_up(),
-    baca.tuplet_bracket_staff_padding(3),
+    None,
+    container=container,
     figure_name="4.1.R.1",
     tsd=4,
 )
 
+collections = section_4.stage_1.lh.next()
+container = baca.figure_function(
+    collections, [3, -1], 16, affix=baca.rests_before([12])
+)
+baca.dynamic_function(baca.select.phead(container, 0), "f")
+baca.dynamic_down_function(abjad.select.leaf(container, 0))
+baca.register_function(container, -6, 6)
+baca.rest_up_function(abjad.select.rests(container))
+baca.tenuto_function(baca.select.pheads(container))
 baca.make_figures(
     figures,
     library.lh_v5,
-    section_4.stage_1.lh.next(),
-    baca.figure([3, -1], 16, affix=baca.rests_before([12])),
-    baca.dynamic("f", selector=lambda _: baca.select.phead(_, 0)),
-    baca.dynamic_down(selector=lambda _: abjad.select.leaf(_, 0)),
-    baca.register(-6, 6),
-    baca.rest_up(selector=lambda _: abjad.select.rests(_)),
-    baca.tenuto(selector=lambda _: baca.select.pheads(_)),
+    None,
+    container=container,
     anchor=baca.anchor_to_figure("4.1.R.1"),
     figure_name="4.1.L.1",
     hide_time_signature=True,
     tsd=4,
 )
 
+collections = section_2.stage_2.rh[0][:4]
+container = baca.figure_function(collections, [1], 16)
+groups = rmakers.nongrace_leaves_in_each_tuplet_function(container)
+rmakers.beam_groups_function(groups)
+baca.bass_to_octave_function(container, 3)
+baca.dynamic_function(baca.select.phead(container, 0), "ppp")
+baca.dynamic_text_x_offset_function(baca.select.pleaf(container, 0), 0)
+for tuplet in baca.select.tuplets(container):
+    baca.slur_function(tuplet)
+baca.staccato_function(baca.select.pheads(container))
+baca.stem_down_function(baca.select.pleaves(container))
 baca.make_figures(
     figures,
     library.rh_v2,
-    section_2.stage_2.rh[0][:4],
-    baca.figure([1], 16),
-    rmakers.beam_groups(),
-    baca.bass_to_octave(3),
-    baca.dynamic("ppp", selector=lambda _: baca.select.phead(_, 0)),
-    baca.dynamic_text_x_offset(0, selector=lambda _: baca.select.pleaf(_, 0)),
-    baca.slur(map=lambda _: baca.select.tuplets(_)),
-    baca.staccato(selector=lambda _: baca.select.pheads(_)),
-    baca.stem_down(selector=lambda _: baca.select.pleaves(_)),
+    None,
+    container=container,
     figure_name="2.2.R.1.1-4",
     tsd=4,
 )
 
+collections = section_4.stage_5.rh[1 - 1]
+container = baca.figure_function(collections, [28], 16)
+groups = rmakers.nongrace_leaves_in_each_tuplet_function(container)
+rmakers.beam_groups_function(groups)
+baca.dynamic_function(baca.select.phead(container, 0), "f")
+baca.register_function(container, 36)
+baca.tenuto_function(baca.select.pheads(container))
 baca.make_figures(
     figures,
     library.rh_v1,
-    section_4.stage_5.rh[1 - 1],
-    baca.figure([28], 16),
-    rmakers.beam_groups(),
-    baca.dynamic("f", selector=lambda _: baca.select.phead(_, 0)),
-    baca.register(36),
-    baca.tenuto(selector=lambda _: baca.select.pheads(_)),
+    None,
+    container=container,
     figure_name="4.5.R.1",
     tsd=4,
 )
 
+collections = section_4.stage_5.rh[2 - 1]
+container = baca.figure_function(collections, [24], 16)
+groups = rmakers.nongrace_leaves_in_each_tuplet_function(container)
+rmakers.beam_groups_function(groups)
+baca.register_function(container, 36)
+baca.tenuto_function(baca.select.pheads(container))
 baca.make_figures(
     figures,
     library.rh_v1,
-    section_4.stage_5.rh[2 - 1],
-    baca.figure([24], 16),
-    rmakers.beam_groups(),
-    baca.register(36),
-    baca.tenuto(selector=lambda _: baca.select.pheads(_)),
+    None,
+    container=container,
     figure_name="4.5.R.2",
     tsd=4,
 )
 
+collections = section_4.stage_5.rh[3 - 1]
+container = baca.figure_function(collections, [16], 16)
+groups = rmakers.nongrace_leaves_in_each_tuplet_function(container)
+rmakers.beam_groups_function(groups)
+baca.register_function(container, 36)
+baca.tenuto_function(baca.select.pheads(container))
 baca.make_figures(
     figures,
     library.rh_v1,
-    section_4.stage_5.rh[3 - 1],
-    baca.figure([16], 16),
-    rmakers.beam_groups(),
-    baca.register(36),
-    baca.tenuto(selector=lambda _: baca.select.pheads(_)),
+    None,
+    container=container,
     figure_name="4.5.R.3",
     hide_time_signature=True,
     tsd=4,
 )
 
+collections = section_4.stage_5.lh[:4]
+container = baca.figure_function(collections, [1], 16, treatments=[(1, 4)])
+groups = rmakers.nongrace_leaves_in_each_tuplet_function(container)
+rmakers.beam_groups_function(groups)
+baca.dls_staff_padding_function(container, 8)
+baca.hairpin_function(container, "f < ff")
+for run in baca.select.runs(container):
+    baca.slur_function(run)
+wrappers = baca.span_bar_extra_offset_function(
+    abjad.select.leaf(container, 0), (-0.75, 0)
+)
+baca.tags.wrappers(wrappers, baca.tags.ONLY_SECTION)
+baca.ottava_function(baca.select.tleaves(container))
+baca.register_function(container, 10, 36)
+baca.slur_up_function(container)
 baca.make_figures(
     figures,
     library.rh_v2,
-    section_4.stage_5.lh[:4],
-    baca.figure([1], 16, treatments=[(1, 4)]),
-    rmakers.beam_groups(),
-    baca.dls_staff_padding(8),
-    baca.hairpin("f < ff"),
-    baca.slur(map=lambda _: baca.select.runs(_)),
-    baca.only_section(
-        baca.span_bar_extra_offset(
-            (-0.75, 0),
-            selector=lambda _: abjad.select.leaf(_, 0),
-        ),
-    ),
-    baca.ottava(selector=lambda _: baca.select.tleaves(_)),
-    baca.register(10, 36),
-    baca.slur_up(),
+    None,
+    container=container,
     anchor=baca.anchor_to_figure("4.5.R.3"),
     figure_name="4.5.L.1-4",
     tsd=4,
 )
 
+collections = [resonance]
+container = baca.figure_function(collections, [8], 16)
+groups = rmakers.nongrace_leaves_in_each_tuplet_function(container)
+rmakers.beam_groups_function(groups)
 baca.make_figures(
     figures,
     library.lh_resonance,
-    [resonance],
-    baca.figure([8], 16),
-    rmakers.beam_groups(),
+    None,
+    container=container,
     anchor=baca.anchor_to_figure("7.1.L.5"),
     do_not_label=True,
     hide_time_signature=True,
     tsd=4,
 )
 
+collections = [resonance]
+container = baca.figure_function(collections, [4], 16)
+groups = rmakers.nongrace_leaves_in_each_tuplet_function(container)
+rmakers.beam_groups_function(groups)
 baca.make_figures(
     figures,
     library.lh_resonance,
-    [resonance],
-    baca.figure([4], 16),
-    rmakers.beam_groups(),
+    None,
+    container=container,
     do_not_label=True,
     hide_time_signature=True,
     tsd=4,
 )
 
+collections = [resonance]
+container = baca.figure_function(collections, [5], 16)
+groups = rmakers.nongrace_leaves_in_each_tuplet_function(container)
+rmakers.beam_groups_function(groups)
 baca.make_figures(
     figures,
     library.lh_resonance,
-    [resonance],
-    baca.figure([5], 16),
-    rmakers.beam_groups(),
+    None,
+    container=container,
     do_not_label=True,
     hide_time_signature=True,
     tsd=4,
 )
 
+collections = [resonance]
+container = baca.figure_function(collections, [4], 16)
+groups = rmakers.nongrace_leaves_in_each_tuplet_function(container)
+rmakers.beam_groups_function(groups)
 baca.make_figures(
     figures,
     library.lh_resonance,
-    [resonance],
-    baca.figure([4], 16),
-    rmakers.beam_groups(),
+    None,
+    container=container,
     do_not_label=True,
     hide_time_signature=True,
     tsd=4,
 )
 
+collections = [resonance]
+container = baca.figure_function(collections, [8], 16)
+groups = rmakers.nongrace_leaves_in_each_tuplet_function(container)
+rmakers.beam_groups_function(groups)
 baca.make_figures(
     figures,
     library.lh_resonance,
-    [resonance],
-    baca.figure([8], 16),
-    rmakers.beam_groups(),
+    None,
+    container=container,
     do_not_label=True,
     hide_time_signature=True,
     tsd=4,
 )
 
+collections = [resonance]
+container = baca.figure_function(collections, [10], 16)
+groups = rmakers.nongrace_leaves_in_each_tuplet_function(container)
+rmakers.beam_groups_function(groups)
 baca.make_figures(
     figures,
     library.lh_resonance,
-    [resonance],
-    baca.figure([10], 16),
-    rmakers.beam_groups(),
+    None,
+    container=container,
     do_not_label=True,
     hide_time_signature=True,
     tsd=4,
 )
 
+collections = [resonance]
+container = baca.figure_function(collections, [21], 16)
+groups = rmakers.nongrace_leaves_in_each_tuplet_function(container)
+rmakers.beam_groups_function(groups)
+baca.accidental_x_extent_false_function(abjad.select.leaf(container, 0))
 baca.make_figures(
     figures,
     library.lh_resonance,
-    [resonance],
-    baca.figure([21], 16),
-    rmakers.beam_groups(),
-    baca.accidental_x_extent_false(selector=lambda _: abjad.select.leaf(_, 0)),
+    None,
+    container=container,
     anchor=baca.anchor_to_figure("2.2.R.1.1-4"),
     do_not_label=True,
     hide_time_signature=True,
     tsd=4,
 )
 
+collections = [resonance]
+container = baca.figure_function(collections, [28], 16)
+groups = rmakers.nongrace_leaves_in_each_tuplet_function(container)
+rmakers.beam_groups_function(groups)
 baca.make_figures(
     figures,
     library.lh_resonance,
-    [resonance],
-    baca.figure([28], 16),
-    rmakers.beam_groups(),
+    None,
+    container=container,
     do_not_label=True,
     hide_time_signature=True,
     tsd=4,
 )
 
+collections = [resonance]
+container = baca.figure_function(collections, [24], 16)
+groups = rmakers.nongrace_leaves_in_each_tuplet_function(container)
+rmakers.beam_groups_function(groups)
 baca.make_figures(
     figures,
     library.lh_resonance,
-    [resonance],
-    baca.figure([24], 16),
-    rmakers.beam_groups(),
+    None,
+    container=container,
     do_not_label=True,
     hide_time_signature=True,
     tsd=4,
@@ -365,45 +440,28 @@ for index, string in (
 
 
 def postprocess(cache):
-
-    accumulator(
-        library.rh_v1,
-        baca.ottava(selector=lambda _: baca.select.tleaves(_)),
-    )
-
-    accumulator(
-        library.rh_v2,
-        baca.script_up(),
-    )
-
-    accumulator(
-        library.lh_resonance,
-        baca.untie(selector=lambda _: baca.select.leaves(_)),
-        baca.new(
-            baca.repeat_tie(
-                selector=lambda _: baca.select.pleaves(_)[1:],
-            ),
-            map=lambda _: baca.select.qruns(_),
-        ),
-        *library.clean_up_repeat_ties(),
-    )
-
-    accumulator(
-        (library.lh_resonance, [(2, 7), (10, -1)]),
-        baca.accidental_stencil_false(selector=lambda _: baca.select.leaves(_)),
-    )
-
-    accumulator(
-        (library.lh_resonance, [2, 4]),
-        *library.transparent_music(selector=lambda _: abjad.select.leaf(_, 0)),
-    )
-
-    accumulator(
-        (library.lh_resonance, [3, 6, 9]),
-        *library.transparent_music(
-            selector=lambda _: baca.select.leaves(_)[1:],
-        ),
-    )
+    m = cache[library.rh_v1]
+    with baca.scope(m.leaves()) as o:
+        baca.ottava_function(o.tleaves())
+    m = cache[library.rh_v2]
+    with baca.scope(m.leaves()) as o:
+        baca.script_up_function(o)
+    m = cache[library.lh_resonance]
+    with baca.scope(m.leaves()) as o:
+        baca.untie_function(o)
+        for qrun in baca.select.qruns(o):
+            baca.repeat_tie_function(qrun[1:])
+        library.clean_up_repeat_ties_function(o)
+    m = cache[library.lh_resonance]
+    for item in [(2, 7), (10, 12)]:
+        with baca.scope(m.get(item)) as o:
+            baca.accidental_stencil_false_function(o)
+    for n in [2, 4]:
+        with baca.scope(m[n]) as o:
+            library.transparent_music_function(o.leaf(0))
+    for n in [3, 6, 9]:
+        with baca.scope(m[n]) as o:
+            library.transparent_music_function(o.leaves()[1:])
 
 
 def main():
@@ -436,7 +494,6 @@ if __name__ == "__main__":
         **baca.interpret.section_defaults(),
         activate=(baca.tags.LOCAL_MEASURE_NUMBER,),
         always_make_global_rests=True,
-        commands=accumulator.commands,
         do_not_require_short_instrument_names=True,
         error_on_not_yet_pitched=True,
     )
