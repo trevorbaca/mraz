@@ -1403,73 +1403,42 @@ for index, string in ((21 - 1, "fermata"),):
 
 
 def postprocess(cache):
-
-    # rh_v1
-
-    accumulator(
-        library.rh_v1,
-        baca.stem_up(selector=lambda _: baca.select.pleaves(_)),
-        baca.tuplet_bracket_staff_padding(8),
-        baca.tuplet_bracket_up(),
-    )
-
-    accumulator(
-        (library.rh_v1, [(1, 36), (38, 39)]),
-        baca.ottava(selector=lambda _: baca.select.tleaves(_)),
-    )
-
-    accumulator(
-        library.rh_v3,
-        baca.tenuto(lambda _: baca.select.pheads(_)),
-    )
-
-    accumulator(
-        library.lh_v5,
-        baca.dynamic_down(selector=lambda _: abjad.select.leaf(_, 0)),
-    )
-
-    accumulator(
-        (library.lh_v5, (7, 16)),
-        baca.marcato(lambda _: baca.select.pheads(_)),
-        baca.rest_up(selector=lambda _: abjad.select.rests(_)),
-    )
-
-    accumulator(
-        (library.lh_v5, (18, -1)),
-        baca.stem_down(selector=lambda _: baca.select.pleaves(_)),
-        baca.tuplet_bracket_staff_padding(2),
-        baca.tuplet_bracket_down(),
-    )
-
-    accumulator(
-        library.lh_v5_i,
-        baca.script_up(),
-        baca.staccato(lambda _: baca.select.pheads(_)),
-        baca.stem_up(selector=lambda _: baca.select.pleaves(_)),
-    )
-
-    accumulator(
-        library.lh_resonance,
-        baca.untie(lambda _: baca.select.leaves(_)),
-        baca.new(
-            baca.repeat_tie(
-                lambda _: baca.select.pleaves(_)[1:],
-            ),
-            map=lambda _: baca.select.qruns(_),
-        ),
-    )
-
-    accumulator(
-        (library.lh_resonance, [11, 15, (33, 39)]),
-        baca.accidental_stencil_false(selector=lambda _: baca.select.leaves(_)),
-        baca.dots_stencil_false(selector=lambda _: baca.select.leaves(_)),
-        baca.stem_stencil_false(selector=lambda _: baca.select.leaves(_)),
-    )
-
-    accumulator(
-        (library.lh_resonance, 32),
-        baca.accidental_x_extent_false(),
-    )
+    m = cache[library.rh_v1]
+    with baca.scope(m.leaves()) as o:
+        baca.stem_up_function(o.pleaves())
+        baca.tuplet_bracket_staff_padding_function(o, 8)
+        baca.tuplet_bracket_up_function(o)
+    for item in [(1, 36), (38, 39)]:
+        with baca.scope(m.get(item)) as o:
+            baca.ottava_function(o.tleaves())
+    with baca.scope(cache[library.rh_v3].leaves()) as o:
+        baca.tenuto_function(o.pheads())
+    m = cache[library.lh_v5]
+    with baca.scope(m.leaves()) as o:
+        baca.dynamic_down_function(o.leaf(0))
+    with baca.scope(m.get(7, 16)) as o:
+        baca.marcato_function(o.pheads())
+        baca.rest_up_function(o.rests())
+    with baca.scope(m.get(18, 44)) as o:
+        baca.stem_down_function(o.pleaves())
+        baca.tuplet_bracket_staff_padding_function(o, 2)
+        baca.tuplet_bracket_down_function(o)
+    with baca.scope(cache[library.lh_v5_i].leaves()) as o:
+        baca.script_up_function(o)
+        baca.staccato_function(o.pheads())
+        baca.stem_up_function(o.pleaves())
+    m = cache[library.lh_resonance]
+    with baca.scope(m.leaves()) as o:
+        baca.untie_function(o)
+        for qrun in baca.select.qruns(o):
+            baca.repeat_tie_function(qrun[1:])
+    for item in [11, 15, (33, 39)]:
+        with baca.scope(m.get(item)) as o:
+            baca.accidental_stencil_false_function(o)
+            baca.dots_stencil_false_function(o)
+            baca.stem_stencil_false_function(o)
+    with baca.scope(m[32]) as o:
+        baca.accidental_x_extent_false_function(o)
 
 
 def main():
