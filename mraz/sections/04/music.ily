@@ -2722,11 +2722,9 @@ number.4.RH.Music.1 = {
     % [RH.Music.1 measure 1]
     % BEFORE:
     % COMMANDS:
-      %! baca.OverrideCommand._call(1)
-      %! baca.tuplet_bracket_up()
+      %! baca.tuplet_bracket_up_function(1)
     \override TupletBracket.direction = #up
-      %! baca.OverrideCommand._call(1)
-      %! baca.tuplet_bracket_staff_padding()
+      %! baca.tuplet_bracket_staff_padding_function(1)
     \override TupletBracket.staff-padding = 8
     % OPENING:
     % COMMANDS:
@@ -2796,8 +2794,7 @@ number.4.RH.Music.1 = {
               %! SPANNER_START
               %! baca._do_spanner_indicator_command(1)
             \ottava 1
-              %! baca.OverrideCommand._call(1)
-              %! baca.stem_up()
+              %! baca.stem_up_function(1)
             \override Stem.direction = #up
               %! rmakers.beam_groups()
             \set stemLeftBeamCount = 0
@@ -3546,8 +3543,7 @@ number.4.RH.Music.1 = {
               %! SPANNER_STOP
               %! baca._do_spanner_indicator_command(2)
             \ottava 0
-              %! baca.OverrideCommand._call(2)
-              %! baca.stem_up()
+              %! baca.stem_up_function(2)
             \revert Stem.direction
             % CLOSING:
             % COMMANDS:
@@ -3567,11 +3563,9 @@ number.4.RH.Music.1 = {
     s1 * 17/2
     % AFTER:
     % COMMANDS:
-      %! baca.OverrideCommand._call(2)
-      %! baca.tuplet_bracket_up()
+      %! baca.tuplet_bracket_up_function(2)
     \revert TupletBracket.direction
-      %! baca.OverrideCommand._call(2)
-      %! baca.tuplet_bracket_staff_padding()
+      %! baca.tuplet_bracket_staff_padding_function(2)
     \revert TupletBracket.staff-padding
     % CLOSING:
     % COMMANDS:
@@ -5609,8 +5603,7 @@ number.4.RH.Music.3 = {
             ef!8
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.tenuto()
+              %! baca.tenuto_function()
             - \tenuto
               %! EXPLICIT_DYNAMIC_COLOR
               %! baca.treat_persistent_wrapper()
@@ -5639,8 +5632,7 @@ number.4.RH.Music.3 = {
             cs'!8
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.tenuto()
+              %! baca.tenuto_function()
             - \tenuto
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -5652,8 +5644,7 @@ number.4.RH.Music.3 = {
             c'4
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.tenuto()
+              %! baca.tenuto_function()
             - \tenuto
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -5661,8 +5652,7 @@ number.4.RH.Music.3 = {
             bf'!8
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.tenuto()
+              %! baca.tenuto_function()
             - \tenuto
             % COMMANDS:
               %! baca.stem_up_function(2)
@@ -5729,8 +5719,7 @@ number.4.RH.Music.3 = {
             ef''!8
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.tenuto()
+              %! baca.tenuto_function()
             - \tenuto
             % MARKUP:
               %! FIGURE_LABEL
@@ -5747,8 +5736,7 @@ number.4.RH.Music.3 = {
             cs''!4
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.tenuto()
+              %! baca.tenuto_function()
             - \tenuto
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -5760,8 +5748,7 @@ number.4.RH.Music.3 = {
             c'8
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.tenuto()
+              %! baca.tenuto_function()
             - \tenuto
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -5773,8 +5760,7 @@ number.4.RH.Music.3 = {
             bf!4
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.tenuto()
+              %! baca.tenuto_function()
             - \tenuto
             % COMMANDS:
               %! baca.stem_up_function(2)
@@ -5852,8 +5838,7 @@ number.4.RH.Music.3 = {
             ef'!8
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.tenuto()
+              %! baca.tenuto_function()
             - \tenuto
             % MARKUP:
               %! FIGURE_LABEL
@@ -5870,8 +5855,7 @@ number.4.RH.Music.3 = {
             cs'!8
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.tenuto()
+              %! baca.tenuto_function()
             - \tenuto
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -5883,8 +5867,7 @@ number.4.RH.Music.3 = {
             c'4
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.tenuto()
+              %! baca.tenuto_function()
             - \tenuto
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -5892,8 +5875,7 @@ number.4.RH.Music.3 = {
             bf!8
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.tenuto()
+              %! baca.tenuto_function()
             - \tenuto
             % COMMANDS:
               %! baca.stem_up_function(2)
@@ -5974,8 +5956,7 @@ number.4.RH.Music.3 = {
             af'''!8
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.tenuto()
+              %! baca.tenuto_function()
             - \tenuto
             % MARKUP:
               %! FIGURE_LABEL
@@ -5996,8 +5977,7 @@ number.4.RH.Music.3 = {
             ef'''!8
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.tenuto()
+              %! baca.tenuto_function()
             - \tenuto
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -6005,8 +5985,7 @@ number.4.RH.Music.3 = {
             f'''8
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.tenuto()
+              %! baca.tenuto_function()
             - \tenuto
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -6014,8 +5993,7 @@ number.4.RH.Music.3 = {
             fs'''!8
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.tenuto()
+              %! baca.tenuto_function()
             - \tenuto
             % SPANNER_STOPS:
               %! SPANNER_STOP
@@ -6082,8 +6060,7 @@ number.4.RH.Music.3 = {
             ef''!8
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.tenuto()
+              %! baca.tenuto_function()
             - \tenuto
               %! EXPLICIT_DYNAMIC_COLOR
               %! baca.treat_persistent_wrapper()
@@ -6112,8 +6089,7 @@ number.4.RH.Music.3 = {
             cs''!4
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.tenuto()
+              %! baca.tenuto_function()
             - \tenuto
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -6125,8 +6101,7 @@ number.4.RH.Music.3 = {
             c'8
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.tenuto()
+              %! baca.tenuto_function()
             - \tenuto
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -6138,8 +6113,7 @@ number.4.RH.Music.3 = {
             bf!4
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.tenuto()
+              %! baca.tenuto_function()
             - \tenuto
             % COMMANDS:
               %! baca.stem_up_function(2)
@@ -6191,8 +6165,7 @@ number.4.RH.Music.3 = {
             a''4
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.tenuto()
+              %! baca.tenuto_function()
             - \tenuto
               %! EXPLICIT_DYNAMIC_COLOR
               %! baca.treat_persistent_wrapper()
@@ -6225,8 +6198,7 @@ number.4.RH.Music.3 = {
             cs''!4
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.tenuto()
+              %! baca.tenuto_function()
             - \tenuto
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -6238,8 +6210,7 @@ number.4.RH.Music.3 = {
             b''4
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.tenuto()
+              %! baca.tenuto_function()
             - \tenuto
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -6251,8 +6222,7 @@ number.4.RH.Music.3 = {
             af''!4
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.tenuto()
+              %! baca.tenuto_function()
             - \tenuto
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -6264,8 +6234,7 @@ number.4.RH.Music.3 = {
             g'''4
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.tenuto()
+              %! baca.tenuto_function()
             - \tenuto
             % COMMANDS:
               %! SPANNER_STOP
@@ -6834,8 +6803,7 @@ number.4.LH.Music.5 = {
             % [LH.Music.5 measure 1]
             % OPENING:
             % COMMANDS:
-              %! baca._attach_persistent_indicator()
-              %! baca.dynamic_down()
+              %! baca.dynamic_down_function()
             \dynamicDown
             r2.
             % ABSOLUTE_BEFORE:
@@ -7172,8 +7140,7 @@ number.4.LH.Music.5 = {
             % [LH.Music.5 measure 7]
             % BEFORE:
             % COMMANDS:
-              %! baca.OverrideCommand._call(1)
-              %! baca.rest_up()
+              %! baca.rest_up_function(1)
             \override Rest.direction = #up
             r2.
             % CLOSING:
@@ -7209,8 +7176,7 @@ number.4.LH.Music.5 = {
             <g b f' fs'! a'>8.
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.marcato()
+              %! baca.marcato_function()
             - \marcato
               %! EXPLICIT_DYNAMIC_COLOR
               %! baca.treat_persistent_wrapper()
@@ -7262,8 +7228,7 @@ number.4.LH.Music.5 = {
             <g b f' fs'! a'>16
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.marcato()
+              %! baca.marcato_function()
             - \marcato
             % MARKUP:
               %! FIGURE_LABEL
@@ -7322,8 +7287,7 @@ number.4.LH.Music.5 = {
                 <g b f' fs'! a'>8.
                 % AFTER:
                 % ARTICULATIONS:
-                  %! baca._attach_persistent_indicator()
-                  %! baca.marcato()
+                  %! baca.marcato_function()
                 - \marcato
                 % MARKUP:
                   %! FIGURE_LABEL
@@ -7372,8 +7336,7 @@ number.4.LH.Music.5 = {
             <g b f' fs'! a'>16
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.marcato()
+              %! baca.marcato_function()
             - \marcato
             % MARKUP:
               %! FIGURE_LABEL
@@ -7421,8 +7384,7 @@ number.4.LH.Music.5 = {
             <g b f' fs'! a'>8.
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.marcato()
+              %! baca.marcato_function()
             - \marcato
             % MARKUP:
               %! FIGURE_LABEL
@@ -7462,8 +7424,7 @@ number.4.LH.Music.5 = {
             <g b f' fs'! a'>16
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.marcato()
+              %! baca.marcato_function()
             - \marcato
             % MARKUP:
               %! FIGURE_LABEL
@@ -7522,8 +7483,7 @@ number.4.LH.Music.5 = {
                 <g b f' fs'! a'>8.
                 % AFTER:
                 % ARTICULATIONS:
-                  %! baca._attach_persistent_indicator()
-                  %! baca.marcato()
+                  %! baca.marcato_function()
                 - \marcato
                 % MARKUP:
                   %! FIGURE_LABEL
@@ -7572,8 +7532,7 @@ number.4.LH.Music.5 = {
             <g b f' fs'! a'>16
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.marcato()
+              %! baca.marcato_function()
             - \marcato
             % MARKUP:
               %! FIGURE_LABEL
@@ -7632,8 +7591,7 @@ number.4.LH.Music.5 = {
                 <g b f' fs'! a'>8.
                 % AFTER:
                 % ARTICULATIONS:
-                  %! baca._attach_persistent_indicator()
-                  %! baca.marcato()
+                  %! baca.marcato_function()
                 - \marcato
                 % MARKUP:
                   %! FIGURE_LABEL
@@ -7646,8 +7604,7 @@ number.4.LH.Music.5 = {
                 r2
                 % AFTER:
                 % COMMANDS:
-                  %! baca.OverrideCommand._call(2)
-                  %! baca.rest_up()
+                  %! baca.rest_up_function(2)
                 \revert Rest.direction
                   %! baca.tuplet_bracket_up_function(2)
                 \revert TupletBracket.direction
@@ -7749,11 +7706,9 @@ number.4.LH.Music.5 = {
                 % [LH.Music.5 measure 18]
                 % BEFORE:
                 % COMMANDS:
-                  %! baca.OverrideCommand._call(1)
-                  %! baca.tuplet_bracket_down()
+                  %! baca.tuplet_bracket_down_function(1)
                 \override TupletBracket.direction = #down
-                  %! baca.OverrideCommand._call(1)
-                  %! baca.tuplet_bracket_staff_padding()
+                  %! baca.tuplet_bracket_staff_padding_function(1)
                 \override TupletBracket.staff-padding = 2
                 r4
                 % ABSOLUTE_BEFORE:
@@ -7761,8 +7716,7 @@ number.4.LH.Music.5 = {
 
                 % BEFORE:
                 % COMMANDS:
-                  %! baca.OverrideCommand._call(1)
-                  %! baca.stem_down()
+                  %! baca.stem_down_function(1)
                 \override Stem.direction = #down
                   %! rmakers.beam_groups()
                 \set stemLeftBeamCount = 0
@@ -8582,8 +8536,7 @@ number.4.LH.Music.5 = {
               %! baca.tenuto_function()
             - \tenuto
             % COMMANDS:
-              %! baca.OverrideCommand._call(2)
-              %! baca.stem_down()
+              %! baca.stem_down_function(2)
             \revert Stem.direction
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -8611,11 +8564,9 @@ number.4.LH.Music.5 = {
     s1 * 4
     % AFTER:
     % COMMANDS:
-      %! baca.OverrideCommand._call(2)
-      %! baca.tuplet_bracket_down()
+      %! baca.tuplet_bracket_down_function(2)
     \revert TupletBracket.direction
-      %! baca.OverrideCommand._call(2)
-      %! baca.tuplet_bracket_staff_padding()
+      %! baca.tuplet_bracket_staff_padding_function(2)
     \revert TupletBracket.staff-padding
     % CLOSING:
     % COMMANDS:
@@ -8635,8 +8586,7 @@ number.4.LH.InsertVoice.5 = {
     % [LH.InsertVoice.5 measure 1]
     % BEFORE:
     % COMMANDS:
-      %! baca.OverrideCommand._call(1)
-      %! baca.script_up()
+      %! baca.script_up_function(1)
     \override Script.direction = #up
     s1 * 83/4
     % ABSOLUTE_BEFORE:
@@ -8676,8 +8626,7 @@ number.4.LH.InsertVoice.5 = {
 
                 % BEFORE:
                 % COMMANDS:
-                  %! baca.OverrideCommand._call(1)
-                  %! baca.stem_up()
+                  %! baca.stem_up_function(1)
                 \override Stem.direction = #up
                   %! rmakers.beam_groups()
                 \set stemLeftBeamCount = 0
@@ -8686,8 +8635,7 @@ number.4.LH.InsertVoice.5 = {
                 bf'!8
                 % AFTER:
                 % ARTICULATIONS:
-                  %! baca._attach_persistent_indicator()
-                  %! baca.staccato()
+                  %! baca.staccato_function()
                 - \staccato
                 % CLOSING:
                 % COMMANDS:
@@ -8795,8 +8743,7 @@ number.4.LH.InsertVoice.5 = {
                 bf!8
                 % AFTER:
                 % ARTICULATIONS:
-                  %! baca._attach_persistent_indicator()
-                  %! baca.staccato()
+                  %! baca.staccato_function()
                 - \staccato
                 % CLOSING:
                 % COMMANDS:
@@ -8821,8 +8768,7 @@ number.4.LH.InsertVoice.5 = {
                 d'8
                 % AFTER:
                 % ARTICULATIONS:
-                  %! baca._attach_persistent_indicator()
-                  %! baca.staccato()
+                  %! baca.staccato_function()
                 - \staccato
                 % CLOSING:
                 % COMMANDS:
@@ -8909,8 +8855,7 @@ number.4.LH.InsertVoice.5 = {
                 f'8
                 % AFTER:
                 % ARTICULATIONS:
-                  %! baca._attach_persistent_indicator()
-                  %! baca.staccato()
+                  %! baca.staccato_function()
                 - \staccato
                 % CLOSING:
                 % COMMANDS:
@@ -9003,8 +8948,7 @@ number.4.LH.InsertVoice.5 = {
                 f'8
                 % AFTER:
                 % ARTICULATIONS:
-                  %! baca._attach_persistent_indicator()
-                  %! baca.staccato()
+                  %! baca.staccato_function()
                 - \staccato
                 % CLOSING:
                 % COMMANDS:
@@ -9090,12 +9034,10 @@ number.4.LH.InsertVoice.5 = {
             af'!8
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.staccato()
+              %! baca.staccato_function()
             - \staccato
             % COMMANDS:
-              %! baca.OverrideCommand._call(2)
-              %! baca.stem_up()
+              %! baca.stem_up_function(2)
             \revert Stem.direction
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -9126,8 +9068,7 @@ number.4.LH.InsertVoice.5 = {
     s1 * 17
     % AFTER:
     % COMMANDS:
-      %! baca.OverrideCommand._call(2)
-      %! baca.script_up()
+      %! baca.script_up_function(2)
     \revert Script.direction
     % CLOSING:
     % COMMANDS:
@@ -9269,14 +9210,11 @@ number.4.LH.ResonanceVoice = {
             % [LH.ResonanceVoice measure 11]
             % BEFORE:
             % COMMANDS:
-              %! baca.OverrideCommand._call(1)
-              %! baca.accidental_stencil_false()
+              %! baca.accidental_stencil_false_function(1)
             \override Accidental.stencil = ##f
-              %! baca.OverrideCommand._call(1)
-              %! baca.dots_stencil_false()
+              %! baca.dots_stencil_false_function(1)
             \override Dots.stencil = ##f
-              %! baca.OverrideCommand._call(1)
-              %! baca.stem_stencil_false()
+              %! baca.stem_stencil_false_function(1)
             \override Stem.stencil = ##f
             <cs,, cs,>4
             % AFTER:
@@ -9285,8 +9223,7 @@ number.4.LH.ResonanceVoice = {
             - \tweak stencil ##f
               %! baca._attach_shadow_tie_indicators()
             ~
-              %! baca._attach_persistent_indicator()
-              %! baca.repeat_tie()
+              %! baca.repeat_tie_function()
             \repeatTie
             % CLOSING:
             % COMMANDS:
@@ -9315,18 +9252,14 @@ number.4.LH.ResonanceVoice = {
             <cs,, cs,>1
             % AFTER:
             % SPANNER_STARTS:
-              %! baca._attach_persistent_indicator()
-              %! baca.repeat_tie()
+              %! baca.repeat_tie_function()
             \repeatTie
             % COMMANDS:
-              %! baca.OverrideCommand._call(2)
-              %! baca.accidental_stencil_false()
+              %! baca.accidental_stencil_false_function(2)
             \revert Accidental.stencil
-              %! baca.OverrideCommand._call(2)
-              %! baca.dots_stencil_false()
+              %! baca.dots_stencil_false_function(2)
             \revert Dots.stencil
-              %! baca.OverrideCommand._call(2)
-              %! baca.stem_stencil_false()
+              %! baca.stem_stencil_false_function(2)
             \revert Stem.stencil
             % CLOSING:
             % COMMANDS:
@@ -9411,14 +9344,11 @@ number.4.LH.ResonanceVoice = {
             % [LH.ResonanceVoice measure 15]
             % BEFORE:
             % COMMANDS:
-              %! baca.OverrideCommand._call(1)
-              %! baca.accidental_stencil_false()
+              %! baca.accidental_stencil_false_function(1)
             \override Accidental.stencil = ##f
-              %! baca.OverrideCommand._call(1)
-              %! baca.dots_stencil_false()
+              %! baca.dots_stencil_false_function(1)
             \override Dots.stencil = ##f
-              %! baca.OverrideCommand._call(1)
-              %! baca.stem_stencil_false()
+              %! baca.stem_stencil_false_function(1)
             \override Stem.stencil = ##f
             <ef,, ef,>4
             % AFTER:
@@ -9427,8 +9357,7 @@ number.4.LH.ResonanceVoice = {
             - \tweak stencil ##f
               %! baca._attach_shadow_tie_indicators()
             ~
-              %! baca._attach_persistent_indicator()
-              %! baca.repeat_tie()
+              %! baca.repeat_tie_function()
             \repeatTie
             % CLOSING:
             % COMMANDS:
@@ -9457,18 +9386,14 @@ number.4.LH.ResonanceVoice = {
             <ef,, ef,>1
             % AFTER:
             % SPANNER_STARTS:
-              %! baca._attach_persistent_indicator()
-              %! baca.repeat_tie()
+              %! baca.repeat_tie_function()
             \repeatTie
             % COMMANDS:
-              %! baca.OverrideCommand._call(2)
-              %! baca.accidental_stencil_false()
+              %! baca.accidental_stencil_false_function(2)
             \revert Accidental.stencil
-              %! baca.OverrideCommand._call(2)
-              %! baca.dots_stencil_false()
+              %! baca.dots_stencil_false_function(2)
             \revert Dots.stencil
-              %! baca.OverrideCommand._call(2)
-              %! baca.stem_stencil_false()
+              %! baca.stem_stencil_false_function(2)
             \revert Stem.stencil
             % CLOSING:
             % COMMANDS:
@@ -9504,8 +9429,7 @@ number.4.LH.ResonanceVoice = {
             % [LH.ResonanceVoice measure 32]
             % BEFORE:
             % COMMANDS:
-              %! baca.OverrideCommand._call(1)
-              %! baca.accidental_x_extent_false()
+              %! baca.accidental_x_extent_false_function(1)
             \once \override Accidental.X-extent = ##f
             <e, fs,! gs,! as,! b,>4
             % AFTER:
@@ -9542,14 +9466,11 @@ number.4.LH.ResonanceVoice = {
             % [LH.ResonanceVoice measure 33]
             % BEFORE:
             % COMMANDS:
-              %! baca.OverrideCommand._call(1)
-              %! baca.accidental_stencil_false()
+              %! baca.accidental_stencil_false_function(1)
             \override Accidental.stencil = ##f
-              %! baca.OverrideCommand._call(1)
-              %! baca.dots_stencil_false()
+              %! baca.dots_stencil_false_function(1)
             \override Dots.stencil = ##f
-              %! baca.OverrideCommand._call(1)
-              %! baca.stem_stencil_false()
+              %! baca.stem_stencil_false_function(1)
             \override Stem.stencil = ##f
             <e, fs, gs, as, b,>1..
             % AFTER:
@@ -9558,8 +9479,7 @@ number.4.LH.ResonanceVoice = {
             - \tweak stencil ##f
               %! baca._attach_shadow_tie_indicators()
             ~
-              %! baca._attach_persistent_indicator()
-              %! baca.repeat_tie()
+              %! baca.repeat_tie_function()
             \repeatTie
             % CLOSING:
             % COMMANDS:
@@ -9594,8 +9514,7 @@ number.4.LH.ResonanceVoice = {
             - \tweak stencil ##f
               %! baca._attach_shadow_tie_indicators()
             ~
-              %! baca._attach_persistent_indicator()
-              %! baca.repeat_tie()
+              %! baca.repeat_tie_function()
             \repeatTie
             % CLOSING:
             % COMMANDS:
@@ -9630,8 +9549,7 @@ number.4.LH.ResonanceVoice = {
             - \tweak stencil ##f
               %! baca._attach_shadow_tie_indicators()
             ~
-              %! baca._attach_persistent_indicator()
-              %! baca.repeat_tie()
+              %! baca.repeat_tie_function()
             \repeatTie
             % CLOSING:
             % COMMANDS:
@@ -9666,8 +9584,7 @@ number.4.LH.ResonanceVoice = {
             - \tweak stencil ##f
               %! baca._attach_shadow_tie_indicators()
             ~
-              %! baca._attach_persistent_indicator()
-              %! baca.repeat_tie()
+              %! baca.repeat_tie_function()
             \repeatTie
             % CLOSING:
             % COMMANDS:
@@ -9702,8 +9619,7 @@ number.4.LH.ResonanceVoice = {
             - \tweak stencil ##f
               %! baca._attach_shadow_tie_indicators()
             ~
-              %! baca._attach_persistent_indicator()
-              %! baca.repeat_tie()
+              %! baca.repeat_tie_function()
             \repeatTie
             % CLOSING:
             % COMMANDS:
@@ -9738,8 +9654,7 @@ number.4.LH.ResonanceVoice = {
             - \tweak stencil ##f
               %! baca._attach_shadow_tie_indicators()
             ~
-              %! baca._attach_persistent_indicator()
-              %! baca.repeat_tie()
+              %! baca.repeat_tie_function()
             \repeatTie
             % CLOSING:
             % COMMANDS:
@@ -9770,18 +9685,14 @@ number.4.LH.ResonanceVoice = {
             <e, fs, gs, as, b,>2
             % AFTER:
             % SPANNER_STARTS:
-              %! baca._attach_persistent_indicator()
-              %! baca.repeat_tie()
+              %! baca.repeat_tie_function()
             \repeatTie
             % COMMANDS:
-              %! baca.OverrideCommand._call(2)
-              %! baca.accidental_stencil_false()
+              %! baca.accidental_stencil_false_function(2)
             \revert Accidental.stencil
-              %! baca.OverrideCommand._call(2)
-              %! baca.dots_stencil_false()
+              %! baca.dots_stencil_false_function(2)
             \revert Dots.stencil
-              %! baca.OverrideCommand._call(2)
-              %! baca.stem_stencil_false()
+              %! baca.stem_stencil_false_function(2)
             \revert Stem.stencil
             % CLOSING:
             % COMMANDS:
