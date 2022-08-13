@@ -674,52 +674,35 @@ for index, string in (
 
 
 def postprocess(cache):
-    accumulator(
-        (library.rh_v2, (2, 8)),
-        baca.accent(lambda _: baca.select.pheads(_)),
-        baca.beam_positions(10.5),
-        baca.script_up(),
-        baca.stem_up(selector=lambda _: baca.select.pleaves(_)),
-    )
-
-    accumulator(
-        (library.rh_v2, (9, 13)),
-        baca.script_up(),
-        baca.slur_up(),
-        baca.stem_down(selector=lambda _: baca.select.pleaves(_)),
-    )
-
-    accumulator(
-        (library.lh_v4, (2, -1)),
-        baca.script_up(),
-        baca.staccato(lambda _: baca.select.pheads(_)),
-        baca.tenuto(lambda _: baca.select.pheads(_)),
-    )
-
-    accumulator(
-        library.lh_resonance,
-        baca.untie(lambda _: baca.select.leaves(_)),
-        baca.new(
-            baca.repeat_tie(
-                lambda _: baca.select.pleaves(_)[1:],
-            ),
-            map=lambda _: baca.select.qruns(_),
-        ),
-        baca.dots_transparent(),
-    )
-
-    accumulator(
-        (library.lh_resonance, [10, 11, 12, 13, 14]),
-        *library.transparent_music(
-            lambda _: baca.select.leaves(_)[1:],
-        ),
-    )
-
-    accumulator(
-        (library.lh_resonance, [11, 13, 14]),
-        baca.accidental_stencil_false(selector=lambda _: abjad.select.leaf(_, 0)),
-        baca.stem_transparent(selector=lambda _: baca.select.pleaves(_)),
-    )
+    m = cache[library.rh_v2]
+    with baca.scope(m.get(2, 8)) as o:
+        baca.accent_function(o.pheads())
+        baca.beam_positions_function(o, 10.5)
+        baca.script_up_function(o)
+        baca.stem_up_function(o.pleaves())
+    with baca.scope(m.get(9, 13)) as o:
+        baca.script_up_function(o)
+        baca.slur_up_function(o)
+        baca.stem_down_function(o.pleaves())
+    m = cache[library.lh_v4]
+    with baca.scope(m.get(2, 16)) as o:
+        baca.script_up_function(o)
+        baca.staccato_function(o.pheads())
+        baca.tenuto_function(o.pheads())
+    m = cache[library.lh_resonance]
+    with baca.scope(m.leaves()) as o:
+        baca.untie_function(o)
+        for qrun in baca.select.qruns(o):
+            qrun = baca.select.pleaves(qrun)[1:]
+            baca.repeat_tie_function(qrun)
+        baca.dots_transparent_function(o)
+    for n in [10, 11, 12, 13, 14]:
+        with baca.scope(m[n]) as o:
+            library.transparent_music_function(o.leaves()[1:])
+    for n in [11, 13, 14]:
+        with baca.scope(m[n]) as o:
+            baca.accidental_stencil_false_function(o.leaf(0))
+            baca.stem_transparent_function(o.pleaves())
 
 
 def main():
@@ -754,7 +737,6 @@ if __name__ == "__main__":
         **defaults,
         activate=(baca.tags.LOCAL_MEASURE_NUMBER,),
         always_make_global_rests=True,
-        commands=accumulator.commands,
         do_not_require_short_instrument_names=True,
         error_on_not_yet_pitched=True,
     )
