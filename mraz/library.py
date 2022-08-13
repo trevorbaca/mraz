@@ -1305,13 +1305,14 @@ def transparent_music(selector):
 
 
 def transparent_music_function(argument):
-    baca.note_head_no_ledgers_function(argument, True)
-    baca.accidental_transparent_function(argument)
-    baca.beam_transparent_function(argument)
-    baca.flag_transparent_function(argument)
-    baca.note_head_transparent_function(argument)
-    baca.repeat_tie_transparent_function(argument)
-    baca.stem_transparent_function(argument)
+    if argument:
+        baca.note_head_no_ledgers_function(argument, True)
+        baca.accidental_transparent_function(argument)
+        baca.beam_transparent_function(argument)
+        baca.flag_transparent_function(argument)
+        baca.note_head_transparent_function(argument)
+        baca.repeat_tie_transparent_function(argument)
+        baca.stem_transparent_function(argument)
 
 
 def voice_abbreviations():

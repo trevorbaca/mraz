@@ -1473,7 +1473,6 @@ if __name__ == "__main__":
         **defaults,
         activate=(baca.tags.LOCAL_MEASURE_NUMBER,),
         always_make_global_rests=True,
-        commands=accumulator.commands,
         deactivate=(baca.tags.REPEAT_PITCH_CLASS_COLORING,),
         do_not_require_short_instrument_names=True,
         error_on_not_yet_pitched=True,
