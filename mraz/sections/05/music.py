@@ -11,70 +11,82 @@ score = library.make_empty_score()
 figures = baca.FigureAccumulator(score, library.voice_abbreviations())
 section_6 = library.moment_6()
 
+collections = section_6.stage_1.rh.next(2)
+container = baca.figure_function(
+    collections, [1], 8, affix=baca.rests_after([1]), treatments=[1, 0]
+)
+baca.dynamic_function(baca.select.phead(container, 0), "pp")
+baca.register_function(container, 24, 12)
+baca.staccato_function(baca.select.pheads(container))
+baca.tenuto_function(baca.select.pheads(container))
+baca.tuplet_bracket_staff_padding_function(container, 7)
+baca.tuplet_bracket_up_function(container)
 baca.make_figures(
     figures,
     library.rh_v3,
-    section_6.stage_1.rh.next(2),
-    baca.figure([1], 8, affix=baca.rests_after([1]), treatments=[1, 0]),
-    baca.dynamic("pp", selector=lambda _: baca.select.phead(_, 0)),
-    baca.register(24, 12),
-    baca.staccato(selector=lambda _: baca.select.pheads(_)),
-    baca.tenuto(selector=lambda _: baca.select.pheads(_)),
-    baca.tuplet_bracket_staff_padding(7),
-    baca.tuplet_bracket_up(),
+    None,
+    container=container,
     figure_name="6.1.R.1-2",
     tsd=8,
 )
 
+collections = section_6.stage_1.rh.next()
+container = baca.figure_function(collections, [1], 8, treatments=[1])
+baca.register_function(container, 24, 12)
+baca.staccato_function(baca.select.pheads(container))
+baca.tenuto_function(baca.select.pheads(container))
+baca.tuplet_bracket_staff_padding_function(container, 7)
+baca.tuplet_bracket_up_function(container)
+baca.tuplet_bracket_staff_padding_function(container, 8)
 baca.make_figures(
     figures,
     library.rh_v3,
-    section_6.stage_1.rh.next(),
-    baca.figure([1], 8, treatments=[1]),
-    baca.register(24, 12),
-    baca.staccato(selector=lambda _: baca.select.pheads(_)),
-    baca.tenuto(selector=lambda _: baca.select.pheads(_)),
-    baca.tuplet_bracket_staff_padding(7),
-    baca.tuplet_bracket_up(),
-    baca.tuplet_bracket_staff_padding(8),
+    None,
+    container=container,
     figure_name="6.1.R.3",
     tsd=8,
 )
 
+collections = section_6.stage_1.rh.next()
+container = baca.figure_function(collections, [1], 8, affix=baca.rests_around([1], [1]))
+baca.register_function(container, 24, 12)
+baca.staccato_function(baca.select.pheads(container))
+baca.tenuto_function(baca.select.pheads(container))
 baca.make_figures(
     figures,
     library.rh_v3,
-    section_6.stage_1.rh.next(),
-    baca.figure([1], 8, affix=baca.rests_around([1], [1])),
-    baca.register(24, 12),
-    baca.staccato(selector=lambda _: baca.select.pheads(_)),
-    baca.tenuto(selector=lambda _: baca.select.pheads(_)),
+    None,
+    container=container,
     figure_name="6.1.R.4",
     tsd=8,
 )
 
+collections = section_6.stage_1.rh.next(exhausted=True)
+container = baca.figure_function(collections, [1], 8, treatments=[1])
+baca.register_function(container, 12, 24)
+baca.staccato_function(baca.select.pheads(container))
+baca.tenuto_function(baca.select.pheads(container))
+baca.tuplet_bracket_up_function(container)
 baca.make_figures(
     figures,
     library.rh_v3,
-    section_6.stage_1.rh.next(exhausted=True),
-    baca.figure([1], 8, treatments=[1]),
-    baca.register(12, 24),
-    baca.staccato(selector=lambda _: baca.select.pheads(_)),
-    baca.tenuto(selector=lambda _: baca.select.pheads(_)),
-    baca.tuplet_bracket_up(),
+    None,
+    container=container,
     figure_name="6.1.R.5",
     tsd=8,
 )
 
+collections = section_6.stage_1.lh.next()
+container = baca.figure_function(collections, [1, -1], 16, treatments=[1])
+baca.dynamic_function(baca.select.phead(container, 0), "mp")
+baca.register_function(container, 0, 12)
+baca.tenuto_function(baca.select.pheads(container))
+baca.tuplet_bracket_staff_padding_function(container, 3)
 baca.make_figures(
     figures,
     library.lh_v4,
-    section_6.stage_1.lh.next(),
-    baca.figure([1, -1], 16, treatments=[1]),
-    baca.dynamic("mp", selector=lambda _: baca.select.phead(_, 0)),
-    baca.register(0, 12),
-    baca.tenuto(selector=lambda _: baca.select.pheads(_)),
-    baca.tuplet_bracket_staff_padding(3),
+    None,
+    container=container,
     anchor=baca.anchor(
         library.rh_v3,
         lambda _: abjad.select.note(_, 3),
@@ -83,14 +95,16 @@ baca.make_figures(
     figure_name="6.1.L.1",
 )
 
+collections = section_6.stage_1.lh.next()
+container = baca.figure_function(collections, [1, -2], 16, treatments=[2])
+baca.register_function(container, 0, 12)
+baca.tenuto_function(baca.select.pheads(container))
+baca.tuplet_bracket_staff_padding_function(container, 3)
 baca.make_figures(
     figures,
     library.lh_v4,
-    section_6.stage_1.lh.next(),
-    baca.figure([1, -2], 16, treatments=[2]),
-    baca.register(0, 12),
-    baca.tenuto(selector=lambda _: baca.select.pheads(_)),
-    baca.tuplet_bracket_staff_padding(3),
+    None,
+    container=container,
     anchor=baca.anchor(
         library.rh_v3,
         lambda _: abjad.select.note(_, 9),
@@ -99,13 +113,15 @@ baca.make_figures(
     figure_name="6.1.L.2",
 )
 
+collections = section_6.stage_1.lh.next()
+container = baca.figure_function(collections, [2, -1], 32)
+baca.register_function(container, 0, 12)
+baca.tenuto_function(baca.select.pheads(container))
 baca.make_figures(
     figures,
     library.lh_v4,
-    section_6.stage_1.lh.next(),
-    baca.figure([2, -1], 32),
-    baca.register(0, 12),
-    baca.tenuto(selector=lambda _: baca.select.pheads(_)),
+    None,
+    container=container,
     anchor=baca.anchor(
         library.rh_v3,
         lambda _: abjad.select.note(_, 13),
@@ -115,13 +131,15 @@ baca.make_figures(
     hide_time_signature=True,
 )
 
+collections = section_6.stage_1.lh.next(exhausted=True)
+container = baca.figure_function(collections, [2, -1], 32)
+baca.register_function(container, 12, 0)
+baca.tenuto_function(baca.select.pheads(container))
 baca.make_figures(
     figures,
     library.lh_v4,
-    section_6.stage_1.lh.next(exhausted=True),
-    baca.figure([2, -1], 32),
-    baca.register(12, 0),
-    baca.tenuto(selector=lambda _: baca.select.pheads(_)),
+    None,
+    container=container,
     figure_name="6.1.L.4",
     hide_time_signature=True,
 )
@@ -150,10 +168,9 @@ figures.populate_commands(score, accumulator)
 
 
 def postprocess(cache):
-    accumulator(
-        library.lh_v4,
-        baca.clef("treble", selector=lambda _: abjad.select.leaf(_, 0)),
-    )
+    m = cache[library.lh_v4]
+    with baca.scope(m.leaves()) as o:
+        baca.clef_function(o.leaf(0), "treble")
 
 
 def main():
@@ -186,7 +203,6 @@ if __name__ == "__main__":
         **baca.interpret.section_defaults(),
         activate=(baca.tags.LOCAL_MEASURE_NUMBER,),
         always_make_global_rests=True,
-        commands=accumulator.commands,
         do_not_require_short_instrument_names=True,
         error_on_not_yet_pitched=True,
     )

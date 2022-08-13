@@ -415,32 +415,28 @@ number.5.RH.Music.3 = {
             % [RH.Music.3 measure 1]
             % BEFORE:
             % COMMANDS:
-              %! baca.OverrideCommand._call(1)
-              %! baca.tuplet_bracket_up()
+              %! baca.tuplet_bracket_up_function(1)
             \override TupletBracket.direction = #up
-              %! baca.OverrideCommand._call(1)
-              %! baca.tuplet_bracket_staff_padding()
+              %! baca.tuplet_bracket_staff_padding_function(1)
             \override TupletBracket.staff-padding = 7
             fs'''!8
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.staccato()
+              %! baca.staccato_function()
             - \staccato
-              %! baca._attach_persistent_indicator()
-              %! baca.tenuto()
+              %! baca.tenuto_function()
             - \tenuto
               %! EXPLICIT_DYNAMIC_COLOR
               %! baca.treat_persistent_wrapper()
               %! EXPLICIT_DYNAMIC
               %! baca._attach_persistent_indicator()
               %! baca._set_status_tag()
-              %! baca.dynamic()
+              %! baca.dynamic_function()
             - \tweak color #(x11-color 'blue)
               %! EXPLICIT_DYNAMIC
               %! baca._attach_persistent_indicator()
               %! baca._set_status_tag()
-              %! baca.dynamic()
+              %! baca.dynamic_function()
             \pp
             % MARKUP:
               %! FIGURE_LABEL
@@ -453,11 +449,9 @@ number.5.RH.Music.3 = {
             a'''8
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.staccato()
+              %! baca.staccato_function()
             - \staccato
-              %! baca._attach_persistent_indicator()
-              %! baca.tenuto()
+              %! baca.tenuto_function()
             - \tenuto
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -465,11 +459,9 @@ number.5.RH.Music.3 = {
             b''8
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.staccato()
+              %! baca.staccato_function()
             - \staccato
-              %! baca._attach_persistent_indicator()
-              %! baca.tenuto()
+              %! baca.tenuto_function()
             - \tenuto
             % CLOSING:
             % COMMANDS:
@@ -488,11 +480,9 @@ number.5.RH.Music.3 = {
             c'''8
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.staccato()
+              %! baca.staccato_function()
             - \staccato
-              %! baca._attach_persistent_indicator()
-              %! baca.tenuto()
+              %! baca.tenuto_function()
             - \tenuto
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -500,11 +490,9 @@ number.5.RH.Music.3 = {
             af''!8
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.staccato()
+              %! baca.staccato_function()
             - \staccato
-              %! baca._attach_persistent_indicator()
-              %! baca.tenuto()
+              %! baca.tenuto_function()
             - \tenuto
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -512,11 +500,9 @@ number.5.RH.Music.3 = {
             b''8
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.staccato()
+              %! baca.staccato_function()
             - \staccato
-              %! baca._attach_persistent_indicator()
-              %! baca.tenuto()
+              %! baca.tenuto_function()
             - \tenuto
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -524,11 +510,9 @@ number.5.RH.Music.3 = {
             cs''!8
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.staccato()
+              %! baca.staccato_function()
             - \staccato
-              %! baca._attach_persistent_indicator()
-              %! baca.tenuto()
+              %! baca.tenuto_function()
             - \tenuto
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -536,11 +520,9 @@ number.5.RH.Music.3 = {
             r8
             % AFTER:
             % COMMANDS:
-              %! baca.OverrideCommand._call(2)
-              %! baca.tuplet_bracket_up()
+              %! baca.tuplet_bracket_up_function(2)
             \revert TupletBracket.direction
-              %! baca.OverrideCommand._call(2)
-              %! baca.tuplet_bracket_staff_padding()
+              %! baca.tuplet_bracket_staff_padding_function(2)
             \revert TupletBracket.staff-padding
             % CLOSING:
             % COMMANDS:
@@ -571,23 +553,18 @@ number.5.RH.Music.3 = {
             % [RH.Music.3 measure 2]
             % BEFORE:
             % COMMANDS:
-              %! baca.OverrideCommand._call(1)
-              %! baca.tuplet_bracket_up()
+              %! baca.tuplet_bracket_up_function(1)
             \override TupletBracket.direction = #up
-              %! baca.OverrideCommand._call(1)
-              %! baca.tuplet_bracket_staff_padding()
+              %! baca.tuplet_bracket_staff_padding_function(1)
             \override TupletBracket.staff-padding = 7
-              %! baca.OverrideCommand._call(1)
-              %! baca.tuplet_bracket_staff_padding()
+              %! baca.tuplet_bracket_staff_padding_function(1)
             \override TupletBracket.staff-padding = 8
             bf'''!8
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.staccato()
+              %! baca.staccato_function()
             - \staccato
-              %! baca._attach_persistent_indicator()
-              %! baca.tenuto()
+              %! baca.tenuto_function()
             - \tenuto
             % MARKUP:
               %! FIGURE_LABEL
@@ -600,11 +577,9 @@ number.5.RH.Music.3 = {
             cs'''!8
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.staccato()
+              %! baca.staccato_function()
             - \staccato
-              %! baca._attach_persistent_indicator()
-              %! baca.tenuto()
+              %! baca.tenuto_function()
             - \tenuto
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -612,21 +587,16 @@ number.5.RH.Music.3 = {
             ef'''!8
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.staccato()
+              %! baca.staccato_function()
             - \staccato
-              %! baca._attach_persistent_indicator()
-              %! baca.tenuto()
+              %! baca.tenuto_function()
             - \tenuto
             % COMMANDS:
-              %! baca.OverrideCommand._call(2)
-              %! baca.tuplet_bracket_up()
+              %! baca.tuplet_bracket_up_function(2)
             \revert TupletBracket.direction
-              %! baca.OverrideCommand._call(2)
-              %! baca.tuplet_bracket_staff_padding()
+              %! baca.tuplet_bracket_staff_padding_function(2)
             \revert TupletBracket.staff-padding
-              %! baca.OverrideCommand._call(2)
-              %! baca.tuplet_bracket_staff_padding()
+              %! baca.tuplet_bracket_staff_padding_function(2)
             \revert TupletBracket.staff-padding
             % CLOSING:
             % COMMANDS:
@@ -661,11 +631,9 @@ number.5.RH.Music.3 = {
             d'''8
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.staccato()
+              %! baca.staccato_function()
             - \staccato
-              %! baca._attach_persistent_indicator()
-              %! baca.tenuto()
+              %! baca.tenuto_function()
             - \tenuto
             % MARKUP:
               %! FIGURE_LABEL
@@ -678,11 +646,9 @@ number.5.RH.Music.3 = {
             e'''8
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.staccato()
+              %! baca.staccato_function()
             - \staccato
-              %! baca._attach_persistent_indicator()
-              %! baca.tenuto()
+              %! baca.tenuto_function()
             - \tenuto
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -690,11 +656,9 @@ number.5.RH.Music.3 = {
             c'''8
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.staccato()
+              %! baca.staccato_function()
             - \staccato
-              %! baca._attach_persistent_indicator()
-              %! baca.tenuto()
+              %! baca.tenuto_function()
             - \tenuto
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -702,11 +666,9 @@ number.5.RH.Music.3 = {
             ef'''!8
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.staccato()
+              %! baca.staccato_function()
             - \staccato
-              %! baca._attach_persistent_indicator()
-              %! baca.tenuto()
+              %! baca.tenuto_function()
             - \tenuto
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -714,11 +676,9 @@ number.5.RH.Music.3 = {
             f''8
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.staccato()
+              %! baca.staccato_function()
             - \staccato
-              %! baca._attach_persistent_indicator()
-              %! baca.tenuto()
+              %! baca.tenuto_function()
             - \tenuto
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -753,17 +713,14 @@ number.5.RH.Music.3 = {
             % [RH.Music.3 measure 4]
             % BEFORE:
             % COMMANDS:
-              %! baca.OverrideCommand._call(1)
-              %! baca.tuplet_bracket_up()
+              %! baca.tuplet_bracket_up_function(1)
             \override TupletBracket.direction = #up
             af''!8
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.staccato()
+              %! baca.staccato_function()
             - \staccato
-              %! baca._attach_persistent_indicator()
-              %! baca.tenuto()
+              %! baca.tenuto_function()
             - \tenuto
             % MARKUP:
               %! FIGURE_LABEL
@@ -776,11 +733,9 @@ number.5.RH.Music.3 = {
             e''8
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.staccato()
+              %! baca.staccato_function()
             - \staccato
-              %! baca._attach_persistent_indicator()
-              %! baca.tenuto()
+              %! baca.tenuto_function()
             - \tenuto
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -788,11 +743,9 @@ number.5.RH.Music.3 = {
             g''8
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.staccato()
+              %! baca.staccato_function()
             - \staccato
-              %! baca._attach_persistent_indicator()
-              %! baca.tenuto()
+              %! baca.tenuto_function()
             - \tenuto
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -800,15 +753,12 @@ number.5.RH.Music.3 = {
             a''8
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.staccato()
+              %! baca.staccato_function()
             - \staccato
-              %! baca._attach_persistent_indicator()
-              %! baca.tenuto()
+              %! baca.tenuto_function()
             - \tenuto
             % COMMANDS:
-              %! baca.OverrideCommand._call(2)
-              %! baca.tuplet_bracket_up()
+              %! baca.tuplet_bracket_up_function(2)
             \revert TupletBracket.direction
             % CLOSING:
             % COMMANDS:
@@ -1114,7 +1064,7 @@ number.5.LH.Music.4 = {
       %! EXPLICIT_CLEF
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.clef()
+      %! baca.clef_function()
     \clef "treble"
       %! EXPLICIT_CLEF_COLOR
       %! baca._attach_color_literal(2)
@@ -1125,7 +1075,7 @@ number.5.LH.Music.4 = {
       %! EXPLICIT_CLEF
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.clef()
+      %! baca.clef_function()
       %! baca.treat_persistent_wrapper(2)
     \set PianoMusicLHStaff.forceClef = ##t
     s1 * 7/32
@@ -1151,26 +1101,24 @@ number.5.LH.Music.4 = {
 
             % BEFORE:
             % COMMANDS:
-              %! baca.OverrideCommand._call(1)
-              %! baca.tuplet_bracket_staff_padding()
+              %! baca.tuplet_bracket_staff_padding_function(1)
             \override TupletBracket.staff-padding = 3
             g'16
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.tenuto()
+              %! baca.tenuto_function()
             - \tenuto
               %! EXPLICIT_DYNAMIC_COLOR
               %! baca.treat_persistent_wrapper()
               %! EXPLICIT_DYNAMIC
               %! baca._attach_persistent_indicator()
               %! baca._set_status_tag()
-              %! baca.dynamic()
+              %! baca.dynamic_function()
             - \tweak color #(x11-color 'blue)
               %! EXPLICIT_DYNAMIC
               %! baca._attach_persistent_indicator()
               %! baca._set_status_tag()
-              %! baca.dynamic()
+              %! baca.dynamic_function()
             \mp
             % MARKUP:
               %! FIGURE_LABEL
@@ -1187,8 +1135,7 @@ number.5.LH.Music.4 = {
             af'!16
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.tenuto()
+              %! baca.tenuto_function()
             - \tenuto
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -1200,8 +1147,7 @@ number.5.LH.Music.4 = {
             bf'!16
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.tenuto()
+              %! baca.tenuto_function()
             - \tenuto
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -1213,8 +1159,7 @@ number.5.LH.Music.4 = {
             a'16
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.tenuto()
+              %! baca.tenuto_function()
             - \tenuto
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -1222,8 +1167,7 @@ number.5.LH.Music.4 = {
             r16
             % AFTER:
             % COMMANDS:
-              %! baca.OverrideCommand._call(2)
-              %! baca.tuplet_bracket_staff_padding()
+              %! baca.tuplet_bracket_staff_padding_function(2)
             \revert TupletBracket.staff-padding
             % CLOSING:
             % COMMANDS:
@@ -1256,14 +1200,12 @@ number.5.LH.Music.4 = {
 
             % BEFORE:
             % COMMANDS:
-              %! baca.OverrideCommand._call(1)
-              %! baca.tuplet_bracket_staff_padding()
+              %! baca.tuplet_bracket_staff_padding_function(1)
             \override TupletBracket.staff-padding = 3
             b'16
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.tenuto()
+              %! baca.tenuto_function()
             - \tenuto
             % MARKUP:
               %! FIGURE_LABEL
@@ -1280,8 +1222,7 @@ number.5.LH.Music.4 = {
             c''16
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.tenuto()
+              %! baca.tenuto_function()
             - \tenuto
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -1293,8 +1234,7 @@ number.5.LH.Music.4 = {
             d''16
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.tenuto()
+              %! baca.tenuto_function()
             - \tenuto
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -1306,8 +1246,7 @@ number.5.LH.Music.4 = {
             cs''!16
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.tenuto()
+              %! baca.tenuto_function()
             - \tenuto
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -1315,8 +1254,7 @@ number.5.LH.Music.4 = {
             r8
             % AFTER:
             % COMMANDS:
-              %! baca.OverrideCommand._call(2)
-              %! baca.tuplet_bracket_staff_padding()
+              %! baca.tuplet_bracket_staff_padding_function(2)
             \revert TupletBracket.staff-padding
             % CLOSING:
             % COMMANDS:
@@ -1349,8 +1287,7 @@ number.5.LH.Music.4 = {
             d'16
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.tenuto()
+              %! baca.tenuto_function()
             - \tenuto
             % MARKUP:
               %! FIGURE_LABEL
@@ -1367,8 +1304,7 @@ number.5.LH.Music.4 = {
             f'16
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.tenuto()
+              %! baca.tenuto_function()
             - \tenuto
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -1380,8 +1316,7 @@ number.5.LH.Music.4 = {
             g'16
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.tenuto()
+              %! baca.tenuto_function()
             - \tenuto
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -1393,8 +1328,7 @@ number.5.LH.Music.4 = {
             ef''!16
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.tenuto()
+              %! baca.tenuto_function()
             - \tenuto
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -1406,8 +1340,7 @@ number.5.LH.Music.4 = {
             e''16
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.tenuto()
+              %! baca.tenuto_function()
             - \tenuto
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -1442,8 +1375,7 @@ number.5.LH.Music.4 = {
             fs''!16
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.tenuto()
+              %! baca.tenuto_function()
             - \tenuto
             % MARKUP:
               %! FIGURE_LABEL
@@ -1460,8 +1392,7 @@ number.5.LH.Music.4 = {
             f''16
             % AFTER:
             % ARTICULATIONS:
-              %! baca._attach_persistent_indicator()
-              %! baca.tenuto()
+              %! baca.tenuto_function()
             - \tenuto
             % ABSOLUTE_BEFORE:
             % COMMANDS:
