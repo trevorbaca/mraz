@@ -115,7 +115,7 @@ def clean_up_repeat_ties_function(argument):
 
 
 def instruments():
-    return dict([("Piano", abjad.Piano())])
+    return {"Piano": abjad.Piano()}
 
 
 def make_empty_score():
@@ -231,12 +231,10 @@ def make_empty_score():
 
 
 def metronome_marks():
-    return dict(
-        [
-            ("84", abjad.MetronomeMark((1, 4), 84)),
-            ("112", abjad.MetronomeMark((1, 4), 112)),
-        ]
-    )
+    return {
+        "84": abjad.MetronomeMark((1, 4), 84),
+        "112": abjad.MetronomeMark((1, 4), 112),
+    }
 
 
 def moment_2():
@@ -1290,18 +1288,6 @@ def silver_transform_7():
         "T11(IAIR(S).6)",
     )
     return segments, names
-
-
-def transparent_music(selector):
-    return [
-        baca.note_head_no_ledgers(True, selector=selector),
-        baca.accidental_transparent(selector=selector),
-        baca.beam_transparent(selector=selector),
-        baca.flag_transparent(selector=selector),
-        baca.note_head_transparent(selector=selector),
-        baca.repeat_tie_transparent(selector=selector),
-        baca.stem_transparent(selector=selector),
-    ]
 
 
 def transparent_music_function(argument):
