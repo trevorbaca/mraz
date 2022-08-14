@@ -267,9 +267,7 @@ for index, string in (
 def postprocess(cache):
     m = cache[library.rh_v1]
     with baca.scope(m.leaves()) as o:
-        baca.instrument_function(
-            o.leaf(0), accumulator.instruments["Piano"], accumulator.manifests()
-        )
+        baca.instrument_function(o.leaf(0), "Piano", accumulator.manifests())
         baca.instrument_name_function(
             o.leaf(0),
             r"\mraz-piano-markup",
