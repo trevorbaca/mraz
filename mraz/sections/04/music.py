@@ -1442,7 +1442,7 @@ def postprocess(cache):
 
 
 def main():
-    previous_persist = baca.previous_metadata(__file__, file_name="__persist__")
+    previous_persist = baca.previous_persist(__file__)
     music_voice_names = [
         _
         for _ in voice_names
