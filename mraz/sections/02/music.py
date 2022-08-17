@@ -314,6 +314,7 @@ def postprocess(cache):
 
 def main():
     previous_persist = baca.previous_persist(__file__)
+    previous_persistent_indicators = previous_persist["persistent_indicators"]
     music_voice_names = [
         _
         for _ in voice_names
@@ -322,8 +323,10 @@ def main():
         or "InsertVoice" in _
         or "ResonanceVoice" in _
     ]
-    baca.reapply(
-        accumulator, accumulator.manifests(), previous_persist, music_voice_names
+    baca.reapply_new(
+        accumulator.voices(music_voice_names),
+        accumulator.manifests(),
+        previous_persistent_indicators,
     )
     cache = baca.interpret.cache_leaves(
         score,
