@@ -576,7 +576,7 @@ def main():
         or "InsertVoice" in _
         or "ResonanceVoice" in _
     ]
-    baca.reapply_new(
+    baca.reapply(
         accumulator.voices(music_voice_names),
         accumulator.manifests(),
         previous_persistent_indicators,
