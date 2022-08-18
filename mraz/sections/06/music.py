@@ -9,7 +9,7 @@ from mraz import library
 #########################################################################################
 
 score = library.make_empty_score()
-figures = baca.FigureAccumulator(score, library.voice_abbreviations())
+figures = baca.FigureAccumulator(score, library.voice_abbreviations)
 section_2 = library.moment_2()
 section_5 = library.moment_5()
 section_8 = library.moment_8()
@@ -621,7 +621,7 @@ accumulator = baca.CommandAccumulator(
     instruments=library.instruments,
     metronome_marks=library.metronome_marks,
     time_signatures=figures.time_signatures,
-    voice_abbreviations=library.voice_abbreviations(),
+    voice_abbreviations=library.voice_abbreviations,
     voice_names=voice_names,
 )
 
@@ -732,7 +732,7 @@ if __name__ == "__main__":
     main()
     defaults = baca.interpret.section_defaults()
     del defaults["check_wellformedness"]
-    metadata, persist, score, timing = baca.build.section(
+    metadata, persist, timing = baca.build.section(
         score,
         library.manifests,
         accumulator.time_signatures,
