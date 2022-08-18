@@ -1394,8 +1394,7 @@ for index, item in (
     (36, "84"),
 ):
     skip = skips[index]
-    indicator = accumulator.metronome_marks.get(item, item)
-    baca.metronome_mark_function(skip, indicator, manifests)
+    baca.metronome_mark_function(skip, item, manifests)
 
 rests = score["Rests"]
 for index, string in ((21 - 1, "fermata"),):
