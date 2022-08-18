@@ -114,10 +114,6 @@ def clean_up_repeat_ties_function(argument):
     baca.stem_stencil_false_function(argument)
 
 
-def instruments():
-    return {"Piano": abjad.Piano()}
-
-
 def make_empty_score():
     tag = baca.tags.function_name(inspect.currentframe())
     global_context = baca.score.make_global_context()
@@ -228,13 +224,6 @@ def make_empty_score():
     baca.score.assert_unique_context_names(score)
     _validate_voice_names(score)
     return score
-
-
-def metronome_marks():
-    return {
-        "84": abjad.MetronomeMark((1, 4), 84),
-        "112": abjad.MetronomeMark((1, 4), 112),
-    }
 
 
 def moment_2():
@@ -1330,3 +1319,18 @@ def voice_abbreviations():
         lh_v6_i: "LH.InsertVoice.6",
         lh_resonance: "LH.ResonanceVoice",
     }
+
+
+instruments = {"Piano": abjad.Piano()}
+
+
+metronome_marks = {
+    "84": abjad.MetronomeMark((1, 4), 84),
+    "112": abjad.MetronomeMark((1, 4), 112),
+}
+
+
+manifests = {
+    "abjad.Instrument": instruments,
+    "abjad.MetronomeMark": metronome_marks,
+}
