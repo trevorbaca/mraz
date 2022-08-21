@@ -413,7 +413,6 @@ baca.interpret.set_up_score(
 figures.populate_commands(score, accumulator)
 
 skips = score["Skips"]
-manifests = library.manifests
 
 for index, item in (
     (3 - 1, "84"),
@@ -424,7 +423,7 @@ for index, item in (
     (12 - 1, "84"),
 ):
     skip = skips[index]
-    baca.metronome_mark_function(skip, item, manifests)
+    baca.metronome_mark_function(skip, item, library.manifests)
 
 rests = score["Rests"]
 for index, string in (
