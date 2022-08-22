@@ -296,11 +296,11 @@ def _show_moments():
     abjad.persist.as_pdf(lilypond_file, name)
 
 
-def main():
+def make_score():
     _show_transforms()
     _show_moments()
 
 
 if __name__ == "__main__":
     print("Interpreting show.py ...")
-    main()
+    make_score()
