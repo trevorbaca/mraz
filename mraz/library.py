@@ -98,15 +98,6 @@ def _validate_voice_names(score):
             raise Exception(f"voice not in score: {voice_name!r}.")
 
 
-def clean_up_repeat_ties():
-    return [
-        baca.beam_stencil_false(selector=lambda _: baca.select.leaves(_)),
-        baca.dots_stencil_false(selector=lambda _: baca.select.leaves(_)),
-        baca.flag_stencil_false(selector=lambda _: baca.select.leaves(_)),
-        baca.stem_stencil_false(selector=lambda _: baca.select.leaves(_)),
-    ]
-
-
 def clean_up_repeat_ties(argument):
     baca.beam_stencil_false(argument)
     baca.dots_stencil_false(argument)
