@@ -259,8 +259,8 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
 
     collections = section_8.stage_3.lh.next(exhausted=True)
     container = baca.figure(collections, [2, -4], 16, treatments=[-6])
-    rmakers.force_fraction_rfunction(container)
-    rmakers.denominator_rfunction(container, 4)
+    rmakers.force_fraction_function(container)
+    rmakers.denominator_function(container, 4)
     baca.register(container, -39)
     baca.make_figures(
         figures,

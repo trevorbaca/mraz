@@ -50,9 +50,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     )
 
     collections = section_6.stage_1.rh.next()
-    container = baca.figure(
-        collections, [1], 8, affix=baca.rests_around([1], [1])
-    )
+    container = baca.figure(collections, [1], 8, affix=baca.rests_around([1], [1]))
     baca.register(container, 24, 12)
     baca.staccato(baca.select.pheads(container))
     baca.tenuto(baca.select.pheads(container))
