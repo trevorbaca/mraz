@@ -107,11 +107,11 @@ def clean_up_repeat_ties():
     ]
 
 
-def clean_up_repeat_ties_function(argument):
-    baca.beam_stencil_false_function(argument)
-    baca.dots_stencil_false_function(argument)
-    baca.flag_stencil_false_function(argument)
-    baca.stem_stencil_false_function(argument)
+def clean_up_repeat_ties(argument):
+    baca.beam_stencil_false(argument)
+    baca.dots_stencil_false(argument)
+    baca.flag_stencil_false(argument)
+    baca.stem_stencil_false(argument)
 
 
 def make_empty_score():
@@ -1279,15 +1279,15 @@ def silver_transform_7():
     return segments, names
 
 
-def transparent_music_function(argument):
+def transparent_music(argument):
     if argument:
-        baca.note_head_no_ledgers_function(argument, True)
-        baca.accidental_transparent_function(argument)
-        baca.beam_transparent_function(argument)
-        baca.flag_transparent_function(argument)
-        baca.note_head_transparent_function(argument)
-        baca.repeat_tie_transparent_function(argument)
-        baca.stem_transparent_function(argument)
+        baca.note_head_no_ledgers(argument, True)
+        baca.accidental_transparent(argument)
+        baca.beam_transparent(argument)
+        baca.flag_transparent(argument)
+        baca.note_head_transparent(argument)
+        baca.repeat_tie_transparent(argument)
+        baca.stem_transparent(argument)
 
 
 instruments = {"Piano": abjad.Piano()}
