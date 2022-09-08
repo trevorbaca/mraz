@@ -21,8 +21,8 @@ def make_empty_score():
     collections = section_4.stage_5.rh[3 - 1]
     container = baca.figure_function(collections, [16], 16)
     baca.register_function(container, 36)
-    groups = rmakers.nongrace_leaves_in_each_tuplet_function(container)
-    rmakers.beam_groups_function(groups)
+    groups = rmakers.nongrace_leaves_in_each_tuplet_rfunction(container)
+    rmakers.beam_groups_rfunction(groups)
     baca.tenuto_function(baca.select.pheads(container))
     baca.markup_function(
         baca.select.pleaf(container, 0), r"\mraz-ottava-brackets-always-govern-markup"
@@ -46,8 +46,8 @@ def make_empty_score():
     for run in baca.select.runs(container):
         baca.slur_function(run)
     baca.slur_up_function(container)
-    groups = rmakers.nongrace_leaves_in_each_tuplet_function(container)
-    rmakers.beam_groups_function(groups)
+    groups = rmakers.nongrace_leaves_in_each_tuplet_rfunction(container)
+    rmakers.beam_groups_rfunction(groups)
     baca.make_figures(
         figures,
         library.rh_v2,
@@ -63,8 +63,8 @@ def make_empty_score():
     baca.register_function(container, 6, 6 + 10)
     imbrications = baca.imbricate_function(container, library.lh_v4_i, [14, 18])
     baca.dynamic_function(baca.select.phead(container, 0), "ff")
-    groups = rmakers.nongrace_leaves_in_each_tuplet_function(container)
-    rmakers.beam_groups_function(groups)
+    groups = rmakers.nongrace_leaves_in_each_tuplet_rfunction(container)
+    rmakers.beam_groups_rfunction(groups)
     baca.make_figures(
         figures,
         library.lh_v4,
@@ -191,7 +191,7 @@ def make_empty_score():
 
     collections = section_5.stage_1.lh.next(exhausted=True)
     container = baca.figure_function(collections, [4, -4], 16, treatments=[(16, 4)])
-    rmakers.denominator_function(container, abjad.Duration(1, 1))
+    rmakers.denominator_rfunction(container, abjad.Duration(1, 1))
     baca.dynamic_function(baca.select.phead(container, 0), "mf")
     baca.dynamic_text_x_offset_function(baca.select.pleaf(container, 0), 0.25)
     baca.ottava_function(baca.select.tleaves(container))

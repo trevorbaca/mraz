@@ -19,7 +19,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
 
     collections = [_.transpose(4 * 7) for _ in section_7.stage_1.lh[-1]]
     container = baca.figure_function(collections, [1], 16, treatments=[1])
-    rmakers.beam_groups_function(container)
+    rmakers.beam_groups_rfunction(container)
     baca.register_function(container, 6, 6 + 10)
     imbrications = baca.imbricate_function(
         container,
@@ -27,7 +27,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         [14, 18],
     )
     for value in imbrications.values():
-        rmakers.unbeam_function(value)
+        rmakers.unbeam_rfunction(value)
     baca.dynamic_function(baca.select.phead(container, 0), "ff")
     baca.make_figures(
         figures,
@@ -52,8 +52,8 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
 
     collections = section_2.stage_2.rh[0][:1]
     container = baca.figure_function(collections, [1], 16)
-    groups = rmakers.nongrace_leaves_in_each_tuplet_function(container)
-    rmakers.beam_groups_function(groups)
+    groups = rmakers.nongrace_leaves_in_each_tuplet_rfunction(container)
+    rmakers.beam_groups_rfunction(groups)
     baca.bass_to_octave_function(container, 3)
     baca.dynamic_function(baca.select.phead(container, 0), "ppp")
     baca.dynamic_text_x_offset_function(baca.select.pleaf(container, 0), 0)
@@ -84,8 +84,8 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
 
     collections = [_.transpose(4 * 7) for _ in section_7.stage_1.lh[-1]]
     container = baca.figure_function(collections, [1], 16, treatments=[1])
-    groups = rmakers.nongrace_leaves_in_each_tuplet_function(container)
-    rmakers.beam_groups_function(groups)
+    groups = rmakers.nongrace_leaves_in_each_tuplet_rfunction(container)
+    rmakers.beam_groups_rfunction(groups)
     baca.register_function(container, 6, 6 + 10)
     imbrications = baca.imbricate_function(
         container,
@@ -93,7 +93,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         [14, 18],
     )
     for value in imbrications.values():
-        rmakers.unbeam_function(value)
+        rmakers.unbeam_rfunction(value)
     baca.dynamic_function(baca.select.phead(container, 0), "p")
     baca.make_figures(
         figures,
@@ -107,8 +107,8 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
 
     collections = section_2.stage_2.rh[0][:2]
     container = baca.figure_function(collections, [1], 16)
-    groups = rmakers.nongrace_leaves_in_each_tuplet_function(container)
-    rmakers.beam_groups_function(groups)
+    groups = rmakers.nongrace_leaves_in_each_tuplet_rfunction(container)
+    rmakers.beam_groups_rfunction(groups)
     baca.bass_to_octave_function(container, 3)
     baca.dynamic_function(baca.select.phead(container, 0), "ppp")
     baca.dynamic_text_x_offset_function(baca.select.pleaf(container, 0), 0)
@@ -175,8 +175,8 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
 
     collections = section_2.stage_2.rh[0][:4]
     container = baca.figure_function(collections, [1], 16)
-    groups = rmakers.nongrace_leaves_in_each_tuplet_function(container)
-    rmakers.beam_groups_function(groups)
+    groups = rmakers.nongrace_leaves_in_each_tuplet_rfunction(container)
+    rmakers.beam_groups_rfunction(groups)
     baca.bass_to_octave_function(container, 3)
     baca.dynamic_function(baca.select.phead(container, 0), "ppp")
     baca.dynamic_text_x_offset_function(baca.select.pleaf(container, 0), 0)
@@ -195,8 +195,8 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
 
     collections = section_4.stage_5.rh[1 - 1]
     container = baca.figure_function(collections, [28], 16)
-    groups = rmakers.nongrace_leaves_in_each_tuplet_function(container)
-    rmakers.beam_groups_function(groups)
+    groups = rmakers.nongrace_leaves_in_each_tuplet_rfunction(container)
+    rmakers.beam_groups_rfunction(groups)
     baca.dynamic_function(baca.select.phead(container, 0), "f")
     baca.register_function(container, 36)
     baca.tenuto_function(baca.select.pheads(container))
@@ -211,8 +211,8 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
 
     collections = section_4.stage_5.rh[2 - 1]
     container = baca.figure_function(collections, [24], 16)
-    groups = rmakers.nongrace_leaves_in_each_tuplet_function(container)
-    rmakers.beam_groups_function(groups)
+    groups = rmakers.nongrace_leaves_in_each_tuplet_rfunction(container)
+    rmakers.beam_groups_rfunction(groups)
     baca.register_function(container, 36)
     baca.tenuto_function(baca.select.pheads(container))
     baca.make_figures(
@@ -226,8 +226,8 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
 
     collections = section_4.stage_5.rh[3 - 1]
     container = baca.figure_function(collections, [16], 16)
-    groups = rmakers.nongrace_leaves_in_each_tuplet_function(container)
-    rmakers.beam_groups_function(groups)
+    groups = rmakers.nongrace_leaves_in_each_tuplet_rfunction(container)
+    rmakers.beam_groups_rfunction(groups)
     baca.register_function(container, 36)
     baca.tenuto_function(baca.select.pheads(container))
     baca.make_figures(
@@ -242,8 +242,8 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
 
     collections = section_4.stage_5.lh[:4]
     container = baca.figure_function(collections, [1], 16, treatments=[(1, 4)])
-    groups = rmakers.nongrace_leaves_in_each_tuplet_function(container)
-    rmakers.beam_groups_function(groups)
+    groups = rmakers.nongrace_leaves_in_each_tuplet_rfunction(container)
+    rmakers.beam_groups_rfunction(groups)
     baca.dls_staff_padding_function(container, 8)
     baca.hairpin_function(container, "f < ff")
     for run in baca.select.runs(container):
@@ -267,8 +267,8 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
 
     collections = [resonance]
     container = baca.figure_function(collections, [8], 16)
-    groups = rmakers.nongrace_leaves_in_each_tuplet_function(container)
-    rmakers.beam_groups_function(groups)
+    groups = rmakers.nongrace_leaves_in_each_tuplet_rfunction(container)
+    rmakers.beam_groups_rfunction(groups)
     baca.make_figures(
         figures,
         library.lh_resonance,
@@ -282,8 +282,8 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
 
     collections = [resonance]
     container = baca.figure_function(collections, [4], 16)
-    groups = rmakers.nongrace_leaves_in_each_tuplet_function(container)
-    rmakers.beam_groups_function(groups)
+    groups = rmakers.nongrace_leaves_in_each_tuplet_rfunction(container)
+    rmakers.beam_groups_rfunction(groups)
     baca.make_figures(
         figures,
         library.lh_resonance,
@@ -296,8 +296,8 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
 
     collections = [resonance]
     container = baca.figure_function(collections, [5], 16)
-    groups = rmakers.nongrace_leaves_in_each_tuplet_function(container)
-    rmakers.beam_groups_function(groups)
+    groups = rmakers.nongrace_leaves_in_each_tuplet_rfunction(container)
+    rmakers.beam_groups_rfunction(groups)
     baca.make_figures(
         figures,
         library.lh_resonance,
@@ -310,8 +310,8 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
 
     collections = [resonance]
     container = baca.figure_function(collections, [4], 16)
-    groups = rmakers.nongrace_leaves_in_each_tuplet_function(container)
-    rmakers.beam_groups_function(groups)
+    groups = rmakers.nongrace_leaves_in_each_tuplet_rfunction(container)
+    rmakers.beam_groups_rfunction(groups)
     baca.make_figures(
         figures,
         library.lh_resonance,
@@ -324,8 +324,8 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
 
     collections = [resonance]
     container = baca.figure_function(collections, [8], 16)
-    groups = rmakers.nongrace_leaves_in_each_tuplet_function(container)
-    rmakers.beam_groups_function(groups)
+    groups = rmakers.nongrace_leaves_in_each_tuplet_rfunction(container)
+    rmakers.beam_groups_rfunction(groups)
     baca.make_figures(
         figures,
         library.lh_resonance,
@@ -338,8 +338,8 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
 
     collections = [resonance]
     container = baca.figure_function(collections, [10], 16)
-    groups = rmakers.nongrace_leaves_in_each_tuplet_function(container)
-    rmakers.beam_groups_function(groups)
+    groups = rmakers.nongrace_leaves_in_each_tuplet_rfunction(container)
+    rmakers.beam_groups_rfunction(groups)
     baca.make_figures(
         figures,
         library.lh_resonance,
@@ -352,8 +352,8 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
 
     collections = [resonance]
     container = baca.figure_function(collections, [21], 16)
-    groups = rmakers.nongrace_leaves_in_each_tuplet_function(container)
-    rmakers.beam_groups_function(groups)
+    groups = rmakers.nongrace_leaves_in_each_tuplet_rfunction(container)
+    rmakers.beam_groups_rfunction(groups)
     baca.accidental_x_extent_false_function(abjad.select.leaf(container, 0))
     baca.make_figures(
         figures,
@@ -368,8 +368,8 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
 
     collections = [resonance]
     container = baca.figure_function(collections, [28], 16)
-    groups = rmakers.nongrace_leaves_in_each_tuplet_function(container)
-    rmakers.beam_groups_function(groups)
+    groups = rmakers.nongrace_leaves_in_each_tuplet_rfunction(container)
+    rmakers.beam_groups_rfunction(groups)
     baca.make_figures(
         figures,
         library.lh_resonance,
@@ -382,8 +382,8 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
 
     collections = [resonance]
     container = baca.figure_function(collections, [24], 16)
-    groups = rmakers.nongrace_leaves_in_each_tuplet_function(container)
-    rmakers.beam_groups_function(groups)
+    groups = rmakers.nongrace_leaves_in_each_tuplet_rfunction(container)
+    rmakers.beam_groups_rfunction(groups)
     baca.make_figures(
         figures,
         library.lh_resonance,
