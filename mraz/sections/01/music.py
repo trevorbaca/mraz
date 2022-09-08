@@ -21,8 +21,8 @@ def make_empty_score():
     collections = section_4.stage_5.rh[3 - 1]
     container = baca.figure(collections, [16], 16)
     baca.register(container, 36)
-    groups = rmakers.nongrace_leaves_in_each_tuplet_rfunction(container)
-    rmakers.beam_groups_rfunction(groups)
+    groups = rmakers.nongrace_leaves_in_each_tuplet_function(container)
+    rmakers.beam_groups_function(groups)
     baca.tenuto(baca.select.pheads(container))
     baca.markup(
         baca.select.pleaf(container, 0), r"\mraz-ottava-brackets-always-govern-markup"
@@ -46,8 +46,8 @@ def make_empty_score():
     for run in baca.select.runs(container):
         baca.slur(run)
     baca.slur_up(container)
-    groups = rmakers.nongrace_leaves_in_each_tuplet_rfunction(container)
-    rmakers.beam_groups_rfunction(groups)
+    groups = rmakers.nongrace_leaves_in_each_tuplet_function(container)
+    rmakers.beam_groups_function(groups)
     baca.make_figures(
         figures,
         library.rh_v2,
@@ -63,8 +63,8 @@ def make_empty_score():
     baca.register(container, 6, 6 + 10)
     imbrications = baca.imbricate(container, library.lh_v4_i, [14, 18])
     baca.dynamic(baca.select.phead(container, 0), "ff")
-    groups = rmakers.nongrace_leaves_in_each_tuplet_rfunction(container)
-    rmakers.beam_groups_rfunction(groups)
+    groups = rmakers.nongrace_leaves_in_each_tuplet_function(container)
+    rmakers.beam_groups_function(groups)
     baca.make_figures(
         figures,
         library.lh_v4,
@@ -94,9 +94,7 @@ def make_empty_score():
     )
 
     collections = section_8.stage_3.rh[5 - 1]
-    container = baca.figure(
-        collections, [6, -1], 32, affix=baca.rests_after([4])
-    )
+    container = baca.figure(collections, [6, -1], 32, affix=baca.rests_after([4]))
     baca.dynamic(baca.select.phead(container, 0), "ppp")
     baca.dynamic_text_x_offset(baca.select.pleaf(container, 0), -0.5)
     baca.dynamic_up(abjad.select.leaf(container, 0))
@@ -152,13 +150,9 @@ def make_empty_score():
     )
 
     collections = section_6.stage_1.rh[3]
-    container = baca.figure(
-        collections, [1], 8, affix=baca.rests_around([1], [1])
-    )
+    container = baca.figure(collections, [1], 8, affix=baca.rests_around([1], [1]))
     baca.register(container, 24, 12)
-    baca.span_bar_extra_offset(
-        abjad.select.leaf(container, -1), (-0.75, 0), after=True
-    )
+    baca.span_bar_extra_offset(abjad.select.leaf(container, -1), (-0.75, 0), after=True)
     baca.staccato(baca.select.pheads(container))
     baca.tenuto(baca.select.pheads(container))
     baca.make_figures(
@@ -191,7 +185,7 @@ def make_empty_score():
 
     collections = section_5.stage_1.lh.next(exhausted=True)
     container = baca.figure(collections, [4, -4], 16, treatments=[(16, 4)])
-    rmakers.denominator_rfunction(container, abjad.Duration(1, 1))
+    rmakers.denominator_function(container, abjad.Duration(1, 1))
     baca.dynamic(baca.select.phead(container, 0), "mf")
     baca.dynamic_text_x_offset(baca.select.pleaf(container, 0), 0.25)
     baca.ottava(baca.select.tleaves(container))
