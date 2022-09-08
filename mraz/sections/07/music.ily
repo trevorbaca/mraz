@@ -123,19 +123,19 @@ number.7.Skips = {
       %! baca._attach_metronome_marks(2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.metronome_mark_function()
+      %! baca.metronome_mark()
     %@% - \abjad-dashed-line-with-arrow
       %! EXPLICIT_METRONOME_MARK
       %! baca._attach_metronome_marks(2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.metronome_mark_function()
+      %! baca.metronome_mark()
     %@% - \baca-metronome-mark-spanner-left-text 2 0 1 "84"
       %! EXPLICIT_METRONOME_MARK
       %! baca._attach_metronome_marks(2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.metronome_mark_function()
+      %! baca.metronome_mark()
     %@% \bacaStartTextSpanMM
       %! CLOCK_TIME
       %! baca._label_clock_time()
@@ -520,19 +520,19 @@ number.7.Skips = {
       %! baca._attach_metronome_marks(2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.metronome_mark_function()
+      %! baca.metronome_mark()
     %@% - \abjad-invisible-line
       %! EXPLICIT_METRONOME_MARK
       %! baca._attach_metronome_marks(2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.metronome_mark_function()
+      %! baca.metronome_mark()
     %@% - \baca-metronome-mark-spanner-left-text 2 0 1 "112"
       %! EXPLICIT_METRONOME_MARK
       %! baca._attach_metronome_marks(2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.metronome_mark_function()
+      %! baca.metronome_mark()
     %@% \bacaStartTextSpanMM
       %! CLOCK_TIME
       %! baca._label_clock_time()
@@ -645,7 +645,7 @@ number.7.Skips = {
       %! baca._label_measure_numbers()
     %@% \bacaStartTextSpanMN
     % COMMANDS:
-      %! baca.bar_line_function()
+      %! baca.bar_line()
     \bar "|."
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -733,9 +733,9 @@ number.7.RH.Music.1 = {
                 % [RH.Music.1 measure 1]
                 % BEFORE:
                 % COMMANDS:
-                  %! baca.beam_positions_function(1)
+                  %! baca.beam_positions(1)
                 \override Beam.positions = #'(10 . 10)
-                  %! baca.stem_up_function(1)
+                  %! baca.stem_up(1)
                 \override Stem.direction = #up
                   %! rmakers.beam_groups()
                 \set stemLeftBeamCount = 0
@@ -747,7 +747,7 @@ number.7.RH.Music.1 = {
                   %! baca._reapply_persistent_indicators(3)
                   %! baca._set_status_tag()
                 \clef "treble"
-                  %! baca.dynamic_up_function()
+                  %! baca.dynamic_up()
                 \dynamicUp
                   %! REAPPLIED_CLEF_COLOR
                   %! baca._attach_color_literal(2)
@@ -768,12 +768,12 @@ number.7.RH.Music.1 = {
                   %! EXPLICIT_DYNAMIC
                   %! baca._attach_persistent_indicator()
                   %! baca._set_status_tag()
-                  %! baca.dynamic_function()
+                  %! baca.dynamic()
                 - \tweak color #(x11-color 'blue)
                   %! EXPLICIT_DYNAMIC
                   %! baca._attach_persistent_indicator()
                   %! baca._set_status_tag()
-                  %! baca.dynamic_function()
+                  %! baca.dynamic()
                 \fff
                 % MARKUP:
                   %! FIGURE_LABEL
@@ -1307,7 +1307,7 @@ number.7.RH.Music.1 = {
                 % [RH.Music.1 measure 10]
                 % BEFORE:
                 % COMMANDS:
-                  %! baca.beam_positions_function(1)
+                  %! baca.beam_positions(1)
                 \override Beam.positions = #'(12 . 12)
                   %! rmakers.beam_groups()
                 \set stemLeftBeamCount = 0
@@ -1451,9 +1451,9 @@ number.7.RH.Music.1 = {
                   %! rmakers.beam_groups()
                 ]
                 % COMMANDS:
-                  %! baca.beam_positions_function(2)
+                  %! baca.beam_positions(2)
                 \revert Beam.positions
-                  %! baca.stem_up_function(2)
+                  %! baca.stem_up(2)
                 \revert Stem.direction
                 % CLOSING:
                 % COMMANDS:
@@ -1477,20 +1477,20 @@ number.7.RH.Music.1 = {
     % [RH.Music.1 measure 11]
     % BEFORE:
     % COMMANDS:
-      %! baca.rehearsal_mark_down_function(1)
+      %! baca.rehearsal_mark_down(1)
     \once \override Score.RehearsalMark.direction = #down
-      %! baca.rehearsal_mark_padding_function(1)
+      %! baca.rehearsal_mark_padding(1)
     \once \override Score.RehearsalMark.padding = 6
-      %! baca.rehearsal_mark_self_alignment_x_function(1)
+      %! baca.rehearsal_mark_self_alignment_x(1)
     \once \override Score.RehearsalMark.self-alignment-X = #right
     % OPENING:
     % COMMANDS:
-      %! baca.mark_function()
+      %! baca.mark()
     \mark \mraz-colophon-markup
     s1 * 1/8
     % AFTER:
     % COMMANDS:
-      %! baca.beam_positions_function(2)
+      %! baca.beam_positions(2)
     \revert Beam.positions
     % CLOSING:
     % COMMANDS:
@@ -1533,9 +1533,9 @@ number.7.RH.InsertVoice.1 = {
                 % [RH.InsertVoice.1 measure 1]
                 % BEFORE:
                 % COMMANDS:
-                  %! baca.beam_positions_function(1)
+                  %! baca.beam_positions(1)
                 \override Beam.positions = #'(-6.5 . -6.5)
-                  %! baca.script_down_function(1)
+                  %! baca.script_down(1)
                 \override Script.direction = #down
                 s16
                 % AFTER:
@@ -1586,7 +1586,7 @@ number.7.RH.InsertVoice.1 = {
                 f''16
                 % AFTER:
                 % ARTICULATIONS:
-                  %! baca.marcato_function()
+                  %! baca.marcato()
                 - \marcato
                 % ABSOLUTE_BEFORE:
                 % COMMANDS:
@@ -1623,7 +1623,7 @@ number.7.RH.InsertVoice.1 = {
                 b''16
                 % AFTER:
                 % ARTICULATIONS:
-                  %! baca.marcato_function()
+                  %! baca.marcato()
                 - \marcato
                 % ABSOLUTE_BEFORE:
                 % COMMANDS:
@@ -1725,7 +1725,7 @@ number.7.RH.InsertVoice.1 = {
                 fs'''!16
                 % AFTER:
                 % ARTICULATIONS:
-                  %! baca.marcato_function()
+                  %! baca.marcato()
                 - \marcato
                 % ABSOLUTE_BEFORE:
                 % COMMANDS:
@@ -1739,7 +1739,7 @@ number.7.RH.InsertVoice.1 = {
                 g'''16
                 % AFTER:
                 % ARTICULATIONS:
-                  %! baca.marcato_function()
+                  %! baca.marcato()
                 - \marcato
                 % ABSOLUTE_BEFORE:
                 % COMMANDS:
@@ -1806,7 +1806,7 @@ number.7.RH.InsertVoice.1 = {
                 % [RH.InsertVoice.1 measure 5]
                 % BEFORE:
                 % COMMANDS:
-                  %! baca.beam_positions_function(1)
+                  %! baca.beam_positions(1)
                 \override Beam.positions = #'(-8.5 . -8.5)
                 s16
                 % AFTER:
@@ -1825,7 +1825,7 @@ number.7.RH.InsertVoice.1 = {
                 a''16
                 % AFTER:
                 % ARTICULATIONS:
-                  %! baca.marcato_function()
+                  %! baca.marcato()
                 - \marcato
                 % ABSOLUTE_BEFORE:
                 % COMMANDS:
@@ -1841,7 +1841,7 @@ number.7.RH.InsertVoice.1 = {
                 s16
                 % AFTER:
                 % COMMANDS:
-                  %! baca.beam_positions_function(2)
+                  %! baca.beam_positions(2)
                 \revert Beam.positions
                 % CLOSING:
                 % COMMANDS:
@@ -1901,7 +1901,7 @@ number.7.RH.InsertVoice.1 = {
                 af''!16
                 % AFTER:
                 % ARTICULATIONS:
-                  %! baca.marcato_function()
+                  %! baca.marcato()
                 - \marcato
                 % ABSOLUTE_BEFORE:
                 % COMMANDS:
@@ -1915,7 +1915,7 @@ number.7.RH.InsertVoice.1 = {
                 f'''16
                 % AFTER:
                 % ARTICULATIONS:
-                  %! baca.marcato_function()
+                  %! baca.marcato()
                 - \marcato
                 % ABSOLUTE_BEFORE:
                 % COMMANDS:
@@ -2006,7 +2006,7 @@ number.7.RH.InsertVoice.1 = {
                 fs'''!16
                 % AFTER:
                 % ARTICULATIONS:
-                  %! baca.marcato_function()
+                  %! baca.marcato()
                 - \marcato
                 % ABSOLUTE_BEFORE:
                 % COMMANDS:
@@ -2047,7 +2047,7 @@ number.7.RH.InsertVoice.1 = {
                 bf'''!16
                 % AFTER:
                 % ARTICULATIONS:
-                  %! baca.marcato_function()
+                  %! baca.marcato()
                 - \marcato
                 % CLOSING:
                 % COMMANDS:
@@ -2077,7 +2077,7 @@ number.7.RH.InsertVoice.1 = {
                 cs''''!16
                 % AFTER:
                 % ARTICULATIONS:
-                  %! baca.marcato_function()
+                  %! baca.marcato()
                 - \marcato
                 % ABSOLUTE_BEFORE:
                 % COMMANDS:
@@ -2092,7 +2092,7 @@ number.7.RH.InsertVoice.1 = {
                   %! rmakers.beam_groups()
                 ]
                 % COMMANDS:
-                  %! baca.beam_positions_function(2)
+                  %! baca.beam_positions(2)
                 \revert Beam.positions
                 % CLOSING:
                 % COMMANDS:
@@ -2120,7 +2120,7 @@ number.7.RH.InsertVoice.1 = {
     s1 * 1/8
     % AFTER:
     % COMMANDS:
-      %! baca.script_down_function(2)
+      %! baca.script_down(2)
     \revert Script.direction
     % CLOSING:
     % COMMANDS:
@@ -2140,13 +2140,13 @@ number.7.RH.Music.2 = {
     % [RH.Music.2 measure 1]
     % BEFORE:
     % COMMANDS:
-      %! baca.beam_positions_function(1)
+      %! baca.beam_positions(1)
     \override Beam.positions = #'(-4.5 . -4.5)
-      %! baca.slur_up_function(1)
+      %! baca.slur_up(1)
     \override Slur.direction = #up
     % OPENING:
     % COMMANDS:
-      %! baca.dynamic_down_function()
+      %! baca.dynamic_down()
     \dynamicDown
     s1 * 3/4
     % ABSOLUTE_BEFORE:
@@ -2167,7 +2167,7 @@ number.7.RH.Music.2 = {
             % [RH.Music.2 measure 2]
             % BEFORE:
             % COMMANDS:
-              %! baca.stem_down_function(1)
+              %! baca.stem_down(1)
             \override Stem.direction = #down
               %! rmakers.beam_groups()
             \set stemLeftBeamCount = 0
@@ -2181,12 +2181,12 @@ number.7.RH.Music.2 = {
               %! EXPLICIT_DYNAMIC
               %! baca._attach_persistent_indicator()
               %! baca._set_status_tag()
-              %! baca.dynamic_function()
+              %! baca.dynamic()
             - \tweak color #(x11-color 'blue)
               %! EXPLICIT_DYNAMIC
               %! baca._attach_persistent_indicator()
               %! baca._set_status_tag()
-              %! baca.dynamic_function()
+              %! baca.dynamic()
             \fff
             % MARKUP:
               %! FIGURE_LABEL
@@ -2199,7 +2199,7 @@ number.7.RH.Music.2 = {
             % SPANNER_STARTS:
               %! SPANNER_START
               %! baca._do_spanner_indicator_command(1)
-              %! baca.slur_function()
+              %! baca.slur()
             (
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -2233,7 +2233,7 @@ number.7.RH.Music.2 = {
             % SPANNER_STOPS:
               %! SPANNER_STOP
               %! baca._do_spanner_indicator_command(2)
-              %! baca.slur_function()
+              %! baca.slur()
             )
             % CLOSING:
             % COMMANDS:
@@ -2288,7 +2288,7 @@ number.7.RH.Music.2 = {
                 % SPANNER_STARTS:
                   %! SPANNER_START
                   %! baca._do_spanner_indicator_command(1)
-                  %! baca.slur_function()
+                  %! baca.slur()
                 (
                 % ABSOLUTE_BEFORE:
                 % COMMANDS:
@@ -2314,7 +2314,7 @@ number.7.RH.Music.2 = {
                 % SPANNER_STOPS:
                   %! SPANNER_STOP
                   %! baca._do_spanner_indicator_command(2)
-                  %! baca.slur_function()
+                  %! baca.slur()
                 )
                 % CLOSING:
                 % COMMANDS:
@@ -2341,7 +2341,7 @@ number.7.RH.Music.2 = {
                 % SPANNER_STARTS:
                   %! SPANNER_START
                   %! baca._do_spanner_indicator_command(1)
-                  %! baca.slur_function()
+                  %! baca.slur()
                 (
                 % ABSOLUTE_BEFORE:
                 % COMMANDS:
@@ -2377,7 +2377,7 @@ number.7.RH.Music.2 = {
                 % SPANNER_STOPS:
                   %! SPANNER_STOP
                   %! baca._do_spanner_indicator_command(2)
-                  %! baca.slur_function()
+                  %! baca.slur()
                 )
                 % CLOSING:
                 % COMMANDS:
@@ -2404,7 +2404,7 @@ number.7.RH.Music.2 = {
                 % SPANNER_STARTS:
                   %! SPANNER_START
                   %! baca._do_spanner_indicator_command(1)
-                  %! baca.slur_function()
+                  %! baca.slur()
                 (
                 % ABSOLUTE_BEFORE:
                 % COMMANDS:
@@ -2430,7 +2430,7 @@ number.7.RH.Music.2 = {
                 % SPANNER_STOPS:
                   %! SPANNER_STOP
                   %! baca._do_spanner_indicator_command(2)
-                  %! baca.slur_function()
+                  %! baca.slur()
                 )
                 % STOP_BEAM:
                   %! rmakers.beam_groups()
@@ -2491,7 +2491,7 @@ number.7.RH.Music.2 = {
             % SPANNER_STARTS:
               %! SPANNER_START
               %! baca._do_spanner_indicator_command(1)
-              %! baca.slur_function()
+              %! baca.slur()
             (
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -2517,7 +2517,7 @@ number.7.RH.Music.2 = {
             % SPANNER_STOPS:
               %! SPANNER_STOP
               %! baca._do_spanner_indicator_command(2)
-              %! baca.slur_function()
+              %! baca.slur()
             )
             % CLOSING:
             % COMMANDS:
@@ -2545,7 +2545,7 @@ number.7.RH.Music.2 = {
             % SPANNER_STARTS:
               %! SPANNER_START
               %! baca._do_spanner_indicator_command(1)
-              %! baca.slur_function()
+              %! baca.slur()
             (
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -2601,7 +2601,7 @@ number.7.RH.Music.2 = {
             % SPANNER_STOPS:
               %! SPANNER_STOP
               %! baca._do_spanner_indicator_command(2)
-              %! baca.slur_function()
+              %! baca.slur()
             )
             % CLOSING:
             % COMMANDS:
@@ -2628,7 +2628,7 @@ number.7.RH.Music.2 = {
             % SPANNER_STARTS:
               %! SPANNER_START
               %! baca._do_spanner_indicator_command(1)
-              %! baca.slur_function()
+              %! baca.slur()
             (
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -2652,7 +2652,7 @@ number.7.RH.Music.2 = {
             % SPANNER_STOPS:
               %! SPANNER_STOP
               %! baca._do_spanner_indicator_command(2)
-              %! baca.slur_function()
+              %! baca.slur()
             )
             % CLOSING:
             % COMMANDS:
@@ -2707,7 +2707,7 @@ number.7.RH.Music.2 = {
                 % SPANNER_STARTS:
                   %! SPANNER_START
                   %! baca._do_spanner_indicator_command(1)
-                  %! baca.slur_function()
+                  %! baca.slur()
                 (
                 % ABSOLUTE_BEFORE:
                 % COMMANDS:
@@ -2743,7 +2743,7 @@ number.7.RH.Music.2 = {
                 % SPANNER_STOPS:
                   %! SPANNER_STOP
                   %! baca._do_spanner_indicator_command(2)
-                  %! baca.slur_function()
+                  %! baca.slur()
                 )
                 % CLOSING:
                 % COMMANDS:
@@ -2770,7 +2770,7 @@ number.7.RH.Music.2 = {
                 % SPANNER_STARTS:
                   %! SPANNER_START
                   %! baca._do_spanner_indicator_command(1)
-                  %! baca.slur_function()
+                  %! baca.slur()
                 (
                 % ABSOLUTE_BEFORE:
                 % COMMANDS:
@@ -2826,7 +2826,7 @@ number.7.RH.Music.2 = {
                 % SPANNER_STOPS:
                   %! SPANNER_STOP
                   %! baca._do_spanner_indicator_command(2)
-                  %! baca.slur_function()
+                  %! baca.slur()
                 )
                 % STOP_BEAM:
                   %! rmakers.beam_groups()
@@ -2881,7 +2881,7 @@ number.7.RH.Music.2 = {
             % SPANNER_STARTS:
               %! SPANNER_START
               %! baca._do_spanner_indicator_command(1)
-              %! baca.slur_function()
+              %! baca.slur()
             (
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -2905,7 +2905,7 @@ number.7.RH.Music.2 = {
             % SPANNER_STOPS:
               %! SPANNER_STOP
               %! baca._do_spanner_indicator_command(2)
-              %! baca.slur_function()
+              %! baca.slur()
             )
             % CLOSING:
             % COMMANDS:
@@ -2953,7 +2953,7 @@ number.7.RH.Music.2 = {
             % SPANNER_STARTS:
               %! SPANNER_START
               %! baca._do_spanner_indicator_command(1)
-              %! baca.slur_function()
+              %! baca.slur()
             (
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -2979,17 +2979,17 @@ number.7.RH.Music.2 = {
             % SPANNER_STOPS:
               %! SPANNER_STOP
               %! baca._do_spanner_indicator_command(2)
-              %! baca.slur_function()
+              %! baca.slur()
             )
             % STOP_BEAM:
               %! rmakers.beam_groups()
             ]
             % COMMANDS:
-              %! baca.beam_positions_function(2)
+              %! baca.beam_positions(2)
             \revert Beam.positions
-              %! baca.slur_up_function(2)
+              %! baca.slur_up(2)
             \revert Slur.direction
-              %! baca.stem_down_function(2)
+              %! baca.stem_down(2)
             \revert Stem.direction
             % CLOSING:
             % COMMANDS:
@@ -3019,9 +3019,9 @@ number.7.RH.InsertVoice.2 = {
     % [RH.InsertVoice.2 measure 1]
     % BEFORE:
     % COMMANDS:
-      %! baca.beam_positions_function(1)
+      %! baca.beam_positions(1)
     \override Beam.positions = #'(15.5 . 15.5)
-      %! baca.script_up_function(1)
+      %! baca.script_up(1)
     \override Script.direction = #up
     s1 * 3/4
     % ABSOLUTE_BEFORE:
@@ -3046,7 +3046,7 @@ number.7.RH.InsertVoice.2 = {
             % [RH.InsertVoice.2 measure 2]
             % BEFORE:
             % COMMANDS:
-              %! baca.stem_up_function(1)
+              %! baca.stem_up(1)
             \override Stem.direction = #up
               %! rmakers.beam_groups()
             \set stemLeftBeamCount = 0
@@ -3055,7 +3055,7 @@ number.7.RH.InsertVoice.2 = {
             c''16
             % AFTER:
             % ARTICULATIONS:
-              %! baca.accent_function()
+              %! baca.accent()
             - \accent
             % START_BEAM:
               %! rmakers.beam_groups()
@@ -3072,7 +3072,7 @@ number.7.RH.InsertVoice.2 = {
             d''16
             % AFTER:
             % ARTICULATIONS:
-              %! baca.accent_function()
+              %! baca.accent()
             - \accent
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -3139,7 +3139,7 @@ number.7.RH.InsertVoice.2 = {
                 cs''!16
                 % AFTER:
                 % ARTICULATIONS:
-                  %! baca.accent_function()
+                  %! baca.accent()
                 - \accent
                 % ABSOLUTE_BEFORE:
                 % COMMANDS:
@@ -3153,7 +3153,7 @@ number.7.RH.InsertVoice.2 = {
                 f''16
                 % AFTER:
                 % ARTICULATIONS:
-                  %! baca.accent_function()
+                  %! baca.accent()
                 - \accent
                 % ABSOLUTE_BEFORE:
                 % COMMANDS:
@@ -3209,7 +3209,7 @@ number.7.RH.InsertVoice.2 = {
                 f''16
                 % AFTER:
                 % ARTICULATIONS:
-                  %! baca.accent_function()
+                  %! baca.accent()
                 - \accent
                 % ABSOLUTE_BEFORE:
                 % COMMANDS:
@@ -3223,7 +3223,7 @@ number.7.RH.InsertVoice.2 = {
                 ef'''!16
                 % AFTER:
                 % ARTICULATIONS:
-                  %! baca.accent_function()
+                  %! baca.accent()
                 - \accent
                 % ABSOLUTE_BEFORE:
                 % COMMANDS:
@@ -3234,7 +3234,7 @@ number.7.RH.InsertVoice.2 = {
                   %! rmakers.beam_groups()
                 ]
                 % COMMANDS:
-                  %! baca.beam_positions_function(2)
+                  %! baca.beam_positions(2)
                 \revert Beam.positions
                 % CLOSING:
                 % COMMANDS:
@@ -3282,7 +3282,7 @@ number.7.RH.InsertVoice.2 = {
             % [RH.InsertVoice.2 measure 6]
             % BEFORE:
             % COMMANDS:
-              %! baca.beam_positions_function(1)
+              %! baca.beam_positions(1)
             \override Beam.positions = #'(13.5 . 13.5)
               %! rmakers.beam_groups()
             \set stemLeftBeamCount = 0
@@ -3291,7 +3291,7 @@ number.7.RH.InsertVoice.2 = {
             c''16
             % AFTER:
             % ARTICULATIONS:
-              %! baca.accent_function()
+              %! baca.accent()
             - \accent
             % START_BEAM:
               %! rmakers.beam_groups()
@@ -3308,7 +3308,7 @@ number.7.RH.InsertVoice.2 = {
             bf''!16
             % AFTER:
             % ARTICULATIONS:
-              %! baca.accent_function()
+              %! baca.accent()
             - \accent
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -3373,7 +3373,7 @@ number.7.RH.InsertVoice.2 = {
             g''16
             % AFTER:
             % ARTICULATIONS:
-              %! baca.accent_function()
+              %! baca.accent()
             - \accent
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -3387,7 +3387,7 @@ number.7.RH.InsertVoice.2 = {
             f'''16
             % AFTER:
             % ARTICULATIONS:
-              %! baca.accent_function()
+              %! baca.accent()
             - \accent
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -3450,7 +3450,7 @@ number.7.RH.InsertVoice.2 = {
                 a''16
                 % AFTER:
                 % ARTICULATIONS:
-                  %! baca.accent_function()
+                  %! baca.accent()
                 - \accent
                 % ABSOLUTE_BEFORE:
                 % COMMANDS:
@@ -3487,7 +3487,7 @@ number.7.RH.InsertVoice.2 = {
                 ef'''!16
                 % AFTER:
                 % ARTICULATIONS:
-                  %! baca.accent_function()
+                  %! baca.accent()
                 - \accent
                 % ABSOLUTE_BEFORE:
                 % COMMANDS:
@@ -3501,7 +3501,7 @@ number.7.RH.InsertVoice.2 = {
                 c'''16
                 % AFTER:
                 % ARTICULATIONS:
-                  %! baca.accent_function()
+                  %! baca.accent()
                 - \accent
                 % ABSOLUTE_BEFORE:
                 % COMMANDS:
@@ -3524,7 +3524,7 @@ number.7.RH.InsertVoice.2 = {
                   %! rmakers.beam_groups()
                 ]
                 % COMMANDS:
-                  %! baca.beam_positions_function(2)
+                  %! baca.beam_positions(2)
                 \revert Beam.positions
                 % CLOSING:
                 % COMMANDS:
@@ -3566,7 +3566,7 @@ number.7.RH.InsertVoice.2 = {
             % [RH.InsertVoice.2 measure 9]
             % BEFORE:
             % COMMANDS:
-              %! baca.beam_positions_function(1)
+              %! baca.beam_positions(1)
             \override Beam.positions = #'(18.5 . 18.5)
               %! rmakers.beam_groups()
             \set stemLeftBeamCount = 0
@@ -3575,7 +3575,7 @@ number.7.RH.InsertVoice.2 = {
             f''16
             % AFTER:
             % ARTICULATIONS:
-              %! baca.accent_function()
+              %! baca.accent()
             - \accent
             % START_BEAM:
               %! rmakers.beam_groups()
@@ -3648,7 +3648,7 @@ number.7.RH.InsertVoice.2 = {
             d'''16
             % AFTER:
             % ARTICULATIONS:
-              %! baca.accent_function()
+              %! baca.accent()
             - \accent
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -3662,17 +3662,17 @@ number.7.RH.InsertVoice.2 = {
             af'''!16
             % AFTER:
             % ARTICULATIONS:
-              %! baca.accent_function()
+              %! baca.accent()
             - \accent
             % STOP_BEAM:
               %! rmakers.beam_groups()
             ]
             % COMMANDS:
-              %! baca.beam_positions_function(2)
+              %! baca.beam_positions(2)
             \revert Beam.positions
-              %! baca.script_up_function(2)
+              %! baca.script_up(2)
             \revert Script.direction
-              %! baca.stem_up_function(2)
+              %! baca.stem_up(2)
             \revert Stem.direction
             % CLOSING:
             % COMMANDS:
@@ -3985,9 +3985,9 @@ number.7.LH.Music.4 = {
     % [LH.Music.4 measure 1]
     % BEFORE:
     % COMMANDS:
-      %! baca.beam_positions_function(1)
+      %! baca.beam_positions(1)
     \override Beam.positions = #'(-5.5 . -5.5)
-      %! baca.script_down_function(1)
+      %! baca.script_down(1)
     \override Script.direction = #down
     % OPENING:
     % COMMANDS:
@@ -4029,7 +4029,7 @@ number.7.LH.Music.4 = {
 
             % BEFORE:
             % COMMANDS:
-              %! baca.stem_down_function(1)
+              %! baca.stem_down(1)
             \override Stem.direction = #down
               %! rmakers.beam_groups()
             \set stemLeftBeamCount = 0
@@ -4043,12 +4043,12 @@ number.7.LH.Music.4 = {
               %! EXPLICIT_DYNAMIC
               %! baca._attach_persistent_indicator()
               %! baca._set_status_tag()
-              %! baca.dynamic_function()
+              %! baca.dynamic()
             - \tweak color #(x11-color 'blue)
               %! EXPLICIT_DYNAMIC
               %! baca._attach_persistent_indicator()
               %! baca._set_status_tag()
-              %! baca.dynamic_function()
+              %! baca.dynamic()
             \ff
             % MARKUP:
               %! FIGURE_LABEL
@@ -4181,7 +4181,7 @@ number.7.LH.Music.4 = {
     s1 * 11/8
     % AFTER:
     % COMMANDS:
-      %! baca.beam_positions_function(2)
+      %! baca.beam_positions(2)
     \revert Beam.positions
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -4201,7 +4201,7 @@ number.7.LH.Music.4 = {
             % [LH.Music.4 measure 6]
             % BEFORE:
             % COMMANDS:
-              %! baca.beam_positions_function(1)
+              %! baca.beam_positions(1)
             \override Beam.positions = #'(-4.5 . -4.5)
               %! rmakers.beam_groups()
             \set stemLeftBeamCount = 0
@@ -4215,12 +4215,12 @@ number.7.LH.Music.4 = {
               %! REDUNDANT_DYNAMIC
               %! baca._attach_persistent_indicator()
               %! baca._set_status_tag()
-              %! baca.dynamic_function()
+              %! baca.dynamic()
             - \tweak color #(x11-color 'DeepPink1)
               %! REDUNDANT_DYNAMIC
               %! baca._attach_persistent_indicator()
               %! baca._set_status_tag()
-              %! baca.dynamic_function()
+              %! baca.dynamic()
             \ff
             % MARKUP:
               %! FIGURE_LABEL
@@ -4299,12 +4299,12 @@ number.7.LH.Music.4 = {
               %! REDUNDANT_DYNAMIC
               %! baca._attach_persistent_indicator()
               %! baca._set_status_tag()
-              %! baca.dynamic_function()
+              %! baca.dynamic()
             - \tweak color #(x11-color 'DeepPink1)
               %! REDUNDANT_DYNAMIC
               %! baca._attach_persistent_indicator()
               %! baca._set_status_tag()
-              %! baca.dynamic_function()
+              %! baca.dynamic()
             \ff
             % MARKUP:
               %! FIGURE_LABEL
@@ -4379,7 +4379,7 @@ number.7.LH.Music.4 = {
               %! rmakers.beam_groups()
             ]
             % COMMANDS:
-              %! baca.stem_down_function(2)
+              %! baca.stem_down(2)
             \revert Stem.direction
             % CLOSING:
             % COMMANDS:
@@ -4397,9 +4397,9 @@ number.7.LH.Music.4 = {
     s1 * 7/16
     % AFTER:
     % COMMANDS:
-      %! baca.beam_positions_function(2)
+      %! baca.beam_positions(2)
     \revert Beam.positions
-      %! baca.script_down_function(2)
+      %! baca.script_down(2)
     \revert Script.direction
     % CLOSING:
     % COMMANDS:
@@ -4419,7 +4419,7 @@ number.7.LH.InsertVoice.4 = {
     % [LH.InsertVoice.4 measure 1]
     % BEFORE:
     % COMMANDS:
-      %! baca.script_up_function(1)
+      %! baca.script_up(1)
     \override Script.direction = #up
     s1 * 3/8
     % ABSOLUTE_BEFORE:
@@ -4447,7 +4447,7 @@ number.7.LH.InsertVoice.4 = {
 
             % BEFORE:
             % COMMANDS:
-              %! baca.stem_up_function(1)
+              %! baca.stem_up(1)
             \override Stem.direction = #up
             c'16
             % ABSOLUTE_BEFORE:
@@ -4602,7 +4602,7 @@ number.7.LH.InsertVoice.4 = {
             fs''!16
             % AFTER:
             % COMMANDS:
-              %! baca.stem_up_function(2)
+              %! baca.stem_up(2)
             \revert Stem.direction
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -4627,7 +4627,7 @@ number.7.LH.InsertVoice.4 = {
     s1 * 7/16
     % AFTER:
     % COMMANDS:
-      %! baca.script_up_function(2)
+      %! baca.script_up(2)
     \revert Script.direction
     % CLOSING:
     % COMMANDS:
@@ -4647,9 +4647,9 @@ number.7.LH.Music.5 = {
     % [LH.Music.5 measure 1]
     % BEFORE:
     % COMMANDS:
-      %! baca.beam_positions_function(1)
+      %! baca.beam_positions(1)
     \override Beam.positions = #'(-6 . -6)
-      %! baca.script_down_function(1)
+      %! baca.script_down(1)
     \override Script.direction = #down
     s1 * 329/272
     % ABSOLUTE_BEFORE:
@@ -4675,9 +4675,9 @@ number.7.LH.Music.5 = {
 
                 % BEFORE:
                 % COMMANDS:
-                  %! baca.stem_down_function(1)
+                  %! baca.stem_down(1)
                 \override Stem.direction = #down
-                  %! baca.tuplet_bracket_down_function(1)
+                  %! baca.tuplet_bracket_down(1)
                 \override TupletBracket.direction = #down
                   %! rmakers.beam_groups()
                 \set stemLeftBeamCount = 0
@@ -4685,7 +4685,7 @@ number.7.LH.Music.5 = {
                 \set stemRightBeamCount = 2
                 % OPENING:
                 % COMMANDS:
-                  %! baca.dynamic_down_function()
+                  %! baca.dynamic_down()
                 \dynamicDown
                 cs'!16
                 % AFTER:
@@ -4695,12 +4695,12 @@ number.7.LH.Music.5 = {
                   %! EXPLICIT_DYNAMIC
                   %! baca._attach_persistent_indicator()
                   %! baca._set_status_tag()
-                  %! baca.dynamic_function()
+                  %! baca.dynamic()
                 - \tweak color #(x11-color 'blue)
                   %! EXPLICIT_DYNAMIC
                   %! baca._attach_persistent_indicator()
                   %! baca._set_status_tag()
-                  %! baca.dynamic_function()
+                  %! baca.dynamic()
                 \pp
                 % MARKUP:
                   %! FIGURE_LABEL
@@ -4713,7 +4713,7 @@ number.7.LH.Music.5 = {
                 % SPANNER_STARTS:
                   %! SPANNER_START
                   %! baca._do_spanner_indicator_command(1)
-                  %! baca.slur_function()
+                  %! baca.slur()
                 (
                 % ABSOLUTE_BEFORE:
                 % COMMANDS:
@@ -4739,7 +4739,7 @@ number.7.LH.Music.5 = {
                 % SPANNER_STOPS:
                   %! SPANNER_STOP
                   %! baca._do_spanner_indicator_command(2)
-                  %! baca.slur_function()
+                  %! baca.slur()
                 )
                 % CLOSING:
                 % COMMANDS:
@@ -4768,7 +4768,7 @@ number.7.LH.Music.5 = {
                 % SPANNER_STARTS:
                   %! SPANNER_START
                   %! baca._do_spanner_indicator_command(1)
-                  %! baca.slur_function()
+                  %! baca.slur()
                 (
                 % ABSOLUTE_BEFORE:
                 % COMMANDS:
@@ -4834,7 +4834,7 @@ number.7.LH.Music.5 = {
                 % SPANNER_STOPS:
                   %! SPANNER_STOP
                   %! baca._do_spanner_indicator_command(2)
-                  %! baca.slur_function()
+                  %! baca.slur()
                 )
                 % CLOSING:
                 % COMMANDS:
@@ -4861,7 +4861,7 @@ number.7.LH.Music.5 = {
                 % SPANNER_STARTS:
                   %! SPANNER_START
                   %! baca._do_spanner_indicator_command(1)
-                  %! baca.slur_function()
+                  %! baca.slur()
                 (
                 % ABSOLUTE_BEFORE:
                 % COMMANDS:
@@ -4927,13 +4927,13 @@ number.7.LH.Music.5 = {
                 % SPANNER_STOPS:
                   %! SPANNER_STOP
                   %! baca._do_spanner_indicator_command(2)
-                  %! baca.slur_function()
+                  %! baca.slur()
                 )
                 % STOP_BEAM:
                   %! rmakers.beam_groups()
                 ]
                 % COMMANDS:
-                  %! baca.tuplet_bracket_down_function(2)
+                  %! baca.tuplet_bracket_down(2)
                 \revert TupletBracket.direction
                 % CLOSING:
                 % COMMANDS:
@@ -4956,7 +4956,7 @@ number.7.LH.Music.5 = {
     s1 * 75/136
     % AFTER:
     % COMMANDS:
-      %! baca.beam_positions_function(2)
+      %! baca.beam_positions(2)
     \revert Beam.positions
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -4993,12 +4993,12 @@ number.7.LH.Music.5 = {
                   %! REDUNDANT_DYNAMIC
                   %! baca._attach_persistent_indicator()
                   %! baca._set_status_tag()
-                  %! baca.dynamic_function()
+                  %! baca.dynamic()
                 - \tweak color #(x11-color 'DeepPink1)
                   %! REDUNDANT_DYNAMIC
                   %! baca._attach_persistent_indicator()
                   %! baca._set_status_tag()
-                  %! baca.dynamic_function()
+                  %! baca.dynamic()
                 \pp
                 % MARKUP:
                   %! FIGURE_LABEL
@@ -5011,7 +5011,7 @@ number.7.LH.Music.5 = {
                 % SPANNER_STARTS:
                   %! SPANNER_START
                   %! baca._do_spanner_indicator_command(1)
-                  %! baca.slur_function()
+                  %! baca.slur()
                 (
                 % ABSOLUTE_BEFORE:
                 % COMMANDS:
@@ -5037,7 +5037,7 @@ number.7.LH.Music.5 = {
                 % SPANNER_STOPS:
                   %! SPANNER_STOP
                   %! baca._do_spanner_indicator_command(2)
-                  %! baca.slur_function()
+                  %! baca.slur()
                 )
                 % CLOSING:
                 % COMMANDS:
@@ -5064,7 +5064,7 @@ number.7.LH.Music.5 = {
                 % SPANNER_STARTS:
                   %! SPANNER_START
                   %! baca._do_spanner_indicator_command(1)
-                  %! baca.slur_function()
+                  %! baca.slur()
                 (
                 % ABSOLUTE_BEFORE:
                 % COMMANDS:
@@ -5130,7 +5130,7 @@ number.7.LH.Music.5 = {
                 % SPANNER_STOPS:
                   %! SPANNER_STOP
                   %! baca._do_spanner_indicator_command(2)
-                  %! baca.slur_function()
+                  %! baca.slur()
                 )
                 % CLOSING:
                 % COMMANDS:
@@ -5159,7 +5159,7 @@ number.7.LH.Music.5 = {
                 % SPANNER_STARTS:
                   %! SPANNER_START
                   %! baca._do_spanner_indicator_command(1)
-                  %! baca.slur_function()
+                  %! baca.slur()
                 (
                 % ABSOLUTE_BEFORE:
                 % COMMANDS:
@@ -5225,13 +5225,13 @@ number.7.LH.Music.5 = {
                 % SPANNER_STOPS:
                   %! SPANNER_STOP
                   %! baca._do_spanner_indicator_command(2)
-                  %! baca.slur_function()
+                  %! baca.slur()
                 )
                 % STOP_BEAM:
                   %! rmakers.beam_groups()
                 ]
                 % COMMANDS:
-                  %! baca.stem_down_function(2)
+                  %! baca.stem_down(2)
                 \revert Stem.direction
                 % CLOSING:
                 % COMMANDS:
@@ -5254,7 +5254,7 @@ number.7.LH.Music.5 = {
     s1 * 303/272
     % AFTER:
     % COMMANDS:
-      %! baca.script_down_function(2)
+      %! baca.script_down(2)
     \revert Script.direction
     % CLOSING:
     % COMMANDS:
@@ -5274,9 +5274,9 @@ number.7.LH.InsertVoice.5 = {
     % [LH.InsertVoice.5 measure 1]
     % BEFORE:
     % COMMANDS:
-      %! baca.beam_positions_function(1)
+      %! baca.beam_positions(1)
     \override Beam.positions = #'(9 . 9)
-      %! baca.script_up_function(1)
+      %! baca.script_up(1)
     \override Script.direction = #up
     s1 * 329/272
     % ABSOLUTE_BEFORE:
@@ -5335,7 +5335,7 @@ number.7.LH.InsertVoice.5 = {
                 % [LH.InsertVoice.5 measure 4]
                 % BEFORE:
                 % COMMANDS:
-                  %! baca.stem_up_function(1)
+                  %! baca.stem_up(1)
                 \override Stem.direction = #up
                   %! rmakers.beam_groups()
                 \set stemLeftBeamCount = 1
@@ -5344,7 +5344,7 @@ number.7.LH.InsertVoice.5 = {
                 b'16
                 % AFTER:
                 % ARTICULATIONS:
-                  %! baca.staccato_function()
+                  %! baca.staccato()
                 - \staccato
                 % ABSOLUTE_BEFORE:
                 % COMMANDS:
@@ -5393,7 +5393,7 @@ number.7.LH.InsertVoice.5 = {
                 fs''!16
                 % AFTER:
                 % ARTICULATIONS:
-                  %! baca.staccato_function()
+                  %! baca.staccato()
                 - \staccato
                 % ABSOLUTE_BEFORE:
                 % COMMANDS:
@@ -5423,7 +5423,7 @@ number.7.LH.InsertVoice.5 = {
                 c'''16
                 % AFTER:
                 % ARTICULATIONS:
-                  %! baca.staccato_function()
+                  %! baca.staccato()
                 - \staccato
                 % ABSOLUTE_BEFORE:
                 % COMMANDS:
@@ -5437,7 +5437,7 @@ number.7.LH.InsertVoice.5 = {
                 d'''16
                 % AFTER:
                 % ARTICULATIONS:
-                  %! baca.staccato_function()
+                  %! baca.staccato()
                 - \staccato
                 % STOP_BEAM:
                   %! rmakers.beam_groups()
@@ -5525,7 +5525,7 @@ number.7.LH.InsertVoice.5 = {
                 a'16
                 % AFTER:
                 % ARTICULATIONS:
-                  %! baca.staccato_function()
+                  %! baca.staccato()
                 - \staccato
                 % ABSOLUTE_BEFORE:
                 % COMMANDS:
@@ -5576,7 +5576,7 @@ number.7.LH.InsertVoice.5 = {
                 e''16
                 % AFTER:
                 % ARTICULATIONS:
-                  %! baca.staccato_function()
+                  %! baca.staccato()
                 - \staccato
                 % ABSOLUTE_BEFORE:
                 % COMMANDS:
@@ -5606,7 +5606,7 @@ number.7.LH.InsertVoice.5 = {
                 af''!16
                 % AFTER:
                 % ARTICULATIONS:
-                  %! baca.staccato_function()
+                  %! baca.staccato()
                 - \staccato
                 % ABSOLUTE_BEFORE:
                 % COMMANDS:
@@ -5620,13 +5620,13 @@ number.7.LH.InsertVoice.5 = {
                 cs'''!16
                 % AFTER:
                 % ARTICULATIONS:
-                  %! baca.staccato_function()
+                  %! baca.staccato()
                 - \staccato
                 % STOP_BEAM:
                   %! rmakers.beam_groups()
                 ]
                 % COMMANDS:
-                  %! baca.stem_up_function(2)
+                  %! baca.stem_up(2)
                 \revert Stem.direction
                 % CLOSING:
                 % COMMANDS:
@@ -5652,9 +5652,9 @@ number.7.LH.InsertVoice.5 = {
     s1 * 303/272
     % AFTER:
     % COMMANDS:
-      %! baca.beam_positions_function(2)
+      %! baca.beam_positions(2)
     \revert Beam.positions
-      %! baca.script_up_function(2)
+      %! baca.script_up(2)
     \revert Script.direction
     % CLOSING:
     % COMMANDS:

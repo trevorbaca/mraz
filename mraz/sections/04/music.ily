@@ -147,13 +147,13 @@ number.4.Rests = {
     % [Rests measure 21]
     % OPENING:
     % COMMANDS:
-      %! baca.global_fermata_function(2)
+      %! baca.global_fermata(2)
     \baca-fermata-measure
       %! baca._make_global_rests(1)
     R1 * 1/4
     % AFTER:
     % MARKUP:
-      %! baca.global_fermata_function(1)
+      %! baca.global_fermata(1)
     ^ \baca-fermata-markup
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -362,19 +362,19 @@ number.4.Skips = {
       %! baca._attach_metronome_marks(2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.metronome_mark_function()
+      %! baca.metronome_mark()
     %@% - \abjad-dashed-line-with-arrow
       %! EXPLICIT_METRONOME_MARK
       %! baca._attach_metronome_marks(2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.metronome_mark_function()
+      %! baca.metronome_mark()
     %@% - \baca-metronome-mark-spanner-left-text 2 0 1 "84"
       %! EXPLICIT_METRONOME_MARK
       %! baca._attach_metronome_marks(2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.metronome_mark_function()
+      %! baca.metronome_mark()
     %@% \bacaStartTextSpanMM
       %! CLOCK_TIME
       %! baca._label_clock_time()
@@ -575,19 +575,19 @@ number.4.Skips = {
       %! baca._attach_metronome_marks(2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.metronome_mark_function()
+      %! baca.metronome_mark()
     %@% - \abjad-invisible-line
       %! EXPLICIT_METRONOME_MARK
       %! baca._attach_metronome_marks(2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.metronome_mark_function()
+      %! baca.metronome_mark()
     %@% - \baca-metronome-mark-spanner-left-text 2 0 1 "112"
       %! EXPLICIT_METRONOME_MARK
       %! baca._attach_metronome_marks(2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.metronome_mark_function()
+      %! baca.metronome_mark()
     %@% \bacaStartTextSpanMM
       %! CLOCK_TIME
       %! baca._label_clock_time()
@@ -650,19 +650,19 @@ number.4.Skips = {
       %! baca._attach_metronome_marks(2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.metronome_mark_function()
+      %! baca.metronome_mark()
     %@% - \abjad-dashed-line-with-arrow
       %! EXPLICIT_METRONOME_MARK
       %! baca._attach_metronome_marks(2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.metronome_mark_function()
+      %! baca.metronome_mark()
     %@% - \baca-metronome-mark-spanner-left-text 2 0 1 "84"
       %! EXPLICIT_METRONOME_MARK
       %! baca._attach_metronome_marks(2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.metronome_mark_function()
+      %! baca.metronome_mark()
     %@% \bacaStartTextSpanMM
       %! CLOCK_TIME
       %! baca._label_clock_time()
@@ -1084,19 +1084,19 @@ number.4.Skips = {
       %! baca._attach_metronome_marks(2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.metronome_mark_function()
+      %! baca.metronome_mark()
     %@% - \abjad-invisible-line
       %! EXPLICIT_METRONOME_MARK
       %! baca._attach_metronome_marks(2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.metronome_mark_function()
+      %! baca.metronome_mark()
     %@% - \baca-metronome-mark-spanner-left-text 2 0 1 "112"
       %! EXPLICIT_METRONOME_MARK
       %! baca._attach_metronome_marks(2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.metronome_mark_function()
+      %! baca.metronome_mark()
     %@% \bacaStartTextSpanMM
       %! CLOCK_TIME
       %! baca._label_clock_time()
@@ -1343,19 +1343,19 @@ number.4.Skips = {
       %! baca._attach_metronome_marks(2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.metronome_mark_function()
+      %! baca.metronome_mark()
     %@% - \abjad-dashed-line-with-arrow
       %! EXPLICIT_METRONOME_MARK
       %! baca._attach_metronome_marks(2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.metronome_mark_function()
+      %! baca.metronome_mark()
     %@% - \baca-metronome-mark-spanner-left-text 2 0 1 "112"
       %! EXPLICIT_METRONOME_MARK
       %! baca._attach_metronome_marks(2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.metronome_mark_function()
+      %! baca.metronome_mark()
     %@% \bacaStartTextSpanMM
       %! CLOCK_TIME
       %! baca._label_clock_time()
@@ -1510,19 +1510,19 @@ number.4.Skips = {
       %! baca._attach_metronome_marks(2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.metronome_mark_function()
+      %! baca.metronome_mark()
     %@% - \abjad-invisible-line
       %! EXPLICIT_METRONOME_MARK
       %! baca._attach_metronome_marks(2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.metronome_mark_function()
+      %! baca.metronome_mark()
     %@% - \baca-metronome-mark-spanner-left-text 2 0 1 "84"
       %! EXPLICIT_METRONOME_MARK
       %! baca._attach_metronome_marks(2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.metronome_mark_function()
+      %! baca.metronome_mark()
     %@% \bacaStartTextSpanMM
       %! CLOCK_TIME
       %! baca._label_clock_time()
@@ -1585,19 +1585,19 @@ number.4.Skips = {
       %! baca._attach_metronome_marks(2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.metronome_mark_function()
+      %! baca.metronome_mark()
     %@% - \abjad-dashed-line-with-arrow
       %! EXPLICIT_METRONOME_MARK
       %! baca._attach_metronome_marks(2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.metronome_mark_function()
+      %! baca.metronome_mark()
     %@% - \baca-metronome-mark-spanner-left-text 2 0 1 "112"
       %! EXPLICIT_METRONOME_MARK
       %! baca._attach_metronome_marks(2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.metronome_mark_function()
+      %! baca.metronome_mark()
     %@% \bacaStartTextSpanMM
       %! CLOCK_TIME
       %! baca._label_clock_time()
@@ -1798,19 +1798,19 @@ number.4.Skips = {
       %! baca._attach_metronome_marks(2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.metronome_mark_function()
+      %! baca.metronome_mark()
     %@% - \abjad-invisible-line
       %! EXPLICIT_METRONOME_MARK
       %! baca._attach_metronome_marks(2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.metronome_mark_function()
+      %! baca.metronome_mark()
     %@% - \baca-metronome-mark-spanner-left-text 2 0 1 "84"
       %! EXPLICIT_METRONOME_MARK
       %! baca._attach_metronome_marks(2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.metronome_mark_function()
+      %! baca.metronome_mark()
     %@% \bacaStartTextSpanMM
       %! CLOCK_TIME
       %! baca._label_clock_time()
@@ -1919,19 +1919,19 @@ number.4.Skips = {
       %! baca._attach_metronome_marks(2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.metronome_mark_function()
+      %! baca.metronome_mark()
     %@% - \abjad-dashed-line-with-arrow
       %! EXPLICIT_METRONOME_MARK
       %! baca._attach_metronome_marks(2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.metronome_mark_function()
+      %! baca.metronome_mark()
     %@% - \baca-metronome-mark-spanner-left-text 2 0 1 "112"
       %! EXPLICIT_METRONOME_MARK
       %! baca._attach_metronome_marks(2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.metronome_mark_function()
+      %! baca.metronome_mark()
     %@% \bacaStartTextSpanMM
       %! CLOCK_TIME
       %! baca._label_clock_time()
@@ -2040,19 +2040,19 @@ number.4.Skips = {
       %! baca._attach_metronome_marks(2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.metronome_mark_function()
+      %! baca.metronome_mark()
     %@% - \abjad-invisible-line
       %! EXPLICIT_METRONOME_MARK
       %! baca._attach_metronome_marks(2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.metronome_mark_function()
+      %! baca.metronome_mark()
     %@% - \baca-metronome-mark-spanner-left-text 2 0 1 "84"
       %! EXPLICIT_METRONOME_MARK
       %! baca._attach_metronome_marks(2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.metronome_mark_function()
+      %! baca.metronome_mark()
     %@% \bacaStartTextSpanMM
       %! CLOCK_TIME
       %! baca._label_clock_time()
@@ -2115,19 +2115,19 @@ number.4.Skips = {
       %! baca._attach_metronome_marks(2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.metronome_mark_function()
+      %! baca.metronome_mark()
     %@% - \abjad-dashed-line-with-arrow
       %! EXPLICIT_METRONOME_MARK
       %! baca._attach_metronome_marks(2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.metronome_mark_function()
+      %! baca.metronome_mark()
     %@% - \baca-metronome-mark-spanner-left-text 2 0 1 "112"
       %! EXPLICIT_METRONOME_MARK
       %! baca._attach_metronome_marks(2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.metronome_mark_function()
+      %! baca.metronome_mark()
     %@% \bacaStartTextSpanMM
       %! CLOCK_TIME
       %! baca._label_clock_time()
@@ -2319,19 +2319,19 @@ number.4.Skips = {
       %! baca._attach_metronome_marks(2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.metronome_mark_function()
+      %! baca.metronome_mark()
     %@% - \abjad-invisible-line
       %! EXPLICIT_METRONOME_MARK
       %! baca._attach_metronome_marks(2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.metronome_mark_function()
+      %! baca.metronome_mark()
     %@% - \baca-metronome-mark-spanner-left-text 2 0 1 "84"
       %! EXPLICIT_METRONOME_MARK
       %! baca._attach_metronome_marks(2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.metronome_mark_function()
+      %! baca.metronome_mark()
     %@% \bacaStartTextSpanMM
       %! CLOCK_TIME
       %! baca._label_clock_time()
@@ -2722,9 +2722,9 @@ number.4.RH.Music.1 = {
     % [RH.Music.1 measure 1]
     % BEFORE:
     % COMMANDS:
-      %! baca.tuplet_bracket_up_function(1)
+      %! baca.tuplet_bracket_up(1)
     \override TupletBracket.direction = #up
-      %! baca.tuplet_bracket_staff_padding_function(1)
+      %! baca.tuplet_bracket_staff_padding(1)
     \override TupletBracket.staff-padding = 8
     % OPENING:
     % COMMANDS:
@@ -2773,11 +2773,11 @@ number.4.RH.Music.1 = {
             % [RH.Music.1 measure 18]
             % BEFORE:
             % COMMANDS:
-              %! baca.text_script_up_function(1)
+              %! baca.text_script_up(1)
             \override TextScript.direction = #up
             % OPENING:
             % COMMANDS:
-              %! baca.dynamic_up_function()
+              %! baca.dynamic_up()
             \dynamicUp
             r8
             % ABSOLUTE_BEFORE:
@@ -2785,16 +2785,16 @@ number.4.RH.Music.1 = {
 
             % BEFORE:
             % COMMANDS:
-              %! baca.dynamic_text_x_offset_function(1)
+              %! baca.dynamic_text_x_offset(1)
             \once \override DynamicText.X-offset = -4
-              %! baca.dynamic_text_extra_offset_function(1)
+              %! baca.dynamic_text_extra_offset(1)
             \once \override DynamicText.extra-offset = #'(0 . -8)
-              %! baca.text_script_color_function(1)
+              %! baca.text_script_color(1)
             \once \override TextScript.color = #black
               %! SPANNER_START
               %! baca._do_spanner_indicator_command(1)
             \ottava 1
-              %! baca.stem_up_function(1)
+              %! baca.stem_up(1)
             \override Stem.direction = #up
               %! rmakers.beam_groups()
             \set stemLeftBeamCount = 0
@@ -2808,12 +2808,12 @@ number.4.RH.Music.1 = {
               %! EXPLICIT_DYNAMIC
               %! baca._attach_persistent_indicator()
               %! baca._set_status_tag()
-              %! baca.dynamic_function()
+              %! baca.dynamic()
             - \tweak color #(x11-color 'blue)
               %! EXPLICIT_DYNAMIC
               %! baca._attach_persistent_indicator()
               %! baca._set_status_tag()
-              %! baca.dynamic_function()
+              %! baca.dynamic()
             \mf
             % MARKUP:
               %! FIGURE_LABEL
@@ -2826,7 +2826,7 @@ number.4.RH.Music.1 = {
             % SPANNER_STARTS:
               %! SPANNER_START
               %! baca._do_spanner_indicator_command(1)
-              %! baca.slur_function()
+              %! baca.slur()
             (
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -2842,7 +2842,7 @@ number.4.RH.Music.1 = {
             % SPANNER_STOPS:
               %! SPANNER_STOP
               %! baca._do_spanner_indicator_command(2)
-              %! baca.slur_function()
+              %! baca.slur()
             )
             % STOP_BEAM:
               %! rmakers.beam_groups()
@@ -2886,7 +2886,7 @@ number.4.RH.Music.1 = {
             % SPANNER_STARTS:
               %! SPANNER_START
               %! baca._do_spanner_indicator_command(1)
-              %! baca.slur_function()
+              %! baca.slur()
             (
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -2902,7 +2902,7 @@ number.4.RH.Music.1 = {
             % SPANNER_STOPS:
               %! SPANNER_STOP
               %! baca._do_spanner_indicator_command(2)
-              %! baca.slur_function()
+              %! baca.slur()
             )
             % STOP_BEAM:
               %! rmakers.beam_groups()
@@ -2913,7 +2913,7 @@ number.4.RH.Music.1 = {
             r4.
             % AFTER:
             % COMMANDS:
-              %! baca.text_script_up_function(2)
+              %! baca.text_script_up(2)
             \revert TextScript.direction
             % CLOSING:
             % COMMANDS:
@@ -2970,7 +2970,7 @@ number.4.RH.Music.1 = {
             % [RH.Music.1 measure 21]
             % BEFORE:
             % COMMANDS:
-              %! baca.rest_transparent_function(1)
+              %! baca.rest_transparent(1)
             \once \override Rest.transparent = ##t
             r4
             % CLOSING:
@@ -3044,7 +3044,7 @@ number.4.RH.Music.1 = {
             % SPANNER_STARTS:
               %! SPANNER_START
               %! baca._do_spanner_indicator_command(1)
-              %! baca.slur_function()
+              %! baca.slur()
             (
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -3070,7 +3070,7 @@ number.4.RH.Music.1 = {
             % SPANNER_STOPS:
               %! SPANNER_STOP
               %! baca._do_spanner_indicator_command(2)
-              %! baca.slur_function()
+              %! baca.slur()
             )
             % STOP_BEAM:
               %! rmakers.beam_groups()
@@ -3124,7 +3124,7 @@ number.4.RH.Music.1 = {
             % [RH.Music.1 measure 27]
             % BEFORE:
             % COMMANDS:
-              %! baca.slur_down_function(1)
+              %! baca.slur_down(1)
             \once \override Slur.direction = #down
               %! rmakers.beam_groups()
             \set stemLeftBeamCount = 0
@@ -3143,7 +3143,7 @@ number.4.RH.Music.1 = {
             % SPANNER_STARTS:
               %! SPANNER_START
               %! baca._do_spanner_indicator_command(1)
-              %! baca.slur_function()
+              %! baca.slur()
             (
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -3169,7 +3169,7 @@ number.4.RH.Music.1 = {
             % SPANNER_STOPS:
               %! SPANNER_STOP
               %! baca._do_spanner_indicator_command(2)
-              %! baca.slur_function()
+              %! baca.slur()
             )
             % STOP_BEAM:
               %! rmakers.beam_groups()
@@ -3199,7 +3199,7 @@ number.4.RH.Music.1 = {
             % SPANNER_STARTS:
               %! SPANNER_START
               %! baca._do_spanner_indicator_command(1)
-              %! baca.slur_function()
+              %! baca.slur()
             (
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -3225,7 +3225,7 @@ number.4.RH.Music.1 = {
             % SPANNER_STOPS:
               %! SPANNER_STOP
               %! baca._do_spanner_indicator_command(2)
-              %! baca.slur_function()
+              %! baca.slur()
             )
             % STOP_BEAM:
               %! rmakers.beam_groups()
@@ -3269,7 +3269,7 @@ number.4.RH.Music.1 = {
             % SPANNER_STARTS:
               %! SPANNER_START
               %! baca._do_spanner_indicator_command(1)
-              %! baca.slur_function()
+              %! baca.slur()
             (
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -3285,7 +3285,7 @@ number.4.RH.Music.1 = {
             % SPANNER_STOPS:
               %! SPANNER_STOP
               %! baca._do_spanner_indicator_command(2)
-              %! baca.slur_function()
+              %! baca.slur()
             )
             % STOP_BEAM:
               %! rmakers.beam_groups()
@@ -3325,19 +3325,19 @@ number.4.RH.Music.1 = {
             ef''''!1..
             % AFTER:
             % ARTICULATIONS:
-              %! baca.tenuto_function()
+              %! baca.tenuto()
             - \tenuto
               %! EXPLICIT_DYNAMIC_COLOR
               %! baca.treat_persistent_wrapper()
               %! EXPLICIT_DYNAMIC
               %! baca._attach_persistent_indicator()
               %! baca._set_status_tag()
-              %! baca.dynamic_function()
+              %! baca.dynamic()
             - \tweak color #(x11-color 'blue)
               %! EXPLICIT_DYNAMIC
               %! baca._attach_persistent_indicator()
               %! baca._set_status_tag()
-              %! baca.dynamic_function()
+              %! baca.dynamic()
             \f
             % MARKUP:
               %! FIGURE_LABEL
@@ -3373,7 +3373,7 @@ number.4.RH.Music.1 = {
             f''''1.
             % AFTER:
             % ARTICULATIONS:
-              %! baca.tenuto_function()
+              %! baca.tenuto()
             - \tenuto
             % MARKUP:
               %! FIGURE_LABEL
@@ -3409,7 +3409,7 @@ number.4.RH.Music.1 = {
             bf''''!1
             % AFTER:
             % ARTICULATIONS:
-              %! baca.tenuto_function()
+              %! baca.tenuto()
             - \tenuto
             % MARKUP:
               %! FIGURE_LABEL
@@ -3445,7 +3445,7 @@ number.4.RH.Music.1 = {
             ef''''!1
             % AFTER:
             % ARTICULATIONS:
-              %! baca.tenuto_function()
+              %! baca.tenuto()
             - \tenuto
             % MARKUP:
               %! FIGURE_LABEL
@@ -3496,7 +3496,7 @@ number.4.RH.Music.1 = {
             f''''1
             % AFTER:
             % ARTICULATIONS:
-              %! baca.tenuto_function()
+              %! baca.tenuto()
             - \tenuto
             % MARKUP:
               %! FIGURE_LABEL
@@ -3532,7 +3532,7 @@ number.4.RH.Music.1 = {
             bf''''!2
             % AFTER:
             % ARTICULATIONS:
-              %! baca.tenuto_function()
+              %! baca.tenuto()
             - \tenuto
             % MARKUP:
               %! FIGURE_LABEL
@@ -3543,7 +3543,7 @@ number.4.RH.Music.1 = {
               %! SPANNER_STOP
               %! baca._do_spanner_indicator_command(2)
             \ottava 0
-              %! baca.stem_up_function(2)
+              %! baca.stem_up(2)
             \revert Stem.direction
             % CLOSING:
             % COMMANDS:
@@ -3563,9 +3563,9 @@ number.4.RH.Music.1 = {
     s1 * 17/2
     % AFTER:
     % COMMANDS:
-      %! baca.tuplet_bracket_up_function(2)
+      %! baca.tuplet_bracket_up(2)
     \revert TupletBracket.direction
-      %! baca.tuplet_bracket_staff_padding_function(2)
+      %! baca.tuplet_bracket_staff_padding(2)
     \revert TupletBracket.staff-padding
     % CLOSING:
     % COMMANDS:
@@ -3619,28 +3619,28 @@ number.4.RH.Music.2 = {
             % [RH.Music.2 measure 2]
             % BEFORE:
             % COMMANDS:
-              %! baca.up_arpeggio_function()
+              %! baca.up_arpeggio()
             \arpeggioArrowUp
-              %! baca.script_up_function(1)
+              %! baca.script_up(1)
             \once \override Script.direction = #up
             <a g' af'! b' cs''! f'' ef'''! c''''>2.
             % AFTER:
             % ARTICULATIONS:
-              %! baca.marcato_function()
+              %! baca.marcato()
             - \marcato
               %! EXPLICIT_DYNAMIC_COLOR
               %! baca.treat_persistent_wrapper()
               %! EXPLICIT_DYNAMIC
               %! baca._attach_persistent_indicator()
               %! baca._set_status_tag()
-              %! baca.dynamic_function()
+              %! baca.dynamic()
             - \tweak color #(x11-color 'blue)
               %! EXPLICIT_DYNAMIC
               %! baca._attach_persistent_indicator()
               %! baca._set_status_tag()
-              %! baca.dynamic_function()
+              %! baca.dynamic()
             \ff
-              %! baca.up_arpeggio_function()
+              %! baca.up_arpeggio()
             \arpeggio
             % MARKUP:
               %! FIGURE_LABEL
@@ -3709,19 +3709,19 @@ number.4.RH.Music.2 = {
             ef'''!8
             % AFTER:
             % ARTICULATIONS:
-              %! baca.staccato_function()
+              %! baca.staccato()
             - \staccato
               %! EXPLICIT_DYNAMIC_COLOR
               %! baca.treat_persistent_wrapper()
               %! EXPLICIT_DYNAMIC
               %! baca._attach_persistent_indicator()
               %! baca._set_status_tag()
-              %! baca.dynamic_function()
+              %! baca.dynamic()
             - \tweak color #(x11-color 'blue)
               %! EXPLICIT_DYNAMIC
               %! baca._attach_persistent_indicator()
               %! baca._set_status_tag()
-              %! baca.dynamic_function()
+              %! baca.dynamic()
             \mp
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -3739,7 +3739,7 @@ number.4.RH.Music.2 = {
             d'''8
             % AFTER:
             % ARTICULATIONS:
-              %! baca.staccato_function()
+              %! baca.staccato()
             - \staccato
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -3753,7 +3753,7 @@ number.4.RH.Music.2 = {
             f''''8
             % AFTER:
             % ARTICULATIONS:
-              %! baca.staccato_function()
+              %! baca.staccato()
             - \staccato
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -3828,7 +3828,7 @@ number.4.RH.Music.2 = {
             f'''8
             % AFTER:
             % ARTICULATIONS:
-              %! baca.staccato_function()
+              %! baca.staccato()
             - \staccato
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -3842,7 +3842,7 @@ number.4.RH.Music.2 = {
             fs'''!8
             % AFTER:
             % ARTICULATIONS:
-              %! baca.staccato_function()
+              %! baca.staccato()
             - \staccato
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -3868,7 +3868,7 @@ number.4.RH.Music.2 = {
             fs''''!8
             % AFTER:
             % ARTICULATIONS:
-              %! baca.staccato_function()
+              %! baca.staccato()
             - \staccato
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -3943,7 +3943,7 @@ number.4.RH.Music.2 = {
             a'''8
             % AFTER:
             % ARTICULATIONS:
-              %! baca.staccato_function()
+              %! baca.staccato()
             - \staccato
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -3957,7 +3957,7 @@ number.4.RH.Music.2 = {
             bf'''!8
             % AFTER:
             % ARTICULATIONS:
-              %! baca.staccato_function()
+              %! baca.staccato()
             - \staccato
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -3983,7 +3983,7 @@ number.4.RH.Music.2 = {
             bf'''!8
             % AFTER:
             % ARTICULATIONS:
-              %! baca.staccato_function()
+              %! baca.staccato()
             - \staccato
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -3997,7 +3997,7 @@ number.4.RH.Music.2 = {
             cs''''!8
             % AFTER:
             % ARTICULATIONS:
-              %! baca.staccato_function()
+              %! baca.staccato()
             - \staccato
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -4015,7 +4015,7 @@ number.4.RH.Music.2 = {
             c''''8
             % AFTER:
             % ARTICULATIONS:
-              %! baca.staccato_function()
+              %! baca.staccato()
             - \staccato
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -4066,9 +4066,9 @@ number.4.RH.Music.2 = {
             % [RH.Music.2 measure 35]
             % BEFORE:
             % COMMANDS:
-              %! baca.dls_staff_padding_function(1)
+              %! baca.dls_staff_padding(1)
             \override DynamicLineSpanner.staff-padding = 8
-              %! baca.slur_up_function(1)
+              %! baca.slur_up(1)
             \override Slur.direction = #up
               %! rmakers.beam_groups()
             \set stemLeftBeamCount = 0
@@ -4083,13 +4083,13 @@ number.4.RH.Music.2 = {
               %! SPANNER_STOP
               %! baca.PiecewiseCommand._call(2)
               %! baca._set_status_tag()
-              %! baca.hairpin_function()
+              %! baca.hairpin()
             - \tweak color #(x11-color 'blue)
               %! EXPLICIT_DYNAMIC
               %! SPANNER_STOP
               %! baca.PiecewiseCommand._call(2)
               %! baca._set_status_tag()
-              %! baca.hairpin_function()
+              %! baca.hairpin()
             \f
             % MARKUP:
               %! FIGURE_LABEL
@@ -4102,7 +4102,7 @@ number.4.RH.Music.2 = {
             % SPANNER_STARTS:
               %! SPANNER_START
               %! baca._do_spanner_indicator_command(1)
-              %! baca.slur_function()
+              %! baca.slur()
             (
               %! EXPLICIT_DYNAMIC_COLOR
               %! baca.treat_persistent_wrapper()
@@ -4110,13 +4110,13 @@ number.4.RH.Music.2 = {
               %! SPANNER_START
               %! baca.PiecewiseCommand._call(2)
               %! baca._set_status_tag()
-              %! baca.hairpin_function()
+              %! baca.hairpin()
             - \tweak color #(x11-color 'blue)
               %! EXPLICIT_DYNAMIC
               %! SPANNER_START
               %! baca.PiecewiseCommand._call(2)
               %! baca._set_status_tag()
-              %! baca.hairpin_function()
+              %! baca.hairpin()
             \<
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -4329,13 +4329,13 @@ number.4.RH.Music.2 = {
               %! SPANNER_STOP
               %! baca.PiecewiseCommand._call(3)
               %! baca._set_status_tag()
-              %! baca.hairpin_function()
+              %! baca.hairpin()
             - \tweak color #(x11-color 'blue)
               %! EXPLICIT_DYNAMIC
               %! SPANNER_STOP
               %! baca.PiecewiseCommand._call(3)
               %! baca._set_status_tag()
-              %! baca.hairpin_function()
+              %! baca.hairpin()
             \ff
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -4351,15 +4351,15 @@ number.4.RH.Music.2 = {
             % SPANNER_STOPS:
               %! SPANNER_STOP
               %! baca._do_spanner_indicator_command(2)
-              %! baca.slur_function()
+              %! baca.slur()
             )
             % STOP_BEAM:
               %! rmakers.beam_groups()
             ]
             % COMMANDS:
-              %! baca.dls_staff_padding_function(2)
+              %! baca.dls_staff_padding(2)
             \revert DynamicLineSpanner.staff-padding
-              %! baca.slur_up_function(2)
+              %! baca.slur_up(2)
             \revert Slur.direction
             % CLOSING:
             % COMMANDS:
@@ -4389,11 +4389,11 @@ number.4.RH.Music.2 = {
             % [RH.Music.2 measure 36]
             % BEFORE:
             % COMMANDS:
-              %! baca.dls_staff_padding_function(1)
+              %! baca.dls_staff_padding(1)
             \override DynamicLineSpanner.staff-padding = 8
-              %! baca.slur_up_function(1)
+              %! baca.slur_up(1)
             \override Slur.direction = #up
-              %! baca.text_script_up_function(1)
+              %! baca.text_script_up(1)
             \override TextScript.direction = #up
               %! rmakers.beam_groups()
             \set stemLeftBeamCount = 0
@@ -4408,13 +4408,13 @@ number.4.RH.Music.2 = {
               %! SPANNER_STOP
               %! baca.PiecewiseCommand._call(2)
               %! baca._set_status_tag()
-              %! baca.hairpin_function()
+              %! baca.hairpin()
             - \tweak color #(x11-color 'blue)
               %! EXPLICIT_DYNAMIC
               %! SPANNER_STOP
               %! baca.PiecewiseCommand._call(2)
               %! baca._set_status_tag()
-              %! baca.hairpin_function()
+              %! baca.hairpin()
             \f
             % MARKUP:
               %! FIGURE_LABEL
@@ -4427,7 +4427,7 @@ number.4.RH.Music.2 = {
             % SPANNER_STARTS:
               %! SPANNER_START
               %! baca._do_spanner_indicator_command(1)
-              %! baca.slur_function()
+              %! baca.slur()
             (
               %! EXPLICIT_DYNAMIC_COLOR
               %! baca.treat_persistent_wrapper()
@@ -4435,13 +4435,13 @@ number.4.RH.Music.2 = {
               %! SPANNER_START
               %! baca.PiecewiseCommand._call(2)
               %! baca._set_status_tag()
-              %! baca.hairpin_function()
+              %! baca.hairpin()
             - \tweak color #(x11-color 'blue)
               %! EXPLICIT_DYNAMIC
               %! SPANNER_START
               %! baca.PiecewiseCommand._call(2)
               %! baca._set_status_tag()
-              %! baca.hairpin_function()
+              %! baca.hairpin()
             \<
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -4644,13 +4644,13 @@ number.4.RH.Music.2 = {
               %! SPANNER_STOP
               %! baca.PiecewiseCommand._call(3)
               %! baca._set_status_tag()
-              %! baca.hairpin_function()
+              %! baca.hairpin()
             - \tweak color #(x11-color 'blue)
               %! EXPLICIT_DYNAMIC
               %! SPANNER_STOP
               %! baca.PiecewiseCommand._call(3)
               %! baca._set_status_tag()
-              %! baca.hairpin_function()
+              %! baca.hairpin()
             \ff
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -4666,17 +4666,17 @@ number.4.RH.Music.2 = {
             % SPANNER_STOPS:
               %! SPANNER_STOP
               %! baca._do_spanner_indicator_command(2)
-              %! baca.slur_function()
+              %! baca.slur()
             )
             % STOP_BEAM:
               %! rmakers.beam_groups()
             ]
             % COMMANDS:
-              %! baca.dls_staff_padding_function(2)
+              %! baca.dls_staff_padding(2)
             \revert DynamicLineSpanner.staff-padding
-              %! baca.slur_up_function(2)
+              %! baca.slur_up(2)
             \revert Slur.direction
-              %! baca.text_script_up_function(2)
+              %! baca.text_script_up(2)
             \revert TextScript.direction
             % CLOSING:
             % COMMANDS:
@@ -4706,19 +4706,19 @@ number.4.RH.Music.2 = {
             % [RH.Music.2 measure 37]
             % BEFORE:
             % COMMANDS:
-              %! baca.up_arpeggio_function()
+              %! baca.up_arpeggio()
             \arpeggioArrowUp
               %! REPEAT_PITCH_CLASS_COLORING
               %! baca.color_repeat_pitch_classes()
             %@% \baca-repeat-pitch-class-coloring
-              %! baca.script_up_function(1)
+              %! baca.script_up(1)
             \once \override Script.direction = #up
             <a g' af'! b' cs''! f'' ef'''! c''''>1.
             % AFTER:
             % ARTICULATIONS:
-              %! baca.marcato_function()
+              %! baca.marcato()
             - \marcato
-              %! baca.up_arpeggio_function()
+              %! baca.up_arpeggio()
             \arpeggio
             % MARKUP:
               %! FIGURE_LABEL
@@ -4756,11 +4756,11 @@ number.4.RH.Music.2 = {
               %! REPEAT_PITCH_CLASS_COLORING
               %! baca.color_repeat_pitch_classes()
             %@% \baca-repeat-pitch-class-coloring
-              %! baca.dls_staff_padding_function(1)
+              %! baca.dls_staff_padding(1)
             \override DynamicLineSpanner.staff-padding = 8
-              %! baca.slur_up_function(1)
+              %! baca.slur_up(1)
             \override Slur.direction = #up
-              %! baca.text_script_up_function(1)
+              %! baca.text_script_up(1)
             \override TextScript.direction = #up
               %! rmakers.beam_groups()
             \set stemLeftBeamCount = 0
@@ -4775,13 +4775,13 @@ number.4.RH.Music.2 = {
               %! SPANNER_STOP
               %! baca.PiecewiseCommand._call(2)
               %! baca._set_status_tag()
-              %! baca.hairpin_function()
+              %! baca.hairpin()
             - \tweak color #(x11-color 'blue)
               %! EXPLICIT_DYNAMIC
               %! SPANNER_STOP
               %! baca.PiecewiseCommand._call(2)
               %! baca._set_status_tag()
-              %! baca.hairpin_function()
+              %! baca.hairpin()
             \f
             % MARKUP:
               %! FIGURE_LABEL
@@ -4794,7 +4794,7 @@ number.4.RH.Music.2 = {
             % SPANNER_STARTS:
               %! SPANNER_START
               %! baca._do_spanner_indicator_command(1)
-              %! baca.slur_function()
+              %! baca.slur()
             (
               %! EXPLICIT_DYNAMIC_COLOR
               %! baca.treat_persistent_wrapper()
@@ -4802,13 +4802,13 @@ number.4.RH.Music.2 = {
               %! SPANNER_START
               %! baca.PiecewiseCommand._call(2)
               %! baca._set_status_tag()
-              %! baca.hairpin_function()
+              %! baca.hairpin()
             - \tweak color #(x11-color 'blue)
               %! EXPLICIT_DYNAMIC
               %! SPANNER_START
               %! baca.PiecewiseCommand._call(2)
               %! baca._set_status_tag()
-              %! baca.hairpin_function()
+              %! baca.hairpin()
             \<
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -5041,13 +5041,13 @@ number.4.RH.Music.2 = {
               %! SPANNER_STOP
               %! baca.PiecewiseCommand._call(3)
               %! baca._set_status_tag()
-              %! baca.hairpin_function()
+              %! baca.hairpin()
             - \tweak color #(x11-color 'blue)
               %! EXPLICIT_DYNAMIC
               %! SPANNER_STOP
               %! baca.PiecewiseCommand._call(3)
               %! baca._set_status_tag()
-              %! baca.hairpin_function()
+              %! baca.hairpin()
             \ff
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -5063,17 +5063,17 @@ number.4.RH.Music.2 = {
             % SPANNER_STOPS:
               %! SPANNER_STOP
               %! baca._do_spanner_indicator_command(2)
-              %! baca.slur_function()
+              %! baca.slur()
             )
             % STOP_BEAM:
               %! rmakers.beam_groups()
             ]
             % COMMANDS:
-              %! baca.dls_staff_padding_function(2)
+              %! baca.dls_staff_padding(2)
             \revert DynamicLineSpanner.staff-padding
-              %! baca.slur_up_function(2)
+              %! baca.slur_up(2)
             \revert Slur.direction
-              %! baca.text_script_up_function(2)
+              %! baca.text_script_up(2)
             \revert TextScript.direction
             % CLOSING:
             % COMMANDS:
@@ -5103,11 +5103,11 @@ number.4.RH.Music.2 = {
             % [RH.Music.2 measure 39]
             % BEFORE:
             % COMMANDS:
-              %! baca.dls_staff_padding_function(1)
+              %! baca.dls_staff_padding(1)
             \override DynamicLineSpanner.staff-padding = 8
-              %! baca.slur_up_function(1)
+              %! baca.slur_up(1)
             \override Slur.direction = #up
-              %! baca.text_script_up_function(1)
+              %! baca.text_script_up(1)
             \override TextScript.direction = #up
               %! rmakers.beam_groups()
             \set stemLeftBeamCount = 0
@@ -5122,13 +5122,13 @@ number.4.RH.Music.2 = {
               %! SPANNER_STOP
               %! baca.PiecewiseCommand._call(2)
               %! baca._set_status_tag()
-              %! baca.hairpin_function()
+              %! baca.hairpin()
             - \tweak color #(x11-color 'blue)
               %! EXPLICIT_DYNAMIC
               %! SPANNER_STOP
               %! baca.PiecewiseCommand._call(2)
               %! baca._set_status_tag()
-              %! baca.hairpin_function()
+              %! baca.hairpin()
             \f
             % MARKUP:
               %! FIGURE_LABEL
@@ -5141,7 +5141,7 @@ number.4.RH.Music.2 = {
             % SPANNER_STARTS:
               %! SPANNER_START
               %! baca._do_spanner_indicator_command(1)
-              %! baca.slur_function()
+              %! baca.slur()
             (
               %! EXPLICIT_DYNAMIC_COLOR
               %! baca.treat_persistent_wrapper()
@@ -5149,13 +5149,13 @@ number.4.RH.Music.2 = {
               %! SPANNER_START
               %! baca.PiecewiseCommand._call(2)
               %! baca._set_status_tag()
-              %! baca.hairpin_function()
+              %! baca.hairpin()
             - \tweak color #(x11-color 'blue)
               %! EXPLICIT_DYNAMIC
               %! SPANNER_START
               %! baca.PiecewiseCommand._call(2)
               %! baca._set_status_tag()
-              %! baca.hairpin_function()
+              %! baca.hairpin()
             \<
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -5236,13 +5236,13 @@ number.4.RH.Music.2 = {
               %! SPANNER_STOP
               %! baca.PiecewiseCommand._call(3)
               %! baca._set_status_tag()
-              %! baca.hairpin_function()
+              %! baca.hairpin()
             - \tweak color #(x11-color 'blue)
               %! EXPLICIT_DYNAMIC
               %! SPANNER_STOP
               %! baca.PiecewiseCommand._call(3)
               %! baca._set_status_tag()
-              %! baca.hairpin_function()
+              %! baca.hairpin()
             \ff
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -5261,17 +5261,17 @@ number.4.RH.Music.2 = {
             % SPANNER_STOPS:
               %! SPANNER_STOP
               %! baca._do_spanner_indicator_command(2)
-              %! baca.slur_function()
+              %! baca.slur()
             )
             % STOP_BEAM:
               %! rmakers.beam_groups()
             ]
             % COMMANDS:
-              %! baca.dls_staff_padding_function(2)
+              %! baca.dls_staff_padding(2)
             \revert DynamicLineSpanner.staff-padding
-              %! baca.slur_up_function(2)
+              %! baca.slur_up(2)
             \revert Slur.direction
-              %! baca.text_script_up_function(2)
+              %! baca.text_script_up(2)
             \revert TextScript.direction
             % CLOSING:
             % COMMANDS:
@@ -5301,19 +5301,19 @@ number.4.RH.Music.2 = {
             % [RH.Music.2 measure 40]
             % BEFORE:
             % COMMANDS:
-              %! baca.up_arpeggio_function()
+              %! baca.up_arpeggio()
             \arpeggioArrowUp
               %! REPEAT_PITCH_CLASS_COLORING
               %! baca.color_repeat_pitch_classes()
             %@% \baca-repeat-pitch-class-coloring
-              %! baca.script_up_function(1)
+              %! baca.script_up(1)
             \once \override Script.direction = #up
             <f'' ef'''! c'''' e'''' fs''''! bf''''!>1
             % AFTER:
             % ARTICULATIONS:
-              %! baca.marcato_function()
+              %! baca.marcato()
             - \marcato
-              %! baca.up_arpeggio_function()
+              %! baca.up_arpeggio()
             \arpeggio
             % MARKUP:
               %! FIGURE_LABEL
@@ -5348,19 +5348,19 @@ number.4.RH.Music.2 = {
             % [RH.Music.2 measure 41]
             % BEFORE:
             % COMMANDS:
-              %! baca.up_arpeggio_function()
+              %! baca.up_arpeggio()
             \arpeggioArrowUp
               %! REPEAT_PITCH_CLASS_COLORING
               %! baca.color_repeat_pitch_classes()
             %@% \baca-repeat-pitch-class-coloring
-              %! baca.script_up_function(1)
+              %! baca.script_up(1)
             \once \override Script.direction = #up
             <a g' af'! b' cs''! f'' ef'''! c''''>1
             % AFTER:
             % ARTICULATIONS:
-              %! baca.marcato_function()
+              %! baca.marcato()
             - \marcato
-              %! baca.up_arpeggio_function()
+              %! baca.up_arpeggio()
             \arpeggio
             % MARKUP:
               %! FIGURE_LABEL
@@ -5395,19 +5395,19 @@ number.4.RH.Music.2 = {
             % [RH.Music.2 measure 42]
             % BEFORE:
             % COMMANDS:
-              %! baca.up_arpeggio_function()
+              %! baca.up_arpeggio()
             \arpeggioArrowUp
               %! REPEAT_PITCH_CLASS_COLORING
               %! baca.color_repeat_pitch_classes()
             %@% \baca-repeat-pitch-class-coloring
-              %! baca.script_up_function(1)
+              %! baca.script_up(1)
             \once \override Script.direction = #up
             <e' fs'! bf'! a'' g''' af'''! b''' cs''''!>1
             % AFTER:
             % ARTICULATIONS:
-              %! baca.marcato_function()
+              %! baca.marcato()
             - \marcato
-              %! baca.up_arpeggio_function()
+              %! baca.up_arpeggio()
             \arpeggio
             % MARKUP:
               %! FIGURE_LABEL
@@ -5448,32 +5448,32 @@ number.4.RH.Music.2 = {
             % [RH.Music.2 measure 44]
             % BEFORE:
             % COMMANDS:
-              %! baca.script_up_function(1)
+              %! baca.script_up(1)
             \override Script.direction = #up
-              %! baca.stem_up_function(1)
+              %! baca.stem_up(1)
             \override Stem.direction = #up
-              %! baca.text_script_up_function(1)
+              %! baca.text_script_up(1)
             \override TextScript.direction = #up
             % OPENING:
             % COMMANDS:
-              %! baca.dynamic_up_function()
+              %! baca.dynamic_up()
             \dynamicUp
             c'''8
             % AFTER:
             % ARTICULATIONS:
-              %! baca.accent_function()
+              %! baca.accent()
             - \accent
               %! EXPLICIT_DYNAMIC_COLOR
               %! baca.treat_persistent_wrapper()
               %! EXPLICIT_DYNAMIC
               %! baca._attach_persistent_indicator()
               %! baca._set_status_tag()
-              %! baca.dynamic_function()
+              %! baca.dynamic()
             - \tweak color #(x11-color 'blue)
               %! EXPLICIT_DYNAMIC
               %! baca._attach_persistent_indicator()
               %! baca._set_status_tag()
-              %! baca.dynamic_function()
+              %! baca.dynamic()
             \fff
             % MARKUP:
               %! FIGURE_LABEL
@@ -5485,7 +5485,7 @@ number.4.RH.Music.2 = {
 
             % BEFORE:
             % COMMANDS:
-              %! baca.rest_up_function(1)
+              %! baca.rest_up(1)
             \override Rest.direction = #up
             r2..
             % ABSOLUTE_BEFORE:
@@ -5494,7 +5494,7 @@ number.4.RH.Music.2 = {
             d'''8
             % AFTER:
             % ARTICULATIONS:
-              %! baca.accent_function()
+              %! baca.accent()
             - \accent
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -5506,7 +5506,7 @@ number.4.RH.Music.2 = {
             ef''''!8
             % AFTER:
             % ARTICULATIONS:
-              %! baca.accent_function()
+              %! baca.accent()
             - \accent
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -5518,10 +5518,10 @@ number.4.RH.Music.2 = {
             f''''8
             % AFTER:
             % ARTICULATIONS:
-              %! baca.accent_function()
+              %! baca.accent()
             - \accent
             % COMMANDS:
-              %! baca.stem_up_function(2)
+              %! baca.stem_up(2)
             \revert Stem.direction
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -5529,11 +5529,11 @@ number.4.RH.Music.2 = {
             r2..
             % AFTER:
             % COMMANDS:
-              %! baca.rest_up_function(2)
+              %! baca.rest_up(2)
             \revert Rest.direction
-              %! baca.script_up_function(2)
+              %! baca.script_up(2)
             \revert Script.direction
-              %! baca.text_script_up_function(2)
+              %! baca.text_script_up(2)
             \revert TextScript.direction
             % CLOSING:
             % COMMANDS:
@@ -5592,30 +5592,30 @@ number.4.RH.Music.3 = {
             % [RH.Music.3 measure 1]
             % BEFORE:
             % COMMANDS:
-              %! baca.stem_up_function(1)
+              %! baca.stem_up(1)
             \override Stem.direction = #up
-              %! baca.text_script_up_function(1)
+              %! baca.text_script_up(1)
             \override TextScript.direction = #up
-              %! baca.tuplet_bracket_up_function(1)
+              %! baca.tuplet_bracket_up(1)
             \override TupletBracket.direction = #up
-              %! baca.tuplet_bracket_staff_padding_function(1)
+              %! baca.tuplet_bracket_staff_padding(1)
             \override TupletBracket.staff-padding = 3
             ef!8
             % AFTER:
             % ARTICULATIONS:
-              %! baca.tenuto_function()
+              %! baca.tenuto()
             - \tenuto
               %! EXPLICIT_DYNAMIC_COLOR
               %! baca.treat_persistent_wrapper()
               %! EXPLICIT_DYNAMIC
               %! baca._attach_persistent_indicator()
               %! baca._set_status_tag()
-              %! baca.dynamic_function()
+              %! baca.dynamic()
             - \tweak color #(x11-color 'blue)
               %! EXPLICIT_DYNAMIC
               %! baca._attach_persistent_indicator()
               %! baca._set_status_tag()
-              %! baca.dynamic_function()
+              %! baca.dynamic()
             \ff
             % MARKUP:
               %! FIGURE_LABEL
@@ -5632,7 +5632,7 @@ number.4.RH.Music.3 = {
             cs'!8
             % AFTER:
             % ARTICULATIONS:
-              %! baca.tenuto_function()
+              %! baca.tenuto()
             - \tenuto
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -5644,7 +5644,7 @@ number.4.RH.Music.3 = {
             c'4
             % AFTER:
             % ARTICULATIONS:
-              %! baca.tenuto_function()
+              %! baca.tenuto()
             - \tenuto
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -5652,10 +5652,10 @@ number.4.RH.Music.3 = {
             bf'!8
             % AFTER:
             % ARTICULATIONS:
-              %! baca.tenuto_function()
+              %! baca.tenuto()
             - \tenuto
             % COMMANDS:
-              %! baca.stem_up_function(2)
+              %! baca.stem_up(2)
             \revert Stem.direction
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -5663,11 +5663,11 @@ number.4.RH.Music.3 = {
             r4
             % AFTER:
             % COMMANDS:
-              %! baca.text_script_up_function(2)
+              %! baca.text_script_up(2)
             \revert TextScript.direction
-              %! baca.tuplet_bracket_up_function(2)
+              %! baca.tuplet_bracket_up(2)
             \revert TupletBracket.direction
-              %! baca.tuplet_bracket_staff_padding_function(2)
+              %! baca.tuplet_bracket_staff_padding(2)
             \revert TupletBracket.staff-padding
             % CLOSING:
             % COMMANDS:
@@ -5704,9 +5704,9 @@ number.4.RH.Music.3 = {
             % [RH.Music.3 measure 3]
             % BEFORE:
             % COMMANDS:
-              %! baca.tuplet_bracket_up_function(1)
+              %! baca.tuplet_bracket_up(1)
             \override TupletBracket.direction = #up
-              %! baca.tuplet_bracket_staff_padding_function(1)
+              %! baca.tuplet_bracket_staff_padding(1)
             \override TupletBracket.staff-padding = 4
             r4
             % ABSOLUTE_BEFORE:
@@ -5714,12 +5714,12 @@ number.4.RH.Music.3 = {
 
             % BEFORE:
             % COMMANDS:
-              %! baca.stem_up_function(1)
+              %! baca.stem_up(1)
             \override Stem.direction = #up
             ef''!8
             % AFTER:
             % ARTICULATIONS:
-              %! baca.tenuto_function()
+              %! baca.tenuto()
             - \tenuto
             % MARKUP:
               %! FIGURE_LABEL
@@ -5736,7 +5736,7 @@ number.4.RH.Music.3 = {
             cs''!4
             % AFTER:
             % ARTICULATIONS:
-              %! baca.tenuto_function()
+              %! baca.tenuto()
             - \tenuto
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -5748,7 +5748,7 @@ number.4.RH.Music.3 = {
             c'8
             % AFTER:
             % ARTICULATIONS:
-              %! baca.tenuto_function()
+              %! baca.tenuto()
             - \tenuto
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -5760,14 +5760,14 @@ number.4.RH.Music.3 = {
             bf!4
             % AFTER:
             % ARTICULATIONS:
-              %! baca.tenuto_function()
+              %! baca.tenuto()
             - \tenuto
             % COMMANDS:
-              %! baca.stem_up_function(2)
+              %! baca.stem_up(2)
             \revert Stem.direction
-              %! baca.tuplet_bracket_up_function(2)
+              %! baca.tuplet_bracket_up(2)
             \revert TupletBracket.direction
-              %! baca.tuplet_bracket_staff_padding_function(2)
+              %! baca.tuplet_bracket_staff_padding(2)
             \revert TupletBracket.staff-padding
             % CLOSING:
             % COMMANDS:
@@ -5831,14 +5831,14 @@ number.4.RH.Music.3 = {
             % [RH.Music.3 measure 6]
             % BEFORE:
             % COMMANDS:
-              %! baca.stem_up_function(1)
+              %! baca.stem_up(1)
             \override Stem.direction = #up
-              %! baca.tuplet_bracket_up_function(1)
+              %! baca.tuplet_bracket_up(1)
             \override TupletBracket.direction = #up
             ef'!8
             % AFTER:
             % ARTICULATIONS:
-              %! baca.tenuto_function()
+              %! baca.tenuto()
             - \tenuto
             % MARKUP:
               %! FIGURE_LABEL
@@ -5855,7 +5855,7 @@ number.4.RH.Music.3 = {
             cs'!8
             % AFTER:
             % ARTICULATIONS:
-              %! baca.tenuto_function()
+              %! baca.tenuto()
             - \tenuto
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -5867,7 +5867,7 @@ number.4.RH.Music.3 = {
             c'4
             % AFTER:
             % ARTICULATIONS:
-              %! baca.tenuto_function()
+              %! baca.tenuto()
             - \tenuto
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -5875,10 +5875,10 @@ number.4.RH.Music.3 = {
             bf!8
             % AFTER:
             % ARTICULATIONS:
-              %! baca.tenuto_function()
+              %! baca.tenuto()
             - \tenuto
             % COMMANDS:
-              %! baca.stem_up_function(2)
+              %! baca.stem_up(2)
             \revert Stem.direction
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -5886,7 +5886,7 @@ number.4.RH.Music.3 = {
             r4
             % AFTER:
             % COMMANDS:
-              %! baca.tuplet_bracket_up_function(2)
+              %! baca.tuplet_bracket_up(2)
             \revert TupletBracket.direction
             % CLOSING:
             % COMMANDS:
@@ -5949,14 +5949,14 @@ number.4.RH.Music.3 = {
             % [RH.Music.3 measure 22]
             % BEFORE:
             % COMMANDS:
-              %! baca.stem_down_function(1)
+              %! baca.stem_down(1)
             \override Stem.direction = #down
-              %! baca.tuplet_bracket_down_function(1)
+              %! baca.tuplet_bracket_down(1)
             \override TupletBracket.direction = #down
             af'''!8
             % AFTER:
             % ARTICULATIONS:
-              %! baca.tenuto_function()
+              %! baca.tenuto()
             - \tenuto
             % MARKUP:
               %! FIGURE_LABEL
@@ -5969,7 +5969,7 @@ number.4.RH.Music.3 = {
             % SPANNER_STARTS:
               %! SPANNER_START
               %! baca._do_spanner_indicator_command(1)
-              %! baca.slur_function()
+              %! baca.slur()
             (
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -5977,7 +5977,7 @@ number.4.RH.Music.3 = {
             ef'''!8
             % AFTER:
             % ARTICULATIONS:
-              %! baca.tenuto_function()
+              %! baca.tenuto()
             - \tenuto
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -5985,7 +5985,7 @@ number.4.RH.Music.3 = {
             f'''8
             % AFTER:
             % ARTICULATIONS:
-              %! baca.tenuto_function()
+              %! baca.tenuto()
             - \tenuto
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -5993,20 +5993,20 @@ number.4.RH.Music.3 = {
             fs'''!8
             % AFTER:
             % ARTICULATIONS:
-              %! baca.tenuto_function()
+              %! baca.tenuto()
             - \tenuto
             % SPANNER_STOPS:
               %! SPANNER_STOP
               %! baca._do_spanner_indicator_command(2)
-              %! baca.slur_function()
+              %! baca.slur()
             )
             % STOP_BEAM:
               %! rmakers.beam()
             ]
             % COMMANDS:
-              %! baca.stem_down_function(2)
+              %! baca.stem_down(2)
             \revert Stem.direction
-              %! baca.tuplet_bracket_down_function(2)
+              %! baca.tuplet_bracket_down(2)
             \revert TupletBracket.direction
             % CLOSING:
             % COMMANDS:
@@ -6043,11 +6043,11 @@ number.4.RH.Music.3 = {
             % [RH.Music.3 measure 43]
             % BEFORE:
             % COMMANDS:
-              %! baca.text_script_up_function(1)
+              %! baca.text_script_up(1)
             \override TextScript.direction = #up
-              %! baca.tuplet_bracket_up_function(1)
+              %! baca.tuplet_bracket_up(1)
             \override TupletBracket.direction = #up
-              %! baca.tuplet_bracket_staff_padding_function(1)
+              %! baca.tuplet_bracket_staff_padding(1)
             \override TupletBracket.staff-padding = 4
             r4
             % ABSOLUTE_BEFORE:
@@ -6055,24 +6055,24 @@ number.4.RH.Music.3 = {
 
             % BEFORE:
             % COMMANDS:
-              %! baca.stem_up_function(1)
+              %! baca.stem_up(1)
             \override Stem.direction = #up
             ef''!8
             % AFTER:
             % ARTICULATIONS:
-              %! baca.tenuto_function()
+              %! baca.tenuto()
             - \tenuto
               %! EXPLICIT_DYNAMIC_COLOR
               %! baca.treat_persistent_wrapper()
               %! EXPLICIT_DYNAMIC
               %! baca._attach_persistent_indicator()
               %! baca._set_status_tag()
-              %! baca.dynamic_function()
+              %! baca.dynamic()
             - \tweak color #(x11-color 'blue)
               %! EXPLICIT_DYNAMIC
               %! baca._attach_persistent_indicator()
               %! baca._set_status_tag()
-              %! baca.dynamic_function()
+              %! baca.dynamic()
             \mp
             % MARKUP:
               %! FIGURE_LABEL
@@ -6089,7 +6089,7 @@ number.4.RH.Music.3 = {
             cs''!4
             % AFTER:
             % ARTICULATIONS:
-              %! baca.tenuto_function()
+              %! baca.tenuto()
             - \tenuto
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -6101,7 +6101,7 @@ number.4.RH.Music.3 = {
             c'8
             % AFTER:
             % ARTICULATIONS:
-              %! baca.tenuto_function()
+              %! baca.tenuto()
             - \tenuto
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -6113,16 +6113,16 @@ number.4.RH.Music.3 = {
             bf!4
             % AFTER:
             % ARTICULATIONS:
-              %! baca.tenuto_function()
+              %! baca.tenuto()
             - \tenuto
             % COMMANDS:
-              %! baca.stem_up_function(2)
+              %! baca.stem_up(2)
             \revert Stem.direction
-              %! baca.text_script_up_function(2)
+              %! baca.text_script_up(2)
             \revert TextScript.direction
-              %! baca.tuplet_bracket_up_function(2)
+              %! baca.tuplet_bracket_up(2)
             \revert TupletBracket.direction
-              %! baca.tuplet_bracket_staff_padding_function(2)
+              %! baca.tuplet_bracket_staff_padding(2)
             \revert TupletBracket.staff-padding
             % CLOSING:
             % COMMANDS:
@@ -6156,28 +6156,28 @@ number.4.RH.Music.3 = {
               %! SPANNER_START
               %! baca._do_spanner_indicator_command(1)
             \ottava 1
-              %! baca.stem_down_function(1)
+              %! baca.stem_down(1)
             \override Stem.direction = #down
-              %! baca.tuplet_bracket_down_function(1)
+              %! baca.tuplet_bracket_down(1)
             \override TupletBracket.direction = #down
-              %! baca.tuplet_bracket_staff_padding_function(1)
+              %! baca.tuplet_bracket_staff_padding(1)
             \override TupletBracket.staff-padding = 3
             a''4
             % AFTER:
             % ARTICULATIONS:
-              %! baca.tenuto_function()
+              %! baca.tenuto()
             - \tenuto
               %! EXPLICIT_DYNAMIC_COLOR
               %! baca.treat_persistent_wrapper()
               %! EXPLICIT_DYNAMIC
               %! baca._attach_persistent_indicator()
               %! baca._set_status_tag()
-              %! baca.dynamic_function()
+              %! baca.dynamic()
             - \tweak color #(x11-color 'blue)
               %! EXPLICIT_DYNAMIC
               %! baca._attach_persistent_indicator()
               %! baca._set_status_tag()
-              %! baca.dynamic_function()
+              %! baca.dynamic()
             \mf
             % MARKUP:
               %! FIGURE_LABEL
@@ -6189,7 +6189,7 @@ number.4.RH.Music.3 = {
 
             % BEFORE:
             % COMMANDS:
-              %! baca.rest_down_function(1)
+              %! baca.rest_down(1)
             \override Rest.direction = #down
             r4
             % ABSOLUTE_BEFORE:
@@ -6198,7 +6198,7 @@ number.4.RH.Music.3 = {
             cs''!4
             % AFTER:
             % ARTICULATIONS:
-              %! baca.tenuto_function()
+              %! baca.tenuto()
             - \tenuto
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -6210,7 +6210,7 @@ number.4.RH.Music.3 = {
             b''4
             % AFTER:
             % ARTICULATIONS:
-              %! baca.tenuto_function()
+              %! baca.tenuto()
             - \tenuto
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -6222,7 +6222,7 @@ number.4.RH.Music.3 = {
             af''!4
             % AFTER:
             % ARTICULATIONS:
-              %! baca.tenuto_function()
+              %! baca.tenuto()
             - \tenuto
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -6234,13 +6234,13 @@ number.4.RH.Music.3 = {
             g'''4
             % AFTER:
             % ARTICULATIONS:
-              %! baca.tenuto_function()
+              %! baca.tenuto()
             - \tenuto
             % COMMANDS:
               %! SPANNER_STOP
               %! baca._do_spanner_indicator_command(2)
             \ottava 0
-              %! baca.stem_down_function(2)
+              %! baca.stem_down(2)
             \revert Stem.direction
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -6248,11 +6248,11 @@ number.4.RH.Music.3 = {
             r4
             % AFTER:
             % COMMANDS:
-              %! baca.rest_down_function(2)
+              %! baca.rest_down(2)
             \revert Rest.direction
-              %! baca.tuplet_bracket_down_function(2)
+              %! baca.tuplet_bracket_down(2)
             \revert TupletBracket.direction
-              %! baca.tuplet_bracket_staff_padding_function(2)
+              %! baca.tuplet_bracket_staff_padding(2)
             \revert TupletBracket.staff-padding
             % CLOSING:
             % COMMANDS:
@@ -6571,16 +6571,16 @@ number.4.LH.Music.2 = {
             % [LH.Music.2 measure 40]
             % BEFORE:
             % COMMANDS:
-              %! baca.rest_transparent_function(1)
+              %! baca.rest_transparent(1)
             \override Rest.transparent = ##t
-              %! baca.sustain_pedal_staff_padding_function(1)
+              %! baca.sustain_pedal_staff_padding(1)
             \override Staff.SustainPedalLineSpanner.staff-padding = 4
             r1
             % AFTER:
             % SPANNER_STARTS:
               %! SPANNER_START
               %! baca._do_spanner_indicator_command(1)
-              %! baca.sustain_pedal_function()
+              %! baca.sustain_pedal()
             \sustainOn
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -6592,12 +6592,12 @@ number.4.LH.Music.2 = {
             % SPANNER_STOPS:
               %! SPANNER_STOP
               %! baca._do_spanner_indicator_command(2)
-              %! baca.sustain_pedal_function()
+              %! baca.sustain_pedal()
             \sustainOff
             % SPANNER_STARTS:
               %! SPANNER_START
               %! baca._do_spanner_indicator_command(1)
-              %! baca.sustain_pedal_function()
+              %! baca.sustain_pedal()
             \sustainOn
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -6609,12 +6609,12 @@ number.4.LH.Music.2 = {
             % SPANNER_STOPS:
               %! SPANNER_STOP
               %! baca._do_spanner_indicator_command(2)
-              %! baca.sustain_pedal_function()
+              %! baca.sustain_pedal()
             \sustainOff
             % COMMANDS:
-              %! baca.rest_transparent_function(2)
+              %! baca.rest_transparent(2)
             \revert Rest.transparent
-              %! baca.sustain_pedal_staff_padding_function(2)
+              %! baca.sustain_pedal_staff_padding(2)
             \revert Staff.SustainPedalLineSpanner.staff-padding
             % CLOSING:
             % COMMANDS:
@@ -6684,7 +6684,7 @@ number.4.LH.Music.4 = {
             % [LH.Music.4 measure 4]
             % BEFORE:
             % COMMANDS:
-              %! baca.slur_up_function(1)
+              %! baca.slur_up(1)
             \override Slur.direction = #up
             b'8.
             % AFTER:
@@ -6694,12 +6694,12 @@ number.4.LH.Music.4 = {
               %! EXPLICIT_DYNAMIC
               %! baca._attach_persistent_indicator()
               %! baca._set_status_tag()
-              %! baca.dynamic_function()
+              %! baca.dynamic()
             - \tweak color #(x11-color 'blue)
               %! EXPLICIT_DYNAMIC
               %! baca._attach_persistent_indicator()
               %! baca._set_status_tag()
-              %! baca.dynamic_function()
+              %! baca.dynamic()
             \p
             % MARKUP:
               %! FIGURE_LABEL
@@ -6709,7 +6709,7 @@ number.4.LH.Music.4 = {
             % SPANNER_STARTS:
               %! SPANNER_START
               %! baca._do_spanner_indicator_command(1)
-              %! baca.slur_function()
+              %! baca.slur()
             (
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -6731,7 +6731,7 @@ number.4.LH.Music.4 = {
             % SPANNER_STOPS:
               %! SPANNER_STOP
               %! baca._do_spanner_indicator_command(2)
-              %! baca.slur_function()
+              %! baca.slur()
             )
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -6739,7 +6739,7 @@ number.4.LH.Music.4 = {
             r8.
             % AFTER:
             % COMMANDS:
-              %! baca.slur_up_function(2)
+              %! baca.slur_up(2)
             \revert Slur.direction
             % CLOSING:
             % COMMANDS:
@@ -6803,7 +6803,7 @@ number.4.LH.Music.5 = {
             % [LH.Music.5 measure 1]
             % OPENING:
             % COMMANDS:
-              %! baca.dynamic_down_function()
+              %! baca.dynamic_down()
             \dynamicDown
             r2.
             % ABSOLUTE_BEFORE:
@@ -6812,19 +6812,19 @@ number.4.LH.Music.5 = {
             af!8.
             % AFTER:
             % ARTICULATIONS:
-              %! baca.tenuto_function()
+              %! baca.tenuto()
             - \tenuto
               %! EXPLICIT_DYNAMIC_COLOR
               %! baca.treat_persistent_wrapper()
               %! EXPLICIT_DYNAMIC
               %! baca._attach_persistent_indicator()
               %! baca._set_status_tag()
-              %! baca.dynamic_function()
+              %! baca.dynamic()
             - \tweak color #(x11-color 'blue)
               %! EXPLICIT_DYNAMIC
               %! baca._attach_persistent_indicator()
               %! baca._set_status_tag()
-              %! baca.dynamic_function()
+              %! baca.dynamic()
             \f
             % MARKUP:
               %! FIGURE_LABEL
@@ -6841,7 +6841,7 @@ number.4.LH.Music.5 = {
             d'8.
             % AFTER:
             % ARTICULATIONS:
-              %! baca.tenuto_function()
+              %! baca.tenuto()
             - \tenuto
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -6853,7 +6853,7 @@ number.4.LH.Music.5 = {
             e'8.
             % AFTER:
             % ARTICULATIONS:
-              %! baca.tenuto_function()
+              %! baca.tenuto()
             - \tenuto
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -6919,7 +6919,7 @@ number.4.LH.Music.5 = {
             af!8.
             % AFTER:
             % ARTICULATIONS:
-              %! baca.tenuto_function()
+              %! baca.tenuto()
             - \tenuto
             % MARKUP:
               %! FIGURE_LABEL
@@ -6936,7 +6936,7 @@ number.4.LH.Music.5 = {
             d'8.
             % AFTER:
             % ARTICULATIONS:
-              %! baca.tenuto_function()
+              %! baca.tenuto()
             - \tenuto
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -6952,7 +6952,7 @@ number.4.LH.Music.5 = {
             e'8.
             % AFTER:
             % ARTICULATIONS:
-              %! baca.tenuto_function()
+              %! baca.tenuto()
             - \tenuto
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -7001,19 +7001,19 @@ number.4.LH.Music.5 = {
             <g b f' fs'! a'>8.
             % AFTER:
             % ARTICULATIONS:
-              %! baca.marcato_function()
+              %! baca.marcato()
             - \marcato
               %! EXPLICIT_DYNAMIC_COLOR
               %! baca.treat_persistent_wrapper()
               %! EXPLICIT_DYNAMIC
               %! baca._attach_persistent_indicator()
               %! baca._set_status_tag()
-              %! baca.dynamic_function()
+              %! baca.dynamic()
             - \tweak color #(x11-color 'blue)
               %! EXPLICIT_DYNAMIC
               %! baca._attach_persistent_indicator()
               %! baca._set_status_tag()
-              %! baca.dynamic_function()
+              %! baca.dynamic()
             \ff
             % MARKUP:
               %! FIGURE_LABEL
@@ -7061,19 +7061,19 @@ number.4.LH.Music.5 = {
             af!8.
             % AFTER:
             % ARTICULATIONS:
-              %! baca.tenuto_function()
+              %! baca.tenuto()
             - \tenuto
               %! EXPLICIT_DYNAMIC_COLOR
               %! baca.treat_persistent_wrapper()
               %! EXPLICIT_DYNAMIC
               %! baca._attach_persistent_indicator()
               %! baca._set_status_tag()
-              %! baca.dynamic_function()
+              %! baca.dynamic()
             - \tweak color #(x11-color 'blue)
               %! EXPLICIT_DYNAMIC
               %! baca._attach_persistent_indicator()
               %! baca._set_status_tag()
-              %! baca.dynamic_function()
+              %! baca.dynamic()
             \f
             % MARKUP:
               %! FIGURE_LABEL
@@ -7094,7 +7094,7 @@ number.4.LH.Music.5 = {
             d'8.
             % AFTER:
             % ARTICULATIONS:
-              %! baca.tenuto_function()
+              %! baca.tenuto()
             - \tenuto
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -7106,7 +7106,7 @@ number.4.LH.Music.5 = {
             e'8.
             % AFTER:
             % ARTICULATIONS:
-              %! baca.tenuto_function()
+              %! baca.tenuto()
             - \tenuto
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -7140,7 +7140,7 @@ number.4.LH.Music.5 = {
             % [LH.Music.5 measure 7]
             % BEFORE:
             % COMMANDS:
-              %! baca.rest_up_function(1)
+              %! baca.rest_up(1)
             \override Rest.direction = #up
             r2.
             % CLOSING:
@@ -7176,19 +7176,19 @@ number.4.LH.Music.5 = {
             <g b f' fs'! a'>8.
             % AFTER:
             % ARTICULATIONS:
-              %! baca.marcato_function()
+              %! baca.marcato()
             - \marcato
               %! EXPLICIT_DYNAMIC_COLOR
               %! baca.treat_persistent_wrapper()
               %! EXPLICIT_DYNAMIC
               %! baca._attach_persistent_indicator()
               %! baca._set_status_tag()
-              %! baca.dynamic_function()
+              %! baca.dynamic()
             - \tweak color #(x11-color 'blue)
               %! EXPLICIT_DYNAMIC
               %! baca._attach_persistent_indicator()
               %! baca._set_status_tag()
-              %! baca.dynamic_function()
+              %! baca.dynamic()
             \ff
             % MARKUP:
               %! FIGURE_LABEL
@@ -7228,7 +7228,7 @@ number.4.LH.Music.5 = {
             <g b f' fs'! a'>16
             % AFTER:
             % ARTICULATIONS:
-              %! baca.marcato_function()
+              %! baca.marcato()
             - \marcato
             % MARKUP:
               %! FIGURE_LABEL
@@ -7278,7 +7278,7 @@ number.4.LH.Music.5 = {
                 % [LH.Music.5 measure 10]
                 % BEFORE:
                 % COMMANDS:
-                  %! baca.tuplet_bracket_up_function(1)
+                  %! baca.tuplet_bracket_up(1)
                 \override TupletBracket.direction = #up
                 r16
                 % ABSOLUTE_BEFORE:
@@ -7287,7 +7287,7 @@ number.4.LH.Music.5 = {
                 <g b f' fs'! a'>8.
                 % AFTER:
                 % ARTICULATIONS:
-                  %! baca.marcato_function()
+                  %! baca.marcato()
                 - \marcato
                 % MARKUP:
                   %! FIGURE_LABEL
@@ -7300,7 +7300,7 @@ number.4.LH.Music.5 = {
                 r2
                 % AFTER:
                 % COMMANDS:
-                  %! baca.tuplet_bracket_up_function(2)
+                  %! baca.tuplet_bracket_up(2)
                 \revert TupletBracket.direction
                 % CLOSING:
                 % COMMANDS:
@@ -7336,7 +7336,7 @@ number.4.LH.Music.5 = {
             <g b f' fs'! a'>16
             % AFTER:
             % ARTICULATIONS:
-              %! baca.marcato_function()
+              %! baca.marcato()
             - \marcato
             % MARKUP:
               %! FIGURE_LABEL
@@ -7384,7 +7384,7 @@ number.4.LH.Music.5 = {
             <g b f' fs'! a'>8.
             % AFTER:
             % ARTICULATIONS:
-              %! baca.marcato_function()
+              %! baca.marcato()
             - \marcato
             % MARKUP:
               %! FIGURE_LABEL
@@ -7424,7 +7424,7 @@ number.4.LH.Music.5 = {
             <g b f' fs'! a'>16
             % AFTER:
             % ARTICULATIONS:
-              %! baca.marcato_function()
+              %! baca.marcato()
             - \marcato
             % MARKUP:
               %! FIGURE_LABEL
@@ -7474,7 +7474,7 @@ number.4.LH.Music.5 = {
                 % [LH.Music.5 measure 14]
                 % BEFORE:
                 % COMMANDS:
-                  %! baca.tuplet_bracket_up_function(1)
+                  %! baca.tuplet_bracket_up(1)
                 \override TupletBracket.direction = #up
                 r16
                 % ABSOLUTE_BEFORE:
@@ -7483,7 +7483,7 @@ number.4.LH.Music.5 = {
                 <g b f' fs'! a'>8.
                 % AFTER:
                 % ARTICULATIONS:
-                  %! baca.marcato_function()
+                  %! baca.marcato()
                 - \marcato
                 % MARKUP:
                   %! FIGURE_LABEL
@@ -7496,7 +7496,7 @@ number.4.LH.Music.5 = {
                 r2
                 % AFTER:
                 % COMMANDS:
-                  %! baca.tuplet_bracket_up_function(2)
+                  %! baca.tuplet_bracket_up(2)
                 \revert TupletBracket.direction
                 % CLOSING:
                 % COMMANDS:
@@ -7532,7 +7532,7 @@ number.4.LH.Music.5 = {
             <g b f' fs'! a'>16
             % AFTER:
             % ARTICULATIONS:
-              %! baca.marcato_function()
+              %! baca.marcato()
             - \marcato
             % MARKUP:
               %! FIGURE_LABEL
@@ -7582,7 +7582,7 @@ number.4.LH.Music.5 = {
                 % [LH.Music.5 measure 16]
                 % BEFORE:
                 % COMMANDS:
-                  %! baca.tuplet_bracket_up_function(1)
+                  %! baca.tuplet_bracket_up(1)
                 \override TupletBracket.direction = #up
                 r16
                 % ABSOLUTE_BEFORE:
@@ -7591,7 +7591,7 @@ number.4.LH.Music.5 = {
                 <g b f' fs'! a'>8.
                 % AFTER:
                 % ARTICULATIONS:
-                  %! baca.marcato_function()
+                  %! baca.marcato()
                 - \marcato
                 % MARKUP:
                   %! FIGURE_LABEL
@@ -7604,9 +7604,9 @@ number.4.LH.Music.5 = {
                 r2
                 % AFTER:
                 % COMMANDS:
-                  %! baca.rest_up_function(2)
+                  %! baca.rest_up(2)
                 \revert Rest.direction
-                  %! baca.tuplet_bracket_up_function(2)
+                  %! baca.tuplet_bracket_up(2)
                 \revert TupletBracket.direction
                 % CLOSING:
                 % COMMANDS:
@@ -7641,11 +7641,11 @@ number.4.LH.Music.5 = {
             % [LH.Music.5 measure 17]
             % BEFORE:
             % COMMANDS:
-              %! baca.stem_up_function(1)
+              %! baca.stem_up(1)
             \once \override Stem.direction = #up
             % OPENING:
             % COMMANDS:
-              %! baca.cross_staff_function()
+              %! baca.cross_staff()
             \crossStaff
             <g, e f af!>16
             % AFTER:
@@ -7655,12 +7655,12 @@ number.4.LH.Music.5 = {
               %! EXPLICIT_DYNAMIC
               %! baca._attach_persistent_indicator()
               %! baca._set_status_tag()
-              %! baca.dynamic_function()
+              %! baca.dynamic()
             - \tweak color #(x11-color 'blue)
               %! EXPLICIT_DYNAMIC
               %! baca._attach_persistent_indicator()
               %! baca._set_status_tag()
-              %! baca.dynamic_function()
+              %! baca.dynamic()
             \mp
             % MARKUP:
               %! FIGURE_LABEL
@@ -7706,9 +7706,9 @@ number.4.LH.Music.5 = {
                 % [LH.Music.5 measure 18]
                 % BEFORE:
                 % COMMANDS:
-                  %! baca.tuplet_bracket_down_function(1)
+                  %! baca.tuplet_bracket_down(1)
                 \override TupletBracket.direction = #down
-                  %! baca.tuplet_bracket_staff_padding_function(1)
+                  %! baca.tuplet_bracket_staff_padding(1)
                 \override TupletBracket.staff-padding = 2
                 r4
                 % ABSOLUTE_BEFORE:
@@ -7716,7 +7716,7 @@ number.4.LH.Music.5 = {
 
                 % BEFORE:
                 % COMMANDS:
-                  %! baca.stem_down_function(1)
+                  %! baca.stem_down(1)
                 \override Stem.direction = #down
                   %! rmakers.beam_groups()
                 \set stemLeftBeamCount = 0
@@ -7735,7 +7735,7 @@ number.4.LH.Music.5 = {
                 % SPANNER_STARTS:
                   %! SPANNER_START
                   %! baca._do_spanner_indicator_command(1)
-                  %! baca.slur_function()
+                  %! baca.slur()
                 (
                 % CLOSING:
                 % COMMANDS:
@@ -7762,7 +7762,7 @@ number.4.LH.Music.5 = {
                 % SPANNER_STOPS:
                   %! SPANNER_STOP
                   %! baca._do_spanner_indicator_command(2)
-                  %! baca.slur_function()
+                  %! baca.slur()
                 )
                 % STOP_BEAM:
                   %! rmakers.beam_groups()
@@ -7902,7 +7902,7 @@ number.4.LH.Music.5 = {
                 % SPANNER_STARTS:
                   %! SPANNER_START
                   %! baca._do_spanner_indicator_command(1)
-                  %! baca.slur_function()
+                  %! baca.slur()
                 (
                 % CLOSING:
                 % COMMANDS:
@@ -7950,7 +7950,7 @@ number.4.LH.Music.5 = {
                 % SPANNER_STOPS:
                   %! SPANNER_STOP
                   %! baca._do_spanner_indicator_command(2)
-                  %! baca.slur_function()
+                  %! baca.slur()
                 )
                 % STOP_BEAM:
                   %! rmakers.beam_groups()
@@ -8047,7 +8047,7 @@ number.4.LH.Music.5 = {
                 % SPANNER_STARTS:
                   %! SPANNER_START
                   %! baca._do_spanner_indicator_command(1)
-                  %! baca.slur_function()
+                  %! baca.slur()
                 (
                 % CLOSING:
                 % COMMANDS:
@@ -8095,7 +8095,7 @@ number.4.LH.Music.5 = {
                 % SPANNER_STOPS:
                   %! SPANNER_STOP
                   %! baca._do_spanner_indicator_command(2)
-                  %! baca.slur_function()
+                  %! baca.slur()
                 )
                 % STOP_BEAM:
                   %! rmakers.beam_groups()
@@ -8165,7 +8165,7 @@ number.4.LH.Music.5 = {
                 % SPANNER_STARTS:
                   %! SPANNER_START
                   %! baca._do_spanner_indicator_command(1)
-                  %! baca.slur_function()
+                  %! baca.slur()
                 (
                 % CLOSING:
                 % COMMANDS:
@@ -8192,7 +8192,7 @@ number.4.LH.Music.5 = {
                 % SPANNER_STOPS:
                   %! SPANNER_STOP
                   %! baca._do_spanner_indicator_command(2)
-                  %! baca.slur_function()
+                  %! baca.slur()
                 )
                 % STOP_BEAM:
                   %! rmakers.beam_groups()
@@ -8330,7 +8330,7 @@ number.4.LH.Music.5 = {
                 % SPANNER_STARTS:
                   %! SPANNER_START
                   %! baca._do_spanner_indicator_command(1)
-                  %! baca.slur_function()
+                  %! baca.slur()
                 (
                 % CLOSING:
                 % COMMANDS:
@@ -8357,7 +8357,7 @@ number.4.LH.Music.5 = {
                 % SPANNER_STOPS:
                   %! SPANNER_STOP
                   %! baca._do_spanner_indicator_command(2)
-                  %! baca.slur_function()
+                  %! baca.slur()
                 )
                 % STOP_BEAM:
                   %! rmakers.beam_groups()
@@ -8488,19 +8488,19 @@ number.4.LH.Music.5 = {
             af!8.
             % AFTER:
             % ARTICULATIONS:
-              %! baca.tenuto_function()
+              %! baca.tenuto()
             - \tenuto
               %! EXPLICIT_DYNAMIC_COLOR
               %! baca.treat_persistent_wrapper()
               %! EXPLICIT_DYNAMIC
               %! baca._attach_persistent_indicator()
               %! baca._set_status_tag()
-              %! baca.dynamic_function()
+              %! baca.dynamic()
             - \tweak color #(x11-color 'blue)
               %! EXPLICIT_DYNAMIC
               %! baca._attach_persistent_indicator()
               %! baca._set_status_tag()
-              %! baca.dynamic_function()
+              %! baca.dynamic()
             \p
             % MARKUP:
               %! FIGURE_LABEL
@@ -8517,7 +8517,7 @@ number.4.LH.Music.5 = {
             d'8.
             % AFTER:
             % ARTICULATIONS:
-              %! baca.tenuto_function()
+              %! baca.tenuto()
             - \tenuto
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -8533,10 +8533,10 @@ number.4.LH.Music.5 = {
             e'8.
             % AFTER:
             % ARTICULATIONS:
-              %! baca.tenuto_function()
+              %! baca.tenuto()
             - \tenuto
             % COMMANDS:
-              %! baca.stem_down_function(2)
+              %! baca.stem_down(2)
             \revert Stem.direction
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -8564,9 +8564,9 @@ number.4.LH.Music.5 = {
     s1 * 4
     % AFTER:
     % COMMANDS:
-      %! baca.tuplet_bracket_down_function(2)
+      %! baca.tuplet_bracket_down(2)
     \revert TupletBracket.direction
-      %! baca.tuplet_bracket_staff_padding_function(2)
+      %! baca.tuplet_bracket_staff_padding(2)
     \revert TupletBracket.staff-padding
     % CLOSING:
     % COMMANDS:
@@ -8586,7 +8586,7 @@ number.4.LH.InsertVoice.5 = {
     % [LH.InsertVoice.5 measure 1]
     % BEFORE:
     % COMMANDS:
-      %! baca.script_up_function(1)
+      %! baca.script_up(1)
     \override Script.direction = #up
     s1 * 83/4
     % ABSOLUTE_BEFORE:
@@ -8626,7 +8626,7 @@ number.4.LH.InsertVoice.5 = {
 
                 % BEFORE:
                 % COMMANDS:
-                  %! baca.stem_up_function(1)
+                  %! baca.stem_up(1)
                 \override Stem.direction = #up
                   %! rmakers.beam_groups()
                 \set stemLeftBeamCount = 0
@@ -8635,7 +8635,7 @@ number.4.LH.InsertVoice.5 = {
                 bf'!8
                 % AFTER:
                 % ARTICULATIONS:
-                  %! baca.staccato_function()
+                  %! baca.staccato()
                 - \staccato
                 % CLOSING:
                 % COMMANDS:
@@ -8743,7 +8743,7 @@ number.4.LH.InsertVoice.5 = {
                 bf!8
                 % AFTER:
                 % ARTICULATIONS:
-                  %! baca.staccato_function()
+                  %! baca.staccato()
                 - \staccato
                 % CLOSING:
                 % COMMANDS:
@@ -8768,7 +8768,7 @@ number.4.LH.InsertVoice.5 = {
                 d'8
                 % AFTER:
                 % ARTICULATIONS:
-                  %! baca.staccato_function()
+                  %! baca.staccato()
                 - \staccato
                 % CLOSING:
                 % COMMANDS:
@@ -8855,7 +8855,7 @@ number.4.LH.InsertVoice.5 = {
                 f'8
                 % AFTER:
                 % ARTICULATIONS:
-                  %! baca.staccato_function()
+                  %! baca.staccato()
                 - \staccato
                 % CLOSING:
                 % COMMANDS:
@@ -8948,7 +8948,7 @@ number.4.LH.InsertVoice.5 = {
                 f'8
                 % AFTER:
                 % ARTICULATIONS:
-                  %! baca.staccato_function()
+                  %! baca.staccato()
                 - \staccato
                 % CLOSING:
                 % COMMANDS:
@@ -9034,10 +9034,10 @@ number.4.LH.InsertVoice.5 = {
             af'!8
             % AFTER:
             % ARTICULATIONS:
-              %! baca.staccato_function()
+              %! baca.staccato()
             - \staccato
             % COMMANDS:
-              %! baca.stem_up_function(2)
+              %! baca.stem_up(2)
             \revert Stem.direction
             % ABSOLUTE_BEFORE:
             % COMMANDS:
@@ -9068,7 +9068,7 @@ number.4.LH.InsertVoice.5 = {
     s1 * 17
     % AFTER:
     % COMMANDS:
-      %! baca.script_up_function(2)
+      %! baca.script_up(2)
     \revert Script.direction
     % CLOSING:
     % COMMANDS:
@@ -9210,11 +9210,11 @@ number.4.LH.ResonanceVoice = {
             % [LH.ResonanceVoice measure 11]
             % BEFORE:
             % COMMANDS:
-              %! baca.accidental_stencil_false_function(1)
+              %! baca.accidental_stencil_false(1)
             \override Accidental.stencil = ##f
-              %! baca.dots_stencil_false_function(1)
+              %! baca.dots_stencil_false(1)
             \override Dots.stencil = ##f
-              %! baca.stem_stencil_false_function(1)
+              %! baca.stem_stencil_false(1)
             \override Stem.stencil = ##f
             <cs,, cs,>4
             % AFTER:
@@ -9223,7 +9223,7 @@ number.4.LH.ResonanceVoice = {
             - \tweak stencil ##f
               %! baca._attach_shadow_tie_indicators()
             ~
-              %! baca.repeat_tie_function()
+              %! baca.repeat_tie()
             \repeatTie
             % CLOSING:
             % COMMANDS:
@@ -9252,14 +9252,14 @@ number.4.LH.ResonanceVoice = {
             <cs,, cs,>1
             % AFTER:
             % SPANNER_STARTS:
-              %! baca.repeat_tie_function()
+              %! baca.repeat_tie()
             \repeatTie
             % COMMANDS:
-              %! baca.accidental_stencil_false_function(2)
+              %! baca.accidental_stencil_false(2)
             \revert Accidental.stencil
-              %! baca.dots_stencil_false_function(2)
+              %! baca.dots_stencil_false(2)
             \revert Dots.stencil
-              %! baca.stem_stencil_false_function(2)
+              %! baca.stem_stencil_false(2)
             \revert Stem.stencil
             % CLOSING:
             % COMMANDS:
@@ -9344,11 +9344,11 @@ number.4.LH.ResonanceVoice = {
             % [LH.ResonanceVoice measure 15]
             % BEFORE:
             % COMMANDS:
-              %! baca.accidental_stencil_false_function(1)
+              %! baca.accidental_stencil_false(1)
             \override Accidental.stencil = ##f
-              %! baca.dots_stencil_false_function(1)
+              %! baca.dots_stencil_false(1)
             \override Dots.stencil = ##f
-              %! baca.stem_stencil_false_function(1)
+              %! baca.stem_stencil_false(1)
             \override Stem.stencil = ##f
             <ef,, ef,>4
             % AFTER:
@@ -9357,7 +9357,7 @@ number.4.LH.ResonanceVoice = {
             - \tweak stencil ##f
               %! baca._attach_shadow_tie_indicators()
             ~
-              %! baca.repeat_tie_function()
+              %! baca.repeat_tie()
             \repeatTie
             % CLOSING:
             % COMMANDS:
@@ -9386,14 +9386,14 @@ number.4.LH.ResonanceVoice = {
             <ef,, ef,>1
             % AFTER:
             % SPANNER_STARTS:
-              %! baca.repeat_tie_function()
+              %! baca.repeat_tie()
             \repeatTie
             % COMMANDS:
-              %! baca.accidental_stencil_false_function(2)
+              %! baca.accidental_stencil_false(2)
             \revert Accidental.stencil
-              %! baca.dots_stencil_false_function(2)
+              %! baca.dots_stencil_false(2)
             \revert Dots.stencil
-              %! baca.stem_stencil_false_function(2)
+              %! baca.stem_stencil_false(2)
             \revert Stem.stencil
             % CLOSING:
             % COMMANDS:
@@ -9429,7 +9429,7 @@ number.4.LH.ResonanceVoice = {
             % [LH.ResonanceVoice measure 32]
             % BEFORE:
             % COMMANDS:
-              %! baca.accidental_x_extent_false_function(1)
+              %! baca.accidental_x_extent_false(1)
             \once \override Accidental.X-extent = ##f
             <e, fs,! gs,! as,! b,>4
             % AFTER:
@@ -9466,11 +9466,11 @@ number.4.LH.ResonanceVoice = {
             % [LH.ResonanceVoice measure 33]
             % BEFORE:
             % COMMANDS:
-              %! baca.accidental_stencil_false_function(1)
+              %! baca.accidental_stencil_false(1)
             \override Accidental.stencil = ##f
-              %! baca.dots_stencil_false_function(1)
+              %! baca.dots_stencil_false(1)
             \override Dots.stencil = ##f
-              %! baca.stem_stencil_false_function(1)
+              %! baca.stem_stencil_false(1)
             \override Stem.stencil = ##f
             <e, fs, gs, as, b,>1..
             % AFTER:
@@ -9479,7 +9479,7 @@ number.4.LH.ResonanceVoice = {
             - \tweak stencil ##f
               %! baca._attach_shadow_tie_indicators()
             ~
-              %! baca.repeat_tie_function()
+              %! baca.repeat_tie()
             \repeatTie
             % CLOSING:
             % COMMANDS:
@@ -9514,7 +9514,7 @@ number.4.LH.ResonanceVoice = {
             - \tweak stencil ##f
               %! baca._attach_shadow_tie_indicators()
             ~
-              %! baca.repeat_tie_function()
+              %! baca.repeat_tie()
             \repeatTie
             % CLOSING:
             % COMMANDS:
@@ -9549,7 +9549,7 @@ number.4.LH.ResonanceVoice = {
             - \tweak stencil ##f
               %! baca._attach_shadow_tie_indicators()
             ~
-              %! baca.repeat_tie_function()
+              %! baca.repeat_tie()
             \repeatTie
             % CLOSING:
             % COMMANDS:
@@ -9584,7 +9584,7 @@ number.4.LH.ResonanceVoice = {
             - \tweak stencil ##f
               %! baca._attach_shadow_tie_indicators()
             ~
-              %! baca.repeat_tie_function()
+              %! baca.repeat_tie()
             \repeatTie
             % CLOSING:
             % COMMANDS:
@@ -9619,7 +9619,7 @@ number.4.LH.ResonanceVoice = {
             - \tweak stencil ##f
               %! baca._attach_shadow_tie_indicators()
             ~
-              %! baca.repeat_tie_function()
+              %! baca.repeat_tie()
             \repeatTie
             % CLOSING:
             % COMMANDS:
@@ -9654,7 +9654,7 @@ number.4.LH.ResonanceVoice = {
             - \tweak stencil ##f
               %! baca._attach_shadow_tie_indicators()
             ~
-              %! baca.repeat_tie_function()
+              %! baca.repeat_tie()
             \repeatTie
             % CLOSING:
             % COMMANDS:
@@ -9685,14 +9685,14 @@ number.4.LH.ResonanceVoice = {
             <e, fs, gs, as, b,>2
             % AFTER:
             % SPANNER_STARTS:
-              %! baca.repeat_tie_function()
+              %! baca.repeat_tie()
             \repeatTie
             % COMMANDS:
-              %! baca.accidental_stencil_false_function(2)
+              %! baca.accidental_stencil_false(2)
             \revert Accidental.stencil
-              %! baca.dots_stencil_false_function(2)
+              %! baca.dots_stencil_false(2)
             \revert Dots.stencil
-              %! baca.stem_stencil_false_function(2)
+              %! baca.stem_stencil_false(2)
             \revert Stem.stencil
             % CLOSING:
             % COMMANDS:

@@ -17,12 +17,12 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     #################################### [7.1] ####################################
 
     collections = section_7.stage_1.rh.next()
-    container = baca.figure_function(collections, [1], 16, treatments=[-1])
-    baca.register_function(container, 13, 13 + 10)
-    baca.nest_function(container, "2/16")
+    container = baca.figure(collections, [1], 16, treatments=[-1])
+    baca.register(container, 13, 13 + 10)
+    baca.nest(container, "2/16")
     groups = rmakers.nongrace_leaves_in_each_tuplet_rfunction(container)
     rmakers.beam_groups_rfunction(groups)
-    imbrications = baca.imbricate_function(
+    imbrications = baca.imbricate(
         container,
         library.rh_v1_i,
         [17, 23],
@@ -30,10 +30,10 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     for imbrication in imbrications.values():
         groups = rmakers.nongrace_leaves_in_each_tuplet_rfunction(imbrication)
         rmakers.beam_groups_rfunction(groups, beam_rests=True)
-        baca.marcato_function(baca.select.pheads(imbrication))
-        baca.extend_beam_function(abjad.select.leaf(imbrication, -1))
-    baca.dynamic_function(baca.select.phead(container, 0), "fff")
-    baca.extend_beam_function(abjad.select.leaf(container, -1))
+        baca.marcato(baca.select.pheads(imbrication))
+        baca.extend_beam(abjad.select.leaf(imbrication, -1))
+    baca.dynamic(baca.select.phead(container, 0), "fff")
+    baca.extend_beam(abjad.select.leaf(container, -1))
     baca.make_figures(
         figures,
         library.rh_v1,
@@ -45,11 +45,11 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     )
 
     collections = section_7.stage_1.rh.next()
-    container = baca.figure_function(collections, [1], 16)
-    baca.register_function(container, 7, 7 + 10)
+    container = baca.figure(collections, [1], 16)
+    baca.register(container, 7, 7 + 10)
     groups = rmakers.nongrace_leaves_in_each_tuplet_rfunction(container)
     rmakers.beam_groups_rfunction(groups)
-    imbrications = baca.imbricate_function(
+    imbrications = baca.imbricate(
         container,
         library.rh_v2_i,
         [12, 14],
@@ -57,12 +57,12 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     for imbrication in imbrications.values():
         groups = rmakers.nongrace_leaves_in_each_tuplet_rfunction(imbrication)
         rmakers.beam_groups_rfunction(groups, beam_rests=True)
-        baca.accent_function(baca.select.pheads(imbrication))
-        baca.extend_beam_function(abjad.select.leaf(imbrication, -1))
-    baca.dynamic_function(baca.select.phead(container, 0), "fff")
+        baca.accent(baca.select.pheads(imbrication))
+        baca.extend_beam(abjad.select.leaf(imbrication, -1))
+    baca.dynamic(baca.select.phead(container, 0), "fff")
     for tuplet in baca.select.tuplets(container):
-        baca.slur_function(tuplet)
-    baca.extend_beam_function(abjad.select.leaf(container, -1))
+        baca.slur(tuplet)
+    baca.extend_beam(abjad.select.leaf(container, -1))
     baca.make_figures(
         figures,
         library.rh_v2,
@@ -74,12 +74,12 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     )
 
     collections = section_7.stage_1.rh.next()
-    container = baca.figure_function(collections, [1], 16, treatments=[-1])
-    baca.register_function(container, 15, 15 + 10)
-    baca.nest_function(container, "1/16")
+    container = baca.figure(collections, [1], 16, treatments=[-1])
+    baca.register(container, 15, 15 + 10)
+    baca.nest(container, "1/16")
     groups = rmakers.nongrace_leaves_in_each_tuplet_rfunction(container)
     rmakers.beam_groups_rfunction(groups)
-    imbrications = baca.imbricate_function(
+    imbrications = baca.imbricate(
         container,
         library.rh_v1_i,
         [30, 31],
@@ -87,7 +87,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     for imbrication in imbrications.values():
         groups = rmakers.nongrace_leaves_in_each_tuplet_rfunction(imbrication)
         rmakers.beam_groups_rfunction(groups, beam_rests=True)
-        baca.marcato_function(baca.select.pheads(imbrication))
+        baca.marcato(baca.select.pheads(imbrication))
     baca.make_figures(
         figures,
         library.rh_v1,
@@ -99,12 +99,12 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     )
 
     collections = section_7.stage_1.rh.next()
-    container = baca.figure_function(collections, [1], 16)
-    baca.register_function(container, 9, 9 + 10)
+    container = baca.figure(collections, [1], 16)
+    baca.register(container, 9, 9 + 10)
     groups = rmakers.nongrace_leaves_in_each_tuplet_rfunction(container)
     rmakers.beam_groups_rfunction(groups)
-    baca.nest_function(container, "-1/16")
-    imbrications = baca.imbricate_function(
+    baca.nest(container, "-1/16")
+    imbrications = baca.imbricate(
         container,
         library.rh_v2_i,
         [13, 17, 17, 27],
@@ -112,9 +112,9 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     for imbrication in imbrications.values():
         groups = rmakers.nongrace_leaves_in_each_tuplet_rfunction(imbrication)
         rmakers.beam_groups_rfunction(groups, beam_rests=True)
-        baca.accent_function(baca.select.pheads(imbrication))
+        baca.accent(baca.select.pheads(imbrication))
     for tuplet in baca.select.tuplets(container):
-        baca.slur_function(tuplet)
+        baca.slur(tuplet)
     baca.make_figures(
         figures,
         library.rh_v2,
@@ -126,12 +126,12 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     )
 
     collections = section_7.stage_1.rh.next()
-    container = baca.figure_function(collections, [1], 16)
-    baca.register_function(container, 17, 17 + 10)
+    container = baca.figure(collections, [1], 16)
+    baca.register(container, 17, 17 + 10)
     groups = rmakers.nongrace_leaves_in_each_tuplet_rfunction(container)
     rmakers.beam_groups_rfunction(groups)
-    baca.nest_function(container, "1/16")
-    imbrications = baca.imbricate_function(
+    baca.nest(container, "1/16")
+    imbrications = baca.imbricate(
         container,
         library.rh_v1_i,
         [21],
@@ -139,9 +139,9 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     for imbrication in imbrications.values():
         groups = rmakers.nongrace_leaves_in_each_tuplet_rfunction(imbrication)
         rmakers.beam_groups_rfunction(groups, beam_rests=True)
-        baca.marcato_function(baca.select.pheads(imbrication))
-        baca.extend_beam_function(abjad.select.leaf(imbrication, -1))
-    baca.extend_beam_function(abjad.select.leaf(container, -1))
+        baca.marcato(baca.select.pheads(imbrication))
+        baca.extend_beam(abjad.select.leaf(imbrication, -1))
+    baca.extend_beam(abjad.select.leaf(container, -1))
     baca.make_figures(
         figures,
         library.rh_v1,
@@ -153,11 +153,11 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     )
 
     collections = section_7.stage_1.rh.next()
-    container = baca.figure_function(collections, [1], 16, treatments=[-1])
-    baca.register_function(container, 11, 11 + 10)
+    container = baca.figure(collections, [1], 16, treatments=[-1])
+    baca.register(container, 11, 11 + 10)
     groups = rmakers.nongrace_leaves_in_each_tuplet_rfunction(container)
     rmakers.beam_groups_rfunction(groups)
-    imbrications = baca.imbricate_function(
+    imbrications = baca.imbricate(
         container,
         library.rh_v2_i,
         [12, 22, 19, 29],
@@ -165,11 +165,11 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     for imbrication in imbrications.values():
         groups = rmakers.nongrace_leaves_in_each_tuplet_rfunction(imbrication)
         rmakers.beam_groups_rfunction(groups, beam_rests=True)
-        baca.accent_function(baca.select.pheads(imbrication))
-        baca.extend_beam_function(abjad.select.leaf(imbrication, -1))
+        baca.accent(baca.select.pheads(imbrication))
+        baca.extend_beam(abjad.select.leaf(imbrication, -1))
     for tuplet in baca.select.tuplets(container):
-        baca.slur_function(tuplet)
-    baca.extend_beam_function(abjad.select.leaf(container, -1))
+        baca.slur(tuplet)
+    baca.extend_beam(abjad.select.leaf(container, -1))
     baca.make_figures(
         figures,
         library.rh_v2,
@@ -181,12 +181,12 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     )
 
     collections = section_7.stage_1.rh.next()
-    container = baca.figure_function(collections, [1], 16)
-    baca.register_function(container, 19, 19 + 10)
+    container = baca.figure(collections, [1], 16)
+    baca.register(container, 19, 19 + 10)
     groups = rmakers.nongrace_leaves_in_each_tuplet_rfunction(container)
     rmakers.beam_groups_rfunction(groups)
-    baca.nest_function(container, "1/16")
-    imbrications = baca.imbricate_function(
+    baca.nest(container, "1/16")
+    imbrications = baca.imbricate(
         container,
         library.rh_v1_i,
         [20, 29],
@@ -194,7 +194,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     for imbrication in imbrications.values():
         groups = rmakers.nongrace_leaves_in_each_tuplet_rfunction(imbrication)
         rmakers.beam_groups_rfunction(groups, beam_rests=True)
-        baca.marcato_function(baca.select.pheads(imbrication))
+        baca.marcato(baca.select.pheads(imbrication))
     baca.make_figures(
         figures,
         library.rh_v1,
@@ -206,12 +206,12 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     )
 
     collections = section_7.stage_1.rh.next()
-    container = baca.figure_function(collections, [1], 16)
-    baca.register_function(container, 13, 13 + 10)
+    container = baca.figure(collections, [1], 16)
+    baca.register(container, 13, 13 + 10)
     groups = rmakers.nongrace_leaves_in_each_tuplet_rfunction(container)
     rmakers.beam_groups_rfunction(groups)
-    baca.nest_function(container, "-1/16")
-    imbrications = baca.imbricate_function(
+    baca.nest(container, "-1/16")
+    imbrications = baca.imbricate(
         container,
         library.rh_v2_i,
         [21, 27, 24],
@@ -219,9 +219,9 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     for imbrication in imbrications.values():
         groups = rmakers.nongrace_leaves_in_each_tuplet_rfunction(imbrication)
         rmakers.beam_groups_rfunction(groups, beam_rests=True)
-        baca.accent_function(baca.select.pheads(imbrication))
+        baca.accent(baca.select.pheads(imbrication))
     for tuplet in baca.select.tuplets(container):
-        baca.slur_function(tuplet)
+        baca.slur(tuplet)
     baca.make_figures(
         figures,
         library.rh_v2,
@@ -236,11 +236,11 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     collections = section_7.stage_1.rh.next()
 
     collections = section_7.stage_1.rh.next()
-    container = baca.figure_function(collections, [1], 16)
-    baca.register_function(container, 15, 15 + 10)
+    container = baca.figure(collections, [1], 16)
+    baca.register(container, 15, 15 + 10)
     groups = rmakers.nongrace_leaves_in_each_tuplet_rfunction(container)
     rmakers.beam_groups_rfunction(groups)
-    imbrications = baca.imbricate_function(
+    imbrications = baca.imbricate(
         container,
         library.rh_v2_i,
         [17],
@@ -248,11 +248,11 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     for imbrication in imbrications.values():
         groups = rmakers.nongrace_leaves_in_each_tuplet_rfunction(imbrication)
         rmakers.beam_groups_rfunction(groups, beam_rests=True)
-        baca.accent_function(baca.select.pheads(imbrication))
-        baca.extend_beam_function(abjad.select.leaf(imbrication, -1))
+        baca.accent(baca.select.pheads(imbrication))
+        baca.extend_beam(abjad.select.leaf(imbrication, -1))
     for tuplet in baca.select.tuplets(container):
-        baca.slur_function(tuplet)
-    baca.extend_beam_function(abjad.select.leaf(container, -1))
+        baca.slur(tuplet)
+    baca.extend_beam(abjad.select.leaf(container, -1))
     baca.make_figures(
         figures,
         library.rh_v2,
@@ -264,12 +264,12 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     )
 
     collections = section_7.stage_1.rh.next()
-    container = baca.figure_function(collections, [1], 16, treatments=[-1])
-    baca.register_function(container, 23, 23 + 10)
+    container = baca.figure(collections, [1], 16, treatments=[-1])
+    baca.register(container, 23, 23 + 10)
     groups = rmakers.nongrace_leaves_in_each_tuplet_rfunction(container)
     rmakers.beam_groups_rfunction(groups)
-    baca.nest_function(container, "2/16")
-    imbrications = baca.imbricate_function(
+    baca.nest(container, "2/16")
+    imbrications = baca.imbricate(
         container,
         library.rh_v1_i,
         [30, 34, 37],
@@ -277,8 +277,8 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     for imbrication in imbrications.values():
         groups = rmakers.nongrace_leaves_in_each_tuplet_rfunction(imbrication)
         rmakers.beam_groups_rfunction(groups, beam_rests=True)
-        baca.marcato_function(baca.select.pheads(imbrication))
-    baca.beam_positions_function(container, 12)
+        baca.marcato(baca.select.pheads(imbrication))
+    baca.beam_positions(container, 12)
     baca.make_figures(
         figures,
         library.rh_v1,
@@ -290,11 +290,11 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     )
 
     collections = section_7.stage_1.rh.next(exhausted=True)
-    container = baca.figure_function(collections, [1], 16, treatments=[-1])
-    baca.register_function(container, 17, 17 + 10)
+    container = baca.figure(collections, [1], 16, treatments=[-1])
+    baca.register(container, 17, 17 + 10)
     groups = rmakers.nongrace_leaves_in_each_tuplet_rfunction(container)
     rmakers.beam_groups_rfunction(groups)
-    imbrications = baca.imbricate_function(
+    imbrications = baca.imbricate(
         container,
         library.rh_v2_i,
         [26, 32],
@@ -302,9 +302,9 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     for imbrication in imbrications.values():
         groups = rmakers.nongrace_leaves_in_each_tuplet_rfunction(imbrication)
         rmakers.beam_groups_rfunction(groups, beam_rests=True)
-        baca.accent_function(baca.select.pheads(imbrication))
+        baca.accent(baca.select.pheads(imbrication))
     for tuplet in baca.select.tuplets(container):
-        baca.slur_function(tuplet)
+        baca.slur(tuplet)
     baca.make_figures(
         figures,
         library.rh_v2,
@@ -318,18 +318,18 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     ###################################### LH #####################################
 
     collections = [_.transpose(0 * 7) for _ in section_7.stage_1.lh.next()]
-    container = baca.figure_function(collections, [1], 16, treatments=[-1])
+    container = baca.figure(collections, [1], 16, treatments=[-1])
     groups = rmakers.nongrace_leaves_in_each_tuplet_rfunction(container)
     rmakers.beam_groups_rfunction(groups)
-    baca.register_function(container, -2, -2 + 16)
-    imbrications = baca.imbricate_function(
+    baca.register(container, -2, -2 + 16)
+    imbrications = baca.imbricate(
         container,
         library.lh_v4_i,
         [0, 19, 23],
     )
     for imbrication in imbrications.values():
         rmakers.unbeam_rfunction(imbrication)
-    baca.dynamic_function(baca.select.phead(container, 0), "ff")
+    baca.dynamic(baca.select.phead(container, 0), "ff")
     baca.make_figures(
         figures,
         library.lh_v4,
@@ -345,12 +345,12 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     )
 
     collections = [_.transpose(1 * 7) for _ in section_7.stage_1.lh.next()]
-    container = baca.figure_function(collections, [1], 16)
-    baca.register_function(container, 0, 0 + 16)
+    container = baca.figure(collections, [1], 16)
+    baca.register(container, 0, 0 + 16)
     groups = rmakers.nongrace_leaves_in_each_tuplet_rfunction(container)
     rmakers.beam_groups_rfunction(groups)
-    baca.nest_function(container, "-2/16")
-    imbrications = baca.imbricate_function(
+    baca.nest(container, "-2/16")
+    imbrications = baca.imbricate(
         container,
         library.lh_v5_i,
         [11, 18, 24, 26],
@@ -358,12 +358,12 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     for imbrication in imbrications.values():
         groups = rmakers.nongrace_leaves_in_each_tuplet_rfunction(imbrication)
         rmakers.beam_groups_rfunction(groups, beam_rests=True)
-        baca.staccato_function(baca.select.pheads(imbrication))
-    baca.dynamic_function(baca.select.phead(container, 0), "pp")
-    baca.dynamic_down_function(abjad.select.leaf(container, 0))
+        baca.staccato(baca.select.pheads(imbrication))
+    baca.dynamic(baca.select.phead(container, 0), "pp")
+    baca.dynamic_down(abjad.select.leaf(container, 0))
     for tuplet in baca.select.tuplets(container):
-        baca.slur_function(tuplet)
-    baca.tuplet_bracket_down_function(container)
+        baca.slur(tuplet)
+    baca.tuplet_bracket_down(container)
     baca.make_figures(
         figures,
         library.lh_v5,
@@ -381,18 +381,18 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     )
 
     collections = [_.transpose(2 * 7) for _ in section_7.stage_1.lh.next()]
-    container = baca.figure_function(collections, [1], 16)
+    container = baca.figure(collections, [1], 16)
     groups = rmakers.nongrace_leaves_in_each_tuplet_rfunction(container)
     rmakers.beam_groups_rfunction(groups)
-    baca.register_function(container, 2, 2 + 16)
-    imbrications = baca.imbricate_function(
+    baca.register(container, 2, 2 + 16)
+    imbrications = baca.imbricate(
         container,
         library.lh_v4_i,
         [13],
     )
     for imbrication in imbrications.values():
         rmakers.unbeam_rfunction(imbrication)
-    baca.dynamic_function(baca.select.phead(container, 0), "ff")
+    baca.dynamic(baca.select.phead(container, 0), "ff")
     baca.make_figures(
         figures,
         library.lh_v4,
@@ -409,12 +409,12 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     )
 
     collections = [_.transpose(3 * 7) for _ in section_7.stage_1.lh.next()]
-    container = baca.figure_function(collections, [1], 16)
-    baca.register_function(container, 4, 4 + 16)
+    container = baca.figure(collections, [1], 16)
+    baca.register(container, 4, 4 + 16)
     groups = rmakers.nongrace_leaves_in_each_tuplet_rfunction(container)
     rmakers.beam_groups_rfunction(groups)
-    baca.nest_function(container, "-2/16")
-    imbrications = baca.imbricate_function(
+    baca.nest(container, "-2/16")
+    imbrications = baca.imbricate(
         container,
         library.lh_v5_i,
         [9, 16, 20, 25],
@@ -422,10 +422,10 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     for imbrication in imbrications.values():
         groups = rmakers.nongrace_leaves_in_each_tuplet_rfunction(imbrication)
         rmakers.beam_groups_rfunction(groups, beam_rests=True)
-        baca.staccato_function(baca.select.pheads(imbrication))
-    baca.dynamic_function(baca.select.phead(container, 0), "pp")
+        baca.staccato(baca.select.pheads(imbrication))
+    baca.dynamic(baca.select.phead(container, 0), "pp")
     for tuplet in baca.select.tuplets(container):
-        baca.slur_function(tuplet)
+        baca.slur(tuplet)
     baca.make_figures(
         figures,
         library.lh_v5,
@@ -445,18 +445,18 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     collections = [
         _.transpose(4 * 7) for _ in section_7.stage_1.lh.next(exhausted=True)
     ]
-    container = baca.figure_function(collections, [1], 16, treatments=[1])
+    container = baca.figure(collections, [1], 16, treatments=[1])
     groups = rmakers.nongrace_leaves_in_each_tuplet_rfunction(container)
     rmakers.beam_groups_rfunction(groups)
-    baca.register_function(container, 6, 6 + 10)
-    imbrications = baca.imbricate_function(
+    baca.register(container, 6, 6 + 10)
+    imbrications = baca.imbricate(
         container,
         library.lh_v4_i,
         [14, 18],
     )
     for imbrication in imbrications.values():
         rmakers.unbeam_rfunction(imbrication)
-    baca.dynamic_function(baca.select.phead(container, 0), "ff")
+    baca.dynamic(baca.select.phead(container, 0), "ff")
     baca.make_figures(
         figures,
         library.lh_v4,
@@ -499,68 +499,68 @@ def GLOBALS(skips):
         (8, "112"),
     ):
         skip = skips[index]
-        baca.metronome_mark_function(skip, item, library.manifests)
-    baca.bar_line_function(skips[11 - 1], "|.")
+        baca.metronome_mark(skip, item, library.manifests)
+    baca.bar_line(skips[11 - 1], "|.")
 
 
 def postprocess(cache):
     m = cache[library.rh_v1]
     with baca.scope(m.leaves()) as o:
-        baca.beam_positions_function(o, 10)
-        baca.dynamic_up_function(o.leaf(0))
-        baca.stem_up_function(o.pleaves())
+        baca.beam_positions(o, 10)
+        baca.dynamic_up(o.leaf(0))
+        baca.stem_up(o.pleaves())
     m = cache[library.rh_v1_i]
     with baca.scope(m.get(1, 5)) as o:
-        baca.beam_positions_function(o, -6.5)
+        baca.beam_positions(o, -6.5)
     with baca.scope(m.get(5, 10)) as o:
-        baca.beam_positions_function(o, -8.5)
+        baca.beam_positions(o, -8.5)
     with baca.scope(m.leaves()) as o:
-        baca.script_down_function(o)
+        baca.script_down(o)
     m = cache[library.rh_v2]
     with baca.scope(m.leaves()) as o:
-        baca.beam_positions_function(o, -4.5)
-        baca.dynamic_down_function(o.leaf(0))
-        baca.slur_up_function(o)
-        baca.stem_down_function(o.pleaves())
+        baca.beam_positions(o, -4.5)
+        baca.dynamic_down(o.leaf(0))
+        baca.slur_up(o)
+        baca.stem_down(o.pleaves())
     m = cache[library.rh_v2_i]
     with baca.scope(m.get(9, 11)) as o:
-        baca.beam_positions_function(o, 18.5)
+        baca.beam_positions(o, 18.5)
     with baca.scope(m.get(1, 4)) as o:
-        baca.beam_positions_function(o, 15.5)
+        baca.beam_positions(o, 15.5)
     with baca.scope(m.get(6, 8)) as o:
-        baca.beam_positions_function(o, 13.5)
+        baca.beam_positions(o, 13.5)
     with baca.scope(m.leaves()) as o:
-        baca.script_up_function(o)
-        baca.stem_up_function(o.pleaves())
+        baca.script_up(o)
+        baca.stem_up(o.pleaves())
     m = cache[library.lh_v4]
     with baca.scope(m.get(1, 2)) as o:
-        baca.beam_positions_function(o, -5.5)
+        baca.beam_positions(o, -5.5)
     with baca.scope(m.get(6, 11)) as o:
-        baca.beam_positions_function(o, -4.5)
+        baca.beam_positions(o, -4.5)
     with baca.scope(m.leaves()) as o:
-        baca.script_down_function(o)
-        baca.stem_down_function(o.pleaves())
+        baca.script_down(o)
+        baca.stem_down(o.pleaves())
     m = cache[library.lh_v4_i]
     with baca.scope(m.leaves()) as o:
-        baca.script_up_function(o)
-        baca.stem_up_function(o.pleaves())
+        baca.script_up(o)
+        baca.stem_up(o.pleaves())
     m = cache[library.lh_v5]
     with baca.scope(m.get(1, 5)) as o:
-        baca.beam_positions_function(o, -6)
+        baca.beam_positions(o, -6)
     with baca.scope(m.leaves()) as o:
-        baca.script_down_function(o)
-        baca.stem_down_function(o.pleaves())
+        baca.script_down(o)
+        baca.stem_down(o.pleaves())
     m = cache[library.lh_v5_i]
     with baca.scope(m.leaves()) as o:
-        baca.script_up_function(o)
-        baca.stem_up_function(o.pleaves())
-        baca.beam_positions_function(o, 9)
+        baca.script_up(o)
+        baca.stem_up(o.pleaves())
+        baca.beam_positions(o, 9)
     m = cache[library.rh_v1]
     with baca.scope(m[11]) as o:
-        baca.mark_function(abjad.select.leaf(o, 0), r"\mraz-colophon-markup")
-        baca.rehearsal_mark_down_function(o.rleaf(-1))
-        baca.rehearsal_mark_padding_function(o.rleaf(-1), 6)
-        baca.rehearsal_mark_self_alignment_x_function(o.rleaf(-1), abjad.RIGHT)
+        baca.mark(abjad.select.leaf(o, 0), r"\mraz-colophon-markup")
+        baca.rehearsal_mark_down(o.rleaf(-1))
+        baca.rehearsal_mark_padding(o.rleaf(-1), 6)
+        baca.rehearsal_mark_self_alignment_x(o.rleaf(-1), abjad.RIGHT)
 
 
 def make_score(first_measure_number, previous_persistent_indicators):
