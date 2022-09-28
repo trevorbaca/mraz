@@ -698,7 +698,7 @@ def postprocess(cache):
             baca.stem_transparent(o.pleaves())
 
 
-@baca.build.timed
+@baca.build.timed("make_score")
 def make_score(first_measure_number, previous_persistent_indicators):
     score, accumulator = make_empty_score(
         first_measure_number, previous_persistent_indicators

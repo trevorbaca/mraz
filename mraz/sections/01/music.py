@@ -271,7 +271,7 @@ def postprocess(cache):
         baca.clef(o.leaf(0), "treble")
 
 
-@baca.build.timed
+@baca.build.timed("make_score")
 def make_score():
     score, accumulator = make_empty_score()
     GLOBALS(score["Skips"], score["Rests"])
