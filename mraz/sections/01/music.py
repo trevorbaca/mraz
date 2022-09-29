@@ -11,7 +11,7 @@ from mraz import library
 
 def make_empty_score():
     score = library.make_empty_score()
-    figures = baca.FigureAccumulator(score, library.voice_abbreviations)
+    accumulator = baca.figures.Accumulator(score, library.voice_abbreviations)
     section_4 = library.moment_4()
     section_5 = library.moment_5()
     section_6 = library.moment_6()
@@ -28,7 +28,7 @@ def make_empty_score():
         baca.select.pleaf(container, 0), r"\mraz-ottava-brackets-always-govern-markup"
     )
     baca.make_figures(
-        figures,
+        accumulator,
         library.rh_v1,
         None,
         container=container,
@@ -49,7 +49,7 @@ def make_empty_score():
     groups = rmakers.nongrace_leaves_in_each_tuplet(container)
     rmakers.beam_groups(groups)
     baca.make_figures(
-        figures,
+        accumulator,
         library.rh_v2,
         None,
         anchor=baca.anchor_to_figure("4.5.R.3"),
@@ -66,7 +66,7 @@ def make_empty_score():
     groups = rmakers.nongrace_leaves_in_each_tuplet(container)
     rmakers.beam_groups(groups)
     baca.make_figures(
-        figures,
+        accumulator,
         library.lh_v4,
         None,
         container=container,
@@ -85,7 +85,7 @@ def make_empty_score():
     baca.tuplet_bracket_down(container)
     baca.tuplet_bracket_staff_padding(container, 6)
     baca.make_figures(
-        figures,
+        accumulator,
         library.lh_v6,
         None,
         container=container,
@@ -101,7 +101,7 @@ def make_empty_score():
     baca.register(container, -27, -39)
     baca.rest_up(abjad.select.rests(container))
     baca.make_figures(
-        figures,
+        accumulator,
         library.lh_v5,
         None,
         anchor=baca.anchor_to_figure("8.3.L.2"),
@@ -113,7 +113,7 @@ def make_empty_score():
     container = abjad.Container([abjad.Tuplet((1, 1), "r4", hide=True)])
     baca.rest_transparent(abjad.select.rests(container))
     baca.make_figures(
-        figures,
+        accumulator,
         library.rh_v2,
         None,
         container=container,
@@ -130,7 +130,7 @@ def make_empty_score():
     baca.tenuto(baca.select.pheads(container))
     baca.tuplet_bracket_staff_padding(container, 8)
     baca.make_figures(
-        figures,
+        accumulator,
         library.rh_v3,
         None,
         container=container,
@@ -141,7 +141,7 @@ def make_empty_score():
     container = abjad.Container([abjad.Tuplet((1, 1), "r4", hide=True)])
     baca.rest_transparent(abjad.select.rests(container))
     baca.make_figures(
-        figures,
+        accumulator,
         library.rh_v2,
         None,
         container=container,
@@ -156,7 +156,7 @@ def make_empty_score():
     baca.staccato(baca.select.pheads(container))
     baca.tenuto(baca.select.pheads(container))
     baca.make_figures(
-        figures,
+        accumulator,
         library.rh_v3,
         None,
         container=container,
@@ -175,7 +175,7 @@ def make_empty_score():
     baca.stem_up(baca.select.pleaves(container))
     baca.text_script_up(container)
     baca.make_figures(
-        figures,
+        accumulator,
         library.rh_v2,
         None,
         container=container,
@@ -197,7 +197,7 @@ def make_empty_score():
     baca.tuplet_bracket_down(container)
     baca.tuplet_bracket_staff_padding(container, 4)
     baca.make_figures(
-        figures,
+        accumulator,
         library.rh_v3,
         None,
         anchor=baca.anchor_to_figure("5.1.R.3"),
@@ -210,7 +210,7 @@ def make_empty_score():
     container = abjad.Container([abjad.Tuplet((1, 1), "r4", hide=True)])
     baca.script_up(container)
     baca.make_figures(
-        figures,
+        accumulator,
         library.rh_v2,
         None,
         container=container,
@@ -220,7 +220,7 @@ def make_empty_score():
 
     voices = baca.section.cache_voices(score, library.voice_abbreviations)
     voices = baca.section.cache_voices(score, library.voice_abbreviations)
-    measures = baca.measures(figures.time_signatures)
+    measures = baca.section.measures(accumulator.time_signatures)
     baca.section.set_up_score(
         score,
         measures(),
@@ -229,7 +229,7 @@ def make_empty_score():
         first_section=True,
         manifests=library.manifests,
     )
-    figures.populate_commands(score)
+    accumulator.populate_commands(score)
     return score, voices, measures
 
 

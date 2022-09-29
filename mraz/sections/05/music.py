@@ -10,7 +10,7 @@ from mraz import library
 
 def make_empty_score(first_measure_number, previous_persistent_indicators):
     score = library.make_empty_score()
-    figures = baca.FigureAccumulator(score, library.voice_abbreviations)
+    accumulator = baca.figures.Accumulator(score, library.voice_abbreviations)
     section_6 = library.moment_6()
 
     collections = section_6.stage_1.rh.next(2)
@@ -24,7 +24,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     baca.tuplet_bracket_staff_padding(container, 7)
     baca.tuplet_bracket_up(container)
     baca.make_figures(
-        figures,
+        accumulator,
         library.rh_v3,
         None,
         container=container,
@@ -41,7 +41,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     baca.tuplet_bracket_up(container)
     baca.tuplet_bracket_staff_padding(container, 8)
     baca.make_figures(
-        figures,
+        accumulator,
         library.rh_v3,
         None,
         container=container,
@@ -55,7 +55,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     baca.staccato(baca.select.pheads(container))
     baca.tenuto(baca.select.pheads(container))
     baca.make_figures(
-        figures,
+        accumulator,
         library.rh_v3,
         None,
         container=container,
@@ -70,7 +70,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     baca.tenuto(baca.select.pheads(container))
     baca.tuplet_bracket_up(container)
     baca.make_figures(
-        figures,
+        accumulator,
         library.rh_v3,
         None,
         container=container,
@@ -85,7 +85,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     baca.tenuto(baca.select.pheads(container))
     baca.tuplet_bracket_staff_padding(container, 3)
     baca.make_figures(
-        figures,
+        accumulator,
         library.lh_v4,
         None,
         container=container,
@@ -103,7 +103,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     baca.tenuto(baca.select.pheads(container))
     baca.tuplet_bracket_staff_padding(container, 3)
     baca.make_figures(
-        figures,
+        accumulator,
         library.lh_v4,
         None,
         container=container,
@@ -120,7 +120,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     baca.register(container, 0, 12)
     baca.tenuto(baca.select.pheads(container))
     baca.make_figures(
-        figures,
+        accumulator,
         library.lh_v4,
         None,
         container=container,
@@ -138,7 +138,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     baca.register(container, 12, 0)
     baca.tenuto(baca.select.pheads(container))
     baca.make_figures(
-        figures,
+        accumulator,
         library.lh_v4,
         None,
         container=container,
@@ -148,7 +148,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
 
     voices = baca.section.cache_voices(score, library.voice_abbreviations)
     voices = baca.section.cache_voices(score, library.voice_abbreviations)
-    measures = baca.measures(figures.time_signatures)
+    measures = baca.section.measures(accumulator.time_signatures)
     baca.section.set_up_score(
         score,
         measures(),
@@ -158,7 +158,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         manifests=library.manifests,
         previous_persistent_indicators=previous_persistent_indicators,
     )
-    figures.populate_commands(score)
+    accumulator.populate_commands(score)
     return score, voices, measures
 
 
@@ -174,7 +174,7 @@ def make_score(first_measure_number, previous_persistent_indicators):
         first_measure_number, previous_persistent_indicators
     )
     voices = baca.section.cache_voices(score, library.voice_abbreviations)
-    voice_names = baca.accumulator.get_voice_names(score)
+    voice_names = baca.section.get_voice_names(score)
     music_voice_names = [
         _
         for _ in voice_names

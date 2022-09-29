@@ -11,7 +11,7 @@ from mraz import library
 
 def make_empty_score(first_measure_number, previous_persistent_indicators):
     score = library.make_empty_score()
-    figures = baca.FigureAccumulator(score, library.voice_abbreviations)
+    accumulator = baca.figures.Accumulator(score, library.voice_abbreviations)
     section_2 = library.moment_2()
     section_5 = library.moment_5()
     section_8 = library.moment_8()
@@ -26,7 +26,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     baca.script_up(container)
     baca.stem_up(baca.select.pleaves(container))
     baca.make_figures(
-        figures,
+        accumulator,
         library.rh_v2,
         None,
         container=container,
@@ -47,7 +47,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     baca.tuplet_bracket_down(container)
     baca.tuplet_bracket_staff_padding(container, 3)
     baca.make_figures(
-        figures,
+        accumulator,
         library.rh_v3,
         None,
         container=container,
@@ -80,7 +80,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         baca.slur(tleaves)
     baca.tuplet_bracket_down(container)
     baca.make_figures(
-        figures,
+        accumulator,
         library.rh_v3,
         None,
         container=container,
@@ -92,7 +92,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     container = abjad.Container([abjad.Tuplet((1, 1), "r4", hide=True)])
     baca.rest_transparent(abjad.select.rests(container))
     baca.make_figures(
-        figures,
+        accumulator,
         library.rh_v3,
         None,
         container=container,
@@ -123,7 +123,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         baca.slur(tleaves)
     baca.tuplet_bracket_down(container)
     baca.make_figures(
-        figures,
+        accumulator,
         library.rh_v3,
         None,
         container=container,
@@ -142,7 +142,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     baca.tuplet_bracket_down(container)
     baca.tuplet_bracket_staff_padding(container, 6)
     baca.make_figures(
-        figures,
+        accumulator,
         library.lh_v6,
         None,
         container=container,
@@ -158,7 +158,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     baca.rest_up(abjad.select.rests(container))
     baca.stem_up(baca.select.pleaves(container))
     baca.make_figures(
-        figures,
+        accumulator,
         library.lh_v5,
         None,
         container=container,
@@ -191,7 +191,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         baca.slur(tleaves)
     baca.tuplet_bracket_down(container)
     baca.make_figures(
-        figures,
+        accumulator,
         library.rh_v3,
         None,
         container=container,
@@ -203,7 +203,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     container = abjad.Container([abjad.Tuplet((1, 1), "r4", hide=True)])
     baca.rest_transparent(abjad.select.rests(container))
     baca.make_figures(
-        figures,
+        accumulator,
         library.rh_v3,
         None,
         container=container,
@@ -231,7 +231,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         baca.slur(tleaves)
     baca.tuplet_bracket_down(container)
     baca.make_figures(
-        figures,
+        accumulator,
         library.rh_v3,
         None,
         container=container,
@@ -243,7 +243,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     container = abjad.Container([abjad.Tuplet((1, 1), "r4", hide=True)])
     baca.rest_transparent(abjad.select.rests(container))
     baca.make_figures(
-        figures,
+        accumulator,
         library.rh_v3,
         None,
         container=container,
@@ -263,7 +263,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         baca.slur(tleaves)
     baca.staccato(baca.select.pheads(container))
     baca.make_figures(
-        figures,
+        accumulator,
         library.rh_v2,
         None,
         container=container,
@@ -281,7 +281,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         baca.slur(tleaves)
     baca.staccato(baca.select.pheads(container))
     baca.make_figures(
-        figures,
+        accumulator,
         library.rh_v2,
         None,
         container=container,
@@ -299,7 +299,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         baca.slur(tleaves)
     baca.staccato(baca.select.pheads(container))
     baca.make_figures(
-        figures,
+        accumulator,
         library.rh_v2,
         None,
         container=container,
@@ -317,7 +317,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         baca.slur(tleaves)
     baca.staccato(baca.select.pheads(container))
     baca.make_figures(
-        figures,
+        accumulator,
         library.rh_v2,
         None,
         container=container,
@@ -335,7 +335,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         baca.slur(tleaves)
     baca.staccato(baca.select.pheads(container))
     baca.make_figures(
-        figures,
+        accumulator,
         library.rh_v2,
         None,
         container=container,
@@ -346,7 +346,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     collections = [{-35, -23}]
     container = baca.figure(collections, [29], 16)
     baca.make_figures(
-        figures,
+        accumulator,
         library.lh_resonance,
         None,
         container=container,
@@ -359,7 +359,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     collections = [{-35, -23}]
     container = baca.figure(collections, [27], 16)
     baca.make_figures(
-        figures,
+        accumulator,
         library.lh_resonance,
         None,
         container=container,
@@ -371,7 +371,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     collections = [{-33, -21}]
     container = baca.figure(collections, [21], 16)
     baca.make_figures(
-        figures,
+        accumulator,
         library.lh_resonance,
         None,
         container=container,
@@ -383,7 +383,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     collections = [{-33, -21}]
     container = baca.figure(collections, [15], 16)
     baca.make_figures(
-        figures,
+        accumulator,
         library.lh_resonance,
         None,
         container=container,
@@ -395,7 +395,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     collections = [{-33, -21}]
     container = baca.figure(collections, [16], 16)
     baca.make_figures(
-        figures,
+        accumulator,
         library.lh_resonance,
         None,
         container=container,
@@ -427,7 +427,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     baca.tuplet_bracket_down(container)
     baca.tuplet_bracket_staff_padding(container, 3)
     baca.make_figures(
-        figures,
+        accumulator,
         library.rh_v3,
         None,
         container=container,
@@ -448,7 +448,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     baca.register(container, 6, -24)
     baca.slur_down(container)
     baca.make_figures(
-        figures,
+        accumulator,
         library.lh_v4,
         None,
         container=container,
@@ -467,7 +467,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     baca.register(container, 6, -24)
     baca.slur_down(container)
     baca.make_figures(
-        figures,
+        accumulator,
         library.lh_v4,
         None,
         container=container,
@@ -484,7 +484,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         baca.slur(tleaves)
     baca.register(container, 6, -24)
     baca.make_figures(
-        figures,
+        accumulator,
         library.lh_v4,
         None,
         container=container,
@@ -500,7 +500,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         baca.slur(tleaves)
     baca.register(container, 0, -24)
     baca.make_figures(
-        figures,
+        accumulator,
         library.lh_v4,
         None,
         container=container,
@@ -519,7 +519,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         baca.slur(tleaves)
     baca.register(container, 0, -24)
     baca.make_figures(
-        figures,
+        accumulator,
         library.lh_v4,
         None,
         container=container,
@@ -537,7 +537,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         baca.slur(tleaves)
     baca.register(container, 0, -24)
     baca.make_figures(
-        figures,
+        accumulator,
         library.lh_v4,
         None,
         container=container,
@@ -557,7 +557,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         baca.slur(tleaves)
     baca.register(container, -6, -48)
     baca.make_figures(
-        figures,
+        accumulator,
         library.lh_v4,
         None,
         container=container,
@@ -576,7 +576,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         baca.slur(tleaves)
     baca.register(container, -6, -36)
     baca.make_figures(
-        figures,
+        accumulator,
         library.lh_v4,
         None,
         container=container,
@@ -594,7 +594,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         baca.slur(tleaves)
     baca.register(container, -6, -36)
     baca.make_figures(
-        figures,
+        accumulator,
         library.lh_v4,
         None,
         container=container,
@@ -607,7 +607,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     baca.clef(abjad.select.leaf(container, 0), "treble")
     baca.rest_transparent(abjad.select.rests(container))
     baca.make_figures(
-        figures,
+        accumulator,
         library.lh_v4,
         None,
         container=container,
@@ -617,7 +617,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
 
     voices = baca.section.cache_voices(score, library.voice_abbreviations)
     voices = baca.section.cache_voices(score, library.voice_abbreviations)
-    measures = baca.measures(figures.time_signatures)
+    measures = baca.section.measures(accumulator.time_signatures)
     baca.section.set_up_score(
         score,
         measures(),
@@ -627,7 +627,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         manifests=library.manifests,
         previous_persistent_indicators=previous_persistent_indicators,
     )
-    figures.populate_commands(score)
+    accumulator.populate_commands(score)
     return score, voices, measures
 
 
@@ -701,7 +701,7 @@ def make_score(first_measure_number, previous_persistent_indicators):
     )
     GLOBALS(score["Skips"], score["Rests"])
     voices = baca.section.cache_voices(score, library.voice_abbreviations)
-    voice_names = baca.accumulator.get_voice_names(score)
+    voice_names = baca.section.get_voice_names(score)
     music_voice_names = [
         _
         for _ in voice_names
