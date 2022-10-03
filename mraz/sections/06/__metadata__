@@ -1,4 +1,35 @@
 {
+    "alive_during_section": [
+        "Score",
+        "GlobalContext",
+        "Rests",
+        "Skips",
+        "MusicContext",
+        "PianoMusic.StaffGroup",
+        "PianoMusicRH.Staff",
+        "RH.Music.1",
+        "RH.InsertVoice.1",
+        "RH.Music.2",
+        "RH.InsertVoice.2",
+        "RH.Music.3",
+        "RH.InsertVoice.3",
+        "RH.Music.4",
+        "RH.InsertVoice.4",
+        "RH.Music.5",
+        "RH.Music.6",
+        "RH.ResonanceVoice",
+        "PianoMusicLH.Staff",
+        "LH.Music.1",
+        "LH.Music.2",
+        "LH.Music.3",
+        "LH.Music.4",
+        "LH.InsertVoice.4",
+        "LH.Music.5",
+        "LH.InsertVoice.5",
+        "LH.Music.6",
+        "LH.InsertVoice.6",
+        "LH.ResonanceVoice",
+    ],
     "bol_measure_numbers": [82, 85, 87, 89, 91, 93, 96],
     "duration": "1'08''",
     "fermata_measure_numbers": [84, 88, 90, 97],
@@ -6,6 +37,126 @@
     "final_measure_number": 97,
     "first_measure_number": 82,
     "has_anchor_skip": True,
+    "persistent_indicators": {
+        "LH.Music.4": [
+            baca.Memento(
+                context="LH.Music.4",
+                edition=None,
+                manifest=None,
+                prototype="abjad.Dynamic",
+                synthetic_offset=None,
+                value="p",
+            )
+        ],
+        "LH.Music.5": [
+            baca.Memento(
+                context="LH.Music.5",
+                edition=None,
+                manifest=None,
+                prototype="abjad.Dynamic",
+                synthetic_offset=None,
+                value="ppp",
+            )
+        ],
+        "LH.Music.6": [
+            baca.Memento(
+                context="LH.Music.6",
+                edition=None,
+                manifest=None,
+                prototype="abjad.Dynamic",
+                synthetic_offset=None,
+                value="f",
+            )
+        ],
+        "PianoMusic.StaffGroup": [
+            baca.Memento(
+                context="RH.Music.1",
+                edition=None,
+                manifest="instruments",
+                prototype=None,
+                synthetic_offset=None,
+                value="Piano",
+            )
+        ],
+        "PianoMusicLH.Staff": [
+            baca.Memento(
+                context="LH.Music.4",
+                edition=None,
+                manifest=None,
+                prototype="abjad.Clef",
+                synthetic_offset=None,
+                value="treble",
+            )
+        ],
+        "PianoMusicRH.Staff": [
+            baca.Memento(
+                context="RH.Music.1",
+                edition=None,
+                manifest=None,
+                prototype="abjad.Clef",
+                synthetic_offset=None,
+                value="treble",
+            )
+        ],
+        "RH.Music.1": [
+            baca.Memento(
+                context="RH.Music.1",
+                edition=None,
+                manifest=None,
+                prototype="abjad.Dynamic",
+                synthetic_offset=None,
+                value="f",
+            )
+        ],
+        "RH.Music.2": [
+            baca.Memento(
+                context="RH.Music.2",
+                edition=None,
+                manifest=None,
+                prototype="abjad.Dynamic",
+                synthetic_offset=None,
+                value="fff",
+            )
+        ],
+        "RH.Music.3": [
+            baca.Memento(
+                context="RH.Music.3",
+                edition=None,
+                manifest=None,
+                prototype="abjad.Dynamic",
+                synthetic_offset=None,
+                value="mp",
+            )
+        ],
+        "RH.Music.4": [
+            baca.Memento(
+                context="RH.Music.4",
+                edition=None,
+                manifest=None,
+                prototype="abjad.Dynamic",
+                synthetic_offset=None,
+                value="p",
+            )
+        ],
+        "Score": [
+            baca.Memento(
+                context="Skips",
+                edition=None,
+                manifest="metronome_marks",
+                prototype=None,
+                synthetic_offset=None,
+                value="84",
+            ),
+            baca.Memento(
+                context="Skips",
+                edition=None,
+                manifest=None,
+                prototype="abjad.TimeSignature",
+                synthetic_offset=None,
+                value="1/4",
+            ),
+        ],
+    },
     "start_clock_time": "3'19''",
     "stop_clock_time": "4'27''",
     "time_signatures": [
