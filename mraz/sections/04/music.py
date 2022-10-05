@@ -1441,14 +1441,16 @@ def main():
     metadata = baca.section.postprocess_score(
         score,
         **baca.section.section_defaults(),
-        activate=[baca.tags.LOCAL_MEASURE_NUMBER],
         always_make_global_rests=True,
-        deactivate=[baca.tags.REPEAT_PITCH_CLASS_COLORING],
         do_not_check_wellformedness=True,
         do_not_require_short_instrument_names=True,
         environment=environment,
         error_on_not_yet_pitched=True,
         manifests=library.manifests,
+        tags=baca.tags.Tags(
+            activate=[baca.tags.LOCAL_MEASURE_NUMBER],
+            deactivate=[baca.tags.REPEAT_PITCH_CLASS_COLORING],
+        ),
     )
     lilypond_file = baca.lilypond.file(
         score,
