@@ -577,8 +577,8 @@ def make_score(first_measure_number, previous_persistent_indicators):
     ]
     baca.section.reapply(
         [voices(_) for _ in music_voice_names],
-        library.manifests,
         previous_persistent_indicators,
+        manifests=library.manifests,
     )
     cache = baca.section.cache_leaves(
         score,
