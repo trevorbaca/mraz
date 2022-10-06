@@ -1447,11 +1447,9 @@ def main():
         environment=environment,
         error_on_not_yet_pitched=True,
         manifests=library.manifests,
-        tags=baca.tags.Tags(
-            activate=[baca.tags.LOCAL_MEASURE_NUMBER],
-            deactivate=[baca.tags.REPEAT_PITCH_CLASS_COLORING],
-        ),
     )
+    baca.tags.deactivate(score, baca.tags.REPEAT_PITCH_CLASS_COLORING)
+    baca.tags.activate(score, baca.tags.LOCAL_MEASURE_NUMBER)
     lilypond_file = baca.lilypond.file(
         score,
         include_layout_ly=True,
