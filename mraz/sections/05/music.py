@@ -209,7 +209,6 @@ def main():
         always_make_global_rests=True,
         do_not_require_short_instrument_names=True,
         environment=environment,
-        **baca.section.section_defaults(),
         error_on_not_yet_pitched=True,
         manifests=library.manifests,
     )
