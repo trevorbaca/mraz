@@ -2026,7 +2026,7 @@ number.1.LH.Music.4 = {
 
       %! baca._comment_measure_numbers()
     % [LH.Music.4 measure 1]
-    s1 * 1
+    s1 * 1/1
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -2169,7 +2169,7 @@ number.1.LH.InsertVoice.4 = {
 
       %! baca._comment_measure_numbers()
     % [LH.InsertVoice.4 measure 1]
-    s1 * 1
+    s1 * 1/1
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 

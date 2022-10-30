@@ -1901,7 +1901,7 @@ number.6.RH.Music.2 = {
 
       %! baca._comment_measure_numbers()
     % [RH.Music.2 measure 5]
-    s1 * 1
+    s1 * 1/1
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -5700,7 +5700,7 @@ number.6.RH.Music.3 = {
 
       %! baca._comment_measure_numbers()
     % [RH.Music.3 measure 5]
-    s1 * 1
+    s1 * 1/1
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -7111,7 +7111,7 @@ number.6.LH.Music.4 = {
 
       %! baca._comment_measure_numbers()
     % [LH.Music.4 measure 5]
-    s1 * 1
+    s1 * 1/1
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -7615,7 +7615,7 @@ number.6.LH.Music.4 = {
 
       %! baca._comment_measure_numbers()
     % [LH.Music.4 measure 9]
-    s1 * 7
+    s1 * 7/1
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -7992,7 +7992,7 @@ number.6.LH.Music.5 = {
 
       %! baca._comment_measure_numbers()
     % [LH.Music.5 measure 6]
-    s1 * 15
+    s1 * 15/1
     % CLOSING:
     % COMMANDS:
 
@@ -8123,7 +8123,7 @@ number.6.LH.Music.6 = {
 
       %! baca._comment_measure_numbers()
     % [LH.Music.6 measure 6]
-    s1 * 15
+    s1 * 15/1
     % CLOSING:
     % COMMANDS:
 
@@ -8161,7 +8161,7 @@ number.6.LH.ResonanceVoice = {
     % COMMANDS:
       %! baca.dots_transparent(1)
     \override Dots.transparent = ##t
-    s1 * 17
+    s1 * 17/1
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -8462,7 +8462,7 @@ number.6.LH.ResonanceVoice = {
 
       %! baca._comment_measure_numbers()
     % [LH.ResonanceVoice measure 15]
-    s1 * 2
+    s1 * 2/1
     % AFTER:
     % COMMANDS:
       %! baca.dots_transparent(2)

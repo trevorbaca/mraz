@@ -3804,7 +3804,7 @@ number.3.LH.ResonanceVoice = {
 
       %! baca._comment_measure_numbers()
     % [LH.ResonanceVoice measure 12]
-    s1 * 1
+    s1 * 1/1
     % AFTER:
     % COMMANDS:
       %! baca.accidental_stencil_false(2)
