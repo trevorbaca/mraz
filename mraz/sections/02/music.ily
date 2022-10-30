@@ -2061,7 +2061,7 @@ number.2.LH.Music.6 = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-    s1 * 1
+    s1 * 1/1
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 

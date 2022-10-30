@@ -3583,7 +3583,7 @@ number.4.RH.InsertVoice.1 = {
 
       %! baca._comment_measure_numbers()
     % [RH.InsertVoice.1 measure 1]
-    s1 * 44
+    s1 * 44/1
     % CLOSING:
     % COMMANDS:
 
@@ -5561,7 +5561,7 @@ number.4.RH.InsertVoice.2 = {
 
       %! baca._comment_measure_numbers()
     % [RH.InsertVoice.2 measure 1]
-    s1 * 44
+    s1 * 44/1
     % CLOSING:
     % COMMANDS:
 
@@ -6280,7 +6280,7 @@ number.4.RH.InsertVoice.3 = {
 
       %! baca._comment_measure_numbers()
     % [RH.InsertVoice.3 measure 1]
-    s1 * 44
+    s1 * 44/1
     % CLOSING:
     % COMMANDS:
 
@@ -6297,7 +6297,7 @@ number.4.RH.Music.4 = {
 
       %! baca._comment_measure_numbers()
     % [RH.Music.4 measure 1]
-    s1 * 44
+    s1 * 44/1
     % CLOSING:
     % COMMANDS:
 
@@ -6314,7 +6314,7 @@ number.4.RH.InsertVoice.4 = {
 
       %! baca._comment_measure_numbers()
     % [RH.InsertVoice.4 measure 1]
-    s1 * 44
+    s1 * 44/1
     % CLOSING:
     % COMMANDS:
 
@@ -6391,7 +6391,7 @@ number.4.RH.Music.6 = {
 
       %! baca._comment_measure_numbers()
     % [RH.Music.6 measure 1]
-    s1 * 44
+    s1 * 44/1
     % CLOSING:
     % COMMANDS:
 
@@ -6408,7 +6408,7 @@ number.4.RH.ResonanceVoice = {
 
       %! baca._comment_measure_numbers()
     % [RH.ResonanceVoice measure 1]
-    s1 * 44
+    s1 * 44/1
     % CLOSING:
     % COMMANDS:
 
@@ -6535,7 +6535,7 @@ number.4.LH.Music.1 = {
 
       %! baca._comment_measure_numbers()
     % [LH.Music.1 measure 1]
-    s1 * 44
+    s1 * 44/1
     % CLOSING:
     % COMMANDS:
 
@@ -6648,7 +6648,7 @@ number.4.LH.Music.3 = {
 
       %! baca._comment_measure_numbers()
     % [LH.Music.3 measure 1]
-    s1 * 44
+    s1 * 44/1
     % CLOSING:
     % COMMANDS:
 
@@ -6773,7 +6773,7 @@ number.4.LH.InsertVoice.4 = {
 
       %! baca._comment_measure_numbers()
     % [LH.InsertVoice.4 measure 1]
-    s1 * 44
+    s1 * 44/1
     % CLOSING:
     % COMMANDS:
 
@@ -8561,7 +8561,7 @@ number.4.LH.Music.5 = {
 
       %! baca._comment_measure_numbers()
     % [LH.Music.5 measure 44]
-    s1 * 4
+    s1 * 4/1
     % AFTER:
     % COMMANDS:
       %! baca.tuplet_bracket_down(2)
@@ -9065,7 +9065,7 @@ number.4.LH.InsertVoice.5 = {
 
       %! baca._comment_measure_numbers()
     % [LH.InsertVoice.5 measure 32]
-    s1 * 17
+    s1 * 17/1
     % AFTER:
     % COMMANDS:
       %! baca.script_up(2)
@@ -9103,7 +9103,7 @@ number.4.LH.Music.6 = {
       %! baca._set_status_tag()
       %! baca.treat_persistent_wrapper(2)
     \set PianoMusicLHStaff.forceClef = ##t
-    s1 * 44
+    s1 * 44/1
     % ABSOLUTE_AFTER:
     % COMMANDS:
       %! REAPPLIED_CLEF_REDRAW_COLOR
@@ -9125,7 +9125,7 @@ number.4.LH.InsertVoice.6 = {
 
       %! baca._comment_measure_numbers()
     % [LH.InsertVoice.6 measure 1]
-    s1 * 44
+    s1 * 44/1
     % CLOSING:
     % COMMANDS:
 
@@ -9276,7 +9276,7 @@ number.4.LH.ResonanceVoice = {
 
       %! baca._comment_measure_numbers()
     % [LH.ResonanceVoice measure 12]
-    s1 * 2
+    s1 * 2/1
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
