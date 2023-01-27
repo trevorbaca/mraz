@@ -554,7 +554,9 @@ def moment_6():
         rh_stage_1_segments, level=1
     )
     rh_stage_1_segments = [abjad.PitchClassSegment(_) for _ in rh_stage_1_segments]
-    lh_stage_1_segments = abjad.sequence.remove(stage_1_segments, rh_indices)
+    lh_stage_1_segments = abjad.sequence.remove(
+        stage_1_segments, abjad.index(rh_indices)
+    )
     lh_stage_1_segments = baca.pcollections.remove_duplicates(
         lh_stage_1_segments, level=1
     )
@@ -701,7 +703,9 @@ def moment_8():
     )
     v5_stage_3_segments = [abjad.PitchClassSegment(_) for _ in v5_stage_3_segments]
     assert not baca.pcollections.has_repeats(v5_stage_3_segments, level=-1)
-    v6_stage_3_segments = abjad.sequence.remove(stage_3_segments, v5_indices, period=10)
+    v6_stage_3_segments = abjad.sequence.remove(
+        stage_3_segments, abjad.index(v5_indices, 10)
+    )
     v6_stage_3_segments = baca.pcollections.remove_repeats(
         v6_stage_3_segments, level=-1
     )
