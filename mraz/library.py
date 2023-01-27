@@ -547,7 +547,9 @@ def moment_6():
     )
     assert len(abjad.sequence.join(stage_1_segments)[0]) == 36
     rh_indices = [0, 2, 3, 5, 8]
-    rh_stage_1_segments = abjad.sequence.retain(stage_1_segments, rh_indices)
+    rh_stage_1_segments = abjad.sequence.retain_pattern(
+        stage_1_segments, abjad.Pattern(rh_indices)
+    )
     rh_stage_1_segments = baca.pcollections.remove_duplicates(
         rh_stage_1_segments, level=1
     )
@@ -691,7 +693,9 @@ def moment_8():
     assert len(abjad.sequence.join(stage_3_segments)[0]) == 60
     assert not baca.pcollections.has_repeats(stage_3_segments, level=-1)
     v5_indices = [0, 2, 3, 5, 6, 8, 9]
-    v5_stage_3_segments = abjad.sequence.retain(stage_3_segments, v5_indices, period=10)
+    v5_stage_3_segments = abjad.sequence.retain_pattern(
+        stage_3_segments, abjad.Pattern(v5_indices, period=10)
+    )
     v5_stage_3_segments = baca.pcollections.remove_repeats(
         v5_stage_3_segments, level=-1
     )
