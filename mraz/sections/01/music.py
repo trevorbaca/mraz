@@ -220,17 +220,17 @@ def make_empty_score():
 
     voices = baca.section.cache_voices(score, library.voice_abbreviations)
     voices = baca.section.cache_voices(score, library.voice_abbreviations)
-    signatures = baca.section.signatures(accumulator.time_signatures)
+    time_signatures = baca.section.time_signatures(accumulator.time_signatures)
     baca.section.set_up_score(
         score,
-        signatures(),
+        time_signatures(),
         append_anchor_skip=True,
         always_make_global_rests=True,
         first_section=True,
         manifests=library.manifests,
     )
     accumulator.populate_commands(score)
-    return score, voices, signatures
+    return score, voices, time_signatures
 
 
 def GLOBALS(skips, rests):
@@ -269,11 +269,11 @@ def postprocess(cache):
 
 @baca.build.timed("make_score")
 def make_score():
-    score, voices, signatures = make_empty_score()
+    score, voices, time_signatures = make_empty_score()
     GLOBALS(score["Skips"], score["Rests"])
     cache = baca.section.cache_leaves(
         score,
-        len(signatures()),
+        len(time_signatures()),
         library.voice_abbreviations,
     )
     postprocess(cache)
