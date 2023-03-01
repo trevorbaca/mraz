@@ -14,81 +14,81 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     section_6 = library.moment_6()
 
     collections = section_6.stage_1.rh.next(2)
-    container = baca.figure(
+    tuplets = baca.figure(
         collections, [1], 8, affix=baca.rests_after([1]), treatments=[1, 0]
     )
-    baca.dynamic(baca.select.phead(container, 0), "pp")
-    baca.register(container, 24, 12)
-    baca.staccato(baca.select.pheads(container))
-    baca.tenuto(baca.select.pheads(container))
-    baca.tuplet_bracket_staff_padding(container, 7)
-    baca.tuplet_bracket_up(container)
+    baca.dynamic(baca.select.phead(tuplets, 0), "pp")
+    baca.register(tuplets, 24, 12)
+    baca.staccato(baca.select.pheads(tuplets))
+    baca.tenuto(baca.select.pheads(tuplets))
+    baca.tuplet_bracket_staff_padding(tuplets, 7)
+    baca.tuplet_bracket_up(tuplets)
     baca.make_figures(
         accumulator,
         library.rh_v3,
         None,
-        container=container,
+        tuplets=tuplets,
         figure_name="6.1.R.1-2",
         tsd=8,
     )
 
     collections = section_6.stage_1.rh.next()
-    container = baca.figure(collections, [1], 8, treatments=[1])
-    baca.register(container, 24, 12)
-    baca.staccato(baca.select.pheads(container))
-    baca.tenuto(baca.select.pheads(container))
-    baca.tuplet_bracket_staff_padding(container, 7)
-    baca.tuplet_bracket_up(container)
-    baca.tuplet_bracket_staff_padding(container, 8)
+    tuplets = baca.figure(collections, [1], 8, treatments=[1])
+    baca.register(tuplets, 24, 12)
+    baca.staccato(baca.select.pheads(tuplets))
+    baca.tenuto(baca.select.pheads(tuplets))
+    baca.tuplet_bracket_staff_padding(tuplets, 7)
+    baca.tuplet_bracket_up(tuplets)
+    baca.tuplet_bracket_staff_padding(tuplets, 8)
     baca.make_figures(
         accumulator,
         library.rh_v3,
         None,
-        container=container,
+        tuplets=tuplets,
         figure_name="6.1.R.3",
         tsd=8,
     )
 
     collections = section_6.stage_1.rh.next()
-    container = baca.figure(collections, [1], 8, affix=baca.rests_around([1], [1]))
-    baca.register(container, 24, 12)
-    baca.staccato(baca.select.pheads(container))
-    baca.tenuto(baca.select.pheads(container))
+    tuplets = baca.figure(collections, [1], 8, affix=baca.rests_around([1], [1]))
+    baca.register(tuplets, 24, 12)
+    baca.staccato(baca.select.pheads(tuplets))
+    baca.tenuto(baca.select.pheads(tuplets))
     baca.make_figures(
         accumulator,
         library.rh_v3,
         None,
-        container=container,
+        tuplets=tuplets,
         figure_name="6.1.R.4",
         tsd=8,
     )
 
     collections = section_6.stage_1.rh.next(exhausted=True)
-    container = baca.figure(collections, [1], 8, treatments=[1])
-    baca.register(container, 12, 24)
-    baca.staccato(baca.select.pheads(container))
-    baca.tenuto(baca.select.pheads(container))
-    baca.tuplet_bracket_up(container)
+    tuplets = baca.figure(collections, [1], 8, treatments=[1])
+    baca.register(tuplets, 12, 24)
+    baca.staccato(baca.select.pheads(tuplets))
+    baca.tenuto(baca.select.pheads(tuplets))
+    baca.tuplet_bracket_up(tuplets)
     baca.make_figures(
         accumulator,
         library.rh_v3,
         None,
-        container=container,
+        tuplets=tuplets,
         figure_name="6.1.R.5",
         tsd=8,
     )
 
     collections = section_6.stage_1.lh.next()
-    container = baca.figure(collections, [1, -1], 16, treatments=[1])
-    baca.dynamic(baca.select.phead(container, 0), "mp")
-    baca.register(container, 0, 12)
-    baca.tenuto(baca.select.pheads(container))
-    baca.tuplet_bracket_staff_padding(container, 3)
+    tuplets = baca.figure(collections, [1, -1], 16, treatments=[1])
+    baca.dynamic(baca.select.phead(tuplets, 0), "mp")
+    baca.register(tuplets, 0, 12)
+    baca.tenuto(baca.select.pheads(tuplets))
+    baca.tuplet_bracket_staff_padding(tuplets, 3)
     baca.make_figures(
         accumulator,
         library.lh_v4,
         None,
-        container=container,
+        tuplets=tuplets,
         anchor=baca.anchor(
             library.rh_v3,
             lambda _: abjad.select.note(_, 3),
@@ -98,15 +98,15 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     )
 
     collections = section_6.stage_1.lh.next()
-    container = baca.figure(collections, [1, -2], 16, treatments=[2])
-    baca.register(container, 0, 12)
-    baca.tenuto(baca.select.pheads(container))
-    baca.tuplet_bracket_staff_padding(container, 3)
+    tuplets = baca.figure(collections, [1, -2], 16, treatments=[2])
+    baca.register(tuplets, 0, 12)
+    baca.tenuto(baca.select.pheads(tuplets))
+    baca.tuplet_bracket_staff_padding(tuplets, 3)
     baca.make_figures(
         accumulator,
         library.lh_v4,
         None,
-        container=container,
+        tuplets=tuplets,
         anchor=baca.anchor(
             library.rh_v3,
             lambda _: abjad.select.note(_, 9),
@@ -116,14 +116,14 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     )
 
     collections = section_6.stage_1.lh.next()
-    container = baca.figure(collections, [2, -1], 32)
-    baca.register(container, 0, 12)
-    baca.tenuto(baca.select.pheads(container))
+    tuplets = baca.figure(collections, [2, -1], 32)
+    baca.register(tuplets, 0, 12)
+    baca.tenuto(baca.select.pheads(tuplets))
     baca.make_figures(
         accumulator,
         library.lh_v4,
         None,
-        container=container,
+        tuplets=tuplets,
         anchor=baca.anchor(
             library.rh_v3,
             lambda _: abjad.select.note(_, 13),
@@ -134,14 +134,14 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     )
 
     collections = section_6.stage_1.lh.next(exhausted=True)
-    container = baca.figure(collections, [2, -1], 32)
-    baca.register(container, 12, 0)
-    baca.tenuto(baca.select.pheads(container))
+    tuplets = baca.figure(collections, [2, -1], 32)
+    baca.register(tuplets, 12, 0)
+    baca.tenuto(baca.select.pheads(tuplets))
     baca.make_figures(
         accumulator,
         library.lh_v4,
         None,
-        container=container,
+        tuplets=tuplets,
         figure_name="6.1.L.4",
         hide_time_signature=True,
     )
