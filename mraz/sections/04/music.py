@@ -467,7 +467,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     container = abjad.Container(tuplets)
     for ntrun in baca.select.ntruns(container):
         baca.slur(ntrun)
-    baca.nest(tuplets, ["+2/16"])
+    baca.nest(tuplets, "+2/16")
     baca.register(tuplets, -12, 0)
     baca.make_figures(
         accumulator,
