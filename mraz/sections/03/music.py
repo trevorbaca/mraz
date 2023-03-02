@@ -154,7 +154,8 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     )
 
     collections = section_4.stage_1.lh.next()
-    tuplets = baca.figure(collections, [3, -1], 16, affix=baca.rests_before([12]))
+    tuplets = baca.figure(collections, [3, -1], 16)
+    baca.rests_before_function(tuplets, [12], 16)
     baca.dynamic(baca.select.phead(tuplets, 0), "f")
     baca.dynamic_down(abjad.select.leaf(tuplets, 0))
     baca.register(tuplets, -6, 6)

@@ -96,7 +96,8 @@ def make_empty_score():
     )
 
     collections = section_8.stage_3.rh[5 - 1]
-    tuplets = baca.figure(collections, [6, -1], 32, affix=baca.rests_after([4]))
+    tuplets = baca.figure(collections, [6, -1], 32)
+    baca.figures.rests_after_function(tuplets, [4], 32)
     baca.dynamic(baca.select.phead(tuplets, 0), "ppp")
     baca.dynamic_text_x_offset(baca.select.pleaf(tuplets, 0), -0.5)
     baca.dynamic_up(abjad.select.leaf(tuplets, 0))
@@ -152,7 +153,8 @@ def make_empty_score():
     )
 
     collections = section_6.stage_1.rh[3]
-    tuplets = baca.figure(collections, [1], 8, affix=baca.rests_around([1], [1]))
+    tuplets = baca.figure(collections, [1], 8)
+    baca.rests_around_function(tuplets, [1], [1], 8)
     baca.register(tuplets, 24, 12)
     baca.span_bar_extra_offset(abjad.select.leaf(tuplets, -1), (-0.75, 0), after=True)
     baca.staccato(baca.select.pheads(tuplets))
