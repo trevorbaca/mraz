@@ -15,7 +15,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
 
     collections = section_6.stage_1.rh.next(2)
     tuplets = baca.figure(collections, [1], 8, treatments=[1, 0])
-    baca.rests_after_function(tuplets, [1], 8)
+    baca.rests_after(tuplets, [1], 8)
     baca.dynamic(baca.select.phead(tuplets, 0), "pp")
     baca.register(tuplets, 24, 12)
     baca.staccato(baca.select.pheads(tuplets))
@@ -50,7 +50,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
 
     collections = section_6.stage_1.rh.next()
     tuplets = baca.figure(collections, [1], 8)
-    baca.rests_around_function(tuplets, [1], [1], 8)
+    baca.rests_around(tuplets, [1], [1], 8)
     baca.register(tuplets, 24, 12)
     baca.staccato(baca.select.pheads(tuplets))
     baca.tenuto(baca.select.pheads(tuplets))

@@ -154,7 +154,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
 
     collections = section_8.stage_3.rh[5 - 1]
     tuplets = baca.figure(collections, [6, -1], 32)
-    baca.rests_after_function(tuplets, [4], 32)
+    baca.rests_after(tuplets, [4], 32)
     baca.dynamic(baca.select.phead(tuplets, 0), "ppp")
     baca.dynamic_up(abjad.select.leaf(tuplets, 0))
     baca.register(tuplets, -27, -39)
@@ -444,7 +444,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
 
     collections = section_5.stage_2.lh.next()
     tuplets = baca.figure(collections, [3, -3], 16)
-    baca.rests_around_function(tuplets, [8, 8, 8], [6], 16)
+    baca.rests_around(tuplets, [8, 8, 8], [6], 16)
     baca.clef(abjad.select.leaf(tuplets, 0), "bass")
     baca.dynamic(baca.select.phead(tuplets, 0), "p")
     for tuplet in baca.select.tuplets(tuplets):
@@ -465,7 +465,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
 
     collections = section_5.stage_2.lh.next()
     tuplets = baca.figure(collections, [3, -1], 16)
-    baca.rests_before_function(tuplets, [8, 8], 16)
+    baca.rests_before(tuplets, [8, 8], 16)
     baca.dynamic(baca.select.phead(tuplets, 0), "p")
     for tuplet in baca.select.tuplets(tuplets):
         tleaves = baca.select.tleaves(tuplet)
@@ -554,7 +554,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
 
     collections = section_5.stage_2.lh.next()
     tuplets = baca.figure(collections, [3], 16)
-    baca.rests_around_function(tuplets, [3], [4, 4, 4], 16)
+    baca.rests_around(tuplets, [3], [4, 4, 4], 16)
     groups = rmakers.nongrace_leaves_in_each_tuplet(tuplets)
     rmakers.beam(groups)
     for tuplet in baca.select.tuplets(tuplets):
@@ -573,7 +573,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
 
     collections = section_5.stage_2.lh.next()
     tuplets = baca.figure(collections, [2], 16)
-    baca.rests_before_function(tuplets, [14], 16)
+    baca.rests_before(tuplets, [14], 16)
     groups = rmakers.nongrace_leaves_in_each_tuplet(tuplets)
     rmakers.beam(groups)
     baca.dynamic(baca.select.phead(tuplets, 0), "p")
