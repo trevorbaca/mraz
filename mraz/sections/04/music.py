@@ -392,7 +392,8 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     )
 
     collections = [{-35, -23}]
-    tuplets = baca.figure(collections, [8], 16, affix=baca.skips_before([4]))
+    tuplets = baca.figure(collections, [8], 16)
+    baca.skips_before(tuplets, [4], 16)
     container = abjad.Container(tuplets)
     baca.nest(tuplets, "+1/4")
     baca.make_figures(
@@ -433,7 +434,8 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     )
 
     collections = [{-33, -21}]
-    tuplets = baca.figure(collections, [8], 16, affix=baca.skips_before([4]))
+    tuplets = baca.figure(collections, [8], 16)
+    baca.skips_before(tuplets, [4], 16)
     container = abjad.Container(tuplets)
     baca.nest(tuplets, "+1/4")
     baca.make_figures(
