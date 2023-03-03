@@ -25,7 +25,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     baca.make_figures(
         accumulator,
         library.rh_v3,
-        tuplets=tuplets,
+        tuplets,
         figure_name="6.1.R.1-2",
         tsd=8,
     )
@@ -41,7 +41,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     baca.make_figures(
         accumulator,
         library.rh_v3,
-        tuplets=tuplets,
+        tuplets,
         figure_name="6.1.R.3",
         tsd=8,
     )
@@ -55,7 +55,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     baca.make_figures(
         accumulator,
         library.rh_v3,
-        tuplets=tuplets,
+        tuplets,
         figure_name="6.1.R.4",
         tsd=8,
     )
@@ -69,7 +69,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     baca.make_figures(
         accumulator,
         library.rh_v3,
-        tuplets=tuplets,
+        tuplets,
         figure_name="6.1.R.5",
         tsd=8,
     )
@@ -83,7 +83,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     baca.make_figures(
         accumulator,
         library.lh_v4,
-        tuplets=tuplets,
+        tuplets,
         anchor=baca.anchor(
             library.rh_v3,
             lambda _: abjad.select.note(_, 3),
@@ -100,7 +100,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     baca.make_figures(
         accumulator,
         library.lh_v4,
-        tuplets=tuplets,
+        tuplets,
         anchor=baca.anchor(
             library.rh_v3,
             lambda _: abjad.select.note(_, 9),
@@ -116,7 +116,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     baca.make_figures(
         accumulator,
         library.lh_v4,
-        tuplets=tuplets,
+        tuplets,
         anchor=baca.anchor(
             library.rh_v3,
             lambda _: abjad.select.note(_, 13),
@@ -133,7 +133,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     baca.make_figures(
         accumulator,
         library.lh_v4,
-        tuplets=tuplets,
+        tuplets,
         figure_name="6.1.L.4",
         hide_time_signature=True,
     )
