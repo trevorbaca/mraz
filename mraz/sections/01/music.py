@@ -30,10 +30,10 @@ def make_empty_score():
     baca.make_figures(
         accumulator,
         library.rh_v1,
+        tuplets,
         figure_name="4.5.R.3",
         hide_time_signature=True,
         tsd=4,
-        tuplets=tuplets,
     )
 
     collections = section_4.stage_5.lh[:4]
@@ -51,8 +51,8 @@ def make_empty_score():
     baca.make_figures(
         accumulator,
         library.rh_v2,
+        container,
         anchor=baca.anchor_to_figure("4.5.R.3"),
-        container=container,
         figure_name="4.5.L.1-4",
         tsd=4,
     )
@@ -68,7 +68,7 @@ def make_empty_score():
     baca.make_figures(
         accumulator,
         library.lh_v4,
-        container=container,
+        container,
         figure_name="7.1.L.5",
         imbrications=imbrications,
         tsd=4,
@@ -86,9 +86,9 @@ def make_empty_score():
     baca.make_figures(
         accumulator,
         library.lh_v6,
+        tuplets,
         figure_name="8.3.L.2",
         tsd=4,
-        tuplets=tuplets,
     )
 
     collections = section_8.stage_3.rh[5 - 1]
@@ -102,10 +102,10 @@ def make_empty_score():
     baca.make_figures(
         accumulator,
         library.lh_v5,
+        tuplets,
         anchor=baca.anchor_to_figure("8.3.L.2"),
         figure_name="8.3.R.5",
         hide_time_signature=True,
-        tuplets=tuplets,
     )
 
     container = abjad.Container([abjad.Tuplet((1, 1), "r4", hide=True)])
@@ -113,7 +113,7 @@ def make_empty_score():
     baca.make_figures(
         accumulator,
         library.rh_v2,
-        container=container,
+        container,
         do_not_label=True,
         tsd=4,
     )
@@ -129,9 +129,9 @@ def make_empty_score():
     baca.make_figures(
         accumulator,
         library.rh_v3,
+        tuplets,
         figure_name="6.1.R.3",
         tsd=8,
-        tuplets=tuplets,
     )
 
     tuplets = [abjad.Tuplet((1, 1), "r4", hide=True)]
@@ -139,9 +139,9 @@ def make_empty_score():
     baca.make_figures(
         accumulator,
         library.rh_v2,
+        tuplets,
         do_not_label=True,
         tsd=4,
-        tuplets=tuplets,
     )
 
     collections = section_6.stage_1.rh[3]
@@ -154,9 +154,9 @@ def make_empty_score():
     baca.make_figures(
         accumulator,
         library.rh_v3,
+        tuplets,
         figure_name="6.1.R.2",
         tsd=8,
-        tuplets=tuplets,
     )
 
     collections = section_5.stage_1.rh.next(exhausted=True)
@@ -172,9 +172,9 @@ def make_empty_score():
     baca.make_figures(
         accumulator,
         library.rh_v2,
+        tuplets,
         figure_name="5.1.R.3",
         tsd=4,
-        tuplets=tuplets,
     )
 
     collections = section_5.stage_1.lh.next(exhausted=True)
@@ -193,11 +193,11 @@ def make_empty_score():
     baca.make_figures(
         accumulator,
         library.rh_v3,
+        tuplets,
         anchor=baca.anchor_to_figure("5.1.R.3"),
         figure_name="5.1.L.1",
         figure_label_direction=abjad.DOWN,
         hide_time_signature=True,
-        tuplets=tuplets,
     )
 
     tuplets = [abjad.Tuplet((1, 1), "r4", hide=True)]
@@ -205,9 +205,9 @@ def make_empty_score():
     baca.make_figures(
         accumulator,
         library.rh_v2,
+        tuplets,
         do_not_label=True,
         tsd=4,
-        tuplets=tuplets,
     )
 
     voices = baca.section.cache_voices(score, library.voice_abbreviations)
