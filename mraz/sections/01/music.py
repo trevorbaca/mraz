@@ -30,7 +30,6 @@ def make_empty_score():
     baca.make_figures(
         accumulator,
         library.rh_v1,
-        None,
         figure_name="4.5.R.3",
         hide_time_signature=True,
         tsd=4,
@@ -52,7 +51,6 @@ def make_empty_score():
     baca.make_figures(
         accumulator,
         library.rh_v2,
-        None,
         anchor=baca.anchor_to_figure("4.5.R.3"),
         container=container,
         figure_name="4.5.L.1-4",
@@ -70,7 +68,6 @@ def make_empty_score():
     baca.make_figures(
         accumulator,
         library.lh_v4,
-        None,
         container=container,
         figure_name="7.1.L.5",
         imbrications=imbrications,
@@ -89,7 +86,6 @@ def make_empty_score():
     baca.make_figures(
         accumulator,
         library.lh_v6,
-        None,
         figure_name="8.3.L.2",
         tsd=4,
         tuplets=tuplets,
@@ -106,7 +102,6 @@ def make_empty_score():
     baca.make_figures(
         accumulator,
         library.lh_v5,
-        None,
         anchor=baca.anchor_to_figure("8.3.L.2"),
         figure_name="8.3.R.5",
         hide_time_signature=True,
@@ -118,7 +113,6 @@ def make_empty_score():
     baca.make_figures(
         accumulator,
         library.rh_v2,
-        None,
         container=container,
         do_not_label=True,
         tsd=4,
@@ -135,7 +129,6 @@ def make_empty_score():
     baca.make_figures(
         accumulator,
         library.rh_v3,
-        None,
         figure_name="6.1.R.3",
         tsd=8,
         tuplets=tuplets,
@@ -146,7 +139,6 @@ def make_empty_score():
     baca.make_figures(
         accumulator,
         library.rh_v2,
-        None,
         do_not_label=True,
         tsd=4,
         tuplets=tuplets,
@@ -162,7 +154,6 @@ def make_empty_score():
     baca.make_figures(
         accumulator,
         library.rh_v3,
-        None,
         figure_name="6.1.R.2",
         tsd=8,
         tuplets=tuplets,
@@ -181,7 +172,6 @@ def make_empty_score():
     baca.make_figures(
         accumulator,
         library.rh_v2,
-        None,
         figure_name="5.1.R.3",
         tsd=4,
         tuplets=tuplets,
@@ -203,7 +193,6 @@ def make_empty_score():
     baca.make_figures(
         accumulator,
         library.rh_v3,
-        None,
         anchor=baca.anchor_to_figure("5.1.R.3"),
         figure_name="5.1.L.1",
         figure_label_direction=abjad.DOWN,
@@ -216,7 +205,6 @@ def make_empty_score():
     baca.make_figures(
         accumulator,
         library.rh_v2,
-        None,
         do_not_label=True,
         tsd=4,
         tuplets=tuplets,

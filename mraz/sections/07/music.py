@@ -38,7 +38,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     baca.make_figures(
         accumulator,
         library.rh_v1,
-        None,
         container=container,
         figure_name="7.1.R.1",
         imbrications=imbrications,
@@ -68,7 +67,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     baca.make_figures(
         accumulator,
         library.rh_v2,
-        None,
         container=container,
         figure_name="7.1.R.2",
         imbrications=imbrications,
@@ -94,7 +92,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     baca.make_figures(
         accumulator,
         library.rh_v1,
-        None,
         container=container,
         figure_name="7.1.R.3",
         imbrications=imbrications,
@@ -122,7 +119,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     baca.make_figures(
         accumulator,
         library.rh_v2,
-        None,
         container=container,
         figure_name="7.1.R.4",
         imbrications=imbrications,
@@ -150,7 +146,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     baca.make_figures(
         accumulator,
         library.rh_v1,
-        None,
         container=container,
         figure_name="7.1.R.5",
         imbrications=imbrications,
@@ -179,7 +174,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     baca.make_figures(
         accumulator,
         library.rh_v2,
-        None,
         container=container,
         figure_name="7.1.R.6",
         imbrications=imbrications,
@@ -205,7 +199,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     baca.make_figures(
         accumulator,
         library.rh_v1,
-        None,
         container=container,
         figure_name="7.1.R.7",
         imbrications=imbrications,
@@ -233,7 +226,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     baca.make_figures(
         accumulator,
         library.rh_v2,
-        None,
         container=container,
         figure_name="7.1.R.8",
         imbrications=imbrications,
@@ -265,7 +257,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     baca.make_figures(
         accumulator,
         library.rh_v2,
-        None,
         container=container,
         figure_name="7.1.R.10",
         imbrications=imbrications,
@@ -292,7 +283,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     baca.make_figures(
         accumulator,
         library.rh_v1,
-        None,
         container=container,
         figure_name="7.1.R.11",
         imbrications=imbrications,
@@ -319,7 +309,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     baca.make_figures(
         accumulator,
         library.rh_v2,
-        None,
         container=container,
         figure_name="7.1.R.12",
         imbrications=imbrications,
@@ -345,7 +334,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     baca.make_figures(
         accumulator,
         library.lh_v4,
-        None,
         container=container,
         anchor=baca.anchor(
             library.rh_v2,
@@ -380,7 +368,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     baca.make_figures(
         accumulator,
         library.lh_v5,
-        None,
         container=container,
         anchor=baca.anchor(
             library.rh_v2,
@@ -410,7 +397,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     baca.make_figures(
         accumulator,
         library.lh_v4,
-        None,
         container=container,
         anchor=baca.anchor(
             library.rh_v2,
@@ -444,7 +430,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     baca.make_figures(
         accumulator,
         library.lh_v5,
-        None,
         container=container,
         anchor=baca.anchor(
             library.rh_v2,
@@ -476,7 +461,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     baca.make_figures(
         accumulator,
         library.lh_v4,
-        None,
         container=container,
         anchor=baca.anchor(
             library.rh_v2,
