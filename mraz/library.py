@@ -68,6 +68,8 @@ lh_resonance = "lh_resonance"
 
 
 def foo(collections):
+    if hasattr(collections, "argument"):
+        collections = collections.argument
     if isinstance(
         collections,
         abjad.PitchSet
