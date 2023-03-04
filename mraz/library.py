@@ -67,6 +67,21 @@ lh_resonance = "lh_resonance"
 # ]
 
 
+def foo(collections):
+    if isinstance(
+        collections,
+        abjad.PitchSet
+        | abjad.PitchSegment
+        | abjad.PitchClassSet
+        | abjad.PitchClassSegment,
+    ):
+        return str(collections)
+    elif isinstance(collections, list):
+        return [str(_) for _ in collections]
+    else:
+        return collections
+
+
 def _validate_voice_names(score):
     voice_colors = {
         "RH.Music.1": "red",

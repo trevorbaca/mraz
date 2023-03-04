@@ -19,6 +19,7 @@ def make_empty_score():
     section_8 = library.moment_8()
 
     collections = section_4.stage_5.rh[3 - 1]
+    assert library.foo(collections) == "PC<10>"
     tuplets = baca.figure(collections, [16], 16)
     baca.register(tuplets, 36)
     groups = rmakers.nongrace_leaves_in_each_tuplet(tuplets)
@@ -37,6 +38,12 @@ def make_empty_score():
     )
 
     collections = section_4.stage_5.lh[:4]
+    assert library.foo(collections) == [
+        "PC<11, 6, 7, 9, 1>",
+        "PC<10, 1, 8, 9, 11>",
+        "PC<3, 0, 10, 11, 1>",
+        "PC<5, 2, 0, 1>",
+    ]
     tuplets = baca.figure(collections, [1], 16, treatments=[(1, 4)])
     baca.dls_staff_padding(tuplets, 8)
     baca.hairpin(tuplets, "f < ff")
@@ -58,6 +65,7 @@ def make_empty_score():
     )
 
     collections = [_.transpose(4 * 7) for _ in section_7.stage_1.lh[5 - 1]]
+    assert [str(_) for _ in collections] == ["PC<2, 8, 0, 1, 4, 6, 11>"]
     tuplets = baca.figure(collections, [1], 16, treatments=[1])
     container = abjad.Container(tuplets)
     baca.register(tuplets, 6, 6 + 10)
@@ -75,6 +83,7 @@ def make_empty_score():
     )
 
     collections = section_8.stage_3.lh[2 - 1]
+    assert library.foo(collections) == "PC<11, 3>"
     tuplets = baca.figure(collections, [2, -4], 16, treatments=[4])
     baca.clef(abjad.select.leaf(tuplets, 0), "bass")
     baca.dynamic(baca.select.phead(tuplets, 0), "f")
@@ -92,6 +101,7 @@ def make_empty_score():
     )
 
     collections = section_8.stage_3.rh[5 - 1]
+    assert library.foo(collections) == "PC<10, 2, 0, 11>"
     tuplets = baca.figure(collections, [6, -1], 32)
     baca.figures.rests_after(tuplets, [4], 32)
     baca.dynamic(baca.select.phead(tuplets, 0), "ppp")
@@ -119,6 +129,7 @@ def make_empty_score():
     )
 
     collections = section_6.stage_1.rh[3 - 1]
+    assert library.foo(collections) == "PC<10, 1, 3>"
     tuplets = baca.figure(collections, [1], 8, treatments=[1])
     baca.dynamic(baca.select.phead(tuplets, 0), "pp")
     baca.dynamic_text_x_offset(baca.select.pleaf(tuplets, 0), 0.5)
@@ -145,6 +156,7 @@ def make_empty_score():
     )
 
     collections = section_6.stage_1.rh[3]
+    assert library.foo(collections) == "PC<2, 4, 0, 3, 5>"
     tuplets = baca.figure(collections, [1], 8)
     baca.rests_around(tuplets, [1], [1], 8)
     baca.register(tuplets, 24, 12)
@@ -160,6 +172,7 @@ def make_empty_score():
     )
 
     collections = section_5.stage_1.rh.next(exhausted=True)
+    assert library.foo(collections) == "PC<0, 2, 3, 5>"
     tuplets = baca.figure(collections, [2, -14], 16)
     baca.accent(baca.select.pheads(tuplets))
     baca.dynamic(baca.select.phead(tuplets, 0), "fff")
@@ -178,6 +191,7 @@ def make_empty_score():
     )
 
     collections = section_5.stage_1.lh.next(exhausted=True)
+    assert library.foo(collections) == "PC<9, 1, 11, 8, 7>"
     tuplets = baca.figure(collections, [4, -4], 16, treatments=[(16, 4)])
     rmakers.denominator(tuplets, abjad.Duration(1, 1))
     baca.dynamic(baca.select.phead(tuplets, 0), "mf")
