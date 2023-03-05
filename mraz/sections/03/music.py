@@ -36,7 +36,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         accumulator.cache(
             library.rh_v4,
             container,
-            already_labeled=True,
             imbrications=imbrications,
             tsd=4,
         )
@@ -65,7 +64,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         accumulator.cache(
             library.rh_v2,
             tuplets,
-            already_labeled=True,
             tsd=4,
         )
     tuplets = [abjad.Tuplet((1, 1), "r4", hide=True)]
@@ -97,7 +95,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         accumulator.cache(
             library.rh_v4,
             container,
-            already_labeled=True,
             imbrications=imbrications,
             tsd=4,
         )
@@ -120,7 +117,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         accumulator.cache(
             library.rh_v2,
             tuplets,
-            already_labeled=True,
             tsd=4,
         )
     tuplets = [abjad.Tuplet((1, 1), "r4", hide=True)]
@@ -141,7 +137,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         accumulator.cache(
             library.rh_v3,
             tuplets,
-            already_labeled=True,
             tsd=4,
         )
     with baca.scope(section_4.stage_1.lh.next()) as collections:
@@ -158,7 +153,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             library.lh_v5,
             tuplets,
             anchor=baca.anchor_to_figure("4.1.R.1"),
-            already_labeled=True,
             hide_time_signature=True,
             tsd=4,
         )
@@ -183,7 +177,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         accumulator.cache(
             library.rh_v2,
             tuplets,
-            already_labeled=True,
             tsd=4,
         )
     with baca.scope(section_4.stage_5.rh[1 - 1]) as collections:
@@ -198,7 +191,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         accumulator.cache(
             library.rh_v1,
             tuplets,
-            already_labeled=True,
             tsd=4,
         )
     with baca.scope(section_4.stage_5.rh[2 - 1]) as collections:
@@ -212,7 +204,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         accumulator.cache(
             library.rh_v1,
             tuplets,
-            already_labeled=True,
             tsd=4,
         )
     with baca.scope(section_4.stage_5.rh[3 - 1]) as collections:
@@ -226,7 +217,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         accumulator.cache(
             library.rh_v1,
             tuplets,
-            already_labeled=True,
             hide_time_signature=True,
             tsd=4,
         )
@@ -255,7 +245,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             library.rh_v2,
             container,
             anchor=baca.anchor_to_figure("4.5.R.3"),
-            already_labeled=True,
             tsd=4,
         )
     with baca.scope([resonance]) as collections:

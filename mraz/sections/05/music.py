@@ -26,7 +26,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         accumulator.cache(
             library.rh_v3,
             tuplets,
-            already_labeled=True,
             tsd=8,
         )
     with baca.scope(section_6.stage_1.rh.next()) as collections:
@@ -42,7 +41,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         accumulator.cache(
             library.rh_v3,
             tuplets,
-            already_labeled=True,
             tsd=8,
         )
     with baca.scope(section_6.stage_1.rh.next()) as collections:
@@ -56,7 +54,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         accumulator.cache(
             library.rh_v3,
             tuplets,
-            already_labeled=True,
             tsd=8,
         )
     with baca.scope(section_6.stage_1.rh.next(exhausted=True)) as collections:
@@ -70,7 +67,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         accumulator.cache(
             library.rh_v3,
             tuplets,
-            already_labeled=True,
             tsd=8,
         )
     with baca.scope(section_6.stage_1.lh.next()) as collections:
@@ -89,7 +85,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
                 lambda _: abjad.select.note(_, 3),
                 lambda _: abjad.select.note(_, 2),
             ),
-            already_labeled=True,
         )
     with baca.scope(section_6.stage_1.lh.next()) as collections:
         assert library.foo(collections) == ["PC<11, 0, 2, 1>"]
@@ -106,7 +101,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
                 lambda _: abjad.select.note(_, 9),
                 lambda _: abjad.select.note(_, 2),
             ),
-            already_labeled=True,
         )
     with baca.scope(section_6.stage_1.lh.next()) as collections:
         assert library.foo(collections) == ["PC<2, 5, 7, 3, 4>"]
@@ -122,7 +116,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
                 lambda _: abjad.select.note(_, 13),
                 lambda _: abjad.select.note(_, 1),
             ),
-            already_labeled=True,
             hide_time_signature=True,
         )
     with baca.scope(section_6.stage_1.lh.next(exhausted=True)) as collections:
@@ -134,7 +127,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         accumulator.cache(
             library.lh_v4,
             tuplets,
-            already_labeled=True,
             hide_time_signature=True,
         )
     voices = baca.section.cache_voices(score, library.voice_abbreviations)

@@ -42,7 +42,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         accumulator.cache(
             library.rh_v1,
             container,
-            already_labeled=True,
             imbrications=imbrications,
             tsd=4,
         )
@@ -71,7 +70,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         accumulator.cache(
             library.rh_v2,
             container,
-            already_labeled=True,
             imbrications=imbrications,
             tsd=4,
         )
@@ -96,7 +94,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         accumulator.cache(
             library.rh_v1,
             container,
-            already_labeled=True,
             imbrications=imbrications,
             tsd=4,
         )
@@ -127,7 +124,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         accumulator.cache(
             library.rh_v2,
             container,
-            already_labeled=True,
             imbrications=imbrications,
             tsd=4,
         )
@@ -154,7 +150,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         accumulator.cache(
             library.rh_v1,
             container,
-            already_labeled=True,
             imbrications=imbrications,
             tsd=4,
         )
@@ -186,7 +181,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         accumulator.cache(
             library.rh_v2,
             container,
-            already_labeled=True,
             imbrications=imbrications,
             tsd=4,
         )
@@ -211,7 +205,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         accumulator.cache(
             library.rh_v1,
             container,
-            already_labeled=True,
             imbrications=imbrications,
             tsd=4,
         )
@@ -238,7 +231,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         accumulator.cache(
             library.rh_v2,
             container,
-            already_labeled=True,
             imbrications=imbrications,
             tsd=4,
         )
@@ -273,7 +265,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         accumulator.cache(
             library.rh_v2,
             container,
-            already_labeled=True,
             imbrications=imbrications,
             tsd=4,
         )
@@ -303,7 +294,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         accumulator.cache(
             library.rh_v1,
             container,
-            already_labeled=True,
             imbrications=imbrications,
             tsd=4,
         )
@@ -329,7 +319,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         accumulator.cache(
             library.rh_v2,
             container,
-            already_labeled=True,
             imbrications=imbrications,
             tsd=4,
         )
@@ -360,7 +349,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
                 lambda _: abjad.select.note(_, 0),
                 lambda _: baca.select.lt(_, 7),
             ),
-            already_labeled=True,
             imbrications=imbrications,
         )
     with baca.scope(
@@ -400,7 +388,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
                 lambda _: abjad.select.note(_, 4),
                 lambda _: baca.select.lt(_, 3),
             ),
-            already_labeled=True,
             hide_time_signature=True,
             imbrications=imbrications,
         )
@@ -430,7 +417,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
                 lambda _: abjad.select.note(_, 14),
                 lambda _: baca.select.lt(_, 0),
             ),
-            already_labeled=True,
             hide_time_signature=True,
             imbrications=imbrications,
         )
@@ -469,7 +455,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
                 lambda _: abjad.select.note(_, 26),
                 lambda _: baca.select.lt(_, 10),
             ),
-            already_labeled=True,
             hide_time_signature=True,
             imbrications=imbrications,
         )
@@ -499,7 +484,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
                 lambda _: abjad.select.note(_, -6),
                 lambda _: baca.select.lt(_, 0),
             ),
-            already_labeled=True,
             hide_time_signature=True,
             imbrications=imbrications,
         )
