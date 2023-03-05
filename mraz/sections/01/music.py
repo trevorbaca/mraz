@@ -27,8 +27,7 @@ def make_empty_score():
         baca.markup(
             baca.select.pleaf(tuplets, 0), r"\mraz-ottava-brackets-always-govern-markup"
         )
-        baca.make_figures(
-            accumulator,
+        accumulator.cache(
             library.rh_v1,
             tuplets,
             figure_name="4.5.R.3",
@@ -53,8 +52,7 @@ def make_empty_score():
         baca.slur_up(tuplets)
         groups = rmakers.nongrace_leaves_in_each_tuplet(tuplets)
         rmakers.beam_groups(groups)
-        baca.make_figures(
-            accumulator,
+        accumulator.cache(
             library.rh_v2,
             container,
             anchor=baca.anchor_to_figure("4.5.R.3"),
@@ -72,8 +70,7 @@ def make_empty_score():
         baca.dynamic(baca.select.phead(tuplets, 0), "ff")
         groups = rmakers.nongrace_leaves_in_each_tuplet(tuplets)
         rmakers.beam_groups(groups)
-        baca.make_figures(
-            accumulator,
+        accumulator.cache(
             library.lh_v4,
             container,
             figure_name="7.1.L.5",
@@ -90,8 +87,7 @@ def make_empty_score():
         baca.rest_down(abjad.select.rests(tuplets))
         baca.tuplet_bracket_down(tuplets)
         baca.tuplet_bracket_staff_padding(tuplets, 6)
-        baca.make_figures(
-            accumulator,
+        accumulator.cache(
             library.lh_v6,
             tuplets,
             figure_name="8.3.L.2",
@@ -106,8 +102,7 @@ def make_empty_score():
         baca.dynamic_up(abjad.select.leaf(tuplets, 0))
         baca.register(tuplets, -27, -39)
         baca.rest_up(abjad.select.rests(tuplets))
-        baca.make_figures(
-            accumulator,
+        accumulator.cache(
             library.lh_v5,
             tuplets,
             anchor=baca.anchor_to_figure("8.3.L.2"),
@@ -116,8 +111,7 @@ def make_empty_score():
         )
     container = abjad.Container([abjad.Tuplet((1, 1), "r4", hide=True)])
     baca.rest_transparent(abjad.select.rests(container))
-    baca.make_figures(
-        accumulator,
+    accumulator.cache(
         library.rh_v2,
         container,
         do_not_label=True,
@@ -132,8 +126,7 @@ def make_empty_score():
         baca.staccato(baca.select.pheads(tuplets))
         baca.tenuto(baca.select.pheads(tuplets))
         baca.tuplet_bracket_staff_padding(tuplets, 8)
-        baca.make_figures(
-            accumulator,
+        accumulator.cache(
             library.rh_v3,
             tuplets,
             figure_name="6.1.R.3",
@@ -141,8 +134,7 @@ def make_empty_score():
         )
     tuplets = [abjad.Tuplet((1, 1), "r4", hide=True)]
     baca.rest_transparent(abjad.select.rests(tuplets))
-    baca.make_figures(
-        accumulator,
+    accumulator.cache(
         library.rh_v2,
         tuplets,
         do_not_label=True,
@@ -158,8 +150,7 @@ def make_empty_score():
         )
         baca.staccato(baca.select.pheads(tuplets))
         baca.tenuto(baca.select.pheads(tuplets))
-        baca.make_figures(
-            accumulator,
+        accumulator.cache(
             library.rh_v3,
             tuplets,
             figure_name="6.1.R.2",
@@ -176,8 +167,7 @@ def make_empty_score():
         baca.script_up(tuplets)
         baca.stem_up(baca.select.pleaves(tuplets))
         baca.text_script_up(tuplets)
-        baca.make_figures(
-            accumulator,
+        accumulator.cache(
             library.rh_v2,
             tuplets,
             figure_name="5.1.R.3",
@@ -197,8 +187,7 @@ def make_empty_score():
         baca.tenuto(baca.select.pheads(tuplets))
         baca.tuplet_bracket_down(tuplets)
         baca.tuplet_bracket_staff_padding(tuplets, 4)
-        baca.make_figures(
-            accumulator,
+        accumulator.cache(
             library.rh_v3,
             tuplets,
             anchor=baca.anchor_to_figure("5.1.R.3"),
@@ -208,8 +197,7 @@ def make_empty_score():
         )
     tuplets = [abjad.Tuplet((1, 1), "r4", hide=True)]
     baca.script_up(tuplets)
-    baca.make_figures(
-        accumulator,
+    accumulator.cache(
         library.rh_v2,
         tuplets,
         do_not_label=True,

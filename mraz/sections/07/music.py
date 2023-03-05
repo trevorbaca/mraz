@@ -38,8 +38,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             baca.extend_beam(abjad.select.leaf(imbrication, -1))
         baca.dynamic(baca.select.phead(tuplets, 0), "fff")
         baca.extend_beam(abjad.select.leaf(tuplets, -1))
-        baca.make_figures(
-            accumulator,
+        accumulator.cache(
             library.rh_v1,
             container,
             figure_name="7.1.R.1",
@@ -67,8 +66,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         for tuplet in baca.select.tuplets(tuplets):
             baca.slur(tuplet)
         baca.extend_beam(abjad.select.leaf(tuplets, -1))
-        baca.make_figures(
-            accumulator,
+        accumulator.cache(
             library.rh_v2,
             container,
             figure_name="7.1.R.2",
@@ -92,8 +90,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             groups = rmakers.nongrace_leaves_in_each_tuplet(imbrication)
             rmakers.beam_groups(groups, beam_rests=True)
             baca.marcato(baca.select.pheads(imbrication))
-        baca.make_figures(
-            accumulator,
+        accumulator.cache(
             library.rh_v1,
             container,
             figure_name="7.1.R.3",
@@ -123,8 +120,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             baca.accent(baca.select.pheads(imbrication))
         for tuplet in baca.select.tuplets(tuplets):
             baca.slur(tuplet)
-        baca.make_figures(
-            accumulator,
+        accumulator.cache(
             library.rh_v2,
             container,
             figure_name="7.1.R.4",
@@ -150,8 +146,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             baca.marcato(baca.select.pheads(imbrication))
             baca.extend_beam(abjad.select.leaf(imbrication, -1))
         baca.extend_beam(abjad.select.leaf(tuplets, -1))
-        baca.make_figures(
-            accumulator,
+        accumulator.cache(
             library.rh_v1,
             container,
             figure_name="7.1.R.5",
@@ -182,8 +177,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         for tuplet in baca.select.tuplets(tuplets):
             baca.slur(tuplet)
         baca.extend_beam(abjad.select.leaf(tuplets, -1))
-        baca.make_figures(
-            accumulator,
+        accumulator.cache(
             library.rh_v2,
             container,
             figure_name="7.1.R.6",
@@ -207,8 +201,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             groups = rmakers.nongrace_leaves_in_each_tuplet(imbrication)
             rmakers.beam_groups(groups, beam_rests=True)
             baca.marcato(baca.select.pheads(imbrication))
-        baca.make_figures(
-            accumulator,
+        accumulator.cache(
             library.rh_v1,
             container,
             figure_name="7.1.R.7",
@@ -234,8 +227,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             baca.accent(baca.select.pheads(imbrication))
         for tuplet in baca.select.tuplets(tuplets):
             baca.slur(tuplet)
-        baca.make_figures(
-            accumulator,
+        accumulator.cache(
             library.rh_v2,
             container,
             figure_name="7.1.R.8",
@@ -269,8 +261,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         for tuplet in baca.select.tuplets(tuplets):
             baca.slur(tuplet)
         baca.extend_beam(abjad.select.leaf(tuplets, -1))
-        baca.make_figures(
-            accumulator,
+        accumulator.cache(
             library.rh_v2,
             container,
             figure_name="7.1.R.10",
@@ -299,8 +290,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             rmakers.beam_groups(groups, beam_rests=True)
             baca.marcato(baca.select.pheads(imbrication))
         baca.beam_positions(tuplets, 12)
-        baca.make_figures(
-            accumulator,
+        accumulator.cache(
             library.rh_v1,
             container,
             figure_name="7.1.R.11",
@@ -325,8 +315,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             baca.accent(baca.select.pheads(imbrication))
         for tuplet in baca.select.tuplets(tuplets):
             baca.slur(tuplet)
-        baca.make_figures(
-            accumulator,
+        accumulator.cache(
             library.rh_v2,
             container,
             figure_name="7.1.R.12",
@@ -351,8 +340,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         for imbrication in imbrications.values():
             rmakers.unbeam(imbrication)
         baca.dynamic(baca.select.phead(tuplets, 0), "ff")
-        baca.make_figures(
-            accumulator,
+        accumulator.cache(
             library.lh_v4,
             container,
             anchor=baca.anchor(
@@ -391,8 +379,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         for tuplet in baca.select.tuplets(tuplets):
             baca.slur(tuplet)
         baca.tuplet_bracket_down(tuplets)
-        baca.make_figures(
-            accumulator,
+        accumulator.cache(
             library.lh_v5,
             container,
             anchor=baca.anchor(
@@ -422,8 +409,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         for imbrication in imbrications.values():
             rmakers.unbeam(imbrication)
         baca.dynamic(baca.select.phead(tuplets, 0), "ff")
-        baca.make_figures(
-            accumulator,
+        accumulator.cache(
             library.lh_v4,
             container,
             anchor=baca.anchor(
@@ -461,8 +447,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         baca.dynamic(baca.select.phead(tuplets, 0), "pp")
         for tuplet in baca.select.tuplets(tuplets):
             baca.slur(tuplet)
-        baca.make_figures(
-            accumulator,
+        accumulator.cache(
             library.lh_v5,
             container,
             anchor=baca.anchor(
@@ -492,8 +477,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         for imbrication in imbrications.values():
             rmakers.unbeam(imbrication)
         baca.dynamic(baca.select.phead(tuplets, 0), "ff")
-        baca.make_figures(
-            accumulator,
+        accumulator.cache(
             library.lh_v4,
             container,
             anchor=baca.anchor(
