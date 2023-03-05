@@ -119,7 +119,7 @@ def make_empty_score():
     accumulator.cache(
         library.rh_v2,
         container,
-        do_not_label=True,
+        do_not_increment=True,
         tsd=4,
     )
     with baca.scope(section_6.stage_1.rh[3 - 1]) as collections:
@@ -143,7 +143,7 @@ def make_empty_score():
     accumulator.cache(
         library.rh_v2,
         tuplets,
-        do_not_label=True,
+        do_not_increment=True,
         tsd=4,
     )
     with baca.scope(section_6.stage_1.rh[3]) as collections:
@@ -208,7 +208,7 @@ def make_empty_score():
     accumulator.cache(
         library.rh_v2,
         tuplets,
-        do_not_label=True,
+        do_not_increment=True,
         tsd=4,
     )
     voices = baca.section.cache_voices(score, library.voice_abbreviations)
