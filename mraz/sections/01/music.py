@@ -27,7 +27,7 @@ def make_empty_score():
         baca.markup(
             baca.select.pleaf(tuplets, 0), r"\mraz-ottava-brackets-always-govern-markup"
         )
-        baca.label_figure(tuplets, "4.5.R.3", accumulator.figure_number)
+        baca.label_figure(tuplets, "4.5.R.3", accumulator)
         accumulator.cache(
             library.rh_v1,
             tuplets,
@@ -52,7 +52,7 @@ def make_empty_score():
         baca.slur_up(tuplets)
         groups = rmakers.nongrace_leaves_in_each_tuplet(tuplets)
         rmakers.beam_groups(groups)
-        baca.label_figure(tuplets, "4.5.L.1-4", accumulator.figure_number)
+        baca.label_figure(tuplets, "4.5.L.1-4", accumulator)
         accumulator.cache(
             library.rh_v2,
             container,
@@ -70,7 +70,7 @@ def make_empty_score():
         baca.dynamic(baca.select.phead(tuplets, 0), "ff")
         groups = rmakers.nongrace_leaves_in_each_tuplet(tuplets)
         rmakers.beam_groups(groups)
-        baca.label_figure(tuplets, "7.1.L.5", accumulator.figure_number)
+        baca.label_figure(tuplets, "7.1.L.5", accumulator)
         accumulator.cache(
             library.lh_v4,
             container,
@@ -87,7 +87,7 @@ def make_empty_score():
         baca.rest_down(abjad.select.rests(tuplets))
         baca.tuplet_bracket_down(tuplets)
         baca.tuplet_bracket_staff_padding(tuplets, 6)
-        baca.label_figure(tuplets, "8.3.L.2", accumulator.figure_number)
+        baca.label_figure(tuplets, "8.3.L.2", accumulator)
         accumulator.cache(
             library.lh_v6,
             tuplets,
@@ -102,7 +102,7 @@ def make_empty_score():
         baca.dynamic_up(abjad.select.leaf(tuplets, 0))
         baca.register(tuplets, -27, -39)
         baca.rest_up(abjad.select.rests(tuplets))
-        baca.label_figure(tuplets, "8.3.R.5", accumulator.figure_number)
+        baca.label_figure(tuplets, "8.3.R.5", accumulator)
         accumulator.cache(
             library.lh_v5,
             tuplets,
@@ -114,7 +114,6 @@ def make_empty_score():
     accumulator.cache(
         library.rh_v2,
         container,
-        do_not_increment=True,
         tsd=4,
     )
     with baca.scope(section_6.stage_1.rh[3 - 1]) as collections:
@@ -126,7 +125,7 @@ def make_empty_score():
         baca.staccato(baca.select.pheads(tuplets))
         baca.tenuto(baca.select.pheads(tuplets))
         baca.tuplet_bracket_staff_padding(tuplets, 8)
-        baca.label_figure(tuplets, "6.1.R.3", accumulator.figure_number)
+        baca.label_figure(tuplets, "6.1.R.3", accumulator)
         accumulator.cache(
             library.rh_v3,
             tuplets,
@@ -137,7 +136,6 @@ def make_empty_score():
     accumulator.cache(
         library.rh_v2,
         tuplets,
-        do_not_increment=True,
         tsd=4,
     )
     with baca.scope(section_6.stage_1.rh[3]) as collections:
@@ -150,7 +148,7 @@ def make_empty_score():
         )
         baca.staccato(baca.select.pheads(tuplets))
         baca.tenuto(baca.select.pheads(tuplets))
-        baca.label_figure(tuplets, "6.1.R.2", accumulator.figure_number)
+        baca.label_figure(tuplets, "6.1.R.2", accumulator)
         accumulator.cache(
             library.rh_v3,
             tuplets,
@@ -167,7 +165,7 @@ def make_empty_score():
         baca.script_up(tuplets)
         baca.stem_up(baca.select.pleaves(tuplets))
         baca.text_script_up(tuplets)
-        baca.label_figure(tuplets, "5.1.R.3", accumulator.figure_number)
+        baca.label_figure(tuplets, "5.1.R.3", accumulator)
         accumulator.cache(
             library.rh_v2,
             tuplets,
@@ -187,7 +185,7 @@ def make_empty_score():
         baca.tenuto(baca.select.pheads(tuplets))
         baca.tuplet_bracket_down(tuplets)
         baca.tuplet_bracket_staff_padding(tuplets, 4)
-        baca.label_figure(tuplets, "5.1.L.1", accumulator.figure_number, abjad.DOWN)
+        baca.label_figure(tuplets, "5.1.L.1", accumulator, abjad.DOWN)
         accumulator.cache(
             library.rh_v3,
             tuplets,
@@ -199,7 +197,6 @@ def make_empty_score():
     accumulator.cache(
         library.rh_v2,
         tuplets,
-        do_not_increment=True,
         tsd=4,
     )
     voices = baca.section.cache_voices(score, library.voice_abbreviations)

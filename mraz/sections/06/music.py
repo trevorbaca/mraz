@@ -25,7 +25,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         baca.rest_up(abjad.select.rests(tuplets))
         baca.script_up(tuplets)
         baca.stem_up(baca.select.pleaves(tuplets))
-        baca.label_figure(tuplets, "5.1.R.1", accumulator.figure_number, abjad.UP)
+        baca.label_figure(tuplets, "5.1.R.1", accumulator, abjad.UP)
         accumulator.cache(
             library.rh_v2,
             tuplets,
@@ -43,7 +43,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         baca.tenuto(baca.select.pheads(tuplets))
         baca.tuplet_bracket_down(tuplets)
         baca.tuplet_bracket_staff_padding(tuplets, 3)
-        baca.label_figure(tuplets, "5.1.L.1", accumulator.figure_number, abjad.DOWN)
+        baca.label_figure(tuplets, "5.1.L.1", accumulator, abjad.DOWN)
         accumulator.cache(
             library.rh_v3,
             tuplets,
@@ -80,7 +80,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tleaves = baca.select.tleaves(tuplet)
             baca.slur(tleaves)
         baca.tuplet_bracket_down(tuplets)
-        baca.label_figure(tuplets, "5.2.R.1-5", accumulator.figure_number)
+        baca.label_figure(tuplets, "5.2.R.1-5", accumulator)
         accumulator.cache(
             library.rh_v3,
             container,
@@ -92,7 +92,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     accumulator.cache(
         library.rh_v3,
         tuplets,
-        do_not_increment=True,
         tsd=4,
     )
     with baca.scope(section_5.stage_2.rh.next(5)) as collections:
@@ -125,7 +124,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tleaves = baca.select.tleaves(tuplet)
             baca.slur(tleaves)
         baca.tuplet_bracket_down(tuplets)
-        baca.label_figure(tuplets, "5.2.R.6-10", accumulator.figure_number)
+        baca.label_figure(tuplets, "5.2.R.6-10", accumulator)
         accumulator.cache(
             library.rh_v3,
             container,
@@ -142,7 +141,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         baca.stem_down(baca.select.pleaves(tuplets))
         baca.tuplet_bracket_down(tuplets)
         baca.tuplet_bracket_staff_padding(tuplets, 6)
-        baca.label_figure(tuplets, "8.3.L.2", accumulator.figure_number)
+        baca.label_figure(tuplets, "8.3.L.2", accumulator)
         accumulator.cache(
             library.lh_v6,
             tuplets,
@@ -157,7 +156,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         baca.register(tuplets, -27, -39)
         baca.rest_up(abjad.select.rests(tuplets))
         baca.stem_up(baca.select.pleaves(tuplets))
-        baca.label_figure(tuplets, "8.3.R.5", accumulator.figure_number)
+        baca.label_figure(tuplets, "8.3.R.5", accumulator)
         accumulator.cache(
             library.lh_v5,
             tuplets,
@@ -195,7 +194,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tleaves = baca.select.tleaves(tuplet)
             baca.slur(tleaves)
         baca.tuplet_bracket_down(tuplets)
-        baca.label_figure(tuplets, "5.2.R.11-15", accumulator.figure_number)
+        baca.label_figure(tuplets, "5.2.R.11-15", accumulator)
         accumulator.cache(
             library.rh_v3,
             container,
@@ -207,7 +206,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     accumulator.cache(
         library.rh_v3,
         tuplets,
-        do_not_increment=True,
         tsd=4,
     )
     with baca.scope(section_5.stage_2.rh.next(6)) as collections:
@@ -238,7 +236,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tleaves = baca.select.tleaves(tuplet)
             baca.slur(tleaves)
         baca.tuplet_bracket_down(tuplets)
-        baca.label_figure(tuplets, "5.2.R.16-21", accumulator.figure_number)
+        baca.label_figure(tuplets, "5.2.R.16-21", accumulator)
         accumulator.cache(
             library.rh_v3,
             container,
@@ -250,7 +248,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     accumulator.cache(
         library.rh_v3,
         tuplets,
-        do_not_increment=True,
         tsd=4,
     )
     with baca.scope(section_2.stage_2.rh.next()) as collections:
@@ -272,7 +269,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tleaves = baca.select.tleaves(tuplet)
             baca.slur(tleaves)
         baca.staccato(baca.select.pheads(tuplets))
-        baca.label_figure(tuplets, "2.2.R.1", accumulator.figure_number)
+        baca.label_figure(tuplets, "2.2.R.1", accumulator)
         accumulator.cache(
             library.rh_v2,
             tuplets,
@@ -294,7 +291,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tleaves = baca.select.tleaves(tuplet)
             baca.slur(tleaves)
         baca.staccato(baca.select.pheads(tuplets))
-        baca.label_figure(tuplets, "2.2.R.2", accumulator.figure_number)
+        baca.label_figure(tuplets, "2.2.R.2", accumulator)
         accumulator.cache(
             library.rh_v2,
             tuplets,
@@ -316,7 +313,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tleaves = baca.select.tleaves(tuplet)
             baca.slur(tleaves)
         baca.staccato(baca.select.pheads(tuplets))
-        baca.label_figure(tuplets, "2.2.R.3", accumulator.figure_number)
+        baca.label_figure(tuplets, "2.2.R.3", accumulator)
         accumulator.cache(
             library.rh_v2,
             tuplets,
@@ -337,7 +334,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tleaves = baca.select.tleaves(tuplet)
             baca.slur(tleaves)
         baca.staccato(baca.select.pheads(tuplets))
-        baca.label_figure(tuplets, "2.2.R.4", accumulator.figure_number)
+        baca.label_figure(tuplets, "2.2.R.4", accumulator)
         accumulator.cache(
             library.rh_v2,
             tuplets,
@@ -358,7 +355,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tleaves = baca.select.tleaves(tuplet)
             baca.slur(tleaves)
         baca.staccato(baca.select.pheads(tuplets))
-        baca.label_figure(tuplets, "2.2.R.5", accumulator.figure_number)
+        baca.label_figure(tuplets, "2.2.R.5", accumulator)
         accumulator.cache(
             library.rh_v2,
             tuplets,
@@ -370,7 +367,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             library.lh_resonance,
             tuplets,
             anchor=baca.anchor_to_figure("2.2.R.1"),
-            do_not_increment=True,
             hide_time_signature=True,
             tsd=4,
         )
@@ -379,7 +375,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         accumulator.cache(
             library.lh_resonance,
             tuplets,
-            do_not_increment=True,
             hide_time_signature=True,
             tsd=4,
         )
@@ -388,7 +383,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         accumulator.cache(
             library.lh_resonance,
             tuplets,
-            do_not_increment=True,
             hide_time_signature=True,
             tsd=4,
         )
@@ -397,7 +391,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         accumulator.cache(
             library.lh_resonance,
             tuplets,
-            do_not_increment=True,
             hide_time_signature=True,
             tsd=4,
         )
@@ -406,7 +399,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         accumulator.cache(
             library.lh_resonance,
             tuplets,
-            do_not_increment=True,
             hide_time_signature=True,
             tsd=4,
         )
@@ -438,7 +430,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             baca.slur(tleaves)
         baca.tuplet_bracket_down(tuplets)
         baca.tuplet_bracket_staff_padding(tuplets, 3)
-        baca.label_figure(tuplets, "5.2.R.22-25", accumulator.figure_number)
+        baca.label_figure(tuplets, "5.2.R.22-25", accumulator)
         accumulator.cache(
             library.rh_v3,
             container,
@@ -456,7 +448,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             baca.slur(tleaves)
         baca.register(tuplets, 6, -24)
         baca.slur_down(tuplets)
-        baca.label_figure(tuplets, "5.2.L.1", accumulator.figure_number)
+        baca.label_figure(tuplets, "5.2.L.1", accumulator)
         accumulator.cache(
             library.lh_v4,
             tuplets,
@@ -474,7 +466,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             baca.slur(tleaves)
         baca.register(tuplets, 6, -24)
         baca.slur_down(tuplets)
-        baca.label_figure(tuplets, "5.2.L.2", accumulator.figure_number)
+        baca.label_figure(tuplets, "5.2.L.2", accumulator)
         accumulator.cache(
             library.lh_v4,
             tuplets,
@@ -489,7 +481,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tleaves = baca.select.tleaves(tuplet)
             baca.slur(tleaves)
         baca.register(tuplets, 6, -24)
-        baca.label_figure(tuplets, "5.2.L.3", accumulator.figure_number)
+        baca.label_figure(tuplets, "5.2.L.3", accumulator)
         accumulator.cache(
             library.lh_v4,
             tuplets,
@@ -503,7 +495,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tleaves = baca.select.tleaves(tuplet)
             baca.slur(tleaves)
         baca.register(tuplets, 0, -24)
-        baca.label_figure(tuplets, "5.2.L.4", accumulator.figure_number)
+        baca.label_figure(tuplets, "5.2.L.4", accumulator)
         accumulator.cache(
             library.lh_v4,
             tuplets,
@@ -520,7 +512,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tleaves = baca.select.tleaves(tuplet)
             baca.slur(tleaves)
         baca.register(tuplets, 0, -24)
-        baca.label_figure(tuplets, "5.2.L.5", accumulator.figure_number)
+        baca.label_figure(tuplets, "5.2.L.5", accumulator)
         accumulator.cache(
             library.lh_v4,
             tuplets,
@@ -536,7 +528,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tleaves = baca.select.tleaves(tuplet)
             baca.slur(tleaves)
         baca.register(tuplets, 0, -24)
-        baca.label_figure(tuplets, "5.2.L.6", accumulator.figure_number)
+        baca.label_figure(tuplets, "5.2.L.6", accumulator)
         accumulator.cache(
             library.lh_v4,
             tuplets,
@@ -553,7 +545,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tleaves = baca.select.tleaves(tuplet)
             baca.slur(tleaves)
         baca.register(tuplets, -6, -48)
-        baca.label_figure(tuplets, "5.2.L.7", accumulator.figure_number)
+        baca.label_figure(tuplets, "5.2.L.7", accumulator)
         accumulator.cache(
             library.lh_v4,
             tuplets,
@@ -571,7 +563,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tleaves = baca.select.tleaves(tuplet)
             baca.slur(tleaves)
         baca.register(tuplets, -6, -36)
-        baca.label_figure(tuplets, "5.2.L.8", accumulator.figure_number)
+        baca.label_figure(tuplets, "5.2.L.8", accumulator)
         accumulator.cache(
             library.lh_v4,
             tuplets,
@@ -587,7 +579,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tleaves = baca.select.tleaves(tuplet)
             baca.slur(tleaves)
         baca.register(tuplets, -6, -36)
-        baca.label_figure(tuplets, "5.2.L.9", accumulator.figure_number)
+        baca.label_figure(tuplets, "5.2.L.9", accumulator)
         accumulator.cache(
             library.lh_v4,
             tuplets,
@@ -600,7 +592,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     accumulator.cache(
         library.lh_v4,
         tuplets,
-        do_not_increment=True,
         tsd=4,
     )
     voices = baca.section.cache_voices(score, library.voice_abbreviations)

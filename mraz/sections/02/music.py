@@ -19,7 +19,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         baca.dynamic(baca.select.phead(tuplets, 0), "ppp")
         baca.dynamic_up(abjad.select.leaf(tuplets, 0))
         baca.register(tuplets, -27, -39)
-        baca.label_figure(tuplets, "8.3.R.1", accumulator.figure_number)
+        baca.label_figure(tuplets, "8.3.R.1", accumulator)
         accumulator.cache(
             library.lh_v5,
             tuplets,
@@ -30,7 +30,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         tuplets = baca.figure(collections, [4, -1], 32, treatments=[1])
         baca.register(tuplets, -39, -27)
         baca.rest_up(abjad.select.rests(tuplets))
-        baca.label_figure(tuplets, "8.3.R.2-3", accumulator.figure_number)
+        baca.label_figure(tuplets, "8.3.R.2-3", accumulator)
         accumulator.cache(
             library.lh_v5,
             tuplets,
@@ -40,7 +40,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         assert library.foo(collections) == ["PC<1, 9, 8>"]
         tuplets = baca.figure(collections, [1, -15], 32)
         baca.register(tuplets, -39)
-        baca.label_figure(tuplets, "8.3.R.4", accumulator.figure_number)
+        baca.label_figure(tuplets, "8.3.R.4", accumulator)
         accumulator.cache(
             library.lh_v5,
             tuplets,
@@ -51,7 +51,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         tuplets = baca.figure(collections, [6, -1], 32)
         baca.register(tuplets, -27, -39)
         baca.rest_up(abjad.select.rests(tuplets))
-        baca.label_figure(tuplets, "8.3.R.5", accumulator.figure_number)
+        baca.label_figure(tuplets, "8.3.R.5", accumulator)
         accumulator.cache(
             library.lh_v5,
             tuplets,
@@ -61,7 +61,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         assert library.foo(collections) == ["PC<2, 10>"]
         tuplets = baca.figure(collections, [4, -1], 32)
         baca.register(tuplets, -39, -27)
-        baca.label_figure(tuplets, "8.3.R.6", accumulator.figure_number)
+        baca.label_figure(tuplets, "8.3.R.6", accumulator)
         accumulator.cache(
             library.lh_v5,
             tuplets,
@@ -71,7 +71,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         assert library.foo(collections) == ["PC<11, 1, 5>"]
         tuplets = baca.figure(collections, [4, -1], 32, treatments=[1])
         baca.register(tuplets, -39, -27)
-        baca.label_figure(tuplets, "8.3.R.7", accumulator.figure_number)
+        baca.label_figure(tuplets, "8.3.R.7", accumulator)
         accumulator.cache(
             library.lh_v5,
             tuplets,
@@ -82,7 +82,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         tuplets = baca.figure(collections, [1, -15], 32)
         baca.register(tuplets, -39)
         baca.rest_up(abjad.select.rests(tuplets))
-        baca.label_figure(tuplets, "8.3.R.8", accumulator.figure_number)
+        baca.label_figure(tuplets, "8.3.R.8", accumulator)
         accumulator.cache(
             library.lh_v5,
             tuplets,
@@ -92,7 +92,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         assert library.foo(collections) == ["PC<0, 2>"]
         tuplets = baca.figure(collections, [6, -1], 32)
         baca.register(tuplets, -27, -39)
-        baca.label_figure(tuplets, "8.3.R.9", accumulator.figure_number)
+        baca.label_figure(tuplets, "8.3.R.9", accumulator)
         accumulator.cache(
             library.lh_v5,
             tuplets,
@@ -103,7 +103,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         tuplets = baca.figure(collections, [4, -1], 32, treatments=[1])
         baca.register(tuplets, -39, -27)
         baca.tuplet_bracket_staff_padding(tuplets, 3)
-        baca.label_figure(tuplets, "8.3.R.10", accumulator.figure_number)
+        baca.label_figure(tuplets, "8.3.R.10", accumulator)
         accumulator.cache(
             library.lh_v5,
             tuplets,
@@ -114,7 +114,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         tuplets = baca.figure(collections, [1, -15], 32)
         baca.register(tuplets, -39)
         baca.rest_up(abjad.select.rests(tuplets))
-        baca.label_figure(tuplets, "8.3.R.11", accumulator.figure_number)
+        baca.label_figure(tuplets, "8.3.R.11", accumulator)
         accumulator.cache(
             library.lh_v5,
             tuplets,
@@ -124,7 +124,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         assert library.foo(collections) == ["PC<11, 9, 5, 4>"]
         tuplets = baca.figure(collections, [6, -1], 32)
         baca.register(tuplets, -27, -39)
-        baca.label_figure(tuplets, "8.3.R.12", accumulator.figure_number)
+        baca.label_figure(tuplets, "8.3.R.12", accumulator)
         accumulator.cache(
             library.lh_v5,
             tuplets,
@@ -134,7 +134,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         assert library.foo(collections) == ["PC<6, 10, 8>"]
         tuplets = baca.figure(collections, [4, -1], 32, treatments=[1])
         baca.register(tuplets, -39, -27)
-        baca.label_figure(tuplets, "8.3.R.13", accumulator.figure_number)
+        baca.label_figure(tuplets, "8.3.R.13", accumulator)
         accumulator.cache(
             library.lh_v5,
             tuplets,
@@ -145,7 +145,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         tuplets = baca.figure(collections, [4, -4], 16, treatments=[-4])
         baca.dynamic(baca.select.phead(tuplets, 0), "f")
         baca.register(tuplets, -39)
-        baca.label_figure(tuplets, "8.3.L.1", accumulator.figure_number)
+        baca.label_figure(tuplets, "8.3.L.1", accumulator)
         accumulator.cache(
             library.lh_v6,
             tuplets,
@@ -162,7 +162,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         tuplets = baca.figure(collections, [2, -4], 16, treatments=[4])
         baca.register(tuplets, -39)
         baca.rest_up(abjad.select.rests(tuplets))
-        baca.label_figure(tuplets, "8.3.L.2", accumulator.figure_number)
+        baca.label_figure(tuplets, "8.3.L.2", accumulator)
         accumulator.cache(
             library.lh_v6,
             tuplets,
@@ -178,7 +178,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         tuplets = baca.figure(collections, [1, -3], 16, treatments=[4])
         baca.note_column_shift(baca.select.pleaf(tuplets, -1), -1)
         baca.register(tuplets, -39)
-        baca.label_figure(tuplets, "8.3.L.3", accumulator.figure_number)
+        baca.label_figure(tuplets, "8.3.L.3", accumulator)
         accumulator.cache(
             library.lh_v6,
             tuplets,
@@ -194,7 +194,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         assert library.foo(collections) == ["PC<7, 5, 1>"]
         tuplets = baca.figure(collections, [1, -3], 16, treatments=[4])
         baca.register(tuplets, -39)
-        baca.label_figure(tuplets, "8.3.L.4", accumulator.figure_number)
+        baca.label_figure(tuplets, "8.3.L.4", accumulator)
         accumulator.cache(
             library.lh_v6,
             tuplets,
@@ -210,7 +210,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         assert library.foo(collections) == ["PC<2, 4, 8, 6>"]
         tuplets = baca.figure(collections, [2], 16, treatments=[2])
         baca.register(tuplets, -39)
-        baca.label_figure(tuplets, "8.3.L.5", accumulator.figure_number)
+        baca.label_figure(tuplets, "8.3.L.5", accumulator)
         accumulator.cache(
             library.lh_v6,
             tuplets,
@@ -228,7 +228,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         rmakers.force_fraction(tuplets)
         rmakers.denominator(tuplets, 4)
         baca.register(tuplets, -39)
-        baca.label_figure(tuplets, "8.3.L.6", accumulator.figure_number)
+        baca.label_figure(tuplets, "8.3.L.6", accumulator)
         accumulator.cache(
             library.lh_v6,
             tuplets,

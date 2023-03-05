@@ -22,7 +22,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         baca.tenuto(baca.select.pheads(tuplets))
         baca.tuplet_bracket_staff_padding(tuplets, 7)
         baca.tuplet_bracket_up(tuplets)
-        baca.label_figure(tuplets, "6.1.R.1-2", accumulator.figure_number)
+        baca.label_figure(tuplets, "6.1.R.1-2", accumulator)
         accumulator.cache(
             library.rh_v3,
             tuplets,
@@ -37,7 +37,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         baca.tuplet_bracket_staff_padding(tuplets, 7)
         baca.tuplet_bracket_up(tuplets)
         baca.tuplet_bracket_staff_padding(tuplets, 8)
-        baca.label_figure(tuplets, "6.1.R.3", accumulator.figure_number)
+        baca.label_figure(tuplets, "6.1.R.3", accumulator)
         accumulator.cache(
             library.rh_v3,
             tuplets,
@@ -50,7 +50,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         baca.register(tuplets, 24, 12)
         baca.staccato(baca.select.pheads(tuplets))
         baca.tenuto(baca.select.pheads(tuplets))
-        baca.label_figure(tuplets, "6.1.R.4", accumulator.figure_number)
+        baca.label_figure(tuplets, "6.1.R.4", accumulator)
         accumulator.cache(
             library.rh_v3,
             tuplets,
@@ -63,7 +63,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         baca.staccato(baca.select.pheads(tuplets))
         baca.tenuto(baca.select.pheads(tuplets))
         baca.tuplet_bracket_up(tuplets)
-        baca.label_figure(tuplets, "6.1.R.5", accumulator.figure_number)
+        baca.label_figure(tuplets, "6.1.R.5", accumulator)
         accumulator.cache(
             library.rh_v3,
             tuplets,
@@ -76,7 +76,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         baca.register(tuplets, 0, 12)
         baca.tenuto(baca.select.pheads(tuplets))
         baca.tuplet_bracket_staff_padding(tuplets, 3)
-        baca.label_figure(tuplets, "6.1.L.1", accumulator.figure_number)
+        baca.label_figure(tuplets, "6.1.L.1", accumulator)
         accumulator.cache(
             library.lh_v4,
             tuplets,
@@ -92,7 +92,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         baca.register(tuplets, 0, 12)
         baca.tenuto(baca.select.pheads(tuplets))
         baca.tuplet_bracket_staff_padding(tuplets, 3)
-        baca.label_figure(tuplets, "6.1.L.2", accumulator.figure_number)
+        baca.label_figure(tuplets, "6.1.L.2", accumulator)
         accumulator.cache(
             library.lh_v4,
             tuplets,
@@ -107,7 +107,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         tuplets = baca.figure(collections, [2, -1], 32)
         baca.register(tuplets, 0, 12)
         baca.tenuto(baca.select.pheads(tuplets))
-        baca.label_figure(tuplets, "6.1.L.3", accumulator.figure_number)
+        baca.label_figure(tuplets, "6.1.L.3", accumulator)
         accumulator.cache(
             library.lh_v4,
             tuplets,
@@ -123,7 +123,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         tuplets = baca.figure(collections, [2, -1], 32)
         baca.register(tuplets, 12, 0)
         baca.tenuto(baca.select.pheads(tuplets))
-        baca.label_figure(tuplets, "6.1.L.4", accumulator.figure_number)
+        baca.label_figure(tuplets, "6.1.L.4", accumulator)
         accumulator.cache(
             library.lh_v4,
             tuplets,
