@@ -11,7 +11,7 @@ from mraz import library
 
 def make_empty_score():
     score = library.make_empty_score()
-    accumulator = baca.Accumulator(score, library.voice_abbreviations)
+    accumulator = baca.Accumulator(score)
     section_4 = library.moment_4()
     section_5 = library.moment_5()
     section_6 = library.moment_6()
