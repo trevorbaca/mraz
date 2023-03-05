@@ -95,7 +95,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     accumulator.cache(
         library.rh_v3,
         tuplets,
-        do_not_label=True,
+        do_not_increment=True,
         tsd=4,
     )
     with baca.scope(section_5.stage_2.rh.next(5)) as collections:
@@ -214,7 +214,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     accumulator.cache(
         library.rh_v3,
         tuplets,
-        do_not_label=True,
+        do_not_increment=True,
         tsd=4,
     )
     with baca.scope(section_5.stage_2.rh.next(6)) as collections:
@@ -258,7 +258,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     accumulator.cache(
         library.rh_v3,
         tuplets,
-        do_not_label=True,
+        do_not_increment=True,
         tsd=4,
     )
     with baca.scope(section_2.stage_2.rh.next()) as collections:
@@ -383,7 +383,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             library.lh_resonance,
             tuplets,
             anchor=baca.anchor_to_figure("2.2.R.1"),
-            do_not_label=True,
+            do_not_increment=True,
             hide_time_signature=True,
             tsd=4,
         )
@@ -392,7 +392,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         accumulator.cache(
             library.lh_resonance,
             tuplets,
-            do_not_label=True,
+            do_not_increment=True,
             hide_time_signature=True,
             tsd=4,
         )
@@ -401,7 +401,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         accumulator.cache(
             library.lh_resonance,
             tuplets,
-            do_not_label=True,
+            do_not_increment=True,
             hide_time_signature=True,
             tsd=4,
         )
@@ -410,7 +410,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         accumulator.cache(
             library.lh_resonance,
             tuplets,
-            do_not_label=True,
+            do_not_increment=True,
             hide_time_signature=True,
             tsd=4,
         )
@@ -419,7 +419,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         accumulator.cache(
             library.lh_resonance,
             tuplets,
-            do_not_label=True,
+            do_not_increment=True,
             hide_time_signature=True,
             tsd=4,
         )
@@ -623,7 +623,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     accumulator.cache(
         library.lh_v4,
         tuplets,
-        do_not_label=True,
+        do_not_increment=True,
         tsd=4,
     )
     voices = baca.section.cache_voices(score, library.voice_abbreviations)
