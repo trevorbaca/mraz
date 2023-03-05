@@ -11,7 +11,7 @@ from mraz import library
 
 def make_empty_score(first_measure_number, previous_persistent_indicators):
     score = library.make_empty_score()
-    accumulator = baca.Accumulator(score, library.voice_abbreviations)
+    accumulator = baca.Accumulator(score)
     section_4 = library.moment_4()
     section_5 = library.moment_5()
     with baca.scope(section_4.stage_1.rh.next()) as collections:

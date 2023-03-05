@@ -25,46 +25,32 @@ import types
 import abjad
 import baca
 
-rh_v1 = "rh_v1"
-rh_v1_i = "rh_v1_i"
-rh_v2 = "rh_v2"
-rh_v2_i = "rh_v2_i"
-rh_v3 = "rh_v3"
-rh_v3_i = "rh_v3_i"
-rh_v4 = "rh_v4"
-rh_v4_i = "rh_v4_i"
-rh_v5 = "rh_v5"
-rh_v5_i = "rh_v5_i"
-rh_v6 = "rh_v6"
-rh_v6_i = "rh_v6_i"
-rh_resonance = "rh_resonance"
-lh_v1 = "lh_v1"
-lh_v1_i = "lh_v1_i"
-lh_v2 = "lh_v2"
-lh_v2_i = "lh_v2_i"
-lh_v3 = "lh_v3"
-lh_v3_i = "lh_v3_i"
-lh_v4 = "lh_v4"
-lh_v4_i = "lh_v4_i"
-lh_v5 = "lh_v5"
-lh_v5_i = "lh_v5_i"
-lh_v6 = "lh_v6"
-lh_v6_i = "lh_v6_i"
-lh_resonance = "lh_resonance"
-# all_voices = [
-#    rh_v1,
-#    rh_v2,
-#    rh_v3,
-#    rh_v4,
-#    rh_v5,
-#    rh_v6,
-#    lh_v1,
-#    lh_v2,
-#    lh_v3,
-#    lh_v4,
-#    lh_v5,
-#    lh_v6,
-# ]
+rh_v1 = "RH.Music.1"
+rh_v1_i = "RH.InsertVoice.1"
+rh_v2 = "RH.Music.2"
+rh_v2_i = "RH.InsertVoice.2"
+rh_v3 = "RH.Music.3"
+rh_v3_i = "RH.InsertVoice.3"
+rh_v4 = "RH.Music.4"
+rh_v4_i = "RH.InsertVoice.4"
+rh_v5 = "RH.Music.5"
+rh_v5_i = "RH.InsertVoice.5"
+rh_v6 = "RH.Music.6"
+rh_v6_i = "RH.InsertVoice.6"
+rh_resonance = "RH.ResonanceVoice"
+lh_v1 = "LH.Music.1"
+lh_v1_i = "LH.InsertVoice.1"
+lh_v2 = "LH.Music.2"
+lh_v2_i = "LH.InsertVoice.2"
+lh_v3 = "LH.Music.3"
+lh_v3_i = "LH.InsertVoice.3"
+lh_v4 = "LH.Music.4"
+lh_v4_i = "LH.InsertVoice.4"
+lh_v5 = "LH.Music.5"
+lh_v5_i = "LH.InsertVoice.5"
+lh_v6 = "LH.Music.6"
+lh_v6_i = "LH.InsertVoice.6"
+lh_resonance = "LH.ResonanceVoice"
 
 
 def foo(collections):

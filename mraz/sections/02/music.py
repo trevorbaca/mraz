@@ -11,7 +11,7 @@ from mraz import library
 
 def make_empty_score(first_measure_number, previous_persistent_indicators):
     score = library.make_empty_score()
-    accumulator = baca.Accumulator(score, library.voice_abbreviations)
+    accumulator = baca.Accumulator(score)
     section_8 = library.moment_8()
     with baca.scope(section_8.stage_3.rh.next()) as collections:
         assert library.foo(collections) == ["PC<7, 6>"]
