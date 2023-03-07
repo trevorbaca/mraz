@@ -96,7 +96,7 @@ def make_empty_score():
     with baca.scope(section_8.stage_3.rh[5 - 1]) as collections:
         assert library.foo(collections) == "PC<10, 2, 0, 11>"
         tuplets = baca.figure(collections, [6, -1], 32)
-        baca.figures.rests_after(tuplets, [4], 32)
+        baca.rests_after(tuplets, [4], 32)
         baca.dynamic(baca.select.phead(tuplets, 0), "ppp")
         baca.dynamic_text_x_offset(baca.select.pleaf(tuplets, 0), -0.5)
         baca.dynamic_up(abjad.select.leaf(tuplets, 0))
