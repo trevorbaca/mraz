@@ -147,7 +147,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tsd=4,
         )
     with baca.scope(section_4.stage_2.lh.next()) as collections:
-        assert library.foo(collections) == "{7, 11, 17, 18, 21}"
+        assert library.foo(collections) == ["{7, 11, 17, 18, 21}"]
         tuplets = baca.make_tuplets(collections, [3], 16)
         baca.rests_around(tuplets, [1], [8], 16)
         baca.bass_to_octave(tuplets, 3)
@@ -189,7 +189,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         tsd=4,
     )
     with baca.scope(section_4.stage_2.lh.next()) as collections:
-        assert library.foo(collections) == "{7, 11, 17, 18, 21}"
+        assert library.foo(collections) == ["{7, 11, 17, 18, 21}"]
         tuplets = baca.make_tuplets(collections, [3], 16)
         baca.rests_around(tuplets, [1], [8], 16)
         baca.bass_to_octave(tuplets, 3)
@@ -202,7 +202,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tsd=4,
         )
     with baca.scope(section_4.stage_2.lh.next()) as collections:
-        assert library.foo(collections) == "{7, 11, 17, 18, 21}"
+        assert library.foo(collections) == ["{7, 11, 17, 18, 21}"]
         tuplets = baca.make_tuplets(collections, [1], 16)
         baca.rests_after(tuplets, [3, 16], 16)
         baca.bass_to_octave(tuplets, 3)
@@ -213,7 +213,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tsd=4,
         )
     with baca.scope(section_4.stage_2.lh.next()) as collections:
-        assert library.foo(collections) == "{7, 11, 17, 18, 21}"
+        assert library.foo(collections) == ["{7, 11, 17, 18, 21}"]
         tuplets = baca.make_tuplets(collections, [3], 16)
         baca.rests_around(tuplets, [1], [8], 16)
         baca.bass_to_octave(tuplets, 3)
@@ -227,7 +227,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tsd=4,
         )
     with baca.scope(section_4.stage_2.lh.next()) as collections:
-        assert library.foo(collections) == "{7, 11, 17, 18, 21}"
+        assert library.foo(collections) == ["{7, 11, 17, 18, 21}"]
         tuplets = baca.make_tuplets(collections, [1], 16)
         baca.rests_after(tuplets, [3, 16], 16)
         baca.bass_to_octave(tuplets, 3)
@@ -238,7 +238,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tsd=4,
         )
     with baca.scope(section_4.stage_2.lh.next()) as collections:
-        assert library.foo(collections) == "{7, 11, 17, 18, 21}"
+        assert library.foo(collections) == ["{7, 11, 17, 18, 21}"]
         tuplets = baca.make_tuplets(collections, [3], 16)
         baca.rests_around(tuplets, [1], [8], 16)
         baca.bass_to_octave(tuplets, 3)
@@ -249,7 +249,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tsd=4,
         )
     with baca.scope(section_4.stage_2.lh.next()) as collections:
-        assert library.foo(collections) == "{7, 11, 17, 18, 21}"
+        assert library.foo(collections) == ["{7, 11, 17, 18, 21}"]
         tuplets = baca.make_tuplets(collections, [1], 16)
         baca.rests_after(tuplets, [3, 16], 16)
         baca.bass_to_octave(tuplets, 3)
@@ -260,7 +260,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tsd=4,
         )
     with baca.scope(section_4.stage_2.lh.next()) as collections:
-        assert library.foo(collections) == "{7, 11, 17, 18, 21}"
+        assert library.foo(collections) == ["{7, 11, 17, 18, 21}"]
         tuplets = baca.make_tuplets(collections, [3], 16)
         baca.rests_around(tuplets, [1], [8], 16)
         baca.bass_to_octave(tuplets, 3)
@@ -274,7 +274,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tsd=4,
         )
     with baca.scope(section_4.stage_2.lh.next()) as collections:
-        assert library.foo(collections) == "{7, 11, 17, 18, 21}"
+        assert library.foo(collections) == ["{7, 11, 17, 18, 21}"]
         tuplets = baca.make_tuplets(collections, [1], 16)
         baca.rests_after(tuplets, [3, 16], 16)
         baca.bass_to_octave(tuplets, 3)
@@ -285,7 +285,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tsd=4,
         )
     with baca.scope(section_4.stage_2.lh.next()) as collections:
-        assert library.foo(collections) == "{7, 11, 17, 18, 21}"
+        assert library.foo(collections) == ["{7, 11, 17, 18, 21}"]
         tuplets = baca.make_tuplets(collections, [3], 16)
         baca.rests_around(tuplets, [1], [8], 16)
         baca.bass_to_octave(tuplets, 3)
@@ -298,7 +298,8 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             container,
             tsd=4,
         )
-    segment = section_4.stage_2.lh.next(exhausted=True)
+    segments = section_4.stage_2.lh.next(exhausted=True)
+    segment = segments[0]
     segment = baca.pcollections.space_down(segment, bass=7, semitones=3, soprano=9)
     segment = baca.pcollections.bass_to_octave(segment, 2)
     chord_1_upper, chord_1_lower = baca.pcollections.split(segment, pitch=-1)
