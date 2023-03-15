@@ -77,8 +77,8 @@ def make_empty_score():
             imbrications=imbrications,
             tsd=4,
         )
-    with baca.scope(section_8.stage_3.lh[2 - 1]) as collections:
-        assert library.foo(collections) == "PC<11, 3>"
+    with baca.scope(section_8.stage_3.lh[2 - 1: 3 - 1]) as collections:
+        assert library.foo(collections) == ["PC<11, 3>"]
         tuplets = baca.make_tuplets(collections, [2, -4], 16, treatments=[4])
         baca.clef(abjad.select.leaf(tuplets, 0), "bass")
         baca.dynamic(baca.select.phead(tuplets, 0), "f")
@@ -93,8 +93,8 @@ def make_empty_score():
             tuplets,
             tsd=4,
         )
-    with baca.scope(section_8.stage_3.rh[5 - 1]) as collections:
-        assert library.foo(collections) == "PC<10, 2, 0, 11>"
+    with baca.scope(section_8.stage_3.rh[5 - 1: 6 - 1]) as collections:
+        assert library.foo(collections) == ["PC<10, 2, 0, 11>"]
         tuplets = baca.make_tuplets(collections, [6, -1], 32)
         baca.rests_after(tuplets, [4], 32)
         baca.dynamic(baca.select.phead(tuplets, 0), "ppp")
@@ -116,8 +116,8 @@ def make_empty_score():
         container,
         tsd=4,
     )
-    with baca.scope(section_6.stage_1.rh[3 - 1]) as collections:
-        assert library.foo(collections) == "PC<10, 1, 3>"
+    with baca.scope(section_6.stage_1.rh[3 - 1: 4 - 1]) as collections:
+        assert library.foo(collections) == ["PC<10, 1, 3>"]
         tuplets = baca.make_tuplets(collections, [1], 8, treatments=[1])
         baca.dynamic(baca.select.phead(tuplets, 0), "pp")
         baca.dynamic_text_x_offset(baca.select.pleaf(tuplets, 0), 0.5)
@@ -138,8 +138,8 @@ def make_empty_score():
         tuplets,
         tsd=4,
     )
-    with baca.scope(section_6.stage_1.rh[3]) as collections:
-        assert library.foo(collections) == "PC<2, 4, 0, 3, 5>"
+    with baca.scope(section_6.stage_1.rh[3: 4]) as collections:
+        assert library.foo(collections) == ["PC<2, 4, 0, 3, 5>"]
         tuplets = baca.make_tuplets(collections, [1], 8)
         baca.rests_around(tuplets, [1], [1], 8)
         baca.register(tuplets, 24, 12)
