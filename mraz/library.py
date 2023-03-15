@@ -372,7 +372,7 @@ def moment_4():
     rh, lh = abjad.sequence.partition_by_counts(stage_5_segments, [1, 1])
     rh = baca.pcollections.read(rh, 6 * [1], check=abjad.EXACT)
     rh = [abjad.PitchClassSegment(_) for _ in rh]
-    rh = baca.Cursor(rh, singletons=True)
+    rh = baca.Cursor(rh)
     lh = [abjad.PitchClassSegment(_) for _ in lh]
     lh = baca.sequence.accumulate(lh, [lambda _: _.transpose(n=2)])
     if isinstance(lh, list):
