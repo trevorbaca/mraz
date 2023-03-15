@@ -846,7 +846,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tsd=4,
         )
     with baca.scope(section_4.stage_5.rh.next()) as collections:
-        assert library.foo(collections) == "PC<3>"
+        assert library.foo(collections) == ["PC<3>"]
         tuplets = baca.make_tuplets(collections, [28], 16)
         groups = rmakers.nongrace_leaves_in_each_tuplet(tuplets)
         rmakers.beam_groups(groups)
@@ -862,7 +862,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tsd=4,
         )
     with baca.scope(section_4.stage_5.rh.next()) as collections:
-        assert library.foo(collections) == "PC<5>"
+        assert library.foo(collections) == ["PC<5>"]
         tuplets = baca.make_tuplets(collections, [24], 16)
         groups = rmakers.nongrace_leaves_in_each_tuplet(tuplets)
         rmakers.beam_groups(groups)
@@ -876,7 +876,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tsd=4,
         )
     with baca.scope(section_4.stage_5.rh.next()) as collections:
-        assert library.foo(collections) == "PC<10>"
+        assert library.foo(collections) == ["PC<10>"]
         tuplets = baca.make_tuplets(collections, [16], 16)
         groups = rmakers.nongrace_leaves_in_each_tuplet(tuplets)
         rmakers.beam_groups(groups)
@@ -890,7 +890,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tsd=4,
         )
     with baca.scope(section_4.stage_5.rh.next()) as collections:
-        assert library.foo(collections) == "PC<3>"
+        assert library.foo(collections) == ["PC<3>"]
         tuplets = baca.make_tuplets(collections, [16], 16)
         groups = rmakers.nongrace_leaves_in_each_tuplet(tuplets)
         rmakers.beam_groups(groups)
@@ -904,7 +904,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tsd=4,
         )
     with baca.scope(section_4.stage_5.rh.next()) as collections:
-        assert library.foo(collections) == "PC<5>"
+        assert library.foo(collections) == ["PC<5>"]
         tuplets = baca.make_tuplets(collections, [16], 16)
         groups = rmakers.nongrace_leaves_in_each_tuplet(tuplets)
         rmakers.beam_groups(groups)
@@ -919,7 +919,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tsd=4,
         )
     with baca.scope(section_4.stage_5.rh.next(exhausted=True)) as collections:
-        assert library.foo(collections) == "PC<10>"
+        assert library.foo(collections) == ["PC<10>"]
         tuplets = baca.make_tuplets(collections, [8], 16)
         groups = rmakers.nongrace_leaves_in_each_tuplet(tuplets)
         rmakers.beam_groups(groups)
