@@ -17,8 +17,8 @@ def make_empty_score():
     section_6 = library.moment_6()
     section_7 = library.moment_7()
     section_8 = library.moment_8()
-    with baca.scope(section_4.stage_5.rh[3 - 1]) as collections:
-        assert library.foo(collections) == "PC<10>"
+    with baca.scope(section_4.stage_5.rh[3 - 1: 4 - 1]) as collections:
+        assert library.foo(collections) == ['PC<10>']
         tuplets = baca.make_tuplets(collections, [16], 16)
         baca.register(tuplets, 36)
         groups = rmakers.nongrace_leaves_in_each_tuplet(tuplets)
