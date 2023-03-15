@@ -425,7 +425,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         tsd=4,
     )
     with baca.scope(section_4.stage_4.lh.next()) as collections:
-        assert library.foo(collections) == "{0, 4, 8}"
+        assert library.foo(collections) == ["{0, 4, 8}"]
         tuplets = baca.make_tuplets(collections, [6], 16)
         baca.rests_before(tuplets, [2], 16)
         container = abjad.Container(tuplets)
@@ -554,7 +554,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tsd=4,
         )
     with baca.scope(section_4.stage_4.lh.next()) as collections:
-        assert library.foo(collections) == "{10}"
+        assert library.foo(collections) == ["{10}"]
         tuplets = baca.make_tuplets(collections, [2], 16)
         baca.rests_around(tuplets, [2], [6], 16)
         container = abjad.Container(tuplets)
@@ -604,7 +604,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tsd=4,
         )
     with baca.scope(section_4.stage_4.lh.next()) as collections:
-        assert library.foo(collections) == "{0, 5, 10}"
+        assert library.foo(collections) == ["{0, 5, 10}"]
         tuplets = baca.make_tuplets(collections, [6], 16)
         baca.rests_before(tuplets, [2], 16)
         container = abjad.Container(tuplets)
@@ -618,7 +618,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tsd=4,
         )
     with baca.scope(section_4.stage_4.lh.next()) as collections:
-        assert library.foo(collections) == "{2, 4, 8}"
+        assert library.foo(collections) == ["{2, 4, 8}"]
         tuplets = baca.make_tuplets(collections, [2], 16)
         baca.rests_around(tuplets, [2], [6], 16)
         baca.register(tuplets, 0, -12)
