@@ -247,8 +247,7 @@ def moment_2():
     segments = [
         [baca.pcollections.arpeggiate_up(_) for _ in list_] for list_ in segments
     ]
-    segments = baca.Cursor(segments, singletons=True)
-    # segments = baca.Cursor(segments, singletons=False)
+    segments = baca.Cursor(segments)
     return types.SimpleNamespace(
         stage_1=None,
         stage_2=types.SimpleNamespace(

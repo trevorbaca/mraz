@@ -251,6 +251,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         tsd=4,
     )
     with baca.scope(section_2.stage_2.rh.next()) as collections:
+        collections = collections.argument[0]
         assert library.foo(collections) == [
             "<6, 12, 16, 17, 20>",
             "<10, 15, 23, 31, 33>",
@@ -276,6 +277,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tsd=4,
         )
     with baca.scope(section_2.stage_2.rh.next()) as collections:
+        collections = collections.argument[0]
         assert library.foo(collections) == [
             "<2, 13, 20, 22, 27>",
             "<5, 9, 11, 19, 30, 36>",
@@ -298,6 +300,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tsd=4,
         )
     with baca.scope(section_2.stage_2.rh.next()) as collections:
+        collections = collections.argument[0]
         assert library.foo(collections) == [
             "<11, 19, 30, 36>",
             "<4, 5, 8, 10>",
@@ -320,6 +323,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tsd=4,
         )
     with baca.scope(section_2.stage_2.rh.next()) as collections:
+        collections = collections.argument[0]
         assert library.foo(collections) == [
             "<6, 12, 16, 17>",
             "<8, 10, 15>",
@@ -341,6 +345,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tsd=4,
         )
     with baca.scope(section_2.stage_2.rh.next(exhausted=True)) as collections:
+        collections = collections.argument[0]
         assert library.foo(collections) == [
             "<5, 9, 11, 19, 30>",
             "<0, 4, 5, 8>",
