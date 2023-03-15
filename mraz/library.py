@@ -626,7 +626,7 @@ def moment_7():
         all_rh_segments, [3, 1, 2, 3, 1], cyclic=True, overhang=True
     )
     assert len(rh_segment_lists) == 12
-    rh_segment_lists = baca.Cursor(rh_segment_lists, singletons=True)
+    rh_segment_lists = baca.Cursor(rh_segment_lists)
     all_lh_segments = []
     for i in range(5):
         start = i
@@ -639,7 +639,7 @@ def moment_7():
         all_lh_segments, [2, 3, 1, 3, 1], cyclic=True, overhang=True
     )
     assert len(lh_segment_lists) == 5
-    lh_segment_lists = baca.Cursor(lh_segment_lists, singletons=True)
+    lh_segment_lists = baca.Cursor(lh_segment_lists)
     return types.SimpleNamespace(
         stage_1=types.SimpleNamespace(
             rh=rh_segment_lists,
