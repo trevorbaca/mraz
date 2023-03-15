@@ -346,7 +346,7 @@ def moment_4():
     chords = 10 * [chord]
     last = abjad.sequence.join(stages[1])[0]
     chords.append(last)
-    stage_2_segments = baca.Cursor(chords, cyclic=False, singletons=True)
+    stage_2_segments = baca.Cursor(chords, cyclic=False)
     assert len(stage_4_segments) == 2
     rh, lh = abjad.sequence.partition_by_counts(stage_4_segments, [1, 1])
     lh = baca.pcollections.remove_duplicates(lh, level=-1)
