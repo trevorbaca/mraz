@@ -481,8 +481,8 @@ def moment_5():
     rh, lh = abjad.sequence.partition_by_counts(stage_1_segments, [1, 1])
     rh = [abjad.PitchClassSegment(_) for _ in rh]
     lh = [abjad.PitchClassSegment(_) for _ in lh]
-    rh = baca.Cursor(rh, singletons=True)
-    lh = baca.Cursor(lh, singletons=True)
+    rh = baca.Cursor(rh)
+    lh = baca.Cursor(lh)
     stage_1_rh = rh
     stage_1_lh = lh
     stage_2_segments = baca.pcollections.remove_duplicate_pitch_classes(
@@ -494,13 +494,13 @@ def moment_5():
         rh, [lambda _: _.transpose(n=3), lambda _: baca.pcollections.alpha(_)]
     )
     rh = abjad.sequence.flatten(rh)
-    rh = baca.Cursor(rh, singletons=True)
+    rh = baca.Cursor(rh)
     lh = abjad.sequence.repeat(lh, n=3)
     lh = abjad.sequence.flatten(lh)
     lh = [abjad.PitchClassSegment(_) for _ in lh]
     lh = baca.pcollections.read(lh, [3, 4, 2, 4, 2, 3, 2, 3, 4], check=abjad.EXACT)
     lh = [abjad.PitchClassSegment(_) for _ in lh]
-    lh = baca.Cursor(lh, singletons=True)
+    lh = baca.Cursor(lh)
     stage_2_rh = rh
     stage_2_lh = lh
     return types.SimpleNamespace(
