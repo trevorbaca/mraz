@@ -131,8 +131,8 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             imbrications=imbrications,
             tsd=4,
         )
-    with baca.scope(section_8.stage_3.lh[2 - 1]) as collections:
-        assert library.foo(collections) == "PC<11, 3>"
+    with baca.scope(section_8.stage_3.lh[1:2]) as collections:
+        assert library.foo(collections) == ["PC<11, 3>"]
         tuplets = baca.make_tuplets(collections, [2, -4], 16, treatments=[4])
         baca.dynamic(baca.select.phead(tuplets, 0), "f")
         baca.ottava_bassa(baca.select.tleaves(tuplets))
@@ -147,8 +147,8 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tuplets,
             tsd=4,
         )
-    with baca.scope(section_8.stage_3.rh[5 - 1]) as collections:
-        assert library.foo(collections) == "PC<10, 2, 0, 11>"
+    with baca.scope(section_8.stage_3.rh[4:5]) as collections:
+        assert library.foo(collections) == ["PC<10, 2, 0, 11>"]
         tuplets = baca.make_tuplets(collections, [6, -1], 32)
         baca.rests_after(tuplets, [4], 32)
         baca.dynamic(baca.select.phead(tuplets, 0), "ppp")

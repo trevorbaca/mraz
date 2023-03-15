@@ -124,7 +124,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         tuplets,
         tsd=4,
     )
-    with baca.scope(section_4.stage_1.rh[0]) as collections:
+    with baca.scope(section_4.stage_1.rh[:1]) as collections:
         tuplets = baca.make_tuplets(collections, [2, -4, 2, -4, 4], 16, treatments=[2])
         baca.dynamic(baca.select.phead(tuplets, 0), "ff")
         baca.register(tuplets, -12, 12)
@@ -176,8 +176,8 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tuplets,
             tsd=4,
         )
-    with baca.scope(section_4.stage_5.rh[1 - 1]) as collections:
-        assert library.foo(collections) == "PC<3>"
+    with baca.scope(section_4.stage_5.rh[:1]) as collections:
+        assert library.foo(collections) == ["PC<3>"]
         tuplets = baca.make_tuplets(collections, [28], 16)
         groups = rmakers.nongrace_leaves_in_each_tuplet(tuplets)
         rmakers.beam_groups(groups)
@@ -190,8 +190,8 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tuplets,
             tsd=4,
         )
-    with baca.scope(section_4.stage_5.rh[2 - 1]) as collections:
-        assert library.foo(collections) == "PC<5>"
+    with baca.scope(section_4.stage_5.rh[1:2]) as collections:
+        assert library.foo(collections) == ["PC<5>"]
         tuplets = baca.make_tuplets(collections, [24], 16)
         groups = rmakers.nongrace_leaves_in_each_tuplet(tuplets)
         rmakers.beam_groups(groups)
@@ -203,8 +203,8 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tuplets,
             tsd=4,
         )
-    with baca.scope(section_4.stage_5.rh[3 - 1]) as collections:
-        assert library.foo(collections) == "PC<10>"
+    with baca.scope(section_4.stage_5.rh[2:3]) as collections:
+        assert library.foo(collections) == ["PC<10>"]
         tuplets = baca.make_tuplets(collections, [16], 16)
         groups = rmakers.nongrace_leaves_in_each_tuplet(tuplets)
         rmakers.beam_groups(groups)
