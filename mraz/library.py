@@ -353,7 +353,7 @@ def moment_4():
     lh = baca.pcollections.read(lh, [2, 2, 3, 1, 2, 2, 3, 3], check=abjad.EXACT)
     lh = [abjad.PitchClassSegment(_) for _ in lh]
     lh = [abjad.PitchSet(_) for _ in lh]
-    lh = baca.Cursor(lh, cyclic=True, singletons=True)
+    lh = baca.Cursor(lh, cyclic=True)
     rh = baca.sequence.accumulate(
         rh, [lambda _: baca.pcollections.alpha(_), lambda _: _.transpose(n=2)]
     )
