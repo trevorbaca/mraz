@@ -60,7 +60,10 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             "PC<0, 1, 3, 10, 7, 8, 6>",
             "PC<4, 7, 9, 2>",
         ]
-        tuplets = baca.from_collections(collections, [2], 16, treatments=[-2, -2, 0])
+        tuplets = baca.from_collections(collections, [2], 16)
+        pattern = abjad.index([0, 1], 3)
+        for tuplet in abjad.sequence.retain_pattern(tuplets, pattern):
+            baca.prolate(tuplet, -2, 16)
         baca.register(tuplets, 24, 0)
         container = abjad.Container(tuplets)
         baca.nest(tuplets, "-1/4")
@@ -104,7 +107,10 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             "PC<6, 11, 1, 4>",
             "PC<5, 2, 4, 3, 8, 1, 11>",
         ]
-        tuplets = baca.from_collections(collections, [2], 16, treatments=[-2, 0, -2])
+        tuplets = baca.from_collections(collections, [2], 16)
+        pattern = abjad.index([0, 2], 3)
+        for tuplet in abjad.sequence.retain_pattern(tuplets, pattern):
+            baca.prolate(tuplet, -2, 16)
         container = abjad.Container(tuplets)
         for qrun in baca.select.qruns(tuplets):
             ptails = baca.select.ptails(qrun)[:-1]
@@ -175,7 +181,10 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             "PC<9, 4, 6, 7, 10, 5, 3>",
             "PC<11, 6, 8, 9>",
         ]
-        tuplets = baca.from_collections(collections, [2], 16, treatments=[0, -2, -2])
+        tuplets = baca.from_collections(collections, [2], 16)
+        pattern = abjad.index([1, 2], 3)
+        for tuplet in abjad.sequence.retain_pattern(tuplets, pattern):
+            baca.prolate(tuplet, -2, 16)
         baca.register(tuplets, 24, 0)
         container = abjad.Container(tuplets)
         baca.nest(tuplets, "-3/8")
@@ -220,7 +229,10 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             "PC<4, 9, 11, 2, 3, 0, 10>",
             "PC<0, 11, 1, 10>",
         ]
-        tuplets = baca.from_collections(collections, [2], 16, treatments=[-2, -2, 0])
+        tuplets = baca.from_collections(collections, [2], 16)
+        pattern = abjad.index([0, 1], 3)
+        for tuplet in abjad.sequence.retain_pattern(tuplets, pattern):
+            baca.prolate(tuplet, -2, 16)
         baca.register(tuplets, 24, 0)
         container = abjad.Container(tuplets)
         baca.nest(tuplets, "-3/8")
@@ -416,7 +428,10 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             "PC<3, 2, 4, 1>",
             "PC<8, 11, 1, 6, 5, 4, 2>",
         ]
-        tuplets = baca.from_collections(collections, [2], 16, treatments=[-2, 0, -2])
+        tuplets = baca.from_collections(collections, [2], 16)
+        pattern = abjad.index([0, 2], 3)
+        for tuplet in abjad.sequence.retain_pattern(tuplets, pattern):
+            baca.prolate(tuplet, -2, 16)
         baca.register(tuplets, 24, 0)
         container = abjad.Container(tuplets)
         baca.nest(tuplets, "-1/4")
