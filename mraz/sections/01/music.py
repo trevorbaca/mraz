@@ -41,7 +41,8 @@ def make_empty_score():
             "PC<3, 0, 10, 11, 1>",
             "PC<5, 2, 0, 1>",
         ]
-        tuplets = baca.make_tuplets(collections, [1], 16, treatments=[(1, 4)])
+        duration = abjad.Duration(1, 4)
+        tuplets = baca.make_tuplets(collections, [1], 16, treatments=[duration])
         baca.dls_staff_padding(tuplets, 8)
         baca.hairpin(tuplets, "f < ff")
         baca.ottava(baca.select.tleaves(tuplets))
@@ -173,7 +174,8 @@ def make_empty_score():
         )
     with baca.scope(section_5.stage_1.lh.next(exhausted=True)) as collections:
         assert library.foo(collections) == ["PC<9, 1, 11, 8, 7>"]
-        tuplets = baca.make_tuplets(collections, [4, -4], 16, treatments=[(16, 4)])
+        duration = abjad.Duration(16, 4)
+        tuplets = baca.make_tuplets(collections, [4, -4], 16, treatments=[duration])
         rmakers.denominator(tuplets, abjad.Duration(1, 1))
         baca.dynamic(baca.select.phead(tuplets, 0), "mf")
         baca.dynamic_text_x_offset(baca.select.pleaf(tuplets, 0), 0.25)
