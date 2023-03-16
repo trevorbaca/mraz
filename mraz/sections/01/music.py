@@ -19,18 +19,18 @@ def make_empty_score():
     section_8 = library.moment_8()
     with baca.scope(section_4.stage_5.rh[3 - 1 : 4 - 1]) as collections:
         assert library.foo(collections) == ["PC<10>"]
-        tuplets = baca.from_collections(collections, [16], 16)
-        baca.register(tuplets, 36)
-        groups = rmakers.nongrace_leaves_in_each_tuplet(tuplets)
+        tuplet = baca.from_collection(collections[0], [16], 16)
+        baca.register(tuplet, 36)
+        groups = rmakers.nongrace_leaves_in_each_tuplet(tuplet)
         rmakers.beam_groups(groups)
-        baca.tenuto(baca.select.pheads(tuplets))
+        baca.tenuto(baca.select.pheads(tuplet))
         baca.markup(
-            baca.select.pleaf(tuplets, 0), r"\mraz-ottava-brackets-always-govern-markup"
+            baca.select.pleaf(tuplet, 0), r"\mraz-ottava-brackets-always-govern-markup"
         )
-        baca.label_figure(tuplets, "4.5.R.3", accumulator)
+        baca.label_figure(tuplet, "4.5.R.3", accumulator)
         accumulator.cache(
             library.rh_v1,
-            tuplets,
+            [tuplet],
             hide_time_signature=True,
             tsd=4,
         )
@@ -41,8 +41,11 @@ def make_empty_score():
             "PC<3, 0, 10, 11, 1>",
             "PC<5, 2, 0, 1>",
         ]
-        tuplets = baca.from_collections(collections, [1], 16)
-        tuplets = [baca.prolate(_, abjad.Duration(1, 4)) for _ in tuplets]
+        tuplets = []
+        for collection in collections:
+            tuplet = baca.from_collection(collection, [1], 16)
+            baca.prolate(tuplet, abjad.Duration(1, 4))
+            tuplets.append(tuplet)
         baca.dls_staff_padding(tuplets, 8)
         baca.hairpin(tuplets, "f < ff")
         baca.ottava(baca.select.tleaves(tuplets))
