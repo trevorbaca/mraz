@@ -33,8 +33,9 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         )
     with baca.scope(section_5.stage_1.lh.next(exhausted=True)) as collections:
         assert library.foo(collections) == ["PC<9, 1, 11, 8, 7>"]
+        tuplets = baca.from_collections(collections, [4, -4], 16)
         duration = abjad.Duration(16, 4)
-        tuplets = baca.from_collections(collections, [4, -4], 16, treatments=[duration])
+        tuplets = [baca.prolate(_, duration) for _ in tuplets]
         rmakers.denominator(tuplets, abjad.Duration(1, 1))
         baca.dynamic(baca.select.phead(tuplets, 0), "mf")
         baca.ottava(baca.select.tleaves(tuplets))
@@ -134,7 +135,8 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         )
     with baca.scope(section_8.stage_3.lh[1:2]) as collections:
         assert library.foo(collections) == ["PC<11, 3>"]
-        tuplets = baca.from_collections(collections, [2, -4], 16, treatments=[4])
+        tuplets = baca.from_collections(collections, [2, -4], 16)
+        tuplets = [baca.prolate(_, 4, 16) for _ in tuplets]
         baca.dynamic(baca.select.phead(tuplets, 0), "f")
         baca.ottava_bassa(baca.select.tleaves(tuplets))
         baca.register(tuplets, -39)
