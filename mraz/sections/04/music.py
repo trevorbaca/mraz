@@ -939,7 +939,8 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             "PC<3, 0, 10, 11, 1>",
             "PC<5, 2, 0, 1>",
         ]
-        tuplets = baca.make_tuplets(collections, [1], 16, treatments=[(1, 4)])
+        duration = abjad.Duration(1, 4)
+        tuplets = baca.make_tuplets(collections, [1], 16, treatments=[duration])
         groups = rmakers.nongrace_leaves_in_each_tuplet(tuplets)
         rmakers.beam_groups(groups)
         baca.dls_staff_padding(tuplets, 8)
@@ -964,7 +965,8 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             "PC<5, 7, 11, 8>",
             "PC<6, 7, 9, 1, 10>",
         ]
-        tuplets = baca.make_tuplets(collections, [1], 16, treatments=[(1, 4)])
+        duration = abjad.Duration(1, 4)
+        tuplets = baca.make_tuplets(collections, [1], 16, treatments=[duration])
         groups = rmakers.nongrace_leaves_in_each_tuplet(tuplets)
         rmakers.beam_groups(groups)
         baca.dls_staff_padding(tuplets, 8)
@@ -1005,7 +1007,8 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             "PC<2, 5, 0, 1, 3>",
             "PC<7, 4, 2, 3, 5>",
         ]
-        tuplets = baca.make_tuplets(collections, [1], 16, treatments=[(1, 4)])
+        duration = abjad.Duration(1, 4)
+        tuplets = baca.make_tuplets(collections, [1], 16, treatments=[duration])
         groups = rmakers.nongrace_leaves_in_each_tuplet(tuplets)
         rmakers.beam_groups(groups)
         baca.dls_staff_padding(tuplets, 8)
@@ -1025,7 +1028,8 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         )
     with baca.scope(section_4.stage_5.lh.next(2)) as collections:
         assert library.foo(collections) == ["PC<9, 6, 4, 5>", "PC<7, 11, 8, 6>"]
-        tuplets = baca.make_tuplets(collections, [1], 16, treatments=[(1, 4)])
+        duration = abjad.Duration(1, 4)
+        tuplets = baca.make_tuplets(collections, [1], 16, treatments=[duration])
         groups = rmakers.nongrace_leaves_in_each_tuplet(tuplets)
         rmakers.beam_groups(groups)
         baca.dls_staff_padding(tuplets, 8)
@@ -1157,7 +1161,8 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         )
     with baca.scope(section_5.stage_1.lh.next(exhausted=True)) as collections:
         assert library.foo(collections) == ["PC<9, 1, 11, 8, 7>"]
-        tuplets = baca.make_tuplets(collections, [4, -4], 16, treatments=[(16, 4)])
+        duration = abjad.Duration(16, 4)
+        tuplets = baca.make_tuplets(collections, [4, -4], 16, treatments=[duration])
         rmakers.denominator(tuplets, abjad.Duration(1, 1))
         baca.dynamic(baca.select.phead(tuplets, 0), "mf")
         baca.ottava(baca.select.tleaves(tuplets))

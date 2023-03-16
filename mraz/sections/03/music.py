@@ -224,7 +224,8 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             "PC<3, 0, 10, 11, 1>",
             "PC<5, 2, 0, 1>",
         ]
-        tuplets = baca.make_tuplets(collections, [1], 16, treatments=[(1, 4)])
+        duration = abjad.Duration(1, 4)
+        tuplets = baca.make_tuplets(collections, [1], 16, treatments=[duration])
         groups = rmakers.nongrace_leaves_in_each_tuplet(tuplets)
         rmakers.beam_groups(groups)
         baca.dls_staff_padding(tuplets, 8)
