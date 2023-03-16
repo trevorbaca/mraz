@@ -14,7 +14,8 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     section_6 = library.moment_6()
     with baca.scope(section_6.stage_1.rh.next(2)) as collections:
         assert library.foo(collections) == ["PC<6, 9, 11>", "PC<0, 8, 11, 1>"]
-        tuplets = baca.from_collections(collections, [1], 8, treatments=[1, 0])
+        tuplets = baca.from_collections(collections, [1], 8)
+        baca.prolate(tuplets[0], 1, 8)
         baca.rests_after(tuplets, [1], 8)
         baca.dynamic(baca.select.phead(tuplets, 0), "pp")
         baca.register(tuplets, 24, 12)
