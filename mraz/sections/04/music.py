@@ -16,7 +16,9 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     section_5 = library.moment_5()
     with baca.scope(section_4.stage_1.rh.next()) as collections:
         assert library.foo(collections) == ["PC<3, 1, 0, 10>"]
-        tuplets = baca.make_tuplets(collections, [2, -4, 2, -4, 4], 16, treatments=[2])
+        tuplets = baca.from_collections(
+            collections, [2, -4, 2, -4, 4], 16, treatments=[2]
+        )
         baca.dynamic(baca.select.phead(tuplets, 0), "ff")
         baca.register(tuplets, -12, 12)
         baca.stem_up(baca.select.pleaves(tuplets))
@@ -31,7 +33,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         )
     with baca.scope(section_4.stage_6.rh[1:2]) as collections:
         assert library.foo(collections) == ["{-3, 7, 8, 11, 13, 17, 27, 36}"]
-        tuplets = baca.make_tuplets(collections, [12], 16)
+        tuplets = baca.from_collections(collections, [12], 16)
         rmakers.beam_groups(tuplets)
         baca.dynamic(baca.select.phead(tuplets, 0), "ff")
         baca.marcato(baca.select.pheads(tuplets))
@@ -45,7 +47,9 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         )
     with baca.scope(section_4.stage_1.rh.next()) as collections:
         assert library.foo(collections) == ["PC<3, 1, 0, 10>"]
-        tuplets = baca.make_tuplets(collections, [-4, 2, -4, 4], 16, treatments=[-4])
+        tuplets = baca.from_collections(
+            collections, [-4, 2, -4, 4], 16, treatments=[-4]
+        )
         baca.register(tuplets, 12, -12)
         baca.stem_up(baca.select.pleaves(tuplets))
         baca.tuplet_bracket_up(tuplets)
@@ -64,7 +68,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
 
     with baca.scope(section_5.stage_2.lh[:1]) as collections:
         assert library.foo(collections) == ["PC<11, 3, 1>"]
-        tuplets = baca.make_tuplets(collections, [3, -3], 16)
+        tuplets = baca.from_collections(collections, [3, -3], 16)
         baca.dynamic(baca.select.phead(tuplets, 0), "p")
         for item in nontrivial_tuplet_leaves(tuplets):
             baca.slur(item)
@@ -86,7 +90,9 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     )
     with baca.scope(section_4.stage_1.rh.next(exhausted=True)) as collections:
         assert library.foo(collections) == ["PC<3, 1, 0, 10>"]
-        tuplets = baca.make_tuplets(collections, [2, -4, 2, -4, 4], 16, treatments=[2])
+        tuplets = baca.from_collections(
+            collections, [2, -4, 2, -4, 4], 16, treatments=[2]
+        )
         baca.register(tuplets, -6)
         baca.stem_up(baca.select.pleaves(tuplets))
         baca.tuplet_bracket_up(tuplets)
@@ -106,7 +112,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     )
     with baca.scope(section_4.stage_1.lh.next()) as collections:
         assert library.foo(collections) == ["PC<8, 2, 4>"]
-        tuplets = baca.make_tuplets(collections, [3, -1], 16)
+        tuplets = baca.from_collections(collections, [3, -1], 16)
         baca.rests_before(tuplets, [12], 16)
         baca.dynamic(baca.select.phead(tuplets, 0), "f")
         baca.register(tuplets, -6, 6)
@@ -131,7 +137,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     )
     with baca.scope(section_4.stage_1.lh.next()) as collections:
         assert library.foo(collections) == ["PC<8, 2, 4>"]
-        tuplets = baca.make_tuplets(
+        tuplets = baca.from_collections(
             collections,
             [3, -1, 3, -1, -4, 3, -1],
             16,
@@ -148,7 +154,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         )
     with baca.scope(section_4.stage_2.lh.next()) as collections:
         assert library.foo(collections) == ["{7, 11, 17, 18, 21}"]
-        tuplets = baca.make_tuplets(collections, [3], 16)
+        tuplets = baca.from_collections(collections, [3], 16)
         baca.rests_around(tuplets, [1], [8], 16)
         baca.bass_to_octave(tuplets, 3)
         baca.dynamic(baca.select.phead(tuplets, 0), "ff")
@@ -163,7 +169,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         )
     with baca.scope(section_4.stage_1.lh.next()) as collections:
         assert library.foo(collections) == ["PC<8, 2, 4>"]
-        tuplets = baca.make_tuplets(
+        tuplets = baca.from_collections(
             collections,
             [3, -1, -4, 3, -1, 3, -1],
             16,
@@ -190,7 +196,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     )
     with baca.scope(section_4.stage_2.lh.next()) as collections:
         assert library.foo(collections) == ["{7, 11, 17, 18, 21}"]
-        tuplets = baca.make_tuplets(collections, [3], 16)
+        tuplets = baca.from_collections(collections, [3], 16)
         baca.rests_around(tuplets, [1], [8], 16)
         baca.bass_to_octave(tuplets, 3)
         baca.dynamic(baca.select.phead(tuplets, 0), "ff")
@@ -203,7 +209,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         )
     with baca.scope(section_4.stage_2.lh.next()) as collections:
         assert library.foo(collections) == ["{7, 11, 17, 18, 21}"]
-        tuplets = baca.make_tuplets(collections, [1], 16)
+        tuplets = baca.from_collections(collections, [1], 16)
         baca.rests_after(tuplets, [3, 16], 16)
         baca.bass_to_octave(tuplets, 3)
         baca.label_figure(tuplets, "4.2.L.3", accumulator)
@@ -214,7 +220,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         )
     with baca.scope(section_4.stage_2.lh.next()) as collections:
         assert library.foo(collections) == ["{7, 11, 17, 18, 21}"]
-        tuplets = baca.make_tuplets(collections, [3], 16)
+        tuplets = baca.from_collections(collections, [3], 16)
         baca.rests_around(tuplets, [1], [8], 16)
         baca.bass_to_octave(tuplets, 3)
         container = abjad.Container(tuplets)
@@ -228,7 +234,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         )
     with baca.scope(section_4.stage_2.lh.next()) as collections:
         assert library.foo(collections) == ["{7, 11, 17, 18, 21}"]
-        tuplets = baca.make_tuplets(collections, [1], 16)
+        tuplets = baca.from_collections(collections, [1], 16)
         baca.rests_after(tuplets, [3, 16], 16)
         baca.bass_to_octave(tuplets, 3)
         baca.label_figure(tuplets, "4.2.L.5", accumulator)
@@ -239,7 +245,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         )
     with baca.scope(section_4.stage_2.lh.next()) as collections:
         assert library.foo(collections) == ["{7, 11, 17, 18, 21}"]
-        tuplets = baca.make_tuplets(collections, [3], 16)
+        tuplets = baca.from_collections(collections, [3], 16)
         baca.rests_around(tuplets, [1], [8], 16)
         baca.bass_to_octave(tuplets, 3)
         baca.label_figure(tuplets, "4.2.L.6", accumulator)
@@ -250,7 +256,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         )
     with baca.scope(section_4.stage_2.lh.next()) as collections:
         assert library.foo(collections) == ["{7, 11, 17, 18, 21}"]
-        tuplets = baca.make_tuplets(collections, [1], 16)
+        tuplets = baca.from_collections(collections, [1], 16)
         baca.rests_after(tuplets, [3, 16], 16)
         baca.bass_to_octave(tuplets, 3)
         baca.label_figure(tuplets, "4.2.L.7", accumulator)
@@ -261,7 +267,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         )
     with baca.scope(section_4.stage_2.lh.next()) as collections:
         assert library.foo(collections) == ["{7, 11, 17, 18, 21}"]
-        tuplets = baca.make_tuplets(collections, [3], 16)
+        tuplets = baca.from_collections(collections, [3], 16)
         baca.rests_around(tuplets, [1], [8], 16)
         baca.bass_to_octave(tuplets, 3)
         container = abjad.Container(tuplets)
@@ -275,7 +281,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         )
     with baca.scope(section_4.stage_2.lh.next()) as collections:
         assert library.foo(collections) == ["{7, 11, 17, 18, 21}"]
-        tuplets = baca.make_tuplets(collections, [1], 16)
+        tuplets = baca.from_collections(collections, [1], 16)
         baca.rests_after(tuplets, [3, 16], 16)
         baca.bass_to_octave(tuplets, 3)
         baca.label_figure(tuplets, "4.2.L.9", accumulator)
@@ -286,7 +292,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         )
     with baca.scope(section_4.stage_2.lh.next()) as collections:
         assert library.foo(collections) == ["{7, 11, 17, 18, 21}"]
-        tuplets = baca.make_tuplets(collections, [3], 16)
+        tuplets = baca.from_collections(collections, [3], 16)
         baca.rests_around(tuplets, [1], [8], 16)
         baca.bass_to_octave(tuplets, 3)
         container = abjad.Container(tuplets)
@@ -306,7 +312,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     with baca.scope(chord_1_lower) as collections:
         assert library.foo(collections) == "<-4, -7, -8, -17>"
         collections = [set(chord_1_lower)]
-        tuplets = baca.make_tuplets(collections, [1], 16)
+        tuplets = baca.from_collections(collections, [1], 16)
         baca.rests_after(tuplets, [3], 16)
         baca.cross_staff(baca.select.phead(tuplets, 0))
         baca.dynamic(baca.select.phead(tuplets, 0), "mp")
@@ -322,7 +328,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     with baca.scope(chord_1_upper) as collections:
         assert library.foo(collections) == "<9, 6, 2, -1>"
         collections = [set(chord_1_upper)]
-        tuplets = baca.make_tuplets(collections, [1], 16)
+        tuplets = baca.from_collections(collections, [1], 16)
         baca.rests_after(tuplets, [3], 16)
         baca.label_figure(tuplets, "4.2.L.11.U", accumulator, abjad.UP)
         accumulator.cache(
@@ -332,7 +338,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tsd=4,
         )
     with baca.scope([{-35, -23}]) as collections:
-        tuplets = baca.make_tuplets(collections, [8], 16)
+        tuplets = baca.from_collections(collections, [8], 16)
         baca.skips_before(tuplets, [4], 16)
         container = abjad.Container(tuplets)
         baca.nest(tuplets, "+1/4")
@@ -345,7 +351,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tsd=4,
         )
     with baca.scope([{-35, -23}]) as collections:
-        tuplets = baca.make_tuplets(collections, [4], 16)
+        tuplets = baca.from_collections(collections, [4], 16)
         baca.label_figure(tuplets, "R.2", accumulator, do_not_increment=True)
         accumulator.cache(
             library.lh_resonance,
@@ -355,7 +361,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tsd=4,
         )
     with baca.scope([{-35, -23}]) as collections:
-        tuplets = baca.make_tuplets(collections, [16], 16)
+        tuplets = baca.from_collections(collections, [16], 16)
         baca.label_figure(tuplets, "R.3", accumulator, do_not_increment=True)
         accumulator.cache(
             library.lh_resonance,
@@ -365,7 +371,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tsd=4,
         )
     with baca.scope([{-33, -21}]) as collections:
-        tuplets = baca.make_tuplets(collections, [8], 16)
+        tuplets = baca.from_collections(collections, [8], 16)
         baca.skips_before(tuplets, [4], 16)
         container = abjad.Container(tuplets)
         baca.nest(tuplets, "+1/4")
@@ -378,7 +384,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tsd=4,
         )
     with baca.scope([{-33, -21}]) as collections:
-        tuplets = baca.make_tuplets(collections, [4], 16)
+        tuplets = baca.from_collections(collections, [4], 16)
         baca.label_figure(tuplets, "R.5", accumulator, do_not_increment=True)
         accumulator.cache(
             library.lh_resonance,
@@ -388,7 +394,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tsd=4,
         )
     with baca.scope([{-33, -21}]) as collections:
-        tuplets = baca.make_tuplets(collections, [16], 16)
+        tuplets = baca.from_collections(collections, [16], 16)
         baca.label_figure(tuplets, "R.6", accumulator, do_not_increment=True)
         accumulator.cache(
             library.lh_resonance,
@@ -399,7 +405,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         )
     with baca.scope(section_4.stage_4.lh.next(2)) as collections:
         assert library.foo(collections) == ["{0, 10}", "{2, 5}"]
-        tuplets = baca.make_tuplets(collections, [2], 16)
+        tuplets = baca.from_collections(collections, [2], 16)
         baca.rests_around(tuplets, [4], [4], 16)
         groups = rmakers.nongrace_leaves_in_each_tuplet(tuplets)
         rmakers.beam_groups(groups)
@@ -426,7 +432,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     )
     with baca.scope(section_4.stage_4.lh.next()) as collections:
         assert library.foo(collections) == ["{0, 4, 8}"]
-        tuplets = baca.make_tuplets(collections, [6], 16)
+        tuplets = baca.from_collections(collections, [6], 16)
         baca.rests_before(tuplets, [2], 16)
         container = abjad.Container(tuplets)
         for ntrun in baca.select.ntruns(container):
@@ -449,7 +455,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     )
     with baca.scope(section_5.stage_2.rh[12:13]) as collections:
         assert library.foo(collections) == ["PC<8, 3, 5, 6>"]
-        tuplets = baca.make_tuplets(collections, [2], 16)
+        tuplets = baca.from_collections(collections, [2], 16)
         rmakers.beam(tuplets)
         for item in nontrivial_tuplet_leaves(tuplets):
             baca.slur(item)
@@ -464,7 +470,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         )
     with baca.scope(section_4.stage_4.lh.next(3)) as collections:
         assert library.foo(collections) == ["{10}", "{2, 5}", "{4, 8}"]
-        tuplets = baca.make_tuplets(collections, [2], 16)
+        tuplets = baca.from_collections(collections, [2], 16)
         baca.rests_around(tuplets, [4], [4], 16)
         groups = rmakers.nongrace_leaves_in_each_tuplet(tuplets)
         rmakers.beam_groups(groups)
@@ -500,7 +506,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     )
     with baca.scope(section_4.stage_4.lh.next(3)) as collections:
         assert library.foo(collections) == ["{0, 5, 10}", "{2, 4, 8}", "{0, 10}"]
-        tuplets = baca.make_tuplets(collections, [2], 16)
+        tuplets = baca.from_collections(collections, [2], 16)
         baca.rests_around(tuplets, [4], [4], 16)
         baca.register(tuplets, -12, 0)
         groups = rmakers.nongrace_leaves_in_each_tuplet(tuplets)
@@ -527,7 +533,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         )
     with baca.scope(section_4.stage_4.lh.next(2)) as collections:
         assert library.foo(collections) == ["{2, 5}", "{0, 4, 8}"]
-        tuplets = baca.make_tuplets(collections, [2], 16)
+        tuplets = baca.from_collections(collections, [2], 16)
         baca.rests_around(tuplets, [4], [2], 16)
         baca.register(tuplets, 0, -12)
         groups = rmakers.nongrace_leaves_in_each_tuplet(tuplets)
@@ -555,7 +561,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         )
     with baca.scope(section_4.stage_4.lh.next()) as collections:
         assert library.foo(collections) == ["{10}"]
-        tuplets = baca.make_tuplets(collections, [2], 16)
+        tuplets = baca.from_collections(collections, [2], 16)
         baca.rests_around(tuplets, [2], [6], 16)
         container = abjad.Container(tuplets)
         for ntrun in baca.select.ntruns(container):
@@ -577,7 +583,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     )
     with baca.scope(section_4.stage_4.lh.next(2)) as collections:
         assert library.foo(collections) == ["{2, 5}", "{4, 8}"]
-        tuplets = baca.make_tuplets(collections, [2], 16)
+        tuplets = baca.from_collections(collections, [2], 16)
         baca.rests_around(tuplets, [4], [2], 16)
         baca.register(tuplets, 0, -12)
         groups = rmakers.nongrace_leaves_in_each_tuplet(tuplets)
@@ -605,7 +611,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         )
     with baca.scope(section_4.stage_4.lh.next()) as collections:
         assert library.foo(collections) == ["{0, 5, 10}"]
-        tuplets = baca.make_tuplets(collections, [6], 16)
+        tuplets = baca.from_collections(collections, [6], 16)
         baca.rests_before(tuplets, [2], 16)
         container = abjad.Container(tuplets)
         for ntrun in baca.select.ntruns(container):
@@ -619,7 +625,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         )
     with baca.scope(section_4.stage_4.lh.next()) as collections:
         assert library.foo(collections) == ["{2, 4, 8}"]
-        tuplets = baca.make_tuplets(collections, [2], 16)
+        tuplets = baca.from_collections(collections, [2], 16)
         baca.rests_around(tuplets, [2], [6], 16)
         baca.register(tuplets, 0, -12)
         container = abjad.Container(tuplets)
@@ -643,7 +649,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         )
     with baca.scope(section_4.stage_4.rh.next()) as collections:
         assert library.foo(collections) == ["PC<2, 8, 3, 9, 2, 5, 11, 4>"]
-        tuplets = baca.make_tuplets(collections, [2], 16, treatments=[4])
+        tuplets = baca.from_collections(collections, [2], 16, treatments=[4])
         baca.rests_around(tuplets, [2], [6], 16)
         baca.register(tuplets, 36, 22)
         container = abjad.Container(tuplets)
@@ -690,7 +696,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     )
     with baca.scope(section_4.stage_4.rh.next()) as collections:
         assert library.foo(collections) == ["PC<10, 5, 6, 0, 7, 1, 6, 9>"]
-        tuplets = baca.make_tuplets(collections, [2], 16, treatments=[8])
+        tuplets = baca.from_collections(collections, [2], 16, treatments=[8])
         rmakers.denominator(tuplets, (1, 4))
         baca.register(tuplets, 36, 22)
         container = abjad.Container(tuplets)
@@ -724,7 +730,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         assert library.foo(collections) == [
             "PC<3, 8, 2, 9, 10, 4, 11, 5, 10, 1, 7, 0, 6, 1>"
         ]
-        tuplets = baca.make_tuplets(collections, [2], 16, treatments=[10])
+        tuplets = baca.from_collections(collections, [2], 16, treatments=[10])
         baca.register(tuplets, 36, 22)
         container = abjad.Container(tuplets)
         imbrications = baca.imbricate(
@@ -756,7 +762,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         )
     resonance = set("e, fs, gs, as, b,".split())
     with baca.scope([resonance]) as collections:
-        tuplets = baca.make_tuplets(collections, [4], 16)
+        tuplets = baca.from_collections(collections, [4], 16)
         groups = rmakers.nongrace_leaves_in_each_tuplet(tuplets)
         rmakers.beam_groups(groups)
         baca.label_figure(tuplets, "R.7", accumulator, do_not_increment=True)
@@ -769,7 +775,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tsd=4,
         )
     with baca.scope([resonance]) as collections:
-        tuplets = baca.make_tuplets(collections, [28], 16)
+        tuplets = baca.from_collections(collections, [28], 16)
         groups = rmakers.nongrace_leaves_in_each_tuplet(tuplets)
         rmakers.beam_groups(groups)
         baca.label_figure(tuplets, "R.8", accumulator, do_not_increment=True)
@@ -780,7 +786,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tsd=4,
         )
     with baca.scope([resonance]) as collections:
-        tuplets = baca.make_tuplets(collections, [24], 16)
+        tuplets = baca.from_collections(collections, [24], 16)
         groups = rmakers.nongrace_leaves_in_each_tuplet(tuplets)
         rmakers.beam_groups(groups)
         baca.label_figure(tuplets, "R.9", accumulator, do_not_increment=True)
@@ -791,7 +797,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tsd=4,
         )
     with baca.scope([resonance]) as collections:
-        tuplets = baca.make_tuplets(collections, [16], 16)
+        tuplets = baca.from_collections(collections, [16], 16)
         groups = rmakers.nongrace_leaves_in_each_tuplet(tuplets)
         rmakers.beam_groups(groups)
         baca.label_figure(tuplets, "R.10", accumulator, do_not_increment=True)
@@ -802,7 +808,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tsd=4,
         )
     with baca.scope([resonance]) as collections:
-        tuplets = baca.make_tuplets(collections, [16], 16)
+        tuplets = baca.from_collections(collections, [16], 16)
         groups = rmakers.nongrace_leaves_in_each_tuplet(tuplets)
         rmakers.beam_groups(groups)
         baca.label_figure(tuplets, "R.11", accumulator, do_not_increment=True)
@@ -813,7 +819,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tsd=4,
         )
     with baca.scope([resonance]) as collections:
-        tuplets = baca.make_tuplets(collections, [24], 16)
+        tuplets = baca.from_collections(collections, [24], 16)
         groups = rmakers.nongrace_leaves_in_each_tuplet(tuplets)
         rmakers.beam_groups(groups)
         baca.label_figure(tuplets, "R.12", accumulator, do_not_increment=True)
@@ -824,7 +830,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tsd=4,
         )
     with baca.scope([resonance]) as collections:
-        tuplets = baca.make_tuplets(collections, [16], 16)
+        tuplets = baca.from_collections(collections, [16], 16)
         groups = rmakers.nongrace_leaves_in_each_tuplet(tuplets)
         rmakers.beam_groups(groups)
         baca.label_figure(tuplets, "R.13", accumulator, do_not_increment=True)
@@ -835,7 +841,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tsd=4,
         )
     with baca.scope([resonance]) as collections:
-        tuplets = baca.make_tuplets(collections, [8], 16)
+        tuplets = baca.from_collections(collections, [8], 16)
         groups = rmakers.nongrace_leaves_in_each_tuplet(tuplets)
         rmakers.beam_groups(groups)
         baca.label_figure(tuplets, "R.14", accumulator, do_not_increment=True)
@@ -847,7 +853,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         )
     with baca.scope(section_4.stage_5.rh.next()) as collections:
         assert library.foo(collections) == ["PC<3>"]
-        tuplets = baca.make_tuplets(collections, [28], 16)
+        tuplets = baca.from_collections(collections, [28], 16)
         groups = rmakers.nongrace_leaves_in_each_tuplet(tuplets)
         rmakers.beam_groups(groups)
         baca.dynamic(baca.select.phead(tuplets, 0), "f")
@@ -863,7 +869,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         )
     with baca.scope(section_4.stage_5.rh.next()) as collections:
         assert library.foo(collections) == ["PC<5>"]
-        tuplets = baca.make_tuplets(collections, [24], 16)
+        tuplets = baca.from_collections(collections, [24], 16)
         groups = rmakers.nongrace_leaves_in_each_tuplet(tuplets)
         rmakers.beam_groups(groups)
         baca.register(tuplets, 36)
@@ -877,7 +883,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         )
     with baca.scope(section_4.stage_5.rh.next()) as collections:
         assert library.foo(collections) == ["PC<10>"]
-        tuplets = baca.make_tuplets(collections, [16], 16)
+        tuplets = baca.from_collections(collections, [16], 16)
         groups = rmakers.nongrace_leaves_in_each_tuplet(tuplets)
         rmakers.beam_groups(groups)
         baca.register(tuplets, 36)
@@ -891,7 +897,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         )
     with baca.scope(section_4.stage_5.rh.next()) as collections:
         assert library.foo(collections) == ["PC<3>"]
-        tuplets = baca.make_tuplets(collections, [16], 16)
+        tuplets = baca.from_collections(collections, [16], 16)
         groups = rmakers.nongrace_leaves_in_each_tuplet(tuplets)
         rmakers.beam_groups(groups)
         baca.register(tuplets, 36)
@@ -905,7 +911,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         )
     with baca.scope(section_4.stage_5.rh.next()) as collections:
         assert library.foo(collections) == ["PC<5>"]
-        tuplets = baca.make_tuplets(collections, [16], 16)
+        tuplets = baca.from_collections(collections, [16], 16)
         groups = rmakers.nongrace_leaves_in_each_tuplet(tuplets)
         rmakers.beam_groups(groups)
         baca.register(tuplets, 36)
@@ -920,7 +926,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         )
     with baca.scope(section_4.stage_5.rh.next(exhausted=True)) as collections:
         assert library.foo(collections) == ["PC<10>"]
-        tuplets = baca.make_tuplets(collections, [8], 16)
+        tuplets = baca.from_collections(collections, [8], 16)
         groups = rmakers.nongrace_leaves_in_each_tuplet(tuplets)
         rmakers.beam_groups(groups)
         baca.register(tuplets, 36)
@@ -940,7 +946,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             "PC<5, 2, 0, 1>",
         ]
         duration = abjad.Duration(1, 4)
-        tuplets = baca.make_tuplets(collections, [1], 16, treatments=[duration])
+        tuplets = baca.from_collections(collections, [1], 16, treatments=[duration])
         groups = rmakers.nongrace_leaves_in_each_tuplet(tuplets)
         rmakers.beam_groups(groups)
         baca.dls_staff_padding(tuplets, 8)
@@ -966,7 +972,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             "PC<6, 7, 9, 1, 10>",
         ]
         duration = abjad.Duration(1, 4)
-        tuplets = baca.make_tuplets(collections, [1], 16, treatments=[duration])
+        tuplets = baca.from_collections(collections, [1], 16, treatments=[duration])
         groups = rmakers.nongrace_leaves_in_each_tuplet(tuplets)
         rmakers.beam_groups(groups)
         baca.dls_staff_padding(tuplets, 8)
@@ -986,7 +992,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         )
     with baca.scope(section_4.stage_6.rh[1:2]) as collections:
         assert library.foo(collections) == ["{-3, 7, 8, 11, 13, 17, 27, 36}"]
-        tuplets = baca.make_tuplets(collections, [24], 16)
+        tuplets = baca.from_collections(collections, [24], 16)
         groups = rmakers.nongrace_leaves_in_each_tuplet(tuplets)
         rmakers.beam_groups(groups)
         baca.marcato(baca.select.pheads(tuplets))
@@ -1008,7 +1014,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             "PC<7, 4, 2, 3, 5>",
         ]
         duration = abjad.Duration(1, 4)
-        tuplets = baca.make_tuplets(collections, [1], 16, treatments=[duration])
+        tuplets = baca.from_collections(collections, [1], 16, treatments=[duration])
         groups = rmakers.nongrace_leaves_in_each_tuplet(tuplets)
         rmakers.beam_groups(groups)
         baca.dls_staff_padding(tuplets, 8)
@@ -1029,7 +1035,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     with baca.scope(section_4.stage_5.lh.next(2)) as collections:
         assert library.foo(collections) == ["PC<9, 6, 4, 5>", "PC<7, 11, 8, 6>"]
         duration = abjad.Duration(1, 4)
-        tuplets = baca.make_tuplets(collections, [1], 16, treatments=[duration])
+        tuplets = baca.from_collections(collections, [1], 16, treatments=[duration])
         groups = rmakers.nongrace_leaves_in_each_tuplet(tuplets)
         rmakers.beam_groups(groups)
         baca.dls_staff_padding(tuplets, 8)
@@ -1049,7 +1055,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         )
     with baca.scope(section_4.stage_6.rh.next()) as collections:
         assert library.foo(collections) == ["{17, 27, 36, 40, 42, 46}"]
-        tuplets = baca.make_tuplets(collections, [16], 16)
+        tuplets = baca.from_collections(collections, [16], 16)
         groups = rmakers.nongrace_leaves_in_each_tuplet(tuplets)
         rmakers.beam_groups(groups)
         baca.up_arpeggio(baca.select.pheads(tuplets))
@@ -1064,7 +1070,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         )
     with baca.scope(section_4.stage_6.rh.next()) as collections:
         assert library.foo(collections) == ["{-3, 7, 8, 11, 13, 17, 27, 36}"]
-        tuplets = baca.make_tuplets(collections, [16], 16)
+        tuplets = baca.from_collections(collections, [16], 16)
         groups = rmakers.nongrace_leaves_in_each_tuplet(tuplets)
         rmakers.beam_groups(groups)
         baca.up_arpeggio(baca.select.pheads(tuplets))
@@ -1078,7 +1084,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         )
     with baca.scope(section_4.stage_6.rh.next(exhausted=True)) as collections:
         assert library.foo(collections) == ["{4, 6, 10, 21, 31, 32, 35, 37}"]
-        tuplets = baca.make_tuplets(collections, [16], 16)
+        tuplets = baca.from_collections(collections, [16], 16)
         groups = rmakers.nongrace_leaves_in_each_tuplet(tuplets)
         rmakers.beam_groups(groups)
         baca.up_arpeggio(baca.select.pheads(tuplets))
@@ -1109,7 +1115,9 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     )
     with baca.scope(section_4.stage_1.rh[1:2]) as collections:
         assert library.foo(collections) == ["PC<3, 1, 0, 10>"]
-        tuplets = baca.make_tuplets(collections, [-4, 2, -4, 4], 16, treatments=[-4])
+        tuplets = baca.from_collections(
+            collections, [-4, 2, -4, 4], 16, treatments=[-4]
+        )
         baca.dynamic(baca.select.phead(tuplets, 0), "mp")
         baca.register(tuplets, 12, -12)
         baca.stem_up(baca.select.pleaves(tuplets))
@@ -1125,7 +1133,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         )
     with baca.scope(section_4.stage_1.lh[1:2]) as collections:
         assert library.foo(collections) == ["PC<8, 2, 4>"]
-        tuplets = baca.make_tuplets(
+        tuplets = baca.from_collections(
             collections,
             [3, -1, 3, -1, -4, 3, -1],
             16,
@@ -1144,7 +1152,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         )
     with baca.scope(section_5.stage_1.rh.next(exhausted=True)) as collections:
         assert library.foo(collections) == ["PC<0, 2, 3, 5>"]
-        tuplets = baca.make_tuplets(collections, [2, -14], 16)
+        tuplets = baca.from_collections(collections, [2, -14], 16)
         baca.accent(baca.select.pheads(tuplets))
         baca.dynamic(baca.select.phead(tuplets, 0), "fff")
         baca.dynamic_up(abjad.select.leaf(tuplets, 0))
@@ -1162,7 +1170,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     with baca.scope(section_5.stage_1.lh.next(exhausted=True)) as collections:
         assert library.foo(collections) == ["PC<9, 1, 11, 8, 7>"]
         duration = abjad.Duration(16, 4)
-        tuplets = baca.make_tuplets(collections, [4, -4], 16, treatments=[duration])
+        tuplets = baca.from_collections(collections, [4, -4], 16, treatments=[duration])
         rmakers.denominator(tuplets, abjad.Duration(1, 1))
         baca.dynamic(baca.select.phead(tuplets, 0), "mf")
         baca.ottava(baca.select.tleaves(tuplets))
