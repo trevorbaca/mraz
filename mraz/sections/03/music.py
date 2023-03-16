@@ -20,7 +20,8 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         [_.transpose(4 * 7) for _ in section_7.stage_1.lh[-1]]
     ) as collections:
         assert library.foo(collections) == ["PC<2, 8, 0, 1, 4, 6, 11>"]
-        tuplets = baca.from_collections(collections, [1], 16, treatments=[1])
+        tuplets = baca.from_collections(collections, [1], 16)
+        tuplets = [baca.prolate(_, 1, 16) for _ in tuplets]
         rmakers.beam_groups(tuplets)
         baca.register(tuplets, 6, 6 + 10)
         container = abjad.Container(tuplets)
@@ -76,7 +77,8 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         [_.transpose(4 * 7) for _ in section_7.stage_1.lh[-1]]
     ) as collections:
         assert library.foo(collections) == ["PC<2, 8, 0, 1, 4, 6, 11>"]
-        tuplets = baca.from_collections(collections, [1], 16, treatments=[1])
+        tuplets = baca.from_collections(collections, [1], 16)
+        tuplets = [baca.prolate(_, 1, 16) for _ in tuplets]
         groups = rmakers.nongrace_leaves_in_each_tuplet(tuplets)
         rmakers.beam_groups(groups)
         baca.register(tuplets, 6, 6 + 10)
@@ -125,9 +127,8 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         tsd=4,
     )
     with baca.scope(section_4.stage_1.rh[:1]) as collections:
-        tuplets = baca.from_collections(
-            collections, [2, -4, 2, -4, 4], 16, treatments=[2]
-        )
+        tuplets = baca.from_collections(collections, [2, -4, 2, -4, 4], 16)
+        tuplets = [baca.prolate(_, 2, 16) for _ in tuplets]
         baca.dynamic(baca.select.phead(tuplets, 0), "ff")
         baca.register(tuplets, -12, 12)
         baca.tuplet_bracket_up(tuplets)
@@ -226,8 +227,9 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             "PC<3, 0, 10, 11, 1>",
             "PC<5, 2, 0, 1>",
         ]
+        tuplets = baca.from_collections(collections, [1], 16)
         duration = abjad.Duration(1, 4)
-        tuplets = baca.from_collections(collections, [1], 16, treatments=[duration])
+        tuplets = [baca.prolate(_, duration) for _ in tuplets]
         groups = rmakers.nongrace_leaves_in_each_tuplet(tuplets)
         rmakers.beam_groups(groups)
         baca.dls_staff_padding(tuplets, 8)
