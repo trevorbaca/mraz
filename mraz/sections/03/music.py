@@ -20,8 +20,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         [_.transpose(4 * 7) for _ in section_7.stage_1.lh[-1]]
     ) as collections:
         assert library.foo(collections) == ["PC<2, 8, 0, 1, 4, 6, 11>"]
-        tuplet = baca.from_collection(collections[0], [1], 16)
-        baca.prolate(tuplet, 1, 16)
+        tuplet = baca.from_collection(collections[0], [1], 16, 1)
         rmakers.beam_groups([tuplet])
         baca.register(tuplet, 6, 6 + 10)
         container = abjad.Container([tuplet])
@@ -76,8 +75,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         [_.transpose(4 * 7) for _ in section_7.stage_1.lh[-1]]
     ) as collections:
         assert library.foo(collections) == ["PC<2, 8, 0, 1, 4, 6, 11>"]
-        tuplet = baca.from_collection(collections[0], [1], 16)
-        baca.prolate(tuplet, 1, 16)
+        tuplet = baca.from_collection(collections[0], [1], 16, 1)
         groups = rmakers.nongrace_leaves_in_each_tuplet(tuplet)
         rmakers.beam_groups(groups)
         baca.register(tuplet, 6, 6 + 10)
@@ -129,8 +127,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         tsd=4,
     )
     with baca.scope(section_4.stage_1.rh[:1]) as collections:
-        tuplet = baca.from_collection(collections[0], [2, -4, 2, -4, 4], 16)
-        baca.prolate(tuplet, 2, 16)
+        tuplet = baca.from_collection(collections[0], [2, -4, 2, -4, 4], 16, 2)
         baca.dynamic(baca.select.phead(tuplet, 0), "ff")
         baca.register(tuplet, -12, 12)
         baca.tuplet_bracket_up(tuplet)
@@ -232,8 +229,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         ]
         tuplets = []
         for collection in collections:
-            tuplet = baca.from_collection(collection, [1], 16)
-            baca.prolate(tuplet, abjad.Duration(1, 4))
+            tuplet = baca.from_collection(collection, [1], 16, abjad.Duration(1, 4))
             tuplets.append(tuplet)
         groups = rmakers.nongrace_leaves_in_each_tuplet(tuplets)
         rmakers.beam_groups(groups)

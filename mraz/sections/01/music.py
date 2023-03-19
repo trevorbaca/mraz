@@ -38,8 +38,7 @@ def make_empty_score():
         ]
         tuplets = []
         for collection in collections:
-            tuplet = baca.from_collection(collection, [1], 16)
-            baca.prolate(tuplet, abjad.Duration(1, 4))
+            tuplet = baca.from_collection(collection, [1], 16, abjad.Duration(1, 4))
             tuplets.append(tuplet)
         baca.dls_staff_padding(tuplets, 8)
         baca.hairpin(tuplets, "f < ff")
@@ -62,8 +61,7 @@ def make_empty_score():
         [_.transpose(4 * 7) for _ in section_7.stage_1.lh[5 - 1]]
     ) as collections:
         assert library.foo(collections) == ["PC<2, 8, 0, 1, 4, 6, 11>"]
-        tuplet = baca.from_collection(collections[0], [1], 16)
-        baca.prolate(tuplet, 1, 16)
+        tuplet = baca.from_collection(collections[0], [1], 16, 1)
         container = abjad.Container([tuplet])
         baca.register(tuplet, 6, 6 + 10)
         imbrications = baca.imbricate(container, library.lh_v4_i, [14, 18])
@@ -79,8 +77,7 @@ def make_empty_score():
         )
     with baca.scope(section_8.stage_3.lh[2 - 1 : 3 - 1]) as collections:
         assert library.foo(collections) == ["PC<11, 3>"]
-        tuplet = baca.from_collection(collections[0], [2, -4], 16)
-        baca.prolate(tuplet, 4, 16)
+        tuplet = baca.from_collection(collections[0], [2, -4], 16, 4)
         baca.clef(abjad.select.leaf(tuplet, 0), "bass")
         baca.dynamic(baca.select.phead(tuplet, 0), "f")
         baca.ottava_bassa(baca.select.tleaves(tuplet))
@@ -119,8 +116,7 @@ def make_empty_score():
     )
     with baca.scope(section_6.stage_1.rh[3 - 1 : 4 - 1]) as collections:
         assert library.foo(collections) == ["PC<10, 1, 3>"]
-        tuplet = baca.from_collection(collections[0], [1], 8)
-        baca.prolate(tuplet, 1, 8)
+        tuplet = baca.from_collection(collections[0], [1], 8, 1)
         baca.dynamic(baca.select.phead(tuplet, 0), "pp")
         baca.dynamic_text_x_offset(baca.select.pleaf(tuplet, 0), 0.5)
         baca.register(tuplet, 24, 12)
@@ -175,8 +171,9 @@ def make_empty_score():
         )
     with baca.scope(section_5.stage_1.lh.next(exhausted=True)) as collections:
         assert library.foo(collections) == ["PC<9, 1, 11, 8, 7>"]
-        tuplet = baca.from_collection(collections[0], [4, -4], 16)
-        baca.prolate(tuplet, abjad.Duration(16, 4))
+        tuplet = baca.from_collection(
+            collections[0], [4, -4], 16, abjad.Duration(16, 4)
+        )
         rmakers.denominator(tuplet, abjad.Duration(1, 1))
         baca.dynamic(baca.select.phead(tuplet, 0), "mf")
         baca.dynamic_text_x_offset(baca.select.pleaf(tuplet, 0), 0.25)
