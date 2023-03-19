@@ -156,7 +156,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             [tuplet],
             anchor=baca.anchor_to_figure("4.1.R.1"),
             hide_time_signature=True,
-            tsd=4,
         )
     with baca.scope(section_2.stage_2.rh[0][:4]) as collections:
         assert library.foo(collections) == [
@@ -223,7 +222,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             library.rh_v1,
             [tuplet],
             hide_time_signature=True,
-            tsd=4,
         )
     with baca.scope(section_4.stage_5.lh[:4]) as collections:
         assert library.foo(collections) == [
@@ -265,7 +263,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             [tuplet],
             anchor=baca.anchor_to_figure("7.1.L.5"),
             hide_time_signature=True,
-            tsd=4,
         )
     with baca.scope([resonance]) as collections:
         tuplet = baca.from_collection(collections[0], [4], 16)
@@ -275,7 +272,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             library.lh_resonance,
             [tuplet],
             hide_time_signature=True,
-            tsd=4,
         )
     with baca.scope([resonance]) as collections:
         tuplet = baca.from_collection(collections[0], [5], 16)
@@ -285,7 +281,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             library.lh_resonance,
             [tuplet],
             hide_time_signature=True,
-            tsd=4,
         )
     with baca.scope([resonance]) as collections:
         tuplet = baca.from_collection(collections[0], [4], 16)
@@ -295,7 +290,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             library.lh_resonance,
             [tuplet],
             hide_time_signature=True,
-            tsd=4,
         )
     with baca.scope([resonance]) as collections:
         tuplet = baca.from_collection(collections[0], [8], 16)
@@ -305,7 +299,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             library.lh_resonance,
             [tuplet],
             hide_time_signature=True,
-            tsd=4,
         )
     with baca.scope([resonance]) as collections:
         tuplet = baca.from_collection(collections[0], [10], 16)
@@ -315,7 +308,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             library.lh_resonance,
             [tuplet],
             hide_time_signature=True,
-            tsd=4,
         )
     with baca.scope([resonance]) as collections:
         tuplet = baca.from_collection(collections[0], [21], 16)
@@ -327,7 +319,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             [tuplet],
             anchor=baca.anchor_to_figure("2.2.R.1.1-4"),
             hide_time_signature=True,
-            tsd=4,
         )
     with baca.scope([resonance]) as collections:
         tuplet = baca.from_collection(collections[0], [28], 16)
@@ -337,7 +328,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             library.lh_resonance,
             [tuplet],
             hide_time_signature=True,
-            tsd=4,
         )
     with baca.scope([resonance]) as collections:
         tuplet = baca.from_collection(collections[0], [24], 16)
@@ -347,7 +337,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             library.lh_resonance,
             [tuplet],
             hide_time_signature=True,
-            tsd=4,
         )
     voices = baca.section.cache_voices(score, library.voice_abbreviations)
     voices = baca.section.cache_voices(score, library.voice_abbreviations)

@@ -112,7 +112,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             [tuplet],
             anchor=baca.anchor_to_figure("4.1.R.1"),
             hide_time_signature=True,
-            tsd=4,
         )
     tuplet = abjad.Tuplet((1, 1), "r2.", hide=True)
     baca.label_figure(tuplet, "S.3", accumulator, do_not_increment=True)
@@ -122,7 +121,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         anchor=baca.anchor_to_figure("4.6.R.2"),
         do_not_increment=True,
         hide_time_signature=True,
-        tsd=4,
     )
     with baca.scope(section_4.stage_1.lh.next()) as collections:
         assert library.foo(collections) == ["PC<8, 2, 4>"]
@@ -135,7 +133,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             library.lh_v5,
             [tuplet],
             hide_time_signature=True,
-            tsd=4,
         )
     with baca.scope(section_4.stage_2.lh.next()) as collections:
         assert library.foo(collections) == ["{7, 11, 17, 18, 21}"]
@@ -150,7 +147,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             [tuplet],
             anchor=baca.anchor_to_figure("S.1"),
             hide_time_signature=True,
-            tsd=4,
         )
     with baca.scope(section_4.stage_1.lh.next()) as collections:
         assert library.foo(collections) == ["PC<8, 2, 4>"]
@@ -164,7 +160,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             library.lh_v5,
             [tuplet],
             hide_time_signature=True,
-            tsd=4,
         )
     tuplet = abjad.Tuplet((1, 1), "r2.", hide=True)
     baca.label_figure(tuplet, "S.5", accumulator, do_not_increment=True)
@@ -173,7 +168,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         [tuplet],
         do_not_increment=True,
         hide_time_signature=True,
-        tsd=4,
     )
     with baca.scope(section_4.stage_2.lh.next()) as collections:
         assert library.foo(collections) == ["{7, 11, 17, 18, 21}"]
@@ -186,7 +180,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             library.lh_v5,
             [tuplet],
             hide_time_signature=False,
-            tsd=4,
         )
     with baca.scope(section_4.stage_2.lh.next()) as collections:
         assert library.foo(collections) == ["{7, 11, 17, 18, 21}"]
@@ -339,7 +332,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             [tuplet],
             do_not_increment=True,
             hide_time_signature=True,
-            tsd=4,
         )
     with baca.scope([{-35, -23}]) as collections:
         tuplet = baca.from_collection(collections[0], [16], 16)
@@ -349,7 +341,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             [tuplet],
             do_not_increment=True,
             hide_time_signature=True,
-            tsd=4,
         )
     with baca.scope([{-33, -21}]) as collections:
         tuplet = baca.from_collection(collections[0], [8], 16)
@@ -372,7 +363,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             [tuplet],
             do_not_increment=True,
             hide_time_signature=True,
-            tsd=4,
         )
     with baca.scope([{-33, -21}]) as collections:
         tuplet = baca.from_collection(collections[0], [16], 16)
@@ -382,7 +372,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             [tuplet],
             do_not_increment=True,
             hide_time_signature=True,
-            tsd=4,
         )
     with baca.scope(section_4.stage_4.lh.next(2)) as collections:
         assert library.foo(collections) == ["{0, 10}", "{2, 5}"]
@@ -404,7 +393,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             container,
             anchor=baca.resume_after(library.lh_v5),
             hide_time_signature=False,
-            tsd=4,
         )
     tuplet = abjad.Tuplet((1, 1), "r1", hide=True)
     baca.label_figure(tuplet, "S.6", accumulator, do_not_increment=True)
@@ -688,7 +676,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         [tuplet],
         do_not_increment=True,
         hide_time_signature=True,
-        tsd=4,
     )
     with baca.scope(section_4.stage_4.rh.next()) as collections:
         assert library.foo(collections) == ["PC<10, 5, 6, 0, 7, 1, 6, 9>"]
@@ -721,7 +708,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             anchor=baca.anchor_to_figure("4.4.L.4-6"),
             hide_time_signature=True,
             imbrications=imbrications,
-            tsd=4,
         )
     with baca.scope(section_4.stage_4.rh.next(exhausted=True)) as collections:
         assert library.foo(collections) == [
@@ -756,7 +742,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             anchor=baca.anchor(library.lh_v5, lambda _: baca.select.rest(_, -8)),
             hide_time_signature=True,
             imbrications=imbrications,
-            tsd=4,
         )
     resonance = set("e, fs, gs, as, b,".split())
     with baca.scope([resonance]) as collections:
@@ -770,7 +755,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             anchor=baca.resume(),
             do_not_increment=True,
             hide_time_signature=False,
-            tsd=4,
         )
     with baca.scope([resonance]) as collections:
         tuplet = baca.from_collection(collections[0], [28], 16)
@@ -863,7 +847,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             [tuplet],
             anchor=baca.anchor_to_figure("R.8"),
             hide_time_signature=True,
-            tsd=4,
         )
     with baca.scope(section_4.stage_5.rh.next()) as collections:
         assert library.foo(collections) == ["PC<5>"]
@@ -877,7 +860,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             library.rh_v1,
             [tuplet],
             hide_time_signature=True,
-            tsd=4,
         )
     with baca.scope(section_4.stage_5.rh.next()) as collections:
         assert library.foo(collections) == ["PC<10>"]
@@ -891,7 +873,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             library.rh_v1,
             [tuplet],
             hide_time_signature=True,
-            tsd=4,
         )
     with baca.scope(section_4.stage_5.rh.next()) as collections:
         assert library.foo(collections) == ["PC<3>"]
@@ -905,7 +886,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             library.rh_v1,
             [tuplet],
             hide_time_signature=True,
-            tsd=4,
         )
     with baca.scope(section_4.stage_5.rh.next()) as collections:
         assert library.foo(collections) == ["PC<5>"]
@@ -920,7 +900,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             [tuplet],
             anchor=baca.anchor_to_figure("R.13"),
             hide_time_signature=True,
-            tsd=4,
         )
     with baca.scope(section_4.stage_5.rh.next(exhausted=True)) as collections:
         assert library.foo(collections) == ["PC<10>"]
@@ -934,7 +913,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             library.rh_v1,
             [tuplet],
             hide_time_signature=True,
-            tsd=4,
         )
     with baca.scope(section_4.stage_5.lh.next(4)) as collections:
         assert library.foo(collections) == [
@@ -963,7 +941,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             container,
             anchor=baca.anchor_to_figure("4.5.R.3"),
             hide_time_signature=True,
-            tsd=4,
         )
     with baca.scope(section_4.stage_5.lh.next(4)) as collections:
         assert library.foo(collections) == [
@@ -992,7 +969,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             library.rh_v2,
             container,
             hide_time_signature=True,
-            tsd=4,
         )
     with baca.scope(section_4.stage_6.rh[1:2]) as collections:
         assert library.foo(collections) == ["{-3, 7, 8, 11, 13, 17, 27, 36}"]
@@ -1008,7 +984,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             [tuplet],
             anchor=baca.anchor_to_figure("R.12"),
             hide_time_signature=True,
-            tsd=4,
         )
     with baca.scope(section_4.stage_5.lh.next(4)) as collections:
         assert library.foo(collections) == [
@@ -1037,7 +1012,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             library.rh_v2,
             container,
             hide_time_signature=True,
-            tsd=4,
         )
     with baca.scope(section_4.stage_5.lh.next(2)) as collections:
         assert library.foo(collections) == ["PC<9, 6, 4, 5>", "PC<7, 11, 8, 6>"]
@@ -1061,7 +1035,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             library.rh_v2,
             container,
             hide_time_signature=True,
-            tsd=4,
         )
     with baca.scope(section_4.stage_6.rh.next()) as collections:
         assert library.foo(collections) == ["{17, 27, 36, 40, 42, 46}"]
@@ -1121,7 +1094,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         anchor=baca.anchor_to_figure("4.6.R.3"),
         do_not_increment=True,
         hide_time_signature=True,
-        tsd=4,
     )
     with baca.scope(section_4.stage_1.rh[1:2]) as collections:
         assert library.foo(collections) == ["PC<3, 1, 0, 10>"]
@@ -1153,7 +1125,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             [tuplet],
             anchor=baca.anchor_to_figure("4.1.R.2'"),
             hide_time_signature=True,
-            tsd=4,
         )
     with baca.scope(section_5.stage_1.rh.next(exhausted=True)) as collections:
         assert library.foo(collections) == ["PC<0, 2, 3, 5>"]
@@ -1190,7 +1161,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             [tuplet],
             anchor=baca.anchor_to_figure("5.1.R.1"),
             hide_time_signature=True,
-            tsd=4,
         )
     voices = baca.section.cache_voices(score, library.voice_abbreviations)
     voices = baca.section.cache_voices(score, library.voice_abbreviations)
