@@ -166,7 +166,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
                 lambda _: abjad.select.note(_, 1),
             ),
             hide_time_signature=True,
-            tsd=4,
         )
     with baca.scope(section_8.stage_3.lh.next()) as collections:
         assert library.foo(collections) == ["PC<11, 3>"]
@@ -183,7 +182,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
                 lambda _: abjad.select.note(_, 11),
             ),
             hide_time_signature=True,
-            tsd=4,
         )
     with baca.scope(section_8.stage_3.lh.next()) as collections:
         assert library.foo(collections) == ["PC<10, 0, 4>"]
@@ -201,7 +199,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
                 lambda _: abjad.select.note(_, -1),
             ),
             hide_time_signature=True,
-            tsd=4,
         )
     with baca.scope(section_8.stage_3.lh.next()) as collections:
         assert library.foo(collections) == ["PC<7, 5, 1>"]
@@ -218,7 +215,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
                 lambda _: abjad.select.note(_, 1),
             ),
             hide_time_signature=True,
-            tsd=4,
         )
     with baca.scope(section_8.stage_3.lh.next()) as collections:
         assert library.foo(collections) == ["PC<2, 4, 8, 6>"]
@@ -235,7 +231,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
                 lambda _: abjad.select.note(_, -1),
             ),
             hide_time_signature=True,
-            tsd=4,
         )
     with baca.scope(section_8.stage_3.lh.next(exhausted=True)) as collections:
         assert library.foo(collections) == ["PC<4, 5, 7>"]
@@ -254,7 +249,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
                 lambda _: abjad.select.note(_, 1),
             ),
             hide_time_signature=True,
-            tsd=4,
         )
     voices = baca.section.cache_voices(score, library.voice_abbreviations)
     time_signatures = baca.section.time_signatures(accumulator.time_signatures)

@@ -21,18 +21,13 @@ def make_empty_score():
         assert library.foo(collection) == "PC<10>"
         tuplet = baca.from_collection(collection, [16], 16)
         baca.register(tuplet, 36)
-        groups = rmakers.nongrace_leaves_in_each_tuplet(tuplet)
-        rmakers.beam_groups(groups)
-        baca.tenuto(baca.select.pheads(tuplet))
-        baca.markup(
-            baca.select.pleaf(tuplet, 0), r"\mraz-ottava-brackets-always-govern-markup"
-        )
+        baca.tenuto(tuplet)
+        baca.markup(tuplet, r"\mraz-ottava-brackets-always-govern-markup")
         baca.label_figure(tuplet, "4.5.R.3", accumulator)
         accumulator.cache(
             library.rh_v1,
             [tuplet],
             hide_time_signature=True,
-            tsd=4,
         )
     with baca.scope(section_4.stage_5.lh[:4]) as collections:
         assert library.foo(collections) == [
