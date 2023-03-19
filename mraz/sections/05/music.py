@@ -34,8 +34,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         )
     with baca.scope(section_6.stage_1.rh.next()) as collections:
         assert library.foo(collections) == ["PC<10, 1, 3>"]
-        tuplet = baca.from_collection(collections[0], [1], 8)
-        baca.prolate(tuplet, 1, 8)
+        tuplet = baca.from_collection(collections[0], [1], 8, 1)
         baca.register(tuplet, 24, 12)
         baca.staccato(baca.select.pheads(tuplet))
         baca.tenuto(baca.select.pheads(tuplet))
@@ -63,8 +62,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         )
     with baca.scope(section_6.stage_1.rh.next(exhausted=True)) as collections:
         assert library.foo(collections) == ["PC<8, 4, 7, 9>"]
-        tuplet = baca.from_collection(collections[0], [1], 8)
-        baca.prolate(tuplet, 1, 8)
+        tuplet = baca.from_collection(collections[0], [1], 8, 1)
         baca.register(tuplet, 12, 24)
         baca.staccato(baca.select.pheads(tuplet))
         baca.tenuto(baca.select.pheads(tuplet))
@@ -77,8 +75,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         )
     with baca.scope(section_6.stage_1.lh.next()) as collections:
         assert library.foo(collections) == ["PC<7, 8, 10, 9>"]
-        tuplet = baca.from_collection(collections[0], [1, -1], 16)
-        baca.prolate(tuplet, 1, 16)
+        tuplet = baca.from_collection(collections[0], [1, -1], 16, 1)
         baca.dynamic(baca.select.phead(tuplet, 0), "mp")
         baca.register(tuplet, 0, 12)
         baca.tenuto(baca.select.pheads(tuplet))
@@ -95,8 +92,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         )
     with baca.scope(section_6.stage_1.lh.next()) as collections:
         assert library.foo(collections) == ["PC<11, 0, 2, 1>"]
-        tuplet = baca.from_collection(collections[0], [1, -2], 16)
-        baca.prolate(tuplet, 2, 16)
+        tuplet = baca.from_collection(collections[0], [1, -2], 16, 2)
         baca.register(tuplet, 0, 12)
         baca.tenuto(baca.select.pheads(tuplet))
         baca.tuplet_bracket_staff_padding(tuplet, 3)
