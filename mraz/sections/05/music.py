@@ -19,7 +19,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tuplet = baca.from_collection(collection, [1], 8)
             tuplets.append(tuplet)
         baca.prolate(tuplets[0], 1, 8)
-        baca.rests_after(tuplets, [1], 8)
+        tuplets[-1].append("r8")
         baca.dynamic(baca.select.phead(tuplets, 0), "pp")
         baca.register(tuplets, 24, 12)
         baca.staccato(baca.select.pheads(tuplets))
@@ -50,7 +50,8 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     with baca.scope(section_6.stage_1.rh.next()) as collections:
         assert library.foo(collections) == ["PC<2, 4, 0, 3, 5>"]
         tuplet = baca.from_collection(collections[0], [1], 8)
-        baca.rests_around(tuplet, [1], [1], 8)
+        tuplet.insert(0, "r8")
+        tuplet.append("r8")
         baca.register(tuplet, 24, 12)
         baca.staccato(baca.select.pheads(tuplet))
         baca.tenuto(baca.select.pheads(tuplet))
