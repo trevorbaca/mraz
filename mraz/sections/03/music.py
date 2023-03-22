@@ -141,7 +141,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     with baca.scope(section_4.stage_1.lh.next()) as collections:
         assert library.foo(collections) == ["PC<8, 2, 4>"]
         tuplet = baca.from_collection(collections[0], [3, -1], 16)
-        baca.rests_before(tuplet, [12], 16)
+        tuplet.insert(0, "r2.")
         baca.dynamic(baca.select.phead(tuplet, 0), "f")
         baca.dynamic_down(abjad.select.leaf(tuplet, 0))
         baca.register(tuplet, -6, 6)

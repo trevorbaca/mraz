@@ -94,7 +94,7 @@ def make_empty_score():
     with baca.scope(section_8.stage_3.rh[5 - 1 : 6 - 1]) as collections:
         assert library.foo(collections) == ["PC<10, 2, 0, 11>"]
         tuplet = baca.from_collection(collections[0], [6, -1], 32)
-        baca.rests_after(tuplet, [4], 32)
+        tuplet.append("r8")
         baca.dynamic(baca.select.phead(tuplet, 0), "ppp")
         baca.dynamic_text_x_offset(baca.select.pleaf(tuplet, 0), -0.5)
         baca.dynamic_up(abjad.select.leaf(tuplet, 0))
@@ -139,7 +139,8 @@ def make_empty_score():
     with baca.scope(section_6.stage_1.rh[3:4]) as collections:
         assert library.foo(collections) == ["PC<2, 4, 0, 3, 5>"]
         tuplet = baca.from_collection(collections[0], [1], 8)
-        baca.rests_around(tuplet, [1], [1], 8)
+        tuplet.insert(0, "r8")
+        tuplet.append("r8")
         baca.register(tuplet, 24, 12)
         baca.span_bar_extra_offset(
             abjad.select.leaf(tuplet, -1), (-0.75, 0), after=True
