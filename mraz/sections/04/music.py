@@ -289,7 +289,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     chord_1_upper, chord_1_lower = baca.pcollections.split(segment, pitch=-1)
     with baca.scope(chord_1_lower) as collections:
         assert library.foo(collections) == "<-4, -7, -8, -17>"
-        collections = [set(chord_1_lower)]
+        collections = [tuple(chord_1_lower)]
         tuplet = baca.from_collection(collections[0], [1], 16)
         tuplet.extend("r8.")
         baca.cross_staff(baca.select.phead(tuplet, 0))
@@ -305,7 +305,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         )
     with baca.scope(chord_1_upper) as collections:
         assert library.foo(collections) == "<9, 6, 2, -1>"
-        collections = [set(chord_1_upper)]
+        collections = [tuple(chord_1_upper)]
         tuplet = baca.from_collection(collections[0], [1], 16)
         tuplet.extend("r8.")
         baca.label_figure(tuplet, "4.2.L.11.U", accumulator, abjad.UP)
@@ -315,7 +315,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             anchor=baca.anchor(library.lh_v5, lambda _: abjad.select.chord(_, -1)),
             tsd=4,
         )
-    with baca.scope([{-35, -23}]) as collections:
+    with baca.scope([(-35, -23)]) as collections:
         tuplet = baca.from_collection(collections[0], [8], 16)
         tuplet.insert(0, "s4")
         container = abjad.Container([tuplet])
@@ -328,7 +328,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             do_not_increment=True,
             tsd=4,
         )
-    with baca.scope([{-35, -23}]) as collections:
+    with baca.scope([(-35, -23)]) as collections:
         tuplet = baca.from_collection(collections[0], [4], 16)
         baca.label_figure(tuplet, "R.2", accumulator, do_not_increment=True)
         accumulator.cache(
@@ -337,7 +337,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             do_not_increment=True,
             hide_time_signature=True,
         )
-    with baca.scope([{-35, -23}]) as collections:
+    with baca.scope([(-35, -23)]) as collections:
         tuplet = baca.from_collection(collections[0], [16], 16)
         baca.label_figure(tuplet, "R.3", accumulator, do_not_increment=True)
         accumulator.cache(
@@ -346,7 +346,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             do_not_increment=True,
             hide_time_signature=True,
         )
-    with baca.scope([{-33, -21}]) as collections:
+    with baca.scope([(-33, -21)]) as collections:
         tuplet = baca.from_collection(collections[0], [8], 16)
         tuplet.insert(0, "s4")
         container = abjad.Container([tuplet])
@@ -359,7 +359,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             do_not_increment=True,
             tsd=4,
         )
-    with baca.scope([{-33, -21}]) as collections:
+    with baca.scope([(-33, -21)]) as collections:
         tuplet = baca.from_collection(collections[0], [4], 16)
         baca.label_figure(tuplet, "R.5", accumulator, do_not_increment=True)
         accumulator.cache(
@@ -368,7 +368,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             do_not_increment=True,
             hide_time_signature=True,
         )
-    with baca.scope([{-33, -21}]) as collections:
+    with baca.scope([(-33, -21)]) as collections:
         tuplet = baca.from_collection(collections[0], [16], 16)
         baca.label_figure(tuplet, "R.6", accumulator, do_not_increment=True)
         accumulator.cache(
@@ -752,7 +752,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             hide_time_signature=True,
             imbrications=imbrications,
         )
-    resonance = set("e, fs, gs, as, b,".split())
+    resonance = tuple("e, fs, gs, as, b,".split())
     with baca.scope([resonance]) as collections:
         tuplet = baca.from_collection(collections[0], [4], 16)
         groups = rmakers.nongrace_leaves_in_each_tuplet(tuplet)
