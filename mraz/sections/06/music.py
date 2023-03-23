@@ -406,7 +406,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tuplets,
             tsd=4,
         )
-    with baca.scope([{-35, -23}]) as collections:
+    with baca.scope([(-35, -23)]) as collections:
         tuplet = baca.from_collection(collections[0], [29], 16)
         accumulator.cache(
             library.lh_resonance,
@@ -414,28 +414,28 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             anchor=baca.anchor_to_figure("2.2.R.1"),
             hide_time_signature=True,
         )
-    with baca.scope([{-35, -23}]) as collections:
+    with baca.scope([(-35, -23)]) as collections:
         tuplet = baca.from_collection(collections[0], [27], 16)
         accumulator.cache(
             library.lh_resonance,
             [tuplet],
             hide_time_signature=True,
         )
-    with baca.scope([{-33, -21}]) as collections:
+    with baca.scope([(-33, -21)]) as collections:
         tuplet = baca.from_collection(collections[0], [21], 16)
         accumulator.cache(
             library.lh_resonance,
             [tuplet],
             hide_time_signature=True,
         )
-    with baca.scope([{-33, -21}]) as collections:
+    with baca.scope([(-33, -21)]) as collections:
         tuplet = baca.from_collection(collections[0], [15], 16)
         accumulator.cache(
             library.lh_resonance,
             [tuplet],
             hide_time_signature=True,
         )
-    with baca.scope([{-33, -21}]) as collections:
+    with baca.scope([(-33, -21)]) as collections:
         tuplet = baca.from_collection(collections[0], [16], 16)
         accumulator.cache(
             library.lh_resonance,

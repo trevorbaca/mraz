@@ -15,7 +15,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     section_2 = library.moment_2()
     section_4 = library.moment_4()
     section_7 = library.moment_7()
-    resonance = set("e, fs, gs, as, b,".split())
+    resonance = tuple("e, fs, gs, as, b,".split())
     with baca.scope(
         [_.transpose(4 * 7) for _ in section_7.stage_1.lh[-1]]
     ) as collections:
