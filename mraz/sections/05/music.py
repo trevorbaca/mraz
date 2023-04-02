@@ -12,7 +12,10 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     score = library.make_empty_score()
     accumulator = baca.Accumulator(score)
     section_6 = library.moment_6()
-    with baca.scope(section_6.stage_1.rh.next(2)) as collections:
+
+    @baca.call
+    def block():
+        collections = section_6.stage_1.rh.next(2)
         assert library.foo(collections) == ["PC<6, 9, 11>", "PC<0, 8, 11, 1>"]
         tuplets = []
         for collection in collections:
@@ -32,7 +35,10 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tuplets,
             tsd=8,
         )
-    with baca.scope(section_6.stage_1.rh.next()) as collections:
+
+    @baca.call
+    def block():
+        collections = section_6.stage_1.rh.next()
         assert library.foo(collections) == ["PC<10, 1, 3>"]
         tuplet = baca.from_collection(collections[0], [1], 8, 1)
         baca.register(tuplet, 24, 12)
@@ -47,7 +53,10 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             [tuplet],
             tsd=8,
         )
-    with baca.scope(section_6.stage_1.rh.next()) as collections:
+
+    @baca.call
+    def block():
+        collections = section_6.stage_1.rh.next()
         assert library.foo(collections) == ["PC<2, 4, 0, 3, 5>"]
         tuplet = baca.from_collection(collections[0], [1], 8)
         tuplet.insert(0, "r8")
@@ -61,7 +70,10 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             [tuplet],
             tsd=8,
         )
-    with baca.scope(section_6.stage_1.rh.next(exhausted=True)) as collections:
+
+    @baca.call
+    def block():
+        collections = section_6.stage_1.rh.next(exhausted=True)
         assert library.foo(collections) == ["PC<8, 4, 7, 9>"]
         tuplet = baca.from_collection(collections[0], [1], 8, 1)
         baca.register(tuplet, 12, 24)
@@ -74,7 +86,10 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             [tuplet],
             tsd=8,
         )
-    with baca.scope(section_6.stage_1.lh.next()) as collections:
+
+    @baca.call
+    def block():
+        collections = section_6.stage_1.lh.next()
         assert library.foo(collections) == ["PC<7, 8, 10, 9>"]
         tuplet = baca.from_collection(collections[0], [1, -1], 16, 1)
         baca.dynamic(baca.select.phead(tuplet, 0), "mp")
@@ -91,7 +106,10 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
                 lambda _: abjad.select.note(_, 2),
             ),
         )
-    with baca.scope(section_6.stage_1.lh.next()) as collections:
+
+    @baca.call
+    def block():
+        collections = section_6.stage_1.lh.next()
         assert library.foo(collections) == ["PC<11, 0, 2, 1>"]
         tuplet = baca.from_collection(collections[0], [1, -2], 16, 2)
         baca.register(tuplet, 0, 12)
@@ -107,7 +125,10 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
                 lambda _: abjad.select.note(_, 2),
             ),
         )
-    with baca.scope(section_6.stage_1.lh.next()) as collections:
+
+    @baca.call
+    def block():
+        collections = section_6.stage_1.lh.next()
         assert library.foo(collections) == ["PC<2, 5, 7, 3, 4>"]
         tuplet = baca.from_collection(collections[0], [2, -1], 32)
         baca.register(tuplet, 0, 12)
@@ -123,7 +144,10 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             ),
             hide_time_signature=True,
         )
-    with baca.scope(section_6.stage_1.lh.next(exhausted=True)) as collections:
+
+    @baca.call
+    def block():
+        collections = section_6.stage_1.lh.next(exhausted=True)
         assert library.foo(collections) == ["PC<6, 5>"]
         tuplet = baca.from_collection(collections[0], [2, -1], 32)
         baca.register(tuplet, 12, 0)
@@ -134,6 +158,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             [tuplet],
             hide_time_signature=True,
         )
+
     voices = baca.section.cache_voices(score, library.voice_abbreviations)
     voices = baca.section.cache_voices(score, library.voice_abbreviations)
     time_signatures = baca.section.wrap(accumulator.time_signatures)
