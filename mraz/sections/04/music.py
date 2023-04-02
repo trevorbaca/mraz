@@ -1270,7 +1270,7 @@ def make_score(first_measure_number, previous_persistent_indicators):
         or "InsertVoice" in _
         or "ResonanceVoice" in _
     ]
-    baca.section.reapply(
+    baca.section.reapply_persistent_indicators(
         [voices(_) for _ in music_voice_names],
         previous_persistent_indicators,
         manifests=library.manifests,
