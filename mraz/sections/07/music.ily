@@ -378,19 +378,19 @@ number.7.RH.Music.1 = {
             {
 
                 % [RH.Music.1 measure 1]
+                \dynamicUp
+                  %! REAPPLIED_CLEF_COLOR
+                \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'green4)
                 \override Beam.positions = #'(10 . 10)
+                  %! REAPPLIED_CLEF_COLOR_CANCELLATION
+                %@% \override PianoMusicRHStaff.Clef.color = ##f
                 \override Stem.direction = #up
+                  %! REAPPLIED_CLEF
+                \set PianoMusicRHStaff.forceClef = ##t
                 \set stemLeftBeamCount = 0
                 \set stemRightBeamCount = 2
                   %! REAPPLIED_CLEF
                 \clef "treble"
-                \dynamicUp
-                  %! REAPPLIED_CLEF_COLOR
-                \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'green4)
-                  %! REAPPLIED_CLEF_COLOR_CANCELLATION
-                %@% \override PianoMusicRHStaff.Clef.color = ##f
-                  %! REAPPLIED_CLEF
-                \set PianoMusicRHStaff.forceClef = ##t
                 e''16
                   %! EXPLICIT_DYNAMIC_COLOR
                   %! EXPLICIT_DYNAMIC
@@ -986,9 +986,9 @@ number.7.RH.InsertVoice.1 = {
 number.7.RH.Music.2 = {
 
     % [RH.Music.2 measure 1]
+    \dynamicDown
     \override Beam.positions = #'(-4.5 . -4.5)
     \override Slur.direction = #up
-    \dynamicDown
     s1 * 3/4
 
     {
@@ -1767,16 +1767,16 @@ number.7.LH.Music.3 = {
 number.7.LH.Music.4 = {
 
     % [LH.Music.4 measure 1]
-    \override Beam.positions = #'(-5.5 . -5.5)
-    \override Script.direction = #down
-      %! REAPPLIED_CLEF
-    \clef "treble"
       %! REAPPLIED_CLEF_COLOR
     \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'green4)
+    \override Beam.positions = #'(-5.5 . -5.5)
       %! REAPPLIED_CLEF_COLOR_CANCELLATION
     %@% \override PianoMusicLHStaff.Clef.color = ##f
+    \override Script.direction = #down
       %! REAPPLIED_CLEF
     \set PianoMusicLHStaff.forceClef = ##t
+      %! REAPPLIED_CLEF
+    \clef "treble"
     s1 * 3/8
       %! REAPPLIED_CLEF_REDRAW_COLOR
     \override PianoMusicLHStaff.Clef.color = #(x11-color 'OliveDrab)
@@ -2069,11 +2069,11 @@ number.7.LH.Music.5 = {
             \scaleDurations #'(1 . 1)
             {
 
+                \dynamicDown
                 \override Stem.direction = #down
                 \override TupletBracket.direction = #down
                 \set stemLeftBeamCount = 0
                 \set stemRightBeamCount = 2
-                \dynamicDown
                 cs'!16
                   %! EXPLICIT_DYNAMIC_COLOR
                   %! EXPLICIT_DYNAMIC

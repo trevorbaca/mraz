@@ -453,14 +453,14 @@ number.3.Skips = {
 number.3.RH.Music.1 = {
 
     % [RH.Music.1 measure 1]
-      %! REAPPLIED_CLEF
-    \clef "treble"
       %! REAPPLIED_CLEF_COLOR
     \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'green4)
       %! REAPPLIED_CLEF_COLOR_CANCELLATION
     %@% \override PianoMusicRHStaff.Clef.color = ##f
       %! REAPPLIED_CLEF
     \set PianoMusicRHStaff.forceClef = ##t
+      %! REAPPLIED_CLEF
+    \clef "treble"
     s1 * 11/2
       %! REAPPLIED_INSTRUMENT_ALERT
     ^ \baca-reapplied-instrument-markup "(“Piano”)"
@@ -563,11 +563,11 @@ number.3.RH.Music.2 = {
         {
 
             % [RH.Music.2 measure 3]
+            \dynamicDown
             \once \override DynamicText.X-offset = 0
             \override Stem.direction = #down
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
-            \dynamicDown
             fs!16
             - \staccato
               %! EXPLICIT_DYNAMIC_COLOR
@@ -1397,8 +1397,8 @@ number.3.LH.Music.5 = {
         {
 
             % [LH.Music.5 measure 8]
-            \override Rest.direction = #up
             \dynamicDown
+            \override Rest.direction = #up
             r2.
 
             af!8.
@@ -1447,14 +1447,14 @@ number.3.LH.InsertVoice.5 = {
 number.3.LH.Music.6 = {
 
     % [LH.Music.6 measure 1]
-      %! REAPPLIED_CLEF
-    \clef "bass"
       %! REAPPLIED_CLEF_COLOR
     \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'green4)
       %! REAPPLIED_CLEF_COLOR_CANCELLATION
     %@% \override PianoMusicLHStaff.Clef.color = ##f
       %! REAPPLIED_CLEF
     \set PianoMusicLHStaff.forceClef = ##t
+      %! REAPPLIED_CLEF
+    \clef "bass"
     s1 * 39/4
       %! REAPPLIED_CLEF_REDRAW_COLOR
     \override PianoMusicLHStaff.Clef.color = #(x11-color 'OliveDrab)
