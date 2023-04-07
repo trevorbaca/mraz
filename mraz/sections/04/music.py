@@ -1409,9 +1409,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         previous_persistent_indicators=previous_persistent_indicators,
     )
     accumulator.populate(score)
-    for tuplet in abjad.select.tuplets(score):
-        if tuplet.trivial():
-            tuplet.hide = True
+    rmakers.hide_trivial(score)
     return score, voices, time_signatures
 
 
