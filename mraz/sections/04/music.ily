@@ -1407,16 +1407,16 @@ number.4.Skips = {
 number.4.RH.Music.1 = {
 
     % [RH.Music.1 measure 1]
-    \override TupletBracket.direction = #up
-    \override TupletBracket.staff-padding = 8
-      %! REAPPLIED_CLEF
-    \clef "treble"
       %! REAPPLIED_CLEF_COLOR
     \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'green4)
       %! REAPPLIED_CLEF_COLOR_CANCELLATION
     %@% \override PianoMusicRHStaff.Clef.color = ##f
+    \override TupletBracket.direction = #up
+    \override TupletBracket.staff-padding = 8
       %! REAPPLIED_CLEF
     \set PianoMusicRHStaff.forceClef = ##t
+      %! REAPPLIED_CLEF
+    \clef "treble"
     s1 * 141/8
       %! REAPPLIED_INSTRUMENT_ALERT
     ^ \baca-reapplied-instrument-markup "(“Piano”)"
@@ -1430,8 +1430,8 @@ number.4.RH.Music.1 = {
         {
 
             % [RH.Music.1 measure 18]
-            \override TextScript.direction = #up
             \dynamicUp
+            \override TextScript.direction = #up
             r8
 
             \once \override DynamicText.X-offset = -4
@@ -2584,10 +2584,10 @@ number.4.RH.Music.2 = {
         {
 
             % [RH.Music.2 measure 44]
+            \dynamicUp
             \override Script.direction = #up
             \override Stem.direction = #up
             \override TextScript.direction = #up
-            \dynamicUp
             c'''8
             - \accent
               %! EXPLICIT_DYNAMIC_COLOR
@@ -3556,8 +3556,8 @@ number.4.LH.Music.5 = {
         {
 
             % [LH.Music.5 measure 17]
-            \once \override Stem.direction = #up
             \crossStaff
+            \once \override Stem.direction = #up
             <g, e f af!>16
               %! EXPLICIT_DYNAMIC_COLOR
               %! EXPLICIT_DYNAMIC
@@ -4205,14 +4205,14 @@ number.4.LH.InsertVoice.5 = {
 number.4.LH.Music.6 = {
 
     % [LH.Music.6 measure 1]
-      %! REAPPLIED_CLEF
-    \clef "bass"
       %! REAPPLIED_CLEF_COLOR
     \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'green4)
       %! REAPPLIED_CLEF_COLOR_CANCELLATION
     %@% \override PianoMusicLHStaff.Clef.color = ##f
       %! REAPPLIED_CLEF
     \set PianoMusicLHStaff.forceClef = ##t
+      %! REAPPLIED_CLEF
+    \clef "bass"
     s1 * 44/1
       %! REAPPLIED_CLEF_REDRAW_COLOR
     \override PianoMusicLHStaff.Clef.color = #(x11-color 'OliveDrab)

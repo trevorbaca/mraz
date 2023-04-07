@@ -356,19 +356,19 @@ number.1.RH.Music.1 = {
               %! MEASURE_1
               %! SHIFTED_CLEF
         %%% \once \override PianoMusicRHStaff.Clef.X-extent = ##f
+              %! EXPLICIT_CLEF_COLOR
+            \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'blue)
               %! MEASURE_1
               %! SHIFTED_CLEF
         %%% \once \override PianoMusicRHStaff.Clef.extra-offset = #'(-2.5 . 0)
-              %! -PARTS
-            \set PianoStaff.instrumentName = \mraz-piano-markup
-              %! EXPLICIT_CLEF
-            \clef "treble"
-              %! EXPLICIT_CLEF_COLOR
-            \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'blue)
               %! EXPLICIT_CLEF_COLOR_CANCELLATION
             %@% \override PianoMusicRHStaff.Clef.color = ##f
               %! EXPLICIT_CLEF
             \set PianoMusicRHStaff.forceClef = ##t
+              %! -PARTS
+            \set PianoStaff.instrumentName = \mraz-piano-markup
+              %! EXPLICIT_CLEF
+            \clef "treble"
             bf''''!1
             - \tenuto
               %! FIGURE_LABEL
@@ -582,10 +582,10 @@ number.1.RH.Music.2 = {
         {
 
             % [RH.Music.2 measure 8]
+            \dynamicUp
             \override Script.direction = #up
             \override Stem.direction = #up
             \override TextScript.direction = #up
-            \dynamicUp
             c'''8
             - \accent
               %! EXPLICIT_DYNAMIC_COLOR
@@ -888,17 +888,17 @@ number.1.LH.Music.1 = {
       %! MEASURE_1
       %! SHIFTED_CLEF
 %%% \once \override PianoMusicLHStaff.Clef.X-extent = ##f
+      %! EXPLICIT_CLEF_COLOR
+    \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'blue)
       %! MEASURE_1
       %! SHIFTED_CLEF
 %%% \once \override PianoMusicLHStaff.Clef.extra-offset = #'(-2.5 . 0)
-      %! EXPLICIT_CLEF
-    \clef "treble"
-      %! EXPLICIT_CLEF_COLOR
-    \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'blue)
       %! EXPLICIT_CLEF_COLOR_CANCELLATION
     %@% \override PianoMusicLHStaff.Clef.color = ##f
       %! EXPLICIT_CLEF
     \set PianoMusicLHStaff.forceClef = ##t
+      %! EXPLICIT_CLEF
+    \clef "treble"
     s1 * 69/8
       %! EXPLICIT_CLEF_REDRAW_COLOR
     \override PianoMusicLHStaff.Clef.color = #(x11-color 'DeepSkyBlue2)
@@ -1034,8 +1034,8 @@ number.1.LH.Music.5 = {
         {
 
             % [LH.Music.5 measure 3]
-            \once \override DynamicText.X-offset = -0.5
             \dynamicUp
+            \once \override DynamicText.X-offset = -0.5
             bf,,!8.
               %! EXPLICIT_DYNAMIC_COLOR
               %! EXPLICIT_DYNAMIC
@@ -1098,21 +1098,21 @@ number.1.LH.Music.6 = {
               %! MEASURE_3
               %! SHIFTED_CLEF
             \once \override PianoMusicLHStaff.Clef.X-extent = ##f
+              %! EXPLICIT_CLEF_COLOR
+            \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'blue)
               %! MEASURE_3
               %! SHIFTED_CLEF
             \once \override PianoMusicLHStaff.Clef.extra-offset = #'(-2.75 . 0)
               %! SPANNER_START
             \ottava -1
+              %! EXPLICIT_CLEF_COLOR_CANCELLATION
+            %@% \override PianoMusicLHStaff.Clef.color = ##f
             \override TupletBracket.direction = #down
             \override TupletBracket.staff-padding = 6
               %! EXPLICIT_CLEF
-            \clef "bass"
-              %! EXPLICIT_CLEF_COLOR
-            \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'blue)
-              %! EXPLICIT_CLEF_COLOR_CANCELLATION
-            %@% \override PianoMusicLHStaff.Clef.color = ##f
-              %! EXPLICIT_CLEF
             \set PianoMusicLHStaff.forceClef = ##t
+              %! EXPLICIT_CLEF
+            \clef "bass"
             b,,,8
               %! EXPLICIT_DYNAMIC_COLOR
               %! EXPLICIT_DYNAMIC

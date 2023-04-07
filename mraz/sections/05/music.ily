@@ -158,14 +158,14 @@ number.5.Skips = {
 number.5.RH.Music.1 = {
 
     % [RH.Music.1 measure 1]
-      %! REAPPLIED_CLEF
-    \clef "treble"
       %! REAPPLIED_CLEF_COLOR
     \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'green4)
       %! REAPPLIED_CLEF_COLOR_CANCELLATION
     %@% \override PianoMusicRHStaff.Clef.color = ##f
       %! REAPPLIED_CLEF
     \set PianoMusicRHStaff.forceClef = ##t
+      %! REAPPLIED_CLEF
+    \clef "treble"
     s1 * 25/8
       %! REAPPLIED_INSTRUMENT_ALERT
     ^ \baca-reapplied-instrument-markup "(“Piano”)"
@@ -483,17 +483,17 @@ number.5.LH.Music.4 = {
       %! MEASURE_78
       %! SHIFTED_CLEF
 %%% \once \override PianoMusicLHStaff.Clef.X-extent = ##f
+      %! EXPLICIT_CLEF_COLOR
+    \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'blue)
       %! MEASURE_78
       %! SHIFTED_CLEF
 %%% \once \override PianoMusicLHStaff.Clef.extra-offset = #'(-2.5 . 0)
-      %! EXPLICIT_CLEF
-    \clef "treble"
-      %! EXPLICIT_CLEF_COLOR
-    \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'blue)
       %! EXPLICIT_CLEF_COLOR_CANCELLATION
     %@% \override PianoMusicLHStaff.Clef.color = ##f
       %! EXPLICIT_CLEF
     \set PianoMusicLHStaff.forceClef = ##t
+      %! EXPLICIT_CLEF
+    \clef "treble"
     s1 * 7/32
       %! EXPLICIT_CLEF_REDRAW_COLOR
     \override PianoMusicLHStaff.Clef.color = #(x11-color 'DeepSkyBlue2)

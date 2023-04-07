@@ -102,9 +102,9 @@
               %! SPACING_COMMAND
             \baca-new-spacing-section #1 #32
               %! BREAK
-            \noBreak
-              %! BREAK
             \break
+              %! BREAK
+            \noBreak
             s1 * 7/8
               %! SPACING
             %@% \bacaStopTextSpanSPM

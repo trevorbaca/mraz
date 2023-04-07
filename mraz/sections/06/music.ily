@@ -614,14 +614,14 @@ number.6.Skips = {
 number.6.RH.Music.1 = {
 
     % [RH.Music.1 measure 1]
-      %! REAPPLIED_CLEF
-    \clef "treble"
       %! REAPPLIED_CLEF_COLOR
     \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'green4)
       %! REAPPLIED_CLEF_COLOR_CANCELLATION
     %@% \override PianoMusicRHStaff.Clef.color = ##f
       %! REAPPLIED_CLEF
     \set PianoMusicRHStaff.forceClef = ##t
+      %! REAPPLIED_CLEF
+    \clef "treble"
     s1 * 103/4
       %! REAPPLIED_INSTRUMENT_ALERT
     ^ \baca-reapplied-instrument-markup "(“Piano”)"
@@ -647,9 +647,9 @@ number.6.RH.Music.2 = {
         {
 
             % [RH.Music.2 measure 1]
+            \dynamicUp
             \override Script.direction = #up
             \override Stem.direction = #up
-            \dynamicUp
             c'''8
             - \accent
               %! EXPLICIT_DYNAMIC_COLOR
@@ -1185,11 +1185,11 @@ number.6.RH.Music.2 = {
         \scaleDurations #'(1 . 1)
         {
 
+            \dynamicDown
             \override Beam.positions = #'(-8 . -8)
             \override Stem.direction = #down
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
-            \dynamicDown
             fs!16
             - \staccato
               %! EXPLICIT_DYNAMIC_COLOR
@@ -2973,14 +2973,14 @@ number.6.LH.Music.3 = {
 number.6.LH.Music.4 = {
 
     % [LH.Music.4 measure 1]
-      %! REAPPLIED_CLEF
-    \clef "treble"
       %! REAPPLIED_CLEF_COLOR
     \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'green4)
       %! REAPPLIED_CLEF_COLOR_CANCELLATION
     %@% \override PianoMusicLHStaff.Clef.color = ##f
       %! REAPPLIED_CLEF
     \set PianoMusicLHStaff.forceClef = ##t
+      %! REAPPLIED_CLEF
+    \clef "treble"
     s1 * 27/4
       %! REAPPLIED_CLEF_REDRAW_COLOR
     \override PianoMusicLHStaff.Clef.color = #(x11-color 'OliveDrab)
@@ -2994,19 +2994,19 @@ number.6.LH.Music.4 = {
               %! MEASURE_85
               %! SHIFTED_CLEF
         %%% \once \override PianoMusicLHStaff.Clef.X-extent = ##f
+              %! EXPLICIT_CLEF_COLOR
+            \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'blue)
               %! MEASURE_85
               %! SHIFTED_CLEF
         %%% \once \override PianoMusicLHStaff.Clef.extra-offset = #'(-2.75 . 0)
+              %! EXPLICIT_CLEF_COLOR_CANCELLATION
+            %@% \override PianoMusicLHStaff.Clef.color = ##f
             \override Script.direction = #up
             \override Slur.direction = #down
               %! EXPLICIT_CLEF
-            \clef "bass"
-              %! EXPLICIT_CLEF_COLOR
-            \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'blue)
-              %! EXPLICIT_CLEF_COLOR_CANCELLATION
-            %@% \override PianoMusicLHStaff.Clef.color = ##f
-              %! EXPLICIT_CLEF
             \set PianoMusicLHStaff.forceClef = ##t
+              %! EXPLICIT_CLEF
+            \clef "bass"
             r2
               %! EXPLICIT_CLEF_REDRAW_COLOR
             \override PianoMusicLHStaff.Clef.color = #(x11-color 'DeepSkyBlue2)
@@ -3362,18 +3362,18 @@ number.6.LH.Music.4 = {
               %! MEASURE_97
               %! SHIFTED_CLEF
             \once \override PianoMusicLHStaff.Clef.X-extent = ##f
+              %! EXPLICIT_CLEF_COLOR
+            \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'blue)
               %! MEASURE_97
               %! SHIFTED_CLEF
             \once \override PianoMusicLHStaff.Clef.extra-offset = #'(-2.5 . 0)
             \once \override Rest.transparent = ##t
-              %! EXPLICIT_CLEF
-            \clef "treble"
-              %! EXPLICIT_CLEF_COLOR
-            \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'blue)
               %! EXPLICIT_CLEF_COLOR_CANCELLATION
             %@% \override PianoMusicLHStaff.Clef.color = ##f
               %! EXPLICIT_CLEF
             \set PianoMusicLHStaff.forceClef = ##t
+              %! EXPLICIT_CLEF
+            \clef "treble"
             r4
             \revert Script.direction
               %! EXPLICIT_CLEF_REDRAW_COLOR
@@ -3405,8 +3405,8 @@ number.6.LH.Music.5 = {
         {
 
             % [LH.Music.5 measure 5]
-            \override Stem.direction = #up
             \dynamicUp
+            \override Stem.direction = #up
             bf,,!8.
               %! EXPLICIT_DYNAMIC_COLOR
               %! EXPLICIT_DYNAMIC

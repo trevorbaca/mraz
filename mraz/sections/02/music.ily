@@ -382,14 +382,14 @@ number.2.Skips = {
 number.2.RH.Music.1 = {
 
     % [RH.Music.1 measure 1]
-      %! REAPPLIED_CLEF
-    \clef "treble"
       %! REAPPLIED_CLEF_COLOR
     \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'green4)
       %! REAPPLIED_CLEF_COLOR_CANCELLATION
     %@% \override PianoMusicRHStaff.Clef.color = ##f
       %! REAPPLIED_CLEF
     \set PianoMusicRHStaff.forceClef = ##t
+      %! REAPPLIED_CLEF
+    \clef "treble"
     s1 * 167/16
       %! REAPPLIED_INSTRUMENT_ALERT
     ^ \baca-reapplied-instrument-markup "(“Piano”)"
@@ -565,10 +565,10 @@ number.2.LH.Music.5 = {
         {
 
             % [LH.Music.5 measure 1]
+            \dynamicUp
               %! SPANNER_START
             \ottava -1
             \override TupletBracket.direction = #up
-            \dynamicUp
             g,8.
               %! EXPLICIT_DYNAMIC_COLOR
               %! EXPLICIT_DYNAMIC
@@ -943,16 +943,16 @@ number.2.LH.InsertVoice.5 = {
 number.2.LH.Music.6 = {
 
     % [LH.Music.6 measure 1]
-    \override Script.direction = #down
-    \override TupletBracket.staff-padding = 6
-      %! REAPPLIED_CLEF
-    \clef "bass"
       %! REAPPLIED_CLEF_COLOR
     \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'green4)
       %! REAPPLIED_CLEF_COLOR_CANCELLATION
     %@% \override PianoMusicLHStaff.Clef.color = ##f
+    \override Script.direction = #down
+    \override TupletBracket.staff-padding = 6
       %! REAPPLIED_CLEF
     \set PianoMusicLHStaff.forceClef = ##t
+      %! REAPPLIED_CLEF
+    \clef "bass"
     s1 * 11/16
       %! REAPPLIED_CLEF_REDRAW_COLOR
     \override PianoMusicLHStaff.Clef.color = #(x11-color 'OliveDrab)
