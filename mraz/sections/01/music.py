@@ -244,9 +244,7 @@ def make_empty_score():
         manifests=library.manifests,
     )
     accumulator.populate(score)
-    for tuplet in abjad.select.tuplets(score):
-        if tuplet.trivial():
-            tuplet.hide = True
+    rmakers.hide_trivial(score)
     return score, voices, time_signatures
 
 

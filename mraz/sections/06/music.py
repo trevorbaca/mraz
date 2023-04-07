@@ -701,14 +701,17 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             hide_time_signature=True,
         )
 
-    tuplet = abjad.Tuplet((1, 1), "r4", hide=True)
-    baca.clef(abjad.select.leaf(tuplet, 0), "treble")
-    baca.rest_transparent(abjad.select.rests(tuplet))
-    accumulator.cache(
-        library.lh_v4,
-        [tuplet],
-        tsd=4,
-    )
+    @baca.call
+    def block():
+        tuplet = abjad.Tuplet((1, 1), "r4", hide=True)
+        baca.clef(abjad.select.leaf(tuplet, 0), "treble")
+        baca.rest_transparent(abjad.select.rests(tuplet))
+        accumulator.cache(
+            library.lh_v4,
+            [tuplet],
+            tsd=4,
+        )
+
     voices = baca.section.cache_voices(score, library.voice_abbreviations)
     voices = baca.section.cache_voices(score, library.voice_abbreviations)
     time_signatures = baca.section.wrap(accumulator.time_signatures)
@@ -722,9 +725,8 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         previous_persistent_indicators=previous_persistent_indicators,
     )
     accumulator.populate(score)
-    for tuplet in abjad.select.tuplets(score):
-        if tuplet.trivial():
-            tuplet.hide = True
+    rmakers.hide_trivial(score)
+    rmakers.swap_skip_filled(score)
     return score, voices, time_signatures
 
 

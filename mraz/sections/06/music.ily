@@ -692,11 +692,10 @@ number.6.RH.Music.2 = {
         \override TupletNumber.stencil = ##f
 
         \tweak text #tuplet-number::calc-fraction-text
+        \tweak edge-height #'(0.7 . 0)
         \times 10/11
         {
 
-            \tweak text #tuplet-number::calc-fraction-text
-            \times 3/4
             {
 
                 % [RH.Music.2 measure 2]
@@ -713,8 +712,6 @@ number.6.RH.Music.2 = {
 
             }
 
-            \tweak text #tuplet-number::calc-fraction-text
-            \times 6/7
             {
 
                 s8
@@ -733,7 +730,6 @@ number.6.RH.Music.2 = {
 
             }
 
-            \scaleDurations #'(1 . 1)
             {
 
                 s8
@@ -778,12 +774,11 @@ number.6.RH.Music.2 = {
 
             }
 
-            \tweak text #tuplet-number::calc-fraction-text
-            \times 3/4
             {
 
                 s8
 
+                % [RH.Music.2 measure 3]
                 s8
 
                 s8
@@ -800,7 +795,6 @@ number.6.RH.Music.2 = {
 
     }
 
-    % [RH.Music.2 measure 3]
     s1 * 1/4
 
     {
@@ -808,14 +802,12 @@ number.6.RH.Music.2 = {
         \override TupletNumber.stencil = ##f
 
         \tweak text #tuplet-number::calc-fraction-text
+        \tweak edge-height #'(0.7 . 0)
         \times 12/13
         {
 
-            \tweak text #tuplet-number::calc-fraction-text
-            \times 6/7
             {
 
-                % [RH.Music.2 measure 4]
                 \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 1
                 s8
@@ -834,7 +826,6 @@ number.6.RH.Music.2 = {
 
             }
 
-            \scaleDurations #'(1 . 1)
             {
 
                 s8
@@ -919,7 +910,6 @@ number.6.RH.Music.2 = {
 
     }
 
-    % [RH.Music.2 measure 5]
     s1 * 1/1
 
     {
@@ -930,10 +920,8 @@ number.6.RH.Music.2 = {
         \times 20/23
         {
 
-            \scaleDurations #'(1 . 1)
             {
 
-                % [RH.Music.2 measure 6]
                 s8
                 [
 
@@ -1043,7 +1031,6 @@ number.6.RH.Music.2 = {
 
     }
 
-    % [RH.Music.2 measure 7]
     s1 * 1/4
 
     {
@@ -1058,7 +1045,6 @@ number.6.RH.Music.2 = {
             \times 6/7
             {
 
-                % [RH.Music.2 measure 8]
                 \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 1
                 s8
@@ -1166,12 +1152,15 @@ number.6.RH.Music.2 = {
                 s8
 
                 s8
+                \revert Beam.positions
+                \revert Script.direction
 
             }
 
-            \scaleDurations #'(1 . 1)
             {
 
+                \override Script.direction = #up
+                \override Slur.direction = #up
                 s8
 
                 s8
@@ -1180,8 +1169,6 @@ number.6.RH.Music.2 = {
 
                 s8
                 ]
-                \revert Beam.positions
-                \revert Script.direction
 
             }
 
@@ -1191,9 +1178,6 @@ number.6.RH.Music.2 = {
 
     }
 
-    % [RH.Music.2 measure 9]
-    \override Script.direction = #up
-    \override Slur.direction = #up
     s1 * 1/4
 
     {
@@ -1201,7 +1185,6 @@ number.6.RH.Music.2 = {
         \scaleDurations #'(1 . 1)
         {
 
-            % [RH.Music.2 measure 10]
             \override Beam.positions = #'(-8 . -8)
             \override Stem.direction = #down
             \set stemLeftBeamCount = 0
@@ -1420,7 +1403,6 @@ number.6.RH.Music.2 = {
         \scaleDurations #'(1 . 1)
         {
 
-            % [RH.Music.2 measure 11]
             \override Beam.positions = #'(-8 . -8)
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
@@ -1613,7 +1595,6 @@ number.6.RH.Music.2 = {
         \scaleDurations #'(1 . 1)
         {
 
-            % [RH.Music.2 measure 12]
             \override Beam.positions = #'(-8 . -8)
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
@@ -1776,7 +1757,6 @@ number.6.RH.Music.2 = {
         \scaleDurations #'(1 . 1)
         {
 
-            % [RH.Music.2 measure 13]
             \override Beam.positions = #'(-8 . -8)
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
@@ -1842,6 +1822,9 @@ number.6.RH.Music.2 = {
             - \staccato
               %! SPANNER_START
             (
+            \revert Script.direction
+            \revert Slur.direction
+            \revert Stem.direction
 
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 2
@@ -1890,9 +1873,6 @@ number.6.RH.Music.2 = {
             )
             ]
             \revert Beam.positions
-            \revert Script.direction
-            \revert Slur.direction
-            \revert Stem.direction
 
         }
 
@@ -1903,7 +1883,6 @@ number.6.RH.Music.2 = {
         \scaleDurations #'(1 . 1)
         {
 
-            % [RH.Music.2 measure 14]
             \override Beam.positions = #'(-8 . -8)
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
@@ -2035,11 +2014,8 @@ number.6.RH.Music.2 = {
         \times 7/8
         {
 
-            \tweak text #tuplet-number::calc-fraction-text
-            \times 6/7
             {
 
-                % [RH.Music.2 measure 15]
                 s8
                 [
 
@@ -2110,7 +2086,6 @@ number.6.RH.Music.2 = {
 
     }
 
-    % [RH.Music.2 measure 16]
     s1 * 1/4
 
 }

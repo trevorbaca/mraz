@@ -720,11 +720,10 @@ number.7.RH.InsertVoice.1 = {
         \override TupletNumber.stencil = ##f
 
         \tweak text #tuplet-number::calc-fraction-text
+        \tweak edge-height #'(0.7 . 0)
         \times 6/5
         {
 
-            \tweak text #tuplet-number::calc-fraction-text
-            \times 5/6
             {
 
                 % [RH.InsertVoice.1 measure 1]
@@ -784,7 +783,6 @@ number.7.RH.InsertVoice.1 = {
 
     }
 
-    % [RH.InsertVoice.1 measure 2]
     s1 * 1/4
 
     {
@@ -792,13 +790,12 @@ number.7.RH.InsertVoice.1 = {
         \override TupletNumber.stencil = ##f
 
         \tweak text #tuplet-number::calc-fraction-text
+        \tweak edge-height #'(0.7 . 0)
         \times 6/5
         {
 
-            \times 2/3
             {
 
-                % [RH.InsertVoice.1 measure 3]
                 \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 2
                 s16
@@ -836,7 +833,6 @@ number.7.RH.InsertVoice.1 = {
 
     }
 
-    % [RH.InsertVoice.1 measure 4]
     s1 * 9/16
 
     {
@@ -850,7 +846,6 @@ number.7.RH.InsertVoice.1 = {
             \scaleDurations #'(1 . 1)
             {
 
-                % [RH.InsertVoice.1 measure 5]
                 \override Beam.positions = #'(-8.5 . -8.5)
                 s16
                 [
@@ -861,11 +856,11 @@ number.7.RH.InsertVoice.1 = {
                 - \marcato
 
                 s16
+                \revert Beam.positions
 
                 \set stemLeftBeamCount = 2
                 \set stemRightBeamCount = 1
                 s16
-                \revert Beam.positions
 
             }
 
@@ -875,7 +870,6 @@ number.7.RH.InsertVoice.1 = {
 
     }
 
-    % [RH.InsertVoice.1 measure 6]
     s1 * 9/16
 
     {
@@ -889,7 +883,6 @@ number.7.RH.InsertVoice.1 = {
             \scaleDurations #'(1 . 1)
             {
 
-                % [RH.InsertVoice.1 measure 7]
                 \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 2
                 af''!16
@@ -917,7 +910,6 @@ number.7.RH.InsertVoice.1 = {
 
     }
 
-    % [RH.InsertVoice.1 measure 8]
     s1 * 3/4
 
     {
@@ -932,7 +924,6 @@ number.7.RH.InsertVoice.1 = {
             \times 3/4
             {
 
-                % [RH.InsertVoice.1 measure 10]
                 s16
                 [
 
@@ -971,12 +962,13 @@ number.7.RH.InsertVoice.1 = {
                 \set stemRightBeamCount = 2
                 cs''''!16
                 - \marcato
+                \revert Beam.positions
 
                 s16
 
                 s16
                 ]
-                \revert Beam.positions
+                \revert Script.direction
 
             }
 
@@ -986,9 +978,7 @@ number.7.RH.InsertVoice.1 = {
 
     }
 
-    % [RH.InsertVoice.1 measure 11]
     s1 * 1/8
-    \revert Script.direction
 
 }
 
@@ -1433,7 +1423,6 @@ number.7.RH.InsertVoice.2 = {
 
             }
 
-            \scaleDurations #'(1 . 1)
             {
 
                 s16
@@ -1498,8 +1487,6 @@ number.7.RH.InsertVoice.2 = {
 
         }
 
-        \tweak text #tuplet-number::calc-fraction-text
-        \times 5/6
         {
 
             s16
@@ -1539,7 +1526,6 @@ number.7.RH.InsertVoice.2 = {
 
     }
 
-    % [RH.InsertVoice.2 measure 7]
     s1 * 7/16
 
     {
@@ -1553,7 +1539,6 @@ number.7.RH.InsertVoice.2 = {
             \scaleDurations #'(1 . 1)
             {
 
-                % [RH.InsertVoice.2 measure 8]
                 \set stemLeftBeamCount = 1
                 \set stemRightBeamCount = 2
                 a''16
@@ -1585,10 +1570,11 @@ number.7.RH.InsertVoice.2 = {
                 s16
 
                 s16
+                \revert Beam.positions
 
+                \override Beam.positions = #'(18.5 . 18.5)
                 s16
                 ]
-                \revert Beam.positions
 
             }
 
@@ -1605,8 +1591,6 @@ number.7.RH.InsertVoice.2 = {
         \scaleDurations #'(1 . 1)
         {
 
-            % [RH.InsertVoice.2 measure 9]
-            \override Beam.positions = #'(18.5 . 18.5)
             \set stemLeftBeamCount = 0
             \set stemRightBeamCount = 2
             f''16
@@ -1615,6 +1599,7 @@ number.7.RH.InsertVoice.2 = {
 
             s16
 
+            % [RH.InsertVoice.2 measure 10]
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 1
             s16
@@ -1625,7 +1610,6 @@ number.7.RH.InsertVoice.2 = {
 
     }
 
-    % [RH.InsertVoice.2 measure 10]
     s1 * 5/8
 
     {
@@ -1635,7 +1619,6 @@ number.7.RH.InsertVoice.2 = {
         \times 2/3
         {
 
-            % [RH.InsertVoice.2 measure 11]
             \set stemLeftBeamCount = 1
             \set stemRightBeamCount = 2
             s16
@@ -1644,15 +1627,15 @@ number.7.RH.InsertVoice.2 = {
             \set stemRightBeamCount = 2
             d'''16
             - \accent
+            \revert Beam.positions
+            \revert Script.direction
+            \revert Stem.direction
 
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 0
             af'''!16
             - \accent
             ]
-            \revert Beam.positions
-            \revert Script.direction
-            \revert Stem.direction
 
         }
         \revert TupletBracket.stencil
@@ -2340,7 +2323,6 @@ number.7.LH.InsertVoice.5 = {
         \times 15/17
         {
 
-            \scaleDurations #'(1 . 1)
             {
 
                 s16
@@ -2421,7 +2403,6 @@ number.7.LH.InsertVoice.5 = {
         \times 15/17
         {
 
-            \scaleDurations #'(1 . 1)
             {
 
                 s16
