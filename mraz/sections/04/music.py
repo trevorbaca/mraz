@@ -1417,7 +1417,6 @@ def GLOBALS(skips, rests):
     for index, item in (
         (0, "84"),
         (0, baca.Accelerando()),
-        (0, baca.Accelerando()),
         (4, "112"),
         (5, "84"),
         (5, baca.Accelerando()),
