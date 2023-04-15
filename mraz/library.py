@@ -1296,8 +1296,8 @@ instruments = {"Piano": abjad.Piano()}
 
 
 metronome_marks = {
-    "84": abjad.MetronomeMark((1, 4), 84),
-    "112": abjad.MetronomeMark((1, 4), 112),
+    "84": abjad.MetronomeMark(abjad.Duration(1, 4), 84),
+    "112": abjad.MetronomeMark(abjad.Duration(1, 4), 112),
 }
 
 
