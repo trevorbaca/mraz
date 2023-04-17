@@ -58,9 +58,11 @@
         % OPEN_BRACKETS:
         \context Voice = "Voice"
         {
-            % OPENING:
+            % BEFORE:
             % COMMANDS:
             #(set-accidental-style 'forget)
+            % OPENING:
+            % COMMANDS:
             \time 1/8
             fs'8
             % AFTER:

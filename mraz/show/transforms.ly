@@ -59,11 +59,12 @@
         \context Voice = "Voice"
         {
             % BEFORE:
+            % COMMANDS:
+            #(set-accidental-style 'forget)
             % GROB_OVERRIDES:
             \once \override HorizontalBracketText.text = \markup "J"
             % OPENING:
             % COMMANDS:
-            #(set-accidental-style 'forget)
             \time 1/8
             e'8
             % AFTER:
@@ -767,11 +768,10 @@
             \break
             \once \override Score.BarLine.transparent = ##f
             % BEFORE:
-            % GROB_OVERRIDES:
-            \once \override HorizontalBracketText.text = \markup "r0(J)"
-            % OPENING:
             % COMMANDS:
             \pageBreak
+            % GROB_OVERRIDES:
+            \once \override HorizontalBracketText.text = \markup "r0(J)"
             e'8
             % AFTER:
             % MARKUP:
@@ -1181,11 +1181,10 @@
             \break
             \once \override Score.BarLine.transparent = ##f
             % BEFORE:
-            % GROB_OVERRIDES:
-            \once \override HorizontalBracketText.text = \markup "r0(J)"
-            % OPENING:
             % COMMANDS:
             \pageBreak
+            % GROB_OVERRIDES:
+            \once \override HorizontalBracketText.text = \markup "r0(J)"
             e'8
             % AFTER:
             % MARKUP:
@@ -1595,11 +1594,10 @@
             \break
             \once \override Score.BarLine.transparent = ##f
             % BEFORE:
-            % GROB_OVERRIDES:
-            \once \override HorizontalBracketText.text = \markup "r0(J)"
-            % OPENING:
             % COMMANDS:
             \pageBreak
+            % GROB_OVERRIDES:
+            \once \override HorizontalBracketText.text = \markup "r0(J)"
             e'8
             % AFTER:
             % MARKUP:
@@ -2009,11 +2007,10 @@
             \break
             \once \override Score.BarLine.transparent = ##f
             % BEFORE:
-            % GROB_OVERRIDES:
-            \once \override HorizontalBracketText.text = \markup "r0(J)"
-            % OPENING:
             % COMMANDS:
             \pageBreak
+            % GROB_OVERRIDES:
+            \once \override HorizontalBracketText.text = \markup "r0(J)"
             e'8
             % AFTER:
             % MARKUP:
@@ -2635,11 +2632,10 @@
             \break
             \once \override Score.BarLine.transparent = ##f
             % BEFORE:
-            % GROB_OVERRIDES:
-            \once \override HorizontalBracketText.text = \markup "T0r0(J)"
-            % OPENING:
             % COMMANDS:
             \pageBreak
+            % GROB_OVERRIDES:
+            \once \override HorizontalBracketText.text = \markup "T0r0(J)"
             e'8
             % AFTER:
             % MARKUP:
@@ -3261,11 +3257,10 @@
             \break
             \once \override Score.BarLine.transparent = ##f
             % BEFORE:
-            % GROB_OVERRIDES:
-            \once \override HorizontalBracketText.text = \markup "T0r0(J)"
-            % OPENING:
             % COMMANDS:
             \pageBreak
+            % GROB_OVERRIDES:
+            \once \override HorizontalBracketText.text = \markup "T0r0(J)"
             e'8
             % AFTER:
             % MARKUP:
