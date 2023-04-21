@@ -1,3 +1,5 @@
+import copy
+
 import abjad
 import baca
 from abjadext import rmakers
@@ -15,6 +17,8 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     section_2 = library.moment_2()
     section_5 = library.moment_5()
     section_8 = library.moment_8()
+    mraz_score = library.make_empty_score()
+    mraz_accumulator = library.Accumulator(mraz_score)
 
     @baca.call
     def block():
@@ -29,9 +33,15 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         baca.script_up(tuplet)
         baca.stem_up(baca.select.pleaves(tuplet))
         baca.label_figure(tuplet, "5.1.R.1", accumulator, abjad.UP)
+        tuplet_copy = copy.deepcopy(tuplet)
         accumulator.cache(
             library.rh_v2,
             [tuplet],
+            tsd=4,
+        )
+        mraz_accumulator(
+            library.rh_v2,
+            [tuplet_copy],
             tsd=4,
         )
 
@@ -52,9 +62,16 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         baca.tuplet_bracket_down(tuplet)
         baca.tuplet_bracket_staff_padding(tuplet, 3)
         baca.label_figure(tuplet, "5.1.L.1", accumulator, abjad.DOWN)
+        tuplet_copy = copy.deepcopy(tuplet)
         accumulator.cache(
             library.rh_v3,
             [tuplet],
+            anchor=baca.anchor(library.rh_v2),
+            tsd=4,
+        )
+        mraz_accumulator(
+            library.rh_v3,
+            [tuplet_copy],
             anchor=baca.anchor(library.rh_v2),
             tsd=4,
         )
@@ -98,9 +115,16 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             baca.slur(tleaves)
         baca.tuplet_bracket_down(tuplets)
         baca.label_figure(tuplets, "5.2.R.1-5", accumulator)
+        container_copy = copy.deepcopy(container)
         accumulator.cache(
             library.rh_v3,
             container,
+            imbrications=imbrications,
+            tsd=4,
+        )
+        mraz_accumulator(
+            library.rh_v3,
+            container_copy,
             imbrications=imbrications,
             tsd=4,
         )
@@ -109,9 +133,15 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     def block():
         tuplet = abjad.Tuplet((1, 1), "r4", hide=True)
         baca.rest_transparent(abjad.select.rests(tuplet))
+        tuplet_copy = copy.deepcopy(tuplet)
         accumulator.cache(
             library.rh_v3,
             [tuplet],
+            tsd=4,
+        )
+        mraz_accumulator(
+            library.rh_v3,
+            [tuplet_copy],
             tsd=4,
         )
 
@@ -154,9 +184,16 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             baca.slur(tleaves)
         baca.tuplet_bracket_down(tuplets)
         baca.label_figure(tuplets, "5.2.R.6-10", accumulator)
+        container_copy = copy.deepcopy(container)
         accumulator.cache(
             library.rh_v3,
             container,
+            imbrications=imbrications,
+            tsd=4,
+        )
+        mraz_accumulator(
+            library.rh_v3,
+            container_copy,
             imbrications=imbrications,
             tsd=4,
         )
@@ -174,9 +211,15 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         baca.tuplet_bracket_down(tuplet)
         baca.tuplet_bracket_staff_padding(tuplet, 6)
         baca.label_figure(tuplet, "8.3.L.2", accumulator)
+        tuplet_copy = copy.deepcopy(tuplet)
         accumulator.cache(
             library.lh_v6,
             [tuplet],
+            tsd=4,
+        )
+        mraz_accumulator(
+            library.lh_v6,
+            [tuplet_copy],
             tsd=4,
         )
 
@@ -192,9 +235,16 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         baca.rest_up(abjad.select.rests(tuplet))
         baca.stem_up(baca.select.pleaves(tuplet))
         baca.label_figure(tuplet, "8.3.R.5", accumulator)
+        tuplet_copy = copy.deepcopy(tuplet)
         accumulator.cache(
             library.lh_v5,
             [tuplet],
+            anchor=baca.anchor_to_figure("8.3.L.2"),
+            hide_time_signature=True,
+        )
+        mraz_accumulator(
+            library.lh_v5,
+            [tuplet_copy],
             anchor=baca.anchor_to_figure("8.3.L.2"),
             hide_time_signature=True,
         )
@@ -238,9 +288,16 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             baca.slur(tleaves)
         baca.tuplet_bracket_down(tuplets)
         baca.label_figure(tuplets, "5.2.R.11-15", accumulator)
+        container_copy = copy.deepcopy(container)
         accumulator.cache(
             library.rh_v3,
             container,
+            imbrications=imbrications,
+            tsd=4,
+        )
+        mraz_accumulator(
+            library.rh_v3,
+            container_copy,
             imbrications=imbrications,
             tsd=4,
         )
@@ -249,9 +306,15 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     def block():
         tuplet = abjad.Tuplet((1, 1), "r4", hide=True)
         baca.rest_transparent(abjad.select.rests(tuplet))
+        tuplet_copy = copy.deepcopy(tuplet)
         accumulator.cache(
             library.rh_v3,
             [tuplet],
+            tsd=4,
+        )
+        mraz_accumulator(
+            library.rh_v3,
+            [tuplet_copy],
             tsd=4,
         )
 
@@ -292,9 +355,16 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             baca.slur(tleaves)
         baca.tuplet_bracket_down(tuplets)
         baca.label_figure(tuplets, "5.2.R.16-21", accumulator)
+        container_copy = copy.deepcopy(container)
         accumulator.cache(
             library.rh_v3,
             container,
+            imbrications=imbrications,
+            tsd=4,
+        )
+        mraz_accumulator(
+            library.rh_v3,
+            container_copy,
             imbrications=imbrications,
             tsd=4,
         )
@@ -303,9 +373,15 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     def block():
         tuplet = abjad.Tuplet((1, 1), "r4", hide=True)
         baca.rest_transparent(abjad.select.rests(tuplet))
+        tuplet_copy = copy.deepcopy(tuplet)
         accumulator.cache(
             library.rh_v3,
             [tuplet],
+            tsd=4,
+        )
+        mraz_accumulator(
+            library.rh_v3,
+            [tuplet_copy],
             tsd=4,
         )
 
@@ -335,9 +411,15 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             baca.slur(tleaves)
         baca.staccato(baca.select.pheads(tuplets))
         baca.label_figure(tuplets, "2.2.R.1", accumulator)
+        tuplets_copy = copy.deepcopy(tuplets)
         accumulator.cache(
             library.rh_v2,
             tuplets,
+            tsd=4,
+        )
+        mraz_accumulator(
+            library.rh_v2,
+            tuplets_copy,
             tsd=4,
         )
 
@@ -364,9 +446,15 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             baca.slur(tleaves)
         baca.staccato(baca.select.pheads(tuplets))
         baca.label_figure(tuplets, "2.2.R.2", accumulator)
+        tuplets_copy = copy.deepcopy(tuplets)
         accumulator.cache(
             library.rh_v2,
             tuplets,
+            tsd=4,
+        )
+        mraz_accumulator(
+            library.rh_v2,
+            tuplets_copy,
             tsd=4,
         )
 
@@ -393,9 +481,15 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             baca.slur(tleaves)
         baca.staccato(baca.select.pheads(tuplets))
         baca.label_figure(tuplets, "2.2.R.3", accumulator)
+        tuplets_copy = copy.deepcopy(tuplets)
         accumulator.cache(
             library.rh_v2,
             tuplets,
+            tsd=4,
+        )
+        mraz_accumulator(
+            library.rh_v2,
+            tuplets_copy,
             tsd=4,
         )
 
@@ -421,9 +515,15 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             baca.slur(tleaves)
         baca.staccato(baca.select.pheads(tuplets))
         baca.label_figure(tuplets, "2.2.R.4", accumulator)
+        tuplets_copy = copy.deepcopy(tuplets)
         accumulator.cache(
             library.rh_v2,
             tuplets,
+            tsd=4,
+        )
+        mraz_accumulator(
+            library.rh_v2,
+            tuplets_copy,
             tsd=4,
         )
 
@@ -449,9 +549,15 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             baca.slur(tleaves)
         baca.staccato(baca.select.pheads(tuplets))
         baca.label_figure(tuplets, "2.2.R.5", accumulator)
+        tuplets_copy = copy.deepcopy(tuplets)
         accumulator.cache(
             library.rh_v2,
             tuplets,
+            tsd=4,
+        )
+        mraz_accumulator(
+            library.rh_v2,
+            tuplets_copy,
             tsd=4,
         )
 
@@ -459,9 +565,16 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     def block():
         collections = [(-35, -23)]
         tuplet = baca.from_collection(collections[0], [29], 16)
+        tuplet_copy = copy.deepcopy(tuplet)
         accumulator.cache(
             library.lh_resonance,
             [tuplet],
+            anchor=baca.anchor_to_figure("2.2.R.1"),
+            hide_time_signature=True,
+        )
+        mraz_accumulator(
+            library.lh_resonance,
+            [tuplet_copy],
             anchor=baca.anchor_to_figure("2.2.R.1"),
             hide_time_signature=True,
         )
@@ -470,9 +583,15 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     def block():
         collections = [(-35, -23)]
         tuplet = baca.from_collection(collections[0], [27], 16)
+        tuplet_copy = copy.deepcopy(tuplet)
         accumulator.cache(
             library.lh_resonance,
             [tuplet],
+            hide_time_signature=True,
+        )
+        mraz_accumulator(
+            library.lh_resonance,
+            [tuplet_copy],
             hide_time_signature=True,
         )
 
@@ -480,9 +599,15 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     def block():
         collections = [(-33, -21)]
         tuplet = baca.from_collection(collections[0], [21], 16)
+        tuplet_copy = copy.deepcopy(tuplet)
         accumulator.cache(
             library.lh_resonance,
             [tuplet],
+            hide_time_signature=True,
+        )
+        mraz_accumulator(
+            library.lh_resonance,
+            [tuplet_copy],
             hide_time_signature=True,
         )
 
@@ -490,9 +615,15 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     def block():
         collections = [(-33, -21)]
         tuplet = baca.from_collection(collections[0], [15], 16)
+        tuplet_copy = copy.deepcopy(tuplet)
         accumulator.cache(
             library.lh_resonance,
             [tuplet],
+            hide_time_signature=True,
+        )
+        mraz_accumulator(
+            library.lh_resonance,
+            [tuplet_copy],
             hide_time_signature=True,
         )
 
@@ -500,9 +631,15 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     def block():
         collections = [(-33, -21)]
         tuplet = baca.from_collection(collections[0], [16], 16)
+        tuplet_copy = copy.deepcopy(tuplet)
         accumulator.cache(
             library.lh_resonance,
             [tuplet],
+            hide_time_signature=True,
+        )
+        mraz_accumulator(
+            library.lh_resonance,
+            [tuplet_copy],
             hide_time_signature=True,
         )
 
@@ -543,9 +680,16 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         baca.tuplet_bracket_down(tuplets)
         baca.tuplet_bracket_staff_padding(tuplets, 3)
         baca.label_figure(tuplets, "5.2.R.22-25", accumulator)
+        container_copy = copy.deepcopy(container)
         accumulator.cache(
             library.rh_v3,
             container,
+            imbrications=imbrications,
+            tsd=4,
+        )
+        mraz_accumulator(
+            library.rh_v3,
+            container_copy,
             imbrications=imbrications,
             tsd=4,
         )
@@ -563,9 +707,16 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         baca.register(tuplet, 6, -24)
         baca.slur_down(tuplet)
         baca.label_figure(tuplet, "5.2.L.1", accumulator)
+        tuplet_copy = copy.deepcopy(tuplet)
         accumulator.cache(
             library.lh_v4,
             [tuplet],
+            anchor=baca.anchor_to_figure("5.2.R.6-10"),
+            hide_time_signature=True,
+        )
+        mraz_accumulator(
+            library.lh_v4,
+            [tuplet_copy],
             anchor=baca.anchor_to_figure("5.2.R.6-10"),
             hide_time_signature=True,
         )
@@ -581,9 +732,16 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         baca.register(tuplet, 6, -24)
         baca.slur_down(tuplet)
         baca.label_figure(tuplet, "5.2.L.2", accumulator)
+        tuplet_copy = copy.deepcopy(tuplet)
         accumulator.cache(
             library.lh_v4,
             [tuplet],
+            anchor=baca.anchor_to_figure("5.2.R.11-15"),
+            hide_time_signature=True,
+        )
+        mraz_accumulator(
+            library.lh_v4,
+            [tuplet_copy],
             anchor=baca.anchor_to_figure("5.2.R.11-15"),
             hide_time_signature=True,
         )
@@ -596,9 +754,15 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         baca.slur(baca.select.tleaves(tuplet))
         baca.register(tuplet, 6, -24)
         baca.label_figure(tuplet, "5.2.L.3", accumulator)
+        tuplet_copy = copy.deepcopy(tuplet)
         accumulator.cache(
             library.lh_v4,
             [tuplet],
+            hide_time_signature=True,
+        )
+        mraz_accumulator(
+            library.lh_v4,
+            [tuplet_copy],
             hide_time_signature=True,
         )
 
@@ -610,9 +774,16 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         baca.slur(baca.select.tleaves(tuplet))
         baca.register(tuplet, 0, -24)
         baca.label_figure(tuplet, "5.2.L.4", accumulator)
+        tuplet_copy = copy.deepcopy(tuplet)
         accumulator.cache(
             library.lh_v4,
             [tuplet],
+            anchor=baca.anchor_to_figure("5.2.R.16-21"),
+            hide_time_signature=True,
+        )
+        mraz_accumulator(
+            library.lh_v4,
+            [tuplet_copy],
             anchor=baca.anchor_to_figure("5.2.R.16-21"),
             hide_time_signature=True,
         )
@@ -627,9 +798,15 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         baca.slur(baca.select.tleaves(tuplet))
         baca.register(tuplet, 0, -24)
         baca.label_figure(tuplet, "5.2.L.5", accumulator)
+        tuplet_copy = copy.deepcopy(tuplet)
         accumulator.cache(
             library.lh_v4,
             [tuplet],
+            hide_time_signature=True,
+        )
+        mraz_accumulator(
+            library.lh_v4,
+            [tuplet_copy],
             hide_time_signature=True,
         )
 
@@ -643,9 +820,15 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         baca.slur(baca.select.tleaves(tuplet))
         baca.register(tuplet, 0, -24)
         baca.label_figure(tuplet, "5.2.L.6", accumulator)
+        tuplet_copy = copy.deepcopy(tuplet)
         accumulator.cache(
             library.lh_v4,
             [tuplet],
+            hide_time_signature=True,
+        )
+        mraz_accumulator(
+            library.lh_v4,
+            [tuplet_copy],
             hide_time_signature=True,
         )
 
@@ -661,9 +844,15 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         baca.slur(baca.select.tleaves(tuplet))
         baca.register(tuplet, -6, -48)
         baca.label_figure(tuplet, "5.2.L.7", accumulator)
+        tuplet_copy = copy.deepcopy(tuplet)
         accumulator.cache(
             library.lh_v4,
             [tuplet],
+            hide_time_signature=True,
+        )
+        mraz_accumulator(
+            library.lh_v4,
+            [tuplet_copy],
             hide_time_signature=True,
         )
 
@@ -679,9 +868,16 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         baca.slur(baca.select.tleaves(tuplet))
         baca.register(tuplet, -6, -36)
         baca.label_figure(tuplet, "5.2.L.8", accumulator)
+        tuplet_copy = copy.deepcopy(tuplet)
         accumulator.cache(
             library.lh_v4,
             [tuplet],
+            anchor=baca.anchor_to_figure("5.2.R.22-25"),
+            hide_time_signature=True,
+        )
+        mraz_accumulator(
+            library.lh_v4,
+            [tuplet_copy],
             anchor=baca.anchor_to_figure("5.2.R.22-25"),
             hide_time_signature=True,
         )
@@ -695,9 +891,15 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         baca.slur(baca.select.tleaves(tuplet))
         baca.register(tuplet, -6, -36)
         baca.label_figure(tuplet, "5.2.L.9", accumulator)
+        tuplet_copy = copy.deepcopy(tuplet)
         accumulator.cache(
             library.lh_v4,
             [tuplet],
+            hide_time_signature=True,
+        )
+        mraz_accumulator(
+            library.lh_v4,
+            [tuplet_copy],
             hide_time_signature=True,
         )
 
@@ -706,9 +908,15 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         tuplet = abjad.Tuplet((1, 1), "r4", hide=True)
         baca.clef(abjad.select.leaf(tuplet, 0), "treble")
         baca.rest_transparent(abjad.select.rests(tuplet))
+        tuplet_copy = copy.deepcopy(tuplet)
         accumulator.cache(
             library.lh_v4,
             [tuplet],
+            tsd=4,
+        )
+        mraz_accumulator(
+            library.lh_v4,
+            [tuplet_copy],
             tsd=4,
         )
 

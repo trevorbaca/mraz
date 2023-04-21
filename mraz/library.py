@@ -49,20 +49,24 @@ lh_resonance = "LH.ResonanceVoice"
 
 
 class Accumulator:
-    def __init__(self, score):
+    def __init__(self, score, use=False):
         self._score = score
         self.figure_number = 1
         self.time_signatures = []
+        self.use = use
 
     def __call__(
         self,
         voice_name,
         argument,
         anchor=None,
+        do_not_increment=False,
         hide_time_signature=False,
         imbrications=None,
         tsd=None,
     ):
+        if self.use is not True:
+            return
         if imbrications is not None:
             assert anchor is None, repr(anchor)
         # figure_name = None
