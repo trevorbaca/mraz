@@ -63,10 +63,21 @@ class Accumulator:
         imbrications=None,
         tsd=None,
     ):
-        tsd, figure_name = None, None
-        time_signature = make_time_signature(argument, tsd)
-        self.time_signatures.append(time_signature)
-        baca.label_figure(argument, figure_name, self)
+        if imbrications is not None:
+            assert anchor is None, repr(anchor)
+        # figure_name = None
+        # baca.label_figure(argument, figure_name, self)
+        imbrications = imbrications or {}
+        start_offset = None
+        if anchor is not None:
+            for leaf in abjad.iterate.leaves(self._score):
+                if abjad.get.annotation(leaf, "figure_name") == anchor.figure_name:
+                    start_offset = abjad.get.timespan(leaf).start_offset
+                    break
+            assert start_offset is not None
+        if hide_time_signature is False:
+            time_signature = make_time_signature(argument, tsd)
+            self.time_signatures.append(time_signature)
         if isinstance(argument, list):
             containers = argument
         else:
@@ -74,12 +85,23 @@ class Accumulator:
         assert all(isinstance(_, abjad.Container) for _ in containers), repr(containers)
         duration = abjad.get.duration(containers)
         voice = self._score[voice_name]
-        voice.extend(containers)
-        other_voice_names = _voice_names - {voice_name}
-        for other_voice_name in sorted(other_voice_names):
-            voice = self._score[other_voice_name]
-            skip = abjad.Skip("s1", multiplier=duration.pair)
-            voice.append(skip)
+        if anchor is not None:
+            for leaf in abjad.select.leaves(voice):
+                if abjad.get.timespan(leaf).start_offset == start_offset:
+                    assert isinstance(leaf, abjad.Skip), repr(leaf)
+                    assert abjad.get.duration(leaf) == abjad.get.duration(containers)
+                    abjad.mutate.replace(leaf, containers)
+                    break
+            else:
+                raise Exception("can not find anchor start offset.")
+        else:
+            voice.extend(containers)
+            other_voice_names = _voice_names - {voice_name}
+            for other_voice_name in sorted(other_voice_names):
+                voice = self._score[other_voice_name]
+                skip = [abjad.Skip("s1", multiplier=duration.pair)]
+                components = imbrications.get(voice.name, skip)
+                voice.extend(components)
 
 
 def make_time_signature(tuplets, tsd):
