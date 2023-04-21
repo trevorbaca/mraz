@@ -20,7 +20,7 @@ def make_empty_score():
     section_7 = library.moment_7()
     section_8 = library.moment_8()
     mraz_score = library.make_empty_score()
-    mraz_accumulator = library.Accumulator(mraz_score)
+    mraz_accumulator = library.Accumulator(mraz_score, use=True)
 
     @baca.call
     def block():
