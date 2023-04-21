@@ -247,7 +247,6 @@ def moment_2():
     segments = [
         [baca.pcollections.arpeggiate_up(_) for _ in list_] for list_ in segments
     ]
-    segments = baca.Cursor(segments)
     return types.SimpleNamespace(
         stage_1=None,
         stage_2=types.SimpleNamespace(
@@ -336,24 +335,22 @@ def moment_4():
     stage_1_rh_segments = stage_1_segments[:1]
     stage_1_rh_segments = abjad.sequence.repeat(stage_1_rh_segments, n=3)
     stage_1_rh_segments = abjad.sequence.flatten(stage_1_rh_segments)
-    stage_1_rh_segments = baca.Cursor(stage_1_rh_segments)
     stage_1_lh_segments = stage_1_segments[1:]
     stage_1_lh_segments = abjad.sequence.repeat(stage_1_lh_segments, n=3)
     stage_1_lh_segments = abjad.sequence.flatten(stage_1_lh_segments)
-    stage_1_lh_segments = baca.Cursor(stage_1_lh_segments)
     chord = abjad.PitchSet(stage_2_segments[0])
     chord = baca.pcollections.space_up(chord, bass=7, soprano=9)
     chords = 10 * [chord]
     last = abjad.sequence.join(stages[1])[0]
     chords.append(last)
-    stage_2_segments = baca.Cursor(chords, cyclic=False)
+    stage_2_segments = chords
     assert len(stage_4_segments) == 2
     rh, lh = abjad.sequence.partition_by_counts(stage_4_segments, [1, 1])
     lh = baca.pcollections.remove_duplicates(lh, level=-1)
     lh = baca.pcollections.read(lh, [2, 2, 3, 1, 2, 2, 3, 3], check=abjad.EXACT)
     lh = [abjad.PitchClassSegment(_) for _ in lh]
     lh = [abjad.PitchSet(_) for _ in lh]
-    lh = baca.Cursor(lh, cyclic=True)
+    lh = abjad.CyclicTuple(lh)
     rh = baca.sequence.accumulate(
         rh, [lambda _: baca.pcollections.alpha(_), lambda _: _.transpose(n=2)]
     )
@@ -363,7 +360,6 @@ def moment_4():
     rh = baca.pcollections.remove_repeats(rh)
     rh = baca.pcollections.read(rh, [8, 8, 14], check=abjad.EXACT)
     rh = [abjad.PitchClassSegment(_) for _ in rh]
-    rh = baca.Cursor(rh)
     stage_4_rh_segments = rh
     stage_4_lh_segments = lh
     stage_5_segments = baca.pcollections.remove_duplicate_pitch_classes(
@@ -372,7 +368,6 @@ def moment_4():
     rh, lh = abjad.sequence.partition_by_counts(stage_5_segments, [1, 1])
     rh = baca.pcollections.read(rh, 6 * [1], check=abjad.EXACT)
     rh = [abjad.PitchClassSegment(_) for _ in rh]
-    rh = baca.Cursor(rh)
     lh = [abjad.PitchClassSegment(_) for _ in lh]
     lh = baca.sequence.accumulate(lh, [lambda _: _.transpose(n=2)])
     if isinstance(lh, list):
@@ -381,7 +376,6 @@ def moment_4():
     lh = baca.pcollections.read(lh, 5 * [5, 5, 6])
     lh = baca.pcollections.remove_duplicates(lh, level=1)
     lh = [abjad.PitchClassSegment(_) for _ in lh]
-    lh = baca.Cursor(lh)
     stage_5_rh_segments = rh
     stage_5_lh_segments = lh
     stage_6_segments = [abjad.PitchClassSegment(_) for _ in stage_6_segments]
@@ -397,7 +391,6 @@ def moment_4():
         baca.pcollections.soprano_to_octave(_, n=7) for _ in stage_6_segments
     ]
     stage_6_segments = [abjad.PitchSet(_) for _ in stage_6_segments]
-    stage_6_segments = baca.Cursor(stage_6_segments)
     return types.SimpleNamespace(
         stage_1=types.SimpleNamespace(
             rh=stage_1_rh_segments,
@@ -481,8 +474,6 @@ def moment_5():
     rh, lh = abjad.sequence.partition_by_counts(stage_1_segments, [1, 1])
     rh = [abjad.PitchClassSegment(_) for _ in rh]
     lh = [abjad.PitchClassSegment(_) for _ in lh]
-    rh = baca.Cursor(rh)
-    lh = baca.Cursor(lh)
     stage_1_rh = rh
     stage_1_lh = lh
     stage_2_segments = baca.pcollections.remove_duplicate_pitch_classes(
@@ -494,13 +485,11 @@ def moment_5():
         rh, [lambda _: _.transpose(n=3), lambda _: baca.pcollections.alpha(_)]
     )
     rh = abjad.sequence.flatten(rh)
-    rh = baca.Cursor(rh)
     lh = abjad.sequence.repeat(lh, n=3)
     lh = abjad.sequence.flatten(lh)
     lh = [abjad.PitchClassSegment(_) for _ in lh]
     lh = baca.pcollections.read(lh, [3, 4, 2, 4, 2, 3, 2, 3, 4], check=abjad.EXACT)
     lh = [abjad.PitchClassSegment(_) for _ in lh]
-    lh = baca.Cursor(lh)
     stage_2_rh = rh
     stage_2_lh = lh
     return types.SimpleNamespace(
@@ -566,8 +555,6 @@ def moment_6():
     lh_stage_1_segments = [abjad.PitchClassSegment(_) for _ in lh_stage_1_segments]
     assert len(rh_stage_1_segments) == 5
     assert len(lh_stage_1_segments) == 4
-    rh_stage_1_segments = baca.Cursor(rh_stage_1_segments)
-    lh_stage_1_segments = baca.Cursor(lh_stage_1_segments)
     return types.SimpleNamespace(
         stage_1=types.SimpleNamespace(
             rh=rh_stage_1_segments,
@@ -626,7 +613,6 @@ def moment_7():
         all_rh_segments, [3, 1, 2, 3, 1], cyclic=True, overhang=True
     )
     assert len(rh_segment_lists) == 12
-    rh_segment_lists = baca.Cursor(rh_segment_lists)
     all_lh_segments = []
     for i in range(5):
         start = i
@@ -639,7 +625,6 @@ def moment_7():
         all_lh_segments, [2, 3, 1, 3, 1], cyclic=True, overhang=True
     )
     assert len(lh_segment_lists) == 5
-    lh_segment_lists = baca.Cursor(lh_segment_lists)
     return types.SimpleNamespace(
         stage_1=types.SimpleNamespace(
             rh=rh_segment_lists,
@@ -716,8 +701,6 @@ def moment_8():
     assert not baca.pcollections.has_repeats(v6_stage_3_segments, level=-1)
     assert len(v5_stage_3_segments) == 14, len(v5_stage_3_segments)
     assert len(v6_stage_3_segments) == 6, len(v6_stage_3_segments)
-    v5_stage_3_segments = baca.Cursor(v5_stage_3_segments)
-    v6_stage_3_segments = baca.Cursor(v6_stage_3_segments)
     return types.SimpleNamespace(
         stage_1=None,
         stage_2=None,

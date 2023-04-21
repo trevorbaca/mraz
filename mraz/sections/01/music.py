@@ -179,7 +179,7 @@ def make_empty_score():
 
     @baca.call
     def block():
-        collections = section_5.stage_1.rh.next(exhausted=True)
+        collections = section_5.stage_1.rh[:1]
         assert library.foo(collections) == ["PC<0, 2, 3, 5>"]
         tuplet = baca.from_collection(collections[0], [2, -14], 16)
         baca.accent(baca.select.pheads(tuplet))
@@ -199,7 +199,7 @@ def make_empty_score():
 
     @baca.call
     def block():
-        collections = section_5.stage_1.lh.next(exhausted=True)
+        collections = section_5.stage_1.lh[:1]
         assert library.foo(collections) == ["PC<9, 1, 11, 8, 7>"]
         tuplet = baca.from_collection(
             collections[0], [4, -4], 16, abjad.Duration(16, 4)
