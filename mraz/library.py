@@ -64,7 +64,7 @@ def foo(collections):
         | abjad.PitchClassSegment,
     ):
         return str(collections)
-    elif isinstance(collections, list):
+    elif isinstance(collections, list | tuple):
         return [str(_) for _ in collections]
     else:
         return collections

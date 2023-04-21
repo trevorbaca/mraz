@@ -161,7 +161,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
 
     @baca.call
     def block():
-        collections = section_4.stage_1.lh.next()
+        collections = section_4.stage_1.lh[:1]
         assert library.foo(collections) == ["PC<8, 2, 4>"]
         tuplet = baca.from_collection(collections[0], [3, -1], 16)
         tuplet.insert(0, "r2.")
