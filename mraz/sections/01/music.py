@@ -315,19 +315,36 @@ def make_empty_score():
             tsd=4,
         )
 
-    voices = baca.section.cache_voices(score, library.voice_abbreviations)
-    time_signatures = baca.section.wrap(accumulator.time_signatures)
-    baca.section.set_up_score(
-        score,
-        time_signatures(),
-        append_anchor_skip=True,
-        always_make_global_rests=True,
-        first_section=True,
-        manifests=library.manifests,
-    )
-    accumulator.populate(score)
-    rmakers.hide_trivial(score)
-    return score, voices, time_signatures
+    new = False
+    if new:
+        voices = baca.section.cache_voices(
+            mraz_accumulator._score, library.voice_abbreviations
+        )
+        time_signatures = baca.section.wrap(mraz_accumulator.time_signatures)
+        baca.section.set_up_score(
+            mraz_accumulator._score,
+            time_signatures(),
+            append_anchor_skip=True,
+            always_make_global_rests=True,
+            first_section=True,
+            manifests=library.manifests,
+        )
+        rmakers.hide_trivial(mraz_accumulator._score)
+        return mraz_accumulator._score, voices, time_signatures
+    else:
+        voices = baca.section.cache_voices(score, library.voice_abbreviations)
+        time_signatures = baca.section.wrap(accumulator.time_signatures)
+        baca.section.set_up_score(
+            score,
+            time_signatures(),
+            append_anchor_skip=True,
+            always_make_global_rests=True,
+            first_section=True,
+            manifests=library.manifests,
+        )
+        accumulator.populate(score)
+        rmakers.hide_trivial(score)
+        return score, voices, time_signatures
 
 
 def GLOBALS(skips, rests):
