@@ -34,16 +34,11 @@ rh_v3_i = "RH.InsertVoice.3"
 rh_v4 = "RH.Music.4"
 rh_v4_i = "RH.InsertVoice.4"
 rh_v5 = "RH.Music.5"
-rh_v5_i = "RH.InsertVoice.5"
 rh_v6 = "RH.Music.6"
-rh_v6_i = "RH.InsertVoice.6"
 rh_resonance = "RH.ResonanceVoice"
 lh_v1 = "LH.Music.1"
-lh_v1_i = "LH.InsertVoice.1"
 lh_v2 = "LH.Music.2"
-lh_v2_i = "LH.InsertVoice.2"
 lh_v3 = "LH.Music.3"
-lh_v3_i = "LH.InsertVoice.3"
 lh_v4 = "LH.Music.4"
 lh_v4_i = "LH.InsertVoice.4"
 lh_v5 = "LH.Music.5"
@@ -51,6 +46,50 @@ lh_v5_i = "LH.InsertVoice.5"
 lh_v6 = "LH.Music.6"
 lh_v6_i = "LH.InsertVoice.6"
 lh_resonance = "LH.ResonanceVoice"
+
+
+class Accumulator:
+    def __init__(self, score):
+        self._score = score
+        self.figure_number = 1
+        self.time_signatures = []
+
+    def __call__(
+        self,
+        voice_name,
+        argument,
+        anchor=None,
+        hide_time_signature=False,
+        imbrications=None,
+        tsd=None,
+    ):
+        tsd, figure_name = None, None
+        time_signature = make_time_signature(argument, tsd)
+        self.time_signatures.append(time_signature)
+        baca.label_figure(argument, figure_name, self)
+        if isinstance(argument, list):
+            containers = argument
+        else:
+            containers = [argument]
+        assert all(isinstance(_, abjad.Container) for _ in containers), repr(containers)
+        duration = abjad.get.duration(containers)
+        voice = self._score[voice_name]
+        voice.extend(containers)
+        other_voice_names = _voice_names - {voice_name}
+        for other_voice_name in sorted(other_voice_names):
+            voice = self._score[other_voice_name]
+            skip = abjad.Skip("s1", multiplier=duration.pair)
+            voice.append(skip)
+
+
+def make_time_signature(tuplets, tsd):
+    duration = abjad.get.duration(tuplets)
+    if tsd is not None:
+        pair = abjad.duration.with_denominator(duration, tsd)
+    else:
+        pair = duration.pair
+    time_signature = abjad.TimeSignature(pair)
+    return time_signature
 
 
 def foo(collections):
@@ -1300,16 +1339,11 @@ voice_abbreviations = {
     rh_v4: "RH.Music.4",
     rh_v4_i: "RH.InsertVoice.4",
     rh_v5: "RH.Music.5",
-    rh_v5_i: "RH.InsertVoice.5",
     rh_v6: "RH.Music.6",
-    rh_v6_i: "RH.InsertVoice.6",
     rh_resonance: "RH.ResonanceVoice",
     lh_v1: "LH.Music.1",
-    lh_v1_i: "LH.InsertVoice.1",
     lh_v2: "LH.Music.2",
-    lh_v2_i: "LH.InsertVoice.2",
     lh_v3: "LH.Music.3",
-    lh_v3_i: "LH.InsertVoice.3",
     lh_v4: "LH.Music.4",
     lh_v4_i: "LH.InsertVoice.4",
     lh_v5: "LH.Music.5",
@@ -1318,3 +1352,5 @@ voice_abbreviations = {
     lh_v6_i: "LH.InsertVoice.6",
     lh_resonance: "LH.ResonanceVoice",
 }
+
+_voice_names = set(voice_abbreviations.values())
