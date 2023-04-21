@@ -89,6 +89,7 @@ def make_empty_score():
         container = abjad.Container([tuplet])
         baca.register(tuplet, 6, 6 + 10)
         imbrications = baca.imbricate(container, library.lh_v4_i, [14, 18])
+        imbrications_copy = copy.deepcopy(imbrications)
         baca.dynamic(baca.select.phead(tuplet, 0), "ff")
         groups = rmakers.nongrace_leaves_in_each_tuplet(tuplet)
         rmakers.beam_groups(groups)
@@ -103,7 +104,7 @@ def make_empty_score():
         mraz_accumulator(
             library.lh_v4,
             container_copy,
-            imbrications=imbrications,
+            imbrications=imbrications_copy,
             tsd=4,
         )
 
@@ -315,7 +316,7 @@ def make_empty_score():
             tsd=4,
         )
 
-    new = False
+    new = True
     if new:
         voices = baca.section.cache_voices(
             mraz_accumulator._score, library.voice_abbreviations
