@@ -16,7 +16,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
 
     @baca.call
     def block():
-        collections = section_6.stage_1.rh.next(2)
+        collections = section_6.stage_1.rh[:2]
         assert library.foo(collections) == ["PC<6, 9, 11>", "PC<0, 8, 11, 1>"]
         tuplets = []
         for collection in collections:
@@ -39,7 +39,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
 
     @baca.call
     def block():
-        collections = section_6.stage_1.rh.next()
+        collections = section_6.stage_1.rh[2:3]
         assert library.foo(collections) == ["PC<10, 1, 3>"]
         tuplet = baca.from_collection(collections[0], [1], 8, 1)
         baca.register(tuplet, 24, 12)
@@ -57,7 +57,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
 
     @baca.call
     def block():
-        collections = section_6.stage_1.rh.next()
+        collections = section_6.stage_1.rh[3:4]
         assert library.foo(collections) == ["PC<2, 4, 0, 3, 5>"]
         tuplet = baca.from_collection(collections[0], [1], 8)
         tuplet.insert(0, "r8")
@@ -74,7 +74,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
 
     @baca.call
     def block():
-        collections = section_6.stage_1.rh.next(exhausted=True)
+        collections = section_6.stage_1.rh[4:5]
         assert library.foo(collections) == ["PC<8, 4, 7, 9>"]
         tuplet = baca.from_collection(collections[0], [1], 8, 1)
         baca.register(tuplet, 12, 24)
@@ -90,7 +90,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
 
     @baca.call
     def block():
-        collections = section_6.stage_1.lh.next()
+        collections = section_6.stage_1.lh[:1]
         assert library.foo(collections) == ["PC<7, 8, 10, 9>"]
         tuplet = baca.from_collection(collections[0], [1, -1], 16, 1)
         baca.dynamic(baca.select.phead(tuplet, 0), "mp")
@@ -110,7 +110,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
 
     @baca.call
     def block():
-        collections = section_6.stage_1.lh.next()
+        collections = section_6.stage_1.lh[1:2]
         assert library.foo(collections) == ["PC<11, 0, 2, 1>"]
         tuplet = baca.from_collection(collections[0], [1, -2], 16, 2)
         baca.register(tuplet, 0, 12)
@@ -129,7 +129,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
 
     @baca.call
     def block():
-        collections = section_6.stage_1.lh.next()
+        collections = section_6.stage_1.lh[2:3]
         assert library.foo(collections) == ["PC<2, 5, 7, 3, 4>"]
         tuplet = baca.from_collection(collections[0], [2, -1], 32)
         baca.register(tuplet, 0, 12)
@@ -148,7 +148,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
 
     @baca.call
     def block():
-        collections = section_6.stage_1.lh.next(exhausted=True)
+        collections = section_6.stage_1.lh[3:4]
         assert library.foo(collections) == ["PC<6, 5>"]
         tuplet = baca.from_collection(collections[0], [2, -1], 32)
         baca.register(tuplet, 12, 0)
