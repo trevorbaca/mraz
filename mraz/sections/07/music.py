@@ -519,6 +519,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
                 lambda _: abjad.select.note(_, 0),
                 lambda _: baca.select.lt(_, 7),
             ),
+            check=True,
             hide_time_signature=True,
             imbrications=imbrications_copy,
         )
@@ -721,7 +722,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             imbrications=imbrications_copy,
         )
 
-    new = False
+    new = True
     if new:
         voices = baca.section.cache_voices(
             mraz_accumulator._score, library.voice_abbreviations
@@ -806,27 +807,21 @@ def postprocess(cache):
     with baca.scope(m.leaves()) as o:
         baca.script_down(o)
         baca.stem_down(o.pleaves())
-
-    # TODO: make me work:
     m = cache[library.lh_v4_i]
     with baca.scope(m.leaves()) as o:
         baca.script_up(o)
         baca.stem_up(o.pleaves())
-
     m = cache[library.lh_v5]
     with baca.scope(m.get(1, 5)) as o:
         baca.beam_positions(o, -6)
     with baca.scope(m.leaves()) as o:
         baca.script_down(o)
         baca.stem_down(o.pleaves())
-
-    # TODO: make me work:
     m = cache[library.lh_v5_i]
     with baca.scope(m.leaves()) as o:
         baca.script_up(o)
         baca.stem_up(o.pleaves())
         baca.beam_positions(o, 9)
-
     m = cache[library.rh_v1]
     with baca.scope(m[11]) as o:
         baca.mark(abjad.select.leaf(o, 0), r"\mraz-colophon-markup")
