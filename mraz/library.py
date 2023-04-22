@@ -102,7 +102,6 @@ class Accumulator:
         else:
             containers = [argument]
         assert all(isinstance(_, abjad.Container) for _ in containers), repr(containers)
-        duration = abjad.get.duration(containers)
         voice = self._score[voice_name]
         if anchor is not None and requires_adjustment is False:
             for leaf in abjad.select.leaves(voice):
@@ -168,10 +167,11 @@ class Accumulator:
                 abjad.mutate.replace([left_split_skip], containers)
         else:
             voice.extend(containers)
+            containers_duration = abjad.get.duration(containers)
             other_voice_names = _voice_names - {voice_name}
             for other_voice_name in sorted(other_voice_names):
                 voice = self._score[other_voice_name]
-                skip = [abjad.Skip("s1", multiplier=duration.pair)]
+                skip = [abjad.Skip("s1", multiplier=containers_duration.pair)]
                 components = imbrications.get(voice.name, skip)
                 voice.extend(components)
 
