@@ -95,6 +95,7 @@ def make_empty_score():
         rmakers.beam_groups(groups)
         baca.label_figure(tuplet, "7.1.L.5", accumulator)
         container_copy = copy.deepcopy(container)
+        imbrications_copy = copy.deepcopy(imbrications)
         accumulator.cache(
             library.lh_v4,
             container,
