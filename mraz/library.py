@@ -81,9 +81,12 @@ class Accumulator:
                     start_offset = abjad.get.timespan(leaf).start_offset
                     break
             assert start_offset is not None
-        elif anchor is not None and anchor.remote_voice_name is not None:
+        elif anchor is not None:
             voice = self._score[anchor.remote_voice_name]
-            leaf = anchor.remote_selector(voice)
+            if anchor.remote_selector is not None:
+                leaf = anchor.remote_selector(voice)
+            else:
+                leaf = abjad.select.leaf(voice, 0)
             start_offset = abjad.get.timespan(leaf).start_offset
             assert start_offset is not None
             requires_adjustment = True
@@ -103,8 +106,14 @@ class Accumulator:
             for leaf in abjad.select.leaves(voice):
                 if abjad.get.timespan(leaf).start_offset == start_offset:
                     assert isinstance(leaf, abjad.Skip), repr(leaf)
-                    assert abjad.get.duration(leaf) == abjad.get.duration(containers)
-                    abjad.mutate.replace(leaf, containers)
+                    if abjad.get.duration(leaf) == abjad.get.duration(containers):
+                        abjad.mutate.replace(leaf, containers)
+                    else:
+                        containers_duration = abjad.get.duration(containers)
+                        result = abjad.mutate.split([leaf], [containers_duration])
+                        left_skip = result[0][0]
+                        assert isinstance(left_skip, abjad.Skip), repr(left_skip)
+                        abjad.mutate.replace([left_skip], containers)
                     break
             else:
                 raise Exception("can not find anchor start offset.")

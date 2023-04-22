@@ -18,7 +18,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     section_5 = library.moment_5()
     section_8 = library.moment_8()
     mraz_score = library.make_empty_score()
-    mraz_accumulator = library.Accumulator(mraz_score)
+    mraz_accumulator = library.Accumulator(mraz_score, use=True)
 
     @baca.call
     def block():
@@ -920,22 +920,40 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tsd=4,
         )
 
-    voices = baca.section.cache_voices(score, library.voice_abbreviations)
-    voices = baca.section.cache_voices(score, library.voice_abbreviations)
-    time_signatures = baca.section.wrap(accumulator.time_signatures)
-    baca.section.set_up_score(
-        score,
-        time_signatures(),
-        append_anchor_skip=True,
-        always_make_global_rests=True,
-        first_measure_number=first_measure_number,
-        manifests=library.manifests,
-        previous_persistent_indicators=previous_persistent_indicators,
-    )
-    accumulator.populate(score)
-    rmakers.hide_trivial(score)
-    rmakers.swap_skip_filled(score)
-    return score, voices, time_signatures
+    new = False
+    if new:
+        voices = baca.section.cache_voices(
+            mraz_accumulator._score, library.voice_abbreviations
+        )
+        time_signatures = baca.section.wrap(mraz_accumulator.time_signatures)
+        baca.section.set_up_score(
+            mraz_accumulator._score,
+            time_signatures(),
+            append_anchor_skip=True,
+            always_make_global_rests=True,
+            first_measure_number=first_measure_number,
+            manifests=library.manifests,
+            previous_persistent_indicators=previous_persistent_indicators,
+        )
+        rmakers.hide_trivial(mraz_accumulator._score)
+        rmakers.swap_skip_filled(mraz_accumulator._score)
+        return mraz_accumulator._score, voices, time_signatures
+    else:
+        voices = baca.section.cache_voices(score, library.voice_abbreviations)
+        time_signatures = baca.section.wrap(accumulator.time_signatures)
+        baca.section.set_up_score(
+            score,
+            time_signatures(),
+            append_anchor_skip=True,
+            always_make_global_rests=True,
+            first_measure_number=first_measure_number,
+            manifests=library.manifests,
+            previous_persistent_indicators=previous_persistent_indicators,
+        )
+        accumulator.populate(score)
+        rmakers.hide_trivial(score)
+        rmakers.swap_skip_filled(score)
+        return score, voices, time_signatures
 
 
 def GLOBALS(skips, rests):
