@@ -936,7 +936,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             previous_persistent_indicators=previous_persistent_indicators,
         )
         rmakers.hide_trivial(mraz_accumulator._score)
-        rmakers.swap_skip_filled(mraz_accumulator._score)
+        rmakers.hide_skip_filled(mraz_accumulator._score)
         return mraz_accumulator._score, voices, time_signatures
     else:
         voices = baca.section.cache_voices(score, library.voice_abbreviations)
@@ -952,7 +952,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         )
         accumulator.populate(score)
         rmakers.hide_trivial(score)
-        rmakers.swap_skip_filled(score)
+        rmakers.hide_skip_filled(score)
         return score, voices, time_signatures
 
 
