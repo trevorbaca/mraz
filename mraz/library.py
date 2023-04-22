@@ -60,6 +60,7 @@ class Accumulator:
         voice_name,
         argument,
         anchor=None,
+        check=False,
         do_not_increment=False,
         hide_time_signature=False,
         imbrications=None,
@@ -68,10 +69,6 @@ class Accumulator:
     ):
         if self.use is not True:
             return
-        """
-        if imbrications is not None:
-            assert anchor is None, repr(anchor)
-        """
         # figure_name = None
         # baca.label_figure(argument, figure_name, self)
         imbrications = imbrications or {}
@@ -147,6 +144,35 @@ class Accumulator:
                 if abjad.get.timespan(leaf) in local_timespan:
                     local_leaves_to_replace.append(leaf)
             abjad.mutate.replace(local_leaves_to_replace, containers)
+            for imbricated_voice_name, imbricated_containers in imbrications.items():
+                local_voice = self._score[imbricated_voice_name]
+                if anchor.local_selector is not None:
+                    local_anchor = anchor.local_selector(imbricated_containers)
+                else:
+                    local_anchor = abjad.select.leaf(imbricated_containers, 0)
+                local_prefix_duration = abjad.get.timespan(local_anchor).start_offset
+                local_duration = abjad.get.duration(imbricated_containers)
+                local_start_offset = remote_start_offset - local_prefix_duration
+                local_stop_offset = local_start_offset + local_duration
+                for leaf in abjad.select.leaves(local_voice):
+                    timespan = abjad.get.timespan(leaf)
+                    if local_start_offset in timespan:
+                        left_duration = local_start_offset - timespan.start_offset
+                        abjad.mutate.split([leaf], [left_duration])
+                        break
+                for leaf in abjad.select.leaves(local_voice):
+                    timespan = abjad.get.timespan(leaf)
+                    if local_stop_offset in timespan:
+                        left_duration = local_stop_offset - timespan.start_offset
+                        abjad.mutate.split([leaf], [left_duration])
+                        break
+                local_timespan = abjad.Timespan(local_start_offset, local_stop_offset)
+                local_leaves_to_replace = []
+                for leaf in abjad.select.leaves(local_voice):
+                    if abjad.get.timespan(leaf) in local_timespan:
+                        local_leaves_to_replace.append(leaf)
+                abjad.mutate.replace(local_leaves_to_replace, imbricated_containers)
+            # HERE
         elif replace_after_last_nonskip_in_same_voice is True:
             previous_skip = None
             for leaf in reversed(abjad.select.leaves(voice)):

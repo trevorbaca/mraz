@@ -619,7 +619,10 @@ number.7.RH.Music.1 = {
     }
 
     % [RH.Music.1 measure 8]
-    s1 * 3/4
+    s1 * 9/16
+
+    % [RH.Music.1 measure 9]
+    s1 * 3/16
 
     {
 
@@ -917,7 +920,10 @@ number.7.RH.InsertVoice.1 = {
     }
 
     % [RH.InsertVoice.1 measure 8]
-    s1 * 3/4
+    s1 * 9/16
+
+    % [RH.InsertVoice.1 measure 9]
+    s1 * 3/16
 
     {
         \override TupletBracket.stencil = ##f
@@ -1664,7 +1670,37 @@ number.7.RH.InsertVoice.2 = {
 number.7.RH.Music.3 = {
 
     % [RH.Music.3 measure 1]
-    s1 * 19/4
+    s1 * 3/4
+
+    % [RH.Music.3 measure 2]
+    s1 * 1/4
+
+    % [RH.Music.3 measure 3]
+    s1 * 3/8
+
+    % [RH.Music.3 measure 4]
+    s1 * 9/16
+
+    % [RH.Music.3 measure 5]
+    s1 * 5/16
+
+    % [RH.Music.3 measure 6]
+    s1 * 9/16
+
+    % [RH.Music.3 measure 7]
+    s1 * 7/16
+
+    % [RH.Music.3 measure 8]
+    s1 * 9/16
+
+    % [RH.Music.3 measure 9]
+    s1 * 3/16
+
+    % [RH.Music.3 measure 10]
+    s1 * 5/8
+
+    % [RH.Music.3 measure 11]
+    s1 * 1/8
 
 }
 
@@ -1672,7 +1708,37 @@ number.7.RH.Music.3 = {
 number.7.RH.InsertVoice.3 = {
 
     % [RH.InsertVoice.3 measure 1]
-    s1 * 19/4
+    s1 * 3/4
+
+    % [RH.InsertVoice.3 measure 2]
+    s1 * 1/4
+
+    % [RH.InsertVoice.3 measure 3]
+    s1 * 3/8
+
+    % [RH.InsertVoice.3 measure 4]
+    s1 * 9/16
+
+    % [RH.InsertVoice.3 measure 5]
+    s1 * 5/16
+
+    % [RH.InsertVoice.3 measure 6]
+    s1 * 9/16
+
+    % [RH.InsertVoice.3 measure 7]
+    s1 * 7/16
+
+    % [RH.InsertVoice.3 measure 8]
+    s1 * 9/16
+
+    % [RH.InsertVoice.3 measure 9]
+    s1 * 3/16
+
+    % [RH.InsertVoice.3 measure 10]
+    s1 * 5/8
+
+    % [RH.InsertVoice.3 measure 11]
+    s1 * 1/8
 
 }
 
@@ -1680,7 +1746,37 @@ number.7.RH.InsertVoice.3 = {
 number.7.RH.Music.4 = {
 
     % [RH.Music.4 measure 1]
-    s1 * 19/4
+    s1 * 3/4
+
+    % [RH.Music.4 measure 2]
+    s1 * 1/4
+
+    % [RH.Music.4 measure 3]
+    s1 * 3/8
+
+    % [RH.Music.4 measure 4]
+    s1 * 9/16
+
+    % [RH.Music.4 measure 5]
+    s1 * 5/16
+
+    % [RH.Music.4 measure 6]
+    s1 * 9/16
+
+    % [RH.Music.4 measure 7]
+    s1 * 7/16
+
+    % [RH.Music.4 measure 8]
+    s1 * 9/16
+
+    % [RH.Music.4 measure 9]
+    s1 * 3/16
+
+    % [RH.Music.4 measure 10]
+    s1 * 5/8
+
+    % [RH.Music.4 measure 11]
+    s1 * 1/8
 
 }
 
@@ -1688,7 +1784,37 @@ number.7.RH.Music.4 = {
 number.7.RH.InsertVoice.4 = {
 
     % [RH.InsertVoice.4 measure 1]
-    s1 * 19/4
+    s1 * 3/4
+
+    % [RH.InsertVoice.4 measure 2]
+    s1 * 1/4
+
+    % [RH.InsertVoice.4 measure 3]
+    s1 * 3/8
+
+    % [RH.InsertVoice.4 measure 4]
+    s1 * 9/16
+
+    % [RH.InsertVoice.4 measure 5]
+    s1 * 5/16
+
+    % [RH.InsertVoice.4 measure 6]
+    s1 * 9/16
+
+    % [RH.InsertVoice.4 measure 7]
+    s1 * 7/16
+
+    % [RH.InsertVoice.4 measure 8]
+    s1 * 9/16
+
+    % [RH.InsertVoice.4 measure 9]
+    s1 * 3/16
+
+    % [RH.InsertVoice.4 measure 10]
+    s1 * 5/8
+
+    % [RH.InsertVoice.4 measure 11]
+    s1 * 1/8
 
 }
 
@@ -1696,7 +1822,37 @@ number.7.RH.InsertVoice.4 = {
 number.7.RH.Music.5 = {
 
     % [RH.Music.5 measure 1]
-    s1 * 19/4
+    s1 * 3/4
+
+    % [RH.Music.5 measure 2]
+    s1 * 1/4
+
+    % [RH.Music.5 measure 3]
+    s1 * 3/8
+
+    % [RH.Music.5 measure 4]
+    s1 * 9/16
+
+    % [RH.Music.5 measure 5]
+    s1 * 5/16
+
+    % [RH.Music.5 measure 6]
+    s1 * 9/16
+
+    % [RH.Music.5 measure 7]
+    s1 * 7/16
+
+    % [RH.Music.5 measure 8]
+    s1 * 9/16
+
+    % [RH.Music.5 measure 9]
+    s1 * 3/16
+
+    % [RH.Music.5 measure 10]
+    s1 * 5/8
+
+    % [RH.Music.5 measure 11]
+    s1 * 1/8
 
 }
 
@@ -1704,7 +1860,37 @@ number.7.RH.Music.5 = {
 number.7.RH.Music.6 = {
 
     % [RH.Music.6 measure 1]
-    s1 * 19/4
+    s1 * 3/4
+
+    % [RH.Music.6 measure 2]
+    s1 * 1/4
+
+    % [RH.Music.6 measure 3]
+    s1 * 3/8
+
+    % [RH.Music.6 measure 4]
+    s1 * 9/16
+
+    % [RH.Music.6 measure 5]
+    s1 * 5/16
+
+    % [RH.Music.6 measure 6]
+    s1 * 9/16
+
+    % [RH.Music.6 measure 7]
+    s1 * 7/16
+
+    % [RH.Music.6 measure 8]
+    s1 * 9/16
+
+    % [RH.Music.6 measure 9]
+    s1 * 3/16
+
+    % [RH.Music.6 measure 10]
+    s1 * 5/8
+
+    % [RH.Music.6 measure 11]
+    s1 * 1/8
 
 }
 
@@ -1712,7 +1898,37 @@ number.7.RH.Music.6 = {
 number.7.RH.ResonanceVoice = {
 
     % [RH.ResonanceVoice measure 1]
-    s1 * 19/4
+    s1 * 3/4
+
+    % [RH.ResonanceVoice measure 2]
+    s1 * 1/4
+
+    % [RH.ResonanceVoice measure 3]
+    s1 * 3/8
+
+    % [RH.ResonanceVoice measure 4]
+    s1 * 9/16
+
+    % [RH.ResonanceVoice measure 5]
+    s1 * 5/16
+
+    % [RH.ResonanceVoice measure 6]
+    s1 * 9/16
+
+    % [RH.ResonanceVoice measure 7]
+    s1 * 7/16
+
+    % [RH.ResonanceVoice measure 8]
+    s1 * 9/16
+
+    % [RH.ResonanceVoice measure 9]
+    s1 * 3/16
+
+    % [RH.ResonanceVoice measure 10]
+    s1 * 5/8
+
+    % [RH.ResonanceVoice measure 11]
+    s1 * 1/8
 
 }
 
@@ -1758,7 +1974,37 @@ number.7.PianoMusicRH.Staff = <<
 number.7.LH.Music.1 = {
 
     % [LH.Music.1 measure 1]
-    s1 * 19/4
+    s1 * 3/4
+
+    % [LH.Music.1 measure 2]
+    s1 * 1/4
+
+    % [LH.Music.1 measure 3]
+    s1 * 3/8
+
+    % [LH.Music.1 measure 4]
+    s1 * 9/16
+
+    % [LH.Music.1 measure 5]
+    s1 * 5/16
+
+    % [LH.Music.1 measure 6]
+    s1 * 9/16
+
+    % [LH.Music.1 measure 7]
+    s1 * 7/16
+
+    % [LH.Music.1 measure 8]
+    s1 * 9/16
+
+    % [LH.Music.1 measure 9]
+    s1 * 3/16
+
+    % [LH.Music.1 measure 10]
+    s1 * 5/8
+
+    % [LH.Music.1 measure 11]
+    s1 * 1/8
 
 }
 
@@ -1766,7 +2012,37 @@ number.7.LH.Music.1 = {
 number.7.LH.Music.2 = {
 
     % [LH.Music.2 measure 1]
-    s1 * 19/4
+    s1 * 3/4
+
+    % [LH.Music.2 measure 2]
+    s1 * 1/4
+
+    % [LH.Music.2 measure 3]
+    s1 * 3/8
+
+    % [LH.Music.2 measure 4]
+    s1 * 9/16
+
+    % [LH.Music.2 measure 5]
+    s1 * 5/16
+
+    % [LH.Music.2 measure 6]
+    s1 * 9/16
+
+    % [LH.Music.2 measure 7]
+    s1 * 7/16
+
+    % [LH.Music.2 measure 8]
+    s1 * 9/16
+
+    % [LH.Music.2 measure 9]
+    s1 * 3/16
+
+    % [LH.Music.2 measure 10]
+    s1 * 5/8
+
+    % [LH.Music.2 measure 11]
+    s1 * 1/8
 
 }
 
@@ -1774,7 +2050,37 @@ number.7.LH.Music.2 = {
 number.7.LH.Music.3 = {
 
     % [LH.Music.3 measure 1]
-    s1 * 19/4
+    s1 * 3/4
+
+    % [LH.Music.3 measure 2]
+    s1 * 1/4
+
+    % [LH.Music.3 measure 3]
+    s1 * 3/8
+
+    % [LH.Music.3 measure 4]
+    s1 * 9/16
+
+    % [LH.Music.3 measure 5]
+    s1 * 5/16
+
+    % [LH.Music.3 measure 6]
+    s1 * 9/16
+
+    % [LH.Music.3 measure 7]
+    s1 * 7/16
+
+    % [LH.Music.3 measure 8]
+    s1 * 9/16
+
+    % [LH.Music.3 measure 9]
+    s1 * 3/16
+
+    % [LH.Music.3 measure 10]
+    s1 * 5/8
+
+    % [LH.Music.3 measure 11]
+    s1 * 1/8
 
 }
 
@@ -1864,8 +2170,17 @@ number.7.LH.Music.4 = {
 
     }
 
-    s1 * 11/8
+    s1 * 1/8
     \revert Beam.positions
+
+    % [LH.Music.4 measure 3]
+    s1 * 3/8
+
+    % [LH.Music.4 measure 4]
+    s1 * 9/16
+
+    % [LH.Music.4 measure 5]
+    s1 * 5/16
 
     {
 
@@ -1901,7 +2216,13 @@ number.7.LH.Music.4 = {
 
     }
 
-    s1 * 11/8
+    s1 * 3/8
+
+    % [LH.Music.4 measure 7]
+    s1 * 7/16
+
+    % [LH.Music.4 measure 8]
+    s1 * 9/16
 
     {
 
@@ -1954,7 +2275,10 @@ number.7.LH.Music.4 = {
 
     }
 
-    s1 * 7/16
+    s1 * 5/16
+
+    % [LH.Music.4 measure 11]
+    s1 * 1/8
     \revert Beam.positions
     \revert Script.direction
 
@@ -2008,7 +2332,16 @@ number.7.LH.InsertVoice.4 = {
 
     }
 
-    s1 * 11/8
+    s1 * 1/8
+
+    % [LH.InsertVoice.4 measure 3]
+    s1 * 3/8
+
+    % [LH.InsertVoice.4 measure 4]
+    s1 * 9/16
+
+    % [LH.InsertVoice.4 measure 5]
+    s1 * 5/16
 
     {
         \override TupletBracket.stencil = ##f
@@ -2030,7 +2363,13 @@ number.7.LH.InsertVoice.4 = {
 
     }
 
-    s1 * 11/8
+    s1 * 3/8
+
+    % [LH.InsertVoice.4 measure 7]
+    s1 * 7/16
+
+    % [LH.InsertVoice.4 measure 8]
+    s1 * 9/16
 
     {
         \override TupletBracket.stencil = ##f
@@ -2062,7 +2401,10 @@ number.7.LH.InsertVoice.4 = {
 
     }
 
-    s1 * 7/16
+    s1 * 5/16
+
+    % [LH.InsertVoice.4 measure 11]
+    s1 * 1/8
     \revert Script.direction
 
 }
@@ -2073,7 +2415,13 @@ number.7.LH.Music.5 = {
     % [LH.Music.5 measure 1]
     \override Beam.positions = #'(-6 . -6)
     \override Script.direction = #down
-    s1 * 329/272
+    s1 * 3/4
+
+    % [LH.Music.5 measure 2]
+    s1 * 1/4
+
+    % [LH.Music.5 measure 3]
+    s1 * 57/272
 
     {
 
@@ -2196,8 +2544,11 @@ number.7.LH.Music.5 = {
 
     }
 
-    s1 * 75/136
+    s1 * 7/68
     \revert Beam.positions
+
+    % [LH.Music.5 measure 6]
+    s1 * 61/136
 
     {
 
@@ -2317,7 +2668,16 @@ number.7.LH.Music.5 = {
 
     }
 
-    s1 * 303/272
+    s1 * 3/17
+
+    % [LH.Music.5 measure 9]
+    s1 * 3/16
+
+    % [LH.Music.5 measure 10]
+    s1 * 5/8
+
+    % [LH.Music.5 measure 11]
+    s1 * 1/8
     \revert Script.direction
 
 }
@@ -2328,7 +2688,13 @@ number.7.LH.InsertVoice.5 = {
     % [LH.InsertVoice.5 measure 1]
     \override Beam.positions = #'(9 . 9)
     \override Script.direction = #up
-    s1 * 329/272
+    s1 * 3/4
+
+    % [LH.InsertVoice.5 measure 2]
+    s1 * 1/4
+
+    % [LH.InsertVoice.5 measure 3]
+    s1 * 57/272
 
     {
         \override TupletBracket.stencil = ##f
@@ -2409,7 +2775,10 @@ number.7.LH.InsertVoice.5 = {
 
     }
 
-    s1 * 75/136
+    s1 * 7/68
+
+    % [LH.InsertVoice.5 measure 6]
+    s1 * 61/136
 
     {
         \override TupletBracket.stencil = ##f
@@ -2490,7 +2859,16 @@ number.7.LH.InsertVoice.5 = {
 
     }
 
-    s1 * 303/272
+    s1 * 3/17
+
+    % [LH.InsertVoice.5 measure 9]
+    s1 * 3/16
+
+    % [LH.InsertVoice.5 measure 10]
+    s1 * 5/8
+
+    % [LH.InsertVoice.5 measure 11]
+    s1 * 1/8
     \revert Beam.positions
     \revert Script.direction
 
@@ -2500,7 +2878,37 @@ number.7.LH.InsertVoice.5 = {
 number.7.LH.Music.6 = {
 
     % [LH.Music.6 measure 1]
-    s1 * 19/4
+    s1 * 3/4
+
+    % [LH.Music.6 measure 2]
+    s1 * 1/4
+
+    % [LH.Music.6 measure 3]
+    s1 * 3/8
+
+    % [LH.Music.6 measure 4]
+    s1 * 9/16
+
+    % [LH.Music.6 measure 5]
+    s1 * 5/16
+
+    % [LH.Music.6 measure 6]
+    s1 * 9/16
+
+    % [LH.Music.6 measure 7]
+    s1 * 7/16
+
+    % [LH.Music.6 measure 8]
+    s1 * 9/16
+
+    % [LH.Music.6 measure 9]
+    s1 * 3/16
+
+    % [LH.Music.6 measure 10]
+    s1 * 5/8
+
+    % [LH.Music.6 measure 11]
+    s1 * 1/8
 
 }
 
@@ -2508,7 +2916,37 @@ number.7.LH.Music.6 = {
 number.7.LH.InsertVoice.6 = {
 
     % [LH.InsertVoice.6 measure 1]
-    s1 * 19/4
+    s1 * 3/4
+
+    % [LH.InsertVoice.6 measure 2]
+    s1 * 1/4
+
+    % [LH.InsertVoice.6 measure 3]
+    s1 * 3/8
+
+    % [LH.InsertVoice.6 measure 4]
+    s1 * 9/16
+
+    % [LH.InsertVoice.6 measure 5]
+    s1 * 5/16
+
+    % [LH.InsertVoice.6 measure 6]
+    s1 * 9/16
+
+    % [LH.InsertVoice.6 measure 7]
+    s1 * 7/16
+
+    % [LH.InsertVoice.6 measure 8]
+    s1 * 9/16
+
+    % [LH.InsertVoice.6 measure 9]
+    s1 * 3/16
+
+    % [LH.InsertVoice.6 measure 10]
+    s1 * 5/8
+
+    % [LH.InsertVoice.6 measure 11]
+    s1 * 1/8
 
 }
 
@@ -2516,7 +2954,37 @@ number.7.LH.InsertVoice.6 = {
 number.7.LH.ResonanceVoice = {
 
     % [LH.ResonanceVoice measure 1]
-    s1 * 19/4
+    s1 * 3/4
+
+    % [LH.ResonanceVoice measure 2]
+    s1 * 1/4
+
+    % [LH.ResonanceVoice measure 3]
+    s1 * 3/8
+
+    % [LH.ResonanceVoice measure 4]
+    s1 * 9/16
+
+    % [LH.ResonanceVoice measure 5]
+    s1 * 5/16
+
+    % [LH.ResonanceVoice measure 6]
+    s1 * 9/16
+
+    % [LH.ResonanceVoice measure 7]
+    s1 * 7/16
+
+    % [LH.ResonanceVoice measure 8]
+    s1 * 9/16
+
+    % [LH.ResonanceVoice measure 9]
+    s1 * 3/16
+
+    % [LH.ResonanceVoice measure 10]
+    s1 * 5/8
+
+    % [LH.ResonanceVoice measure 11]
+    s1 * 1/8
 
 }
 
