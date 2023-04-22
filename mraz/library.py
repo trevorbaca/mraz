@@ -68,8 +68,10 @@ class Accumulator:
     ):
         if self.use is not True:
             return
+        """
         if imbrications is not None:
             assert anchor is None, repr(anchor)
+        """
         # figure_name = None
         # baca.label_figure(argument, figure_name, self)
         imbrications = imbrications or {}
