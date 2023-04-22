@@ -64,6 +64,7 @@ class Accumulator:
         hide_time_signature=False,
         imbrications=None,
         tsd=None,
+        replace_after_last_nonskip_in_same_voice=False,
     ):
         if self.use is not True:
             return
@@ -136,6 +137,15 @@ class Accumulator:
                 if abjad.get.timespan(leaf) in local_timespan:
                     local_leaves_to_replace.append(leaf)
             abjad.mutate.replace(local_leaves_to_replace, containers)
+        elif replace_after_last_nonskip_in_same_voice is True:
+            previous_skip = None
+            for leaf in reversed(abjad.select.leaves(voice)):
+                if isinstance(leaf, abjad.Skip):
+                    previous_skip = leaf
+                else:
+                    break
+            assert abjad.get.duration(previous_skip) == abjad.get.duration(containers)
+            abjad.mutate.replace([previous_skip], containers)
         else:
             voice.extend(containers)
             other_voice_names = _voice_names - {voice_name}
