@@ -20,7 +20,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
 
     @baca.call
     def block():
-        #################################### [7.1] ####################################
         collections = section_7.stage_1.rh[:1]
         collections = collections[0]
         assert library.foo(collections) == [
@@ -480,7 +479,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
 
     @baca.call
     def block():
-        ###################################### LH #####################################
         collections = [_.transpose(0 * 7) for _ in section_7.stage_1.lh[0]]
         assert library.foo(collections) == ["PC<6, 0, 4, 5, 8, 10, 3>", "PC<11, 7, 11>"]
         tuplets = []
@@ -510,6 +508,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
                 lambda _: abjad.select.note(_, 0),
                 lambda _: baca.select.lt(_, 7),
             ),
+            hide_time_signature=True,
             imbrications=imbrications,
         )
         mraz_accumulator(
@@ -520,6 +519,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
                 lambda _: abjad.select.note(_, 0),
                 lambda _: baca.select.lt(_, 7),
             ),
+            hide_time_signature=True,
             imbrications=imbrications_copy,
         )
 
