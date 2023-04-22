@@ -144,8 +144,17 @@ class Accumulator:
                     previous_skip = leaf
                 else:
                     break
-            assert abjad.get.duration(previous_skip) == abjad.get.duration(containers)
-            abjad.mutate.replace([previous_skip], containers)
+            containers_duration = abjad.get.duration(containers)
+            previous_skip_duration = abjad.get.duration(previous_skip)
+            if previous_skip_duration == containers_duration:
+                abjad.mutate.replace([previous_skip], containers)
+            else:
+                assert containers_duration < previous_skip_duration
+                result = abjad.mutate.split([previous_skip], [containers_duration])
+                left_split_skips = result[0]
+                assert len(left_split_skips) == 1
+                left_split_skip = left_split_skips[0]
+                abjad.mutate.replace([left_split_skip], containers)
         else:
             voice.extend(containers)
             other_voice_names = _voice_names - {voice_name}

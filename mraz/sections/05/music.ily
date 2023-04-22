@@ -166,11 +166,20 @@ number.5.RH.Music.1 = {
     \set PianoMusicRHStaff.forceClef = ##t
       %! REAPPLIED_CLEF
     \clef "treble"
-    s1 * 25/8
+    s1 * 9/8
       %! REAPPLIED_INSTRUMENT_ALERT
     ^ \baca-reapplied-instrument-markup "(“Piano”)"
       %! REAPPLIED_CLEF_REDRAW_COLOR
     \override PianoMusicRHStaff.Clef.color = #(x11-color 'OliveDrab)
+
+    % [RH.Music.1 measure 2]
+    s1 * 1/2
+
+    % [RH.Music.1 measure 3]
+    s1 * 7/8
+
+    % [RH.Music.1 measure 4]
+    s1 * 5/8
 
 }
 
@@ -178,7 +187,16 @@ number.5.RH.Music.1 = {
 number.5.RH.InsertVoice.1 = {
 
     % [RH.InsertVoice.1 measure 1]
-    s1 * 25/8
+    s1 * 9/8
+
+    % [RH.InsertVoice.1 measure 2]
+    s1 * 1/2
+
+    % [RH.InsertVoice.1 measure 3]
+    s1 * 7/8
+
+    % [RH.InsertVoice.1 measure 4]
+    s1 * 5/8
 
 }
 
@@ -186,7 +204,16 @@ number.5.RH.InsertVoice.1 = {
 number.5.RH.Music.2 = {
 
     % [RH.Music.2 measure 1]
-    s1 * 25/8
+    s1 * 9/8
+
+    % [RH.Music.2 measure 2]
+    s1 * 1/2
+
+    % [RH.Music.2 measure 3]
+    s1 * 7/8
+
+    % [RH.Music.2 measure 4]
+    s1 * 5/8
 
 }
 
@@ -194,173 +221,166 @@ number.5.RH.Music.2 = {
 number.5.RH.InsertVoice.2 = {
 
     % [RH.InsertVoice.2 measure 1]
-    s1 * 25/8
+    s1 * 9/8
+
+    % [RH.InsertVoice.2 measure 2]
+    s1 * 1/2
+
+    % [RH.InsertVoice.2 measure 3]
+    s1 * 7/8
+
+    % [RH.InsertVoice.2 measure 4]
+    s1 * 5/8
 
 }
 
 
 number.5.RH.Music.3 = {
 
+    \tweak text #tuplet-number::calc-fraction-text
+    \times 4/3
     {
 
-        \tweak text #tuplet-number::calc-fraction-text
-        \times 4/3
-        {
+        % [RH.Music.3 measure 1]
+        \override TupletBracket.direction = #up
+        \override TupletBracket.staff-padding = 7
+        fs'''!8
+        - \staccato
+        - \tenuto
+          %! EXPLICIT_DYNAMIC_COLOR
+          %! EXPLICIT_DYNAMIC
+        - \tweak color #(x11-color 'blue)
+          %! EXPLICIT_DYNAMIC
+        \pp
+          %! FIGURE_LABEL
+        %@% - \tweak color #blue
+          %! FIGURE_LABEL
+        %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (1) \hspace #1 "6.1.R.1-2" ] }
 
-            % [RH.Music.3 measure 1]
-            \override TupletBracket.direction = #up
-            \override TupletBracket.staff-padding = 7
-            fs'''!8
-            - \staccato
-            - \tenuto
-              %! EXPLICIT_DYNAMIC_COLOR
-              %! EXPLICIT_DYNAMIC
-            - \tweak color #(x11-color 'blue)
-              %! EXPLICIT_DYNAMIC
-            \pp
-              %! FIGURE_LABEL
-            %@% - \tweak color #blue
-              %! FIGURE_LABEL
-            %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (1) \hspace #1 "6.1.R.1-2" ] }
+        a'''8
+        - \staccato
+        - \tenuto
 
-            a'''8
-            - \staccato
-            - \tenuto
-
-            b''8
-            - \staccato
-            - \tenuto
-
-        }
-
-        \scaleDurations #'(1 . 1)
-        {
-
-            c'''8
-            - \staccato
-            - \tenuto
-
-            af''!8
-            - \staccato
-            - \tenuto
-
-            b''8
-            - \staccato
-            - \tenuto
-
-            cs''!8
-            - \staccato
-            - \tenuto
-
-            r8
-            \revert TupletBracket.direction
-            \revert TupletBracket.staff-padding
-
-        }
+        b''8
+        - \staccato
+        - \tenuto
 
     }
 
+    \scaleDurations #'(1 . 1)
     {
 
-        \tweak text #tuplet-number::calc-fraction-text
-        \times 4/3
-        {
+        c'''8
+        - \staccato
+        - \tenuto
 
-            % [RH.Music.3 measure 2]
-            \override TupletBracket.direction = #up
-            \override TupletBracket.staff-padding = 7
-            \override TupletBracket.staff-padding = 8
-            bf'''!8
-            - \staccato
-            - \tenuto
-              %! FIGURE_LABEL
-            %@% - \tweak color #blue
-              %! FIGURE_LABEL
-            %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (2) \hspace #1 "6.1.R.3" ] }
+        af''!8
+        - \staccato
+        - \tenuto
 
-            cs'''!8
-            - \staccato
-            - \tenuto
+        b''8
+        - \staccato
+        - \tenuto
 
-            ef'''!8
-            - \staccato
-            - \tenuto
-            \revert TupletBracket.direction
-            \revert TupletBracket.staff-padding
-            \revert TupletBracket.staff-padding
+        cs''!8
+        - \staccato
+        - \tenuto
 
-        }
+        r8
+        \revert TupletBracket.direction
+        \revert TupletBracket.staff-padding
 
     }
 
+    \tweak text #tuplet-number::calc-fraction-text
+    \times 4/3
     {
 
-        \scaleDurations #'(1 . 1)
-        {
+        % [RH.Music.3 measure 2]
+        \override TupletBracket.direction = #up
+        \override TupletBracket.staff-padding = 7
+        \override TupletBracket.staff-padding = 8
+        bf'''!8
+        - \staccato
+        - \tenuto
+          %! FIGURE_LABEL
+        %@% - \tweak color #blue
+          %! FIGURE_LABEL
+        %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (2) \hspace #1 "6.1.R.3" ] }
 
-            % [RH.Music.3 measure 3]
-            r8
+        cs'''!8
+        - \staccato
+        - \tenuto
 
-            d'''8
-            - \staccato
-            - \tenuto
-              %! FIGURE_LABEL
-            %@% - \tweak color #blue
-              %! FIGURE_LABEL
-            %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (3) \hspace #1 "6.1.R.4" ] }
-
-            e'''8
-            - \staccato
-            - \tenuto
-
-            c'''8
-            - \staccato
-            - \tenuto
-
-            ef'''!8
-            - \staccato
-            - \tenuto
-
-            f''8
-            - \staccato
-            - \tenuto
-
-            r8
-
-        }
+        ef'''!8
+        - \staccato
+        - \tenuto
+        \revert TupletBracket.direction
+        \revert TupletBracket.staff-padding
+        \revert TupletBracket.staff-padding
 
     }
 
+    \scaleDurations #'(1 . 1)
     {
 
-        \tweak text #tuplet-number::calc-fraction-text
-        \times 5/4
-        {
+        % [RH.Music.3 measure 3]
+        r8
 
-            % [RH.Music.3 measure 4]
-            \override TupletBracket.direction = #up
-            af''!8
-            - \staccato
-            - \tenuto
-              %! FIGURE_LABEL
-            %@% - \tweak color #blue
-              %! FIGURE_LABEL
-            %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (4) \hspace #1 "6.1.R.5" ] }
+        d'''8
+        - \staccato
+        - \tenuto
+          %! FIGURE_LABEL
+        %@% - \tweak color #blue
+          %! FIGURE_LABEL
+        %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (3) \hspace #1 "6.1.R.4" ] }
 
-            e''8
-            - \staccato
-            - \tenuto
+        e'''8
+        - \staccato
+        - \tenuto
 
-            g''8
-            - \staccato
-            - \tenuto
+        c'''8
+        - \staccato
+        - \tenuto
 
-            a''8
-            - \staccato
-            - \tenuto
-            \revert TupletBracket.direction
+        ef'''!8
+        - \staccato
+        - \tenuto
 
-        }
+        f''8
+        - \staccato
+        - \tenuto
+
+        r8
+
+    }
+
+    \tweak text #tuplet-number::calc-fraction-text
+    \times 5/4
+    {
+
+        % [RH.Music.3 measure 4]
+        \override TupletBracket.direction = #up
+        af''!8
+        - \staccato
+        - \tenuto
+          %! FIGURE_LABEL
+        %@% - \tweak color #blue
+          %! FIGURE_LABEL
+        %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (4) \hspace #1 "6.1.R.5" ] }
+
+        e''8
+        - \staccato
+        - \tenuto
+
+        g''8
+        - \staccato
+        - \tenuto
+
+        a''8
+        - \staccato
+        - \tenuto
+        \revert TupletBracket.direction
 
     }
 
@@ -370,7 +390,16 @@ number.5.RH.Music.3 = {
 number.5.RH.InsertVoice.3 = {
 
     % [RH.InsertVoice.3 measure 1]
-    s1 * 25/8
+    s1 * 9/8
+
+    % [RH.InsertVoice.3 measure 2]
+    s1 * 1/2
+
+    % [RH.InsertVoice.3 measure 3]
+    s1 * 7/8
+
+    % [RH.InsertVoice.3 measure 4]
+    s1 * 5/8
 
 }
 
@@ -378,7 +407,16 @@ number.5.RH.InsertVoice.3 = {
 number.5.RH.Music.4 = {
 
     % [RH.Music.4 measure 1]
-    s1 * 25/8
+    s1 * 9/8
+
+    % [RH.Music.4 measure 2]
+    s1 * 1/2
+
+    % [RH.Music.4 measure 3]
+    s1 * 7/8
+
+    % [RH.Music.4 measure 4]
+    s1 * 5/8
 
 }
 
@@ -386,7 +424,16 @@ number.5.RH.Music.4 = {
 number.5.RH.InsertVoice.4 = {
 
     % [RH.InsertVoice.4 measure 1]
-    s1 * 25/8
+    s1 * 9/8
+
+    % [RH.InsertVoice.4 measure 2]
+    s1 * 1/2
+
+    % [RH.InsertVoice.4 measure 3]
+    s1 * 7/8
+
+    % [RH.InsertVoice.4 measure 4]
+    s1 * 5/8
 
 }
 
@@ -394,7 +441,16 @@ number.5.RH.InsertVoice.4 = {
 number.5.RH.Music.5 = {
 
     % [RH.Music.5 measure 1]
-    s1 * 25/8
+    s1 * 9/8
+
+    % [RH.Music.5 measure 2]
+    s1 * 1/2
+
+    % [RH.Music.5 measure 3]
+    s1 * 7/8
+
+    % [RH.Music.5 measure 4]
+    s1 * 5/8
 
 }
 
@@ -402,7 +458,16 @@ number.5.RH.Music.5 = {
 number.5.RH.Music.6 = {
 
     % [RH.Music.6 measure 1]
-    s1 * 25/8
+    s1 * 9/8
+
+    % [RH.Music.6 measure 2]
+    s1 * 1/2
+
+    % [RH.Music.6 measure 3]
+    s1 * 7/8
+
+    % [RH.Music.6 measure 4]
+    s1 * 5/8
 
 }
 
@@ -410,7 +475,16 @@ number.5.RH.Music.6 = {
 number.5.RH.ResonanceVoice = {
 
     % [RH.ResonanceVoice measure 1]
-    s1 * 25/8
+    s1 * 9/8
+
+    % [RH.ResonanceVoice measure 2]
+    s1 * 1/2
+
+    % [RH.ResonanceVoice measure 3]
+    s1 * 7/8
+
+    % [RH.ResonanceVoice measure 4]
+    s1 * 5/8
 
 }
 
@@ -456,7 +530,16 @@ number.5.PianoMusicRH.Staff = <<
 number.5.LH.Music.1 = {
 
     % [LH.Music.1 measure 1]
-    s1 * 25/8
+    s1 * 9/8
+
+    % [LH.Music.1 measure 2]
+    s1 * 1/2
+
+    % [LH.Music.1 measure 3]
+    s1 * 7/8
+
+    % [LH.Music.1 measure 4]
+    s1 * 5/8
 
 }
 
@@ -464,7 +547,16 @@ number.5.LH.Music.1 = {
 number.5.LH.Music.2 = {
 
     % [LH.Music.2 measure 1]
-    s1 * 25/8
+    s1 * 9/8
+
+    % [LH.Music.2 measure 2]
+    s1 * 1/2
+
+    % [LH.Music.2 measure 3]
+    s1 * 7/8
+
+    % [LH.Music.2 measure 4]
+    s1 * 5/8
 
 }
 
@@ -472,7 +564,16 @@ number.5.LH.Music.2 = {
 number.5.LH.Music.3 = {
 
     % [LH.Music.3 measure 1]
-    s1 * 25/8
+    s1 * 9/8
+
+    % [LH.Music.3 measure 2]
+    s1 * 1/2
+
+    % [LH.Music.3 measure 3]
+    s1 * 7/8
+
+    % [LH.Music.3 measure 4]
+    s1 * 5/8
 
 }
 
@@ -498,146 +599,130 @@ number.5.LH.Music.4 = {
       %! EXPLICIT_CLEF_REDRAW_COLOR
     \override PianoMusicLHStaff.Clef.color = #(x11-color 'DeepSkyBlue2)
 
+    \tweak text #tuplet-number::calc-fraction-text
+    \times 9/8
     {
 
-        \tweak text #tuplet-number::calc-fraction-text
-        \times 9/8
-        {
+        \override TupletBracket.staff-padding = 3
+        g'16
+        - \tenuto
+          %! EXPLICIT_DYNAMIC_COLOR
+          %! EXPLICIT_DYNAMIC
+        - \tweak color #(x11-color 'blue)
+          %! EXPLICIT_DYNAMIC
+        \mp
+          %! FIGURE_LABEL
+        %@% - \tweak color #blue
+          %! FIGURE_LABEL
+        %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (5) \hspace #1 "6.1.L.1" ] }
 
-            \override TupletBracket.staff-padding = 3
-            g'16
-            - \tenuto
-              %! EXPLICIT_DYNAMIC_COLOR
-              %! EXPLICIT_DYNAMIC
-            - \tweak color #(x11-color 'blue)
-              %! EXPLICIT_DYNAMIC
-            \mp
-              %! FIGURE_LABEL
-            %@% - \tweak color #blue
-              %! FIGURE_LABEL
-            %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (5) \hspace #1 "6.1.L.1" ] }
+        r16
 
-            r16
+        af'!16
+        - \tenuto
 
-            af'!16
-            - \tenuto
+        r16
 
-            r16
+        bf'!16
+        - \tenuto
 
-            bf'!16
-            - \tenuto
+        r16
 
-            r16
+        a'16
+        - \tenuto
 
-            a'16
-            - \tenuto
-
-            r16
-            \revert TupletBracket.staff-padding
-
-        }
+        r16
+        \revert TupletBracket.staff-padding
 
     }
 
     s1 * 23/96
 
+    \tweak text #tuplet-number::calc-fraction-text
+    \times 7/6
     {
 
-        \tweak text #tuplet-number::calc-fraction-text
-        \times 7/6
-        {
+        \override TupletBracket.staff-padding = 3
+        b'16
+        - \tenuto
+          %! FIGURE_LABEL
+        %@% - \tweak color #blue
+          %! FIGURE_LABEL
+        %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (6) \hspace #1 "6.1.L.2" ] }
 
-            \override TupletBracket.staff-padding = 3
-            b'16
-            - \tenuto
-              %! FIGURE_LABEL
-            %@% - \tweak color #blue
-              %! FIGURE_LABEL
-            %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (6) \hspace #1 "6.1.L.2" ] }
+        r8
 
-            r8
+        c''16
+        - \tenuto
 
-            c''16
-            - \tenuto
+        r8
 
-            r8
+        d''16
+        - \tenuto
 
-            d''16
-            - \tenuto
+        r8
 
-            r8
+        cs''!16
+        - \tenuto
 
-            cs''!16
-            - \tenuto
-
-            r8
-            \revert TupletBracket.staff-padding
-
-        }
+        r8
+        \revert TupletBracket.staff-padding
 
     }
 
     s1 * 13/96
 
+    \scaleDurations #'(1 . 1)
     {
 
-        \scaleDurations #'(1 . 1)
-        {
+        d'16
+        - \tenuto
+          %! FIGURE_LABEL
+        %@% - \tweak color #blue
+          %! FIGURE_LABEL
+        %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (7) \hspace #1 "6.1.L.3" ] }
 
-            d'16
-            - \tenuto
-              %! FIGURE_LABEL
-            %@% - \tweak color #blue
-              %! FIGURE_LABEL
-            %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (7) \hspace #1 "6.1.L.3" ] }
+        r32
 
-            r32
+        f'16
+        - \tenuto
 
-            f'16
-            - \tenuto
+        r32
 
-            r32
+        g'16
+        - \tenuto
 
-            g'16
-            - \tenuto
+        r32
 
-            r32
+        ef''!16
+        - \tenuto
 
-            ef''!16
-            - \tenuto
+        r32
 
-            r32
+        e''16
+        - \tenuto
 
-            e''16
-            - \tenuto
-
-            r32
-
-        }
+        r32
 
     }
 
+    \scaleDurations #'(1 . 1)
     {
 
-        \scaleDurations #'(1 . 1)
-        {
+        % [LH.Music.4 measure 4]
+        fs''!16
+        - \tenuto
+          %! FIGURE_LABEL
+        %@% - \tweak color #blue
+          %! FIGURE_LABEL
+        %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (8) \hspace #1 "6.1.L.4" ] }
 
-            % [LH.Music.4 measure 4]
-            fs''!16
-            - \tenuto
-              %! FIGURE_LABEL
-            %@% - \tweak color #blue
-              %! FIGURE_LABEL
-            %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (8) \hspace #1 "6.1.L.4" ] }
+        r32
 
-            r32
+        f''16
+        - \tenuto
 
-            f''16
-            - \tenuto
-
-            r32
-
-        }
+        r32
 
     }
 
@@ -649,7 +734,16 @@ number.5.LH.Music.4 = {
 number.5.LH.InsertVoice.4 = {
 
     % [LH.InsertVoice.4 measure 1]
-    s1 * 25/8
+    s1 * 9/8
+
+    % [LH.InsertVoice.4 measure 2]
+    s1 * 1/2
+
+    % [LH.InsertVoice.4 measure 3]
+    s1 * 7/8
+
+    % [LH.InsertVoice.4 measure 4]
+    s1 * 5/8
 
 }
 
@@ -657,7 +751,16 @@ number.5.LH.InsertVoice.4 = {
 number.5.LH.Music.5 = {
 
     % [LH.Music.5 measure 1]
-    s1 * 25/8
+    s1 * 9/8
+
+    % [LH.Music.5 measure 2]
+    s1 * 1/2
+
+    % [LH.Music.5 measure 3]
+    s1 * 7/8
+
+    % [LH.Music.5 measure 4]
+    s1 * 5/8
 
 }
 
@@ -665,7 +768,16 @@ number.5.LH.Music.5 = {
 number.5.LH.InsertVoice.5 = {
 
     % [LH.InsertVoice.5 measure 1]
-    s1 * 25/8
+    s1 * 9/8
+
+    % [LH.InsertVoice.5 measure 2]
+    s1 * 1/2
+
+    % [LH.InsertVoice.5 measure 3]
+    s1 * 7/8
+
+    % [LH.InsertVoice.5 measure 4]
+    s1 * 5/8
 
 }
 
@@ -673,7 +785,16 @@ number.5.LH.InsertVoice.5 = {
 number.5.LH.Music.6 = {
 
     % [LH.Music.6 measure 1]
-    s1 * 25/8
+    s1 * 9/8
+
+    % [LH.Music.6 measure 2]
+    s1 * 1/2
+
+    % [LH.Music.6 measure 3]
+    s1 * 7/8
+
+    % [LH.Music.6 measure 4]
+    s1 * 5/8
 
 }
 
@@ -681,7 +802,16 @@ number.5.LH.Music.6 = {
 number.5.LH.InsertVoice.6 = {
 
     % [LH.InsertVoice.6 measure 1]
-    s1 * 25/8
+    s1 * 9/8
+
+    % [LH.InsertVoice.6 measure 2]
+    s1 * 1/2
+
+    % [LH.InsertVoice.6 measure 3]
+    s1 * 7/8
+
+    % [LH.InsertVoice.6 measure 4]
+    s1 * 5/8
 
 }
 
@@ -689,7 +819,16 @@ number.5.LH.InsertVoice.6 = {
 number.5.LH.ResonanceVoice = {
 
     % [LH.ResonanceVoice measure 1]
-    s1 * 25/8
+    s1 * 9/8
+
+    % [LH.ResonanceVoice measure 2]
+    s1 * 1/2
+
+    % [LH.ResonanceVoice measure 3]
+    s1 * 7/8
+
+    % [LH.ResonanceVoice measure 4]
+    s1 * 5/8
 
 }
 
