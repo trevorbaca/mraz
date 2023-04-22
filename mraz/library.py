@@ -73,12 +73,21 @@ class Accumulator:
         # baca.label_figure(argument, figure_name, self)
         imbrications = imbrications or {}
         start_offset = None
-        if anchor is not None:
+        requires_adjustment = False
+        if anchor is not None and anchor.figure_name is not None:
             for leaf in abjad.iterate.leaves(self._score):
                 if abjad.get.annotation(leaf, "figure_name") == anchor.figure_name:
                     start_offset = abjad.get.timespan(leaf).start_offset
                     break
             assert start_offset is not None
+        elif anchor is not None and anchor.remote_voice_name is not None:
+            voice = self._score[anchor.remote_voice_name]
+            leaf = anchor.remote_selector(voice)
+            start_offset = abjad.get.timespan(leaf).start_offset
+            assert start_offset is not None
+            requires_adjustment = True
+        elif anchor is not None:
+            raise Exception(anchor)
         if hide_time_signature is False:
             time_signature = make_time_signature(argument, tsd)
             self.time_signatures.append(time_signature)
@@ -89,7 +98,7 @@ class Accumulator:
         assert all(isinstance(_, abjad.Container) for _ in containers), repr(containers)
         duration = abjad.get.duration(containers)
         voice = self._score[voice_name]
-        if anchor is not None:
+        if anchor is not None and requires_adjustment is False:
             for leaf in abjad.select.leaves(voice):
                 if abjad.get.timespan(leaf).start_offset == start_offset:
                     assert isinstance(leaf, abjad.Skip), repr(leaf)
@@ -98,6 +107,35 @@ class Accumulator:
                     break
             else:
                 raise Exception("can not find anchor start offset.")
+        elif anchor is not None and requires_adjustment is True:
+            remote_start_offset = start_offset
+            local_voice = self._score[voice_name]
+            if anchor.local_selector is not None:
+                local_anchor = anchor.local_selector(containers)
+            else:
+                local_anchor = abjad.select.leaf(containers, 0)
+            local_prefix_duration = abjad.get.timespan(local_anchor).start_offset
+            local_duration = abjad.get.duration(containers)
+            local_start_offset = remote_start_offset - local_prefix_duration
+            local_stop_offset = local_start_offset + local_duration
+            for leaf in abjad.select.leaves(local_voice):
+                timespan = abjad.get.timespan(leaf)
+                if local_start_offset in timespan:
+                    left_duration = local_start_offset - timespan.start_offset
+                    abjad.mutate.split([leaf], [left_duration])
+                    break
+            for leaf in abjad.select.leaves(local_voice):
+                timespan = abjad.get.timespan(leaf)
+                if local_stop_offset in timespan:
+                    left_duration = local_stop_offset - timespan.start_offset
+                    abjad.mutate.split([leaf], [left_duration])
+                    break
+            local_timespan = abjad.Timespan(local_start_offset, local_stop_offset)
+            local_leaves_to_replace = []
+            for leaf in abjad.select.leaves(local_voice):
+                if abjad.get.timespan(leaf) in local_timespan:
+                    local_leaves_to_replace.append(leaf)
+            abjad.mutate.replace(local_leaves_to_replace, containers)
         else:
             voice.extend(containers)
             other_voice_names = _voice_names - {voice_name}
