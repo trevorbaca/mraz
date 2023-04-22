@@ -230,6 +230,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             library.lh_v5,
             [tuplet_copy],
             hide_time_signature=True,
+            replace_after_last_nonskip_in_same_voice=True,
         )
 
     @baca.call
@@ -277,6 +278,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             library.lh_v5,
             [tuplet_copy],
             hide_time_signature=True,
+            replace_after_last_nonskip_in_same_voice=True,
         )
 
     @baca.call
@@ -295,6 +297,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             [tuplet_copy],
             do_not_increment=True,
             hide_time_signature=True,
+            replace_after_last_nonskip_in_same_voice=True,
         )
 
     @baca.call
@@ -311,12 +314,10 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         accumulator.cache(
             library.lh_v5,
             [tuplet],
-            hide_time_signature=False,
         )
         mraz_accumulator(
             library.lh_v5,
             [tuplet_copy],
-            hide_time_signature=False,
         )
 
     @baca.call
@@ -536,13 +537,13 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             library.rh_v5,
             [tuplet],
             anchor=baca.anchor(library.lh_v5, lambda _: abjad.select.chord(_, -1)),
-            tsd=4,
+            hide_time_signature=True,
         )
         mraz_accumulator(
             library.rh_v5,
             [tuplet_copy],
             anchor=baca.anchor(library.lh_v5, lambda _: abjad.select.chord(_, -1)),
-            tsd=4,
+            hide_time_signature=True,
         )
 
     @baca.call
@@ -559,14 +560,14 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             container,
             anchor=baca.anchor(library.lh_v5, lambda _: baca.select.rest(_, 24)),
             do_not_increment=True,
-            tsd=4,
+            hide_time_signature=True,
         )
         mraz_accumulator(
             library.lh_resonance,
             container_copy,
             anchor=baca.anchor(library.lh_v5, lambda _: baca.select.rest(_, 24)),
             do_not_increment=True,
-            tsd=4,
+            hide_time_signature=True,
         )
 
     @baca.call
@@ -586,6 +587,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             [tuplet_copy],
             do_not_increment=True,
             hide_time_signature=True,
+            replace_after_last_nonskip_in_same_voice=True,
         )
 
     @baca.call
@@ -605,6 +607,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             [tuplet_copy],
             do_not_increment=True,
             hide_time_signature=True,
+            replace_after_last_nonskip_in_same_voice=True,
         )
 
     @baca.call
@@ -621,14 +624,14 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             container,
             anchor=baca.anchor(library.lh_v5, lambda _: baca.select.rest(_, 32)),
             do_not_increment=True,
-            tsd=4,
+            hide_time_signature=True,
         )
         mraz_accumulator(
             library.lh_resonance,
             container_copy,
             anchor=baca.anchor(library.lh_v5, lambda _: baca.select.rest(_, 32)),
             do_not_increment=True,
-            tsd=4,
+            hide_time_signature=True,
         )
 
     @baca.call
@@ -648,6 +651,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             [tuplet_copy],
             do_not_increment=True,
             hide_time_signature=True,
+            replace_after_last_nonskip_in_same_voice=True,
         )
 
     @baca.call
@@ -667,6 +671,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             [tuplet_copy],
             do_not_increment=True,
             hide_time_signature=True,
+            replace_after_last_nonskip_in_same_voice=True,
         )
 
     @baca.call
@@ -698,7 +703,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             library.lh_v5,
             container_copy,
             anchor=baca.resume_after(library.lh_v5),
-            hide_time_signature=False,
+            # hide_time_signature=False,
         )
 
     @baca.call
@@ -1075,6 +1080,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tsd=4,
         )
 
+    # HERE: migrate baca.resume_after()
     @baca.call
     def block():
         collections = section_4.stage_4.rh[:1]
@@ -1115,15 +1121,15 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             library.rh_v1,
             container,
             anchor=baca.resume_after(library.rh_v5),
+            hide_time_signature=True,
             imbrications=imbrications,
-            tsd=4,
         )
         mraz_accumulator(
             library.rh_v1,
             container_copy,
             anchor=baca.resume_after(library.rh_v5),
+            hide_time_signature=True,
             imbrications=imbrications_copy,
-            tsd=4,
         )
 
     @baca.call
@@ -1247,14 +1253,14 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             [tuplet],
             anchor=baca.resume(),
             do_not_increment=True,
-            hide_time_signature=False,
+            tsd=4,
         )
         mraz_accumulator(
             library.lh_resonance,
             [tuplet_copy],
             anchor=baca.resume(),
             do_not_increment=True,
-            hide_time_signature=False,
+            tsd=4,
         )
 
     @baca.call
@@ -1539,6 +1545,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             library.rh_v1,
             [tuplet_copy],
             hide_time_signature=True,
+            replace_after_last_nonskip_in_same_voice=True,
         )
 
     @baca.call
@@ -1612,6 +1619,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             library.rh_v2,
             container_copy,
             hide_time_signature=True,
+            replace_after_last_nonskip_in_same_voice=True,
         )
 
     @baca.call
@@ -1673,6 +1681,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             library.rh_v2,
             container_copy,
             hide_time_signature=True,
+            replace_after_last_nonskip_in_same_voice=True,
         )
 
     @baca.call
@@ -1704,6 +1713,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             library.rh_v2,
             container_copy,
             hide_time_signature=True,
+            replace_after_last_nonskip_in_same_voice=True,
         )
 
     @baca.call
@@ -1804,6 +1814,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             hide_time_signature=True,
         )
 
+    # TODO: migrate baca.resume()
     @baca.call
     def block():
         collections = section_4.stage_1.rh[1:2]
