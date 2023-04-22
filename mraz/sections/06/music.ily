@@ -622,11 +622,56 @@ number.6.RH.Music.1 = {
     \set PianoMusicRHStaff.forceClef = ##t
       %! REAPPLIED_CLEF
     \clef "treble"
-    s1 * 103/4
+    s1 * 4/1
       %! REAPPLIED_INSTRUMENT_ALERT
     ^ \baca-reapplied-instrument-markup "(“Piano”)"
       %! REAPPLIED_CLEF_REDRAW_COLOR
     \override PianoMusicRHStaff.Clef.color = #(x11-color 'OliveDrab)
+
+    % [RH.Music.1 measure 2]
+    s1 * 5/2
+
+    % [RH.Music.1 measure 3]
+    s1 * 1/4
+
+    % [RH.Music.1 measure 4]
+    s1 * 3/1
+
+    % [RH.Music.1 measure 5]
+    s1 * 1/1
+
+    % [RH.Music.1 measure 6]
+    s1 * 5/2
+
+    % [RH.Music.1 measure 7]
+    s1 * 1/4
+
+    % [RH.Music.1 measure 8]
+    s1 * 13/4
+
+    % [RH.Music.1 measure 9]
+    s1 * 1/4
+
+    % [RH.Music.1 measure 10]
+    s1 * 29/16
+
+    % [RH.Music.1 measure 11]
+    s1 * 27/16
+
+    % [RH.Music.1 measure 12]
+    s1 * 21/16
+
+    % [RH.Music.1 measure 13]
+    s1 * 15/16
+
+    % [RH.Music.1 measure 14]
+    s1 * 1/1
+
+    % [RH.Music.1 measure 15]
+    s1 * 7/4
+
+    % [RH.Music.1 measure 16]
+    s1 * 1/4
 
 }
 
@@ -634,56 +679,97 @@ number.6.RH.Music.1 = {
 number.6.RH.InsertVoice.1 = {
 
     % [RH.InsertVoice.1 measure 1]
-    s1 * 103/4
+    s1 * 4/1
+
+    % [RH.InsertVoice.1 measure 2]
+    s1 * 5/2
+
+    % [RH.InsertVoice.1 measure 3]
+    s1 * 1/4
+
+    % [RH.InsertVoice.1 measure 4]
+    s1 * 3/1
+
+    % [RH.InsertVoice.1 measure 5]
+    s1 * 1/1
+
+    % [RH.InsertVoice.1 measure 6]
+    s1 * 5/2
+
+    % [RH.InsertVoice.1 measure 7]
+    s1 * 1/4
+
+    % [RH.InsertVoice.1 measure 8]
+    s1 * 13/4
+
+    % [RH.InsertVoice.1 measure 9]
+    s1 * 1/4
+
+    % [RH.InsertVoice.1 measure 10]
+    s1 * 29/16
+
+    % [RH.InsertVoice.1 measure 11]
+    s1 * 27/16
+
+    % [RH.InsertVoice.1 measure 12]
+    s1 * 21/16
+
+    % [RH.InsertVoice.1 measure 13]
+    s1 * 15/16
+
+    % [RH.InsertVoice.1 measure 14]
+    s1 * 1/1
+
+    % [RH.InsertVoice.1 measure 15]
+    s1 * 7/4
+
+    % [RH.InsertVoice.1 measure 16]
+    s1 * 1/4
 
 }
 
 
 number.6.RH.Music.2 = {
 
+    \scaleDurations #'(1 . 1)
     {
 
-        \scaleDurations #'(1 . 1)
-        {
+        % [RH.Music.2 measure 1]
+        \dynamicUp
+        \override Script.direction = #up
+        \override Stem.direction = #up
+        c'''8
+        - \accent
+          %! EXPLICIT_DYNAMIC_COLOR
+          %! EXPLICIT_DYNAMIC
+        - \tweak color #(x11-color 'blue)
+          %! EXPLICIT_DYNAMIC
+        \fff
+          %! FIGURE_LABEL
+        %@% - \tweak color #blue
+          %! FIGURE_LABEL
+        %@% ^ \markup \concat { [ \raise #0.25 \fontsize #-2 (1) \hspace #1 "5.1.R.1" ] }
 
-            % [RH.Music.2 measure 1]
-            \dynamicUp
-            \override Script.direction = #up
-            \override Stem.direction = #up
-            c'''8
-            - \accent
-              %! EXPLICIT_DYNAMIC_COLOR
-              %! EXPLICIT_DYNAMIC
-            - \tweak color #(x11-color 'blue)
-              %! EXPLICIT_DYNAMIC
-            \fff
-              %! FIGURE_LABEL
-            %@% - \tweak color #blue
-              %! FIGURE_LABEL
-            %@% ^ \markup \concat { [ \raise #0.25 \fontsize #-2 (1) \hspace #1 "5.1.R.1" ] }
+        \override Rest.direction = #up
+        r2..
 
-            \override Rest.direction = #up
-            r2..
+        d'''8
+        - \accent
 
-            d'''8
-            - \accent
+        r2..
 
-            r2..
+        ef''''!8
+        - \accent
 
-            ef''''!8
-            - \accent
+        r2..
 
-            r2..
+        f''''8
+        - \accent
+        \revert Stem.direction
 
-            f''''8
-            - \accent
-            \revert Stem.direction
-
-            r2..
-            \revert Rest.direction
-            \revert Script.direction
-
-        }
+        r2..
+        \revert Rest.direction
+        \revert Script.direction
 
     }
 
@@ -1192,834 +1278,814 @@ number.6.RH.Music.2 = {
     \override Slur.direction = #up
     s1 * 1/4
 
+    \scaleDurations #'(1 . 1)
     {
 
-        \scaleDurations #'(1 . 1)
-        {
+        % [RH.Music.2 measure 10]
+        \dynamicDown
+        \override Beam.positions = #'(-8 . -8)
+        \override Stem.direction = #down
+        \set stemLeftBeamCount = 0
+        \set stemRightBeamCount = 2
+        fs!16
+        - \staccato
+          %! EXPLICIT_DYNAMIC_COLOR
+          %! EXPLICIT_DYNAMIC
+        - \tweak color #(x11-color 'blue)
+          %! EXPLICIT_DYNAMIC
+        \ppp
+          %! FIGURE_LABEL
+        %@% - \tweak color #blue
+          %! FIGURE_LABEL
+        %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (9) \hspace #1 "2.2.R.1" ] }
+        [
+          %! SPANNER_START
+        (
 
-            % [RH.Music.2 measure 10]
-            \dynamicDown
-            \override Beam.positions = #'(-8 . -8)
-            \override Stem.direction = #down
-            \set stemLeftBeamCount = 0
-            \set stemRightBeamCount = 2
-            fs!16
-            - \staccato
-              %! EXPLICIT_DYNAMIC_COLOR
-              %! EXPLICIT_DYNAMIC
-            - \tweak color #(x11-color 'blue)
-              %! EXPLICIT_DYNAMIC
-            \ppp
-              %! FIGURE_LABEL
-            %@% - \tweak color #blue
-              %! FIGURE_LABEL
-            %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (9) \hspace #1 "2.2.R.1" ] }
-            [
-              %! SPANNER_START
-            (
+        \set stemLeftBeamCount = 2
+        \set stemRightBeamCount = 2
+        c'16
+        - \staccato
 
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 2
-            c'16
-            - \staccato
+        \set stemLeftBeamCount = 2
+        \set stemRightBeamCount = 2
+        e'16
+        - \staccato
 
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 2
-            e'16
-            - \staccato
+        \set stemLeftBeamCount = 2
+        \set stemRightBeamCount = 2
+        f'16
+        - \staccato
 
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 2
-            f'16
-            - \staccato
-
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 1
-            af'!16
-            - \staccato
-              %! SPANNER_STOP
-            )
-
-        }
-
-        \scaleDurations #'(1 . 1)
-        {
-
-            \set stemLeftBeamCount = 1
-            \set stemRightBeamCount = 2
-            bf!16
-            - \staccato
-              %! SPANNER_START
-            (
-
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 2
-            ef'!16
-            - \staccato
-
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 2
-            b'16
-            - \staccato
-
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 2
-            g''16
-            - \staccato
-
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 1
-            a''16
-            - \staccato
-              %! SPANNER_STOP
-            )
-
-        }
-
-        \scaleDurations #'(1 . 1)
-        {
-
-            \set stemLeftBeamCount = 1
-            \set stemRightBeamCount = 2
-            d16
-            - \staccato
-              %! SPANNER_START
-            (
-
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 2
-            cs'!16
-            - \staccato
-
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 2
-            af'!16
-            - \staccato
-
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 2
-            bf'!16
-            - \staccato
-
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 2
-            ef''!16
-            - \staccato
-
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 1
-            f''16
-            - \staccato
-              %! SPANNER_STOP
-            )
-
-        }
-
-        \scaleDurations #'(1 . 1)
-        {
-
-            \set stemLeftBeamCount = 1
-            \set stemRightBeamCount = 2
-            a16
-            - \staccato
-              %! SPANNER_START
-            (
-
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 2
-            b16
-            - \staccato
-
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 2
-            g'16
-            - \staccato
-
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 2
-            fs''!16
-            - \staccato
-
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 1
-            c'''16
-            - \staccato
-              %! SPANNER_STOP
-            )
-
-        }
-
-        \scaleDurations #'(1 . 1)
-        {
-
-            \set stemLeftBeamCount = 1
-            \set stemRightBeamCount = 2
-            e16
-            - \staccato
-              %! SPANNER_START
-            (
-
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 2
-            f16
-            - \staccato
-
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 2
-            af!16
-            - \staccato
-
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 2
-            bf!16
-            - \staccato
-
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 1
-            ef'!16
-            - \staccato
-              %! SPANNER_STOP
-            )
-
-        }
-
-        \scaleDurations #'(1 . 1)
-        {
-
-            \set stemLeftBeamCount = 1
-            \set stemRightBeamCount = 2
-            b16
-            - \staccato
-              %! SPANNER_START
-            (
-
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 2
-            g'16
-            - \staccato
-
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 0
-            a'16
-            - \staccato
-              %! SPANNER_STOP
-            )
-            ]
-            \revert Beam.positions
-
-        }
+        \set stemLeftBeamCount = 2
+        \set stemRightBeamCount = 1
+        af'!16
+        - \staccato
+          %! SPANNER_STOP
+        )
 
     }
 
+    \scaleDurations #'(1 . 1)
     {
 
-        \scaleDurations #'(1 . 1)
-        {
+        \set stemLeftBeamCount = 1
+        \set stemRightBeamCount = 2
+        bf!16
+        - \staccato
+          %! SPANNER_START
+        (
 
-            % [RH.Music.2 measure 11]
-            \override Beam.positions = #'(-8 . -8)
-            \set stemLeftBeamCount = 0
-            \set stemRightBeamCount = 2
-            d'16
-            - \staccato
-              %! FIGURE_LABEL
-            %@% - \tweak color #blue
-              %! FIGURE_LABEL
-            %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (10) \hspace #1 "2.2.R.2" ] }
-            [
-              %! SPANNER_START
-            (
+        \set stemLeftBeamCount = 2
+        \set stemRightBeamCount = 2
+        ef'!16
+        - \staccato
 
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 2
-            cs''!16
-            - \staccato
+        \set stemLeftBeamCount = 2
+        \set stemRightBeamCount = 2
+        b'16
+        - \staccato
 
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 2
-            af''!16
-            - \staccato
+        \set stemLeftBeamCount = 2
+        \set stemRightBeamCount = 2
+        g''16
+        - \staccato
 
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 2
-            bf''!16
-            - \staccato
-
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 1
-            ef'''!16
-            - \staccato
-              %! SPANNER_STOP
-            )
-
-        }
-
-        \scaleDurations #'(1 . 1)
-        {
-
-            \set stemLeftBeamCount = 1
-            \set stemRightBeamCount = 2
-            f'16
-            - \staccato
-              %! SPANNER_START
-            (
-
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 2
-            a'16
-            - \staccato
-
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 2
-            b'16
-            - \staccato
-
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 2
-            g''16
-            - \staccato
-
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 2
-            fs'''!16
-            - \staccato
-
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 1
-            c''''16
-            - \staccato
-              %! SPANNER_STOP
-            )
-
-        }
-
-        \scaleDurations #'(1 . 1)
-        {
-
-            \set stemLeftBeamCount = 1
-            \set stemRightBeamCount = 2
-            e'16
-            - \staccato
-              %! SPANNER_START
-            (
-
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 2
-            f'16
-            - \staccato
-
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 2
-            af'!16
-            - \staccato
-
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 2
-            bf'!16
-            - \staccato
-
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 2
-            ef''!16
-            - \staccato
-
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 1
-            b''16
-            - \staccato
-              %! SPANNER_STOP
-            )
-
-        }
-
-        \scaleDurations #'(1 . 1)
-        {
-
-            \set stemLeftBeamCount = 1
-            \set stemRightBeamCount = 2
-            g'16
-            - \staccato
-              %! SPANNER_START
-            (
-
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 2
-            b'16
-            - \staccato
-
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 2
-            a''16
-            - \staccato
-
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 2
-            d'''16
-            - \staccato
-
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 1
-            cs''''!16
-            - \staccato
-              %! SPANNER_STOP
-            )
-
-        }
-
-        \scaleDurations #'(1 . 1)
-        {
-
-            \set stemLeftBeamCount = 1
-            \set stemRightBeamCount = 2
-            af'!16
-            - \staccato
-              %! SPANNER_START
-            (
-
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 2
-            bf'!16
-            - \staccato
-
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 2
-            ef''!16
-            - \staccato
-
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 2
-            f''16
-            - \staccato
-
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 0
-            a''16
-            - \staccato
-              %! SPANNER_STOP
-            )
-            ]
-            \revert Beam.positions
-
-        }
+        \set stemLeftBeamCount = 2
+        \set stemRightBeamCount = 1
+        a''16
+        - \staccato
+          %! SPANNER_STOP
+        )
 
     }
 
+    \scaleDurations #'(1 . 1)
     {
 
-        \scaleDurations #'(1 . 1)
-        {
+        \set stemLeftBeamCount = 1
+        \set stemRightBeamCount = 2
+        d16
+        - \staccato
+          %! SPANNER_START
+        (
 
-            % [RH.Music.2 measure 12]
-            \override Beam.positions = #'(-8 . -8)
-            \set stemLeftBeamCount = 0
-            \set stemRightBeamCount = 2
-            b'16
-            - \staccato
-              %! FIGURE_LABEL
-            %@% - \tweak color #blue
-              %! FIGURE_LABEL
-            %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (11) \hspace #1 "2.2.R.3" ] }
-            [
-              %! SPANNER_START
-            (
+        \set stemLeftBeamCount = 2
+        \set stemRightBeamCount = 2
+        cs'!16
+        - \staccato
 
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 2
-            g''16
-            - \staccato
+        \set stemLeftBeamCount = 2
+        \set stemRightBeamCount = 2
+        af'!16
+        - \staccato
 
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 2
-            fs'''!16
-            - \staccato
+        \set stemLeftBeamCount = 2
+        \set stemRightBeamCount = 2
+        bf'!16
+        - \staccato
 
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 1
-            c''''16
-            - \staccato
-              %! SPANNER_STOP
-            )
+        \set stemLeftBeamCount = 2
+        \set stemRightBeamCount = 2
+        ef''!16
+        - \staccato
 
-        }
-
-        \scaleDurations #'(1 . 1)
-        {
-
-            \set stemLeftBeamCount = 1
-            \set stemRightBeamCount = 2
-            e'16
-            - \staccato
-              %! SPANNER_START
-            (
-
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 2
-            f'16
-            - \staccato
-
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 2
-            af'!16
-            - \staccato
-
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 1
-            bf'!16
-            - \staccato
-              %! SPANNER_STOP
-            )
-
-        }
-
-        \scaleDurations #'(1 . 1)
-        {
-
-            \set stemLeftBeamCount = 1
-            \set stemRightBeamCount = 2
-            ef'!16
-            - \staccato
-              %! SPANNER_START
-            (
-
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 2
-            b'16
-            - \staccato
-
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 2
-            g''16
-            - \staccato
-
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 1
-            a''16
-            - \staccato
-              %! SPANNER_STOP
-            )
-
-        }
-
-        \scaleDurations #'(1 . 1)
-        {
-
-            \set stemLeftBeamCount = 1
-            \set stemRightBeamCount = 2
-            d'16
-            - \staccato
-              %! SPANNER_START
-            (
-
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 2
-            cs''!16
-            - \staccato
-
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 2
-            af''!16
-            - \staccato
-
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 2
-            bf''!16
-            - \staccato
-
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 1
-            ef'''!16
-            - \staccato
-              %! SPANNER_STOP
-            )
-
-        }
-
-        \scaleDurations #'(1 . 1)
-        {
-
-            \set stemLeftBeamCount = 1
-            \set stemRightBeamCount = 2
-            f'16
-            - \staccato
-              %! SPANNER_START
-            (
-
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 2
-            a'16
-            - \staccato
-
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 2
-            b'16
-            - \staccato
-
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 0
-            g''16
-            - \staccato
-              %! SPANNER_STOP
-            )
-            ]
-            \revert Beam.positions
-
-        }
+        \set stemLeftBeamCount = 2
+        \set stemRightBeamCount = 1
+        f''16
+        - \staccato
+          %! SPANNER_STOP
+        )
 
     }
 
+    \scaleDurations #'(1 . 1)
     {
 
-        \scaleDurations #'(1 . 1)
-        {
+        \set stemLeftBeamCount = 1
+        \set stemRightBeamCount = 2
+        a16
+        - \staccato
+          %! SPANNER_START
+        (
 
-            % [RH.Music.2 measure 13]
-            \override Beam.positions = #'(-8 . -8)
-            \set stemLeftBeamCount = 0
-            \set stemRightBeamCount = 2
-            fs''!16
-            - \staccato
-              %! FIGURE_LABEL
-            %@% - \tweak color #blue
-              %! FIGURE_LABEL
-            %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (12) \hspace #1 "2.2.R.4" ] }
-            [
-              %! SPANNER_START
-            (
+        \set stemLeftBeamCount = 2
+        \set stemRightBeamCount = 2
+        b16
+        - \staccato
 
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 2
-            c'''16
-            - \staccato
+        \set stemLeftBeamCount = 2
+        \set stemRightBeamCount = 2
+        g'16
+        - \staccato
 
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 2
-            e'''16
-            - \staccato
+        \set stemLeftBeamCount = 2
+        \set stemRightBeamCount = 2
+        fs''!16
+        - \staccato
 
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 1
-            f'''16
-            - \staccato
-              %! SPANNER_STOP
-            )
-
-        }
-
-        \scaleDurations #'(1 . 1)
-        {
-
-            \set stemLeftBeamCount = 1
-            \set stemRightBeamCount = 2
-            af''!16
-            - \staccato
-              %! SPANNER_START
-            (
-
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 2
-            bf''!16
-            - \staccato
-
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 1
-            ef'''!16
-            - \staccato
-              %! SPANNER_STOP
-            )
-
-        }
-
-        \scaleDurations #'(1 . 1)
-        {
-
-            \set stemLeftBeamCount = 1
-            \set stemRightBeamCount = 2
-            b''16
-            - \staccato
-              %! SPANNER_START
-            (
-
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 2
-            g'''16
-            - \staccato
-
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 1
-            a'''16
-            - \staccato
-              %! SPANNER_STOP
-            )
-
-        }
-
-        \scaleDurations #'(1 . 1)
-        {
-
-            \set stemLeftBeamCount = 1
-            \set stemRightBeamCount = 2
-            d''16
-            - \staccato
-              %! SPANNER_START
-            (
-
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 2
-            cs'''!16
-            - \staccato
-
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 2
-            af'''!16
-            - \staccato
-
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 2
-            bf'''!16
-            - \staccato
-
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 0
-            ef''''!16
-            - \staccato
-              %! SPANNER_STOP
-            )
-            ]
-            \revert Beam.positions
-            \revert Script.direction
-            \revert Slur.direction
-            \revert Stem.direction
-
-        }
+        \set stemLeftBeamCount = 2
+        \set stemRightBeamCount = 1
+        c'''16
+        - \staccato
+          %! SPANNER_STOP
+        )
 
     }
 
+    \scaleDurations #'(1 . 1)
     {
 
-        \scaleDurations #'(1 . 1)
-        {
+        \set stemLeftBeamCount = 1
+        \set stemRightBeamCount = 2
+        e16
+        - \staccato
+          %! SPANNER_START
+        (
 
-            % [RH.Music.2 measure 14]
-            \override Beam.positions = #'(-8 . -8)
-            \set stemLeftBeamCount = 0
-            \set stemRightBeamCount = 2
-            f''16
-            - \staccato
-              %! FIGURE_LABEL
-            %@% - \tweak color #blue
-              %! FIGURE_LABEL
-            %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (13) \hspace #1 "2.2.R.5" ] }
-            [
-              %! SPANNER_START
-            (
+        \set stemLeftBeamCount = 2
+        \set stemRightBeamCount = 2
+        f16
+        - \staccato
 
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 2
-            a''16
-            - \staccato
+        \set stemLeftBeamCount = 2
+        \set stemRightBeamCount = 2
+        af!16
+        - \staccato
 
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 2
-            b''16
-            - \staccato
+        \set stemLeftBeamCount = 2
+        \set stemRightBeamCount = 2
+        bf!16
+        - \staccato
 
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 2
-            g'''16
-            - \staccato
+        \set stemLeftBeamCount = 2
+        \set stemRightBeamCount = 1
+        ef'!16
+        - \staccato
+          %! SPANNER_STOP
+        )
 
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 1
-            fs''''!16
-            - \staccato
-              %! SPANNER_STOP
-            )
+    }
 
-        }
+    \scaleDurations #'(1 . 1)
+    {
 
-        \scaleDurations #'(1 . 1)
-        {
+        \set stemLeftBeamCount = 1
+        \set stemRightBeamCount = 2
+        b16
+        - \staccato
+          %! SPANNER_START
+        (
 
-            \set stemLeftBeamCount = 1
-            \set stemRightBeamCount = 2
-            c''16
-            - \staccato
-              %! SPANNER_START
-            (
+        \set stemLeftBeamCount = 2
+        \set stemRightBeamCount = 2
+        g'16
+        - \staccato
 
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 2
-            e''16
-            - \staccato
+        \set stemLeftBeamCount = 2
+        \set stemRightBeamCount = 0
+        a'16
+        - \staccato
+          %! SPANNER_STOP
+        )
+        ]
+        \revert Beam.positions
 
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 2
-            f''16
-            - \staccato
+    }
 
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 1
-            af''!16
-            - \staccato
-              %! SPANNER_STOP
-            )
+    \scaleDurations #'(1 . 1)
+    {
 
-        }
+        % [RH.Music.2 measure 11]
+        \override Beam.positions = #'(-8 . -8)
+        \set stemLeftBeamCount = 0
+        \set stemRightBeamCount = 2
+        d'16
+        - \staccato
+          %! FIGURE_LABEL
+        %@% - \tweak color #blue
+          %! FIGURE_LABEL
+        %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (10) \hspace #1 "2.2.R.2" ] }
+        [
+          %! SPANNER_START
+        (
 
-        \scaleDurations #'(1 . 1)
-        {
+        \set stemLeftBeamCount = 2
+        \set stemRightBeamCount = 2
+        cs''!16
+        - \staccato
 
-            \set stemLeftBeamCount = 1
-            \set stemRightBeamCount = 2
-            bf''!16
-            - \staccato
-              %! SPANNER_START
-            (
+        \set stemLeftBeamCount = 2
+        \set stemRightBeamCount = 2
+        af''!16
+        - \staccato
 
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 2
-            ef'''!16
-            - \staccato
+        \set stemLeftBeamCount = 2
+        \set stemRightBeamCount = 2
+        bf''!16
+        - \staccato
 
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 2
-            b'''16
-            - \staccato
+        \set stemLeftBeamCount = 2
+        \set stemRightBeamCount = 1
+        ef'''!16
+        - \staccato
+          %! SPANNER_STOP
+        )
 
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 1
-            g''''16
-            - \staccato
-              %! SPANNER_STOP
-            )
+    }
 
-        }
+    \scaleDurations #'(1 . 1)
+    {
 
-        \scaleDurations #'(1 . 1)
-        {
+        \set stemLeftBeamCount = 1
+        \set stemRightBeamCount = 2
+        f'16
+        - \staccato
+          %! SPANNER_START
+        (
 
-            \set stemLeftBeamCount = 1
-            \set stemRightBeamCount = 2
-            b''16
-            - \staccato
-              %! SPANNER_START
-            (
+        \set stemLeftBeamCount = 2
+        \set stemRightBeamCount = 2
+        a'16
+        - \staccato
 
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 2
-            a'''16
-            - \staccato
+        \set stemLeftBeamCount = 2
+        \set stemRightBeamCount = 2
+        b'16
+        - \staccato
 
-            \set stemLeftBeamCount = 2
-            \set stemRightBeamCount = 0
-            d''''16
-            - \staccato
-              %! SPANNER_STOP
-            )
-            ]
-            \revert Beam.positions
+        \set stemLeftBeamCount = 2
+        \set stemRightBeamCount = 2
+        g''16
+        - \staccato
 
-        }
+        \set stemLeftBeamCount = 2
+        \set stemRightBeamCount = 2
+        fs'''!16
+        - \staccato
+
+        \set stemLeftBeamCount = 2
+        \set stemRightBeamCount = 1
+        c''''16
+        - \staccato
+          %! SPANNER_STOP
+        )
+
+    }
+
+    \scaleDurations #'(1 . 1)
+    {
+
+        \set stemLeftBeamCount = 1
+        \set stemRightBeamCount = 2
+        e'16
+        - \staccato
+          %! SPANNER_START
+        (
+
+        \set stemLeftBeamCount = 2
+        \set stemRightBeamCount = 2
+        f'16
+        - \staccato
+
+        \set stemLeftBeamCount = 2
+        \set stemRightBeamCount = 2
+        af'!16
+        - \staccato
+
+        \set stemLeftBeamCount = 2
+        \set stemRightBeamCount = 2
+        bf'!16
+        - \staccato
+
+        \set stemLeftBeamCount = 2
+        \set stemRightBeamCount = 2
+        ef''!16
+        - \staccato
+
+        \set stemLeftBeamCount = 2
+        \set stemRightBeamCount = 1
+        b''16
+        - \staccato
+          %! SPANNER_STOP
+        )
+
+    }
+
+    \scaleDurations #'(1 . 1)
+    {
+
+        \set stemLeftBeamCount = 1
+        \set stemRightBeamCount = 2
+        g'16
+        - \staccato
+          %! SPANNER_START
+        (
+
+        \set stemLeftBeamCount = 2
+        \set stemRightBeamCount = 2
+        b'16
+        - \staccato
+
+        \set stemLeftBeamCount = 2
+        \set stemRightBeamCount = 2
+        a''16
+        - \staccato
+
+        \set stemLeftBeamCount = 2
+        \set stemRightBeamCount = 2
+        d'''16
+        - \staccato
+
+        \set stemLeftBeamCount = 2
+        \set stemRightBeamCount = 1
+        cs''''!16
+        - \staccato
+          %! SPANNER_STOP
+        )
+
+    }
+
+    \scaleDurations #'(1 . 1)
+    {
+
+        \set stemLeftBeamCount = 1
+        \set stemRightBeamCount = 2
+        af'!16
+        - \staccato
+          %! SPANNER_START
+        (
+
+        \set stemLeftBeamCount = 2
+        \set stemRightBeamCount = 2
+        bf'!16
+        - \staccato
+
+        \set stemLeftBeamCount = 2
+        \set stemRightBeamCount = 2
+        ef''!16
+        - \staccato
+
+        \set stemLeftBeamCount = 2
+        \set stemRightBeamCount = 2
+        f''16
+        - \staccato
+
+        \set stemLeftBeamCount = 2
+        \set stemRightBeamCount = 0
+        a''16
+        - \staccato
+          %! SPANNER_STOP
+        )
+        ]
+        \revert Beam.positions
+
+    }
+
+    \scaleDurations #'(1 . 1)
+    {
+
+        % [RH.Music.2 measure 12]
+        \override Beam.positions = #'(-8 . -8)
+        \set stemLeftBeamCount = 0
+        \set stemRightBeamCount = 2
+        b'16
+        - \staccato
+          %! FIGURE_LABEL
+        %@% - \tweak color #blue
+          %! FIGURE_LABEL
+        %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (11) \hspace #1 "2.2.R.3" ] }
+        [
+          %! SPANNER_START
+        (
+
+        \set stemLeftBeamCount = 2
+        \set stemRightBeamCount = 2
+        g''16
+        - \staccato
+
+        \set stemLeftBeamCount = 2
+        \set stemRightBeamCount = 2
+        fs'''!16
+        - \staccato
+
+        \set stemLeftBeamCount = 2
+        \set stemRightBeamCount = 1
+        c''''16
+        - \staccato
+          %! SPANNER_STOP
+        )
+
+    }
+
+    \scaleDurations #'(1 . 1)
+    {
+
+        \set stemLeftBeamCount = 1
+        \set stemRightBeamCount = 2
+        e'16
+        - \staccato
+          %! SPANNER_START
+        (
+
+        \set stemLeftBeamCount = 2
+        \set stemRightBeamCount = 2
+        f'16
+        - \staccato
+
+        \set stemLeftBeamCount = 2
+        \set stemRightBeamCount = 2
+        af'!16
+        - \staccato
+
+        \set stemLeftBeamCount = 2
+        \set stemRightBeamCount = 1
+        bf'!16
+        - \staccato
+          %! SPANNER_STOP
+        )
+
+    }
+
+    \scaleDurations #'(1 . 1)
+    {
+
+        \set stemLeftBeamCount = 1
+        \set stemRightBeamCount = 2
+        ef'!16
+        - \staccato
+          %! SPANNER_START
+        (
+
+        \set stemLeftBeamCount = 2
+        \set stemRightBeamCount = 2
+        b'16
+        - \staccato
+
+        \set stemLeftBeamCount = 2
+        \set stemRightBeamCount = 2
+        g''16
+        - \staccato
+
+        \set stemLeftBeamCount = 2
+        \set stemRightBeamCount = 1
+        a''16
+        - \staccato
+          %! SPANNER_STOP
+        )
+
+    }
+
+    \scaleDurations #'(1 . 1)
+    {
+
+        \set stemLeftBeamCount = 1
+        \set stemRightBeamCount = 2
+        d'16
+        - \staccato
+          %! SPANNER_START
+        (
+
+        \set stemLeftBeamCount = 2
+        \set stemRightBeamCount = 2
+        cs''!16
+        - \staccato
+
+        \set stemLeftBeamCount = 2
+        \set stemRightBeamCount = 2
+        af''!16
+        - \staccato
+
+        \set stemLeftBeamCount = 2
+        \set stemRightBeamCount = 2
+        bf''!16
+        - \staccato
+
+        \set stemLeftBeamCount = 2
+        \set stemRightBeamCount = 1
+        ef'''!16
+        - \staccato
+          %! SPANNER_STOP
+        )
+
+    }
+
+    \scaleDurations #'(1 . 1)
+    {
+
+        \set stemLeftBeamCount = 1
+        \set stemRightBeamCount = 2
+        f'16
+        - \staccato
+          %! SPANNER_START
+        (
+
+        \set stemLeftBeamCount = 2
+        \set stemRightBeamCount = 2
+        a'16
+        - \staccato
+
+        \set stemLeftBeamCount = 2
+        \set stemRightBeamCount = 2
+        b'16
+        - \staccato
+
+        \set stemLeftBeamCount = 2
+        \set stemRightBeamCount = 0
+        g''16
+        - \staccato
+          %! SPANNER_STOP
+        )
+        ]
+        \revert Beam.positions
+
+    }
+
+    \scaleDurations #'(1 . 1)
+    {
+
+        % [RH.Music.2 measure 13]
+        \override Beam.positions = #'(-8 . -8)
+        \set stemLeftBeamCount = 0
+        \set stemRightBeamCount = 2
+        fs''!16
+        - \staccato
+          %! FIGURE_LABEL
+        %@% - \tweak color #blue
+          %! FIGURE_LABEL
+        %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (12) \hspace #1 "2.2.R.4" ] }
+        [
+          %! SPANNER_START
+        (
+
+        \set stemLeftBeamCount = 2
+        \set stemRightBeamCount = 2
+        c'''16
+        - \staccato
+
+        \set stemLeftBeamCount = 2
+        \set stemRightBeamCount = 2
+        e'''16
+        - \staccato
+
+        \set stemLeftBeamCount = 2
+        \set stemRightBeamCount = 1
+        f'''16
+        - \staccato
+          %! SPANNER_STOP
+        )
+
+    }
+
+    \scaleDurations #'(1 . 1)
+    {
+
+        \set stemLeftBeamCount = 1
+        \set stemRightBeamCount = 2
+        af''!16
+        - \staccato
+          %! SPANNER_START
+        (
+
+        \set stemLeftBeamCount = 2
+        \set stemRightBeamCount = 2
+        bf''!16
+        - \staccato
+
+        \set stemLeftBeamCount = 2
+        \set stemRightBeamCount = 1
+        ef'''!16
+        - \staccato
+          %! SPANNER_STOP
+        )
+
+    }
+
+    \scaleDurations #'(1 . 1)
+    {
+
+        \set stemLeftBeamCount = 1
+        \set stemRightBeamCount = 2
+        b''16
+        - \staccato
+          %! SPANNER_START
+        (
+
+        \set stemLeftBeamCount = 2
+        \set stemRightBeamCount = 2
+        g'''16
+        - \staccato
+
+        \set stemLeftBeamCount = 2
+        \set stemRightBeamCount = 1
+        a'''16
+        - \staccato
+          %! SPANNER_STOP
+        )
+
+    }
+
+    \scaleDurations #'(1 . 1)
+    {
+
+        \set stemLeftBeamCount = 1
+        \set stemRightBeamCount = 2
+        d''16
+        - \staccato
+          %! SPANNER_START
+        (
+
+        \set stemLeftBeamCount = 2
+        \set stemRightBeamCount = 2
+        cs'''!16
+        - \staccato
+
+        \set stemLeftBeamCount = 2
+        \set stemRightBeamCount = 2
+        af'''!16
+        - \staccato
+
+        \set stemLeftBeamCount = 2
+        \set stemRightBeamCount = 2
+        bf'''!16
+        - \staccato
+
+        \set stemLeftBeamCount = 2
+        \set stemRightBeamCount = 0
+        ef''''!16
+        - \staccato
+          %! SPANNER_STOP
+        )
+        ]
+        \revert Beam.positions
+        \revert Script.direction
+        \revert Slur.direction
+        \revert Stem.direction
+
+    }
+
+    \scaleDurations #'(1 . 1)
+    {
+
+        % [RH.Music.2 measure 14]
+        \override Beam.positions = #'(-8 . -8)
+        \set stemLeftBeamCount = 0
+        \set stemRightBeamCount = 2
+        f''16
+        - \staccato
+          %! FIGURE_LABEL
+        %@% - \tweak color #blue
+          %! FIGURE_LABEL
+        %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (13) \hspace #1 "2.2.R.5" ] }
+        [
+          %! SPANNER_START
+        (
+
+        \set stemLeftBeamCount = 2
+        \set stemRightBeamCount = 2
+        a''16
+        - \staccato
+
+        \set stemLeftBeamCount = 2
+        \set stemRightBeamCount = 2
+        b''16
+        - \staccato
+
+        \set stemLeftBeamCount = 2
+        \set stemRightBeamCount = 2
+        g'''16
+        - \staccato
+
+        \set stemLeftBeamCount = 2
+        \set stemRightBeamCount = 1
+        fs''''!16
+        - \staccato
+          %! SPANNER_STOP
+        )
+
+    }
+
+    \scaleDurations #'(1 . 1)
+    {
+
+        \set stemLeftBeamCount = 1
+        \set stemRightBeamCount = 2
+        c''16
+        - \staccato
+          %! SPANNER_START
+        (
+
+        \set stemLeftBeamCount = 2
+        \set stemRightBeamCount = 2
+        e''16
+        - \staccato
+
+        \set stemLeftBeamCount = 2
+        \set stemRightBeamCount = 2
+        f''16
+        - \staccato
+
+        \set stemLeftBeamCount = 2
+        \set stemRightBeamCount = 1
+        af''!16
+        - \staccato
+          %! SPANNER_STOP
+        )
+
+    }
+
+    \scaleDurations #'(1 . 1)
+    {
+
+        \set stemLeftBeamCount = 1
+        \set stemRightBeamCount = 2
+        bf''!16
+        - \staccato
+          %! SPANNER_START
+        (
+
+        \set stemLeftBeamCount = 2
+        \set stemRightBeamCount = 2
+        ef'''!16
+        - \staccato
+
+        \set stemLeftBeamCount = 2
+        \set stemRightBeamCount = 2
+        b'''16
+        - \staccato
+
+        \set stemLeftBeamCount = 2
+        \set stemRightBeamCount = 1
+        g''''16
+        - \staccato
+          %! SPANNER_STOP
+        )
+
+    }
+
+    \scaleDurations #'(1 . 1)
+    {
+
+        \set stemLeftBeamCount = 1
+        \set stemRightBeamCount = 2
+        b''16
+        - \staccato
+          %! SPANNER_START
+        (
+
+        \set stemLeftBeamCount = 2
+        \set stemRightBeamCount = 2
+        a'''16
+        - \staccato
+
+        \set stemLeftBeamCount = 2
+        \set stemRightBeamCount = 0
+        d''''16
+        - \staccato
+          %! SPANNER_STOP
+        )
+        ]
+        \revert Beam.positions
 
     }
 
@@ -2114,67 +2180,108 @@ number.6.RH.Music.2 = {
 number.6.RH.InsertVoice.2 = {
 
     % [RH.InsertVoice.2 measure 1]
-    s1 * 103/4
+    s1 * 4/1
+
+    % [RH.InsertVoice.2 measure 2]
+    s1 * 5/2
+
+    % [RH.InsertVoice.2 measure 3]
+    s1 * 1/4
+
+    % [RH.InsertVoice.2 measure 4]
+    s1 * 3/1
+
+    % [RH.InsertVoice.2 measure 5]
+    s1 * 1/1
+
+    % [RH.InsertVoice.2 measure 6]
+    s1 * 5/2
+
+    % [RH.InsertVoice.2 measure 7]
+    s1 * 1/4
+
+    % [RH.InsertVoice.2 measure 8]
+    s1 * 13/4
+
+    % [RH.InsertVoice.2 measure 9]
+    s1 * 1/4
+
+    % [RH.InsertVoice.2 measure 10]
+    s1 * 29/16
+
+    % [RH.InsertVoice.2 measure 11]
+    s1 * 27/16
+
+    % [RH.InsertVoice.2 measure 12]
+    s1 * 21/16
+
+    % [RH.InsertVoice.2 measure 13]
+    s1 * 15/16
+
+    % [RH.InsertVoice.2 measure 14]
+    s1 * 1/1
+
+    % [RH.InsertVoice.2 measure 15]
+    s1 * 7/4
+
+    % [RH.InsertVoice.2 measure 16]
+    s1 * 1/4
 
 }
 
 
 number.6.RH.Music.3 = {
 
+    \tweak text #tuplet-number::calc-fraction-text
+    \times 8/5
     {
 
-        \tweak text #tuplet-number::calc-fraction-text
-        \times 8/5
-        {
+        % [RH.Music.3 measure 1]
+          %! SPANNER_START
+        \ottava 1
+        \override Stem.direction = #down
+        \override TupletBracket.direction = #down
+        \override TupletBracket.staff-padding = 3
+        a''4
+        - \tenuto
+          %! EXPLICIT_DYNAMIC_COLOR
+          %! EXPLICIT_DYNAMIC
+        - \tweak color #(x11-color 'blue)
+          %! EXPLICIT_DYNAMIC
+        \mf
+          %! FIGURE_LABEL
+        %@% - \tweak color #blue
+          %! FIGURE_LABEL
+        %@% _ \markup \concat { [ \raise #0.25 \fontsize #-2 (2) \hspace #1 "5.1.L.1" ] }
 
-            % [RH.Music.3 measure 1]
-              %! SPANNER_START
-            \ottava 1
-            \override Stem.direction = #down
-            \override TupletBracket.direction = #down
-            \override TupletBracket.staff-padding = 3
-            a''4
-            - \tenuto
-              %! EXPLICIT_DYNAMIC_COLOR
-              %! EXPLICIT_DYNAMIC
-            - \tweak color #(x11-color 'blue)
-              %! EXPLICIT_DYNAMIC
-            \mf
-              %! FIGURE_LABEL
-            %@% - \tweak color #blue
-              %! FIGURE_LABEL
-            %@% _ \markup \concat { [ \raise #0.25 \fontsize #-2 (2) \hspace #1 "5.1.L.1" ] }
+        \override Rest.direction = #down
+        r4
 
-            \override Rest.direction = #down
-            r4
+        cs''!4
+        - \tenuto
 
-            cs''!4
-            - \tenuto
+        r4
 
-            r4
+        b''4
+        - \tenuto
 
-            b''4
-            - \tenuto
+        r4
 
-            r4
+        af''!4
+        - \tenuto
 
-            af''!4
-            - \tenuto
+        r4
 
-            r4
+        g'''4
+        - \tenuto
+          %! SPANNER_STOP
+        \ottava 0
+        \revert Stem.direction
 
-            g'''4
-            - \tenuto
-              %! SPANNER_STOP
-            \ottava 0
-            \revert Stem.direction
-
-            r4
-            \revert Rest.direction
-            \revert TupletBracket.direction
-            \revert TupletBracket.staff-padding
-
-        }
+        r4
+        \revert Rest.direction
+        \revert TupletBracket.direction
+        \revert TupletBracket.staff-padding
 
     }
 
@@ -2311,16 +2418,12 @@ number.6.RH.Music.3 = {
 
     }
 
+    \scaleDurations #'(1 . 1)
     {
 
-        \scaleDurations #'(1 . 1)
-        {
-
-            % [RH.Music.3 measure 3]
-            \once \override Rest.transparent = ##t
-            r4
-
-        }
+        % [RH.Music.3 measure 3]
+        \once \override Rest.transparent = ##t
+        r4
 
     }
 
@@ -2595,16 +2698,12 @@ number.6.RH.Music.3 = {
 
     }
 
+    \scaleDurations #'(1 . 1)
     {
 
-        \scaleDurations #'(1 . 1)
-        {
-
-            % [RH.Music.3 measure 7]
-            \once \override Rest.transparent = ##t
-            r4
-
-        }
+        % [RH.Music.3 measure 7]
+        \once \override Rest.transparent = ##t
+        r4
 
     }
 
@@ -2763,21 +2862,29 @@ number.6.RH.Music.3 = {
 
     }
 
+    \scaleDurations #'(1 . 1)
     {
 
-        \scaleDurations #'(1 . 1)
-        {
-
-            % [RH.Music.3 measure 9]
-            \once \override Rest.transparent = ##t
-            r4
-
-        }
+        % [RH.Music.3 measure 9]
+        \once \override Rest.transparent = ##t
+        r4
 
     }
 
     % [RH.Music.3 measure 10]
-    s1 * 27/4
+    s1 * 29/16
+
+    % [RH.Music.3 measure 11]
+    s1 * 27/16
+
+    % [RH.Music.3 measure 12]
+    s1 * 21/16
+
+    % [RH.Music.3 measure 13]
+    s1 * 15/16
+
+    % [RH.Music.3 measure 14]
+    s1 * 1/1
 
     {
 
@@ -2883,7 +2990,52 @@ number.6.RH.Music.3 = {
 number.6.RH.InsertVoice.3 = {
 
     % [RH.InsertVoice.3 measure 1]
-    s1 * 103/4
+    s1 * 4/1
+
+    % [RH.InsertVoice.3 measure 2]
+    s1 * 5/2
+
+    % [RH.InsertVoice.3 measure 3]
+    s1 * 1/4
+
+    % [RH.InsertVoice.3 measure 4]
+    s1 * 3/1
+
+    % [RH.InsertVoice.3 measure 5]
+    s1 * 1/1
+
+    % [RH.InsertVoice.3 measure 6]
+    s1 * 5/2
+
+    % [RH.InsertVoice.3 measure 7]
+    s1 * 1/4
+
+    % [RH.InsertVoice.3 measure 8]
+    s1 * 13/4
+
+    % [RH.InsertVoice.3 measure 9]
+    s1 * 1/4
+
+    % [RH.InsertVoice.3 measure 10]
+    s1 * 29/16
+
+    % [RH.InsertVoice.3 measure 11]
+    s1 * 27/16
+
+    % [RH.InsertVoice.3 measure 12]
+    s1 * 21/16
+
+    % [RH.InsertVoice.3 measure 13]
+    s1 * 15/16
+
+    % [RH.InsertVoice.3 measure 14]
+    s1 * 1/1
+
+    % [RH.InsertVoice.3 measure 15]
+    s1 * 7/4
+
+    % [RH.InsertVoice.3 measure 16]
+    s1 * 1/4
 
 }
 
@@ -2891,7 +3043,52 @@ number.6.RH.InsertVoice.3 = {
 number.6.RH.Music.4 = {
 
     % [RH.Music.4 measure 1]
-    s1 * 103/4
+    s1 * 4/1
+
+    % [RH.Music.4 measure 2]
+    s1 * 5/2
+
+    % [RH.Music.4 measure 3]
+    s1 * 1/4
+
+    % [RH.Music.4 measure 4]
+    s1 * 3/1
+
+    % [RH.Music.4 measure 5]
+    s1 * 1/1
+
+    % [RH.Music.4 measure 6]
+    s1 * 5/2
+
+    % [RH.Music.4 measure 7]
+    s1 * 1/4
+
+    % [RH.Music.4 measure 8]
+    s1 * 13/4
+
+    % [RH.Music.4 measure 9]
+    s1 * 1/4
+
+    % [RH.Music.4 measure 10]
+    s1 * 29/16
+
+    % [RH.Music.4 measure 11]
+    s1 * 27/16
+
+    % [RH.Music.4 measure 12]
+    s1 * 21/16
+
+    % [RH.Music.4 measure 13]
+    s1 * 15/16
+
+    % [RH.Music.4 measure 14]
+    s1 * 1/1
+
+    % [RH.Music.4 measure 15]
+    s1 * 7/4
+
+    % [RH.Music.4 measure 16]
+    s1 * 1/4
 
 }
 
@@ -2899,7 +3096,52 @@ number.6.RH.Music.4 = {
 number.6.RH.InsertVoice.4 = {
 
     % [RH.InsertVoice.4 measure 1]
-    s1 * 103/4
+    s1 * 4/1
+
+    % [RH.InsertVoice.4 measure 2]
+    s1 * 5/2
+
+    % [RH.InsertVoice.4 measure 3]
+    s1 * 1/4
+
+    % [RH.InsertVoice.4 measure 4]
+    s1 * 3/1
+
+    % [RH.InsertVoice.4 measure 5]
+    s1 * 1/1
+
+    % [RH.InsertVoice.4 measure 6]
+    s1 * 5/2
+
+    % [RH.InsertVoice.4 measure 7]
+    s1 * 1/4
+
+    % [RH.InsertVoice.4 measure 8]
+    s1 * 13/4
+
+    % [RH.InsertVoice.4 measure 9]
+    s1 * 1/4
+
+    % [RH.InsertVoice.4 measure 10]
+    s1 * 29/16
+
+    % [RH.InsertVoice.4 measure 11]
+    s1 * 27/16
+
+    % [RH.InsertVoice.4 measure 12]
+    s1 * 21/16
+
+    % [RH.InsertVoice.4 measure 13]
+    s1 * 15/16
+
+    % [RH.InsertVoice.4 measure 14]
+    s1 * 1/1
+
+    % [RH.InsertVoice.4 measure 15]
+    s1 * 7/4
+
+    % [RH.InsertVoice.4 measure 16]
+    s1 * 1/4
 
 }
 
@@ -2907,7 +3149,52 @@ number.6.RH.InsertVoice.4 = {
 number.6.RH.Music.5 = {
 
     % [RH.Music.5 measure 1]
-    s1 * 103/4
+    s1 * 4/1
+
+    % [RH.Music.5 measure 2]
+    s1 * 5/2
+
+    % [RH.Music.5 measure 3]
+    s1 * 1/4
+
+    % [RH.Music.5 measure 4]
+    s1 * 3/1
+
+    % [RH.Music.5 measure 5]
+    s1 * 1/1
+
+    % [RH.Music.5 measure 6]
+    s1 * 5/2
+
+    % [RH.Music.5 measure 7]
+    s1 * 1/4
+
+    % [RH.Music.5 measure 8]
+    s1 * 13/4
+
+    % [RH.Music.5 measure 9]
+    s1 * 1/4
+
+    % [RH.Music.5 measure 10]
+    s1 * 29/16
+
+    % [RH.Music.5 measure 11]
+    s1 * 27/16
+
+    % [RH.Music.5 measure 12]
+    s1 * 21/16
+
+    % [RH.Music.5 measure 13]
+    s1 * 15/16
+
+    % [RH.Music.5 measure 14]
+    s1 * 1/1
+
+    % [RH.Music.5 measure 15]
+    s1 * 7/4
+
+    % [RH.Music.5 measure 16]
+    s1 * 1/4
 
 }
 
@@ -2915,7 +3202,52 @@ number.6.RH.Music.5 = {
 number.6.RH.Music.6 = {
 
     % [RH.Music.6 measure 1]
-    s1 * 103/4
+    s1 * 4/1
+
+    % [RH.Music.6 measure 2]
+    s1 * 5/2
+
+    % [RH.Music.6 measure 3]
+    s1 * 1/4
+
+    % [RH.Music.6 measure 4]
+    s1 * 3/1
+
+    % [RH.Music.6 measure 5]
+    s1 * 1/1
+
+    % [RH.Music.6 measure 6]
+    s1 * 5/2
+
+    % [RH.Music.6 measure 7]
+    s1 * 1/4
+
+    % [RH.Music.6 measure 8]
+    s1 * 13/4
+
+    % [RH.Music.6 measure 9]
+    s1 * 1/4
+
+    % [RH.Music.6 measure 10]
+    s1 * 29/16
+
+    % [RH.Music.6 measure 11]
+    s1 * 27/16
+
+    % [RH.Music.6 measure 12]
+    s1 * 21/16
+
+    % [RH.Music.6 measure 13]
+    s1 * 15/16
+
+    % [RH.Music.6 measure 14]
+    s1 * 1/1
+
+    % [RH.Music.6 measure 15]
+    s1 * 7/4
+
+    % [RH.Music.6 measure 16]
+    s1 * 1/4
 
 }
 
@@ -2923,7 +3255,52 @@ number.6.RH.Music.6 = {
 number.6.RH.ResonanceVoice = {
 
     % [RH.ResonanceVoice measure 1]
-    s1 * 103/4
+    s1 * 4/1
+
+    % [RH.ResonanceVoice measure 2]
+    s1 * 5/2
+
+    % [RH.ResonanceVoice measure 3]
+    s1 * 1/4
+
+    % [RH.ResonanceVoice measure 4]
+    s1 * 3/1
+
+    % [RH.ResonanceVoice measure 5]
+    s1 * 1/1
+
+    % [RH.ResonanceVoice measure 6]
+    s1 * 5/2
+
+    % [RH.ResonanceVoice measure 7]
+    s1 * 1/4
+
+    % [RH.ResonanceVoice measure 8]
+    s1 * 13/4
+
+    % [RH.ResonanceVoice measure 9]
+    s1 * 1/4
+
+    % [RH.ResonanceVoice measure 10]
+    s1 * 29/16
+
+    % [RH.ResonanceVoice measure 11]
+    s1 * 27/16
+
+    % [RH.ResonanceVoice measure 12]
+    s1 * 21/16
+
+    % [RH.ResonanceVoice measure 13]
+    s1 * 15/16
+
+    % [RH.ResonanceVoice measure 14]
+    s1 * 1/1
+
+    % [RH.ResonanceVoice measure 15]
+    s1 * 7/4
+
+    % [RH.ResonanceVoice measure 16]
+    s1 * 1/4
 
 }
 
@@ -2969,7 +3346,52 @@ number.6.PianoMusicRH.Staff = <<
 number.6.LH.Music.1 = {
 
     % [LH.Music.1 measure 1]
-    s1 * 103/4
+    s1 * 4/1
+
+    % [LH.Music.1 measure 2]
+    s1 * 5/2
+
+    % [LH.Music.1 measure 3]
+    s1 * 1/4
+
+    % [LH.Music.1 measure 4]
+    s1 * 3/1
+
+    % [LH.Music.1 measure 5]
+    s1 * 1/1
+
+    % [LH.Music.1 measure 6]
+    s1 * 5/2
+
+    % [LH.Music.1 measure 7]
+    s1 * 1/4
+
+    % [LH.Music.1 measure 8]
+    s1 * 13/4
+
+    % [LH.Music.1 measure 9]
+    s1 * 1/4
+
+    % [LH.Music.1 measure 10]
+    s1 * 29/16
+
+    % [LH.Music.1 measure 11]
+    s1 * 27/16
+
+    % [LH.Music.1 measure 12]
+    s1 * 21/16
+
+    % [LH.Music.1 measure 13]
+    s1 * 15/16
+
+    % [LH.Music.1 measure 14]
+    s1 * 1/1
+
+    % [LH.Music.1 measure 15]
+    s1 * 7/4
+
+    % [LH.Music.1 measure 16]
+    s1 * 1/4
 
 }
 
@@ -2977,7 +3399,52 @@ number.6.LH.Music.1 = {
 number.6.LH.Music.2 = {
 
     % [LH.Music.2 measure 1]
-    s1 * 103/4
+    s1 * 4/1
+
+    % [LH.Music.2 measure 2]
+    s1 * 5/2
+
+    % [LH.Music.2 measure 3]
+    s1 * 1/4
+
+    % [LH.Music.2 measure 4]
+    s1 * 3/1
+
+    % [LH.Music.2 measure 5]
+    s1 * 1/1
+
+    % [LH.Music.2 measure 6]
+    s1 * 5/2
+
+    % [LH.Music.2 measure 7]
+    s1 * 1/4
+
+    % [LH.Music.2 measure 8]
+    s1 * 13/4
+
+    % [LH.Music.2 measure 9]
+    s1 * 1/4
+
+    % [LH.Music.2 measure 10]
+    s1 * 29/16
+
+    % [LH.Music.2 measure 11]
+    s1 * 27/16
+
+    % [LH.Music.2 measure 12]
+    s1 * 21/16
+
+    % [LH.Music.2 measure 13]
+    s1 * 15/16
+
+    % [LH.Music.2 measure 14]
+    s1 * 1/1
+
+    % [LH.Music.2 measure 15]
+    s1 * 7/4
+
+    % [LH.Music.2 measure 16]
+    s1 * 1/4
 
 }
 
@@ -2985,7 +3452,52 @@ number.6.LH.Music.2 = {
 number.6.LH.Music.3 = {
 
     % [LH.Music.3 measure 1]
-    s1 * 103/4
+    s1 * 4/1
+
+    % [LH.Music.3 measure 2]
+    s1 * 5/2
+
+    % [LH.Music.3 measure 3]
+    s1 * 1/4
+
+    % [LH.Music.3 measure 4]
+    s1 * 3/1
+
+    % [LH.Music.3 measure 5]
+    s1 * 1/1
+
+    % [LH.Music.3 measure 6]
+    s1 * 5/2
+
+    % [LH.Music.3 measure 7]
+    s1 * 1/4
+
+    % [LH.Music.3 measure 8]
+    s1 * 13/4
+
+    % [LH.Music.3 measure 9]
+    s1 * 1/4
+
+    % [LH.Music.3 measure 10]
+    s1 * 29/16
+
+    % [LH.Music.3 measure 11]
+    s1 * 27/16
+
+    % [LH.Music.3 measure 12]
+    s1 * 21/16
+
+    % [LH.Music.3 measure 13]
+    s1 * 15/16
+
+    % [LH.Music.3 measure 14]
+    s1 * 1/1
+
+    % [LH.Music.3 measure 15]
+    s1 * 7/4
+
+    % [LH.Music.3 measure 16]
+    s1 * 1/4
 
 }
 
@@ -3001,405 +3513,386 @@ number.6.LH.Music.4 = {
     \set PianoMusicLHStaff.forceClef = ##t
       %! REAPPLIED_CLEF
     \clef "treble"
-    s1 * 27/4
+    s1 * 4/1
       %! REAPPLIED_CLEF_REDRAW_COLOR
     \override PianoMusicLHStaff.Clef.color = #(x11-color 'OliveDrab)
 
+    % [LH.Music.4 measure 2]
+    \override Script.direction = #up
+    s1 * 5/2
+
+    % [LH.Music.4 measure 3]
+    s1 * 1/4
+
+    \scaleDurations #'(1 . 1)
     {
 
-        \scaleDurations #'(1 . 1)
-        {
+        % [LH.Music.4 measure 4]
+          %! MEASURE_85
+          %! SHIFTED_CLEF
+    %%% \once \override PianoMusicLHStaff.Clef.X-extent = ##f
+          %! EXPLICIT_CLEF_COLOR
+        \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'blue)
+          %! MEASURE_85
+          %! SHIFTED_CLEF
+    %%% \once \override PianoMusicLHStaff.Clef.extra-offset = #'(-2.75 . 0)
+          %! EXPLICIT_CLEF_COLOR_CANCELLATION
+        %@% \override PianoMusicLHStaff.Clef.color = ##f
+        \override Slur.direction = #down
+          %! EXPLICIT_CLEF
+        \set PianoMusicLHStaff.forceClef = ##t
+          %! EXPLICIT_CLEF
+        \clef "bass"
+        r2
+          %! EXPLICIT_CLEF_REDRAW_COLOR
+        \override PianoMusicLHStaff.Clef.color = #(x11-color 'DeepSkyBlue2)
 
-            % [LH.Music.4 measure 4]
-              %! MEASURE_85
-              %! SHIFTED_CLEF
-        %%% \once \override PianoMusicLHStaff.Clef.X-extent = ##f
-              %! EXPLICIT_CLEF_COLOR
-            \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'blue)
-              %! MEASURE_85
-              %! SHIFTED_CLEF
-        %%% \once \override PianoMusicLHStaff.Clef.extra-offset = #'(-2.75 . 0)
-              %! EXPLICIT_CLEF_COLOR_CANCELLATION
-            %@% \override PianoMusicLHStaff.Clef.color = ##f
-            \override Script.direction = #up
-            \override Slur.direction = #down
-              %! EXPLICIT_CLEF
-            \set PianoMusicLHStaff.forceClef = ##t
-              %! EXPLICIT_CLEF
-            \clef "bass"
-            r2
-              %! EXPLICIT_CLEF_REDRAW_COLOR
-            \override PianoMusicLHStaff.Clef.color = #(x11-color 'DeepSkyBlue2)
+        r2
 
-            r2
+        r2
 
-            r2
+        b'8.
+        - \staccato
+        - \tenuto
+          %! EXPLICIT_DYNAMIC_COLOR
+          %! EXPLICIT_DYNAMIC
+        - \tweak color #(x11-color 'blue)
+          %! EXPLICIT_DYNAMIC
+        \p
+          %! FIGURE_LABEL
+        %@% - \tweak color #blue
+          %! FIGURE_LABEL
+        %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (15) \hspace #1 "5.2.L.1" ] }
+          %! SPANNER_START
+        (
 
-            b'8.
-            - \staccato
-            - \tenuto
-              %! EXPLICIT_DYNAMIC_COLOR
-              %! EXPLICIT_DYNAMIC
-            - \tweak color #(x11-color 'blue)
-              %! EXPLICIT_DYNAMIC
-            \p
-              %! FIGURE_LABEL
-            %@% - \tweak color #blue
-              %! FIGURE_LABEL
-            %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (15) \hspace #1 "5.2.L.1" ] }
-              %! SPANNER_START
-            (
+        r8.
 
-            r8.
+        ef'!8.
+        - \staccato
+        - \tenuto
 
-            ef'!8.
-            - \staccato
-            - \tenuto
+        r8.
 
-            r8.
+        cs!8.
+        - \staccato
+        - \tenuto
+          %! SPANNER_STOP
+        )
 
-            cs!8.
-            - \staccato
-            - \tenuto
-              %! SPANNER_STOP
-            )
+        r8.
 
-            r8.
-
-            r4.
-            \revert Slur.direction
-
-        }
+        r4.
+        \revert Slur.direction
 
     }
 
     % [LH.Music.4 measure 5]
     s1 * 1/1
 
+    \scaleDurations #'(1 . 1)
     {
 
-        \scaleDurations #'(1 . 1)
-        {
+        % [LH.Music.4 measure 6]
+        \override Slur.direction = #down
+        r2
 
-            % [LH.Music.4 measure 6]
-            \override Slur.direction = #down
-            r2
+        r2
 
-            r2
+        af'!8.
+        - \staccato
+        - \tenuto
+          %! REDUNDANT_DYNAMIC_COLOR
+          %! REDUNDANT_DYNAMIC
+        - \tweak color #(x11-color 'DeepPink1)
+          %! REDUNDANT_DYNAMIC
+        \p
+          %! FIGURE_LABEL
+        %@% - \tweak color #blue
+          %! FIGURE_LABEL
+        %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (16) \hspace #1 "5.2.L.2" ] }
+          %! SPANNER_START
+        (
 
-            af'!8.
-            - \staccato
-            - \tenuto
-              %! REDUNDANT_DYNAMIC_COLOR
-              %! REDUNDANT_DYNAMIC
-            - \tweak color #(x11-color 'DeepPink1)
-              %! REDUNDANT_DYNAMIC
-            \p
-              %! FIGURE_LABEL
-            %@% - \tweak color #blue
-              %! FIGURE_LABEL
-            %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (16) \hspace #1 "5.2.L.2" ] }
-              %! SPANNER_START
-            (
+        r16
 
-            r16
+        e'8.
+        - \staccato
+        - \tenuto
 
-            e'8.
-            - \staccato
-            - \tenuto
+        r16
 
-            r16
+        bf!8.
+        - \staccato
+        - \tenuto
 
-            bf!8.
-            - \staccato
-            - \tenuto
+        r16
 
-            r16
+        cs!8.
+        - \staccato
+        - \tenuto
+          %! SPANNER_STOP
+        )
 
-            cs!8.
-            - \staccato
-            - \tenuto
-              %! SPANNER_STOP
-            )
-
-            r16
-            \revert Slur.direction
-
-        }
+        r16
+        \revert Slur.direction
 
     }
 
+    \scaleDurations #'(1 . 1)
     {
 
-        \scaleDurations #'(1 . 1)
-        {
+        b'8.
+        - \staccato
+        - \tenuto
+          %! FIGURE_LABEL
+        %@% - \tweak color #blue
+          %! FIGURE_LABEL
+        %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (17) \hspace #1 "5.2.L.3" ] }
+          %! SPANNER_START
+        (
 
-            b'8.
-            - \staccato
-            - \tenuto
-              %! FIGURE_LABEL
-            %@% - \tweak color #blue
-              %! FIGURE_LABEL
-            %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (17) \hspace #1 "5.2.L.3" ] }
-              %! SPANNER_START
-            (
+        r16
 
-            r16
+        g8.
+        - \staccato
+        - \tenuto
+          %! SPANNER_STOP
+        )
 
-            g8.
-            - \staccato
-            - \tenuto
-              %! SPANNER_STOP
-            )
-
-            r16
-
-        }
+        r16
 
     }
 
     % [LH.Music.4 measure 7]
     s1 * 1/4
 
+    \scaleDurations #'(1 . 1)
     {
 
-        \scaleDurations #'(1 . 1)
-        {
+        % [LH.Music.4 measure 8]
+        b'8.
+        - \staccato
+        - \tenuto
+          %! FIGURE_LABEL
+        %@% - \tweak color #blue
+          %! FIGURE_LABEL
+        %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (18) \hspace #1 "5.2.L.4" ] }
+          %! SPANNER_START
+        (
 
-            % [LH.Music.4 measure 8]
-            b'8.
-            - \staccato
-            - \tenuto
-              %! FIGURE_LABEL
-            %@% - \tweak color #blue
-              %! FIGURE_LABEL
-            %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (18) \hspace #1 "5.2.L.4" ] }
-              %! SPANNER_START
-            (
+        r16
 
-            r16
+        ef'!8.
+        - \staccato
+        - \tenuto
 
-            ef'!8.
-            - \staccato
-            - \tenuto
+        r16
 
-            r16
+        cs!8.
+        - \staccato
+        - \tenuto
 
-            cs!8.
-            - \staccato
-            - \tenuto
+        r16
 
-            r16
+        af,!8.
+        - \staccato
+        - \tenuto
+          %! SPANNER_STOP
+        )
 
-            af,!8.
-            - \staccato
-            - \tenuto
-              %! SPANNER_STOP
-            )
-
-            r16
-
-        }
+        r16
 
     }
 
+    \scaleDurations #'(1 . 1)
     {
 
-        \scaleDurations #'(1 . 1)
-        {
+        e'8.
+        - \staccato
+        - \tenuto
+          %! FIGURE_LABEL
+        %@% - \tweak color #blue
+          %! FIGURE_LABEL
+        %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (19) \hspace #1 "5.2.L.5" ] }
+        [
+          %! SPANNER_START
+        (
 
-            e'8.
-            - \staccato
-            - \tenuto
-              %! FIGURE_LABEL
-            %@% - \tweak color #blue
-              %! FIGURE_LABEL
-            %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (19) \hspace #1 "5.2.L.5" ] }
-            [
-              %! SPANNER_START
-            (
-
-            bf!8.
-            - \staccato
-            - \tenuto
-              %! SPANNER_STOP
-            )
-            ]
-
-        }
+        bf!8.
+        - \staccato
+        - \tenuto
+          %! SPANNER_STOP
+        )
+        ]
 
     }
 
+    \scaleDurations #'(1 . 1)
     {
 
-        \scaleDurations #'(1 . 1)
-        {
+        cs'!8.
+        - \staccato
+        - \tenuto
+          %! FIGURE_LABEL
+        %@% - \tweak color #blue
+          %! FIGURE_LABEL
+        %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (20) \hspace #1 "5.2.L.6" ] }
+        [
+          %! SPANNER_START
+        (
 
-            cs'!8.
-            - \staccato
-            - \tenuto
-              %! FIGURE_LABEL
-            %@% - \tweak color #blue
-              %! FIGURE_LABEL
-            %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (20) \hspace #1 "5.2.L.6" ] }
-            [
-              %! SPANNER_START
-            (
+        b8.
+        - \staccato
+        - \tenuto
 
-            b8.
-            - \staccato
-            - \tenuto
-
-            g8.
-            - \staccato
-            - \tenuto
-              %! SPANNER_STOP
-            )
-            ]
-
-        }
+        g8.
+        - \staccato
+        - \tenuto
+          %! SPANNER_STOP
+        )
+        ]
 
     }
 
+    \scaleDurations #'(1 . 1)
     {
 
-        \scaleDurations #'(1 . 1)
-        {
+        r8.
 
-            r8.
+        b8.
+        - \staccato
+        - \tenuto
+          %! FIGURE_LABEL
+        %@% - \tweak color #blue
+          %! FIGURE_LABEL
+        %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (21) \hspace #1 "5.2.L.7" ] }
+        [
+          %! SPANNER_START
+        (
 
-            b8.
-            - \staccato
-            - \tenuto
-              %! FIGURE_LABEL
-            %@% - \tweak color #blue
-              %! FIGURE_LABEL
-            %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (21) \hspace #1 "5.2.L.7" ] }
-            [
-              %! SPANNER_START
-            (
+        ef,!8.
+        - \staccato
+        - \tenuto
+          %! SPANNER_STOP
+        )
+        ]
 
-            ef,!8.
-            - \staccato
-            - \tenuto
-              %! SPANNER_STOP
-            )
-            ]
+        r4
 
-            r4
+        r4
 
-            r4
-
-            r4
-
-        }
+        r4
 
     }
 
     % [LH.Music.4 measure 9]
-    s1 * 7/1
+    s1 * 1/4
 
+    % [LH.Music.4 measure 10]
+    s1 * 29/16
+
+    % [LH.Music.4 measure 11]
+    s1 * 27/16
+
+    % [LH.Music.4 measure 12]
+    s1 * 21/16
+
+    % [LH.Music.4 measure 13]
+    s1 * 15/16
+
+    % [LH.Music.4 measure 14]
+    s1 * 1/1
+
+    \scaleDurations #'(1 . 1)
     {
 
-        \scaleDurations #'(1 . 1)
-        {
+        % [LH.Music.4 measure 15]
+        r2..
 
-            % [LH.Music.4 measure 15]
-            r2..
+        cs'!8
+        - \staccato
+        - \tenuto
+          %! REDUNDANT_DYNAMIC_COLOR
+          %! REDUNDANT_DYNAMIC
+        - \tweak color #(x11-color 'DeepPink1)
+          %! REDUNDANT_DYNAMIC
+        \p
+          %! FIGURE_LABEL
+        %@% - \tweak color #blue
+          %! FIGURE_LABEL
+        %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (22) \hspace #1 "5.2.L.8" ] }
+        [
+          %! SPANNER_START
+        (
 
-            cs'!8
-            - \staccato
-            - \tenuto
-              %! REDUNDANT_DYNAMIC_COLOR
-              %! REDUNDANT_DYNAMIC
-            - \tweak color #(x11-color 'DeepPink1)
-              %! REDUNDANT_DYNAMIC
-            \p
-              %! FIGURE_LABEL
-            %@% - \tweak color #blue
-              %! FIGURE_LABEL
-            %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (22) \hspace #1 "5.2.L.8" ] }
-            [
-              %! SPANNER_START
-            (
+        af,!8
+        - \staccato
+        - \tenuto
 
-            af,!8
-            - \staccato
-            - \tenuto
-
-            e,8
-            - \staccato
-            - \tenuto
-              %! SPANNER_STOP
-            )
-            ]
-
-        }
+        e,8
+        - \staccato
+        - \tenuto
+          %! SPANNER_STOP
+        )
+        ]
 
     }
 
+    \scaleDurations #'(1 . 1)
     {
 
-        \scaleDurations #'(1 . 1)
-        {
+        bf!8
+        - \staccato
+        - \tenuto
+          %! FIGURE_LABEL
+        %@% - \tweak color #blue
+          %! FIGURE_LABEL
+        %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (23) \hspace #1 "5.2.L.9" ] }
+        [
+          %! SPANNER_START
+        (
 
-            bf!8
-            - \staccato
-            - \tenuto
-              %! FIGURE_LABEL
-            %@% - \tweak color #blue
-              %! FIGURE_LABEL
-            %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (23) \hspace #1 "5.2.L.9" ] }
-            [
-              %! SPANNER_START
-            (
+        cs!8
+        - \staccato
+        - \tenuto
 
-            cs!8
-            - \staccato
-            - \tenuto
+        b,8
+        - \staccato
+        - \tenuto
 
-            b,8
-            - \staccato
-            - \tenuto
-
-            g,8
-            - \staccato
-            - \tenuto
-              %! SPANNER_STOP
-            )
-            ]
-
-        }
+        g,8
+        - \staccato
+        - \tenuto
+          %! SPANNER_STOP
+        )
+        ]
 
     }
 
+    \scaleDurations #'(1 . 1)
     {
 
-        \scaleDurations #'(1 . 1)
-        {
-
-            % [LH.Music.4 measure 16]
-              %! MEASURE_97
-              %! SHIFTED_CLEF
-            \once \override PianoMusicLHStaff.Clef.X-extent = ##f
-              %! EXPLICIT_CLEF_COLOR
-            \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'blue)
-              %! MEASURE_97
-              %! SHIFTED_CLEF
-            \once \override PianoMusicLHStaff.Clef.extra-offset = #'(-2.5 . 0)
-            \once \override Rest.transparent = ##t
-              %! EXPLICIT_CLEF_COLOR_CANCELLATION
-            %@% \override PianoMusicLHStaff.Clef.color = ##f
-              %! EXPLICIT_CLEF
-            \set PianoMusicLHStaff.forceClef = ##t
-              %! EXPLICIT_CLEF
-            \clef "treble"
-            r4
-            \revert Script.direction
-              %! EXPLICIT_CLEF_REDRAW_COLOR
-            \override PianoMusicLHStaff.Clef.color = #(x11-color 'DeepSkyBlue2)
-
-        }
+        % [LH.Music.4 measure 16]
+          %! MEASURE_97
+          %! SHIFTED_CLEF
+        \once \override PianoMusicLHStaff.Clef.X-extent = ##f
+          %! EXPLICIT_CLEF_COLOR
+        \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'blue)
+          %! MEASURE_97
+          %! SHIFTED_CLEF
+        \once \override PianoMusicLHStaff.Clef.extra-offset = #'(-2.5 . 0)
+        \once \override Rest.transparent = ##t
+          %! EXPLICIT_CLEF_COLOR_CANCELLATION
+        %@% \override PianoMusicLHStaff.Clef.color = ##f
+          %! EXPLICIT_CLEF
+        \set PianoMusicLHStaff.forceClef = ##t
+          %! EXPLICIT_CLEF
+        \clef "treble"
+        r4
+        \revert Script.direction
+          %! EXPLICIT_CLEF_REDRAW_COLOR
+        \override PianoMusicLHStaff.Clef.color = #(x11-color 'DeepSkyBlue2)
 
     }
 
@@ -3409,7 +3902,52 @@ number.6.LH.Music.4 = {
 number.6.LH.InsertVoice.4 = {
 
     % [LH.InsertVoice.4 measure 1]
-    s1 * 103/4
+    s1 * 4/1
+
+    % [LH.InsertVoice.4 measure 2]
+    s1 * 5/2
+
+    % [LH.InsertVoice.4 measure 3]
+    s1 * 1/4
+
+    % [LH.InsertVoice.4 measure 4]
+    s1 * 3/1
+
+    % [LH.InsertVoice.4 measure 5]
+    s1 * 1/1
+
+    % [LH.InsertVoice.4 measure 6]
+    s1 * 5/2
+
+    % [LH.InsertVoice.4 measure 7]
+    s1 * 1/4
+
+    % [LH.InsertVoice.4 measure 8]
+    s1 * 13/4
+
+    % [LH.InsertVoice.4 measure 9]
+    s1 * 1/4
+
+    % [LH.InsertVoice.4 measure 10]
+    s1 * 29/16
+
+    % [LH.InsertVoice.4 measure 11]
+    s1 * 27/16
+
+    % [LH.InsertVoice.4 measure 12]
+    s1 * 21/16
+
+    % [LH.InsertVoice.4 measure 13]
+    s1 * 15/16
+
+    % [LH.InsertVoice.4 measure 14]
+    s1 * 1/1
+
+    % [LH.InsertVoice.4 measure 15]
+    s1 * 7/4
+
+    % [LH.InsertVoice.4 measure 16]
+    s1 * 1/4
 
 }
 
@@ -3417,52 +3955,87 @@ number.6.LH.InsertVoice.4 = {
 number.6.LH.Music.5 = {
 
     % [LH.Music.5 measure 1]
-    s1 * 39/4
+    s1 * 4/1
 
+    % [LH.Music.5 measure 2]
+    s1 * 5/2
+
+    % [LH.Music.5 measure 3]
+    s1 * 1/4
+
+    % [LH.Music.5 measure 4]
+    s1 * 3/1
+
+    \scaleDurations #'(1 . 1)
     {
 
-        \scaleDurations #'(1 . 1)
-        {
+        % [LH.Music.5 measure 5]
+        \dynamicUp
+        \override Stem.direction = #up
+        bf,,!8.
+          %! EXPLICIT_DYNAMIC_COLOR
+          %! EXPLICIT_DYNAMIC
+        - \tweak color #(x11-color 'blue)
+          %! EXPLICIT_DYNAMIC
+        \ppp
+          %! FIGURE_LABEL
+        %@% - \tweak color #blue
+          %! FIGURE_LABEL
+        %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (6) \hspace #1 "8.3.R.5" ] }
 
-            % [LH.Music.5 measure 5]
-            \dynamicUp
-            \override Stem.direction = #up
-            bf,,!8.
-              %! EXPLICIT_DYNAMIC_COLOR
-              %! EXPLICIT_DYNAMIC
-            - \tweak color #(x11-color 'blue)
-              %! EXPLICIT_DYNAMIC
-            \ppp
-              %! FIGURE_LABEL
-            %@% - \tweak color #blue
-              %! FIGURE_LABEL
-            %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (6) \hspace #1 "8.3.R.5" ] }
+        \override Rest.direction = #up
+        r32
 
-            \override Rest.direction = #up
-            r32
+        d,8.
 
-            d,8.
+        r32
 
-            r32
+        c,8.
 
-            c,8.
+        r32
 
-            r32
+        b,,8.
+        \revert Stem.direction
 
-            b,,8.
-            \revert Stem.direction
+        r32
 
-            r32
-
-            r8
-            \revert Rest.direction
-
-        }
+        r8
+        \revert Rest.direction
 
     }
 
     % [LH.Music.5 measure 6]
-    s1 * 15/1
+    s1 * 5/2
+
+    % [LH.Music.5 measure 7]
+    s1 * 1/4
+
+    % [LH.Music.5 measure 8]
+    s1 * 13/4
+
+    % [LH.Music.5 measure 9]
+    s1 * 1/4
+
+    % [LH.Music.5 measure 10]
+    s1 * 29/16
+
+    % [LH.Music.5 measure 11]
+    s1 * 27/16
+
+    % [LH.Music.5 measure 12]
+    s1 * 21/16
+
+    % [LH.Music.5 measure 13]
+    s1 * 15/16
+
+    % [LH.Music.5 measure 14]
+    s1 * 1/1
+
+    % [LH.Music.5 measure 15]
+    s1 * 7/4
+
+    % [LH.Music.5 measure 16]
+    s1 * 1/4
 
 }
 
@@ -3470,7 +4043,52 @@ number.6.LH.Music.5 = {
 number.6.LH.InsertVoice.5 = {
 
     % [LH.InsertVoice.5 measure 1]
-    s1 * 103/4
+    s1 * 4/1
+
+    % [LH.InsertVoice.5 measure 2]
+    s1 * 5/2
+
+    % [LH.InsertVoice.5 measure 3]
+    s1 * 1/4
+
+    % [LH.InsertVoice.5 measure 4]
+    s1 * 3/1
+
+    % [LH.InsertVoice.5 measure 5]
+    s1 * 1/1
+
+    % [LH.InsertVoice.5 measure 6]
+    s1 * 5/2
+
+    % [LH.InsertVoice.5 measure 7]
+    s1 * 1/4
+
+    % [LH.InsertVoice.5 measure 8]
+    s1 * 13/4
+
+    % [LH.InsertVoice.5 measure 9]
+    s1 * 1/4
+
+    % [LH.InsertVoice.5 measure 10]
+    s1 * 29/16
+
+    % [LH.InsertVoice.5 measure 11]
+    s1 * 27/16
+
+    % [LH.InsertVoice.5 measure 12]
+    s1 * 21/16
+
+    % [LH.InsertVoice.5 measure 13]
+    s1 * 15/16
+
+    % [LH.InsertVoice.5 measure 14]
+    s1 * 1/1
+
+    % [LH.InsertVoice.5 measure 15]
+    s1 * 7/4
+
+    % [LH.InsertVoice.5 measure 16]
+    s1 * 1/4
 
 }
 
@@ -3478,50 +4096,85 @@ number.6.LH.InsertVoice.5 = {
 number.6.LH.Music.6 = {
 
     % [LH.Music.6 measure 1]
-    s1 * 39/4
+    s1 * 4/1
 
+    % [LH.Music.6 measure 2]
+    s1 * 5/2
+
+    % [LH.Music.6 measure 3]
+    s1 * 1/4
+
+    % [LH.Music.6 measure 4]
+    s1 * 3/1
+
+    \tweak text #tuplet-number::calc-fraction-text
+    \times 4/3
     {
 
-        \tweak text #tuplet-number::calc-fraction-text
-        \times 4/3
-        {
+        % [LH.Music.6 measure 5]
+          %! SPANNER_START
+        \ottava -1
+        \override Stem.direction = #down
+        \override TupletBracket.direction = #down
+        \override TupletBracket.staff-padding = 6
+        b,,,8
+          %! EXPLICIT_DYNAMIC_COLOR
+          %! EXPLICIT_DYNAMIC
+        - \tweak color #(x11-color 'blue)
+          %! EXPLICIT_DYNAMIC
+        \f
+          %! FIGURE_LABEL
+        %@% - \tweak color #blue
+          %! FIGURE_LABEL
+        %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (5) \hspace #1 "8.3.L.2" ] }
 
-            % [LH.Music.6 measure 5]
-              %! SPANNER_START
-            \ottava -1
-            \override Stem.direction = #down
-            \override TupletBracket.direction = #down
-            \override TupletBracket.staff-padding = 6
-            b,,,8
-              %! EXPLICIT_DYNAMIC_COLOR
-              %! EXPLICIT_DYNAMIC
-            - \tweak color #(x11-color 'blue)
-              %! EXPLICIT_DYNAMIC
-            \f
-              %! FIGURE_LABEL
-            %@% - \tweak color #blue
-              %! FIGURE_LABEL
-            %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (5) \hspace #1 "8.3.L.2" ] }
+        \override Rest.direction = #down
+        r4
 
-            \override Rest.direction = #down
-            r4
+        ef,,!8
+          %! SPANNER_STOP
+        \ottava 0
+        \revert Stem.direction
 
-            ef,,!8
-              %! SPANNER_STOP
-            \ottava 0
-            \revert Stem.direction
-
-            r4
-            \revert Rest.direction
-            \revert TupletBracket.direction
-            \revert TupletBracket.staff-padding
-
-        }
+        r4
+        \revert Rest.direction
+        \revert TupletBracket.direction
+        \revert TupletBracket.staff-padding
 
     }
 
     % [LH.Music.6 measure 6]
-    s1 * 15/1
+    s1 * 5/2
+
+    % [LH.Music.6 measure 7]
+    s1 * 1/4
+
+    % [LH.Music.6 measure 8]
+    s1 * 13/4
+
+    % [LH.Music.6 measure 9]
+    s1 * 1/4
+
+    % [LH.Music.6 measure 10]
+    s1 * 29/16
+
+    % [LH.Music.6 measure 11]
+    s1 * 27/16
+
+    % [LH.Music.6 measure 12]
+    s1 * 21/16
+
+    % [LH.Music.6 measure 13]
+    s1 * 15/16
+
+    % [LH.Music.6 measure 14]
+    s1 * 1/1
+
+    % [LH.Music.6 measure 15]
+    s1 * 7/4
+
+    % [LH.Music.6 measure 16]
+    s1 * 1/4
 
 }
 
@@ -3529,7 +4182,52 @@ number.6.LH.Music.6 = {
 number.6.LH.InsertVoice.6 = {
 
     % [LH.InsertVoice.6 measure 1]
-    s1 * 103/4
+    s1 * 4/1
+
+    % [LH.InsertVoice.6 measure 2]
+    s1 * 5/2
+
+    % [LH.InsertVoice.6 measure 3]
+    s1 * 1/4
+
+    % [LH.InsertVoice.6 measure 4]
+    s1 * 3/1
+
+    % [LH.InsertVoice.6 measure 5]
+    s1 * 1/1
+
+    % [LH.InsertVoice.6 measure 6]
+    s1 * 5/2
+
+    % [LH.InsertVoice.6 measure 7]
+    s1 * 1/4
+
+    % [LH.InsertVoice.6 measure 8]
+    s1 * 13/4
+
+    % [LH.InsertVoice.6 measure 9]
+    s1 * 1/4
+
+    % [LH.InsertVoice.6 measure 10]
+    s1 * 29/16
+
+    % [LH.InsertVoice.6 measure 11]
+    s1 * 27/16
+
+    % [LH.InsertVoice.6 measure 12]
+    s1 * 21/16
+
+    % [LH.InsertVoice.6 measure 13]
+    s1 * 15/16
+
+    % [LH.InsertVoice.6 measure 14]
+    s1 * 1/1
+
+    % [LH.InsertVoice.6 measure 15]
+    s1 * 7/4
+
+    % [LH.InsertVoice.6 measure 16]
+    s1 * 1/4
 
 }
 
@@ -3538,134 +4236,141 @@ number.6.LH.ResonanceVoice = {
 
     % [LH.ResonanceVoice measure 1]
     \override Dots.transparent = ##t
-    s1 * 17/1
+    s1 * 4/1
 
+    % [LH.ResonanceVoice measure 2]
+    s1 * 5/2
+
+    % [LH.ResonanceVoice measure 3]
+    s1 * 1/4
+
+    % [LH.ResonanceVoice measure 4]
+    s1 * 3/1
+
+    % [LH.ResonanceVoice measure 5]
+    s1 * 1/1
+
+    % [LH.ResonanceVoice measure 6]
+    s1 * 5/2
+
+    % [LH.ResonanceVoice measure 7]
+    s1 * 1/4
+
+    % [LH.ResonanceVoice measure 8]
+    s1 * 13/4
+
+    % [LH.ResonanceVoice measure 9]
+    s1 * 1/4
+
+    \scaleDurations #'(1 . 1)
     {
 
-        \scaleDurations #'(1 . 1)
-        {
+        % [LH.ResonanceVoice measure 10]
+        <cs,,! cs,!>1..
+        - \tweak stencil ##f
+        ~
 
-            % [LH.ResonanceVoice measure 10]
-            <cs,,! cs,!>1..
-            - \tweak stencil ##f
-            ~
-
-            \once \override Accidental.transparent = ##t
-            \once \override Beam.transparent = ##t
-            \once \override Flag.transparent = ##t
-            \once \override NoteHead.no-ledgers = ##t
-            \once \override NoteHead.transparent = ##t
-            \once \override RepeatTie.transparent = ##t
-            \once \override Stem.transparent = ##t
-            <cs,, cs,>16
-            - \tweak stencil ##f
-            ~
-            \repeatTie
-
-        }
+        \once \override Accidental.transparent = ##t
+        \once \override Beam.transparent = ##t
+        \once \override Flag.transparent = ##t
+        \once \override NoteHead.no-ledgers = ##t
+        \once \override NoteHead.transparent = ##t
+        \once \override RepeatTie.transparent = ##t
+        \once \override Stem.transparent = ##t
+        <cs,, cs,>16
+        - \tweak stencil ##f
+        ~
+        \repeatTie
 
     }
 
+    \scaleDurations #'(1 . 1)
     {
 
-        \scaleDurations #'(1 . 1)
-        {
+        % [LH.ResonanceVoice measure 11]
+        \once \override Accidental.stencil = ##f
+        \override Stem.transparent = ##t
+        <cs,, cs,>1.
+        - \tweak stencil ##f
+        ~
+        \repeatTie
 
-            % [LH.ResonanceVoice measure 11]
-            \once \override Accidental.stencil = ##f
-            \override Stem.transparent = ##t
-            <cs,, cs,>1.
-            - \tweak stencil ##f
-            ~
-            \repeatTie
-
-            \once \override Accidental.transparent = ##t
-            \once \override Beam.transparent = ##t
-            \once \override Flag.transparent = ##t
-            \once \override NoteHead.no-ledgers = ##t
-            \once \override NoteHead.transparent = ##t
-            \once \override RepeatTie.transparent = ##t
-            \once \override Stem.transparent = ##t
-            <cs,, cs,>8.
-            \repeatTie
-            \revert Stem.transparent
-
-        }
+        \once \override Accidental.transparent = ##t
+        \once \override Beam.transparent = ##t
+        \once \override Flag.transparent = ##t
+        \once \override NoteHead.no-ledgers = ##t
+        \once \override NoteHead.transparent = ##t
+        \once \override RepeatTie.transparent = ##t
+        \once \override Stem.transparent = ##t
+        <cs,, cs,>8.
+        \repeatTie
+        \revert Stem.transparent
 
     }
 
+    \scaleDurations #'(1 . 1)
     {
 
-        \scaleDurations #'(1 . 1)
-        {
+        % [LH.ResonanceVoice measure 12]
+        <ef,,! ef,!>1
+        - \tweak stencil ##f
+        ~
 
-            % [LH.ResonanceVoice measure 12]
-            <ef,,! ef,!>1
-            - \tweak stencil ##f
-            ~
+        \override Accidental.transparent = ##t
+        \override Beam.transparent = ##t
+        \override Flag.transparent = ##t
+        \override NoteHead.no-ledgers = ##t
+        \override NoteHead.transparent = ##t
+        \override RepeatTie.transparent = ##t
+        \override Stem.transparent = ##t
+        <ef,, ef,>4
+        - \tweak stencil ##f
+        ~
+        \repeatTie
 
-            \override Accidental.transparent = ##t
-            \override Beam.transparent = ##t
-            \override Flag.transparent = ##t
-            \override NoteHead.no-ledgers = ##t
-            \override NoteHead.transparent = ##t
-            \override RepeatTie.transparent = ##t
-            \override Stem.transparent = ##t
-            <ef,, ef,>4
-            - \tweak stencil ##f
-            ~
-            \repeatTie
-
-            <ef,, ef,>16
-            - \tweak stencil ##f
-            ~
-            \repeatTie
-            \revert Accidental.transparent
-            \revert Beam.transparent
-            \revert Flag.transparent
-            \revert NoteHead.no-ledgers
-            \revert NoteHead.transparent
-            \revert RepeatTie.transparent
-            \revert Stem.transparent
-
-        }
+        <ef,, ef,>16
+        - \tweak stencil ##f
+        ~
+        \repeatTie
+        \revert Accidental.transparent
+        \revert Beam.transparent
+        \revert Flag.transparent
+        \revert NoteHead.no-ledgers
+        \revert NoteHead.transparent
+        \revert RepeatTie.transparent
+        \revert Stem.transparent
 
     }
 
+    \scaleDurations #'(1 . 1)
     {
 
-        \scaleDurations #'(1 . 1)
-        {
-
-            % [LH.ResonanceVoice measure 13]
-            \once \override Accidental.stencil = ##f
-            \once \override Stem.transparent = ##t
-            <ef,, ef,>2...
-            - \tweak stencil ##f
-            ~
-            \repeatTie
-
-        }
+        % [LH.ResonanceVoice measure 13]
+        \once \override Accidental.stencil = ##f
+        \once \override Stem.transparent = ##t
+        <ef,, ef,>2...
+        - \tweak stencil ##f
+        ~
+        \repeatTie
 
     }
 
+    \scaleDurations #'(1 . 1)
     {
 
-        \scaleDurations #'(1 . 1)
-        {
-
-            % [LH.ResonanceVoice measure 14]
-            \once \override Accidental.stencil = ##f
-            \once \override Stem.transparent = ##t
-            <ef,, ef,>1
-            \repeatTie
-
-        }
+        % [LH.ResonanceVoice measure 14]
+        \once \override Accidental.stencil = ##f
+        \once \override Stem.transparent = ##t
+        <ef,, ef,>1
+        \repeatTie
 
     }
 
     % [LH.ResonanceVoice measure 15]
-    s1 * 2/1
+    s1 * 7/4
+
+    % [LH.ResonanceVoice measure 16]
+    s1 * 1/4
     \revert Dots.transparent
 
 }
