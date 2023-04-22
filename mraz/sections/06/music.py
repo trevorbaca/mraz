@@ -597,6 +597,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             library.lh_resonance,
             [tuplet_copy],
             hide_time_signature=True,
+            replace_after_last_nonskip_in_same_voice=True,
         )
 
     @baca.call
@@ -613,6 +614,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             library.lh_resonance,
             [tuplet_copy],
             hide_time_signature=True,
+            replace_after_last_nonskip_in_same_voice=True,
         )
 
     @baca.call
@@ -629,6 +631,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             library.lh_resonance,
             [tuplet_copy],
             hide_time_signature=True,
+            replace_after_last_nonskip_in_same_voice=True,
         )
 
     @baca.call
@@ -645,6 +648,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             library.lh_resonance,
             [tuplet_copy],
             hide_time_signature=True,
+            replace_after_last_nonskip_in_same_voice=True,
         )
 
     @baca.call
@@ -769,6 +773,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             library.lh_v4,
             [tuplet_copy],
             hide_time_signature=True,
+            replace_after_last_nonskip_in_same_voice=True,
         )
 
     @baca.call
@@ -813,6 +818,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             library.lh_v4,
             [tuplet_copy],
             hide_time_signature=True,
+            replace_after_last_nonskip_in_same_voice=True,
         )
 
     @baca.call
@@ -835,6 +841,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             library.lh_v4,
             [tuplet_copy],
             hide_time_signature=True,
+            replace_after_last_nonskip_in_same_voice=True,
         )
 
     @baca.call
@@ -859,6 +866,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             library.lh_v4,
             [tuplet_copy],
             hide_time_signature=True,
+            replace_after_last_nonskip_in_same_voice=True,
         )
 
     @baca.call
@@ -906,6 +914,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             library.lh_v4,
             [tuplet_copy],
             hide_time_signature=True,
+            replace_after_last_nonskip_in_same_voice=True,
         )
 
     @baca.call
