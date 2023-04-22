@@ -719,7 +719,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     )
     accumulator.populate(score)
     rmakers.hide_trivial(score)
-    rmakers.swap_skip_filled(score)
+    rmakers.hide_skip_filled(score)
     return score, voices, time_signatures
 
 
