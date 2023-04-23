@@ -1417,11 +1417,59 @@ number.4.RH.Music.1 = {
     \set PianoMusicRHStaff.forceClef = ##t
       %! REAPPLIED_CLEF
     \clef "treble"
-    s1 * 141/8
+    s1 * 3/2
       %! REAPPLIED_INSTRUMENT_ALERT
     ^ \baca-reapplied-instrument-markup "(“Piano”)"
       %! REAPPLIED_CLEF_REDRAW_COLOR
     \override PianoMusicRHStaff.Clef.color = #(x11-color 'OliveDrab)
+
+    % [RH.Music.1 measure 2]
+    s1 * 3/4
+
+    % [RH.Music.1 measure 3]
+    s1 * 3/2
+
+    % [RH.Music.1 measure 4]
+    s1 * 9/8
+
+    % [RH.Music.1 measure 5]
+    s1 * 3/4
+
+    % [RH.Music.1 measure 6]
+    s1 * 3/2
+
+    % [RH.Music.1 measure 7]
+    s1 * 3/4
+
+    % [RH.Music.1 measure 8]
+    s1 * 3/4
+
+    % [RH.Music.1 measure 9]
+    s1 * 5/4
+
+    % [RH.Music.1 measure 10]
+    s1 * 1/1
+
+    % [RH.Music.1 measure 11]
+    s1 * 5/4
+
+    % [RH.Music.1 measure 12]
+    s1 * 3/4
+
+    % [RH.Music.1 measure 13]
+    s1 * 5/4
+
+    % [RH.Music.1 measure 14]
+    s1 * 1/1
+
+    % [RH.Music.1 measure 15]
+    s1 * 5/4
+
+    % [RH.Music.1 measure 16]
+    s1 * 1/1
+
+    % [RH.Music.1 measure 17]
+    s1 * 1/4
 
     {
 
@@ -1494,33 +1542,25 @@ number.4.RH.Music.1 = {
 
     }
 
-    {
-
-        \scaleDurations #'(1 . 1)
-        {
-
-            % [RH.Music.1 measure 20]
-            r2
-
-        }
-
-    }
-
-    {
-
-        \scaleDurations #'(1 . 1)
-        {
-
-            % [RH.Music.1 measure 21]
-            \once \override Rest.transparent = ##t
-            r4
-
-        }
-
-    }
-
-    % [RH.Music.1 measure 22]
+    % [RH.Music.1 measure 20]
     s1 * 1/2
+
+    \scaleDurations #'(1 . 1)
+    {
+
+        % [RH.Music.1 measure 21]
+        \once \override Rest.transparent = ##t
+        r4
+
+    }
+
+    \scaleDurations #'(1 . 1)
+    {
+
+        % [RH.Music.1 measure 22]
+        r2
+
+    }
 
     {
 
@@ -1570,7 +1610,10 @@ number.4.RH.Music.1 = {
     }
 
     % [RH.Music.1 measure 25]
-    s1 * 7/4
+    s1 * 1/1
+
+    % [RH.Music.1 measure 26]
+    s1 * 3/4
 
     {
 
@@ -1653,127 +1696,118 @@ number.4.RH.Music.1 = {
     }
 
     % [RH.Music.1 measure 31]
-    s1 * 7/8
+    s1 * 5/8
 
+    % [RH.Music.1 measure 32]
+    s1 * 1/4
+
+    \scaleDurations #'(1 . 1)
     {
 
-        \scaleDurations #'(1 . 1)
-        {
-
-            % [RH.Music.1 measure 33]
-            ef''''!1..
-            - \tenuto
-              %! EXPLICIT_DYNAMIC_COLOR
-              %! EXPLICIT_DYNAMIC
-            - \tweak color #(x11-color 'blue)
-              %! EXPLICIT_DYNAMIC
-            \f
-              %! FIGURE_LABEL
-            %@% - \tweak color #blue
-              %! FIGURE_LABEL
-            %@% ^ \markup \concat { [ \raise #0.25 \fontsize #-2 (34) \hspace #1 "4.5.R.1" ] }
-
-        }
+        % [RH.Music.1 measure 33]
+        ef''''!1..
+        - \tenuto
+          %! EXPLICIT_DYNAMIC_COLOR
+          %! EXPLICIT_DYNAMIC
+        - \tweak color #(x11-color 'blue)
+          %! EXPLICIT_DYNAMIC
+        \f
+          %! FIGURE_LABEL
+        %@% - \tweak color #blue
+          %! FIGURE_LABEL
+        %@% ^ \markup \concat { [ \raise #0.25 \fontsize #-2 (34) \hspace #1 "4.5.R.1" ] }
 
     }
 
+    \scaleDurations #'(1 . 1)
     {
 
-        \scaleDurations #'(1 . 1)
-        {
-
-            % [RH.Music.1 measure 34]
-            f''''1.
-            - \tenuto
-              %! FIGURE_LABEL
-            %@% - \tweak color #blue
-              %! FIGURE_LABEL
-            %@% ^ \markup \concat { [ \raise #0.25 \fontsize #-2 (35) \hspace #1 "4.5.R.2" ] }
-
-        }
+        % [RH.Music.1 measure 34]
+        f''''1.
+        - \tenuto
+          %! FIGURE_LABEL
+        %@% - \tweak color #blue
+          %! FIGURE_LABEL
+        %@% ^ \markup \concat { [ \raise #0.25 \fontsize #-2 (35) \hspace #1 "4.5.R.2" ] }
 
     }
 
+    \scaleDurations #'(1 . 1)
     {
 
-        \scaleDurations #'(1 . 1)
-        {
-
-            % [RH.Music.1 measure 35]
-            bf''''!1
-            - \tenuto
-              %! FIGURE_LABEL
-            %@% - \tweak color #blue
-              %! FIGURE_LABEL
-            %@% ^ \markup \concat { [ \raise #0.25 \fontsize #-2 (36) \hspace #1 "4.5.R.3" ] }
-
-        }
+        % [RH.Music.1 measure 35]
+        bf''''!1
+        - \tenuto
+          %! FIGURE_LABEL
+        %@% - \tweak color #blue
+          %! FIGURE_LABEL
+        %@% ^ \markup \concat { [ \raise #0.25 \fontsize #-2 (36) \hspace #1 "4.5.R.3" ] }
 
     }
 
+    \scaleDurations #'(1 . 1)
     {
 
-        \scaleDurations #'(1 . 1)
-        {
-
-            % [RH.Music.1 measure 36]
-            ef''''!1
-            - \tenuto
-              %! FIGURE_LABEL
-            %@% - \tweak color #blue
-              %! FIGURE_LABEL
-            %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (37) \hspace #1 "4.5.R.4" ] }
-              %! SPANNER_STOP
-            \ottava 0
-
-        }
+        % [RH.Music.1 measure 36]
+        ef''''!1
+        - \tenuto
+          %! FIGURE_LABEL
+        %@% - \tweak color #blue
+          %! FIGURE_LABEL
+        %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (37) \hspace #1 "4.5.R.4" ] }
+          %! SPANNER_STOP
+        \ottava 0
 
     }
 
     % [RH.Music.1 measure 37]
     s1 * 3/2
 
+    \scaleDurations #'(1 . 1)
     {
 
-        \scaleDurations #'(1 . 1)
-        {
-
-            % [RH.Music.1 measure 38]
-              %! SPANNER_START
-            \ottava 1
-            f''''1
-            - \tenuto
-              %! FIGURE_LABEL
-            %@% - \tweak color #blue
-              %! FIGURE_LABEL
-            %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (38) \hspace #1 "4.5.R.5" ] }
-
-        }
+        % [RH.Music.1 measure 38]
+          %! SPANNER_START
+        \ottava 1
+        f''''1
+        - \tenuto
+          %! FIGURE_LABEL
+        %@% - \tweak color #blue
+          %! FIGURE_LABEL
+        %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (38) \hspace #1 "4.5.R.5" ] }
 
     }
 
+    \scaleDurations #'(1 . 1)
     {
 
-        \scaleDurations #'(1 . 1)
-        {
-
-            % [RH.Music.1 measure 39]
-            bf''''!2
-            - \tenuto
-              %! FIGURE_LABEL
-            %@% - \tweak color #blue
-              %! FIGURE_LABEL
-            %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (39) \hspace #1 "4.5.R.6" ] }
-              %! SPANNER_STOP
-            \ottava 0
-            \revert Stem.direction
-
-        }
+        % [RH.Music.1 measure 39]
+        bf''''!2
+        - \tenuto
+          %! FIGURE_LABEL
+        %@% - \tweak color #blue
+          %! FIGURE_LABEL
+        %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (39) \hspace #1 "4.5.R.6" ] }
+          %! SPANNER_STOP
+        \ottava 0
+        \revert Stem.direction
 
     }
 
     % [RH.Music.1 measure 40]
-    s1 * 17/2
+    s1 * 1/1
+
+    % [RH.Music.1 measure 41]
+    s1 * 1/1
+
+    % [RH.Music.1 measure 42]
+    s1 * 1/1
+
+    % [RH.Music.1 measure 43]
+    s1 * 3/2
+
+    % [RH.Music.1 measure 44]
+    s1 * 4/1
     \revert TupletBracket.direction
     \revert TupletBracket.staff-padding
 
@@ -1783,7 +1817,136 @@ number.4.RH.Music.1 = {
 number.4.RH.InsertVoice.1 = {
 
     % [RH.InsertVoice.1 measure 1]
-    s1 * 44/1
+    s1 * 3/2
+
+    % [RH.InsertVoice.1 measure 2]
+    s1 * 3/4
+
+    % [RH.InsertVoice.1 measure 3]
+    s1 * 3/2
+
+    % [RH.InsertVoice.1 measure 4]
+    s1 * 9/8
+
+    % [RH.InsertVoice.1 measure 5]
+    s1 * 3/4
+
+    % [RH.InsertVoice.1 measure 6]
+    s1 * 3/2
+
+    % [RH.InsertVoice.1 measure 7]
+    s1 * 3/4
+
+    % [RH.InsertVoice.1 measure 8]
+    s1 * 3/4
+
+    % [RH.InsertVoice.1 measure 9]
+    s1 * 5/4
+
+    % [RH.InsertVoice.1 measure 10]
+    s1 * 1/1
+
+    % [RH.InsertVoice.1 measure 11]
+    s1 * 5/4
+
+    % [RH.InsertVoice.1 measure 12]
+    s1 * 3/4
+
+    % [RH.InsertVoice.1 measure 13]
+    s1 * 5/4
+
+    % [RH.InsertVoice.1 measure 14]
+    s1 * 1/1
+
+    % [RH.InsertVoice.1 measure 15]
+    s1 * 5/4
+
+    % [RH.InsertVoice.1 measure 16]
+    s1 * 1/1
+
+    % [RH.InsertVoice.1 measure 17]
+    s1 * 1/4
+
+    % [RH.InsertVoice.1 measure 18]
+    s1 * 7/8
+
+    % [RH.InsertVoice.1 measure 19]
+    s1 * 1/1
+
+    % [RH.InsertVoice.1 measure 20]
+    s1 * 1/2
+
+    % [RH.InsertVoice.1 measure 21]
+    s1 * 1/4
+
+    % [RH.InsertVoice.1 measure 22]
+    s1 * 1/2
+
+    % [RH.InsertVoice.1 measure 23]
+    s1 * 1/1
+
+    % [RH.InsertVoice.1 measure 24]
+    s1 * 1/2
+
+    % [RH.InsertVoice.1 measure 25]
+    s1 * 1/1
+
+    % [RH.InsertVoice.1 measure 26]
+    s1 * 3/4
+
+    % [RH.InsertVoice.1 measure 27]
+    s1 * 5/8
+
+    % [RH.InsertVoice.1 measure 28]
+    s1 * 1/2
+
+    % [RH.InsertVoice.1 measure 29]
+    s1 * 3/4
+
+    % [RH.InsertVoice.1 measure 30]
+    s1 * 1/2
+
+    % [RH.InsertVoice.1 measure 31]
+    s1 * 5/8
+
+    % [RH.InsertVoice.1 measure 32]
+    s1 * 1/4
+
+    % [RH.InsertVoice.1 measure 33]
+    s1 * 7/4
+
+    % [RH.InsertVoice.1 measure 34]
+    s1 * 3/2
+
+    % [RH.InsertVoice.1 measure 35]
+    s1 * 1/1
+
+    % [RH.InsertVoice.1 measure 36]
+    s1 * 1/1
+
+    % [RH.InsertVoice.1 measure 37]
+    s1 * 3/2
+
+    % [RH.InsertVoice.1 measure 38]
+    s1 * 1/1
+
+    % [RH.InsertVoice.1 measure 39]
+    s1 * 1/2
+
+    % [RH.InsertVoice.1 measure 40]
+    s1 * 1/1
+
+    % [RH.InsertVoice.1 measure 41]
+    s1 * 1/1
+
+    % [RH.InsertVoice.1 measure 42]
+    s1 * 1/1
+
+    % [RH.InsertVoice.1 measure 43]
+    s1 * 3/2
+
+    % [RH.InsertVoice.1 measure 44]
+    s1 * 4/1
 
 }
 
@@ -1793,33 +1956,71 @@ number.4.RH.Music.2 = {
     % [RH.Music.2 measure 1]
     s1 * 3/2
 
+    \scaleDurations #'(1 . 1)
     {
 
-        \scaleDurations #'(1 . 1)
-        {
-
-            % [RH.Music.2 measure 2]
-            \arpeggioArrowUp
-            \once \override Script.direction = #up
-            <a g' af'! b' cs''! f'' ef'''! c''''>2.
-            - \marcato
-              %! EXPLICIT_DYNAMIC_COLOR
-              %! EXPLICIT_DYNAMIC
-            - \tweak color #(x11-color 'blue)
-              %! EXPLICIT_DYNAMIC
-            \ff
-            \arpeggio
-              %! FIGURE_LABEL
-            %@% - \tweak color #blue
-              %! FIGURE_LABEL
-            %@% ^ \markup \concat { [ \raise #0.25 \fontsize #-2 (2) \hspace #1 "4.6.R.2" ] }
-
-        }
+        % [RH.Music.2 measure 2]
+        \arpeggioArrowUp
+        \once \override Script.direction = #up
+        <a g' af'! b' cs''! f'' ef'''! c''''>2.
+        - \marcato
+          %! EXPLICIT_DYNAMIC_COLOR
+          %! EXPLICIT_DYNAMIC
+        - \tweak color #(x11-color 'blue)
+          %! EXPLICIT_DYNAMIC
+        \ff
+        \arpeggio
+          %! FIGURE_LABEL
+        %@% - \tweak color #blue
+          %! FIGURE_LABEL
+        %@% ^ \markup \concat { [ \raise #0.25 \fontsize #-2 (2) \hspace #1 "4.6.R.2" ] }
 
     }
 
     % [RH.Music.2 measure 3]
-    s1 * 123/8
+    s1 * 3/2
+
+    % [RH.Music.2 measure 4]
+    s1 * 9/8
+
+    % [RH.Music.2 measure 5]
+    s1 * 3/4
+
+    % [RH.Music.2 measure 6]
+    s1 * 3/2
+
+    % [RH.Music.2 measure 7]
+    s1 * 3/4
+
+    % [RH.Music.2 measure 8]
+    s1 * 3/4
+
+    % [RH.Music.2 measure 9]
+    s1 * 5/4
+
+    % [RH.Music.2 measure 10]
+    s1 * 1/1
+
+    % [RH.Music.2 measure 11]
+    s1 * 5/4
+
+    % [RH.Music.2 measure 12]
+    s1 * 3/4
+
+    % [RH.Music.2 measure 13]
+    s1 * 5/4
+
+    % [RH.Music.2 measure 14]
+    s1 * 1/1
+
+    % [RH.Music.2 measure 15]
+    s1 * 5/4
+
+    % [RH.Music.2 measure 16]
+    s1 * 1/1
+
+    % [RH.Music.2 measure 17]
+    s1 * 1/4
 
     {
         \override TupletBracket.stencil = ##f
@@ -1873,7 +2074,13 @@ number.4.RH.Music.2 = {
     }
 
     % [RH.Music.2 measure 20]
-    s1 * 5/4
+    s1 * 1/2
+
+    % [RH.Music.2 measure 21]
+    s1 * 1/4
+
+    % [RH.Music.2 measure 22]
+    s1 * 1/2
 
     {
         \override TupletBracket.stencil = ##f
@@ -1918,7 +2125,10 @@ number.4.RH.Music.2 = {
     }
 
     % [RH.Music.2 measure 25]
-    s1 * 7/4
+    s1 * 1/1
+
+    % [RH.Music.2 measure 26]
+    s1 * 3/4
 
     {
         \override TupletBracket.stencil = ##f
@@ -1981,7 +2191,16 @@ number.4.RH.Music.2 = {
     }
 
     % [RH.Music.2 measure 31]
-    s1 * 33/8
+    s1 * 5/8
+
+    % [RH.Music.2 measure 32]
+    s1 * 1/4
+
+    % [RH.Music.2 measure 33]
+    s1 * 7/4
+
+    % [RH.Music.2 measure 34]
+    s1 * 3/2
 
     {
 
@@ -2253,25 +2472,21 @@ number.4.RH.Music.2 = {
 
     }
 
+    \scaleDurations #'(1 . 1)
     {
 
-        \scaleDurations #'(1 . 1)
-        {
-
-            % [RH.Music.2 measure 37]
-            \arpeggioArrowUp
-              %! REPEAT_PITCH_CLASS_COLORING
-            %@% \baca-repeat-pitch-class-coloring
-            \once \override Script.direction = #up
-            <a g' af'! b' cs''! f'' ef'''! c''''>1.
-            - \marcato
-            \arpeggio
-              %! FIGURE_LABEL
-            %@% - \tweak color #blue
-              %! FIGURE_LABEL
-            %@% ^ \markup \concat { [ \raise #0.25 \fontsize #-2 (42) \hspace #1 "4.6.R.2'" ] }
-
-        }
+        % [RH.Music.2 measure 37]
+        \arpeggioArrowUp
+          %! REPEAT_PITCH_CLASS_COLORING
+        %@% \baca-repeat-pitch-class-coloring
+        \once \override Script.direction = #up
+        <a g' af'! b' cs''! f'' ef'''! c''''>1.
+        - \marcato
+        \arpeggio
+          %! FIGURE_LABEL
+        %@% - \tweak color #blue
+          %! FIGURE_LABEL
+        %@% ^ \markup \concat { [ \raise #0.25 \fontsize #-2 (42) \hspace #1 "4.6.R.2'" ] }
 
     }
 
@@ -2509,120 +2724,104 @@ number.4.RH.Music.2 = {
 
     }
 
+    \scaleDurations #'(1 . 1)
     {
 
-        \scaleDurations #'(1 . 1)
-        {
-
-            % [RH.Music.2 measure 40]
-            \arpeggioArrowUp
-              %! REPEAT_PITCH_CLASS_COLORING
-            %@% \baca-repeat-pitch-class-coloring
-            \once \override Script.direction = #up
-            <f'' ef'''! c'''' e'''' fs''''! bf''''!>1
-            - \marcato
-            \arpeggio
-              %! FIGURE_LABEL
-            %@% - \tweak color #blue
-              %! FIGURE_LABEL
-            %@% ^ \markup \concat { [ \raise #0.25 \fontsize #-2 (45) \hspace #1 "4.6.R.3" ] }
-
-        }
+        % [RH.Music.2 measure 40]
+        \arpeggioArrowUp
+          %! REPEAT_PITCH_CLASS_COLORING
+        %@% \baca-repeat-pitch-class-coloring
+        \once \override Script.direction = #up
+        <f'' ef'''! c'''' e'''' fs''''! bf''''!>1
+        - \marcato
+        \arpeggio
+          %! FIGURE_LABEL
+        %@% - \tweak color #blue
+          %! FIGURE_LABEL
+        %@% ^ \markup \concat { [ \raise #0.25 \fontsize #-2 (45) \hspace #1 "4.6.R.3" ] }
 
     }
 
+    \scaleDurations #'(1 . 1)
     {
 
-        \scaleDurations #'(1 . 1)
-        {
-
-            % [RH.Music.2 measure 41]
-            \arpeggioArrowUp
-              %! REPEAT_PITCH_CLASS_COLORING
-            %@% \baca-repeat-pitch-class-coloring
-            \once \override Script.direction = #up
-            <a g' af'! b' cs''! f'' ef'''! c''''>1
-            - \marcato
-            \arpeggio
-              %! FIGURE_LABEL
-            %@% - \tweak color #blue
-              %! FIGURE_LABEL
-            %@% ^ \markup \concat { [ \raise #0.25 \fontsize #-2 (46) \hspace #1 "4.6.R.4" ] }
-
-        }
+        % [RH.Music.2 measure 41]
+        \arpeggioArrowUp
+          %! REPEAT_PITCH_CLASS_COLORING
+        %@% \baca-repeat-pitch-class-coloring
+        \once \override Script.direction = #up
+        <a g' af'! b' cs''! f'' ef'''! c''''>1
+        - \marcato
+        \arpeggio
+          %! FIGURE_LABEL
+        %@% - \tweak color #blue
+          %! FIGURE_LABEL
+        %@% ^ \markup \concat { [ \raise #0.25 \fontsize #-2 (46) \hspace #1 "4.6.R.4" ] }
 
     }
 
+    \scaleDurations #'(1 . 1)
     {
 
-        \scaleDurations #'(1 . 1)
-        {
-
-            % [RH.Music.2 measure 42]
-            \arpeggioArrowUp
-              %! REPEAT_PITCH_CLASS_COLORING
-            %@% \baca-repeat-pitch-class-coloring
-            \once \override Script.direction = #up
-            <e' fs'! bf'! a'' g''' af'''! b''' cs''''!>1
-            - \marcato
-            \arpeggio
-              %! FIGURE_LABEL
-            %@% - \tweak color #blue
-              %! FIGURE_LABEL
-            %@% ^ \markup \concat { [ \raise #0.25 \fontsize #-2 (47) \hspace #1 "4.6.R.5" ] }
-
-        }
+        % [RH.Music.2 measure 42]
+        \arpeggioArrowUp
+          %! REPEAT_PITCH_CLASS_COLORING
+        %@% \baca-repeat-pitch-class-coloring
+        \once \override Script.direction = #up
+        <e' fs'! bf'! a'' g''' af'''! b''' cs''''!>1
+        - \marcato
+        \arpeggio
+          %! FIGURE_LABEL
+        %@% - \tweak color #blue
+          %! FIGURE_LABEL
+        %@% ^ \markup \concat { [ \raise #0.25 \fontsize #-2 (47) \hspace #1 "4.6.R.5" ] }
 
     }
 
     % [RH.Music.2 measure 43]
     s1 * 3/2
 
+    \scaleDurations #'(1 . 1)
     {
 
-        \scaleDurations #'(1 . 1)
-        {
+        % [RH.Music.2 measure 44]
+        \dynamicUp
+        \override Script.direction = #up
+        \override Stem.direction = #up
+        \override TextScript.direction = #up
+        c'''8
+        - \accent
+          %! EXPLICIT_DYNAMIC_COLOR
+          %! EXPLICIT_DYNAMIC
+        - \tweak color #(x11-color 'blue)
+          %! EXPLICIT_DYNAMIC
+        \fff
+          %! FIGURE_LABEL
+        %@% - \tweak color #blue
+          %! FIGURE_LABEL
+        %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (50) \hspace #1 "5.1.R.1" ] }
 
-            % [RH.Music.2 measure 44]
-            \dynamicUp
-            \override Script.direction = #up
-            \override Stem.direction = #up
-            \override TextScript.direction = #up
-            c'''8
-            - \accent
-              %! EXPLICIT_DYNAMIC_COLOR
-              %! EXPLICIT_DYNAMIC
-            - \tweak color #(x11-color 'blue)
-              %! EXPLICIT_DYNAMIC
-            \fff
-              %! FIGURE_LABEL
-            %@% - \tweak color #blue
-              %! FIGURE_LABEL
-            %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (50) \hspace #1 "5.1.R.1" ] }
+        \override Rest.direction = #up
+        r2..
 
-            \override Rest.direction = #up
-            r2..
+        d'''8
+        - \accent
 
-            d'''8
-            - \accent
+        r2..
 
-            r2..
+        ef''''!8
+        - \accent
 
-            ef''''!8
-            - \accent
+        r2..
 
-            r2..
+        f''''8
+        - \accent
+        \revert Stem.direction
 
-            f''''8
-            - \accent
-            \revert Stem.direction
-
-            r2..
-            \revert Rest.direction
-            \revert Script.direction
-            \revert TextScript.direction
-
-        }
+        r2..
+        \revert Rest.direction
+        \revert Script.direction
+        \revert TextScript.direction
 
     }
 
@@ -2632,311 +2831,504 @@ number.4.RH.Music.2 = {
 number.4.RH.InsertVoice.2 = {
 
     % [RH.InsertVoice.2 measure 1]
-    s1 * 44/1
+    s1 * 3/2
+
+    % [RH.InsertVoice.2 measure 2]
+    s1 * 3/4
+
+    % [RH.InsertVoice.2 measure 3]
+    s1 * 3/2
+
+    % [RH.InsertVoice.2 measure 4]
+    s1 * 9/8
+
+    % [RH.InsertVoice.2 measure 5]
+    s1 * 3/4
+
+    % [RH.InsertVoice.2 measure 6]
+    s1 * 3/2
+
+    % [RH.InsertVoice.2 measure 7]
+    s1 * 3/4
+
+    % [RH.InsertVoice.2 measure 8]
+    s1 * 3/4
+
+    % [RH.InsertVoice.2 measure 9]
+    s1 * 5/4
+
+    % [RH.InsertVoice.2 measure 10]
+    s1 * 1/1
+
+    % [RH.InsertVoice.2 measure 11]
+    s1 * 5/4
+
+    % [RH.InsertVoice.2 measure 12]
+    s1 * 3/4
+
+    % [RH.InsertVoice.2 measure 13]
+    s1 * 5/4
+
+    % [RH.InsertVoice.2 measure 14]
+    s1 * 1/1
+
+    % [RH.InsertVoice.2 measure 15]
+    s1 * 5/4
+
+    % [RH.InsertVoice.2 measure 16]
+    s1 * 1/1
+
+    % [RH.InsertVoice.2 measure 17]
+    s1 * 1/4
+
+    % [RH.InsertVoice.2 measure 18]
+    s1 * 7/8
+
+    % [RH.InsertVoice.2 measure 19]
+    s1 * 1/1
+
+    % [RH.InsertVoice.2 measure 20]
+    s1 * 1/2
+
+    % [RH.InsertVoice.2 measure 21]
+    s1 * 1/4
+
+    % [RH.InsertVoice.2 measure 22]
+    s1 * 1/2
+
+    % [RH.InsertVoice.2 measure 23]
+    s1 * 1/1
+
+    % [RH.InsertVoice.2 measure 24]
+    s1 * 1/2
+
+    % [RH.InsertVoice.2 measure 25]
+    s1 * 1/1
+
+    % [RH.InsertVoice.2 measure 26]
+    s1 * 3/4
+
+    % [RH.InsertVoice.2 measure 27]
+    s1 * 5/8
+
+    % [RH.InsertVoice.2 measure 28]
+    s1 * 1/2
+
+    % [RH.InsertVoice.2 measure 29]
+    s1 * 3/4
+
+    % [RH.InsertVoice.2 measure 30]
+    s1 * 1/2
+
+    % [RH.InsertVoice.2 measure 31]
+    s1 * 5/8
+
+    % [RH.InsertVoice.2 measure 32]
+    s1 * 1/4
+
+    % [RH.InsertVoice.2 measure 33]
+    s1 * 7/4
+
+    % [RH.InsertVoice.2 measure 34]
+    s1 * 3/2
+
+    % [RH.InsertVoice.2 measure 35]
+    s1 * 1/1
+
+    % [RH.InsertVoice.2 measure 36]
+    s1 * 1/1
+
+    % [RH.InsertVoice.2 measure 37]
+    s1 * 3/2
+
+    % [RH.InsertVoice.2 measure 38]
+    s1 * 1/1
+
+    % [RH.InsertVoice.2 measure 39]
+    s1 * 1/2
+
+    % [RH.InsertVoice.2 measure 40]
+    s1 * 1/1
+
+    % [RH.InsertVoice.2 measure 41]
+    s1 * 1/1
+
+    % [RH.InsertVoice.2 measure 42]
+    s1 * 1/1
+
+    % [RH.InsertVoice.2 measure 43]
+    s1 * 3/2
+
+    % [RH.InsertVoice.2 measure 44]
+    s1 * 4/1
 
 }
 
 
 number.4.RH.Music.3 = {
 
+    \tweak text #tuplet-number::calc-fraction-text
+    \times 12/11
     {
 
-        \tweak text #tuplet-number::calc-fraction-text
-        \times 12/11
-        {
+        % [RH.Music.3 measure 1]
+        \override Stem.direction = #up
+        \override TextScript.direction = #up
+        \override TupletBracket.direction = #up
+        \override TupletBracket.staff-padding = 3
+        ef!8
+        - \tenuto
+          %! EXPLICIT_DYNAMIC_COLOR
+          %! EXPLICIT_DYNAMIC
+        - \tweak color #(x11-color 'blue)
+          %! EXPLICIT_DYNAMIC
+        \ff
+          %! FIGURE_LABEL
+        %@% - \tweak color #blue
+          %! FIGURE_LABEL
+        %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (1) \hspace #1 "4.1.R.1" ] }
 
-            % [RH.Music.3 measure 1]
-            \override Stem.direction = #up
-            \override TextScript.direction = #up
-            \override TupletBracket.direction = #up
-            \override TupletBracket.staff-padding = 3
-            ef!8
-            - \tenuto
-              %! EXPLICIT_DYNAMIC_COLOR
-              %! EXPLICIT_DYNAMIC
-            - \tweak color #(x11-color 'blue)
-              %! EXPLICIT_DYNAMIC
-            \ff
-              %! FIGURE_LABEL
-            %@% - \tweak color #blue
-              %! FIGURE_LABEL
-            %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (1) \hspace #1 "4.1.R.1" ] }
+        r4
 
-            r4
+        cs'!8
+        - \tenuto
 
-            cs'!8
-            - \tenuto
+        r4
 
-            r4
+        c'4
+        - \tenuto
 
-            c'4
-            - \tenuto
+        bf'!8
+        - \tenuto
+        \revert Stem.direction
 
-            bf'!8
-            - \tenuto
-            \revert Stem.direction
-
-            r4
-            \revert TextScript.direction
-            \revert TupletBracket.direction
-            \revert TupletBracket.staff-padding
-
-        }
+        r4
+        \revert TextScript.direction
+        \revert TupletBracket.direction
+        \revert TupletBracket.staff-padding
 
     }
 
     % [RH.Music.3 measure 2]
     s1 * 3/4
 
+    \tweak text #tuplet-number::calc-fraction-text
+    \times 6/7
     {
 
-        \tweak text #tuplet-number::calc-fraction-text
-        \times 6/7
-        {
+        % [RH.Music.3 measure 3]
+        \override TupletBracket.direction = #up
+        \override TupletBracket.staff-padding = 4
+        r4
 
-            % [RH.Music.3 measure 3]
-            \override TupletBracket.direction = #up
-            \override TupletBracket.staff-padding = 4
-            r4
+        \override Stem.direction = #up
+        ef''!8
+        - \tenuto
+          %! FIGURE_LABEL
+        %@% - \tweak color #blue
+          %! FIGURE_LABEL
+        %@% ^ \markup \concat { [ \raise #0.25 \fontsize #-2 (3) \hspace #1 "4.1.R.2" ] }
 
-            \override Stem.direction = #up
-            ef''!8
-            - \tenuto
-              %! FIGURE_LABEL
-            %@% - \tweak color #blue
-              %! FIGURE_LABEL
-            %@% ^ \markup \concat { [ \raise #0.25 \fontsize #-2 (3) \hspace #1 "4.1.R.2" ] }
+        r4
 
-            r4
+        cs''!4
+        - \tenuto
 
-            cs''!4
-            - \tenuto
+        r4
 
-            r4
+        c'8
+        - \tenuto
 
-            c'8
-            - \tenuto
+        r4
 
-            r4
-
-            bf!4
-            - \tenuto
-            \revert Stem.direction
-            \revert TupletBracket.direction
-            \revert TupletBracket.staff-padding
-
-        }
+        bf!4
+        - \tenuto
+        \revert Stem.direction
+        \revert TupletBracket.direction
+        \revert TupletBracket.staff-padding
 
     }
 
     % [RH.Music.3 measure 4]
     s1 * 9/8
 
+    \scaleDurations #'(1 . 1)
     {
 
-        \scaleDurations #'(1 . 1)
-        {
-
-            % [RH.Music.3 measure 5]
-            r2.
-
-        }
+        % [RH.Music.3 measure 5]
+        r2.
 
     }
 
+    \tweak text #tuplet-number::calc-fraction-text
+    \times 12/11
     {
 
-        \tweak text #tuplet-number::calc-fraction-text
-        \times 12/11
-        {
+        % [RH.Music.3 measure 6]
+        \override Stem.direction = #up
+        \override TupletBracket.direction = #up
+        ef'!8
+        - \tenuto
+          %! FIGURE_LABEL
+        %@% - \tweak color #blue
+          %! FIGURE_LABEL
+        %@% ^ \markup \concat { [ \raise #0.25 \fontsize #-2 (5) \hspace #1 "4.1.R.3" ] }
 
-            % [RH.Music.3 measure 6]
-            \override Stem.direction = #up
-            \override TupletBracket.direction = #up
-            ef'!8
-            - \tenuto
-              %! FIGURE_LABEL
-            %@% - \tweak color #blue
-              %! FIGURE_LABEL
-            %@% ^ \markup \concat { [ \raise #0.25 \fontsize #-2 (5) \hspace #1 "4.1.R.3" ] }
+        r4
 
-            r4
+        cs'!8
+        - \tenuto
 
-            cs'!8
-            - \tenuto
+        r4
 
-            r4
+        c'4
+        - \tenuto
 
-            c'4
-            - \tenuto
+        bf!8
+        - \tenuto
+        \revert Stem.direction
 
-            bf!8
-            - \tenuto
-            \revert Stem.direction
-
-            r4
-            \revert TupletBracket.direction
-
-        }
+        r4
+        \revert TupletBracket.direction
 
     }
 
+    \scaleDurations #'(1 . 1)
     {
 
-        \scaleDurations #'(1 . 1)
-        {
-
-            % [RH.Music.3 measure 7]
-            r2.
-
-        }
+        % [RH.Music.3 measure 7]
+        r2.
 
     }
 
     % [RH.Music.3 measure 8]
-    s1 * 99/8
+    s1 * 3/4
 
+    % [RH.Music.3 measure 9]
+    s1 * 5/4
+
+    % [RH.Music.3 measure 10]
+    s1 * 1/1
+
+    % [RH.Music.3 measure 11]
+    s1 * 5/4
+
+    % [RH.Music.3 measure 12]
+    s1 * 3/4
+
+    % [RH.Music.3 measure 13]
+    s1 * 5/4
+
+    % [RH.Music.3 measure 14]
+    s1 * 1/1
+
+    % [RH.Music.3 measure 15]
+    s1 * 5/4
+
+    % [RH.Music.3 measure 16]
+    s1 * 1/1
+
+    % [RH.Music.3 measure 17]
+    s1 * 1/4
+
+    % [RH.Music.3 measure 18]
+    s1 * 7/8
+
+    % [RH.Music.3 measure 19]
+    s1 * 1/1
+
+    % [RH.Music.3 measure 20]
+    s1 * 1/2
+
+    % [RH.Music.3 measure 21]
+    s1 * 1/4
+
+    \scaleDurations #'(1 . 1)
     {
 
-        \scaleDurations #'(1 . 1)
-        {
+        % [RH.Music.3 measure 22]
+        \override Stem.direction = #down
+        \override TupletBracket.direction = #down
+        af'''!8
+        - \tenuto
+          %! FIGURE_LABEL
+        %@% - \tweak color #blue
+          %! FIGURE_LABEL
+        %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (23) \hspace #1 "5.2.R.13" ] }
+        [
+          %! SPANNER_START
+        (
 
-            % [RH.Music.3 measure 22]
-            \override Stem.direction = #down
-            \override TupletBracket.direction = #down
-            af'''!8
-            - \tenuto
-              %! FIGURE_LABEL
-            %@% - \tweak color #blue
-              %! FIGURE_LABEL
-            %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (23) \hspace #1 "5.2.R.13" ] }
-            [
-              %! SPANNER_START
-            (
+        ef'''!8
+        - \tenuto
 
-            ef'''!8
-            - \tenuto
+        f'''8
+        - \tenuto
 
-            f'''8
-            - \tenuto
-
-            fs'''!8
-            - \tenuto
-              %! SPANNER_STOP
-            )
-            ]
-            \revert Stem.direction
-            \revert TupletBracket.direction
-
-        }
+        fs'''!8
+        - \tenuto
+          %! SPANNER_STOP
+        )
+        ]
+        \revert Stem.direction
+        \revert TupletBracket.direction
 
     }
 
     % [RH.Music.3 measure 23]
-    s1 * 71/4
+    s1 * 1/1
 
+    % [RH.Music.3 measure 24]
+    s1 * 1/2
+
+    % [RH.Music.3 measure 25]
+    s1 * 1/1
+
+    % [RH.Music.3 measure 26]
+    s1 * 3/4
+
+    % [RH.Music.3 measure 27]
+    s1 * 5/8
+
+    % [RH.Music.3 measure 28]
+    s1 * 1/2
+
+    % [RH.Music.3 measure 29]
+    s1 * 3/4
+
+    % [RH.Music.3 measure 30]
+    s1 * 1/2
+
+    % [RH.Music.3 measure 31]
+    s1 * 5/8
+
+    % [RH.Music.3 measure 32]
+    s1 * 1/4
+
+    % [RH.Music.3 measure 33]
+    s1 * 7/4
+
+    % [RH.Music.3 measure 34]
+    s1 * 3/2
+
+    % [RH.Music.3 measure 35]
+    s1 * 1/1
+
+    % [RH.Music.3 measure 36]
+    s1 * 1/1
+
+    % [RH.Music.3 measure 37]
+    s1 * 3/2
+
+    % [RH.Music.3 measure 38]
+    s1 * 1/1
+
+    % [RH.Music.3 measure 39]
+    s1 * 1/2
+
+    % [RH.Music.3 measure 40]
+    s1 * 1/1
+
+    % [RH.Music.3 measure 41]
+    s1 * 1/1
+
+    % [RH.Music.3 measure 42]
+    s1 * 1/1
+
+    \tweak text #tuplet-number::calc-fraction-text
+    \times 6/7
     {
 
-        \tweak text #tuplet-number::calc-fraction-text
-        \times 6/7
-        {
+        % [RH.Music.3 measure 43]
+        \override TextScript.direction = #up
+        \override TupletBracket.direction = #up
+        \override TupletBracket.staff-padding = 4
+        r4
 
-            % [RH.Music.3 measure 43]
-            \override TextScript.direction = #up
-            \override TupletBracket.direction = #up
-            \override TupletBracket.staff-padding = 4
-            r4
+        \override Stem.direction = #up
+        ef''!8
+        - \tenuto
+          %! EXPLICIT_DYNAMIC_COLOR
+          %! EXPLICIT_DYNAMIC
+        - \tweak color #(x11-color 'blue)
+          %! EXPLICIT_DYNAMIC
+        \mp
+          %! FIGURE_LABEL
+        %@% - \tweak color #blue
+          %! FIGURE_LABEL
+        %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (48) \hspace #1 "4.1.R.2'" ] }
 
-            \override Stem.direction = #up
-            ef''!8
-            - \tenuto
-              %! EXPLICIT_DYNAMIC_COLOR
-              %! EXPLICIT_DYNAMIC
-            - \tweak color #(x11-color 'blue)
-              %! EXPLICIT_DYNAMIC
-            \mp
-              %! FIGURE_LABEL
-            %@% - \tweak color #blue
-              %! FIGURE_LABEL
-            %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (48) \hspace #1 "4.1.R.2'" ] }
+        r4
 
-            r4
+        cs''!4
+        - \tenuto
 
-            cs''!4
-            - \tenuto
+        r4
 
-            r4
+        c'8
+        - \tenuto
 
-            c'8
-            - \tenuto
+        r4
 
-            r4
-
-            bf!4
-            - \tenuto
-            \revert Stem.direction
-            \revert TextScript.direction
-            \revert TupletBracket.direction
-            \revert TupletBracket.staff-padding
-
-        }
+        bf!4
+        - \tenuto
+        \revert Stem.direction
+        \revert TextScript.direction
+        \revert TupletBracket.direction
+        \revert TupletBracket.staff-padding
 
     }
 
+    \tweak text #tuplet-number::calc-fraction-text
+    \times 8/5
     {
 
-        \tweak text #tuplet-number::calc-fraction-text
-        \times 8/5
-        {
+        % [RH.Music.3 measure 44]
+          %! SPANNER_START
+        \ottava 1
+        \override Stem.direction = #down
+        \override TupletBracket.direction = #down
+        \override TupletBracket.staff-padding = 3
+        a''4
+        - \tenuto
+          %! EXPLICIT_DYNAMIC_COLOR
+          %! EXPLICIT_DYNAMIC
+        - \tweak color #(x11-color 'blue)
+          %! EXPLICIT_DYNAMIC
+        \mf
+          %! FIGURE_LABEL
+        %@% - \tweak color #blue
+          %! FIGURE_LABEL
+        %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (51) \hspace #1 "5.1.L.1" ] }
 
-            % [RH.Music.3 measure 44]
-              %! SPANNER_START
-            \ottava 1
-            \override Stem.direction = #down
-            \override TupletBracket.direction = #down
-            \override TupletBracket.staff-padding = 3
-            a''4
-            - \tenuto
-              %! EXPLICIT_DYNAMIC_COLOR
-              %! EXPLICIT_DYNAMIC
-            - \tweak color #(x11-color 'blue)
-              %! EXPLICIT_DYNAMIC
-            \mf
-              %! FIGURE_LABEL
-            %@% - \tweak color #blue
-              %! FIGURE_LABEL
-            %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (51) \hspace #1 "5.1.L.1" ] }
+        \override Rest.direction = #down
+        r4
 
-            \override Rest.direction = #down
-            r4
+        cs''!4
+        - \tenuto
 
-            cs''!4
-            - \tenuto
+        r4
 
-            r4
+        b''4
+        - \tenuto
 
-            b''4
-            - \tenuto
+        r4
 
-            r4
+        af''!4
+        - \tenuto
 
-            af''!4
-            - \tenuto
+        r4
 
-            r4
+        g'''4
+        - \tenuto
+          %! SPANNER_STOP
+        \ottava 0
+        \revert Stem.direction
 
-            g'''4
-            - \tenuto
-              %! SPANNER_STOP
-            \ottava 0
-            \revert Stem.direction
-
-            r4
-            \revert Rest.direction
-            \revert TupletBracket.direction
-            \revert TupletBracket.staff-padding
-
-        }
+        r4
+        \revert Rest.direction
+        \revert TupletBracket.direction
+        \revert TupletBracket.staff-padding
 
     }
 
@@ -2946,7 +3338,136 @@ number.4.RH.Music.3 = {
 number.4.RH.InsertVoice.3 = {
 
     % [RH.InsertVoice.3 measure 1]
-    s1 * 44/1
+    s1 * 3/2
+
+    % [RH.InsertVoice.3 measure 2]
+    s1 * 3/4
+
+    % [RH.InsertVoice.3 measure 3]
+    s1 * 3/2
+
+    % [RH.InsertVoice.3 measure 4]
+    s1 * 9/8
+
+    % [RH.InsertVoice.3 measure 5]
+    s1 * 3/4
+
+    % [RH.InsertVoice.3 measure 6]
+    s1 * 3/2
+
+    % [RH.InsertVoice.3 measure 7]
+    s1 * 3/4
+
+    % [RH.InsertVoice.3 measure 8]
+    s1 * 3/4
+
+    % [RH.InsertVoice.3 measure 9]
+    s1 * 5/4
+
+    % [RH.InsertVoice.3 measure 10]
+    s1 * 1/1
+
+    % [RH.InsertVoice.3 measure 11]
+    s1 * 5/4
+
+    % [RH.InsertVoice.3 measure 12]
+    s1 * 3/4
+
+    % [RH.InsertVoice.3 measure 13]
+    s1 * 5/4
+
+    % [RH.InsertVoice.3 measure 14]
+    s1 * 1/1
+
+    % [RH.InsertVoice.3 measure 15]
+    s1 * 5/4
+
+    % [RH.InsertVoice.3 measure 16]
+    s1 * 1/1
+
+    % [RH.InsertVoice.3 measure 17]
+    s1 * 1/4
+
+    % [RH.InsertVoice.3 measure 18]
+    s1 * 7/8
+
+    % [RH.InsertVoice.3 measure 19]
+    s1 * 1/1
+
+    % [RH.InsertVoice.3 measure 20]
+    s1 * 1/2
+
+    % [RH.InsertVoice.3 measure 21]
+    s1 * 1/4
+
+    % [RH.InsertVoice.3 measure 22]
+    s1 * 1/2
+
+    % [RH.InsertVoice.3 measure 23]
+    s1 * 1/1
+
+    % [RH.InsertVoice.3 measure 24]
+    s1 * 1/2
+
+    % [RH.InsertVoice.3 measure 25]
+    s1 * 1/1
+
+    % [RH.InsertVoice.3 measure 26]
+    s1 * 3/4
+
+    % [RH.InsertVoice.3 measure 27]
+    s1 * 5/8
+
+    % [RH.InsertVoice.3 measure 28]
+    s1 * 1/2
+
+    % [RH.InsertVoice.3 measure 29]
+    s1 * 3/4
+
+    % [RH.InsertVoice.3 measure 30]
+    s1 * 1/2
+
+    % [RH.InsertVoice.3 measure 31]
+    s1 * 5/8
+
+    % [RH.InsertVoice.3 measure 32]
+    s1 * 1/4
+
+    % [RH.InsertVoice.3 measure 33]
+    s1 * 7/4
+
+    % [RH.InsertVoice.3 measure 34]
+    s1 * 3/2
+
+    % [RH.InsertVoice.3 measure 35]
+    s1 * 1/1
+
+    % [RH.InsertVoice.3 measure 36]
+    s1 * 1/1
+
+    % [RH.InsertVoice.3 measure 37]
+    s1 * 3/2
+
+    % [RH.InsertVoice.3 measure 38]
+    s1 * 1/1
+
+    % [RH.InsertVoice.3 measure 39]
+    s1 * 1/2
+
+    % [RH.InsertVoice.3 measure 40]
+    s1 * 1/1
+
+    % [RH.InsertVoice.3 measure 41]
+    s1 * 1/1
+
+    % [RH.InsertVoice.3 measure 42]
+    s1 * 1/1
+
+    % [RH.InsertVoice.3 measure 43]
+    s1 * 3/2
+
+    % [RH.InsertVoice.3 measure 44]
+    s1 * 4/1
 
 }
 
@@ -2954,7 +3475,136 @@ number.4.RH.InsertVoice.3 = {
 number.4.RH.Music.4 = {
 
     % [RH.Music.4 measure 1]
-    s1 * 44/1
+    s1 * 3/2
+
+    % [RH.Music.4 measure 2]
+    s1 * 3/4
+
+    % [RH.Music.4 measure 3]
+    s1 * 3/2
+
+    % [RH.Music.4 measure 4]
+    s1 * 9/8
+
+    % [RH.Music.4 measure 5]
+    s1 * 3/4
+
+    % [RH.Music.4 measure 6]
+    s1 * 3/2
+
+    % [RH.Music.4 measure 7]
+    s1 * 3/4
+
+    % [RH.Music.4 measure 8]
+    s1 * 3/4
+
+    % [RH.Music.4 measure 9]
+    s1 * 5/4
+
+    % [RH.Music.4 measure 10]
+    s1 * 1/1
+
+    % [RH.Music.4 measure 11]
+    s1 * 5/4
+
+    % [RH.Music.4 measure 12]
+    s1 * 3/4
+
+    % [RH.Music.4 measure 13]
+    s1 * 5/4
+
+    % [RH.Music.4 measure 14]
+    s1 * 1/1
+
+    % [RH.Music.4 measure 15]
+    s1 * 5/4
+
+    % [RH.Music.4 measure 16]
+    s1 * 1/1
+
+    % [RH.Music.4 measure 17]
+    s1 * 1/4
+
+    % [RH.Music.4 measure 18]
+    s1 * 7/8
+
+    % [RH.Music.4 measure 19]
+    s1 * 1/1
+
+    % [RH.Music.4 measure 20]
+    s1 * 1/2
+
+    % [RH.Music.4 measure 21]
+    s1 * 1/4
+
+    % [RH.Music.4 measure 22]
+    s1 * 1/2
+
+    % [RH.Music.4 measure 23]
+    s1 * 1/1
+
+    % [RH.Music.4 measure 24]
+    s1 * 1/2
+
+    % [RH.Music.4 measure 25]
+    s1 * 1/1
+
+    % [RH.Music.4 measure 26]
+    s1 * 3/4
+
+    % [RH.Music.4 measure 27]
+    s1 * 5/8
+
+    % [RH.Music.4 measure 28]
+    s1 * 1/2
+
+    % [RH.Music.4 measure 29]
+    s1 * 3/4
+
+    % [RH.Music.4 measure 30]
+    s1 * 1/2
+
+    % [RH.Music.4 measure 31]
+    s1 * 5/8
+
+    % [RH.Music.4 measure 32]
+    s1 * 1/4
+
+    % [RH.Music.4 measure 33]
+    s1 * 7/4
+
+    % [RH.Music.4 measure 34]
+    s1 * 3/2
+
+    % [RH.Music.4 measure 35]
+    s1 * 1/1
+
+    % [RH.Music.4 measure 36]
+    s1 * 1/1
+
+    % [RH.Music.4 measure 37]
+    s1 * 3/2
+
+    % [RH.Music.4 measure 38]
+    s1 * 1/1
+
+    % [RH.Music.4 measure 39]
+    s1 * 1/2
+
+    % [RH.Music.4 measure 40]
+    s1 * 1/1
+
+    % [RH.Music.4 measure 41]
+    s1 * 1/1
+
+    % [RH.Music.4 measure 42]
+    s1 * 1/1
+
+    % [RH.Music.4 measure 43]
+    s1 * 3/2
+
+    % [RH.Music.4 measure 44]
+    s1 * 4/1
 
 }
 
@@ -2962,7 +3612,136 @@ number.4.RH.Music.4 = {
 number.4.RH.InsertVoice.4 = {
 
     % [RH.InsertVoice.4 measure 1]
-    s1 * 44/1
+    s1 * 3/2
+
+    % [RH.InsertVoice.4 measure 2]
+    s1 * 3/4
+
+    % [RH.InsertVoice.4 measure 3]
+    s1 * 3/2
+
+    % [RH.InsertVoice.4 measure 4]
+    s1 * 9/8
+
+    % [RH.InsertVoice.4 measure 5]
+    s1 * 3/4
+
+    % [RH.InsertVoice.4 measure 6]
+    s1 * 3/2
+
+    % [RH.InsertVoice.4 measure 7]
+    s1 * 3/4
+
+    % [RH.InsertVoice.4 measure 8]
+    s1 * 3/4
+
+    % [RH.InsertVoice.4 measure 9]
+    s1 * 5/4
+
+    % [RH.InsertVoice.4 measure 10]
+    s1 * 1/1
+
+    % [RH.InsertVoice.4 measure 11]
+    s1 * 5/4
+
+    % [RH.InsertVoice.4 measure 12]
+    s1 * 3/4
+
+    % [RH.InsertVoice.4 measure 13]
+    s1 * 5/4
+
+    % [RH.InsertVoice.4 measure 14]
+    s1 * 1/1
+
+    % [RH.InsertVoice.4 measure 15]
+    s1 * 5/4
+
+    % [RH.InsertVoice.4 measure 16]
+    s1 * 1/1
+
+    % [RH.InsertVoice.4 measure 17]
+    s1 * 1/4
+
+    % [RH.InsertVoice.4 measure 18]
+    s1 * 7/8
+
+    % [RH.InsertVoice.4 measure 19]
+    s1 * 1/1
+
+    % [RH.InsertVoice.4 measure 20]
+    s1 * 1/2
+
+    % [RH.InsertVoice.4 measure 21]
+    s1 * 1/4
+
+    % [RH.InsertVoice.4 measure 22]
+    s1 * 1/2
+
+    % [RH.InsertVoice.4 measure 23]
+    s1 * 1/1
+
+    % [RH.InsertVoice.4 measure 24]
+    s1 * 1/2
+
+    % [RH.InsertVoice.4 measure 25]
+    s1 * 1/1
+
+    % [RH.InsertVoice.4 measure 26]
+    s1 * 3/4
+
+    % [RH.InsertVoice.4 measure 27]
+    s1 * 5/8
+
+    % [RH.InsertVoice.4 measure 28]
+    s1 * 1/2
+
+    % [RH.InsertVoice.4 measure 29]
+    s1 * 3/4
+
+    % [RH.InsertVoice.4 measure 30]
+    s1 * 1/2
+
+    % [RH.InsertVoice.4 measure 31]
+    s1 * 5/8
+
+    % [RH.InsertVoice.4 measure 32]
+    s1 * 1/4
+
+    % [RH.InsertVoice.4 measure 33]
+    s1 * 7/4
+
+    % [RH.InsertVoice.4 measure 34]
+    s1 * 3/2
+
+    % [RH.InsertVoice.4 measure 35]
+    s1 * 1/1
+
+    % [RH.InsertVoice.4 measure 36]
+    s1 * 1/1
+
+    % [RH.InsertVoice.4 measure 37]
+    s1 * 3/2
+
+    % [RH.InsertVoice.4 measure 38]
+    s1 * 1/1
+
+    % [RH.InsertVoice.4 measure 39]
+    s1 * 1/2
+
+    % [RH.InsertVoice.4 measure 40]
+    s1 * 1/1
+
+    % [RH.InsertVoice.4 measure 41]
+    s1 * 1/1
+
+    % [RH.InsertVoice.4 measure 42]
+    s1 * 1/1
+
+    % [RH.InsertVoice.4 measure 43]
+    s1 * 3/2
+
+    % [RH.InsertVoice.4 measure 44]
+    s1 * 4/1
 
 }
 
@@ -2970,28 +3749,147 @@ number.4.RH.InsertVoice.4 = {
 number.4.RH.Music.5 = {
 
     % [RH.Music.5 measure 1]
-    s1 * 139/8
+    s1 * 3/2
 
+    % [RH.Music.5 measure 2]
+    s1 * 3/4
+
+    % [RH.Music.5 measure 3]
+    s1 * 3/2
+
+    % [RH.Music.5 measure 4]
+    s1 * 9/8
+
+    % [RH.Music.5 measure 5]
+    s1 * 3/4
+
+    % [RH.Music.5 measure 6]
+    s1 * 3/2
+
+    % [RH.Music.5 measure 7]
+    s1 * 3/4
+
+    % [RH.Music.5 measure 8]
+    s1 * 3/4
+
+    % [RH.Music.5 measure 9]
+    s1 * 5/4
+
+    % [RH.Music.5 measure 10]
+    s1 * 1/1
+
+    % [RH.Music.5 measure 11]
+    s1 * 5/4
+
+    % [RH.Music.5 measure 12]
+    s1 * 3/4
+
+    % [RH.Music.5 measure 13]
+    s1 * 5/4
+
+    % [RH.Music.5 measure 14]
+    s1 * 1/1
+
+    % [RH.Music.5 measure 15]
+    s1 * 5/4
+
+    % [RH.Music.5 measure 16]
+    s1 * 1/1
+
+    \scaleDurations #'(1 . 1)
     {
 
-        \scaleDurations #'(1 . 1)
-        {
+        % [RH.Music.5 measure 17]
+        <b d' fs'! a'>16
+          %! FIGURE_LABEL
+        %@% - \tweak color #blue
+          %! FIGURE_LABEL
+        %@% ^ \markup \concat { [ \raise #0.25 \fontsize #-2 (20) \hspace #1 "4.2.L.11.U" ] }
 
-            % [RH.Music.5 measure 17]
-            <b d' fs'! a'>16
-              %! FIGURE_LABEL
-            %@% - \tweak color #blue
-              %! FIGURE_LABEL
-            %@% ^ \markup \concat { [ \raise #0.25 \fontsize #-2 (20) \hspace #1 "4.2.L.11.U" ] }
-
-            r8.
-
-        }
+        r8.
 
     }
 
     % [RH.Music.5 measure 18]
-    s1 * 211/8
+    s1 * 7/8
+
+    % [RH.Music.5 measure 19]
+    s1 * 1/1
+
+    % [RH.Music.5 measure 20]
+    s1 * 1/2
+
+    % [RH.Music.5 measure 21]
+    s1 * 1/4
+
+    % [RH.Music.5 measure 22]
+    s1 * 1/2
+
+    % [RH.Music.5 measure 23]
+    s1 * 1/1
+
+    % [RH.Music.5 measure 24]
+    s1 * 1/2
+
+    % [RH.Music.5 measure 25]
+    s1 * 1/1
+
+    % [RH.Music.5 measure 26]
+    s1 * 3/4
+
+    % [RH.Music.5 measure 27]
+    s1 * 5/8
+
+    % [RH.Music.5 measure 28]
+    s1 * 1/2
+
+    % [RH.Music.5 measure 29]
+    s1 * 3/4
+
+    % [RH.Music.5 measure 30]
+    s1 * 1/2
+
+    % [RH.Music.5 measure 31]
+    s1 * 5/8
+
+    % [RH.Music.5 measure 32]
+    s1 * 1/4
+
+    % [RH.Music.5 measure 33]
+    s1 * 7/4
+
+    % [RH.Music.5 measure 34]
+    s1 * 3/2
+
+    % [RH.Music.5 measure 35]
+    s1 * 1/1
+
+    % [RH.Music.5 measure 36]
+    s1 * 1/1
+
+    % [RH.Music.5 measure 37]
+    s1 * 3/2
+
+    % [RH.Music.5 measure 38]
+    s1 * 1/1
+
+    % [RH.Music.5 measure 39]
+    s1 * 1/2
+
+    % [RH.Music.5 measure 40]
+    s1 * 1/1
+
+    % [RH.Music.5 measure 41]
+    s1 * 1/1
+
+    % [RH.Music.5 measure 42]
+    s1 * 1/1
+
+    % [RH.Music.5 measure 43]
+    s1 * 3/2
+
+    % [RH.Music.5 measure 44]
+    s1 * 4/1
 
 }
 
@@ -2999,7 +3897,136 @@ number.4.RH.Music.5 = {
 number.4.RH.Music.6 = {
 
     % [RH.Music.6 measure 1]
-    s1 * 44/1
+    s1 * 3/2
+
+    % [RH.Music.6 measure 2]
+    s1 * 3/4
+
+    % [RH.Music.6 measure 3]
+    s1 * 3/2
+
+    % [RH.Music.6 measure 4]
+    s1 * 9/8
+
+    % [RH.Music.6 measure 5]
+    s1 * 3/4
+
+    % [RH.Music.6 measure 6]
+    s1 * 3/2
+
+    % [RH.Music.6 measure 7]
+    s1 * 3/4
+
+    % [RH.Music.6 measure 8]
+    s1 * 3/4
+
+    % [RH.Music.6 measure 9]
+    s1 * 5/4
+
+    % [RH.Music.6 measure 10]
+    s1 * 1/1
+
+    % [RH.Music.6 measure 11]
+    s1 * 5/4
+
+    % [RH.Music.6 measure 12]
+    s1 * 3/4
+
+    % [RH.Music.6 measure 13]
+    s1 * 5/4
+
+    % [RH.Music.6 measure 14]
+    s1 * 1/1
+
+    % [RH.Music.6 measure 15]
+    s1 * 5/4
+
+    % [RH.Music.6 measure 16]
+    s1 * 1/1
+
+    % [RH.Music.6 measure 17]
+    s1 * 1/4
+
+    % [RH.Music.6 measure 18]
+    s1 * 7/8
+
+    % [RH.Music.6 measure 19]
+    s1 * 1/1
+
+    % [RH.Music.6 measure 20]
+    s1 * 1/2
+
+    % [RH.Music.6 measure 21]
+    s1 * 1/4
+
+    % [RH.Music.6 measure 22]
+    s1 * 1/2
+
+    % [RH.Music.6 measure 23]
+    s1 * 1/1
+
+    % [RH.Music.6 measure 24]
+    s1 * 1/2
+
+    % [RH.Music.6 measure 25]
+    s1 * 1/1
+
+    % [RH.Music.6 measure 26]
+    s1 * 3/4
+
+    % [RH.Music.6 measure 27]
+    s1 * 5/8
+
+    % [RH.Music.6 measure 28]
+    s1 * 1/2
+
+    % [RH.Music.6 measure 29]
+    s1 * 3/4
+
+    % [RH.Music.6 measure 30]
+    s1 * 1/2
+
+    % [RH.Music.6 measure 31]
+    s1 * 5/8
+
+    % [RH.Music.6 measure 32]
+    s1 * 1/4
+
+    % [RH.Music.6 measure 33]
+    s1 * 7/4
+
+    % [RH.Music.6 measure 34]
+    s1 * 3/2
+
+    % [RH.Music.6 measure 35]
+    s1 * 1/1
+
+    % [RH.Music.6 measure 36]
+    s1 * 1/1
+
+    % [RH.Music.6 measure 37]
+    s1 * 3/2
+
+    % [RH.Music.6 measure 38]
+    s1 * 1/1
+
+    % [RH.Music.6 measure 39]
+    s1 * 1/2
+
+    % [RH.Music.6 measure 40]
+    s1 * 1/1
+
+    % [RH.Music.6 measure 41]
+    s1 * 1/1
+
+    % [RH.Music.6 measure 42]
+    s1 * 1/1
+
+    % [RH.Music.6 measure 43]
+    s1 * 3/2
+
+    % [RH.Music.6 measure 44]
+    s1 * 4/1
 
 }
 
@@ -3007,7 +4034,136 @@ number.4.RH.Music.6 = {
 number.4.RH.ResonanceVoice = {
 
     % [RH.ResonanceVoice measure 1]
-    s1 * 44/1
+    s1 * 3/2
+
+    % [RH.ResonanceVoice measure 2]
+    s1 * 3/4
+
+    % [RH.ResonanceVoice measure 3]
+    s1 * 3/2
+
+    % [RH.ResonanceVoice measure 4]
+    s1 * 9/8
+
+    % [RH.ResonanceVoice measure 5]
+    s1 * 3/4
+
+    % [RH.ResonanceVoice measure 6]
+    s1 * 3/2
+
+    % [RH.ResonanceVoice measure 7]
+    s1 * 3/4
+
+    % [RH.ResonanceVoice measure 8]
+    s1 * 3/4
+
+    % [RH.ResonanceVoice measure 9]
+    s1 * 5/4
+
+    % [RH.ResonanceVoice measure 10]
+    s1 * 1/1
+
+    % [RH.ResonanceVoice measure 11]
+    s1 * 5/4
+
+    % [RH.ResonanceVoice measure 12]
+    s1 * 3/4
+
+    % [RH.ResonanceVoice measure 13]
+    s1 * 5/4
+
+    % [RH.ResonanceVoice measure 14]
+    s1 * 1/1
+
+    % [RH.ResonanceVoice measure 15]
+    s1 * 5/4
+
+    % [RH.ResonanceVoice measure 16]
+    s1 * 1/1
+
+    % [RH.ResonanceVoice measure 17]
+    s1 * 1/4
+
+    % [RH.ResonanceVoice measure 18]
+    s1 * 7/8
+
+    % [RH.ResonanceVoice measure 19]
+    s1 * 1/1
+
+    % [RH.ResonanceVoice measure 20]
+    s1 * 1/2
+
+    % [RH.ResonanceVoice measure 21]
+    s1 * 1/4
+
+    % [RH.ResonanceVoice measure 22]
+    s1 * 1/2
+
+    % [RH.ResonanceVoice measure 23]
+    s1 * 1/1
+
+    % [RH.ResonanceVoice measure 24]
+    s1 * 1/2
+
+    % [RH.ResonanceVoice measure 25]
+    s1 * 1/1
+
+    % [RH.ResonanceVoice measure 26]
+    s1 * 3/4
+
+    % [RH.ResonanceVoice measure 27]
+    s1 * 5/8
+
+    % [RH.ResonanceVoice measure 28]
+    s1 * 1/2
+
+    % [RH.ResonanceVoice measure 29]
+    s1 * 3/4
+
+    % [RH.ResonanceVoice measure 30]
+    s1 * 1/2
+
+    % [RH.ResonanceVoice measure 31]
+    s1 * 5/8
+
+    % [RH.ResonanceVoice measure 32]
+    s1 * 1/4
+
+    % [RH.ResonanceVoice measure 33]
+    s1 * 7/4
+
+    % [RH.ResonanceVoice measure 34]
+    s1 * 3/2
+
+    % [RH.ResonanceVoice measure 35]
+    s1 * 1/1
+
+    % [RH.ResonanceVoice measure 36]
+    s1 * 1/1
+
+    % [RH.ResonanceVoice measure 37]
+    s1 * 3/2
+
+    % [RH.ResonanceVoice measure 38]
+    s1 * 1/1
+
+    % [RH.ResonanceVoice measure 39]
+    s1 * 1/2
+
+    % [RH.ResonanceVoice measure 40]
+    s1 * 1/1
+
+    % [RH.ResonanceVoice measure 41]
+    s1 * 1/1
+
+    % [RH.ResonanceVoice measure 42]
+    s1 * 1/1
+
+    % [RH.ResonanceVoice measure 43]
+    s1 * 3/2
+
+    % [RH.ResonanceVoice measure 44]
+    s1 * 4/1
 
 }
 
@@ -3053,7 +4209,136 @@ number.4.PianoMusicRH.Staff = <<
 number.4.LH.Music.1 = {
 
     % [LH.Music.1 measure 1]
-    s1 * 44/1
+    s1 * 3/2
+
+    % [LH.Music.1 measure 2]
+    s1 * 3/4
+
+    % [LH.Music.1 measure 3]
+    s1 * 3/2
+
+    % [LH.Music.1 measure 4]
+    s1 * 9/8
+
+    % [LH.Music.1 measure 5]
+    s1 * 3/4
+
+    % [LH.Music.1 measure 6]
+    s1 * 3/2
+
+    % [LH.Music.1 measure 7]
+    s1 * 3/4
+
+    % [LH.Music.1 measure 8]
+    s1 * 3/4
+
+    % [LH.Music.1 measure 9]
+    s1 * 5/4
+
+    % [LH.Music.1 measure 10]
+    s1 * 1/1
+
+    % [LH.Music.1 measure 11]
+    s1 * 5/4
+
+    % [LH.Music.1 measure 12]
+    s1 * 3/4
+
+    % [LH.Music.1 measure 13]
+    s1 * 5/4
+
+    % [LH.Music.1 measure 14]
+    s1 * 1/1
+
+    % [LH.Music.1 measure 15]
+    s1 * 5/4
+
+    % [LH.Music.1 measure 16]
+    s1 * 1/1
+
+    % [LH.Music.1 measure 17]
+    s1 * 1/4
+
+    % [LH.Music.1 measure 18]
+    s1 * 7/8
+
+    % [LH.Music.1 measure 19]
+    s1 * 1/1
+
+    % [LH.Music.1 measure 20]
+    s1 * 1/2
+
+    % [LH.Music.1 measure 21]
+    s1 * 1/4
+
+    % [LH.Music.1 measure 22]
+    s1 * 1/2
+
+    % [LH.Music.1 measure 23]
+    s1 * 1/1
+
+    % [LH.Music.1 measure 24]
+    s1 * 1/2
+
+    % [LH.Music.1 measure 25]
+    s1 * 1/1
+
+    % [LH.Music.1 measure 26]
+    s1 * 3/4
+
+    % [LH.Music.1 measure 27]
+    s1 * 5/8
+
+    % [LH.Music.1 measure 28]
+    s1 * 1/2
+
+    % [LH.Music.1 measure 29]
+    s1 * 3/4
+
+    % [LH.Music.1 measure 30]
+    s1 * 1/2
+
+    % [LH.Music.1 measure 31]
+    s1 * 5/8
+
+    % [LH.Music.1 measure 32]
+    s1 * 1/4
+
+    % [LH.Music.1 measure 33]
+    s1 * 7/4
+
+    % [LH.Music.1 measure 34]
+    s1 * 3/2
+
+    % [LH.Music.1 measure 35]
+    s1 * 1/1
+
+    % [LH.Music.1 measure 36]
+    s1 * 1/1
+
+    % [LH.Music.1 measure 37]
+    s1 * 3/2
+
+    % [LH.Music.1 measure 38]
+    s1 * 1/1
+
+    % [LH.Music.1 measure 39]
+    s1 * 1/2
+
+    % [LH.Music.1 measure 40]
+    s1 * 1/1
+
+    % [LH.Music.1 measure 41]
+    s1 * 1/1
+
+    % [LH.Music.1 measure 42]
+    s1 * 1/1
+
+    % [LH.Music.1 measure 43]
+    s1 * 3/2
+
+    % [LH.Music.1 measure 44]
+    s1 * 4/1
 
 }
 
@@ -3061,7 +4346,121 @@ number.4.LH.Music.1 = {
 number.4.LH.Music.2 = {
 
     % [LH.Music.2 measure 1]
-    s1 * 71/2
+    s1 * 3/2
+
+    % [LH.Music.2 measure 2]
+    s1 * 3/4
+
+    % [LH.Music.2 measure 3]
+    s1 * 3/2
+
+    % [LH.Music.2 measure 4]
+    s1 * 9/8
+
+    % [LH.Music.2 measure 5]
+    s1 * 3/4
+
+    % [LH.Music.2 measure 6]
+    s1 * 3/2
+
+    % [LH.Music.2 measure 7]
+    s1 * 3/4
+
+    % [LH.Music.2 measure 8]
+    s1 * 3/4
+
+    % [LH.Music.2 measure 9]
+    s1 * 5/4
+
+    % [LH.Music.2 measure 10]
+    s1 * 1/1
+
+    % [LH.Music.2 measure 11]
+    s1 * 5/4
+
+    % [LH.Music.2 measure 12]
+    s1 * 3/4
+
+    % [LH.Music.2 measure 13]
+    s1 * 5/4
+
+    % [LH.Music.2 measure 14]
+    s1 * 1/1
+
+    % [LH.Music.2 measure 15]
+    s1 * 5/4
+
+    % [LH.Music.2 measure 16]
+    s1 * 1/1
+
+    % [LH.Music.2 measure 17]
+    s1 * 1/4
+
+    % [LH.Music.2 measure 18]
+    s1 * 7/8
+
+    % [LH.Music.2 measure 19]
+    s1 * 1/1
+
+    % [LH.Music.2 measure 20]
+    s1 * 1/2
+
+    % [LH.Music.2 measure 21]
+    s1 * 1/4
+
+    % [LH.Music.2 measure 22]
+    s1 * 1/2
+
+    % [LH.Music.2 measure 23]
+    s1 * 1/1
+
+    % [LH.Music.2 measure 24]
+    s1 * 1/2
+
+    % [LH.Music.2 measure 25]
+    s1 * 1/1
+
+    % [LH.Music.2 measure 26]
+    s1 * 3/4
+
+    % [LH.Music.2 measure 27]
+    s1 * 5/8
+
+    % [LH.Music.2 measure 28]
+    s1 * 1/2
+
+    % [LH.Music.2 measure 29]
+    s1 * 3/4
+
+    % [LH.Music.2 measure 30]
+    s1 * 1/2
+
+    % [LH.Music.2 measure 31]
+    s1 * 5/8
+
+    % [LH.Music.2 measure 32]
+    s1 * 1/4
+
+    % [LH.Music.2 measure 33]
+    s1 * 7/4
+
+    % [LH.Music.2 measure 34]
+    s1 * 3/2
+
+    % [LH.Music.2 measure 35]
+    s1 * 1/1
+
+    % [LH.Music.2 measure 36]
+    s1 * 1/1
+
+    % [LH.Music.2 measure 37]
+    s1 * 3/2
+
+    % [LH.Music.2 measure 38]
+    s1 * 1/1
+
+    % [LH.Music.2 measure 39]
+    s1 * 1/2
 
     {
 
@@ -3094,7 +4493,10 @@ number.4.LH.Music.2 = {
     }
 
     % [LH.Music.2 measure 43]
-    s1 * 11/2
+    s1 * 3/2
+
+    % [LH.Music.2 measure 44]
+    s1 * 4/1
 
 }
 
@@ -3102,7 +4504,136 @@ number.4.LH.Music.2 = {
 number.4.LH.Music.3 = {
 
     % [LH.Music.3 measure 1]
-    s1 * 44/1
+    s1 * 3/2
+
+    % [LH.Music.3 measure 2]
+    s1 * 3/4
+
+    % [LH.Music.3 measure 3]
+    s1 * 3/2
+
+    % [LH.Music.3 measure 4]
+    s1 * 9/8
+
+    % [LH.Music.3 measure 5]
+    s1 * 3/4
+
+    % [LH.Music.3 measure 6]
+    s1 * 3/2
+
+    % [LH.Music.3 measure 7]
+    s1 * 3/4
+
+    % [LH.Music.3 measure 8]
+    s1 * 3/4
+
+    % [LH.Music.3 measure 9]
+    s1 * 5/4
+
+    % [LH.Music.3 measure 10]
+    s1 * 1/1
+
+    % [LH.Music.3 measure 11]
+    s1 * 5/4
+
+    % [LH.Music.3 measure 12]
+    s1 * 3/4
+
+    % [LH.Music.3 measure 13]
+    s1 * 5/4
+
+    % [LH.Music.3 measure 14]
+    s1 * 1/1
+
+    % [LH.Music.3 measure 15]
+    s1 * 5/4
+
+    % [LH.Music.3 measure 16]
+    s1 * 1/1
+
+    % [LH.Music.3 measure 17]
+    s1 * 1/4
+
+    % [LH.Music.3 measure 18]
+    s1 * 7/8
+
+    % [LH.Music.3 measure 19]
+    s1 * 1/1
+
+    % [LH.Music.3 measure 20]
+    s1 * 1/2
+
+    % [LH.Music.3 measure 21]
+    s1 * 1/4
+
+    % [LH.Music.3 measure 22]
+    s1 * 1/2
+
+    % [LH.Music.3 measure 23]
+    s1 * 1/1
+
+    % [LH.Music.3 measure 24]
+    s1 * 1/2
+
+    % [LH.Music.3 measure 25]
+    s1 * 1/1
+
+    % [LH.Music.3 measure 26]
+    s1 * 3/4
+
+    % [LH.Music.3 measure 27]
+    s1 * 5/8
+
+    % [LH.Music.3 measure 28]
+    s1 * 1/2
+
+    % [LH.Music.3 measure 29]
+    s1 * 3/4
+
+    % [LH.Music.3 measure 30]
+    s1 * 1/2
+
+    % [LH.Music.3 measure 31]
+    s1 * 5/8
+
+    % [LH.Music.3 measure 32]
+    s1 * 1/4
+
+    % [LH.Music.3 measure 33]
+    s1 * 7/4
+
+    % [LH.Music.3 measure 34]
+    s1 * 3/2
+
+    % [LH.Music.3 measure 35]
+    s1 * 1/1
+
+    % [LH.Music.3 measure 36]
+    s1 * 1/1
+
+    % [LH.Music.3 measure 37]
+    s1 * 3/2
+
+    % [LH.Music.3 measure 38]
+    s1 * 1/1
+
+    % [LH.Music.3 measure 39]
+    s1 * 1/2
+
+    % [LH.Music.3 measure 40]
+    s1 * 1/1
+
+    % [LH.Music.3 measure 41]
+    s1 * 1/1
+
+    % [LH.Music.3 measure 42]
+    s1 * 1/1
+
+    % [LH.Music.3 measure 43]
+    s1 * 3/2
+
+    % [LH.Music.3 measure 44]
+    s1 * 4/1
 
 }
 
@@ -3110,47 +4641,166 @@ number.4.LH.Music.3 = {
 number.4.LH.Music.4 = {
 
     % [LH.Music.4 measure 1]
-    s1 * 15/4
+    s1 * 3/2
 
+    % [LH.Music.4 measure 2]
+    s1 * 3/4
+
+    % [LH.Music.4 measure 3]
+    s1 * 3/2
+
+    \scaleDurations #'(1 . 1)
     {
 
-        \scaleDurations #'(1 . 1)
-        {
+        % [LH.Music.4 measure 4]
+        \override Slur.direction = #up
+        b'8.
+          %! EXPLICIT_DYNAMIC_COLOR
+          %! EXPLICIT_DYNAMIC
+        - \tweak color #(x11-color 'blue)
+          %! EXPLICIT_DYNAMIC
+        \p
+          %! FIGURE_LABEL
+        %@% - \tweak color #blue
+          %! FIGURE_LABEL
+        %@% _ \markup \concat { [ \raise #0.25 \fontsize #-2 (4) \hspace #1 "5.2.L.1" ] }
+          %! SPANNER_START
+        (
 
-            % [LH.Music.4 measure 4]
-            \override Slur.direction = #up
-            b'8.
-              %! EXPLICIT_DYNAMIC_COLOR
-              %! EXPLICIT_DYNAMIC
-            - \tweak color #(x11-color 'blue)
-              %! EXPLICIT_DYNAMIC
-            \p
-              %! FIGURE_LABEL
-            %@% - \tweak color #blue
-              %! FIGURE_LABEL
-            %@% _ \markup \concat { [ \raise #0.25 \fontsize #-2 (4) \hspace #1 "5.2.L.1" ] }
-              %! SPANNER_START
-            (
+        r8.
 
-            r8.
+        ef'!8.
 
-            ef'!8.
+        r8.
 
-            r8.
+        cs!8.
+          %! SPANNER_STOP
+        )
 
-            cs!8.
-              %! SPANNER_STOP
-            )
-
-            r8.
-            \revert Slur.direction
-
-        }
+        r8.
+        \revert Slur.direction
 
     }
 
     % [LH.Music.4 measure 5]
-    s1 * 313/8
+    s1 * 3/4
+
+    % [LH.Music.4 measure 6]
+    s1 * 3/2
+
+    % [LH.Music.4 measure 7]
+    s1 * 3/4
+
+    % [LH.Music.4 measure 8]
+    s1 * 3/4
+
+    % [LH.Music.4 measure 9]
+    s1 * 5/4
+
+    % [LH.Music.4 measure 10]
+    s1 * 1/1
+
+    % [LH.Music.4 measure 11]
+    s1 * 5/4
+
+    % [LH.Music.4 measure 12]
+    s1 * 3/4
+
+    % [LH.Music.4 measure 13]
+    s1 * 5/4
+
+    % [LH.Music.4 measure 14]
+    s1 * 1/1
+
+    % [LH.Music.4 measure 15]
+    s1 * 5/4
+
+    % [LH.Music.4 measure 16]
+    s1 * 1/1
+
+    % [LH.Music.4 measure 17]
+    s1 * 1/4
+
+    % [LH.Music.4 measure 18]
+    s1 * 7/8
+
+    % [LH.Music.4 measure 19]
+    s1 * 1/1
+
+    % [LH.Music.4 measure 20]
+    s1 * 1/2
+
+    % [LH.Music.4 measure 21]
+    s1 * 1/4
+
+    % [LH.Music.4 measure 22]
+    s1 * 1/2
+
+    % [LH.Music.4 measure 23]
+    s1 * 1/1
+
+    % [LH.Music.4 measure 24]
+    s1 * 1/2
+
+    % [LH.Music.4 measure 25]
+    s1 * 1/1
+
+    % [LH.Music.4 measure 26]
+    s1 * 3/4
+
+    % [LH.Music.4 measure 27]
+    s1 * 5/8
+
+    % [LH.Music.4 measure 28]
+    s1 * 1/2
+
+    % [LH.Music.4 measure 29]
+    s1 * 3/4
+
+    % [LH.Music.4 measure 30]
+    s1 * 1/2
+
+    % [LH.Music.4 measure 31]
+    s1 * 5/8
+
+    % [LH.Music.4 measure 32]
+    s1 * 1/4
+
+    % [LH.Music.4 measure 33]
+    s1 * 7/4
+
+    % [LH.Music.4 measure 34]
+    s1 * 3/2
+
+    % [LH.Music.4 measure 35]
+    s1 * 1/1
+
+    % [LH.Music.4 measure 36]
+    s1 * 1/1
+
+    % [LH.Music.4 measure 37]
+    s1 * 3/2
+
+    % [LH.Music.4 measure 38]
+    s1 * 1/1
+
+    % [LH.Music.4 measure 39]
+    s1 * 1/2
+
+    % [LH.Music.4 measure 40]
+    s1 * 1/1
+
+    % [LH.Music.4 measure 41]
+    s1 * 1/1
+
+    % [LH.Music.4 measure 42]
+    s1 * 1/1
+
+    % [LH.Music.4 measure 43]
+    s1 * 3/2
+
+    % [LH.Music.4 measure 44]
+    s1 * 4/1
 
 }
 
@@ -3158,223 +4808,320 @@ number.4.LH.Music.4 = {
 number.4.LH.InsertVoice.4 = {
 
     % [LH.InsertVoice.4 measure 1]
-    s1 * 44/1
+    s1 * 3/2
+
+    % [LH.InsertVoice.4 measure 2]
+    s1 * 3/4
+
+    % [LH.InsertVoice.4 measure 3]
+    s1 * 3/2
+
+    % [LH.InsertVoice.4 measure 4]
+    s1 * 9/8
+
+    % [LH.InsertVoice.4 measure 5]
+    s1 * 3/4
+
+    % [LH.InsertVoice.4 measure 6]
+    s1 * 3/2
+
+    % [LH.InsertVoice.4 measure 7]
+    s1 * 3/4
+
+    % [LH.InsertVoice.4 measure 8]
+    s1 * 3/4
+
+    % [LH.InsertVoice.4 measure 9]
+    s1 * 5/4
+
+    % [LH.InsertVoice.4 measure 10]
+    s1 * 1/1
+
+    % [LH.InsertVoice.4 measure 11]
+    s1 * 5/4
+
+    % [LH.InsertVoice.4 measure 12]
+    s1 * 3/4
+
+    % [LH.InsertVoice.4 measure 13]
+    s1 * 5/4
+
+    % [LH.InsertVoice.4 measure 14]
+    s1 * 1/1
+
+    % [LH.InsertVoice.4 measure 15]
+    s1 * 5/4
+
+    % [LH.InsertVoice.4 measure 16]
+    s1 * 1/1
+
+    % [LH.InsertVoice.4 measure 17]
+    s1 * 1/4
+
+    % [LH.InsertVoice.4 measure 18]
+    s1 * 7/8
+
+    % [LH.InsertVoice.4 measure 19]
+    s1 * 1/1
+
+    % [LH.InsertVoice.4 measure 20]
+    s1 * 1/2
+
+    % [LH.InsertVoice.4 measure 21]
+    s1 * 1/4
+
+    % [LH.InsertVoice.4 measure 22]
+    s1 * 1/2
+
+    % [LH.InsertVoice.4 measure 23]
+    s1 * 1/1
+
+    % [LH.InsertVoice.4 measure 24]
+    s1 * 1/2
+
+    % [LH.InsertVoice.4 measure 25]
+    s1 * 1/1
+
+    % [LH.InsertVoice.4 measure 26]
+    s1 * 3/4
+
+    % [LH.InsertVoice.4 measure 27]
+    s1 * 5/8
+
+    % [LH.InsertVoice.4 measure 28]
+    s1 * 1/2
+
+    % [LH.InsertVoice.4 measure 29]
+    s1 * 3/4
+
+    % [LH.InsertVoice.4 measure 30]
+    s1 * 1/2
+
+    % [LH.InsertVoice.4 measure 31]
+    s1 * 5/8
+
+    % [LH.InsertVoice.4 measure 32]
+    s1 * 1/4
+
+    % [LH.InsertVoice.4 measure 33]
+    s1 * 7/4
+
+    % [LH.InsertVoice.4 measure 34]
+    s1 * 3/2
+
+    % [LH.InsertVoice.4 measure 35]
+    s1 * 1/1
+
+    % [LH.InsertVoice.4 measure 36]
+    s1 * 1/1
+
+    % [LH.InsertVoice.4 measure 37]
+    s1 * 3/2
+
+    % [LH.InsertVoice.4 measure 38]
+    s1 * 1/1
+
+    % [LH.InsertVoice.4 measure 39]
+    s1 * 1/2
+
+    % [LH.InsertVoice.4 measure 40]
+    s1 * 1/1
+
+    % [LH.InsertVoice.4 measure 41]
+    s1 * 1/1
+
+    % [LH.InsertVoice.4 measure 42]
+    s1 * 1/1
+
+    % [LH.InsertVoice.4 measure 43]
+    s1 * 3/2
+
+    % [LH.InsertVoice.4 measure 44]
+    s1 * 4/1
 
 }
 
 
 number.4.LH.Music.5 = {
 
+    \scaleDurations #'(1 . 1)
     {
 
-        \scaleDurations #'(1 . 1)
-        {
+        % [LH.Music.5 measure 1]
+        \dynamicDown
+        r2.
 
-            % [LH.Music.5 measure 1]
-            \dynamicDown
-            r2.
+        af!8.
+        - \tenuto
+          %! EXPLICIT_DYNAMIC_COLOR
+          %! EXPLICIT_DYNAMIC
+        - \tweak color #(x11-color 'blue)
+          %! EXPLICIT_DYNAMIC
+        \f
+          %! FIGURE_LABEL
+        %@% - \tweak color #blue
+          %! FIGURE_LABEL
+        %@% _ \markup \concat { [ \raise #0.25 \fontsize #-2 (6) \hspace #1 "4.1.L.1" ] }
 
-            af!8.
-            - \tenuto
-              %! EXPLICIT_DYNAMIC_COLOR
-              %! EXPLICIT_DYNAMIC
-            - \tweak color #(x11-color 'blue)
-              %! EXPLICIT_DYNAMIC
-            \f
-              %! FIGURE_LABEL
-            %@% - \tweak color #blue
-              %! FIGURE_LABEL
-            %@% _ \markup \concat { [ \raise #0.25 \fontsize #-2 (6) \hspace #1 "4.1.L.1" ] }
+        r16
 
-            r16
+        d'8.
+        - \tenuto
 
-            d'8.
-            - \tenuto
+        r16
 
-            r16
+        e'8.
+        - \tenuto
 
-            e'8.
-            - \tenuto
-
-            r16
-
-        }
+        r16
 
     }
 
+    \scaleDurations #'(1 . 1)
     {
 
-        \scaleDurations #'(1 . 1)
-        {
-
-            % [LH.Music.5 measure 2]
-            r2.
-
-        }
+        % [LH.Music.5 measure 2]
+        r2.
 
     }
 
+    \scaleDurations #'(1 . 1)
     {
 
-        \scaleDurations #'(1 . 1)
-        {
+        % [LH.Music.5 measure 3]
+        r4
 
-            % [LH.Music.5 measure 3]
-            r4
+        af!8.
+        - \tenuto
+          %! FIGURE_LABEL
+        %@% - \tweak color #blue
+          %! FIGURE_LABEL
+        %@% _ \markup \concat { [ \raise #0.25 \fontsize #-2 (7) \hspace #1 "4.1.L.3" ] }
 
-            af!8.
-            - \tenuto
-              %! FIGURE_LABEL
-            %@% - \tweak color #blue
-              %! FIGURE_LABEL
-            %@% _ \markup \concat { [ \raise #0.25 \fontsize #-2 (7) \hspace #1 "4.1.L.3" ] }
+        r16
 
-            r16
+        d'8.
+        - \tenuto
 
-            d'8.
-            - \tenuto
+        r16
 
-            r16
+        r4
 
-            r4
+        e'8.
+        - \tenuto
 
-            e'8.
-            - \tenuto
+        r16
 
-            r16
-
-            r4
-
-        }
+        r4
 
     }
 
     % [LH.Music.5 measure 4]
     s1 * 9/8
 
+    \scaleDurations #'(1 . 1)
     {
 
-        \scaleDurations #'(1 . 1)
-        {
+        % [LH.Music.5 measure 5]
+        r16
 
-            % [LH.Music.5 measure 5]
-            r16
+        <g b f' fs'! a'>8.
+        - \marcato
+          %! EXPLICIT_DYNAMIC_COLOR
+          %! EXPLICIT_DYNAMIC
+        - \tweak color #(x11-color 'blue)
+          %! EXPLICIT_DYNAMIC
+        \ff
+          %! FIGURE_LABEL
+        %@% - \tweak color #blue
+          %! FIGURE_LABEL
+        %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (8) \hspace #1 "4.2.L.1" ] }
 
-            <g b f' fs'! a'>8.
-            - \marcato
-              %! EXPLICIT_DYNAMIC_COLOR
-              %! EXPLICIT_DYNAMIC
-            - \tweak color #(x11-color 'blue)
-              %! EXPLICIT_DYNAMIC
-            \ff
-              %! FIGURE_LABEL
-            %@% - \tweak color #blue
-              %! FIGURE_LABEL
-            %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (8) \hspace #1 "4.2.L.1" ] }
-
-            r2
-
-        }
+        r2
 
     }
 
+    \scaleDurations #'(1 . 1)
     {
 
-        \scaleDurations #'(1 . 1)
-        {
+        % [LH.Music.5 measure 6]
+        r4
 
-            % [LH.Music.5 measure 6]
-            r4
+        r4
 
-            r4
+        af!8.
+        - \tenuto
+          %! EXPLICIT_DYNAMIC_COLOR
+          %! EXPLICIT_DYNAMIC
+        - \tweak color #(x11-color 'blue)
+          %! EXPLICIT_DYNAMIC
+        \f
+          %! FIGURE_LABEL
+        %@% - \tweak color #blue
+          %! FIGURE_LABEL
+        %@% _ \markup \concat { [ \raise #0.25 \fontsize #-2 (9) \hspace #1 "4.1.L.2" ] }
 
-            af!8.
-            - \tenuto
-              %! EXPLICIT_DYNAMIC_COLOR
-              %! EXPLICIT_DYNAMIC
-            - \tweak color #(x11-color 'blue)
-              %! EXPLICIT_DYNAMIC
-            \f
-              %! FIGURE_LABEL
-            %@% - \tweak color #blue
-              %! FIGURE_LABEL
-            %@% _ \markup \concat { [ \raise #0.25 \fontsize #-2 (9) \hspace #1 "4.1.L.2" ] }
+        r16
 
-            r16
+        r4
 
-            r4
+        d'8.
+        - \tenuto
 
-            d'8.
-            - \tenuto
+        r16
 
-            r16
+        e'8.
+        - \tenuto
 
-            e'8.
-            - \tenuto
-
-            r16
-
-        }
+        r16
 
     }
 
+    \scaleDurations #'(1 . 1)
     {
 
-        \scaleDurations #'(1 . 1)
-        {
-
-            % [LH.Music.5 measure 7]
-            \override Rest.direction = #up
-            r2.
-
-        }
+        % [LH.Music.5 measure 7]
+        \override Rest.direction = #up
+        r2.
 
     }
 
+    \scaleDurations #'(1 . 1)
     {
 
-        \scaleDurations #'(1 . 1)
-        {
+        % [LH.Music.5 measure 8]
+        r16
 
-            % [LH.Music.5 measure 8]
-            r16
+        <g b f' fs'! a'>8.
+        - \marcato
+          %! EXPLICIT_DYNAMIC_COLOR
+          %! EXPLICIT_DYNAMIC
+        - \tweak color #(x11-color 'blue)
+          %! EXPLICIT_DYNAMIC
+        \ff
+          %! FIGURE_LABEL
+        %@% - \tweak color #blue
+          %! FIGURE_LABEL
+        %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (10) \hspace #1 "4.2.L.2" ] }
 
-            <g b f' fs'! a'>8.
-            - \marcato
-              %! EXPLICIT_DYNAMIC_COLOR
-              %! EXPLICIT_DYNAMIC
-            - \tweak color #(x11-color 'blue)
-              %! EXPLICIT_DYNAMIC
-            \ff
-              %! FIGURE_LABEL
-            %@% - \tweak color #blue
-              %! FIGURE_LABEL
-            %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (10) \hspace #1 "4.2.L.2" ] }
-
-            r2
-
-        }
+        r2
 
     }
 
+    \scaleDurations #'(1 . 1)
     {
 
-        \scaleDurations #'(1 . 1)
-        {
+        % [LH.Music.5 measure 9]
+        <g b f' fs'! a'>16
+        - \marcato
+          %! FIGURE_LABEL
+        %@% - \tweak color #blue
+          %! FIGURE_LABEL
+        %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (11) \hspace #1 "4.2.L.3" ] }
 
-            % [LH.Music.5 measure 9]
-            <g b f' fs'! a'>16
-            - \marcato
-              %! FIGURE_LABEL
-            %@% - \tweak color #blue
-              %! FIGURE_LABEL
-            %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (11) \hspace #1 "4.2.L.3" ] }
+        r8.
 
-            r8.
-
-            r1
-
-        }
+        r1
 
     }
 
@@ -3407,66 +5154,54 @@ number.4.LH.Music.5 = {
 
     }
 
+    \scaleDurations #'(1 . 1)
     {
 
-        \scaleDurations #'(1 . 1)
-        {
+        % [LH.Music.5 measure 11]
+        <g b f' fs'! a'>16
+        - \marcato
+          %! FIGURE_LABEL
+        %@% - \tweak color #blue
+          %! FIGURE_LABEL
+        %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (13) \hspace #1 "4.2.L.5" ] }
 
-            % [LH.Music.5 measure 11]
-            <g b f' fs'! a'>16
-            - \marcato
-              %! FIGURE_LABEL
-            %@% - \tweak color #blue
-              %! FIGURE_LABEL
-            %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (13) \hspace #1 "4.2.L.5" ] }
+        r8.
 
-            r8.
-
-            r1
-
-        }
+        r1
 
     }
 
+    \scaleDurations #'(1 . 1)
     {
 
-        \scaleDurations #'(1 . 1)
-        {
+        % [LH.Music.5 measure 12]
+        r16
 
-            % [LH.Music.5 measure 12]
-            r16
+        <g b f' fs'! a'>8.
+        - \marcato
+          %! FIGURE_LABEL
+        %@% - \tweak color #blue
+          %! FIGURE_LABEL
+        %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (14) \hspace #1 "4.2.L.6" ] }
 
-            <g b f' fs'! a'>8.
-            - \marcato
-              %! FIGURE_LABEL
-            %@% - \tweak color #blue
-              %! FIGURE_LABEL
-            %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (14) \hspace #1 "4.2.L.6" ] }
-
-            r2
-
-        }
+        r2
 
     }
 
+    \scaleDurations #'(1 . 1)
     {
 
-        \scaleDurations #'(1 . 1)
-        {
+        % [LH.Music.5 measure 13]
+        <g b f' fs'! a'>16
+        - \marcato
+          %! FIGURE_LABEL
+        %@% - \tweak color #blue
+          %! FIGURE_LABEL
+        %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (15) \hspace #1 "4.2.L.7" ] }
 
-            % [LH.Music.5 measure 13]
-            <g b f' fs'! a'>16
-            - \marcato
-              %! FIGURE_LABEL
-            %@% - \tweak color #blue
-              %! FIGURE_LABEL
-            %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (15) \hspace #1 "4.2.L.7" ] }
+        r8.
 
-            r8.
-
-            r1
-
-        }
+        r1
 
     }
 
@@ -3499,24 +5234,20 @@ number.4.LH.Music.5 = {
 
     }
 
+    \scaleDurations #'(1 . 1)
     {
 
-        \scaleDurations #'(1 . 1)
-        {
+        % [LH.Music.5 measure 15]
+        <g b f' fs'! a'>16
+        - \marcato
+          %! FIGURE_LABEL
+        %@% - \tweak color #blue
+          %! FIGURE_LABEL
+        %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (17) \hspace #1 "4.2.L.9" ] }
 
-            % [LH.Music.5 measure 15]
-            <g b f' fs'! a'>16
-            - \marcato
-              %! FIGURE_LABEL
-            %@% - \tweak color #blue
-              %! FIGURE_LABEL
-            %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (17) \hspace #1 "4.2.L.9" ] }
+        r8.
 
-            r8.
-
-            r1
-
-        }
+        r1
 
     }
 
@@ -3550,28 +5281,24 @@ number.4.LH.Music.5 = {
 
     }
 
+    \scaleDurations #'(1 . 1)
     {
 
-        \scaleDurations #'(1 . 1)
-        {
+        % [LH.Music.5 measure 17]
+        \crossStaff
+        \once \override Stem.direction = #up
+        <g, e f af!>16
+          %! EXPLICIT_DYNAMIC_COLOR
+          %! EXPLICIT_DYNAMIC
+        - \tweak color #(x11-color 'blue)
+          %! EXPLICIT_DYNAMIC
+        \mp
+          %! FIGURE_LABEL
+        %@% - \tweak color #blue
+          %! FIGURE_LABEL
+        %@% _ \markup \concat { [ \raise #0.25 \fontsize #-2 (19) \hspace #1 "4.2.L.11.L" ] }
 
-            % [LH.Music.5 measure 17]
-            \crossStaff
-            \once \override Stem.direction = #up
-            <g, e f af!>16
-              %! EXPLICIT_DYNAMIC_COLOR
-              %! EXPLICIT_DYNAMIC
-            - \tweak color #(x11-color 'blue)
-              %! EXPLICIT_DYNAMIC
-            \mp
-              %! FIGURE_LABEL
-            %@% - \tweak color #blue
-              %! FIGURE_LABEL
-            %@% _ \markup \concat { [ \raise #0.25 \fontsize #-2 (19) \hspace #1 "4.2.L.11.L" ] }
-
-            r8.
-
-        }
+        r8.
 
     }
 
@@ -3621,15 +5348,11 @@ number.4.LH.Music.5 = {
 
     }
 
+    \scaleDurations #'(1 . 1)
     {
 
-        \scaleDurations #'(1 . 1)
-        {
-
-            % [LH.Music.5 measure 19]
-            r1
-
-        }
+        % [LH.Music.5 measure 19]
+        r1
 
     }
 
@@ -3652,7 +5375,10 @@ number.4.LH.Music.5 = {
     }
 
     % [LH.Music.5 measure 21]
-    s1 * 3/4
+    s1 * 1/4
+
+    % [LH.Music.5 measure 22]
+    s1 * 1/2
 
     {
 
@@ -3706,15 +5432,11 @@ number.4.LH.Music.5 = {
 
     }
 
+    \scaleDurations #'(1 . 1)
     {
 
-        \scaleDurations #'(1 . 1)
-        {
-
-            % [LH.Music.5 measure 24]
-            r2
-
-        }
+        % [LH.Music.5 measure 24]
+        r2
 
     }
 
@@ -3833,15 +5555,11 @@ number.4.LH.Music.5 = {
 
     }
 
+    \scaleDurations #'(1 . 1)
     {
 
-        \scaleDurations #'(1 . 1)
-        {
-
-            % [LH.Music.5 measure 28]
-            r2
-
-        }
+        % [LH.Music.5 measure 28]
+        r2
 
     }
 
@@ -3927,46 +5645,72 @@ number.4.LH.Music.5 = {
     }
 
     % [LH.Music.5 measure 32]
-    s1 * 23/2
+    s1 * 1/4
 
+    % [LH.Music.5 measure 33]
+    s1 * 7/4
+
+    % [LH.Music.5 measure 34]
+    s1 * 3/2
+
+    % [LH.Music.5 measure 35]
+    s1 * 1/1
+
+    % [LH.Music.5 measure 36]
+    s1 * 1/1
+
+    % [LH.Music.5 measure 37]
+    s1 * 3/2
+
+    % [LH.Music.5 measure 38]
+    s1 * 1/1
+
+    % [LH.Music.5 measure 39]
+    s1 * 1/2
+
+    % [LH.Music.5 measure 40]
+    s1 * 1/1
+
+    % [LH.Music.5 measure 41]
+    s1 * 1/1
+
+    % [LH.Music.5 measure 42]
+    s1 * 1/1
+
+    \scaleDurations #'(1 . 1)
     {
 
-        \scaleDurations #'(1 . 1)
-        {
+        % [LH.Music.5 measure 43]
+        r4
 
-            % [LH.Music.5 measure 43]
-            r4
+        af!8.
+        - \tenuto
+          %! EXPLICIT_DYNAMIC_COLOR
+          %! EXPLICIT_DYNAMIC
+        - \tweak color #(x11-color 'blue)
+          %! EXPLICIT_DYNAMIC
+        \p
+          %! FIGURE_LABEL
+        %@% - \tweak color #blue
+          %! FIGURE_LABEL
+        %@% _ \markup \concat { [ \raise #0.25 \fontsize #-2 (49) \hspace #1 "4.1.L.2'" ] }
 
-            af!8.
-            - \tenuto
-              %! EXPLICIT_DYNAMIC_COLOR
-              %! EXPLICIT_DYNAMIC
-            - \tweak color #(x11-color 'blue)
-              %! EXPLICIT_DYNAMIC
-            \p
-              %! FIGURE_LABEL
-            %@% - \tweak color #blue
-              %! FIGURE_LABEL
-            %@% _ \markup \concat { [ \raise #0.25 \fontsize #-2 (49) \hspace #1 "4.1.L.2'" ] }
+        r16
 
-            r16
+        d'8.
+        - \tenuto
 
-            d'8.
-            - \tenuto
+        r16
 
-            r16
+        r4
 
-            r4
+        e'8.
+        - \tenuto
+        \revert Stem.direction
 
-            e'8.
-            - \tenuto
-            \revert Stem.direction
+        r16
 
-            r16
-
-            r4
-
-        }
+        r4
 
     }
 
@@ -3982,7 +5726,70 @@ number.4.LH.InsertVoice.5 = {
 
     % [LH.InsertVoice.5 measure 1]
     \override Script.direction = #up
-    s1 * 83/4
+    s1 * 3/2
+
+    % [LH.InsertVoice.5 measure 2]
+    s1 * 3/4
+
+    % [LH.InsertVoice.5 measure 3]
+    s1 * 3/2
+
+    % [LH.InsertVoice.5 measure 4]
+    s1 * 9/8
+
+    % [LH.InsertVoice.5 measure 5]
+    s1 * 3/4
+
+    % [LH.InsertVoice.5 measure 6]
+    s1 * 3/2
+
+    % [LH.InsertVoice.5 measure 7]
+    s1 * 3/4
+
+    % [LH.InsertVoice.5 measure 8]
+    s1 * 3/4
+
+    % [LH.InsertVoice.5 measure 9]
+    s1 * 5/4
+
+    % [LH.InsertVoice.5 measure 10]
+    s1 * 1/1
+
+    % [LH.InsertVoice.5 measure 11]
+    s1 * 5/4
+
+    % [LH.InsertVoice.5 measure 12]
+    s1 * 3/4
+
+    % [LH.InsertVoice.5 measure 13]
+    s1 * 5/4
+
+    % [LH.InsertVoice.5 measure 14]
+    s1 * 1/1
+
+    % [LH.InsertVoice.5 measure 15]
+    s1 * 5/4
+
+    % [LH.InsertVoice.5 measure 16]
+    s1 * 1/1
+
+    % [LH.InsertVoice.5 measure 17]
+    s1 * 1/4
+
+    % [LH.InsertVoice.5 measure 18]
+    s1 * 7/8
+
+    % [LH.InsertVoice.5 measure 19]
+    s1 * 1/1
+
+    % [LH.InsertVoice.5 measure 20]
+    s1 * 1/2
+
+    % [LH.InsertVoice.5 measure 21]
+    s1 * 1/4
+
+    % [LH.InsertVoice.5 measure 22]
+    s1 * 1/2
 
     {
         \override TupletBracket.stencil = ##f
@@ -4123,7 +5930,10 @@ number.4.LH.InsertVoice.5 = {
     }
 
     % [LH.InsertVoice.5 measure 27]
-    s1 * 9/8
+    s1 * 5/8
+
+    % [LH.InsertVoice.5 measure 28]
+    s1 * 1/2
 
     {
         \override TupletBracket.stencil = ##f
@@ -4196,7 +6006,43 @@ number.4.LH.InsertVoice.5 = {
     }
 
     % [LH.InsertVoice.5 measure 32]
-    s1 * 17/1
+    s1 * 1/4
+
+    % [LH.InsertVoice.5 measure 33]
+    s1 * 7/4
+
+    % [LH.InsertVoice.5 measure 34]
+    s1 * 3/2
+
+    % [LH.InsertVoice.5 measure 35]
+    s1 * 1/1
+
+    % [LH.InsertVoice.5 measure 36]
+    s1 * 1/1
+
+    % [LH.InsertVoice.5 measure 37]
+    s1 * 3/2
+
+    % [LH.InsertVoice.5 measure 38]
+    s1 * 1/1
+
+    % [LH.InsertVoice.5 measure 39]
+    s1 * 1/2
+
+    % [LH.InsertVoice.5 measure 40]
+    s1 * 1/1
+
+    % [LH.InsertVoice.5 measure 41]
+    s1 * 1/1
+
+    % [LH.InsertVoice.5 measure 42]
+    s1 * 1/1
+
+    % [LH.InsertVoice.5 measure 43]
+    s1 * 3/2
+
+    % [LH.InsertVoice.5 measure 44]
+    s1 * 4/1
     \revert Script.direction
 
 }
@@ -4213,9 +6059,138 @@ number.4.LH.Music.6 = {
     \set PianoMusicLHStaff.forceClef = ##t
       %! REAPPLIED_CLEF
     \clef "bass"
-    s1 * 44/1
+    s1 * 3/2
       %! REAPPLIED_CLEF_REDRAW_COLOR
     \override PianoMusicLHStaff.Clef.color = #(x11-color 'OliveDrab)
+
+    % [LH.Music.6 measure 2]
+    s1 * 3/4
+
+    % [LH.Music.6 measure 3]
+    s1 * 3/2
+
+    % [LH.Music.6 measure 4]
+    s1 * 9/8
+
+    % [LH.Music.6 measure 5]
+    s1 * 3/4
+
+    % [LH.Music.6 measure 6]
+    s1 * 3/2
+
+    % [LH.Music.6 measure 7]
+    s1 * 3/4
+
+    % [LH.Music.6 measure 8]
+    s1 * 3/4
+
+    % [LH.Music.6 measure 9]
+    s1 * 5/4
+
+    % [LH.Music.6 measure 10]
+    s1 * 1/1
+
+    % [LH.Music.6 measure 11]
+    s1 * 5/4
+
+    % [LH.Music.6 measure 12]
+    s1 * 3/4
+
+    % [LH.Music.6 measure 13]
+    s1 * 5/4
+
+    % [LH.Music.6 measure 14]
+    s1 * 1/1
+
+    % [LH.Music.6 measure 15]
+    s1 * 5/4
+
+    % [LH.Music.6 measure 16]
+    s1 * 1/1
+
+    % [LH.Music.6 measure 17]
+    s1 * 1/4
+
+    % [LH.Music.6 measure 18]
+    s1 * 7/8
+
+    % [LH.Music.6 measure 19]
+    s1 * 1/1
+
+    % [LH.Music.6 measure 20]
+    s1 * 1/2
+
+    % [LH.Music.6 measure 21]
+    s1 * 1/4
+
+    % [LH.Music.6 measure 22]
+    s1 * 1/2
+
+    % [LH.Music.6 measure 23]
+    s1 * 1/1
+
+    % [LH.Music.6 measure 24]
+    s1 * 1/2
+
+    % [LH.Music.6 measure 25]
+    s1 * 1/1
+
+    % [LH.Music.6 measure 26]
+    s1 * 3/4
+
+    % [LH.Music.6 measure 27]
+    s1 * 5/8
+
+    % [LH.Music.6 measure 28]
+    s1 * 1/2
+
+    % [LH.Music.6 measure 29]
+    s1 * 3/4
+
+    % [LH.Music.6 measure 30]
+    s1 * 1/2
+
+    % [LH.Music.6 measure 31]
+    s1 * 5/8
+
+    % [LH.Music.6 measure 32]
+    s1 * 1/4
+
+    % [LH.Music.6 measure 33]
+    s1 * 7/4
+
+    % [LH.Music.6 measure 34]
+    s1 * 3/2
+
+    % [LH.Music.6 measure 35]
+    s1 * 1/1
+
+    % [LH.Music.6 measure 36]
+    s1 * 1/1
+
+    % [LH.Music.6 measure 37]
+    s1 * 3/2
+
+    % [LH.Music.6 measure 38]
+    s1 * 1/1
+
+    % [LH.Music.6 measure 39]
+    s1 * 1/2
+
+    % [LH.Music.6 measure 40]
+    s1 * 1/1
+
+    % [LH.Music.6 measure 41]
+    s1 * 1/1
+
+    % [LH.Music.6 measure 42]
+    s1 * 1/1
+
+    % [LH.Music.6 measure 43]
+    s1 * 3/2
+
+    % [LH.Music.6 measure 44]
+    s1 * 4/1
 
 }
 
@@ -4223,7 +6198,136 @@ number.4.LH.Music.6 = {
 number.4.LH.InsertVoice.6 = {
 
     % [LH.InsertVoice.6 measure 1]
-    s1 * 44/1
+    s1 * 3/2
+
+    % [LH.InsertVoice.6 measure 2]
+    s1 * 3/4
+
+    % [LH.InsertVoice.6 measure 3]
+    s1 * 3/2
+
+    % [LH.InsertVoice.6 measure 4]
+    s1 * 9/8
+
+    % [LH.InsertVoice.6 measure 5]
+    s1 * 3/4
+
+    % [LH.InsertVoice.6 measure 6]
+    s1 * 3/2
+
+    % [LH.InsertVoice.6 measure 7]
+    s1 * 3/4
+
+    % [LH.InsertVoice.6 measure 8]
+    s1 * 3/4
+
+    % [LH.InsertVoice.6 measure 9]
+    s1 * 5/4
+
+    % [LH.InsertVoice.6 measure 10]
+    s1 * 1/1
+
+    % [LH.InsertVoice.6 measure 11]
+    s1 * 5/4
+
+    % [LH.InsertVoice.6 measure 12]
+    s1 * 3/4
+
+    % [LH.InsertVoice.6 measure 13]
+    s1 * 5/4
+
+    % [LH.InsertVoice.6 measure 14]
+    s1 * 1/1
+
+    % [LH.InsertVoice.6 measure 15]
+    s1 * 5/4
+
+    % [LH.InsertVoice.6 measure 16]
+    s1 * 1/1
+
+    % [LH.InsertVoice.6 measure 17]
+    s1 * 1/4
+
+    % [LH.InsertVoice.6 measure 18]
+    s1 * 7/8
+
+    % [LH.InsertVoice.6 measure 19]
+    s1 * 1/1
+
+    % [LH.InsertVoice.6 measure 20]
+    s1 * 1/2
+
+    % [LH.InsertVoice.6 measure 21]
+    s1 * 1/4
+
+    % [LH.InsertVoice.6 measure 22]
+    s1 * 1/2
+
+    % [LH.InsertVoice.6 measure 23]
+    s1 * 1/1
+
+    % [LH.InsertVoice.6 measure 24]
+    s1 * 1/2
+
+    % [LH.InsertVoice.6 measure 25]
+    s1 * 1/1
+
+    % [LH.InsertVoice.6 measure 26]
+    s1 * 3/4
+
+    % [LH.InsertVoice.6 measure 27]
+    s1 * 5/8
+
+    % [LH.InsertVoice.6 measure 28]
+    s1 * 1/2
+
+    % [LH.InsertVoice.6 measure 29]
+    s1 * 3/4
+
+    % [LH.InsertVoice.6 measure 30]
+    s1 * 1/2
+
+    % [LH.InsertVoice.6 measure 31]
+    s1 * 5/8
+
+    % [LH.InsertVoice.6 measure 32]
+    s1 * 1/4
+
+    % [LH.InsertVoice.6 measure 33]
+    s1 * 7/4
+
+    % [LH.InsertVoice.6 measure 34]
+    s1 * 3/2
+
+    % [LH.InsertVoice.6 measure 35]
+    s1 * 1/1
+
+    % [LH.InsertVoice.6 measure 36]
+    s1 * 1/1
+
+    % [LH.InsertVoice.6 measure 37]
+    s1 * 3/2
+
+    % [LH.InsertVoice.6 measure 38]
+    s1 * 1/1
+
+    % [LH.InsertVoice.6 measure 39]
+    s1 * 1/2
+
+    % [LH.InsertVoice.6 measure 40]
+    s1 * 1/1
+
+    % [LH.InsertVoice.6 measure 41]
+    s1 * 1/1
+
+    % [LH.InsertVoice.6 measure 42]
+    s1 * 1/1
+
+    % [LH.InsertVoice.6 measure 43]
+    s1 * 3/2
+
+    % [LH.InsertVoice.6 measure 44]
+    s1 * 4/1
 
 }
 
@@ -4231,7 +6335,31 @@ number.4.LH.InsertVoice.6 = {
 number.4.LH.ResonanceVoice = {
 
     % [LH.ResonanceVoice measure 1]
-    s1 * 79/8
+    s1 * 3/2
+
+    % [LH.ResonanceVoice measure 2]
+    s1 * 3/4
+
+    % [LH.ResonanceVoice measure 3]
+    s1 * 3/2
+
+    % [LH.ResonanceVoice measure 4]
+    s1 * 9/8
+
+    % [LH.ResonanceVoice measure 5]
+    s1 * 3/4
+
+    % [LH.ResonanceVoice measure 6]
+    s1 * 3/2
+
+    % [LH.ResonanceVoice measure 7]
+    s1 * 3/4
+
+    % [LH.ResonanceVoice measure 8]
+    s1 * 3/4
+
+    % [LH.ResonanceVoice measure 9]
+    s1 * 5/4
 
     {
 
@@ -4255,41 +6383,36 @@ number.4.LH.ResonanceVoice = {
 
     }
 
+    \scaleDurations #'(1 . 1)
     {
 
-        \scaleDurations #'(1 . 1)
-        {
-
-            % [LH.ResonanceVoice measure 11]
-            \override Accidental.stencil = ##f
-            \override Dots.stencil = ##f
-            \override Stem.stencil = ##f
-            <cs,, cs,>4
-            - \tweak stencil ##f
-            ~
-            \repeatTie
-
-        }
+        % [LH.ResonanceVoice measure 11]
+        \override Accidental.stencil = ##f
+        \override Dots.stencil = ##f
+        \override Stem.stencil = ##f
+        <cs,, cs,>4
+        - \tweak stencil ##f
+        ~
+        \repeatTie
 
     }
 
+    \scaleDurations #'(1 . 1)
     {
 
-        \scaleDurations #'(1 . 1)
-        {
-
-            <cs,, cs,>1
-            \repeatTie
-            \revert Accidental.stencil
-            \revert Dots.stencil
-            \revert Stem.stencil
-
-        }
+        <cs,, cs,>1
+        \repeatTie
+        \revert Accidental.stencil
+        \revert Dots.stencil
+        \revert Stem.stencil
 
     }
 
     % [LH.ResonanceVoice measure 12]
-    s1 * 2/1
+    s1 * 3/4
+
+    % [LH.ResonanceVoice measure 13]
+    s1 * 5/4
 
     {
 
@@ -4313,168 +6436,185 @@ number.4.LH.ResonanceVoice = {
 
     }
 
+    \scaleDurations #'(1 . 1)
     {
 
-        \scaleDurations #'(1 . 1)
-        {
-
-            % [LH.ResonanceVoice measure 15]
-            \override Accidental.stencil = ##f
-            \override Dots.stencil = ##f
-            \override Stem.stencil = ##f
-            <ef,, ef,>4
-            - \tweak stencil ##f
-            ~
-            \repeatTie
-
-        }
+        % [LH.ResonanceVoice measure 15]
+        \override Accidental.stencil = ##f
+        \override Dots.stencil = ##f
+        \override Stem.stencil = ##f
+        <ef,, ef,>4
+        - \tweak stencil ##f
+        ~
+        \repeatTie
 
     }
 
+    \scaleDurations #'(1 . 1)
     {
 
-        \scaleDurations #'(1 . 1)
-        {
-
-            <ef,, ef,>1
-            \repeatTie
-            \revert Accidental.stencil
-            \revert Dots.stencil
-            \revert Stem.stencil
-
-        }
+        <ef,, ef,>1
+        \repeatTie
+        \revert Accidental.stencil
+        \revert Dots.stencil
+        \revert Stem.stencil
 
     }
 
     % [LH.ResonanceVoice measure 16]
-    s1 * 85/8
+    s1 * 1/1
 
+    % [LH.ResonanceVoice measure 17]
+    s1 * 1/4
+
+    % [LH.ResonanceVoice measure 18]
+    s1 * 7/8
+
+    % [LH.ResonanceVoice measure 19]
+    s1 * 1/1
+
+    % [LH.ResonanceVoice measure 20]
+    s1 * 1/2
+
+    % [LH.ResonanceVoice measure 21]
+    s1 * 1/4
+
+    % [LH.ResonanceVoice measure 22]
+    s1 * 1/2
+
+    % [LH.ResonanceVoice measure 23]
+    s1 * 1/1
+
+    % [LH.ResonanceVoice measure 24]
+    s1 * 1/2
+
+    % [LH.ResonanceVoice measure 25]
+    s1 * 1/1
+
+    % [LH.ResonanceVoice measure 26]
+    s1 * 3/4
+
+    % [LH.ResonanceVoice measure 27]
+    s1 * 5/8
+
+    % [LH.ResonanceVoice measure 28]
+    s1 * 1/2
+
+    % [LH.ResonanceVoice measure 29]
+    s1 * 3/4
+
+    % [LH.ResonanceVoice measure 30]
+    s1 * 1/2
+
+    % [LH.ResonanceVoice measure 31]
+    s1 * 5/8
+
+    \scaleDurations #'(1 . 1)
     {
 
-        \scaleDurations #'(1 . 1)
-        {
-
-            % [LH.ResonanceVoice measure 32]
-            \once \override Accidental.X-extent = ##f
-            <e, fs,! gs,! as,! b,>4
-            - \tweak stencil ##f
-            ~
-
-        }
+        % [LH.ResonanceVoice measure 32]
+        \once \override Accidental.X-extent = ##f
+        <e, fs,! gs,! as,! b,>4
+        - \tweak stencil ##f
+        ~
 
     }
 
+    \scaleDurations #'(1 . 1)
     {
 
-        \scaleDurations #'(1 . 1)
-        {
-
-            % [LH.ResonanceVoice measure 33]
-            \override Accidental.stencil = ##f
-            \override Dots.stencil = ##f
-            \override Stem.stencil = ##f
-            <e, fs, gs, as, b,>1..
-            - \tweak stencil ##f
-            ~
-            \repeatTie
-
-        }
+        % [LH.ResonanceVoice measure 33]
+        \override Accidental.stencil = ##f
+        \override Dots.stencil = ##f
+        \override Stem.stencil = ##f
+        <e, fs, gs, as, b,>1..
+        - \tweak stencil ##f
+        ~
+        \repeatTie
 
     }
 
+    \scaleDurations #'(1 . 1)
     {
 
-        \scaleDurations #'(1 . 1)
-        {
-
-            % [LH.ResonanceVoice measure 34]
-            <e, fs, gs, as, b,>1.
-            - \tweak stencil ##f
-            ~
-            \repeatTie
-
-        }
+        % [LH.ResonanceVoice measure 34]
+        <e, fs, gs, as, b,>1.
+        - \tweak stencil ##f
+        ~
+        \repeatTie
 
     }
 
+    \scaleDurations #'(1 . 1)
     {
 
-        \scaleDurations #'(1 . 1)
-        {
-
-            % [LH.ResonanceVoice measure 35]
-            <e, fs, gs, as, b,>1
-            - \tweak stencil ##f
-            ~
-            \repeatTie
-
-        }
+        % [LH.ResonanceVoice measure 35]
+        <e, fs, gs, as, b,>1
+        - \tweak stencil ##f
+        ~
+        \repeatTie
 
     }
 
+    \scaleDurations #'(1 . 1)
     {
 
-        \scaleDurations #'(1 . 1)
-        {
-
-            % [LH.ResonanceVoice measure 36]
-            <e, fs, gs, as, b,>1
-            - \tweak stencil ##f
-            ~
-            \repeatTie
-
-        }
+        % [LH.ResonanceVoice measure 36]
+        <e, fs, gs, as, b,>1
+        - \tweak stencil ##f
+        ~
+        \repeatTie
 
     }
 
+    \scaleDurations #'(1 . 1)
     {
 
-        \scaleDurations #'(1 . 1)
-        {
-
-            % [LH.ResonanceVoice measure 37]
-            <e, fs, gs, as, b,>1.
-            - \tweak stencil ##f
-            ~
-            \repeatTie
-
-        }
+        % [LH.ResonanceVoice measure 37]
+        <e, fs, gs, as, b,>1.
+        - \tweak stencil ##f
+        ~
+        \repeatTie
 
     }
 
+    \scaleDurations #'(1 . 1)
     {
 
-        \scaleDurations #'(1 . 1)
-        {
-
-            % [LH.ResonanceVoice measure 38]
-            <e, fs, gs, as, b,>1
-            - \tweak stencil ##f
-            ~
-            \repeatTie
-
-        }
+        % [LH.ResonanceVoice measure 38]
+        <e, fs, gs, as, b,>1
+        - \tweak stencil ##f
+        ~
+        \repeatTie
 
     }
 
+    \scaleDurations #'(1 . 1)
     {
 
-        \scaleDurations #'(1 . 1)
-        {
-
-            % [LH.ResonanceVoice measure 39]
-            <e, fs, gs, as, b,>2
-            \repeatTie
-            \revert Accidental.stencil
-            \revert Dots.stencil
-            \revert Stem.stencil
-
-        }
+        % [LH.ResonanceVoice measure 39]
+        <e, fs, gs, as, b,>2
+        \repeatTie
+        \revert Accidental.stencil
+        \revert Dots.stencil
+        \revert Stem.stencil
 
     }
 
     % [LH.ResonanceVoice measure 40]
-    s1 * 17/2
+    s1 * 1/1
+
+    % [LH.ResonanceVoice measure 41]
+    s1 * 1/1
+
+    % [LH.ResonanceVoice measure 42]
+    s1 * 1/1
+
+    % [LH.ResonanceVoice measure 43]
+    s1 * 3/2
+
+    % [LH.ResonanceVoice measure 44]
+    s1 * 4/1
 
 }
 

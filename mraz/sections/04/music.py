@@ -2002,7 +2002,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             hide_time_signature=True,
         )
 
-    new = False
+    new = True
     if new:
         voices = baca.section.cache_voices(
             mraz_accumulator._score, library.voice_abbreviations
