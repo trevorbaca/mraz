@@ -69,6 +69,8 @@ class Accumulator:
     ):
         if self.use is not True:
             return
+        print()
+        print(anchor)
         imbrications = imbrications or {}
         start_offset = None
         requires_adjustment = False
@@ -76,7 +78,6 @@ class Accumulator:
             for leaf in abjad.iterate.leaves(self._score):
                 if abjad.get.annotation(leaf, "figure_name") == anchor.figure_name:
                     start_offset = abjad.get.timespan(leaf).start_offset
-                    # print(anchor.figure_name, leaf, start_offset)
                     break
             assert start_offset is not None
         elif anchor is not None:
@@ -105,7 +106,16 @@ class Accumulator:
             containers = [argument]
         assert all(isinstance(_, abjad.Container) for _ in containers), repr(containers)
         voice = self._score[voice_name]
-        if anchor is not None and requires_adjustment is False:
+        if anchor is not None and anchor.use_remote_stop_offset is True:
+            voice.extend(containers)
+            containers_duration = abjad.get.duration(containers)
+            other_voice_names = _voice_names - {voice_name}
+            for other_voice_name in sorted(other_voice_names):
+                voice = self._score[other_voice_name]
+                skip = [abjad.Skip("s1", multiplier=containers_duration.pair)]
+                components = imbrications.get(voice.name, skip)
+                voice.extend(components)
+        elif anchor is not None and requires_adjustment is False:
             for leaf in abjad.select.leaves(voice):
                 if abjad.get.timespan(leaf).start_offset == start_offset:
                     assert isinstance(leaf, abjad.Skip), repr(leaf)
@@ -204,9 +214,8 @@ class Accumulator:
                 skip = [abjad.Skip("s1", multiplier=containers_duration.pair)]
                 components = imbrications.get(voice.name, skip)
                 voice.extend(components)
-        # print()
-        # print(len(self._score["RH.Music.1"]))
-        # print(self._score["RH.Music.1"])
+        print(len(self._score["RH.Music.1"]))
+        print(self._score["RH.Music.1"])
 
 
 def make_time_signature(tuplets, tsd):

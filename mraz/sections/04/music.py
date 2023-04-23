@@ -17,6 +17,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     section_4 = library.moment_4()
     section_5 = library.moment_5()
     mraz_score = library.make_empty_score()
+    # mraz_accumulator = library.Accumulator(mraz_score, use=True)
     mraz_accumulator = library.Accumulator(mraz_score, use=False)
 
     # 1
@@ -729,6 +730,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             library.lh_v5,
             container,
             anchor=baca.resume_after(library.lh_v5),
+            # TODO: remove this:
             hide_time_signature=False,
         )
         mraz_accumulator(
@@ -757,6 +759,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tsd=4,
         )
 
+    # 19
     @baca.call
     def block():
         collections = section_4.stage_4.lh[2:3]
@@ -780,6 +783,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tsd=4,
         )
 
+    # 20
     @baca.call
     def block():
         tuplet = abjad.Tuplet((1, 1), "r4", hide=True)
@@ -799,6 +803,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tsd=4,
         )
 
+    # 21
     @baca.call
     def block():
         collections = section_5.stage_2.rh[12:13]
@@ -822,6 +827,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tsd=4,
         )
 
+    # 22
     @baca.call
     def block():
         collections = section_4.stage_4.lh[3:6]
@@ -865,6 +871,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tsd=4,
         )
 
+    # 23
     @baca.call
     def block():
         tuplet = abjad.Tuplet((1, 1), "r2", hide=True)
@@ -883,6 +890,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tsd=4,
         )
 
+    # 24
     @baca.call
     def block():
         collections = section_4.stage_4.lh[6:9]
@@ -926,6 +934,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tsd=4,
         )
 
+    # 25
     @baca.call
     def block():
         collections = section_4.stage_4.lh[9:11]
@@ -969,6 +978,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tsd=4,
         )
 
+    # 26
     @baca.call
     def block():
         collections = section_4.stage_4.lh[11:12]
@@ -993,6 +1003,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tsd=4,
         )
 
+    # 27
     @baca.call
     def block():
         tuplet = abjad.Tuplet((1, 1), "r2", hide=True)
@@ -1011,6 +1022,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tsd=4,
         )
 
+    # 28
     @baca.call
     def block():
         collections = section_4.stage_4.lh[12:14]
@@ -1054,6 +1066,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tsd=4,
         )
 
+    # 29
     @baca.call
     def block():
         collections = section_4.stage_4.lh[14:15]
@@ -1077,6 +1090,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tsd=4,
         )
 
+    # 30
     @baca.call
     def block():
         collections = section_4.stage_4.lh[15:16]
@@ -1113,7 +1127,8 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tsd=4,
         )
 
-    # HERE: migrate baca.resume_after()
+    # HERE: this one looks wrong:
+    # 31
     @baca.call
     def block():
         collections = section_4.stage_4.rh[:1]
@@ -1160,11 +1175,15 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         mraz_accumulator(
             library.rh_v1,
             container_copy,
-            anchor=baca.resume_after(library.rh_v5),
+            # anchor=baca.resume_after(library.rh_v5),
+            # TODO: teach accumulator to replace two adjacent skips:
+            anchor=baca.anchor_to_figure("4.4.L.1-2"),
             hide_time_signature=True,
             imbrications=imbrications_copy,
         )
+        # breakpoint()
 
+    # 32
     @baca.call
     def block():
         tuplet = abjad.Tuplet((1, 1), "r2", hide=True)
