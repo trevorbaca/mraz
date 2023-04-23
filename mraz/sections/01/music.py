@@ -32,11 +32,6 @@ def make_empty_score():
         baca.markup(tuplet, r"\mraz-ottava-brackets-always-govern-markup")
         baca.label_figure(tuplet, "4.5.R.3", accumulator)
         tuplet_copy = copy.deepcopy(tuplet)
-        accumulator.cache(
-            library.rh_v1,
-            [tuplet],
-            hide_time_signature=True,
-        )
         mraz_accumulator(
             library.rh_v1,
             [tuplet_copy],
@@ -68,12 +63,6 @@ def make_empty_score():
         rmakers.beam_groups(groups)
         baca.label_figure(tuplets, "4.5.L.1-4", accumulator)
         container_copy = copy.deepcopy(container)
-        accumulator.cache(
-            library.rh_v2,
-            container,
-            anchor=baca.anchor_to_figure("4.5.R.3"),
-            tsd=4,
-        )
         mraz_accumulator(
             library.rh_v2,
             container_copy,
@@ -96,12 +85,6 @@ def make_empty_score():
         baca.label_figure(tuplet, "7.1.L.5", accumulator)
         container_copy = copy.deepcopy(container)
         imbrications_copy = copy.deepcopy(imbrications)
-        accumulator.cache(
-            library.lh_v4,
-            container,
-            imbrications=imbrications,
-            tsd=4,
-        )
         mraz_accumulator(
             library.lh_v4,
             container_copy,
@@ -123,11 +106,6 @@ def make_empty_score():
         baca.tuplet_bracket_staff_padding(tuplet, 6)
         baca.label_figure(tuplet, "8.3.L.2", accumulator)
         tuplet_copy = copy.deepcopy(tuplet)
-        accumulator.cache(
-            library.lh_v6,
-            [tuplet],
-            tsd=4,
-        )
         mraz_accumulator(
             library.lh_v6,
             [tuplet_copy],
@@ -147,12 +125,6 @@ def make_empty_score():
         baca.rest_up(abjad.select.rests(tuplet))
         baca.label_figure(tuplet, "8.3.R.5", accumulator)
         tuplet_copy = copy.deepcopy(tuplet)
-        accumulator.cache(
-            library.lh_v5,
-            [tuplet],
-            anchor=baca.anchor_to_figure("8.3.L.2"),
-            hide_time_signature=True,
-        )
         mraz_accumulator(
             library.lh_v5,
             [tuplet_copy],
@@ -165,11 +137,6 @@ def make_empty_score():
         container = abjad.Container([abjad.Tuplet((1, 1), "r4", hide=True)])
         baca.rest_transparent(abjad.select.rests(container))
         container_copy = copy.deepcopy(container)
-        accumulator.cache(
-            library.rh_v2,
-            container,
-            tsd=4,
-        )
         mraz_accumulator(
             library.rh_v2,
             container_copy,
@@ -189,11 +156,6 @@ def make_empty_score():
         baca.tuplet_bracket_staff_padding(tuplet, 8)
         baca.label_figure(tuplet, "6.1.R.3", accumulator)
         tuplet_copy = copy.deepcopy(tuplet)
-        accumulator.cache(
-            library.rh_v3,
-            [tuplet],
-            tsd=8,
-        )
         mraz_accumulator(
             library.rh_v3,
             [tuplet_copy],
@@ -205,11 +167,6 @@ def make_empty_score():
         tuplet = abjad.Tuplet((1, 1), "r4", hide=True)
         baca.rest_transparent(abjad.select.rests(tuplet))
         tuplet_copy = copy.deepcopy(tuplet)
-        accumulator.cache(
-            library.rh_v2,
-            [tuplet],
-            tsd=4,
-        )
         mraz_accumulator(
             library.rh_v2,
             [tuplet_copy],
@@ -231,11 +188,6 @@ def make_empty_score():
         baca.tenuto(baca.select.pheads(tuplet))
         baca.label_figure(tuplet, "6.1.R.2", accumulator)
         tuplet_copy = copy.deepcopy(tuplet)
-        accumulator.cache(
-            library.rh_v3,
-            [tuplet],
-            tsd=8,
-        )
         mraz_accumulator(
             library.rh_v3,
             [tuplet_copy],
@@ -257,11 +209,6 @@ def make_empty_score():
         baca.text_script_up(tuplet)
         baca.label_figure(tuplet, "5.1.R.3", accumulator)
         tuplet_copy = copy.deepcopy(tuplet)
-        accumulator.cache(
-            library.rh_v2,
-            [tuplet],
-            tsd=4,
-        )
         mraz_accumulator(
             library.rh_v2,
             [tuplet_copy],
@@ -288,12 +235,6 @@ def make_empty_score():
         baca.tuplet_bracket_staff_padding(tuplet, 4)
         baca.label_figure(tuplet, "5.1.L.1", accumulator, abjad.DOWN)
         tuplet_copy = copy.deepcopy(tuplet)
-        accumulator.cache(
-            library.rh_v3,
-            [tuplet],
-            anchor=baca.anchor_to_figure("5.1.R.3"),
-            hide_time_signature=True,
-        )
         mraz_accumulator(
             library.rh_v3,
             [tuplet_copy],
@@ -306,47 +247,26 @@ def make_empty_score():
         tuplet = abjad.Tuplet((1, 1), "r4", hide=True)
         baca.script_up(tuplet)
         tuplet_copy = copy.deepcopy(tuplet)
-        accumulator.cache(
-            library.rh_v2,
-            [tuplet],
-            tsd=4,
-        )
         mraz_accumulator(
             library.rh_v2,
             [tuplet_copy],
             tsd=4,
         )
 
-    new = True
-    if new:
-        voices = baca.section.cache_voices(
-            mraz_accumulator._score, library.voice_abbreviations
-        )
-        time_signatures = baca.section.wrap(mraz_accumulator.time_signatures)
-        baca.section.set_up_score(
-            mraz_accumulator._score,
-            time_signatures(),
-            append_anchor_skip=True,
-            always_make_global_rests=True,
-            first_section=True,
-            manifests=library.manifests,
-        )
-        rmakers.hide_trivial(mraz_accumulator._score)
-        return mraz_accumulator._score, voices, time_signatures
-    else:
-        voices = baca.section.cache_voices(score, library.voice_abbreviations)
-        time_signatures = baca.section.wrap(accumulator.time_signatures)
-        baca.section.set_up_score(
-            score,
-            time_signatures(),
-            append_anchor_skip=True,
-            always_make_global_rests=True,
-            first_section=True,
-            manifests=library.manifests,
-        )
-        accumulator.populate(score)
-        rmakers.hide_trivial(score)
-        return score, voices, time_signatures
+    voices = baca.section.cache_voices(
+        mraz_accumulator._score, library.voice_abbreviations
+    )
+    time_signatures = baca.section.wrap(mraz_accumulator.time_signatures)
+    baca.section.set_up_score(
+        mraz_accumulator._score,
+        time_signatures(),
+        append_anchor_skip=True,
+        always_make_global_rests=True,
+        first_section=True,
+        manifests=library.manifests,
+    )
+    rmakers.hide_trivial(mraz_accumulator._score)
+    return mraz_accumulator._score, voices, time_signatures
 
 
 def GLOBALS(skips, rests):
