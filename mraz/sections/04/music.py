@@ -1127,7 +1127,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tsd=4,
         )
 
-    # HERE: this one looks wrong:
     # 31
     @baca.call
     def block():
@@ -1175,14 +1174,12 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         mraz_accumulator(
             library.rh_v1,
             container_copy,
-            # anchor=baca.resume_after(library.rh_v5),
-            # TODO: teach accumulator to replace two adjacent skips:
             anchor=baca.anchor_to_figure("4.4.L.1-2"),
             hide_time_signature=True,
             imbrications=imbrications_copy,
         )
-        # breakpoint()
 
+    # TODO: start checking again here:
     # 32
     @baca.call
     def block():
