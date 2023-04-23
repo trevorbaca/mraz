@@ -17,8 +17,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     section_4 = library.moment_4()
     section_5 = library.moment_5()
     mraz_score = library.make_empty_score()
-    # mraz_accumulator = library.Accumulator(mraz_score, use=True)
-    mraz_accumulator = library.Accumulator(mraz_score, use=False)
+    mraz_accumulator = library.Accumulator(mraz_score, use=True)
 
     @baca.call
     def block():
