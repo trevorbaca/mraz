@@ -111,7 +111,23 @@ class Accumulator:
             containers = [argument]
         assert all(isinstance(_, abjad.Container) for _ in containers), repr(containers)
         voice = self._score[voice_name]
-        if anchor is not None and anchor.use_remote_stop_offset is True:
+        if (
+            anchor is not None
+            and anchor.figure_name is None
+            and anchor.local_selector is None
+            and anchor.remote_selector is None
+            and anchor.remote_voice_name is None
+            and anchor.use_remote_stop_offset is False
+        ):
+            voice.extend(containers)
+            containers_duration = abjad.get.duration(containers)
+            other_voice_names = _voice_names - {voice_name}
+            for other_voice_name in sorted(other_voice_names):
+                voice = self._score[other_voice_name]
+                skip = [abjad.Skip("s1", multiplier=containers_duration.pair)]
+                components = imbrications.get(voice.name, skip)
+                voice.extend(components)
+        elif anchor is not None and anchor.use_remote_stop_offset is True:
             voice.extend(containers)
             containers_duration = abjad.get.duration(containers)
             other_voice_names = _voice_names - {voice_name}
@@ -141,7 +157,12 @@ class Accumulator:
                         if abjad.get.duration(skips) == containers_duration:
                             abjad.mutate.replace(skips, containers)
                         else:
-                            raise NotImplementedError
+                            next_skip = abjad.get.leaf(skips[-1], 1)
+                            skips.append(next_skip)
+                            if abjad.get.duration(skips) == containers_duration:
+                                abjad.mutate.replace(skips, containers)
+                            else:
+                                raise NotImplementedError
                     break
             else:
                 raise Exception("can not find anchor start offset.")

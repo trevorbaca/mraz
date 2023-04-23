@@ -1179,9 +1179,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
 
     @baca.call
     def block():
-        """
-        Start checking here again.
-        """
         tuplet = abjad.Tuplet((1, 1), "r2", hide=True)
         baca.label_figure(tuplet, "S.10", accumulator, do_not_increment=True)
         tuplet_copy = copy.deepcopy(tuplet)
@@ -1197,6 +1194,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             [tuplet_copy],
             do_not_increment=True,
             hide_time_signature=True,
+            replace_after_last_nonskip_in_same_voice=True,
         )
 
     @baca.call
@@ -1306,11 +1304,12 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             do_not_increment=True,
             tsd=4,
         )
-        # 49
+        # 49 (m 32 @ 1/4)
         mraz_accumulator(
             library.lh_resonance,
             [tuplet_copy],
             anchor=baca.resume(),
+            check=True,
             do_not_increment=True,
             tsd=4,
         )
@@ -1329,7 +1328,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             do_not_increment=True,
             tsd=4,
         )
-        # 50
+        # 50 (m 33 @ 7/4)
         mraz_accumulator(
             library.lh_resonance,
             [tuplet_copy],
@@ -1351,7 +1350,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             do_not_increment=True,
             tsd=4,
         )
-        # 51
+        # 51 (m 34 @ 6/4)
         mraz_accumulator(
             library.lh_resonance,
             [tuplet_copy],
@@ -1373,7 +1372,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             do_not_increment=True,
             tsd=4,
         )
-        # 52
+        # 52 (m 35 @ 4/4)
         mraz_accumulator(
             library.lh_resonance,
             [tuplet_copy],
@@ -1395,7 +1394,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             do_not_increment=True,
             tsd=4,
         )
-        # 53
+        # 53 (m 36 @ 4/4)
         mraz_accumulator(
             library.lh_resonance,
             [tuplet_copy],
@@ -1417,7 +1416,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             do_not_increment=True,
             tsd=4,
         )
-        # 54
+        # 54 (m 37 @ 6/4)
         mraz_accumulator(
             library.lh_resonance,
             [tuplet_copy],
@@ -1439,7 +1438,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             do_not_increment=True,
             tsd=4,
         )
-        # 55
+        # 55 (m 38 @ 4/4)
         mraz_accumulator(
             library.lh_resonance,
             [tuplet_copy],
@@ -1461,7 +1460,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             do_not_increment=True,
             tsd=4,
         )
-        # 56
+        # 56 (m 39 @ 2/4)
         mraz_accumulator(
             library.lh_resonance,
             [tuplet_copy],
@@ -1516,6 +1515,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             library.rh_v1,
             [tuplet_copy],
             hide_time_signature=True,
+            replace_after_last_nonskip_in_same_voice=True,
         )
 
     @baca.call
@@ -1539,6 +1539,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             library.rh_v1,
             [tuplet_copy],
             hide_time_signature=True,
+            replace_after_last_nonskip_in_same_voice=True,
         )
 
     @baca.call
@@ -1562,6 +1563,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             library.rh_v1,
             [tuplet_copy],
             hide_time_signature=True,
+            replace_after_last_nonskip_in_same_voice=True,
         )
 
     @baca.call
@@ -1588,6 +1590,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             anchor=baca.anchor_to_figure("R.13"),
             hide_time_signature=True,
         )
+        # TODO: think it's correct through here
 
     @baca.call
     def block():
@@ -1605,7 +1608,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             [tuplet],
             hide_time_signature=True,
         )
-        # 62
+        # 62 (fills in m 39 with Bb)
         mraz_accumulator(
             library.rh_v1,
             [tuplet_copy],
@@ -1778,7 +1781,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             container,
             hide_time_signature=True,
         )
-        # 67
+        # 67 (fills in second voice in m 39)
         mraz_accumulator(
             library.rh_v2,
             container_copy,
@@ -1804,7 +1807,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             anchor=baca.resume(),
             tsd=4,
         )
-        # 68
+        # 68 (make m 40 @ 4/4)
         mraz_accumulator(
             library.rh_v2,
             [tuplet_copy],
@@ -1829,7 +1832,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             [tuplet],
             tsd=4,
         )
-        # 69
+        # 69 (makes m 41 @ 4/4)
         mraz_accumulator(
             library.rh_v2,
             [tuplet_copy],
@@ -1853,13 +1856,14 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             [tuplet],
             tsd=4,
         )
-        # 70
+        # 70 (makes m 42 @ 4/4)
         mraz_accumulator(
             library.rh_v2,
             [tuplet_copy],
             tsd=4,
         )
 
+    # TODO: this appears to break:
     @baca.call
     def block():
         tuplet = abjad.Tuplet((1, 1), "r1 r1 r1", hide=True)
@@ -1879,7 +1883,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             do_not_increment=True,
             hide_time_signature=True,
         )
-        # 71
+        # 71 (fills mm 41-43 with rests)
         mraz_accumulator(
             library.lh_v2,
             container_copy,
@@ -1907,7 +1911,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             anchor=baca.resume(),
             tsd=4,
         )
-        # 72
+        # 72 (makes m 43 @ 6/4)
         mraz_accumulator(
             library.rh_v3,
             [tuplet_copy],
@@ -1961,7 +1965,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             [tuplet],
             tsd=4,
         )
-        # 74
+        # 74 (makes m 44 @ 16/4)
         mraz_accumulator(
             library.rh_v2,
             [tuplet_copy],
