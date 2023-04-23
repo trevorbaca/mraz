@@ -69,8 +69,6 @@ class Accumulator:
     ):
         if self.use is not True:
             return
-        # figure_name = None
-        # baca.label_figure(argument, figure_name, self)
         imbrications = imbrications or {}
         start_offset = None
         requires_adjustment = False
@@ -78,15 +76,22 @@ class Accumulator:
             for leaf in abjad.iterate.leaves(self._score):
                 if abjad.get.annotation(leaf, "figure_name") == anchor.figure_name:
                     start_offset = abjad.get.timespan(leaf).start_offset
+                    # print(anchor.figure_name, leaf, start_offset)
                     break
             assert start_offset is not None
         elif anchor is not None:
-            voice = self._score[anchor.remote_voice_name]
+            if anchor.remote_voice_name is None:
+                voice = self._score
+            else:
+                voice = self._score[anchor.remote_voice_name]
             if anchor.remote_selector is not None:
                 leaf = anchor.remote_selector(voice)
             else:
                 leaf = abjad.select.leaf(voice, 0)
-            start_offset = abjad.get.timespan(leaf).start_offset
+            if anchor.use_remote_stop_offset is True:
+                start_offset = abjad.get.timespan(leaf).stop_offset
+            else:
+                start_offset = abjad.get.timespan(leaf).start_offset
             assert start_offset is not None
             requires_adjustment = True
         elif anchor is not None:
@@ -172,7 +177,6 @@ class Accumulator:
                     if abjad.get.timespan(leaf) in local_timespan:
                         local_leaves_to_replace.append(leaf)
                 abjad.mutate.replace(local_leaves_to_replace, imbricated_containers)
-            # HERE
         elif replace_after_last_nonskip_in_same_voice is True:
             previous_skip = None
             for leaf in reversed(abjad.select.leaves(voice)):
@@ -200,6 +204,9 @@ class Accumulator:
                 skip = [abjad.Skip("s1", multiplier=containers_duration.pair)]
                 components = imbrications.get(voice.name, skip)
                 voice.extend(components)
+        # print()
+        # print(len(self._score["RH.Music.1"]))
+        # print(self._score["RH.Music.1"])
 
 
 def make_time_signature(tuplets, tsd):
