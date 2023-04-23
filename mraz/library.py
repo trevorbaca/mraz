@@ -52,6 +52,7 @@ class Accumulator:
     def __init__(self, score, use=False):
         self._score = score
         self.figure_number = 1
+        self.call_number = 0
         self.time_signatures = []
         self.use = use
 
@@ -69,8 +70,10 @@ class Accumulator:
     ):
         if self.use is not True:
             return
+        self.call_number += 1
         print()
         print(anchor)
+        print(self.call_number)
         imbrications = imbrications or {}
         start_offset = None
         requires_adjustment = False
@@ -226,7 +229,6 @@ class Accumulator:
                 skip = [abjad.Skip("s1", multiplier=containers_duration.pair)]
                 components = imbrications.get(voice.name, skip)
                 voice.extend(components)
-        print(len(self._score["RH.Music.1"]))
         print(self._score["RH.Music.1"])
 
 
