@@ -97,6 +97,8 @@ class Accumulator:
             requires_adjustment = True
         elif anchor is not None:
             raise Exception(anchor)
+        # if check is True:
+        #     breakpoint()
         if hide_time_signature is False:
             time_signature = make_time_signature(argument, tsd)
             self.time_signatures.append(time_signature)
@@ -119,14 +121,24 @@ class Accumulator:
             for leaf in abjad.select.leaves(voice):
                 if abjad.get.timespan(leaf).start_offset == start_offset:
                     assert isinstance(leaf, abjad.Skip), repr(leaf)
-                    if abjad.get.duration(leaf) == abjad.get.duration(containers):
+                    skip_duration = abjad.get.duration(leaf)
+                    containers_duration = abjad.get.duration(containers)
+                    if skip_duration == containers_duration:
                         abjad.mutate.replace(leaf, containers)
-                    else:
+                    elif containers_duration < skip_duration:
                         containers_duration = abjad.get.duration(containers)
                         result = abjad.mutate.split([leaf], [containers_duration])
                         left_skip = result[0][0]
                         assert isinstance(left_skip, abjad.Skip), repr(left_skip)
                         abjad.mutate.replace([left_skip], containers)
+                    else:
+                        assert skip_duration < containers_duration
+                        next_skip = abjad.get.leaf(leaf, 1)
+                        skips = [leaf, next_skip]
+                        if abjad.get.duration(skips) == containers_duration:
+                            abjad.mutate.replace(skips, containers)
+                        else:
+                            raise NotImplementedError
                     break
             else:
                 raise Exception("can not find anchor start offset.")
