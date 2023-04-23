@@ -71,9 +71,9 @@ class Accumulator:
         if self.use is not True:
             return
         self.call_number += 1
-        print()
-        print(anchor)
-        print(self.call_number)
+        # print()
+        # print(anchor)
+        # print(self.call_number)
         imbrications = imbrications or {}
         start_offset = None
         requires_adjustment = False
@@ -166,6 +166,39 @@ class Accumulator:
                     break
             else:
                 raise Exception("can not find anchor start offset.")
+            for imbricated_voice_name, imbricated_containers in imbrications.items():
+                imbricated_voice = self._score[imbricated_voice_name]
+                for leaf in abjad.select.leaves(imbricated_voice):
+                    if abjad.get.timespan(leaf).start_offset == start_offset:
+                        assert isinstance(leaf, abjad.Skip), repr(leaf)
+                        skip_duration = abjad.get.duration(leaf)
+                        containers_duration = abjad.get.duration(imbricated_containers)
+                        if skip_duration == containers_duration:
+                            abjad.mutate.replace(leaf, imbricated_containers)
+                        elif containers_duration < skip_duration:
+                            containers_duration = abjad.get.duration(
+                                imbricated_containers
+                            )
+                            result = abjad.mutate.split([leaf], [containers_duration])
+                            left_skip = result[0][0]
+                            assert isinstance(left_skip, abjad.Skip), repr(left_skip)
+                            abjad.mutate.replace([left_skip], imbricated_containers)
+                        else:
+                            assert skip_duration < containers_duration
+                            next_skip = abjad.get.leaf(leaf, 1)
+                            skips = [leaf, next_skip]
+                            if abjad.get.duration(skips) == containers_duration:
+                                abjad.mutate.replace(skips, imbricated_containers)
+                            else:
+                                next_skip = abjad.get.leaf(skips[-1], 1)
+                                skips.append(next_skip)
+                                if abjad.get.duration(skips) == containers_duration:
+                                    abjad.mutate.replace(skips, imbricated_containers)
+                                else:
+                                    raise NotImplementedError
+                        break
+                else:
+                    raise Exception("can not find anchor start offset.")
         elif anchor is not None and requires_adjustment is True:
             remote_start_offset = start_offset
             local_voice = self._score[voice_name]
@@ -250,7 +283,6 @@ class Accumulator:
                 skip = [abjad.Skip("s1", multiplier=containers_duration.pair)]
                 components = imbrications.get(voice.name, skip)
                 voice.extend(components)
-        print(self._score["RH.Music.1"])
 
 
 def make_time_signature(tuplets, tsd):
