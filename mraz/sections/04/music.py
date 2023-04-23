@@ -17,8 +17,9 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     section_4 = library.moment_4()
     section_5 = library.moment_5()
     mraz_score = library.make_empty_score()
-    mraz_accumulator = library.Accumulator(mraz_score)
+    mraz_accumulator = library.Accumulator(mraz_score, use=False)
 
+    # 1
     @baca.call
     def block():
         collections = section_4.stage_1.rh[:1]
@@ -43,6 +44,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tsd=4,
         )
 
+    # 2
     @baca.call
     def block():
         collections = section_4.stage_6.rh[1:2]
@@ -65,6 +67,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tsd=4,
         )
 
+    # 3
     @baca.call
     def block():
         collections = section_4.stage_1.rh[1:2]
@@ -87,6 +90,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tsd=4,
         )
 
+    # 4
     @baca.call
     def block():
         collections = section_5.stage_2.lh[:1]
@@ -109,6 +113,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tsd=4,
         )
 
+    # 5
     @baca.call
     def block():
         tuplet = abjad.Tuplet((1, 1), "r2.", hide=True)
@@ -127,6 +132,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tsd=4,
         )
 
+    # 6
     @baca.call
     def block():
         collections = section_4.stage_1.rh[2:3]
@@ -148,6 +154,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tsd=4,
         )
 
+    # 7 (1/7)
     @baca.call
     def block():
         tuplet = abjad.Tuplet((1, 1), "r2.", hide=True)
@@ -166,6 +173,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tsd=4,
         )
 
+    # 7 (2/7)
     @baca.call
     def block():
         collections = section_4.stage_1.lh[:1]
@@ -190,6 +198,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             hide_time_signature=True,
         )
 
+    # 7 (3/7)
     @baca.call
     def block():
         tuplet = abjad.Tuplet((1, 1), "r2.", hide=True)
@@ -210,6 +219,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             hide_time_signature=True,
         )
 
+    # 7 (4/7)
     @baca.call
     def block():
         collections = section_4.stage_1.lh[1:2]
@@ -233,6 +243,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             replace_after_last_nonskip_in_same_voice=True,
         )
 
+    # 7 (5/7)
     @baca.call
     def block():
         collections = section_4.stage_2.lh[:1]
@@ -258,6 +269,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             hide_time_signature=True,
         )
 
+    # 7 (6/7)
     @baca.call
     def block():
         collections = section_4.stage_1.lh[2:3]
@@ -281,6 +293,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             replace_after_last_nonskip_in_same_voice=True,
         )
 
+    # 7 (7/7)
     @baca.call
     def block():
         tuplet = abjad.Tuplet((1, 1), "r2.", hide=True)
@@ -300,6 +313,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             replace_after_last_nonskip_in_same_voice=True,
         )
 
+    # 8
     @baca.call
     def block():
         collections = section_4.stage_2.lh[1:2]
@@ -320,6 +334,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             [tuplet_copy],
         )
 
+    # 9
     @baca.call
     def block():
         collections = section_4.stage_2.lh[2:3]
@@ -340,6 +355,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tsd=4,
         )
 
+    # 10
     @baca.call
     def block():
         collections = section_4.stage_2.lh[3:4]
@@ -364,6 +380,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tsd=4,
         )
 
+    # 11
     @baca.call
     def block():
         collections = section_4.stage_2.lh[4:5]
@@ -384,6 +401,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tsd=4,
         )
 
+    # 12
     @baca.call
     def block():
         collections = section_4.stage_2.lh[5:6]
@@ -405,6 +423,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tsd=4,
         )
 
+    # 13
     @baca.call
     def block():
         collections = section_4.stage_2.lh[6:7]
@@ -425,6 +444,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tsd=4,
         )
 
+    # 14
     @baca.call
     def block():
         collections = section_4.stage_2.lh[7:8]
@@ -449,6 +469,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tsd=4,
         )
 
+    # 15
     @baca.call
     def block():
         collections = section_4.stage_2.lh[8:9]
@@ -469,6 +490,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tsd=4,
         )
 
+    # 16
     @baca.call
     def block():
         collections = section_4.stage_2.lh[9:10]
@@ -499,6 +521,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     segment = baca.pcollections.bass_to_octave(segment, 2)
     chord_1_upper, chord_1_lower = baca.pcollections.split(segment, pitch=-1)
 
+    # 17 (1/9)
     @baca.call
     def block():
         collections = chord_1_lower
@@ -524,6 +547,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tsd=4,
         )
 
+    # 17 (2/9)
     @baca.call
     def block():
         collections = chord_1_upper
@@ -546,6 +570,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             hide_time_signature=True,
         )
 
+    # 17 (3/9)
     @baca.call
     def block():
         collections = [(-35, -23)]
@@ -570,6 +595,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             hide_time_signature=True,
         )
 
+    # 17 (4/9)
     @baca.call
     def block():
         collections = [(-35, -23)]
@@ -590,6 +616,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             replace_after_last_nonskip_in_same_voice=True,
         )
 
+    # 17 (5/9)
     @baca.call
     def block():
         collections = [(-35, -23)]
@@ -610,6 +637,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             replace_after_last_nonskip_in_same_voice=True,
         )
 
+    # 17 (6/9)
     @baca.call
     def block():
         collections = [(-33, -21)]
@@ -634,6 +662,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             hide_time_signature=True,
         )
 
+    # 17 (7/9)
     @baca.call
     def block():
         collections = [(-33, -21)]
@@ -654,6 +683,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             replace_after_last_nonskip_in_same_voice=True,
         )
 
+    # 17 (8/9)
     @baca.call
     def block():
         collections = [(-33, -21)]
@@ -674,6 +704,8 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             replace_after_last_nonskip_in_same_voice=True,
         )
 
+    # 17 (9/9)
+    # TODO: migrate baca.resume_after():
     @baca.call
     def block():
         collections = section_4.stage_4.lh[:2]
@@ -706,6 +738,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             # hide_time_signature=False,
         )
 
+    # 18: THIS IS WRONG: creates 1/1 (4/4); should create 7/8 next:
     @baca.call
     def block():
         tuplet = abjad.Tuplet((1, 1), "r1", hide=True)
