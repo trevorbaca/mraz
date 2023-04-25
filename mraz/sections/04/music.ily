@@ -4468,8 +4468,8 @@ number.4.LH.Music.2 = {
         {
 
             % [LH.Music.2 measure 40]
+            \override PianoMusicLHStaff.SustainPedalLineSpanner.staff-padding = 4
             \override Rest.transparent = ##t
-            \override Staff.SustainPedalLineSpanner.staff-padding = 4
             r1
               %! SPANNER_START
             \sustainOn
@@ -4485,8 +4485,8 @@ number.4.LH.Music.2 = {
             r1
               %! SPANNER_STOP
             \sustainOff
+            \revert PianoMusicLHStaff.SustainPedalLineSpanner.staff-padding
             \revert Rest.transparent
-            \revert Staff.SustainPedalLineSpanner.staff-padding
 
         }
 
