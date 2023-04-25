@@ -364,7 +364,7 @@ number.1.RH.Music.1 = {
           %! EXPLICIT_CLEF
         \set PianoMusicRHStaff.forceClef = ##t
           %! -PARTS
-        \set PianoStaff.instrumentName = \mraz-piano-markup
+        \set PianoMusicStaffGroup.instrumentName = \mraz-piano-markup
           %! EXPLICIT_CLEF
         \clef "treble"
         bf''''!1
@@ -795,7 +795,7 @@ number.1.RH.Music.3 = {
         \once \override DynamicText.X-offset = 0.25
           %! SPANNER_START
         \ottava 1
-        \override Staff.OttavaBracket.staff-padding = 9
+        \override PianoMusicRHStaff.OttavaBracket.staff-padding = 9
         \override Stem.direction = #down
         \override TupletBracket.direction = #down
         \override TupletBracket.staff-padding = 4
@@ -836,8 +836,8 @@ number.1.RH.Music.3 = {
         \revert Stem.direction
 
         r4
+        \revert PianoMusicRHStaff.OttavaBracket.staff-padding
         \revert Rest.direction
-        \revert Staff.OttavaBracket.staff-padding
         \revert TupletBracket.direction
         \revert TupletBracket.staff-padding
 
