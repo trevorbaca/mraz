@@ -13,10 +13,8 @@ from mraz import library
 
 def make_empty_score(first_measure_number, previous_persistent_indicators):
     score = library.make_empty_score()
-    accumulator = baca.Accumulator(score)
+    accumulator = library.Accumulator(score)
     section_6 = library.moment_6()
-    mraz_score = library.make_empty_score()
-    mraz_accumulator = library.Accumulator(mraz_score, use=True)
 
     @baca.call
     def block():
@@ -36,7 +34,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         baca.tuplet_bracket_up(tuplets)
         baca.label_figure(tuplets, "6.1.R.1-2", accumulator)
         tuplets_copy = copy.deepcopy(tuplets)
-        mraz_accumulator(
+        accumulator(
             library.rh_v3,
             tuplets_copy,
             tsd=8,
@@ -55,7 +53,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         baca.tuplet_bracket_staff_padding(tuplet, 8)
         baca.label_figure(tuplet, "6.1.R.3", accumulator)
         tuplet_copy = copy.deepcopy(tuplet)
-        mraz_accumulator(
+        accumulator(
             library.rh_v3,
             [tuplet_copy],
             tsd=8,
@@ -73,7 +71,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         baca.tenuto(baca.select.pheads(tuplet))
         baca.label_figure(tuplet, "6.1.R.4", accumulator)
         tuplet_copy = copy.deepcopy(tuplet)
-        mraz_accumulator(
+        accumulator(
             library.rh_v3,
             [tuplet_copy],
             tsd=8,
@@ -90,7 +88,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         baca.tuplet_bracket_up(tuplet)
         baca.label_figure(tuplet, "6.1.R.5", accumulator)
         tuplet_copy = copy.deepcopy(tuplet)
-        mraz_accumulator(
+        accumulator(
             library.rh_v3,
             [tuplet_copy],
             tsd=8,
@@ -107,7 +105,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         baca.tuplet_bracket_staff_padding(tuplet, 3)
         baca.label_figure(tuplet, "6.1.L.1", accumulator)
         tuplet_copy = copy.deepcopy(tuplet)
-        mraz_accumulator(
+        accumulator(
             library.lh_v4,
             [tuplet_copy],
             anchor=baca.anchor(
@@ -128,7 +126,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         baca.tuplet_bracket_staff_padding(tuplet, 3)
         baca.label_figure(tuplet, "6.1.L.2", accumulator)
         tuplet_copy = copy.deepcopy(tuplet)
-        mraz_accumulator(
+        accumulator(
             library.lh_v4,
             [tuplet_copy],
             anchor=baca.anchor(
@@ -148,7 +146,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         baca.tenuto(baca.select.pheads(tuplet))
         baca.label_figure(tuplet, "6.1.L.3", accumulator)
         tuplet_copy = copy.deepcopy(tuplet)
-        mraz_accumulator(
+        accumulator(
             library.lh_v4,
             [tuplet_copy],
             anchor=baca.anchor(
@@ -168,19 +166,17 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         baca.tenuto(baca.select.pheads(tuplet))
         baca.label_figure(tuplet, "6.1.L.4", accumulator)
         tuplet_copy = copy.deepcopy(tuplet)
-        mraz_accumulator(
+        accumulator(
             library.lh_v4,
             [tuplet_copy],
             hide_time_signature=True,
             replace_after_last_nonskip_in_same_voice=True,
         )
 
-    voices = baca.section.cache_voices(
-        mraz_accumulator._score, library.voice_abbreviations
-    )
-    time_signatures = baca.section.wrap(mraz_accumulator.time_signatures)
+    voices = baca.section.cache_voices(accumulator._score, library.voice_abbreviations)
+    time_signatures = baca.section.wrap(accumulator.time_signatures)
     baca.section.set_up_score(
-        mraz_accumulator._score,
+        accumulator._score,
         time_signatures(),
         append_anchor_skip=True,
         always_make_global_rests=True,
@@ -188,8 +184,8 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         manifests=library.manifests,
         previous_persistent_indicators=previous_persistent_indicators,
     )
-    rmakers.hide_trivial(mraz_accumulator._score)
-    return mraz_accumulator._score, voices, time_signatures
+    rmakers.hide_trivial(accumulator._score)
+    return accumulator._score, voices, time_signatures
 
 
 def postprocess(cache):
