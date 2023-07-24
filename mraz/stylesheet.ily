@@ -57,6 +57,8 @@
 
 \layout
 {
+
+  % GLOBAL SKIPS
   \context
   {
     \name GlobalSkips
@@ -70,6 +72,7 @@
     \override TextSpanner.font-size = 6
     }
 
+  % GLOBAL RESTS
   \context
   {
     \name GlobalRests
@@ -149,6 +152,7 @@
     \remove Forbid_line_break_engraver
   }
 
+  % RH VOICE I
   \context
   {
     \Voice
@@ -158,6 +162,7 @@
     \voiceOne
   }
 
+  % RH INSERT VOICE I
   \context
   {
     \Voice
@@ -167,6 +172,7 @@
     \voiceTwo
   }
 
+  % RH VOICE II
   \context
   {
     \Voice
@@ -175,6 +181,8 @@
     \alias Voice
     \voiceTwo
   }
+
+  % RH INSERT VOICE II
   \context
   {
     \Voice
@@ -184,6 +192,7 @@
     \voiceOne
   }
 
+  % RH VOICE III
   \context
   {
     \Voice
@@ -193,6 +202,7 @@
     \voiceThree
   }
 
+  % RH INSERT VOICE III
   \context
   {
     \Voice
@@ -202,6 +212,7 @@
     \voiceFour
   }
 
+  % RH VOICE IV
   \context
   {
     \Voice
@@ -211,6 +222,7 @@
     \voiceFour
   }
 
+  % RH INSERT VOICE IV
   \context
   {
     \Voice
@@ -220,6 +232,7 @@
     \voiceThree
   }
 
+  % RH VOICE V
   \context
   {
     \Voice
@@ -229,6 +242,7 @@
     \voiceOne
   }
 
+  % RH VOICE VI
   \context
   {
     \Voice
@@ -238,6 +252,7 @@
     \voiceTwo
   }
 
+  % RH RESONANCE VOICE
   \context
   {
     \Voice
@@ -253,6 +268,7 @@
     \voiceTwo
   }
 
+  % LH VOICE I
   \context
   {
     \Voice
@@ -262,6 +278,7 @@
     \voiceOne
   }
 
+  % LH VOICE II
   \context
   {
     \Voice
@@ -271,6 +288,7 @@
     \voiceTwo
   }
 
+  % LH VOICE III
   \context
   {
     \Voice
@@ -280,6 +298,7 @@
     \voiceThree
   }
 
+  % LH VOICE IV
   \context
   {
     \Voice
@@ -289,6 +308,7 @@
     \voiceFour
   }
 
+  % LH INSERT VOICE IV
   \context
   {
     \Voice
@@ -298,6 +318,7 @@
     \voiceThree
   }
 
+  % LH VOICE V
   \context
   {
     \Voice
@@ -307,6 +328,7 @@
     \voiceOne
   }
 
+  % LH INSERT VOICE V
   \context
   {
     \Voice
@@ -316,6 +338,7 @@
     \voiceTwo
   }
 
+  % LH VOICE VI
   \context
   {
     \Voice
@@ -325,6 +348,7 @@
     \voiceTwo
   }
 
+  % LH INSERT VOICE VI
   \context
   {
     \Voice
@@ -334,6 +358,7 @@
     \voiceOne
   }
 
+  % LH RESONANCE VOICE
   \context
   {
     \Voice
