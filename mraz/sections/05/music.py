@@ -172,7 +172,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         always_make_global_rests=True,
         first_measure_number=first_measure_number,
         manifests=library.manifests,
-        previous_persistent_indicators=previous_persistent_indicators,
+        score_persistent_indicators=previous_persistent_indicators["Score"],
     )
     rmakers.hide_trivial(accumulator._score)
     return accumulator._score, voices, time_signatures
