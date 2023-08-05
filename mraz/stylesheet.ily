@@ -451,12 +451,10 @@
     \override BarLine.transparent = ##t
     \override BarLine.X-extent = #'(0 . 0)
 
-    \override Beam.breakable = ##t
     \override Beam.damping = 99
 
     \override DynamicLineSpanner.padding = #1.5
 
-    \override Glissando.breakable = ##t
     \override Glissando.thickness = 3
 
     \override Hairpin.to-barline = ##f
@@ -482,7 +480,6 @@
 
     \override TextSpanner.to-barline = ##t
 
-    \override TupletBracket.breakable = ##t
     \override TupletBracket.full-length-to-extent = ##f
     \override TupletBracket.padding = 1.5
 
