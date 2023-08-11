@@ -242,7 +242,6 @@ def make_empty_score():
         time_signatures(),
         append_anchor_skip=True,
         always_make_global_rests=True,
-        first_section=True,
         manifests=library.manifests,
     )
     rmakers.hide_trivial(accumulator._score)
@@ -306,6 +305,7 @@ def main():
         always_make_global_rests=True,
         do_not_require_short_instrument_names=True,
         error_on_not_yet_pitched=True,
+        first_section=True,
     )
     baca.tags.activate(score, baca.tags.LOCAL_MEASURE_NUMBER)
     lilypond_file = baca.lilypond.file(
