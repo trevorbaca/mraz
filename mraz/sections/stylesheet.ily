@@ -25,5 +25,6 @@
   {
     \Score
     \override BarNumber.stencil = ##f
+    barNumberVisibility = #all-bar-numbers-visible
   }
 }
