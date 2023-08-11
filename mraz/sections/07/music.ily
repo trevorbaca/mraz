@@ -55,7 +55,7 @@ number.7.Skips = {
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
     - \baca-dashed-line-with-arrow
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-    - \baca-metronome-mark-spanner-colored-left-text 2 0 1 "84" #'blue
+    - \baca-metronome-mark-spanner-colored-left-text 2 0 1 "84" #blue
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
     \bacaStartTextSpanMM
       %! EXPLICIT_METRONOME_MARK
@@ -268,7 +268,7 @@ number.7.Skips = {
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
     - \baca-invisible-line
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-    - \baca-metronome-mark-spanner-colored-left-text 2 0 1 "112" #'blue
+    - \baca-metronome-mark-spanner-colored-left-text 2 0 1 "112" #blue
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
     \bacaStartTextSpanMM
       %! EXPLICIT_METRONOME_MARK
@@ -399,7 +399,7 @@ number.7.RH.Music.1 = {
                 e''16
                   %! EXPLICIT_DYNAMIC_COLOR
                   %! EXPLICIT_DYNAMIC
-                - \tweak color #(x11-color 'blue)
+                - \tweak color #blue
                   %! EXPLICIT_DYNAMIC
                 \fff
                   %! FIGURE_LABEL
@@ -1023,7 +1023,7 @@ number.7.RH.Music.2 = {
             c''16
               %! EXPLICIT_DYNAMIC_COLOR
               %! EXPLICIT_DYNAMIC
-            - \tweak color #(x11-color 'blue)
+            - \tweak color #blue
               %! EXPLICIT_DYNAMIC
             \fff
               %! FIGURE_LABEL
@@ -2119,7 +2119,7 @@ number.7.LH.Music.4 = {
             fs'!16
               %! EXPLICIT_DYNAMIC_COLOR
               %! EXPLICIT_DYNAMIC
-            - \tweak color #(x11-color 'blue)
+            - \tweak color #blue
               %! EXPLICIT_DYNAMIC
             \ff
               %! FIGURE_LABEL
@@ -2445,7 +2445,7 @@ number.7.LH.Music.5 = {
                 cs'!16
                   %! EXPLICIT_DYNAMIC_COLOR
                   %! EXPLICIT_DYNAMIC
-                - \tweak color #(x11-color 'blue)
+                - \tweak color #blue
                   %! EXPLICIT_DYNAMIC
                 \pp
                   %! FIGURE_LABEL

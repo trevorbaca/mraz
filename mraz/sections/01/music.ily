@@ -47,7 +47,7 @@ number.1.Skips = {
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
     - \baca-invisible-line
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-    - \baca-metronome-mark-spanner-colored-left-text 2 0 1 "84" #'blue
+    - \baca-metronome-mark-spanner-colored-left-text 2 0 1 "84" #blue
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
     \bacaStartTextSpanMM
       %! EXPLICIT_METRONOME_MARK
@@ -85,7 +85,7 @@ number.1.Skips = {
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
     - \baca-invisible-line
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-    - \baca-metronome-mark-spanner-colored-left-text 2 0 1 "112" #'blue
+    - \baca-metronome-mark-spanner-colored-left-text 2 0 1 "112" #blue
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
     \bacaStartTextSpanMM
       %! EXPLICIT_METRONOME_MARK
@@ -173,7 +173,7 @@ number.1.Skips = {
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
     - \baca-invisible-line
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-    - \baca-metronome-mark-spanner-colored-left-text 2 0 1 "84" #'blue
+    - \baca-metronome-mark-spanner-colored-left-text 2 0 1 "84" #blue
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
     \bacaStartTextSpanMM
       %! EXPLICIT_METRONOME_MARK
@@ -261,7 +261,7 @@ number.1.Skips = {
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
     - \baca-dashed-line-with-arrow
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-    - \baca-metronome-mark-spanner-colored-left-text 2 0 1 "84" #'blue
+    - \baca-metronome-mark-spanner-colored-left-text 2 0 1 "84" #blue
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
     \bacaStartTextSpanMM
       %! EXPLICIT_METRONOME_MARK
@@ -299,7 +299,7 @@ number.1.Skips = {
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
     - \baca-invisible-line
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-    - \baca-metronome-mark-spanner-colored-left-text 2 0 1 "112" #'blue
+    - \baca-metronome-mark-spanner-colored-left-text 2 0 1 "112" #blue
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
     \bacaStartTextSpanMM
       %! EXPLICIT_METRONOME_MARK
@@ -355,7 +355,7 @@ number.1.RH.Music.1 = {
           %! SHIFTED_CLEF
     %%% \once \override PianoMusicRHStaff.Clef.X-extent = ##f
           %! EXPLICIT_CLEF_COLOR
-        \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'blue)
+        \once \override PianoMusicRHStaff.Clef.color = #blue
           %! MEASURE_1
           %! SHIFTED_CLEF
     %%% \once \override PianoMusicRHStaff.Clef.extra-offset = #'(-2.5 . 0)
@@ -458,7 +458,7 @@ number.1.RH.Music.2 = {
               %! EXPLICIT_DYNAMIC_COLOR
               %! EXPLICIT_DYNAMIC
               %! SPANNER_STOP
-            - \tweak color #(x11-color 'blue)
+            - \tweak color #blue
               %! EXPLICIT_DYNAMIC
               %! SPANNER_STOP
             \f
@@ -472,7 +472,7 @@ number.1.RH.Music.2 = {
               %! EXPLICIT_DYNAMIC_COLOR
               %! EXPLICIT_DYNAMIC
               %! SPANNER_START
-            - \tweak color #(x11-color 'blue)
+            - \tweak color #blue
               %! EXPLICIT_DYNAMIC
               %! SPANNER_START
             \<
@@ -566,7 +566,7 @@ number.1.RH.Music.2 = {
               %! EXPLICIT_DYNAMIC_COLOR
               %! EXPLICIT_DYNAMIC
               %! SPANNER_STOP
-            - \tweak color #(x11-color 'blue)
+            - \tweak color #blue
               %! EXPLICIT_DYNAMIC
               %! SPANNER_STOP
             \ff
@@ -628,7 +628,7 @@ number.1.RH.Music.2 = {
         - \accent
           %! EXPLICIT_DYNAMIC_COLOR
           %! EXPLICIT_DYNAMIC
-        - \tweak color #(x11-color 'blue)
+        - \tweak color #blue
           %! EXPLICIT_DYNAMIC
         \fff
           %! FIGURE_LABEL
@@ -730,7 +730,7 @@ number.1.RH.Music.3 = {
         - \tenuto
           %! EXPLICIT_DYNAMIC_COLOR
           %! EXPLICIT_DYNAMIC
-        - \tweak color #(x11-color 'blue)
+        - \tweak color #blue
           %! EXPLICIT_DYNAMIC
         \pp
           %! FIGURE_LABEL
@@ -803,7 +803,7 @@ number.1.RH.Music.3 = {
         - \tenuto
           %! EXPLICIT_DYNAMIC_COLOR
           %! EXPLICIT_DYNAMIC
-        - \tweak color #(x11-color 'blue)
+        - \tweak color #blue
           %! EXPLICIT_DYNAMIC
         \mf
           %! FIGURE_LABEL
@@ -1086,7 +1086,7 @@ number.1.LH.Music.1 = {
       %! SHIFTED_CLEF
 %%% \once \override PianoMusicLHStaff.Clef.X-extent = ##f
       %! EXPLICIT_CLEF_COLOR
-    \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'blue)
+    \once \override PianoMusicLHStaff.Clef.color = #blue
       %! MEASURE_1
       %! SHIFTED_CLEF
 %%% \once \override PianoMusicLHStaff.Clef.extra-offset = #'(-2.5 . 0)
@@ -1208,7 +1208,7 @@ number.1.LH.Music.4 = {
             d''16
               %! EXPLICIT_DYNAMIC_COLOR
               %! EXPLICIT_DYNAMIC
-            - \tweak color #(x11-color 'blue)
+            - \tweak color #blue
               %! EXPLICIT_DYNAMIC
             \ff
               %! FIGURE_LABEL
@@ -1345,7 +1345,7 @@ number.1.LH.Music.5 = {
         bf,,!8.
           %! EXPLICIT_DYNAMIC_COLOR
           %! EXPLICIT_DYNAMIC
-        - \tweak color #(x11-color 'blue)
+        - \tweak color #blue
           %! EXPLICIT_DYNAMIC
         \ppp
           %! FIGURE_LABEL
@@ -1443,7 +1443,7 @@ number.1.LH.Music.6 = {
           %! SHIFTED_CLEF
         \once \override PianoMusicLHStaff.Clef.X-extent = ##f
           %! EXPLICIT_CLEF_COLOR
-        \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'blue)
+        \once \override PianoMusicLHStaff.Clef.color = #blue
           %! MEASURE_3
           %! SHIFTED_CLEF
         \once \override PianoMusicLHStaff.Clef.extra-offset = #'(-2.75 . 0)
@@ -1460,7 +1460,7 @@ number.1.LH.Music.6 = {
         b,,,8
           %! EXPLICIT_DYNAMIC_COLOR
           %! EXPLICIT_DYNAMIC
-        - \tweak color #(x11-color 'blue)
+        - \tweak color #blue
           %! EXPLICIT_DYNAMIC
         \f
           %! FIGURE_LABEL

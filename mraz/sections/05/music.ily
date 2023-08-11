@@ -34,7 +34,7 @@ number.5.Skips = {
       %! REAPPLIED_METRONOME_MARK_WITH_COLOR
     - \baca-invisible-line
       %! REAPPLIED_METRONOME_MARK_WITH_COLOR
-    - \baca-metronome-mark-spanner-colored-left-text 2 0 1 "84" #'green4
+    - \baca-metronome-mark-spanner-colored-left-text 2 0 1 "84" #(x11-color 'green4)
       %! REAPPLIED_METRONOME_MARK_WITH_COLOR
     \bacaStartTextSpanMM
       %! REAPPLIED_METRONOME_MARK
@@ -254,7 +254,7 @@ number.5.RH.Music.3 = {
         - \tenuto
           %! EXPLICIT_DYNAMIC_COLOR
           %! EXPLICIT_DYNAMIC
-        - \tweak color #(x11-color 'blue)
+        - \tweak color #blue
           %! EXPLICIT_DYNAMIC
         \pp
           %! FIGURE_LABEL
@@ -590,7 +590,7 @@ number.5.LH.Music.4 = {
       %! SHIFTED_CLEF
 %%% \once \override PianoMusicLHStaff.Clef.X-extent = ##f
       %! EXPLICIT_CLEF_COLOR
-    \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'blue)
+    \once \override PianoMusicLHStaff.Clef.color = #blue
       %! MEASURE_78
       %! SHIFTED_CLEF
 %%% \once \override PianoMusicLHStaff.Clef.extra-offset = #'(-2.5 . 0)
@@ -613,7 +613,7 @@ number.5.LH.Music.4 = {
         - \tenuto
           %! EXPLICIT_DYNAMIC_COLOR
           %! EXPLICIT_DYNAMIC
-        - \tweak color #(x11-color 'blue)
+        - \tweak color #blue
           %! EXPLICIT_DYNAMIC
         \mp
           %! FIGURE_LABEL
