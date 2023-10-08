@@ -1209,7 +1209,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         groups = rmakers.nongrace_leaves_in_each_tuplet(tuplets)
         rmakers.beam_groups(groups)
         baca.dls_staff_padding(tuplets, 8)
-        baca.hairpin(baca.select.leaves(tuplets)[:-1], "f < ff")
+        baca.hairpin(abjad.select.leaves(tuplets)[:-1], "f < ff")
         for ntrun in baca.select.ntruns(container):
             baca.slur(ntrun)
         baca.register(tuplets, 10, 36)
@@ -1240,7 +1240,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         groups = rmakers.nongrace_leaves_in_each_tuplet(tuplets)
         rmakers.beam_groups(groups)
         baca.dls_staff_padding(tuplets, 8)
-        baca.hairpin(baca.select.leaves(tuplets)[:-1], "f < ff")
+        baca.hairpin(abjad.select.leaves(tuplets)[:-1], "f < ff")
         for ntrun in baca.select.ntruns(container):
             baca.slur(ntrun)
         baca.register(tuplets, 10, 36)
@@ -1291,7 +1291,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         groups = rmakers.nongrace_leaves_in_each_tuplet(tuplets)
         rmakers.beam_groups(groups)
         baca.dls_staff_padding(tuplets, 8)
-        baca.hairpin(baca.select.leaves(tuplets)[:-1], "f < ff")
+        baca.hairpin(abjad.select.leaves(tuplets)[:-1], "f < ff")
         for ntrun in baca.select.ntruns(container):
             baca.slur(ntrun)
         baca.register(tuplets, 10, 36)
@@ -1318,7 +1318,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         groups = rmakers.nongrace_leaves_in_each_tuplet(tuplets)
         rmakers.beam_groups(groups)
         baca.dls_staff_padding(tuplets, 8)
-        baca.hairpin(baca.select.leaves(tuplets)[:-1], "f < ff")
+        baca.hairpin(abjad.select.leaves(tuplets)[:-1], "f < ff")
         for ntrun in baca.select.ntruns(container):
             baca.slur(ntrun)
         baca.register(tuplets, 10, 36)
