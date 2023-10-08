@@ -128,7 +128,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         baca.bass_to_octave(tuplets, 3)
         baca.dynamic(baca.select.phead(tuplets, 0), "ppp")
         baca.dynamic_text_x_offset(baca.select.pleaf(tuplets, 0), 0)
-        for tuplet in baca.select.tuplets(tuplets):
+        for tuplet in abjad.select.tuplets(tuplets):
             baca.slur(tuplet)
         baca.staccato(baca.select.pheads(tuplets))
         baca.stem_down(baca.select.pleaves(tuplets))
@@ -201,7 +201,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         baca.bass_to_octave(tuplets, 3)
         baca.dynamic(baca.select.phead(tuplets, 0), "ppp")
         baca.dynamic_text_x_offset(baca.select.pleaf(tuplets, 0), 0)
-        for tuplet in baca.select.tuplets(tuplets):
+        for tuplet in abjad.select.tuplets(tuplets):
             baca.slur(tuplet)
         baca.staccato(baca.select.pheads(tuplets))
         baca.stem_down(baca.select.pleaves(tuplets))
