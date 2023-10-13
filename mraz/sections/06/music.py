@@ -789,13 +789,13 @@ def postprocess(cache):
         for qrun in baca.select.qruns(o):
             qrun = baca.select.pleaves(qrun)[1:]
             baca.repeat_tie(qrun)
-        baca.dots_transparent(o)
+        baca.override.dots_transparent(o)
     for n in [10, 11, 12, 13, 14]:
         with baca.scope(m[n]) as o:
             library.transparent_music(o.leaves()[1:])
     for n in [11, 13, 14]:
         with baca.scope(m[n]) as o:
-            baca.accidental_stencil_false(o.leaf(0))
+            baca.override.accidental_stencil_false(o.leaf(0))
             baca.stem_transparent(o.pleaves())
 
 

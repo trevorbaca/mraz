@@ -65,7 +65,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         rmakers.beam_groups(groups)
         baca.bass_to_octave(tuplet, 3)
         baca.dynamic(baca.select.phead(tuplet, 0), "ppp")
-        baca.dynamic_text_x_offset(baca.select.pleaf(tuplet, 0), 0)
+        baca.override.dynamic_text_x_offset(baca.select.pleaf(tuplet, 0), 0)
         baca.dynamic_down(abjad.select.leaf(tuplet, 0))
         baca.slur(tuplet)
         baca.staccato(baca.select.pheads(tuplet))
@@ -127,7 +127,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         rmakers.beam_groups(groups)
         baca.bass_to_octave(tuplets, 3)
         baca.dynamic(baca.select.phead(tuplets, 0), "ppp")
-        baca.dynamic_text_x_offset(baca.select.pleaf(tuplets, 0), 0)
+        baca.override.dynamic_text_x_offset(baca.select.pleaf(tuplets, 0), 0)
         for tuplet in abjad.select.tuplets(tuplets):
             baca.slur(tuplet)
         baca.staccato(baca.select.pheads(tuplets))
@@ -200,7 +200,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         rmakers.beam_groups(groups)
         baca.bass_to_octave(tuplets, 3)
         baca.dynamic(baca.select.phead(tuplets, 0), "ppp")
-        baca.dynamic_text_x_offset(baca.select.pleaf(tuplets, 0), 0)
+        baca.override.dynamic_text_x_offset(baca.select.pleaf(tuplets, 0), 0)
         for tuplet in abjad.select.tuplets(tuplets):
             baca.slur(tuplet)
         baca.staccato(baca.select.pheads(tuplets))
@@ -278,7 +278,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         )
         groups = rmakers.nongrace_leaves_in_each_tuplet(tuplets)
         rmakers.beam_groups(groups)
-        baca.dls_staff_padding(tuplets, 8)
+        baca.override.dls_staff_padding(tuplets, 8)
         baca.hairpin(tuplets, "f < ff")
         for run in baca.select.runs(container):
             baca.slur(run)
@@ -379,7 +379,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         )
         groups = rmakers.nongrace_leaves_in_each_tuplet(tuplet)
         rmakers.beam_groups(groups)
-        baca.accidental_x_extent_false(abjad.select.leaf(tuplet, 0))
+        baca.override.accidental_x_extent_false(abjad.select.leaf(tuplet, 0))
 
     @baca.call
     def block():
@@ -456,7 +456,7 @@ def postprocess(cache):
     m = cache[library.lh_resonance]
     for item in [(2, 7), (10, 12)]:
         with baca.scope(m.get(item)) as o:
-            baca.accidental_stencil_false(o)
+            baca.override.accidental_stencil_false(o)
     for n in [2, 4]:
         with baca.scope(m[n]) as o:
             library.transparent_music(o.leaf(0))
