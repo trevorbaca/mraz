@@ -341,7 +341,7 @@ def _validate_voice_names(score):
 
 
 def clean_up_repeat_ties(argument):
-    baca.beam_stencil_false(argument)
+    baca.override.beam_stencil_false(argument)
     baca.override.dots_stencil_false(argument)
     baca.override.flag_stencil_false(argument)
     baca.override.stem_stencil_false(argument)
@@ -1507,7 +1507,7 @@ def transparent_music(argument):
     if argument:
         baca.override.note_head_no_ledgers(argument, True)
         baca.override.accidental_transparent(argument)
-        baca.beam_transparent(argument)
+        baca.override.beam_transparent(argument)
         baca.override.flag_transparent(argument)
         baca.override.note_head_transparent(argument)
         baca.override.repeat_tie_transparent(argument)
