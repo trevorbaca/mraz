@@ -43,7 +43,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tsd=4,
         )
         baca.register(tuplets, -39, -27)
-        baca.rest_up(abjad.select.rests(tuplets))
+        baca.override.rest_up(abjad.select.rests(tuplets))
         baca.label_figure(tuplets, "8.3.R.2-3", accumulator)
 
     @baca.call
@@ -70,7 +70,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tsd=4,
         )
         baca.register(tuplet, -27, -39)
-        baca.rest_up(abjad.select.rests(tuplet))
+        baca.override.rest_up(abjad.select.rests(tuplet))
         baca.label_figure(tuplet, "8.3.R.5", accumulator)
 
     @baca.call
@@ -110,7 +110,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tsd=2,
         )
         baca.register(tuplet, -39)
-        baca.rest_up(abjad.select.rests(tuplet))
+        baca.override.rest_up(abjad.select.rests(tuplet))
         baca.label_figure(tuplet, "8.3.R.8", accumulator)
 
     @baca.call
@@ -140,7 +140,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tsd=4,
         )
         baca.register(tuplets, -39, -27)
-        baca.tuplet_bracket_staff_padding(tuplets, 3)
+        baca.override.tuplet_bracket_staff_padding(tuplets, 3)
         baca.label_figure(tuplets, "8.3.R.10", accumulator)
 
     @baca.call
@@ -154,7 +154,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tsd=2,
         )
         baca.register(tuplet, -39)
-        baca.rest_up(abjad.select.rests(tuplet))
+        baca.override.rest_up(abjad.select.rests(tuplet))
         baca.label_figure(tuplet, "8.3.R.11", accumulator)
 
     @baca.call
@@ -217,7 +217,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             hide_time_signature=True,
         )
         baca.register(tuplet, -39)
-        baca.rest_up(abjad.select.rests(tuplet))
+        baca.override.rest_up(abjad.select.rests(tuplet))
         baca.label_figure(tuplet, "8.3.L.2", accumulator)
 
     @baca.call
@@ -235,7 +235,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             ),
             hide_time_signature=True,
         )
-        baca.note_column_shift(baca.select.pleaf(tuplet, -1), -1)
+        baca.override.note_column_shift(baca.select.pleaf(tuplet, -1), -1)
         baca.register(tuplet, -39)
         baca.label_figure(tuplet, "8.3.L.3", accumulator)
 
@@ -313,14 +313,14 @@ def postprocess(cache):
     m = cache[library.lh_v5]
     with baca.scope(m.leaves()) as o:
         baca.ottava_bassa(o.tleaves())
-        baca.tuplet_bracket_up(o)
+        baca.override.tuplet_bracket_up(o)
     m = cache[library.lh_v6]
     with baca.scope(m.leaves()) as o:
-        baca.script_down(o)
-        baca.stem_down(o.tleaves())
+        baca.override.script_down(o)
+        baca.override.stem_down(o.tleaves())
         baca.tenuto(o.pheads())
-        baca.tuplet_bracket_staff_padding(o, 6)
-        baca.rest_staff_position(o.rests(), -10)
+        baca.override.tuplet_bracket_staff_padding(o, 6)
+        baca.override.rest_staff_position(o.rests(), -10)
 
 
 @baca.build.timed("make_score")

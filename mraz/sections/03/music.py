@@ -49,7 +49,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             [tuplet],
             tsd=4,
         )
-        baca.rest_transparent(abjad.select.rests(tuplet))
+        baca.override.rest_transparent(abjad.select.rests(tuplet))
 
     @baca.call
     def block():
@@ -69,7 +69,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         baca.dynamic_down(abjad.select.leaf(tuplet, 0))
         baca.slur(tuplet)
         baca.staccato(baca.select.pheads(tuplet))
-        baca.stem_down(baca.select.pleaves(tuplet))
+        baca.override.stem_down(baca.select.pleaves(tuplet))
         baca.label_figure(tuplet, "2.2.R.1.1", accumulator)
 
     @baca.call
@@ -80,7 +80,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             [tuplet],
             tsd=4,
         )
-        baca.rest_transparent(abjad.select.rests(tuplet))
+        baca.override.rest_transparent(abjad.select.rests(tuplet))
 
     @baca.call
     def block():
@@ -131,7 +131,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         for tuplet in abjad.select.tuplets(tuplets):
             baca.slur(tuplet)
         baca.staccato(baca.select.pheads(tuplets))
-        baca.stem_down(baca.select.pleaves(tuplets))
+        baca.override.stem_down(baca.select.pleaves(tuplets))
         baca.label_figure(tuplets, "2.2.R.1.1-2", accumulator)
 
     @baca.call
@@ -142,7 +142,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             [tuplet],
             tsd=4,
         )
-        baca.rest_transparent(abjad.select.rests(tuplet))
+        baca.override.rest_transparent(abjad.select.rests(tuplet))
 
     @baca.call
     def block():
@@ -155,8 +155,8 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         )
         baca.dynamic(baca.select.phead(tuplet, 0), "ff")
         baca.register(tuplet, -12, 12)
-        baca.tuplet_bracket_up(tuplet)
-        baca.tuplet_bracket_staff_padding(tuplet, 3)
+        baca.override.tuplet_bracket_up(tuplet)
+        baca.override.tuplet_bracket_staff_padding(tuplet, 3)
         baca.label_figure(tuplet, "4.1.R.1", accumulator)
 
     @baca.call
@@ -174,7 +174,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         baca.dynamic(baca.select.phead(tuplet, 0), "f")
         baca.dynamic_down(abjad.select.leaf(tuplet, 0))
         baca.register(tuplet, -6, 6)
-        baca.rest_up(abjad.select.rests(tuplet))
+        baca.override.rest_up(abjad.select.rests(tuplet))
         baca.tenuto(baca.select.pheads(tuplet))
         baca.label_figure(tuplet, "4.1.L.1", accumulator)
 
@@ -204,7 +204,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         for tuplet in abjad.select.tuplets(tuplets):
             baca.slur(tuplet)
         baca.staccato(baca.select.pheads(tuplets))
-        baca.stem_down(baca.select.pleaves(tuplets))
+        baca.override.stem_down(baca.select.pleaves(tuplets))
         baca.label_figure(tuplets, "2.2.R.1.1-4", accumulator)
 
     @baca.call
@@ -282,11 +282,13 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         baca.hairpin(tuplets, "f < ff")
         for run in baca.select.runs(container):
             baca.slur(run)
-        wrappers = baca.span_bar_extra_offset(abjad.select.leaf(tuplets, 0), (-0.75, 0))
+        wrappers = baca.override.span_bar_extra_offset(
+            abjad.select.leaf(tuplets, 0), (-0.75, 0)
+        )
         baca.tags.wrappers(wrappers, baca.tags.ONLY_SECTION)
         baca.ottava(baca.select.tleaves(tuplets))
         baca.register(tuplets, 10, 36)
-        baca.slur_up(tuplets)
+        baca.override.slur_up(tuplets)
         baca.label_figure(container, "4.5.L.1-4", accumulator)
 
     @baca.call
@@ -446,7 +448,7 @@ def postprocess(cache):
         baca.ottava(o.tleaves())
     m = cache[library.rh_v2]
     with baca.scope(m.leaves()) as o:
-        baca.script_up(o)
+        baca.override.script_up(o)
     m = cache[library.lh_resonance]
     with baca.scope(m.leaves()) as o:
         baca.untie(o)

@@ -33,8 +33,8 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         baca.register(tuplets, 24, 12)
         baca.staccato(baca.select.pheads(tuplets))
         baca.tenuto(baca.select.pheads(tuplets))
-        baca.tuplet_bracket_staff_padding(tuplets, 7)
-        baca.tuplet_bracket_up(tuplets)
+        baca.override.tuplet_bracket_staff_padding(tuplets, 7)
+        baca.override.tuplet_bracket_up(tuplets)
         baca.label_figure(tuplets, "6.1.R.1-2", accumulator)
 
     @baca.call
@@ -50,9 +50,9 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         baca.register(tuplet, 24, 12)
         baca.staccato(baca.select.pheads(tuplet))
         baca.tenuto(baca.select.pheads(tuplet))
-        baca.tuplet_bracket_staff_padding(tuplet, 7)
-        baca.tuplet_bracket_up(tuplet)
-        baca.tuplet_bracket_staff_padding(tuplet, 8)
+        baca.override.tuplet_bracket_staff_padding(tuplet, 7)
+        baca.override.tuplet_bracket_up(tuplet)
+        baca.override.tuplet_bracket_staff_padding(tuplet, 8)
         baca.label_figure(tuplet, "6.1.R.3", accumulator)
 
     @baca.call
@@ -85,7 +85,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         baca.register(tuplet, 12, 24)
         baca.staccato(baca.select.pheads(tuplet))
         baca.tenuto(baca.select.pheads(tuplet))
-        baca.tuplet_bracket_up(tuplet)
+        baca.override.tuplet_bracket_up(tuplet)
         baca.label_figure(tuplet, "6.1.R.5", accumulator)
 
     @baca.call
@@ -106,7 +106,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         baca.dynamic(baca.select.phead(tuplet, 0), "mp")
         baca.register(tuplet, 0, 12)
         baca.tenuto(baca.select.pheads(tuplet))
-        baca.tuplet_bracket_staff_padding(tuplet, 3)
+        baca.override.tuplet_bracket_staff_padding(tuplet, 3)
         baca.label_figure(tuplet, "6.1.L.1", accumulator)
 
     @baca.call
@@ -126,7 +126,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         )
         baca.register(tuplet, 0, 12)
         baca.tenuto(baca.select.pheads(tuplet))
-        baca.tuplet_bracket_staff_padding(tuplet, 3)
+        baca.override.tuplet_bracket_staff_padding(tuplet, 3)
         baca.label_figure(tuplet, "6.1.L.2", accumulator)
 
     @baca.call
