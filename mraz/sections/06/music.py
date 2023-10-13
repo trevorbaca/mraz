@@ -332,7 +332,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         )
         rmakers.beam_groups(tuplets)
         baca.bass_to_octave(tuplets, 3)
-        baca.beam_positions(tuplets, -8)
+        baca.override.beam_positions(tuplets, -8)
         baca.dynamic(baca.select.phead(tuplets, 0), "ppp")
         baca.dynamic_down(abjad.select.leaf(tuplets, 0))
         for tuplet in abjad.select.tuplets(tuplets):
@@ -363,7 +363,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         )
         rmakers.beam_groups(tuplets)
         baca.bass_to_octave(tuplets, 4)
-        baca.beam_positions(tuplets, -8)
+        baca.override.beam_positions(tuplets, -8)
         for tuplet in abjad.select.tuplets(tuplets):
             tleaves = baca.select.tleaves(tuplet)
             baca.slur(tleaves)
@@ -392,7 +392,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         )
         rmakers.beam_groups(tuplets)
         baca.bass_to_octave(tuplets, 4)
-        baca.beam_positions(tuplets, -8)
+        baca.override.beam_positions(tuplets, -8)
         for tuplet in abjad.select.tuplets(tuplets):
             tleaves = baca.select.tleaves(tuplet)
             baca.slur(tleaves)
@@ -420,7 +420,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         )
         rmakers.beam_groups(tuplets)
         baca.bass_to_octave(tuplets, 5)
-        baca.beam_positions(tuplets, -8)
+        baca.override.beam_positions(tuplets, -8)
         for tuplet in abjad.select.tuplets(tuplets):
             tleaves = baca.select.tleaves(tuplet)
             baca.slur(tleaves)
@@ -448,7 +448,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         )
         rmakers.beam_groups(tuplets)
         baca.bass_to_octave(tuplets, 5)
-        baca.beam_positions(tuplets, -8)
+        baca.override.beam_positions(tuplets, -8)
         for tuplet in abjad.select.tuplets(tuplets):
             tleaves = baca.select.tleaves(tuplet)
             baca.slur(tleaves)
@@ -771,7 +771,7 @@ def postprocess(cache):
     m = cache[library.rh_v2]
     with baca.scope(m.get(2, 8)) as o:
         baca.accent(o.pheads())
-        baca.beam_positions(o, 10.5)
+        baca.override.beam_positions(o, 10.5)
         baca.override.script_up(o)
         baca.override.stem_up(o.pleaves())
     with baca.scope(m.get(9, 13)) as o:
