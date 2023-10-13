@@ -53,7 +53,7 @@ def make_empty_score():
             anchor=baca.anchor_to_figure("4.5.R.3"),
             tsd=4,
         )
-        baca.dls_staff_padding(tuplets, 8)
+        baca.override.dls_staff_padding(tuplets, 8)
         baca.hairpin(tuplets, "f < ff")
         baca.ottava(baca.select.tleaves(tuplets))
         baca.register(tuplets, 10, 36)
@@ -115,7 +115,7 @@ def make_empty_score():
             hide_time_signature=True,
         )
         baca.dynamic(baca.select.phead(tuplet, 0), "ppp")
-        baca.dynamic_text_x_offset(baca.select.pleaf(tuplet, 0), -0.5)
+        baca.override.dynamic_text_x_offset(baca.select.pleaf(tuplet, 0), -0.5)
         baca.dynamic_up(abjad.select.leaf(tuplet, 0))
         baca.register(tuplet, -27, -39)
         baca.rest_up(abjad.select.rests(tuplet))
@@ -142,7 +142,7 @@ def make_empty_score():
             tsd=8,
         )
         baca.dynamic(baca.select.phead(tuplet, 0), "pp")
-        baca.dynamic_text_x_offset(baca.select.pleaf(tuplet, 0), 0.5)
+        baca.override.dynamic_text_x_offset(baca.select.pleaf(tuplet, 0), 0.5)
         baca.register(tuplet, 24, 12)
         baca.staccato(baca.select.pheads(tuplet))
         baca.tenuto(baca.select.pheads(tuplet))
@@ -214,7 +214,7 @@ def make_empty_score():
         )
         rmakers.denominator(tuplet, abjad.Duration(1, 1))
         baca.dynamic(baca.select.phead(tuplet, 0), "mf")
-        baca.dynamic_text_x_offset(baca.select.pleaf(tuplet, 0), 0.25)
+        baca.override.dynamic_text_x_offset(baca.select.pleaf(tuplet, 0), 0.25)
         baca.ottava(baca.select.tleaves(tuplet))
         baca.ottava_bracket_staff_padding(tuplet, 9)
         baca.register(tuplet, 10, 26)
