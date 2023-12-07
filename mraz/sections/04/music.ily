@@ -1412,6 +1412,8 @@ number.4.Skips = {
 number.4.RH.Music.1 = {
 
     % [RH.Music.1 measure 1]
+      %! REAPPLIED_CLEF
+    \clef "treble"
       %! REAPPLIED_CLEF_COLOR
     \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'green4)
       %! REAPPLIED_CLEF_COLOR_CANCELLATION
@@ -1420,8 +1422,6 @@ number.4.RH.Music.1 = {
     \override TupletBracket.staff-padding = 8
       %! REAPPLIED_CLEF
     \set PianoMusicRHStaff.forceClef = ##t
-      %! REAPPLIED_CLEF
-    \clef "treble"
     s1 * 3/2
       %! REAPPLIED_INSTRUMENT_ALERT
     ^ \baca-reapplied-instrument-markup "(“Piano”)"
@@ -6056,14 +6056,14 @@ number.4.LH.InsertVoice.5 = {
 number.4.LH.Music.6 = {
 
     % [LH.Music.6 measure 1]
+      %! REAPPLIED_CLEF
+    \clef "bass"
       %! REAPPLIED_CLEF_COLOR
     \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'green4)
       %! REAPPLIED_CLEF_COLOR_CANCELLATION
     %@% \override PianoMusicLHStaff.Clef.color = ##f
       %! REAPPLIED_CLEF
     \set PianoMusicLHStaff.forceClef = ##t
-      %! REAPPLIED_CLEF
-    \clef "bass"
     s1 * 3/2
       %! REAPPLIED_CLEF_REDRAW_COLOR
     \override PianoMusicLHStaff.Clef.color = #(x11-color 'OliveDrab)
