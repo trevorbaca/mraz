@@ -383,6 +383,8 @@ number.7.RH.Music.1 = {
             {
 
                 % [RH.Music.1 measure 1]
+                  %! REAPPLIED_CLEF
+                \clef "treble"
                 \dynamicUp
                   %! REAPPLIED_CLEF_COLOR
                 \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'green4)
@@ -394,8 +396,6 @@ number.7.RH.Music.1 = {
                 \set PianoMusicRHStaff.forceClef = ##t
                 \set stemLeftBeamCount = 0
                 \set stemRightBeamCount = 2
-                  %! REAPPLIED_CLEF
-                \clef "treble"
                 e''16
                   %! EXPLICIT_DYNAMIC_COLOR
                   %! EXPLICIT_DYNAMIC
@@ -2093,6 +2093,8 @@ number.7.LH.Music.3 = {
 number.7.LH.Music.4 = {
 
     % [LH.Music.4 measure 1]
+      %! REAPPLIED_CLEF
+    \clef "treble"
       %! REAPPLIED_CLEF_COLOR
     \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'green4)
     \override Beam.positions = #'(-5.5 . -5.5)
@@ -2101,8 +2103,6 @@ number.7.LH.Music.4 = {
     \override Script.direction = #down
       %! REAPPLIED_CLEF
     \set PianoMusicLHStaff.forceClef = ##t
-      %! REAPPLIED_CLEF
-    \clef "treble"
     s1 * 3/8
       %! REAPPLIED_CLEF_REDRAW_COLOR
     \override PianoMusicLHStaff.Clef.color = #(x11-color 'OliveDrab)

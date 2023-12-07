@@ -351,6 +351,8 @@ number.1.RH.Music.1 = {
     {
 
         % [RH.Music.1 measure 1]
+          %! EXPLICIT_CLEF
+        \clef "treble"
           %! MEASURE_1
           %! SHIFTED_CLEF
     %%% \once \override PianoMusicRHStaff.Clef.X-extent = ##f
@@ -365,8 +367,6 @@ number.1.RH.Music.1 = {
         \set PianoMusicRHStaff.forceClef = ##t
           %! -PARTS
         \set PianoMusicStaffGroup.instrumentName = \mraz-piano-markup
-          %! EXPLICIT_CLEF
-        \clef "treble"
         bf''''!1
         - \tenuto
           %! FIGURE_LABEL
@@ -1082,6 +1082,8 @@ number.1.PianoMusicRH.Staff = <<
 number.1.LH.Music.1 = {
 
     % [LH.Music.1 measure 1]
+      %! EXPLICIT_CLEF
+    \clef "treble"
       %! MEASURE_1
       %! SHIFTED_CLEF
 %%% \once \override PianoMusicLHStaff.Clef.X-extent = ##f
@@ -1094,8 +1096,6 @@ number.1.LH.Music.1 = {
     %@% \override PianoMusicLHStaff.Clef.color = ##f
       %! EXPLICIT_CLEF
     \set PianoMusicLHStaff.forceClef = ##t
-      %! EXPLICIT_CLEF
-    \clef "treble"
     s1 * 1/1
       %! EXPLICIT_CLEF_REDRAW_COLOR
     \override PianoMusicLHStaff.Clef.color = #(x11-color 'DeepSkyBlue2)
@@ -1439,6 +1439,8 @@ number.1.LH.Music.6 = {
     {
 
         % [LH.Music.6 measure 3]
+          %! EXPLICIT_CLEF
+        \clef "bass"
           %! MEASURE_3
           %! SHIFTED_CLEF
         \once \override PianoMusicLHStaff.Clef.X-extent = ##f
@@ -1455,8 +1457,6 @@ number.1.LH.Music.6 = {
         \override TupletBracket.staff-padding = 6
           %! EXPLICIT_CLEF
         \set PianoMusicLHStaff.forceClef = ##t
-          %! EXPLICIT_CLEF
-        \clef "bass"
         b,,,8
           %! EXPLICIT_DYNAMIC_COLOR
           %! EXPLICIT_DYNAMIC

@@ -619,14 +619,14 @@ number.6.Skips = {
 number.6.RH.Music.1 = {
 
     % [RH.Music.1 measure 1]
+      %! REAPPLIED_CLEF
+    \clef "treble"
       %! REAPPLIED_CLEF_COLOR
     \once \override PianoMusicRHStaff.Clef.color = #(x11-color 'green4)
       %! REAPPLIED_CLEF_COLOR_CANCELLATION
     %@% \override PianoMusicRHStaff.Clef.color = ##f
       %! REAPPLIED_CLEF
     \set PianoMusicRHStaff.forceClef = ##t
-      %! REAPPLIED_CLEF
-    \clef "treble"
     s1 * 4/1
       %! REAPPLIED_INSTRUMENT_ALERT
     ^ \baca-reapplied-instrument-markup "(“Piano”)"
@@ -3510,14 +3510,14 @@ number.6.LH.Music.3 = {
 number.6.LH.Music.4 = {
 
     % [LH.Music.4 measure 1]
+      %! REAPPLIED_CLEF
+    \clef "treble"
       %! REAPPLIED_CLEF_COLOR
     \once \override PianoMusicLHStaff.Clef.color = #(x11-color 'green4)
       %! REAPPLIED_CLEF_COLOR_CANCELLATION
     %@% \override PianoMusicLHStaff.Clef.color = ##f
       %! REAPPLIED_CLEF
     \set PianoMusicLHStaff.forceClef = ##t
-      %! REAPPLIED_CLEF
-    \clef "treble"
     s1 * 4/1
       %! REAPPLIED_CLEF_REDRAW_COLOR
     \override PianoMusicLHStaff.Clef.color = #(x11-color 'OliveDrab)
@@ -3533,6 +3533,8 @@ number.6.LH.Music.4 = {
     {
 
         % [LH.Music.4 measure 4]
+          %! EXPLICIT_CLEF
+        \clef "bass"
           %! MEASURE_85
           %! SHIFTED_CLEF
     %%% \once \override PianoMusicLHStaff.Clef.X-extent = ##f
@@ -3546,8 +3548,6 @@ number.6.LH.Music.4 = {
         \override Slur.direction = #down
           %! EXPLICIT_CLEF
         \set PianoMusicLHStaff.forceClef = ##t
-          %! EXPLICIT_CLEF
-        \clef "bass"
         r2
           %! EXPLICIT_CLEF_REDRAW_COLOR
         \override PianoMusicLHStaff.Clef.color = #(x11-color 'DeepSkyBlue2)
@@ -3879,6 +3879,8 @@ number.6.LH.Music.4 = {
     {
 
         % [LH.Music.4 measure 16]
+          %! EXPLICIT_CLEF
+        \clef "treble"
           %! MEASURE_97
           %! SHIFTED_CLEF
         \once \override PianoMusicLHStaff.Clef.X-extent = ##f
@@ -3892,8 +3894,6 @@ number.6.LH.Music.4 = {
         %@% \override PianoMusicLHStaff.Clef.color = ##f
           %! EXPLICIT_CLEF
         \set PianoMusicLHStaff.forceClef = ##t
-          %! EXPLICIT_CLEF
-        \clef "treble"
         r4
         \revert Script.direction
           %! EXPLICIT_CLEF_REDRAW_COLOR
