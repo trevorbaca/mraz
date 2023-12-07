@@ -43,14 +43,14 @@ number.7.Skips = {
     %@% \baca-thick-red-bar-line
       %! EXPLICIT_TIME_SIGNATURE_COLOR
     \baca-time-signature-color #blue
-      %! EXPLICIT_TIME_SIGNATURE
-    \time 3/4
       %! RED_START_BAR
     %@% \tweak break-visibility ##(#t #t #f)
       %! RED_START_BAR
     %@% \tweak color #red
       %! RED_START_BAR
     %@% \mark \markup \with-dimensions-from \null "07"
+      %! EXPLICIT_TIME_SIGNATURE
+    \time 3/4
     s1 * 3/4
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
     - \baca-dashed-line-with-arrow
@@ -711,10 +711,10 @@ number.7.RH.Music.1 = {
     }
 
     % [RH.Music.1 measure 11]
+    \mark \mraz-colophon-markup
     \once \override Score.RehearsalMark.direction = #down
     \once \override Score.RehearsalMark.padding = 6
     \once \override Score.RehearsalMark.self-alignment-X = #right
-    \mark \mraz-colophon-markup
     s1 * 1/8
     \revert Beam.positions
 
