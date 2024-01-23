@@ -279,7 +279,11 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         groups = rmakers.nongrace_leaves_in_each_tuplet(tuplets)
         rmakers.beam_groups(groups)
         baca.override.dls_staff_padding(tuplets, 8)
-        baca.hairpin(tuplets, "f < ff")
+        baca.hairpin(
+            (),
+            "f < ff",
+            pieces=[tuplets],
+        )
         for run in baca.select.runs(container):
             baca.slur(run)
         wrappers = baca.override.span_bar_extra_offset(
