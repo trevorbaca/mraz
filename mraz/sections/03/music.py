@@ -67,7 +67,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         baca.dynamic(baca.select.phead(tuplet, 0), "ppp")
         baca.override.dynamic_text_x_offset(baca.select.pleaf(tuplet, 0), 0)
         baca.dynamic_down(abjad.select.leaf(tuplet, 0))
-        baca.slur(tuplet)
+        baca.spanners.slur(tuplet)
         baca.staccato(baca.select.pheads(tuplet))
         baca.override.stem_down(baca.select.pleaves(tuplet))
         baca.label_figure(tuplet, "2.2.R.1.1", accumulator)
@@ -129,7 +129,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         baca.dynamic(baca.select.phead(tuplets, 0), "ppp")
         baca.override.dynamic_text_x_offset(baca.select.pleaf(tuplets, 0), 0)
         for tuplet in abjad.select.tuplets(tuplets):
-            baca.slur(tuplet)
+            baca.spanners.slur(tuplet)
         baca.staccato(baca.select.pheads(tuplets))
         baca.override.stem_down(baca.select.pleaves(tuplets))
         baca.label_figure(tuplets, "2.2.R.1.1-2", accumulator)
@@ -202,7 +202,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         baca.dynamic(baca.select.phead(tuplets, 0), "ppp")
         baca.override.dynamic_text_x_offset(baca.select.pleaf(tuplets, 0), 0)
         for tuplet in abjad.select.tuplets(tuplets):
-            baca.slur(tuplet)
+            baca.spanners.slur(tuplet)
         baca.staccato(baca.select.pheads(tuplets))
         baca.override.stem_down(baca.select.pleaves(tuplets))
         baca.label_figure(tuplets, "2.2.R.1.1-4", accumulator)
@@ -285,12 +285,12 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             pieces=[tuplets],
         )
         for run in baca.select.runs(container):
-            baca.slur(run)
+            baca.spanners.slur(run)
         wrappers = baca.override.span_bar_extra_offset(
             abjad.select.leaf(tuplets, 0), (-0.75, 0)
         )
         baca.tags.wrappers(wrappers, baca.tags.ONLY_SECTION)
-        baca.ottava(baca.select.tleaves(tuplets))
+        baca.spanners.ottava(baca.select.tleaves(tuplets))
         baca.register(tuplets, 10, 36)
         baca.override.slur_up(tuplets)
         baca.label_figure(container, "4.5.L.1-4", accumulator)
@@ -449,7 +449,7 @@ def GLOBALS(skips, rests):
 def postprocess(cache):
     m = cache[library.rh_v1]
     with baca.scope(m.leaves()) as o:
-        baca.ottava(o.tleaves())
+        baca.spanners.ottava(o.tleaves())
     m = cache[library.rh_v2]
     with baca.scope(m.leaves()) as o:
         baca.override.script_up(o)

@@ -50,7 +50,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             hide_time_signature=True,
         )
         baca.dynamic(baca.select.phead(tuplet, 0), "mf")
-        baca.ottava(baca.select.tleaves(tuplet))
+        baca.spanners.ottava(baca.select.tleaves(tuplet))
         baca.register(tuplet, 10, 26)
         baca.override.rest_down(abjad.select.rests(tuplet))
         baca.override.stem_down(baca.select.pleaves(tuplet))
@@ -101,7 +101,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         baca.dynamic(baca.select.phead(tuplets, 0), "mp")
         for tuplet in abjad.select.tuplets(tuplets):
             tleaves = baca.select.tleaves(tuplet)
-            baca.slur(tleaves)
+            baca.spanners.slur(tleaves)
         baca.override.tuplet_bracket_down(tuplets)
         baca.label_figure(tuplets, "5.2.R.1-5", accumulator)
 
@@ -157,7 +157,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         rmakers.beam(groups)
         for tuplet in abjad.select.tuplets(tuplets):
             tleaves = baca.select.tleaves(tuplet)
-            baca.slur(tleaves)
+            baca.spanners.slur(tleaves)
         baca.override.tuplet_bracket_down(tuplets)
         baca.label_figure(tuplets, "5.2.R.6-10", accumulator)
 
@@ -172,7 +172,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tsd=4,
         )
         baca.dynamic(baca.select.phead(tuplet, 0), "f")
-        baca.ottava_bassa(baca.select.tleaves(tuplet))
+        baca.spanners.ottava_bassa(baca.select.tleaves(tuplet))
         baca.register(tuplet, -39)
         baca.override.rest_down(abjad.select.rests(tuplet))
         baca.override.stem_down(baca.select.pleaves(tuplet))
@@ -241,7 +241,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         baca.dynamic(baca.select.phead(tuplets, 0), "mp")
         for tuplet in abjad.select.tuplets(tuplets):
             tleaves = baca.select.tleaves(tuplet)
-            baca.slur(tleaves)
+            baca.spanners.slur(tleaves)
         baca.override.tuplet_bracket_down(tuplets)
         baca.label_figure(tuplets, "5.2.R.11-15", accumulator)
 
@@ -295,7 +295,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         rmakers.beam(groups)
         for tuplet in abjad.select.tuplets(tuplets):
             tleaves = baca.select.tleaves(tuplet)
-            baca.slur(tleaves)
+            baca.spanners.slur(tleaves)
         baca.override.tuplet_bracket_down(tuplets)
         baca.label_figure(tuplets, "5.2.R.16-21", accumulator)
 
@@ -337,7 +337,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         baca.dynamic_down(abjad.select.leaf(tuplets, 0))
         for tuplet in abjad.select.tuplets(tuplets):
             tleaves = baca.select.tleaves(tuplet)
-            baca.slur(tleaves)
+            baca.spanners.slur(tleaves)
         baca.staccato(baca.select.pheads(tuplets))
         baca.label_figure(tuplets, "2.2.R.1", accumulator)
 
@@ -366,7 +366,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         baca.override.beam_positions(tuplets, -8)
         for tuplet in abjad.select.tuplets(tuplets):
             tleaves = baca.select.tleaves(tuplet)
-            baca.slur(tleaves)
+            baca.spanners.slur(tleaves)
         baca.staccato(baca.select.pheads(tuplets))
         baca.label_figure(tuplets, "2.2.R.2", accumulator)
 
@@ -395,7 +395,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         baca.override.beam_positions(tuplets, -8)
         for tuplet in abjad.select.tuplets(tuplets):
             tleaves = baca.select.tleaves(tuplet)
-            baca.slur(tleaves)
+            baca.spanners.slur(tleaves)
         baca.staccato(baca.select.pheads(tuplets))
         baca.label_figure(tuplets, "2.2.R.3", accumulator)
 
@@ -423,7 +423,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         baca.override.beam_positions(tuplets, -8)
         for tuplet in abjad.select.tuplets(tuplets):
             tleaves = baca.select.tleaves(tuplet)
-            baca.slur(tleaves)
+            baca.spanners.slur(tleaves)
         baca.staccato(baca.select.pheads(tuplets))
         baca.label_figure(tuplets, "2.2.R.4", accumulator)
 
@@ -451,7 +451,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         baca.override.beam_positions(tuplets, -8)
         for tuplet in abjad.select.tuplets(tuplets):
             tleaves = baca.select.tleaves(tuplet)
-            baca.slur(tleaves)
+            baca.spanners.slur(tleaves)
         baca.staccato(baca.select.pheads(tuplets))
         baca.label_figure(tuplets, "2.2.R.5", accumulator)
 
@@ -549,7 +549,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         baca.dynamic(baca.select.phead(tuplets, 0), "mp")
         for tuplet in abjad.select.tuplets(tuplets):
             tleaves = baca.select.tleaves(tuplet)
-            baca.slur(tleaves)
+            baca.spanners.slur(tleaves)
         baca.override.tuplet_bracket_down(tuplets)
         baca.override.tuplet_bracket_staff_padding(tuplets, 3)
         baca.label_figure(tuplets, "5.2.R.22-25", accumulator)
@@ -569,7 +569,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         )
         baca.clef(abjad.select.leaf(tuplet, 0), "bass")
         baca.dynamic(baca.select.phead(tuplet, 0), "p")
-        baca.slur(baca.select.tleaves(tuplet))
+        baca.spanners.slur(baca.select.tleaves(tuplet))
         baca.register(tuplet, 6, -24)
         baca.override.slur_down(tuplet)
         baca.label_figure(tuplet, "5.2.L.1", accumulator)
@@ -587,7 +587,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             hide_time_signature=True,
         )
         baca.dynamic(baca.select.phead(tuplet, 0), "p")
-        baca.slur(baca.select.tleaves(tuplet))
+        baca.spanners.slur(baca.select.tleaves(tuplet))
         baca.register(tuplet, 6, -24)
         baca.override.slur_down(tuplet)
         baca.label_figure(tuplet, "5.2.L.2", accumulator)
@@ -603,7 +603,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             hide_time_signature=True,
             replace_after_last_nonskip_in_same_voice=True,
         )
-        baca.slur(baca.select.tleaves(tuplet))
+        baca.spanners.slur(baca.select.tleaves(tuplet))
         baca.register(tuplet, 6, -24)
         baca.label_figure(tuplet, "5.2.L.3", accumulator)
 
@@ -618,7 +618,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             anchor=baca.anchor_to_figure("5.2.R.16-21"),
             hide_time_signature=True,
         )
-        baca.slur(baca.select.tleaves(tuplet))
+        baca.spanners.slur(baca.select.tleaves(tuplet))
         baca.register(tuplet, 0, -24)
         baca.label_figure(tuplet, "5.2.L.4", accumulator)
 
@@ -635,7 +635,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         )
         groups = rmakers.nongrace_leaves_in_each_tuplet(tuplet)
         rmakers.beam(groups)
-        baca.slur(baca.select.tleaves(tuplet))
+        baca.spanners.slur(baca.select.tleaves(tuplet))
         baca.register(tuplet, 0, -24)
         baca.label_figure(tuplet, "5.2.L.5", accumulator)
 
@@ -652,7 +652,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         )
         groups = rmakers.nongrace_leaves_in_each_tuplet(tuplet)
         rmakers.beam(groups)
-        baca.slur(baca.select.tleaves(tuplet))
+        baca.spanners.slur(baca.select.tleaves(tuplet))
         baca.register(tuplet, 0, -24)
         baca.label_figure(tuplet, "5.2.L.6", accumulator)
 
@@ -671,7 +671,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         )
         groups = rmakers.nongrace_leaves_in_each_tuplet(tuplet)
         rmakers.beam(groups)
-        baca.slur(baca.select.tleaves(tuplet))
+        baca.spanners.slur(baca.select.tleaves(tuplet))
         baca.register(tuplet, -6, -48)
         baca.label_figure(tuplet, "5.2.L.7", accumulator)
 
@@ -690,7 +690,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         groups = rmakers.nongrace_leaves_in_each_tuplet(tuplet)
         rmakers.beam(groups)
         baca.dynamic(baca.select.phead(tuplet, 0), "p")
-        baca.slur(baca.select.tleaves(tuplet))
+        baca.spanners.slur(baca.select.tleaves(tuplet))
         baca.register(tuplet, -6, -36)
         baca.label_figure(tuplet, "5.2.L.8", accumulator)
 
@@ -706,7 +706,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             replace_after_last_nonskip_in_same_voice=True,
         )
         rmakers.beam([tuplet])
-        baca.slur(baca.select.tleaves(tuplet))
+        baca.spanners.slur(baca.select.tleaves(tuplet))
         baca.register(tuplet, -6, -36)
         baca.label_figure(tuplet, "5.2.L.9", accumulator)
 
