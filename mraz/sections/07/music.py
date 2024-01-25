@@ -79,7 +79,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             baca.accent(baca.select.pheads(imbrication))
             baca.extend_beam(abjad.select.leaf(imbrication, -1))
         baca.dynamic(baca.select.phead(tuplet, 0), "fff")
-        baca.slur(tuplet)
+        baca.spanners.slur(tuplet)
         baca.extend_beam(abjad.select.leaf(tuplet, -1))
         baca.label_figure(tuplet, "7.1.R.2", accumulator)
 
@@ -148,7 +148,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             rmakers.beam_groups(groups, beam_rests=True)
             baca.accent(baca.select.pheads(imbrication))
         for tuplet in abjad.select.tuplets(tuplets):
-            baca.slur(tuplet)
+            baca.spanners.slur(tuplet)
         baca.label_figure(tuplets, "7.1.R.4", accumulator)
 
     @baca.call
@@ -215,7 +215,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             baca.accent(baca.select.pheads(imbrication))
             baca.extend_beam(abjad.select.leaf(imbrication, -1))
         for tuplet in abjad.select.tuplets(tuplets):
-            baca.slur(tuplet)
+            baca.spanners.slur(tuplet)
         baca.extend_beam(abjad.select.leaf(tuplets, -1))
         baca.label_figure(tuplets, "7.1.R.6", accumulator)
 
@@ -277,7 +277,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             rmakers.beam_groups(groups, beam_rests=True)
             baca.accent(baca.select.pheads(imbrication))
         for tuplet in abjad.select.tuplets(tuplets):
-            baca.slur(tuplet)
+            baca.spanners.slur(tuplet)
         baca.label_figure(tuplets, "7.1.R.8", accumulator)
 
     @baca.call
@@ -317,7 +317,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             rmakers.beam_groups(groups, beam_rests=True)
             baca.accent(baca.select.pheads(imbrication))
             baca.extend_beam(abjad.select.leaf(imbrication, -1))
-        baca.slur(tuplet)
+        baca.spanners.slur(tuplet)
         baca.extend_beam(abjad.select.leaf(tuplet, -1))
         baca.label_figure(tuplet, "7.1.R.10", accumulator)
 
@@ -382,7 +382,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             groups = rmakers.nongrace_leaves_in_each_tuplet(imbrication)
             rmakers.beam_groups(groups, beam_rests=True)
             baca.accent(baca.select.pheads(imbrication))
-        baca.slur(tuplet)
+        baca.spanners.slur(tuplet)
         baca.label_figure(tuplet, "7.1.R.12", accumulator)
 
     @baca.call
@@ -459,7 +459,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         baca.dynamic(baca.select.phead(tuplets, 0), "pp")
         baca.dynamic_down(abjad.select.leaf(tuplets, 0))
         for tuplet in abjad.select.tuplets(tuplets):
-            baca.slur(tuplet)
+            baca.spanners.slur(tuplet)
         baca.override.tuplet_bracket_down(tuplets)
         baca.label_figure(tuplets, "7.1.L.2", accumulator, abjad.DOWN)
 
@@ -532,7 +532,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             baca.staccato(baca.select.pheads(imbrication))
         baca.dynamic(baca.select.phead(tuplets, 0), "pp")
         for tuplet in abjad.select.tuplets(tuplets):
-            baca.slur(tuplet)
+            baca.spanners.slur(tuplet)
         baca.label_figure(tuplets, "7.1.L.4", accumulator, abjad.DOWN)
 
     @baca.call
