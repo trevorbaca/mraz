@@ -1209,10 +1209,9 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         groups = rmakers.nongrace_leaves_in_each_tuplet(tuplets)
         rmakers.beam_groups(groups)
         baca.override.dls_staff_padding(tuplets, 8)
-        baca.hairpin(
-            (),
+        baca.spanners.hairpin(
+            abjad.select.leaves(tuplets)[:-1],
             "f < ff",
-            pieces=[abjad.select.leaves(tuplets)[:-1]],
         )
         for ntrun in baca.select.ntruns(container):
             baca.spanners.slur(ntrun)
@@ -1244,10 +1243,9 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         groups = rmakers.nongrace_leaves_in_each_tuplet(tuplets)
         rmakers.beam_groups(groups)
         baca.override.dls_staff_padding(tuplets, 8)
-        baca.hairpin(
-            (),
+        baca.spanners.hairpin(
+            abjad.select.leaves(tuplets)[:-1],
             "f < ff",
-            pieces=[abjad.select.leaves(tuplets)[:-1]],
         )
         for ntrun in baca.select.ntruns(container):
             baca.spanners.slur(ntrun)
@@ -1299,10 +1297,9 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         groups = rmakers.nongrace_leaves_in_each_tuplet(tuplets)
         rmakers.beam_groups(groups)
         baca.override.dls_staff_padding(tuplets, 8)
-        baca.hairpin(
-            (),
+        baca.spanners.hairpin(
+            abjad.select.leaves(tuplets)[:-1],
             "f < ff",
-            pieces=[abjad.select.leaves(tuplets)[:-1]],
         )
         for ntrun in baca.select.ntruns(container):
             baca.spanners.slur(ntrun)
@@ -1330,10 +1327,9 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         groups = rmakers.nongrace_leaves_in_each_tuplet(tuplets)
         rmakers.beam_groups(groups)
         baca.override.dls_staff_padding(tuplets, 8)
-        baca.hairpin(
-            (),
+        baca.spanners.hairpin(
+            abjad.select.leaves(tuplets)[:-1],
             "f < ff",
-            pieces=[abjad.select.leaves(tuplets)[:-1]],
         )
         for ntrun in baca.select.ntruns(container):
             baca.spanners.slur(ntrun)
