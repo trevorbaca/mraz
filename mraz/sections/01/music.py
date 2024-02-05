@@ -98,7 +98,7 @@ def make_empty_score():
         )
         baca.clef(abjad.select.leaf(tuplet, 0), "bass")
         baca.dynamic(baca.select.phead(tuplet, 0), "f")
-        baca.rspanners.ottava_bassa(baca.select.tleaves(tuplet))
+        baca.rspanners.ottava(baca.select.tleaves(tuplet), -1)
         baca.register(tuplet, -39)
         baca.override.rest_down(abjad.select.rests(tuplet))
         baca.override.tuplet_bracket_down(tuplet)
