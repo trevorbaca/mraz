@@ -560,6 +560,8 @@ number.1.RH.Music.2 = {
             \set stemRightBeamCount = 2
             c''''16
 
+              %! SPANNER_STOP
+            \ottava 0
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 0
             cs''''!16
@@ -573,8 +575,6 @@ number.1.RH.Music.2 = {
               %! SPANNER_STOP
             )
             ]
-              %! SPANNER_STOP
-            \ottava 0
             \revert DynamicLineSpanner.staff-padding
             \revert Slur.direction
 
@@ -831,10 +831,10 @@ number.1.RH.Music.3 = {
 
         g'''4
         - \tenuto
-          %! SPANNER_STOP
-        \ottava 0
         \revert Stem.direction
 
+          %! SPANNER_STOP
+        \ottava 0
         r4
         \revert PianoMusicRHStaff.OttavaBracket.staff-padding
         \revert Rest.direction
@@ -1474,9 +1474,9 @@ number.1.LH.Music.6 = {
         r4
 
         ef,,!8
+
           %! SPANNER_STOP
         \ottava 0
-
         r4
         \revert Rest.direction
         \revert TupletBracket.direction

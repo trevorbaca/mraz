@@ -2279,10 +2279,10 @@ number.6.RH.Music.3 = {
 
         g'''4
         - \tenuto
-          %! SPANNER_STOP
-        \ottava 0
         \revert Stem.direction
 
+          %! SPANNER_STOP
+        \ottava 0
         r4
         \revert Rest.direction
         \revert TupletBracket.direction
@@ -4137,10 +4137,10 @@ number.6.LH.Music.6 = {
         r4
 
         ef,,!8
-          %! SPANNER_STOP
-        \ottava 0
         \revert Stem.direction
 
+          %! SPANNER_STOP
+        \ottava 0
         r4
         \revert Rest.direction
         \revert TupletBracket.direction

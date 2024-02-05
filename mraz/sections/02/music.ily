@@ -1406,9 +1406,9 @@ number.2.LH.Music.5 = {
         r32
 
         af,,!8
+
           %! SPANNER_STOP
         \ottava 0
-
         r32
         \revert TupletBracket.direction
 
