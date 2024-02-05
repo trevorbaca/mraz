@@ -1100,7 +1100,6 @@ number.2.LH.Music.5 = {
           %! EXPLICIT_OTTAVA_COLOR
         \once \override PianoMusicLHStaff.OttavaBracket.color = #blue
           %! EXPLICIT_OTTAVA
-          %! SPANNER_START
         \ottava -1
         \override TupletBracket.direction = #up
         g,8.
@@ -1413,7 +1412,6 @@ number.2.LH.Music.5 = {
           %! EXPLICIT_OTTAVA_COLOR
         \once \override PianoMusicLHStaff.OttavaBracket.color = #blue
           %! EXPLICIT_OTTAVA
-          %! SPANNER_STOP
         \ottava 0
         r32
         \revert TupletBracket.direction

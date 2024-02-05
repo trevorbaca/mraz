@@ -503,7 +503,6 @@ number.3.RH.Music.1 = {
           %! EXPLICIT_OTTAVA_COLOR
         \once \override PianoMusicRHStaff.OttavaBracket.color = #blue
           %! EXPLICIT_OTTAVA
-          %! SPANNER_START
         \ottava 1
         ef''''!1..
         - \tenuto
@@ -539,7 +538,6 @@ number.3.RH.Music.1 = {
           %! EXPLICIT_OTTAVA_COLOR
         \once \override PianoMusicRHStaff.OttavaBracket.color = #blue
           %! EXPLICIT_OTTAVA
-          %! SPANNER_STOP
         \ottava 0
         bf''''!1
         - \tenuto
@@ -939,7 +937,6 @@ number.3.RH.Music.2 = {
               %! +SECTION
             \once \override Score.SpanBar.extra-offset = #'(-0.75 . 0)
               %! REDUNDANT_OTTAVA
-              %! SPANNER_START
             \ottava 1
             \override DynamicLineSpanner.staff-padding = 8
             \override Slur.direction = #up
@@ -1054,7 +1051,6 @@ number.3.RH.Music.2 = {
               %! EXPLICIT_OTTAVA_COLOR
             \once \override PianoMusicRHStaff.OttavaBracket.color = #blue
               %! EXPLICIT_OTTAVA
-              %! SPANNER_STOP
             \ottava 0
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 0
