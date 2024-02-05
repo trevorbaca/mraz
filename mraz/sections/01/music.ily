@@ -448,6 +448,9 @@ number.1.RH.Music.2 = {
         {
 
             % [RH.Music.2 measure 1]
+              %! EXPLICIT_OTTAVA_COLOR
+            \once \override PianoMusicRHStaff.OttavaBracket.color = #blue
+              %! EXPLICIT_OTTAVA
               %! SPANNER_START
             \ottava 1
             \override DynamicLineSpanner.staff-padding = 8
@@ -560,6 +563,9 @@ number.1.RH.Music.2 = {
             \set stemRightBeamCount = 2
             c''''16
 
+              %! EXPLICIT_OTTAVA_COLOR
+            \once \override PianoMusicRHStaff.OttavaBracket.color = #blue
+              %! EXPLICIT_OTTAVA
               %! SPANNER_STOP
             \ottava 0
             \set stemLeftBeamCount = 2
@@ -793,6 +799,9 @@ number.1.RH.Music.3 = {
 
         % [RH.Music.3 measure 8]
         \once \override DynamicText.X-offset = 0.25
+          %! EXPLICIT_OTTAVA_COLOR
+        \once \override PianoMusicRHStaff.OttavaBracket.color = #blue
+          %! EXPLICIT_OTTAVA
           %! SPANNER_START
         \ottava 1
         \override PianoMusicRHStaff.OttavaBracket.staff-padding = 9
@@ -833,6 +842,9 @@ number.1.RH.Music.3 = {
         - \tenuto
         \revert Stem.direction
 
+          %! EXPLICIT_OTTAVA_COLOR
+        \once \override PianoMusicRHStaff.OttavaBracket.color = #blue
+          %! EXPLICIT_OTTAVA
           %! SPANNER_STOP
         \ottava 0
         r4
@@ -1449,6 +1461,9 @@ number.1.LH.Music.6 = {
           %! MEASURE_3
           %! SHIFTED_CLEF
         \once \override PianoMusicLHStaff.Clef.extra-offset = #'(-2.75 . 0)
+          %! EXPLICIT_OTTAVA_COLOR
+        \once \override PianoMusicLHStaff.OttavaBracket.color = #blue
+          %! EXPLICIT_OTTAVA
           %! SPANNER_START
         \ottava -1
           %! EXPLICIT_CLEF_COLOR_CANCELLATION
@@ -1475,6 +1490,9 @@ number.1.LH.Music.6 = {
 
         ef,,!8
 
+          %! EXPLICIT_OTTAVA_COLOR
+        \once \override PianoMusicLHStaff.OttavaBracket.color = #blue
+          %! EXPLICIT_OTTAVA
           %! SPANNER_STOP
         \ottava 0
         r4

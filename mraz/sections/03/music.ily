@@ -500,6 +500,9 @@ number.3.RH.Music.1 = {
     {
 
         % [RH.Music.1 measure 10]
+          %! EXPLICIT_OTTAVA_COLOR
+        \once \override PianoMusicRHStaff.OttavaBracket.color = #blue
+          %! EXPLICIT_OTTAVA
           %! SPANNER_START
         \ottava 1
         ef''''!1..
@@ -533,6 +536,9 @@ number.3.RH.Music.1 = {
     {
 
         % [RH.Music.1 measure 12]
+          %! EXPLICIT_OTTAVA_COLOR
+        \once \override PianoMusicRHStaff.OttavaBracket.color = #blue
+          %! EXPLICIT_OTTAVA
           %! SPANNER_STOP
         \ottava 0
         bf''''!1
@@ -928,8 +934,11 @@ number.3.RH.Music.2 = {
         {
 
             % [RH.Music.2 measure 12]
+              %! REDUNDANT_OTTAVA_COLOR
+            \once \override PianoMusicRHStaff.OttavaBracket.color = #(x11-color 'DeepPink1)
               %! +SECTION
             \once \override Score.SpanBar.extra-offset = #'(-0.75 . 0)
+              %! REDUNDANT_OTTAVA
               %! SPANNER_START
             \ottava 1
             \override DynamicLineSpanner.staff-padding = 8
@@ -1042,6 +1051,9 @@ number.3.RH.Music.2 = {
             \set stemRightBeamCount = 2
             c''''16
 
+              %! EXPLICIT_OTTAVA_COLOR
+            \once \override PianoMusicRHStaff.OttavaBracket.color = #blue
+              %! EXPLICIT_OTTAVA
               %! SPANNER_STOP
             \ottava 0
             \set stemLeftBeamCount = 2
