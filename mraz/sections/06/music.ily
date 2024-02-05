@@ -2245,7 +2245,6 @@ number.6.RH.Music.3 = {
           %! EXPLICIT_OTTAVA_COLOR
         \once \override PianoMusicRHStaff.OttavaBracket.color = #blue
           %! EXPLICIT_OTTAVA
-          %! SPANNER_START
         \ottava 1
         \override Stem.direction = #down
         \override TupletBracket.direction = #down
@@ -2287,7 +2286,6 @@ number.6.RH.Music.3 = {
           %! EXPLICIT_OTTAVA_COLOR
         \once \override PianoMusicRHStaff.OttavaBracket.color = #blue
           %! EXPLICIT_OTTAVA
-          %! SPANNER_STOP
         \ottava 0
         r4
         \revert Rest.direction
@@ -4126,7 +4124,6 @@ number.6.LH.Music.6 = {
           %! EXPLICIT_OTTAVA_COLOR
         \once \override PianoMusicLHStaff.OttavaBracket.color = #blue
           %! EXPLICIT_OTTAVA
-          %! SPANNER_START
         \ottava -1
         \override Stem.direction = #down
         \override TupletBracket.direction = #down
@@ -4151,7 +4148,6 @@ number.6.LH.Music.6 = {
           %! EXPLICIT_OTTAVA_COLOR
         \once \override PianoMusicLHStaff.OttavaBracket.color = #blue
           %! EXPLICIT_OTTAVA
-          %! SPANNER_STOP
         \ottava 0
         r4
         \revert Rest.direction

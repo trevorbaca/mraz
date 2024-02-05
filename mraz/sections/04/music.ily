@@ -1493,7 +1493,6 @@ number.4.RH.Music.1 = {
             \once \override PianoMusicRHStaff.OttavaBracket.color = #blue
             \once \override TextScript.color = #black
               %! EXPLICIT_OTTAVA
-              %! SPANNER_START
             \ottava 1
             \override Stem.direction = #up
             \set stemLeftBeamCount = 0
@@ -1770,7 +1769,6 @@ number.4.RH.Music.1 = {
       %! EXPLICIT_OTTAVA_COLOR
     \once \override PianoMusicRHStaff.OttavaBracket.color = #blue
       %! EXPLICIT_OTTAVA
-      %! SPANNER_STOP
     \ottava 0
     s1 * 3/2
 
@@ -1781,7 +1779,6 @@ number.4.RH.Music.1 = {
           %! EXPLICIT_OTTAVA_COLOR
         \once \override PianoMusicRHStaff.OttavaBracket.color = #blue
           %! EXPLICIT_OTTAVA
-          %! SPANNER_START
         \ottava 1
         f''''1
         - \tenuto
@@ -1810,7 +1807,6 @@ number.4.RH.Music.1 = {
       %! EXPLICIT_OTTAVA_COLOR
     \once \override PianoMusicRHStaff.OttavaBracket.color = #blue
       %! EXPLICIT_OTTAVA
-      %! SPANNER_STOP
     \ottava 0
     s1 * 1/1
 
@@ -3304,7 +3300,6 @@ number.4.RH.Music.3 = {
           %! EXPLICIT_OTTAVA_COLOR
         \once \override PianoMusicRHStaff.OttavaBracket.color = #blue
           %! EXPLICIT_OTTAVA
-          %! SPANNER_START
         \ottava 1
         \override Stem.direction = #down
         \override TupletBracket.direction = #down
@@ -3346,7 +3341,6 @@ number.4.RH.Music.3 = {
           %! EXPLICIT_OTTAVA_COLOR
         \once \override PianoMusicRHStaff.OttavaBracket.color = #blue
           %! EXPLICIT_OTTAVA
-          %! SPANNER_STOP
         \ottava 0
         r4
         \revert Rest.direction
