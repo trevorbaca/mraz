@@ -1760,12 +1760,12 @@ number.4.RH.Music.1 = {
         %@% - \tweak color #blue
           %! FIGURE_LABEL
         %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (37) \hspace #1 "4.5.R.4" ] }
-          %! SPANNER_STOP
-        \ottava 0
 
     }
 
     % [RH.Music.1 measure 37]
+      %! SPANNER_STOP
+    \ottava 0
     s1 * 3/2
 
     \scaleDurations #'(1 . 1)
@@ -1793,13 +1793,13 @@ number.4.RH.Music.1 = {
         %@% - \tweak color #blue
           %! FIGURE_LABEL
         %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (39) \hspace #1 "4.5.R.6" ] }
-          %! SPANNER_STOP
-        \ottava 0
         \revert Stem.direction
 
     }
 
     % [RH.Music.1 measure 40]
+      %! SPANNER_STOP
+    \ottava 0
     s1 * 1/1
 
     % [RH.Music.1 measure 41]
@@ -3326,10 +3326,10 @@ number.4.RH.Music.3 = {
 
         g'''4
         - \tenuto
-          %! SPANNER_STOP
-        \ottava 0
         \revert Stem.direction
 
+          %! SPANNER_STOP
+        \ottava 0
         r4
         \revert Rest.direction
         \revert TupletBracket.direction

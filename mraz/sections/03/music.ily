@@ -533,14 +533,14 @@ number.3.RH.Music.1 = {
     {
 
         % [RH.Music.1 measure 12]
+          %! SPANNER_STOP
+        \ottava 0
         bf''''!1
         - \tenuto
           %! FIGURE_LABEL
         %@% - \tweak color #blue
           %! FIGURE_LABEL
         %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (10) \hspace #1 "4.5.R.3" ] }
-          %! SPANNER_STOP
-        \ottava 0
 
     }
 
@@ -1042,6 +1042,8 @@ number.3.RH.Music.2 = {
             \set stemRightBeamCount = 2
             c''''16
 
+              %! SPANNER_STOP
+            \ottava 0
             \set stemLeftBeamCount = 2
             \set stemRightBeamCount = 0
             cs''''!16
@@ -1055,8 +1057,6 @@ number.3.RH.Music.2 = {
               %! SPANNER_STOP
             )
             ]
-              %! SPANNER_STOP
-            \ottava 0
             \revert DynamicLineSpanner.staff-padding
             \revert Script.direction
             \revert Slur.direction

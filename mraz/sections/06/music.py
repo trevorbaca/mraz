@@ -50,7 +50,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             hide_time_signature=True,
         )
         baca.dynamic(baca.select.phead(tuplet, 0), "mf")
-        baca.spanners.ottava(baca.select.tleaves(tuplet))
+        baca.rspanners.ottava(baca.select.tleaves(tuplet))
         baca.register(tuplet, 10, 26)
         baca.override.rest_down(abjad.select.rests(tuplet))
         baca.override.stem_down(baca.select.pleaves(tuplet))
@@ -172,7 +172,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tsd=4,
         )
         baca.dynamic(baca.select.phead(tuplet, 0), "f")
-        baca.spanners.ottava_bassa(baca.select.tleaves(tuplet))
+        baca.rspanners.ottava_bassa(baca.select.tleaves(tuplet))
         baca.register(tuplet, -39)
         baca.override.rest_down(abjad.select.rests(tuplet))
         baca.override.stem_down(baca.select.pleaves(tuplet))
