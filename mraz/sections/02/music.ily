@@ -1097,6 +1097,9 @@ number.2.LH.Music.5 = {
 
         % [LH.Music.5 measure 1]
         \dynamicUp
+          %! EXPLICIT_OTTAVA_COLOR
+        \once \override PianoMusicLHStaff.OttavaBracket.color = #blue
+          %! EXPLICIT_OTTAVA
           %! SPANNER_START
         \ottava -1
         \override TupletBracket.direction = #up
@@ -1407,6 +1410,9 @@ number.2.LH.Music.5 = {
 
         af,,!8
 
+          %! EXPLICIT_OTTAVA_COLOR
+        \once \override PianoMusicLHStaff.OttavaBracket.color = #blue
+          %! EXPLICIT_OTTAVA
           %! SPANNER_STOP
         \ottava 0
         r32

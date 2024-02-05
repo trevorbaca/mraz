@@ -1489,7 +1489,10 @@ number.4.RH.Music.1 = {
 
             \once \override DynamicText.X-offset = -4
             \once \override DynamicText.extra-offset = #'(0 . -8)
+              %! EXPLICIT_OTTAVA_COLOR
+            \once \override PianoMusicRHStaff.OttavaBracket.color = #blue
             \once \override TextScript.color = #black
+              %! EXPLICIT_OTTAVA
               %! SPANNER_START
             \ottava 1
             \override Stem.direction = #up
@@ -1764,6 +1767,9 @@ number.4.RH.Music.1 = {
     }
 
     % [RH.Music.1 measure 37]
+      %! EXPLICIT_OTTAVA_COLOR
+    \once \override PianoMusicRHStaff.OttavaBracket.color = #blue
+      %! EXPLICIT_OTTAVA
       %! SPANNER_STOP
     \ottava 0
     s1 * 3/2
@@ -1772,6 +1778,9 @@ number.4.RH.Music.1 = {
     {
 
         % [RH.Music.1 measure 38]
+          %! EXPLICIT_OTTAVA_COLOR
+        \once \override PianoMusicRHStaff.OttavaBracket.color = #blue
+          %! EXPLICIT_OTTAVA
           %! SPANNER_START
         \ottava 1
         f''''1
@@ -1798,6 +1807,9 @@ number.4.RH.Music.1 = {
     }
 
     % [RH.Music.1 measure 40]
+      %! EXPLICIT_OTTAVA_COLOR
+    \once \override PianoMusicRHStaff.OttavaBracket.color = #blue
+      %! EXPLICIT_OTTAVA
       %! SPANNER_STOP
     \ottava 0
     s1 * 1/1
@@ -3289,6 +3301,9 @@ number.4.RH.Music.3 = {
     {
 
         % [RH.Music.3 measure 44]
+          %! EXPLICIT_OTTAVA_COLOR
+        \once \override PianoMusicRHStaff.OttavaBracket.color = #blue
+          %! EXPLICIT_OTTAVA
           %! SPANNER_START
         \ottava 1
         \override Stem.direction = #down
@@ -3328,6 +3343,9 @@ number.4.RH.Music.3 = {
         - \tenuto
         \revert Stem.direction
 
+          %! EXPLICIT_OTTAVA_COLOR
+        \once \override PianoMusicRHStaff.OttavaBracket.color = #blue
+          %! EXPLICIT_OTTAVA
           %! SPANNER_STOP
         \ottava 0
         r4
