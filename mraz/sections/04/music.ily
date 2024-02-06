@@ -2330,10 +2330,8 @@ number.4.RH.Music.2 = {
             c''''16
               %! EXPLICIT_DYNAMIC_COLOR
               %! EXPLICIT_DYNAMIC
-              %! SPANNER_STOP
             - \tweak color #blue
               %! EXPLICIT_DYNAMIC
-              %! SPANNER_STOP
             \ff
 
             \set stemLeftBeamCount = 2
@@ -2461,10 +2459,8 @@ number.4.RH.Music.2 = {
             cs''''!16
               %! EXPLICIT_DYNAMIC_COLOR
               %! EXPLICIT_DYNAMIC
-              %! SPANNER_STOP
             - \tweak color #blue
               %! EXPLICIT_DYNAMIC
-              %! SPANNER_STOP
             \ff
 
             \set stemLeftBeamCount = 2
@@ -2625,10 +2621,8 @@ number.4.RH.Music.2 = {
             ef''''!16
               %! EXPLICIT_DYNAMIC_COLOR
               %! EXPLICIT_DYNAMIC
-              %! SPANNER_STOP
             - \tweak color #blue
               %! EXPLICIT_DYNAMIC
-              %! SPANNER_STOP
             \ff
 
             \set stemLeftBeamCount = 2
@@ -2707,10 +2701,8 @@ number.4.RH.Music.2 = {
             af'''!16
               %! EXPLICIT_DYNAMIC_COLOR
               %! EXPLICIT_DYNAMIC
-              %! SPANNER_STOP
             - \tweak color #blue
               %! EXPLICIT_DYNAMIC
-              %! SPANNER_STOP
             \ff
 
               %! REPEAT_PITCH_CLASS_COLORING
