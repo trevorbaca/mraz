@@ -945,10 +945,8 @@ number.3.RH.Music.2 = {
             b'16
               %! EXPLICIT_DYNAMIC_COLOR
               %! EXPLICIT_DYNAMIC
-              %! SPANNER_STOP
             - \tweak color #blue
               %! EXPLICIT_DYNAMIC
-              %! SPANNER_STOP
             \f
               %! FIGURE_LABEL
             %@% - \tweak color #blue
