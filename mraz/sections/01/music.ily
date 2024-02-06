@@ -569,10 +569,8 @@ number.1.RH.Music.2 = {
             cs''''!16
               %! EXPLICIT_DYNAMIC_COLOR
               %! EXPLICIT_DYNAMIC
-              %! SPANNER_STOP
             - \tweak color #blue
               %! EXPLICIT_DYNAMIC
-              %! SPANNER_STOP
             \ff
               %! SPANNER_STOP
             )
