@@ -787,7 +787,7 @@ def postprocess(cache):
     with baca.scope(m.leaves()) as o:
         baca.untie(o)
         for qrun in baca.select.qruns(o):
-            qrun = baca.select.pleaves(qrun)[1:]
+            qrun = qrun[1:]
             baca.repeat_tie(qrun)
         baca.override.dots_transparent(o)
     for n in [10, 11, 12, 13, 14]:
