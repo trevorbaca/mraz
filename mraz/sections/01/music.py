@@ -54,9 +54,9 @@ def make_empty_score():
             tsd=4,
         )
         baca.override.dls_staff_padding(tuplets, 8)
-        baca.spanners.hairpin(
+        baca.hairpinlib.exact(
             tuplets,
-            "f < ff",
+            "f<ff",
         )
         baca.rspanners.ottava(baca.select.tleaves(tuplets))
         baca.register(tuplets, 10, 36)
