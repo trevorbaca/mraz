@@ -34,7 +34,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         baca.staccato(baca.select.pheads(tuplets))
         baca.tenuto(baca.select.pheads(tuplets))
         baca.override.tuplet_bracket_staff_padding(tuplets, 7)
-        baca.override.tuplet_bracket_up(tuplets)
+        baca.override.tuplet_bracket_direction_up(tuplets)
         baca.label_figure(tuplets, "6.1.R.1-2", accumulator)
 
     @baca.call
@@ -51,7 +51,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         baca.staccato(baca.select.pheads(tuplet))
         baca.tenuto(baca.select.pheads(tuplet))
         baca.override.tuplet_bracket_staff_padding(tuplet, 7)
-        baca.override.tuplet_bracket_up(tuplet)
+        baca.override.tuplet_bracket_direction_up(tuplet)
         baca.override.tuplet_bracket_staff_padding(tuplet, 8)
         baca.label_figure(tuplet, "6.1.R.3", accumulator)
 
@@ -85,7 +85,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         baca.register(tuplet, 12, 24)
         baca.staccato(baca.select.pheads(tuplet))
         baca.tenuto(baca.select.pheads(tuplet))
-        baca.override.tuplet_bracket_up(tuplet)
+        baca.override.tuplet_bracket_direction_up(tuplet)
         baca.label_figure(tuplet, "6.1.R.5", accumulator)
 
     @baca.call

@@ -43,7 +43,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tsd=4,
         )
         baca.register(tuplets, -39, -27)
-        baca.override.rest_up(abjad.select.rests(tuplets))
+        baca.override.rest_direction_up(abjad.select.rests(tuplets))
         baca.label_figure(tuplets, "8.3.R.2-3", accumulator)
 
     @baca.call
@@ -70,7 +70,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tsd=4,
         )
         baca.register(tuplet, -27, -39)
-        baca.override.rest_up(abjad.select.rests(tuplet))
+        baca.override.rest_direction_up(abjad.select.rests(tuplet))
         baca.label_figure(tuplet, "8.3.R.5", accumulator)
 
     @baca.call
@@ -110,7 +110,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tsd=2,
         )
         baca.register(tuplet, -39)
-        baca.override.rest_up(abjad.select.rests(tuplet))
+        baca.override.rest_direction_up(abjad.select.rests(tuplet))
         baca.label_figure(tuplet, "8.3.R.8", accumulator)
 
     @baca.call
@@ -154,7 +154,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tsd=2,
         )
         baca.register(tuplet, -39)
-        baca.override.rest_up(abjad.select.rests(tuplet))
+        baca.override.rest_direction_up(abjad.select.rests(tuplet))
         baca.label_figure(tuplet, "8.3.R.11", accumulator)
 
     @baca.call
@@ -217,7 +217,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             hide_time_signature=True,
         )
         baca.register(tuplet, -39)
-        baca.override.rest_up(abjad.select.rests(tuplet))
+        baca.override.rest_direction_up(abjad.select.rests(tuplet))
         baca.label_figure(tuplet, "8.3.L.2", accumulator)
 
     @baca.call
@@ -313,11 +313,11 @@ def postprocess(cache):
     m = cache[library.lh_v5]
     with baca.scope(m.leaves()) as o:
         baca.rspanners.ottava(o.tleaves(), -1)
-        baca.override.tuplet_bracket_up(o)
+        baca.override.tuplet_bracket_direction_up(o)
     m = cache[library.lh_v6]
     with baca.scope(m.leaves()) as o:
-        baca.override.script_down(o)
-        baca.override.stem_down(o.tleaves())
+        baca.override.script_direction_down(o)
+        baca.override.stem_direction_down(o.tleaves())
         baca.tenuto(o.pheads())
         baca.override.tuplet_bracket_staff_padding(o, 6)
         baca.override.rest_staff_position(o.rests(), -10)

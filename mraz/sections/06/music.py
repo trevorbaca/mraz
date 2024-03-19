@@ -30,9 +30,9 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         baca.dynamic(baca.select.phead(tuplet, 0), "fff")
         baca.dynamic_up(abjad.select.leaf(tuplet, 0))
         baca.register(tuplet, 20, 36)
-        baca.override.rest_up(abjad.select.rests(tuplet))
-        baca.override.script_up(tuplet)
-        baca.override.stem_up(baca.select.pleaves(tuplet))
+        baca.override.rest_direction_up(abjad.select.rests(tuplet))
+        baca.override.script_direction_up(tuplet)
+        baca.override.stem_direction_up(baca.select.pleaves(tuplet))
         baca.label_figure(tuplet, "5.1.R.1", accumulator, abjad.UP)
 
     @baca.call
@@ -52,10 +52,10 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         baca.dynamic(baca.select.phead(tuplet, 0), "mf")
         baca.rspanners.ottava(baca.select.tleaves(tuplet))
         baca.register(tuplet, 10, 26)
-        baca.override.rest_down(abjad.select.rests(tuplet))
-        baca.override.stem_down(baca.select.pleaves(tuplet))
+        baca.override.rest_direction_down(abjad.select.rests(tuplet))
+        baca.override.stem_direction_down(baca.select.pleaves(tuplet))
         baca.tenuto(baca.select.pheads(tuplet))
-        baca.override.tuplet_bracket_down(tuplet)
+        baca.override.tuplet_bracket_direction_down(tuplet)
         baca.override.tuplet_bracket_staff_padding(tuplet, 3)
         baca.label_figure(tuplet, "5.1.L.1", accumulator, abjad.DOWN)
 
@@ -102,7 +102,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         for tuplet in abjad.select.tuplets(tuplets):
             tleaves = baca.select.tleaves(tuplet)
             baca.spanners.slur(tleaves)
-        baca.override.tuplet_bracket_down(tuplets)
+        baca.override.tuplet_bracket_direction_down(tuplets)
         baca.label_figure(tuplets, "5.2.R.1-5", accumulator)
 
     @baca.call
@@ -158,7 +158,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         for tuplet in abjad.select.tuplets(tuplets):
             tleaves = baca.select.tleaves(tuplet)
             baca.spanners.slur(tleaves)
-        baca.override.tuplet_bracket_down(tuplets)
+        baca.override.tuplet_bracket_direction_down(tuplets)
         baca.label_figure(tuplets, "5.2.R.6-10", accumulator)
 
     @baca.call
@@ -174,9 +174,9 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         baca.dynamic(baca.select.phead(tuplet, 0), "f")
         baca.rspanners.ottava(baca.select.tleaves(tuplet), -1)
         baca.register(tuplet, -39)
-        baca.override.rest_down(abjad.select.rests(tuplet))
-        baca.override.stem_down(baca.select.pleaves(tuplet))
-        baca.override.tuplet_bracket_down(tuplet)
+        baca.override.rest_direction_down(abjad.select.rests(tuplet))
+        baca.override.stem_direction_down(baca.select.pleaves(tuplet))
+        baca.override.tuplet_bracket_direction_down(tuplet)
         baca.override.tuplet_bracket_staff_padding(tuplet, 6)
         baca.label_figure(tuplet, "8.3.L.2", accumulator)
 
@@ -195,8 +195,8 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         baca.dynamic(baca.select.phead(tuplet, 0), "ppp")
         baca.dynamic_up(abjad.select.leaf(tuplet, 0))
         baca.register(tuplet, -27, -39)
-        baca.override.rest_up(abjad.select.rests(tuplet))
-        baca.override.stem_up(baca.select.pleaves(tuplet))
+        baca.override.rest_direction_up(abjad.select.rests(tuplet))
+        baca.override.stem_direction_up(baca.select.pleaves(tuplet))
         baca.label_figure(tuplet, "8.3.R.5", accumulator)
 
     @baca.call
@@ -242,7 +242,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         for tuplet in abjad.select.tuplets(tuplets):
             tleaves = baca.select.tleaves(tuplet)
             baca.spanners.slur(tleaves)
-        baca.override.tuplet_bracket_down(tuplets)
+        baca.override.tuplet_bracket_direction_down(tuplets)
         baca.label_figure(tuplets, "5.2.R.11-15", accumulator)
 
     @baca.call
@@ -296,7 +296,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         for tuplet in abjad.select.tuplets(tuplets):
             tleaves = baca.select.tleaves(tuplet)
             baca.spanners.slur(tleaves)
-        baca.override.tuplet_bracket_down(tuplets)
+        baca.override.tuplet_bracket_direction_down(tuplets)
         baca.label_figure(tuplets, "5.2.R.16-21", accumulator)
 
     @baca.call
@@ -550,7 +550,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         for tuplet in abjad.select.tuplets(tuplets):
             tleaves = baca.select.tleaves(tuplet)
             baca.spanners.slur(tleaves)
-        baca.override.tuplet_bracket_down(tuplets)
+        baca.override.tuplet_bracket_direction_down(tuplets)
         baca.override.tuplet_bracket_staff_padding(tuplets, 3)
         baca.label_figure(tuplets, "5.2.R.22-25", accumulator)
 
@@ -571,7 +571,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         baca.dynamic(baca.select.phead(tuplet, 0), "p")
         baca.spanners.slur(baca.select.tleaves(tuplet))
         baca.register(tuplet, 6, -24)
-        baca.override.slur_down(tuplet)
+        baca.override.slur_direction_down(tuplet)
         baca.label_figure(tuplet, "5.2.L.1", accumulator)
 
     @baca.call
@@ -589,7 +589,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         baca.dynamic(baca.select.phead(tuplet, 0), "p")
         baca.spanners.slur(baca.select.tleaves(tuplet))
         baca.register(tuplet, 6, -24)
-        baca.override.slur_down(tuplet)
+        baca.override.slur_direction_down(tuplet)
         baca.label_figure(tuplet, "5.2.L.2", accumulator)
 
     @baca.call
@@ -772,15 +772,15 @@ def postprocess(cache):
     with baca.scope(m.get(2, 8)) as o:
         baca.accent(o.pheads())
         baca.override.beam_positions(o, 10.5)
-        baca.override.script_up(o)
-        baca.override.stem_up(o.pleaves())
+        baca.override.script_direction_up(o)
+        baca.override.stem_direction_up(o.pleaves())
     with baca.scope(m.get(9, 13)) as o:
-        baca.override.script_up(o)
-        baca.override.slur_up(o)
-        baca.override.stem_down(o.pleaves())
+        baca.override.script_direction_up(o)
+        baca.override.slur_direction_up(o)
+        baca.override.stem_direction_down(o.pleaves())
     m = cache[library.lh_v4]
     with baca.scope(m.get(2, 16)) as o:
-        baca.override.script_up(o)
+        baca.override.script_direction_up(o)
         baca.staccato(o.pheads())
         baca.tenuto(o.pheads())
     m = cache[library.lh_resonance]
