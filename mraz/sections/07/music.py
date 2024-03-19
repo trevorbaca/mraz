@@ -460,7 +460,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         baca.dynamic_down(abjad.select.leaf(tuplets, 0))
         for tuplet in abjad.select.tuplets(tuplets):
             baca.spanners.slur(tuplet)
-        baca.override.tuplet_bracket_down(tuplets)
+        baca.override.tuplet_bracket_direction_down(tuplets)
         baca.label_figure(tuplets, "7.1.L.2", accumulator, abjad.DOWN)
 
     @baca.call
@@ -596,20 +596,20 @@ def postprocess(cache):
     with baca.scope(m.leaves()) as o:
         baca.override.beam_positions(o, 10)
         baca.dynamic_up(o.leaf(0))
-        baca.override.stem_up(o.pleaves())
+        baca.override.stem_direction_up(o.pleaves())
     m = cache[library.rh_v1_i]
     with baca.scope(m.get(1, 5)) as o:
         baca.override.beam_positions(o, -6.5)
     with baca.scope(m.get(5, 10)) as o:
         baca.override.beam_positions(o, -8.5)
     with baca.scope(m.leaves()) as o:
-        baca.override.script_down(o)
+        baca.override.script_direction_down(o)
     m = cache[library.rh_v2]
     with baca.scope(m.leaves()) as o:
         baca.override.beam_positions(o, -4.5)
         baca.dynamic_down(o.leaf(0))
-        baca.override.slur_up(o)
-        baca.override.stem_down(o.pleaves())
+        baca.override.slur_direction_up(o)
+        baca.override.stem_direction_down(o.pleaves())
     m = cache[library.rh_v2_i]
     with baca.scope(m.get(9, 11)) as o:
         baca.override.beam_positions(o, 18.5)
@@ -618,35 +618,35 @@ def postprocess(cache):
     with baca.scope(m.get(6, 8)) as o:
         baca.override.beam_positions(o, 13.5)
     with baca.scope(m.leaves()) as o:
-        baca.override.script_up(o)
-        baca.override.stem_up(o.pleaves())
+        baca.override.script_direction_up(o)
+        baca.override.stem_direction_up(o.pleaves())
     m = cache[library.lh_v4]
     with baca.scope(m.get(1, 2)) as o:
         baca.override.beam_positions(o, -5.5)
     with baca.scope(m.get(6, 11)) as o:
         baca.override.beam_positions(o, -4.5)
     with baca.scope(m.leaves()) as o:
-        baca.override.script_down(o)
-        baca.override.stem_down(o.pleaves())
+        baca.override.script_direction_down(o)
+        baca.override.stem_direction_down(o.pleaves())
     m = cache[library.lh_v4_i]
     with baca.scope(m.leaves()) as o:
-        baca.override.script_up(o)
-        baca.override.stem_up(o.pleaves())
+        baca.override.script_direction_up(o)
+        baca.override.stem_direction_up(o.pleaves())
     m = cache[library.lh_v5]
     with baca.scope(m.get(1, 5)) as o:
         baca.override.beam_positions(o, -6)
     with baca.scope(m.leaves()) as o:
-        baca.override.script_down(o)
-        baca.override.stem_down(o.pleaves())
+        baca.override.script_direction_down(o)
+        baca.override.stem_direction_down(o.pleaves())
     m = cache[library.lh_v5_i]
     with baca.scope(m.leaves()) as o:
-        baca.override.script_up(o)
-        baca.override.stem_up(o.pleaves())
+        baca.override.script_direction_up(o)
+        baca.override.stem_direction_up(o.pleaves())
         baca.override.beam_positions(o, 9)
     m = cache[library.rh_v1]
     with baca.scope(m[11]) as o:
         baca.mark(abjad.select.leaf(o, 0), r"\mraz-colophon-markup")
-        baca.override.rehearsal_mark_down(o.rleaf(-1))
+        baca.override.rehearsal_mark_direction_down(o.rleaf(-1))
         baca.override.rehearsal_mark_padding(o.rleaf(-1), 6)
         baca.override.rehearsal_mark_self_alignment_x(o.rleaf(-1), abjad.RIGHT)
 
