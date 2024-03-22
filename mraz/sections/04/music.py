@@ -1616,8 +1616,8 @@ def persist_score(score, environment):
         do_not_require_short_instrument_names=True,
         error_on_not_yet_pitched=True,
     )
-    baca.tags.deactivate(score, baca.tags.REPEAT_PITCH_CLASS_COLORING)
-    baca.tags.activate(score, baca.tags.LOCAL_MEASURE_NUMBER, baca.tags.FIGURE_LABEL)
+    baca.section.deactivate_tags(score, baca.tags.REPEAT_PITCH_CLASS_COLORING)
+    baca.section.activate_tags(score, baca.tags.LOCAL_MEASURE_NUMBER, baca.tags.FIGURE_LABEL)
     lilypond_file = baca.lilypond.file(
         score,
         include_layout_ly=True,
