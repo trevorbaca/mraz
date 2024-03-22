@@ -1504,9 +1504,9 @@ number.4.RH.Music.1 = {
               %! EXPLICIT_DYNAMIC
             \mf
               %! FIGURE_LABEL
-            %@% - \tweak color #blue
+            - \tweak color #blue
               %! FIGURE_LABEL
-            %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (31) \hspace #1 "4.4.R.1" ] }
+            - \markup \concat { [ \raise #0.25 \fontsize #-2 (31) \hspace #1 "4.4.R.1" ] }
             [
               %! SPANNER_START
             (
@@ -1580,9 +1580,9 @@ number.4.RH.Music.1 = {
             \set stemRightBeamCount = 1
             bf''''!8
               %! FIGURE_LABEL
-            %@% - \tweak color #blue
+            - \tweak color #blue
               %! FIGURE_LABEL
-            %@% ^ \markup \concat { [ \raise #0.25 \fontsize #-2 (32) \hspace #1 "4.4.R.2" ] }
+            ^ \markup \concat { [ \raise #0.25 \fontsize #-2 (32) \hspace #1 "4.4.R.2" ] }
 
             s8
 
@@ -1634,9 +1634,9 @@ number.4.RH.Music.1 = {
             \set stemRightBeamCount = 1
             ef''''!8
               %! FIGURE_LABEL
-            %@% - \tweak color #blue
+            - \tweak color #blue
               %! FIGURE_LABEL
-            %@% ^ \markup \concat { [ \raise #0.25 \fontsize #-2 (33) \hspace #1 "4.4.R.3" ] }
+            ^ \markup \concat { [ \raise #0.25 \fontsize #-2 (33) \hspace #1 "4.4.R.3" ] }
             [
               %! SPANNER_START
             (
@@ -1720,9 +1720,9 @@ number.4.RH.Music.1 = {
           %! EXPLICIT_DYNAMIC
         \f
           %! FIGURE_LABEL
-        %@% - \tweak color #blue
+        - \tweak color #blue
           %! FIGURE_LABEL
-        %@% ^ \markup \concat { [ \raise #0.25 \fontsize #-2 (34) \hspace #1 "4.5.R.1" ] }
+        ^ \markup \concat { [ \raise #0.25 \fontsize #-2 (34) \hspace #1 "4.5.R.1" ] }
 
     }
 
@@ -1733,9 +1733,9 @@ number.4.RH.Music.1 = {
         f''''1.
         - \tenuto
           %! FIGURE_LABEL
-        %@% - \tweak color #blue
+        - \tweak color #blue
           %! FIGURE_LABEL
-        %@% ^ \markup \concat { [ \raise #0.25 \fontsize #-2 (35) \hspace #1 "4.5.R.2" ] }
+        ^ \markup \concat { [ \raise #0.25 \fontsize #-2 (35) \hspace #1 "4.5.R.2" ] }
 
     }
 
@@ -1746,9 +1746,9 @@ number.4.RH.Music.1 = {
         bf''''!1
         - \tenuto
           %! FIGURE_LABEL
-        %@% - \tweak color #blue
+        - \tweak color #blue
           %! FIGURE_LABEL
-        %@% ^ \markup \concat { [ \raise #0.25 \fontsize #-2 (36) \hspace #1 "4.5.R.3" ] }
+        ^ \markup \concat { [ \raise #0.25 \fontsize #-2 (36) \hspace #1 "4.5.R.3" ] }
 
     }
 
@@ -1759,9 +1759,9 @@ number.4.RH.Music.1 = {
         ef''''!1
         - \tenuto
           %! FIGURE_LABEL
-        %@% - \tweak color #blue
+        - \tweak color #blue
           %! FIGURE_LABEL
-        %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (37) \hspace #1 "4.5.R.4" ] }
+        - \markup \concat { [ \raise #0.25 \fontsize #-2 (37) \hspace #1 "4.5.R.4" ] }
 
     }
 
@@ -1783,9 +1783,9 @@ number.4.RH.Music.1 = {
         f''''1
         - \tenuto
           %! FIGURE_LABEL
-        %@% - \tweak color #blue
+        - \tweak color #blue
           %! FIGURE_LABEL
-        %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (38) \hspace #1 "4.5.R.5" ] }
+        - \markup \concat { [ \raise #0.25 \fontsize #-2 (38) \hspace #1 "4.5.R.5" ] }
 
     }
 
@@ -1796,9 +1796,9 @@ number.4.RH.Music.1 = {
         bf''''!2
         - \tenuto
           %! FIGURE_LABEL
-        %@% - \tweak color #blue
+        - \tweak color #blue
           %! FIGURE_LABEL
-        %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (39) \hspace #1 "4.5.R.6" ] }
+        - \markup \concat { [ \raise #0.25 \fontsize #-2 (39) \hspace #1 "4.5.R.6" ] }
         \revert Stem.direction
 
     }
@@ -1984,9 +1984,9 @@ number.4.RH.Music.2 = {
         \ff
         \arpeggio
           %! FIGURE_LABEL
-        %@% - \tweak color #blue
+        - \tweak color #blue
           %! FIGURE_LABEL
-        %@% ^ \markup \concat { [ \raise #0.25 \fontsize #-2 (2) \hspace #1 "4.6.R.2" ] }
+        ^ \markup \concat { [ \raise #0.25 \fontsize #-2 (2) \hspace #1 "4.6.R.2" ] }
 
     }
 
@@ -2232,9 +2232,9 @@ number.4.RH.Music.2 = {
               %! EXPLICIT_DYNAMIC
             \f
               %! FIGURE_LABEL
-            %@% - \tweak color #blue
+            - \tweak color #blue
               %! FIGURE_LABEL
-            %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (40) \hspace #1 "4.5.L.1-4" ] }
+            - \markup \concat { [ \raise #0.25 \fontsize #-2 (40) \hspace #1 "4.5.L.1-4" ] }
             [
               %! SPANNER_START
             (
@@ -2365,9 +2365,9 @@ number.4.RH.Music.2 = {
               %! EXPLICIT_DYNAMIC
             \f
               %! FIGURE_LABEL
-            %@% - \tweak color #blue
+            - \tweak color #blue
               %! FIGURE_LABEL
-            %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (41) \hspace #1 "4.5.L.5-8" ] }
+            - \markup \concat { [ \raise #0.25 \fontsize #-2 (41) \hspace #1 "4.5.L.5-8" ] }
             [
               %! SPANNER_START
             (
@@ -2489,9 +2489,9 @@ number.4.RH.Music.2 = {
         - \marcato
         \arpeggio
           %! FIGURE_LABEL
-        %@% - \tweak color #blue
+        - \tweak color #blue
           %! FIGURE_LABEL
-        %@% ^ \markup \concat { [ \raise #0.25 \fontsize #-2 (42) \hspace #1 "4.6.R.2'" ] }
+        ^ \markup \concat { [ \raise #0.25 \fontsize #-2 (42) \hspace #1 "4.6.R.2'" ] }
 
     }
 
@@ -2515,9 +2515,9 @@ number.4.RH.Music.2 = {
               %! EXPLICIT_DYNAMIC
             \f
               %! FIGURE_LABEL
-            %@% - \tweak color #blue
+            - \tweak color #blue
               %! FIGURE_LABEL
-            %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (43) \hspace #1 "4.5.L.9-12" ] }
+            - \markup \concat { [ \raise #0.25 \fontsize #-2 (43) \hspace #1 "4.5.L.9-12" ] }
             [
               %! SPANNER_START
             (
@@ -2657,9 +2657,9 @@ number.4.RH.Music.2 = {
               %! EXPLICIT_DYNAMIC
             \f
               %! FIGURE_LABEL
-            %@% - \tweak color #blue
+            - \tweak color #blue
               %! FIGURE_LABEL
-            %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (44) \hspace #1 "4.5.L.13-14" ] }
+            - \markup \concat { [ \raise #0.25 \fontsize #-2 (44) \hspace #1 "4.5.L.13-14" ] }
             [
               %! SPANNER_START
             (
@@ -2733,9 +2733,9 @@ number.4.RH.Music.2 = {
         - \marcato
         \arpeggio
           %! FIGURE_LABEL
-        %@% - \tweak color #blue
+        - \tweak color #blue
           %! FIGURE_LABEL
-        %@% ^ \markup \concat { [ \raise #0.25 \fontsize #-2 (45) \hspace #1 "4.6.R.3" ] }
+        ^ \markup \concat { [ \raise #0.25 \fontsize #-2 (45) \hspace #1 "4.6.R.3" ] }
 
     }
 
@@ -2751,9 +2751,9 @@ number.4.RH.Music.2 = {
         - \marcato
         \arpeggio
           %! FIGURE_LABEL
-        %@% - \tweak color #blue
+        - \tweak color #blue
           %! FIGURE_LABEL
-        %@% ^ \markup \concat { [ \raise #0.25 \fontsize #-2 (46) \hspace #1 "4.6.R.4" ] }
+        ^ \markup \concat { [ \raise #0.25 \fontsize #-2 (46) \hspace #1 "4.6.R.4" ] }
 
     }
 
@@ -2769,9 +2769,9 @@ number.4.RH.Music.2 = {
         - \marcato
         \arpeggio
           %! FIGURE_LABEL
-        %@% - \tweak color #blue
+        - \tweak color #blue
           %! FIGURE_LABEL
-        %@% ^ \markup \concat { [ \raise #0.25 \fontsize #-2 (47) \hspace #1 "4.6.R.5" ] }
+        ^ \markup \concat { [ \raise #0.25 \fontsize #-2 (47) \hspace #1 "4.6.R.5" ] }
 
     }
 
@@ -2794,9 +2794,9 @@ number.4.RH.Music.2 = {
           %! EXPLICIT_DYNAMIC
         \fff
           %! FIGURE_LABEL
-        %@% - \tweak color #blue
+        - \tweak color #blue
           %! FIGURE_LABEL
-        %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (50) \hspace #1 "5.1.R.1" ] }
+        - \markup \concat { [ \raise #0.25 \fontsize #-2 (50) \hspace #1 "5.1.R.1" ] }
 
         \override Rest.direction = #up
         r2..
@@ -2981,9 +2981,9 @@ number.4.RH.Music.3 = {
           %! EXPLICIT_DYNAMIC
         \ff
           %! FIGURE_LABEL
-        %@% - \tweak color #blue
+        - \tweak color #blue
           %! FIGURE_LABEL
-        %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (1) \hspace #1 "4.1.R.1" ] }
+        - \markup \concat { [ \raise #0.25 \fontsize #-2 (1) \hspace #1 "4.1.R.1" ] }
 
         r4
 
@@ -3022,9 +3022,9 @@ number.4.RH.Music.3 = {
         ef''!8
         - \tenuto
           %! FIGURE_LABEL
-        %@% - \tweak color #blue
+        - \tweak color #blue
           %! FIGURE_LABEL
-        %@% ^ \markup \concat { [ \raise #0.25 \fontsize #-2 (3) \hspace #1 "4.1.R.2" ] }
+        ^ \markup \concat { [ \raise #0.25 \fontsize #-2 (3) \hspace #1 "4.1.R.2" ] }
 
         r4
 
@@ -3067,9 +3067,9 @@ number.4.RH.Music.3 = {
         ef'!8
         - \tenuto
           %! FIGURE_LABEL
-        %@% - \tweak color #blue
+        - \tweak color #blue
           %! FIGURE_LABEL
-        %@% ^ \markup \concat { [ \raise #0.25 \fontsize #-2 (5) \hspace #1 "4.1.R.3" ] }
+        ^ \markup \concat { [ \raise #0.25 \fontsize #-2 (5) \hspace #1 "4.1.R.3" ] }
 
         r4
 
@@ -3149,9 +3149,9 @@ number.4.RH.Music.3 = {
         af'''!8
         - \tenuto
           %! FIGURE_LABEL
-        %@% - \tweak color #blue
+        - \tweak color #blue
           %! FIGURE_LABEL
-        %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (23) \hspace #1 "5.2.R.13" ] }
+        - \markup \concat { [ \raise #0.25 \fontsize #-2 (23) \hspace #1 "5.2.R.13" ] }
         [
           %! SPANNER_START
         (
@@ -3251,9 +3251,9 @@ number.4.RH.Music.3 = {
           %! EXPLICIT_DYNAMIC
         \mp
           %! FIGURE_LABEL
-        %@% - \tweak color #blue
+        - \tweak color #blue
           %! FIGURE_LABEL
-        %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (48) \hspace #1 "4.1.R.2'" ] }
+        - \markup \concat { [ \raise #0.25 \fontsize #-2 (48) \hspace #1 "4.1.R.2'" ] }
 
         r4
 
@@ -3296,9 +3296,9 @@ number.4.RH.Music.3 = {
           %! EXPLICIT_DYNAMIC
         \mf
           %! FIGURE_LABEL
-        %@% - \tweak color #blue
+        - \tweak color #blue
           %! FIGURE_LABEL
-        %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (51) \hspace #1 "5.1.L.1" ] }
+        - \markup \concat { [ \raise #0.25 \fontsize #-2 (51) \hspace #1 "5.1.L.1" ] }
 
         \override Rest.direction = #down
         r4
@@ -3803,9 +3803,9 @@ number.4.RH.Music.5 = {
         % [RH.Music.5 measure 17]
         <b d' fs'! a'>16
           %! FIGURE_LABEL
-        %@% - \tweak color #blue
+        - \tweak color #blue
           %! FIGURE_LABEL
-        %@% ^ \markup \concat { [ \raise #0.25 \fontsize #-2 (20) \hspace #1 "4.2.L.11.U" ] }
+        ^ \markup \concat { [ \raise #0.25 \fontsize #-2 (20) \hspace #1 "4.2.L.11.U" ] }
 
         r8.
 
@@ -4662,9 +4662,9 @@ number.4.LH.Music.4 = {
           %! EXPLICIT_DYNAMIC
         \p
           %! FIGURE_LABEL
-        %@% - \tweak color #blue
+        - \tweak color #blue
           %! FIGURE_LABEL
-        %@% _ \markup \concat { [ \raise #0.25 \fontsize #-2 (4) \hspace #1 "5.2.L.1" ] }
+        _ \markup \concat { [ \raise #0.25 \fontsize #-2 (4) \hspace #1 "5.2.L.1" ] }
           %! SPANNER_START
         (
 
@@ -4960,9 +4960,9 @@ number.4.LH.Music.5 = {
           %! EXPLICIT_DYNAMIC
         \f
           %! FIGURE_LABEL
-        %@% - \tweak color #blue
+        - \tweak color #blue
           %! FIGURE_LABEL
-        %@% _ \markup \concat { [ \raise #0.25 \fontsize #-2 (6) \hspace #1 "4.1.L.1" ] }
+        _ \markup \concat { [ \raise #0.25 \fontsize #-2 (6) \hspace #1 "4.1.L.1" ] }
 
         r16
 
@@ -4995,9 +4995,9 @@ number.4.LH.Music.5 = {
         af!8.
         - \tenuto
           %! FIGURE_LABEL
-        %@% - \tweak color #blue
+        - \tweak color #blue
           %! FIGURE_LABEL
-        %@% _ \markup \concat { [ \raise #0.25 \fontsize #-2 (7) \hspace #1 "4.1.L.3" ] }
+        _ \markup \concat { [ \raise #0.25 \fontsize #-2 (7) \hspace #1 "4.1.L.3" ] }
 
         r16
 
@@ -5034,9 +5034,9 @@ number.4.LH.Music.5 = {
           %! EXPLICIT_DYNAMIC
         \ff
           %! FIGURE_LABEL
-        %@% - \tweak color #blue
+        - \tweak color #blue
           %! FIGURE_LABEL
-        %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (8) \hspace #1 "4.2.L.1" ] }
+        - \markup \concat { [ \raise #0.25 \fontsize #-2 (8) \hspace #1 "4.2.L.1" ] }
 
         r2
 
@@ -5058,9 +5058,9 @@ number.4.LH.Music.5 = {
           %! EXPLICIT_DYNAMIC
         \f
           %! FIGURE_LABEL
-        %@% - \tweak color #blue
+        - \tweak color #blue
           %! FIGURE_LABEL
-        %@% _ \markup \concat { [ \raise #0.25 \fontsize #-2 (9) \hspace #1 "4.1.L.2" ] }
+        _ \markup \concat { [ \raise #0.25 \fontsize #-2 (9) \hspace #1 "4.1.L.2" ] }
 
         r16
 
@@ -5101,9 +5101,9 @@ number.4.LH.Music.5 = {
           %! EXPLICIT_DYNAMIC
         \ff
           %! FIGURE_LABEL
-        %@% - \tweak color #blue
+        - \tweak color #blue
           %! FIGURE_LABEL
-        %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (10) \hspace #1 "4.2.L.2" ] }
+        - \markup \concat { [ \raise #0.25 \fontsize #-2 (10) \hspace #1 "4.2.L.2" ] }
 
         r2
 
@@ -5116,9 +5116,9 @@ number.4.LH.Music.5 = {
         <g b f' fs'! a'>16
         - \marcato
           %! FIGURE_LABEL
-        %@% - \tweak color #blue
+        - \tweak color #blue
           %! FIGURE_LABEL
-        %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (11) \hspace #1 "4.2.L.3" ] }
+        - \markup \concat { [ \raise #0.25 \fontsize #-2 (11) \hspace #1 "4.2.L.3" ] }
 
         r8.
 
@@ -5142,9 +5142,9 @@ number.4.LH.Music.5 = {
                 <g b f' fs'! a'>8.
                 - \marcato
                   %! FIGURE_LABEL
-                %@% - \tweak color #blue
+                - \tweak color #blue
                   %! FIGURE_LABEL
-                %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (12) \hspace #1 "4.2.L.4" ] }
+                - \markup \concat { [ \raise #0.25 \fontsize #-2 (12) \hspace #1 "4.2.L.4" ] }
 
                 r2
                 \revert TupletBracket.direction
@@ -5162,9 +5162,9 @@ number.4.LH.Music.5 = {
         <g b f' fs'! a'>16
         - \marcato
           %! FIGURE_LABEL
-        %@% - \tweak color #blue
+        - \tweak color #blue
           %! FIGURE_LABEL
-        %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (13) \hspace #1 "4.2.L.5" ] }
+        - \markup \concat { [ \raise #0.25 \fontsize #-2 (13) \hspace #1 "4.2.L.5" ] }
 
         r8.
 
@@ -5181,9 +5181,9 @@ number.4.LH.Music.5 = {
         <g b f' fs'! a'>8.
         - \marcato
           %! FIGURE_LABEL
-        %@% - \tweak color #blue
+        - \tweak color #blue
           %! FIGURE_LABEL
-        %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (14) \hspace #1 "4.2.L.6" ] }
+        - \markup \concat { [ \raise #0.25 \fontsize #-2 (14) \hspace #1 "4.2.L.6" ] }
 
         r2
 
@@ -5196,9 +5196,9 @@ number.4.LH.Music.5 = {
         <g b f' fs'! a'>16
         - \marcato
           %! FIGURE_LABEL
-        %@% - \tweak color #blue
+        - \tweak color #blue
           %! FIGURE_LABEL
-        %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (15) \hspace #1 "4.2.L.7" ] }
+        - \markup \concat { [ \raise #0.25 \fontsize #-2 (15) \hspace #1 "4.2.L.7" ] }
 
         r8.
 
@@ -5222,9 +5222,9 @@ number.4.LH.Music.5 = {
                 <g b f' fs'! a'>8.
                 - \marcato
                   %! FIGURE_LABEL
-                %@% - \tweak color #blue
+                - \tweak color #blue
                   %! FIGURE_LABEL
-                %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (16) \hspace #1 "4.2.L.8" ] }
+                - \markup \concat { [ \raise #0.25 \fontsize #-2 (16) \hspace #1 "4.2.L.8" ] }
 
                 r2
                 \revert TupletBracket.direction
@@ -5242,9 +5242,9 @@ number.4.LH.Music.5 = {
         <g b f' fs'! a'>16
         - \marcato
           %! FIGURE_LABEL
-        %@% - \tweak color #blue
+        - \tweak color #blue
           %! FIGURE_LABEL
-        %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (17) \hspace #1 "4.2.L.9" ] }
+        - \markup \concat { [ \raise #0.25 \fontsize #-2 (17) \hspace #1 "4.2.L.9" ] }
 
         r8.
 
@@ -5268,9 +5268,9 @@ number.4.LH.Music.5 = {
                 <g b f' fs'! a'>8.
                 - \marcato
                   %! FIGURE_LABEL
-                %@% - \tweak color #blue
+                - \tweak color #blue
                   %! FIGURE_LABEL
-                %@% - \markup \concat { [ \raise #0.25 \fontsize #-2 (18) \hspace #1 "4.2.L.10" ] }
+                - \markup \concat { [ \raise #0.25 \fontsize #-2 (18) \hspace #1 "4.2.L.10" ] }
 
                 r2
                 \revert Rest.direction
@@ -5295,9 +5295,9 @@ number.4.LH.Music.5 = {
           %! EXPLICIT_DYNAMIC
         \mp
           %! FIGURE_LABEL
-        %@% - \tweak color #blue
+        - \tweak color #blue
           %! FIGURE_LABEL
-        %@% _ \markup \concat { [ \raise #0.25 \fontsize #-2 (19) \hspace #1 "4.2.L.11.L" ] }
+        _ \markup \concat { [ \raise #0.25 \fontsize #-2 (19) \hspace #1 "4.2.L.11.L" ] }
 
         r8.
 
@@ -5322,9 +5322,9 @@ number.4.LH.Music.5 = {
                 \set stemRightBeamCount = 1
                 <c bf!>8
                   %! FIGURE_LABEL
-                %@% - \tweak color #blue
+                - \tweak color #blue
                   %! FIGURE_LABEL
-                %@% _ \markup \concat { [ \raise #0.25 \fontsize #-2 (21) \hspace #1 "4.4.L.1-2" ] }
+                _ \markup \concat { [ \raise #0.25 \fontsize #-2 (21) \hspace #1 "4.4.L.1-2" ] }
                 [
                   %! SPANNER_START
                 (
@@ -5367,9 +5367,9 @@ number.4.LH.Music.5 = {
 
             <c e af!>4.
               %! FIGURE_LABEL
-            %@% - \tweak color #blue
+            - \tweak color #blue
               %! FIGURE_LABEL
-            %@% _ \markup \concat { [ \raise #0.25 \fontsize #-2 (22) \hspace #1 "4.4.L.3" ] }
+            _ \markup \concat { [ \raise #0.25 \fontsize #-2 (22) \hspace #1 "4.4.L.3" ] }
 
         }
 
@@ -5397,9 +5397,9 @@ number.4.LH.Music.5 = {
                 \set stemRightBeamCount = 1
                 <bf'!>8
                   %! FIGURE_LABEL
-                %@% - \tweak color #blue
+                - \tweak color #blue
                   %! FIGURE_LABEL
-                %@% _ \markup \concat { [ \raise #0.25 \fontsize #-2 (24) \hspace #1 "4.4.L.4-6" ] }
+                _ \markup \concat { [ \raise #0.25 \fontsize #-2 (24) \hspace #1 "4.4.L.4-6" ] }
                 [
                   %! SPANNER_START
                 (
@@ -5457,9 +5457,9 @@ number.4.LH.Music.5 = {
                 \set stemRightBeamCount = 1
                 <c f bf!>8
                   %! FIGURE_LABEL
-                %@% - \tweak color #blue
+                - \tweak color #blue
                   %! FIGURE_LABEL
-                %@% _ \markup \concat { [ \raise #0.25 \fontsize #-2 (25) \hspace #1 "4.4.L.7-9" ] }
+                _ \markup \concat { [ \raise #0.25 \fontsize #-2 (25) \hspace #1 "4.4.L.7-9" ] }
                 [
                   %! SPANNER_START
                 (
@@ -5509,9 +5509,9 @@ number.4.LH.Music.5 = {
                 \set stemRightBeamCount = 1
                 <d' f'>8
                   %! FIGURE_LABEL
-                %@% - \tweak color #blue
+                - \tweak color #blue
                   %! FIGURE_LABEL
-                %@% _ \markup \concat { [ \raise #0.25 \fontsize #-2 (26) \hspace #1 "4.4.L.10-11" ] }
+                _ \markup \concat { [ \raise #0.25 \fontsize #-2 (26) \hspace #1 "4.4.L.10-11" ] }
                 [
                   %! SPANNER_START
                 (
@@ -5546,9 +5546,9 @@ number.4.LH.Music.5 = {
 
             <bf!>8
               %! FIGURE_LABEL
-            %@% - \tweak color #blue
+            - \tweak color #blue
               %! FIGURE_LABEL
-            %@% _ \markup \concat { [ \raise #0.25 \fontsize #-2 (27) \hspace #1 "4.4.L.12" ] }
+            _ \markup \concat { [ \raise #0.25 \fontsize #-2 (27) \hspace #1 "4.4.L.12" ] }
 
             r4.
 
@@ -5580,9 +5580,9 @@ number.4.LH.Music.5 = {
                 \set stemRightBeamCount = 1
                 <d' f'>8
                   %! FIGURE_LABEL
-                %@% - \tweak color #blue
+                - \tweak color #blue
                   %! FIGURE_LABEL
-                %@% _ \markup \concat { [ \raise #0.25 \fontsize #-2 (28) \hspace #1 "4.4.L.13-14" ] }
+                _ \markup \concat { [ \raise #0.25 \fontsize #-2 (28) \hspace #1 "4.4.L.13-14" ] }
                 [
                   %! SPANNER_START
                 (
@@ -5617,9 +5617,9 @@ number.4.LH.Music.5 = {
 
             <c f bf!>4.
               %! FIGURE_LABEL
-            %@% - \tweak color #blue
+            - \tweak color #blue
               %! FIGURE_LABEL
-            %@% _ \markup \concat { [ \raise #0.25 \fontsize #-2 (29) \hspace #1 "4.4.L.15" ] }
+            _ \markup \concat { [ \raise #0.25 \fontsize #-2 (29) \hspace #1 "4.4.L.15" ] }
 
         }
 
@@ -5635,9 +5635,9 @@ number.4.LH.Music.5 = {
 
             <d' e' af'!>8
               %! FIGURE_LABEL
-            %@% - \tweak color #blue
+            - \tweak color #blue
               %! FIGURE_LABEL
-            %@% _ \markup \concat { [ \raise #0.25 \fontsize #-2 (30) \hspace #1 "4.4.L.16" ] }
+            _ \markup \concat { [ \raise #0.25 \fontsize #-2 (30) \hspace #1 "4.4.L.16" ] }
 
             r4.
 
@@ -5692,9 +5692,9 @@ number.4.LH.Music.5 = {
           %! EXPLICIT_DYNAMIC
         \p
           %! FIGURE_LABEL
-        %@% - \tweak color #blue
+        - \tweak color #blue
           %! FIGURE_LABEL
-        %@% _ \markup \concat { [ \raise #0.25 \fontsize #-2 (49) \hspace #1 "4.1.L.2'" ] }
+        _ \markup \concat { [ \raise #0.25 \fontsize #-2 (49) \hspace #1 "4.1.L.2'" ] }
 
         r16
 
