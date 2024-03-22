@@ -288,7 +288,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         wrappers = baca.override.span_bar_extra_offset(
             abjad.select.leaf(tuplets, 0), (-0.75, 0)
         )
-        baca.tags.wrappers(wrappers, baca.tags.ONLY_SECTION)
+        baca.tags.tag(wrappers, baca.tags.ONLY_SECTION)
         baca.rspanners.ottava(baca.select.tleaves(tuplets))
         baca.register(tuplets, 10, 36)
         baca.override.slur_direction_up(tuplets)
