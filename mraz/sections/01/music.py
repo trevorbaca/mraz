@@ -58,7 +58,7 @@ def make_empty_score():
             tuplets,
             "f<ff",
         )
-        baca.rspanners.ottava(baca.select.tleaves(tuplets))
+        baca.spanners.ottava(baca.select.tleaves(tuplets), rleak=True)
         baca.register(tuplets, 10, 36)
         for run in baca.select.runs(tuplets):
             baca.spanners.slur(run)
@@ -98,7 +98,7 @@ def make_empty_score():
         )
         baca.clef(abjad.select.leaf(tuplet, 0), "bass")
         baca.dynamic(baca.select.phead(tuplet, 0), "f")
-        baca.rspanners.ottava(baca.select.tleaves(tuplet), -1)
+        baca.spanners.ottava(baca.select.tleaves(tuplet), -1, rleak=True)
         baca.register(tuplet, -39)
         baca.override.rest_direction_down(abjad.select.rests(tuplet))
         baca.override.tuplet_bracket_direction_down(tuplet)
@@ -218,7 +218,7 @@ def make_empty_score():
         rmakers.denominator(tuplet, abjad.Duration(1, 1))
         baca.dynamic(baca.select.phead(tuplet, 0), "mf")
         baca.override.dynamic_text_x_offset(baca.select.pleaf(tuplet, 0), 0.25)
-        baca.rspanners.ottava(baca.select.tleaves(tuplet))
+        baca.spanners.ottava(baca.select.tleaves(tuplet), rleak=True)
         baca.override.ottava_bracket_staff_padding(tuplet, 9)
         baca.register(tuplet, 10, 26)
         baca.override.rest_direction_down(abjad.select.rests(tuplet))

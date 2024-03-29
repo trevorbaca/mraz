@@ -312,7 +312,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
 def postprocess(cache):
     m = cache[library.lh_v5]
     with baca.scope(m.leaves()) as o:
-        baca.rspanners.ottava(o.tleaves(), -1)
+        baca.spanners.ottava(o.tleaves(), -1, rleak=True)
         baca.override.tuplet_bracket_direction_up(o)
     m = cache[library.lh_v6]
     with baca.scope(m.leaves()) as o:

@@ -289,7 +289,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             abjad.select.leaf(tuplets, 0), (-0.75, 0)
         )
         baca.tags.tag(wrappers, baca.tags.ONLY_SECTION)
-        baca.rspanners.ottava(baca.select.tleaves(tuplets))
+        baca.spanners.ottava(baca.select.tleaves(tuplets), rleak=True)
         baca.register(tuplets, 10, 36)
         baca.override.slur_direction_up(tuplets)
         baca.label_figure(container, "4.5.L.1-4", accumulator)
@@ -448,7 +448,7 @@ def GLOBALS(skips, rests):
 def postprocess(cache):
     m = cache[library.rh_v1]
     with baca.scope(m.leaves()) as o:
-        baca.rspanners.ottava(o.tleaves())
+        baca.spanners.ottava(o.tleaves(), rleak=True)
     m = cache[library.rh_v2]
     with baca.scope(m.leaves()) as o:
         baca.override.script_direction_up(o)
