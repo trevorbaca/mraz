@@ -874,7 +874,7 @@ def make_layout():
             baca.layout.Override([3, 7, 9, 16], (1, 4)),
         ),
     )
-    baca.section.write_layout_ly(layout)
+    baca.build.write_layout_ly(layout)
 
 
 def main():
