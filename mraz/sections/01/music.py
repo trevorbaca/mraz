@@ -330,8 +330,8 @@ def make_layout():
         ),
         spacing=(1, 32),
         overrides=(
-            baca.space([4, 6, 9], (1, 4)),
-            baca.space(8, (1, 16)),
+            baca.region([4, 6, 9], (1, 4)),
+            baca.region(8, (1, 16)),
         ),
     )
     baca.section.make_layout_ly(spacing)
