@@ -1635,30 +1635,30 @@ def persist_score(score, environment):
 
 
 def make_layout():
-    layout = baca.make_layout(
-        baca.page(
+    layout = baca.layout.layout(
+        baca.layout.page(
             1,
-            baca.system(measure=1, y_offset=0, distances=(14, 17)),
-            baca.system(measure=7, y_offset=55, distances=(10, 17)),
-            baca.system(measure=14, y_offset=100, distances=(22, 17)),
-            baca.system(measure=22, y_offset=162.5, distances=(22, 17)),
-            baca.system(measure=28, y_offset=220, distances=(20, 17)),
+            baca.layout.System(1, y_offset=0, distances=(14, 17)),
+            baca.layout.System(7, y_offset=55, distances=(10, 17)),
+            baca.layout.System(14, y_offset=100, distances=(22, 17)),
+            baca.layout.System(22, y_offset=162.5, distances=(22, 17)),
+            baca.layout.System(28, y_offset=220, distances=(20, 17)),
         ),
-        baca.page(
+        baca.layout.page(
             2,
-            baca.system(measure=35, y_offset=0, distances=(15, 15)),
-            baca.system(measure=38, y_offset=60, distances=(17, 15)),
-            baca.system(measure=43, y_offset=120, distances=(17, 15)),
+            baca.layout.System(35, y_offset=0, distances=(15, 15)),
+            baca.layout.System(38, y_offset=60, distances=(17, 15)),
+            baca.layout.System(43, y_offset=120, distances=(17, 15)),
         ),
-        spacing=(1, 12),
-        overrides=(
-            baca.region((17, 31), (1, 24)),
-            baca.region([20, 21], (1, 4)),
-            baca.region((34, 35), (1, 32)),
-            baca.region((37, 38), (1, 32)),
+        default_spacing=(1, 12),
+        spacing_overrides=(
+            baca.layout.Override((17, 31), (1, 24)),
+            baca.layout.Override([20, 21], (1, 4)),
+            baca.layout.Override((34, 35), (1, 32)),
+            baca.layout.Override((37, 38), (1, 32)),
         ),
     )
-    baca.section.make_layout_ly(layout)
+    baca.section.write_layout_ly(layout)
 
 
 def main():
