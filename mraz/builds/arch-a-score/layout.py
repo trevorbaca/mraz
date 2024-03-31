@@ -2,7 +2,7 @@ import baca
 
 
 def main():
-    spacing = baca.make_layout(
+    layout = baca.make_layout(
         baca.page(
             1,
             baca.system(measure=1, y_offset=60, distances=(17, 15)),
@@ -65,7 +65,7 @@ def main():
             baca.region([4, 6, 9, 23, 25, 28, 54, 84, 88, 90, 97], (1, 4)),
         ),
     )
-    baca.section.make_layout_ly(spacing)
+    baca.section.make_layout_ly(layout)
 
 
 if __name__ == "__main__":
