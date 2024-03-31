@@ -2,7 +2,7 @@ import baca
 
 
 def main():
-    layout = baca.layout.Layout(
+    breaks = baca.layout.Breaks(
         baca.layout.Page(
             1,
             baca.layout.System(1, y_offset=60, distances=(17, 15)),
@@ -46,6 +46,8 @@ def main():
             baca.layout.System(98, y_offset=7, distances=(22, 22)),
             baca.layout.System(103, y_offset=92, distances=(25, 22)),
         ),
+    )
+    spacing = baca.layout.Spacing(
         default_spacing=(1, 32),
         spacing_overrides=(
             baca.layout.Override(8, (1, 16)),
@@ -65,7 +67,7 @@ def main():
             baca.layout.Override([4, 6, 9, 23, 25, 28, 54, 84, 88, 90, 97], (1, 4)),
         ),
     )
-    baca.build.write_layout_ly(layout)
+    baca.build.write_layout_ly(breaks, spacing)
 
 
 if __name__ == "__main__":
