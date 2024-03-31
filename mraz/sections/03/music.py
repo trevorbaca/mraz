@@ -524,13 +524,15 @@ def persist_score(score, environment):
 
 
 def make_layout():
-    layout = baca.layout.Layout(
+    breaks = baca.layout.Breaks(
         baca.layout.Page(
             1,
             baca.layout.System(1, y_offset=0, distances=(15, 15)),
             baca.layout.System(8, y_offset=60, distances=(15, 15)),
             baca.layout.System(10, y_offset=120, distances=(15, 15)),
         ),
+    )
+    spacing = baca.layout.Spacing(
         default_spacing=(1, 40),
         spacing_overrides=(
             baca.layout.Override([2, 4, 7], (1, 4)),
@@ -538,7 +540,7 @@ def make_layout():
             baca.layout.Override([10, 11], (1, 4)),
         ),
     )
-    baca.build.write_layout_ly(layout)
+    baca.build.write_layout_ly(breaks, spacing)
 
 
 def main():
