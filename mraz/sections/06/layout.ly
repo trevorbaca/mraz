@@ -22,7 +22,7 @@
               %! BREAK
             \baca-lbsd #0 #'(17 15)
               %! SPACING_COMMAND
-            \baca-new-spacing-section #1 #8
+            \baca-new-strict-spacing-section #1 #8
               %! BREAK
             \pageBreak
             s1 * 16/4
@@ -33,7 +33,7 @@
 
             % [PageLayout measure 2]
               %! SPACING_COMMAND
-            \baca-new-spacing-section #1 #28
+            \baca-new-strict-spacing-section #1 #28
               %! BREAK
             \noBreak
             s1 * 10/4
@@ -46,7 +46,7 @@
 
             % [PageLayout measure 3]
               %! SPACING_COMMAND
-            \baca-new-spacing-section #35 #96
+            \baca-new-strict-spacing-section #35 #96
               %! BREAK
             \noBreak
             s1 * 1/4
@@ -61,7 +61,7 @@
               %! BREAK
             \baca-lbsd #65 #'(17 18)
               %! SPACING_COMMAND
-            \baca-new-spacing-section #1 #28
+            \baca-new-strict-spacing-section #1 #28
               %! BREAK
             \break
             s1 * 12/4
@@ -74,7 +74,7 @@
 
             % [PageLayout measure 5]
               %! SPACING_COMMAND
-            \baca-new-spacing-section #35 #672
+            \baca-new-strict-spacing-section #35 #672
               %! BREAK
             \noBreak
             s1 * 4/4
@@ -89,7 +89,7 @@
               %! BREAK
             \baca-lbsd #130 #'(17 18)
               %! SPACING_COMMAND
-            \baca-new-spacing-section #1 #28
+            \baca-new-strict-spacing-section #1 #28
               %! BREAK
             \break
             s1 * 10/4
@@ -102,7 +102,7 @@
 
             % [PageLayout measure 7]
               %! SPACING_COMMAND
-            \baca-new-spacing-section #35 #96
+            \baca-new-strict-spacing-section #35 #96
               %! BREAK
             \noBreak
             s1 * 1/4
@@ -117,7 +117,7 @@
               %! BREAK
             \baca-lbsd #195 #'(17 18)
               %! SPACING_COMMAND
-            \baca-new-spacing-section #1 #28
+            \baca-new-strict-spacing-section #1 #28
               %! BREAK
             \break
             s1 * 13/4
@@ -130,7 +130,7 @@
 
             % [PageLayout measure 9]
               %! SPACING_COMMAND
-            \baca-new-spacing-section #35 #96
+            \baca-new-strict-spacing-section #35 #96
               %! BREAK
             \noBreak
             s1 * 1/4
@@ -145,7 +145,7 @@
               %! BREAK
             \baca-lbsd #0 #'(17 15)
               %! SPACING_COMMAND
-            \baca-new-spacing-section #1 #28
+            \baca-new-strict-spacing-section #1 #28
               %! BREAK
             \pageBreak
             s1 * 29/16
@@ -158,7 +158,7 @@
 
             % [PageLayout measure 11]
               %! SPACING_COMMAND
-            \baca-new-spacing-section #35 #672
+            \baca-new-strict-spacing-section #35 #672
               %! BREAK
             \noBreak
             s1 * 27/16
@@ -173,7 +173,7 @@
               %! BREAK
             \baca-lbsd #65 #'(17 15)
               %! SPACING_COMMAND
-            \baca-new-spacing-section #1 #28
+            \baca-new-strict-spacing-section #1 #28
               %! BREAK
             \break
             s1 * 21/16
@@ -186,7 +186,7 @@
 
             % [PageLayout measure 13]
               %! SPACING_COMMAND
-            \baca-new-spacing-section #1 #28
+            \baca-new-strict-spacing-section #1 #28
               %! BREAK
             \noBreak
             s1 * 15/16
@@ -199,7 +199,7 @@
 
             % [PageLayout measure 14]
               %! SPACING_COMMAND
-            \baca-new-spacing-section #35 #672
+            \baca-new-strict-spacing-section #35 #672
               %! BREAK
             \noBreak
             s1 * 4/4
@@ -214,7 +214,7 @@
               %! BREAK
             \baca-lbsd #130 #'(17 18)
               %! SPACING_COMMAND
-            \baca-new-spacing-section #1 #28
+            \baca-new-strict-spacing-section #1 #28
               %! BREAK
             \break
             s1 * 7/4
@@ -227,7 +227,7 @@
 
             % [PageLayout measure 16]
               %! SPACING_COMMAND
-            \baca-new-spacing-section #1 #4
+            \baca-new-strict-spacing-section #1 #4
               %! BREAK
             \noBreak
             s1 * 1/4
@@ -242,7 +242,7 @@
             % [anchor skip]
               %! ANCHOR_SKIP
               %! SPACING_COMMAND
-            \baca-new-spacing-section #1 #4
+            \baca-new-strict-spacing-section #1 #4
               %! ANCHOR_SKIP
               %! BREAK
             \noBreak
