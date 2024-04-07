@@ -235,7 +235,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             ),
             hide_time_signature=True,
         )
-        baca.override.note_column_shift(baca.select.pleaf(tuplet, -1), -1)
+        baca.override.note_column_force_hshift(baca.select.pleaf(tuplet, -1), -1)
         baca.register(tuplet, -39)
         baca.label_figure(tuplet, "8.3.L.3", accumulator)
 
