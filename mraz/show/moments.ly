@@ -1,4 +1,4 @@
-\version "2.25.10"
+\version "2.25.15"
 \language "english"
 #(set-default-paper-size "letter")
 #(set-global-staff-size 14)
@@ -61,8 +61,6 @@
             % BEFORE:
             % COMMANDS:
             #(set-accidental-style 'forget)
-            % OPENING:
-            % COMMANDS:
             \time 1/8
             fs'8
             % AFTER:
