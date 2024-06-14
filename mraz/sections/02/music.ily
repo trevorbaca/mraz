@@ -1124,7 +1124,7 @@ number.2.LH.Music.5 = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 16/15
+    \tuplet 15/16
     {
 
         % [LH.Music.5 measure 2]
@@ -1148,7 +1148,7 @@ number.2.LH.Music.5 = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 16/15
+    \tuplet 15/16
     {
 
         b,,8
@@ -1235,7 +1235,7 @@ number.2.LH.Music.5 = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 16/15
+    \tuplet 15/16
     {
 
         % [LH.Music.5 measure 6]
@@ -1304,7 +1304,7 @@ number.2.LH.Music.5 = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 16/15
+    \tuplet 15/16
     {
 
         % [LH.Music.5 measure 9]
@@ -1328,7 +1328,7 @@ number.2.LH.Music.5 = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 16/15
+    \tuplet 15/16
     {
 
         d,8
@@ -1393,7 +1393,7 @@ number.2.LH.Music.5 = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 16/15
+    \tuplet 15/16
     {
 
         % [LH.Music.5 measure 12]
@@ -1485,7 +1485,7 @@ number.2.LH.Music.6 = {
     s1 * 1/4
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 5/6
+    \tuplet 6/5
     {
 
         \override Stem.direction = #down
@@ -1519,7 +1519,7 @@ number.2.LH.Music.6 = {
     s1 * 1/1
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 4/3
+    \tuplet 3/4
     {
 
         % [LH.Music.6 measure 4]
@@ -1550,7 +1550,7 @@ number.2.LH.Music.6 = {
     s1 * 5/6
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 4/3
+    \tuplet 3/4
     {
 
         bf,,,!16
@@ -1581,7 +1581,7 @@ number.2.LH.Music.6 = {
     s1 * 13/48
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 4/3
+    \tuplet 3/4
     {
 
         g,,16
@@ -1611,7 +1611,7 @@ number.2.LH.Music.6 = {
     s1 * 1/16
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 5/4
+    \tuplet 4/5
     {
 
         d,,8
@@ -1635,7 +1635,7 @@ number.2.LH.Music.6 = {
     s1 * 1/16
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 4/6
+    \tuplet 6/4
     {
 
         e,,8

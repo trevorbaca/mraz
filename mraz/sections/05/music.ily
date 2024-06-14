@@ -245,7 +245,7 @@ number.5.RH.InsertVoice.2 = {
 number.5.RH.Music.3 = {
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 4/3
+    \tuplet 3/4
     {
 
         % [RH.Music.3 measure 1]
@@ -300,7 +300,7 @@ number.5.RH.Music.3 = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 4/3
+    \tuplet 3/4
     {
 
         % [RH.Music.3 measure 2]
@@ -363,7 +363,7 @@ number.5.RH.Music.3 = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 5/4
+    \tuplet 4/5
     {
 
         % [RH.Music.3 measure 4]
@@ -607,7 +607,7 @@ number.5.LH.Music.4 = {
     \override PianoMusicLHStaff.Clef.color = #(x11-color 'DeepSkyBlue2)
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 9/8
+    \tuplet 8/9
     {
 
         \override TupletBracket.staff-padding = 3
@@ -646,7 +646,7 @@ number.5.LH.Music.4 = {
     s1 * 23/96
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 7/6
+    \tuplet 6/7
     {
 
         \override TupletBracket.staff-padding = 3
