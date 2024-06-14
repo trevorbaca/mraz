@@ -785,7 +785,7 @@ number.6.RH.Music.2 = {
         \override TupletNumber.stencil = ##f
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 10/11
+        \tuplet 11/10
         {
 
             \scaleDurations #'(3 . 4)
@@ -838,7 +838,7 @@ number.6.RH.Music.2 = {
             }
 
             \tweak text #tuplet-number::calc-fraction-text
-            \times 6/7
+            \tuplet 7/6
             {
 
                 s8
@@ -898,7 +898,7 @@ number.6.RH.Music.2 = {
         \override TupletNumber.stencil = ##f
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 12/13
+        \tuplet 13/12
         {
 
             \scaleDurations #'(6 . 7)
@@ -937,7 +937,7 @@ number.6.RH.Music.2 = {
             }
 
             \tweak text #tuplet-number::calc-fraction-text
-            \times 6/7
+            \tuplet 7/6
             {
 
                 s8
@@ -960,7 +960,7 @@ number.6.RH.Music.2 = {
             }
 
             \tweak text #tuplet-number::calc-fraction-text
-            \times 3/4
+            \tuplet 4/3
             {
 
                 s8
@@ -1016,7 +1016,7 @@ number.6.RH.Music.2 = {
         \override TupletNumber.stencil = ##f
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 20/23
+        \tuplet 23/20
         {
 
             \scaleDurations #'(1 . 1)
@@ -1035,7 +1035,7 @@ number.6.RH.Music.2 = {
             }
 
             \tweak text #tuplet-number::calc-fraction-text
-            \times 6/7
+            \tuplet 7/6
             {
 
                 s8
@@ -1063,7 +1063,7 @@ number.6.RH.Music.2 = {
             }
 
             \tweak text #tuplet-number::calc-fraction-text
-            \times 3/4
+            \tuplet 4/3
             {
 
                 s8
@@ -1108,7 +1108,7 @@ number.6.RH.Music.2 = {
             }
 
             \tweak text #tuplet-number::calc-fraction-text
-            \times 3/4
+            \tuplet 4/3
             {
 
                 s8
@@ -1140,11 +1140,11 @@ number.6.RH.Music.2 = {
         \override TupletNumber.stencil = ##f
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 26/29
+        \tuplet 29/26
         {
 
             \tweak text #tuplet-number::calc-fraction-text
-            \times 6/7
+            \tuplet 7/6
             {
 
                 % [RH.Music.2 measure 8]
@@ -1173,7 +1173,7 @@ number.6.RH.Music.2 = {
             }
 
             \tweak text #tuplet-number::calc-fraction-text
-            \times 3/4
+            \tuplet 4/3
             {
 
                 s8
@@ -1215,7 +1215,7 @@ number.6.RH.Music.2 = {
             }
 
             \tweak text #tuplet-number::calc-fraction-text
-            \times 3/4
+            \tuplet 4/3
             {
 
                 s8
@@ -1235,7 +1235,7 @@ number.6.RH.Music.2 = {
             }
 
             \tweak text #tuplet-number::calc-fraction-text
-            \times 6/7
+            \tuplet 7/6
             {
 
                 s8
@@ -2101,7 +2101,7 @@ number.6.RH.Music.2 = {
         \override TupletNumber.stencil = ##f
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 7/8
+        \tuplet 8/7
         {
 
             \scaleDurations #'(6 . 7)
@@ -2146,7 +2146,7 @@ number.6.RH.Music.2 = {
             }
 
             \tweak text #tuplet-number::calc-fraction-text
-            \times 6/7
+            \tuplet 7/6
             {
 
                 s8
@@ -2240,7 +2240,7 @@ number.6.RH.InsertVoice.2 = {
 number.6.RH.Music.3 = {
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 8/5
+    \tuplet 5/8
     {
 
         % [RH.Music.3 measure 1]
@@ -2299,11 +2299,11 @@ number.6.RH.Music.3 = {
     {
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 10/11
+        \tuplet 11/10
         {
 
             \tweak text #tuplet-number::calc-fraction-text
-            \times 3/4
+            \tuplet 4/3
             {
 
                 % [RH.Music.3 measure 2]
@@ -2334,7 +2334,7 @@ number.6.RH.Music.3 = {
             }
 
             \tweak text #tuplet-number::calc-fraction-text
-            \times 6/7
+            \tuplet 7/6
             {
 
                 a''8
@@ -2379,7 +2379,7 @@ number.6.RH.Music.3 = {
             }
 
             \tweak text #tuplet-number::calc-fraction-text
-            \times 6/7
+            \tuplet 7/6
             {
 
                 c''8
@@ -2405,7 +2405,7 @@ number.6.RH.Music.3 = {
             }
 
             \tweak text #tuplet-number::calc-fraction-text
-            \times 3/4
+            \tuplet 4/3
             {
 
                 e'8
@@ -2441,11 +2441,11 @@ number.6.RH.Music.3 = {
     {
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 12/13
+        \tuplet 13/12
         {
 
             \tweak text #tuplet-number::calc-fraction-text
-            \times 6/7
+            \tuplet 7/6
             {
 
                 % [RH.Music.3 measure 4]
@@ -2497,7 +2497,7 @@ number.6.RH.Music.3 = {
             }
 
             \tweak text #tuplet-number::calc-fraction-text
-            \times 6/7
+            \tuplet 7/6
             {
 
                 e''8
@@ -2523,7 +2523,7 @@ number.6.RH.Music.3 = {
             }
 
             \tweak text #tuplet-number::calc-fraction-text
-            \times 3/4
+            \tuplet 4/3
             {
 
                 fs''!8
@@ -2580,7 +2580,7 @@ number.6.RH.Music.3 = {
     {
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 20/23
+        \tuplet 23/20
         {
 
             \scaleDurations #'(1 . 1)
@@ -2614,7 +2614,7 @@ number.6.RH.Music.3 = {
             }
 
             \tweak text #tuplet-number::calc-fraction-text
-            \times 6/7
+            \tuplet 7/6
             {
 
                 af''!8
@@ -2642,7 +2642,7 @@ number.6.RH.Music.3 = {
             }
 
             \tweak text #tuplet-number::calc-fraction-text
-            \times 3/4
+            \tuplet 4/3
             {
 
                 af''!8
@@ -2685,7 +2685,7 @@ number.6.RH.Music.3 = {
             }
 
             \tweak text #tuplet-number::calc-fraction-text
-            \times 3/4
+            \tuplet 4/3
             {
 
                 b'8
@@ -2721,11 +2721,11 @@ number.6.RH.Music.3 = {
     {
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 26/29
+        \tuplet 29/26
         {
 
             \tweak text #tuplet-number::calc-fraction-text
-            \times 6/7
+            \tuplet 7/6
             {
 
                 % [RH.Music.3 measure 8]
@@ -2757,7 +2757,7 @@ number.6.RH.Music.3 = {
             }
 
             \tweak text #tuplet-number::calc-fraction-text
-            \times 3/4
+            \tuplet 4/3
             {
 
                 bf''!8
@@ -2802,7 +2802,7 @@ number.6.RH.Music.3 = {
             }
 
             \tweak text #tuplet-number::calc-fraction-text
-            \times 3/4
+            \tuplet 4/3
             {
 
                 cs''!8
@@ -2822,7 +2822,7 @@ number.6.RH.Music.3 = {
             }
 
             \tweak text #tuplet-number::calc-fraction-text
-            \times 6/7
+            \tuplet 7/6
             {
 
                 e''8
@@ -2900,11 +2900,11 @@ number.6.RH.Music.3 = {
     {
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 7/8
+        \tuplet 8/7
         {
 
             \tweak text #tuplet-number::calc-fraction-text
-            \times 6/7
+            \tuplet 7/6
             {
 
                 % [RH.Music.3 measure 15]
@@ -2961,7 +2961,7 @@ number.6.RH.Music.3 = {
             }
 
             \tweak text #tuplet-number::calc-fraction-text
-            \times 6/7
+            \tuplet 7/6
             {
 
                 af''!8
@@ -4119,7 +4119,7 @@ number.6.LH.Music.6 = {
     s1 * 3/1
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 4/3
+    \tuplet 3/4
     {
 
         % [LH.Music.6 measure 5]

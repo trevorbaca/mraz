@@ -1481,7 +1481,7 @@ number.4.RH.Music.1 = {
     {
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 5/4
+        \tuplet 4/5
         {
 
             % [RH.Music.1 measure 18]
@@ -1574,7 +1574,7 @@ number.4.RH.Music.1 = {
     {
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 6/4
+        \tuplet 4/6
         {
 
             % [RH.Music.1 measure 23]
@@ -1627,7 +1627,7 @@ number.4.RH.Music.1 = {
     {
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 19/14
+        \tuplet 14/19
         {
 
             % [RH.Music.1 measure 27]
@@ -2042,7 +2042,7 @@ number.4.RH.Music.2 = {
         \override TupletNumber.stencil = ##f
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 5/4
+        \tuplet 4/5
         {
 
             % [RH.Music.2 measure 18]
@@ -2102,7 +2102,7 @@ number.4.RH.Music.2 = {
         \override TupletNumber.stencil = ##f
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 6/4
+        \tuplet 4/6
         {
 
             % [RH.Music.2 measure 23]
@@ -2150,7 +2150,7 @@ number.4.RH.Music.2 = {
         \override TupletNumber.stencil = ##f
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 19/14
+        \tuplet 14/19
         {
 
             % [RH.Music.2 measure 27]
@@ -2219,7 +2219,7 @@ number.4.RH.Music.2 = {
 
     {
 
-        \times 4/5
+        \tuplet 5/4
         {
 
             % [RH.Music.2 measure 35]
@@ -2266,7 +2266,7 @@ number.4.RH.Music.2 = {
 
         }
 
-        \times 4/5
+        \tuplet 5/4
         {
 
             \set stemLeftBeamCount = 1
@@ -2291,7 +2291,7 @@ number.4.RH.Music.2 = {
 
         }
 
-        \times 4/5
+        \tuplet 5/4
         {
 
             \set stemLeftBeamCount = 1
@@ -2395,7 +2395,7 @@ number.4.RH.Music.2 = {
 
         }
 
-        \times 4/5
+        \tuplet 5/4
         {
 
             \set stemLeftBeamCount = 1
@@ -2441,7 +2441,7 @@ number.4.RH.Music.2 = {
 
         }
 
-        \times 4/5
+        \tuplet 5/4
         {
 
             \set stemLeftBeamCount = 1
@@ -2499,7 +2499,7 @@ number.4.RH.Music.2 = {
 
     {
 
-        \times 2/3
+        \tuplet 3/2
         {
 
             % [RH.Music.2 measure 38]
@@ -2553,7 +2553,7 @@ number.4.RH.Music.2 = {
 
         }
 
-        \times 4/5
+        \tuplet 5/4
         {
 
             \set stemLeftBeamCount = 1
@@ -2578,7 +2578,7 @@ number.4.RH.Music.2 = {
 
         }
 
-        \times 4/5
+        \tuplet 5/4
         {
 
             \set stemLeftBeamCount = 1
@@ -2603,7 +2603,7 @@ number.4.RH.Music.2 = {
 
         }
 
-        \times 4/5
+        \tuplet 5/4
         {
 
             \set stemLeftBeamCount = 1
@@ -2967,7 +2967,7 @@ number.4.RH.InsertVoice.2 = {
 number.4.RH.Music.3 = {
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 12/11
+    \tuplet 11/12
     {
 
         % [RH.Music.3 measure 1]
@@ -3012,7 +3012,7 @@ number.4.RH.Music.3 = {
     s1 * 3/4
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 6/7
+    \tuplet 7/6
     {
 
         % [RH.Music.3 measure 3]
@@ -3060,7 +3060,7 @@ number.4.RH.Music.3 = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 12/11
+    \tuplet 11/12
     {
 
         % [RH.Music.3 measure 6]
@@ -3235,7 +3235,7 @@ number.4.RH.Music.3 = {
     s1 * 1/1
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 6/7
+    \tuplet 7/6
     {
 
         % [RH.Music.3 measure 43]
@@ -3279,7 +3279,7 @@ number.4.RH.Music.3 = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 8/5
+    \tuplet 5/8
     {
 
         % [RH.Music.3 measure 44]
@@ -5131,7 +5131,7 @@ number.4.LH.Music.5 = {
     {
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 4/3
+        \tuplet 3/4
         {
 
             \scaleDurations #'(1 . 1)
@@ -5211,7 +5211,7 @@ number.4.LH.Music.5 = {
     {
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 4/3
+        \tuplet 3/4
         {
 
             \scaleDurations #'(1 . 1)
@@ -5257,7 +5257,7 @@ number.4.LH.Music.5 = {
     {
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 4/3
+        \tuplet 3/4
         {
 
             \scaleDurations #'(1 . 1)
@@ -5308,7 +5308,7 @@ number.4.LH.Music.5 = {
     {
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 7/6
+        \tuplet 6/7
         {
 
             \scaleDurations #'(1 . 1)
@@ -5386,7 +5386,7 @@ number.4.LH.Music.5 = {
     {
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 8/7
+        \tuplet 7/8
         {
 
             \scaleDurations #'(1 . 1)
@@ -5446,7 +5446,7 @@ number.4.LH.Music.5 = {
     {
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 8/7
+        \tuplet 7/8
         {
 
             \scaleDurations #'(1 . 1)
@@ -5498,7 +5498,7 @@ number.4.LH.Music.5 = {
     {
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 6/5
+        \tuplet 5/6
         {
 
             \scaleDurations #'(1 . 1)
@@ -5569,7 +5569,7 @@ number.4.LH.Music.5 = {
     {
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 6/5
+        \tuplet 5/6
         {
 
             \scaleDurations #'(1 . 1)
@@ -5799,7 +5799,7 @@ number.4.LH.InsertVoice.5 = {
         \override TupletNumber.stencil = ##f
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 8/7
+        \tuplet 7/8
         {
 
             \scaleDurations #'(1 . 1)
@@ -5849,7 +5849,7 @@ number.4.LH.InsertVoice.5 = {
         \override TupletNumber.stencil = ##f
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 8/7
+        \tuplet 7/8
         {
 
             \scaleDurations #'(1 . 1)
@@ -5898,7 +5898,7 @@ number.4.LH.InsertVoice.5 = {
         \override TupletNumber.stencil = ##f
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 6/5
+        \tuplet 5/6
         {
 
             \scaleDurations #'(1 . 1)
@@ -5943,7 +5943,7 @@ number.4.LH.InsertVoice.5 = {
         \override TupletNumber.stencil = ##f
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 6/5
+        \tuplet 5/6
         {
 
             \scaleDurations #'(1 . 1)
@@ -6367,7 +6367,7 @@ number.4.LH.ResonanceVoice = {
     {
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 4/3
+        \tuplet 3/4
         {
 
             \scaleDurations #'(1 . 1)
@@ -6420,7 +6420,7 @@ number.4.LH.ResonanceVoice = {
     {
 
         \tweak text #tuplet-number::calc-fraction-text
-        \times 4/3
+        \tuplet 3/4
         {
 
             \scaleDurations #'(1 . 1)
