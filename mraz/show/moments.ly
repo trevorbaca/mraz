@@ -46,7 +46,7 @@
     \override Stem.stencil = ##f
     \override TimeSignature.stencil = ##f
     autoBeaming = ##f
-    proportionalNotationDuration = #(ly:make-moment 1 20)
+    proportionalNotationDuration = \musicLength 1*1/20
   }
 }
 % OPEN_BRACKETS:
@@ -60,7 +60,7 @@
         {
             % BEFORE:
             % COMMANDS:
-            #(set-accidental-style 'forget)
+            \accidentalStyle forget
             \time 1/8
             fs'8
             % AFTER:

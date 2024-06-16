@@ -46,7 +46,7 @@
     \override Stem.stencil = ##f
     \override TimeSignature.stencil = ##f
     autoBeaming = ##f
-    proportionalNotationDuration = #(ly:make-moment 1 16)
+    proportionalNotationDuration = \musicLength 16
   }
 }
 % OPEN_BRACKETS:
@@ -60,7 +60,7 @@
         {
             % BEFORE:
             % COMMANDS:
-            #(set-accidental-style 'forget)
+            \accidentalStyle forget
             \time 1/8
             % GROB_OVERRIDES:
             \once \override HorizontalBracketText.text = \markup "J"
