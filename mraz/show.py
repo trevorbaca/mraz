@@ -78,7 +78,7 @@ def _show_transforms():
     leaf = abjad.select.leaf(score, 0)
     time_signature = abjad.TimeSignature((1, 8))
     abjad.attach(time_signature, leaf)
-    literal = abjad.LilyPondLiteral("#(set-accidental-style 'forget)")
+    literal = abjad.LilyPondLiteral(r"\accidentalStyle forget")
     abjad.attach(literal, leaf)
     preamble = r"""#(set-default-paper-size "letter")
     #(set-global-staff-size 14)
@@ -126,7 +126,7 @@ def _show_transforms():
         \override Stem.stencil = ##f
         \override TimeSignature.stencil = ##f
         autoBeaming = ##f
-        proportionalNotationDuration = #(ly:make-moment 1 16)
+        proportionalNotationDuration = \musicLength 16
       }
     }"""
     preamble = _trim_block_string(preamble)
@@ -238,7 +238,7 @@ def _show_moments():
     leaf = abjad.select.leaf(score, 0)
     time_signature = abjad.TimeSignature((1, 8))
     abjad.attach(time_signature, leaf)
-    literal = abjad.LilyPondLiteral("#(set-accidental-style 'forget)")
+    literal = abjad.LilyPondLiteral(r"\accidentalStyle forget")
     abjad.attach(literal, leaf)
     preamble = r"""#(set-default-paper-size "letter")
     #(set-global-staff-size 14)
@@ -286,7 +286,7 @@ def _show_moments():
         \override Stem.stencil = ##f
         \override TimeSignature.stencil = ##f
         autoBeaming = ##f
-        proportionalNotationDuration = #(ly:make-moment 1 20)
+        proportionalNotationDuration = \musicLength 1*1/20
       }
     }"""
     preamble = _trim_block_string(preamble)
