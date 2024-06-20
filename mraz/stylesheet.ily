@@ -1,8 +1,8 @@
 \version "2.25.16"
+\include "baca.ily"
+
 #(set-default-paper-size "arch a")
 #(set-global-staff-size 12)
-
-\include "baca.ily"
 
 \paper
 {
@@ -41,7 +41,7 @@
   system-system-spacing.minimum-distance = 24
   %top-markup-spacing.minimum-distance = 12
   top-system-spacing.minimum-distance = 18
-  top-margin = 20\mm
+  top-margin = 20
 }
 
 \layout
@@ -54,12 +54,8 @@
   ragged-right = ##t
 }
 
-%%% CONTEXTS %%%
-
 \layout
 {
-
-  % GLOBAL SKIPS
   \context
   {
     \name GlobalSkips
@@ -72,34 +68,25 @@
 
     \override TextSpanner.font-size = 6
     }
-
-  % GLOBAL RESTS
   \context
   {
     \name GlobalRests
     \type Engraver_group
     \consists Multi_measure_rest_engraver
-
     \override MultiMeasureRest.transparent = ##t
-
     \override MultiMeasureRestText.extra-offset = #'(0 . -12)
     \override MultiMeasureRestText.font-size = 3
     \override MultiMeasureRestText.outside-staff-priority = 0
     \override MultiMeasureRestText.padding = 0
     }
-
-  % PAGE LAYOUT
   \context
   {
     \name PageLayout
     \type Engraver_group
     \consists Text_engraver
     \consists \alternateTextSpannerEngraver
-
     \override TextSpanner.font-size = 6
     }
-
-  % GLOBAL CONTEXT
   \context
   {
     \name GlobalContext
@@ -116,14 +103,11 @@
     \defaultchild GlobalSkips
     \accepts GlobalRests
     \accepts PageLayout
-
     \override BarNumber.Y-extent = ##f
     \override BarNumber.X-offset = -7
     \override BarNumber.Y-offset = -0.75
     \override BarNumber.font-size = 1
-
     \override TextSpanner.to-barline = ##t
-
     % prevents StaffSymbol from starting too early after cut-away measures:
     \override TimeSignature.X-extent = ##f
     \override TimeSignature.break-align-symbol = #'left-edge
@@ -132,29 +116,21 @@
     \override TimeSignature.space-alist.clef = #'(extra-space . 0.5)
     \override TimeSignature.style = #'numbered
   }
-
-  % PIANO STAFF
   \context
   {
     \PianoStaff
     \consists #Span_stem_engraver
   }
-
-  % STAFF
   \context
   {
     \Staff
     \remove Time_signature_engraver
   }
-
-  % VOICE
   \context
   {
     \Voice
     \remove Forbid_line_break_engraver
   }
-
-  % RH VOICE I
   \context
   {
     \Voice
@@ -163,8 +139,6 @@
     \alias Voice
     \voiceOne
   }
-
-  % RH INSERT VOICE I
   \context
   {
     \Voice
@@ -173,8 +147,6 @@
     \alias Voice
     \voiceTwo
   }
-
-  % RH VOICE II
   \context
   {
     \Voice
@@ -183,8 +155,6 @@
     \alias Voice
     \voiceTwo
   }
-
-  % RH INSERT VOICE II
   \context
   {
     \Voice
@@ -193,8 +163,6 @@
     \alias Voice
     \voiceOne
   }
-
-  % RH VOICE III
   \context
   {
     \Voice
@@ -203,8 +171,6 @@
     \alias Voice
     \voiceThree
   }
-
-  % RH INSERT VOICE III
   \context
   {
     \Voice
@@ -213,8 +179,6 @@
     \alias Voice
     \voiceFour
   }
-
-  % RH VOICE IV
   \context
   {
     \Voice
@@ -223,8 +187,6 @@
     \alias Voice
     \voiceFour
   }
-
-  % RH INSERT VOICE IV
   \context
   {
     \Voice
@@ -233,8 +195,6 @@
     \alias Voice
     \voiceThree
   }
-
-  % RH VOICE V
   \context
   {
     \Voice
@@ -243,8 +203,6 @@
     \alias Voice
     \voiceOne
   }
-
-  % RH VOICE VI
   \context
   {
     \Voice
@@ -253,24 +211,18 @@
     \alias Voice
     \voiceTwo
   }
-
-  % RH RESONANCE VOICE
   \context
   {
     \Voice
     \name RHResonanceVoice
     \type Engraver_group
     \alias Voice
-
     \override NoteHead.style = #'harmonic
-
     \override TupletBracket.stencil = ##f
     \override TupletNumber.stencil = ##f
 
     \voiceTwo
   }
-
-  % LH VOICE I
   \context
   {
     \Voice
@@ -279,8 +231,6 @@
     \alias Voice
     \voiceOne
   }
-
-  % LH VOICE II
   \context
   {
     \Voice
@@ -289,8 +239,6 @@
     \alias Voice
     \voiceTwo
   }
-
-  % LH VOICE III
   \context
   {
     \Voice
@@ -299,8 +247,6 @@
     \alias Voice
     \voiceThree
   }
-
-  % LH VOICE IV
   \context
   {
     \Voice
@@ -309,8 +255,6 @@
     \alias Voice
     \voiceFour
   }
-
-  % LH INSERT VOICE IV
   \context
   {
     \Voice
@@ -319,8 +263,6 @@
     \alias Voice
     \voiceThree
   }
-
-  % LH VOICE V
   \context
   {
     \Voice
@@ -329,8 +271,6 @@
     \alias Voice
     \voiceOne
   }
-
-  % LH INSERT VOICE V
   \context
   {
     \Voice
@@ -339,8 +279,6 @@
     \alias Voice
     \voiceTwo
   }
-
-  % LH VOICE VI
   \context
   {
     \Voice
@@ -349,8 +287,6 @@
     \alias Voice
     \voiceTwo
   }
-
-  % LH INSERT VOICE VI
   \context
   {
     \Voice
@@ -359,26 +295,18 @@
     \alias Voice
     \voiceOne
   }
-
-  % LH RESONANCE VOICE
   \context
   {
     \Voice
     \name LHResonanceVoice
     \type Engraver_group
     \alias Voice
-
     \override NoteHead.style = #'harmonic
-
     \override TupletBracket.stencil = ##f
     \override TupletNumber.stencil = ##f
-
     \voiceTwo
   }
-
   %\include "voice-colors.ily"
-
-  % PIANO MUSIC RH STAFF
   \context
   {
     \Staff
@@ -397,8 +325,6 @@
     \accepts RHVoiceVI
     \accepts RHResonanceVoice
   }
-
-  % PIANO MUSIC LH STAFF
   \context
   {
     \Staff
@@ -416,8 +342,6 @@
     \accepts LHInsertVoiceVI
     \accepts LHResonanceVoice
   }
-
-  % PIANO MUSIC STAFF GROUP
   \context
   {
     \PianoStaff
@@ -427,8 +351,6 @@
     \accepts PianoMusicRHStaff
     \accepts PianoMusicLHStaff
   }
-
-  % MUSIC CONTEXT
   \context
   {
     \ChoirStaff
@@ -436,11 +358,8 @@
     \type Engraver_group
     \alias ChoirStaff
     \accepts PianoMusicStaffGroup
-
     systemStartDelimiter = #'SystemStartBar
   }
-
-  % SCORE
   \context
   {
     \Score
@@ -449,44 +368,30 @@
     \remove Bar_number_engraver
     \remove Metronome_mark_engraver
     \remove System_start_delimiter_engraver
-
     \override BarLine.transparent = ##t
     \override BarLine.X-extent = #'(0 . 0)
-
     \override Beam.damping = 99
-
     \override DynamicLineSpanner.padding = #1.5
-
     \override Glissando.thickness = 3
-
     \override Hairpin.to-barline = ##f
-
     \override NoteCollision.merge-differently-dotted = ##t
-
     %\shape #'((-2 . 0) (-1 . 0) (-0.5 . 0) (0 . 0)) RepeatTie         
     \override RepeatTie.X-extent = ##f
-
     \override SpacingSpanner.strict-grace-spacing = ##t
     \override SpacingSpanner.strict-note-spacing = ##t
     \override SpacingSpanner.uniform-stretching = ##t
-
     \override StemTremolo.beam-width = 1.5
     \override StemTremolo.flag-count = 4
     \override StemTremolo.slope = 0.5
-
     \override TextScript.font-name = #"Palatino"
     % DISCOVERY: overriding TextScript.X-extent = ##f
     %      makes LilyPond ignore self-alignment-X tweaks;
     %      probably should never be done at stylesheet level.
     % NOTE:    may be best to override NO text script properties.
-
     \override TextSpanner.to-barline = ##t
-
     \override TupletBracket.full-length-to-extent = ##f
     \override TupletBracket.padding = 1.5
-
     \override TupletNumber.font-size = 0
-
     autoBeaming = ##f
     barNumberFormatter = #baca-oval-bar-numbers
     explicitClefVisibility = #end-of-line-invisible
@@ -498,7 +403,7 @@
   }
 }
 
-%%% MARKUP %%%
+% MARKUP
 
 mraz-colophon-markup = \markup
   \override #'(font-name . "Palatino")
@@ -515,7 +420,7 @@ mraz-ottava-brackets-always-govern-markup = \markup
 
 mraz-piano-markup = \markup \hcenter-in #12 PIANO
 
-%%% OPTIONAL VOICE COLORING %%%
+% OPTIONAL VOICE COLORING
 
 %\context
 %{
