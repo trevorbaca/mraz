@@ -11,14 +11,8 @@
         {   %*% PageLayout
 
             % [PageLayout measure 1]
-              %! BREAK
-            \autoPageBreaksOff
-              %! BREAK
-            \baca-lbsd #0 #'(17 15)
               %! SPACING_COMMAND
             \baca-new-strict-spacing-section #1 #32
-              %! BREAK
-            \pageBreak
             s1 * 9/8
               %! SPACING
             %@% - \baca-start-spm-left-only "[1/32]"
@@ -28,8 +22,6 @@
             % [PageLayout measure 2]
               %! SPACING_COMMAND
             \baca-new-strict-spacing-section #1 #32
-              %! BREAK
-            \noBreak
             s1 * 4/8
               %! SPACING
             %@% \bacaStopTextSpanSPM
@@ -41,8 +33,6 @@
             % [PageLayout measure 3]
               %! SPACING_COMMAND
             \baca-new-strict-spacing-section #1 #32
-              %! BREAK
-            \noBreak
             s1 * 7/8
               %! SPACING
             %@% \bacaStopTextSpanSPM
@@ -54,8 +44,6 @@
             % [PageLayout measure 4]
               %! SPACING_COMMAND
             \baca-new-strict-spacing-section #1 #32
-              %! BREAK
-            \noBreak
             s1 * 5/8
               %! SPACING
             %@% \bacaStopTextSpanSPM
@@ -70,9 +58,6 @@
             \baca-new-strict-spacing-section #1 #4
               %! ANCHOR_SKIP
             \baca-time-signature-transparent
-              %! ANCHOR_SKIP
-              %! BREAK
-            \noBreak
               %! ANCHOR_SKIP
             s1 * 1/4
               %! ANCHOR_SKIP
@@ -89,18 +74,32 @@
         {
 
             % [Breaks measure 1]
+              %! BREAK
+            \autoPageBreaksOff
+              %! BREAK
+            \baca-lbsd #0 #'(17 15)
+              %! BREAK
+            \pageBreak
             s1 * 9/8
 
             % [Breaks measure 2]
+              %! BREAK
+            \noBreak
             s1 * 4/8
 
             % [Breaks measure 3]
+              %! BREAK
+            \noBreak
             s1 * 7/8
 
             % [Breaks measure 4]
+              %! BREAK
+            \noBreak
             s1 * 5/8
 
             % [anchor skip]
+              %! BREAK
+            \noBreak
               %! ANCHOR_SKIP
             s1 * 1/4
 
