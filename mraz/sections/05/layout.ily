@@ -66,27 +66,22 @@
         {   %*% SpacingCommands
 
             % [SpacingCommands measure 1]
-              %! SPACING_COMMAND
             \baca-new-strict-spacing-section #1 #32
             s1 * 9/8
 
             % [SpacingCommands measure 2]
-              %! SPACING_COMMAND
             \baca-new-strict-spacing-section #1 #32
             s1 * 4/8
 
             % [SpacingCommands measure 3]
-              %! SPACING_COMMAND
             \baca-new-strict-spacing-section #1 #32
             s1 * 7/8
 
             % [SpacingCommands measure 4]
-              %! SPACING_COMMAND
             \baca-new-strict-spacing-section #1 #32
             s1 * 5/8
 
             % [anchor skip]
-              %! SPACING_COMMAND
             \baca-new-strict-spacing-section #1 #4
               %! ANCHOR_SKIP
             s1 * 1/4
