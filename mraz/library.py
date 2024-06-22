@@ -350,7 +350,7 @@ def clean_up_repeat_ties(argument):
 
 def make_empty_score():
     tag = baca.helpers.function_name(inspect.currentframe())
-    global_context = baca.score.make_global_context()
+    global_context = baca.score.make_global_context(make_time_signatures_context=True)
     rh_voice_1 = abjad.Voice(lilypond_type="RHVoiceI", name="RH.Music.1", tag=tag)
     rh_voice_1I = abjad.Voice(
         lilypond_type="RHInsertVoiceI", name="RH.InsertVoice.1", tag=tag
