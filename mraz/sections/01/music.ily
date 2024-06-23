@@ -41,7 +41,7 @@ number.1.Rests = {
 number.1.Skips = {
 
     % [Skips measure 1]
-      %! EXPLICIT_METRONOME_MARK
+      %! LILYPOND_TEMPO_COMMAND
     \tempo 4=84
     s1 * 4/4
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
@@ -70,7 +70,7 @@ number.1.Skips = {
     %@% \bacaStartTextSpanMN
 
     % [Skips measure 2]
-      %! EXPLICIT_METRONOME_MARK
+      %! LILYPOND_TEMPO_COMMAND
     \tempo 4=112
     s1 * 2/4
       %! CLOCK_TIME
@@ -148,7 +148,7 @@ number.1.Skips = {
     %@% \bacaStartTextSpanMN
 
     % [Skips measure 5]
-      %! EXPLICIT_METRONOME_MARK
+      %! LILYPOND_TEMPO_COMMAND
     \tempo 4=84
     s1 * 4/8
       %! CLOCK_TIME
@@ -226,7 +226,7 @@ number.1.Skips = {
     %@% \bacaStartTextSpanMN
 
     % [Skips measure 8]
-      %! EXPLICIT_METRONOME_MARK
+      %! LILYPOND_TEMPO_COMMAND
     \tempo 4=84
     s1 * 16/4
       %! CLOCK_TIME
@@ -262,7 +262,7 @@ number.1.Skips = {
     %@% \bacaStartTextSpanMN
 
     % [Skips measure 9]
-      %! EXPLICIT_METRONOME_MARK
+      %! LILYPOND_TEMPO_COMMAND
     \tempo 4=112
     s1 * 1/4
       %! CLOCK_TIME
