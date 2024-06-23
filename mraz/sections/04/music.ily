@@ -144,6 +144,8 @@ number.4.Skips = {
     % [Skips measure 1]
       %! RED_START_BAR
     %@% \baca-thick-red-bar-line
+      %! REDUNDANT_METRONOME_MARK
+    \tempo 4=84
       %! RED_START_BAR
     %@% \tweak break-visibility ##(#t #t #f)
       %! RED_START_BAR
@@ -240,6 +242,8 @@ number.4.Skips = {
     %@% \bacaStartTextSpanMN
 
     % [Skips measure 5]
+      %! EXPLICIT_METRONOME_MARK
+    \tempo 4=112
     s1 * 3/4
       %! CLOCK_TIME
     %@% \bacaStopTextSpanCT
@@ -274,6 +278,8 @@ number.4.Skips = {
     %@% \bacaStartTextSpanMN
 
     % [Skips measure 6]
+      %! EXPLICIT_METRONOME_MARK
+    \tempo 4=84
     s1 * 6/4
       %! CLOCK_TIME
     %@% \bacaStopTextSpanCT
@@ -476,6 +482,8 @@ number.4.Skips = {
     %@% \bacaStartTextSpanMN
 
     % [Skips measure 15]
+      %! EXPLICIT_METRONOME_MARK
+    \tempo 4=112
     s1 * 5/4
       %! CLOCK_TIME
     %@% \bacaStopTextSpanCT
@@ -594,6 +602,8 @@ number.4.Skips = {
     %@% \bacaStartTextSpanMN
 
     % [Skips measure 20]
+      %! EXPLICIT_METRONOME_MARK
+    \tempo 4=112
     s1 * 2/4
       %! CLOCK_TIME
     %@% \bacaStopTextSpanCT
@@ -670,6 +680,8 @@ number.4.Skips = {
     %@% \bacaStartTextSpanMN
 
     % [Skips measure 23]
+      %! EXPLICIT_METRONOME_MARK
+    \tempo 4=84
     s1 * 4/4
       %! CLOCK_TIME
     %@% \bacaStopTextSpanCT
@@ -704,6 +716,8 @@ number.4.Skips = {
     %@% \bacaStartTextSpanMN
 
     % [Skips measure 24]
+      %! EXPLICIT_METRONOME_MARK
+    \tempo 4=112
     s1 * 2/4
       %! CLOCK_TIME
     %@% \bacaStopTextSpanCT
@@ -801,6 +815,8 @@ number.4.Skips = {
     %@% \bacaStartTextSpanMN
 
     % [Skips measure 28]
+      %! EXPLICIT_METRONOME_MARK
+    \tempo 4=84
     s1 * 2/4
       %! CLOCK_TIME
     %@% \bacaStopTextSpanCT
@@ -856,6 +872,8 @@ number.4.Skips = {
     %@% \bacaStartTextSpanMN
 
     % [Skips measure 30]
+      %! EXPLICIT_METRONOME_MARK
+    \tempo 4=112
     s1 * 2/4
       %! CLOCK_TIME
     %@% \bacaStopTextSpanCT
@@ -911,6 +929,8 @@ number.4.Skips = {
     %@% \bacaStartTextSpanMN
 
     % [Skips measure 32]
+      %! EXPLICIT_METRONOME_MARK
+    \tempo 4=84
     s1 * 1/4
       %! CLOCK_TIME
     %@% \bacaStopTextSpanCT
@@ -945,6 +965,8 @@ number.4.Skips = {
     %@% \bacaStartTextSpanMN
 
     % [Skips measure 33]
+      %! EXPLICIT_METRONOME_MARK
+    \tempo 4=112
     s1 * 7/4
       %! CLOCK_TIME
     %@% \bacaStopTextSpanCT
@@ -1042,6 +1064,8 @@ number.4.Skips = {
     %@% \bacaStartTextSpanMN
 
     % [Skips measure 37]
+      %! EXPLICIT_METRONOME_MARK
+    \tempo 4=84
     s1 * 6/4
       %! CLOCK_TIME
     %@% \bacaStopTextSpanCT
