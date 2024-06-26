@@ -9,23 +9,18 @@ Breaks = {
     s1 * 4/4
 
     % [Breaks measure 2]
-    \noBreak
     s1 * 2/4
 
     % [Breaks measure 3]
-    \noBreak
     s1 * 4/4
 
     % [Breaks measure 4]
-    \noBreak
     s1 * 1/4
 
     % [Breaks measure 5]
-    \noBreak
     s1 * 4/8
 
     % [Breaks measure 6]
-    \noBreak
     s1 * 1/4
 
     % [Breaks measure 7]
@@ -34,11 +29,9 @@ Breaks = {
     s1 * 7/8
 
     % [Breaks measure 8]
-    \noBreak
     s1 * 16/4
 
     % [Breaks measure 9]
-    \noBreak
     s1 * 1/4
 
     % [Breaks measure 10]
@@ -47,11 +40,9 @@ Breaks = {
     s1 * 7/16
 
     % [Breaks measure 11]
-    \noBreak
     s1 * 4/4
 
     % [Breaks measure 12]
-    \noBreak
     s1 * 3/2
 
     % [Breaks measure 13]
@@ -60,15 +51,12 @@ Breaks = {
     s1 * 7/8
 
     % [Breaks measure 14]
-    \noBreak
     s1 * 5/16
 
     % [Breaks measure 15]
-    \noBreak
     s1 * 2/4
 
     % [Breaks measure 16]
-    \noBreak
     s1 * 4/2
 
     % [Breaks measure 17]
@@ -77,15 +65,12 @@ Breaks = {
     s1 * 7/16
 
     % [Breaks measure 18]
-    \noBreak
     s1 * 4/4
 
     % [Breaks measure 19]
-    \noBreak
     s1 * 2/2
 
     % [Breaks measure 20]
-    \noBreak
     s1 * 7/8
 
     % [Breaks measure 21]
@@ -94,31 +79,24 @@ Breaks = {
     s1 * 2/4
 
     % [Breaks measure 22]
-    \noBreak
     s1 * 2/4
 
     % [Breaks measure 23]
-    \noBreak
     s1 * 1/4
 
     % [Breaks measure 24]
-    \noBreak
     s1 * 5/16
 
     % [Breaks measure 25]
-    \noBreak
     s1 * 1/4
 
     % [Breaks measure 26]
-    \noBreak
     s1 * 2/4
 
     % [Breaks measure 27]
-    \noBreak
     s1 * 5/8
 
     % [Breaks measure 28]
-    \noBreak
     s1 * 1/4
 
     % [Breaks measure 29]
@@ -127,15 +105,12 @@ Breaks = {
     s1 * 6/4
 
     % [Breaks measure 30]
-    \noBreak
     s1 * 21/16
 
     % [Breaks measure 31]
-    \noBreak
     s1 * 7/4
 
     % [Breaks measure 32]
-    \noBreak
     s1 * 6/4
 
     % [Breaks measure 33]
@@ -144,23 +119,18 @@ Breaks = {
     s1 * 4/4
 
     % [Breaks measure 34]
-    \noBreak
     s1 * 6/4
 
     % [Breaks measure 35]
-    \noBreak
     s1 * 3/4
 
     % [Breaks measure 36]
-    \noBreak
     s1 * 6/4
 
     % [Breaks measure 37]
-    \noBreak
     s1 * 9/8
 
     % [Breaks measure 38]
-    \noBreak
     s1 * 3/4
 
     % [Breaks measure 39]
@@ -169,31 +139,24 @@ Breaks = {
     s1 * 6/4
 
     % [Breaks measure 40]
-    \noBreak
     s1 * 3/4
 
     % [Breaks measure 41]
-    \noBreak
     s1 * 3/4
 
     % [Breaks measure 42]
-    \noBreak
     s1 * 5/4
 
     % [Breaks measure 43]
-    \noBreak
     s1 * 4/4
 
     % [Breaks measure 44]
-    \noBreak
     s1 * 5/4
 
     % [Breaks measure 45]
-    \noBreak
     s1 * 3/4
 
     % [Breaks measure 46]
-    \noBreak
     s1 * 5/4
 
     % [Breaks measure 47]
@@ -202,31 +165,24 @@ Breaks = {
     s1 * 4/4
 
     % [Breaks measure 48]
-    \noBreak
     s1 * 5/4
 
     % [Breaks measure 49]
-    \noBreak
     s1 * 4/4
 
     % [Breaks measure 50]
-    \noBreak
     s1 * 1/4
 
     % [Breaks measure 51]
-    \noBreak
     s1 * 7/8
 
     % [Breaks measure 52]
-    \noBreak
     s1 * 4/4
 
     % [Breaks measure 53]
-    \noBreak
     s1 * 2/4
 
     % [Breaks measure 54]
-    \noBreak
     s1 * 1/4
 
     % [Breaks measure 55]
@@ -235,23 +191,18 @@ Breaks = {
     s1 * 2/4
 
     % [Breaks measure 56]
-    \noBreak
     s1 * 4/4
 
     % [Breaks measure 57]
-    \noBreak
     s1 * 2/4
 
     % [Breaks measure 58]
-    \noBreak
     s1 * 4/4
 
     % [Breaks measure 59]
-    \noBreak
     s1 * 3/4
 
     % [Breaks measure 60]
-    \noBreak
     s1 * 5/8
 
     % [Breaks measure 61]
@@ -260,27 +211,21 @@ Breaks = {
     s1 * 2/4
 
     % [Breaks measure 62]
-    \noBreak
     s1 * 3/4
 
     % [Breaks measure 63]
-    \noBreak
     s1 * 2/4
 
     % [Breaks measure 64]
-    \noBreak
     s1 * 5/8
 
     % [Breaks measure 65]
-    \noBreak
     s1 * 1/4
 
     % [Breaks measure 66]
-    \noBreak
     s1 * 7/4
 
     % [Breaks measure 67]
-    \noBreak
     s1 * 6/4
 
     % [Breaks measure 68]
@@ -289,11 +234,9 @@ Breaks = {
     s1 * 4/4
 
     % [Breaks measure 69]
-    \noBreak
     s1 * 4/4
 
     % [Breaks measure 70]
-    \noBreak
     s1 * 6/4
 
     % [Breaks measure 71]
@@ -302,19 +245,15 @@ Breaks = {
     s1 * 4/4
 
     % [Breaks measure 72]
-    \noBreak
     s1 * 2/4
 
     % [Breaks measure 73]
-    \noBreak
     s1 * 4/4
 
     % [Breaks measure 74]
-    \noBreak
     s1 * 4/4
 
     % [Breaks measure 75]
-    \noBreak
     s1 * 4/4
 
     % [Breaks measure 76]
@@ -323,7 +262,6 @@ Breaks = {
     s1 * 6/4
 
     % [Breaks measure 77]
-    \noBreak
     s1 * 16/4
 
     % [Breaks measure 78]
@@ -332,15 +270,12 @@ Breaks = {
     s1 * 9/8
 
     % [Breaks measure 79]
-    \noBreak
     s1 * 4/8
 
     % [Breaks measure 80]
-    \noBreak
     s1 * 7/8
 
     % [Breaks measure 81]
-    \noBreak
     s1 * 5/8
 
     % [Breaks measure 82]
@@ -349,11 +284,9 @@ Breaks = {
     s1 * 16/4
 
     % [Breaks measure 83]
-    \noBreak
     s1 * 10/4
 
     % [Breaks measure 84]
-    \noBreak
     s1 * 1/4
 
     % [Breaks measure 85]
@@ -362,7 +295,6 @@ Breaks = {
     s1 * 12/4
 
     % [Breaks measure 86]
-    \noBreak
     s1 * 4/4
 
     % [Breaks measure 87]
@@ -371,7 +303,6 @@ Breaks = {
     s1 * 10/4
 
     % [Breaks measure 88]
-    \noBreak
     s1 * 1/4
 
     % [Breaks measure 89]
@@ -380,7 +311,6 @@ Breaks = {
     s1 * 13/4
 
     % [Breaks measure 90]
-    \noBreak
     s1 * 1/4
 
     % [Breaks measure 91]
@@ -389,7 +319,6 @@ Breaks = {
     s1 * 29/16
 
     % [Breaks measure 92]
-    \noBreak
     s1 * 27/16
 
     % [Breaks measure 93]
@@ -398,11 +327,9 @@ Breaks = {
     s1 * 21/16
 
     % [Breaks measure 94]
-    \noBreak
     s1 * 15/16
 
     % [Breaks measure 95]
-    \noBreak
     s1 * 4/4
 
     % [Breaks measure 96]
@@ -411,7 +338,6 @@ Breaks = {
     s1 * 7/4
 
     % [Breaks measure 97]
-    \noBreak
     s1 * 1/4
 
     % [Breaks measure 98]
@@ -420,19 +346,15 @@ Breaks = {
     s1 * 3/4
 
     % [Breaks measure 99]
-    \noBreak
     s1 * 1/4
 
     % [Breaks measure 100]
-    \noBreak
     s1 * 3/8
 
     % [Breaks measure 101]
-    \noBreak
     s1 * 9/16
 
     % [Breaks measure 102]
-    \noBreak
     s1 * 5/16
 
     % [Breaks measure 103]
@@ -441,23 +363,18 @@ Breaks = {
     s1 * 9/16
 
     % [Breaks measure 104]
-    \noBreak
     s1 * 7/16
 
     % [Breaks measure 105]
-    \noBreak
     s1 * 9/16
 
     % [Breaks measure 106]
-    \noBreak
     s1 * 3/16
 
     % [Breaks measure 107]
-    \noBreak
     s1 * 5/8
 
     % [Breaks measure 108]
-    \noBreak
     s1 * 1/8
 
 }
