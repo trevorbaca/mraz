@@ -17,11 +17,9 @@
             s1 * 16/4
 
             % [Breaks measure 2]
-            \noBreak
             s1 * 10/4
 
             % [Breaks measure 3]
-            \noBreak
             s1 * 1/4
 
             % [Breaks measure 4]
@@ -30,7 +28,6 @@
             s1 * 12/4
 
             % [Breaks measure 5]
-            \noBreak
             s1 * 4/4
 
             % [Breaks measure 6]
@@ -39,7 +36,6 @@
             s1 * 10/4
 
             % [Breaks measure 7]
-            \noBreak
             s1 * 1/4
 
             % [Breaks measure 8]
@@ -48,7 +44,6 @@
             s1 * 13/4
 
             % [Breaks measure 9]
-            \noBreak
             s1 * 1/4
 
             % [Breaks measure 10]
@@ -57,7 +52,6 @@
             s1 * 29/16
 
             % [Breaks measure 11]
-            \noBreak
             s1 * 27/16
 
             % [Breaks measure 12]
@@ -66,11 +60,9 @@
             s1 * 21/16
 
             % [Breaks measure 13]
-            \noBreak
             s1 * 15/16
 
             % [Breaks measure 14]
-            \noBreak
             s1 * 4/4
 
             % [Breaks measure 15]
@@ -79,11 +71,9 @@
             s1 * 7/4
 
             % [Breaks measure 16]
-            \noBreak
             s1 * 1/4
 
             % [anchor skip]
-            \noBreak
               %! ANCHOR_SKIP
             s1 * 1/4
 
