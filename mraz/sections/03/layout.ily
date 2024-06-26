@@ -11,9 +11,9 @@
         {   %*% Breaks
 
             % [Breaks measure 1]
+            \autoLineBreaksOff
             \autoPageBreaksOff
             \baca-lbsd #0 #'(15 15)
-            \pageBreak
             s1 * 2/4
 
             % [Breaks measure 2]
