@@ -93,6 +93,10 @@ jobs:
         export PATH=/home/runner/bin:$PATH
         /tmp/baca/scr/doctest $GITHUB_WORKSPACE
 
+    - name: Run pytest
+      run: |
+        make pytest
+
     - name: Test sections
       run: |
         export PATH=/tmp/lilypond-2.25.19/bin:/tmp/baca/scr:/home/runner/bin:$PATH
