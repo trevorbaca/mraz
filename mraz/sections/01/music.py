@@ -21,7 +21,7 @@ def make_empty_score():
     @baca.call
     def block():
         collection = section_4.stage_5.rh[3 - 1]
-        assert library.foo(collection) == "PC<10>"
+        assert library.summarize(collection) == "PC<10>"
         tuplet = baca.from_collection(collection, [16], 16)
         accumulator(
             library.rh_v1,
@@ -36,7 +36,7 @@ def make_empty_score():
     @baca.call
     def block():
         collections = section_4.stage_5.lh[:4]
-        assert library.foo(collections) == [
+        assert library.summarize(collections) == [
             "PC<11, 6, 7, 9, 1>",
             "PC<10, 1, 8, 9, 11>",
             "PC<3, 0, 10, 11, 1>",
@@ -70,7 +70,7 @@ def make_empty_score():
     @baca.call
     def block():
         collections = [_.transpose(4 * 7) for _ in section_7.stage_1.lh[5 - 1]]
-        assert library.foo(collections) == ["PC<2, 8, 0, 1, 4, 6, 11>"]
+        assert library.summarize(collections) == ["PC<2, 8, 0, 1, 4, 6, 11>"]
         tuplet = baca.from_collection(collections[0], [1], 16, 1)
         container = abjad.Container([tuplet])
         baca.register(tuplet, 6, 6 + 10)
@@ -89,7 +89,7 @@ def make_empty_score():
     @baca.call
     def block():
         collections = section_8.stage_3.lh[2 - 1 : 3 - 1]
-        assert library.foo(collections) == ["PC<11, 3>"]
+        assert library.summarize(collections) == ["PC<11, 3>"]
         tuplet = baca.from_collection(collections[0], [2, -4], 16, 4)
         accumulator(
             library.lh_v6,
@@ -108,7 +108,7 @@ def make_empty_score():
     @baca.call
     def block():
         collections = section_8.stage_3.rh[5 - 1 : 6 - 1]
-        assert library.foo(collections) == ["PC<10, 2, 0, 11>"]
+        assert library.summarize(collections) == ["PC<10, 2, 0, 11>"]
         tuplet = baca.from_collection(collections[0], [6, -1], 32)
         tuplet.append("r8")
         accumulator(
@@ -137,7 +137,7 @@ def make_empty_score():
     @baca.call
     def block():
         collections = section_6.stage_1.rh[3 - 1 : 4 - 1]
-        assert library.foo(collections) == ["PC<10, 1, 3>"]
+        assert library.summarize(collections) == ["PC<10, 1, 3>"]
         tuplet = baca.from_collection(collections[0], [1], 8, 1)
         accumulator(
             library.rh_v3,
@@ -165,7 +165,7 @@ def make_empty_score():
     @baca.call
     def block():
         collections = section_6.stage_1.rh[3:4]
-        assert library.foo(collections) == ["PC<2, 4, 0, 3, 5>"]
+        assert library.summarize(collections) == ["PC<2, 4, 0, 3, 5>"]
         tuplet = baca.from_collection(collections[0], [1], 8)
         tuplet.insert(0, "r8")
         tuplet.append("r8")
@@ -185,7 +185,7 @@ def make_empty_score():
     @baca.call
     def block():
         collections = section_5.stage_1.rh[:1]
-        assert library.foo(collections) == ["PC<0, 2, 3, 5>"]
+        assert library.summarize(collections) == ["PC<0, 2, 3, 5>"]
         tuplet = baca.from_collection(collections[0], [2, -14], 16)
         accumulator(
             library.rh_v2,
@@ -205,7 +205,7 @@ def make_empty_score():
     @baca.call
     def block():
         collections = section_5.stage_1.lh[:1]
-        assert library.foo(collections) == ["PC<9, 1, 11, 8, 7>"]
+        assert library.summarize(collections) == ["PC<9, 1, 11, 8, 7>"]
         tuplet = baca.from_collection(
             collections[0], [4, -4], 16, abjad.Duration(16, 4)
         )
