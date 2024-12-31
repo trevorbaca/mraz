@@ -20,7 +20,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     @baca.call
     def block():
         collections = [_.transpose(4 * 7) for _ in section_7.stage_1.lh[-1]]
-        assert library.foo(collections) == ["PC<2, 8, 0, 1, 4, 6, 11>"]
+        assert library.summarize(collections) == ["PC<2, 8, 0, 1, 4, 6, 11>"]
         tuplet = baca.from_collection(collections[0], [1], 16, 1)
         baca.register(tuplet, 6, 6 + 10)
         container = abjad.Container([tuplet])
@@ -54,7 +54,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     @baca.call
     def block():
         collections = section_2.stage_2.rh[0][:1]
-        assert library.foo(collections) == ["<6, 12, 16, 17, 20>"]
+        assert library.summarize(collections) == ["<6, 12, 16, 17, 20>"]
         tuplet = baca.from_collection(collections[0], [1], 16)
         accumulator(
             library.rh_v2,
@@ -85,7 +85,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     @baca.call
     def block():
         collections = [_.transpose(4 * 7) for _ in section_7.stage_1.lh[-1]]
-        assert library.foo(collections) == ["PC<2, 8, 0, 1, 4, 6, 11>"]
+        assert library.summarize(collections) == ["PC<2, 8, 0, 1, 4, 6, 11>"]
         tuplet = baca.from_collection(collections[0], [1], 16, 1)
         groups = rmakers.nongrace_leaves_in_each_tuplet(tuplet)
         baca.register(tuplet, 6, 6 + 10)
@@ -110,7 +110,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     @baca.call
     def block():
         collections = section_2.stage_2.rh[0][:2]
-        assert library.foo(collections) == [
+        assert library.summarize(collections) == [
             "<6, 12, 16, 17, 20>",
             "<10, 15, 23, 31, 33>",
         ]
@@ -162,7 +162,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     @baca.call
     def block():
         collections = section_4.stage_1.lh[:1]
-        assert library.foo(collections) == ["PC<8, 2, 4>"]
+        assert library.summarize(collections) == ["PC<8, 2, 4>"]
         tuplet = baca.from_collection(collections[0], [3, -1], 16)
         tuplet.insert(0, "r2.")
         accumulator(
@@ -181,7 +181,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     @baca.call
     def block():
         collections = section_2.stage_2.rh[0][:4]
-        assert library.foo(collections) == [
+        assert library.summarize(collections) == [
             "<6, 12, 16, 17, 20>",
             "<10, 15, 23, 31, 33>",
             "<2, 13, 20, 22, 27, 29>",
@@ -210,7 +210,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     @baca.call
     def block():
         collections = section_4.stage_5.rh[:1]
-        assert library.foo(collections) == ["PC<3>"]
+        assert library.summarize(collections) == ["PC<3>"]
         tuplet = baca.from_collection(collections[0], [28], 16)
         accumulator(
             library.rh_v1,
@@ -227,7 +227,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     @baca.call
     def block():
         collections = section_4.stage_5.rh[1:2]
-        assert library.foo(collections) == ["PC<5>"]
+        assert library.summarize(collections) == ["PC<5>"]
         tuplet = baca.from_collection(collections[0], [24], 16)
         accumulator(
             library.rh_v1,
@@ -243,7 +243,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     @baca.call
     def block():
         collections = section_4.stage_5.rh[2:3]
-        assert library.foo(collections) == ["PC<10>"]
+        assert library.summarize(collections) == ["PC<10>"]
         tuplet = baca.from_collection(collections[0], [16], 16)
         accumulator(
             library.rh_v1,
@@ -259,7 +259,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
     @baca.call
     def block():
         collections = section_4.stage_5.lh[:4]
-        assert library.foo(collections) == [
+        assert library.summarize(collections) == [
             "PC<11, 6, 7, 9, 1>",
             "PC<10, 1, 8, 9, 11>",
             "PC<3, 0, 10, 11, 1>",

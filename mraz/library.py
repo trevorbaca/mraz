@@ -271,23 +271,6 @@ def make_time_signature(tuplets, tsd):
     return time_signature
 
 
-def foo(collections):
-    if hasattr(collections, "argument"):
-        collections = collections.argument
-    if isinstance(
-        collections,
-        abjad.PitchSet
-        | abjad.PitchSegment
-        | abjad.PitchClassSet
-        | abjad.PitchClassSegment,
-    ):
-        return str(collections)
-    elif isinstance(collections, list | tuple):
-        return [str(_) for _ in collections]
-    else:
-        return collections
-
-
 def _validate_voice_names(score):
     voice_colors = {
         "RH.Music.1": "red",
@@ -1058,6 +1041,28 @@ def silver_transform_7():
         "T11(IAIR(S).6)",
     )
     return segments, names
+
+
+def summarize(collections):
+    if hasattr(collections, "argument"):
+        collections = collections.argument
+    if isinstance(
+        collections,
+        abjad.PitchSet
+        | abjad.PitchSegment
+        | abjad.PitchClassSet
+        | abjad.PitchClassSegment,
+    ):
+        result = str(collections)
+    elif isinstance(collections, list | tuple):
+        result = [str(_) for _ in collections]
+    else:
+        result = collections
+    if isinstance(result, list):
+        assert all(isinstance(_, str) for _ in result)
+    else:
+        assert isinstance(result, str)
+    return result
 
 
 def transparent_music(argument):
