@@ -1,8 +1,3 @@
-"""
->>> import mraz
-
-"""
-
 import inspect
 import types
 
