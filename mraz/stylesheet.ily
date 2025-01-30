@@ -1,4 +1,4 @@
-\version "2.25.22"
+\version "2.25.23"
 \include "baca.ily"
 
 #(set-default-paper-size "arch a")
@@ -378,7 +378,7 @@
     \override TupletNumber.font-size = 0
     autoBeaming = ##f
     pedalSustainStyle = #'bracket
-    proportionalNotationDuration = \musicLength 1*1/24
+    proportionalNotationDuration = #1/24
     tupletFullLength = ##t
   }
 }
