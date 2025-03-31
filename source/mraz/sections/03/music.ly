@@ -18,13 +18,19 @@
             <<
 
                 \context GlobalRests = "Rests"
-                { \number.3.Rests }
+                {
+                    \number.3.Rests
+                }
 
                 \context GlobalSkips = "Skips"
-                { \number.3.Skips }
+                {
+                    \number.3.Skips
+                }
 
                 \context GlobalSkips = "TimeSignatures"
-                { \number.3.TimeSignatures }
+                {
+                    \number.3.TimeSignatures
+                }
 
             >>
 
@@ -35,10 +41,14 @@
                 <<
 
                     \context PianoMusicRHStaff = "PianoMusicRH.Staff"
-                    { \number.3.PianoMusicRH.Staff }
+                    {
+                        \number.3.PianoMusicRH.Staff
+                    }
 
                     \context PianoMusicLHStaff = "PianoMusicLH.Staff"
-                    { \number.3.PianoMusicLH.Staff }
+                    {
+                        \number.3.PianoMusicLH.Staff
+                    }
 
                 >>
 

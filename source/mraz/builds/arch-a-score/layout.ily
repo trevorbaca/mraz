@@ -1,6 +1,7 @@
 \version "2.25.24"
 
-Breaks = {
+Breaks =
+{
 
     % [Breaks measure 1]
     \autoLineBreaksOff
@@ -380,7 +381,8 @@ Breaks = {
 }
 
 
-SpacingCommands = {
+SpacingCommands =
+{
 
     % [SpacingCommands measure 1]
     \baca-start-strict-spacing-section #1 #32
@@ -824,10 +826,14 @@ page-layout-score = \context Score = "Score"
     <<
 
         \context GlobalSkips = "Breaks"
-        { \Breaks }
+        {
+            \Breaks
+        }
 
         \context GlobalSkips = "SpacingCommands"
-        { \SpacingCommands }
+        {
+            \SpacingCommands
+        }
 
     >>
 

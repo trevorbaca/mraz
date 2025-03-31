@@ -1,6 +1,7 @@
 \version "2.25.24"
 
-number.5.Rests = {
+number.5.Rests =
+{
 
     % [Rests measure 1]
     R1 * 9/8
@@ -17,7 +18,8 @@ number.5.Rests = {
 }
 
 
-number.5.Skips = {
+number.5.Skips =
+{
 
     % [Skips measure 1]
       %! RED_START_BAR
@@ -143,7 +145,8 @@ number.5.Skips = {
 }
 
 
-number.5.TimeSignatures = {
+number.5.TimeSignatures =
+{
 
     % [TimeSignatures measure 1]
       %! EXPLICIT_TIME_SIGNATURE_COLOR
@@ -190,7 +193,8 @@ number.5.TimeSignatures = {
 }
 
 
-number.5.RH.Music.1 = {
+number.5.RH.Music.1 =
+{
 
     % [RH.Music.1 measure 1]
       %! REAPPLIED_CLEF
@@ -219,7 +223,8 @@ number.5.RH.Music.1 = {
 }
 
 
-number.5.RH.InsertVoice.1 = {
+number.5.RH.InsertVoice.1 =
+{
 
     % [RH.InsertVoice.1 measure 1]
     s1 * 9/8
@@ -236,7 +241,8 @@ number.5.RH.InsertVoice.1 = {
 }
 
 
-number.5.RH.Music.2 = {
+number.5.RH.Music.2 =
+{
 
     % [RH.Music.2 measure 1]
     s1 * 9/8
@@ -253,7 +259,8 @@ number.5.RH.Music.2 = {
 }
 
 
-number.5.RH.InsertVoice.2 = {
+number.5.RH.InsertVoice.2 =
+{
 
     % [RH.InsertVoice.2 measure 1]
     s1 * 9/8
@@ -270,7 +277,8 @@ number.5.RH.InsertVoice.2 = {
 }
 
 
-number.5.RH.Music.3 = {
+number.5.RH.Music.3 =
+{
 
     \tweak text #tuplet-number::calc-fraction-text
     \tuplet 3/4
@@ -422,7 +430,8 @@ number.5.RH.Music.3 = {
 }
 
 
-number.5.RH.InsertVoice.3 = {
+number.5.RH.InsertVoice.3 =
+{
 
     % [RH.InsertVoice.3 measure 1]
     s1 * 9/8
@@ -439,7 +448,8 @@ number.5.RH.InsertVoice.3 = {
 }
 
 
-number.5.RH.Music.4 = {
+number.5.RH.Music.4 =
+{
 
     % [RH.Music.4 measure 1]
     s1 * 9/8
@@ -456,7 +466,8 @@ number.5.RH.Music.4 = {
 }
 
 
-number.5.RH.InsertVoice.4 = {
+number.5.RH.InsertVoice.4 =
+{
 
     % [RH.InsertVoice.4 measure 1]
     s1 * 9/8
@@ -473,7 +484,8 @@ number.5.RH.InsertVoice.4 = {
 }
 
 
-number.5.RH.Music.5 = {
+number.5.RH.Music.5 =
+{
 
     % [RH.Music.5 measure 1]
     s1 * 9/8
@@ -490,7 +502,8 @@ number.5.RH.Music.5 = {
 }
 
 
-number.5.RH.Music.6 = {
+number.5.RH.Music.6 =
+{
 
     % [RH.Music.6 measure 1]
     s1 * 9/8
@@ -507,7 +520,8 @@ number.5.RH.Music.6 = {
 }
 
 
-number.5.RH.ResonanceVoice = {
+number.5.RH.ResonanceVoice =
+{
 
     % [RH.ResonanceVoice measure 1]
     s1 * 9/8
@@ -524,45 +538,69 @@ number.5.RH.ResonanceVoice = {
 }
 
 
-number.5.PianoMusicRH.Staff = <<
+number.5.PianoMusicRH.Staff =
+<<
 
     \context RHVoiceI = "RH.Music.1"
-    { \number.5.RH.Music.1 }
+    {
+        \number.5.RH.Music.1
+    }
 
     \context RHInsertVoiceI = "RH.InsertVoice.1"
-    { \number.5.RH.InsertVoice.1 }
+    {
+        \number.5.RH.InsertVoice.1
+    }
 
     \context RHVoiceII = "RH.Music.2"
-    { \number.5.RH.Music.2 }
+    {
+        \number.5.RH.Music.2
+    }
 
     \context RHInsertVoiceII = "RH.InsertVoice.2"
-    { \number.5.RH.InsertVoice.2 }
+    {
+        \number.5.RH.InsertVoice.2
+    }
 
     \context RHVoiceIII = "RH.Music.3"
-    { \number.5.RH.Music.3 }
+    {
+        \number.5.RH.Music.3
+    }
 
     \context RHInsertVoiceIII = "RH.InsertVoice.3"
-    { \number.5.RH.InsertVoice.3 }
+    {
+        \number.5.RH.InsertVoice.3
+    }
 
     \context RHVoiceIV = "RH.Music.4"
-    { \number.5.RH.Music.4 }
+    {
+        \number.5.RH.Music.4
+    }
 
     \context RHInsertVoiceIV = "RH.InsertVoice.4"
-    { \number.5.RH.InsertVoice.4 }
+    {
+        \number.5.RH.InsertVoice.4
+    }
 
     \context RHVoiceV = "RH.Music.5"
-    { \number.5.RH.Music.5 }
+    {
+        \number.5.RH.Music.5
+    }
 
     \context RHVoiceVI = "RH.Music.6"
-    { \number.5.RH.Music.6 }
+    {
+        \number.5.RH.Music.6
+    }
 
     \context RHResonanceVoice = "RH.ResonanceVoice"
-    { \number.5.RH.ResonanceVoice }
+    {
+        \number.5.RH.ResonanceVoice
+    }
 
 >>
 
 
-number.5.LH.Music.1 = {
+number.5.LH.Music.1 =
+{
 
     % [LH.Music.1 measure 1]
     s1 * 9/8
@@ -579,7 +617,8 @@ number.5.LH.Music.1 = {
 }
 
 
-number.5.LH.Music.2 = {
+number.5.LH.Music.2 =
+{
 
     % [LH.Music.2 measure 1]
     s1 * 9/8
@@ -596,7 +635,8 @@ number.5.LH.Music.2 = {
 }
 
 
-number.5.LH.Music.3 = {
+number.5.LH.Music.3 =
+{
 
     % [LH.Music.3 measure 1]
     s1 * 9/8
@@ -613,7 +653,8 @@ number.5.LH.Music.3 = {
 }
 
 
-number.5.LH.Music.4 = {
+number.5.LH.Music.4 =
+{
 
     % [LH.Music.4 measure 1]
       %! EXPLICIT_CLEF
@@ -766,7 +807,8 @@ number.5.LH.Music.4 = {
 }
 
 
-number.5.LH.InsertVoice.4 = {
+number.5.LH.InsertVoice.4 =
+{
 
     % [LH.InsertVoice.4 measure 1]
     s1 * 9/8
@@ -783,7 +825,8 @@ number.5.LH.InsertVoice.4 = {
 }
 
 
-number.5.LH.Music.5 = {
+number.5.LH.Music.5 =
+{
 
     % [LH.Music.5 measure 1]
     s1 * 9/8
@@ -800,7 +843,8 @@ number.5.LH.Music.5 = {
 }
 
 
-number.5.LH.InsertVoice.5 = {
+number.5.LH.InsertVoice.5 =
+{
 
     % [LH.InsertVoice.5 measure 1]
     s1 * 9/8
@@ -817,7 +861,8 @@ number.5.LH.InsertVoice.5 = {
 }
 
 
-number.5.LH.Music.6 = {
+number.5.LH.Music.6 =
+{
 
     % [LH.Music.6 measure 1]
     s1 * 9/8
@@ -834,7 +879,8 @@ number.5.LH.Music.6 = {
 }
 
 
-number.5.LH.InsertVoice.6 = {
+number.5.LH.InsertVoice.6 =
+{
 
     % [LH.InsertVoice.6 measure 1]
     s1 * 9/8
@@ -851,7 +897,8 @@ number.5.LH.InsertVoice.6 = {
 }
 
 
-number.5.LH.ResonanceVoice = {
+number.5.LH.ResonanceVoice =
+{
 
     % [LH.ResonanceVoice measure 1]
     s1 * 9/8
@@ -868,36 +915,57 @@ number.5.LH.ResonanceVoice = {
 }
 
 
-number.5.PianoMusicLH.Staff = <<
+number.5.PianoMusicLH.Staff =
+<<
 
     \context LHVoiceI = "LH.Music.1"
-    { \number.5.LH.Music.1 }
+    {
+        \number.5.LH.Music.1
+    }
 
     \context LHVoiceII = "LH.Music.2"
-    { \number.5.LH.Music.2 }
+    {
+        \number.5.LH.Music.2
+    }
 
     \context LHVoiceIII = "LH.Music.3"
-    { \number.5.LH.Music.3 }
+    {
+        \number.5.LH.Music.3
+    }
 
     \context LHVoiceIV = "LH.Music.4"
-    { \number.5.LH.Music.4 }
+    {
+        \number.5.LH.Music.4
+    }
 
     \context LHInsertVoiceIV = "LH.InsertVoice.4"
-    { \number.5.LH.InsertVoice.4 }
+    {
+        \number.5.LH.InsertVoice.4
+    }
 
     \context LHVoiceV = "LH.Music.5"
-    { \number.5.LH.Music.5 }
+    {
+        \number.5.LH.Music.5
+    }
 
     \context LHInsertVoiceV = "LH.InsertVoice.5"
-    { \number.5.LH.InsertVoice.5 }
+    {
+        \number.5.LH.InsertVoice.5
+    }
 
     \context LHVoiceVI = "LH.Music.6"
-    { \number.5.LH.Music.6 }
+    {
+        \number.5.LH.Music.6
+    }
 
     \context LHInsertVoiceVI = "LH.InsertVoice.6"
-    { \number.5.LH.InsertVoice.6 }
+    {
+        \number.5.LH.InsertVoice.6
+    }
 
     \context LHResonanceVoice = "LH.ResonanceVoice"
-    { \number.5.LH.ResonanceVoice }
+    {
+        \number.5.LH.ResonanceVoice
+    }
 
 >>
