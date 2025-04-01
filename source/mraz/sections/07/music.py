@@ -651,7 +651,7 @@ def postprocess(cache):
         baca.override.beam_positions(o, 9)
     m = cache[library.rh_v1]
     with baca.scope(m[11]) as o:
-        baca.mark(abjad.select.leaf(o, 0), r"\mraz-colophon-markup")
+        baca.rehearsal_mark(abjad.select.leaf(o, 0), r"\mraz-colophon-markup")
         baca.override.rehearsal_mark_direction_down(o.rleaf(-1))
         baca.override.rehearsal_mark_padding(o.rleaf(-1), 6)
         baca.override.rehearsal_mark_self_alignment_x(o.rleaf(-1), abjad.RIGHT)
