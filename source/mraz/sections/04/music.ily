@@ -5610,7 +5610,7 @@ number.4.LH.Music.5 =
 
                 \set stemLeftBeamCount = 0
                 \set stemRightBeamCount = 1
-                <bf'!>8
+                bf'!8
                   %! FIGURE_LABEL
                 - \tweak color #blue
                   %! FIGURE_LABEL
@@ -5759,7 +5759,7 @@ number.4.LH.Music.5 =
             % [LH.Music.5 measure 27]
             r8
 
-            <bf!>8
+            bf!8
               %! FIGURE_LABEL
             - \tweak color #blue
               %! FIGURE_LABEL
