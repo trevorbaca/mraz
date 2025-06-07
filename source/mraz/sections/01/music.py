@@ -215,7 +215,6 @@ def make_empty_score():
             anchor=baca.anchor_to_figure("5.1.R.3"),
             hide_time_signature=True,
         )
-        rmakers.denominator(tuplet, abjad.Duration(1, 1))
         baca.dynamic(baca.select.phead(tuplet, 0), "mf")
         baca.override.dynamic_text_x_offset(baca.select.pleaf(tuplet, 0), 0.25)
         baca.spanners.ottava(baca.select.tleaves(tuplet), rleak=True)

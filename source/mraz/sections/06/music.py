@@ -42,7 +42,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         tuplet = baca.from_collection(
             collections[0], [4, -4], 16, abjad.Duration(16, 4)
         )
-        rmakers.denominator(tuplet, abjad.Duration(1, 1))
         accumulator(
             library.rh_v3,
             [tuplet],

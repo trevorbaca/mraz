@@ -885,7 +885,8 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         collections = section_4.stage_4.rh[1:2]
         assert library.summarize(collections) == ["PC<10, 5, 6, 0, 7, 1, 6, 9>"]
         tuplet = baca.from_collection(collections[0], [2], 16, 8)
-        rmakers.denominator(tuplet, abjad.Duration(1, 4))
+        assert tuplet.colon_string == "2:3"
+        tuplet.multiplier = (6, 4)
         baca.register(tuplet, 36, 22)
         container = abjad.Container([tuplet])
         imbrications = baca.imbricate(
@@ -1480,7 +1481,6 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         tuplet = baca.from_collection(
             collections[0], [4, -4], 16, abjad.Duration(16, 4)
         )
-        rmakers.denominator(tuplet, abjad.Duration(1, 1))
         # 75
         accumulator(
             library.rh_v3,
