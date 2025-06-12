@@ -290,7 +290,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             ),
             hide_time_signature=True,
         )
-        tuplet.multiplier = (4, 6)
+        tuplet.ratio = abjad.Ratio(6, 4)
         tweak_string = abjad.Tuplet.tuplet_number_calc_fraction_text_tweak_string
         abjad.tweak(tuplet, tweak_string)
         baca.register(tuplet, -39)

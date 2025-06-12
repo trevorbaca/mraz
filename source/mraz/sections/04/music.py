@@ -886,7 +886,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         assert library.summarize(collections) == ["PC<10, 5, 6, 0, 7, 1, 6, 9>"]
         tuplet = baca.from_collection(collections[0], [2], 16, 8)
         assert str(tuplet.ratio) == "2:3"
-        tuplet.multiplier = (6, 4)
+        tuplet.ratio = abjad.Ratio(4, 6)
         baca.register(tuplet, 36, 22)
         container = abjad.Container([tuplet])
         imbrications = baca.imbricate(
