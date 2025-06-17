@@ -1189,8 +1189,8 @@ number.2.LH.InsertVoice.4 =
 number.2.LH.Music.5 =
 {
 
-    \tweak text #tuplet-number::calc-fraction-text
     \tweak stencil ##f
+    \tweak text #tuplet-number::calc-fraction-text
     \tuplet 1/1
     {
 
@@ -1263,8 +1263,8 @@ number.2.LH.Music.5 =
 
     }
 
-    \tweak text #tuplet-number::calc-fraction-text
     \tweak stencil ##f
+    \tweak text #tuplet-number::calc-fraction-text
     \tuplet 1/1
     {
 
@@ -1287,8 +1287,8 @@ number.2.LH.Music.5 =
 
     }
 
-    \tweak text #tuplet-number::calc-fraction-text
     \tweak stencil ##f
+    \tweak text #tuplet-number::calc-fraction-text
     \tuplet 1/1
     {
 
@@ -1317,8 +1317,8 @@ number.2.LH.Music.5 =
 
     }
 
-    \tweak text #tuplet-number::calc-fraction-text
     \tweak stencil ##f
+    \tweak text #tuplet-number::calc-fraction-text
     \tuplet 1/1
     {
 
@@ -1360,8 +1360,8 @@ number.2.LH.Music.5 =
 
     }
 
-    \tweak text #tuplet-number::calc-fraction-text
     \tweak stencil ##f
+    \tweak text #tuplet-number::calc-fraction-text
     \tuplet 1/1
     {
 
@@ -1390,8 +1390,8 @@ number.2.LH.Music.5 =
 
     }
 
-    \tweak text #tuplet-number::calc-fraction-text
     \tweak stencil ##f
+    \tweak text #tuplet-number::calc-fraction-text
     \tuplet 1/1
     {
 
@@ -1453,8 +1453,8 @@ number.2.LH.Music.5 =
 
     }
 
-    \tweak text #tuplet-number::calc-fraction-text
     \tweak stencil ##f
+    \tweak text #tuplet-number::calc-fraction-text
     \tuplet 1/1
     {
 
@@ -1475,8 +1475,8 @@ number.2.LH.Music.5 =
 
     }
 
-    \tweak text #tuplet-number::calc-fraction-text
     \tweak stencil ##f
+    \tweak text #tuplet-number::calc-fraction-text
     \tuplet 1/1
     {
 

@@ -404,8 +404,8 @@ number.1.TimeSignatures =
 number.1.RH.Music.1 =
 {
 
-    \tweak text #tuplet-number::calc-fraction-text
     \tweak stencil ##f
+    \tweak text #tuplet-number::calc-fraction-text
     \tuplet 1/1
     {
 
@@ -606,8 +606,8 @@ number.1.RH.Music.2 =
 
         }
 
-        \tweak text #tuplet-number::calc-fraction-text
         \tweak stencil ##f
+        \tweak text #tuplet-number::calc-fraction-text
         \tuplet 1/1
         {
 
@@ -653,8 +653,8 @@ number.1.RH.Music.2 =
 
     {
 
-        \tweak text #tuplet-number::calc-fraction-text
         \tweak stencil ##f
+        \tweak text #tuplet-number::calc-fraction-text
         \tuplet 1/1
         {
 
@@ -669,8 +669,8 @@ number.1.RH.Music.2 =
     % [RH.Music.2 measure 5]
     s1 * 1/2
 
-    \tweak text #tuplet-number::calc-fraction-text
     \tweak stencil ##f
+    \tweak text #tuplet-number::calc-fraction-text
     \tuplet 1/1
     {
 
@@ -683,8 +683,8 @@ number.1.RH.Music.2 =
     % [RH.Music.2 measure 7]
     s1 * 7/8
 
-    \tweak text #tuplet-number::calc-fraction-text
     \tweak stencil ##f
+    \tweak text #tuplet-number::calc-fraction-text
     \tuplet 1/1
     {
 
@@ -729,8 +729,8 @@ number.1.RH.Music.2 =
 
     }
 
-    \tweak text #tuplet-number::calc-fraction-text
     \tweak stencil ##f
+    \tweak text #tuplet-number::calc-fraction-text
     \tuplet 1/1
     {
 
@@ -825,8 +825,8 @@ number.1.RH.Music.3 =
     % [RH.Music.3 measure 6]
     s1 * 1/4
 
-    \tweak text #tuplet-number::calc-fraction-text
     \tweak stencil ##f
+    \tweak text #tuplet-number::calc-fraction-text
     \tuplet 1/1
     {
 
@@ -1450,8 +1450,8 @@ number.1.LH.Music.5 =
     % [LH.Music.5 measure 2]
     s1 * 1/2
 
-    \tweak text #tuplet-number::calc-fraction-text
     \tweak stencil ##f
+    \tweak text #tuplet-number::calc-fraction-text
     \tuplet 1/1
     {
 

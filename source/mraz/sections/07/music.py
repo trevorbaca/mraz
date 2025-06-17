@@ -581,8 +581,8 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         manifests=library.manifests,
         score_persistent_indicators=previous_persistent_indicators["Score"],
     )
-    rmakers.hide_trivial(accumulator._score)
-    rmakers.hide_skip_filled(accumulator._score)
+    rmakers.tweak_trivial_tuplets_stencil_false(accumulator._score)
+    rmakers.tweak_skip_filled_tuplets_stencil_false(accumulator._score)
     return accumulator._score, voices, time_signatures
 
 

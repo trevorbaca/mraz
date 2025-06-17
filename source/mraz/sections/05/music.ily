@@ -310,8 +310,8 @@ number.5.RH.Music.3 =
 
     }
 
-    \tweak text #tuplet-number::calc-fraction-text
     \tweak stencil ##f
+    \tweak text #tuplet-number::calc-fraction-text
     \tuplet 1/1
     {
 
@@ -366,8 +366,8 @@ number.5.RH.Music.3 =
 
     }
 
-    \tweak text #tuplet-number::calc-fraction-text
     \tweak stencil ##f
+    \tweak text #tuplet-number::calc-fraction-text
     \tuplet 1/1
     {
 
@@ -752,8 +752,8 @@ number.5.LH.Music.4 =
 
     s1 * 13/96
 
-    \tweak text #tuplet-number::calc-fraction-text
     \tweak stencil ##f
+    \tweak text #tuplet-number::calc-fraction-text
     \tuplet 1/1
     {
 
@@ -788,8 +788,8 @@ number.5.LH.Music.4 =
 
     }
 
-    \tweak text #tuplet-number::calc-fraction-text
     \tweak stencil ##f
+    \tweak text #tuplet-number::calc-fraction-text
     \tuplet 1/1
     {
 

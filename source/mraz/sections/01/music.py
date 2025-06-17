@@ -126,7 +126,9 @@ def make_empty_score():
 
     @baca.call
     def block():
-        container = abjad.Container([abjad.Tuplet((1, 1), "r4", hide=True)])
+        tuplet = abjad.Tuplet("1:1", "r4")
+        abjad.tweak(tuplet, r"\tweak stencil ##f")
+        container = abjad.Container([tuplet])
         accumulator(
             library.rh_v2,
             container,
@@ -154,7 +156,8 @@ def make_empty_score():
 
     @baca.call
     def block():
-        tuplet = abjad.Tuplet((1, 1), "r4", hide=True)
+        tuplet = abjad.Tuplet("1:1", "r4")
+        abjad.tweak(tuplet, r"\tweak stencil ##f")
         accumulator(
             library.rh_v2,
             [tuplet],
@@ -229,7 +232,8 @@ def make_empty_score():
 
     @baca.call
     def block():
-        tuplet = abjad.Tuplet((1, 1), "r4", hide=True)
+        tuplet = abjad.Tuplet("1:1", "r4")
+        abjad.tweak(tuplet, r"\tweak stencil ##f")
         accumulator(
             library.rh_v2,
             [tuplet],
@@ -245,7 +249,7 @@ def make_empty_score():
         append_anchor_skip=True,
         manifests=library.manifests,
     )
-    rmakers.hide_trivial(accumulator._score)
+    rmakers.tweak_trivial_tuplets_stencil_false(accumulator._score)
     return accumulator._score, voices, time_signatures
 
 

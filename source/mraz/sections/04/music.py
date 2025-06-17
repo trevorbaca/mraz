@@ -87,7 +87,8 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
 
     @baca.call
     def block():
-        tuplet = abjad.Tuplet((1, 1), "r2.", hide=True)
+        tuplet = abjad.Tuplet("1:1", "r2.")
+        abjad.tweak(tuplet, r"\tweak stencil ##f")
         # 5
         accumulator(
             library.rh_v3,
@@ -115,7 +116,8 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
 
     @baca.call
     def block():
-        tuplet = abjad.Tuplet((1, 1), "r2.", hide=True)
+        tuplet = abjad.Tuplet("1:1", "r2.")
+        abjad.tweak(tuplet, r"\tweak stencil ##f")
         # 7
         accumulator(
             library.rh_v3,
@@ -145,7 +147,8 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
 
     @baca.call
     def block():
-        tuplet = abjad.Tuplet((1, 1), "r2.", hide=True)
+        tuplet = abjad.Tuplet("1:1", "r2.")
+        abjad.tweak(tuplet, r"\tweak stencil ##f")
         # 9
         accumulator(
             library.lh_v5,
@@ -213,7 +216,8 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
 
     @baca.call
     def block():
-        tuplet = abjad.Tuplet((1, 1), "r2.", hide=True)
+        tuplet = abjad.Tuplet("1:1", "r2.")
+        abjad.tweak(tuplet, r"\tweak stencil ##f")
         # 13
         accumulator(
             library.lh_v5,
@@ -532,7 +536,8 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
 
     @baca.call
     def block():
-        tuplet = abjad.Tuplet((1, 1), "r1", hide=True)
+        tuplet = abjad.Tuplet("1:1", "r1")
+        abjad.tweak(tuplet, r"\tweak stencil ##f")
         # 32
         accumulator(
             library.lh_v5,
@@ -562,7 +567,8 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
 
     @baca.call
     def block():
-        tuplet = abjad.Tuplet((1, 1), "r4", hide=True)
+        tuplet = abjad.Tuplet("1:1", "r4")
+        abjad.tweak(tuplet, r"\tweak stencil ##f")
         # 34
         accumulator(
             library.rh_v1,
@@ -629,7 +635,8 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
 
     @baca.call
     def block():
-        tuplet = abjad.Tuplet((1, 1), "r2", hide=True)
+        tuplet = abjad.Tuplet("1:1", "r2")
+        abjad.tweak(tuplet, r"\tweak stencil ##f")
         # 37
         accumulator(
             library.lh_v5,
@@ -731,7 +738,8 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
 
     @baca.call
     def block():
-        tuplet = abjad.Tuplet((1, 1), "r2", hide=True)
+        tuplet = abjad.Tuplet("1:1", "r2")
+        abjad.tweak(tuplet, r"\tweak stencil ##f")
         # 41
         accumulator(
             library.lh_v5,
@@ -869,7 +877,8 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
 
     @baca.call
     def block():
-        tuplet = abjad.Tuplet((1, 1), "r2", hide=True)
+        tuplet = abjad.Tuplet("1:1", "r2")
+        abjad.tweak(tuplet, r"\tweak stencil ##f")
         # 46
         accumulator(
             library.rh_v1,
@@ -1396,7 +1405,8 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
 
     @baca.call
     def block():
-        tuplet = abjad.Tuplet((1, 1), "r1 r1 r1", hide=True)
+        tuplet = abjad.Tuplet("1:1", "r1 r1 r1")
+        abjad.tweak(tuplet, r"\tweak stencil ##f")
         # TODO: debug: figure out why bracket extends indefinitely to right
         container = abjad.Container([tuplet])
         # 71 (fills mm 41-43 with rests)
@@ -1507,7 +1517,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         manifests=library.manifests,
         score_persistent_indicators=previous_persistent_indicators["Score"],
     )
-    rmakers.hide_trivial(accumulator._score)
+    rmakers.tweak_trivial_tuplets_stencil_false(accumulator._score)
     return accumulator._score, voices, time_signatures
 
 

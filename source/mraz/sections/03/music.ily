@@ -564,8 +564,8 @@ number.3.RH.Music.1 =
     % [RH.Music.1 measure 9]
     s1 * 21/16
 
-    \tweak text #tuplet-number::calc-fraction-text
     \tweak stencil ##f
+    \tweak text #tuplet-number::calc-fraction-text
     \tuplet 1/1
     {
 
@@ -588,8 +588,8 @@ number.3.RH.Music.1 =
 
     }
 
-    \tweak text #tuplet-number::calc-fraction-text
     \tweak stencil ##f
+    \tweak text #tuplet-number::calc-fraction-text
     \tuplet 1/1
     {
 
@@ -603,8 +603,8 @@ number.3.RH.Music.1 =
 
     }
 
-    \tweak text #tuplet-number::calc-fraction-text
     \tweak stencil ##f
+    \tweak text #tuplet-number::calc-fraction-text
     \tuplet 1/1
     {
 
@@ -674,8 +674,8 @@ number.3.RH.Music.2 =
     \override Script.direction = #up
     s1 * 1/2
 
-    \tweak text #tuplet-number::calc-fraction-text
     \tweak stencil ##f
+    \tweak text #tuplet-number::calc-fraction-text
     \tuplet 1/1
     {
 
@@ -685,8 +685,8 @@ number.3.RH.Music.2 =
 
     }
 
-    \tweak text #tuplet-number::calc-fraction-text
     \tweak stencil ##f
+    \tweak text #tuplet-number::calc-fraction-text
     \tuplet 1/1
     {
 
@@ -737,8 +737,8 @@ number.3.RH.Music.2 =
 
     }
 
-    \tweak text #tuplet-number::calc-fraction-text
     \tweak stencil ##f
+    \tweak text #tuplet-number::calc-fraction-text
     \tuplet 1/1
     {
 
@@ -751,8 +751,8 @@ number.3.RH.Music.2 =
     % [RH.Music.2 measure 5]
     s1 * 1/2
 
-    \tweak text #tuplet-number::calc-fraction-text
     \tweak stencil ##f
+    \tweak text #tuplet-number::calc-fraction-text
     \tuplet 1/1
     {
 
@@ -800,8 +800,8 @@ number.3.RH.Music.2 =
 
     }
 
-    \tweak text #tuplet-number::calc-fraction-text
     \tweak stencil ##f
+    \tweak text #tuplet-number::calc-fraction-text
     \tuplet 1/1
     {
 
@@ -838,8 +838,8 @@ number.3.RH.Music.2 =
 
     }
 
-    \tweak text #tuplet-number::calc-fraction-text
     \tweak stencil ##f
+    \tweak text #tuplet-number::calc-fraction-text
     \tuplet 1/1
     {
 
@@ -852,8 +852,8 @@ number.3.RH.Music.2 =
     % [RH.Music.2 measure 8]
     s1 * 3/2
 
-    \tweak text #tuplet-number::calc-fraction-text
     \tweak stencil ##f
+    \tweak text #tuplet-number::calc-fraction-text
     \tuplet 1/1
     {
 
@@ -901,8 +901,8 @@ number.3.RH.Music.2 =
 
     }
 
-    \tweak text #tuplet-number::calc-fraction-text
     \tweak stencil ##f
+    \tweak text #tuplet-number::calc-fraction-text
     \tuplet 1/1
     {
 
@@ -937,8 +937,8 @@ number.3.RH.Music.2 =
 
     }
 
-    \tweak text #tuplet-number::calc-fraction-text
     \tweak stencil ##f
+    \tweak text #tuplet-number::calc-fraction-text
     \tuplet 1/1
     {
 
@@ -978,8 +978,8 @@ number.3.RH.Music.2 =
 
     }
 
-    \tweak text #tuplet-number::calc-fraction-text
     \tweak stencil ##f
+    \tweak text #tuplet-number::calc-fraction-text
     \tuplet 1/1
     {
 
@@ -1127,8 +1127,8 @@ number.3.RH.Music.2 =
 
         }
 
-        \tweak text #tuplet-number::calc-fraction-text
         \tweak stencil ##f
+        \tweak text #tuplet-number::calc-fraction-text
         \tuplet 1/1
         {
 
@@ -1978,8 +1978,8 @@ number.3.LH.Music.5 =
     % [LH.Music.5 measure 7]
     s1 * 1/4
 
-    \tweak text #tuplet-number::calc-fraction-text
     \tweak stencil ##f
+    \tweak text #tuplet-number::calc-fraction-text
     \tuplet 1/1
     {
 
@@ -2169,8 +2169,8 @@ number.3.LH.InsertVoice.6 =
 number.3.LH.ResonanceVoice =
 {
 
-    \tweak text #tuplet-number::calc-fraction-text
     \tweak stencil ##f
+    \tweak text #tuplet-number::calc-fraction-text
     \tuplet 1/1
     {
 
@@ -2185,8 +2185,8 @@ number.3.LH.ResonanceVoice =
 
     }
 
-    \tweak text #tuplet-number::calc-fraction-text
     \tweak stencil ##f
+    \tweak text #tuplet-number::calc-fraction-text
     \tuplet 1/1
     {
 
@@ -2206,8 +2206,8 @@ number.3.LH.ResonanceVoice =
 
     }
 
-    \tweak text #tuplet-number::calc-fraction-text
     \tweak stencil ##f
+    \tweak text #tuplet-number::calc-fraction-text
     \tuplet 1/1
     {
 
@@ -2233,8 +2233,8 @@ number.3.LH.ResonanceVoice =
 
     }
 
-    \tweak text #tuplet-number::calc-fraction-text
     \tweak stencil ##f
+    \tweak text #tuplet-number::calc-fraction-text
     \tuplet 1/1
     {
 
@@ -2253,8 +2253,8 @@ number.3.LH.ResonanceVoice =
 
     }
 
-    \tweak text #tuplet-number::calc-fraction-text
     \tweak stencil ##f
+    \tweak text #tuplet-number::calc-fraction-text
     \tuplet 1/1
     {
 
@@ -2266,8 +2266,8 @@ number.3.LH.ResonanceVoice =
 
     }
 
-    \tweak text #tuplet-number::calc-fraction-text
     \tweak stencil ##f
+    \tweak text #tuplet-number::calc-fraction-text
     \tuplet 1/1
     {
 
@@ -2298,8 +2298,8 @@ number.3.LH.ResonanceVoice =
     % [LH.ResonanceVoice measure 8]
     s1 * 3/2
 
-    \tweak text #tuplet-number::calc-fraction-text
     \tweak stencil ##f
+    \tweak text #tuplet-number::calc-fraction-text
     \tuplet 1/1
     {
 
@@ -2337,8 +2337,8 @@ number.3.LH.ResonanceVoice =
 
     }
 
-    \tweak text #tuplet-number::calc-fraction-text
     \tweak stencil ##f
+    \tweak text #tuplet-number::calc-fraction-text
     \tuplet 1/1
     {
 
@@ -2351,8 +2351,8 @@ number.3.LH.ResonanceVoice =
 
     }
 
-    \tweak text #tuplet-number::calc-fraction-text
     \tweak stencil ##f
+    \tweak text #tuplet-number::calc-fraction-text
     \tuplet 1/1
     {
 
