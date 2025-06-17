@@ -404,7 +404,9 @@ number.1.TimeSignatures =
 number.1.RH.Music.1 =
 {
 
-    \scaleDurations #'(1 . 1)
+    \tweak text #tuplet-number::calc-fraction-text
+    \tweak stencil ##f
+    \tuplet 1/1
     {
 
         % [RH.Music.1 measure 1]
@@ -604,7 +606,9 @@ number.1.RH.Music.2 =
 
         }
 
-        \scaleDurations #'(1 . 1)
+        \tweak text #tuplet-number::calc-fraction-text
+        \tweak stencil ##f
+        \tuplet 1/1
         {
 
             \set stemLeftBeamCount = 1
@@ -649,7 +653,9 @@ number.1.RH.Music.2 =
 
     {
 
-        \scaleDurations #'(1 . 1)
+        \tweak text #tuplet-number::calc-fraction-text
+        \tweak stencil ##f
+        \tuplet 1/1
         {
 
             % [RH.Music.2 measure 4]
@@ -663,7 +669,9 @@ number.1.RH.Music.2 =
     % [RH.Music.2 measure 5]
     s1 * 1/2
 
-    \scaleDurations #'(1 . 1)
+    \tweak text #tuplet-number::calc-fraction-text
+    \tweak stencil ##f
+    \tuplet 1/1
     {
 
         % [RH.Music.2 measure 6]
@@ -675,7 +683,9 @@ number.1.RH.Music.2 =
     % [RH.Music.2 measure 7]
     s1 * 7/8
 
-    \scaleDurations #'(1 . 1)
+    \tweak text #tuplet-number::calc-fraction-text
+    \tweak stencil ##f
+    \tuplet 1/1
     {
 
         % [RH.Music.2 measure 8]
@@ -719,7 +729,9 @@ number.1.RH.Music.2 =
 
     }
 
-    \scaleDurations #'(1 . 1)
+    \tweak text #tuplet-number::calc-fraction-text
+    \tweak stencil ##f
+    \tuplet 1/1
     {
 
         % [RH.Music.2 measure 9]
@@ -813,7 +825,9 @@ number.1.RH.Music.3 =
     % [RH.Music.3 measure 6]
     s1 * 1/4
 
-    \scaleDurations #'(1 . 1)
+    \tweak text #tuplet-number::calc-fraction-text
+    \tweak stencil ##f
+    \tuplet 1/1
     {
 
         % [RH.Music.3 measure 7]
@@ -1436,7 +1450,9 @@ number.1.LH.Music.5 =
     % [LH.Music.5 measure 2]
     s1 * 1/2
 
-    \scaleDurations #'(1 . 1)
+    \tweak text #tuplet-number::calc-fraction-text
+    \tweak stencil ##f
+    \tuplet 1/1
     {
 
         % [LH.Music.5 measure 3]

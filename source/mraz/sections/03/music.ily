@@ -564,7 +564,9 @@ number.3.RH.Music.1 =
     % [RH.Music.1 measure 9]
     s1 * 21/16
 
-    \scaleDurations #'(1 . 1)
+    \tweak text #tuplet-number::calc-fraction-text
+    \tweak stencil ##f
+    \tuplet 1/1
     {
 
         % [RH.Music.1 measure 10]
@@ -586,7 +588,9 @@ number.3.RH.Music.1 =
 
     }
 
-    \scaleDurations #'(1 . 1)
+    \tweak text #tuplet-number::calc-fraction-text
+    \tweak stencil ##f
+    \tuplet 1/1
     {
 
         % [RH.Music.1 measure 11]
@@ -599,7 +603,9 @@ number.3.RH.Music.1 =
 
     }
 
-    \scaleDurations #'(1 . 1)
+    \tweak text #tuplet-number::calc-fraction-text
+    \tweak stencil ##f
+    \tuplet 1/1
     {
 
         % [RH.Music.1 measure 12]
@@ -668,7 +674,9 @@ number.3.RH.Music.2 =
     \override Script.direction = #up
     s1 * 1/2
 
-    \scaleDurations #'(1 . 1)
+    \tweak text #tuplet-number::calc-fraction-text
+    \tweak stencil ##f
+    \tuplet 1/1
     {
 
         % [RH.Music.2 measure 2]
@@ -677,7 +685,9 @@ number.3.RH.Music.2 =
 
     }
 
-    \scaleDurations #'(1 . 1)
+    \tweak text #tuplet-number::calc-fraction-text
+    \tweak stencil ##f
+    \tuplet 1/1
     {
 
         % [RH.Music.2 measure 3]
@@ -727,7 +737,9 @@ number.3.RH.Music.2 =
 
     }
 
-    \scaleDurations #'(1 . 1)
+    \tweak text #tuplet-number::calc-fraction-text
+    \tweak stencil ##f
+    \tuplet 1/1
     {
 
         % [RH.Music.2 measure 4]
@@ -739,7 +751,9 @@ number.3.RH.Music.2 =
     % [RH.Music.2 measure 5]
     s1 * 1/2
 
-    \scaleDurations #'(1 . 1)
+    \tweak text #tuplet-number::calc-fraction-text
+    \tweak stencil ##f
+    \tuplet 1/1
     {
 
         % [RH.Music.2 measure 6]
@@ -786,7 +800,9 @@ number.3.RH.Music.2 =
 
     }
 
-    \scaleDurations #'(1 . 1)
+    \tweak text #tuplet-number::calc-fraction-text
+    \tweak stencil ##f
+    \tuplet 1/1
     {
 
         \set stemLeftBeamCount = 1
@@ -822,7 +838,9 @@ number.3.RH.Music.2 =
 
     }
 
-    \scaleDurations #'(1 . 1)
+    \tweak text #tuplet-number::calc-fraction-text
+    \tweak stencil ##f
+    \tuplet 1/1
     {
 
         % [RH.Music.2 measure 7]
@@ -834,7 +852,9 @@ number.3.RH.Music.2 =
     % [RH.Music.2 measure 8]
     s1 * 3/2
 
-    \scaleDurations #'(1 . 1)
+    \tweak text #tuplet-number::calc-fraction-text
+    \tweak stencil ##f
+    \tuplet 1/1
     {
 
         % [RH.Music.2 measure 9]
@@ -881,7 +901,9 @@ number.3.RH.Music.2 =
 
     }
 
-    \scaleDurations #'(1 . 1)
+    \tweak text #tuplet-number::calc-fraction-text
+    \tweak stencil ##f
+    \tuplet 1/1
     {
 
         \set stemLeftBeamCount = 1
@@ -915,7 +937,9 @@ number.3.RH.Music.2 =
 
     }
 
-    \scaleDurations #'(1 . 1)
+    \tweak text #tuplet-number::calc-fraction-text
+    \tweak stencil ##f
+    \tuplet 1/1
     {
 
         \set stemLeftBeamCount = 1
@@ -954,7 +978,9 @@ number.3.RH.Music.2 =
 
     }
 
-    \scaleDurations #'(1 . 1)
+    \tweak text #tuplet-number::calc-fraction-text
+    \tweak stencil ##f
+    \tuplet 1/1
     {
 
         \set stemLeftBeamCount = 1
@@ -1101,7 +1127,9 @@ number.3.RH.Music.2 =
 
         }
 
-        \scaleDurations #'(1 . 1)
+        \tweak text #tuplet-number::calc-fraction-text
+        \tweak stencil ##f
+        \tuplet 1/1
         {
 
             \set stemLeftBeamCount = 1
@@ -1950,7 +1978,9 @@ number.3.LH.Music.5 =
     % [LH.Music.5 measure 7]
     s1 * 1/4
 
-    \scaleDurations #'(1 . 1)
+    \tweak text #tuplet-number::calc-fraction-text
+    \tweak stencil ##f
+    \tuplet 1/1
     {
 
         % [LH.Music.5 measure 8]
@@ -2139,7 +2169,9 @@ number.3.LH.InsertVoice.6 =
 number.3.LH.ResonanceVoice =
 {
 
-    \scaleDurations #'(1 . 1)
+    \tweak text #tuplet-number::calc-fraction-text
+    \tweak stencil ##f
+    \tuplet 1/1
     {
 
         % [LH.ResonanceVoice measure 1]
@@ -2153,7 +2185,9 @@ number.3.LH.ResonanceVoice =
 
     }
 
-    \scaleDurations #'(1 . 1)
+    \tweak text #tuplet-number::calc-fraction-text
+    \tweak stencil ##f
+    \tuplet 1/1
     {
 
         % [LH.ResonanceVoice measure 2]
@@ -2172,7 +2206,9 @@ number.3.LH.ResonanceVoice =
 
     }
 
-    \scaleDurations #'(1 . 1)
+    \tweak text #tuplet-number::calc-fraction-text
+    \tweak stencil ##f
+    \tuplet 1/1
     {
 
         % [LH.ResonanceVoice measure 3]
@@ -2197,7 +2233,9 @@ number.3.LH.ResonanceVoice =
 
     }
 
-    \scaleDurations #'(1 . 1)
+    \tweak text #tuplet-number::calc-fraction-text
+    \tweak stencil ##f
+    \tuplet 1/1
     {
 
         % [LH.ResonanceVoice measure 4]
@@ -2215,7 +2253,9 @@ number.3.LH.ResonanceVoice =
 
     }
 
-    \scaleDurations #'(1 . 1)
+    \tweak text #tuplet-number::calc-fraction-text
+    \tweak stencil ##f
+    \tuplet 1/1
     {
 
         % [LH.ResonanceVoice measure 5]
@@ -2226,7 +2266,9 @@ number.3.LH.ResonanceVoice =
 
     }
 
-    \scaleDurations #'(1 . 1)
+    \tweak text #tuplet-number::calc-fraction-text
+    \tweak stencil ##f
+    \tuplet 1/1
     {
 
         % [LH.ResonanceVoice measure 6]
@@ -2256,7 +2298,9 @@ number.3.LH.ResonanceVoice =
     % [LH.ResonanceVoice measure 8]
     s1 * 3/2
 
-    \scaleDurations #'(1 . 1)
+    \tweak text #tuplet-number::calc-fraction-text
+    \tweak stencil ##f
+    \tuplet 1/1
     {
 
         % [LH.ResonanceVoice measure 9]
@@ -2293,7 +2337,9 @@ number.3.LH.ResonanceVoice =
 
     }
 
-    \scaleDurations #'(1 . 1)
+    \tweak text #tuplet-number::calc-fraction-text
+    \tweak stencil ##f
+    \tuplet 1/1
     {
 
         % [LH.ResonanceVoice measure 10]
@@ -2305,7 +2351,9 @@ number.3.LH.ResonanceVoice =
 
     }
 
-    \scaleDurations #'(1 . 1)
+    \tweak text #tuplet-number::calc-fraction-text
+    \tweak stencil ##f
+    \tuplet 1/1
     {
 
         % [LH.ResonanceVoice measure 11]

@@ -310,7 +310,9 @@ number.5.RH.Music.3 =
 
     }
 
-    \scaleDurations #'(1 . 1)
+    \tweak text #tuplet-number::calc-fraction-text
+    \tweak stencil ##f
+    \tuplet 1/1
     {
 
         c'''8
@@ -364,7 +366,9 @@ number.5.RH.Music.3 =
 
     }
 
-    \scaleDurations #'(1 . 1)
+    \tweak text #tuplet-number::calc-fraction-text
+    \tweak stencil ##f
+    \tuplet 1/1
     {
 
         % [RH.Music.3 measure 3]
@@ -748,7 +752,9 @@ number.5.LH.Music.4 =
 
     s1 * 13/96
 
-    \scaleDurations #'(1 . 1)
+    \tweak text #tuplet-number::calc-fraction-text
+    \tweak stencil ##f
+    \tuplet 1/1
     {
 
         d'16
@@ -782,7 +788,9 @@ number.5.LH.Music.4 =
 
     }
 
-    \scaleDurations #'(1 . 1)
+    \tweak text #tuplet-number::calc-fraction-text
+    \tweak stencil ##f
+    \tuplet 1/1
     {
 
         % [LH.Music.4 measure 4]

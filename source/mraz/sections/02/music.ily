@@ -1189,7 +1189,9 @@ number.2.LH.InsertVoice.4 =
 number.2.LH.Music.5 =
 {
 
-    \scaleDurations #'(1 . 1)
+    \tweak text #tuplet-number::calc-fraction-text
+    \tweak stencil ##f
+    \tuplet 1/1
     {
 
         % [LH.Music.5 measure 1]
@@ -1261,7 +1263,9 @@ number.2.LH.Music.5 =
 
     }
 
-    \scaleDurations #'(1 . 1)
+    \tweak text #tuplet-number::calc-fraction-text
+    \tweak stencil ##f
+    \tuplet 1/1
     {
 
         % [LH.Music.5 measure 3]
@@ -1283,7 +1287,9 @@ number.2.LH.Music.5 =
 
     }
 
-    \scaleDurations #'(1 . 1)
+    \tweak text #tuplet-number::calc-fraction-text
+    \tweak stencil ##f
+    \tuplet 1/1
     {
 
         % [LH.Music.5 measure 4]
@@ -1311,7 +1317,9 @@ number.2.LH.Music.5 =
 
     }
 
-    \scaleDurations #'(1 . 1)
+    \tweak text #tuplet-number::calc-fraction-text
+    \tweak stencil ##f
+    \tuplet 1/1
     {
 
         % [LH.Music.5 measure 5]
@@ -1352,7 +1360,9 @@ number.2.LH.Music.5 =
 
     }
 
-    \scaleDurations #'(1 . 1)
+    \tweak text #tuplet-number::calc-fraction-text
+    \tweak stencil ##f
+    \tuplet 1/1
     {
 
         % [LH.Music.5 measure 7]
@@ -1380,7 +1390,9 @@ number.2.LH.Music.5 =
 
     }
 
-    \scaleDurations #'(1 . 1)
+    \tweak text #tuplet-number::calc-fraction-text
+    \tweak stencil ##f
+    \tuplet 1/1
     {
 
         % [LH.Music.5 measure 8]
@@ -1441,7 +1453,9 @@ number.2.LH.Music.5 =
 
     }
 
-    \scaleDurations #'(1 . 1)
+    \tweak text #tuplet-number::calc-fraction-text
+    \tweak stencil ##f
+    \tuplet 1/1
     {
 
         % [LH.Music.5 measure 10]
@@ -1461,7 +1475,9 @@ number.2.LH.Music.5 =
 
     }
 
-    \scaleDurations #'(1 . 1)
+    \tweak text #tuplet-number::calc-fraction-text
+    \tweak stencil ##f
+    \tuplet 1/1
     {
 
         % [LH.Music.5 measure 11]
