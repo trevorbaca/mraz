@@ -939,7 +939,9 @@ def silver_transform_5():
 def silver_transform_6():
     segments_, names = silver_transform_5()
     segments = []
-    groups = abjad.sequence.partition_by_ratio_of_lengths(segments_, (1, 1, 1, 1, 1))
+    groups = abjad.sequence.partition_by_proportion_of_lengths(
+        segments_, (1, 1, 1, 1, 1)
+    )
     transposition = [0, 5, 9, 10, 11]
     for group, n in zip(groups, transposition):
         for segment in group:
