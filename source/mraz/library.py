@@ -100,7 +100,7 @@ class Accumulator:
             other_voice_names = _voice_names - {voice_name}
             for other_voice_name in sorted(other_voice_names):
                 voice = self._score[other_voice_name]
-                skip = [abjad.Skip("s1", multiplier=containers_duration.pair())]
+                skip = [abjad.Skip("s1", multiplier=containers_duration.get_pair())]
                 components = imbrications.get(voice.name, skip)
                 voice.extend(components)
         elif anchor is not None and anchor.use_remote_stop_offset is True:
@@ -109,7 +109,7 @@ class Accumulator:
             other_voice_names = _voice_names - {voice_name}
             for other_voice_name in sorted(other_voice_names):
                 voice = self._score[other_voice_name]
-                skip = [abjad.Skip("s1", multiplier=containers_duration.pair())]
+                skip = [abjad.Skip("s1", multiplier=containers_duration.get_pair())]
                 components = imbrications.get(voice.name, skip)
                 voice.extend(components)
         elif anchor is not None and requires_adjustment is False:
@@ -256,7 +256,7 @@ class Accumulator:
             other_voice_names = _voice_names - {voice_name}
             for other_voice_name in sorted(other_voice_names):
                 voice = self._score[other_voice_name]
-                skip = [abjad.Skip("s1", multiplier=containers_duration.pair())]
+                skip = [abjad.Skip("s1", multiplier=containers_duration.get_pair())]
                 components = imbrications.get(voice.name, skip)
                 voice.extend(components)
 
@@ -266,7 +266,7 @@ def make_time_signature(tuplets, tsd):
     if tsd is not None:
         pair = abjad.duration.with_denominator(duration, tsd)
     else:
-        pair = duration.pair()
+        pair = duration.get_pair()
     time_signature = abjad.TimeSignature(pair)
     return time_signature
 
