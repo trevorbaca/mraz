@@ -290,7 +290,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             ),
             hide_time_signature=True,
         )
-        tuplet.ratio = abjad.Ratio(6, 4)
+        tuplet.set_ratio(abjad.Ratio(6, 4))
         tweak_string = r"\tweak text #tuplet-number::calc-fraction-text"
         abjad.tweak(tuplet, tweak_string)
         baca.register(tuplet, -39)
