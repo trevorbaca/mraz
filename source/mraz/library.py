@@ -101,7 +101,7 @@ class Accumulator:
             for other_voice_name in sorted(other_voice_names):
                 voice = self._score[other_voice_name]
                 skip = [abjad.Skip("s1", multiplier=containers_duration.pair())]
-                components = imbrications.get(voice.get_name(), skip)
+                components = imbrications.get(voice.name(), skip)
                 voice.extend(components)
         elif anchor is not None and anchor.use_remote_stop_offset is True:
             voice.extend(containers)
@@ -110,7 +110,7 @@ class Accumulator:
             for other_voice_name in sorted(other_voice_names):
                 voice = self._score[other_voice_name]
                 skip = [abjad.Skip("s1", multiplier=containers_duration.pair())]
-                components = imbrications.get(voice.get_name(), skip)
+                components = imbrications.get(voice.name(), skip)
                 voice.extend(components)
         elif anchor is not None and requires_adjustment is False:
             for leaf in abjad.select.leaves(voice):
@@ -257,7 +257,7 @@ class Accumulator:
             for other_voice_name in sorted(other_voice_names):
                 voice = self._score[other_voice_name]
                 skip = [abjad.Skip("s1", multiplier=containers_duration.pair())]
-                components = imbrications.get(voice.get_name(), skip)
+                components = imbrications.get(voice.name(), skip)
                 voice.extend(components)
 
 
@@ -296,7 +296,7 @@ def _validate_voice_names(score):
     }
     voice_names = []
     for voice in abjad.iterate.components(score, abjad.Voice):
-        voice_names.append(voice.get_name())
+        voice_names.append(voice.name())
     for voice_name in sorted(voice_colors):
         if voice_name not in voice_names:
             raise Exception(f"voice not in score: {voice_name!r}.")
