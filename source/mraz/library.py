@@ -264,7 +264,7 @@ class Accumulator:
 def make_time_signature(tuplets, tsd):
     duration = abjad.get.duration(tuplets)
     if tsd is not None:
-        pair = abjad.duration.with_denominator(duration, tsd)
+        pair = abjad.duration.pair_with_denominator(duration, tsd)
     else:
         pair = duration.pair()
     time_signature = abjad.TimeSignature(pair)
