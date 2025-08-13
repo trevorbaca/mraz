@@ -234,9 +234,7 @@ class Accumulator:
                         )
                         abjad.mutate.split([leaf], [left_duration])
                         break
-                local_timespan = abjad.Timespan(
-                    local_start_offset, local_stop_offset
-                )
+                local_timespan = abjad.Timespan(local_start_offset, local_stop_offset)
                 local_leaves_to_replace = []
                 for leaf in abjad.select.leaves(local_voice):
                     if abjad.get.timespan(leaf) in local_timespan:
