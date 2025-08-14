@@ -56,7 +56,7 @@ class Accumulator:
         if anchor is not None and anchor.figure_name is not None:
             for leaf in abjad.iterate.leaves(self._score):
                 if abjad.get.annotation(leaf, "figure_name") == anchor.figure_name:
-                    start_offset = abjad.get.timespan(leaf).value_start_offset()
+                    start_offset = abjad.get.timespan(leaf).start_offset
                     break
             assert start_offset is not None
         elif anchor is not None:
@@ -69,9 +69,9 @@ class Accumulator:
             else:
                 leaf = abjad.select.leaf(voice, 0)
             if anchor.use_remote_stop_offset is True:
-                start_offset = abjad.get.timespan(leaf).value_stop_offset()
+                start_offset = abjad.get.timespan(leaf).stop_offset
             else:
-                start_offset = abjad.get.timespan(leaf).value_start_offset()
+                start_offset = abjad.get.timespan(leaf).start_offset
             assert start_offset is not None
             requires_adjustment = True
         elif anchor is not None:
@@ -112,7 +112,7 @@ class Accumulator:
                 voice.extend(components)
         elif anchor is not None and requires_adjustment is False:
             for leaf in abjad.select.leaves(voice):
-                if abjad.get.timespan(leaf).value_start_offset() == start_offset:
+                if abjad.get.timespan(leaf).start_offset == start_offset:
                     assert isinstance(leaf, abjad.Skip), repr(leaf)
                     skip_duration = abjad.get.duration(leaf)
                     containers_duration = abjad.get.duration(containers)
@@ -143,7 +143,7 @@ class Accumulator:
             for imbricated_voice_name, imbricated_containers in imbrications.items():
                 imbricated_voice = self._score[imbricated_voice_name]
                 for leaf in abjad.select.leaves(imbricated_voice):
-                    if abjad.get.timespan(leaf).value_start_offset() == start_offset:
+                    if abjad.get.timespan(leaf).start_offset == start_offset:
                         assert isinstance(leaf, abjad.Skip), repr(leaf)
                         skip_duration = abjad.get.duration(leaf)
                         containers_duration = abjad.get.duration(imbricated_containers)
@@ -180,9 +180,7 @@ class Accumulator:
                 local_anchor = anchor.local_selector(containers)
             else:
                 local_anchor = abjad.select.leaf(containers, 0)
-            local_prefix_duration = abjad.get.timespan(
-                local_anchor
-            ).value_start_offset()
+            local_prefix_duration = abjad.get.timespan(local_anchor).start_offset
             local_duration = abjad.get.duration(containers)
             lso_duration = remote_start_offset - local_prefix_duration
             local_start_offset = abjad.Offset(lso_duration.fraction())
@@ -190,13 +188,13 @@ class Accumulator:
             for leaf in abjad.select.leaves(local_voice):
                 timespan = abjad.get.timespan(leaf)
                 if local_start_offset in timespan:
-                    left_duration = local_start_offset - timespan.value_start_offset()
+                    left_duration = local_start_offset - timespan.start_offset
                     abjad.mutate.split([leaf], [left_duration])
                     break
             for leaf in abjad.select.leaves(local_voice):
                 timespan = abjad.get.timespan(leaf)
                 if local_stop_offset in timespan:
-                    left_duration = local_stop_offset - timespan.value_start_offset()
+                    left_duration = local_stop_offset - timespan.start_offset
                     abjad.mutate.split([leaf], [left_duration])
                     break
             local_timespan = abjad.Timespan(local_start_offset, local_stop_offset)
@@ -211,9 +209,7 @@ class Accumulator:
                     local_anchor = anchor.local_selector(imbricated_containers)
                 else:
                     local_anchor = abjad.select.leaf(imbricated_containers, 0)
-                local_prefix_duration = abjad.get.timespan(
-                    local_anchor
-                ).value_start_offset()
+                local_prefix_duration = abjad.get.timespan(local_anchor).start_offset
                 local_duration = abjad.get.duration(imbricated_containers)
                 duration = remote_start_offset - local_prefix_duration
                 local_start_offset = abjad.Offset(duration.fraction())
@@ -221,17 +217,13 @@ class Accumulator:
                 for leaf in abjad.select.leaves(local_voice):
                     timespan = abjad.get.timespan(leaf)
                     if local_start_offset in timespan:
-                        left_duration = (
-                            local_start_offset - timespan.value_start_offset()
-                        )
+                        left_duration = local_start_offset - timespan.start_offset
                         abjad.mutate.split([leaf], [left_duration])
                         break
                 for leaf in abjad.select.leaves(local_voice):
                     timespan = abjad.get.timespan(leaf)
                     if local_stop_offset in timespan:
-                        left_duration = (
-                            local_stop_offset - timespan.value_start_offset()
-                        )
+                        left_duration = local_stop_offset - timespan.start_offset
                         abjad.mutate.split([leaf], [left_duration])
                         break
                 local_timespan = abjad.Timespan(local_start_offset, local_stop_offset)
