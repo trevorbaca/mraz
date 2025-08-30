@@ -943,7 +943,7 @@ def silver_transform_6():
         segments_, (1, 1, 1, 1, 1)
     )
     transposition = [0, 5, 9, 10, 11]
-    for group, n in zip(groups, transposition):
+    for group, n in zip(groups, transposition, strict=True):
         for segment in group:
             segment = segment.transpose(n=n)
             segments.append(segment)
