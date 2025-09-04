@@ -183,7 +183,7 @@ class Accumulator:
             local_prefix_duration = abjad.get.timespan(local_anchor).start_offset
             local_duration = abjad.get.duration(containers)
             lso_duration = remote_start_offset - local_prefix_duration
-            local_start_offset = abjad.Offset(lso_duration.fraction())
+            local_start_offset = abjad.Offset(lso_duration.as_fraction())
             local_stop_offset = local_start_offset + local_duration
             for leaf in abjad.select.leaves(local_voice):
                 timespan = abjad.get.timespan(leaf)
@@ -212,7 +212,7 @@ class Accumulator:
                 local_prefix_duration = abjad.get.timespan(local_anchor).start_offset
                 local_duration = abjad.get.duration(imbricated_containers)
                 duration = remote_start_offset - local_prefix_duration
-                local_start_offset = abjad.Offset(duration.fraction())
+                local_start_offset = abjad.Offset(duration.as_fraction())
                 local_stop_offset = local_start_offset + local_duration
                 for leaf in abjad.select.leaves(local_voice):
                     timespan = abjad.get.timespan(leaf)
