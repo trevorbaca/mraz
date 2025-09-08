@@ -1206,7 +1206,9 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         ]
         tuplets = []
         for collection in collections:
-            tuplet = baca.from_collection(collection, [1], 16, abjad.Duration(1, 4))
+            tuplet = baca.from_collection(
+                collection, [1], 16, abjad.ValueDuration(1, 4)
+            )
             tuplets.append(tuplet)
         container = abjad.Container(tuplets)
         # 63
@@ -1240,7 +1242,9 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         ]
         tuplets = []
         for collection in collections:
-            tuplet = baca.from_collection(collection, [1], 16, abjad.Duration(1, 4))
+            tuplet = baca.from_collection(
+                collection, [1], 16, abjad.ValueDuration(1, 4)
+            )
             tuplets.append(tuplet)
         container = abjad.Container(tuplets)
         # 64
@@ -1294,7 +1298,9 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         ]
         tuplets = []
         for collection in collections:
-            tuplet = baca.from_collection(collection, [1], 16, abjad.Duration(1, 4))
+            tuplet = baca.from_collection(
+                collection, [1], 16, abjad.ValueDuration(1, 4)
+            )
             tuplets.append(tuplet)
         container = abjad.Container(tuplets)
         # 66
@@ -1324,7 +1330,9 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         assert library.summarize(collections) == ["PC<9, 6, 4, 5>", "PC<7, 11, 8, 6>"]
         tuplets = []
         for collection in collections:
-            tuplet = baca.from_collection(collection, [1], 16, abjad.Duration(1, 4))
+            tuplet = baca.from_collection(
+                collection, [1], 16, abjad.ValueDuration(1, 4)
+            )
             tuplets.append(tuplet)
         container = abjad.Container(tuplets)
         # 67 (fills in second voice in m 39)
@@ -1489,7 +1497,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         collections = section_5.stage_1.lh[:1]
         assert library.summarize(collections) == ["PC<9, 1, 11, 8, 7>"]
         tuplet = baca.from_collection(
-            collections[0], [4, -4], 16, abjad.Duration(16, 4)
+            collections[0], [4, -4], 16, abjad.ValueDuration(16, 4)
         )
         # 75
         accumulator(

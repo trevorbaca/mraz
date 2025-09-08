@@ -264,7 +264,7 @@ class Accumulator:
 def make_time_signature(tuplets, tsd):
     duration = abjad.get.duration(tuplets)
     if tsd is not None:
-        pair = abjad.duration.pair_with_denominator(duration, tsd)
+        pair = abjad.duration.pair_with_denominator(duration.as_fraction(), tsd)
     else:
         pair = duration.pair()
     time_signature = abjad.TimeSignature(pair)
@@ -1082,8 +1082,8 @@ instruments = {"Piano": abjad.Piano()}
 
 
 metronome_marks = {
-    "84": abjad.MetronomeMark(abjad.Duration(1, 4), 84),
-    "112": abjad.MetronomeMark(abjad.Duration(1, 4), 112),
+    "84": abjad.MetronomeMark(abjad.ValueDuration(1, 4), 84),
+    "112": abjad.MetronomeMark(abjad.ValueDuration(1, 4), 112),
 }
 
 

@@ -44,7 +44,9 @@ def make_empty_score():
         ]
         tuplets = []
         for collection in collections:
-            tuplet = baca.from_collection(collection, [1], 16, abjad.Duration(1, 4))
+            tuplet = baca.from_collection(
+                collection, [1], 16, abjad.ValueDuration(1, 4)
+            )
             tuplets.append(tuplet)
         container = abjad.Container(tuplets)
         accumulator(
@@ -210,7 +212,7 @@ def make_empty_score():
         collections = section_5.stage_1.lh[:1]
         assert library.summarize(collections) == ["PC<9, 1, 11, 8, 7>"]
         tuplet = baca.from_collection(
-            collections[0], [4, -4], 16, abjad.Duration(16, 4)
+            collections[0], [4, -4], 16, abjad.ValueDuration(16, 4)
         )
         accumulator(
             library.rh_v3,
