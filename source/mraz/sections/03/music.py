@@ -270,9 +270,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         ]
         tuplets = []
         for collection in collections:
-            tuplet = baca.from_collection(
-                collection, [1], 16, abjad.ValueDuration(1, 4)
-            )
+            tuplet = baca.from_collection(collection, [1], 16, abjad.Duration(1, 4))
             tuplets.append(tuplet)
         container = abjad.Container(tuplets)
         accumulator(
