@@ -1,5 +1,5 @@
+import dataclasses
 import inspect
-import types
 
 import abjad
 import baca
@@ -421,6 +421,39 @@ def make_empty_score():
     return score
 
 
+@dataclasses.dataclass(frozen=True)
+class Stage:
+    rh: list[list[abjad.PitchSegment]] | None = None
+    lh: list[list[abjad.PitchSegment]] | None = None
+
+    def __post_init__(self):
+        if self.rh is not None:
+            assert isinstance(self.rh, list), repr(self.rh)
+        if self.lh is not None:
+            assert isinstance(self.lh, list | abjad.CyclicTuple), repr(self.lh)
+
+
+@dataclasses.dataclass(frozen=True)
+class Stages:
+    stage_1: Stage | None = None
+    stage_2: Stage | None = None
+    stage_3: Stage | None = None
+    stage_4: Stage | None = None
+    stage_5: Stage | None = None
+    stage_6: Stage | None = None
+
+    def __post_init__(self):
+        for stage in (
+            self.stage_1,
+            self.stage_2,
+            self.stage_3,
+            self.stage_4,
+            self.stage_5,
+            self.stage_6,
+        ):
+            assert isinstance(stage, Stage | None), repr(stage)
+
+
 def moment_2():
     silver, names = silver_transform_7()
     silver = abjad.CyclicTuple(silver)
@@ -437,11 +470,8 @@ def moment_2():
     segments = [
         [baca.pcollections.arpeggiate_up(_) for _ in list_] for list_ in segments
     ]
-    return types.SimpleNamespace(
-        stage_1=None,
-        stage_2=types.SimpleNamespace(
-            rh=segments,
-        ),
+    return Stages(
+        stage_2=Stage(rh=segments),
     )
 
 
@@ -516,25 +546,25 @@ def moment_4():
         baca.pcollections.soprano_to_octave(_, n=7) for _ in stage_6_segments
     ]
     stage_6_segments = [abjad.PitchSet(_) for _ in stage_6_segments]
-    return types.SimpleNamespace(
-        stage_1=types.SimpleNamespace(
+    return Stages(
+        stage_1=Stage(
             rh=stage_1_rh_segments,
             lh=stage_1_lh_segments,
         ),
-        stage_2=types.SimpleNamespace(
+        stage_2=Stage(
             rh=None,
             lh=stage_2_segments,
         ),
         stage_3=None,
-        stage_4=types.SimpleNamespace(
+        stage_4=Stage(
             rh=stage_4_rh_segments,
             lh=stage_4_lh_segments,
         ),
-        stage_5=types.SimpleNamespace(
+        stage_5=Stage(
             rh=stage_5_rh_segments,
             lh=stage_5_lh_segments,
         ),
-        stage_6=types.SimpleNamespace(
+        stage_6=Stage(
             rh=stage_6_segments,
             lh=None,
         ),
@@ -573,12 +603,12 @@ def moment_5():
     lh = [abjad.PitchClassSegment(_) for _ in lh]
     stage_2_rh = rh
     stage_2_lh = lh
-    return types.SimpleNamespace(
-        stage_1=types.SimpleNamespace(
+    return Stages(
+        stage_1=Stage(
             rh=stage_1_rh,
             lh=stage_1_lh,
         ),
-        stage_2=types.SimpleNamespace(
+        stage_2=Stage(
             rh=stage_2_rh,
             lh=stage_2_lh,
         ),
@@ -620,14 +650,11 @@ def moment_6():
     lh_stage_1_segments = [abjad.PitchClassSegment(_) for _ in lh_stage_1_segments]
     assert len(rh_stage_1_segments) == 5
     assert len(lh_stage_1_segments) == 4
-    return types.SimpleNamespace(
-        stage_1=types.SimpleNamespace(
+    return Stages(
+        stage_1=Stage(
             rh=rh_stage_1_segments,
             lh=lh_stage_1_segments,
-        ),
-        stage_2=None,
-        stage_3=None,
-        stage_4=None,
+        )
     )
 
 
@@ -666,12 +693,11 @@ def moment_7():
         all_lh_segments, [2, 3, 1, 3, 1], cyclic=True, overhang=True
     )
     assert len(lh_segment_lists) == 5
-    return types.SimpleNamespace(
-        stage_1=types.SimpleNamespace(
+    return Stages(
+        stage_1=Stage(
             rh=rh_segment_lists,
             lh=lh_segment_lists,
-        ),
-        stage_2=None,
+        )
     )
 
 
@@ -715,14 +741,11 @@ def moment_8():
     assert not baca.pcollections.has_repeats(v6_stage_3_segments, level=-1)
     assert len(v5_stage_3_segments) == 14, len(v5_stage_3_segments)
     assert len(v6_stage_3_segments) == 6, len(v6_stage_3_segments)
-    return types.SimpleNamespace(
-        stage_1=None,
-        stage_2=None,
-        stage_3=types.SimpleNamespace(
+    return Stages(
+        stage_3=Stage(
             rh=v5_stage_3_segments,
             lh=v6_stage_3_segments,
-        ),
-        stage_4=None,
+        )
     )
 
 
