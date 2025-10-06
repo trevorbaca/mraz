@@ -590,7 +590,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             [tuplet],
             tsd=4,
         )
-        rmakers.beam([tuplet])
+        rmakers.beam([tuplet[:]])
         baca.spanners.slur(tuplet)
         baca.register(tuplet, 24)
         baca.override.stem_direction_down(baca.select.pleaves(tuplet))

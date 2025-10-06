@@ -707,7 +707,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             hide_time_signature=True,
             replace_after_last_nonskip_in_same_voice=True,
         )
-        rmakers.beam([tuplet])
+        rmakers.beam([tuplet[:]])
         baca.spanners.slur(baca.select.tleaves(tuplet))
         baca.register(tuplet, -6, -36)
         baca.label_figure(tuplet, "5.2.L.9", accumulator)
