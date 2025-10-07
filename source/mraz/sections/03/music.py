@@ -35,7 +35,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             imbrications=imbrications,
             tsd=4,
         )
-        rmakers.beam_groups([tuplet])
+        rmakers.beam_groups([abjad.select.leaves(tuplet)])
         for value in imbrications.values():
             rmakers.unbeam(value)
         baca.dynamic(baca.select.phead(tuplet, 0), "ff")

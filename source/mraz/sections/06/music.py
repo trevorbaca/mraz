@@ -332,7 +332,8 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tuplets,
             tsd=4,
         )
-        rmakers.beam_groups(tuplets)
+        leaf_lists = baca.select.containers_to_leaf_lists(tuplets)
+        rmakers.beam_groups(leaf_lists)
         baca.bass_to_octave(tuplets, 3)
         baca.override.beam_positions(tuplets, -8)
         baca.dynamic(baca.select.phead(tuplets, 0), "ppp")
@@ -363,7 +364,8 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tuplets,
             tsd=4,
         )
-        rmakers.beam_groups(tuplets)
+        leaf_lists = baca.select.containers_to_leaf_lists(tuplets)
+        rmakers.beam_groups(leaf_lists)
         baca.bass_to_octave(tuplets, 4)
         baca.override.beam_positions(tuplets, -8)
         for tuplet in abjad.select.tuplets(tuplets):
@@ -392,7 +394,8 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tuplets,
             tsd=4,
         )
-        rmakers.beam_groups(tuplets)
+        leaf_lists = baca.select.containers_to_leaf_lists(tuplets)
+        rmakers.beam_groups(leaf_lists)
         baca.bass_to_octave(tuplets, 4)
         baca.override.beam_positions(tuplets, -8)
         for tuplet in abjad.select.tuplets(tuplets):
@@ -420,7 +423,8 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tuplets,
             tsd=4,
         )
-        rmakers.beam_groups(tuplets)
+        leaf_lists = baca.select.containers_to_leaf_lists(tuplets)
+        rmakers.beam_groups(leaf_lists)
         baca.bass_to_octave(tuplets, 5)
         baca.override.beam_positions(tuplets, -8)
         for tuplet in abjad.select.tuplets(tuplets):
@@ -448,7 +452,8 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tuplets,
             tsd=4,
         )
-        rmakers.beam_groups(tuplets)
+        leaf_lists = baca.select.containers_to_leaf_lists(tuplets)
+        rmakers.beam_groups(leaf_lists)
         baca.bass_to_octave(tuplets, 5)
         baca.override.beam_positions(tuplets, -8)
         for tuplet in abjad.select.tuplets(tuplets):
