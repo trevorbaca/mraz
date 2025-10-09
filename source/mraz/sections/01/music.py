@@ -82,7 +82,7 @@ def make_empty_score():
             tsd=4,
         )
         baca.dynamic(baca.select.phead(tuplet, 0), "ff")
-        groups = rmakers.nongrace_leaves_in_each_tuplet(tuplet)
+        groups = rmakers.nongrace_leaves_in_each_tuplet([tuplet])
         rmakers.beam_groups(groups)
         baca.label_figure(tuplet, "7.1.L.5", accumulator)
 

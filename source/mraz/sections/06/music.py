@@ -91,7 +91,8 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tsd=4,
         )
         for imbrication in imbrications.values():
-            groups = rmakers.nongrace_leaves_in_each_tuplet(imbrication)
+            tuplets_ = abjad.select.tuplets(imbrication, level=-1)
+            groups = rmakers.nongrace_leaves_in_each_tuplet(tuplets_)
             rmakers.beam_groups(groups, beam_rests=True)
             baca.dynamic(baca.select.phead(imbrication, 0), "fff")
             baca.extend_beam(abjad.select.leaf(imbrication, -1))
@@ -151,7 +152,8 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tsd=4,
         )
         for imbrication in imbrications.values():
-            groups = rmakers.nongrace_leaves_in_each_tuplet(imbrication)
+            tuplets_ = abjad.select.tuplets(imbrication, level=-1)
+            groups = rmakers.nongrace_leaves_in_each_tuplet(tuplets_)
             rmakers.beam_groups(groups, beam_rests=True)
         groups = rmakers.nongrace_leaves_in_each_tuplet(tuplets)
         rmakers.beam(groups)
@@ -232,7 +234,8 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tsd=4,
         )
         for imbrication in imbrications.values():
-            groups = rmakers.nongrace_leaves_in_each_tuplet(imbrication)
+            tuplets_ = abjad.select.tuplets(imbrication, level=-1)
+            groups = rmakers.nongrace_leaves_in_each_tuplet(tuplets_)
             rmakers.beam_groups(groups, beam_rests=True)
             baca.dynamic(baca.select.phead(imbrication, 0), "fff")
             baca.extend_beam(abjad.select.leaf(imbrication, -1))
@@ -290,7 +293,8 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tsd=4,
         )
         for imbrication in imbrications.values():
-            groups = rmakers.nongrace_leaves_in_each_tuplet(imbrication)
+            tuplets_ = abjad.select.tuplets(imbrication, level=-1)
+            groups = rmakers.nongrace_leaves_in_each_tuplet(tuplets_)
             rmakers.beam_groups(groups, beam_rests=True)
         groups = rmakers.nongrace_leaves_in_each_tuplet(tuplets)
         rmakers.beam(groups)
@@ -548,7 +552,8 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tsd=4,
         )
         for imbrication in imbrications.values():
-            groups = rmakers.nongrace_leaves_in_each_tuplet(imbrication)
+            tuplets_ = abjad.select.tuplets(imbrication, level=-1)
+            groups = rmakers.nongrace_leaves_in_each_tuplet(tuplets_)
             rmakers.beam_groups(groups, beam_rests=True)
             baca.dynamic(baca.select.phead(imbrication, 0), "fff")
         groups = rmakers.nongrace_leaves_in_each_tuplet(tuplets)
@@ -640,7 +645,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             hide_time_signature=True,
             replace_after_last_nonskip_in_same_voice=True,
         )
-        groups = rmakers.nongrace_leaves_in_each_tuplet(tuplet)
+        groups = rmakers.nongrace_leaves_in_each_tuplet([tuplet])
         rmakers.beam(groups)
         baca.spanners.slur(baca.select.tleaves(tuplet))
         baca.register(tuplet, 0, -24)
@@ -657,7 +662,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             hide_time_signature=True,
             replace_after_last_nonskip_in_same_voice=True,
         )
-        groups = rmakers.nongrace_leaves_in_each_tuplet(tuplet)
+        groups = rmakers.nongrace_leaves_in_each_tuplet([tuplet])
         rmakers.beam(groups)
         baca.spanners.slur(baca.select.tleaves(tuplet))
         baca.register(tuplet, 0, -24)
@@ -676,7 +681,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             hide_time_signature=True,
             replace_after_last_nonskip_in_same_voice=True,
         )
-        groups = rmakers.nongrace_leaves_in_each_tuplet(tuplet)
+        groups = rmakers.nongrace_leaves_in_each_tuplet([tuplet])
         rmakers.beam(groups)
         baca.spanners.slur(baca.select.tleaves(tuplet))
         baca.register(tuplet, -6, -48)
@@ -694,7 +699,7 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             anchor=baca.anchor_to_figure("5.2.R.22-25"),
             hide_time_signature=True,
         )
-        groups = rmakers.nongrace_leaves_in_each_tuplet(tuplet)
+        groups = rmakers.nongrace_leaves_in_each_tuplet([tuplet])
         rmakers.beam(groups)
         baca.dynamic(baca.select.phead(tuplet, 0), "p")
         baca.spanners.slur(baca.select.tleaves(tuplet))
