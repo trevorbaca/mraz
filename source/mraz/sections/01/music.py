@@ -249,7 +249,8 @@ def make_empty_score():
         append_anchor_skip=True,
         manifests=library.manifests,
     )
-    rmakers.tweak_trivial_tuplets_stencil_false(accumulator._score)
+    tuplets = abjad.select.tuplets(accumulator._score)
+    rmakers.tweak_trivial_tuplets_stencil_false(tuplets)
     return accumulator._score, voices, time_signatures
 
 
