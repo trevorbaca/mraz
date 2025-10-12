@@ -625,7 +625,8 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         groups = rmakers.nongrace_leaves_in_each_tuplet(tuplets)
         rmakers.beam_groups(groups)
         for imbrication in imbrications.values():
-            rmakers.unbeam(imbrication)
+            leaves = abjad.select.leaves(imbrication)
+            rmakers.unbeam_leaves(leaves)
             tuplets_ = abjad.select.tuplets(imbrication, level=-1)
             groups = rmakers.nongrace_leaves_in_each_tuplet(tuplets_)
             rmakers.beam_groups(groups, beam_rests=True),
@@ -675,7 +676,8 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         groups = rmakers.nongrace_leaves_in_each_tuplet(tuplets)
         rmakers.beam_groups(groups)
         for imbrication in imbrications.values():
-            rmakers.unbeam(imbrication)
+            leaves = abjad.select.leaves(imbrication)
+            rmakers.unbeam_leaves(leaves)
             tuplets_ = abjad.select.tuplets(imbrication, level=-1)
             groups = rmakers.nongrace_leaves_in_each_tuplet(tuplets_)
             rmakers.beam_groups(groups, beam_rests=True),
@@ -711,7 +713,8 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         groups = rmakers.nongrace_leaves_in_each_tuplet(tuplets)
         rmakers.beam_groups(groups)
         for imbrication in imbrications.values():
-            rmakers.unbeam(imbrication)
+            leaves = abjad.select.leaves(imbrication)
+            rmakers.unbeam_leaves(leaves)
             tuplets_ = abjad.select.tuplets(imbrication, level=-1)
             groups = rmakers.nongrace_leaves_in_each_tuplet(tuplets_)
             rmakers.beam_groups(groups, beam_rests=True),
@@ -780,7 +783,8 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
         groups = rmakers.nongrace_leaves_in_each_tuplet(tuplets)
         rmakers.beam_groups(groups)
         for imbrication in imbrications.values():
-            rmakers.unbeam(imbrication)
+            leaves = abjad.select.leaves(imbrication)
+            rmakers.unbeam_leaves(leaves)
             tuplets_ = abjad.select.tuplets(imbrication, level=-1)
             groups = rmakers.nongrace_leaves_in_each_tuplet(tuplets_)
             rmakers.beam_groups(groups, beam_rests=True),
@@ -829,7 +833,8 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             tsd=4,
         )
         for imbrication in imbrications.values():
-            rmakers.unbeam(imbrication)
+            leaves = abjad.select.leaves(imbrication)
+            rmakers.unbeam_leaves(leaves)
             tuplets_ = abjad.select.tuplets(imbrication)
             groups = rmakers.nongrace_leaves_in_each_tuplet(tuplets_)
             rmakers.beam_groups(groups, beam_rests=True),
@@ -862,7 +867,8 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             imbrications=imbrications,
         )
         for imbrication in imbrications.values():
-            rmakers.unbeam(imbrication)
+            leaves = abjad.select.leaves(imbrication)
+            rmakers.unbeam_leaves(leaves)
             tuplets_ = abjad.select.tuplets(imbrication)
             groups = rmakers.nongrace_leaves_in_each_tuplet(tuplets_)
             rmakers.beam_groups(groups, beam_rests=True)
@@ -920,7 +926,8 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             imbrications=imbrications,
         )
         for imbrication in imbrications.values():
-            rmakers.unbeam(imbrication)
+            leaves = abjad.select.leaves(imbrication)
+            rmakers.unbeam_leaves(leaves)
             tuplets_ = abjad.select.tuplets(imbrication)
             groups = rmakers.nongrace_leaves_in_each_tuplet(tuplets_)
             rmakers.beam_groups(groups, beam_rests=True)
@@ -957,7 +964,8 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             imbrications=imbrications,
         )
         for imbrication in imbrications.values():
-            rmakers.unbeam(imbrication)
+            leaves = abjad.select.leaves(imbrication)
+            rmakers.unbeam_leaves(leaves)
             tuplets_ = abjad.select.tuplets(imbrication)
             groups = rmakers.nongrace_leaves_in_each_tuplet(tuplets_)
             rmakers.beam_groups(groups, beam_rests=True)
