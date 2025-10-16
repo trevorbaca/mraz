@@ -64,7 +64,7 @@ def make_empty_score():
             baca.spanners.slur(run)
         baca.override.slur_direction_up(tuplets)
         groups = rmakers.select_nongrace_leaves_by_tuplet(tuplets)
-        rmakers.beam_across_leaf_lists(groups)
+        rmakers.attach_span_beams_to_runs_across_leaf_lists(groups)
         baca.label_figure(tuplets, "4.5.L.1-4", accumulator)
 
     @baca.call
@@ -83,7 +83,7 @@ def make_empty_score():
         )
         baca.dynamic(baca.select.phead(tuplet, 0), "ff")
         groups = rmakers.select_nongrace_leaves_by_tuplet([tuplet])
-        rmakers.beam_across_leaf_lists(groups)
+        rmakers.attach_span_beams_to_runs_across_leaf_lists(groups)
         baca.label_figure(tuplet, "7.1.L.5", accumulator)
 
     @baca.call
