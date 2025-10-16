@@ -41,11 +41,11 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             imbrications=imbrications,
             tsd=4,
         )
-        groups = rmakers.nongrace_leaves_in_each_tuplet(tuplets)
+        groups = rmakers.select_nongrace_leaves_by_tuplet(tuplets)
         rmakers.beam_across_leaf_lists(groups)
         for imbrication in imbrications.values():
             tuplets_ = abjad.select.tuplets(imbrication, level=-1)
-            groups = rmakers.nongrace_leaves_in_each_tuplet(tuplets_)
+            groups = rmakers.select_nongrace_leaves_by_tuplet(tuplets_)
             rmakers.beam_across_leaf_lists(groups, beam_rests=True)
             baca.marcato(baca.select.pheads(imbrication))
             baca.extend_beam(abjad.select.leaf(imbrication, -1))
@@ -72,11 +72,11 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             imbrications=imbrications,
             tsd=4,
         )
-        groups = rmakers.nongrace_leaves_in_each_tuplet([tuplet])
+        groups = rmakers.select_nongrace_leaves_by_tuplet([tuplet])
         rmakers.beam_across_leaf_lists(groups)
         for imbrication in imbrications.values():
             tuplets_ = abjad.select.tuplets(imbrication, level=-1)
-            groups = rmakers.nongrace_leaves_in_each_tuplet(tuplets_)
+            groups = rmakers.select_nongrace_leaves_by_tuplet(tuplets_)
             rmakers.beam_across_leaf_lists(groups, beam_rests=True)
             baca.accent(baca.select.pheads(imbrication))
             baca.extend_beam(abjad.select.leaf(imbrication, -1))
@@ -108,11 +108,11 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             imbrications=imbrications,
             tsd=4,
         )
-        groups = rmakers.nongrace_leaves_in_each_tuplet(tuplets)
+        groups = rmakers.select_nongrace_leaves_by_tuplet(tuplets)
         rmakers.beam_across_leaf_lists(groups)
         for imbrication in imbrications.values():
             tuplets_ = abjad.select.tuplets(imbrication, level=-1)
-            groups = rmakers.nongrace_leaves_in_each_tuplet(tuplets_)
+            groups = rmakers.select_nongrace_leaves_by_tuplet(tuplets_)
             rmakers.beam_across_leaf_lists(groups, beam_rests=True)
             baca.marcato(baca.select.pheads(imbrication))
         baca.label_figure(tuplets, "7.1.R.3", accumulator)
@@ -144,11 +144,11 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             imbrications=imbrications,
             tsd=4,
         )
-        groups = rmakers.nongrace_leaves_in_each_tuplet(tuplets)
+        groups = rmakers.select_nongrace_leaves_by_tuplet(tuplets)
         rmakers.beam_across_leaf_lists(groups)
         for imbrication in imbrications.values():
             tuplets_ = abjad.select.tuplets(imbrication, level=-1)
-            groups = rmakers.nongrace_leaves_in_each_tuplet(tuplets_)
+            groups = rmakers.select_nongrace_leaves_by_tuplet(tuplets_)
             rmakers.beam_across_leaf_lists(groups, beam_rests=True)
             baca.accent(baca.select.pheads(imbrication))
         for tuplet in abjad.select.tuplets(tuplets):
@@ -175,11 +175,11 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             imbrications=imbrications,
             tsd=4,
         )
-        groups = rmakers.nongrace_leaves_in_each_tuplet([tuplet])
+        groups = rmakers.select_nongrace_leaves_by_tuplet([tuplet])
         rmakers.beam_across_leaf_lists(groups)
         for imbrication in imbrications.values():
             tuplets_ = abjad.select.tuplets(imbrication, level=-1)
-            groups = rmakers.nongrace_leaves_in_each_tuplet(tuplets_)
+            groups = rmakers.select_nongrace_leaves_by_tuplet(tuplets_)
             rmakers.beam_across_leaf_lists(groups, beam_rests=True)
             baca.marcato(baca.select.pheads(imbrication))
             baca.extend_beam(abjad.select.leaf(imbrication, -1))
@@ -212,11 +212,11 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             imbrications=imbrications,
             tsd=4,
         )
-        groups = rmakers.nongrace_leaves_in_each_tuplet(tuplets)
+        groups = rmakers.select_nongrace_leaves_by_tuplet(tuplets)
         rmakers.beam_across_leaf_lists(groups)
         for imbrication in imbrications.values():
             tuplets_ = abjad.select.tuplets(imbrication, level=-1)
-            groups = rmakers.nongrace_leaves_in_each_tuplet(tuplets_)
+            groups = rmakers.select_nongrace_leaves_by_tuplet(tuplets_)
             rmakers.beam_across_leaf_lists(groups, beam_rests=True)
             baca.accent(baca.select.pheads(imbrication))
             baca.extend_beam(abjad.select.leaf(imbrication, -1))
@@ -245,11 +245,11 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             imbrications=imbrications,
             tsd=4,
         )
-        groups = rmakers.nongrace_leaves_in_each_tuplet([tuplet])
+        groups = rmakers.select_nongrace_leaves_by_tuplet([tuplet])
         rmakers.beam_across_leaf_lists(groups)
         for imbrication in imbrications.values():
             tuplets_ = abjad.select.tuplets(imbrication, level=-1)
-            groups = rmakers.nongrace_leaves_in_each_tuplet(tuplets_)
+            groups = rmakers.select_nongrace_leaves_by_tuplet(tuplets_)
             rmakers.beam_across_leaf_lists(groups, beam_rests=True)
             baca.marcato(baca.select.pheads(imbrication))
         baca.label_figure(tuplet, "7.1.R.7", accumulator)
@@ -280,11 +280,11 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             imbrications=imbrications,
             tsd=4,
         )
-        groups = rmakers.nongrace_leaves_in_each_tuplet(tuplets)
+        groups = rmakers.select_nongrace_leaves_by_tuplet(tuplets)
         rmakers.beam_across_leaf_lists(groups)
         for imbrication in imbrications.values():
             tuplets_ = abjad.select.tuplets(imbrication, level=-1)
-            groups = rmakers.nongrace_leaves_in_each_tuplet(tuplets_)
+            groups = rmakers.select_nongrace_leaves_by_tuplet(tuplets_)
             rmakers.beam_across_leaf_lists(groups, beam_rests=True)
             baca.accent(baca.select.pheads(imbrication))
         for tuplet in abjad.select.tuplets(tuplets):
@@ -321,11 +321,11 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             imbrications=imbrications,
             tsd=4,
         )
-        groups = rmakers.nongrace_leaves_in_each_tuplet([tuplet])
+        groups = rmakers.select_nongrace_leaves_by_tuplet([tuplet])
         rmakers.beam_across_leaf_lists(groups)
         for imbrication in imbrications.values():
             tuplets_ = abjad.select.tuplets(imbrication, level=-1)
-            groups = rmakers.nongrace_leaves_in_each_tuplet(tuplets_)
+            groups = rmakers.select_nongrace_leaves_by_tuplet(tuplets_)
             rmakers.beam_across_leaf_lists(groups, beam_rests=True)
             baca.accent(baca.select.pheads(imbrication))
             baca.extend_beam(abjad.select.leaf(imbrication, -1))
@@ -360,11 +360,11 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             imbrications=imbrications,
             tsd=4,
         )
-        groups = rmakers.nongrace_leaves_in_each_tuplet(tuplets)
+        groups = rmakers.select_nongrace_leaves_by_tuplet(tuplets)
         rmakers.beam_across_leaf_lists(groups)
         for imbrication in imbrications.values():
             tuplets_ = abjad.select.tuplets(imbrication, level=-1)
-            groups = rmakers.nongrace_leaves_in_each_tuplet(tuplets_)
+            groups = rmakers.select_nongrace_leaves_by_tuplet(tuplets_)
             rmakers.beam_across_leaf_lists(groups, beam_rests=True)
             baca.marcato(baca.select.pheads(imbrication))
         baca.override.beam_positions(tuplets, 12)
@@ -389,11 +389,11 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             imbrications=imbrications,
             tsd=4,
         )
-        groups = rmakers.nongrace_leaves_in_each_tuplet([tuplet])
+        groups = rmakers.select_nongrace_leaves_by_tuplet([tuplet])
         rmakers.beam_across_leaf_lists(groups)
         for imbrication in imbrications.values():
             tuplets_ = abjad.select.tuplets(imbrication, level=-1)
-            groups = rmakers.nongrace_leaves_in_each_tuplet(tuplets_)
+            groups = rmakers.select_nongrace_leaves_by_tuplet(tuplets_)
             rmakers.beam_across_leaf_lists(groups, beam_rests=True)
             baca.accent(baca.select.pheads(imbrication))
         baca.spanners.slur(tuplet)
@@ -429,11 +429,11 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             hide_time_signature=True,
             imbrications=imbrications,
         )
-        groups = rmakers.nongrace_leaves_in_each_tuplet(tuplets)
+        groups = rmakers.select_nongrace_leaves_by_tuplet(tuplets)
         rmakers.beam_across_leaf_lists(groups)
         for imbrication in imbrications.values():
             leaves = abjad.select.leaves(imbrication)
-            rmakers.unbeam_leaves(leaves)
+            rmakers.detach_beams_from_leaves(leaves)
         baca.dynamic(baca.select.phead(tuplets, 0), "ff")
         baca.label_figure(tuplets, "7.1.L.1", accumulator)
 
@@ -468,11 +468,11 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             hide_time_signature=True,
             imbrications=imbrications,
         )
-        groups = rmakers.nongrace_leaves_in_each_tuplet(tuplets)
+        groups = rmakers.select_nongrace_leaves_by_tuplet(tuplets)
         rmakers.beam_across_leaf_lists(groups)
         for imbrication in imbrications.values():
             tuplets_ = abjad.select.tuplets(imbrication, level=-1)
-            groups = rmakers.nongrace_leaves_in_each_tuplet(tuplets_)
+            groups = rmakers.select_nongrace_leaves_by_tuplet(tuplets_)
             rmakers.beam_across_leaf_lists(groups, beam_rests=True)
             baca.staccato(baca.select.pheads(imbrication))
         baca.dynamic(baca.select.phead(tuplets, 0), "pp")
@@ -505,11 +505,11 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             hide_time_signature=True,
             imbrications=imbrications,
         )
-        groups = rmakers.nongrace_leaves_in_each_tuplet([tuplet])
+        groups = rmakers.select_nongrace_leaves_by_tuplet([tuplet])
         rmakers.beam_across_leaf_lists(groups)
         for imbrication in imbrications.values():
             leaves = abjad.select.leaves(imbrication)
-            rmakers.unbeam_leaves(leaves)
+            rmakers.detach_beams_from_leaves(leaves)
         baca.dynamic(baca.select.phead(tuplet, 0), "ff")
         baca.label_figure(tuplet, "7.1.L.3", accumulator)
 
@@ -544,11 +544,11 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             hide_time_signature=True,
             imbrications=imbrications,
         )
-        groups = rmakers.nongrace_leaves_in_each_tuplet(tuplets)
+        groups = rmakers.select_nongrace_leaves_by_tuplet(tuplets)
         rmakers.beam_across_leaf_lists(groups)
         for imbrication in imbrications.values():
             tuplets_ = abjad.select.tuplets(imbrication, level=-1)
-            groups = rmakers.nongrace_leaves_in_each_tuplet(tuplets_)
+            groups = rmakers.select_nongrace_leaves_by_tuplet(tuplets_)
             rmakers.beam_across_leaf_lists(groups, beam_rests=True)
             baca.staccato(baca.select.pheads(imbrication))
         baca.dynamic(baca.select.phead(tuplets, 0), "pp")
@@ -579,11 +579,11 @@ def make_empty_score(first_measure_number, previous_persistent_indicators):
             hide_time_signature=True,
             imbrications=imbrications,
         )
-        groups = rmakers.nongrace_leaves_in_each_tuplet([tuplet])
+        groups = rmakers.select_nongrace_leaves_by_tuplet([tuplet])
         rmakers.beam_across_leaf_lists(groups)
         for imbrication in imbrications.values():
             leaves = abjad.select.leaves(imbrication)
-            rmakers.unbeam_leaves(leaves)
+            rmakers.detach_beams_from_leaves(leaves)
         baca.dynamic(baca.select.phead(tuplet, 0), "ff")
         baca.label_figure(tuplet, "7.1.L.5", accumulator)
 
